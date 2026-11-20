@@ -57,8 +57,9 @@ started only by hand with the `drill` profile.
 You need Docker with Compose on the server, and a clone of this repo.
 
 Make the tunnel with `cloudflared` on any computer, not in the Cloudflare
-dashboard. A tunnel made this way takes its routes from the `tunnel-routes`
-config in `docker-compose.yml`, which sends `wizzaroo.adrianeyre.co.uk` to
+dashboard. A tunnel made this way takes its routes from
+`cloudflared/config.yml`, which `docker-compose.yml` gives `cloudflared` as its
+`tunnel-routes` config. It sends `wizzaroo.adrianeyre.co.uk` to
 `http://app:4310` and answers 404 for anything else. A tunnel made in the
 dashboard takes them from the dashboard instead, and can't be changed back
 ([pen test I4, #316](../pen-test/findings/I4.md)):
@@ -161,13 +162,16 @@ never commit it.
 
 `TUNNEL_PROXY_ADDRESS` isn't in `.env` either: `docker-compose.yml` sets it to
 `10.43.10.2`, the fixed address it gives `cloudflared` on the `tunnel` network,
-whose subnet it fixes at `10.43.10.0/24`. The app believes `CF-Connecting-IP`
+whose subnet it fixes at `10.43.10.0/24`. Docker hands out addresses on it only
+from `10.43.10.128/25`, so `app`, which starts first, can't take
+`cloudflared`'s address before it does. The app believes `CF-Connecting-IP`
 from that socket alone, so a request that reaches port 4310 another way, from
 the server's own loopback or another container, is recorded and rate limited
 under the address it came from, whatever header it sends (#332). The subnet is
 outside Docker's default address pools, so no network Docker numbers itself can
 take it; if something else on the server already uses it, change the subnet,
-`cloudflared`'s `ipv4_address` and the app's `TUNNEL_PROXY_ADDRESS` together.
+its `ip_range`, `cloudflared`'s `ipv4_address` and the app's
+`TUNNEL_PROXY_ADDRESS` together, keeping the address outside the range.
 The pen-test deployment uses `10.43.11.0/24` so the two can run side by side.
 
 ### The TOTP secret key

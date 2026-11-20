@@ -19,7 +19,7 @@ import {
 import { createServer as createHttpServer } from "node:http";
 import { createServer } from "node:net";
 import { tmpdir } from "node:os";
-import { join } from "node:path";
+import { join, relative } from "node:path";
 import { Readable, Writable } from "node:stream";
 import { isDeepStrictEqual, parseEnv, promisify } from "node:util";
 import { hash } from "@node-rs/argon2";
@@ -31181,11 +31181,15 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
           );
         });
 
-        it("runs cloudflared from the routes in the repo, one hostname to the app and a 404 for the rest, and shares only an internal network with the app, each going out on a bridge of its own the host's firewall can name (regression)", () => {
+        it("runs cloudflared from the routes in the repo, one hostname to the app and a 404 for the rest, and shares only an internal network with the app, each going out on a bridge of its own the host's firewall can name (regression)", async () => {
           const cloudflared = getService("cloudflared");
-          const routes = readText(
-            compose.configs.get("tunnel-routes")?.content,
+          const routesFile = readText(
+            compose.configs.get("tunnel-routes")?.file,
           );
+          const routes = (await readFile(routesFile, "utf8"))
+            .split("\n")
+            .filter((line) => !line.startsWith("#"))
+            .join("\n");
 
           expect({
             command: cloudflared.command,
@@ -31237,6 +31241,50 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
             "- service: http_status:404",
             "",
           ]);
+        });
+
+        it("gives each read-only service its configs as files, since Compose can't write inline content into a read-only container and the service never starts (regression)", () => {
+          const writtenIntoAReadOnlyService = [...compose.services]
+            .filter(([, service]) => service.read_only === true)
+            .flatMap(([name, service]) =>
+              readList(service.configs).map(
+                (config) =>
+                  [name, readText(readRecord(config).source)] as const,
+              ),
+            )
+            .filter(
+              ([, source]) => compose.configs.get(source)?.file === undefined,
+            );
+
+          expect(
+            relative(
+              repositoryDirectory,
+              readText(compose.configs.get("tunnel-routes")?.file),
+            ),
+          ).toBe(join("cloudflared", "config.yml"));
+          expect(writtenIntoAReadOnlyService).toEqual([]);
+        });
+
+        it("hands out the tunnel network's addresses only from a range without cloudflared's, so the app, which starts first, can't take it (regression)", () => {
+          const cloudflaredAddress = readText(
+            readRecord(readRecord(getService("cloudflared").networks).tunnel)
+              .ipv4_address,
+          );
+          const appAddress = readText(
+            readRecord(getService("app").environment).TUNNEL_PROXY_ADDRESS,
+          );
+
+          expect({
+            cloudflaredAddress,
+            appAddress,
+            ipam: readList(
+              readRecord(compose.networks.get("tunnel")?.ipam).config,
+            ),
+          }).toEqual({
+            cloudflaredAddress: "10.43.10.2",
+            appAddress: "10.43.10.2",
+            ipam: [{ subnet: "10.43.10.0/24", ip_range: "10.43.10.128/25" }],
+          });
         });
 
         it("names in the repo every route the tunnel serves, as an ingress file cloudflared runs from", () => {

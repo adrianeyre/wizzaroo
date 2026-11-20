@@ -249,9 +249,9 @@ services:
       start_period: 30s
       retries: 5
 
-  # Runs the tunnel from the routes below, not from Cloudflare's dashboard, so what it serves is in the repo and a change
-  # to it is a reviewed commit (pen test I4, #316). The tunnel must be one made with `cloudflared tunnel create`, which
-  # takes its routes from here: the deployment guide says how.
+  # Runs the tunnel from the routes in cloudflared/config.yml, not from Cloudflare's dashboard, so what it serves is in
+  # the repo and a change to it is a reviewed commit (pen test I4, #316). The tunnel must be one made with
+  # `cloudflared tunnel create`, which takes its routes from here: the deployment guide says how.
   cloudflared:
     <<: *hardening
     logging: *logging
@@ -282,26 +282,25 @@ services:
       app:
         condition: service_healthy
 
-# Every route the tunnel serves: Wizzaroo's one hostname to the app, and a 404 for anything else (pen test I4, #316).
+# Every route the tunnel serves, in cloudflared/config.yml (pen test I4, #316). A file, not inline `content`: Compose
+# writes inline content into the container, which cloudflared's read-only root filesystem refuses, so it never started.
 configs:
   tunnel-routes:
-    content: |
-      ingress:
-        - hostname: wizzaroo.adrianeyre.co.uk
-          service: http://app:4310
-        - service: http_status:404
+    file: ./cloudflared/config.yml
 
 networks:
   database:
     internal: true
   # cloudflared and the app alone, with no way out of Docker (pen test I4, #316). A fixed subnet, so cloudflared has a
   # fixed address for the app to believe CF-Connecting-IP from (#332). It is outside Docker's default address pools
-  # (172.17.0.0/12 and 192.168.0.0/16), so no network Docker numbers itself can take it.
+  # (172.17.0.0/12 and 192.168.0.0/16), so no network Docker numbers itself can take it. Docker hands out addresses
+  # only from ip_range, the top half, so the app, which starts first, can't take cloudflared's 10.43.10.2 before it.
   tunnel:
     internal: true
     ipam:
       config:
         - subnet: 10.43.10.0/24
+          ip_range: 10.43.10.128/25
   # cloudflared's way out to Cloudflare, and the app's to the email platform. Their bridges are named so the home
   # server's firewall can keep them off the LAN, which Compose can't (the deployment guide has the rules).
   tunnel-egress:
