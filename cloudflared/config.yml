@@ -1,0 +1,6 @@
+# Every route the tunnel serves: Wizzaroo's one hostname to the app, and a 404 for anything else (pen test I4, #316).
+# docker-compose.yml gives this file to cloudflared as its `tunnel-routes` config, which it runs from with --config.
+ingress:
+  - hostname: wizzaroo.adrianeyre.co.uk
+    service: http://app:4310
+  - service: http_status:404
