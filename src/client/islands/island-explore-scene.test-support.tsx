@@ -152,3 +152,8 @@ export const countDrawnTriangles = (mesh: Mesh): number =>
 
 export const findNamed = (renderer: ReactThreeTest.Renderer, name: string) =>
   renderer.scene.findAll(({ instance }) => instance.name === name);
+
+export const findExplorer = (renderer: ReactThreeTest.Renderer) => {
+  const [explorer] = findNamed(renderer, "explorer");
+  return explorer.instance;
+};
