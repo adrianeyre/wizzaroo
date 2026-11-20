@@ -1,6 +1,10 @@
 import { configDefaults, defineConfig } from "vitest/config";
 import { readReleaseVersion } from "./src/release-version.js";
 
+// The Island sweeps draw every Island model by model, minutes an Island: the sweeps project runs them, in the Island
+// sweeps workflow and by `pnpm test:sweeps`, and `pnpm test` leaves them out.
+const sweepTests = ["src/**/*.sweep.test.{ts,tsx}"];
+
 const domTests = [
   "src/client/parent/**/*.test.tsx",
   "src/client/staff/**/*.test.tsx",
@@ -22,7 +26,6 @@ const domTests = [
   "src/client/world-map-islands.test.tsx",
   "src/client/islands/island-scene.test.tsx",
   "src/client/islands/island-explore.test.tsx",
-  "src/client/islands/island-explore-solids.test.tsx",
   "src/client/islands/island-stage-props.test.tsx",
   "src/client/geography/**/*.test.tsx",
   "src/client/character/room-play*.test.tsx",
@@ -48,7 +51,7 @@ export default defineConfig({
     },
     coverage: {
       include: ["src/**/*.{ts,tsx}"],
-      exclude: ["**/*.test.{ts,tsx}"],
+      exclude: ["**/*.test.{ts,tsx}", "**/*.test-support.{ts,tsx}"],
       thresholds: process.env.CI
         ? { statements: 88, branches: 70, functions: 80, lines: 88 }
         : undefined,
@@ -59,7 +62,7 @@ export default defineConfig({
         test: {
           name: "node",
           include: ["src/**/*.test.{ts,tsx}"],
-          exclude: [...configDefaults.exclude, ...domTests],
+          exclude: [...configDefaults.exclude, ...domTests, ...sweepTests],
           environment: "node",
         },
       },
@@ -68,7 +71,17 @@ export default defineConfig({
         test: {
           name: "dom",
           include: domTests,
+          exclude: [...configDefaults.exclude, ...sweepTests],
           environment: "happy-dom",
+        },
+      },
+      {
+        extends: true,
+        test: {
+          name: "sweeps",
+          include: sweepTests,
+          environment: "happy-dom",
+          testTimeout: 1_800_000,
         },
       },
     ],

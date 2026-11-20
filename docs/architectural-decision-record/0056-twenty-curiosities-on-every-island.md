@@ -58,7 +58,7 @@ Every Curiosity has something that reacts to the Character, and most have more:
   - **Beyond 130:** not drawn.
 - **Checked.**
   - `island-curiosities.test.ts` checks every model's triangles, footprint, moving parts, rides, curriculum link and that it is interactive. It also checks every Island's sites.
-  - `island-explore.test.tsx` stands the Character at every Attraction and every Curiosity on every Island, and checks the exploring budget of 380,000 triangles and 150 meshes. Meadow Isle is still the busiest, at about 375,000 triangles and 118 meshes beside its school (up from 373,000 and 115), and at most 122 meshes anywhere.
+  - `island-explore.sweep.test.tsx` stands the Character at every Attraction and every Curiosity on every Island, and checks the exploring budget of 380,000 triangles and 150 meshes. Meadow Isle is still the busiest, at about 375,000 triangles and 118 meshes beside its school (up from 373,000 and 115), and at most 122 meshes anywhere.
 
 ## Consequences
 

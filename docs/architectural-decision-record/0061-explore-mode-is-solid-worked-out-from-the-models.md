@@ -39,7 +39,7 @@ Marking every triangle of an Island takes about half a second, too long to wait 
 
 - **Every ride stays reachable**: a circle round where each ride starts, and where it puts the Character down, is always kept clear.
 - **Every place to visit can be reached**: Regions, Lookouts, the Dock, fact signs, hideaways, friendly animals, Islanders, Quest things and Attractions' signs each have clear ground within reach, checked for every Island by [`island-solids.test.ts`](../../src/client/islands/island-solids.test.ts).
-- **Nothing drawn is missed**: [`island-explore-solids.test.tsx`](../../src/client/islands/island-explore-solids.test.tsx) draws each Island's explore scene, goes over every part of every model in it that is at the height of the Character's body, and checks that it is solid. Only what is meant to be passed through (treasures, pads, rings, Quest Finds, the Train, Vehicles, water, smoke and things that wander) is left out.
+- **Nothing drawn is missed**: [`island-explore-solids.sweep.test.tsx`](../../src/client/islands/island-explore-solids.sweep.test.tsx) draws each Island's explore scene, goes over every part of every model in it that is at the height of the Character's body, and checks that it is solid. Only what is meant to be passed through (treasures, pads, rings, Quest Finds, the Train, Vehicles, water, smoke and things that wander) is left out.
 - **Nothing grows on the starting spot**: the scenery keeps clear of where the Character starts, as it does of signs and dens. Before this change Meadow Isle's start was among three pine trees.
 
 ## Consequences

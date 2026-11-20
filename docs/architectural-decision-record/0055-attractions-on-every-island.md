@@ -70,7 +70,7 @@ Each Island has five or six **Attractions**, all on its new lands ([0041](./0041
 
 ## Within the budget
 
-The near model of only the Attraction the Character is at, and the far models of the rest, keep every Island within the exploring budget of 380,000 triangles and 150 meshes. Meadow Isle is the busiest, at about 373,000 triangles and 115 meshes next to its school. `island-explore.test.tsx` stands the Character at every Attraction on every Island and checks the budget. `island-attractions.test.ts` checks every model's triangles, near and far, and that it has at most six moving parts.
+The near model of only the Attraction the Character is at, and the far models of the rest, keep every Island within the exploring budget of 380,000 triangles and 150 meshes. Meadow Isle is the busiest, at about 373,000 triangles and 115 meshes next to its school. `island-explore.sweep.test.tsx` stands the Character at every Attraction on every Island and checks the budget. `island-attractions.test.ts` checks every model's triangles, near and far, and that it has at most six moving parts.
 
 ## Consequences
 

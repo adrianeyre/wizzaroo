@@ -1,26 +1,20 @@
 import ReactThreeTestRenderer, {
   type ReactThreeTest,
 } from "@react-three/test-renderer";
-import { BufferGeometry, InstancedMesh, Mesh, PointLight } from "three";
+import { InstancedMesh, PointLight } from "three";
 import { beforeAll, describe, expect, it, vi } from "vitest";
-import {
-  buildChildLimits,
-  buildIslandsOnMap,
-  buildRegionsOnMap,
-} from "../../curriculum/island-access.js";
+import { buildRegionsOnMap } from "../../curriculum/island-access.js";
 import {
   buildAdventureWorld,
   buildTrailBridges,
   exploreScale,
   findExploreAdventure,
   findWalkSurface,
-  type ExploreInteraction,
 } from "./island-adventures.js";
 import { lighthousePosition } from "../world-map-terrain.js";
 import { IslandExploreScene, listTrailLampPlaces } from "./island-explore.js";
 import { VoyageCrossingScene } from "./island-voyage-scene.js";
 import { findCave } from "./island-wonders.js";
-import type { RaceProgress } from "./island-races.js";
 import { findRailway, findStationPlatformSpot } from "./island-railway.js";
 import {
   findCarriedSpot,
@@ -35,147 +29,24 @@ import {
   placeCraftOnMap,
   type Transport,
 } from "./island-journey.js";
-import { listAttractionInteractions } from "./island-attractions.js";
 import { questSites } from "./island-quest-sites.js";
 import type {
-  CameraView,
-  ExploreInput,
   IslandExploreSceneProps,
   TrainReport,
   VoyageView,
-  WalkerStatus,
 } from "./island-explore-hud.js";
-
-const exploreMeshBudget = 150;
-const exploreTriangleBudget = 440_000;
-const frameSeconds = 1 / 60;
-
-const everyIslandOpen = buildChildLimits({
-  unlockedIslandIds: [
-    "frost-isle",
-    "sunscorch-sands",
-    "jungle-reach",
-    "ember-isle",
-    "starfall-isle",
-  ],
-});
-const islandsOnMap = buildIslandsOnMap(6, everyIslandOpen);
-
-const findIslandOnMap = (islandId: string) => {
-  const island = islandsOnMap.find(({ id }) => id === islandId);
-  if (island === undefined) {
-    throw new Error(`No Island ${islandId}`);
-  }
-  return island;
-};
-
-interface ExploreRecord {
-  reached: ExploreInteraction[];
-  foundTreasureIds: string[];
-  statuses: WalkerStatus[];
-  nearby: ExploreInteraction[][];
-  races: RaceProgress[];
-  questFindIds: string[];
-}
-
-const renderExplore = async (
-  islandId: string,
-  {
-    start = findExploreAdventure(islandId).start,
-    cameraView = "behind",
-    climbedLookoutId,
-    foundTreasureIds = [],
-    voyage,
-  }: {
-    start?: { x: number; z: number };
-    cameraView?: CameraView;
-    climbedLookoutId?: string;
-    foundTreasureIds?: string[];
-    voyage?: VoyageView;
-  } = {},
-) => {
-  const record: ExploreRecord = {
-    reached: [],
-    foundTreasureIds: [],
-    statuses: [],
-    nearby: [],
-    races: [],
-    questFindIds: [],
-  };
-  const input: { current: ExploreInput } = {
-    current: { right: 0, forward: 0, wantsJump: false },
-  };
-  const sceneProps: IslandExploreSceneProps = {
-    island: findIslandOnMap(islandId),
-    regions: buildRegionsOnMap(islandsOnMap, everyIslandOpen).filter(
-      (region) => region.islandId === islandId,
-    ),
-    loadout: {},
-    start,
-    startHeading: findExploreAdventure(islandId).startHeading,
-    voyage,
-    inputRef: input,
-    foundTreasureIds,
-    climbedLookoutId,
-    cameraView,
-    hoveredRegionId: undefined,
-    onRegionHovered: () => undefined,
-    onNearbyChanged: (interactions) => {
-      record.nearby.push(interactions);
-    },
-    onTreasureFound: (treasureId) => {
-      record.foundTreasureIds.push(treasureId);
-    },
-    onRaceProgress: (progress) => {
-      record.races.push(progress);
-    },
-    onStatusChanged: (status) => {
-      record.statuses.push(status);
-    },
-    onInteractionReached: (interaction) => {
-      record.reached.push(interaction);
-    },
-    onQuestFindReached: (findId) => {
-      record.questFindIds.push(findId);
-    },
-  };
-  const renderer = await ReactThreeTestRenderer.create(
-    <IslandExploreScene
-      sceneProps={sceneProps}
-      isEffectsOn
-      timeOfDay="day"
-      weather="clear"
-    />,
-  );
-  return { renderer, input, record, sceneProps };
-};
-
-const isMesh = (value: unknown): value is Mesh => value instanceof Mesh;
-
-const listMeshes = (renderer: ReactThreeTest.Renderer): Mesh[] =>
-  [
-    ...renderer.scene.findAllByType("Mesh"),
-    ...renderer.scene.findAllByType("InstancedMesh"),
-  ]
-    .map(({ instance }) => instance)
-    .filter(isMesh)
-    .filter(
-      (mesh) =>
-        mesh.visible &&
-        (Array.isArray(mesh.material)
-          ? mesh.material.some((material) => material.visible)
-          : mesh.material.visible),
-    );
-
-const countTriangles = (geometry: BufferGeometry): number =>
-  (geometry.index?.count ?? geometry.getAttribute("position").count) / 3;
-
-const countDrawnTriangles = (mesh: Mesh): number =>
-  countTriangles(mesh.geometry) *
-  (mesh instanceof InstancedMesh ? mesh.count : 1);
-
-const findNamed = (renderer: ReactThreeTest.Renderer, name: string) =>
-  renderer.scene.findAll(({ instance }) => instance.name === name);
+import {
+  countDrawnTriangles,
+  everyIslandOpen,
+  exploreMeshBudget,
+  exploreTriangleBudget,
+  findIslandOnMap,
+  findNamed,
+  frameSeconds,
+  islandsOnMap,
+  listMeshes,
+  renderExplore,
+} from "./island-explore-scene.test-support.js";
 
 const findExplorer = (renderer: ReactThreeTest.Renderer) => {
   const [explorer] = findNamed(renderer, "explorer");
@@ -232,61 +103,8 @@ describe.each(islandsOnMap.map(({ id }) => [id] as const))(
 );
 
 describe.each(islandsOnMap.map(({ id }) => [id] as const))(
-  "the Attractions and Curiosities on %s",
-  (islandId) => {
-    it("draws each one in full beside the Character, within the explore budget", async () => {
-      const adventure = findExploreAdventure(islandId);
-      for (const interaction of listAttractionInteractions(adventure)) {
-        const { renderer } = await renderExplore(islandId, {
-          start: interaction.position,
-        });
-        await renderer.advanceFrames(90, frameSeconds);
-        const kind = interaction.id.slice(islandId.length + 1);
-        const near = findNamed(renderer, `attraction-${kind}-near`);
-        expect(near.length, kind).toBe(1);
-        expect(near[0].instance.visible, kind).toBe(true);
-        const meshes = listMeshes(renderer);
-        expect(meshes.length, kind).toBeLessThanOrEqual(exploreMeshBudget);
-        expect(
-          meshes.reduce((total, mesh) => total + countDrawnTriangles(mesh), 0),
-          kind,
-        ).toBeLessThanOrEqual(exploreTriangleBudget);
-        await renderer.unmount();
-      }
-    }, 240_000);
-  },
-);
-
-describe.each(islandsOnMap.map(({ id }) => [id] as const))(
   "the Quest on %s",
   (islandId) => {
-    it("draws the Islanders, things and Finds near the Character, within the explore budget", async () => {
-      const sites = questSites[islandId] ?? [];
-      const sampled = (["thing", "islander", "find"] as const).flatMap((kind) =>
-        sites.filter((site) => site.kind === kind).slice(0, 3),
-      );
-      for (const site of sampled) {
-        const { renderer } = await renderExplore(islandId, {
-          start: { x: site.centre.x + 2.4, z: site.centre.z },
-        });
-        await renderer.advanceFrames(30, frameSeconds);
-        const name =
-          site.kind === "thing"
-            ? "quest-things"
-            : site.kind === "islander"
-              ? "quest-islanders"
-              : "quest-finds";
-        expect(findNamed(renderer, name).length, site.id).toBe(1);
-        const meshes = listMeshes(renderer);
-        expect(meshes.length, site.id).toBeLessThanOrEqual(exploreMeshBudget);
-        expect(
-          meshes.reduce((total, mesh) => total + countDrawnTriangles(mesh), 0),
-          site.id,
-        ).toBeLessThanOrEqual(exploreTriangleBudget);
-        await renderer.unmount();
-      }
-    }, 240_000);
-
     it("picks up a Find the Character walks onto", async () => {
       const find = (questSites[islandId] ?? []).find(
         ({ kind }) => kind === "find",
