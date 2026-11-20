@@ -1,0 +1,9 @@
+{
+  "id": "phonics.sound-p",
+  "name": "The /p/ sound, as in pig",
+  "subject": "phonics",
+  "yearGroup": 1,
+  "strand": "grapheme-phoneme-correspondences",
+  "prerequisites": [],
+  "sounds": ["p"]
+}

@@ -1,0 +1,316 @@
+{
+  "subject": "computing",
+  "programme": "key-stage",
+  "programmeOfStudyUrl": "https://www.gov.uk/government/publications/national-curriculum-in-england-computing-programmes-of-study",
+  "years": [
+    {
+      "yearGroup": 1,
+      "points": [
+        {
+          "id": "algorithms",
+          "heading": "Algorithms",
+          "summary": "Understand what algorithms are, how they become programs on digital devices, and that programs follow precise instructions.",
+          "skillIds": [
+            "computing.single-step-instructions",
+            "computing.everyday-algorithms",
+            "computing.bossy-robot-orders"
+          ]
+        },
+        {
+          "id": "programs",
+          "heading": "Creating and debugging programs",
+          "summary": "Create and debug simple programs.",
+          "skillIds": [
+            "computing.debug-a-route",
+            "computing.animation-programs"
+          ]
+        },
+        {
+          "id": "logical-reasoning",
+          "heading": "Logical reasoning",
+          "summary": "Use logical reasoning to predict the behaviour of simple programs.",
+          "skillIds": ["computing.predict-a-route"]
+        },
+        {
+          "id": "digital-content",
+          "heading": "Creating digital content",
+          "summary": "Use technology purposefully to create, organise, store, change and retrieve digital content.",
+          "skillIds": [
+            "computing.digital-painting",
+            "computing.group-objects",
+            "computing.keyboard-keys"
+          ]
+        },
+        {
+          "id": "technology-beyond-school",
+          "heading": "Technology beyond school",
+          "summary": "Recognise common uses of information technology beyond school.",
+          "skillIds": ["computing.name-technology"]
+        },
+        {
+          "id": "online-safety",
+          "heading": "Using technology safely",
+          "summary": "Use technology safely and respectfully, keep personal information private, and know where to go for help.",
+          "skillIds": ["computing.ask-for-help-online"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 2,
+      "points": [
+        {
+          "id": "algorithms",
+          "heading": "Algorithms",
+          "summary": "Understand what algorithms are, how they become programs on digital devices, and that programs follow precise instructions.",
+          "skillIds": ["computing.plan-a-route"]
+        },
+        {
+          "id": "programs",
+          "heading": "Creating and debugging programs",
+          "summary": "Create and debug simple programs.",
+          "skillIds": [
+            "computing.program-a-quiz",
+            "computing.debug-an-algorithm"
+          ]
+        },
+        {
+          "id": "logical-reasoning",
+          "heading": "Logical reasoning",
+          "summary": "Use logical reasoning to predict the behaviour of simple programs.",
+          "skillIds": ["computing.predict-longer-programs"]
+        },
+        {
+          "id": "digital-content",
+          "heading": "Creating digital content",
+          "summary": "Use technology purposefully to create, organise, store, change and retrieve digital content.",
+          "skillIds": [
+            "computing.taking-photos",
+            "computing.pictograms",
+            "computing.digital-music",
+            "computing.folder-tidy-up"
+          ]
+        },
+        {
+          "id": "technology-beyond-school",
+          "heading": "Technology beyond school",
+          "summary": "Recognise common uses of information technology beyond school.",
+          "skillIds": ["computing.technology-beyond-school"]
+        },
+        {
+          "id": "online-safety",
+          "heading": "Using technology safely",
+          "summary": "Use technology safely and respectfully, keep personal information private, and know where to go for help.",
+          "skillIds": [
+            "computing.keep-information-private",
+            "computing.be-kind-online"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 3,
+      "points": [
+        {
+          "id": "design-write-debug",
+          "heading": "Designing and debugging programs",
+          "summary": "Design, write and debug programs that meet specific goals, including controlling physical systems, by breaking problems into smaller parts.",
+          "skillIds": ["computing.decompose-a-task"]
+        },
+        {
+          "id": "programming-constructs",
+          "heading": "Sequence, selection, repetition and variables",
+          "summary": "Use sequence, selection and repetition in programs, and work with variables and different inputs and outputs.",
+          "skillIds": [
+            "computing.sequence-sounds",
+            "computing.events-and-actions",
+            "computing.inputs-and-outputs"
+          ]
+        },
+        {
+          "id": "logical-reasoning",
+          "heading": "Logical reasoning",
+          "summary": "Use logical reasoning to explain how simple algorithms work, and to find and correct errors in algorithms and programs.",
+          "skillIds": ["computing.debug-a-sequence"]
+        },
+        {
+          "id": "networks",
+          "heading": "Computer networks and the internet",
+          "summary": "Understand computer networks, including the internet, and how they provide services such as the World Wide Web.",
+          "skillIds": ["computing.connect-computers"]
+        },
+        {
+          "id": "creating-content",
+          "heading": "Creating content with software",
+          "summary": "Choose, use and combine software to design and create content, including collecting, analysing and presenting data.",
+          "skillIds": [
+            "computing.stop-frame-animation",
+            "computing.branching-databases",
+            "computing.desktop-publishing"
+          ]
+        },
+        {
+          "id": "online-safety",
+          "heading": "Using technology safely",
+          "summary": "Use technology safely, respectfully and responsibly, recognise acceptable and unacceptable behaviour, and know how to report concerns.",
+          "skillIds": ["computing.strong-passwords"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 4,
+      "points": [
+        {
+          "id": "programming-constructs",
+          "heading": "Sequence, selection, repetition and variables",
+          "summary": "Use sequence, selection and repetition in programs, and work with variables and different inputs and outputs.",
+          "skillIds": [
+            "computing.repetition-in-shapes",
+            "computing.repetition-in-games"
+          ]
+        },
+        {
+          "id": "logical-reasoning",
+          "heading": "Logical reasoning",
+          "summary": "Use logical reasoning to explain how simple algorithms work, and to find and correct errors in algorithms and programs.",
+          "skillIds": ["computing.debug-loops"]
+        },
+        {
+          "id": "networks",
+          "heading": "Computer networks and the internet",
+          "summary": "Understand computer networks, including the internet, and how they provide services such as the World Wide Web.",
+          "skillIds": [
+            "computing.how-the-internet-works",
+            "computing.world-wide-web"
+          ]
+        },
+        {
+          "id": "search",
+          "heading": "Searching and evaluating content",
+          "summary": "Use search technologies effectively, understand how results are selected and ranked, and judge digital content carefully.",
+          "skillIds": ["computing.reliable-information"]
+        },
+        {
+          "id": "creating-content",
+          "heading": "Creating content with software",
+          "summary": "Choose, use and combine software to design and create content, including collecting, analysing and presenting data.",
+          "skillIds": [
+            "computing.audio-editing",
+            "computing.data-logging",
+            "computing.photo-editing"
+          ]
+        },
+        {
+          "id": "online-safety",
+          "heading": "Using technology safely",
+          "summary": "Use technology safely, respectfully and responsibly, recognise acceptable and unacceptable behaviour, and know how to report concerns.",
+          "skillIds": ["computing.digital-footprint"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 5,
+      "points": [
+        {
+          "id": "design-write-debug",
+          "heading": "Designing and debugging programs",
+          "summary": "Design, write and debug programs that meet specific goals, including controlling physical systems, by breaking problems into smaller parts.",
+          "skillIds": [
+            "computing.selection-physical-computing",
+            "computing.choose-sensors"
+          ]
+        },
+        {
+          "id": "programming-constructs",
+          "heading": "Sequence, selection, repetition and variables",
+          "summary": "Use sequence, selection and repetition in programs, and work with variables and different inputs and outputs.",
+          "skillIds": ["computing.selection-in-quizzes"]
+        },
+        {
+          "id": "logical-reasoning",
+          "heading": "Logical reasoning",
+          "summary": "Use logical reasoning to explain how simple algorithms work, and to find and correct errors in algorithms and programs.",
+          "skillIds": ["computing.explain-algorithms"]
+        },
+        {
+          "id": "networks",
+          "heading": "Computer networks and the internet",
+          "summary": "Understand computer networks, including the internet, and how they provide services such as the World Wide Web.",
+          "skillIds": ["computing.online-collaboration"]
+        },
+        {
+          "id": "search",
+          "heading": "Searching and evaluating content",
+          "summary": "Use search technologies effectively, understand how results are selected and ranked, and judge digital content carefully.",
+          "skillIds": ["computing.search-ranking"]
+        },
+        {
+          "id": "creating-content",
+          "heading": "Creating content with software",
+          "summary": "Choose, use and combine software to design and create content, including collecting, analysing and presenting data.",
+          "skillIds": [
+            "computing.video-production",
+            "computing.flat-file-databases",
+            "computing.vector-drawing"
+          ]
+        },
+        {
+          "id": "online-safety",
+          "heading": "Using technology safely",
+          "summary": "Use technology safely, respectfully and responsibly, recognise acceptable and unacceptable behaviour, and know how to report concerns.",
+          "skillIds": ["computing.report-concerns"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 6,
+      "points": [
+        {
+          "id": "design-write-debug",
+          "heading": "Designing and debugging programs",
+          "summary": "Design, write and debug programs that meet specific goals, including controlling physical systems, by breaking problems into smaller parts.",
+          "skillIds": ["computing.sensing-movement", "computing.design-a-game"]
+        },
+        {
+          "id": "programming-constructs",
+          "heading": "Sequence, selection, repetition and variables",
+          "summary": "Use sequence, selection and repetition in programs, and work with variables and different inputs and outputs.",
+          "skillIds": ["computing.variables-in-games"]
+        },
+        {
+          "id": "logical-reasoning",
+          "heading": "Logical reasoning",
+          "summary": "Use logical reasoning to explain how simple algorithms work, and to find and correct errors in algorithms and programs.",
+          "skillIds": ["computing.debug-with-variables"]
+        },
+        {
+          "id": "networks",
+          "heading": "Computer networks and the internet",
+          "summary": "Understand computer networks, including the internet, and how they provide services such as the World Wide Web.",
+          "skillIds": ["computing.internet-communication"]
+        },
+        {
+          "id": "search",
+          "heading": "Searching and evaluating content",
+          "summary": "Use search technologies effectively, understand how results are selected and ranked, and judge digital content carefully.",
+          "skillIds": ["computing.effective-searching"]
+        },
+        {
+          "id": "creating-content",
+          "heading": "Creating content with software",
+          "summary": "Choose, use and combine software to design and create content, including collecting, analysing and presenting data.",
+          "skillIds": [
+            "computing.webpage-creation",
+            "computing.spreadsheets",
+            "computing.3d-modelling"
+          ]
+        },
+        {
+          "id": "online-safety",
+          "heading": "Using technology safely",
+          "summary": "Use technology safely, respectfully and responsibly, recognise acceptable and unacceptable behaviour, and know how to report concerns.",
+          "skillIds": ["computing.responsible-sharing"]
+        }
+      ]
+    }
+  ]
+}

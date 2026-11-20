@@ -1,0 +1,433 @@
+{
+  "subject": "english",
+  "yearGroup": 6,
+  "games": [
+    {
+      "id": "active-or-passive-portal",
+      "title": "Active or Passive?",
+      "station": "compare",
+      "prop": "magnet",
+      "skillId": "english.active-and-passive-voice",
+      "skillName": "The active and passive voice",
+      "strand": "vocabulary-grammar-and-punctuation",
+      "statutoryRequirement": "Pupils should be taught to use passive verbs to affect the presentation of information in a sentence; use of the passive to affect the presentation of information in a sentence [for example, I broke the window in the greenhouse versus The window in the greenhouse was broken (by me)]",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Ask who is doing the action and where they are in the sentence.",
+      "questions": [
+        {
+          "ask": "'The cat chased the mouse.' Active or passive?",
+          "answer": "active",
+          "distractors": ["passive", "both", "neither"]
+        },
+        {
+          "ask": "'The window was broken by Tom.' Active or passive?",
+          "answer": "passive",
+          "distractors": ["active", "both", "neither"]
+        },
+        {
+          "ask": "Which is the passive of 'Sam ate the cake.'?",
+          "answer": "The cake was eaten.",
+          "distractors": [
+            "Sam was eating cake",
+            "The cake ate Sam.",
+            "Sam has eaten cake."
+          ]
+        },
+        {
+          "ask": "In 'The letter was written by Jo', who did the action?",
+          "answer": "Jo",
+          "distractors": ["the letter", "nobody", "the reader"]
+        },
+        {
+          "ask": "Which sentence is in the passive voice?",
+          "answer": "The bell was rung.",
+          "distractors": [
+            "Ali rang the bell.",
+            "The bell rang.",
+            "Ali is ringing it."
+          ]
+        },
+        {
+          "ask": "Which sentence is in the active voice?",
+          "answer": "Bees make honey.",
+          "distractors": [
+            "Honey is made.",
+            "Honey was made.",
+            "It was made by bees."
+          ]
+        },
+        {
+          "ask": "'The road was closed.' Why might a writer use the passive here?",
+          "answer": "the doer is unknown",
+          "distractors": [
+            "to add an adjective",
+            "it is a question",
+            "to show speech"
+          ]
+        },
+        {
+          "ask": "Which verb makes it passive? 'The ball ___ by Mia.'",
+          "answer": "was kicked",
+          "distractors": ["kicked", "is kicking", "kicks"]
+        },
+        {
+          "ask": "Which is the active of 'The play was performed by Year 6.'?",
+          "answer": "Year 6 performed it.",
+          "distractors": [
+            "It was performed.",
+            "Year 6 was playing.",
+            "The play performed."
+          ]
+        },
+        {
+          "ask": "In a passive sentence, the object of the active sentence becomes the ___.",
+          "answer": "subject",
+          "distractors": ["verb", "adverb", "object"]
+        }
+      ]
+    },
+    {
+      "id": "same-or-opposite-words",
+      "title": "Same or Opposite?",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Synonyms and antonyms",
+      "strand": "vocabulary-grammar-and-punctuation",
+      "statutoryRequirement": "Pupils should be taught to develop their understanding of the concepts set out in English Appendix 2 by: how words are related by meaning as synonyms and antonyms [for example, big, large, little]",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Synonyms mean the same and antonyms mean the opposite, so try again.",
+      "questions": [
+        {
+          "ask": "Which is a synonym for 'big'?",
+          "answer": "large",
+          "distractors": ["little", "tiny", "thin"]
+        },
+        {
+          "ask": "Which is an antonym of 'big'?",
+          "answer": "little",
+          "distractors": ["large", "huge", "giant"]
+        },
+        {
+          "ask": "Which is a synonym for 'brave'?",
+          "answer": "courageous",
+          "distractors": ["cowardly", "timid", "nervous"]
+        },
+        {
+          "ask": "Which is an antonym of 'generous'?",
+          "answer": "mean",
+          "distractors": ["kind", "giving", "polite"]
+        },
+        {
+          "ask": "Which is a synonym for 'begin'?",
+          "answer": "commence",
+          "distractors": ["finish", "conclude", "end"]
+        },
+        {
+          "ask": "Which is an antonym of 'ancient'?",
+          "answer": "modern",
+          "distractors": ["old", "antique", "aged"]
+        },
+        {
+          "ask": "'Fragile' and 'delicate' are ___.",
+          "answer": "synonyms",
+          "distractors": ["antonyms", "homophones", "prefixes"]
+        },
+        {
+          "ask": "'Arrive' and 'depart' are ___.",
+          "answer": "antonyms",
+          "distractors": ["synonyms", "homophones", "suffixes"]
+        },
+        {
+          "ask": "Which is a synonym for 'furious'?",
+          "answer": "enraged",
+          "distractors": ["calm", "pleased", "content"]
+        },
+        {
+          "ask": "Which is an antonym of 'scarce'?",
+          "answer": "plentiful",
+          "distractors": ["rare", "few", "sparse"]
+        }
+      ]
+    },
+    {
+      "id": "formal-or-chatty-tags",
+      "title": "Formal or Chatty?",
+      "station": "compare",
+      "prop": "tuning-fork",
+      "skillName": "Question tags and formal vocabulary",
+      "strand": "vocabulary-grammar-and-punctuation",
+      "statutoryRequirement": "Pupils should be taught to recognise vocabulary and structures that are appropriate for formal speech and writing, including subjunctive forms; the difference between vocabulary typical of informal speech and vocabulary appropriate for formal speech and writing [for example, find out – discover; ask for – request; go in – enter]; structures typical of informal speech and structures appropriate for formal speech and writing [for example, the use of question tags: He's your friend, isn't he?, or the use of subjunctive forms such as If I were or Were they to come in some very formal writing and speech]",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Think about how you would speak to a friend or write to a head teacher.",
+      "questions": [
+        {
+          "ask": "Add the question tag: 'He's your friend, ___?'",
+          "answer": "isn't he",
+          "distractors": ["is he", "doesn't he", "wasn't it"]
+        },
+        {
+          "ask": "Add the question tag: 'You can swim, ___?'",
+          "answer": "can't you",
+          "distractors": ["can you", "don't you", "won't you"]
+        },
+        {
+          "ask": "Add the question tag: 'They didn't come, ___?'",
+          "answer": "did they",
+          "distractors": ["didn't they", "do they", "were they"]
+        },
+        {
+          "ask": "Add the question tag: 'It's cold today, ___?'",
+          "answer": "isn't it",
+          "distractors": ["is it", "doesn't it", "wasn't it"]
+        },
+        {
+          "ask": "Question tags are typical of ___.",
+          "answer": "informal speech",
+          "distractors": ["formal letters", "legal writing", "dictionaries"]
+        },
+        {
+          "ask": "Which is a more formal way to say 'find out'?",
+          "answer": "discover",
+          "distractors": ["look up", "suss out", "get"]
+        },
+        {
+          "ask": "Which is a more formal way to say 'ask for'?",
+          "answer": "request",
+          "distractors": ["beg", "want", "nag"]
+        },
+        {
+          "ask": "Which is a more formal way to say 'go in'?",
+          "answer": "enter",
+          "distractors": ["pop in", "get in", "come"]
+        },
+        {
+          "ask": "Which of these is the most formal?",
+          "answer": "Please be seated.",
+          "distractors": [
+            "Sit down, mate.",
+            "Grab a seat!",
+            "Plonk yourself down."
+          ]
+        },
+        {
+          "ask": "Which of these is informal?",
+          "answer": "Can't wait, mate!",
+          "distractors": [
+            "I await your reply.",
+            "Yours sincerely",
+            "Kind regards"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "semi-colon-signal-box",
+      "title": "Semi-Colon Signals",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Semi-colons, dashes and bullet points",
+      "strand": "vocabulary-grammar-and-punctuation",
+      "statutoryRequirement": "Pupils should be taught to use semi-colons, colons or dashes to mark boundaries between independent clauses; use a colon to introduce a list and use semi-colons within lists; punctuate bullet points consistently",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Think about the job each punctuation mark does, then try again.",
+      "questions": [
+        {
+          "ask": "Which marks separate items in a list when the items already contain commas?",
+          "answer": "semi-colons",
+          "distractors": ["full stops", "apostrophes", "hyphens"]
+        },
+        {
+          "ask": "Which punctuation mark usually introduces a list?",
+          "answer": "a colon",
+          "distractors": ["a semi-colon", "a hyphen", "a bracket"]
+        },
+        {
+          "ask": "'We visited Paris, France; Rome, Italy; and Oslo, Norway.' Why the semi-colons?",
+          "answer": "items have commas",
+          "distractors": [
+            "to show speech",
+            "to end the sentence",
+            "to join words"
+          ]
+        },
+        {
+          "ask": "'It was late – everyone had gone home.' What does the dash join?",
+          "answer": "two main clauses",
+          "distractors": ["two nouns", "a list", "a question"]
+        },
+        {
+          "ask": "Which mark could replace the dash in 'I was tired – I went to bed.'?",
+          "answer": "a semi-colon",
+          "distractors": ["a comma", "an apostrophe", "a hyphen"]
+        },
+        {
+          "ask": "Bullet points in a list should be punctuated ___.",
+          "answer": "consistently",
+          "distractors": ["randomly", "with speech marks", "with apostrophes"]
+        },
+        {
+          "ask": "If one bullet point starts with a capital letter, the others should ___.",
+          "answer": "also start with one",
+          "distractors": [
+            "start lower case",
+            "end with a comma",
+            "be in brackets"
+          ]
+        },
+        {
+          "ask": "Bullet points are mostly used to ___.",
+          "answer": "list information",
+          "distractors": ["show speech", "join clauses", "show possession"]
+        },
+        {
+          "ask": "'Bring: a coat; a hat; boots.' Which mark introduces the list?",
+          "answer": "the colon",
+          "distractors": ["the semi-colons", "the full stop", "the dash"]
+        },
+        {
+          "ask": "Which mark can show the boundary between two independent clauses?",
+          "answer": "a dash",
+          "distractors": ["an apostrophe", "a hyphen", "speech marks"]
+        }
+      ]
+    },
+    {
+      "id": "cohesion-layout-lab",
+      "title": "Layout Lab",
+      "station": "compare",
+      "prop": "microscope",
+      "skillName": "Cohesion and layout devices",
+      "strand": "writing-composition",
+      "statutoryRequirement": "Pupils should be taught to draft and write by: using a wide range of devices to build cohesion within and across paragraphs; using further organisational and presentational devices to structure text and to guide the reader [for example, headings, bullet points, underlining]; linking ideas across paragraphs using a wider range of cohesive devices: repetition of a word or phrase, grammatical connections [for example, the use of adverbials such as on the other hand, in contrast, or as a consequence], and ellipsis; layout devices [for example, headings, sub-headings, columns, bullets, or tables, to structure text]",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Think about how the writer links ideas or lays out the page.",
+      "questions": [
+        {
+          "ask": "'Sam likes apples and Ali does too.' Which device avoids repeating words?",
+          "answer": "ellipsis",
+          "distractors": ["a heading", "a table", "a simile"]
+        },
+        {
+          "ask": "'I wanted to win, but I didn't.' Which word has been left out at the end?",
+          "answer": "win",
+          "distractors": ["I", "wanted", "but"]
+        },
+        {
+          "ask": "'Tom can swim, and so can Jo.' Which word is missed out at the end?",
+          "answer": "swim",
+          "distractors": ["Tom", "and", "so"]
+        },
+        {
+          "ask": "Repeating a key word across paragraphs helps to ___.",
+          "answer": "link ideas",
+          "distractors": ["add a rhyme", "end the text", "show speech"]
+        },
+        {
+          "ask": "Which layout device is best for comparing the prices of three toys?",
+          "answer": "a table",
+          "distractors": ["a poem", "speech marks", "a long paragraph"]
+        },
+        {
+          "ask": "Newspapers often arrange their text in ___.",
+          "answer": "columns",
+          "distractors": ["rhymes", "one long line", "speech bubbles"]
+        },
+        {
+          "ask": "Which layout device best lists the equipment for an experiment?",
+          "answer": "bullet points",
+          "distractors": ["a long paragraph", "ellipsis", "a subtitle"]
+        },
+        {
+          "ask": "Which device tells the reader what a section is about?",
+          "answer": "a sub-heading",
+          "distractors": ["a table", "ellipsis", "a column"]
+        },
+        {
+          "ask": "'Some animals hunt at night. These animals are nocturnal.' What links them?",
+          "answer": "repeating 'animals'",
+          "distractors": ["a table", "a heading", "a question"]
+        },
+        {
+          "ask": "Which phrase links paragraphs by showing a contrast?",
+          "answer": "On the other hand",
+          "distractors": ["Firstly", "Also", "As well"]
+        }
+      ]
+    },
+    {
+      "id": "squeeze-the-sentence",
+      "title": "Squeeze the Sentence",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Expanded noun phrases for concise information",
+      "strand": "writing-composition",
+      "statutoryRequirement": "Pupils should be taught to draft and write by: using expanded noun phrases to convey complicated information concisely",
+      "instruction": "Read it, then tap the best answer.",
+      "hint": "Not quite. Keep every detail but use as few words as you can.",
+      "questions": [
+        {
+          "ask": "Shorten: 'There was a dog. It was old. It was grey.'",
+          "answer": "an old grey dog",
+          "distractors": ["a dog, old, grey", "old dog grey", "a grey dog old"]
+        },
+        {
+          "ask": "Shorten: 'a box. It is made of wood. It holds toys.'",
+          "answer": "a wooden toy box",
+          "distractors": [
+            "a box for toys wood",
+            "a toy wooden",
+            "a box wood toys"
+          ]
+        },
+        {
+          "ask": "Which noun phrase gives the most information concisely?",
+          "answer": "a rare blue moth",
+          "distractors": ["a moth", "a moth, it is blue", "a moth which flies"]
+        },
+        {
+          "ask": "Shorten: 'a ship that is huge and is made of steel'",
+          "answer": "a huge steel ship",
+          "distractors": ["a ship steel huge", "a huge ship", "steel is huge"]
+        },
+        {
+          "ask": "Which noun phrase is the most precise for a report?",
+          "answer": "a 3-metre python",
+          "distractors": ["a big snake", "a snake", "a long thing"]
+        },
+        {
+          "ask": "Shorten: 'a cake that is made of chocolate'",
+          "answer": "a chocolate cake",
+          "distractors": ["a cake chocolate", "a cake", "a cake of brown"]
+        },
+        {
+          "ask": "Shorten: 'a coat. It is for rain. It is yellow.'",
+          "answer": "a yellow raincoat",
+          "distractors": ["a coat yellow rain", "a rain yellow coat", "a coat"]
+        },
+        {
+          "ask": "Shorten: 'trainers that you wear for running and that are new'",
+          "answer": "new running trainers",
+          "distractors": [
+            "trainers new",
+            "running new trainers",
+            "new trainers"
+          ]
+        },
+        {
+          "ask": "Shorten: 'a lamp for the desk that is bright'",
+          "answer": "a bright desk lamp",
+          "distractors": [
+            "a desk lamp",
+            "a lamp desk bright",
+            "a bright lamp desk"
+          ]
+        },
+        {
+          "ask": "Why do writers use expanded noun phrases in non-fiction?",
+          "answer": "to pack in detail",
+          "distractors": ["to add speech", "to make a list", "to ask questions"]
+        }
+      ]
+    }
+  ]
+}

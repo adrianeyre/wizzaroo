@@ -1,0 +1,388 @@
+{
+  "subject": "design",
+  "programme": "key-stage",
+  "programmeOfStudyUrl": "https://www.gov.uk/government/publications/national-curriculum-in-england-design-and-technology-programmes-of-study",
+  "years": [
+    {
+      "yearGroup": 1,
+      "points": [
+        {
+          "id": "design-criteria",
+          "heading": "Designing for users",
+          "summary": "Design purposeful, functional, appealing products for themselves and other users based on design criteria.",
+          "skillIds": ["design.dt-who-is-it-for"]
+        },
+        {
+          "id": "communicate-ideas",
+          "heading": "Generating and sharing ideas",
+          "summary": "Generate, develop, model and communicate ideas by talking, drawing, using templates and mock-ups, and using ICT.",
+          "skillIds": ["design.dt-idea-builder"]
+        },
+        {
+          "id": "choosing-tools",
+          "heading": "Choosing tools and equipment",
+          "summary": "Select from and use a range of tools and equipment for practical tasks such as cutting, shaping, joining and finishing.",
+          "skillIds": ["design.dt-tool-picker"]
+        },
+        {
+          "id": "choosing-materials",
+          "heading": "Choosing materials",
+          "summary": "Select from and use a wide range of materials and components, including construction materials, textiles and ingredients, by their characteristics.",
+          "skillIds": ["design.dt-material-match"]
+        },
+        {
+          "id": "evaluate-products",
+          "heading": "Exploring and evaluating products",
+          "summary": "Explore and evaluate existing products, and judge their own ideas and products against design criteria.",
+          "skillIds": ["design.dt-product-detectives"]
+        },
+        {
+          "id": "structures",
+          "heading": "Strong, stiff, stable structures",
+          "summary": "Build structures, exploring how they can be made stronger, stiffer and more stable.",
+          "skillIds": ["design.dt-tower-test"]
+        },
+        {
+          "id": "mechanisms",
+          "heading": "Levers, sliders, wheels and axles",
+          "summary": "Explore and use mechanisms such as levers, sliders, wheels and axles in their products.",
+          "skillIds": [
+            "design.dt-slide-and-lever",
+            "design.dt-wheels-on-the-go"
+          ]
+        },
+        {
+          "id": "healthy-diet",
+          "heading": "A healthy and varied diet",
+          "summary": "Use the basic principles of a healthy and varied diet to prepare dishes.",
+          "skillIds": ["design.dt-healthy-plate"]
+        },
+        {
+          "id": "food-origins",
+          "heading": "Where food comes from",
+          "summary": "Understand where food comes from.",
+          "skillIds": ["design.dt-farm-to-fork"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 2,
+      "points": [
+        {
+          "id": "design-criteria",
+          "heading": "Designing for users",
+          "summary": "Design purposeful, functional, appealing products for themselves and other users based on design criteria.",
+          "skillIds": ["design.dt-criteria-checker"]
+        },
+        {
+          "id": "communicate-ideas",
+          "heading": "Generating and sharing ideas",
+          "summary": "Generate, develop, model and communicate ideas by talking, drawing, using templates and mock-ups, and using ICT.",
+          "skillIds": ["design.dt-plan-it-out"]
+        },
+        {
+          "id": "choosing-tools",
+          "heading": "Choosing tools and equipment",
+          "summary": "Select from and use a range of tools and equipment for practical tasks such as cutting, shaping, joining and finishing.",
+          "skillIds": ["design.dt-join-it-up"]
+        },
+        {
+          "id": "choosing-materials",
+          "heading": "Choosing materials",
+          "summary": "Select from and use a wide range of materials and components, including construction materials, textiles and ingredients, by their characteristics.",
+          "skillIds": ["design.dt-material-odd-one"]
+        },
+        {
+          "id": "evaluate-products",
+          "heading": "Exploring and evaluating products",
+          "summary": "Explore and evaluate existing products, and judge their own ideas and products against design criteria.",
+          "skillIds": ["design.dt-test-and-improve"]
+        },
+        {
+          "id": "structures",
+          "heading": "Strong, stiff, stable structures",
+          "summary": "Build structures, exploring how they can be made stronger, stiffer and more stable.",
+          "skillIds": ["design.dt-bridge-builders"]
+        },
+        {
+          "id": "mechanisms",
+          "heading": "Levers, sliders, wheels and axles",
+          "summary": "Explore and use mechanisms such as levers, sliders, wheels and axles in their products.",
+          "skillIds": ["design.dt-moving-pictures", "design.dt-axle-workshop"]
+        },
+        {
+          "id": "healthy-diet",
+          "heading": "A healthy and varied diet",
+          "summary": "Use the basic principles of a healthy and varied diet to prepare dishes.",
+          "skillIds": ["design.dt-balanced-lunchbox"]
+        },
+        {
+          "id": "food-origins",
+          "heading": "Where food comes from",
+          "summary": "Understand where food comes from.",
+          "skillIds": ["design.dt-where-food-grows"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 3,
+      "points": [
+        {
+          "id": "research-criteria",
+          "heading": "Research and design criteria",
+          "summary": "Use research and develop design criteria for innovative, functional, appealing products that are fit for purpose and aimed at particular users.",
+          "skillIds": ["design.dt-design-brief-detective"]
+        },
+        {
+          "id": "design-communication",
+          "heading": "Sketches, diagrams and prototypes",
+          "summary": "Develop and communicate ideas through discussion, annotated sketches, cross-sectional and exploded diagrams, prototypes, pattern pieces and computer-aided design.",
+          "skillIds": ["design.dt-sketch-and-label"]
+        },
+        {
+          "id": "tools-equipment",
+          "heading": "Using tools accurately",
+          "summary": "Select from and use a wider range of tools and equipment to cut, shape, join and finish accurately.",
+          "skillIds": ["design.dt-tool-safety-check"]
+        },
+        {
+          "id": "materials-components",
+          "heading": "Materials and components",
+          "summary": "Select from and use a wider range of materials and components according to their functional properties and aesthetic qualities.",
+          "skillIds": ["design.dt-property-picker"]
+        },
+        {
+          "id": "analyse-products",
+          "heading": "Analysing and improving products",
+          "summary": "Investigate and analyse existing products, and evaluate their own work against design criteria and the views of others.",
+          "skillIds": ["design.dt-product-investigator"]
+        },
+        {
+          "id": "complex-structures",
+          "heading": "Stronger, stiffer structures",
+          "summary": "Strengthen, stiffen and reinforce more complex structures.",
+          "skillIds": ["design.dt-structure-strength"]
+        },
+        {
+          "id": "mechanical-systems",
+          "heading": "Mechanical systems",
+          "summary": "Understand and use mechanical systems such as gears, pulleys, cams, levers and linkages.",
+          "skillIds": ["design.dt-lever-linkage-lab"]
+        },
+        {
+          "id": "healthy-diet",
+          "heading": "A healthy and varied diet",
+          "summary": "Understand and apply the principles of a healthy and varied diet.",
+          "skillIds": ["design.dt-healthy-swaps"]
+        },
+        {
+          "id": "cooking-techniques",
+          "heading": "Cooking savoury dishes",
+          "summary": "Prepare and cook a variety of mainly savoury dishes using a range of cooking techniques.",
+          "skillIds": ["design.dt-kitchen-skills"]
+        },
+        {
+          "id": "seasonality-origins",
+          "heading": "Seasonality and food origins",
+          "summary": "Understand seasonality and know where and how ingredients are grown, reared, caught and processed.",
+          "skillIds": ["design.dt-season-picker"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 4,
+      "points": [
+        {
+          "id": "research-criteria",
+          "heading": "Research and design criteria",
+          "summary": "Use research and develop design criteria for innovative, functional, appealing products that are fit for purpose and aimed at particular users.",
+          "skillIds": ["design.dt-design-for-a-user"]
+        },
+        {
+          "id": "tools-equipment",
+          "heading": "Using tools accurately",
+          "summary": "Select from and use a wider range of tools and equipment to cut, shape, join and finish accurately.",
+          "skillIds": ["design.dt-tool-for-the-job"]
+        },
+        {
+          "id": "materials-components",
+          "heading": "Materials and components",
+          "summary": "Select from and use a wider range of materials and components according to their functional properties and aesthetic qualities.",
+          "skillIds": ["design.dt-textile-workshop"]
+        },
+        {
+          "id": "analyse-products",
+          "heading": "Analysing and improving products",
+          "summary": "Investigate and analyse existing products, and evaluate their own work against design criteria and the views of others.",
+          "skillIds": ["design.dt-take-it-apart"]
+        },
+        {
+          "id": "design-history",
+          "heading": "Key events and individuals",
+          "summary": "Understand how key events and individuals in design and technology have helped shape the world.",
+          "skillIds": ["design.dt-inventor-gallery"]
+        },
+        {
+          "id": "complex-structures",
+          "heading": "Stronger, stiffer structures",
+          "summary": "Strengthen, stiffen and reinforce more complex structures.",
+          "skillIds": ["design.dt-bridge-engineers"]
+        },
+        {
+          "id": "mechanical-systems",
+          "heading": "Mechanical systems",
+          "summary": "Understand and use mechanical systems such as gears, pulleys, cams, levers and linkages.",
+          "skillIds": ["design.dt-pulley-power"]
+        },
+        {
+          "id": "electrical-systems",
+          "heading": "Electrical systems",
+          "summary": "Understand and use electrical systems such as series circuits with switches, bulbs, buzzers and motors.",
+          "skillIds": ["design.dt-circuit-builder"]
+        },
+        {
+          "id": "healthy-diet",
+          "heading": "A healthy and varied diet",
+          "summary": "Understand and apply the principles of a healthy and varied diet.",
+          "skillIds": ["design.dt-eatwell-explorer"]
+        },
+        {
+          "id": "cooking-techniques",
+          "heading": "Cooking savoury dishes",
+          "summary": "Prepare and cook a variety of mainly savoury dishes using a range of cooking techniques.",
+          "skillIds": ["design.dt-cooking-methods"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 5,
+      "points": [
+        {
+          "id": "research-criteria",
+          "heading": "Research and design criteria",
+          "summary": "Use research and develop design criteria for innovative, functional, appealing products that are fit for purpose and aimed at particular users.",
+          "skillIds": ["design.dt-spec-writer"]
+        },
+        {
+          "id": "design-communication",
+          "heading": "Sketches, diagrams and prototypes",
+          "summary": "Develop and communicate ideas through discussion, annotated sketches, cross-sectional and exploded diagrams, prototypes, pattern pieces and computer-aided design.",
+          "skillIds": ["design.dt-drawing-office"]
+        },
+        {
+          "id": "materials-components",
+          "heading": "Materials and components",
+          "summary": "Select from and use a wider range of materials and components according to their functional properties and aesthetic qualities.",
+          "skillIds": ["design.dt-material-choices"]
+        },
+        {
+          "id": "design-history",
+          "heading": "Key events and individuals",
+          "summary": "Understand how key events and individuals in design and technology have helped shape the world.",
+          "skillIds": ["design.dt-famous-firsts"]
+        },
+        {
+          "id": "complex-structures",
+          "heading": "Stronger, stiffer structures",
+          "summary": "Strengthen, stiffen and reinforce more complex structures.",
+          "skillIds": ["design.dt-reinforce-it"]
+        },
+        {
+          "id": "mechanical-systems",
+          "heading": "Mechanical systems",
+          "summary": "Understand and use mechanical systems such as gears, pulleys, cams, levers and linkages.",
+          "skillIds": ["design.dt-cam-toy-workshop"]
+        },
+        {
+          "id": "electrical-systems",
+          "heading": "Electrical systems",
+          "summary": "Understand and use electrical systems such as series circuits with switches, bulbs, buzzers and motors.",
+          "skillIds": ["design.dt-switch-it-up"]
+        },
+        {
+          "id": "computing-control",
+          "heading": "Programming and control",
+          "summary": "Use computing to program, monitor and control products.",
+          "skillIds": ["design.dt-input-or-output"]
+        },
+        {
+          "id": "cooking-techniques",
+          "heading": "Cooking savoury dishes",
+          "summary": "Prepare and cook a variety of mainly savoury dishes using a range of cooking techniques.",
+          "skillIds": ["design.dt-savoury-chef"]
+        },
+        {
+          "id": "seasonality-origins",
+          "heading": "Seasonality and food origins",
+          "summary": "Understand seasonality and know where and how ingredients are grown, reared, caught and processed.",
+          "skillIds": ["design.dt-grown-reared-caught"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 6,
+      "points": [
+        {
+          "id": "design-communication",
+          "heading": "Sketches, diagrams and prototypes",
+          "summary": "Develop and communicate ideas through discussion, annotated sketches, cross-sectional and exploded diagrams, prototypes, pattern pieces and computer-aided design.",
+          "skillIds": ["design.dt-design-studio"]
+        },
+        {
+          "id": "tools-equipment",
+          "heading": "Using tools accurately",
+          "summary": "Select from and use a wider range of tools and equipment to cut, shape, join and finish accurately.",
+          "skillIds": ["design.dt-precision-workshop"]
+        },
+        {
+          "id": "materials-components",
+          "heading": "Materials and components",
+          "summary": "Select from and use a wider range of materials and components according to their functional properties and aesthetic qualities.",
+          "skillIds": ["design.dt-material-matchmaker"]
+        },
+        {
+          "id": "analyse-products",
+          "heading": "Analysing and improving products",
+          "summary": "Investigate and analyse existing products, and evaluate their own work against design criteria and the views of others.",
+          "skillIds": ["design.dt-design-critic"]
+        },
+        {
+          "id": "design-history",
+          "heading": "Key events and individuals",
+          "summary": "Understand how key events and individuals in design and technology have helped shape the world.",
+          "skillIds": ["design.dt-world-changers"]
+        },
+        {
+          "id": "mechanical-systems",
+          "heading": "Mechanical systems",
+          "summary": "Understand and use mechanical systems such as gears, pulleys, cams, levers and linkages.",
+          "skillIds": ["design.dt-gear-train-challenge"]
+        },
+        {
+          "id": "electrical-systems",
+          "heading": "Electrical systems",
+          "summary": "Understand and use electrical systems such as series circuits with switches, bulbs, buzzers and motors.",
+          "skillIds": ["design.dt-product-circuits"]
+        },
+        {
+          "id": "computing-control",
+          "heading": "Programming and control",
+          "summary": "Use computing to program, monitor and control products.",
+          "skillIds": ["design.dt-code-and-control"]
+        },
+        {
+          "id": "healthy-diet",
+          "heading": "A healthy and varied diet",
+          "summary": "Understand and apply the principles of a healthy and varied diet.",
+          "skillIds": ["design.dt-balanced-plate-pro"]
+        },
+        {
+          "id": "seasonality-origins",
+          "heading": "Seasonality and food origins",
+          "summary": "Understand seasonality and know where and how ingredients are grown, reared, caught and processed.",
+          "skillIds": ["design.dt-food-miles"]
+        }
+      ]
+    }
+  ]
+}

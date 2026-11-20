@@ -1,0 +1,9 @@
+{
+  "id": "phonics.sound-sh",
+  "name": "The /sh/ sound, as in ship",
+  "subject": "phonics",
+  "yearGroup": 1,
+  "strand": "grapheme-phoneme-correspondences",
+  "prerequisites": [],
+  "sounds": ["sh"]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "phonics.sound-air",
+  "name": "The /air/ sound, as in hair",
+  "subject": "phonics",
+  "yearGroup": 1,
+  "strand": "grapheme-phoneme-correspondences",
+  "prerequisites": [],
+  "sounds": ["air"]
+}

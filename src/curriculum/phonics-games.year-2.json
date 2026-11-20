@@ -1,0 +1,832 @@
+{
+  "yearGroup": 2,
+  "games": [
+    {
+      "id": "edge-or-age",
+      "title": "Edge or age",
+      "skillId": "phonics.spell-j-sound-dge-ge",
+      "skillName": "Spelling the j sound with dge, ge or g",
+      "strand": "spelling",
+      "curriculumObjective": "English Appendix 1 (Year 2): the /dʒ/ sound is spelt -dge straight after a short vowel at the end of words, -ge after other sounds, and often g before e, i and y.",
+      "scene": "obelisk",
+      "choiceProp": "shard",
+      "ask": "Which letters make the j sound?",
+      "instruction": "Tap the letters that finish the word with the right j sound spelling.",
+      "hint": "Not quite. Use dge straight after a short vowel, and ge or g everywhere else.",
+      "questions": [
+        { "prompt": "bri___", "answer": "dge", "distractors": ["ge", "j"] },
+        { "prompt": "ba___", "answer": "dge", "distractors": ["ge", "j"] },
+        { "prompt": "e___", "answer": "dge", "distractors": ["ge", "j"] },
+        { "prompt": "fu___", "answer": "dge", "distractors": ["ge", "j"] },
+        { "prompt": "ju___", "answer": "dge", "distractors": ["ge", "j"] },
+        { "prompt": "he___", "answer": "dge", "distractors": ["ge", "j"] },
+        { "prompt": "fri___", "answer": "dge", "distractors": ["ge", "j"] },
+        { "prompt": "hu___", "answer": "ge", "distractors": ["dge", "j"] },
+        { "prompt": "a___", "answer": "ge", "distractors": ["dge", "j"] },
+        { "prompt": "pa___", "answer": "ge", "distractors": ["dge", "j"] },
+        { "prompt": "sta___", "answer": "ge", "distractors": ["dge", "j"] },
+        { "prompt": "lar___", "answer": "ge", "distractors": ["dge", "j"] },
+        { "prompt": "chan___", "answer": "ge", "distractors": ["dge", "j"] },
+        { "prompt": "___iant", "answer": "g", "distractors": ["j", "dge"] },
+        { "prompt": "___em", "answer": "g", "distractors": ["j", "dge"] },
+        { "prompt": "ma___ic", "answer": "g", "distractors": ["j", "dge"] },
+        { "prompt": "ener___y", "answer": "g", "distractors": ["j", "dge"] },
+        { "prompt": "___acket", "answer": "j", "distractors": ["g", "dge"] }
+      ]
+    },
+    {
+      "id": "soft-c",
+      "title": "Soft c",
+      "skillId": "phonics.soft-c-before-e-i-y",
+      "skillName": "Spelling the s sound with c before e, i and y",
+      "strand": "spelling",
+      "curriculumObjective": "English Appendix 1 (Year 2): the /s/ sound is often spelt c before e, i and y, as in race, ice, cell, city and fancy.",
+      "scene": "crystal-orb",
+      "choiceProp": "runestone",
+      "ask": "Which letter makes the s sound?",
+      "instruction": "Tap the letter that spells the s sound in this word.",
+      "hint": "Nearly! When the s sound comes before e, i or y, it is often spelt c.",
+      "questions": [
+        { "prompt": "___ity", "answer": "c", "distractors": ["s", "ss"] },
+        { "prompt": "pen___il", "answer": "c", "distractors": ["s", "ss"] },
+        { "prompt": "i___e", "answer": "c", "distractors": ["s", "ss"] },
+        { "prompt": "fan___y", "answer": "c", "distractors": ["s", "ss"] },
+        { "prompt": "___ircle", "answer": "c", "distractors": ["s", "ss"] },
+        { "prompt": "___entre", "answer": "c", "distractors": ["s", "ss"] },
+        { "prompt": "fa___e", "answer": "c", "distractors": ["s", "ss"] },
+        { "prompt": "spa___e", "answer": "c", "distractors": ["s", "ss"] },
+        { "prompt": "dan___e", "answer": "c", "distractors": ["s", "ss"] },
+        { "prompt": "pla___e", "answer": "c", "distractors": ["s", "ss"] },
+        { "prompt": "___ircus", "answer": "c", "distractors": ["s", "ss"] },
+        { "prompt": "bi___ycle", "answer": "c", "distractors": ["s", "ss"] },
+        { "prompt": "fen___e", "answer": "c", "distractors": ["s", "ss"] },
+        { "prompt": "twi___e", "answer": "c", "distractors": ["s", "ss"] },
+        { "prompt": "___ereal", "answer": "c", "distractors": ["s", "ss"] },
+        { "prompt": "lettu___e", "answer": "c", "distractors": ["s", "ss"] }
+      ]
+    },
+    {
+      "id": "silent-starts",
+      "title": "Silent starts",
+      "skillId": "phonics.silent-letters-kn-gn-wr",
+      "skillName": "Spelling words that start with kn, gn and wr",
+      "strand": "spelling",
+      "curriculumObjective": "English Appendix 1 (Year 2): the /n/ sound spelt kn and (less often) gn at the beginning of words, and the /r/ sound spelt wr at the beginning of words.",
+      "scene": "lantern",
+      "choiceProp": "diamond",
+      "ask": "How does this word start?",
+      "instruction": "Tap the letters that start the word. Watch out for a silent letter!",
+      "hint": "Not quite. Some words start with a silent letter: k in kn, g in gn, w in wr.",
+      "questions": [
+        { "prompt": "___ee", "answer": "kn", "distractors": ["gn", "wr"] },
+        { "prompt": "___ock", "answer": "kn", "distractors": ["gn", "wr"] },
+        {
+          "prompt": "___ife",
+          "answer": "kn",
+          "distractors": ["n", "gn", "wr"]
+        },
+        {
+          "prompt": "___eel",
+          "answer": "kn",
+          "distractors": ["n", "gn", "wr"]
+        },
+        {
+          "prompt": "___uckle",
+          "answer": "kn",
+          "distractors": ["n", "gn", "wr"]
+        },
+        { "prompt": "___at", "answer": "gn", "distractors": ["kn", "n", "wr"] },
+        { "prompt": "___aw", "answer": "gn", "distractors": ["kn", "wr"] },
+        { "prompt": "___ome", "answer": "gn", "distractors": ["kn", "wr"] },
+        {
+          "prompt": "___ong",
+          "answer": "wr",
+          "distractors": ["r", "kn", "gn"]
+        },
+        { "prompt": "___ist", "answer": "wr", "distractors": ["r", "n", "kn"] },
+        { "prompt": "___en", "answer": "wr", "distractors": ["r", "n", "kn"] },
+        {
+          "prompt": "___itten",
+          "answer": "wr",
+          "distractors": ["r", "n", "kn"]
+        },
+        {
+          "prompt": "___iting",
+          "answer": "wr",
+          "distractors": ["r", "kn", "gn"]
+        },
+        {
+          "prompt": "___iggle",
+          "answer": "wr",
+          "distractors": ["r", "kn", "gn"]
+        }
+      ]
+    },
+    {
+      "id": "le-el-al-il",
+      "title": "Tail endings",
+      "skillId": "phonics.spell-l-endings-le-el-al-il",
+      "skillName": "Spelling word endings le, el, al and il",
+      "strand": "spelling",
+      "curriculumObjective": "English Appendix 1 (Year 2): the /l/ or /əl/ sound spelt -le (most common), -el, -al or -il at the end of words.",
+      "scene": "geode",
+      "choiceProp": "cluster",
+      "ask": "Which ending finishes the word?",
+      "instruction": "Tap the ending that spells the l sound at the end of this word.",
+      "hint": "Nearly! le is the most common ending, but some words end el, al or il.",
+      "questions": [
+        {
+          "prompt": "tab__",
+          "answer": "le",
+          "distractors": ["el", "al", "il"]
+        },
+        { "prompt": "app__", "answer": "le", "distractors": ["el", "il"] },
+        {
+          "prompt": "litt__",
+          "answer": "le",
+          "distractors": ["el", "al", "il"]
+        },
+        {
+          "prompt": "midd__",
+          "answer": "le",
+          "distractors": ["el", "al", "il"]
+        },
+        {
+          "prompt": "cam__",
+          "answer": "el",
+          "distractors": ["le", "al", "il"]
+        },
+        {
+          "prompt": "tunn__",
+          "answer": "el",
+          "distractors": ["le", "al", "il"]
+        },
+        {
+          "prompt": "squirr__",
+          "answer": "el",
+          "distractors": ["le", "al", "il"]
+        },
+        {
+          "prompt": "tow__",
+          "answer": "el",
+          "distractors": ["le", "al", "il"]
+        },
+        {
+          "prompt": "trav__",
+          "answer": "el",
+          "distractors": ["le", "al", "il"]
+        },
+        {
+          "prompt": "tins__",
+          "answer": "el",
+          "distractors": ["le", "al", "il"]
+        },
+        {
+          "prompt": "met__",
+          "answer": "al",
+          "distractors": ["le", "el", "il"]
+        },
+        {
+          "prompt": "hospit__",
+          "answer": "al",
+          "distractors": ["le", "el", "il"]
+        },
+        {
+          "prompt": "anim__",
+          "answer": "al",
+          "distractors": ["le", "el", "il"]
+        },
+        {
+          "prompt": "penc__",
+          "answer": "il",
+          "distractors": ["le", "el", "al"]
+        },
+        {
+          "prompt": "foss__",
+          "answer": "il",
+          "distractors": ["le", "el", "al"]
+        },
+        {
+          "prompt": "nostr__",
+          "answer": "il",
+          "distractors": ["le", "el", "al"]
+        }
+      ]
+    },
+    {
+      "id": "change-y-to-i",
+      "title": "Change y to i",
+      "skillId": "phonics.suffixes-change-y-to-i",
+      "skillName": "Changing y to i before adding a suffix",
+      "strand": "spelling",
+      "curriculumObjective": "English Appendix 1 (Year 2): adding -es to nouns and verbs ending in -y, and adding -ed, -er and -est to a root word ending in -y with a consonant before it (the y changes to i, but not before -ing).",
+      "scene": "minecart",
+      "choiceProp": "gem",
+      "ask": "Which spelling is right?",
+      "instruction": "Join the word and its ending, then tap the correct spelling.",
+      "hint": "Not quite. Change y to i before es, ed, er or est, but keep the y before ing.",
+      "questions": [
+        {
+          "prompt": "baby + es",
+          "answer": "babies",
+          "distractors": ["babys", "babyes", "babeys"]
+        },
+        {
+          "prompt": "fly + es",
+          "answer": "flies",
+          "distractors": ["flys", "flyes", "fleis"]
+        },
+        {
+          "prompt": "cry + es",
+          "answer": "cries",
+          "distractors": ["crys", "cryes", "creis"]
+        },
+        {
+          "prompt": "lady + es",
+          "answer": "ladies",
+          "distractors": ["ladys", "ladyes", "ladeis"]
+        },
+        {
+          "prompt": "spy + es",
+          "answer": "spies",
+          "distractors": ["spys", "spyes", "speis"]
+        },
+        {
+          "prompt": "party + es",
+          "answer": "parties",
+          "distractors": ["partys", "partyes", "partis"]
+        },
+        {
+          "prompt": "try + ed",
+          "answer": "tried",
+          "distractors": ["tryed", "trid", "treid"]
+        },
+        {
+          "prompt": "copy + ed",
+          "answer": "copied",
+          "distractors": ["copyed", "copid", "coppied"]
+        },
+        {
+          "prompt": "carry + ed",
+          "answer": "carried",
+          "distractors": ["carryed", "caried", "carred"]
+        },
+        {
+          "prompt": "reply + ed",
+          "answer": "replied",
+          "distractors": ["replyed", "replid", "repleid"]
+        },
+        {
+          "prompt": "happy + er",
+          "answer": "happier",
+          "distractors": ["happyer", "happer", "hapier"]
+        },
+        {
+          "prompt": "funny + est",
+          "answer": "funniest",
+          "distractors": ["funnyest", "funiest", "funneyest"]
+        },
+        {
+          "prompt": "easy + est",
+          "answer": "easiest",
+          "distractors": ["easyest", "easist", "eazyest"]
+        },
+        {
+          "prompt": "copy + ing",
+          "answer": "copying",
+          "distractors": ["copiing", "copyng", "coppying"]
+        },
+        {
+          "prompt": "cry + ing",
+          "answer": "crying",
+          "distractors": ["criing", "cryng", "criying"]
+        },
+        {
+          "prompt": "worry + ing",
+          "answer": "worrying",
+          "distractors": ["worriing", "worying", "worrieing"]
+        }
+      ]
+    },
+    {
+      "id": "drop-the-e",
+      "title": "Drop the e",
+      "skillId": "phonics.suffixes-drop-final-e",
+      "skillName": "Dropping the final e before a suffix",
+      "strand": "spelling",
+      "curriculumObjective": "English Appendix 1 (Year 2): adding the endings -ing, -ed, -er, -est and -y to words ending in -e with a consonant before it (the -e is dropped).",
+      "scene": "rune-ring",
+      "choiceProp": "runestone",
+      "ask": "Which spelling is right?",
+      "instruction": "Add the ending to the word, then tap the correct spelling.",
+      "hint": "Nearly! Drop the e at the end of the word before adding the new ending.",
+      "questions": [
+        {
+          "prompt": "hike + ing",
+          "answer": "hiking",
+          "distractors": ["hikeing", "hikking", "hikin"]
+        },
+        {
+          "prompt": "smile + ing",
+          "answer": "smiling",
+          "distractors": ["smileing", "smilling", "smilin"]
+        },
+        {
+          "prompt": "write + ing",
+          "answer": "writing",
+          "distractors": ["writeing", "writting", "writin"]
+        },
+        {
+          "prompt": "come + ing",
+          "answer": "coming",
+          "distractors": ["comeing", "comming", "comin"]
+        },
+        {
+          "prompt": "hope + ed",
+          "answer": "hoped",
+          "distractors": ["hopeed", "hopped", "hopd"]
+        },
+        {
+          "prompt": "dance + ed",
+          "answer": "danced",
+          "distractors": ["danceed", "dancd", "dansed"]
+        },
+        {
+          "prompt": "like + ed",
+          "answer": "liked",
+          "distractors": ["likeed", "likked", "likd"]
+        },
+        {
+          "prompt": "nice + er",
+          "answer": "nicer",
+          "distractors": ["niceer", "nicr", "niccer"]
+        },
+        {
+          "prompt": "wide + er",
+          "answer": "wider",
+          "distractors": ["wideer", "widder", "widr"]
+        },
+        {
+          "prompt": "bake + er",
+          "answer": "baker",
+          "distractors": ["bakeer", "bakker", "bakr"]
+        },
+        {
+          "prompt": "ride + er",
+          "answer": "rider",
+          "distractors": ["rideer", "ridder", "ridr"]
+        },
+        {
+          "prompt": "late + est",
+          "answer": "latest",
+          "distractors": ["lateest", "lattest", "latst"]
+        },
+        {
+          "prompt": "safe + est",
+          "answer": "safest",
+          "distractors": ["safeest", "saffest", "safst"]
+        },
+        {
+          "prompt": "shine + y",
+          "answer": "shiny",
+          "distractors": ["shiney", "shineey", "shinie"]
+        },
+        {
+          "prompt": "ice + y",
+          "answer": "icy",
+          "distractors": ["icey", "iccy", "icie"]
+        },
+        {
+          "prompt": "wave + y",
+          "answer": "wavy",
+          "distractors": ["wavey", "wavvy", "wavie"]
+        }
+      ]
+    },
+    {
+      "id": "double-up",
+      "title": "Double up",
+      "skillId": "phonics.suffixes-double-consonant",
+      "skillName": "Doubling the last letter before a suffix",
+      "strand": "spelling",
+      "curriculumObjective": "English Appendix 1 (Year 2): adding -ing, -ed, -er, -est and -y to words of one syllable ending in a single consonant letter after a single short vowel letter (the last consonant is doubled).",
+      "scene": "gem-chest",
+      "choiceProp": "orb",
+      "ask": "Which spelling is right?",
+      "instruction": "Add the ending to the word, then tap the correct spelling.",
+      "hint": "Not quite. After one short vowel, double the last letter before the ending.",
+      "questions": [
+        {
+          "prompt": "pat + ing",
+          "answer": "patting",
+          "distractors": ["pating", "pattin", "patteing"]
+        },
+        {
+          "prompt": "hop + ing",
+          "answer": "hopping",
+          "distractors": ["hoping", "hopin", "hopeing"]
+        },
+        {
+          "prompt": "swim + ing",
+          "answer": "swimming",
+          "distractors": ["swiming", "swimmin", "swimmeing"]
+        },
+        {
+          "prompt": "drop + ing",
+          "answer": "dropping",
+          "distractors": ["droping", "droppin", "droppeing"]
+        },
+        {
+          "prompt": "dig + ing",
+          "answer": "digging",
+          "distractors": ["diging", "diggin", "diggeing"]
+        },
+        {
+          "prompt": "hum + ed",
+          "answer": "hummed",
+          "distractors": ["humed", "hummd", "humd"]
+        },
+        {
+          "prompt": "stop + ed",
+          "answer": "stopped",
+          "distractors": ["stoped", "stopd", "stoppd"]
+        },
+        {
+          "prompt": "clap + ed",
+          "answer": "clapped",
+          "distractors": ["claped", "clapd", "clappd"]
+        },
+        {
+          "prompt": "skip + ed",
+          "answer": "skipped",
+          "distractors": ["skiped", "skipd", "skippd"]
+        },
+        {
+          "prompt": "sad + er",
+          "answer": "sadder",
+          "distractors": ["sader", "saddr", "saddar"]
+        },
+        {
+          "prompt": "hot + er",
+          "answer": "hotter",
+          "distractors": ["hoter", "hottr", "hottar"]
+        },
+        {
+          "prompt": "big + est",
+          "answer": "biggest",
+          "distractors": ["bigest", "biggst", "biggist"]
+        },
+        {
+          "prompt": "wet + est",
+          "answer": "wettest",
+          "distractors": ["wetest", "wettist", "wettst"]
+        },
+        {
+          "prompt": "run + y",
+          "answer": "runny",
+          "distractors": ["runy", "runney", "runnie"]
+        },
+        {
+          "prompt": "fun + y",
+          "answer": "funny",
+          "distractors": ["funy", "funney", "funnie"]
+        },
+        {
+          "prompt": "sun + y",
+          "answer": "sunny",
+          "distractors": ["suny", "sunney", "sunnie"]
+        }
+      ]
+    },
+    {
+      "id": "suffix-smith",
+      "title": "Suffix smith",
+      "skillId": "phonics.suffixes-ment-ness-ful-less-ly",
+      "skillName": "Adding the suffixes ment, ness, ful, less and ly",
+      "strand": "spelling",
+      "curriculumObjective": "National Curriculum Year 2 spelling: add suffixes to spell longer words, including -ment, -ness, -ful, -less and -ly (English Appendix 1, including changing y to i).",
+      "scene": "crystal-tiles",
+      "choiceProp": "shard",
+      "ask": "Join the parts. Which is right?",
+      "instruction": "Put the two parts together and tap the word that is spelt correctly.",
+      "hint": "Nearly! Keep the root word the same, unless it ends in a y that changes to i.",
+      "questions": [
+        {
+          "prompt": "care|ful",
+          "answer": "careful",
+          "distractors": ["carefull", "carful", "carefel"]
+        },
+        {
+          "prompt": "help|ful",
+          "answer": "helpful",
+          "distractors": ["helpfull", "helpfel", "helpfoll"]
+        },
+        {
+          "prompt": "play|ful",
+          "answer": "playful",
+          "distractors": ["playfull", "plaiful", "playfel"]
+        },
+        {
+          "prompt": "enjoy|ment",
+          "answer": "enjoyment",
+          "distractors": ["enjoymint", "enjoiment", "enjoyement"]
+        },
+        {
+          "prompt": "pay|ment",
+          "answer": "payment",
+          "distractors": ["paymint", "paiment", "paymant"]
+        },
+        {
+          "prompt": "merry|ment",
+          "answer": "merriment",
+          "distractors": ["merryment", "merriement", "merement"]
+        },
+        {
+          "prompt": "sad|ness",
+          "answer": "sadness",
+          "distractors": ["sadnes", "saddness", "sadniss"]
+        },
+        {
+          "prompt": "dark|ness",
+          "answer": "darkness",
+          "distractors": ["darknes", "darkniss", "darkeness"]
+        },
+        {
+          "prompt": "ill|ness",
+          "answer": "illness",
+          "distractors": ["ilness", "illnes", "illniss"]
+        },
+        {
+          "prompt": "happy|ness",
+          "answer": "happiness",
+          "distractors": ["happyness", "hapiness", "happines"]
+        },
+        {
+          "prompt": "hope|less",
+          "answer": "hopeless",
+          "distractors": ["hopeles", "hoples", "hopeliss"]
+        },
+        {
+          "prompt": "home|less",
+          "answer": "homeless",
+          "distractors": ["homeles", "homless", "homeliss"]
+        },
+        {
+          "prompt": "penny|less",
+          "answer": "penniless",
+          "distractors": ["pennyless", "peniless", "pennieless"]
+        },
+        {
+          "prompt": "bad|ly",
+          "answer": "badly",
+          "distractors": ["badley", "baddly", "badlee"]
+        },
+        {
+          "prompt": "kind|ly",
+          "answer": "kindly",
+          "distractors": ["kindley", "kindlee", "kindely"]
+        },
+        {
+          "prompt": "quick|ly",
+          "answer": "quickly",
+          "distractors": ["quickley", "quikly", "quicklee"]
+        },
+        {
+          "prompt": "happy|ly",
+          "answer": "happily",
+          "distractors": ["happyly", "hapily", "happilly"]
+        }
+      ]
+    },
+    {
+      "id": "short-forms",
+      "title": "Short forms",
+      "skillId": "phonics.contractions-apostrophe",
+      "skillName": "Using an apostrophe in short forms",
+      "strand": "spelling",
+      "curriculumObjective": "National Curriculum Year 2 spelling: learning to spell more words with contracted forms; English Appendix 1: the apostrophe shows where a letter or letters would be if the words were written in full.",
+      "scene": "open-book",
+      "choiceProp": "cluster",
+      "ask": "What is the short form?",
+      "instruction": "Tap the short form, with the apostrophe where the missing letters go.",
+      "hint": "Not quite. The apostrophe goes exactly where the missing letters were.",
+      "questions": [
+        {
+          "prompt": "do not",
+          "answer": "don't",
+          "distractors": ["dont", "do'nt", "don,t"]
+        },
+        {
+          "prompt": "cannot",
+          "answer": "can't",
+          "distractors": ["cant", "ca'nt", "can,t"]
+        },
+        {
+          "prompt": "did not",
+          "answer": "didn't",
+          "distractors": ["didnt", "did'nt", "didn,t"]
+        },
+        {
+          "prompt": "has not",
+          "answer": "hasn't",
+          "distractors": ["hasnt", "has'nt", "hasn,t"]
+        },
+        {
+          "prompt": "is not",
+          "answer": "isn't",
+          "distractors": ["isnt", "is'nt", "isn,t"]
+        },
+        {
+          "prompt": "could not",
+          "answer": "couldn't",
+          "distractors": ["couldnt", "could'nt", "couldn,t"]
+        },
+        {
+          "prompt": "would not",
+          "answer": "wouldn't",
+          "distractors": ["wouldnt", "would'nt", "wouldn,t"]
+        },
+        {
+          "prompt": "it is",
+          "answer": "it's",
+          "distractors": ["its", "it,s", "its'"]
+        },
+        {
+          "prompt": "she is",
+          "answer": "she's",
+          "distractors": ["shes", "she'is", "s'hes"]
+        },
+        {
+          "prompt": "I will",
+          "answer": "I'll",
+          "distractors": ["Ill", "I'l", "Il'l"]
+        },
+        {
+          "prompt": "he will",
+          "answer": "he'll",
+          "distractors": ["he'l", "hel'l", "he,ll"]
+        },
+        {
+          "prompt": "I am",
+          "answer": "I'm",
+          "distractors": ["Im", "I'am", "I,m"]
+        },
+        {
+          "prompt": "we are",
+          "answer": "we're",
+          "distractors": ["were", "we'r", "wer'e"]
+        },
+        {
+          "prompt": "they are",
+          "answer": "they're",
+          "distractors": ["theyre", "they'r", "the'yre"]
+        },
+        {
+          "prompt": "you are",
+          "answer": "you're",
+          "distractors": ["youre", "your", "you'r"]
+        },
+        {
+          "prompt": "let us",
+          "answer": "let's",
+          "distractors": ["lets", "let'us", "le'ts"]
+        }
+      ]
+    },
+    {
+      "id": "homophone-hunt",
+      "title": "Homophone hunt",
+      "skillId": "phonics.homophones-near-homophones",
+      "skillName": "Choosing the right homophone",
+      "strand": "spelling",
+      "curriculumObjective": "National Curriculum Year 2 spelling: learning to spell common homophones and distinguishing between homophones and near-homophones (English Appendix 1).",
+      "scene": "stone-tablet",
+      "choiceProp": "gem",
+      "ask": "Which word fits the gap?",
+      "instruction": "Read the sentence and tap the word that is spelt right for its meaning.",
+      "hint": "Nearly! These words sound alike, so think about what the sentence means.",
+      "questions": [
+        {
+          "prompt": "The bird is over ___.",
+          "answer": "there",
+          "distractors": ["their", "they're"]
+        },
+        {
+          "prompt": "The children hung up ___ coats.",
+          "answer": "their",
+          "distractors": ["there", "they're"]
+        },
+        {
+          "prompt": "Look, ___ coming now!",
+          "answer": "they're",
+          "distractors": ["there", "their"]
+        },
+        {
+          "prompt": "Come over ___ and sit down.",
+          "answer": "here",
+          "distractors": ["hear"]
+        },
+        {
+          "prompt": "Can you ___ the music?",
+          "answer": "hear",
+          "distractors": ["here"]
+        },
+        {
+          "prompt": "Please be ___ in the library.",
+          "answer": "quiet",
+          "distractors": ["quite"]
+        },
+        {
+          "prompt": "The cake is ___ big.",
+          "answer": "quite",
+          "distractors": ["quiet"]
+        },
+        {
+          "prompt": "We swam in the ___ at the beach.",
+          "answer": "sea",
+          "distractors": ["see"]
+        },
+        {
+          "prompt": "I can ___ a rainbow.",
+          "answer": "see",
+          "distractors": ["sea"]
+        },
+        {
+          "prompt": "The brown ___ ate some honey.",
+          "answer": "bear",
+          "distractors": ["bare"]
+        },
+        {
+          "prompt": "He walked on the sand in ___ feet.",
+          "answer": "bare",
+          "distractors": ["bear"]
+        },
+        {
+          "prompt": "Our team ___ the race.",
+          "answer": "won",
+          "distractors": ["one"]
+        },
+        {
+          "prompt": "I have ___ little sister.",
+          "answer": "one",
+          "distractors": ["won"]
+        },
+        {
+          "prompt": "The ___ is shining brightly.",
+          "answer": "sun",
+          "distractors": ["son"]
+        },
+        {
+          "prompt": "My aunt has a ___ and a daughter.",
+          "answer": "son",
+          "distractors": ["sun"]
+        },
+        {
+          "prompt": "I am going ___ the park.",
+          "answer": "to",
+          "distractors": ["too", "two"]
+        },
+        {
+          "prompt": "I have ___ hands.",
+          "answer": "two",
+          "distractors": ["to", "too"]
+        },
+        {
+          "prompt": "This soup is ___ hot to eat.",
+          "answer": "too",
+          "distractors": ["to", "two"]
+        },
+        {
+          "prompt": "A ___ buzzed around the flowers.",
+          "answer": "bee",
+          "distractors": ["be"]
+        },
+        {
+          "prompt": "I want to ___ a vet.",
+          "answer": "be",
+          "distractors": ["bee"]
+        },
+        {
+          "prompt": "The sky is ___ today.",
+          "answer": "blue",
+          "distractors": ["blew"]
+        },
+        {
+          "prompt": "The wind ___ my hat away.",
+          "answer": "blew",
+          "distractors": ["blue"]
+        },
+        {
+          "prompt": "The ___ wore shiny armour.",
+          "answer": "knight",
+          "distractors": ["night"]
+        },
+        {
+          "prompt": "Owls hunt at ___.",
+          "answer": "night",
+          "distractors": ["knight"]
+        }
+      ]
+    }
+  ]
+}

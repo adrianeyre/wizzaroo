@@ -1,0 +1,883 @@
+{
+  "quests": [
+    {
+      "id": "the-house-of-wisdom",
+      "title": "The House of Wisdom",
+      "skill": {
+        "id": "history.baghdad-house-of-wisdom",
+        "name": "Baghdad and the House of Wisdom",
+        "subject": "history",
+        "yearGroup": 6,
+        "strand": "early-islamic-civilisation",
+        "prerequisites": []
+      },
+      "story": "Welcome to Baghdad, around AD 900, one of the biggest cities in the world! Step inside the House of Wisdom, where scholars share books and big ideas.",
+      "instruction": "Read each question about Baghdad, then tap the right book.",
+      "hint": "Think about a great city of learning on a river, where scholars collected knowledge from many lands.",
+      "scene": "baghdad-city",
+      "play": "quiz",
+      "choiceProp": "book",
+      "questions": [
+        {
+          "ask": "Which caliph founded the city of Baghdad in AD 762?",
+          "answer": "Caliph al-Mansur",
+          "wrong": ["Harun al-Rashid", "Saladin", "Genghis Khan"],
+          "fact": "He chose a spot on the River Tigris where important trade routes met."
+        },
+        {
+          "ask": "What shape was al-Mansur's first city of Baghdad?",
+          "answer": "A circle",
+          "wrong": ["A square", "A triangle", "A star"],
+          "fact": "The Round City had four gates, with the caliph's palace and a mosque at its centre."
+        },
+        {
+          "ask": "Which river does Baghdad stand beside?",
+          "answer": "The Tigris",
+          "wrong": ["The Nile", "The Thames", "The Ganges"],
+          "fact": "Boats on the Tigris brought goods from as far away as India and China."
+        },
+        {
+          "ask": "What was the House of Wisdom in Baghdad?",
+          "answer": "A centre of learning",
+          "wrong": ["A royal palace", "A fortress", "A busy market"],
+          "fact": "Scholars of different faiths worked there together, studying and sharing ideas."
+        },
+        {
+          "ask": "Into which language did scholars translate Greek and Persian books?",
+          "answer": "Arabic",
+          "wrong": ["Latin", "English", "Chinese"],
+          "fact": "Many ancient Greek books survived because they were copied into Arabic."
+        },
+        {
+          "ask": "Which mathematician's name gave us the word 'algorithm'?",
+          "answer": "al-Khwarizmi",
+          "wrong": ["Pythagoras", "Archimedes", "Isaac Newton"],
+          "fact": "His book also gave us the word 'algebra', from the Arabic 'al-jabr'."
+        },
+        {
+          "ask": "Which useful material did Baghdad learn to make from China?",
+          "answer": "Paper",
+          "wrong": ["Plastic", "Steel", "Rubber"],
+          "fact": "Paper mills opened in Baghdad in the late 700s, so books became cheaper to make."
+        },
+        {
+          "ask": "Which instrument helped scholars measure the positions of the stars?",
+          "answer": "An astrolabe",
+          "wrong": ["A telescope", "A microscope", "A thermometer"],
+          "fact": "Astrolabes also helped people tell the time and find the direction of Mecca for prayer."
+        },
+        {
+          "ask": "Who could be cared for in Baghdad's large hospitals?",
+          "answer": "Rich and poor",
+          "wrong": ["Only the caliph", "Only soldiers", "Only scholars"],
+          "fact": "Hospitals had separate wards and trained doctors, and treatment was often free."
+        },
+        {
+          "ask": "Which great trade route linked Baghdad with China?",
+          "answer": "The Silk Road",
+          "wrong": ["Watling Street", "The Amber Road", "Route 66"],
+          "fact": "Merchants carried silk, spices, paper and new ideas along the Silk Road."
+        },
+        {
+          "ask": "Which family of caliphs ruled from Baghdad?",
+          "answer": "The Abbasids",
+          "wrong": ["The Tudors", "The Normans", "The Pharaohs"],
+          "fact": "Abbasid caliphs ruled from Baghdad for about 500 years."
+        },
+        {
+          "ask": "Which invaders destroyed much of Baghdad in 1258?",
+          "answer": "The Mongols",
+          "wrong": ["The Vikings", "The Romans", "The Normans"],
+          "fact": "Sadly, many precious books were lost, and the House of Wisdom was destroyed."
+        }
+      ]
+    },
+    {
+      "id": "bronzes-of-benin",
+      "title": "Bronzes of Benin",
+      "skill": {
+        "id": "history.kingdom-of-benin",
+        "name": "The Kingdom of Benin",
+        "subject": "history",
+        "yearGroup": 6,
+        "strand": "non-european-society",
+        "prerequisites": []
+      },
+      "story": "Behind huge earth walls lies the Oba's palace, shining with brass! Discover the West African Kingdom of Benin and its amazing artists.",
+      "instruction": "Read each question about Benin, then tap the right stone tablet.",
+      "hint": "Think about the Oba, his palace, and the skilled artists who worked in metal and ivory for him.",
+      "scene": "benin-court",
+      "play": "quiz",
+      "choiceProp": "stone-tablet",
+      "questions": [
+        {
+          "ask": "The Kingdom of Benin was in which modern country?",
+          "answer": "Nigeria",
+          "wrong": ["Egypt", "Kenya", "South Africa"],
+          "fact": "The modern country called Benin is a different place, a little to the west."
+        },
+        {
+          "ask": "What was the king of Benin called?",
+          "answer": "The Oba",
+          "wrong": ["The Pharaoh", "The Caliph", "The Emperor"],
+          "fact": "There is still an Oba of Benin today, who is an important leader for the Edo people."
+        },
+        {
+          "ask": "Which people built the Kingdom of Benin?",
+          "answer": "The Edo",
+          "wrong": ["The Maya", "The Zulu", "The Maasai"],
+          "fact": "Benin City is the capital of Edo State in Nigeria today."
+        },
+        {
+          "ask": "What huge structures surrounded Benin City and its lands?",
+          "answer": "Earth walls",
+          "wrong": ["Stone castles", "Wooden fences", "Glass towers"],
+          "fact": "Together the walls and ditches stretched for thousands of kilometres."
+        },
+        {
+          "ask": "What were the famous 'Benin Bronzes' mostly made of?",
+          "answer": "Brass and bronze",
+          "wrong": ["Gold and silver", "Iron and steel", "Tin and lead"],
+          "fact": "Many are actually brass, a mix of copper and zinc, though we call them bronzes."
+        },
+        {
+          "ask": "Which method did Benin's metal casters use?",
+          "answer": "Lost-wax casting",
+          "wrong": ["Glass blowing", "Stone carving", "Weaving"],
+          "fact": "A wax model was covered in clay, then the wax was melted out and metal poured in."
+        },
+        {
+          "ask": "Who made the brass plaques and heads for the Oba?",
+          "answer": "Guilds of casters",
+          "wrong": ["Foreign traders", "Roman soldiers", "Travelling monks"],
+          "fact": "The casters' guild lived and worked together in its own street in Benin City."
+        },
+        {
+          "ask": "What did many of the brass plaques show?",
+          "answer": "The Oba and his court",
+          "wrong": ["Snowy mountains", "Viking longships", "Pyramids"],
+          "fact": "The plaques decorated the pillars of the Oba's palace, recording ceremonies and events."
+        },
+        {
+          "ask": "Which precious material from elephant tusks did Benin artists carve?",
+          "answer": "Ivory",
+          "wrong": ["Jade", "Amber", "Marble"],
+          "fact": "Ivory carvers made masks, bracelets and tall carved tusks for the Oba's altars."
+        },
+        {
+          "ask": "Which European traders reached Benin in 1485?",
+          "answer": "The Portuguese",
+          "wrong": ["The Vikings", "The Romans", "The Russians"],
+          "fact": "They traded brass bracelets called manillas, which casters melted down to make art."
+        },
+        {
+          "ask": "In 1897, soldiers from which country took thousands of artworks from Benin City?",
+          "answer": "Britain",
+          "wrong": ["Portugal", "France", "Spain"],
+          "fact": "Many of the objects ended up in museums in Britain and other countries."
+        },
+        {
+          "ask": "What is happening to some Benin Bronzes today?",
+          "answer": "Being returned",
+          "wrong": ["Being melted", "Being buried", "Being painted"],
+          "fact": "Since 2021, some museums and universities have returned bronzes to Nigeria."
+        }
+      ]
+    },
+    {
+      "id": "where-it-all-began",
+      "title": "Where It All Began",
+      "skill": {
+        "id": "history.earliest-civilisations",
+        "name": "The earliest civilisations",
+        "subject": "history",
+        "yearGroup": 6,
+        "strand": "earliest-civilisations",
+        "prerequisites": []
+      },
+      "story": "Four great civilisations grew up beside four great rivers, thousands of years ago! Pack each discovery into the right crate.",
+      "instruction": "Which civilisation is it from? Tap the right crate.",
+      "hint": "Match the river or invention to its land: Iraq, Pakistan and India, Egypt, or China.",
+      "scene": "sumer-ziggurat",
+      "play": "sort",
+      "choiceProp": "wooden-crate",
+      "bins": ["Sumer", "Indus Valley", "Ancient Egypt", "Shang China"],
+      "questions": [
+        {
+          "ask": "Farms between the Tigris and Euphrates",
+          "answer": "Sumer",
+          "fact": "This land between two rivers is called Mesopotamia."
+        },
+        {
+          "ask": "Wedge-shaped cuneiform on clay tablets",
+          "answer": "Sumer",
+          "fact": "Cuneiform is one of the oldest kinds of writing in the world."
+        },
+        {
+          "ask": "Ziggurats, stepped temple towers",
+          "answer": "Sumer",
+          "fact": "Each ziggurat had a shrine on top for the city's main god."
+        },
+        {
+          "ask": "Grid streets with covered drains",
+          "answer": "Indus Valley",
+          "fact": "Indus cities were carefully planned, with streets crossing at right angles."
+        },
+        {
+          "ask": "The Great Bath at Mohenjo-daro",
+          "answer": "Indus Valley",
+          "fact": "The Great Bath was waterproofed with a layer of tar called bitumen."
+        },
+        {
+          "ask": "Square stone seals carved with animals",
+          "answer": "Indus Valley",
+          "fact": "The seals carry a script that no one has been able to read yet."
+        },
+        {
+          "ask": "Farms flooded each year by the Nile",
+          "answer": "Ancient Egypt",
+          "fact": "The flood left rich black mud, so the Egyptians called their land Kemet, the black land."
+        },
+        {
+          "ask": "Hieroglyphs written on papyrus",
+          "answer": "Ancient Egypt",
+          "fact": "Papyrus was made from reeds that grew along the banks of the Nile."
+        },
+        {
+          "ask": "Pyramid tombs for pharaohs",
+          "answer": "Ancient Egypt",
+          "fact": "The Great Pyramid at Giza was the tallest building in the world for over 3,800 years."
+        },
+        {
+          "ask": "Cities beside the Yellow River",
+          "answer": "Shang China",
+          "fact": "The Yellow River gets its name from the yellow mud it carries."
+        },
+        {
+          "ask": "Oracle bones with the first Chinese writing",
+          "answer": "Shang China",
+          "fact": "Kings asked questions about the future, and the answers were carved on the bones."
+        },
+        {
+          "ask": "Bronze vessels and woven silk",
+          "answer": "Shang China",
+          "fact": "Shang bronze workers cast huge vessels using moulds made of clay."
+        }
+      ]
+    },
+    {
+      "id": "scribes-of-sumer",
+      "title": "Scribes of Sumer",
+      "skill": {
+        "id": "history.ancient-sumer",
+        "name": "Ancient Sumer and its inventions",
+        "subject": "history",
+        "yearGroup": 6,
+        "strand": "earliest-civilisations",
+        "prerequisites": []
+      },
+      "story": "In the shadow of a giant ziggurat, a scribe is pressing marks into wet clay. Join the scribe school and uncover the world's first cities!",
+      "instruction": "Read each question about Sumer, then tap the right tablet.",
+      "hint": "Think about life between two rivers, where clay and reeds were everywhere and cities were brand new.",
+      "scene": "sumer-ziggurat",
+      "play": "quiz",
+      "choiceProp": "stone-tablet",
+      "questions": [
+        {
+          "ask": "Sumer was in Mesopotamia. Which country is most of Mesopotamia in today?",
+          "answer": "Iraq",
+          "wrong": ["Egypt", "India", "Greece"],
+          "fact": "Mesopotamia means 'the land between the rivers' in ancient Greek."
+        },
+        {
+          "ask": "Which two rivers flowed through the land of Sumer?",
+          "answer": "Tigris and Euphrates",
+          "wrong": ["Nile and Congo", "Thames and Severn", "Indus and Ganges"],
+          "fact": "The rivers left rich mud on the land, which was good for growing crops."
+        },
+        {
+          "ask": "What did Sumerian scribes write their cuneiform on?",
+          "answer": "Clay tablets",
+          "wrong": ["Paper", "Silk", "Papyrus"],
+          "fact": "Clay tablets baked hard in the sun or in fires, so thousands still survive."
+        },
+        {
+          "ask": "What did scribes use to press marks into the clay?",
+          "answer": "A reed stylus",
+          "wrong": ["A feather quill", "A ballpoint pen", "A paintbrush"],
+          "fact": "The reed made wedge-shaped marks, and 'cuneiform' means 'wedge-shaped'."
+        },
+        {
+          "ask": "What was most early Sumerian writing used for?",
+          "answer": "Keeping records",
+          "wrong": ["Writing poems", "Sending texts", "Drawing maps"],
+          "fact": "Scribes counted sheep, barley and taxes, so early writing was a bit like a list."
+        },
+        {
+          "ask": "Which invention appeared in Mesopotamia around 3500 BC?",
+          "answer": "The wheel",
+          "wrong": ["The telescope", "The printing press", "The compass"],
+          "fact": "Some of the earliest wheels were potters' wheels, used for shaping clay pots."
+        },
+        {
+          "ask": "What was a ziggurat?",
+          "answer": "A stepped temple",
+          "wrong": ["A royal ship", "A clay tablet", "A city wall"],
+          "fact": "The Great Ziggurat of Ur was built about 4,000 years ago, and parts still stand."
+        },
+        {
+          "ask": "Which hero, a king of Uruk, stars in one of the world's oldest stories?",
+          "answer": "Gilgamesh",
+          "wrong": ["Hercules", "Beowulf", "Robin Hood"],
+          "fact": "In the story, Gilgamesh goes on a quest to find the secret of living for ever."
+        },
+        {
+          "ask": "The Sumerians counted in 60s. Where do we still use this today?",
+          "answer": "Minutes and seconds",
+          "wrong": ["Money", "Shoe sizes", "Football scores"],
+          "fact": "That's why there are 60 seconds in a minute and 60 minutes in an hour."
+        },
+        {
+          "ask": "How did Sumerian farmers get river water to their fields?",
+          "answer": "Digging canals",
+          "wrong": ["Melting ice", "Steam pumps", "Water towers"],
+          "fact": "Canals carried water to fields of barley, wheat and date palms."
+        },
+        {
+          "ask": "Which board game was found in the royal tombs of Ur?",
+          "answer": "Royal Game of Ur",
+          "wrong": ["Chess", "Monopoly", "Snakes and ladders"],
+          "fact": "Experts worked out the rules from a later clay tablet, so people can still play it."
+        },
+        {
+          "ask": "Which archaeologist dug up the royal tombs of Ur in the 1920s?",
+          "answer": "Leonard Woolley",
+          "wrong": ["Howard Carter", "Mary Anning", "Heinrich Schliemann"],
+          "fact": "Woolley found gold jewellery, a golden helmet and beautiful lyres in the tombs."
+        }
+      ]
+    },
+    {
+      "id": "indus-city-planners",
+      "title": "Indus City Planners",
+      "skill": {
+        "id": "history.indus-valley",
+        "name": "The Indus Valley civilisation",
+        "subject": "history",
+        "yearGroup": 6,
+        "strand": "earliest-civilisations",
+        "prerequisites": []
+      },
+      "story": "Neat streets, matching bricks and drains under every road! Explore the brilliantly planned cities of the Indus Valley.",
+      "instruction": "Read each question about the Indus cities, then tap the right pot.",
+      "hint": "Think like a city planner: tidy streets, careful building, clean water and fair trade.",
+      "scene": "indus-city",
+      "play": "quiz",
+      "choiceProp": "clay-pot",
+      "questions": [
+        {
+          "ask": "Roughly when did the Indus Valley civilisation flourish?",
+          "answer": "3300 to 1300 BC",
+          "wrong": ["100 BC to AD 400", "AD 500 to 1000", "AD 1800 to 1900"],
+          "fact": "Its biggest cities were at their height from about 2600 to 1900 BC."
+        },
+        {
+          "ask": "In which modern countries are the Indus Valley cities found?",
+          "answer": "Pakistan and India",
+          "wrong": ["Egypt and Sudan", "Iraq and Syria", "China and Japan"],
+          "fact": "The cities spread along the River Indus and other nearby rivers."
+        },
+        {
+          "ask": "Which Indus city, rediscovered in the 1920s, has the Great Bath?",
+          "answer": "Mohenjo-daro",
+          "wrong": ["Ur", "Memphis", "Anyang"],
+          "fact": "Mohenjo-daro may have been home to tens of thousands of people."
+        },
+        {
+          "ask": "How were the streets of Indus cities laid out?",
+          "answer": "In a grid",
+          "wrong": ["In circles", "In a spiral", "In zigzags"],
+          "fact": "Main streets ran north to south and east to west, crossing at right angles."
+        },
+        {
+          "ask": "What was special about the baked bricks used to build Indus cities?",
+          "answer": "Same shape and size",
+          "wrong": ["Made of glass", "Painted gold", "Shaped like stars"],
+          "fact": "Many bricks were in the same proportions, 4 to 2 to 1, for length, width and height."
+        },
+        {
+          "ask": "What ran along the streets to carry dirty water away?",
+          "answer": "Covered drains",
+          "wrong": ["Gas pipes", "Train tunnels", "Electric cables"],
+          "fact": "Drain covers could be lifted, so workers could clean the drains out."
+        },
+        {
+          "ask": "What did many Indus houses have that was rare in the ancient world?",
+          "answer": "Toilets and bathrooms",
+          "wrong": ["Glass windows", "Electric lights", "Swimming pools"],
+          "fact": "Waste water flowed from the houses into the street drains."
+        },
+        {
+          "ask": "What was the Great Bath?",
+          "answer": "A large brick pool",
+          "wrong": ["A royal bed", "A grain store", "A city gate"],
+          "fact": "Historians think it may have been used for special washing ceremonies."
+        },
+        {
+          "ask": "What did small square Indus seals often show?",
+          "answer": "Animals",
+          "wrong": ["Maps", "Pyramids", "Ships"],
+          "fact": "The most common animal is a bull-like creature with one horn, like a unicorn."
+        },
+        {
+          "ask": "What do we know about the writing found on Indus seals?",
+          "answer": "No one can read it",
+          "wrong": ["It is English", "It is cuneiform", "It is hieroglyphs"],
+          "fact": "The inscriptions are very short, which makes the script hard to decode."
+        },
+        {
+          "ask": "Which faraway civilisation did Indus merchants trade with?",
+          "answer": "Sumer",
+          "wrong": ["The Vikings", "The Romans", "The Maya"],
+          "fact": "Indus seals have been found in Mesopotamia, thousands of kilometres away."
+        },
+        {
+          "ask": "What did Indus traders use to measure goods fairly?",
+          "answer": "Stone cube weights",
+          "wrong": ["Digital scales", "Plastic rulers", "Gold coins"],
+          "fact": "The weights followed the same system across the whole civilisation."
+        }
+      ]
+    },
+    {
+      "id": "the-shang-oracle",
+      "title": "The Shang Oracle",
+      "skill": {
+        "id": "history.shang-dynasty",
+        "name": "The Shang dynasty of ancient China",
+        "subject": "history",
+        "yearGroup": 6,
+        "strand": "earliest-civilisations",
+        "prerequisites": []
+      },
+      "story": "The Shang king has a question for his ancestors, and the oracle bones are ready! Discover the bronze, jade and writing of ancient China.",
+      "instruction": "Read each question about the Shang, then tap the right torch.",
+      "hint": "Think about the Yellow River, the king's oracle bones and the skilled bronze and jade workers.",
+      "scene": "shang-palace",
+      "play": "quiz",
+      "choiceProp": "torch",
+      "questions": [
+        {
+          "ask": "Roughly when did the Shang dynasty rule China?",
+          "answer": "1600 to 1046 BC",
+          "wrong": ["3000 to 2500 BC", "AD 43 to 410", "AD 1600 to 1900"],
+          "fact": "The Shang are the earliest Chinese dynasty to leave written records."
+        },
+        {
+          "ask": "Beside which river did the Shang build their cities?",
+          "answer": "The Yellow River",
+          "wrong": ["The Nile", "The Amazon", "The Thames"],
+          "fact": "The river is named after the yellow mud, called loess, that it carries."
+        },
+        {
+          "ask": "What were oracle bones mostly made from?",
+          "answer": "Bones and shells",
+          "wrong": ["Wood and paper", "Clay and straw", "Gold and jade"],
+          "fact": "Most were turtle shells or the shoulder blades of oxen."
+        },
+        {
+          "ask": "How did diviners make cracks appear in oracle bones?",
+          "answer": "With heat",
+          "wrong": ["With a hammer", "With water", "With ice"],
+          "fact": "The king studied the cracks, and the question and answer were carved beside them."
+        },
+        {
+          "ask": "Why are oracle bones so important to historians?",
+          "answer": "Early Chinese writing",
+          "wrong": ["Oldest world maps", "First paintings", "Oldest coins"],
+          "fact": "Some Chinese characters used today grew from the signs on oracle bones."
+        },
+        {
+          "ask": "Near which modern city are the ruins of the last Shang capital, Yinxu?",
+          "answer": "Anyang",
+          "wrong": ["Beijing", "Shanghai", "Hong Kong"],
+          "fact": "Farmers there once dug up oracle bones and sold them as 'dragon bones' for medicine."
+        },
+        {
+          "ask": "Which metal did Shang craftworkers cast into beautiful vessels?",
+          "answer": "Bronze",
+          "wrong": ["Steel", "Aluminium", "Plastic"],
+          "fact": "Bronze is a mix of copper and tin, melted together and poured into clay moulds."
+        },
+        {
+          "ask": "What was a ding?",
+          "answer": "A ritual vessel",
+          "wrong": ["A war chariot", "A silk robe", "A jade ring"],
+          "fact": "Ding pots had three or four legs and were used in ceremonies for ancestors."
+        },
+        {
+          "ask": "Who was Fu Hao?",
+          "answer": "A warrior queen",
+          "wrong": ["A river god", "A rice farmer", "A bronze pot"],
+          "fact": "Fu Hao was a wife of King Wu Ding and led his armies into battle."
+        },
+        {
+          "ask": "When Fu Hao's tomb was found in 1976, what was inside?",
+          "answer": "Jade and bronzes",
+          "wrong": ["A Viking ship", "Clay soldiers", "Printed books"],
+          "fact": "It held over 700 jade objects and over 400 bronzes, and had never been robbed."
+        },
+        {
+          "ask": "Which fine cloth was woven in Shang China?",
+          "answer": "Silk",
+          "wrong": ["Denim", "Nylon", "Polyester"],
+          "fact": "Silk thread comes from the cocoons of silkworms, which feed on mulberry leaves."
+        },
+        {
+          "ask": "Which two important jobs did the Shang king have?",
+          "answer": "Ruler and priest",
+          "wrong": [
+            "Farmer and cook",
+            "Sailor and scribe",
+            "Merchant and poet"
+          ],
+          "fact": "The Shang believed their king could speak to the spirits of his ancestors."
+        }
+      ]
+    },
+    {
+      "id": "battle-of-britain-skies",
+      "title": "Battle of Britain Skies",
+      "skill": {
+        "id": "history.battle-of-britain",
+        "name": "The Battle of Britain",
+        "subject": "history",
+        "yearGroup": 6,
+        "strand": "beyond-1066",
+        "prerequisites": []
+      },
+      "story": "It is the summer of 1940, and the skies over southern England are full of planes. Find out how Britain was defended in the Battle of Britain.",
+      "instruction": "Read each question about the battle, then tap the right crate.",
+      "hint": "Think about the planes, the people on the ground who spotted enemy raids, and the pilots from many lands.",
+      "scene": "ww2-airfield",
+      "play": "quiz",
+      "choiceProp": "wooden-crate",
+      "questions": [
+        {
+          "ask": "When was the Battle of Britain fought?",
+          "answer": "July to October 1940",
+          "wrong": ["August 1914", "June 1944", "May 1945"],
+          "fact": "It was the first major battle fought almost entirely in the air."
+        },
+        {
+          "ask": "Which air force defended Britain in the Battle of Britain?",
+          "answer": "The RAF",
+          "wrong": ["The Luftwaffe", "The Navy", "The Home Guard"],
+          "fact": "RAF stands for Royal Air Force, which was formed in 1918."
+        },
+        {
+          "ask": "What was the name of the German air force?",
+          "answer": "The Luftwaffe",
+          "wrong": ["The Panzers", "The U-boats", "The Kaiser"],
+          "fact": "Germany hoped to beat the RAF so its army could cross the English Channel."
+        },
+        {
+          "ask": "The Hurricane and which other famous fighter plane defended Britain?",
+          "answer": "The Spitfire",
+          "wrong": ["The Concorde", "The Jumbo Jet", "The Harrier"],
+          "fact": "Hurricanes actually shot down more enemy planes than Spitfires in the battle."
+        },
+        {
+          "ask": "Which invention helped spot enemy planes long before they arrived?",
+          "answer": "Radar",
+          "wrong": ["Satellites", "Telescopes", "Drones"],
+          "fact": "The Chain Home radar stations along the coast could spot planes about 100 miles away."
+        },
+        {
+          "ask": "Who watched and listened for planes once they had crossed the coast?",
+          "answer": "The Observer Corps",
+          "wrong": ["The Land Girls", "The Home Guard", "The Boy Scouts"],
+          "fact": "Volunteers watched the skies from posts all over the country, using binoculars."
+        },
+        {
+          "ask": "What did WAAF plotters do in the RAF operations rooms?",
+          "answer": "Moved markers on maps",
+          "wrong": ["Flew bombers", "Built airfields", "Cooked meals"],
+          "fact": "WAAF stands for Women's Auxiliary Air Force; plotters tracked raids on huge table maps."
+        },
+        {
+          "ask": "Where were RAF fighter planes kept, ready to take off?",
+          "answer": "Airfields",
+          "wrong": ["Train stations", "Castles", "Football pitches"],
+          "fact": "Pilots waited near their planes, ready to 'scramble' into the air within minutes."
+        },
+        {
+          "ask": "What name did Prime Minister Winston Churchill give the RAF pilots?",
+          "answer": "The Few",
+          "wrong": ["The Many", "The Brave", "The Mighty"],
+          "fact": "Churchill said that never had so much been owed by so many to so few."
+        },
+        {
+          "ask": "Pilots from which country flew in the famous 303 Squadron?",
+          "answer": "Poland",
+          "wrong": ["Brazil", "Japan", "Egypt"],
+          "fact": "Pilots also came from Czechoslovakia, Canada, New Zealand and many other countries."
+        },
+        {
+          "ask": "Which date is remembered as Battle of Britain Day?",
+          "answer": "15 September",
+          "wrong": ["5 November", "25 December", "1 April"],
+          "fact": "On that day in 1940 the RAF broke up two huge daytime raids over London."
+        },
+        {
+          "ask": "What happened to Germany's plan to invade Britain after the battle?",
+          "answer": "It was put off",
+          "wrong": ["It succeeded", "It began at once", "It moved to Wales"],
+          "fact": "Britain was not invaded, and the RAF pilots were remembered for their courage."
+        }
+      ]
+    },
+    {
+      "id": "blitz-night",
+      "title": "Blitz Night",
+      "skill": {
+        "id": "history.home-front",
+        "name": "The Home Front in the Second World War",
+        "subject": "history",
+        "yearGroup": 6,
+        "strand": "beyond-1066",
+        "prerequisites": []
+      },
+      "story": "The siren is sounding over London, and families are heading for shelter. Sort the facts from the muddles about life on the Home Front.",
+      "instruction": "Is it true or false? Tap the right basket for each one.",
+      "hint": "Think about what kept people safe and fed at home: shelters, rationing, the blackout and growing food.",
+      "scene": "blitz-london",
+      "play": "sort",
+      "choiceProp": "basket",
+      "bins": ["True", "False"],
+      "questions": [
+        {
+          "ask": "Families sheltered in Anderson shelters in their gardens",
+          "answer": "True",
+          "fact": "Anderson shelters were half buried in the ground and covered with earth."
+        },
+        {
+          "ask": "London Underground stations were used as shelters",
+          "answer": "True",
+          "fact": "On some nights, over 150,000 people slept in Underground stations."
+        },
+        {
+          "ask": "Evacuees wore name labels and carried gas masks",
+          "answer": "True",
+          "fact": "Evacuees were children sent from cities to the countryside to be safer."
+        },
+        {
+          "ask": "Food rationing began in January 1940",
+          "answer": "True",
+          "fact": "Bacon, butter and sugar were among the first foods to be rationed."
+        },
+        {
+          "ask": "ARP wardens checked that no lights showed at night",
+          "answer": "True",
+          "fact": "ARP stands for Air Raid Precautions; wardens also helped people find shelter."
+        },
+        {
+          "ask": "Land Girls worked on farms to grow food",
+          "answer": "True",
+          "fact": "The Women's Land Army did farm work while many farm workers were away fighting."
+        },
+        {
+          "ask": "Morrison shelters were built in back gardens",
+          "answer": "False",
+          "fact": "Morrison shelters were indoors: a strong steel cage that could be used as a table."
+        },
+        {
+          "ask": "Evacuees were sent from the countryside to big cities",
+          "answer": "False",
+          "fact": "It was the other way round: children left the cities, where bombing was worst."
+        },
+        {
+          "ask": "Sweets were never rationed during the war",
+          "answer": "False",
+          "fact": "Sweets were rationed from 1942, and rationing did not end until 1953."
+        },
+        {
+          "ask": "In the blackout, windows had to be brightly lit",
+          "answer": "False",
+          "fact": "Thick blackout curtains kept every light hidden so bombers could not see towns."
+        },
+        {
+          "ask": "Dig for Victory asked people to dig tunnels",
+          "answer": "False",
+          "fact": "Dig for Victory asked people to grow vegetables in gardens, parks and allotments."
+        },
+        {
+          "ask": "The Blitz lasted for just one night",
+          "answer": "False",
+          "fact": "The Blitz lasted from September 1940 to May 1941, about eight months."
+        }
+      ]
+    },
+    {
+      "id": "the-historians-toolkit",
+      "title": "The Historian's Toolkit",
+      "skill": {
+        "id": "history.historical-sources",
+        "name": "Primary and secondary sources",
+        "subject": "history",
+        "yearGroup": 6,
+        "strand": "historical-enquiry",
+        "prerequisites": []
+      },
+      "story": "The museum has new objects to catalogue, and every historian needs to know their sources! Decide which came from the time and which were made later.",
+      "instruction": "Made at the time, or later? Tap the right book for each one.",
+      "hint": "Ask: was this made or used by someone who was there at the time, or made later by someone looking back?",
+      "scene": "museum-hall",
+      "play": "sort",
+      "choiceProp": "book",
+      "bins": ["Primary source", "Secondary source"],
+      "questions": [
+        {
+          "ask": "Samuel Pepys's diary from 1666",
+          "answer": "Primary source",
+          "fact": "Pepys wrote about the Great Fire of London as it happened, and even buried his cheese!"
+        },
+        {
+          "ask": "A coin made in Roman times",
+          "answer": "Primary source",
+          "fact": "Roman coins show emperors' faces, which helps historians date other finds."
+        },
+        {
+          "ask": "A ration book from 1940",
+          "answer": "Primary source",
+          "fact": "Ration books had coupons that shopkeepers marked or cut out when food was bought."
+        },
+        {
+          "ask": "A photograph taken in Victorian times",
+          "answer": "Primary source",
+          "fact": "Victorians had to keep very still for photographs, so few people are smiling."
+        },
+        {
+          "ask": "A brooch worn by a Viking",
+          "answer": "Primary source",
+          "fact": "Viking women often wore a pair of oval brooches to fasten their clothes."
+        },
+        {
+          "ask": "A letter home from a soldier at the front",
+          "answer": "Primary source",
+          "fact": "Letters show us how people felt, not just what happened."
+        },
+        {
+          "ask": "A history textbook",
+          "answer": "Secondary source",
+          "fact": "Textbook writers study many primary sources and explain them for us."
+        },
+        {
+          "ask": "A museum information board",
+          "answer": "Secondary source",
+          "fact": "Museum boards are written by experts today to explain the objects on display."
+        },
+        {
+          "ask": "A documentary made this year",
+          "answer": "Secondary source",
+          "fact": "Documentaries often show primary sources, but the programme itself is made later."
+        },
+        {
+          "ask": "A website about the Romans",
+          "answer": "Secondary source",
+          "fact": "Good historians check who wrote a website and where its facts came from."
+        },
+        {
+          "ask": "A modern painting of the Battle of Hastings",
+          "answer": "Secondary source",
+          "fact": "A modern artist imagines the scene; the Bayeux Tapestry was made much closer to the time."
+        },
+        {
+          "ask": "An encyclopaedia entry",
+          "answer": "Secondary source",
+          "fact": "Encyclopaedias collect what historians have found out into short summaries."
+        }
+      ]
+    },
+    {
+      "id": "the-grand-timeline",
+      "title": "The Grand Timeline",
+      "skill": {
+        "id": "history.history-in-order",
+        "name": "Putting key events in history in order",
+        "subject": "history",
+        "yearGroup": 6,
+        "strand": "historical-enquiry",
+        "prerequisites": []
+      },
+      "story": "The museum's grand timeline has fallen off the wall! Rebuild 5,000 years of history, from Stonehenge to the Moon.",
+      "instruction": "Tap the event that happened longest ago, then the next one.",
+      "hint": "BC dates count down towards AD 1, and bigger BC numbers are longer ago. AD dates count up.",
+      "scene": "museum-hall",
+      "play": "timeline",
+      "choiceProp": "scroll",
+      "events": [
+        {
+          "label": "Stonehenge begun",
+          "date": "c. 3000 BC",
+          "order": -3000,
+          "fact": "The first stage was a circular ditch and bank; the giant stones came later."
+        },
+        {
+          "label": "Great Pyramid built",
+          "date": "c. 2560 BC",
+          "order": -2560,
+          "fact": "The Great Pyramid at Giza was built as a tomb for the pharaoh Khufu."
+        },
+        {
+          "label": "Shang dynasty begins",
+          "date": "c. 1600 BC",
+          "order": -1600,
+          "fact": "The Shang ruled beside the Yellow River in China for over 500 years."
+        },
+        {
+          "label": "First Olympic Games",
+          "date": "776 BC",
+          "order": -776,
+          "fact": "The first recorded Olympic Games, at Olympia in Greece, had just one race."
+        },
+        {
+          "label": "Romans invade Britain",
+          "date": "AD 43",
+          "order": 43,
+          "fact": "Emperor Claudius sent about 40,000 soldiers, and Britain became part of the Roman Empire."
+        },
+        {
+          "label": "Baghdad founded",
+          "date": "AD 762",
+          "order": 762,
+          "fact": "Caliph al-Mansur built the Round City, which became a great centre of learning."
+        },
+        {
+          "label": "Battle of Hastings",
+          "date": "1066",
+          "order": 1066,
+          "fact": "William of Normandy beat King Harold and became king of England."
+        },
+        {
+          "label": "Great Fire of London",
+          "date": "1666",
+          "order": 1666,
+          "fact": "The fire began in a bakery on Pudding Lane and burned for four days."
+        },
+        {
+          "label": "Victoria crowned",
+          "date": "1838",
+          "order": 1838,
+          "fact": "Victoria became queen in 1837, aged 18, and was crowned the next year."
+        },
+        {
+          "label": "Moon landing",
+          "date": "1969",
+          "order": 1969,
+          "fact": "Neil Armstrong and Buzz Aldrin were the first people to walk on the Moon."
+        }
+      ]
+    }
+  ]
+}

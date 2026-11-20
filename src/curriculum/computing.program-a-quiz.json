@@ -1,0 +1,8 @@
+{
+  "id": "computing.program-a-quiz",
+  "name": "Starting programs with blocks",
+  "subject": "computing",
+  "yearGroup": 2,
+  "strand": "programming",
+  "prerequisites": ["computing.animation-programs"]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "english.sentence-punctuation",
+  "name": "Ending sentences with . ? or !",
+  "subject": "english",
+  "yearGroup": 1,
+  "strand": "grammar-and-punctuation",
+  "prerequisites": []
+}

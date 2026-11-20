@@ -1,0 +1,8 @@
+{
+  "id": "computing.flat-file-databases",
+  "name": "Searching and sorting a database",
+  "subject": "computing",
+  "yearGroup": 5,
+  "strand": "data-and-information",
+  "prerequisites": ["computing.data-logging"]
+}

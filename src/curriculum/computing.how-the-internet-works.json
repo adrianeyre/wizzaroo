@@ -1,0 +1,8 @@
+{
+  "id": "computing.how-the-internet-works",
+  "name": "How data travels across the internet",
+  "subject": "computing",
+  "yearGroup": 4,
+  "strand": "networks",
+  "prerequisites": ["computing.connect-computers"]
+}

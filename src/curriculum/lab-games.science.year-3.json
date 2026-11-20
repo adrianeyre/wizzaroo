@@ -1,0 +1,136 @@
+{
+  "subject": "science",
+  "yearGroup": 3,
+  "games": [
+    {
+      "id": "cactus-or-fern",
+      "title": "Cactus or Fern?",
+      "station": "compare",
+      "prop": "flower",
+      "skillName": "How plants' needs vary from plant to plant",
+      "strand": "plants",
+      "statutoryRequirement": "Pupils should be taught to explore the requirements of plants for life and growth (air, light, water, nutrients from soil, and room to grow) and how they vary from plant to plant",
+      "instruction": "Compare the plants, then tap the best answer.",
+      "hint": "Not quite. Think about where this plant grows in the wild, then try again.",
+      "questions": [
+        {
+          "ask": "Which plant needs the least water?",
+          "answer": "Cactus",
+          "distractors": ["Fern", "Water lily", "Rice plant"]
+        },
+        {
+          "ask": "Which plant grows best in a damp, shady wood?",
+          "answer": "Fern",
+          "distractors": ["Cactus", "Sunflower", "Lavender"]
+        },
+        {
+          "ask": "Which plant grows with its roots under water in a pond?",
+          "answer": "Water lily",
+          "distractors": ["Cactus", "Lavender", "Sunflower"]
+        },
+        {
+          "ask": "Which plant needs lots of bright sunshine to grow tall?",
+          "answer": "Sunflower",
+          "distractors": ["Fern", "Moss", "Ivy"]
+        },
+        {
+          "ask": "A cactus has a thick, fleshy stem. What is it for?",
+          "answer": "To store water",
+          "distractors": ["To catch insects", "To keep cool", "To make seeds"]
+        },
+        {
+          "ask": "Which plant can grow on a bare rock or wall with almost no soil?",
+          "answer": "Moss",
+          "distractors": ["Sunflower", "Oak tree", "Potato plant"]
+        },
+        {
+          "ask": "A Venus flytrap grows in poor, boggy soil. Why does it catch insects?",
+          "answer": "To get nutrients",
+          "distractors": ["To get water", "To get light", "To keep warm"]
+        },
+        {
+          "ask": "Where would a fern grow best?",
+          "answer": "A shady, damp wood",
+          "distractors": [
+            "A hot, dry desert",
+            "A sunny sand dune",
+            "A bright windowsill"
+          ]
+        },
+        {
+          "ask": "Which plant needs the most room to grow?",
+          "answer": "Oak tree",
+          "distractors": ["Daisy", "Cress", "Moss"]
+        },
+        {
+          "ask": "Which plant has spines instead of wide leaves to save water?",
+          "answer": "Cactus",
+          "distractors": ["Fern", "Water lily", "Oak tree"]
+        }
+      ]
+    },
+    {
+      "id": "sun-safe-eyes",
+      "title": "Sun Safe Eyes",
+      "station": "true-false",
+      "prop": "sun",
+      "skillName": "Protecting your eyes from the Sun",
+      "strand": "light",
+      "statutoryRequirement": "Pupils should be taught to recognise that light from the sun can be dangerous and that there are ways to protect their eyes",
+      "instruction": "Read each sentence, then tap true or false.",
+      "hint": "Not quite. Remember the Sun's light is strong enough to hurt your eyes, then try again.",
+      "questions": [
+        {
+          "ask": "You should never look straight at the Sun.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Looking at the Sun through binoculars is safe.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Sunglasses help protect your eyes from bright sunlight.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Any dark sunglasses are safe for staring at the Sun.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A sun hat with a wide brim can help shade your eyes.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Sunlight can still harm your eyes on a cloudy day.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "It is safe to look at the Sun if you only do it for a minute.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Good sunglasses block harmful UV light.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Sunlight reflecting off snow or water can hurt your eyes.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Looking at the Sun through a telescope is safe if you squint.",
+          "answer": "False",
+          "distractors": ["True"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "subject": "computing",
+  "yearGroup": 1,
+  "games": [
+    {
+      "id": "bossy-robot-orders",
+      "title": "Bossy Robot",
+      "station": "compare",
+      "prop": "bulb",
+      "skillName": "Giving precise and unambiguous instructions",
+      "strand": "algorithms",
+      "statutoryRequirement": "Pupils should be taught to understand what algorithms are; how they are implemented as programs on digital devices; and that programs execute by following precise and unambiguous instructions",
+      "instruction": "Read the choices, then tap the one a robot could follow.",
+      "hint": "Not quite. A robot cannot guess, so look for exact words, then try again.",
+      "questions": [
+        {
+          "ask": "Which instruction is clearest for a robot?",
+          "answer": "Move forward 3 steps",
+          "distractors": ["Go over there", "Move a bit", "Walk somewhere"]
+        },
+        {
+          "ask": "Which instruction tells a robot exactly how far to go?",
+          "answer": "Forward 5 squares",
+          "distractors": ["Go forward", "Keep going", "Go far"]
+        },
+        {
+          "ask": "The robot must turn. Which instruction is clear?",
+          "answer": "Turn right",
+          "distractors": ["Turn a bit", "Spin around", "Go that way"]
+        },
+        {
+          "ask": "Which instruction tells the robot exactly what to pick up?",
+          "answer": "Pick up the red cup",
+          "distractors": ["Pick that up", "Get the thing", "Grab it"]
+        },
+        {
+          "ask": "Which drawing instruction is NOT clear enough for a robot?",
+          "answer": "Draw a nice shape",
+          "distractors": ["Draw a square", "Draw 3 circles", "Draw a red line"]
+        },
+        {
+          "ask": "Which toast instruction is too vague for a robot?",
+          "answer": "Do the bread thing",
+          "distractors": [
+            "Put bread in toaster",
+            "Press the lever down",
+            "Wait for the pop"
+          ]
+        },
+        {
+          "ask": "Why do robots need precise instructions?",
+          "answer": "They cannot guess",
+          "distractors": [
+            "They are lazy",
+            "They like long words",
+            "They are sleepy"
+          ]
+        },
+        {
+          "ask": "What is an algorithm?",
+          "answer": "Clear steps in order",
+          "distractors": [
+            "A kind of robot",
+            "A computer screen",
+            "A game controller"
+          ]
+        },
+        {
+          "ask": "How does a computer run a program?",
+          "answer": "It follows the steps",
+          "distractors": ["It guesses", "It makes it up", "It asks a friend"]
+        },
+        {
+          "ask": "Your robot ends up in the wrong place. What should you do?",
+          "answer": "Check the steps",
+          "distractors": ["Shout at it", "Throw it away", "Give up"]
+        }
+      ]
+    }
+  ]
+}

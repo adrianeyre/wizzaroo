@@ -1,0 +1,574 @@
+{
+  "subject": "art",
+  "yearGroup": 6,
+  "games": [
+    {
+      "id": "art-idea-developer",
+      "title": "Idea Developer",
+      "station": "sequence",
+      "prop": "seedling",
+      "skillName": "Developing ideas through a project",
+      "strand": "sketchbooks",
+      "statutoryRequirement": "Pupils should be taught to create sketch books to record their observations and use them to review and revisit ideas",
+      "instruction": "Read the steps, then tap what comes next.",
+      "hint": "Not quite. Think about how an idea grows from research to final piece.",
+      "questions": [
+        {
+          "ask": "Research an artist, then...?",
+          "answer": "Try their technique",
+          "distractors": ["Frame your work", "Evaluate it", "Sign your name"]
+        },
+        {
+          "ask": "Make a mood board, then...?",
+          "answer": "Sketch first ideas",
+          "distractors": ["Varnish it", "Frame it", "Sell it"]
+        },
+        {
+          "ask": "Draw several thumbnail sketches, then...?",
+          "answer": "Choose the best idea",
+          "distractors": ["Throw them away", "Frame them", "Varnish them"]
+        },
+        {
+          "ask": "Choose your best idea, then...?",
+          "answer": "Refine it in detail",
+          "distractors": ["Start a new topic", "Rip it out", "Forget it"]
+        },
+        {
+          "ask": "Refine the idea and test materials, then...?",
+          "answer": "Make the final piece",
+          "distractors": ["Make a mood board", "Research again", "Rip it out"]
+        },
+        {
+          "ask": "Make the final piece, then...?",
+          "answer": "Reflect and evaluate",
+          "distractors": [
+            "Make a mood board",
+            "Do thumbnails",
+            "Pick an artist"
+          ]
+        },
+        {
+          "ask": "Draw light construction lines, then shapes, then...?",
+          "answer": "Add tone and detail",
+          "distractors": ["Rub everything out", "Draw a frame", "Start again"]
+        },
+        {
+          "ask": "Do a 30-second pose, then a 2-minute pose, then...?",
+          "answer": "A 10-minute pose",
+          "distractors": ["A 5-second pose", "No more poses", "A 1-second pose"]
+        }
+      ]
+    },
+    {
+      "id": "art-sketchbook-reviewer",
+      "title": "Sketchbook Reviewer",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Art vocabulary for reviewing work",
+      "strand": "sketchbooks",
+      "statutoryRequirement": "Pupils should be taught to create sketch books to record their observations and use them to review and revisit ideas",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about the exact meaning of each art word.",
+      "questions": [
+        {
+          "ask": "Using more than one material in an artwork is...?",
+          "answer": "Mixed media",
+          "distractors": ["Monochrome", "Still life", "Impasto"]
+        },
+        {
+          "ask": "The material an artist works with is their...?",
+          "answer": "Medium",
+          "distractors": ["Genre", "Frame", "Subject"]
+        },
+        {
+          "ask": "Improving an idea step by step is called...?",
+          "answer": "Refining",
+          "distractors": ["Erasing", "Tracing", "Framing"]
+        },
+        {
+          "ask": "The range of colours chosen for an artwork is its...?",
+          "answer": "Colour palette",
+          "distractors": ["Colour wheel", "Tonal scale", "Viewfinder"]
+        },
+        {
+          "ask": "Which sketchbook note evaluates the work best?",
+          "answer": "More tone adds depth",
+          "distractors": ["I like it", "It is finished", "Blue is my favourite"]
+        },
+        {
+          "ask": "Placing very different things side by side is...?",
+          "answer": "Juxtaposition",
+          "distractors": ["Proportion", "Symmetry", "Perspective"]
+        },
+        {
+          "ask": "Why keep failed experiments in a sketchbook?",
+          "answer": "To learn from them",
+          "distractors": ["To fill pages", "To show off", "To copy later"]
+        },
+        {
+          "ask": "Copying part of an artist's work to learn their style is an?",
+          "answer": "Artist study",
+          "distractors": ["Original", "Forgery", "Self-portrait"]
+        }
+      ]
+    },
+    {
+      "id": "art-light-and-shadow",
+      "title": "Light and Shadow",
+      "station": "compare",
+      "prop": "bulb",
+      "skillName": "Tone, light and shadow",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about where the light is coming from.",
+      "questions": [
+        {
+          "ask": "Strong contrast between light and dark in a painting is...?",
+          "answer": "Chiaroscuro",
+          "distractors": ["Impasto", "Sgraffito", "Pointillism"]
+        },
+        {
+          "ask": "The shadow an object throws onto the table is a...?",
+          "answer": "Cast shadow",
+          "distractors": ["Highlight", "Reflected light", "Mid-tone"]
+        },
+        {
+          "ask": "Faint light bouncing back into the shadow side is...?",
+          "answer": "Reflected light",
+          "distractors": ["Cast shadow", "Highlight", "Vanishing point"]
+        },
+        {
+          "ask": "The brightest spot on a shiny object is the...?",
+          "answer": "Highlight",
+          "distractors": ["Cast shadow", "Mid-tone", "Core shadow"]
+        },
+        {
+          "ask": "Which Italian painter was famous for dramatic dark scenes?",
+          "answer": "Caravaggio",
+          "distractors": ["Monet", "Seurat", "Matisse"]
+        },
+        {
+          "ask": "Shadows fall on the side of an object...?",
+          "answer": "Away from the light",
+          "distractors": ["Facing the light", "On top only", "Nowhere"]
+        },
+        {
+          "ask": "A smooth change from light to dark is a...?",
+          "answer": "Gradient",
+          "distractors": ["Collage", "Pattern", "Outline"]
+        },
+        {
+          "ask": "Another word for how light or dark something is?",
+          "answer": "Tone",
+          "distractors": ["Hue", "Texture", "Line"]
+        }
+      ]
+    },
+    {
+      "id": "art-two-point-towers",
+      "title": "Two-Point Towers",
+      "station": "compare",
+      "prop": "planet",
+      "skillName": "Advanced perspective",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Picture a box sitting above or below your eye level.",
+      "questions": [
+        {
+          "ask": "In two-point perspective, upright edges are drawn...?",
+          "answer": "Vertical",
+          "distractors": ["Diagonal", "Curved", "Horizontal"]
+        },
+        {
+          "ask": "A box drawn below the horizon line shows its...?",
+          "answer": "Top",
+          "distractors": ["Underside", "Inside", "Back"]
+        },
+        {
+          "ask": "A box drawn above the horizon line shows its...?",
+          "answer": "Underside",
+          "distractors": ["Top", "Inside", "Back"]
+        },
+        {
+          "ask": "Distant hills looking paler and bluer is called...?",
+          "answer": "Aerial perspective",
+          "distractors": ["Foreshortening", "Chiaroscuro", "Proportion"]
+        },
+        {
+          "ask": "An arm pointing at you looks shorter. This is...?",
+          "answer": "Foreshortening",
+          "distractors": ["Aerial perspective", "Symmetry", "Impasto"]
+        },
+        {
+          "ask": "Three-point perspective adds a third point that is...?",
+          "answer": "Above or below",
+          "distractors": [
+            "In the foreground",
+            "Off the paper left",
+            "In the middle"
+          ]
+        },
+        {
+          "ask": "'Trompe l'oeil' is French for...?",
+          "answer": "Fool the eye",
+          "distractors": ["Paint the light", "Draw the sea", "Open air"]
+        },
+        {
+          "ask": "Making a flat drawing look 3D creates an...?",
+          "answer": "Illusion of depth",
+          "distractors": ["Repeat pattern", "Colour scheme", "Mood board"]
+        }
+      ]
+    },
+    {
+      "id": "art-right-material",
+      "title": "Right Material",
+      "station": "compare",
+      "prop": "beaker",
+      "skillName": "Choosing the right medium",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about how each material behaves.",
+      "questions": [
+        {
+          "ask": "Which paint is see-through and built up in thin layers?",
+          "answer": "Watercolour",
+          "distractors": ["Gouache", "Acrylic", "Poster paint"]
+        },
+        {
+          "ask": "Which paint is water-based, opaque and matt?",
+          "answer": "Gouache",
+          "distractors": ["Watercolour", "Oil paint", "Ink"]
+        },
+        {
+          "ask": "Which paint dries fast and is waterproof once dry?",
+          "answer": "Acrylic",
+          "distractors": ["Watercolour", "Oil paint", "Gouache"]
+        },
+        {
+          "ask": "Which paint dries very slowly, so it can be blended for days?",
+          "answer": "Oil paint",
+          "distractors": ["Acrylic", "Watercolour", "Gouache"]
+        },
+        {
+          "ask": "Which is best for fine, permanent lines?",
+          "answer": "Pen and ink",
+          "distractors": ["Charcoal", "Soft pastel", "Chalk"]
+        },
+        {
+          "ask": "Which is best for a thin, spidery figure sculpture?",
+          "answer": "Wire",
+          "distractors": ["Plaster block", "Cotton wool", "Wet sand"]
+        },
+        {
+          "ask": "Which powder sets hard when mixed with water, for casting?",
+          "answer": "Plaster",
+          "distractors": ["Charcoal", "Glitter", "Flour"]
+        },
+        {
+          "ask": "Which drawing sticks are powdery and very easy to blend?",
+          "answer": "Soft pastels",
+          "distractors": ["Biros", "4H pencils", "Fine liners"]
+        }
+      ]
+    },
+    {
+      "id": "art-print-masters",
+      "title": "Print Masters",
+      "station": "compare",
+      "prop": "leaf",
+      "skillName": "Advanced printmaking",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about how the ink gets onto the paper.",
+      "questions": [
+        {
+          "ask": "In a lino print, the parts you cut away print as...?",
+          "answer": "Blank (no ink)",
+          "distractors": ["The darkest ink", "Gold", "Bright red"]
+        },
+        {
+          "ask": "Which tool is used to cut lino?",
+          "answer": "Lino cutter",
+          "distractors": ["Brayer", "Paintbrush", "Palette knife"]
+        },
+        {
+          "ask": "Using acid to bite lines into a metal plate is called...?",
+          "answer": "Etching",
+          "distractors": ["Screen printing", "Collagraph", "Monoprint"]
+        },
+        {
+          "ask": "Pushing ink through a fine mesh is called...?",
+          "answer": "Screen printing",
+          "distractors": ["Etching", "Lino printing", "Collage"]
+        },
+        {
+          "ask": "A print made from a block of glued textured materials is a?",
+          "answer": "Collagraph",
+          "distractors": ["Etching", "Mosaic", "Woodcut"]
+        },
+        {
+          "ask": "Cutting more from one block between each colour is a...?",
+          "answer": "Reduction print",
+          "distractors": ["Monoprint", "Collagraph", "Photomontage"]
+        },
+        {
+          "ask": "When cutting lino, you should always cut...?",
+          "answer": "Away from your body",
+          "distractors": [
+            "Towards your hand",
+            "Very fast",
+            "With your eyes shut"
+          ]
+        },
+        {
+          "ask": "What does '3/20' written on a print mean?",
+          "answer": "Print 3 of 20",
+          "distractors": [
+            "3 cm by 20 cm",
+            "3 colours used",
+            "Made on 3 Feb 2020"
+          ]
+        },
+        {
+          "ask": "Which Dutch master made many etchings as well as paintings?",
+          "answer": "Rembrandt",
+          "distractors": ["Monet", "Hokusai", "Kandinsky"]
+        }
+      ]
+    },
+    {
+      "id": "art-figure-drawing",
+      "title": "Figure Drawing",
+      "station": "true-false",
+      "prop": "heart",
+      "skillName": "Drawing the human figure",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the sentence, then tap True or False.",
+      "hint": "Not quite. Stand up and check the proportions on your own body.",
+      "questions": [
+        {
+          "ask": "When arms hang down, the elbows line up with the waist.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A hand is about as long as the face.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Knees are about halfway between the hips and the feet.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "When arms hang down, the wrists line up with the shoulders.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A foot is about as long as the forearm.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "On an adult's face, the eyes are near the very top of the head.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A line of action shows the flow and movement of a pose.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Life drawing means drawing from a real person.",
+          "answer": "True",
+          "distractors": ["False"]
+        }
+      ]
+    },
+    {
+      "id": "art-old-masters",
+      "title": "Old Masters Mystery",
+      "station": "mystery",
+      "prop": "magnifier",
+      "skillName": "Great painters in history",
+      "strand": "great-artists",
+      "statutoryRequirement": "Pupils should be taught about great artists, architects and designers in history",
+      "instruction": "Read the clues, then tap who or what it is.",
+      "hint": "Not quite. Look for the famous painting named in the clue.",
+      "questions": [
+        {
+          "ask": "I painted 'The Night Watch' in Amsterdam in 1642. Who am I?",
+          "answer": "Rembrandt",
+          "distractors": ["Johannes Vermeer", "Jan van Eyck", "J.M.W. Turner"]
+        },
+        {
+          "ask": "I painted 'Girl with a Pearl Earring'. Who am I?",
+          "answer": "Johannes Vermeer",
+          "distractors": ["Rembrandt", "Diego Velázquez", "Hans Holbein"]
+        },
+        {
+          "ask": "I painted 'The Hay Wain', a scene on the River Stour. Who am I?",
+          "answer": "John Constable",
+          "distractors": ["J.M.W. Turner", "Thomas Gainsborough", "Rembrandt"]
+        },
+        {
+          "ask": "I painted stormy seas and 'The Fighting Temeraire'. Who am I?",
+          "answer": "J.M.W. Turner",
+          "distractors": ["John Constable", "Johannes Vermeer", "Hans Holbein"]
+        },
+        {
+          "ask": "I painted portraits of King Henry VIII. Who am I?",
+          "answer": "Hans Holbein",
+          "distractors": [
+            "Thomas Gainsborough",
+            "Diego Velázquez",
+            "Jan van Eyck"
+          ]
+        },
+        {
+          "ask": "I painted 'The Blue Boy'. Who am I?",
+          "answer": "Thomas Gainsborough",
+          "distractors": ["John Constable", "Hans Holbein", "Rembrandt"]
+        },
+        {
+          "ask": "I am a Spanish court painter who painted 'Las Meninas'. Who am I?",
+          "answer": "Diego Velázquez",
+          "distractors": ["Johannes Vermeer", "Jan van Eyck", "J.M.W. Turner"]
+        },
+        {
+          "ask": "I painted 'The Arnolfini Portrait' in 1434. Who am I?",
+          "answer": "Jan van Eyck",
+          "distractors": ["Diego Velázquez", "Rembrandt", "John Constable"]
+        }
+      ]
+    },
+    {
+      "id": "art-design-legends",
+      "title": "Design Legends",
+      "station": "compare",
+      "prop": "bulb",
+      "skillName": "Great designers in history",
+      "strand": "great-artists",
+      "statutoryRequirement": "Pupils should be taught about great artists, architects and designers in history",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about what each designer is best known for.",
+      "questions": [
+        {
+          "ask": "Who designed the famous London Underground map?",
+          "answer": "Harry Beck",
+          "distractors": [
+            "William Morris",
+            "Alec Issigonis",
+            "Christopher Wren"
+          ]
+        },
+        {
+          "ask": "Who designed Britain's red telephone box?",
+          "answer": "Giles Gilbert Scott",
+          "distractors": ["Harry Beck", "Josiah Wedgwood", "Clarice Cliff"]
+        },
+        {
+          "ask": "Who designed the Glasgow School of Art building?",
+          "answer": "Mackintosh",
+          "distractors": ["Wren", "Hadid", "Paxton"]
+        },
+        {
+          "ask": "Margaret Calvert helped to design Britain's...?",
+          "answer": "Road signs",
+          "distractors": ["Bank notes", "Stamps", "Football kits"]
+        },
+        {
+          "ask": "Clarice Cliff was famous for brightly painted...?",
+          "answer": "Pottery",
+          "distractors": ["Cars", "Bridges", "Wallpaper"]
+        },
+        {
+          "ask": "Wedgwood's famous blue-and-white pottery is called...?",
+          "answer": "Jasperware",
+          "distractors": ["Lino", "Bisque", "Tesserae"]
+        },
+        {
+          "ask": "Which small car did Alec Issigonis design?",
+          "answer": "The Mini",
+          "distractors": ["The Beetle", "The Model T", "The Land Rover"]
+        },
+        {
+          "ask": "Zaha Hadid's flowing buildings earned her the nickname...?",
+          "answer": "Queen of the Curve",
+          "distractors": [
+            "Lady of the Lines",
+            "Duchess of Domes",
+            "Queen of Squares"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "art-world-gallery",
+      "title": "World Art Gallery",
+      "station": "compare",
+      "prop": "planet",
+      "skillName": "Artists from around the world",
+      "strand": "great-artists",
+      "statutoryRequirement": "Pupils should be taught about great artists, architects and designers in history",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about each artist's famous work.",
+      "questions": [
+        {
+          "ask": "Ai Weiwei filled Tate Modern with millions of porcelain...?",
+          "answer": "Sunflower seeds",
+          "distractors": ["Pebbles", "Marbles", "Teacups"]
+        },
+        {
+          "ask": "El Anatsui makes shimmering wall hangings from...?",
+          "answer": "Bottle tops",
+          "distractors": ["Feathers", "Sweet wrappers", "Leaves"]
+        },
+        {
+          "ask": "Banksy is famous for which kind of art?",
+          "answer": "Street art",
+          "distractors": ["Pottery", "Weaving", "Oil portraits"]
+        },
+        {
+          "ask": "Kehinde Wiley painted the official portrait of which president?",
+          "answer": "Barack Obama",
+          "distractors": ["Abraham Lincoln", "George Washington", "Joe Biden"]
+        },
+        {
+          "ask": "Tate Modern in London is inside a former...?",
+          "answer": "Power station",
+          "distractors": ["Railway station", "Royal palace", "Prison"]
+        },
+        {
+          "ask": "Frida Kahlo was married to which Mexican painter?",
+          "answer": "Diego Rivera",
+          "distractors": ["Pablo Picasso", "Salvador Dalí", "Diego Velázquez"]
+        },
+        {
+          "ask": "Hokusai's 'Great Wave' belongs to a series of views of...?",
+          "answer": "Mount Fuji",
+          "distractors": ["Mount Everest", "Tokyo Tower", "The Moon"]
+        },
+        {
+          "ask": "Hepworth's sculpture 'Single Form' stands outside the UN in?",
+          "answer": "New York",
+          "distractors": ["London", "Paris", "St Ives"]
+        },
+        {
+          "ask": "Yayoi Kusama's mirrored rooms are called '... Mirror Rooms'?",
+          "answer": "Infinity",
+          "distractors": ["Rainbow", "Dotty", "Magic"]
+        }
+      ]
+    }
+  ]
+}

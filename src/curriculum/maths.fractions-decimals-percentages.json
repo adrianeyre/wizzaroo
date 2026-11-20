@@ -1,0 +1,8 @@
+{
+  "id": "maths.fractions-decimals-percentages",
+  "name": "Fractions, decimals and percentages",
+  "subject": "maths",
+  "yearGroup": 5,
+  "strand": "fractions-including-decimals-and-percentages",
+  "prerequisites": ["maths.fractions-as-decimals"]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "maths.time-to-five-minutes",
+  "name": "Telling the time to five minutes",
+  "subject": "maths",
+  "yearGroup": 2,
+  "strand": "measurement",
+  "prerequisites": ["maths.tell-the-time"]
+}

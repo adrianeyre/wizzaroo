@@ -1,0 +1,8 @@
+{
+  "id": "computing.inputs-and-outputs",
+  "name": "Telling inputs from outputs",
+  "subject": "computing",
+  "yearGroup": 3,
+  "strand": "technology-around-us",
+  "prerequisites": ["computing.technology-beyond-school"]
+}

@@ -1,0 +1,228 @@
+{
+  "subject": "geography",
+  "programme": "key-stage",
+  "programmeOfStudyUrl": "https://www.gov.uk/government/publications/national-curriculum-in-england-geography-programmes-of-study",
+  "years": [
+    {
+      "yearGroup": 1,
+      "points": [
+        {
+          "id": "locational-knowledge",
+          "heading": "Locational knowledge",
+          "summary": "Name and locate the world's continents and oceans, and the countries, capital cities and seas of the United Kingdom.",
+          "skillIds": ["geography.uk-countries", "geography.land-and-sea"]
+        },
+        {
+          "id": "human-and-physical-geography",
+          "heading": "Human and physical geography",
+          "summary": "Identify seasonal and daily weather, hot and cold areas of the world, and use words for key physical and human features.",
+          "skillIds": [
+            "geography.daily-weather",
+            "geography.four-seasons",
+            "geography.physical-features",
+            "geography.human-features",
+            "geography.hot-and-cold-places"
+          ]
+        },
+        {
+          "id": "geographical-skills-and-fieldwork",
+          "heading": "Geographical skills and fieldwork",
+          "summary": "Use world maps, atlases and globes, simple compass directions, aerial views and map symbols, and simple fieldwork.",
+          "skillIds": [
+            "geography.directional-language",
+            "geography.birds-eye-view",
+            "geography.weather-chart"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 2,
+      "points": [
+        {
+          "id": "locational-knowledge",
+          "heading": "Locational knowledge",
+          "summary": "Name and locate the world's continents and oceans, and the countries, capital cities and seas of the United Kingdom.",
+          "skillIds": [
+            "geography.seven-continents",
+            "geography.five-oceans",
+            "geography.uk-capital-cities",
+            "geography.seas-around-the-uk"
+          ]
+        },
+        {
+          "id": "place-knowledge",
+          "heading": "Place knowledge",
+          "summary": "Compare the human and physical geography of a small area of the United Kingdom with a small area in a contrasting non-European country.",
+          "skillIds": ["geography.kenya-and-the-uk"]
+        },
+        {
+          "id": "human-and-physical-geography",
+          "heading": "Human and physical geography",
+          "summary": "Identify seasonal and daily weather, hot and cold areas of the world, and use words for key physical and human features.",
+          "skillIds": [
+            "geography.seaside-features",
+            "geography.equator-and-poles"
+          ]
+        },
+        {
+          "id": "geographical-skills-and-fieldwork",
+          "heading": "Geographical skills and fieldwork",
+          "summary": "Use world maps, atlases and globes, simple compass directions, aerial views and map symbols, and simple fieldwork.",
+          "skillIds": [
+            "geography.four-compass-points",
+            "geography.map-keys",
+            "geography.traffic-survey"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 3,
+      "points": [
+        {
+          "id": "locational-knowledge",
+          "heading": "Locational knowledge",
+          "summary": "Locate the world's countries, including Europe and the Americas, the counties and cities of the United Kingdom, latitude, longitude, the hemispheres and time zones.",
+          "skillIds": ["geography.countries-of-europe", "geography.uk-cities"]
+        },
+        {
+          "id": "human-and-physical-geography",
+          "heading": "Human and physical geography",
+          "summary": "Describe climate zones, biomes, rivers, mountains, volcanoes, earthquakes and the water cycle, and settlements, land use, trade and natural resources.",
+          "skillIds": [
+            "geography.parts-of-a-volcano",
+            "geography.layers-of-the-earth",
+            "geography.climate-zones",
+            "geography.land-use",
+            "geography.land-use-time-machine"
+          ]
+        },
+        {
+          "id": "geographical-skills-and-fieldwork",
+          "heading": "Geographical skills and fieldwork",
+          "summary": "Use maps, atlases, globes, the eight points of a compass, four- and six-figure grid references, Ordnance Survey symbols and fieldwork.",
+          "skillIds": [
+            "geography.eight-compass-points",
+            "geography.letter-number-grids",
+            "geography.os-map-symbols",
+            "geography.rainfall-charts"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 4,
+      "points": [
+        {
+          "id": "locational-knowledge",
+          "heading": "Locational knowledge",
+          "summary": "Locate the world's countries, including Europe and the Americas, the counties and cities of the United Kingdom, latitude, longitude, the hemispheres and time zones.",
+          "skillIds": [
+            "geography.countries-of-the-americas",
+            "geography.uk-mountains-and-rivers",
+            "geography.hemispheres"
+          ]
+        },
+        {
+          "id": "human-and-physical-geography",
+          "heading": "Human and physical geography",
+          "summary": "Describe climate zones, biomes, rivers, mountains, volcanoes, earthquakes and the water cycle, and settlements, land use, trade and natural resources.",
+          "skillIds": [
+            "geography.river-features",
+            "geography.water-cycle",
+            "geography.types-of-settlement",
+            "geography.world-biomes",
+            "geography.coastal-landforms",
+            "geography.ring-of-fire"
+          ]
+        },
+        {
+          "id": "geographical-skills-and-fieldwork",
+          "heading": "Geographical skills and fieldwork",
+          "summary": "Use maps, atlases, globes, the eight points of a compass, four- and six-figure grid references, Ordnance Survey symbols and fieldwork.",
+          "skillIds": ["geography.four-figure-grid-references"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 5,
+      "points": [
+        {
+          "id": "locational-knowledge",
+          "heading": "Locational knowledge",
+          "summary": "Locate the world's countries, including Europe and the Americas, the counties and cities of the United Kingdom, latitude, longitude, the hemispheres and time zones.",
+          "skillIds": [
+            "geography.latitude-and-tropics",
+            "geography.longitude-and-prime-meridian"
+          ]
+        },
+        {
+          "id": "place-knowledge",
+          "heading": "Place knowledge",
+          "summary": "Compare the human and physical geography of a region of the United Kingdom, a region in a European country and a region within North or South America.",
+          "skillIds": ["geography.comparing-regions"]
+        },
+        {
+          "id": "human-and-physical-geography",
+          "heading": "Human and physical geography",
+          "summary": "Describe climate zones, biomes, rivers, mountains, volcanoes, earthquakes and the water cycle, and settlements, land use, trade and natural resources.",
+          "skillIds": [
+            "geography.mountains-of-the-world",
+            "geography.natural-resources",
+            "geography.food-and-trade-links",
+            "geography.rivers-of-the-world",
+            "geography.earthquakes"
+          ]
+        },
+        {
+          "id": "geographical-skills-and-fieldwork",
+          "heading": "Geographical skills and fieldwork",
+          "summary": "Use maps, atlases, globes, the eight points of a compass, four- and six-figure grid references, Ordnance Survey symbols and fieldwork.",
+          "skillIds": [
+            "geography.six-figure-grid-references",
+            "geography.climate-graphs",
+            "geography.compass-navigation",
+            "geography.atlas-ace-skills"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 6,
+      "points": [
+        {
+          "id": "locational-knowledge",
+          "heading": "Locational knowledge",
+          "summary": "Locate the world's countries, including Europe and the Americas, the counties and cities of the United Kingdom, latitude, longitude, the hemispheres and time zones.",
+          "skillIds": [
+            "geography.time-zones",
+            "geography.world-capital-cities",
+            "geography.uk-regions"
+          ]
+        },
+        {
+          "id": "human-and-physical-geography",
+          "heading": "Human and physical geography",
+          "summary": "Describe climate zones, biomes, rivers, mountains, volcanoes, earthquakes and the water cycle, and settlements, land use, trade and natural resources.",
+          "skillIds": [
+            "geography.energy-resources",
+            "geography.urban-zones",
+            "geography.population-data",
+            "geography.river-landforms",
+            "geography.extreme-environments"
+          ]
+        },
+        {
+          "id": "geographical-skills-and-fieldwork",
+          "heading": "Geographical skills and fieldwork",
+          "summary": "Use maps, atlases, globes, the eight points of a compass, four- and six-figure grid references, Ordnance Survey symbols and fieldwork.",
+          "skillIds": [
+            "geography.os-map-skills",
+            "geography.grid-reference-challenge"
+          ]
+        }
+      ]
+    }
+  ]
+}

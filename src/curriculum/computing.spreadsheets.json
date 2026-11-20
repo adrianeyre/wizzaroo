@@ -1,0 +1,8 @@
+{
+  "id": "computing.spreadsheets",
+  "name": "Using formulas in a spreadsheet",
+  "subject": "computing",
+  "yearGroup": 6,
+  "strand": "data-and-information",
+  "prerequisites": ["computing.flat-file-databases"]
+}

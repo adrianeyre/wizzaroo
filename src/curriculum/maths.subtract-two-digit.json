@@ -1,0 +1,8 @@
+{
+  "id": "maths.subtract-two-digit",
+  "name": "Taking away from a two-digit number",
+  "subject": "maths",
+  "yearGroup": 2,
+  "strand": "addition-and-subtraction",
+  "prerequisites": ["maths.subtract-within-20"]
+}

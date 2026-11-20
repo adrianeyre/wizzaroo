@@ -1,0 +1,8 @@
+{
+  "id": "computing.debug-loops",
+  "name": "Finding bugs in loops",
+  "subject": "computing",
+  "yearGroup": 4,
+  "strand": "debugging",
+  "prerequisites": ["computing.debug-a-sequence"]
+}

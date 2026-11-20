@@ -1,0 +1,8 @@
+{
+  "id": "maths.subtract-three-digit",
+  "name": "Taking away three-digit numbers",
+  "subject": "maths",
+  "yearGroup": 3,
+  "strand": "addition-and-subtraction",
+  "prerequisites": ["maths.subtract-two-digit"]
+}

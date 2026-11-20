@@ -1,0 +1,864 @@
+{
+  "quests": [
+    {
+      "id": "pudding-lane-blaze",
+      "title": "Pudding Lane Blaze",
+      "skill": {
+        "id": "history.great-fire-of-london",
+        "name": "The Great Fire of London",
+        "subject": "history",
+        "yearGroup": 2,
+        "strand": "events-beyond-living-memory",
+        "prerequisites": []
+      },
+      "story": "Sparks are flying on Pudding Lane! Help the people of London understand the fire that changed their city.",
+      "instruction": "Read each question about the fire, then tap the right answer.",
+      "hint": "Think about London in 1666: wooden houses, narrow streets and no fire engines.",
+      "scene": "burning-london",
+      "play": "quiz",
+      "choiceProp": "clay-pot",
+      "questions": [
+        {
+          "ask": "Which street did the Great Fire start in?",
+          "answer": "Pudding Lane",
+          "wrong": ["Baker Street", "Downing Street", "Abbey Road"],
+          "fact": "Pudding Lane was a narrow street near London Bridge."
+        },
+        {
+          "ask": "What kind of shop did the fire start in?",
+          "answer": "A baker's shop",
+          "wrong": ["A butcher's shop", "A toy shop", "A sweet shop"],
+          "fact": "It began in Thomas Farriner's bakery, where the oven fire had not been put out."
+        },
+        {
+          "ask": "In what year was the Great Fire?",
+          "answer": "1666",
+          "wrong": ["1066", "1966", "1605"],
+          "fact": "The fire began early on Sunday 2 September 1666."
+        },
+        {
+          "ask": "Who was king at the time?",
+          "answer": "Charles II",
+          "wrong": ["Henry VIII", "William I", "George V"],
+          "fact": "King Charles II helped the firefighters by passing buckets of water himself."
+        },
+        {
+          "ask": "What were most houses made of?",
+          "answer": "Wood",
+          "wrong": ["Stone", "Glass", "Plastic"],
+          "fact": "Wooden houses were packed close together, so flames jumped easily from one to the next."
+        },
+        {
+          "ask": "What blew the flames across the city?",
+          "answer": "A strong wind",
+          "wrong": ["Heavy snow", "Thick fog", "A rainstorm"],
+          "fact": "The summer had been hot and dry, and a strong east wind fanned the fire."
+        },
+        {
+          "ask": "How long did the fire burn?",
+          "answer": "About four days",
+          "wrong": ["One hour", "One month", "One year"],
+          "fact": "The fire started on a Sunday and was almost out by the Thursday."
+        },
+        {
+          "ask": "Which great church burned down?",
+          "answer": "St Paul's Cathedral",
+          "wrong": [
+            "Westminster Abbey",
+            "York Minster",
+            "Canterbury Cathedral"
+          ],
+          "fact": "The heat was so great that lead from the roof ran down the streets like a river."
+        },
+        {
+          "ask": "Who wrote a famous diary about the fire?",
+          "answer": "Samuel Pepys",
+          "wrong": ["Charles Dickens", "Guy Fawkes", "Florence Nightingale"],
+          "fact": "Pepys wrote down what he saw each day, so we know a lot about the fire."
+        },
+        {
+          "ask": "About how many houses burned down?",
+          "answer": "Over 13,000",
+          "wrong": ["Ten", "About 50", "One million"],
+          "fact": "Around 13,200 houses and 87 churches were lost, and many people had no home."
+        },
+        {
+          "ask": "Which river did people escape on?",
+          "answer": "The Thames",
+          "wrong": ["The Nile", "The Severn", "The Amazon"],
+          "fact": "People piled their things into boats on the River Thames to get away."
+        },
+        {
+          "ask": "What tall column helps us remember the fire?",
+          "answer": "The Monument",
+          "wrong": ["Big Ben", "Nelson's Column", "The London Eye"],
+          "fact": "The Monument is 61 metres tall, the same as its distance from where the fire began."
+        }
+      ]
+    },
+    {
+      "id": "fire-fighters-then-and-now",
+      "title": "Firefighters Then and Now",
+      "skill": {
+        "id": "history.firefighting-then-and-now",
+        "name": "Firefighting in 1666 and today",
+        "subject": "history",
+        "yearGroup": 2,
+        "strand": "events-beyond-living-memory",
+        "prerequisites": []
+      },
+      "story": "The fire is spreading! Some ways to fight it are from 1666, and some are from today. Can you sort them?",
+      "instruction": "Is it from 1666, or from today? Tap the right basket.",
+      "hint": "Does it need electricity, an engine or a phone? None of those existed in 1666.",
+      "scene": "burning-london",
+      "play": "sort",
+      "choiceProp": "basket",
+      "bins": ["In 1666", "Today"],
+      "questions": [
+        {
+          "ask": "Leather buckets of water",
+          "answer": "In 1666",
+          "fact": "People stood in a long line, passing buckets from the river to the fire."
+        },
+        {
+          "ask": "Long hooks to pull down houses",
+          "answer": "In 1666",
+          "fact": "Pulling houses down made a gap, so the fire had nothing more to burn."
+        },
+        {
+          "ask": "A hand squirt",
+          "answer": "In 1666",
+          "fact": "A squirt was like a giant syringe that held only a few litres of water."
+        },
+        {
+          "ask": "Church bells ringing as a warning",
+          "answer": "In 1666",
+          "fact": "Bells were rung backwards, from the lowest note up, to warn of a fire."
+        },
+        {
+          "ask": "Gunpowder to make fire breaks",
+          "answer": "In 1666",
+          "fact": "Soldiers blew up some houses to make big gaps that the fire could not cross."
+        },
+        {
+          "ask": "Saving things by burying them",
+          "answer": "In 1666",
+          "fact": "Samuel Pepys buried his wine and his Parmesan cheese in his garden!"
+        },
+        {
+          "ask": "A fire engine with a siren",
+          "answer": "Today",
+          "fact": "Fire engines carry ladders, hoses and their own tank of water."
+        },
+        {
+          "ask": "A smoke alarm in the house",
+          "answer": "Today",
+          "fact": "A smoke alarm beeps loudly to wake people up if there is smoke at night."
+        },
+        {
+          "ask": "Calling 999",
+          "answer": "Today",
+          "fact": "The 999 number began in London in 1937, the first of its kind in the world."
+        },
+        {
+          "ask": "A breathing mask and air tank",
+          "answer": "Today",
+          "fact": "Firefighters carry their own air so they can breathe inside smoky buildings."
+        },
+        {
+          "ask": "A fireproof uniform and helmet",
+          "answer": "Today",
+          "fact": "Their special kit protects firefighters from heat and flames."
+        },
+        {
+          "ask": "A camera that sees through smoke",
+          "answer": "Today",
+          "fact": "A thermal camera shows warm things, so firefighters can find people in thick smoke."
+        }
+      ]
+    },
+    {
+      "id": "mr-pepys-diary",
+      "title": "Mr Pepys's Diary",
+      "skill": {
+        "id": "history.great-fire-in-order",
+        "name": "The Great Fire of London in order",
+        "subject": "history",
+        "yearGroup": 2,
+        "strand": "events-beyond-living-memory",
+        "prerequisites": []
+      },
+      "story": "Oh no, Mr Pepys has dropped his diary and the pages are muddled! Help him put the story of the fire back in order.",
+      "instruction": "Tap the event that happened first in Mr Pepys's story.",
+      "hint": "First the fire started, then it spread, then it stopped, and last of all London was rebuilt.",
+      "scene": "burning-london",
+      "play": "timeline",
+      "choiceProp": "scroll",
+      "events": [
+        {
+          "label": "Pepys starts a diary",
+          "date": "1660",
+          "order": 16600101,
+          "fact": "Samuel Pepys began his diary on 1 January 1660 and wrote in it almost every day."
+        },
+        {
+          "label": "Fire starts in bakery",
+          "date": "2 Sept 1666",
+          "order": 16660902.1,
+          "fact": "The fire began in the early hours of Sunday morning in Thomas Farriner's bakery."
+        },
+        {
+          "label": "Pepys tells the King",
+          "date": "2 Sept 1666",
+          "order": 16660902.2,
+          "fact": "Pepys took a boat to Whitehall Palace to tell King Charles II how bad the fire was."
+        },
+        {
+          "label": "St Paul's burns down",
+          "date": "4 Sept 1666",
+          "order": 16660904,
+          "fact": "The old St Paul's Cathedral burned on the fourth day of the fire."
+        },
+        {
+          "label": "The fire goes out",
+          "date": "6 Sept 1666",
+          "order": 16660906,
+          "fact": "The wind dropped, and by 6 September the fire was almost all out."
+        },
+        {
+          "label": "Wren draws new plans",
+          "date": "11 Sept 1666",
+          "order": 16660911,
+          "fact": "Christopher Wren drew a plan for a new London with wide streets."
+        },
+        {
+          "label": "New homes of brick",
+          "date": "1667",
+          "order": 16670000,
+          "fact": "A new law said houses must be built of brick or stone, not wood."
+        },
+        {
+          "label": "Pepys ends his diary",
+          "date": "1669",
+          "order": 16690531,
+          "fact": "Pepys stopped writing because he was worried about his eyesight."
+        },
+        {
+          "label": "The Monument is built",
+          "date": "1677",
+          "order": 16770000,
+          "fact": "The Monument took six years to build and you can climb 311 steps to the top."
+        },
+        {
+          "label": "New St Paul's is done",
+          "date": "1711",
+          "order": 17110000,
+          "fact": "Wren's new St Paul's Cathedral, with its huge dome, took over 35 years to build."
+        }
+      ]
+    },
+    {
+      "id": "one-small-step",
+      "title": "One Small Step",
+      "skill": {
+        "id": "history.moon-landing",
+        "name": "The first Moon landing",
+        "subject": "history",
+        "yearGroup": 2,
+        "strand": "events-beyond-living-memory",
+        "prerequisites": []
+      },
+      "story": "3, 2, 1, blast off! Zoom to the Moon and find out about the very first people to walk on it.",
+      "instruction": "Read each question about the Moon landing, then tap the answer.",
+      "hint": "Think about the Apollo 11 crew and their trip in 1969. Who did what?",
+      "scene": "moon-surface",
+      "play": "quiz",
+      "choiceProp": "stone-tablet",
+      "questions": [
+        {
+          "ask": "Who was the first person to walk on the Moon?",
+          "answer": "Neil Armstrong",
+          "wrong": ["Buzz Aldrin", "Yuri Gagarin", "Tim Peake"],
+          "fact": "Neil Armstrong stepped onto the Moon on 20 July 1969."
+        },
+        {
+          "ask": "In what year did people land on the Moon?",
+          "answer": "1969",
+          "wrong": ["1666", "1903", "2020"],
+          "fact": "No one had ever stood on another world before."
+        },
+        {
+          "ask": "Who was the second person on the Moon?",
+          "answer": "Buzz Aldrin",
+          "wrong": ["Michael Collins", "Tim Peake", "Yuri Gagarin"],
+          "fact": "Buzz Aldrin followed Neil down the ladder about 20 minutes later."
+        },
+        {
+          "ask": "Who stayed flying around the Moon?",
+          "answer": "Michael Collins",
+          "wrong": ["Buzz Aldrin", "Neil Armstrong", "Helen Sharman"],
+          "fact": "Michael Collins flew the command module, ready to take the crew home."
+        },
+        {
+          "ask": "What was the mission called?",
+          "answer": "Apollo 11",
+          "wrong": ["Rocket One", "Star Ship 7", "Moon Bus 3"],
+          "fact": "Apollo was the name of a Greek god, and this was the 11th Apollo mission."
+        },
+        {
+          "ask": "What was the landing craft called?",
+          "answer": "The Eagle",
+          "wrong": ["The Owl", "The Robin", "The Swan"],
+          "fact": "When it landed, Neil said, \"The Eagle has landed.\""
+        },
+        {
+          "ask": "Which giant rocket blasted them off?",
+          "answer": "Saturn V",
+          "wrong": ["Jupiter X", "Mars 2", "Pluto 9"],
+          "fact": "Saturn V was taller than Big Ben's tower and very, very loud."
+        },
+        {
+          "ask": "Which country sent them to the Moon?",
+          "answer": "The USA",
+          "wrong": ["France", "India", "Brazil"],
+          "fact": "The mission was run by NASA, the American space agency."
+        },
+        {
+          "ask": "What did they put up on the Moon?",
+          "answer": "A flag",
+          "wrong": ["A tent", "A bike", "A snowman"],
+          "fact": "They also left a sign that said they came in peace for all people."
+        },
+        {
+          "ask": "What did they bring back to Earth?",
+          "answer": "Moon rocks",
+          "wrong": ["Moon cheese", "Aliens", "Ice cream"],
+          "fact": "They collected about 22 kilograms of rock and dust for scientists to study."
+        },
+        {
+          "ask": "How did people at home watch the landing?",
+          "answer": "On television",
+          "wrong": ["On a tablet", "On a phone", "At the theatre"],
+          "fact": "About 600 million people watched the fuzzy black-and-white pictures live."
+        },
+        {
+          "ask": "Finish Neil's words: One small step for…?",
+          "answer": "Man",
+          "wrong": ["Mice", "Me", "My dog"],
+          "fact": "He went on: \"…one giant leap for mankind.\""
+        }
+      ]
+    },
+    {
+      "id": "up-up-and-away",
+      "title": "Up, Up and Away!",
+      "skill": {
+        "id": "history.first-flight",
+        "name": "The first powered flight",
+        "subject": "history",
+        "yearGroup": 2,
+        "strand": "events-beyond-living-memory",
+        "prerequisites": []
+      },
+      "story": "Whoosh! On windy sand dunes, two brothers are about to fly a plane for the very first time. Join them!",
+      "instruction": "Read each question about the first flight, then tap the answer.",
+      "hint": "Think about the two brothers from America and their short, wobbly first flight in 1903.",
+      "scene": "kitty-hawk-dunes",
+      "play": "quiz",
+      "choiceProp": "wooden-crate",
+      "questions": [
+        {
+          "ask": "Who made the first powered plane flight?",
+          "answer": "The Wright brothers",
+          "wrong": [
+            "The Grimm brothers",
+            "The Smith brothers",
+            "The Wright sisters"
+          ],
+          "fact": "Before planes, people could only fly in balloons and gliders."
+        },
+        {
+          "ask": "What were the two brothers called?",
+          "answer": "Orville and Wilbur",
+          "wrong": ["Tom and Jerry", "Jack and Jill", "Ben and Bill"],
+          "fact": "Wilbur was the older brother, and Orville was four years younger."
+        },
+        {
+          "ask": "In what year was the first flight?",
+          "answer": "1903",
+          "wrong": ["1666", "1969", "1805"],
+          "fact": "The first flight was on a cold, windy day: 17 December 1903."
+        },
+        {
+          "ask": "Where did they fly?",
+          "answer": "Kitty Hawk",
+          "wrong": ["Hollywood", "New York", "Paris"],
+          "fact": "The windy sand dunes near Kitty Hawk, in the USA, were good for flying and soft landings."
+        },
+        {
+          "ask": "What was their plane called?",
+          "answer": "The Wright Flyer",
+          "wrong": ["The Spitfire", "Concorde", "The Jumbo Jet"],
+          "fact": "The Flyer was made of wood and cloth, with two long wings."
+        },
+        {
+          "ask": "How long did the first flight last?",
+          "answer": "12 seconds",
+          "wrong": ["12 hours", "12 days", "12 minutes"],
+          "fact": "In 12 seconds the plane flew about 37 metres, less than a jumbo jet's length."
+        },
+        {
+          "ask": "What kind of shop did the brothers run?",
+          "answer": "A bicycle shop",
+          "wrong": ["A sweet shop", "A toy shop", "A shoe shop"],
+          "fact": "Fixing bikes taught them a lot about balance and building machines."
+        },
+        {
+          "ask": "Which brother flew first?",
+          "answer": "Orville",
+          "wrong": ["Wilbur", "Their sister", "Their dad"],
+          "fact": "The brothers tossed a coin to choose, and Wilbur won, but his first try failed."
+        },
+        {
+          "ask": "What toy gave them the idea of flying?",
+          "answer": "A toy helicopter",
+          "wrong": ["A toy boat", "A teddy", "A yo-yo"],
+          "fact": "Their dad gave them a little flying toy powered by a rubber band."
+        },
+        {
+          "ask": "What made the plane go?",
+          "answer": "An engine",
+          "wrong": ["A horse", "Pedals", "A balloon"],
+          "fact": "They built a light petrol engine with their mechanic, Charlie Taylor."
+        },
+        {
+          "ask": "How did the pilot ride the Flyer?",
+          "answer": "Lying down",
+          "wrong": ["Standing up", "Upside down", "In a seat"],
+          "fact": "The pilot lay flat on his tummy on the bottom wing."
+        },
+        {
+          "ask": "How many flights did they make that day?",
+          "answer": "Four",
+          "wrong": ["One", "Ten", "Fifty"],
+          "fact": "The longest of the four flights that day lasted 59 seconds."
+        }
+      ]
+    },
+    {
+      "id": "nurses-of-the-crimea",
+      "title": "Nurses of the Crimea",
+      "skill": {
+        "id": "history.florence-and-mary",
+        "name": "Florence Nightingale and Mary Seacole",
+        "subject": "history",
+        "yearGroup": 2,
+        "strand": "significant-individuals",
+        "prerequisites": []
+      },
+      "story": "Two brave women helped soldiers in the Crimean War. Find out how Florence Nightingale and Mary Seacole each helped.",
+      "instruction": "Is it about Florence or about Mary? Tap the right basket.",
+      "hint": "Florence ran a big army hospital. Mary came from Jamaica and set up her own place to help.",
+      "scene": "hospital-ward",
+      "play": "sort",
+      "choiceProp": "basket",
+      "bins": ["Florence Nightingale", "Mary Seacole"],
+      "questions": [
+        {
+          "ask": "Born in the city of Florence, Italy",
+          "answer": "Florence Nightingale",
+          "fact": "Her parents named her after the city where she was born in 1820."
+        },
+        {
+          "ask": "Ran the army hospital at Scutari",
+          "answer": "Florence Nightingale",
+          "fact": "The British government asked her to take charge of the nurses there."
+        },
+        {
+          "ask": "Called the Lady with the Lamp",
+          "answer": "Florence Nightingale",
+          "fact": "She walked the wards at night with a lamp to check on the soldiers."
+        },
+        {
+          "ask": "Made clever charts with numbers",
+          "answer": "Florence Nightingale",
+          "fact": "Her charts helped show that clean hospitals saved lives."
+        },
+        {
+          "ask": "Started a nursing school in London",
+          "answer": "Florence Nightingale",
+          "fact": "Her school opened in 1860 at St Thomas' Hospital."
+        },
+        {
+          "ask": "Took 38 nurses to the war",
+          "answer": "Florence Nightingale",
+          "fact": "She set off with her team of nurses in 1854."
+        },
+        {
+          "ask": "Born in Kingston, Jamaica",
+          "answer": "Mary Seacole",
+          "fact": "Mary was born in 1805. Her mother was Jamaican and her father was Scottish."
+        },
+        {
+          "ask": "Used herbal remedies",
+          "answer": "Mary Seacole",
+          "fact": "Mary learned to make medicines from plants from her mother, who was a healer."
+        },
+        {
+          "ask": "Built the British Hotel",
+          "answer": "Mary Seacole",
+          "fact": "Near Balaclava she opened a place where soldiers could get food, rest and care."
+        },
+        {
+          "ask": "Paid her own way to the war",
+          "answer": "Mary Seacole",
+          "fact": "When she was not chosen to go, Mary travelled to the Crimea with her own money."
+        },
+        {
+          "ask": "Called Mother Seacole by soldiers",
+          "answer": "Mary Seacole",
+          "fact": "The soldiers loved her kindness and her good food."
+        },
+        {
+          "ask": "Wrote Wonderful Adventures",
+          "answer": "Mary Seacole",
+          "fact": "Her book about her life came out in 1857 and sold many copies."
+        }
+      ]
+    },
+    {
+      "id": "remember-remember",
+      "title": "Remember, Remember",
+      "skill": {
+        "id": "history.gunpowder-plot",
+        "name": "The Gunpowder Plot",
+        "subject": "history",
+        "yearGroup": 2,
+        "strand": "events-beyond-living-memory",
+        "prerequisites": []
+      },
+      "story": "Shh! Creep down into the dark cellar under Parliament and uncover the secret plot of 1605.",
+      "instruction": "Read each question about the plot, then tap the right answer.",
+      "hint": "Think about the plotters, the King, and the secret letter that gave the plan away.",
+      "scene": "parliament-cellar",
+      "play": "quiz",
+      "choiceProp": "torch",
+      "questions": [
+        {
+          "ask": "On what date was the plot found out?",
+          "answer": "5 November",
+          "wrong": ["25 December", "1 April", "14 February"],
+          "fact": "That is why Bonfire Night is on 5 November every year."
+        },
+        {
+          "ask": "In what year was the Gunpowder Plot?",
+          "answer": "1605",
+          "wrong": ["1066", "1666", "1969"],
+          "fact": "The plot was over 400 years ago, in the time of the Stuart kings."
+        },
+        {
+          "ask": "Who was caught guarding the gunpowder?",
+          "answer": "Guy Fawkes",
+          "wrong": ["Robin Hood", "Samuel Pepys", "King James"],
+          "fact": "Guy Fawkes knew a lot about gunpowder from his time as a soldier."
+        },
+        {
+          "ask": "Who was the king in 1605?",
+          "answer": "James I",
+          "wrong": ["Charles II", "Henry VIII", "William I"],
+          "fact": "James was already King of Scotland when he became King of England too."
+        },
+        {
+          "ask": "What did the plotters want to blow up?",
+          "answer": "Parliament",
+          "wrong": ["A castle", "A bridge", "A ship"],
+          "fact": "The plotters were Catholics who were angry about harsh laws against them."
+        },
+        {
+          "ask": "Where was the gunpowder hidden?",
+          "answer": "In a cellar",
+          "wrong": ["In a tree", "In a boat", "On a roof"],
+          "fact": "It was under the House of Lords, covered with piles of firewood."
+        },
+        {
+          "ask": "Who was the leader of the plot?",
+          "answer": "Robert Catesby",
+          "wrong": ["Samuel Pepys", "Walter Raleigh", "Francis Drake"],
+          "fact": "Robert Catesby planned the plot and asked others to join him."
+        },
+        {
+          "ask": "What gave the secret plan away?",
+          "answer": "A letter",
+          "wrong": ["A song", "A dream", "A phone call"],
+          "fact": "A letter warned Lord Monteagle to stay away from Parliament, and he told the King's men."
+        },
+        {
+          "ask": "How many barrels of gunpowder were there?",
+          "answer": "36",
+          "wrong": ["1", "3", "500"],
+          "fact": "That was enough gunpowder to destroy the whole building."
+        },
+        {
+          "ask": "What do people light on 5 November?",
+          "answer": "Bonfires",
+          "wrong": ["Pumpkins", "Christmas lights", "Birthday candles"],
+          "fact": "People lit bonfires in 1605 to celebrate that the King was safe."
+        },
+        {
+          "ask": "What lights up the sky on Bonfire Night?",
+          "answer": "Fireworks",
+          "wrong": ["Rainbows", "Kites", "Balloons"],
+          "fact": "Fireworks remind us of the gunpowder that never went off."
+        },
+        {
+          "ask": "Who still searches Parliament's cellars?",
+          "answer": "The King's guards",
+          "wrong": ["Firefighters", "Teachers", "Postmen"],
+          "fact": "Before the State Opening of Parliament, the Yeomen of the Guard search the cellars."
+        }
+      ]
+    },
+    {
+      "id": "brave-explorers",
+      "title": "Brave Explorers",
+      "skill": {
+        "id": "history.explorers-compared",
+        "name": "Christopher Columbus and Neil Armstrong",
+        "subject": "history",
+        "yearGroup": 2,
+        "strand": "significant-individuals",
+        "prerequisites": []
+      },
+      "story": "One explorer sailed across the sea and one flew to the Moon! Sort the clues to find out which explorer each one is about.",
+      "instruction": "Is it about Columbus or Neil Armstrong? Tap the right chest.",
+      "hint": "Columbus sailed in 1492 with ships and wind. Neil flew in 1969 with a rocket.",
+      "scene": "museum-hall",
+      "play": "sort",
+      "choiceProp": "treasure-chest",
+      "bins": ["Columbus", "Neil Armstrong"],
+      "questions": [
+        {
+          "ask": "Set sail in 1492",
+          "answer": "Columbus",
+          "fact": "Christopher Columbus was from Genoa in Italy, but his trip was paid for by Spain."
+        },
+        {
+          "ask": "Took three ships",
+          "answer": "Columbus",
+          "fact": "His three ships were the Niña, the Pinta and the Santa María."
+        },
+        {
+          "ask": "Led the ship Santa María",
+          "answer": "Columbus",
+          "fact": "The Santa María was the biggest of his three wooden ships."
+        },
+        {
+          "ask": "Set off from Spain",
+          "answer": "Columbus",
+          "fact": "He sailed west across the Atlantic Ocean for over two months."
+        },
+        {
+          "ask": "Thought he had reached Asia",
+          "answer": "Columbus",
+          "fact": "He had really reached islands in the Caribbean, where people already lived."
+        },
+        {
+          "ask": "Used the wind and stars to travel",
+          "answer": "Columbus",
+          "fact": "Sailors used the stars and a compass to find their way across the sea."
+        },
+        {
+          "ask": "Flew into space in 1969",
+          "answer": "Neil Armstrong",
+          "fact": "Neil Armstrong was an American pilot and astronaut."
+        },
+        {
+          "ask": "Travelled in a giant rocket",
+          "answer": "Neil Armstrong",
+          "fact": "The Saturn V rocket took three days to reach the Moon."
+        },
+        {
+          "ask": "First to walk on the Moon",
+          "answer": "Neil Armstrong",
+          "fact": "His footprints are still there, because there is no wind on the Moon."
+        },
+        {
+          "ask": "Wore a spacesuit and helmet",
+          "answer": "Neil Armstrong",
+          "fact": "The spacesuit gave him air to breathe and kept him safe from heat and cold."
+        },
+        {
+          "ask": "Talked to Earth by radio",
+          "answer": "Neil Armstrong",
+          "fact": "Mission Control in Houston, USA, could hear him from the Moon."
+        },
+        {
+          "ask": "Landed in a craft called Eagle",
+          "answer": "Neil Armstrong",
+          "fact": "Neil steered the Eagle past big rocks to find a safe landing place."
+        }
+      ]
+    },
+    {
+      "id": "two-queens",
+      "title": "Two Queens",
+      "skill": {
+        "id": "history.two-queens",
+        "name": "Queen Victoria and Queen Elizabeth II",
+        "subject": "history",
+        "yearGroup": 2,
+        "strand": "significant-individuals",
+        "prerequisites": []
+      },
+      "story": "Two famous queens have left their crowns in the castle! Sort the clues to find out which queen each one is about.",
+      "instruction": "Is it about Queen Victoria or Elizabeth II? Tap the right shield.",
+      "hint": "Victoria lived in the 1800s, before TV. Elizabeth II lived much closer to our time.",
+      "scene": "castle-courtyard",
+      "play": "sort",
+      "choiceProp": "shield",
+      "bins": ["Queen Victoria", "Elizabeth II"],
+      "questions": [
+        {
+          "ask": "Became queen in 1837",
+          "answer": "Queen Victoria",
+          "fact": "Victoria was just 18 years old when she became queen."
+        },
+        {
+          "ask": "Married Prince Albert",
+          "answer": "Queen Victoria",
+          "fact": "Prince Albert helped to bring the Christmas tree tradition to Britain."
+        },
+        {
+          "ask": "Had nine children",
+          "answer": "Queen Victoria",
+          "fact": "Her children married into royal families all over Europe."
+        },
+        {
+          "ask": "Was Empress of India",
+          "answer": "Queen Victoria",
+          "fact": "She was given this title in 1876, when Britain ruled India."
+        },
+        {
+          "ask": "Wore black for 40 years",
+          "answer": "Queen Victoria",
+          "fact": "She wore black for the rest of her life after Albert died in 1861."
+        },
+        {
+          "ask": "Took her first train ride in 1842",
+          "answer": "Queen Victoria",
+          "fact": "Railways spread all over Britain while Victoria was queen."
+        },
+        {
+          "ask": "Crowned in 1953",
+          "answer": "Elizabeth II",
+          "fact": "Her coronation was shown on TV, and many families bought a TV to watch it."
+        },
+        {
+          "ask": "Married Prince Philip",
+          "answer": "Elizabeth II",
+          "fact": "They were married for 73 years."
+        },
+        {
+          "ask": "Loved her corgi dogs",
+          "answer": "Elizabeth II",
+          "fact": "She had more than 30 corgis during her life."
+        },
+        {
+          "ask": "Was queen for 70 years",
+          "answer": "Elizabeth II",
+          "fact": "She reigned longer than any other British king or queen, even Victoria."
+        },
+        {
+          "ask": "Had a Platinum Jubilee",
+          "answer": "Elizabeth II",
+          "fact": "In 2022 people held street parties to celebrate her 70 years as queen."
+        },
+        {
+          "ask": "Sent her first email in 1976",
+          "answer": "Elizabeth II",
+          "fact": "She was one of the first heads of state to send an email."
+        }
+      ]
+    },
+    {
+      "id": "great-museum-timeline",
+      "title": "The Great Museum Timeline",
+      "skill": {
+        "id": "history.events-in-order",
+        "name": "Famous events in time order",
+        "subject": "history",
+        "yearGroup": 2,
+        "strand": "chronological-understanding",
+        "prerequisites": []
+      },
+      "story": "The museum's timeline has fallen down! Help the curator put famous events from history back in the right order.",
+      "instruction": "Tap the event in the museum that happened first.",
+      "hint": "Ships and sails came long before planes, and rockets and computers came last of all. Look for clues!",
+      "scene": "museum-hall",
+      "play": "timeline",
+      "choiceProp": "scroll",
+      "events": [
+        {
+          "label": "Columbus sets sail",
+          "date": "1492",
+          "order": 1492,
+          "fact": "Columbus crossed the Atlantic Ocean with three wooden sailing ships."
+        },
+        {
+          "label": "Gunpowder Plot",
+          "date": "1605",
+          "order": 1605,
+          "fact": "Guy Fawkes was caught in the cellar under Parliament on 5 November."
+        },
+        {
+          "label": "Great Fire of London",
+          "date": "1666",
+          "order": 1666,
+          "fact": "The fire started in a bakery on Pudding Lane and burned for about four days."
+        },
+        {
+          "label": "Grace Darling rescue",
+          "date": "1838",
+          "order": 1838,
+          "fact": "Grace and her dad rowed through a storm to save nine people."
+        },
+        {
+          "label": "Florence at Scutari",
+          "date": "1854",
+          "order": 1854,
+          "fact": "Florence Nightingale made the army hospital clean and safe."
+        },
+        {
+          "label": "First powered flight",
+          "date": "1903",
+          "order": 1903,
+          "fact": "The Wright brothers flew for 12 seconds at Kitty Hawk, USA."
+        },
+        {
+          "label": "Elizabeth II crowned",
+          "date": "1953",
+          "order": 1953,
+          "fact": "Millions of people watched the coronation on television."
+        },
+        {
+          "label": "First person in space",
+          "date": "1961",
+          "order": 1961,
+          "fact": "Yuri Gagarin from the Soviet Union flew once around the Earth."
+        },
+        {
+          "label": "Moon landing",
+          "date": "1969",
+          "order": 1969,
+          "fact": "Neil Armstrong and Buzz Aldrin walked on the Moon."
+        },
+        {
+          "label": "First web page",
+          "date": "1991",
+          "order": 1991,
+          "fact": "Tim Berners-Lee, a British scientist, invented the World Wide Web."
+        }
+      ]
+    }
+  ]
+}

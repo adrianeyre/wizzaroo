@@ -1,0 +1,8 @@
+{
+  "id": "english.word-list-lower-key-stage-2",
+  "name": "Spelling the Years 3 and 4 word list",
+  "subject": "english",
+  "yearGroup": 3,
+  "strand": "spelling",
+  "prerequisites": ["english.more-common-exception-words"]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "maths.count-in-sixes-sevens-and-twenty-fives",
+  "name": "Counting in 6s, 7s and 25s, and back through zero",
+  "subject": "maths",
+  "yearGroup": 4,
+  "strand": "number-and-place-value",
+  "prerequisites": ["maths.count-in-fours-eights-and-fifties"]
+}

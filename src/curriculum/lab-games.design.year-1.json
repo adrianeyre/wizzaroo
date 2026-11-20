@@ -1,0 +1,613 @@
+{
+  "subject": "design",
+  "yearGroup": 1,
+  "games": [
+    {
+      "id": "dt-tool-picker",
+      "title": "Tool Picker",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Choosing the right tool",
+      "strand": "choosing-tools",
+      "statutoryRequirement": "Pupils should be taught to select from and use a range of tools and equipment to perform practical tasks [for example, cutting, shaping, joining and finishing]",
+      "instruction": "Think about the job, then tap the best tool.",
+      "hint": "Not quite. Think about what the job needs the tool to do.",
+      "questions": [
+        {
+          "ask": "Which tool is best for cutting paper?",
+          "answer": "Scissors",
+          "distractors": ["Hammer", "Spoon", "Ruler"]
+        },
+        {
+          "ask": "Which tool is best for sticking two sheets of paper together?",
+          "answer": "Glue stick",
+          "distractors": ["Scissors", "Pencil", "Rubber"]
+        },
+        {
+          "ask": "Which tool helps you draw a straight line?",
+          "answer": "Ruler",
+          "distractors": ["Sponge", "Scissors", "Whisk"]
+        },
+        {
+          "ask": "Which tool makes a neat hole in paper?",
+          "answer": "Hole punch",
+          "distractors": ["Glue stick", "Ruler", "Crayon"]
+        },
+        {
+          "ask": "Which tool is best for stirring a cake mix?",
+          "answer": "Wooden spoon",
+          "distractors": ["Scissors", "Hole punch", "Ruler"]
+        },
+        {
+          "ask": "Which tool measures how long a strip of card is?",
+          "answer": "Ruler",
+          "distractors": ["Glue stick", "Whisk", "Sponge"]
+        },
+        {
+          "ask": "Which tool could join two pieces of fabric?",
+          "answer": "Needle and thread",
+          "distractors": ["Ruler", "Pencil", "Hole punch"]
+        },
+        {
+          "ask": "How should you carry scissors safely?",
+          "answer": "Blades closed, down",
+          "distractors": [
+            "Open and pointing up",
+            "Waving them about",
+            "Running with them"
+          ]
+        },
+        {
+          "ask": "Which tool spreads butter on bread safely?",
+          "answer": "Butter knife",
+          "distractors": ["Whisk", "Ruler", "Hole punch"]
+        }
+      ]
+    },
+    {
+      "id": "dt-material-match",
+      "title": "Material Match",
+      "station": "sort",
+      "prop": "rock",
+      "skillName": "Knowing everyday materials",
+      "strand": "choosing-materials",
+      "statutoryRequirement": "Pupils should be taught to select from and use a wide range of materials and components, including construction materials, textiles and ingredients, according to their characteristics",
+      "instruction": "Think about what it is made of, then tap the group.",
+      "hint": "Not quite. Think about how it feels and what it is made of.",
+      "questions": [
+        {
+          "ask": "Which group does a T-shirt usually belong in?",
+          "answer": "Fabric",
+          "distractors": ["Metal", "Wood", "Glass"]
+        },
+        {
+          "ask": "Which group does a window pane usually belong in?",
+          "answer": "Glass",
+          "distractors": ["Fabric", "Paper", "Wood"]
+        },
+        {
+          "ask": "Which group does a saucepan usually belong in?",
+          "answer": "Metal",
+          "distractors": ["Paper", "Fabric", "Card"]
+        },
+        {
+          "ask": "Which group does a cereal box belong in?",
+          "answer": "Card",
+          "distractors": ["Metal", "Glass", "Fabric"]
+        },
+        {
+          "ask": "Which group does a seaside bucket usually belong in?",
+          "answer": "Plastic",
+          "distractors": ["Paper", "Glass", "Fabric"]
+        },
+        {
+          "ask": "Which group does a sock belong in?",
+          "answer": "Fabric",
+          "distractors": ["Glass", "Metal", "Card"]
+        },
+        {
+          "ask": "Which group does a paper clip belong in?",
+          "answer": "Metal",
+          "distractors": ["Fabric", "Card", "Wood"]
+        },
+        {
+          "ask": "Which group does a page in a book belong in?",
+          "answer": "Paper",
+          "distractors": ["Metal", "Glass", "Plastic"]
+        },
+        {
+          "ask": "Which group does a garden fence usually belong in?",
+          "answer": "Wood",
+          "distractors": ["Paper", "Glass", "Fabric"]
+        }
+      ]
+    },
+    {
+      "id": "dt-healthy-plate",
+      "title": "Healthy Plate",
+      "station": "sort",
+      "prop": "egg",
+      "skillName": "Sorting foods for a healthy diet",
+      "strand": "healthy-diet",
+      "statutoryRequirement": "Pupils should be taught to use the basic principles of a healthy and varied diet to prepare dishes",
+      "instruction": "Think about the food, then tap its group.",
+      "hint": "Not quite. Think about what kind of food it is.",
+      "questions": [
+        {
+          "ask": "Which group does an apple belong in?",
+          "answer": "Fruit and veg",
+          "distractors": ["Starchy food", "Dairy", "Eat less often"]
+        },
+        {
+          "ask": "Which group does bread belong in?",
+          "answer": "Starchy food",
+          "distractors": ["Fruit and veg", "Protein", "Dairy"]
+        },
+        {
+          "ask": "Which group does cheese belong in?",
+          "answer": "Dairy",
+          "distractors": ["Starchy food", "Fruit and veg", "Protein"]
+        },
+        {
+          "ask": "Which group does fish belong in?",
+          "answer": "Protein",
+          "distractors": ["Dairy", "Starchy food", "Fruit and veg"]
+        },
+        {
+          "ask": "Which group do sweets belong in?",
+          "answer": "Eat less often",
+          "distractors": ["Fruit and veg", "Protein", "Dairy"]
+        },
+        {
+          "ask": "Which group does pasta belong in?",
+          "answer": "Starchy food",
+          "distractors": ["Protein", "Dairy", "Eat less often"]
+        },
+        {
+          "ask": "Which group does a carrot belong in?",
+          "answer": "Fruit and veg",
+          "distractors": ["Dairy", "Protein", "Eat less often"]
+        },
+        {
+          "ask": "Which group do eggs belong in?",
+          "answer": "Protein",
+          "distractors": ["Fruit and veg", "Starchy food", "Eat less often"]
+        },
+        {
+          "ask": "Which group does yoghurt belong in?",
+          "answer": "Dairy",
+          "distractors": ["Starchy food", "Eat less often", "Fruit and veg"]
+        }
+      ]
+    },
+    {
+      "id": "dt-farm-to-fork",
+      "title": "Farm To Fork",
+      "station": "mystery",
+      "prop": "seedling",
+      "skillName": "Knowing where foods come from",
+      "strand": "food-origins",
+      "statutoryRequirement": "Pupils should be taught to understand where food comes from",
+      "instruction": "Read the clues, then tap the food.",
+      "hint": "Not quite. Read the clues again and picture the farm.",
+      "questions": [
+        {
+          "ask": "I come from cows and I am white. What am I?",
+          "answer": "Milk",
+          "distractors": ["Juice", "Flour", "Honey"]
+        },
+        {
+          "ask": "Bees make me from the nectar of flowers. What am I?",
+          "answer": "Honey",
+          "distractors": ["Milk", "Jam", "Butter"]
+        },
+        {
+          "ask": "Hens lay me. What am I?",
+          "answer": "Egg",
+          "distractors": ["Apple", "Potato", "Cheese"]
+        },
+        {
+          "ask": "I am made by grinding wheat and I am used to make bread. What am I?",
+          "answer": "Flour",
+          "distractors": ["Sugar", "Salt", "Rice"]
+        },
+        {
+          "ask": "I grow under the ground and can be mashed or made into chips. What am I?",
+          "answer": "Potato",
+          "distractors": ["Apple", "Banana", "Egg"]
+        },
+        {
+          "ask": "I grow on trees in an orchard and can be red or green. What am I?",
+          "answer": "Apple",
+          "distractors": ["Carrot", "Potato", "Onion"]
+        },
+        {
+          "ask": "I am made from milk and cheddar is one kind of me. What am I?",
+          "answer": "Cheese",
+          "distractors": ["Bread", "Honey", "Jam"]
+        },
+        {
+          "ask": "I am an orange root that grows in the soil. What am I?",
+          "answer": "Carrot",
+          "distractors": ["Orange", "Pumpkin", "Apple"]
+        },
+        {
+          "ask": "I am a fish caught at sea and often served with chips. What am I?",
+          "answer": "Cod",
+          "distractors": ["Chicken", "Beef", "Lamb"]
+        }
+      ]
+    },
+    {
+      "id": "dt-who-is-it-for",
+      "title": "Who Is It For?",
+      "station": "compare",
+      "prop": "heart",
+      "skillName": "Designing for a user and purpose",
+      "strand": "design-criteria",
+      "statutoryRequirement": "Pupils should be taught to design purposeful, functional, appealing products for themselves and other users based on design criteria",
+      "instruction": "Think about who will use it, then tap the best answer.",
+      "hint": "Not quite. Think about who will use it and what it must do.",
+      "questions": [
+        {
+          "ask": "Who is a rattle designed for?",
+          "answer": "A baby",
+          "distractors": ["A pilot", "A chef", "A builder"]
+        },
+        {
+          "ask": "A cup for a toddler should be...",
+          "answer": "Hard to spill",
+          "distractors": ["Made of glass", "Very heavy", "Full of holes"]
+        },
+        {
+          "ask": "Why does a raincoat need to be waterproof?",
+          "answer": "To keep you dry",
+          "distractors": ["To keep you wet", "To look shiny", "To be heavy"]
+        },
+        {
+          "ask": "A bag for carrying books needs to be...",
+          "answer": "Strong",
+          "distractors": ["See-through", "Tiny", "Made of tissue"]
+        },
+        {
+          "ask": "What is a sun hat with a wide brim for?",
+          "answer": "Shade from the sun",
+          "distractors": [
+            "Keeping ears wet",
+            "Carrying shopping",
+            "Holding pencils"
+          ]
+        },
+        {
+          "ask": "A lunchbox needs a lid that...",
+          "answer": "Closes tightly",
+          "distractors": ["Falls off", "Has big holes", "Is made of paper"]
+        },
+        {
+          "ask": "Party hats for a birthday should look...",
+          "answer": "Bright and fun",
+          "distractors": ["Dull and grey", "Torn", "Dirty"]
+        },
+        {
+          "ask": "A toy for a baby must NOT have...",
+          "answer": "Small loose parts",
+          "distractors": ["Soft edges", "Bright colours", "A smooth shape"]
+        },
+        {
+          "ask": "A pencil pot must be able to...",
+          "answer": "Hold pencils",
+          "distractors": ["Fly", "Float away", "Make music"]
+        }
+      ]
+    },
+    {
+      "id": "dt-product-detectives",
+      "title": "Product Detectives",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Exploring existing products",
+      "strand": "evaluate-products",
+      "statutoryRequirement": "Pupils should be taught to explore and evaluate a range of existing products; evaluate their ideas and products against design criteria",
+      "instruction": "Think about what the product does, then tap the reason.",
+      "hint": "Not quite. Think about how the product is used.",
+      "questions": [
+        {
+          "ask": "Why does a toothbrush have a long handle?",
+          "answer": "To reach your teeth",
+          "distractors": ["To look tall", "To be heavy", "To float"]
+        },
+        {
+          "ask": "Why are wellies made of rubber?",
+          "answer": "It is waterproof",
+          "distractors": [
+            "It is see-through",
+            "It is soft like wool",
+            "It is crunchy"
+          ]
+        },
+        {
+          "ask": "Why do scissors for children have rounded tips?",
+          "answer": "To be safer",
+          "distractors": ["To cut faster", "To look funny", "To be heavier"]
+        },
+        {
+          "ask": "Why does a mug have a handle?",
+          "answer": "Easy to hold",
+          "distractors": ["To look tall", "To make it heavy", "To pour faster"]
+        },
+        {
+          "ask": "Why is a bike helmet hard?",
+          "answer": "To protect your head",
+          "distractors": ["To keep you cool", "To look shiny", "To be noisy"]
+        },
+        {
+          "ask": "Why is a teddy bear made of soft fabric?",
+          "answer": "Nice to cuddle",
+          "distractors": [
+            "To be waterproof",
+            "To be hard as metal",
+            "To be heavy"
+          ]
+        },
+        {
+          "ask": "When you test a product, what should you ask?",
+          "answer": "Does it work well?",
+          "distractors": [
+            "What day is it?",
+            "Is it lunchtime?",
+            "Is it raining?"
+          ]
+        },
+        {
+          "ask": "Why does a lunchbox have a clip on the lid?",
+          "answer": "To keep it shut",
+          "distractors": ["To make it heavy", "To look old", "To let food out"]
+        },
+        {
+          "ask": "Why do many drink bottles have a screw lid?",
+          "answer": "To stop spills",
+          "distractors": ["To make noise", "To look tall", "To make it hot"]
+        }
+      ]
+    },
+    {
+      "id": "dt-slide-and-lever",
+      "title": "Slide And Lever Lab",
+      "station": "sort",
+      "prop": "magnet",
+      "skillName": "Telling levers from sliders",
+      "strand": "mechanisms",
+      "statutoryRequirement": "Pupils should be taught to explore and use mechanisms [for example, levers, sliders, wheels and axles], in their products",
+      "instruction": "Think about how it moves, then tap its group.",
+      "hint": "Not quite. Does it move in a straight line, or turn on a pivot?",
+      "questions": [
+        {
+          "ask": "A card strip moves a rocket up and down a slot. Which group?",
+          "answer": "Slider",
+          "distractors": ["Lever", "Wheel", "Spring"]
+        },
+        {
+          "ask": "A card arm turns around a split pin to wave. Which group?",
+          "answer": "Lever",
+          "distractors": ["Slider", "Wheel", "Spring"]
+        },
+        {
+          "ask": "A drawer moves in and out in a straight line. Which group?",
+          "answer": "Slider",
+          "distractors": ["Lever", "Wheel", "Spring"]
+        },
+        {
+          "ask": "A seesaw tips up and down around its middle. Which group?",
+          "answer": "Lever",
+          "distractors": ["Slider", "Wheel", "Spring"]
+        },
+        {
+          "ask": "A toy car rolls along on round parts. Which group?",
+          "answer": "Wheel",
+          "distractors": ["Lever", "Slider", "Spring"]
+        },
+        {
+          "ask": "What is the point that a lever turns around called?",
+          "answer": "Pivot",
+          "distractors": ["Slot", "Wheel", "Handle"]
+        },
+        {
+          "ask": "What can you use as a pivot in a card picture?",
+          "answer": "Split pin",
+          "distractors": ["Glue stick", "Crayon", "Rubber"]
+        },
+        {
+          "ask": "What is the gap cut for a slider to move along?",
+          "answer": "Slot",
+          "distractors": ["Pivot", "Axle", "Hinge"]
+        },
+        {
+          "ask": "How does a slider move?",
+          "answer": "In a straight line",
+          "distractors": ["Round and round", "It stays still", "In a spiral"]
+        }
+      ]
+    },
+    {
+      "id": "dt-wheels-on-the-go",
+      "title": "Wheels On The Go",
+      "station": "compare",
+      "prop": "planet",
+      "skillName": "Using wheels and axles",
+      "strand": "mechanisms",
+      "statutoryRequirement": "Pupils should be taught to explore and use mechanisms [for example, levers, sliders, wheels and axles], in their products",
+      "instruction": "Think about how wheels turn, then tap the answer.",
+      "hint": "Not quite. Think about how a wheel rolls on its axle.",
+      "questions": [
+        {
+          "ask": "What is the rod that joins two wheels called?",
+          "answer": "Axle",
+          "distractors": ["Lever", "Pivot", "Slider"]
+        },
+        {
+          "ask": "Which shape must a wheel be to roll smoothly?",
+          "answer": "Circle",
+          "distractors": ["Square", "Triangle", "Star"]
+        },
+        {
+          "ask": "Where should the hole for the axle go in a wheel?",
+          "answer": "In the centre",
+          "distractors": ["Near the edge", "On the side", "At the top"]
+        },
+        {
+          "ask": "How many wheels does a bicycle have?",
+          "answer": "Two",
+          "distractors": ["One", "Four", "Six"]
+        },
+        {
+          "ask": "Which of these has wheels and axles?",
+          "answer": "A toy car",
+          "distractors": ["A spoon", "A cup", "A hat"]
+        },
+        {
+          "ask": "How many wheels does a wheelbarrow usually have?",
+          "answer": "One",
+          "distractors": ["Three", "Four", "Six"]
+        },
+        {
+          "ask": "Why might a wheel wobble as it rolls?",
+          "answer": "Hole off the centre",
+          "distractors": ["It is round", "It is painted", "It is light"]
+        },
+        {
+          "ask": "What could you use as a simple axle on a model?",
+          "answer": "A wooden dowel",
+          "distractors": [
+            "A cotton wool ball",
+            "A sheet of paper",
+            "A piece of string"
+          ]
+        },
+        {
+          "ask": "What could hold an axle onto a model but let it turn?",
+          "answer": "A drinking straw",
+          "distractors": ["Lots of glue", "A lump of clay", "A staple"]
+        }
+      ]
+    },
+    {
+      "id": "dt-tower-test",
+      "title": "Tower Test",
+      "station": "true-false",
+      "prop": "prism",
+      "skillName": "Making structures strong and stable",
+      "strand": "structures",
+      "statutoryRequirement": "Pupils should be taught to build structures, exploring how they can be made stronger, stiffer and more stable",
+      "instruction": "Read it, then decide if it is true or false.",
+      "hint": "Not quite. Think about towers that wobble and towers that stand firm.",
+      "questions": [
+        {
+          "ask": "A wide base helps a tower stand up.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A tall, thin tower is more stable than a short, wide one.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Folding card makes it stiffer.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Rolling paper into a tube makes it stronger.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A flat sheet of paper is stiffer than a folded one.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Putting heavy blocks at the top makes a tower more stable.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Wet card is stronger than dry card.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A bridge is a kind of structure.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Joining card with lots of tape can make a model stronger.",
+          "answer": "True",
+          "distractors": ["False"]
+        }
+      ]
+    },
+    {
+      "id": "dt-idea-builder",
+      "title": "Idea Builder",
+      "station": "compare",
+      "prop": "bulb",
+      "skillName": "Sharing and modelling design ideas",
+      "strand": "communicate-ideas",
+      "statutoryRequirement": "Pupils should be taught to generate, develop, model and communicate their ideas through talking, drawing, templates, mock-ups and, where appropriate, information and communication technology",
+      "instruction": "Think about how designers share ideas, then tap the answer.",
+      "hint": "Not quite. Think about how you could show your idea to someone else.",
+      "questions": [
+        {
+          "ask": "What is a quick model of your idea made from paper or card?",
+          "answer": "A mock-up",
+          "distractors": ["A recipe", "A poem", "A map"]
+        },
+        {
+          "ask": "What can you draw around to cut the same shape again and again?",
+          "answer": "A template",
+          "distractors": ["A pillow", "A puddle", "A song"]
+        },
+        {
+          "ask": "What is a good way to show your idea before you make it?",
+          "answer": "Draw it",
+          "distractors": ["Hide it", "Forget it", "Throw it away"]
+        },
+        {
+          "ask": "How can you share your idea with a friend?",
+          "answer": "Talk about it",
+          "distractors": ["Keep it secret", "Hide your drawing", "Say nothing"]
+        },
+        {
+          "ask": "What should you add to your drawing to explain it?",
+          "answer": "Labels",
+          "distractors": ["Stickers", "Glitter", "Crumbs"]
+        },
+        {
+          "ask": "Why make a mock-up before the real thing?",
+          "answer": "To try out the idea",
+          "distractors": [
+            "To waste paper",
+            "To skip making",
+            "To hide the idea"
+          ]
+        },
+        {
+          "ask": "What can a computer help you do with an idea?",
+          "answer": "Draw and share it",
+          "distractors": ["Eat it", "Water it", "Post it in a bin"]
+        },
+        {
+          "ask": "After talking with a friend, you might...",
+          "answer": "Improve your idea",
+          "distractors": [
+            "Stop designing",
+            "Rip up the plan",
+            "Forget the user"
+          ]
+        }
+      ]
+    }
+  ]
+}

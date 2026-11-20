@@ -1,0 +1,73 @@
+{
+  "subject": "geography",
+  "yearGroup": 3,
+  "games": [
+    {
+      "id": "land-use-time-machine",
+      "title": "Then and Now Town",
+      "station": "compare",
+      "prop": "rock",
+      "skillName": "How land use and settlements change over time",
+      "strand": "human-and-physical-geography",
+      "statutoryRequirement": "Pupils should be taught to describe and understand key aspects of human geography, including: types of settlement and land use; name and locate counties and cities of the United Kingdom, geographical regions and their identifying human and physical characteristics, key topographical features (including hills, mountains, coasts and rivers), and land-use patterns; and understand how some of these aspects have changed over time",
+      "instruction": "Think about how places change, then tap the best answer.",
+      "hint": "Not quite. Think about what people need from the land, then try again.",
+      "questions": [
+        {
+          "ask": "Hundreds of years ago, where did most people in Britain live?",
+          "answer": "In the countryside",
+          "distractors": ["In big cities", "On boats", "In tower blocks"]
+        },
+        {
+          "ask": "In the Industrial Revolution, many people moved from farms to where?",
+          "answer": "Factory towns",
+          "distractors": ["Islands", "Mountains", "Deserts"]
+        },
+        {
+          "ask": "Why were many early settlements built next to rivers?",
+          "answer": "For fresh water",
+          "distractors": ["To stay dry", "To avoid people", "For the snow"]
+        },
+        {
+          "ask": "Why did many villages grow into towns around a market?",
+          "answer": "To buy and sell",
+          "distractors": ["To hide away", "To go skiing", "To see the sea"]
+        },
+        {
+          "ask": "A tiny settlement of a few houses, with no shop or church, is called a what?",
+          "answer": "Hamlet",
+          "distractors": ["City", "Town", "Village"]
+        },
+        {
+          "ask": "When a town grows bigger, what often happens to the fields around it?",
+          "answer": "Houses are built",
+          "distractors": [
+            "They get bigger",
+            "They turn into sea",
+            "Nothing changes"
+          ]
+        },
+        {
+          "ask": "Many old coal mines in Britain have closed. What has some of that land become?",
+          "answer": "Parks and housing",
+          "distractors": ["Deserts", "Volcanoes", "New oceans"]
+        },
+        {
+          "ask": "An old factory is turned into flats. What has changed?",
+          "answer": "Land use",
+          "distractors": ["Climate", "Weather", "Rock type"]
+        },
+        {
+          "ask": "What do we call land used for growing crops and keeping animals?",
+          "answer": "Farmland",
+          "distractors": ["Industrial", "Residential", "Leisure"]
+        },
+        {
+          "ask": "Land covered mostly by people's homes is called what kind of land use?",
+          "answer": "Residential",
+          "distractors": ["Farmland", "Industrial", "Woodland"]
+        }
+      ]
+    }
+  ]
+}

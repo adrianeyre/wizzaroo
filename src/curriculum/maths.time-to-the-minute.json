@@ -1,0 +1,8 @@
+{
+  "id": "maths.time-to-the-minute",
+  "name": "Telling the time to the minute, with Roman numerals",
+  "subject": "maths",
+  "yearGroup": 3,
+  "strand": "measurement",
+  "prerequisites": ["maths.time-to-five-minutes"]
+}

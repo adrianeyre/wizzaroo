@@ -1,0 +1,1458 @@
+{
+  "yearGroup": 2,
+  "games": [
+    {
+      "skillId": "geography.seven-continents",
+      "title": "Continent Quest",
+      "skillName": "The seven continents",
+      "strand": "locational-knowledge",
+      "scene": "globe-spinner",
+      "instruction": "Spin the globe, look at the gold land or the red pin, and name the continent.",
+      "questions": [
+        {
+          "ask": "Which continent is glowing?",
+          "show": {
+            "highlight": "africa"
+          },
+          "answer": "Africa",
+          "wrongAnswers": ["Asia", "Europe", "South America"]
+        },
+        {
+          "ask": "Which continent is glowing?",
+          "show": {
+            "highlight": "asia"
+          },
+          "answer": "Asia",
+          "wrongAnswers": ["Africa", "Europe", "North America"]
+        },
+        {
+          "ask": "Which continent is shining gold?",
+          "show": {
+            "highlight": "europe"
+          },
+          "answer": "Europe",
+          "wrongAnswers": ["Asia", "Africa", "Oceania"]
+        },
+        {
+          "ask": "Which continent is shining gold?",
+          "show": {
+            "highlight": "north-america"
+          },
+          "answer": "North America",
+          "wrongAnswers": ["South America", "Europe", "Asia"]
+        },
+        {
+          "ask": "Name the gold continent.",
+          "show": {
+            "highlight": "south-america"
+          },
+          "answer": "South America",
+          "wrongAnswers": ["North America", "Africa", "Oceania"]
+        },
+        {
+          "ask": "Name the gold continent.",
+          "show": {
+            "highlight": "oceania"
+          },
+          "answer": "Oceania",
+          "wrongAnswers": ["Asia", "Africa", "South America"]
+        },
+        {
+          "ask": "Which icy continent is glowing?",
+          "show": {
+            "highlight": "antarctica"
+          },
+          "answer": "Antarctica",
+          "wrongAnswers": ["Europe", "Asia", "North America"]
+        },
+        {
+          "ask": "The UK is at the pin. Which continent is it in?",
+          "show": {
+            "pin": {
+              "latitude": 51.5074,
+              "longitude": -0.1278
+            }
+          },
+          "answer": "Europe",
+          "wrongAnswers": ["Asia", "Africa", "North America"]
+        },
+        {
+          "ask": "Kenya is at the pin. Which continent is it in?",
+          "show": {
+            "pin": {
+              "latitude": -1.2921,
+              "longitude": 36.8219
+            }
+          },
+          "answer": "Africa",
+          "wrongAnswers": ["Asia", "Europe", "South America"]
+        },
+        {
+          "ask": "Australia is at the pin. Which continent is it part of?",
+          "show": {
+            "pin": {
+              "latitude": -25.2744,
+              "longitude": 133.7751
+            }
+          },
+          "answer": "Oceania",
+          "wrongAnswers": ["Asia", "Africa", "Europe"]
+        },
+        {
+          "ask": "The South Pole is at the pin. Which continent is it on?",
+          "show": {
+            "pin": {
+              "latitude": -90,
+              "longitude": 0
+            }
+          },
+          "answer": "Antarctica",
+          "wrongAnswers": ["Europe", "Africa", "Asia"]
+        },
+        {
+          "ask": "Brazil is at the pin. Which continent is it in?",
+          "show": {
+            "pin": {
+              "latitude": -10,
+              "longitude": -55
+            }
+          },
+          "answer": "South America",
+          "wrongAnswers": ["North America", "Africa", "Europe"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.five-oceans",
+      "title": "Ocean Voyage",
+      "skillName": "The five oceans",
+      "strand": "locational-knowledge",
+      "scene": "globe-spinner",
+      "instruction": "Sail around the globe and name the ocean that glows gold or has the red pin.",
+      "questions": [
+        {
+          "ask": "Which ocean is glowing?",
+          "show": {
+            "highlight": "pacific-ocean"
+          },
+          "answer": "Pacific Ocean",
+          "wrongAnswers": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean"]
+        },
+        {
+          "ask": "Which ocean is glowing?",
+          "show": {
+            "highlight": "atlantic-ocean"
+          },
+          "answer": "Atlantic Ocean",
+          "wrongAnswers": ["Pacific Ocean", "Indian Ocean", "Southern Ocean"]
+        },
+        {
+          "ask": "Which ocean is shining gold?",
+          "show": {
+            "highlight": "indian-ocean"
+          },
+          "answer": "Indian Ocean",
+          "wrongAnswers": ["Pacific Ocean", "Atlantic Ocean", "Arctic Ocean"]
+        },
+        {
+          "ask": "Which ocean is shining gold?",
+          "show": {
+            "highlight": "arctic-ocean"
+          },
+          "answer": "Arctic Ocean",
+          "wrongAnswers": ["Southern Ocean", "Indian Ocean", "Pacific Ocean"]
+        },
+        {
+          "ask": "Name the gold ocean.",
+          "show": {
+            "highlight": "southern-ocean"
+          },
+          "answer": "Southern Ocean",
+          "wrongAnswers": ["Arctic Ocean", "Atlantic Ocean", "Indian Ocean"]
+        },
+        {
+          "ask": "Which ocean is the red pin in?",
+          "show": {
+            "pin": {
+              "latitude": 30,
+              "longitude": -40
+            }
+          },
+          "answer": "Atlantic Ocean",
+          "wrongAnswers": ["Pacific Ocean", "Indian Ocean", "Southern Ocean"]
+        },
+        {
+          "ask": "Which ocean is the red pin in?",
+          "show": {
+            "pin": {
+              "latitude": 10,
+              "longitude": -140
+            }
+          },
+          "answer": "Pacific Ocean",
+          "wrongAnswers": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean"]
+        },
+        {
+          "ask": "Which ocean is the red pin in?",
+          "show": {
+            "pin": {
+              "latitude": -15,
+              "longitude": 75
+            }
+          },
+          "answer": "Indian Ocean",
+          "wrongAnswers": ["Atlantic Ocean", "Pacific Ocean", "Arctic Ocean"]
+        },
+        {
+          "ask": "Which ocean is this pin near the North Pole in?",
+          "show": {
+            "pin": {
+              "latitude": 85,
+              "longitude": 30
+            }
+          },
+          "answer": "Arctic Ocean",
+          "wrongAnswers": ["Southern Ocean", "Indian Ocean", "Pacific Ocean"]
+        },
+        {
+          "ask": "Which ocean is this pin near Antarctica in?",
+          "show": {
+            "pin": {
+              "latitude": -62,
+              "longitude": -120
+            }
+          },
+          "answer": "Southern Ocean",
+          "wrongAnswers": ["Arctic Ocean", "Indian Ocean", "Atlantic Ocean"]
+        },
+        {
+          "ask": "Which ocean would you sail across from the UK to America?",
+          "show": {
+            "pin": {
+              "latitude": 50,
+              "longitude": -30
+            }
+          },
+          "answer": "Atlantic Ocean",
+          "wrongAnswers": ["Pacific Ocean", "Indian Ocean", "Southern Ocean"]
+        },
+        {
+          "ask": "Which is the biggest ocean of all?",
+          "show": {
+            "pin": {
+              "latitude": -10,
+              "longitude": -170
+            }
+          },
+          "answer": "Pacific Ocean",
+          "wrongAnswers": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.uk-capital-cities",
+      "title": "Capital Hoppers",
+      "skillName": "UK capital cities",
+      "strand": "locational-knowledge",
+      "scene": "uk-explorer",
+      "instruction": "Hop around the UK map and match each capital city to its country.",
+      "questions": [
+        {
+          "ask": "Which capital city is at the pin?",
+          "show": {
+            "pin": {
+              "latitude": 51.5074,
+              "longitude": -0.1278
+            }
+          },
+          "answer": "London",
+          "wrongAnswers": ["Edinburgh", "Cardiff", "Belfast"]
+        },
+        {
+          "ask": "Which capital city is at the pin?",
+          "show": {
+            "pin": {
+              "latitude": 55.9533,
+              "longitude": -3.1883
+            }
+          },
+          "answer": "Edinburgh",
+          "wrongAnswers": ["London", "Cardiff", "Belfast"]
+        },
+        {
+          "ask": "Name the capital city at the pin.",
+          "show": {
+            "pin": {
+              "latitude": 51.4816,
+              "longitude": -3.1791
+            }
+          },
+          "answer": "Cardiff",
+          "wrongAnswers": ["London", "Edinburgh", "Belfast"]
+        },
+        {
+          "ask": "Name the capital city at the pin.",
+          "show": {
+            "pin": {
+              "latitude": 54.5973,
+              "longitude": -5.9301
+            }
+          },
+          "answer": "Belfast",
+          "wrongAnswers": ["London", "Edinburgh", "Cardiff"]
+        },
+        {
+          "ask": "What is the capital of the glowing country?",
+          "show": {
+            "highlight": "england"
+          },
+          "answer": "London",
+          "wrongAnswers": ["Edinburgh", "Cardiff", "Belfast"]
+        },
+        {
+          "ask": "What is the capital of the glowing country?",
+          "show": {
+            "highlight": "scotland"
+          },
+          "answer": "Edinburgh",
+          "wrongAnswers": ["London", "Cardiff", "Belfast"]
+        },
+        {
+          "ask": "Which city is the capital of this gold country?",
+          "show": {
+            "highlight": "wales"
+          },
+          "answer": "Cardiff",
+          "wrongAnswers": ["London", "Edinburgh", "Belfast"]
+        },
+        {
+          "ask": "Which city is the capital of this gold country?",
+          "show": {
+            "highlight": "northern-ireland"
+          },
+          "answer": "Belfast",
+          "wrongAnswers": ["London", "Edinburgh", "Cardiff"]
+        },
+        {
+          "ask": "This city is the capital of the whole UK. What is it?",
+          "show": {
+            "pin": {
+              "latitude": 51.5074,
+              "longitude": -0.1278
+            }
+          },
+          "answer": "London",
+          "wrongAnswers": ["Edinburgh", "Cardiff", "Belfast"]
+        },
+        {
+          "ask": "Cardiff is at the pin. Which country is it the capital of?",
+          "show": {
+            "pin": {
+              "latitude": 51.4816,
+              "longitude": -3.1791
+            }
+          },
+          "answer": "Wales",
+          "wrongAnswers": ["England", "Scotland", "Northern Ireland"]
+        },
+        {
+          "ask": "Edinburgh is at the pin. Which country is it the capital of?",
+          "show": {
+            "pin": {
+              "latitude": 55.9533,
+              "longitude": -3.1883
+            }
+          },
+          "answer": "Scotland",
+          "wrongAnswers": ["England", "Wales", "Northern Ireland"]
+        },
+        {
+          "ask": "Belfast is at the pin. Which country is it the capital of?",
+          "show": {
+            "pin": {
+              "latitude": 54.5973,
+              "longitude": -5.9301
+            }
+          },
+          "answer": "Northern Ireland",
+          "wrongAnswers": ["England", "Scotland", "Wales"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.seas-around-the-uk",
+      "title": "Seas Around Us",
+      "skillName": "Seas around the UK",
+      "strand": "locational-knowledge",
+      "scene": "uk-explorer",
+      "instruction": "Look at the water around the UK and name the sea or ocean that glows or has the pin.",
+      "questions": [
+        {
+          "ask": "Which sea is glowing?",
+          "show": {
+            "highlight": "north-sea"
+          },
+          "answer": "North Sea",
+          "wrongAnswers": ["Irish Sea", "English Channel", "Atlantic Ocean"]
+        },
+        {
+          "ask": "Which sea is glowing?",
+          "show": {
+            "highlight": "irish-sea"
+          },
+          "answer": "Irish Sea",
+          "wrongAnswers": ["North Sea", "English Channel", "Atlantic Ocean"]
+        },
+        {
+          "ask": "Which stretch of sea is shining gold?",
+          "show": {
+            "highlight": "english-channel"
+          },
+          "answer": "English Channel",
+          "wrongAnswers": ["North Sea", "Irish Sea", "Atlantic Ocean"]
+        },
+        {
+          "ask": "Which ocean is shining gold?",
+          "show": {
+            "highlight": "atlantic-ocean"
+          },
+          "answer": "Atlantic Ocean",
+          "wrongAnswers": ["North Sea", "Irish Sea", "English Channel"]
+        },
+        {
+          "ask": "Which sea is the red pin in?",
+          "show": {
+            "pin": {
+              "latitude": 56,
+              "longitude": 3
+            }
+          },
+          "answer": "North Sea",
+          "wrongAnswers": ["Irish Sea", "English Channel", "Atlantic Ocean"]
+        },
+        {
+          "ask": "Which sea is the red pin in?",
+          "show": {
+            "pin": {
+              "latitude": 53.8,
+              "longitude": -5
+            }
+          },
+          "answer": "Irish Sea",
+          "wrongAnswers": ["North Sea", "English Channel", "Atlantic Ocean"]
+        },
+        {
+          "ask": "Where is the red pin?",
+          "show": {
+            "pin": {
+              "latitude": 50.2,
+              "longitude": -1.5
+            }
+          },
+          "answer": "English Channel",
+          "wrongAnswers": ["North Sea", "Irish Sea", "Atlantic Ocean"]
+        },
+        {
+          "ask": "Where is the red pin?",
+          "show": {
+            "pin": {
+              "latitude": 55,
+              "longitude": -12
+            }
+          },
+          "answer": "Atlantic Ocean",
+          "wrongAnswers": ["North Sea", "Irish Sea", "English Channel"]
+        },
+        {
+          "ask": "Which sea is between England and France?",
+          "show": {
+            "pin": {
+              "latitude": 50.4,
+              "longitude": -0.5
+            }
+          },
+          "answer": "English Channel",
+          "wrongAnswers": ["North Sea", "Irish Sea", "Atlantic Ocean"]
+        },
+        {
+          "ask": "Which sea is on the east side of England?",
+          "show": {
+            "pin": {
+              "latitude": 53.5,
+              "longitude": 2
+            }
+          },
+          "answer": "North Sea",
+          "wrongAnswers": ["Irish Sea", "English Channel", "Atlantic Ocean"]
+        },
+        {
+          "ask": "Which sea is between Wales and Ireland?",
+          "show": {
+            "pin": {
+              "latitude": 53.5,
+              "longitude": -5.3
+            }
+          },
+          "answer": "Irish Sea",
+          "wrongAnswers": ["North Sea", "English Channel", "Atlantic Ocean"]
+        },
+        {
+          "ask": "Which ocean is to the west of Scotland?",
+          "show": {
+            "pin": {
+              "latitude": 57.5,
+              "longitude": -9
+            }
+          },
+          "answer": "Atlantic Ocean",
+          "wrongAnswers": ["North Sea", "Irish Sea", "English Channel"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.four-compass-points",
+      "title": "Compass Treasure Hunt",
+      "skillName": "North, south, east and west",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "compass-island",
+      "instruction": "Wizz is facing north. Use north, south, east and west to find things on the island.",
+      "questions": [
+        {
+          "ask": "What is north of Wizz?",
+          "show": {
+            "target": "castle",
+            "direction": "north",
+            "points": 4
+          },
+          "answer": "Castle",
+          "wrongAnswers": ["Cave", "Windmill", "Bridge"]
+        },
+        {
+          "ask": "What is south of Wizz?",
+          "show": {
+            "target": "cave",
+            "direction": "south",
+            "points": 4
+          },
+          "answer": "Cave",
+          "wrongAnswers": ["Castle", "Lighthouse", "Palm tree"]
+        },
+        {
+          "ask": "What is east of Wizz?",
+          "show": {
+            "target": "windmill",
+            "direction": "east",
+            "points": 4
+          },
+          "answer": "Windmill",
+          "wrongAnswers": ["Volcano", "Bridge", "Treasure chest"]
+        },
+        {
+          "ask": "What is west of Wizz?",
+          "show": {
+            "target": "bridge",
+            "direction": "west",
+            "points": 4
+          },
+          "answer": "Bridge",
+          "wrongAnswers": ["Castle", "Cave", "Lighthouse"]
+        },
+        {
+          "ask": "Which direction is the lighthouse from Wizz?",
+          "show": {
+            "target": "lighthouse",
+            "direction": "north",
+            "points": 4
+          },
+          "answer": "North",
+          "wrongAnswers": ["South", "East", "West"]
+        },
+        {
+          "ask": "Which direction is the volcano from Wizz?",
+          "show": {
+            "target": "volcano",
+            "direction": "east",
+            "points": 4
+          },
+          "answer": "East",
+          "wrongAnswers": ["North", "South", "West"]
+        },
+        {
+          "ask": "Which way is the palm tree from Wizz?",
+          "show": {
+            "target": "palm-tree",
+            "direction": "south",
+            "points": 4
+          },
+          "answer": "South",
+          "wrongAnswers": ["North", "East", "West"]
+        },
+        {
+          "ask": "Which way must Wizz walk to reach the treasure?",
+          "show": {
+            "target": "treasure-chest",
+            "direction": "west",
+            "points": 4
+          },
+          "answer": "West",
+          "wrongAnswers": ["North", "South", "East"]
+        },
+        {
+          "ask": "What is far away to the east of Wizz?",
+          "show": {
+            "target": "treasure-chest",
+            "direction": "east",
+            "points": 4,
+            "distance": "far"
+          },
+          "answer": "Treasure chest",
+          "wrongAnswers": ["Castle", "Windmill", "Cave"]
+        },
+        {
+          "ask": "Wizz turns to face the lighthouse. Which way is Wizz facing now?",
+          "show": {
+            "target": "lighthouse",
+            "direction": "west",
+            "points": 4
+          },
+          "answer": "West",
+          "wrongAnswers": ["North", "South", "East"]
+        },
+        {
+          "ask": "Which direction is the castle from Wizz?",
+          "show": {
+            "target": "castle",
+            "direction": "south",
+            "points": 4
+          },
+          "answer": "South",
+          "wrongAnswers": ["North", "East", "West"]
+        },
+        {
+          "ask": "Which direction is the cave from Wizz?",
+          "show": {
+            "target": "cave",
+            "direction": "north",
+            "points": 4,
+            "distance": "near"
+          },
+          "answer": "North",
+          "wrongAnswers": ["South", "East", "West"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.seaside-features",
+      "title": "Seaside Spotters",
+      "skillName": "Features of the seaside",
+      "strand": "human-and-physical-geography",
+      "scene": "landscape-lookout",
+      "instruction": "Spin the seaside model round, then tap the name of the feature you can see.",
+      "questions": [
+        {
+          "ask": "What is this seaside feature?",
+          "show": {
+            "feature": "beach"
+          },
+          "answer": "Beach",
+          "wrongAnswers": ["Cliff", "Lighthouse", "Harbour"]
+        },
+        {
+          "ask": "What is this tall wall of rock by the sea?",
+          "show": {
+            "feature": "cliff"
+          },
+          "answer": "Cliff",
+          "wrongAnswers": ["Lighthouse", "Harbour", "Port"]
+        },
+        {
+          "ask": "What is this big area of salty water?",
+          "show": {
+            "feature": "sea"
+          },
+          "answer": "Sea",
+          "wrongAnswers": ["Cliff", "Lighthouse", "Pier"]
+        },
+        {
+          "ask": "What is this land with sea all around it?",
+          "show": {
+            "feature": "island"
+          },
+          "answer": "Island",
+          "wrongAnswers": ["Port", "Harbour", "Pier"]
+        },
+        {
+          "ask": "What is this seaside building?",
+          "show": {
+            "feature": "lighthouse"
+          },
+          "answer": "Lighthouse",
+          "wrongAnswers": ["Beach", "Harbour", "Port"]
+        },
+        {
+          "ask": "What is this sheltered place for boats?",
+          "show": {
+            "feature": "harbour"
+          },
+          "answer": "Harbour",
+          "wrongAnswers": ["Lighthouse", "Cliff", "Beach"]
+        },
+        {
+          "ask": "Big ships load goods here. What is it?",
+          "show": {
+            "feature": "port"
+          },
+          "answer": "Port",
+          "wrongAnswers": ["Lighthouse", "Cliff", "Beach"]
+        },
+        {
+          "ask": "What is this curved stretch of coast called?",
+          "show": {
+            "feature": "bay"
+          },
+          "answer": "Bay",
+          "wrongAnswers": ["Lighthouse", "Island", "Port"]
+        },
+        {
+          "ask": "The sea has worn a hole in the rock. What is it?",
+          "show": {
+            "feature": "sea-cave"
+          },
+          "answer": "Sea cave",
+          "wrongAnswers": ["Lighthouse", "Harbour", "Port"]
+        },
+        {
+          "ask": "Where could you build a sandcastle?",
+          "show": {
+            "feature": "beach"
+          },
+          "answer": "Beach",
+          "wrongAnswers": ["Cliff", "Lighthouse", "Harbour"]
+        },
+        {
+          "ask": "What warns ships about rocks at night?",
+          "show": {
+            "feature": "lighthouse"
+          },
+          "answer": "Lighthouse",
+          "wrongAnswers": ["Beach", "Island", "Cliff"]
+        },
+        {
+          "ask": "Where do fishing boats shelter from storms?",
+          "show": {
+            "feature": "harbour"
+          },
+          "answer": "Harbour",
+          "wrongAnswers": ["Lighthouse", "Cliff", "Beach"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.map-keys",
+      "title": "Map Key Makers",
+      "skillName": "Using symbols in a map key",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "map-key",
+      "instruction": "Look at the map symbol and tap what it stands for, just like reading a map key.",
+      "questions": [
+        {
+          "ask": "What does this map symbol show?",
+          "show": {
+            "symbol": "church-with-tower"
+          },
+          "answer": "Church",
+          "wrongAnswers": ["Post office", "Campsite", "Golf course"]
+        },
+        {
+          "ask": "What does this map symbol show?",
+          "show": {
+            "symbol": "post-office"
+          },
+          "answer": "Post office",
+          "wrongAnswers": ["Campsite", "Windmill", "Lighthouse"]
+        },
+        {
+          "ask": "Where could a family park the car?",
+          "show": {
+            "symbol": "parking"
+          },
+          "answer": "Car park",
+          "wrongAnswers": ["Church", "Campsite", "Viewpoint"]
+        },
+        {
+          "ask": "What does this symbol mean?",
+          "show": {
+            "symbol": "railway-station"
+          },
+          "answer": "Railway station",
+          "wrongAnswers": ["Picnic site", "Windmill", "Golf course"]
+        },
+        {
+          "ask": "What does this symbol mean?",
+          "show": {
+            "symbol": "campsite"
+          },
+          "answer": "Campsite",
+          "wrongAnswers": ["Car park", "Church", "Railway station"]
+        },
+        {
+          "ask": "Look at the key. What is this place?",
+          "show": {
+            "symbol": "picnic-site"
+          },
+          "answer": "Picnic site",
+          "wrongAnswers": ["Railway station", "Lighthouse", "Post office"]
+        },
+        {
+          "ask": "Look at the key. What is this place?",
+          "show": {
+            "symbol": "information-centre"
+          },
+          "answer": "Information centre",
+          "wrongAnswers": ["Windmill", "Church", "Campsite"]
+        },
+        {
+          "ask": "Which thing does this symbol stand for?",
+          "show": {
+            "symbol": "telephone"
+          },
+          "answer": "Telephone",
+          "wrongAnswers": ["Campsite", "Windmill", "Golf course"]
+        },
+        {
+          "ask": "Which building does this symbol show?",
+          "show": {
+            "symbol": "lighthouse"
+          },
+          "answer": "Lighthouse",
+          "wrongAnswers": ["Car park", "Picnic site", "Golf course"]
+        },
+        {
+          "ask": "Which building does this symbol show?",
+          "show": {
+            "symbol": "windmill"
+          },
+          "answer": "Windmill",
+          "wrongAnswers": ["Car park", "Post office", "Campsite"]
+        },
+        {
+          "ask": "Where could you play a round of golf?",
+          "show": {
+            "symbol": "golf-course"
+          },
+          "answer": "Golf course",
+          "wrongAnswers": ["Lighthouse", "Railway station", "Post office"]
+        },
+        {
+          "ask": "What does this symbol on the map show?",
+          "show": {
+            "symbol": "viewpoint"
+          },
+          "answer": "Viewpoint",
+          "wrongAnswers": ["Car park", "Church", "Telephone"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.kenya-and-the-uk",
+      "title": "Safari and Shire",
+      "skillName": "Comparing the UK and Kenya",
+      "strand": "place-knowledge",
+      "scene": "biome-dome",
+      "instruction": "Look inside the dome and compare life in Kenya with life in the UK.",
+      "questions": [
+        {
+          "ask": "Which animal lives wild in Kenya's grassland?",
+          "show": {
+            "biome": "savanna"
+          },
+          "answer": "Zebra",
+          "wrongAnswers": ["Red deer", "Puffin", "Red squirrel"]
+        },
+        {
+          "ask": "Which animal lives wild in a UK wood like this?",
+          "show": {
+            "biome": "temperate-forest"
+          },
+          "answer": "Badger",
+          "wrongAnswers": ["Lion", "Giraffe", "Zebra"]
+        },
+        {
+          "ask": "What is the weather usually like here in Kenya?",
+          "show": {
+            "biome": "savanna"
+          },
+          "answer": "Hot and sunny",
+          "wrongAnswers": ["Cold and snowy", "Icy all year", "Cool and foggy"]
+        },
+        {
+          "ask": "Which farm animal eats grass like this in the UK?",
+          "show": {
+            "biome": "grassland"
+          },
+          "answer": "Sheep",
+          "wrongAnswers": ["Lion", "Zebra", "Giraffe"]
+        },
+        {
+          "ask": "Which tree grows here in Kenya?",
+          "show": {
+            "biome": "savanna"
+          },
+          "answer": "Acacia tree",
+          "wrongAnswers": ["Oak tree", "Holly tree", "Silver birch"]
+        },
+        {
+          "ask": "This reef is off Kenya's coast. Which ocean is it in?",
+          "show": {
+            "biome": "coral-reef"
+          },
+          "answer": "Indian Ocean",
+          "wrongAnswers": ["Arctic Ocean", "Southern Ocean", "Atlantic Ocean"]
+        },
+        {
+          "ask": "Mount Kenya is very high. What is on its top?",
+          "show": {
+            "biome": "mountain"
+          },
+          "answer": "Snow and ice",
+          "wrongAnswers": ["Hot sand", "Palm trees", "Coral"]
+        },
+        {
+          "ask": "Which continent is Kenya in?",
+          "show": {
+            "biome": "savanna"
+          },
+          "answer": "Africa",
+          "wrongAnswers": ["Europe", "Asia", "South America"]
+        },
+        {
+          "ask": "Woods like this grow in the UK. Which continent is the UK in?",
+          "show": {
+            "biome": "temperate-forest"
+          },
+          "answer": "Europe",
+          "wrongAnswers": ["Africa", "Asia", "Oceania"]
+        },
+        {
+          "ask": "What is the capital city of Kenya?",
+          "show": {
+            "biome": "savanna"
+          },
+          "answer": "Nairobi",
+          "wrongAnswers": ["London", "Cardiff", "Edinburgh"]
+        },
+        {
+          "ask": "The UK has four seasons. What is UK weather like?",
+          "show": {
+            "biome": "temperate-forest"
+          },
+          "answer": "It changes a lot",
+          "wrongAnswers": ["Hot every day", "Snowy all year", "Dry all year"]
+        },
+        {
+          "ask": "Kenya has a dry season and a...",
+          "show": {
+            "biome": "savanna"
+          },
+          "answer": "Rainy season",
+          "wrongAnswers": ["Snowy season", "Icy season", "Frosty season"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.equator-and-poles",
+      "title": "Equator Explorer",
+      "skillName": "Hot and cold areas, the Equator and the poles",
+      "strand": "locational-knowledge",
+      "scene": "globe-spinner",
+      "instruction": "Spin the globe to find the Equator and the poles, and work out where is hot or cold.",
+      "questions": [
+        {
+          "ask": "What is this gold line called?",
+          "show": {
+            "highlight": "equator"
+          },
+          "answer": "Equator",
+          "wrongAnswers": ["North Pole", "South Pole", "Arctic Circle"]
+        },
+        {
+          "ask": "What place is at the red pin?",
+          "show": {
+            "pin": {
+              "latitude": 90,
+              "longitude": 0
+            }
+          },
+          "answer": "North Pole",
+          "wrongAnswers": ["South Pole", "Equator", "Kenya"]
+        },
+        {
+          "ask": "What place is at the red pin?",
+          "show": {
+            "pin": {
+              "latitude": -90,
+              "longitude": 0
+            }
+          },
+          "answer": "South Pole",
+          "wrongAnswers": ["North Pole", "Equator", "Kenya"]
+        },
+        {
+          "ask": "What is it like near the gold line?",
+          "show": {
+            "highlight": "equator"
+          },
+          "answer": "Hot all year",
+          "wrongAnswers": [
+            "Icy all year",
+            "Snowy all year",
+            "Freezing all year"
+          ]
+        },
+        {
+          "ask": "What is it like at the red pin?",
+          "show": {
+            "pin": {
+              "latitude": 90,
+              "longitude": 0
+            }
+          },
+          "answer": "Freezing cold",
+          "wrongAnswers": ["Hot and sunny", "Warm and wet", "Hot and dry"]
+        },
+        {
+          "ask": "This pin is near the Equator. What is it like here?",
+          "show": {
+            "pin": {
+              "latitude": 1.3521,
+              "longitude": 103.8198
+            }
+          },
+          "answer": "Hot all year",
+          "wrongAnswers": [
+            "Icy all year",
+            "Snowy all year",
+            "Freezing all year"
+          ]
+        },
+        {
+          "ask": "Which continent is at the South Pole?",
+          "show": {
+            "pin": {
+              "latitude": -90,
+              "longitude": 0
+            }
+          },
+          "answer": "Antarctica",
+          "wrongAnswers": ["Africa", "Europe", "Asia"]
+        },
+        {
+          "ask": "Which ocean is at the North Pole?",
+          "show": {
+            "pin": {
+              "latitude": 89,
+              "longitude": 0
+            }
+          },
+          "answer": "Arctic Ocean",
+          "wrongAnswers": ["Indian Ocean", "Pacific Ocean", "Southern Ocean"]
+        },
+        {
+          "ask": "Where do polar bears live?",
+          "show": {
+            "pin": {
+              "latitude": 85,
+              "longitude": 0
+            }
+          },
+          "answer": "The Arctic",
+          "wrongAnswers": ["Antarctica", "Equator", "Sahara Desert"]
+        },
+        {
+          "ask": "Where do emperor penguins live?",
+          "show": {
+            "pin": {
+              "latitude": -75,
+              "longitude": 0
+            }
+          },
+          "answer": "Antarctica",
+          "wrongAnswers": ["The Arctic", "Sahara Desert", "Amazon Rainforest"]
+        },
+        {
+          "ask": "Which part of Earth is the hottest?",
+          "show": {
+            "highlight": "equator"
+          },
+          "answer": "Equator",
+          "wrongAnswers": ["North Pole", "South Pole", "The Arctic"]
+        },
+        {
+          "ask": "Go from the Equator to a pole. It gets...",
+          "show": {
+            "pin": {
+              "latitude": 60,
+              "longitude": 0
+            }
+          },
+          "answer": "Colder",
+          "wrongAnswers": ["Hotter", "Warmer", "Sunnier"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.traffic-survey",
+      "title": "Traffic Tally",
+      "skillName": "Fieldwork: a traffic survey",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "data-towers",
+      "instruction": "We counted the traffic going past. Read the towers to answer the question.",
+      "questions": [
+        {
+          "ask": "Which did we see most of?",
+          "show": {
+            "title": "Traffic outside school",
+            "unit": "vehicles",
+            "bars": [
+              {
+                "label": "Cars",
+                "value": 15
+              },
+              {
+                "label": "Vans",
+                "value": 6
+              },
+              {
+                "label": "Buses",
+                "value": 3
+              },
+              {
+                "label": "Bikes",
+                "value": 8
+              },
+              {
+                "label": "Lorries",
+                "value": 2
+              }
+            ]
+          },
+          "answer": "Cars",
+          "wrongAnswers": ["Vans", "Bikes", "Buses"]
+        },
+        {
+          "ask": "Which did we see least of?",
+          "show": {
+            "title": "Traffic outside school",
+            "unit": "vehicles",
+            "bars": [
+              {
+                "label": "Cars",
+                "value": 15
+              },
+              {
+                "label": "Vans",
+                "value": 6
+              },
+              {
+                "label": "Buses",
+                "value": 3
+              },
+              {
+                "label": "Bikes",
+                "value": 8
+              },
+              {
+                "label": "Lorries",
+                "value": 2
+              }
+            ]
+          },
+          "answer": "Lorries",
+          "wrongAnswers": ["Cars", "Vans", "Bikes"]
+        },
+        {
+          "ask": "How many bikes went past?",
+          "show": {
+            "title": "Traffic outside school",
+            "unit": "vehicles",
+            "bars": [
+              {
+                "label": "Cars",
+                "value": 15
+              },
+              {
+                "label": "Vans",
+                "value": 6
+              },
+              {
+                "label": "Buses",
+                "value": 3
+              },
+              {
+                "label": "Bikes",
+                "value": 8
+              },
+              {
+                "label": "Lorries",
+                "value": 2
+              }
+            ]
+          },
+          "answer": "8",
+          "wrongAnswers": ["6", "7", "9"]
+        },
+        {
+          "ask": "How many more cars than vans?",
+          "show": {
+            "title": "Traffic outside school",
+            "unit": "vehicles",
+            "bars": [
+              {
+                "label": "Cars",
+                "value": 15
+              },
+              {
+                "label": "Vans",
+                "value": 6
+              },
+              {
+                "label": "Buses",
+                "value": 3
+              },
+              {
+                "label": "Bikes",
+                "value": 8
+              },
+              {
+                "label": "Lorries",
+                "value": 2
+              }
+            ]
+          },
+          "answer": "9",
+          "wrongAnswers": ["6", "8", "21"]
+        },
+        {
+          "ask": "How many buses and lorries altogether?",
+          "show": {
+            "title": "Traffic outside school",
+            "unit": "vehicles",
+            "bars": [
+              {
+                "label": "Cars",
+                "value": 15
+              },
+              {
+                "label": "Vans",
+                "value": 6
+              },
+              {
+                "label": "Buses",
+                "value": 3
+              },
+              {
+                "label": "Bikes",
+                "value": 8
+              },
+              {
+                "label": "Lorries",
+                "value": 2
+              }
+            ]
+          },
+          "answer": "5",
+          "wrongAnswers": ["3", "4", "6"]
+        },
+        {
+          "ask": "Which did we see 5 of?",
+          "show": {
+            "title": "Traffic on the village lane",
+            "unit": "vehicles",
+            "bars": [
+              {
+                "label": "Cars",
+                "value": 11
+              },
+              {
+                "label": "Tractors",
+                "value": 5
+              },
+              {
+                "label": "Bikes",
+                "value": 9
+              },
+              {
+                "label": "Vans",
+                "value": 3
+              }
+            ]
+          },
+          "answer": "Tractors",
+          "wrongAnswers": ["Cars", "Bikes", "Vans"]
+        },
+        {
+          "ask": "How many cars went past?",
+          "show": {
+            "title": "Traffic on the village lane",
+            "unit": "vehicles",
+            "bars": [
+              {
+                "label": "Cars",
+                "value": 11
+              },
+              {
+                "label": "Tractors",
+                "value": 5
+              },
+              {
+                "label": "Bikes",
+                "value": 9
+              },
+              {
+                "label": "Vans",
+                "value": 3
+              }
+            ]
+          },
+          "answer": "11",
+          "wrongAnswers": ["9", "10", "12"]
+        },
+        {
+          "ask": "How many fewer vans than bikes?",
+          "show": {
+            "title": "Traffic on the village lane",
+            "unit": "vehicles",
+            "bars": [
+              {
+                "label": "Cars",
+                "value": 11
+              },
+              {
+                "label": "Tractors",
+                "value": 5
+              },
+              {
+                "label": "Bikes",
+                "value": 9
+              },
+              {
+                "label": "Vans",
+                "value": 3
+              }
+            ]
+          },
+          "answer": "6",
+          "wrongAnswers": ["3", "5", "12"]
+        },
+        {
+          "ask": "Which did we see the second most of?",
+          "show": {
+            "title": "Traffic after school",
+            "unit": "vehicles",
+            "bars": [
+              {
+                "label": "Cars",
+                "value": 18
+              },
+              {
+                "label": "Buses",
+                "value": 5
+              },
+              {
+                "label": "Bikes",
+                "value": 4
+              },
+              {
+                "label": "Vans",
+                "value": 7
+              }
+            ]
+          },
+          "answer": "Vans",
+          "wrongAnswers": ["Cars", "Buses", "Bikes"]
+        },
+        {
+          "ask": "How many buses and bikes altogether?",
+          "show": {
+            "title": "Traffic after school",
+            "unit": "vehicles",
+            "bars": [
+              {
+                "label": "Cars",
+                "value": 18
+              },
+              {
+                "label": "Buses",
+                "value": 5
+              },
+              {
+                "label": "Bikes",
+                "value": 4
+              },
+              {
+                "label": "Vans",
+                "value": 7
+              }
+            ]
+          },
+          "answer": "9",
+          "wrongAnswers": ["4", "5", "10"]
+        },
+        {
+          "ask": "Which did we see most of?",
+          "show": {
+            "title": "Traffic after school",
+            "unit": "vehicles",
+            "bars": [
+              {
+                "label": "Cars",
+                "value": 18
+              },
+              {
+                "label": "Buses",
+                "value": 5
+              },
+              {
+                "label": "Bikes",
+                "value": 4
+              },
+              {
+                "label": "Vans",
+                "value": 7
+              }
+            ]
+          },
+          "answer": "Cars",
+          "wrongAnswers": ["Buses", "Bikes", "Vans"]
+        },
+        {
+          "ask": "How many more cars than buses?",
+          "show": {
+            "title": "Traffic after school",
+            "unit": "vehicles",
+            "bars": [
+              {
+                "label": "Cars",
+                "value": 18
+              },
+              {
+                "label": "Buses",
+                "value": 5
+              },
+              {
+                "label": "Bikes",
+                "value": 4
+              },
+              {
+                "label": "Vans",
+                "value": 7
+              }
+            ]
+          },
+          "answer": "13",
+          "wrongAnswers": ["5", "12", "23"]
+        }
+      ]
+    }
+  ]
+}

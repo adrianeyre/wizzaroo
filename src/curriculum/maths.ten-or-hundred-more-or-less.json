@@ -1,0 +1,8 @@
+{
+  "id": "maths.ten-or-hundred-more-or-less",
+  "name": "Finding 10 or 100 more or less",
+  "subject": "maths",
+  "yearGroup": 3,
+  "strand": "number-and-place-value",
+  "prerequisites": ["maths.ten-more-ten-less"]
+}

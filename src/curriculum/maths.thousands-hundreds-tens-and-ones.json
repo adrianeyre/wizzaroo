@@ -1,0 +1,8 @@
+{
+  "id": "maths.thousands-hundreds-tens-and-ones",
+  "name": "Place value in four-digit numbers",
+  "subject": "maths",
+  "yearGroup": 4,
+  "strand": "number-and-place-value",
+  "prerequisites": ["maths.hundreds-tens-and-ones"]
+}

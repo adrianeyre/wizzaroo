@@ -1,0 +1,1795 @@
+{
+  "yearGroup": 5,
+  "games": [
+    {
+      "skillId": "geography.latitude-and-tropics",
+      "title": "Line Hunters",
+      "skillName": "Latitude, the Tropics and the polar circles",
+      "strand": "locational-knowledge",
+      "scene": "globe-spinner",
+      "instruction": "Watch the glowing line on the globe, then tap its name or its latitude.",
+      "questions": [
+        {
+          "ask": "Which line of latitude is glowing?",
+          "show": {
+            "highlight": "tropic-of-cancer"
+          },
+          "answer": "Tropic of Cancer",
+          "wrongAnswers": ["Tropic of Capricorn", "Equator", "Arctic Circle"]
+        },
+        {
+          "ask": "Which line of latitude is glowing?",
+          "show": {
+            "highlight": "tropic-of-capricorn"
+          },
+          "answer": "Tropic of Capricorn",
+          "wrongAnswers": ["Tropic of Cancer", "Antarctic Circle", "Equator"]
+        },
+        {
+          "ask": "Which line of latitude is glowing?",
+          "show": {
+            "highlight": "arctic-circle"
+          },
+          "answer": "Arctic Circle",
+          "wrongAnswers": ["Antarctic Circle", "Tropic of Cancer", "Equator"]
+        },
+        {
+          "ask": "Which line of latitude is glowing?",
+          "show": {
+            "highlight": "antarctic-circle"
+          },
+          "answer": "Antarctic Circle",
+          "wrongAnswers": ["Arctic Circle", "Tropic of Capricorn", "Equator"]
+        },
+        {
+          "ask": "Which line of latitude is glowing?",
+          "show": {
+            "highlight": "equator"
+          },
+          "answer": "Equator",
+          "wrongAnswers": [
+            "Tropic of Cancer",
+            "Tropic of Capricorn",
+            "Arctic Circle"
+          ]
+        },
+        {
+          "ask": "About what latitude is the glowing line?",
+          "show": {
+            "highlight": "equator"
+          },
+          "answer": "0°",
+          "wrongAnswers": ["23.5° N", "66.5° N", "90° N"]
+        },
+        {
+          "ask": "About what latitude is the glowing line?",
+          "show": {
+            "highlight": "tropic-of-cancer"
+          },
+          "answer": "23.5° N",
+          "wrongAnswers": ["23.5° S", "66.5° N", "0°"]
+        },
+        {
+          "ask": "About what latitude is the glowing line?",
+          "show": {
+            "highlight": "tropic-of-capricorn"
+          },
+          "answer": "23.5° S",
+          "wrongAnswers": ["23.5° N", "66.5° S", "90° S"]
+        },
+        {
+          "ask": "About what latitude is the glowing line?",
+          "show": {
+            "highlight": "arctic-circle"
+          },
+          "answer": "66.5° N",
+          "wrongAnswers": ["66.5° S", "23.5° N", "90° N"]
+        },
+        {
+          "ask": "The pin is at the North Pole. What is its latitude?",
+          "show": {
+            "pin": {
+              "latitude": 90,
+              "longitude": 0
+            }
+          },
+          "answer": "90° N",
+          "wrongAnswers": ["0°", "66.5° N", "90° S"]
+        },
+        {
+          "ask": "The pin is in Uganda. Which line of latitude passes through it?",
+          "show": {
+            "pin": {
+              "latitude": 0,
+              "longitude": 32.5
+            }
+          },
+          "answer": "Equator",
+          "wrongAnswers": [
+            "Tropic of Cancer",
+            "Tropic of Capricorn",
+            "Arctic Circle"
+          ]
+        },
+        {
+          "ask": "Which of these continents does the glowing line NOT cross?",
+          "show": {
+            "highlight": "tropic-of-cancer"
+          },
+          "answer": "South America",
+          "wrongAnswers": ["Africa", "Asia", "North America"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.longitude-and-prime-meridian",
+      "title": "Meridian Mission",
+      "skillName": "Longitude and the Prime Meridian",
+      "strand": "locational-knowledge",
+      "scene": "globe-spinner",
+      "instruction": "Spin the globe, find the glowing line or pin, then work out its longitude.",
+      "questions": [
+        {
+          "ask": "Which line running from pole to pole is glowing?",
+          "show": {
+            "highlight": "prime-meridian"
+          },
+          "answer": "Prime Meridian",
+          "wrongAnswers": ["Equator", "Tropic of Cancer", "Arctic Circle"]
+        },
+        {
+          "ask": "What is the longitude of the glowing line?",
+          "show": {
+            "highlight": "prime-meridian"
+          },
+          "answer": "0°",
+          "wrongAnswers": ["90° E", "90° W", "180°"]
+        },
+        {
+          "ask": "The glowing line passes through which part of London?",
+          "show": {
+            "highlight": "prime-meridian"
+          },
+          "answer": "Greenwich",
+          "wrongAnswers": ["Westminster", "Camden", "Wimbledon"]
+        },
+        {
+          "ask": "The glowing line passes through the UK and which other country?",
+          "show": {
+            "highlight": "prime-meridian"
+          },
+          "answer": "France",
+          "wrongAnswers": ["Italy", "Germany", "Ireland"]
+        },
+        {
+          "ask": "Which half of the Earth is glowing?",
+          "show": {
+            "highlight": "eastern-hemisphere"
+          },
+          "answer": "Eastern Hemisphere",
+          "wrongAnswers": [
+            "Western Hemisphere",
+            "Northern Hemisphere",
+            "Southern Hemisphere"
+          ]
+        },
+        {
+          "ask": "Which half of the Earth is glowing?",
+          "show": {
+            "highlight": "western-hemisphere"
+          },
+          "answer": "Western Hemisphere",
+          "wrongAnswers": [
+            "Eastern Hemisphere",
+            "Northern Hemisphere",
+            "Southern Hemisphere"
+          ]
+        },
+        {
+          "ask": "The pin is at Greenwich. What is its longitude?",
+          "show": {
+            "pin": {
+              "latitude": 51.48,
+              "longitude": 0
+            }
+          },
+          "answer": "0°",
+          "wrongAnswers": ["51° E", "90° W", "180°"]
+        },
+        {
+          "ask": "About what longitude is the pin at Tokyo?",
+          "show": {
+            "pin": {
+              "latitude": 35.68,
+              "longitude": 139.69
+            }
+          },
+          "answer": "140° E",
+          "wrongAnswers": ["140° W", "40° E", "35° W"]
+        },
+        {
+          "ask": "About what longitude is the pin at New York?",
+          "show": {
+            "pin": {
+              "latitude": 40.71,
+              "longitude": -74.01
+            }
+          },
+          "answer": "74° W",
+          "wrongAnswers": ["74° E", "41° W", "0°"]
+        },
+        {
+          "ask": "The pin is on the line opposite the Prime Meridian. What longitude is it?",
+          "show": {
+            "pin": {
+              "latitude": -17,
+              "longitude": 180
+            }
+          },
+          "answer": "180°",
+          "wrongAnswers": ["0°", "90° E", "90° W"]
+        },
+        {
+          "ask": "Which pair gives the position of the pin at Cairo?",
+          "show": {
+            "pin": {
+              "latitude": 30.04,
+              "longitude": 31.24
+            }
+          },
+          "answer": "30° N, 31° E",
+          "wrongAnswers": ["30° S, 31° E", "30° N, 31° W", "30° S, 31° W"]
+        },
+        {
+          "ask": "Which pair gives the position of the pin at Rio de Janeiro?",
+          "show": {
+            "pin": {
+              "latitude": -22.91,
+              "longitude": -43.17
+            }
+          },
+          "answer": "23° S, 43° W",
+          "wrongAnswers": ["23° N, 43° W", "23° S, 43° E", "43° S, 23° W"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.six-figure-grid-references",
+      "title": "Six-Figure Sleuth",
+      "skillName": "Six-figure grid references",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "grid-hunt",
+      "instruction": "Go along the corridor, then up the stairs, and give the pin's six-figure grid reference.",
+      "questions": [
+        {
+          "ask": "What is the six-figure grid reference of the red pin?",
+          "show": {
+            "style": "six-figure",
+            "x": 23.4,
+            "y": 45.7
+          },
+          "answer": "234457",
+          "wrongAnswers": ["457234", "244457", "234467"]
+        },
+        {
+          "ask": "Eastings first, then northings: what is the pin's six-figure reference?",
+          "show": {
+            "style": "six-figure",
+            "x": 12.6,
+            "y": 38.2
+          },
+          "answer": "126382",
+          "wrongAnswers": ["382126", "136382", "126372"]
+        },
+        {
+          "ask": "Which six-figure grid reference pinpoints the red pin?",
+          "show": {
+            "style": "six-figure",
+            "x": 41.3,
+            "y": 17.8
+          },
+          "answer": "413178",
+          "wrongAnswers": ["178413", "418173", "403178"]
+        },
+        {
+          "ask": "What is the six-figure grid reference of the red pin?",
+          "show": {
+            "style": "six-figure",
+            "x": 30.5,
+            "y": 32.9
+          },
+          "answer": "305329",
+          "wrongAnswers": ["329305", "315329", "305339"]
+        },
+        {
+          "ask": "Eastings first, then northings: what is the pin's six-figure reference?",
+          "show": {
+            "style": "six-figure",
+            "x": 56.2,
+            "y": 61.4
+          },
+          "answer": "562614",
+          "wrongAnswers": ["614562", "572614", "562624"]
+        },
+        {
+          "ask": "Which six-figure grid reference pinpoints the red pin?",
+          "show": {
+            "style": "six-figure",
+            "x": 7.8,
+            "y": 22.3
+          },
+          "answer": "078223",
+          "wrongAnswers": ["223078", "088223", "078213"]
+        },
+        {
+          "ask": "What is the six-figure grid reference of the red pin?",
+          "show": {
+            "style": "six-figure",
+            "x": 64.7,
+            "y": 53.1
+          },
+          "answer": "647531",
+          "wrongAnswers": ["531647", "657531", "647541"]
+        },
+        {
+          "ask": "Eastings first, then northings: what is the pin's six-figure reference?",
+          "show": {
+            "style": "six-figure",
+            "x": 18.9,
+            "y": 9.5
+          },
+          "answer": "189095",
+          "wrongAnswers": ["095189", "199095", "189085"]
+        },
+        {
+          "ask": "Which six-figure grid reference pinpoints the red pin?",
+          "show": {
+            "style": "six-figure",
+            "x": 85.1,
+            "y": 72.6
+          },
+          "answer": "851726",
+          "wrongAnswers": ["726851", "861726", "851716"]
+        },
+        {
+          "ask": "What is the six-figure grid reference of the red pin?",
+          "show": {
+            "style": "six-figure",
+            "x": 47.7,
+            "y": 84.3
+          },
+          "answer": "477843",
+          "wrongAnswers": ["843477", "487843", "477833"]
+        },
+        {
+          "ask": "Eastings first, then northings: what is the pin's six-figure reference?",
+          "show": {
+            "style": "six-figure",
+            "x": 33.3,
+            "y": 26.6
+          },
+          "answer": "333266",
+          "wrongAnswers": ["266333", "343266", "333256"]
+        },
+        {
+          "ask": "Which six-figure grid reference pinpoints the red pin?",
+          "show": {
+            "style": "six-figure",
+            "x": 92.4,
+            "y": 90.8
+          },
+          "answer": "924908",
+          "wrongAnswers": ["908924", "914908", "924918"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.mountains-of-the-world",
+      "title": "Summit Seekers",
+      "skillName": "Mountains of the world",
+      "strand": "human-and-physical-geography",
+      "scene": "globe-spinner",
+      "instruction": "Follow the red pin to a mighty summit and tap the right answer.",
+      "questions": [
+        {
+          "ask": "The pin is on the highest mountain on Earth. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 27.988,
+              "longitude": 86.925
+            }
+          },
+          "answer": "Mount Everest",
+          "wrongAnswers": ["K2", "Kilimanjaro", "Mont Blanc"]
+        },
+        {
+          "ask": "The pin marks Africa's highest mountain. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": -3.068,
+              "longitude": 37.356
+            }
+          },
+          "answer": "Kilimanjaro",
+          "wrongAnswers": ["Aconcagua", "Ben Nevis", "Mont Blanc"]
+        },
+        {
+          "ask": "The pin is on the highest peak in South America. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": -32.653,
+              "longitude": -70.011
+            }
+          },
+          "answer": "Aconcagua",
+          "wrongAnswers": ["Kilimanjaro", "Denali", "Mount Fuji"]
+        },
+        {
+          "ask": "The pin marks North America's highest mountain. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 63.069,
+              "longitude": -151.007
+            }
+          },
+          "answer": "Denali",
+          "wrongAnswers": ["Aconcagua", "Mount Everest", "Mount Elbrus"]
+        },
+        {
+          "ask": "The pin is on the highest mountain in the Alps. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 45.833,
+              "longitude": 6.865
+            }
+          },
+          "answer": "Mont Blanc",
+          "wrongAnswers": ["Kilimanjaro", "Mount Fuji", "Ben Nevis"]
+        },
+        {
+          "ask": "The pin is on Japan's highest mountain, a volcano. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 35.361,
+              "longitude": 138.727
+            }
+          },
+          "answer": "Mount Fuji",
+          "wrongAnswers": ["Mount Everest", "Mont Blanc", "Kilimanjaro"]
+        },
+        {
+          "ask": "The pin marks the UK's highest mountain. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 56.797,
+              "longitude": -5.004
+            }
+          },
+          "answer": "Ben Nevis",
+          "wrongAnswers": [
+            "Scafell Pike",
+            "Yr Wyddfa (Snowdon)",
+            "Slieve Donard"
+          ]
+        },
+        {
+          "ask": "Which mountain range is this summit part of?",
+          "show": {
+            "pin": {
+              "latitude": 27.988,
+              "longitude": 86.925
+            }
+          },
+          "answer": "Himalayas",
+          "wrongAnswers": ["Andes", "Alps", "Rocky Mountains"]
+        },
+        {
+          "ask": "Which mountain range is this summit part of?",
+          "show": {
+            "pin": {
+              "latitude": -32.653,
+              "longitude": -70.011
+            }
+          },
+          "answer": "Andes",
+          "wrongAnswers": ["Himalayas", "Alps", "Atlas Mountains"]
+        },
+        {
+          "ask": "The pin is in the long range running down western North America. Which?",
+          "show": {
+            "pin": {
+              "latitude": 39.118,
+              "longitude": -106.445
+            }
+          },
+          "answer": "Rocky Mountains",
+          "wrongAnswers": ["Andes", "Himalayas", "Alps"]
+        },
+        {
+          "ask": "About how high is the summit at the pin?",
+          "show": {
+            "pin": {
+              "latitude": 27.988,
+              "longitude": 86.925
+            }
+          },
+          "answer": "8,849 m",
+          "wrongAnswers": ["4,806 m", "5,895 m", "1,345 m"]
+        },
+        {
+          "ask": "Which country is the summit at the pin in?",
+          "show": {
+            "pin": {
+              "latitude": -3.068,
+              "longitude": 37.356
+            }
+          },
+          "answer": "Tanzania",
+          "wrongAnswers": ["Nigeria", "Egypt", "South Africa"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.natural-resources",
+      "title": "Resource Rangers",
+      "skillName": "Natural resources",
+      "strand": "human-and-physical-geography",
+      "scene": "resource-dock",
+      "instruction": "Open each crate on the dock and work out which natural resource is inside.",
+      "questions": [
+        {
+          "ask": "What natural resource is in this crate?",
+          "show": {
+            "resource": "iron-ore"
+          },
+          "answer": "Iron ore",
+          "wrongAnswers": ["Coal", "Copper", "Gold"]
+        },
+        {
+          "ask": "What natural resource is in this crate?",
+          "show": {
+            "resource": "copper"
+          },
+          "answer": "Copper",
+          "wrongAnswers": ["Iron ore", "Gold", "Coal"]
+        },
+        {
+          "ask": "Which precious metal is in this crate?",
+          "show": {
+            "resource": "gold"
+          },
+          "answer": "Gold",
+          "wrongAnswers": ["Copper", "Iron", "Tin"]
+        },
+        {
+          "ask": "What is this metal mostly used to make?",
+          "show": {
+            "resource": "copper"
+          },
+          "answer": "Electric wires",
+          "wrongAnswers": ["Writing paper", "T-shirts", "Chocolate bars"]
+        },
+        {
+          "ask": "Which country mines the most of this metal?",
+          "show": {
+            "resource": "copper"
+          },
+          "answer": "Chile",
+          "wrongAnswers": ["Iceland", "United Kingdom", "Egypt"]
+        },
+        {
+          "ask": "What is this resource mainly used to make?",
+          "show": {
+            "resource": "iron-ore"
+          },
+          "answer": "Steel",
+          "wrongAnswers": ["Glass", "Plastic", "Paper"]
+        },
+        {
+          "ask": "Which country mines the most of this resource?",
+          "show": {
+            "resource": "iron-ore"
+          },
+          "answer": "Australia",
+          "wrongAnswers": ["Iceland", "Ireland", "Fiji"]
+        },
+        {
+          "ask": "What natural resource is in this crate?",
+          "show": {
+            "resource": "timber"
+          },
+          "answer": "Timber",
+          "wrongAnswers": ["Coal", "Cotton", "Iron ore"]
+        },
+        {
+          "ask": "What sort of resource is this, if new trees are planted?",
+          "show": {
+            "resource": "timber"
+          },
+          "answer": "Renewable resource",
+          "wrongAnswers": ["Fossil fuel", "Metal ore", "Nuclear fuel"]
+        },
+        {
+          "ask": "Which vital natural resource is in this crate?",
+          "show": {
+            "resource": "fresh-water"
+          },
+          "answer": "Fresh water",
+          "wrongAnswers": ["Oil", "Natural gas", "Iron ore"]
+        },
+        {
+          "ask": "About how much of all the water on Earth is fresh water?",
+          "show": {
+            "resource": "fresh-water"
+          },
+          "answer": "About 3%",
+          "wrongAnswers": ["About 50%", "About 75%", "About 97%"]
+        },
+        {
+          "ask": "This crop is grown to make what?",
+          "show": {
+            "resource": "cotton"
+          },
+          "answer": "Clothes and fabric",
+          "wrongAnswers": ["Chocolate", "Steel", "Plastic bottles"]
+        },
+        {
+          "ask": "Which resource from the ocean is in this crate?",
+          "show": {
+            "resource": "fish"
+          },
+          "answer": "Fish",
+          "wrongAnswers": ["Timber", "Cotton", "Copper"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.food-and-trade-links",
+      "title": "Food Miles Freight",
+      "skillName": "Food and trade links",
+      "strand": "human-and-physical-geography",
+      "scene": "resource-dock",
+      "instruction": "Check each cargo crate and find out where our food comes from.",
+      "questions": [
+        {
+          "ask": "Which food crop is in this crate?",
+          "show": {
+            "resource": "cocoa"
+          },
+          "answer": "Cocoa beans",
+          "wrongAnswers": ["Coffee beans", "Tea leaves", "Rice"]
+        },
+        {
+          "ask": "Which country grows the most of this crop?",
+          "show": {
+            "resource": "cocoa"
+          },
+          "answer": "Côte d'Ivoire",
+          "wrongAnswers": ["Canada", "Norway", "Mongolia"]
+        },
+        {
+          "ask": "This crop is the main ingredient of which food?",
+          "show": {
+            "resource": "cocoa"
+          },
+          "answer": "Chocolate",
+          "wrongAnswers": ["Bread", "Cheese", "Pasta"]
+        },
+        {
+          "ask": "Which food crop is in this crate?",
+          "show": {
+            "resource": "coffee"
+          },
+          "answer": "Coffee beans",
+          "wrongAnswers": ["Cocoa beans", "Rice", "Wheat"]
+        },
+        {
+          "ask": "Which country grows the most of this crop?",
+          "show": {
+            "resource": "coffee"
+          },
+          "answer": "Brazil",
+          "wrongAnswers": ["Iceland", "United Kingdom", "Canada"]
+        },
+        {
+          "ask": "Which country exports the most of this fruit?",
+          "show": {
+            "resource": "bananas"
+          },
+          "answer": "Ecuador",
+          "wrongAnswers": ["Iceland", "Norway", "Finland"]
+        },
+        {
+          "ask": "Why does the UK import this fruit instead of growing it?",
+          "show": {
+            "resource": "bananas"
+          },
+          "answer": "Too cold to grow in UK",
+          "wrongAnswers": [
+            "The UK has no farms",
+            "It is banned in the UK",
+            "UK soil is too salty"
+          ]
+        },
+        {
+          "ask": "Which food crop is in this crate?",
+          "show": {
+            "resource": "tea"
+          },
+          "answer": "Tea",
+          "wrongAnswers": ["Coffee", "Cocoa", "Wheat"]
+        },
+        {
+          "ask": "Which country grows the most of this crop?",
+          "show": {
+            "resource": "tea"
+          },
+          "answer": "China",
+          "wrongAnswers": ["Iceland", "Canada", "Egypt"]
+        },
+        {
+          "ask": "Which two countries grow the most of this crop?",
+          "show": {
+            "resource": "rice"
+          },
+          "answer": "China and India",
+          "wrongAnswers": [
+            "UK and Ireland",
+            "Canada and Norway",
+            "Iceland and Finland"
+          ]
+        },
+        {
+          "ask": "Which food crop is in this crate?",
+          "show": {
+            "resource": "wheat"
+          },
+          "answer": "Wheat",
+          "wrongAnswers": ["Rice", "Cotton", "Tea"]
+        },
+        {
+          "ask": "This crop is ground into flour to make which food?",
+          "show": {
+            "resource": "wheat"
+          },
+          "answer": "Bread",
+          "wrongAnswers": ["Chocolate", "Butter", "Cheese"]
+        },
+        {
+          "ask": "Bananas travel a long way to the UK. What do food miles measure?",
+          "show": {
+            "resource": "bananas"
+          },
+          "answer": "Distance food travels",
+          "wrongAnswers": [
+            "How heavy food is",
+            "Calories in food",
+            "The price of food"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.climate-graphs",
+      "title": "Climate Graph Lab",
+      "skillName": "Reading climate graphs",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "data-towers",
+      "instruction": "Read the climate towers carefully against the scale, then tap the right answer.",
+      "questions": [
+        {
+          "ask": "Which month on this graph is the wettest?",
+          "show": {
+            "title": "Rainfall in London",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Jan",
+                "value": 56
+              },
+              {
+                "label": "Mar",
+                "value": 41
+              },
+              {
+                "label": "May",
+                "value": 49
+              },
+              {
+                "label": "Jul",
+                "value": 45
+              },
+              {
+                "label": "Sep",
+                "value": 50
+              },
+              {
+                "label": "Nov",
+                "value": 60
+              }
+            ]
+          },
+          "answer": "November",
+          "wrongAnswers": ["January", "March", "July"]
+        },
+        {
+          "ask": "Which month on this graph is the driest?",
+          "show": {
+            "title": "Rainfall in London",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Jan",
+                "value": 56
+              },
+              {
+                "label": "Mar",
+                "value": 41
+              },
+              {
+                "label": "May",
+                "value": 49
+              },
+              {
+                "label": "Jul",
+                "value": 45
+              },
+              {
+                "label": "Sep",
+                "value": 50
+              },
+              {
+                "label": "Nov",
+                "value": 60
+              }
+            ]
+          },
+          "answer": "March",
+          "wrongAnswers": ["January", "September", "November"]
+        },
+        {
+          "ask": "How much more rain falls in November than in March?",
+          "show": {
+            "title": "Rainfall in London",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Jan",
+                "value": 56
+              },
+              {
+                "label": "Mar",
+                "value": 41
+              },
+              {
+                "label": "May",
+                "value": 49
+              },
+              {
+                "label": "Jul",
+                "value": 45
+              },
+              {
+                "label": "Sep",
+                "value": 50
+              },
+              {
+                "label": "Nov",
+                "value": 60
+              }
+            ]
+          },
+          "answer": "19 mm",
+          "wrongAnswers": ["15 mm", "20 mm", "9 mm"]
+        },
+        {
+          "ask": "Which month on this graph is the warmest?",
+          "show": {
+            "title": "Average temperature in London",
+            "unit": "°C",
+            "bars": [
+              {
+                "label": "Jan",
+                "value": 5
+              },
+              {
+                "label": "Mar",
+                "value": 8
+              },
+              {
+                "label": "May",
+                "value": 14
+              },
+              {
+                "label": "Jul",
+                "value": 19
+              },
+              {
+                "label": "Sep",
+                "value": 16
+              },
+              {
+                "label": "Nov",
+                "value": 9
+              }
+            ]
+          },
+          "answer": "July",
+          "wrongAnswers": ["May", "September", "January"]
+        },
+        {
+          "ask": "What is the temperature range: warmest month minus coldest?",
+          "show": {
+            "title": "Average temperature in London",
+            "unit": "°C",
+            "bars": [
+              {
+                "label": "Jan",
+                "value": 5
+              },
+              {
+                "label": "Mar",
+                "value": 8
+              },
+              {
+                "label": "May",
+                "value": 14
+              },
+              {
+                "label": "Jul",
+                "value": 19
+              },
+              {
+                "label": "Sep",
+                "value": 16
+              },
+              {
+                "label": "Nov",
+                "value": 9
+              }
+            ]
+          },
+          "answer": "14 °C",
+          "wrongAnswers": ["19 °C", "5 °C", "11 °C"]
+        },
+        {
+          "ask": "What does this graph show about the temperature in Manaus?",
+          "show": {
+            "title": "Average temperature in Manaus, Brazil",
+            "unit": "°C",
+            "bars": [
+              {
+                "label": "Jan",
+                "value": 26
+              },
+              {
+                "label": "Mar",
+                "value": 26
+              },
+              {
+                "label": "May",
+                "value": 27
+              },
+              {
+                "label": "Jul",
+                "value": 27
+              },
+              {
+                "label": "Sep",
+                "value": 28
+              },
+              {
+                "label": "Nov",
+                "value": 28
+              }
+            ]
+          },
+          "answer": "Hot all year round",
+          "wrongAnswers": [
+            "Cold all year round",
+            "Below freezing in July",
+            "Hot summer, icy winter"
+          ]
+        },
+        {
+          "ask": "Which month on this graph is the wettest?",
+          "show": {
+            "title": "Rainfall in Manaus, Brazil",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Jan",
+                "value": 260
+              },
+              {
+                "label": "Mar",
+                "value": 320
+              },
+              {
+                "label": "May",
+                "value": 260
+              },
+              {
+                "label": "Jul",
+                "value": 90
+              },
+              {
+                "label": "Sep",
+                "value": 80
+              },
+              {
+                "label": "Nov",
+                "value": 180
+              }
+            ]
+          },
+          "answer": "March",
+          "wrongAnswers": ["January", "July", "November"]
+        },
+        {
+          "ask": "Which month on this graph is the driest?",
+          "show": {
+            "title": "Rainfall in Manaus, Brazil",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Jan",
+                "value": 260
+              },
+              {
+                "label": "Mar",
+                "value": 320
+              },
+              {
+                "label": "May",
+                "value": 260
+              },
+              {
+                "label": "Jul",
+                "value": 90
+              },
+              {
+                "label": "Sep",
+                "value": 80
+              },
+              {
+                "label": "Nov",
+                "value": 180
+              }
+            ]
+          },
+          "answer": "September",
+          "wrongAnswers": ["July", "November", "January"]
+        },
+        {
+          "ask": "How much more rain falls in March than in July?",
+          "show": {
+            "title": "Rainfall in Manaus, Brazil",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Jan",
+                "value": 260
+              },
+              {
+                "label": "Mar",
+                "value": 320
+              },
+              {
+                "label": "May",
+                "value": 260
+              },
+              {
+                "label": "Jul",
+                "value": 90
+              },
+              {
+                "label": "Sep",
+                "value": 80
+              },
+              {
+                "label": "Nov",
+                "value": 180
+              }
+            ]
+          },
+          "answer": "230 mm",
+          "wrongAnswers": ["320 mm", "90 mm", "200 mm"]
+        },
+        {
+          "ask": "Cairo gets almost no rain. Which biome is Cairo in?",
+          "show": {
+            "title": "Rainfall in Cairo, Egypt",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Jan",
+                "value": 5
+              },
+              {
+                "label": "Mar",
+                "value": 4
+              },
+              {
+                "label": "May",
+                "value": 1
+              },
+              {
+                "label": "Jul",
+                "value": 0
+              },
+              {
+                "label": "Sep",
+                "value": 0
+              },
+              {
+                "label": "Nov",
+                "value": 4
+              }
+            ]
+          },
+          "answer": "Desert",
+          "wrongAnswers": ["Rainforest", "Tundra", "Taiga"]
+        },
+        {
+          "ask": "Which month on this graph is the warmest?",
+          "show": {
+            "title": "Average temperature in Sydney, Australia",
+            "unit": "°C",
+            "bars": [
+              {
+                "label": "Jan",
+                "value": 23
+              },
+              {
+                "label": "Mar",
+                "value": 22
+              },
+              {
+                "label": "May",
+                "value": 16
+              },
+              {
+                "label": "Jul",
+                "value": 13
+              },
+              {
+                "label": "Sep",
+                "value": 16
+              },
+              {
+                "label": "Nov",
+                "value": 20
+              }
+            ]
+          },
+          "answer": "January",
+          "wrongAnswers": ["July", "May", "September"]
+        },
+        {
+          "ask": "Why is July the coldest month in Sydney?",
+          "show": {
+            "title": "Average temperature in Sydney, Australia",
+            "unit": "°C",
+            "bars": [
+              {
+                "label": "Jan",
+                "value": 23
+              },
+              {
+                "label": "Mar",
+                "value": 22
+              },
+              {
+                "label": "May",
+                "value": 16
+              },
+              {
+                "label": "Jul",
+                "value": 13
+              },
+              {
+                "label": "Sep",
+                "value": 16
+              },
+              {
+                "label": "Nov",
+                "value": 20
+              }
+            ]
+          },
+          "answer": "It is winter there",
+          "wrongAnswers": [
+            "It is summer there",
+            "It is spring there",
+            "It is autumn there"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.compass-navigation",
+      "title": "Navigator's Challenge",
+      "skillName": "Navigating with eight compass points",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "compass-island",
+      "instruction": "Wizz faces north in the middle of the island: use all eight compass points to find the way.",
+      "questions": [
+        {
+          "ask": "Wizz walks to the lighthouse. Which way is that?",
+          "show": {
+            "target": "lighthouse",
+            "direction": "north-east",
+            "points": 8
+          },
+          "answer": "North-east",
+          "wrongAnswers": ["North-west", "South-east", "South-west"]
+        },
+        {
+          "ask": "Wizz walks to the cave. Which way does Wizz go?",
+          "show": {
+            "target": "cave",
+            "direction": "south-west",
+            "points": 8
+          },
+          "answer": "South-west",
+          "wrongAnswers": ["South-east", "North-west", "North-east"]
+        },
+        {
+          "ask": "Wizz faces the castle and turns right 90°. Which way now?",
+          "show": {
+            "target": "castle",
+            "direction": "east",
+            "points": 8
+          },
+          "answer": "South",
+          "wrongAnswers": ["North", "East", "West"]
+        },
+        {
+          "ask": "Wizz faces the windmill, then turns left 90°. Which way now?",
+          "show": {
+            "target": "windmill",
+            "direction": "north-west",
+            "points": 8
+          },
+          "answer": "South-west",
+          "wrongAnswers": ["North-east", "South-east", "North"]
+        },
+        {
+          "ask": "Which direction is opposite to the volcano?",
+          "show": {
+            "target": "volcano",
+            "direction": "south-east",
+            "points": 8
+          },
+          "answer": "North-west",
+          "wrongAnswers": ["South-east", "North-east", "South-west"]
+        },
+        {
+          "ask": "Wizz faces the bridge and turns right 45°. Which way now?",
+          "show": {
+            "target": "bridge",
+            "direction": "south",
+            "points": 8
+          },
+          "answer": "South-west",
+          "wrongAnswers": ["South-east", "West", "North"]
+        },
+        {
+          "ask": "Wizz faces the treasure chest, then makes a half turn. Which way now?",
+          "show": {
+            "target": "treasure-chest",
+            "direction": "west",
+            "points": 8
+          },
+          "answer": "East",
+          "wrongAnswers": ["West", "North", "South"]
+        },
+        {
+          "ask": "Wizz faces the palm tree, then turns right 135°. Which way now?",
+          "show": {
+            "target": "palm-tree",
+            "direction": "north",
+            "points": 8
+          },
+          "answer": "South-east",
+          "wrongAnswers": ["South-west", "East", "South"]
+        },
+        {
+          "ask": "Wizz faces the lighthouse and turns left 45°. Which way now?",
+          "show": {
+            "target": "lighthouse",
+            "direction": "south-east",
+            "points": 8
+          },
+          "answer": "East",
+          "wrongAnswers": ["South", "North-east", "South-west"]
+        },
+        {
+          "ask": "Wizz is at the castle. Which way must Wizz walk to get back to the middle?",
+          "show": {
+            "target": "castle",
+            "direction": "north-west",
+            "points": 8
+          },
+          "answer": "South-east",
+          "wrongAnswers": ["North-west", "North-east", "South-west"]
+        },
+        {
+          "ask": "Wizz faces north, then turns to face the cave. What turn is that?",
+          "show": {
+            "target": "cave",
+            "direction": "east",
+            "points": 8
+          },
+          "answer": "Quarter turn right",
+          "wrongAnswers": [
+            "Half turn",
+            "Quarter turn left",
+            "Eighth turn right"
+          ]
+        },
+        {
+          "ask": "Wizz faces north. Which turn makes Wizz face the windmill?",
+          "show": {
+            "target": "windmill",
+            "direction": "south-west",
+            "points": 8
+          },
+          "answer": "135° anticlockwise",
+          "wrongAnswers": [
+            "135° clockwise",
+            "90° anticlockwise",
+            "45° clockwise"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.rivers-of-the-world",
+      "title": "Mighty Rivers",
+      "skillName": "Major rivers of the world",
+      "strand": "locational-knowledge",
+      "scene": "globe-spinner",
+      "instruction": "Follow the red pin to a great river and tap its name.",
+      "questions": [
+        {
+          "ask": "This river flows north into the Mediterranean. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 24.09,
+              "longitude": 32.9
+            }
+          },
+          "answer": "Nile",
+          "wrongAnswers": ["Amazon", "Mississippi", "Yangtze"]
+        },
+        {
+          "ask": "This river flows east through the rainforest to the Atlantic. Which?",
+          "show": {
+            "pin": {
+              "latitude": -2.4,
+              "longitude": -54.7
+            }
+          },
+          "answer": "Amazon",
+          "wrongAnswers": ["Nile", "Danube", "Ganges"]
+        },
+        {
+          "ask": "This river flows south into the Gulf of Mexico. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 35.15,
+              "longitude": -90.06
+            }
+          },
+          "answer": "Mississippi",
+          "wrongAnswers": ["Amazon", "Nile", "Danube"]
+        },
+        {
+          "ask": "Asia's longest river flows east across China to the sea. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 30.59,
+              "longitude": 114.3
+            }
+          },
+          "answer": "Yangtze",
+          "wrongAnswers": ["Ganges", "Volga", "Amazon"]
+        },
+        {
+          "ask": "This holy river flows east across India to the Bay of Bengal. Which?",
+          "show": {
+            "pin": {
+              "latitude": 25.31,
+              "longitude": 83.01
+            }
+          },
+          "answer": "Ganges",
+          "wrongAnswers": ["Yangtze", "Nile", "Danube"]
+        },
+        {
+          "ask": "This river flows east through four capitals into the Black Sea. Which?",
+          "show": {
+            "pin": {
+              "latitude": 47.5,
+              "longitude": 19.04
+            }
+          },
+          "answer": "Danube",
+          "wrongAnswers": ["Thames", "Rhine", "Volga"]
+        },
+        {
+          "ask": "This river flows east through London into the North Sea. Which?",
+          "show": {
+            "pin": {
+              "latitude": 51.507,
+              "longitude": -0.12
+            }
+          },
+          "answer": "Thames",
+          "wrongAnswers": ["Severn", "Danube", "Seine"]
+        },
+        {
+          "ask": "Europe's longest river flows south into the Caspian Sea. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 48.7,
+              "longitude": 44.5
+            }
+          },
+          "answer": "Volga",
+          "wrongAnswers": ["Danube", "Rhine", "Thames"]
+        },
+        {
+          "ask": "This river flows north through Germany into the North Sea. Which?",
+          "show": {
+            "pin": {
+              "latitude": 50.94,
+              "longitude": 6.96
+            }
+          },
+          "answer": "Rhine",
+          "wrongAnswers": ["Danube", "Thames", "Volga"]
+        },
+        {
+          "ask": "Which continent does the river at the pin flow through?",
+          "show": {
+            "pin": {
+              "latitude": 24.09,
+              "longitude": 32.9
+            }
+          },
+          "answer": "Africa",
+          "wrongAnswers": ["Asia", "Europe", "South America"]
+        },
+        {
+          "ask": "This river carries more water than any other. Which ocean does it reach?",
+          "show": {
+            "pin": {
+              "latitude": -2.4,
+              "longitude": -54.7
+            }
+          },
+          "answer": "Atlantic Ocean",
+          "wrongAnswers": ["Pacific Ocean", "Indian Ocean", "Arctic Ocean"]
+        },
+        {
+          "ask": "This is Australia's longest river. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": -34.17,
+              "longitude": 140.75
+            }
+          },
+          "answer": "Murray",
+          "wrongAnswers": ["Nile", "Amazon", "Mississippi"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.earthquakes",
+      "title": "Quake Quest",
+      "skillName": "How earthquakes happen",
+      "strand": "human-and-physical-geography",
+      "scene": "volcano-cutaway",
+      "instruction": "Look inside the cracked crust and find out how an earthquake happens.",
+      "questions": [
+        {
+          "ask": "Which part of the earthquake is glowing?",
+          "show": {
+            "part": "epicentre"
+          },
+          "answer": "Epicentre",
+          "wrongAnswers": ["Focus", "Fault line", "Seismic waves"]
+        },
+        {
+          "ask": "Which part of the earthquake is glowing?",
+          "show": {
+            "part": "focus"
+          },
+          "answer": "Focus",
+          "wrongAnswers": ["Epicentre", "Fault line", "Tectonic plates"]
+        },
+        {
+          "ask": "Which part of the earthquake is glowing?",
+          "show": {
+            "part": "fault-line"
+          },
+          "answer": "Fault line",
+          "wrongAnswers": ["Epicentre", "Focus", "Seismic waves"]
+        },
+        {
+          "ask": "Which part of the earthquake is glowing?",
+          "show": {
+            "part": "seismic-waves"
+          },
+          "answer": "Seismic waves",
+          "wrongAnswers": ["Fault line", "Tectonic plates", "Focus"]
+        },
+        {
+          "ask": "Which part of the earthquake is glowing?",
+          "show": {
+            "part": "tectonic-plates"
+          },
+          "answer": "Tectonic plates",
+          "wrongAnswers": ["Seismic waves", "Epicentre", "Fault line"]
+        },
+        {
+          "ask": "The glowing point on the surface is straight above which part?",
+          "show": {
+            "part": "epicentre"
+          },
+          "answer": "Focus",
+          "wrongAnswers": ["Outer core", "Inner core", "Magma chamber"]
+        },
+        {
+          "ask": "The quake starts at this glowing point. What happens here?",
+          "show": {
+            "part": "focus"
+          },
+          "answer": "Rocks suddenly slip",
+          "wrongAnswers": ["Lava erupts", "Rain soaks in", "Ice melts"]
+        },
+        {
+          "ask": "What do these glowing waves do when they reach the surface?",
+          "show": {
+            "part": "seismic-waves"
+          },
+          "answer": "Make the ground shake",
+          "wrongAnswers": ["Make rain fall", "Melt the rocks", "Freeze rivers"]
+        },
+        {
+          "ask": "Which instrument records these glowing waves?",
+          "show": {
+            "part": "seismic-waves"
+          },
+          "answer": "Seismometer",
+          "wrongAnswers": ["Thermometer", "Barometer", "Rain gauge"]
+        },
+        {
+          "ask": "Where do most earthquakes happen?",
+          "show": {
+            "part": "tectonic-plates"
+          },
+          "answer": "Near plate boundaries",
+          "wrongAnswers": [
+            "Middle of plates",
+            "Only near the poles",
+            "Only in deserts"
+          ]
+        },
+        {
+          "ask": "These huge slabs of crust move on top of which layer?",
+          "show": {
+            "part": "tectonic-plates"
+          },
+          "answer": "Mantle",
+          "wrongAnswers": ["Inner core", "Outer core", "Atmosphere"]
+        },
+        {
+          "ask": "Which scale measures how strong an earthquake is?",
+          "show": {
+            "part": "fault-line"
+          },
+          "answer": "Richter scale",
+          "wrongAnswers": ["Beaufort scale", "Celsius scale", "Mohs scale"]
+        },
+        {
+          "ask": "What is the ring of quakes and volcanoes around the Pacific called?",
+          "show": {
+            "part": "tectonic-plates"
+          },
+          "answer": "Ring of Fire",
+          "wrongAnswers": ["Belt of Ice", "Circle of Rock", "Arc of Sand"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.comparing-regions",
+      "title": "Three Regions Tour",
+      "skillName": "Comparing a UK, European and American region",
+      "strand": "place-knowledge",
+      "scene": "region-tour",
+      "instruction": "Tour the Lake District, the Swiss Alps and the Amazon, and compare their land, weather and people.",
+      "questions": [
+        {
+          "ask": "Which region is hot and wet all year round?",
+          "show": {},
+          "answer": "The Amazon",
+          "wrongAnswers": [
+            "The Lake District",
+            "The Swiss Alps",
+            "All three are the same"
+          ]
+        },
+        {
+          "ask": "Which region has the highest mountains?",
+          "show": {},
+          "answer": "The Swiss Alps",
+          "wrongAnswers": [
+            "The Lake District",
+            "The Amazon",
+            "All three are the same"
+          ]
+        },
+        {
+          "ask": "Which region is in South America?",
+          "show": {},
+          "answer": "The Amazon",
+          "wrongAnswers": [
+            "The Lake District",
+            "The Swiss Alps",
+            "All three are the same"
+          ]
+        },
+        {
+          "ask": "Which region is in the United Kingdom?",
+          "show": {},
+          "answer": "The Lake District",
+          "wrongAnswers": [
+            "The Swiss Alps",
+            "The Amazon",
+            "All three are the same"
+          ]
+        },
+        {
+          "ask": "Which region is famous for skiing holidays?",
+          "show": {},
+          "answer": "The Swiss Alps",
+          "wrongAnswers": [
+            "The Lake District",
+            "The Amazon",
+            "All three are the same"
+          ]
+        },
+        {
+          "ask": "Which region still has big glaciers today?",
+          "show": {},
+          "answer": "The Swiss Alps",
+          "wrongAnswers": [
+            "The Lake District",
+            "The Amazon",
+            "All three are the same"
+          ]
+        },
+        {
+          "ask": "In which region do many people travel by boat along rivers, not roads?",
+          "show": {},
+          "answer": "The Amazon",
+          "wrongAnswers": [
+            "The Lake District",
+            "The Swiss Alps",
+            "All three are the same"
+          ]
+        },
+        {
+          "ask": "Which two regions get snow on high ground in winter?",
+          "show": {},
+          "answer": "Lake District and Alps",
+          "wrongAnswers": [
+            "Amazon and Alps",
+            "Amazon and Lake District",
+            "Only the Amazon"
+          ]
+        },
+        {
+          "ask": "This region has the highest mountain in England. What is it?",
+          "show": {
+            "region": "lake-district"
+          },
+          "answer": "Scafell Pike",
+          "wrongAnswers": ["Ben Nevis", "Snowdon", "The Matterhorn"]
+        },
+        {
+          "ask": "This region has England's largest natural lake. What is it called?",
+          "show": {
+            "region": "lake-district"
+          },
+          "answer": "Windermere",
+          "wrongAnswers": ["Loch Ness", "Lake Geneva", "Lough Neagh"]
+        },
+        {
+          "ask": "Compared with most of England, what is the weather like here?",
+          "show": {
+            "region": "lake-district"
+          },
+          "answer": "Wetter",
+          "wrongAnswers": ["Drier", "Much hotter", "Snowy all year"]
+        },
+        {
+          "ask": "Which famous writer lived and farmed in this region?",
+          "show": {
+            "region": "lake-district"
+          },
+          "answer": "Beatrix Potter",
+          "wrongAnswers": ["Roald Dahl", "Enid Blyton", "Charles Dickens"]
+        },
+        {
+          "ask": "Which famous pointed peak stands in the Swiss Alps?",
+          "show": {
+            "region": "swiss-alps"
+          },
+          "answer": "The Matterhorn",
+          "wrongAnswers": ["Scafell Pike", "Mount Everest", "Ben Nevis"]
+        },
+        {
+          "ask": "Which money do people use in Switzerland?",
+          "show": {
+            "region": "swiss-alps"
+          },
+          "answer": "Swiss franc",
+          "wrongAnswers": ["Euro", "Pound", "Brazilian real"]
+        },
+        {
+          "ask": "Switzerland has four official languages. Which is one of them?",
+          "show": {
+            "region": "swiss-alps"
+          },
+          "answer": "German",
+          "wrongAnswers": ["Portuguese", "Spanish", "Dutch"]
+        },
+        {
+          "ask": "What happens to the temperature as you climb higher up the Alps?",
+          "show": {
+            "region": "swiss-alps"
+          },
+          "answer": "It gets colder",
+          "wrongAnswers": [
+            "It gets hotter",
+            "It stays the same",
+            "It turns tropical"
+          ]
+        },
+        {
+          "ask": "Most of the Amazon is in Brazil. Which language do most Brazilians speak?",
+          "show": {
+            "region": "amazon-rainforest"
+          },
+          "answer": "Portuguese",
+          "wrongAnswers": ["Spanish", "English", "French"]
+        },
+        {
+          "ask": "Which big cat hunts in the Amazon rainforest?",
+          "show": {
+            "region": "amazon-rainforest"
+          },
+          "answer": "Jaguar",
+          "wrongAnswers": ["Lion", "Snow leopard", "Tiger"]
+        },
+        {
+          "ask": "Why are large areas of this rainforest being cut down?",
+          "show": {
+            "region": "amazon-rainforest"
+          },
+          "answer": "For cattle and crops",
+          "wrongAnswers": [
+            "For ski slopes",
+            "To build glaciers",
+            "For sheep fells"
+          ]
+        }
+      ]
+    }
+  ]
+}

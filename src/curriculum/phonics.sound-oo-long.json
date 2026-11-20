@@ -1,0 +1,9 @@
+{
+  "id": "phonics.sound-oo-long",
+  "name": "The /oo/ sound, as in moon",
+  "subject": "phonics",
+  "yearGroup": 1,
+  "strand": "grapheme-phoneme-correspondences",
+  "prerequisites": [],
+  "sounds": ["oo-long"]
+}

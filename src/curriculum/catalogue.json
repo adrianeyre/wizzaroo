@@ -1,0 +1,5135 @@
+{
+  "prices": {
+    "common": 15,
+    "uncommon": 30,
+    "rare": 60
+  },
+  "items": [
+    {
+      "id": "type-wizard",
+      "name": "Wizard",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "wizard",
+      "colour": "#5b3fc4"
+    },
+    {
+      "id": "type-warrior",
+      "name": "Warrior",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "warrior",
+      "colour": "#a0522d"
+    },
+    {
+      "id": "type-knight",
+      "name": "Knight",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "knight",
+      "colour": "#9aa3b5"
+    },
+    {
+      "id": "type-archer",
+      "name": "Archer",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "archer",
+      "colour": "#3f8f3a"
+    },
+    {
+      "id": "type-pirate",
+      "name": "Pirate",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "pirate",
+      "colour": "#b8322a"
+    },
+    {
+      "id": "type-ninja",
+      "name": "Ninja",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "ninja",
+      "colour": "#2a2a3a"
+    },
+    {
+      "id": "type-astronaut",
+      "name": "Astronaut",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "astronaut",
+      "colour": "#e8ecf2"
+    },
+    {
+      "id": "type-fairy",
+      "name": "Fairy",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "fairy",
+      "colour": "#f08cc8"
+    },
+    {
+      "id": "type-explorer",
+      "name": "Explorer",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "explorer",
+      "colour": "#c9a46a"
+    },
+    {
+      "id": "type-inventor",
+      "name": "Inventor",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "inventor",
+      "colour": "#3a7bd5"
+    },
+    {
+      "id": "type-superhero",
+      "name": "Superhero",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "superhero",
+      "colour": "#d6262e"
+    },
+    {
+      "id": "type-dragon-tamer",
+      "name": "Dragon tamer",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "dragon-tamer",
+      "colour": "#2f8f6f"
+    },
+    {
+      "id": "type-chef",
+      "name": "Chef",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "chef",
+      "colour": "#f7f7f7"
+    },
+    {
+      "id": "type-detective",
+      "name": "Detective",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "detective",
+      "colour": "#b8925a"
+    },
+    {
+      "id": "type-royal",
+      "name": "Royal",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "royal",
+      "colour": "#b8322a"
+    },
+    {
+      "id": "type-cowhand",
+      "name": "Cowhand",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "cowhand",
+      "colour": "#a86a32"
+    },
+    {
+      "id": "type-rock-star",
+      "name": "Rock star",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "rock-star",
+      "colour": "#7a3fc4"
+    },
+    {
+      "id": "type-gardener",
+      "name": "Gardener",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "gardener",
+      "colour": "#4f8f3a"
+    },
+    {
+      "id": "type-painter",
+      "name": "Painter",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "painter",
+      "colour": "#d6262e"
+    },
+    {
+      "id": "type-scientist",
+      "name": "Scientist",
+      "slot": "characterType",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "scientist",
+      "colour": "#f4f7fa"
+    },
+    {
+      "id": "body-peach",
+      "name": "Peach",
+      "slot": "bodyColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#f6c9a8"
+    },
+    {
+      "id": "body-porcelain",
+      "name": "Porcelain",
+      "slot": "bodyColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#fbe3d3"
+    },
+    {
+      "id": "body-sand",
+      "name": "Sand",
+      "slot": "bodyColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#e8b98f"
+    },
+    {
+      "id": "body-honey",
+      "name": "Honey",
+      "slot": "bodyColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#d9a066"
+    },
+    {
+      "id": "body-caramel",
+      "name": "Caramel",
+      "slot": "bodyColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#b97a4a"
+    },
+    {
+      "id": "body-chestnut",
+      "name": "Chestnut",
+      "slot": "bodyColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#94603a"
+    },
+    {
+      "id": "body-cocoa",
+      "name": "Cocoa",
+      "slot": "bodyColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#6f4429"
+    },
+    {
+      "id": "body-deep-brown",
+      "name": "Deep brown",
+      "slot": "bodyColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#4e2f1d"
+    },
+    {
+      "id": "body-sky-blue",
+      "name": "Sky blue",
+      "slot": "bodyColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#4fa3e0"
+    },
+    {
+      "id": "body-sunny-yellow",
+      "name": "Sunny yellow",
+      "slot": "bodyColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#f5c542"
+    },
+    {
+      "id": "body-berry-pink",
+      "name": "Berry pink",
+      "slot": "bodyColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#e0568a"
+    },
+    {
+      "id": "body-mint-green",
+      "name": "Mint green",
+      "slot": "bodyColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#7fd6a4"
+    },
+    {
+      "id": "body-sunset-orange",
+      "name": "Sunset orange",
+      "slot": "bodyColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#f28c3b"
+    },
+    {
+      "id": "body-lilac",
+      "name": "Lilac",
+      "slot": "bodyColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#b79be6"
+    },
+    {
+      "id": "body-olive",
+      "name": "Olive",
+      "slot": "bodyColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#c49a6c"
+    },
+    {
+      "id": "hair-short",
+      "name": "Short hair",
+      "slot": "hairStyle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "short",
+      "colour": "#5a3a22"
+    },
+    {
+      "id": "hair-bald",
+      "name": "No hair",
+      "slot": "hairStyle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "bald",
+      "colour": "#f6c9a8"
+    },
+    {
+      "id": "hair-spiky",
+      "name": "Spiky hair",
+      "slot": "hairStyle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "spiky",
+      "colour": "#5a3a22"
+    },
+    {
+      "id": "hair-curly",
+      "name": "Curly hair",
+      "slot": "hairStyle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "curly",
+      "colour": "#5a3a22"
+    },
+    {
+      "id": "hair-long",
+      "name": "Long hair",
+      "slot": "hairStyle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "long",
+      "colour": "#5a3a22"
+    },
+    {
+      "id": "hair-ponytail",
+      "name": "Ponytail",
+      "slot": "hairStyle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "ponytail",
+      "colour": "#5a3a22"
+    },
+    {
+      "id": "hair-bun",
+      "name": "Bun",
+      "slot": "hairStyle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "bun",
+      "colour": "#5a3a22"
+    },
+    {
+      "id": "hair-mohawk",
+      "name": "Mohawk",
+      "slot": "hairStyle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "mohawk",
+      "colour": "#5a3a22"
+    },
+    {
+      "id": "hair-afro",
+      "name": "Afro",
+      "slot": "hairStyle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "afro",
+      "colour": "#5a3a22"
+    },
+    {
+      "id": "hair-braids",
+      "name": "Braids",
+      "slot": "hairStyle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "braids",
+      "colour": "#5a3a22"
+    },
+    {
+      "id": "hair-bob",
+      "name": "Bob",
+      "slot": "hairStyle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "bob",
+      "colour": "#5a3a22"
+    },
+    {
+      "id": "hair-pigtails",
+      "name": "Pigtails",
+      "slot": "hairStyle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "pigtails",
+      "colour": "#5a3a22"
+    },
+    {
+      "id": "hair-space-buns",
+      "name": "Space buns",
+      "slot": "hairStyle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "space-buns",
+      "colour": "#5a3a22"
+    },
+    {
+      "id": "hair-quiff",
+      "name": "Quiff",
+      "slot": "hairStyle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "quiff",
+      "colour": "#5a3a22"
+    },
+    {
+      "id": "hair-locs",
+      "name": "Locs",
+      "slot": "hairStyle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "locs",
+      "colour": "#5a3a22"
+    },
+    {
+      "id": "hair-colour-black",
+      "name": "Black",
+      "slot": "hairColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#1f1a17"
+    },
+    {
+      "id": "hair-colour-dark-brown",
+      "name": "Dark brown",
+      "slot": "hairColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#3b2516"
+    },
+    {
+      "id": "hair-colour-brown",
+      "name": "Brown",
+      "slot": "hairColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#6b4428"
+    },
+    {
+      "id": "hair-colour-auburn",
+      "name": "Auburn",
+      "slot": "hairColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#8f3b1f"
+    },
+    {
+      "id": "hair-colour-ginger",
+      "name": "Ginger",
+      "slot": "hairColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#d0662a"
+    },
+    {
+      "id": "hair-colour-blonde",
+      "name": "Blonde",
+      "slot": "hairColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#e8c46a"
+    },
+    {
+      "id": "hair-colour-platinum",
+      "name": "Platinum",
+      "slot": "hairColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#f2ead2"
+    },
+    {
+      "id": "hair-colour-grey",
+      "name": "Grey",
+      "slot": "hairColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#9a9a9a"
+    },
+    {
+      "id": "hair-colour-white",
+      "name": "Snowy white",
+      "slot": "hairColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#f7f7f7"
+    },
+    {
+      "id": "hair-colour-blue",
+      "name": "Bright blue",
+      "slot": "hairColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#2f7fe0"
+    },
+    {
+      "id": "hair-colour-pink",
+      "name": "Bubblegum pink",
+      "slot": "hairColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#f07ab8"
+    },
+    {
+      "id": "hair-colour-green",
+      "name": "Lime green",
+      "slot": "hairColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#6cc644"
+    },
+    {
+      "id": "hair-colour-purple",
+      "name": "Purple",
+      "slot": "hairColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#8a4fd8"
+    },
+    {
+      "id": "hair-colour-strawberry-blonde",
+      "name": "Strawberry blonde",
+      "slot": "hairColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#e2a36b"
+    },
+    {
+      "id": "hair-colour-teal",
+      "name": "Teal",
+      "slot": "hairColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#1fa8a0"
+    },
+    {
+      "id": "eyes-round",
+      "name": "Round eyes",
+      "slot": "eyes",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "round",
+      "colour": "#2b2b2b"
+    },
+    {
+      "id": "eyes-sleepy",
+      "name": "Sleepy eyes",
+      "slot": "eyes",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "sleepy",
+      "colour": "#5a4632"
+    },
+    {
+      "id": "eyes-sparkly",
+      "name": "Sparkly eyes",
+      "slot": "eyes",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "sparkly",
+      "colour": "#3a6fd9"
+    },
+    {
+      "id": "eyes-winking",
+      "name": "Winking eyes",
+      "slot": "eyes",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "winking",
+      "colour": "#2b2b2b"
+    },
+    {
+      "id": "eyes-happy",
+      "name": "Happy eyes",
+      "slot": "eyes",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "happy",
+      "colour": "#2b2b2b"
+    },
+    {
+      "id": "eyes-wide",
+      "name": "Wide eyes",
+      "slot": "eyes",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "wide",
+      "colour": "#3f8f3a"
+    },
+    {
+      "id": "eyes-starry",
+      "name": "Starry eyes",
+      "slot": "eyes",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "starry",
+      "colour": "#f2c530"
+    },
+    {
+      "id": "eyes-hearts",
+      "name": "Heart eyes",
+      "slot": "eyes",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "hearts",
+      "colour": "#e0356a"
+    },
+    {
+      "id": "eyes-determined",
+      "name": "Determined eyes",
+      "slot": "eyes",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "determined",
+      "colour": "#4a3020"
+    },
+    {
+      "id": "eyes-dots",
+      "name": "Dot eyes",
+      "slot": "eyes",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "dots",
+      "colour": "#111111"
+    },
+    {
+      "id": "eyes-cat",
+      "name": "Cat eyes",
+      "slot": "eyes",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "cat",
+      "colour": "#7cc242"
+    },
+    {
+      "id": "eyes-lashes",
+      "name": "Eyes with lashes",
+      "slot": "eyes",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "lashes",
+      "colour": "#6b4428"
+    },
+    {
+      "id": "eyes-spiral",
+      "name": "Dizzy spiral eyes",
+      "slot": "eyes",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "spiral",
+      "colour": "#5b3fc4"
+    },
+    {
+      "id": "eyes-side-glance",
+      "name": "Side-glance eyes",
+      "slot": "eyes",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "side-glance",
+      "colour": "#3a6fd9"
+    },
+    {
+      "id": "eyes-flower",
+      "name": "Flower eyes",
+      "slot": "eyes",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "flower",
+      "colour": "#f08cc8"
+    },
+    {
+      "id": "eye-colour-dark-brown",
+      "name": "Dark brown",
+      "slot": "eyeColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#4a3020"
+    },
+    {
+      "id": "eye-colour-brown",
+      "name": "Brown",
+      "slot": "eyeColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#6b4428"
+    },
+    {
+      "id": "eye-colour-chestnut",
+      "name": "Chestnut",
+      "slot": "eyeColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#5a4632"
+    },
+    {
+      "id": "eye-colour-hazel",
+      "name": "Hazel",
+      "slot": "eyeColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#8a7a3a"
+    },
+    {
+      "id": "eye-colour-green",
+      "name": "Green",
+      "slot": "eyeColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#3f8f3a"
+    },
+    {
+      "id": "eye-colour-bright-green",
+      "name": "Bright green",
+      "slot": "eyeColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#7cc242"
+    },
+    {
+      "id": "eye-colour-blue",
+      "name": "Blue",
+      "slot": "eyeColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#3a6fd9"
+    },
+    {
+      "id": "eye-colour-sky-blue",
+      "name": "Sky blue",
+      "slot": "eyeColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#7ab8e8"
+    },
+    {
+      "id": "eye-colour-grey",
+      "name": "Grey",
+      "slot": "eyeColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#8a96a3"
+    },
+    {
+      "id": "eye-colour-charcoal",
+      "name": "Charcoal",
+      "slot": "eyeColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#2b2b2b"
+    },
+    {
+      "id": "eye-colour-black",
+      "name": "Black",
+      "slot": "eyeColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#111111"
+    },
+    {
+      "id": "eye-colour-gold",
+      "name": "Gold",
+      "slot": "eyeColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#f2c530"
+    },
+    {
+      "id": "eye-colour-purple",
+      "name": "Purple",
+      "slot": "eyeColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#5b3fc4"
+    },
+    {
+      "id": "eye-colour-raspberry",
+      "name": "Raspberry",
+      "slot": "eyeColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#e0356a"
+    },
+    {
+      "id": "eye-colour-pink",
+      "name": "Pink",
+      "slot": "eyeColour",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "colour": "#f08cc8"
+    },
+    {
+      "id": "brows-straight",
+      "name": "Straight eyebrows",
+      "slot": "eyebrows",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "straight",
+      "colour": "#3b2516"
+    },
+    {
+      "id": "brows-arched",
+      "name": "Arched eyebrows",
+      "slot": "eyebrows",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "arched",
+      "colour": "#3b2516"
+    },
+    {
+      "id": "brows-bushy",
+      "name": "Bushy eyebrows",
+      "slot": "eyebrows",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "bushy",
+      "colour": "#3b2516"
+    },
+    {
+      "id": "brows-thin",
+      "name": "Thin eyebrows",
+      "slot": "eyebrows",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "thin",
+      "colour": "#3b2516"
+    },
+    {
+      "id": "brows-cross",
+      "name": "Cross eyebrows",
+      "slot": "eyebrows",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "cross",
+      "colour": "#3b2516"
+    },
+    {
+      "id": "brows-worried",
+      "name": "Worried eyebrows",
+      "slot": "eyebrows",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "worried",
+      "colour": "#3b2516"
+    },
+    {
+      "id": "brows-raised",
+      "name": "Raised eyebrow",
+      "slot": "eyebrows",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "raised",
+      "colour": "#3b2516"
+    },
+    {
+      "id": "brows-wavy",
+      "name": "Wavy eyebrows",
+      "slot": "eyebrows",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "wavy",
+      "colour": "#3b2516"
+    },
+    {
+      "id": "brows-dots",
+      "name": "Dot eyebrows",
+      "slot": "eyebrows",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "dots",
+      "colour": "#3b2516"
+    },
+    {
+      "id": "brows-chunky",
+      "name": "Chunky eyebrows",
+      "slot": "eyebrows",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "chunky",
+      "colour": "#3b2516"
+    },
+    {
+      "id": "mouth-smile",
+      "name": "Smile",
+      "slot": "mouth",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "smile",
+      "colour": "#b23a48"
+    },
+    {
+      "id": "mouth-grin",
+      "name": "Big grin",
+      "slot": "mouth",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "grin",
+      "colour": "#b23a48"
+    },
+    {
+      "id": "mouth-laugh",
+      "name": "Laugh",
+      "slot": "mouth",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "laugh",
+      "colour": "#b23a48"
+    },
+    {
+      "id": "mouth-tongue",
+      "name": "Tongue out",
+      "slot": "mouth",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "tongue",
+      "colour": "#b23a48"
+    },
+    {
+      "id": "mouth-little-o",
+      "name": "Little O",
+      "slot": "mouth",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "little-o",
+      "colour": "#b23a48"
+    },
+    {
+      "id": "mouth-smirk",
+      "name": "Smirk",
+      "slot": "mouth",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "smirk",
+      "colour": "#b23a48"
+    },
+    {
+      "id": "mouth-toothy",
+      "name": "Toothy smile",
+      "slot": "mouth",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "toothy",
+      "colour": "#b23a48"
+    },
+    {
+      "id": "mouth-gap-tooth",
+      "name": "Gap-tooth grin",
+      "slot": "mouth",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "gap-tooth",
+      "colour": "#b23a48"
+    },
+    {
+      "id": "mouth-fangs",
+      "name": "Vampire fangs",
+      "slot": "mouth",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "fangs",
+      "colour": "#b23a48"
+    },
+    {
+      "id": "mouth-neutral",
+      "name": "Calm mouth",
+      "slot": "mouth",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "neutral",
+      "colour": "#b23a48"
+    },
+    {
+      "id": "mouth-cat",
+      "name": "Cat mouth",
+      "slot": "mouth",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "cat",
+      "colour": "#b23a48"
+    },
+    {
+      "id": "mouth-surprised",
+      "name": "Surprised",
+      "slot": "mouth",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "surprised",
+      "colour": "#b23a48"
+    },
+    {
+      "id": "mouth-buck-teeth",
+      "name": "Bunny teeth",
+      "slot": "mouth",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "buck-teeth",
+      "colour": "#b23a48"
+    },
+    {
+      "id": "mouth-wavy",
+      "name": "Wobbly mouth",
+      "slot": "mouth",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "wavy",
+      "colour": "#b23a48"
+    },
+    {
+      "id": "mouth-whistle",
+      "name": "Whistling",
+      "slot": "mouth",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "whistle",
+      "colour": "#b23a48"
+    },
+    {
+      "id": "facial-hair-none",
+      "name": "No facial hair",
+      "slot": "facialHair",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "none",
+      "colour": "#6b4428"
+    },
+    {
+      "id": "facial-hair-moustache",
+      "name": "Moustache",
+      "slot": "facialHair",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "moustache",
+      "colour": "#6b4428"
+    },
+    {
+      "id": "facial-hair-handlebar",
+      "name": "Handlebar moustache",
+      "slot": "facialHair",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "handlebar",
+      "colour": "#6b4428"
+    },
+    {
+      "id": "facial-hair-full-beard",
+      "name": "Full beard",
+      "slot": "facialHair",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "full-beard",
+      "colour": "#6b4428"
+    },
+    {
+      "id": "facial-hair-goatee",
+      "name": "Goatee",
+      "slot": "facialHair",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "goatee",
+      "colour": "#6b4428"
+    },
+    {
+      "id": "facial-hair-stubble",
+      "name": "Stubble",
+      "slot": "facialHair",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "stubble",
+      "colour": "#6b4428"
+    },
+    {
+      "id": "facial-hair-wizard-beard",
+      "name": "Long wizard beard",
+      "slot": "facialHair",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "wizard-beard",
+      "colour": "#6b4428"
+    },
+    {
+      "id": "facial-hair-sideburns",
+      "name": "Sideburns",
+      "slot": "facialHair",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "sideburns",
+      "colour": "#6b4428"
+    },
+    {
+      "id": "facial-hair-chin-strap",
+      "name": "Chin-strap beard",
+      "slot": "facialHair",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "chin-strap",
+      "colour": "#6b4428"
+    },
+    {
+      "id": "facial-hair-curly-moustache",
+      "name": "Curly moustache",
+      "slot": "facialHair",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "curly-moustache",
+      "colour": "#6b4428"
+    },
+    {
+      "id": "facial-hair-braided-beard",
+      "name": "Braided beard",
+      "slot": "facialHair",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "braided-beard",
+      "colour": "#6b4428"
+    },
+    {
+      "id": "facial-hair-pencil-moustache",
+      "name": "Pencil moustache",
+      "slot": "facialHair",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "pencil-moustache",
+      "colour": "#6b4428"
+    },
+    {
+      "id": "facial-hair-walrus",
+      "name": "Walrus moustache",
+      "slot": "facialHair",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "walrus",
+      "colour": "#6b4428"
+    },
+    {
+      "id": "facial-hair-mutton-chops",
+      "name": "Mutton chops",
+      "slot": "facialHair",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "mutton-chops",
+      "colour": "#6b4428"
+    },
+    {
+      "id": "facial-hair-soul-patch",
+      "name": "Soul patch",
+      "slot": "facialHair",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "soul-patch",
+      "colour": "#6b4428"
+    },
+    {
+      "id": "hat-pointy-purple",
+      "name": "Pointy purple hat",
+      "slot": "hat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "pointy",
+      "colour": "#7a4fc9"
+    },
+    {
+      "id": "hat-red-cap",
+      "name": "Red cap",
+      "slot": "hat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "cap",
+      "colour": "#d94a3a"
+    },
+    {
+      "id": "hat-none",
+      "name": "No hat",
+      "slot": "hat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "none",
+      "colour": "#f4f4f0"
+    },
+    {
+      "id": "outfit-green-cloak",
+      "name": "Green cloak",
+      "slot": "outfit",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "cloak",
+      "colour": "#3f9d5a"
+    },
+    {
+      "id": "outfit-blue-tunic",
+      "name": "Blue tunic",
+      "slot": "outfit",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "tunic",
+      "colour": "#3a6fd9"
+    },
+    {
+      "id": "wand-twig",
+      "name": "Twig wand",
+      "slot": "wand",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "twig",
+      "colour": "#8b5a2b"
+    },
+    {
+      "id": "wand-star",
+      "name": "Star wand",
+      "slot": "wand",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "star",
+      "colour": "#f2d34f"
+    },
+    {
+      "id": "accessory-none",
+      "name": "No accessory",
+      "slot": "accessory",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "none",
+      "colour": "#f4f4f0"
+    },
+    {
+      "id": "accessory-round-glasses",
+      "name": "Round glasses",
+      "slot": "accessory",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "round-glasses",
+      "colour": "#2b2b2b"
+    },
+    {
+      "id": "accessory-spotty-bow-tie",
+      "name": "Spotty bow tie",
+      "slot": "accessory",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "bow-tie",
+      "colour": "#d94a3a"
+    },
+    {
+      "id": "back-none",
+      "name": "Nothing on my back",
+      "slot": "back",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "none",
+      "colour": "#f4f4f0"
+    },
+    {
+      "id": "back-little-backpack",
+      "name": "Little backpack",
+      "slot": "back",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "backpack",
+      "colour": "#d9822b"
+    },
+    {
+      "id": "hat-wizard-blue",
+      "name": "Blue wizard hat",
+      "slot": "hat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "wizard",
+      "colour": "#2f5fd0"
+    },
+    {
+      "id": "hat-top-hat",
+      "name": "Top hat",
+      "slot": "hat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "top-hat",
+      "colour": "#26262e"
+    },
+    {
+      "id": "hat-leafy-crown",
+      "name": "Leafy crown",
+      "slot": "hat",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "wreath",
+      "colour": "#5bb04a"
+    },
+    {
+      "id": "hat-pirate",
+      "name": "Pirate hat",
+      "slot": "hat",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "tricorn",
+      "colour": "#3b2a20"
+    },
+    {
+      "id": "hat-dragon-horns",
+      "name": "Dragon horns",
+      "slot": "hat",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "horns",
+      "colour": "#c23b22"
+    },
+    {
+      "id": "hat-number-bonds",
+      "name": "Number bonds hat",
+      "slot": "hat",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "skill-mastered",
+        "skillId": "maths.number-bonds-10"
+      },
+      "model": "mortarboard",
+      "colour": "#ff8a1f"
+    },
+    {
+      "id": "outfit-stars",
+      "name": "Starry robe",
+      "slot": "outfit",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "starry-robe",
+      "colour": "#1d2a6b"
+    },
+    {
+      "id": "outfit-stripes",
+      "name": "Stripy jumper",
+      "slot": "outfit",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "striped-top",
+      "colour": "#e94f64"
+    },
+    {
+      "id": "outfit-raincoat",
+      "name": "Yellow raincoat",
+      "slot": "outfit",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "raincoat",
+      "colour": "#f7d23e"
+    },
+    {
+      "id": "outfit-rainbow-robe",
+      "name": "Rainbow robe",
+      "slot": "outfit",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "rainbow-robe",
+      "colour": "#9b59d0"
+    },
+    {
+      "id": "outfit-knight-armour",
+      "name": "Knight's armour",
+      "slot": "outfit",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "armour",
+      "colour": "#a8b0b8"
+    },
+    {
+      "id": "outfit-astronaut",
+      "name": "Astronaut suit",
+      "slot": "outfit",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "space-suit",
+      "colour": "#f0f0f0"
+    },
+    {
+      "id": "wand-crystal",
+      "name": "Crystal wand",
+      "slot": "wand",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "crystal",
+      "colour": "#9fe3f0"
+    },
+    {
+      "id": "wand-lightning",
+      "name": "Lightning wand",
+      "slot": "wand",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "lightning",
+      "colour": "#ffe14d"
+    },
+    {
+      "id": "wand-sound-s",
+      "name": "Snake sound wand",
+      "slot": "wand",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "skill-mastered",
+        "skillId": "phonics.sound-s"
+      },
+      "model": "snake",
+      "colour": "#3cbf7a"
+    },
+    {
+      "id": "wand-comet",
+      "name": "Comet wand",
+      "slot": "wand",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "comet",
+      "colour": "#ff6fb5"
+    },
+    {
+      "id": "eyes-cool-shades",
+      "name": "Cool shades",
+      "slot": "accessory",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "shades",
+      "colour": "#1b1b24"
+    },
+    {
+      "id": "hat-cowboy",
+      "name": "Cowboy hat",
+      "slot": "hat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "cowboy",
+      "colour": "#a86a32"
+    },
+    {
+      "id": "hat-chef",
+      "name": "Chef's hat",
+      "slot": "hat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "chef",
+      "colour": "#f7f7f7"
+    },
+    {
+      "id": "hat-flower-crown",
+      "name": "Flower crown",
+      "slot": "hat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "flower-crown",
+      "colour": "#f08cc8"
+    },
+    {
+      "id": "hat-explorer",
+      "name": "Explorer's hat",
+      "slot": "hat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "pith-helmet",
+      "colour": "#d8c08a"
+    },
+    {
+      "id": "hat-ninja-headband",
+      "name": "Ninja headband",
+      "slot": "hat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "headband",
+      "colour": "#d6262e"
+    },
+    {
+      "id": "hat-feathered-cap",
+      "name": "Feathered cap",
+      "slot": "hat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "feathered-cap",
+      "colour": "#3f8f3a"
+    },
+    {
+      "id": "hat-propeller-cap",
+      "name": "Propeller cap",
+      "slot": "hat",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "propeller-cap",
+      "colour": "#f2c530"
+    },
+    {
+      "id": "hat-knight-helmet",
+      "name": "Knight's helmet",
+      "slot": "hat",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "knight-helmet",
+      "colour": "#b8c0cc"
+    },
+    {
+      "id": "hat-viking-helmet",
+      "name": "Viking helmet",
+      "slot": "hat",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "viking-helmet",
+      "colour": "#8d8d96"
+    },
+    {
+      "id": "hat-inventor-goggles",
+      "name": "Inventor's goggles",
+      "slot": "hat",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "goggles",
+      "colour": "#c9822b"
+    },
+    {
+      "id": "hat-space-helmet",
+      "name": "Space helmet",
+      "slot": "hat",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "space-helmet",
+      "colour": "#e8ecf2"
+    },
+    {
+      "id": "accessory-monocle",
+      "name": "Monocle",
+      "slot": "accessory",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "monocle",
+      "colour": "#d4af37"
+    },
+    {
+      "id": "accessory-eyepatch",
+      "name": "Pirate eyepatch",
+      "slot": "accessory",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "eyepatch",
+      "colour": "#1b1b24"
+    },
+    {
+      "id": "accessory-woolly-scarf",
+      "name": "Woolly scarf",
+      "slot": "accessory",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "scarf",
+      "colour": "#3a7bd5"
+    },
+    {
+      "id": "accessory-ninja-mask",
+      "name": "Ninja mask",
+      "slot": "accessory",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "ninja-mask",
+      "colour": "#2a2a3a"
+    },
+    {
+      "id": "accessory-hero-mask",
+      "name": "Hero mask",
+      "slot": "accessory",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "hero-mask",
+      "colour": "#d6262e"
+    },
+    {
+      "id": "accessory-shell-necklace",
+      "name": "Shell necklace",
+      "slot": "accessory",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "necklace",
+      "colour": "#f2e2c4"
+    },
+    {
+      "id": "accessory-chef-apron",
+      "name": "Chef's apron",
+      "slot": "accessory",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "apron",
+      "colour": "#f7f7f7"
+    },
+    {
+      "id": "accessory-necktie",
+      "name": "Smart tie",
+      "slot": "accessory",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "necktie",
+      "colour": "#2f5fd0"
+    },
+    {
+      "id": "accessory-royal-sash",
+      "name": "Royal sash",
+      "slot": "accessory",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "sash",
+      "colour": "#2f5fd0"
+    },
+    {
+      "id": "accessory-bandana",
+      "name": "Red bandana",
+      "slot": "accessory",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "bandana",
+      "colour": "#d6262e"
+    },
+    {
+      "id": "accessory-star-glasses",
+      "name": "Star glasses",
+      "slot": "accessory",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "star-glasses",
+      "colour": "#f2c530"
+    },
+    {
+      "id": "accessory-lab-goggles",
+      "name": "Lab goggles",
+      "slot": "accessory",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "lab-goggles",
+      "colour": "#3fa0ff"
+    },
+    {
+      "id": "accessory-headphones",
+      "name": "Headphones",
+      "slot": "accessory",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "headphones",
+      "colour": "#e0568a"
+    },
+    {
+      "id": "outfit-party-dress",
+      "name": "Party dress",
+      "slot": "outfit",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "dress",
+      "colour": "#e85aa8"
+    },
+    {
+      "id": "outfit-dungarees",
+      "name": "Dungarees",
+      "slot": "outfit",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "overalls",
+      "colour": "#3a6fd9"
+    },
+    {
+      "id": "outfit-explorer-shirt",
+      "name": "Explorer's shirt",
+      "slot": "outfit",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "explorer-shirt",
+      "colour": "#c9a46a"
+    },
+    {
+      "id": "outfit-ninja-suit",
+      "name": "Ninja suit",
+      "slot": "outfit",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "ninja-suit",
+      "colour": "#2a2a3a"
+    },
+    {
+      "id": "outfit-pirate-coat",
+      "name": "Pirate coat",
+      "slot": "outfit",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "pirate-coat",
+      "colour": "#7a1f1f"
+    },
+    {
+      "id": "outfit-hero-suit",
+      "name": "Hero suit",
+      "slot": "outfit",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "hero-suit",
+      "colour": "#2f5fd0"
+    },
+    {
+      "id": "outfit-leather-jerkin",
+      "name": "Leather jerkin",
+      "slot": "outfit",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "leather-jerkin",
+      "colour": "#8b5a2b"
+    },
+    {
+      "id": "outfit-dragon-scales",
+      "name": "Dragon scale armour",
+      "slot": "outfit",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "scale-armour",
+      "colour": "#2f8f6f"
+    },
+    {
+      "id": "back-red-cape",
+      "name": "Red cape",
+      "slot": "back",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "cape",
+      "colour": "#d6262e"
+    },
+    {
+      "id": "back-arrow-quiver",
+      "name": "Arrow quiver",
+      "slot": "back",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "quiver",
+      "colour": "#8b5a2b"
+    },
+    {
+      "id": "back-round-shield",
+      "name": "Round shield",
+      "slot": "back",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "round-shield",
+      "colour": "#a0522d"
+    },
+    {
+      "id": "back-knight-shield",
+      "name": "Knight's shield",
+      "slot": "back",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "kite-shield",
+      "colour": "#2f5fd0"
+    },
+    {
+      "id": "back-fairy-wings",
+      "name": "Fairy wings",
+      "slot": "back",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "fairy-wings",
+      "colour": "#bfe8ff"
+    },
+    {
+      "id": "back-turtle-shell",
+      "name": "Turtle shell",
+      "slot": "back",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "turtle-shell",
+      "colour": "#5b8f3a"
+    },
+    {
+      "id": "back-ninja-sword",
+      "name": "Ninja sword",
+      "slot": "back",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "katana",
+      "colour": "#2a2a3a"
+    },
+    {
+      "id": "back-gear-pack",
+      "name": "Gear pack",
+      "slot": "back",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "gear-pack",
+      "colour": "#c9822b"
+    },
+    {
+      "id": "back-jetpack",
+      "name": "Jetpack",
+      "slot": "back",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "jetpack",
+      "colour": "#b8c0cc"
+    },
+    {
+      "id": "back-dragon-wings",
+      "name": "Dragon wings",
+      "slot": "back",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "dragon-wings",
+      "colour": "#2f8f6f"
+    },
+    {
+      "id": "held-magic-staff",
+      "name": "Magic staff",
+      "slot": "wand",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "staff",
+      "colour": "#8b5a2b"
+    },
+    {
+      "id": "held-wooden-sword",
+      "name": "Wooden sword",
+      "slot": "wand",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "sword",
+      "colour": "#c9a46a"
+    },
+    {
+      "id": "held-explorer-torch",
+      "name": "Explorer's torch",
+      "slot": "wand",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "torch",
+      "colour": "#d9822b"
+    },
+    {
+      "id": "held-bow",
+      "name": "Bow",
+      "slot": "wand",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "bow",
+      "colour": "#8b5a2b"
+    },
+    {
+      "id": "held-wrench",
+      "name": "Inventor's wrench",
+      "slot": "wand",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "wrench",
+      "colour": "#9aa3b5"
+    },
+    {
+      "id": "held-dragon-egg",
+      "name": "Dragon egg",
+      "slot": "wand",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "dragon-egg",
+      "colour": "#7fd6a4"
+    },
+    {
+      "id": "held-whisk",
+      "name": "Whisk",
+      "slot": "wand",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "whisk",
+      "colour": "#c8ced8"
+    },
+    {
+      "id": "held-magnifying-glass",
+      "name": "Magnifying glass",
+      "slot": "wand",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "magnifying-glass",
+      "colour": "#8b5a2b"
+    },
+    {
+      "id": "held-lasso",
+      "name": "Lasso",
+      "slot": "wand",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "lasso",
+      "colour": "#d8b46a"
+    },
+    {
+      "id": "held-guitar",
+      "name": "Guitar",
+      "slot": "wand",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "guitar",
+      "colour": "#d6262e"
+    },
+    {
+      "id": "held-watering-can",
+      "name": "Watering can",
+      "slot": "wand",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "watering-can",
+      "colour": "#3f9d5a"
+    },
+    {
+      "id": "held-paintbrush",
+      "name": "Paintbrush",
+      "slot": "wand",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "paintbrush",
+      "colour": "#3a6fd9"
+    },
+    {
+      "id": "hat-pumpkin",
+      "name": "Pumpkin hat",
+      "slot": "hat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "season",
+        "months": [10]
+      },
+      "model": "pumpkin",
+      "colour": "#f57c1f"
+    },
+    {
+      "id": "hat-snowflake",
+      "name": "Snowflake hat",
+      "slot": "hat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "season",
+        "months": [12]
+      },
+      "model": "beanie",
+      "colour": "#dff3ff"
+    },
+    {
+      "id": "outfit-blue-hoodie",
+      "name": "Blue hoodie",
+      "slot": "outfit",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "hoodie",
+      "colour": "#2f6fd6"
+    },
+    {
+      "id": "outfit-festive-jumper",
+      "name": "Festive jumper",
+      "slot": "outfit",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "season",
+        "months": [12]
+      },
+      "model": "jumper",
+      "colour": "#c8102e"
+    },
+    {
+      "id": "hat-bunny-ears",
+      "name": "Bunny ears",
+      "slot": "hat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "season",
+        "months": [4]
+      },
+      "model": "bunny-ears",
+      "colour": "#f7c6d9"
+    },
+    {
+      "id": "accessory-spooky-mask",
+      "name": "Spooky mask",
+      "slot": "accessory",
+      "rarity": "common",
+      "unlock": {
+        "kind": "season",
+        "months": [10]
+      },
+      "model": "hero-mask",
+      "colour": "#f4f4f0"
+    },
+    {
+      "id": "hat-gift-bow",
+      "name": "Bow tie",
+      "slot": "hat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "gift"
+      },
+      "model": "bow",
+      "colour": "#ff4f8b"
+    },
+    {
+      "id": "wand-gift-heart",
+      "name": "Heart wand",
+      "slot": "wand",
+      "rarity": "common",
+      "unlock": {
+        "kind": "gift"
+      },
+      "model": "heart",
+      "colour": "#e8335a"
+    },
+    {
+      "id": "accessory-gift-heart-glasses",
+      "name": "Heart glasses",
+      "slot": "accessory",
+      "rarity": "common",
+      "unlock": {
+        "kind": "gift"
+      },
+      "model": "heart-glasses",
+      "colour": "#e0356a"
+    },
+    {
+      "id": "hat-treasure-crown",
+      "name": "Treasure crown",
+      "slot": "hat",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "family-chest"
+      },
+      "model": "crown",
+      "colour": "#f4c430"
+    },
+    {
+      "id": "outfit-family-cape",
+      "name": "Family cape",
+      "slot": "outfit",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "family-chest"
+      },
+      "model": "caped-tunic",
+      "colour": "#6a3fb5"
+    },
+    {
+      "id": "wand-golden",
+      "name": "Golden wand",
+      "slot": "wand",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "family-chest"
+      },
+      "model": "golden",
+      "colour": "#e0b100"
+    },
+    {
+      "id": "back-golden-wings",
+      "name": "Golden wings",
+      "slot": "back",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "family-chest"
+      },
+      "model": "fairy-wings",
+      "colour": "#f2c530"
+    },
+    {
+      "id": "outfit-cosy-scarf",
+      "name": "Cosy scarf",
+      "slot": "outfit",
+      "rarity": "common",
+      "unlock": {
+        "kind": "welcome-back"
+      },
+      "model": "scarf-jumper",
+      "colour": "#e05a3a"
+    },
+    {
+      "id": "back-balloons",
+      "name": "Bunch of balloons",
+      "slot": "back",
+      "rarity": "common",
+      "unlock": {
+        "kind": "welcome-back"
+      },
+      "model": "balloons",
+      "colour": "#e8312e"
+    },
+    {
+      "id": "accessory-gold-medal",
+      "name": "Gold medal",
+      "slot": "accessory",
+      "rarity": "common",
+      "unlock": {
+        "kind": "welcome-back"
+      },
+      "model": "medal",
+      "colour": "#f2c530"
+    },
+    {
+      "id": "pet-cat",
+      "name": "Ginger Cat",
+      "slot": "pet",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "cat",
+      "colour": "#f2994a"
+    },
+    {
+      "id": "pet-puppy",
+      "name": "Spotty Puppy",
+      "slot": "pet",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "puppy",
+      "colour": "#c8a27a"
+    },
+    {
+      "id": "pet-bunny",
+      "name": "Fluffy Bunny",
+      "slot": "pet",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "bunny",
+      "colour": "#f4f1ea"
+    },
+    {
+      "id": "pet-owl",
+      "name": "Wise Owl",
+      "slot": "pet",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "skill-mastered",
+        "skillId": "english.alphabet-order"
+      },
+      "model": "owl",
+      "colour": "#8d6e63"
+    },
+    {
+      "id": "pet-fox",
+      "name": "Little Fox",
+      "slot": "pet",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "fox",
+      "colour": "#e8743b"
+    },
+    {
+      "id": "pet-dragonling",
+      "name": "Baby Dragon",
+      "slot": "pet",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "dragonling",
+      "colour": "#4caf7d"
+    },
+    {
+      "id": "pet-hamster",
+      "name": "Cheeky Hamster",
+      "slot": "pet",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "hamster",
+      "colour": "#e0a96d"
+    },
+    {
+      "id": "pet-panda",
+      "name": "Little Panda",
+      "slot": "pet",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "panda",
+      "colour": "#f4f1ea"
+    },
+    {
+      "id": "pet-piglet",
+      "name": "Pink Piglet",
+      "slot": "pet",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "piglet",
+      "colour": "#f6a5b8"
+    },
+    {
+      "id": "pet-lamb",
+      "name": "Woolly Lamb",
+      "slot": "pet",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "lamb",
+      "colour": "#f7f3e8"
+    },
+    {
+      "id": "pet-mouse",
+      "name": "Tiny Mouse",
+      "slot": "pet",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "mouse",
+      "colour": "#a7a9b4"
+    },
+    {
+      "id": "pet-bear-cub",
+      "name": "Teddy Bear Cub",
+      "slot": "pet",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "bear-cub",
+      "colour": "#9c6b43"
+    },
+    {
+      "id": "pet-hedgehog",
+      "name": "Prickly Hedgehog",
+      "slot": "pet",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "hedgehog",
+      "colour": "#b98a5e"
+    },
+    {
+      "id": "pet-unicorn",
+      "name": "Baby Unicorn",
+      "slot": "pet",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "unicorn",
+      "colour": "#fdf6ff"
+    },
+    {
+      "id": "pet-penguin",
+      "name": "Waddling Penguin",
+      "slot": "pet",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "penguin",
+      "colour": "#2b2d42"
+    },
+    {
+      "id": "pet-duckling",
+      "name": "Yellow Duckling",
+      "slot": "pet",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "duckling",
+      "colour": "#ffd94a"
+    },
+    {
+      "id": "pet-phoenix-chick",
+      "name": "Phoenix Chick",
+      "slot": "pet",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "phoenix-chick",
+      "colour": "#ff6a2b"
+    },
+    {
+      "id": "pet-frog",
+      "name": "Hoppy Frog",
+      "slot": "pet",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "frog",
+      "colour": "#5fbf4a"
+    },
+    {
+      "id": "pet-tortoise",
+      "name": "Steady Tortoise",
+      "slot": "pet",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "tortoise",
+      "colour": "#5a8f3c"
+    },
+    {
+      "id": "mount-broomstick",
+      "name": "Flying Broomstick",
+      "slot": "mount",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "broomstick",
+      "colour": "#a0522d"
+    },
+    {
+      "id": "mount-cloud",
+      "name": "Fluffy Cloud",
+      "slot": "mount",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "cloud",
+      "colour": "#e3f2fd"
+    },
+    {
+      "id": "mount-dragon",
+      "name": "Friendly Dragon",
+      "slot": "mount",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "skill-mastered",
+        "skillId": "maths.times-tables-3-4-8"
+      },
+      "model": "dragon",
+      "colour": "#7b5cd6"
+    },
+    {
+      "id": "emote-wave",
+      "name": "Big Wave",
+      "slot": "emote",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "wave",
+      "colour": "#4fa3e0"
+    },
+    {
+      "id": "emote-cheer",
+      "name": "Hooray Cheer",
+      "slot": "emote",
+      "rarity": "common",
+      "unlock": {
+        "kind": "skill-mastered",
+        "skillId": "phonics.sound-ai"
+      },
+      "model": "cheer",
+      "colour": "#f6c343"
+    },
+    {
+      "id": "emote-dance",
+      "name": "Happy Dance",
+      "slot": "emote",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "dance",
+      "colour": "#e05a9b"
+    },
+    {
+      "id": "emote-spin",
+      "name": "Twirly Spin",
+      "slot": "emote",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "spin",
+      "colour": "#5bc0be"
+    },
+    {
+      "id": "emote-jump",
+      "name": "Star Jump",
+      "slot": "emote",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "jump",
+      "colour": "#f08a24"
+    },
+    {
+      "id": "emote-bow",
+      "name": "Royal Bow",
+      "slot": "emote",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "bow",
+      "colour": "#8e6cd8"
+    },
+    {
+      "id": "emote-wobble",
+      "name": "Jelly Wobble",
+      "slot": "emote",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "wobble",
+      "colour": "#ff7eb6"
+    },
+    {
+      "id": "emote-shimmy",
+      "name": "Shimmy Shake",
+      "slot": "emote",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "shimmy",
+      "colour": "#c86dd7"
+    },
+    {
+      "id": "emote-nod",
+      "name": "Happy Nod",
+      "slot": "emote",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "nod",
+      "colour": "#7cc576"
+    },
+    {
+      "id": "emote-bounce",
+      "name": "Bouncy Boing",
+      "slot": "emote",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "bounce",
+      "colour": "#ffb347"
+    },
+    {
+      "id": "emote-stretch",
+      "name": "Big Stretch",
+      "slot": "emote",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "stretch",
+      "colour": "#6ec6ff"
+    },
+    {
+      "id": "emote-limbo",
+      "name": "Limbo Lean",
+      "slot": "emote",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "limbo",
+      "colour": "#f06292"
+    },
+    {
+      "id": "emote-sway",
+      "name": "Side Sway",
+      "slot": "emote",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "sway",
+      "colour": "#4db6ac"
+    },
+    {
+      "id": "emote-spin-jump",
+      "name": "Spin Jump",
+      "slot": "emote",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "spin-jump",
+      "colour": "#ffca28"
+    },
+    {
+      "id": "spell-effect-sparkles",
+      "name": "Sparkles",
+      "slot": "spellEffect",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "sparkles",
+      "colour": "#ffd54f"
+    },
+    {
+      "id": "spell-effect-star-trail",
+      "name": "Star Trail",
+      "slot": "spellEffect",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "star-trail",
+      "colour": "#ffe082"
+    },
+    {
+      "id": "spell-effect-bubbles",
+      "name": "Bubbles",
+      "slot": "spellEffect",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "bubbles",
+      "colour": "#81d4fa"
+    },
+    {
+      "id": "spell-effect-rainbow",
+      "name": "Rainbow Swirl",
+      "slot": "spellEffect",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "skill-mastered",
+        "skillId": "english.capital-letters"
+      },
+      "model": "rainbow",
+      "colour": "#ef5350"
+    },
+    {
+      "id": "spell-effect-fireflies",
+      "name": "Fireflies",
+      "slot": "spellEffect",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "fireflies",
+      "colour": "#d4e157"
+    },
+    {
+      "id": "spell-effect-snowfall",
+      "name": "Snowfall",
+      "slot": "spellEffect",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "snowfall",
+      "colour": "#e3f2fd"
+    },
+    {
+      "id": "spell-effect-confetti",
+      "name": "Confetti Pop",
+      "slot": "spellEffect",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "confetti",
+      "colour": "#ff7043"
+    },
+    {
+      "id": "spell-effect-fizzy-spiral",
+      "name": "Fizzy Spiral",
+      "slot": "spellEffect",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "fizzy-spiral",
+      "colour": "#f48fb1"
+    },
+    {
+      "id": "spell-effect-fireworks",
+      "name": "Fireworks",
+      "slot": "spellEffect",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "fireworks",
+      "colour": "#ff5252"
+    },
+    {
+      "id": "spell-effect-comet-ring",
+      "name": "Comet Ring",
+      "slot": "spellEffect",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "comet-ring",
+      "colour": "#80deea"
+    },
+    {
+      "id": "spell-effect-autumn-leaves",
+      "name": "Autumn Leaves",
+      "slot": "spellEffect",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "autumn-leaves",
+      "colour": "#ef8a2e"
+    },
+    {
+      "id": "spell-effect-rain-shower",
+      "name": "Rain Shower",
+      "slot": "spellEffect",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "rain-shower",
+      "colour": "#64b5f6"
+    },
+    {
+      "id": "spell-effect-galaxy",
+      "name": "Galaxy Swirl",
+      "slot": "spellEffect",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "galaxy",
+      "colour": "#9575cd"
+    },
+    {
+      "id": "spell-effect-fountain",
+      "name": "Magic Fountain",
+      "slot": "spellEffect",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "fountain",
+      "colour": "#4dd0e1"
+    },
+    {
+      "id": "spell-effect-crackle",
+      "name": "Crackle Sparks",
+      "slot": "spellEffect",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "crackle",
+      "colour": "#fff176"
+    },
+    {
+      "id": "spell-effect-halo",
+      "name": "Golden Halo",
+      "slot": "spellEffect",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "halo",
+      "colour": "#ffd740"
+    },
+    {
+      "id": "spell-effect-pixie-dust",
+      "name": "Pixie Dust",
+      "slot": "spellEffect",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "pixie-dust",
+      "colour": "#ce93d8"
+    },
+    {
+      "id": "spell-effect-crystal-orbit",
+      "name": "Crystal Orbit",
+      "slot": "spellEffect",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "crystal-orbit",
+      "colour": "#a7ffeb"
+    },
+    {
+      "id": "spell-effect-whirlwind",
+      "name": "Whirlwind",
+      "slot": "spellEffect",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "whirlwind",
+      "colour": "#b0bec5"
+    },
+    {
+      "id": "bed-wooden",
+      "name": "Wooden Bed",
+      "slot": "bed",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "wooden",
+      "colour": "#b07a4a"
+    },
+    {
+      "id": "bed-bunk",
+      "name": "Bunk Bed",
+      "slot": "bed",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "bunk",
+      "colour": "#5b8bd6"
+    },
+    {
+      "id": "bed-canopy",
+      "name": "Canopy Bed",
+      "slot": "bed",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "canopy",
+      "colour": "#e48fb4"
+    },
+    {
+      "id": "bed-hammock",
+      "name": "Hammock",
+      "slot": "bed",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "hammock",
+      "colour": "#e8a33d"
+    },
+    {
+      "id": "bed-rocket",
+      "name": "Rocket Bed",
+      "slot": "bed",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "skill-mastered",
+        "skillId": "maths.number-bonds-10"
+      },
+      "model": "rocket",
+      "colour": "#d64545"
+    },
+    {
+      "id": "bed-castle",
+      "name": "Castle Bed",
+      "slot": "bed",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "castle",
+      "colour": "#9e9e9e"
+    },
+    {
+      "id": "bed-boat",
+      "name": "Boat Bed",
+      "slot": "bed",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "boat",
+      "colour": "#3f7fbf"
+    },
+    {
+      "id": "bed-cloud",
+      "name": "Cloud Bed",
+      "slot": "bed",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "cloud",
+      "colour": "#eef4ff"
+    },
+    {
+      "id": "bed-race-car",
+      "name": "Race Car Bed",
+      "slot": "bed",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "race-car",
+      "colour": "#e53935"
+    },
+    {
+      "id": "bed-dragon",
+      "name": "Dragon Bed",
+      "slot": "bed",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "dragon",
+      "colour": "#4caf50"
+    },
+    {
+      "id": "rug-round",
+      "name": "Round Rug",
+      "slot": "rug",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "round",
+      "colour": "#c0504d"
+    },
+    {
+      "id": "rug-striped",
+      "name": "Striped Rug",
+      "slot": "rug",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "striped",
+      "colour": "#4f81bd"
+    },
+    {
+      "id": "rug-star",
+      "name": "Star Rug",
+      "slot": "rug",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "star",
+      "colour": "#f6c343"
+    },
+    {
+      "id": "rug-rainbow",
+      "name": "Rainbow Rug",
+      "slot": "rug",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "rainbow",
+      "colour": "#9bbb59"
+    },
+    {
+      "id": "rug-moon",
+      "name": "Moon Rug",
+      "slot": "rug",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "moon",
+      "colour": "#5c6bc0"
+    },
+    {
+      "id": "rug-map",
+      "name": "Treasure Map Rug",
+      "slot": "rug",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "map",
+      "colour": "#d9b56a"
+    },
+    {
+      "id": "rug-heart",
+      "name": "Heart Rug",
+      "slot": "rug",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "heart",
+      "colour": "#e57399"
+    },
+    {
+      "id": "rug-flower",
+      "name": "Flower Rug",
+      "slot": "rug",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "flower",
+      "colour": "#ffb74d"
+    },
+    {
+      "id": "rug-checkers",
+      "name": "Chessboard Rug",
+      "slot": "rug",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "checkers",
+      "colour": "#37474f"
+    },
+    {
+      "id": "rug-paw",
+      "name": "Paw Print Rug",
+      "slot": "rug",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "paw",
+      "colour": "#8d6e63"
+    },
+    {
+      "id": "wallpaper-plain",
+      "name": "Plain Paint",
+      "slot": "wallpaper",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "plain",
+      "colour": "#f3e9d2"
+    },
+    {
+      "id": "wallpaper-stripes",
+      "name": "Stripy Wallpaper",
+      "slot": "wallpaper",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "stripes",
+      "colour": "#cfe8d5"
+    },
+    {
+      "id": "wallpaper-dots",
+      "name": "Spotty Wallpaper",
+      "slot": "wallpaper",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "dots",
+      "colour": "#fde2e4"
+    },
+    {
+      "id": "wallpaper-stars",
+      "name": "Starry Wallpaper",
+      "slot": "wallpaper",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "stars",
+      "colour": "#283593"
+    },
+    {
+      "id": "wallpaper-forest",
+      "name": "Forest Wallpaper",
+      "slot": "wallpaper",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "forest",
+      "colour": "#7cb342"
+    },
+    {
+      "id": "wallpaper-ocean",
+      "name": "Ocean Wallpaper",
+      "slot": "wallpaper",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "ocean",
+      "colour": "#4fc3f7"
+    },
+    {
+      "id": "wallpaper-hearts",
+      "name": "Heart Wallpaper",
+      "slot": "wallpaper",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "hearts",
+      "colour": "#f8bbd0"
+    },
+    {
+      "id": "wallpaper-clouds",
+      "name": "Cloudy Wallpaper",
+      "slot": "wallpaper",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "clouds",
+      "colour": "#bbdefb"
+    },
+    {
+      "id": "wallpaper-bricks",
+      "name": "Brick Wall",
+      "slot": "wallpaper",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "bricks",
+      "colour": "#d7a088"
+    },
+    {
+      "id": "wallpaper-space",
+      "name": "Space Wallpaper",
+      "slot": "wallpaper",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "space",
+      "colour": "#1a1a40"
+    },
+    {
+      "id": "wall-picture-sunflower",
+      "name": "Sunflower Picture",
+      "slot": "wallPicture",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "sunflower",
+      "colour": "#f9a825"
+    },
+    {
+      "id": "wall-picture-boat",
+      "name": "Boat Picture",
+      "slot": "wallPicture",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "boat",
+      "colour": "#1e88e5"
+    },
+    {
+      "id": "wall-picture-castle",
+      "name": "Castle Picture",
+      "slot": "wallPicture",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "castle",
+      "colour": "#8d6e63"
+    },
+    {
+      "id": "wall-picture-rocket",
+      "name": "Rocket Picture",
+      "slot": "wallPicture",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "rocket",
+      "colour": "#e53935"
+    },
+    {
+      "id": "wall-picture-dinosaur",
+      "name": "Dinosaur Picture",
+      "slot": "wallPicture",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "dinosaur",
+      "colour": "#43a047"
+    },
+    {
+      "id": "wall-picture-rainbow",
+      "name": "Rainbow Picture",
+      "slot": "wallPicture",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "rainbow",
+      "colour": "#ab47bc"
+    },
+    {
+      "id": "wall-picture-cat",
+      "name": "Cat Picture",
+      "slot": "wallPicture",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "cat",
+      "colour": "#ff9800"
+    },
+    {
+      "id": "wall-picture-whale",
+      "name": "Whale Picture",
+      "slot": "wallPicture",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "whale",
+      "colour": "#1565c0"
+    },
+    {
+      "id": "wall-picture-planet",
+      "name": "Planet Picture",
+      "slot": "wallPicture",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "planet",
+      "colour": "#7e57c2"
+    },
+    {
+      "id": "wall-picture-unicorn",
+      "name": "Unicorn Picture",
+      "slot": "wallPicture",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "unicorn",
+      "colour": "#f48fb1"
+    },
+    {
+      "id": "shelf-plank",
+      "name": "Plank Shelf",
+      "slot": "shelf",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "plank",
+      "colour": "#a1887f"
+    },
+    {
+      "id": "shelf-bookcase",
+      "name": "Bookcase",
+      "slot": "shelf",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "bookcase",
+      "colour": "#6d4c41"
+    },
+    {
+      "id": "shelf-ladder",
+      "name": "Ladder Shelf",
+      "slot": "shelf",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "ladder",
+      "colour": "#bcaaa4"
+    },
+    {
+      "id": "shelf-treasure",
+      "name": "Treasure Shelf",
+      "slot": "shelf",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "treasure",
+      "colour": "#c9a227"
+    },
+    {
+      "id": "shelf-crystal",
+      "name": "Crystal Shelf",
+      "slot": "shelf",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "crystal",
+      "colour": "#80deea"
+    },
+    {
+      "id": "shelf-cloud",
+      "name": "Cloud Shelf",
+      "slot": "shelf",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "cloud",
+      "colour": "#e3f2fd"
+    },
+    {
+      "id": "shelf-tree",
+      "name": "Tree Shelf",
+      "slot": "shelf",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "tree",
+      "colour": "#795548"
+    },
+    {
+      "id": "shelf-honeycomb",
+      "name": "Honeycomb Shelf",
+      "slot": "shelf",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "honeycomb",
+      "colour": "#ffb300"
+    },
+    {
+      "id": "shelf-pirate",
+      "name": "Pirate Ship Shelf",
+      "slot": "shelf",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "pirate",
+      "colour": "#5d4037"
+    },
+    {
+      "id": "shelf-rainbow",
+      "name": "Rainbow Shelf",
+      "slot": "shelf",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "rainbow",
+      "colour": "#e91e63"
+    },
+    {
+      "id": "lamp-desk",
+      "name": "Desk Lamp",
+      "slot": "lamp",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "desk",
+      "colour": "#ffca28"
+    },
+    {
+      "id": "lamp-lantern",
+      "name": "Lantern",
+      "slot": "lamp",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "lantern",
+      "colour": "#ff8f00"
+    },
+    {
+      "id": "lamp-mushroom",
+      "name": "Mushroom Lamp",
+      "slot": "lamp",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "mushroom",
+      "colour": "#ef5350"
+    },
+    {
+      "id": "lamp-moon",
+      "name": "Moon Lamp",
+      "slot": "lamp",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "moon",
+      "colour": "#fff59d"
+    },
+    {
+      "id": "lamp-lava",
+      "name": "Lava Lamp",
+      "slot": "lamp",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "lava",
+      "colour": "#ff7043"
+    },
+    {
+      "id": "lamp-star",
+      "name": "Star Lamp",
+      "slot": "lamp",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "star",
+      "colour": "#ffee58"
+    },
+    {
+      "id": "lamp-rocket",
+      "name": "Rocket Lamp",
+      "slot": "lamp",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "rocket",
+      "colour": "#90a4ae"
+    },
+    {
+      "id": "lamp-cloud",
+      "name": "Cloud Lamp",
+      "slot": "lamp",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "cloud",
+      "colour": "#e3f2fd"
+    },
+    {
+      "id": "lamp-jellyfish",
+      "name": "Jellyfish Lamp",
+      "slot": "lamp",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "jellyfish",
+      "colour": "#ce93d8"
+    },
+    {
+      "id": "lamp-globe",
+      "name": "Globe Lamp",
+      "slot": "lamp",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "globe",
+      "colour": "#4fc3f7"
+    },
+    {
+      "id": "window-square",
+      "name": "Square Window",
+      "slot": "window",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "square",
+      "colour": "#90caf9"
+    },
+    {
+      "id": "window-round",
+      "name": "Round Window",
+      "slot": "window",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "round",
+      "colour": "#81d4fa"
+    },
+    {
+      "id": "window-arched",
+      "name": "Arched Window",
+      "slot": "window",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "arched",
+      "colour": "#b3e5fc"
+    },
+    {
+      "id": "window-porthole",
+      "name": "Porthole",
+      "slot": "window",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "porthole",
+      "colour": "#4dd0e1"
+    },
+    {
+      "id": "window-stained-glass",
+      "name": "Stained Glass Window",
+      "slot": "window",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "stained-glass",
+      "colour": "#ba68c8"
+    },
+    {
+      "id": "window-tower",
+      "name": "Tower Window",
+      "slot": "window",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "tower",
+      "colour": "#9fa8da"
+    },
+    {
+      "id": "window-diamond",
+      "name": "Diamond Window",
+      "slot": "window",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "diamond",
+      "colour": "#ffcc80"
+    },
+    {
+      "id": "window-heart",
+      "name": "Heart Window",
+      "slot": "window",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "heart",
+      "colour": "#f48fb1"
+    },
+    {
+      "id": "window-shuttered",
+      "name": "Shuttered Window",
+      "slot": "window",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "shuttered",
+      "colour": "#81c784"
+    },
+    {
+      "id": "window-castle",
+      "name": "Castle Window",
+      "slot": "window",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "castle",
+      "colour": "#a1887f"
+    },
+    {
+      "id": "plant-cactus",
+      "name": "Cactus",
+      "slot": "plant",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "cactus",
+      "colour": "#66bb6a"
+    },
+    {
+      "id": "plant-fern",
+      "name": "Fern",
+      "slot": "plant",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "fern",
+      "colour": "#2e7d32"
+    },
+    {
+      "id": "plant-sunflower",
+      "name": "Sunflower",
+      "slot": "plant",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "sunflower",
+      "colour": "#fbc02d"
+    },
+    {
+      "id": "plant-bonsai",
+      "name": "Bonsai Tree",
+      "slot": "plant",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "bonsai",
+      "colour": "#558b2f"
+    },
+    {
+      "id": "plant-flytrap",
+      "name": "Flytrap",
+      "slot": "plant",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "flytrap",
+      "colour": "#8bc34a"
+    },
+    {
+      "id": "plant-tree",
+      "name": "Little Tree",
+      "slot": "plant",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "tree",
+      "colour": "#388e3c"
+    },
+    {
+      "id": "plant-rose",
+      "name": "Rose Bush",
+      "slot": "plant",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "rose",
+      "colour": "#e53935"
+    },
+    {
+      "id": "plant-palm",
+      "name": "Palm Tree",
+      "slot": "plant",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "palm",
+      "colour": "#43a047"
+    },
+    {
+      "id": "plant-tulips",
+      "name": "Tulips",
+      "slot": "plant",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "tulips",
+      "colour": "#ec407a"
+    },
+    {
+      "id": "plant-spider",
+      "name": "Spider Plant",
+      "slot": "plant",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "spider",
+      "colour": "#7cb342"
+    },
+    {
+      "id": "desk-wooden",
+      "name": "Wooden Desk",
+      "slot": "desk",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "wooden",
+      "colour": "#a1887f"
+    },
+    {
+      "id": "desk-school",
+      "name": "School Desk",
+      "slot": "desk",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "school",
+      "colour": "#42a5f5"
+    },
+    {
+      "id": "desk-drawing",
+      "name": "Drawing Desk",
+      "slot": "desk",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "drawing",
+      "colour": "#ffca28"
+    },
+    {
+      "id": "desk-log",
+      "name": "Log Desk",
+      "slot": "desk",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "log",
+      "colour": "#8d6e63"
+    },
+    {
+      "id": "desk-round",
+      "name": "Round Table",
+      "slot": "desk",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "round",
+      "colour": "#ef9a9a"
+    },
+    {
+      "id": "desk-computer",
+      "name": "Computer Desk",
+      "slot": "desk",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "computer",
+      "colour": "#78909c"
+    },
+    {
+      "id": "desk-science",
+      "name": "Science Desk",
+      "slot": "desk",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "science",
+      "colour": "#26a69a"
+    },
+    {
+      "id": "desk-standing",
+      "name": "Standing Desk",
+      "slot": "desk",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "standing",
+      "colour": "#9575cd"
+    },
+    {
+      "id": "desk-glass",
+      "name": "Glass Desk",
+      "slot": "desk",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "glass",
+      "colour": "#b2ebf2"
+    },
+    {
+      "id": "desk-wizard",
+      "name": "Wizard's Desk",
+      "slot": "desk",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "wizard",
+      "colour": "#5e35b1"
+    },
+    {
+      "id": "seat-beanbag",
+      "name": "Beanbag",
+      "slot": "seat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "beanbag",
+      "colour": "#ef5350"
+    },
+    {
+      "id": "seat-stool",
+      "name": "Stool",
+      "slot": "seat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "stool",
+      "colour": "#a1887f"
+    },
+    {
+      "id": "seat-armchair",
+      "name": "Armchair",
+      "slot": "seat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "armchair",
+      "colour": "#5c6bc0"
+    },
+    {
+      "id": "seat-rocking",
+      "name": "Rocking Chair",
+      "slot": "seat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "rocking",
+      "colour": "#8d6e63"
+    },
+    {
+      "id": "seat-toadstool",
+      "name": "Toadstool Seat",
+      "slot": "seat",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "toadstool",
+      "colour": "#e53935"
+    },
+    {
+      "id": "seat-sofa",
+      "name": "Little Sofa",
+      "slot": "seat",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "sofa",
+      "colour": "#26a69a"
+    },
+    {
+      "id": "seat-gaming",
+      "name": "Racing Chair",
+      "slot": "seat",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "gaming",
+      "colour": "#43a047"
+    },
+    {
+      "id": "seat-egg",
+      "name": "Egg Chair",
+      "slot": "seat",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "egg",
+      "colour": "#fff8e1"
+    },
+    {
+      "id": "seat-swing",
+      "name": "Swing Chair",
+      "slot": "seat",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "swing",
+      "colour": "#f06292"
+    },
+    {
+      "id": "seat-throne",
+      "name": "Throne",
+      "slot": "seat",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "throne",
+      "colour": "#c62828"
+    },
+    {
+      "id": "toy-box-chest",
+      "name": "Toy Chest",
+      "slot": "toyBox",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "chest",
+      "colour": "#8d6e63"
+    },
+    {
+      "id": "toy-box-basket",
+      "name": "Toy Basket",
+      "slot": "toyBox",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "basket",
+      "colour": "#d7a86e"
+    },
+    {
+      "id": "toy-box-crate",
+      "name": "Wooden Crate",
+      "slot": "toyBox",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "crate",
+      "colour": "#bcaaa4"
+    },
+    {
+      "id": "toy-box-barrel",
+      "name": "Toy Barrel",
+      "slot": "toyBox",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "barrel",
+      "colour": "#a1887f"
+    },
+    {
+      "id": "toy-box-star",
+      "name": "Star Box",
+      "slot": "toyBox",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "star",
+      "colour": "#ffd54f"
+    },
+    {
+      "id": "toy-box-car",
+      "name": "Toy Car Box",
+      "slot": "toyBox",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "car",
+      "colour": "#1e88e5"
+    },
+    {
+      "id": "toy-box-wagon",
+      "name": "Toy Wagon",
+      "slot": "toyBox",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "wagon",
+      "colour": "#e53935"
+    },
+    {
+      "id": "toy-box-robot",
+      "name": "Robot Box",
+      "slot": "toyBox",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "robot",
+      "colour": "#90a4ae"
+    },
+    {
+      "id": "toy-box-treasure",
+      "name": "Treasure Chest",
+      "slot": "toyBox",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "treasure",
+      "colour": "#c9a227"
+    },
+    {
+      "id": "toy-box-dragon-egg",
+      "name": "Dragon Egg Box",
+      "slot": "toyBox",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "dragon-egg",
+      "colour": "#66bb6a"
+    },
+    {
+      "id": "clock-round",
+      "name": "Round Clock",
+      "slot": "clock",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "round",
+      "colour": "#ffffff"
+    },
+    {
+      "id": "clock-square",
+      "name": "Square Clock",
+      "slot": "clock",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "square",
+      "colour": "#4fc3f7"
+    },
+    {
+      "id": "clock-sun",
+      "name": "Sunshine Clock",
+      "slot": "clock",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "sun",
+      "colour": "#ffca28"
+    },
+    {
+      "id": "clock-flower",
+      "name": "Flower Clock",
+      "slot": "clock",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "flower",
+      "colour": "#f48fb1"
+    },
+    {
+      "id": "clock-alarm",
+      "name": "Alarm Clock",
+      "slot": "clock",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "alarm",
+      "colour": "#ef5350"
+    },
+    {
+      "id": "clock-star",
+      "name": "Star Clock",
+      "slot": "clock",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "star",
+      "colour": "#ffd54f"
+    },
+    {
+      "id": "clock-cat",
+      "name": "Cat Clock",
+      "slot": "clock",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "cat",
+      "colour": "#424242"
+    },
+    {
+      "id": "clock-owl",
+      "name": "Owl Clock",
+      "slot": "clock",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "owl",
+      "colour": "#8d6e63"
+    },
+    {
+      "id": "clock-cuckoo",
+      "name": "Cuckoo Clock",
+      "slot": "clock",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "cuckoo",
+      "colour": "#6d4c41"
+    },
+    {
+      "id": "clock-rocket",
+      "name": "Rocket Clock",
+      "slot": "clock",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "rocket",
+      "colour": "#90a4ae"
+    },
+    {
+      "id": "fish-tank-bowl",
+      "name": "Fish Bowl",
+      "slot": "fishTank",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "bowl",
+      "colour": "#81d4fa"
+    },
+    {
+      "id": "fish-tank-small",
+      "name": "Little Fish Tank",
+      "slot": "fishTank",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "small",
+      "colour": "#4fc3f7"
+    },
+    {
+      "id": "fish-tank-big",
+      "name": "Big Fish Tank",
+      "slot": "fishTank",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "big",
+      "colour": "#29b6f6"
+    },
+    {
+      "id": "fish-tank-tall",
+      "name": "Tall Fish Tank",
+      "slot": "fishTank",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "tall",
+      "colour": "#4dd0e1"
+    },
+    {
+      "id": "fish-tank-tropical",
+      "name": "Tropical Tank",
+      "slot": "fishTank",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "tropical",
+      "colour": "#26c6da"
+    },
+    {
+      "id": "fish-tank-castle",
+      "name": "Castle Tank",
+      "slot": "fishTank",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "castle",
+      "colour": "#9fa8da"
+    },
+    {
+      "id": "fish-tank-turtle",
+      "name": "Turtle Tank",
+      "slot": "fishTank",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "turtle",
+      "colour": "#81c784"
+    },
+    {
+      "id": "fish-tank-coral",
+      "name": "Coral Reef Tank",
+      "slot": "fishTank",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "coral",
+      "colour": "#ff8a65"
+    },
+    {
+      "id": "fish-tank-jellyfish",
+      "name": "Jellyfish Tank",
+      "slot": "fishTank",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "jellyfish",
+      "colour": "#ce93d8"
+    },
+    {
+      "id": "fish-tank-shipwreck",
+      "name": "Shipwreck Tank",
+      "slot": "fishTank",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "shipwreck",
+      "colour": "#4db6ac"
+    },
+    {
+      "id": "soft-toy-teddy",
+      "name": "Teddy Bear",
+      "slot": "softToy",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "teddy",
+      "colour": "#a1887f"
+    },
+    {
+      "id": "soft-toy-bunny",
+      "name": "Toy Bunny",
+      "slot": "softToy",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "bunny",
+      "colour": "#f8bbd0"
+    },
+    {
+      "id": "soft-toy-kitten",
+      "name": "Toy Kitten",
+      "slot": "softToy",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "kitten",
+      "colour": "#ffb74d"
+    },
+    {
+      "id": "soft-toy-puppy",
+      "name": "Toy Puppy",
+      "slot": "softToy",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "puppy",
+      "colour": "#d7ccc8"
+    },
+    {
+      "id": "soft-toy-penguin",
+      "name": "Toy Penguin",
+      "slot": "softToy",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "penguin",
+      "colour": "#37474f"
+    },
+    {
+      "id": "soft-toy-elephant",
+      "name": "Toy Elephant",
+      "slot": "softToy",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "elephant",
+      "colour": "#90a4ae"
+    },
+    {
+      "id": "soft-toy-octopus",
+      "name": "Toy Octopus",
+      "slot": "softToy",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "octopus",
+      "colour": "#ba68c8"
+    },
+    {
+      "id": "soft-toy-dinosaur",
+      "name": "Toy Dinosaur",
+      "slot": "softToy",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "dinosaur",
+      "colour": "#66bb6a"
+    },
+    {
+      "id": "soft-toy-unicorn",
+      "name": "Toy Unicorn",
+      "slot": "softToy",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "unicorn",
+      "colour": "#ffffff"
+    },
+    {
+      "id": "soft-toy-dragon",
+      "name": "Toy Dragon",
+      "slot": "softToy",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "dragon",
+      "colour": "#ef5350"
+    },
+    {
+      "id": "instrument-drum",
+      "name": "Toy Drum",
+      "slot": "instrument",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "drum",
+      "colour": "#e53935"
+    },
+    {
+      "id": "instrument-xylophone",
+      "name": "Xylophone",
+      "slot": "instrument",
+      "rarity": "common",
+      "unlock": {
+        "kind": "starter"
+      },
+      "model": "xylophone",
+      "colour": "#ffca28"
+    },
+    {
+      "id": "instrument-tambourine",
+      "name": "Tambourine",
+      "slot": "instrument",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "tambourine",
+      "colour": "#ffb74d"
+    },
+    {
+      "id": "instrument-trumpet",
+      "name": "Trumpet",
+      "slot": "instrument",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "trumpet",
+      "colour": "#fbc02d"
+    },
+    {
+      "id": "instrument-guitar",
+      "name": "Guitar",
+      "slot": "instrument",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "guitar",
+      "colour": "#d84315"
+    },
+    {
+      "id": "instrument-keyboard",
+      "name": "Keyboard",
+      "slot": "instrument",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "keyboard",
+      "colour": "#424242"
+    },
+    {
+      "id": "instrument-drum-kit",
+      "name": "Drum Kit",
+      "slot": "instrument",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "drum-kit",
+      "colour": "#1e88e5"
+    },
+    {
+      "id": "instrument-cello",
+      "name": "Cello",
+      "slot": "instrument",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "cello",
+      "colour": "#8d4e2b"
+    },
+    {
+      "id": "instrument-harp",
+      "name": "Harp",
+      "slot": "instrument",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "harp",
+      "colour": "#c9a227"
+    },
+    {
+      "id": "instrument-piano",
+      "name": "Piano",
+      "slot": "instrument",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "piano",
+      "colour": "#212121"
+    },
+    {
+      "id": "vehicle-bicycle",
+      "name": "Red Bicycle",
+      "slot": "vehicle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "bicycle",
+      "colour": "#e53935"
+    },
+    {
+      "id": "vehicle-tandem-bicycle",
+      "name": "Tandem Bicycle",
+      "slot": "vehicle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "tandem-bicycle",
+      "colour": "#43a047"
+    },
+    {
+      "id": "vehicle-penny-farthing",
+      "name": "Penny-farthing",
+      "slot": "vehicle",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "penny-farthing",
+      "colour": "#5d4037"
+    },
+    {
+      "id": "vehicle-tricycle",
+      "name": "Trusty Tricycle",
+      "slot": "vehicle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "tricycle",
+      "colour": "#fb8c00"
+    },
+    {
+      "id": "vehicle-kick-scooter",
+      "name": "Kick Scooter",
+      "slot": "vehicle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "kick-scooter",
+      "colour": "#1e88e5"
+    },
+    {
+      "id": "vehicle-skateboard",
+      "name": "Skateboard",
+      "slot": "vehicle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "skateboard",
+      "colour": "#8e24aa"
+    },
+    {
+      "id": "vehicle-motorcycle",
+      "name": "Motorcycle",
+      "slot": "vehicle",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "motorcycle",
+      "colour": "#212121"
+    },
+    {
+      "id": "vehicle-moped",
+      "name": "Moped",
+      "slot": "vehicle",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "moped",
+      "colour": "#80cbc4"
+    },
+    {
+      "id": "vehicle-quad-bike",
+      "name": "Quad Bike",
+      "slot": "vehicle",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "quad-bike",
+      "colour": "#558b2f"
+    },
+    {
+      "id": "vehicle-horse-and-cart",
+      "name": "Horse and Cart",
+      "slot": "vehicle",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "horse-and-cart",
+      "colour": "#8d6e63"
+    },
+    {
+      "id": "vehicle-family-car",
+      "name": "Family Car",
+      "slot": "vehicle",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "family-car",
+      "colour": "#1565c0"
+    },
+    {
+      "id": "vehicle-sports-car",
+      "name": "Sports Car",
+      "slot": "vehicle",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "sports-car",
+      "colour": "#d50000"
+    },
+    {
+      "id": "vehicle-van",
+      "name": "Delivery Van",
+      "slot": "vehicle",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "van",
+      "colour": "#eceff1"
+    },
+    {
+      "id": "vehicle-pickup-truck",
+      "name": "Pickup Truck",
+      "slot": "vehicle",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "pickup-truck",
+      "colour": "#ef6c00"
+    },
+    {
+      "id": "vehicle-jeep",
+      "name": "Jungle Jeep",
+      "slot": "vehicle",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "jeep",
+      "colour": "#689f38"
+    },
+    {
+      "id": "vehicle-taxi",
+      "name": "Taxi",
+      "slot": "vehicle",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "taxi",
+      "colour": "#fdd835"
+    },
+    {
+      "id": "vehicle-police-car",
+      "name": "Police Car",
+      "slot": "vehicle",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "police-car",
+      "colour": "#0d47a1"
+    },
+    {
+      "id": "vehicle-fire-engine",
+      "name": "Fire Engine",
+      "slot": "vehicle",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "fire-engine",
+      "colour": "#c62828"
+    },
+    {
+      "id": "vehicle-ambulance",
+      "name": "Ambulance",
+      "slot": "vehicle",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "ambulance",
+      "colour": "#fafafa"
+    },
+    {
+      "id": "vehicle-double-decker-bus",
+      "name": "Double-decker Bus",
+      "slot": "vehicle",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "double-decker-bus",
+      "colour": "#d32f2f"
+    },
+    {
+      "id": "vehicle-ice-cream-van",
+      "name": "Ice Cream Van",
+      "slot": "vehicle",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "ice-cream-van",
+      "colour": "#f8bbd0"
+    },
+    {
+      "id": "vehicle-tractor",
+      "name": "Tractor",
+      "slot": "vehicle",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "tractor",
+      "colour": "#2e7d32"
+    },
+    {
+      "id": "vehicle-golf-buggy",
+      "name": "Golf Buggy",
+      "slot": "vehicle",
+      "rarity": "common",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "golf-buggy",
+      "colour": "#f5f5f5"
+    },
+    {
+      "id": "vehicle-go-kart",
+      "name": "Go-kart",
+      "slot": "vehicle",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "go-kart",
+      "colour": "#ffb300"
+    },
+    {
+      "id": "vehicle-monster-truck",
+      "name": "Monster Truck",
+      "slot": "vehicle",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "monster-truck",
+      "colour": "#6a1b9a"
+    },
+    {
+      "id": "vehicle-camper-van",
+      "name": "Camper Van",
+      "slot": "vehicle",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "camper-van",
+      "colour": "#4fc3f7"
+    },
+    {
+      "id": "vehicle-racing-car",
+      "name": "Racing Car",
+      "slot": "vehicle",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "racing-car",
+      "colour": "#00897b"
+    },
+    {
+      "id": "vehicle-vintage-car",
+      "name": "Vintage Car",
+      "slot": "vehicle",
+      "rarity": "rare",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "vintage-car",
+      "colour": "#004d40"
+    },
+    {
+      "id": "vehicle-dune-buggy",
+      "name": "Dune Buggy",
+      "slot": "vehicle",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "dune-buggy",
+      "colour": "#ff7043"
+    },
+    {
+      "id": "vehicle-tuk-tuk",
+      "name": "Tuk-tuk",
+      "slot": "vehicle",
+      "rarity": "uncommon",
+      "unlock": {
+        "kind": "stars"
+      },
+      "model": "tuk-tuk",
+      "colour": "#00c853"
+    }
+  ]
+}

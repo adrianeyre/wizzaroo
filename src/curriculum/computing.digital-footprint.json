@@ -1,0 +1,8 @@
+{
+  "id": "computing.digital-footprint",
+  "name": "Understanding your digital footprint",
+  "subject": "computing",
+  "yearGroup": 4,
+  "strand": "online-safety",
+  "prerequisites": ["computing.strong-passwords"]
+}

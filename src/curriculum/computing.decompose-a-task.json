@@ -1,0 +1,8 @@
+{
+  "id": "computing.decompose-a-task",
+  "name": "Breaking a problem into smaller parts",
+  "subject": "computing",
+  "yearGroup": 3,
+  "strand": "algorithms",
+  "prerequisites": ["computing.plan-a-route"]
+}

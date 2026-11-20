@@ -1,0 +1,8 @@
+{
+  "id": "maths.powers-of-ten-more-or-less",
+  "name": "Counting on and back in powers of 10",
+  "subject": "maths",
+  "yearGroup": 5,
+  "strand": "number-and-place-value",
+  "prerequisites": ["maths.thousand-more-or-less"]
+}

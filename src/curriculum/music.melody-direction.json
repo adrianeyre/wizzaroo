@@ -1,0 +1,8 @@
+{
+  "id": "music.melody-direction",
+  "name": "Hearing a tune go up, go down or stay the same",
+  "subject": "music",
+  "yearGroup": 1,
+  "strand": "pitch",
+  "prerequisites": []
+}

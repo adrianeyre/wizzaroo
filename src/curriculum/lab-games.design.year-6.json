@@ -1,0 +1,606 @@
+{
+  "subject": "design",
+  "yearGroup": 6,
+  "games": [
+    {
+      "id": "dt-design-studio",
+      "title": "Design Studio",
+      "station": "true-false",
+      "prop": "bulb",
+      "skillName": "Communicating ideas with diagrams, CAD and CAM",
+      "strand": "design-communication",
+      "statutoryRequirement": "Pupils should be taught to generate, develop, model and communicate their ideas through discussion, annotated sketches, cross-sectional and exploded diagrams, prototypes, pattern pieces and computer-aided design",
+      "instruction": "Read it, then decide if it is true or false.",
+      "hint": "Not quite. Think about what each drawing, model or machine is for.",
+      "questions": [
+        {
+          "ask": "CAM stands for computer-aided manufacture.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "An exploded diagram shows the parts of a product pulled apart.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A cross-sectional diagram only shows the outside of a product.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A 3D printer builds objects up layer by layer.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A laser cutter can cut out shapes drawn using CAD.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Prototypes are never tested.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A pattern piece usually includes a seam allowance.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Annotations should explain choices, such as materials and sizes.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "CAD designs are very hard to change once drawn.",
+          "answer": "False",
+          "distractors": ["True"]
+        }
+      ]
+    },
+    {
+      "id": "dt-precision-workshop",
+      "title": "Precision Workshop",
+      "station": "mystery",
+      "prop": "magnifier",
+      "skillName": "Knowing tools for accurate work",
+      "strand": "tools-equipment",
+      "statutoryRequirement": "Pupils should be taught to select from and use a wider range of tools and equipment to perform practical tasks [for example, cutting, shaping, joining and finishing], accurately",
+      "instruction": "Read the clues, then tap the tool.",
+      "hint": "Not quite. Read the clues again and picture the tool in use.",
+      "questions": [
+        {
+          "ask": "I have a thin blade in a C-shaped frame and cut curves. What am I?",
+          "answer": "Coping saw",
+          "distractors": ["Tenon saw", "Bradawl", "Try square"]
+        },
+        {
+          "ask": "I hook over the edge of the table so you can saw safely. What am I?",
+          "answer": "Bench hook",
+          "distractors": ["G-clamp", "Try square", "File"]
+        },
+        {
+          "ask": "I check that corners are exactly 90 degrees. What am I?",
+          "answer": "Try square",
+          "distractors": ["Bench hook", "Bradawl", "Coping saw"]
+        },
+        {
+          "ask": "I screw tight to hold your work to the table. What am I?",
+          "answer": "G-clamp",
+          "distractors": ["Bradawl", "File", "Try square"]
+        },
+        {
+          "ask": "I am a pointed tool for making small starter holes. What am I?",
+          "answer": "Bradawl",
+          "distractors": ["G-clamp", "Bench hook", "Tenon saw"]
+        },
+        {
+          "ask": "I am a metal tool with ridges for smoothing edges. What am I?",
+          "answer": "File",
+          "distractors": ["Sandpaper", "Bench hook", "Bradawl"]
+        },
+        {
+          "ask": "I melt glue sticks to join materials quickly. What am I?",
+          "answer": "Glue gun",
+          "distractors": ["Hand drill", "Bradawl", "File"]
+        },
+        {
+          "ask": "I cut card precisely with a safety ruler and cutting mat. What am I?",
+          "answer": "Craft knife",
+          "distractors": ["Coping saw", "Bradawl", "G-clamp"]
+        },
+        {
+          "ask": "I am a saw with a stiff back for straight cuts in wood. What am I?",
+          "answer": "Tenon saw",
+          "distractors": ["Coping saw", "File", "Bradawl"]
+        }
+      ]
+    },
+    {
+      "id": "dt-material-matchmaker",
+      "title": "Material Matchmaker",
+      "station": "compare",
+      "prop": "rock",
+      "skillName": "Matching materials and components to a purpose",
+      "strand": "materials-components",
+      "statutoryRequirement": "Pupils should be taught to select from and use a wider range of materials and components, including construction materials, textiles and ingredients, according to their functional properties and aesthetic qualities",
+      "instruction": "Think about function and looks, then tap the answer.",
+      "hint": "Not quite. Think about what the product must do and how it should look.",
+      "questions": [
+        {
+          "ask": "Which pair of properties best suits a cycle helmet shell?",
+          "answer": "Tough and light",
+          "distractors": [
+            "Brittle and heavy",
+            "Soft and absorbent",
+            "Bendy and soggy"
+          ]
+        },
+        {
+          "ask": "Which material would insulate a lunch bag?",
+          "answer": "Foam",
+          "distractors": ["Copper sheet", "Steel mesh", "Thin tissue"]
+        },
+        {
+          "ask": "Which material suits a rigid, smooth phone stand?",
+          "answer": "Acrylic",
+          "distractors": ["Felt", "Tissue", "Cotton"]
+        },
+        {
+          "ask": "Choosing a fabric because users like its pattern is about...",
+          "answer": "Aesthetics",
+          "distractors": ["Strength", "Safety", "Cost"]
+        },
+        {
+          "ask": "Which component lets a box lid open and close?",
+          "answer": "Hinge",
+          "distractors": ["Cam", "Gear", "Buzzer"]
+        },
+        {
+          "ask": "Which component fastens a bag but opens easily?",
+          "answer": "Zip",
+          "distractors": ["Glue", "Staple", "Nail"]
+        },
+        {
+          "ask": "Why is stainless steel used for cutlery?",
+          "answer": "It does not rust",
+          "distractors": ["It is soft", "It is see-through", "It melts easily"]
+        },
+        {
+          "ask": "Which board is cheap and smooth for flat model bases?",
+          "answer": "MDF",
+          "distractors": ["Oak", "Glass", "Felt"]
+        },
+        {
+          "ask": "Recycled plastic bottles can be made into which fabric?",
+          "answer": "Polyester fleece",
+          "distractors": ["Silk", "Wool", "Linen"]
+        }
+      ]
+    },
+    {
+      "id": "dt-design-critic",
+      "title": "Design Critic",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Evaluating products and using feedback",
+      "strand": "analyse-products",
+      "statutoryRequirement": "Pupils should be taught to investigate and analyse a range of existing products; evaluate their ideas and products against their own design criteria and consider the views of others to improve their work",
+      "instruction": "Read about the product, then tap the best judgement.",
+      "hint": "Not quite. Compare the result with the design criteria and the user's views.",
+      "questions": [
+        {
+          "ask": "Criterion: 'carries 2 kg'. The bag tore at 1.5 kg. Verdict?",
+          "answer": "Not met",
+          "distractors": ["Met", "Beaten", "Not tested"]
+        },
+        {
+          "ask": "Criterion: 'costs under £5'. The materials cost £4.20. Verdict?",
+          "answer": "Met",
+          "distractors": ["Not met", "Over budget", "Cannot tell"]
+        },
+        {
+          "ask": "Your user says the handle hurts their hand. Best next step?",
+          "answer": "Redesign the handle",
+          "distractors": ["Ignore them", "Paint it red", "Add more glue"]
+        },
+        {
+          "ask": "What is the fairest way to test which phone stand is most stable?",
+          "answer": "Same test for each",
+          "distractors": ["Guess", "Ask one friend", "Test only one"]
+        },
+        {
+          "ask": "Why do designers ask other people for feedback?",
+          "answer": "To improve the work",
+          "distractors": [
+            "To finish faster",
+            "To skip testing",
+            "To win a prize"
+          ]
+        },
+        {
+          "ask": "Which question analyses how a product was made?",
+          "answer": "How is it joined?",
+          "distractors": ["Do I like it?", "What is its name?", "Who owns it?"]
+        },
+        {
+          "ask": "A product that is easy to repair is better for...",
+          "answer": "The environment",
+          "distractors": ["Making waste", "Breaking faster", "Using more"]
+        },
+        {
+          "ask": "Which feature helps a user with a weak grip?",
+          "answer": "Wide, soft handle",
+          "distractors": [
+            "Thin metal handle",
+            "Tiny buttons",
+            "Slippery surface"
+          ]
+        },
+        {
+          "ask": "An evaluation compares the finished product with the...",
+          "answer": "Design criteria",
+          "distractors": ["Weather forecast", "Lunch menu", "Bus timetable"]
+        }
+      ]
+    },
+    {
+      "id": "dt-world-changers",
+      "title": "World Changers",
+      "station": "compare",
+      "prop": "planet",
+      "skillName": "Knowing key events and individuals in design",
+      "strand": "design-history",
+      "statutoryRequirement": "Pupils should be taught to understand how key events and individuals in design and technology have helped shape the world",
+      "instruction": "Think about each invention, then tap the answer.",
+      "hint": "Not quite. Think about what the invention or design changed.",
+      "questions": [
+        {
+          "ask": "Gutenberg's printing press, from about 1440, made it easier to...",
+          "answer": "Copy books",
+          "distractors": ["Fly planes", "Cook food", "Light homes"]
+        },
+        {
+          "ask": "The Wright brothers made the first powered aeroplane flight in...",
+          "answer": "1903",
+          "distractors": ["1803", "1953", "1703"]
+        },
+        {
+          "ask": "Alexander Graham Bell patented the...",
+          "answer": "Telephone",
+          "distractors": ["Television", "Jet engine", "Toaster"]
+        },
+        {
+          "ask": "Stephanie Kwolek invented Kevlar, a strong fibre used in...",
+          "answer": "Protective vests",
+          "distractors": ["Chocolate bars", "Paper cups", "Wool hats"]
+        },
+        {
+          "ask": "Harry Beck's famous 1933 design was a map of the...",
+          "answer": "London Underground",
+          "distractors": ["River Thames", "Lake District", "M25 motorway"]
+        },
+        {
+          "ask": "Margaret Calvert helped design the UK's...",
+          "answer": "Road signs",
+          "distractors": ["Bank notes", "Red buses", "Postboxes"]
+        },
+        {
+          "ask": "Ada Lovelace wrote notes about which machine?",
+          "answer": "Analytical Engine",
+          "distractors": ["Steam engine", "Spinning jenny", "Printing press"]
+        },
+        {
+          "ask": "George de Mestral invented hook-and-loop tape after studying...",
+          "answer": "Burrs on his dog",
+          "distractors": ["Spider webs", "Fish scales", "Bird feathers"]
+        },
+        {
+          "ask": "Tim Berners-Lee's Web was not patented, so it...",
+          "answer": "Was free for all",
+          "distractors": ["Stayed secret", "Was banned", "Cost a fortune"]
+        }
+      ]
+    },
+    {
+      "id": "dt-product-circuits",
+      "title": "Product Circuits",
+      "station": "compare",
+      "prop": "battery",
+      "skillName": "Using series circuits in products",
+      "strand": "electrical-systems",
+      "statutoryRequirement": "Pupils should be taught to understand and use electrical systems in their products [for example, series circuits incorporating switches, bulbs, buzzers and motors]",
+      "instruction": "Think about the circuit in the product, then tap the answer.",
+      "hint": "Not quite. Think about how current flows round a series circuit.",
+      "questions": [
+        {
+          "ask": "In a series circuit, if one bulb breaks, the others...",
+          "answer": "Go out",
+          "distractors": ["Get brighter", "Stay lit", "Change colour"]
+        },
+        {
+          "ask": "In a steady-hand game, the wand and wire act as a...",
+          "answer": "Switch",
+          "distractors": ["Bulb", "Motor", "Cell"]
+        },
+        {
+          "ask": "Which component could turn the propeller of a model boat?",
+          "answer": "Motor",
+          "distractors": ["Buzzer", "Bulb", "Reed switch"]
+        },
+        {
+          "ask": "Which component would make a flashing light for a bike?",
+          "answer": "LED",
+          "distractors": ["Buzzer", "Motor", "Reed switch"]
+        },
+        {
+          "ask": "A door alarm could use a magnet and a...",
+          "answer": "Reed switch",
+          "distractors": ["Bulb", "Motor", "Pulley"]
+        },
+        {
+          "ask": "Adding more cells to a buzzer circuit makes it...",
+          "answer": "Louder",
+          "distractors": ["Quieter", "Silent", "Colder"]
+        },
+        {
+          "ask": "Which material could make the contacts of a home-made switch?",
+          "answer": "Aluminium foil",
+          "distractors": ["Card", "Plastic straw", "Wool"]
+        },
+        {
+          "ask": "A motor won't spin in a circuit. A likely cause is...",
+          "answer": "A loose wire",
+          "distractors": ["The switch is on", "Copper wires", "A new cell"]
+        },
+        {
+          "ask": "Which component would sound a warning in a smoke alarm?",
+          "answer": "Buzzer",
+          "distractors": ["Motor", "Bulb", "Switch"]
+        }
+      ]
+    },
+    {
+      "id": "dt-gear-train-challenge",
+      "title": "Gear Train Challenge",
+      "station": "compare",
+      "prop": "magnet",
+      "skillName": "Understanding gears and gear trains",
+      "strand": "mechanical-systems",
+      "statutoryRequirement": "Pupils should be taught to understand and use mechanical systems in their products [for example, gears, pulleys, cams, levers and linkages]",
+      "instruction": "Picture the gears turning, then tap the answer.",
+      "hint": "Not quite. Count the teeth and picture which way each gear turns.",
+      "questions": [
+        {
+          "ask": "Two gears meshing together turn in...",
+          "answer": "Opposite directions",
+          "distractors": ["The same direction", "No direction", "Random ways"]
+        },
+        {
+          "ask": "The gear turned by the motor or handle is the...",
+          "answer": "Driver gear",
+          "distractors": ["Driven gear", "Rack", "Follower"]
+        },
+        {
+          "ask": "Driver has 10 teeth, driven has 20. Driver turns twice. Driven turns...",
+          "answer": "Once",
+          "distractors": ["Twice", "Four times", "Ten times"]
+        },
+        {
+          "ask": "Driver has 30 teeth, driven has 10. Driver turns once. Driven turns...",
+          "answer": "3 times",
+          "distractors": ["Once", "1/3 of a turn", "30 times"]
+        },
+        {
+          "ask": "A small driver gear turning a large gear makes the output...",
+          "answer": "Slower but stronger",
+          "distractors": ["Faster and weaker", "Stop", "Reverse twice"]
+        },
+        {
+          "ask": "An extra gear between driver and driven so they turn the same way is...",
+          "answer": "An idler gear",
+          "distractors": ["A cam", "A crank", "A follower"]
+        },
+        {
+          "ask": "Which gears change turning into straight-line motion?",
+          "answer": "Rack and pinion",
+          "distractors": ["Bevel gears", "Idler gear", "Spur gears"]
+        },
+        {
+          "ask": "Which gears turn motion through 90 degrees?",
+          "answer": "Bevel gears",
+          "distractors": ["Spur gears", "Idler gear", "Pulley belt"]
+        },
+        {
+          "ask": "Which gear is a screw that turns a gear wheel very slowly?",
+          "answer": "Worm gear",
+          "distractors": ["Bevel gear", "Idler gear", "Spur gear"]
+        }
+      ]
+    },
+    {
+      "id": "dt-balanced-plate-pro",
+      "title": "Balanced Plate Pro",
+      "station": "compare",
+      "prop": "heart",
+      "skillName": "Knowing nutrients in a healthy diet",
+      "strand": "healthy-diet",
+      "statutoryRequirement": "Pupils should be taught to understand and apply the principles of a healthy and varied diet",
+      "instruction": "Think about what each food gives your body, then tap the answer.",
+      "hint": "Not quite. Think about which nutrient that food is rich in.",
+      "questions": [
+        {
+          "ask": "Which nutrient mainly helps the body grow and repair?",
+          "answer": "Protein",
+          "distractors": ["Sugar", "Salt", "Fat"]
+        },
+        {
+          "ask": "Which nutrient in pasta and bread gives us energy?",
+          "answer": "Carbohydrate",
+          "distractors": ["Vitamin C", "Calcium", "Fibre"]
+        },
+        {
+          "ask": "Which mineral in dairy foods helps build strong bones?",
+          "answer": "Calcium",
+          "distractors": ["Iron", "Sugar", "Sodium"]
+        },
+        {
+          "ask": "Oranges are a good source of which vitamin?",
+          "answer": "Vitamin C",
+          "distractors": ["Vitamin D", "Iron", "Calcium"]
+        },
+        {
+          "ask": "Fibre in wholegrain foods helps our...",
+          "answer": "Digestion",
+          "distractors": ["Eyesight", "Hair growth", "Hearing"]
+        },
+        {
+          "ask": "A red traffic light on a food label for sugar means sugar is...",
+          "answer": "High",
+          "distractors": ["Low", "Medium", "Zero"]
+        },
+        {
+          "ask": "Which fat does the Eatwell Guide prefer?",
+          "answer": "Olive oil",
+          "distractors": ["Butter", "Lard", "Cream"]
+        },
+        {
+          "ask": "Iron, found in red meat and spinach, helps blood carry...",
+          "answer": "Oxygen",
+          "distractors": ["Sound", "Light", "Heat"]
+        },
+        {
+          "ask": "Which breakfast is the most balanced?",
+          "answer": "Porridge and berries",
+          "distractors": [
+            "Cola and crisps",
+            "Cake and sweets",
+            "Just a biscuit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dt-food-miles",
+      "title": "Food Miles",
+      "station": "compare",
+      "prop": "seedling",
+      "skillName": "Knowing seasonality and how food is produced",
+      "strand": "seasonality-origins",
+      "statutoryRequirement": "Pupils should be taught to understand seasonality, and know where and how a variety of ingredients are grown, reared, caught and processed",
+      "instruction": "Think about where and how the food is produced, then tap the answer.",
+      "hint": "Not quite. Think about the climate, the season and what happens on the farm.",
+      "questions": [
+        {
+          "ask": "Which crop grown in the UK is processed to make sugar?",
+          "answer": "Sugar beet",
+          "distractors": ["Sugar cane", "Barley", "Oats"]
+        },
+        {
+          "ask": "Most cocoa beans for chocolate come from...",
+          "answer": "West Africa",
+          "distractors": ["Scotland", "Antarctica", "Iceland"]
+        },
+        {
+          "ask": "Rice is mostly grown in flooded fields called...",
+          "answer": "Paddy fields",
+          "distractors": ["Orchards", "Vineyards", "Allotments"]
+        },
+        {
+          "ask": "Fish raised in nets or tanks instead of caught wild are...",
+          "answer": "Farmed",
+          "distractors": ["Caught", "Picked", "Milled"]
+        },
+        {
+          "ask": "Milk is heated to kill harmful bacteria. This is called...",
+          "answer": "Pasteurisation",
+          "distractors": ["Fermentation", "Germination", "Evaporation"]
+        },
+        {
+          "ask": "Food miles measure how far food...",
+          "answer": "Travels to you",
+          "distractors": ["Grows tall", "Lasts in a fridge", "Is thrown"]
+        },
+        {
+          "ask": "Heated greenhouses help UK farmers to...",
+          "answer": "Extend the season",
+          "distractors": ["Grow in snow", "Stop ripening", "Turn crops blue"]
+        },
+        {
+          "ask": "Which British fruit grows wild in hedges in late summer?",
+          "answer": "Blackberry",
+          "distractors": ["Banana", "Pineapple", "Mango"]
+        },
+        {
+          "ask": "Free-range hens are...",
+          "answer": "Able to go outside",
+          "distractors": ["Kept in cages", "Never fed", "Kept indoors always"]
+        }
+      ]
+    },
+    {
+      "id": "dt-code-and-control",
+      "title": "Code And Control",
+      "station": "sequence",
+      "prop": "microscope",
+      "skillName": "Programming, monitoring and controlling products",
+      "strand": "computing-control",
+      "statutoryRequirement": "Pupils should be taught to apply their understanding of computing to program, monitor and control their products",
+      "instruction": "Follow the program steps, then tap what comes next.",
+      "hint": "Not quite. Read the condition carefully and think about what the product should do.",
+      "questions": [
+        {
+          "ask": "UK traffic lights: red, then red and amber, then...?",
+          "answer": "Green",
+          "distractors": ["Amber", "Red", "Off"]
+        },
+        {
+          "ask": "UK traffic lights: green, then amber, then...?",
+          "answer": "Red",
+          "distractors": ["Green", "Red and amber", "Flashing green"]
+        },
+        {
+          "ask": "Night light: if the light level is low, then...?",
+          "answer": "Turn the LED on",
+          "distractors": [
+            "Turn the LED off",
+            "Sound the buzzer",
+            "Stop the program"
+          ]
+        },
+        {
+          "ask": "Fan: if the temperature is above 25 °C, then...?",
+          "answer": "Switch the motor on",
+          "distractors": ["Switch it off", "Turn heater on", "Flash the LED"]
+        },
+        {
+          "ask": "Flashing LED: LED on, wait 1 second, LED off, then...?",
+          "answer": "Wait 1 second",
+          "distractors": ["Turn buzzer on", "Stop the program", "Unplug it"]
+        },
+        {
+          "ask": "Door alarm: if the door sensor opens, then...?",
+          "answer": "Sound the buzzer",
+          "distractors": ["Switch off alarm", "Lock the program", "Dim the LED"]
+        },
+        {
+          "ask": "Greenhouse monitor: read the temperature, record it, wait 1 hour, then...?",
+          "answer": "Read it again",
+          "distractors": ["Delete the data", "Water the house", "Turn it off"]
+        },
+        {
+          "ask": "Plan the program, write the code, test it, then...?",
+          "answer": "Fix any bugs",
+          "distractors": ["Delete it", "Never run it", "Unplug it"]
+        },
+        {
+          "ask": "Plant waterer: if the soil is dry, then...?",
+          "answer": "Turn the pump on",
+          "distractors": ["Stop the program", "Play music", "Switch the fan on"]
+        }
+      ]
+    }
+  ]
+}

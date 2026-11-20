@@ -1,0 +1,8 @@
+{
+  "id": "maths.subtract-four-digit",
+  "name": "Taking away four-digit numbers",
+  "subject": "maths",
+  "yearGroup": 4,
+  "strand": "addition-and-subtraction",
+  "prerequisites": ["maths.subtract-three-digit"]
+}

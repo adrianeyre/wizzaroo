@@ -1,0 +1,9 @@
+{
+  "id": "phonics.sound-z",
+  "name": "The /z/ sound, as in zip",
+  "subject": "phonics",
+  "yearGroup": 1,
+  "strand": "grapheme-phoneme-correspondences",
+  "prerequisites": [],
+  "sounds": ["z"]
+}

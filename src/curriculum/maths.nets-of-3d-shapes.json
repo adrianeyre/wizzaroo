@@ -1,0 +1,8 @@
+{
+  "id": "maths.nets-of-3d-shapes",
+  "name": "Nets of 3-D shapes",
+  "subject": "maths",
+  "yearGroup": 6,
+  "strand": "geometry-properties-of-shapes",
+  "prerequisites": ["maths.regular-and-irregular-polygons"]
+}

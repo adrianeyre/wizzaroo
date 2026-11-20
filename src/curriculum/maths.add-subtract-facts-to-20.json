@@ -1,0 +1,8 @@
+{
+  "id": "maths.add-subtract-facts-to-20",
+  "name": "Addition and subtraction facts to 20",
+  "subject": "maths",
+  "yearGroup": 2,
+  "strand": "addition-and-subtraction",
+  "prerequisites": ["maths.number-bonds-10"]
+}

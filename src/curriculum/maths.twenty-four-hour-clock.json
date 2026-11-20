@@ -1,0 +1,8 @@
+{
+  "id": "maths.twenty-four-hour-clock",
+  "name": "Converting to the 24-hour clock",
+  "subject": "maths",
+  "yearGroup": 4,
+  "strand": "measurement",
+  "prerequisites": ["maths.time-to-the-minute"]
+}

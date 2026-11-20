@@ -1,0 +1,606 @@
+{
+  "subject": "design",
+  "yearGroup": 3,
+  "games": [
+    {
+      "id": "dt-tool-safety-check",
+      "title": "Tool Safety Check",
+      "station": "true-false",
+      "prop": "magnifier",
+      "skillName": "Using workshop tools safely and accurately",
+      "strand": "tools-equipment",
+      "statutoryRequirement": "Pupils should be taught to select from and use a wider range of tools and equipment to perform practical tasks [for example, cutting, shaping, joining and finishing], accurately",
+      "instruction": "Read it, then decide if it is true or false.",
+      "hint": "Not quite. Think about keeping hands safe and cutting accurately.",
+      "questions": [
+        {
+          "ask": "A bench hook holds wood steady while you saw it.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "You should saw towards your other hand.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A junior hacksaw can cut thin wood such as dowel.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "The nozzle of a glue gun gets hot.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Sandpaper makes rough edges smooth.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "To be accurate, measure once and cut quickly.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A ruler and a sharp pencil help you mark accurate lines.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "You should carry scissors with the points facing up.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A G-clamp holds work tightly to the table.",
+          "answer": "True",
+          "distractors": ["False"]
+        }
+      ]
+    },
+    {
+      "id": "dt-property-picker",
+      "title": "Property Picker",
+      "station": "compare",
+      "prop": "rock",
+      "skillName": "Choosing materials by their properties",
+      "strand": "materials-components",
+      "statutoryRequirement": "Pupils should be taught to select from and use a wider range of materials and components, including construction materials, textiles and ingredients, according to their functional properties and aesthetic qualities",
+      "instruction": "Think about what the product needs, then tap the answer.",
+      "hint": "Not quite. Think about the job the material has to do.",
+      "questions": [
+        {
+          "ask": "Which property does a raincoat need?",
+          "answer": "Waterproof",
+          "distractors": ["Absorbent", "See-through", "Brittle"]
+        },
+        {
+          "ask": "Which property does a tea towel need?",
+          "answer": "Absorbent",
+          "distractors": ["Waterproof", "Magnetic", "Rigid"]
+        },
+        {
+          "ask": "Which property does a bridge beam need most?",
+          "answer": "Strong",
+          "distractors": ["Bendy", "Soft", "Absorbent"]
+        },
+        {
+          "ask": "Which material would make a cosy winter hat?",
+          "answer": "Wool",
+          "distractors": ["Netting", "Plastic sheet", "Paper"]
+        },
+        {
+          "ask": "Felt is good for puppets because it...",
+          "answer": "Does not fray",
+          "distractors": ["Is waterproof", "Is see-through", "Is very hard"]
+        },
+        {
+          "ask": "What does 'aesthetic' mean when talking about a product?",
+          "answer": "How it looks",
+          "distractors": [
+            "How strong it is",
+            "How heavy it is",
+            "How much it costs"
+          ]
+        },
+        {
+          "ask": "Which of these is an aesthetic quality?",
+          "answer": "Colour",
+          "distractors": ["Strength", "Waterproofness", "Stiffness"]
+        },
+        {
+          "ask": "Which of these is a functional property?",
+          "answer": "Strength",
+          "distractors": ["Colour", "Pattern", "Decoration"]
+        },
+        {
+          "ask": "Which material bends without snapping, for a hinge?",
+          "answer": "Fabric",
+          "distractors": ["Dry spaghetti", "Chalk", "Glass"]
+        }
+      ]
+    },
+    {
+      "id": "dt-product-investigator",
+      "title": "Product Investigator",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Investigating and analysing existing products",
+      "strand": "analyse-products",
+      "statutoryRequirement": "Pupils should be taught to investigate and analyse a range of existing products; evaluate their ideas and products against their own design criteria and consider the views of others to improve their work",
+      "instruction": "Look closely at the product, then tap the best reason.",
+      "hint": "Not quite. Think about who uses the product and what it must do.",
+      "questions": [
+        {
+          "ask": "Why does a pencil case have a zip?",
+          "answer": "Keep pens inside",
+          "distractors": ["Make it heavy", "Make a noise", "Look old"]
+        },
+        {
+          "ask": "Why are many lunchboxes made of plastic?",
+          "answer": "Easy to clean",
+          "distractors": ["It rusts", "It is fragile", "It is absorbent"]
+        },
+        {
+          "ask": "Why do wellington boots have a thick, grooved sole?",
+          "answer": "Grip on mud",
+          "distractors": ["Look taller", "Keep feet wet", "Make it squeak"]
+        },
+        {
+          "ask": "Why are cereal boxes made of card?",
+          "answer": "Light and printable",
+          "distractors": ["Waterproof", "Unbreakable", "See-through"]
+        },
+        {
+          "ask": "Why are baby toys made big?",
+          "answer": "Can't be swallowed",
+          "distractors": ["Easy to lose", "Hard to hold", "Fit in pockets"]
+        },
+        {
+          "ask": "Which question helps you investigate a product?",
+          "answer": "What is it for?",
+          "distractors": [
+            "Is it Tuesday?",
+            "Where is my bag?",
+            "What is for tea?"
+          ]
+        },
+        {
+          "ask": "Why does a sports bottle have a narrow spout?",
+          "answer": "Less spilling",
+          "distractors": ["Holds more", "Keeps it cold", "Makes it heavy"]
+        },
+        {
+          "ask": "Why are oven gloves thick?",
+          "answer": "Insulate from heat",
+          "distractors": ["Look stylish", "Be waterproof", "Be stretchy"]
+        },
+        {
+          "ask": "Why do bike lights have a clip?",
+          "answer": "Fix it to a bike",
+          "distractors": ["Make it louder", "Keep it dark", "Make it heavy"]
+        }
+      ]
+    },
+    {
+      "id": "dt-design-brief-detective",
+      "title": "Design Brief Detective",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Researching users and writing design criteria",
+      "strand": "research-criteria",
+      "statutoryRequirement": "Pupils should be taught to use research and develop design criteria to inform the design of innovative, functional, appealing products that are fit for purpose, aimed at particular individuals or groups",
+      "instruction": "Think about the user and purpose, then tap the answer.",
+      "hint": "Not quite. Think about who the product is for and what it must do.",
+      "questions": [
+        {
+          "ask": "Who is the 'user' of a product?",
+          "answer": "Who will use it",
+          "distractors": ["Who sells it", "Who made it first", "Who paints it"]
+        },
+        {
+          "ask": "What does 'fit for purpose' mean?",
+          "answer": "It does its job",
+          "distractors": ["It looks shiny", "It is expensive", "It is very big"]
+        },
+        {
+          "ask": "Which is a good design criterion for a pencil case?",
+          "answer": "Holds 10 pencils",
+          "distractors": ["Was made today", "Has a name", "Is very old"]
+        },
+        {
+          "ask": "What is the best way to find out what a user likes?",
+          "answer": "Ask them questions",
+          "distractors": ["Guess", "Copy a friend", "Ignore them"]
+        },
+        {
+          "ask": "Which of these is research?",
+          "answer": "Looking at products",
+          "distractors": ["Sweeping up", "Washing brushes", "Sawing wood"]
+        },
+        {
+          "ask": "A torch for camping: which criterion fits best?",
+          "answer": "Waterproof",
+          "distractors": ["Made of paper", "Very heavy", "Melts in the sun"]
+        },
+        {
+          "ask": "A purse for a young child should have...",
+          "answer": "Easy-to-open clasp",
+          "distractors": [
+            "Tiny fiddly clasp",
+            "Sharp edges",
+            "Heavy metal lock"
+          ]
+        },
+        {
+          "ask": "A questionnaire is used to...",
+          "answer": "Collect opinions",
+          "distractors": ["Cut wood", "Join fabric", "Cook food"]
+        },
+        {
+          "ask": "Who is the target audience for a baby's rattle?",
+          "answer": "Babies",
+          "distractors": ["Teenagers", "Builders", "Pilots"]
+        }
+      ]
+    },
+    {
+      "id": "dt-sketch-and-label",
+      "title": "Sketch And Label",
+      "station": "compare",
+      "prop": "bulb",
+      "skillName": "Communicating ideas with sketches and models",
+      "strand": "design-communication",
+      "statutoryRequirement": "Pupils should be taught to generate, develop, model and communicate their ideas through discussion, annotated sketches, cross-sectional and exploded diagrams, prototypes, pattern pieces and computer-aided design",
+      "instruction": "Think about how designers show ideas, then tap the answer.",
+      "hint": "Not quite. Think about drawings, labels and test models.",
+      "questions": [
+        {
+          "ask": "A drawing with notes and labels is called...",
+          "answer": "An annotated sketch",
+          "distractors": ["A shopping list", "A timeline", "A bar chart"]
+        },
+        {
+          "ask": "What is a prototype?",
+          "answer": "A test model",
+          "distractors": ["A shop", "A price tag", "A recipe"]
+        },
+        {
+          "ask": "Why make a prototype first?",
+          "answer": "To test the idea",
+          "distractors": ["To sell it", "To waste card", "To skip testing"]
+        },
+        {
+          "ask": "Shapes you draw round to cut out fabric are called...",
+          "answer": "Pattern pieces",
+          "distractors": ["Labels", "Gears", "Recipes"]
+        },
+        {
+          "ask": "What should annotations on a sketch explain?",
+          "answer": "Materials and parts",
+          "distractors": ["Your favourite TV", "The lunch menu", "The weather"]
+        },
+        {
+          "ask": "What does the D in CAD stand for?",
+          "answer": "Design",
+          "distractors": ["Device", "Data", "Disc"]
+        },
+        {
+          "ask": "Which is quickest for trying out lots of ideas?",
+          "answer": "Rough sketches",
+          "distractors": [
+            "A final model",
+            "A metal casting",
+            "A wooden version"
+          ]
+        },
+        {
+          "ask": "A paper model of a bag to check its size is a...",
+          "answer": "Mock-up",
+          "distractors": ["Recipe", "Circuit", "Graph"]
+        },
+        {
+          "ask": "When discussing ideas in a group, you should...",
+          "answer": "Listen and share",
+          "distractors": ["Talk over others", "Stay silent", "Copy them"]
+        }
+      ]
+    },
+    {
+      "id": "dt-structure-strength",
+      "title": "Structure Strength",
+      "station": "compare",
+      "prop": "prism",
+      "skillName": "Strengthening shell and frame structures",
+      "strand": "complex-structures",
+      "statutoryRequirement": "Pupils should be taught to apply their understanding of how to strengthen, stiffen and reinforce more complex structures",
+      "instruction": "Compare the choices, then tap the best answer.",
+      "hint": "Not quite. Think about shells, frames, triangles and layers.",
+      "questions": [
+        {
+          "ask": "An egg box is which kind of structure?",
+          "answer": "Shell",
+          "distractors": ["Frame", "Mechanism", "Circuit"]
+        },
+        {
+          "ask": "An electricity pylon is which kind of structure?",
+          "answer": "Frame",
+          "distractors": ["Shell", "Mechanism", "Circuit"]
+        },
+        {
+          "ask": "Which shape makes frames rigid?",
+          "answer": "Triangle",
+          "distractors": ["Square", "Rectangle", "Pentagon"]
+        },
+        {
+          "ask": "Small card triangles glued over frame corners are called...",
+          "answer": "Gussets",
+          "distractors": ["Axles", "Cams", "Pulleys"]
+        },
+        {
+          "ask": "Gluing layers of card together to make it stronger is...",
+          "answer": "Laminating",
+          "distractors": ["Grating", "Kneading", "Sanding"]
+        },
+        {
+          "ask": "Corrugated card is stiff because it has...",
+          "answer": "A wavy middle layer",
+          "distractors": ["Holes in it", "Wet glue", "Paint on top"]
+        },
+        {
+          "ask": "What does a diagonal strut do to a square frame?",
+          "answer": "Makes it rigid",
+          "distractors": ["Makes it wobble", "Makes it bend", "Makes it round"]
+        },
+        {
+          "ask": "Which force squashes a structure?",
+          "answer": "Compression",
+          "distractors": ["Tension", "Friction", "Magnetism"]
+        },
+        {
+          "ask": "Which force stretches a structure?",
+          "answer": "Tension",
+          "distractors": ["Compression", "Gravity", "Magnetism"]
+        }
+      ]
+    },
+    {
+      "id": "dt-lever-linkage-lab",
+      "title": "Lever And Linkage Lab",
+      "station": "compare",
+      "prop": "magnet",
+      "skillName": "Using levers and linkages",
+      "strand": "mechanical-systems",
+      "statutoryRequirement": "Pupils should be taught to understand and use mechanical systems in their products [for example, gears, pulleys, cams, levers and linkages]",
+      "instruction": "Think about how the parts move, then tap the answer.",
+      "hint": "Not quite. Think about pivots and how joined levers move.",
+      "questions": [
+        {
+          "ask": "The point a lever turns around is the...",
+          "answer": "Pivot",
+          "distractors": ["Slot", "Cam", "Handle"]
+        },
+        {
+          "ask": "What is a linkage?",
+          "answer": "Joined-up levers",
+          "distractors": ["A battery", "A gear", "A pulley belt"]
+        },
+        {
+          "ask": "What joins card levers but lets them move?",
+          "answer": "Paper fastener",
+          "distractors": ["Glue stick", "Staple", "Sticky tape"]
+        },
+        {
+          "ask": "Push one end of a seesaw lever down. The other end...",
+          "answer": "Goes up",
+          "distractors": ["Goes down", "Stays still", "Falls off"]
+        },
+        {
+          "ask": "Which linkage makes the output move the opposite way?",
+          "answer": "Reverse motion",
+          "distractors": ["Parallel motion", "Bell crank", "Fixed pivot"]
+        },
+        {
+          "ask": "Which linkage turns a movement through 90 degrees?",
+          "answer": "Bell crank",
+          "distractors": ["Reverse motion", "Parallel motion", "Slider"]
+        },
+        {
+          "ask": "A fixed pivot joins a lever to the...",
+          "answer": "Background card",
+          "distractors": ["Moving lever", "Handle", "Slider"]
+        },
+        {
+          "ask": "A loose pivot joins...",
+          "answer": "Two moving levers",
+          "distractors": [
+            "Card to the table",
+            "Two batteries",
+            "A wheel to a gear"
+          ]
+        },
+        {
+          "ask": "Which everyday object is made from two levers?",
+          "answer": "Scissors",
+          "distractors": ["Football", "Pillow", "Plate"]
+        }
+      ]
+    },
+    {
+      "id": "dt-healthy-swaps",
+      "title": "Healthy Swaps",
+      "station": "compare",
+      "prop": "heart",
+      "skillName": "Applying the Eatwell Guide",
+      "strand": "healthy-diet",
+      "statutoryRequirement": "Pupils should be taught to understand and apply the principles of a healthy and varied diet",
+      "instruction": "Compare the foods, then tap the healthier choice.",
+      "hint": "Not quite. Think about the Eatwell Guide and less sugar, salt and fat.",
+      "questions": [
+        {
+          "ask": "Swap a fizzy drink for...",
+          "answer": "Water",
+          "distractors": ["Cola", "Energy drink", "Milkshake"]
+        },
+        {
+          "ask": "Swap white bread for...",
+          "answer": "Wholemeal bread",
+          "distractors": ["Cake", "Doughnut", "Biscuits"]
+        },
+        {
+          "ask": "Swap a bag of crisps for...",
+          "answer": "Carrot sticks",
+          "distractors": ["Chocolate", "Sweets", "Cheese puffs"]
+        },
+        {
+          "ask": "Swap a sugary cereal for...",
+          "answer": "Porridge",
+          "distractors": ["Frosted flakes", "Biscuits", "Sweets"]
+        },
+        {
+          "ask": "In the Eatwell Guide, the two biggest groups are fruit and veg and...",
+          "answer": "Starchy carbs",
+          "distractors": ["Oils and spreads", "Sweets", "Dairy"]
+        },
+        {
+          "ask": "Which group is the smallest in the Eatwell Guide?",
+          "answer": "Oils and spreads",
+          "distractors": ["Fruit and veg", "Starchy carbs", "Protein foods"]
+        },
+        {
+          "ask": "How many cups or glasses of fluid a day does the Eatwell Guide suggest?",
+          "answer": "6 to 8",
+          "distractors": ["1 to 2", "15 to 20", "None"]
+        },
+        {
+          "ask": "Which food is high in fibre?",
+          "answer": "Brown rice",
+          "distractors": ["White sugar", "Butter", "Cola"]
+        },
+        {
+          "ask": "Eating lots of sugary food can harm your...",
+          "answer": "Teeth",
+          "distractors": ["Hair", "Eyebrows", "Nails"]
+        }
+      ]
+    },
+    {
+      "id": "dt-season-picker",
+      "title": "Season Picker",
+      "station": "compare",
+      "prop": "sun",
+      "skillName": "Knowing when foods are in season",
+      "strand": "seasonality-origins",
+      "statutoryRequirement": "Pupils should be taught to understand seasonality, and know where and how a variety of ingredients are grown, reared, caught and processed",
+      "instruction": "Think about the British year, then tap the answer.",
+      "hint": "Not quite. Think about what grows in the UK in each season.",
+      "questions": [
+        {
+          "ask": "When are British strawberries in season?",
+          "answer": "Summer",
+          "distractors": ["Winter", "Autumn", "December"]
+        },
+        {
+          "ask": "When are British apples picked?",
+          "answer": "Autumn",
+          "distractors": ["Spring", "Midsummer", "March"]
+        },
+        {
+          "ask": "Which vegetable is in season at Halloween?",
+          "answer": "Pumpkin",
+          "distractors": ["Asparagus", "New potatoes", "Strawberries"]
+        },
+        {
+          "ask": "When are Brussels sprouts in season?",
+          "answer": "Winter",
+          "distractors": ["Summer", "Spring", "June"]
+        },
+        {
+          "ask": "Which fruit cannot be grown outdoors in the UK?",
+          "answer": "Banana",
+          "distractors": ["Apple", "Pear", "Plum"]
+        },
+        {
+          "ask": "What does 'in season' mean?",
+          "answer": "Ready to harvest",
+          "distractors": ["Out of date", "Frozen", "Sold abroad"]
+        },
+        {
+          "ask": "One benefit of eating local, seasonal food is...",
+          "answer": "Less transport",
+          "distractors": ["More packaging", "More air miles", "Less flavour"]
+        },
+        {
+          "ask": "Where do bananas come from?",
+          "answer": "Hot countries",
+          "distractors": ["The Arctic", "UK farms", "Cold mountains"]
+        },
+        {
+          "ask": "When is British asparagus in season?",
+          "answer": "Late spring",
+          "distractors": ["Midwinter", "Autumn", "December"]
+        }
+      ]
+    },
+    {
+      "id": "dt-kitchen-skills",
+      "title": "Kitchen Skills",
+      "station": "mystery",
+      "prop": "egg",
+      "skillName": "Knowing food preparation skills",
+      "strand": "cooking-techniques",
+      "statutoryRequirement": "Pupils should be taught to prepare and cook a variety of predominantly savoury dishes using a range of cooking techniques",
+      "instruction": "Read the clues, then tap the skill or tool.",
+      "hint": "Not quite. Picture yourself in the kitchen doing the job.",
+      "questions": [
+        {
+          "ask": "My hand makes an arch over the food while the knife cuts underneath. What am I?",
+          "answer": "Bridge hold",
+          "distractors": ["Claw grip", "Kneading", "Whisking"]
+        },
+        {
+          "ask": "My fingertips tuck in as I slice past my knuckles. What am I?",
+          "answer": "Claw grip",
+          "distractors": ["Bridge hold", "Rubbing in", "Grating"]
+        },
+        {
+          "ask": "I have sharp holes and turn cheese into shreds. What am I?",
+          "answer": "Grater",
+          "distractors": ["Whisk", "Peeler", "Sieve"]
+        },
+        {
+          "ask": "I take the thin skin off carrots and potatoes. What am I?",
+          "answer": "Peeler",
+          "distractors": ["Grater", "Whisk", "Sieve"]
+        },
+        {
+          "ask": "I am pushing, folding and stretching bread dough. What am I?",
+          "answer": "Kneading",
+          "distractors": ["Grating", "Peeling", "Whisking"]
+        },
+        {
+          "ask": "I am rubbing fat into flour with your fingertips. What am I?",
+          "answer": "Rubbing in",
+          "distractors": ["Kneading", "Peeling", "Grating"]
+        },
+        {
+          "ask": "I have loops of wire and beat air into eggs and cream. What am I?",
+          "answer": "Whisk",
+          "distractors": ["Grater", "Peeler", "Sieve"]
+        },
+        {
+          "ask": "I am a mesh tool that takes lumps out of flour. What am I?",
+          "answer": "Sieve",
+          "distractors": ["Whisk", "Grater", "Peeler"]
+        },
+        {
+          "ask": "I am the first job before touching any food. What am I?",
+          "answer": "Washing hands",
+          "distractors": ["Tasting", "Chopping", "Serving"]
+        }
+      ]
+    }
+  ]
+}

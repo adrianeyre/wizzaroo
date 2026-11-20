@@ -1,0 +1,990 @@
+{
+  "yearGroup": 1,
+  "games": [
+    {
+      "id": "crystal-blend",
+      "title": "Crystal blend",
+      "skillId": "phonics.blend-sounds-into-words",
+      "skillName": "Blending sounds to read words",
+      "strand": "word-reading",
+      "curriculumObjective": "Read accurately by blending sounds in unfamiliar words containing GPCs that have been taught.",
+      "scene": "crystal-tiles",
+      "choiceProp": "gem",
+      "ask": "Which word do the sounds make?",
+      "instruction": "Say each sound on the tiles, blend them together, then tap the word they make.",
+      "hint": "Not quite. Say each sound slowly, then push them together to hear the word.",
+      "questions": [
+        {
+          "prompt": "ch|i|p",
+          "answer": "chip",
+          "distractors": ["chop", "chin", "ship"]
+        },
+        {
+          "prompt": "sh|o|p",
+          "answer": "shop",
+          "distractors": ["ship", "chop", "shot"]
+        },
+        {
+          "prompt": "th|i|n",
+          "answer": "thin",
+          "distractors": ["chin", "tin", "thing"]
+        },
+        {
+          "prompt": "l|igh|t",
+          "answer": "light",
+          "distractors": ["night", "lit", "fight"]
+        },
+        {
+          "prompt": "s|t|r|ee|t",
+          "answer": "street",
+          "distractors": ["sweet", "steep", "treat"]
+        },
+        {
+          "prompt": "r|ai|n",
+          "answer": "rain",
+          "distractors": ["ran", "train", "rail"]
+        },
+        {
+          "prompt": "b|oa|t",
+          "answer": "boat",
+          "distractors": ["bat", "coat", "boot"]
+        },
+        {
+          "prompt": "m|oo|n",
+          "answer": "moon",
+          "distractors": ["man", "soon", "moan"]
+        },
+        {
+          "prompt": "f|ar|m",
+          "answer": "farm",
+          "distractors": ["firm", "form", "harm"]
+        },
+        {
+          "prompt": "f|or|k",
+          "answer": "fork",
+          "distractors": ["fox", "park", "cork"]
+        },
+        {
+          "prompt": "c|oi|n",
+          "answer": "coin",
+          "distractors": ["con", "corn", "join"]
+        },
+        {
+          "prompt": "r|i|ng",
+          "answer": "ring",
+          "distractors": ["rig", "wing", "rang"]
+        },
+        {
+          "prompt": "t|r|ai|n",
+          "answer": "train",
+          "distractors": ["rain", "tray", "brain"]
+        },
+        {
+          "prompt": "f|r|o|g",
+          "answer": "frog",
+          "distractors": ["fog", "from", "flag"]
+        },
+        {
+          "prompt": "s|p|l|a|sh",
+          "answer": "splash",
+          "distractors": ["slash", "splat", "flash"]
+        },
+        {
+          "prompt": "ch|ur|ch",
+          "answer": "church",
+          "distractors": ["chick", "lunch", "chart"]
+        },
+        {
+          "prompt": "h|ear",
+          "answer": "hear",
+          "distractors": ["her", "hair", "near"]
+        },
+        {
+          "prompt": "ch|air",
+          "answer": "chair",
+          "distractors": ["hair", "chain", "cheer"]
+        }
+      ]
+    },
+    {
+      "id": "real-or-alien",
+      "title": "Real or alien?",
+      "skillId": "phonics.read-real-and-alien-words",
+      "skillName": "Reading real and made-up words",
+      "strand": "word-reading",
+      "curriculumObjective": "Apply phonic knowledge and skills as the route to decode words, reading accurately by blending sounds in unfamiliar words containing taught GPCs.",
+      "scene": "crystal-orb",
+      "choiceProp": "orb",
+      "ask": "Is it a real word or an alien word?",
+      "instruction": "Sound out the word in the orb. Is it a real word, or an alien word?",
+      "hint": "Nearly! Blend the sounds, then ask yourself if you know what the word means.",
+      "questions": [
+        {
+          "prompt": "frog",
+          "answer": "real word",
+          "distractors": ["alien word"]
+        },
+        {
+          "prompt": "vap",
+          "answer": "alien word",
+          "distractors": ["real word"]
+        },
+        {
+          "prompt": "shop",
+          "answer": "real word",
+          "distractors": ["alien word"]
+        },
+        {
+          "prompt": "thrund",
+          "answer": "alien word",
+          "distractors": ["real word"]
+        },
+        {
+          "prompt": "rain",
+          "answer": "real word",
+          "distractors": ["alien word"]
+        },
+        {
+          "prompt": "zort",
+          "answer": "alien word",
+          "distractors": ["real word"]
+        },
+        {
+          "prompt": "jump",
+          "answer": "real word",
+          "distractors": ["alien word"]
+        },
+        {
+          "prompt": "chim",
+          "answer": "alien word",
+          "distractors": ["real word"]
+        },
+        {
+          "prompt": "night",
+          "answer": "real word",
+          "distractors": ["alien word"]
+        },
+        {
+          "prompt": "terg",
+          "answer": "alien word",
+          "distractors": ["real word"]
+        },
+        {
+          "prompt": "coin",
+          "answer": "real word",
+          "distractors": ["alien word"]
+        },
+        {
+          "prompt": "spron",
+          "answer": "alien word",
+          "distractors": ["real word"]
+        },
+        {
+          "prompt": "sheep",
+          "answer": "real word",
+          "distractors": ["alien word"]
+        },
+        {
+          "prompt": "quemp",
+          "answer": "alien word",
+          "distractors": ["real word"]
+        },
+        {
+          "prompt": "storm",
+          "answer": "real word",
+          "distractors": ["alien word"]
+        },
+        {
+          "prompt": "nusk",
+          "answer": "alien word",
+          "distractors": ["real word"]
+        }
+      ]
+    },
+    {
+      "id": "sound-counter",
+      "title": "Sound counter",
+      "skillId": "phonics.count-sounds-in-words",
+      "skillName": "Counting the sounds in a word",
+      "strand": "spelling",
+      "curriculumObjective": "Spell words containing each of the 40+ phonemes already taught, by segmenting spoken words into phonemes.",
+      "scene": "obelisk",
+      "choiceProp": "runestone",
+      "ask": "How many sounds are in this word?",
+      "instruction": "Say the word and count its sounds. Letters that make one sound together count once.",
+      "hint": "Not quite. Count sounds, not letters: sh, ee and igh each make just one sound.",
+      "questions": [
+        {
+          "prompt": "ship",
+          "answer": "3",
+          "distractors": ["2", "4", "5"]
+        },
+        {
+          "prompt": "night",
+          "answer": "3",
+          "distractors": ["2", "4", "5"]
+        },
+        {
+          "prompt": "frog",
+          "answer": "4",
+          "distractors": ["3", "5", "2"]
+        },
+        {
+          "prompt": "splash",
+          "answer": "5",
+          "distractors": ["3", "4", "6"]
+        },
+        {
+          "prompt": "at",
+          "answer": "2",
+          "distractors": ["3", "4", "5"]
+        },
+        {
+          "prompt": "chip",
+          "answer": "3",
+          "distractors": ["2", "4", "5"]
+        },
+        {
+          "prompt": "moon",
+          "answer": "3",
+          "distractors": ["2", "4", "5"]
+        },
+        {
+          "prompt": "jump",
+          "answer": "4",
+          "distractors": ["3", "5", "2"]
+        },
+        {
+          "prompt": "train",
+          "answer": "4",
+          "distractors": ["3", "5", "2"]
+        },
+        {
+          "prompt": "strong",
+          "answer": "5",
+          "distractors": ["3", "4", "6"]
+        },
+        {
+          "prompt": "sheep",
+          "answer": "3",
+          "distractors": ["2", "4", "5"]
+        },
+        {
+          "prompt": "stamp",
+          "answer": "5",
+          "distractors": ["3", "4", "6"]
+        },
+        {
+          "prompt": "in",
+          "answer": "2",
+          "distractors": ["3", "4", "5"]
+        },
+        {
+          "prompt": "tent",
+          "answer": "4",
+          "distractors": ["3", "5", "2"]
+        },
+        {
+          "prompt": "sprint",
+          "answer": "6",
+          "distractors": ["4", "5", "3"]
+        },
+        {
+          "prompt": "light",
+          "answer": "3",
+          "distractors": ["2", "4", "5"]
+        }
+      ]
+    },
+    {
+      "id": "digraph-dig",
+      "title": "Digraph dig",
+      "skillId": "phonics.spot-digraphs-in-words",
+      "skillName": "Spotting letter teams that make one sound",
+      "strand": "word-reading",
+      "curriculumObjective": "Respond speedily with the correct sound to graphemes (letters or groups of letters) for all 40+ phonemes, including digraphs and trigraphs.",
+      "scene": "geode",
+      "choiceProp": "shard",
+      "ask": "Which letter team is in this word?",
+      "instruction": "Look closely at the word and tap the letter team you can find inside it.",
+      "hint": "Not quite. Look for two or three letters side by side that make one sound.",
+      "questions": [
+        {
+          "prompt": "chop",
+          "answer": "ch",
+          "distractors": ["sh", "th", "ng"]
+        },
+        {
+          "prompt": "moon",
+          "answer": "oo",
+          "distractors": ["oa", "ee", "ai"]
+        },
+        {
+          "prompt": "light",
+          "answer": "igh",
+          "distractors": ["ai", "oo", "ar"]
+        },
+        {
+          "prompt": "rain",
+          "answer": "ai",
+          "distractors": ["ee", "oa", "or"]
+        },
+        {
+          "prompt": "ship",
+          "answer": "sh",
+          "distractors": ["ch", "th", "ck"]
+        },
+        {
+          "prompt": "thin",
+          "answer": "th",
+          "distractors": ["sh", "ch", "ng"]
+        },
+        {
+          "prompt": "ring",
+          "answer": "ng",
+          "distractors": ["ck", "sh", "th"]
+        },
+        {
+          "prompt": "duck",
+          "answer": "ck",
+          "distractors": ["ng", "ch", "qu"]
+        },
+        {
+          "prompt": "queen",
+          "answer": "qu",
+          "distractors": ["ch", "sh", "ck"]
+        },
+        {
+          "prompt": "boat",
+          "answer": "oa",
+          "distractors": ["ai", "oo", "ee"]
+        },
+        {
+          "prompt": "farm",
+          "answer": "ar",
+          "distractors": ["or", "ur", "er"]
+        },
+        {
+          "prompt": "fork",
+          "answer": "or",
+          "distractors": ["ar", "ur", "oa"]
+        },
+        {
+          "prompt": "burn",
+          "answer": "ur",
+          "distractors": ["ar", "or", "ee"]
+        },
+        {
+          "prompt": "cow",
+          "answer": "ow",
+          "distractors": ["oi", "oa", "ar"]
+        },
+        {
+          "prompt": "coin",
+          "answer": "oi",
+          "distractors": ["ow", "oa", "ai"]
+        },
+        {
+          "prompt": "hear",
+          "answer": "ear",
+          "distractors": ["air", "oa", "igh"]
+        },
+        {
+          "prompt": "chair",
+          "answer": "air",
+          "distractors": ["ear", "oa", "igh"]
+        },
+        {
+          "prompt": "sheep",
+          "answer": "ee",
+          "distractors": ["ai", "oa", "oo"]
+        }
+      ]
+    },
+    {
+      "id": "magic-e",
+      "title": "Magic e",
+      "skillId": "phonics.split-digraph-magic-e",
+      "skillName": "Using magic e (split digraphs)",
+      "strand": "spelling",
+      "curriculumObjective": "Spell words with the split digraphs a-e, e-e, i-e, o-e and u-e (English Appendix 1), e.g. made, these, time, home, tube.",
+      "scene": "rune-ring",
+      "choiceProp": "diamond",
+      "ask": "Which word does magic e make?",
+      "instruction": "Add the magic e to the end of the word and tap the new word it makes.",
+      "hint": "Nearly! Magic e goes on the end and makes the vowel say its name, like cap to cape.",
+      "questions": [
+        {
+          "prompt": "cap + e",
+          "answer": "cape",
+          "distractors": ["cap", "caep", "kape"]
+        },
+        {
+          "prompt": "tap + e",
+          "answer": "tape",
+          "distractors": ["tap", "taep", "tayp"]
+        },
+        {
+          "prompt": "mad + e",
+          "answer": "made",
+          "distractors": ["mad", "maed", "mayd"]
+        },
+        {
+          "prompt": "can + e",
+          "answer": "cane",
+          "distractors": ["can", "caen", "kane"]
+        },
+        {
+          "prompt": "them + e",
+          "answer": "theme",
+          "distractors": ["them", "theem", "theam"]
+        },
+        {
+          "prompt": "pin + e",
+          "answer": "pine",
+          "distractors": ["pin", "pien", "pyne"]
+        },
+        {
+          "prompt": "kit + e",
+          "answer": "kite",
+          "distractors": ["kit", "kiet", "kyte"]
+        },
+        {
+          "prompt": "fin + e",
+          "answer": "fine",
+          "distractors": ["fin", "fien", "fyne"]
+        },
+        {
+          "prompt": "hop + e",
+          "answer": "hope",
+          "distractors": ["hop", "hoep", "hoap"]
+        },
+        {
+          "prompt": "not + e",
+          "answer": "note",
+          "distractors": ["not", "noet", "noat"]
+        },
+        {
+          "prompt": "rod + e",
+          "answer": "rode",
+          "distractors": ["rod", "roed", "roade"]
+        },
+        {
+          "prompt": "cub + e",
+          "answer": "cube",
+          "distractors": ["cub", "cueb", "kube"]
+        },
+        {
+          "prompt": "tub + e",
+          "answer": "tube",
+          "distractors": ["tub", "tueb", "toob"]
+        },
+        {
+          "prompt": "cut + e",
+          "answer": "cute",
+          "distractors": ["cut", "cuet", "kute"]
+        },
+        {
+          "prompt": "slid + e",
+          "answer": "slide",
+          "distractors": ["slid", "slied", "slyde"]
+        }
+      ]
+    },
+    {
+      "id": "tricky-words",
+      "title": "Tricky words",
+      "skillId": "phonics.read-common-exception-words",
+      "skillName": "Reading tricky (common exception) words",
+      "strand": "word-reading",
+      "curriculumObjective": "Read common exception words, noting unusual correspondences between spelling and sound and where these occur in the word.",
+      "scene": "stone-tablet",
+      "choiceProp": "cluster",
+      "ask": "Which tricky word fits the gap?",
+      "instruction": "Read the sentence and tap the tricky word that fills the gap.",
+      "hint": "Not quite. Read the whole sentence with each word in the gap. Which one makes sense?",
+      "questions": [
+        {
+          "prompt": "I went ___ school.",
+          "answer": "to",
+          "distractors": ["do", "of", "he"]
+        },
+        {
+          "prompt": "___ dog is big.",
+          "answer": "The",
+          "distractors": ["Was", "Of", "Said"]
+        },
+        {
+          "prompt": "She ___ hello to me.",
+          "answer": "said",
+          "distractors": ["was", "are", "of"]
+        },
+        {
+          "prompt": "We ___ going to the park.",
+          "answer": "are",
+          "distractors": ["is", "has", "his"]
+        },
+        {
+          "prompt": "I have ___ cat and a dog.",
+          "answer": "a",
+          "distractors": ["of", "to", "is"]
+        },
+        {
+          "prompt": "Where ___ you?",
+          "answer": "are",
+          "distractors": ["is", "was", "of"]
+        },
+        {
+          "prompt": "Push the door, do not ___ it.",
+          "answer": "pull",
+          "distractors": ["full", "of", "said"]
+        },
+        {
+          "prompt": "My cup is ___ of milk.",
+          "answer": "full",
+          "distractors": ["pull", "push", "put"]
+        },
+        {
+          "prompt": "He is my best ___.",
+          "answer": "friend",
+          "distractors": ["said", "come", "once"]
+        },
+        {
+          "prompt": "I ___ my mum.",
+          "answer": "love",
+          "distractors": ["was", "of", "the"]
+        },
+        {
+          "prompt": "Come and sit ___ me.",
+          "answer": "by",
+          "distractors": ["my", "no", "so"]
+        },
+        {
+          "prompt": "There is ___ cake left.",
+          "answer": "one",
+          "distractors": ["once", "are", "said"]
+        },
+        {
+          "prompt": "We go to ___ every day.",
+          "answer": "school",
+          "distractors": ["once", "were", "said"]
+        },
+        {
+          "prompt": "___ is Monday.",
+          "answer": "Today",
+          "distractors": ["Said", "Were", "Of"]
+        },
+        {
+          "prompt": "___ is your coat?",
+          "answer": "Where",
+          "distractors": ["Said", "Of", "Once"]
+        },
+        {
+          "prompt": "The ___ has a red door.",
+          "answer": "house",
+          "distractors": ["said", "are", "put"]
+        },
+        {
+          "prompt": "Please ___ your hat on.",
+          "answer": "put",
+          "distractors": ["of", "are", "said"]
+        },
+        {
+          "prompt": "They ___ in the garden.",
+          "answer": "were",
+          "distractors": ["is", "has", "his"]
+        }
+      ]
+    },
+    {
+      "id": "one-or-more",
+      "title": "One or more",
+      "skillId": "phonics.plurals-s-and-es",
+      "skillName": "Adding -s and -es to make plurals",
+      "strand": "spelling",
+      "curriculumObjective": "Use the spelling rule for adding -s or -es as the plural marker for nouns.",
+      "scene": "minecart",
+      "choiceProp": "gem",
+      "ask": "Which word means more than one?",
+      "instruction": "Read the words in the minecart and tap the right spelling for more than one.",
+      "hint": "Nearly! If you can hear an extra sound on the end, like fox to foxes, add -es.",
+      "questions": [
+        {
+          "prompt": "one fox, two ___",
+          "answer": "foxes",
+          "distractors": ["foxs", "fox", "foxis"]
+        },
+        {
+          "prompt": "one cat, two ___",
+          "answer": "cats",
+          "distractors": ["cates", "cat", "catz"]
+        },
+        {
+          "prompt": "one dog, two ___",
+          "answer": "dogs",
+          "distractors": ["doges", "dog", "dogz"]
+        },
+        {
+          "prompt": "one bus, two ___",
+          "answer": "buses",
+          "distractors": ["buss", "bus", "busis"]
+        },
+        {
+          "prompt": "one dish, two ___",
+          "answer": "dishes",
+          "distractors": ["dishs", "dish", "dishis"]
+        },
+        {
+          "prompt": "one box, two ___",
+          "answer": "boxes",
+          "distractors": ["boxs", "box", "boxis"]
+        },
+        {
+          "prompt": "one hat, two ___",
+          "answer": "hats",
+          "distractors": ["hatz", "hat", "hatses"]
+        },
+        {
+          "prompt": "one church, two ___",
+          "answer": "churches",
+          "distractors": ["churchs", "church", "churchis"]
+        },
+        {
+          "prompt": "one brush, two ___",
+          "answer": "brushes",
+          "distractors": ["brushs", "brush", "brushis"]
+        },
+        {
+          "prompt": "one wish, two ___",
+          "answer": "wishes",
+          "distractors": ["wishs", "wish", "wishis"]
+        },
+        {
+          "prompt": "one frog, two ___",
+          "answer": "frogs",
+          "distractors": ["froges", "frog", "frogz"]
+        },
+        {
+          "prompt": "one bench, two ___",
+          "answer": "benches",
+          "distractors": ["benchs", "bench", "benchis"]
+        },
+        {
+          "prompt": "one egg, two ___",
+          "answer": "eggs",
+          "distractors": ["egges", "egg", "eggz"]
+        },
+        {
+          "prompt": "one pen, two ___",
+          "answer": "pens",
+          "distractors": ["pen", "penz", "pennes"]
+        },
+        {
+          "prompt": "one kiss, two ___",
+          "answer": "kisses",
+          "distractors": ["kisss", "kiss", "kissis"]
+        },
+        {
+          "prompt": "one match, two ___",
+          "answer": "matches",
+          "distractors": ["matchs", "match", "matchis"]
+        }
+      ]
+    },
+    {
+      "id": "word-endings",
+      "title": "Word endings",
+      "skillId": "phonics.add-ing-ed-er-est",
+      "skillName": "Adding -ing, -ed, -er and -est endings",
+      "strand": "spelling",
+      "curriculumObjective": "Use the spelling rules for adding the endings -ing, -ed, -er and -est where no change is needed in the spelling of root words.",
+      "scene": "gem-chest",
+      "choiceProp": "runestone",
+      "ask": "Which is the right spelling?",
+      "instruction": "Add the ending to the word, then tap the word that is spelt correctly.",
+      "hint": "Not quite. Keep the whole word just as it is and put the ending straight on.",
+      "questions": [
+        {
+          "prompt": "jump + ed",
+          "answer": "jumped",
+          "distractors": ["jumpt", "jumpd", "jumpid"]
+        },
+        {
+          "prompt": "jump + ing",
+          "answer": "jumping",
+          "distractors": ["jumpin", "jumpeng", "jumpping"]
+        },
+        {
+          "prompt": "jump + er",
+          "answer": "jumper",
+          "distractors": ["jumpa", "jumpr", "jumpur"]
+        },
+        {
+          "prompt": "hunt + ed",
+          "answer": "hunted",
+          "distractors": ["huntd", "huntid", "huntted"]
+        },
+        {
+          "prompt": "hunt + er",
+          "answer": "hunter",
+          "distractors": ["huntr", "huntar", "hunta"]
+        },
+        {
+          "prompt": "buzz + er",
+          "answer": "buzzer",
+          "distractors": ["buzza", "buzzr", "buzer"]
+        },
+        {
+          "prompt": "quick + er",
+          "answer": "quicker",
+          "distractors": ["quickr", "quicka", "quiker"]
+        },
+        {
+          "prompt": "quick + est",
+          "answer": "quickest",
+          "distractors": ["quickist", "quikest", "quickst"]
+        },
+        {
+          "prompt": "grand + est",
+          "answer": "grandest",
+          "distractors": ["grandist", "grandst", "grandust"]
+        },
+        {
+          "prompt": "fast + er",
+          "answer": "faster",
+          "distractors": ["fastr", "fasta", "fastur"]
+        },
+        {
+          "prompt": "help + ing",
+          "answer": "helping",
+          "distractors": ["helpin", "helpeng", "helpping"]
+        },
+        {
+          "prompt": "play + ed",
+          "answer": "played",
+          "distractors": ["playd", "playt", "plaied"]
+        },
+        {
+          "prompt": "sing + er",
+          "answer": "singer",
+          "distractors": ["singa", "singr", "singur"]
+        },
+        {
+          "prompt": "long + est",
+          "answer": "longest",
+          "distractors": ["longist", "longst", "longust"]
+        },
+        {
+          "prompt": "cook + ing",
+          "answer": "cooking",
+          "distractors": ["cookin", "cookeng", "cookking"]
+        },
+        {
+          "prompt": "kick + ed",
+          "answer": "kicked",
+          "distractors": ["kickt", "kickd", "kickid"]
+        }
+      ]
+    },
+    {
+      "id": "un-words",
+      "title": "Un- words",
+      "skillId": "phonics.prefix-un",
+      "skillName": "Using the prefix un-",
+      "strand": "spelling",
+      "curriculumObjective": "Use the prefix un- (it changes the meaning of verbs and adjectives to the opposite, e.g. unkind, undo).",
+      "scene": "lantern",
+      "choiceProp": "orb",
+      "ask": "Which un- word matches?",
+      "instruction": "Read the lantern, then tap the un- word that means the same thing.",
+      "hint": "Nearly! Un- goes at the start of the word and means not, or the opposite.",
+      "questions": [
+        {
+          "prompt": "not kind",
+          "answer": "unkind",
+          "distractors": ["inkind", "dekind", "kindun"]
+        },
+        {
+          "prompt": "not happy",
+          "answer": "unhappy",
+          "distractors": ["inhappy", "dehappy", "happyun"]
+        },
+        {
+          "prompt": "not fair",
+          "answer": "unfair",
+          "distractors": ["infair", "defair", "fairun"]
+        },
+        {
+          "prompt": "not well",
+          "answer": "unwell",
+          "distractors": ["inwell", "dewell", "wellun"]
+        },
+        {
+          "prompt": "not safe",
+          "answer": "unsafe",
+          "distractors": ["insafe", "desafe", "safeun"]
+        },
+        {
+          "prompt": "not tidy",
+          "answer": "untidy",
+          "distractors": ["intidy", "detidy", "tidyun"]
+        },
+        {
+          "prompt": "not lucky",
+          "answer": "unlucky",
+          "distractors": ["inlucky", "delucky", "luckyun"]
+        },
+        {
+          "prompt": "not fit",
+          "answer": "unfit",
+          "distractors": ["infit", "defit", "fitun"]
+        },
+        {
+          "prompt": "opposite of do",
+          "answer": "undo",
+          "distractors": ["indo", "dedo", "doun"]
+        },
+        {
+          "prompt": "opposite of lock",
+          "answer": "unlock",
+          "distractors": ["inlock", "delock", "lockun"]
+        },
+        {
+          "prompt": "opposite of load",
+          "answer": "unload",
+          "distractors": ["inload", "deload", "loadun"]
+        },
+        {
+          "prompt": "opposite of zip",
+          "answer": "unzip",
+          "distractors": ["inzip", "dezip", "zipun"]
+        },
+        {
+          "prompt": "opposite of pack",
+          "answer": "unpack",
+          "distractors": ["inpack", "depack", "packun"]
+        },
+        {
+          "prompt": "opposite of tie",
+          "answer": "untie",
+          "distractors": ["intie", "detie", "tieun"]
+        }
+      ]
+    },
+    {
+      "id": "sound-spotter",
+      "title": "Sound spotter",
+      "skillId": "phonics.spot-alternative-spellings",
+      "skillName": "Hearing one sound spelt different ways",
+      "strand": "spelling",
+      "curriculumObjective": "Know the different spellings of vowel sounds taught in English Appendix 1, e.g. ai/ay/a-e, ee/ea/e-e, igh/ie/i-e/y, oa/ow/o-e.",
+      "scene": "open-book",
+      "choiceProp": "shard",
+      "ask": "Which word has this sound?",
+      "instruction": "Read the sound in the book, then tap the word that has that sound in it.",
+      "hint": "Not quite. Say each word out loud. The sound can be spelt in a different way.",
+      "questions": [
+        {
+          "prompt": "the ai sound, as in rain",
+          "answer": "play",
+          "distractors": ["boat", "tree", "night"]
+        },
+        {
+          "prompt": "the ai sound, as in day",
+          "answer": "cake",
+          "distractors": ["moon", "bird", "coin"]
+        },
+        {
+          "prompt": "the ee sound, as in tree",
+          "answer": "seat",
+          "distractors": ["boat", "shirt", "cow"]
+        },
+        {
+          "prompt": "the ee sound, as in sea",
+          "answer": "these",
+          "distractors": ["this", "hot", "fork"]
+        },
+        {
+          "prompt": "the igh sound, as in night",
+          "answer": "pie",
+          "distractors": ["play", "toe", "moon"]
+        },
+        {
+          "prompt": "the igh sound, as in tie",
+          "answer": "bike",
+          "distractors": ["back", "boat", "beak"]
+        },
+        {
+          "prompt": "the igh sound, as in light",
+          "answer": "fly",
+          "distractors": ["flew", "flow", "flea"]
+        },
+        {
+          "prompt": "the oa sound, as in boat",
+          "answer": "snow",
+          "distractors": ["cow", "sun", "seed"]
+        },
+        {
+          "prompt": "the oa sound, as in snow",
+          "answer": "home",
+          "distractors": ["hut", "hair", "her"]
+        },
+        {
+          "prompt": "the oo sound, as in moon",
+          "answer": "blue",
+          "distractors": ["blow", "bell", "black"]
+        },
+        {
+          "prompt": "the oo sound, as in zoo",
+          "answer": "new",
+          "distractors": ["now", "nap", "near"]
+        },
+        {
+          "prompt": "the oo sound, as in food",
+          "answer": "flute",
+          "distractors": ["flat", "flit", "float"]
+        },
+        {
+          "prompt": "the ur sound, as in burn",
+          "answer": "bird",
+          "distractors": ["bed", "bad", "boat"]
+        },
+        {
+          "prompt": "the ur sound, as in turn",
+          "answer": "her",
+          "distractors": ["hat", "hot", "hay"]
+        },
+        {
+          "prompt": "the or sound, as in fork",
+          "answer": "saw",
+          "distractors": ["sat", "sea", "sun"]
+        },
+        {
+          "prompt": "the or sound, as in short",
+          "answer": "claw",
+          "distractors": ["clay", "clue", "clap"]
+        },
+        {
+          "prompt": "the ow sound, as in cow",
+          "answer": "out",
+          "distractors": ["oat", "eat", "it"]
+        },
+        {
+          "prompt": "the ow sound, as in owl",
+          "answer": "loud",
+          "distractors": ["load", "lid", "led"]
+        },
+        {
+          "prompt": "the oi sound, as in coin",
+          "answer": "boy",
+          "distractors": ["bay", "bee", "by"]
+        },
+        {
+          "prompt": "the oi sound, as in toy",
+          "answer": "soil",
+          "distractors": ["sail", "seal", "sell"]
+        }
+      ]
+    }
+  ]
+}

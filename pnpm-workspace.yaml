@@ -1,0 +1,12 @@
+auditConfig:
+  ignoreGhsas:
+    - GHSA-fc5q-39xc-vjpf
+# @adrianeyre/email-client is published by its own repo, so a new version is taken at once rather than after the
+# minimum release age.
+minimumReleaseAgeExclude:
+  - "@adrianeyre/email-client@0.1.0"
+allowBuilds:
+  esbuild: true
+  cpu-features: false
+  protobufjs: false
+  ssh2: false

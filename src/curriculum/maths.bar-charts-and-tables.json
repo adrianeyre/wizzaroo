@@ -1,0 +1,8 @@
+{
+  "id": "maths.bar-charts-and-tables",
+  "name": "Reading bar charts, pictograms and tables",
+  "subject": "maths",
+  "yearGroup": 3,
+  "strand": "statistics",
+  "prerequisites": ["maths.tally-charts-and-pictograms"]
+}

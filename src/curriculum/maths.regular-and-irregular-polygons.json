@@ -1,0 +1,8 @@
+{
+  "id": "maths.regular-and-irregular-polygons",
+  "name": "Regular and irregular polygons",
+  "subject": "maths",
+  "yearGroup": 5,
+  "strand": "geometry-properties-of-shapes",
+  "prerequisites": ["maths.classify-triangles-and-quadrilaterals"]
+}

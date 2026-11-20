@@ -1,0 +1,718 @@
+{
+  "subject": "languages",
+  "yearGroup": 6,
+  "games": [
+    {
+      "id": "french-clock-tower",
+      "title": "Clock Tower",
+      "station": "compare",
+      "prop": "moon",
+      "skillName": "Telling the time in French",
+      "strand": "reading-words-and-phrases",
+      "statutoryRequirement": "Pupils should be taught to read carefully and show understanding of words, phrases and simple writing",
+      "instruction": "Read the time in French, then tap the matching time.",
+      "hint": "Not quite. Find the hour first, then look for \"et quart\", \"et demie\" or \"moins\". Try again.",
+      "questions": [
+        {
+          "ask": "\"Il est trois heures.\" What time is it?",
+          "answer": "3:00",
+          "distractors": ["2:00", "4:00", "3:30"]
+        },
+        {
+          "ask": "\"Il est huit heures et demie.\" What time is it?",
+          "answer": "8:30",
+          "distractors": ["8:15", "8:45", "9:30"]
+        },
+        {
+          "ask": "\"Il est dix heures et quart.\" What time is it?",
+          "answer": "10:15",
+          "distractors": ["10:45", "10:30", "11:15"]
+        },
+        {
+          "ask": "\"Il est cinq heures moins le quart.\" What time is it?",
+          "answer": "4:45",
+          "distractors": ["5:45", "5:15", "4:15"]
+        },
+        {
+          "ask": "\"Il est midi.\" What time is it?",
+          "answer": "Midday",
+          "distractors": ["Midnight", "12:30", "1:00"]
+        },
+        {
+          "ask": "\"Il est minuit.\" What time is it?",
+          "answer": "Midnight",
+          "distractors": ["Midday", "11:00", "12:30"]
+        },
+        {
+          "ask": "What does \"Quelle heure est-il ?\" mean?",
+          "answer": "What time is it?",
+          "distractors": ["How old are you?", "What day is it?", "Where is it?"]
+        },
+        {
+          "ask": "\"Il est sept heures vingt.\" What time is it?",
+          "answer": "7:20",
+          "distractors": ["7:40", "8:20", "7:12"]
+        },
+        {
+          "ask": "\"Il est neuf heures moins dix.\" What time is it?",
+          "answer": "8:50",
+          "distractors": ["9:10", "9:50", "8:10"]
+        }
+      ]
+    },
+    {
+      "id": "french-town-trail",
+      "title": "Town Trail",
+      "station": "mystery",
+      "prop": "rock",
+      "skillName": "Places in a French town",
+      "strand": "vocabulary-and-dictionary",
+      "statutoryRequirement": "Pupils should be taught to broaden their vocabulary and develop their ability to understand new words that are introduced into familiar written material, including through using a dictionary",
+      "instruction": "Read the French clue, then tap the place.",
+      "hint": "Not quite. Find the verb you know in the clue, such as \"nage\" or \"achète\", then try again.",
+      "questions": [
+        {
+          "ask": "Clue: on achète du pain et des croissants ici. What am I?",
+          "answer": "la boulangerie",
+          "distractors": ["la piscine", "la bibliothèque", "la gare"]
+        },
+        {
+          "ask": "Clue: on nage ici. What am I?",
+          "answer": "la piscine",
+          "distractors": ["la gare", "la poste", "la boulangerie"]
+        },
+        {
+          "ask": "Clue: on prend le train ici. What am I?",
+          "answer": "la gare",
+          "distractors": ["le cinéma", "l'église", "le musée"]
+        },
+        {
+          "ask": "Clue: on emprunte des livres ici. What am I?",
+          "answer": "la bibliothèque",
+          "distractors": ["la librairie", "la boulangerie", "la piscine"]
+        },
+        {
+          "ask": "Clue: on regarde des films ici. What am I?",
+          "answer": "le cinéma",
+          "distractors": ["le marché", "la gare", "le château"]
+        },
+        {
+          "ask": "Clue: on envoie des lettres ici. What am I?",
+          "answer": "la poste",
+          "distractors": ["la gare", "le stade", "l'hôpital"]
+        },
+        {
+          "ask": "Clue: les médecins travaillent ici. What am I?",
+          "answer": "l'hôpital",
+          "distractors": ["l'école", "le parc", "la piscine"]
+        },
+        {
+          "ask": "Clue: on regarde des matchs de foot ici. What am I?",
+          "answer": "le stade",
+          "distractors": ["la plage", "le cinéma", "la poste"]
+        },
+        {
+          "ask": "Clue: on achète des fruits et des légumes dehors ici. What am I?",
+          "answer": "le marché",
+          "distractors": ["la gare", "la piscine", "l'église"]
+        }
+      ]
+    },
+    {
+      "id": "french-francophone-facts",
+      "title": "Francophone Facts",
+      "station": "true-false",
+      "prop": "planet",
+      "skillName": "Reading about French-speaking countries",
+      "strand": "reading-words-and-phrases",
+      "statutoryRequirement": "Pupils should be taught to read carefully and show understanding of words, phrases and simple writing",
+      "instruction": "Read the French sentence carefully, then tap True or False.",
+      "hint": "Not quite. Find the words you know in the sentence, then think about the fact. Try again.",
+      "questions": [
+        {
+          "ask": "Paris est la capitale de la France.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "On parle français au Québec, au Canada.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "La tour Eiffel est à Londres.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Le drapeau français est bleu, blanc et rouge.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "On parle français en Belgique et en Suisse.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Le 14 juillet est la fête nationale française.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "La capitale de la Belgique est Paris.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Le français est une langue officielle au Sénégal.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "La Seine est une montagne.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Le mont Blanc est une rivière.",
+          "answer": "False",
+          "distractors": ["True"]
+        }
+      ]
+    },
+    {
+      "id": "french-sound-sleuth",
+      "title": "Sound Sleuth",
+      "station": "mystery",
+      "prop": "tuning-fork",
+      "skillName": "Linking French spelling, sound and meaning",
+      "strand": "sounds-and-spelling",
+      "statutoryRequirement": "Pupils should be taught to explore the patterns and sounds of language through songs and rhymes and link the spelling, sound and meaning of words",
+      "instruction": "Read the sound and spelling clues, then tap the word.",
+      "hint": "Not quite. Think about how the letters sound in French, then try again.",
+      "questions": [
+        {
+          "ask": "I rhyme with \"gâteau\" and I float on water. What am I?",
+          "answer": "un bateau",
+          "distractors": ["un avion", "un train", "une voiture"]
+        },
+        {
+          "ask": "I end in -tion, said like \"see-on\", and I mean swimming. What am I?",
+          "answer": "la natation",
+          "distractors": ["la piscine", "la station", "la gare"]
+        },
+        {
+          "ask": "I have the \"oi\" sound and I shine in the night sky. What am I?",
+          "answer": "une étoile",
+          "distractors": ["la lune", "le soleil", "un nuage"]
+        },
+        {
+          "ask": "My c has a cedilla (ç), so it sounds like s. I mean lesson. What am I?",
+          "answer": "une leçon",
+          "distractors": ["un livre", "une école", "une règle"]
+        },
+        {
+          "ask": "I have the \"ou\" sound and I mean red. What am I?",
+          "answer": "rouge",
+          "distractors": ["rose", "vert", "noir"]
+        },
+        {
+          "ask": "My x at the end is silent and I mean two. What am I?",
+          "answer": "deux",
+          "distractors": ["dix", "douze", "trois"]
+        },
+        {
+          "ask": "I have the \"an\" sound spelt \"en\", and I mean child. What am I?",
+          "answer": "un enfant",
+          "distractors": ["un garçon", "une fille", "un bébé"]
+        },
+        {
+          "ask": "My h is silent and I am a place to stay on holiday. What am I?",
+          "answer": "un hôtel",
+          "distractors": ["une maison", "une gare", "un château"]
+        },
+        {
+          "ask": "My d at the end is silent and I mean big. What am I?",
+          "answer": "grand",
+          "distractors": ["petit", "gros", "long"]
+        }
+      ]
+    },
+    {
+      "id": "french-green-mouse",
+      "title": "The Green Mouse",
+      "station": "compare",
+      "prop": "flower",
+      "skillName": "The rhyme Une souris verte",
+      "strand": "stories-songs-and-rhymes",
+      "statutoryRequirement": "Pupils should be taught to appreciate stories, songs, poems and rhymes in the language",
+      "instruction": "Read the line from the rhyme, then tap the right answer.",
+      "hint": "Not quite. Find a word you know in the line, then try again.",
+      "questions": [
+        {
+          "ask": "Finish the line: \"Une souris verte qui courait dans l'…\"",
+          "answer": "herbe",
+          "distractors": ["eau", "huile", "maison"]
+        },
+        {
+          "ask": "In \"Une souris verte\", what colour is the mouse?",
+          "answer": "green",
+          "distractors": ["grey", "white", "brown"]
+        },
+        {
+          "ask": "\"Qui courait dans l'herbe\" tells us the mouse was …",
+          "answer": "running in grass",
+          "distractors": [
+            "sleeping in grass",
+            "eating grass",
+            "swimming in water"
+          ]
+        },
+        {
+          "ask": "\"Je l'attrape par la queue.\" I catch the mouse by its …",
+          "answer": "tail",
+          "distractors": ["ear", "nose", "paw"]
+        },
+        {
+          "ask": "\"Je la montre à ces messieurs.\" I show the mouse to …",
+          "answer": "these gentlemen",
+          "distractors": ["these ladies", "my mum", "the cats"]
+        },
+        {
+          "ask": "\"Trempez-la dans l'huile, trempez-la dans l'eau.\" Dip it in …",
+          "answer": "oil and water",
+          "distractors": ["milk and soup", "oil and milk", "water and juice"]
+        },
+        {
+          "ask": "At the end the mouse becomes \"un escargot tout chaud\". That is …",
+          "answer": "a hot snail",
+          "distractors": ["a cold snail", "a hot snack", "a green frog"]
+        },
+        {
+          "ask": "Which pair of words from the rhyme rhyme with each other?",
+          "answer": "eau and chaud",
+          "distractors": [
+            "souris and herbe",
+            "huile and queue",
+            "verte and eau"
+          ]
+        },
+        {
+          "ask": "Why is \"verte\" spelt with an e at the end in \"une souris verte\"?",
+          "answer": "souris is feminine",
+          "distractors": [
+            "souris is plural",
+            "it is a verb",
+            "it rhymes better"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "french-aller-faire",
+      "title": "Aller and Faire",
+      "station": "compare",
+      "prop": "battery",
+      "skillName": "The verbs aller and faire",
+      "strand": "grammar",
+      "statutoryRequirement": "Pupils should be taught to understand basic grammar appropriate to the language being studied, including (where relevant): feminine, masculine and neuter forms and the conjugation of high-frequency verbs; key features and patterns of the language; how to apply these, for instance, to build sentences; and how these differ from or are similar to English",
+      "instruction": "Read the sentence, then tap the right part of the verb.",
+      "hint": "Not quite. Is the verb \"aller\" (to go) or \"faire\" (to do), and who is doing it? Try again.",
+      "questions": [
+        {
+          "ask": "Use \"aller\": \"Je … au cinéma.\"",
+          "answer": "vais",
+          "distractors": ["vas", "va", "allons"]
+        },
+        {
+          "ask": "Use \"aller\": \"Tu … à la piscine ?\"",
+          "answer": "vas",
+          "distractors": ["vais", "va", "allez"]
+        },
+        {
+          "ask": "Use \"aller\": \"Nous … au parc.\"",
+          "answer": "allons",
+          "distractors": ["allez", "vont", "va"]
+        },
+        {
+          "ask": "Use \"aller\": \"Ils … à l'école.\"",
+          "answer": "vont",
+          "distractors": ["va", "allons", "vais"]
+        },
+        {
+          "ask": "Use \"faire\": \"Je … du vélo.\"",
+          "answer": "fais",
+          "distractors": ["fait", "faisons", "font"]
+        },
+        {
+          "ask": "Use \"faire\": \"Vous … vos devoirs ?\"",
+          "answer": "faites",
+          "distractors": ["faisez", "font", "faisons"]
+        },
+        {
+          "ask": "Use \"faire\": \"Elle … de la natation.\"",
+          "answer": "fait",
+          "distractors": ["fais", "font", "faites"]
+        },
+        {
+          "ask": "Use \"faire\": \"Nous … un gâteau.\"",
+          "answer": "faisons",
+          "distractors": ["faites", "font", "fais"]
+        },
+        {
+          "ask": "Use \"aller\": \"On … à la plage.\"",
+          "answer": "va",
+          "distractors": ["vont", "allons", "vais"]
+        },
+        {
+          "ask": "Use \"faire\": \"Ils … du ski.\"",
+          "answer": "font",
+          "distractors": ["faisent", "fait", "vont"]
+        }
+      ]
+    },
+    {
+      "id": "french-town-describer",
+      "title": "Town Describer",
+      "station": "compare",
+      "prop": "rock",
+      "skillName": "Describing places",
+      "strand": "describing",
+      "statutoryRequirement": "Pupils should be taught to describe people, places, things and actions orally and in writing",
+      "instruction": "Read the description, then tap the right answer.",
+      "hint": "Not quite. Look at the adjective and check if the noun is feminine. Try again.",
+      "questions": [
+        {
+          "ask": "In \"Dans ma ville, il y a un parc.\", what does \"il y a\" mean?",
+          "answer": "there is",
+          "distractors": ["he has", "it is", "I have"]
+        },
+        {
+          "ask": "Fill the gap for \"beautiful\": \"C'est une ville très …\"",
+          "answer": "belle",
+          "distractors": ["beau", "bel", "belles"]
+        },
+        {
+          "ask": "\"Mon village est petit et calme.\" The village is …",
+          "answer": "small and quiet",
+          "distractors": ["big and noisy", "small and busy", "old and quiet"]
+        },
+        {
+          "ask": "\"Il n'y a pas de cinéma.\" This means there is …",
+          "answer": "no cinema",
+          "distractors": ["a cinema", "a big cinema", "two cinemas"]
+        },
+        {
+          "ask": "\"La plage est près de la maison.\" The beach is …",
+          "answer": "near the house",
+          "distractors": [
+            "far from the house",
+            "in the house",
+            "behind the house"
+          ]
+        },
+        {
+          "ask": "\"Le château est vieux.\" The castle is …",
+          "answer": "old",
+          "distractors": ["new", "big", "pretty"]
+        },
+        {
+          "ask": "Which is right for \"a big house\"?",
+          "answer": "une grande maison",
+          "distractors": [
+            "une maison grande",
+            "un grand maison",
+            "une grand maison"
+          ]
+        },
+        {
+          "ask": "Which is right for \"an old church\"?",
+          "answer": "une vieille église",
+          "distractors": [
+            "un vieux église",
+            "une église vieux",
+            "une vieux église"
+          ]
+        },
+        {
+          "ask": "Which word makes \"La ville est …\" mean \"The town is lively\"?",
+          "answer": "animée",
+          "distractors": ["animé", "calme", "petite"]
+        },
+        {
+          "ask": "\"Il y a beaucoup de magasins.\" There are …",
+          "answer": "lots of shops",
+          "distractors": ["a few shops", "no shops", "big shops"]
+        }
+      ]
+    },
+    {
+      "id": "french-cafe-chat",
+      "title": "Café Chat",
+      "station": "compare",
+      "prop": "water-drop",
+      "skillName": "Conversations and asking for help",
+      "strand": "conversation",
+      "statutoryRequirement": "Pupils should be taught to engage in conversations; ask and answer questions; express opinions and respond to those of others; seek clarification and help",
+      "instruction": "Read what is said in the café, then tap the best answer.",
+      "hint": "Not quite. Think about what each person needs, then try again.",
+      "questions": [
+        {
+          "ask": "The waiter asks \"Vous désirez ?\" What does it mean?",
+          "answer": "What would you like?",
+          "distractors": [
+            "Where are you from?",
+            "How much is it?",
+            "Are you ready?"
+          ]
+        },
+        {
+          "ask": "You want to order a hot chocolate. What do you say?",
+          "answer": "Un chocolat chaud.",
+          "distractors": [
+            "Un chocolat froid.",
+            "Une chocolat chaud.",
+            "Un café chaud."
+          ]
+        },
+        {
+          "ask": "\"Pouvez-vous répéter, s'il vous plaît ?\" asks the person to …",
+          "answer": "say it again",
+          "distractors": ["go away", "pay the bill", "sit down"]
+        },
+        {
+          "ask": "What does \"Je ne comprends pas.\" mean?",
+          "answer": "I don't understand.",
+          "distractors": ["I don't know.", "I can't hear.", "I don't like it."]
+        },
+        {
+          "ask": "What does \"C'est combien ?\" mean?",
+          "answer": "How much is it?",
+          "distractors": ["What is it?", "Where is it?", "Is it big?"]
+        },
+        {
+          "ask": "Your friend says \"Le tennis, c'est génial !\" Which reply disagrees?",
+          "answer": "Non, c'est ennuyeux.",
+          "distractors": [
+            "Oui, c'est super !",
+            "Moi aussi, j'adore !",
+            "Oui, c'est génial."
+          ]
+        },
+        {
+          "ask": "Which question asks for someone's opinion?",
+          "answer": "Tu aimes le sport ?",
+          "distractors": [
+            "Tu as quel âge ?",
+            "Où est le parc ?",
+            "C'est combien ?"
+          ]
+        },
+        {
+          "ask": "What does \"Comment dit-on « dog » en français ?\" ask?",
+          "answer": "How do you say dog?",
+          "distractors": [
+            "What is a dog?",
+            "Do you have a dog?",
+            "Where is the dog?"
+          ]
+        },
+        {
+          "ask": "What does \"Qu'est-ce que ça veut dire ?\" mean?",
+          "answer": "What does it mean?",
+          "distractors": [
+            "What do you want?",
+            "What is your name?",
+            "What time is it?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "french-ne-pas-sandwich",
+      "title": "Ne…Pas Sandwich",
+      "station": "compare",
+      "prop": "magnet",
+      "skillName": "Making sentences negative",
+      "strand": "grammar",
+      "statutoryRequirement": "Pupils should be taught to understand basic grammar appropriate to the language being studied, including (where relevant): feminine, masculine and neuter forms and the conjugation of high-frequency verbs; key features and patterns of the language; how to apply these, for instance, to build sentences; and how these differ from or are similar to English",
+      "instruction": "Read the sentence, then tap the right negative.",
+      "hint": "Not quite. \"ne\" goes before the verb and \"pas\" goes after it. Try again.",
+      "questions": [
+        {
+          "ask": "Make it negative: \"Je joue.\"",
+          "answer": "Je ne joue pas.",
+          "distractors": [
+            "Je joue ne pas.",
+            "Je pas joue ne.",
+            "Ne je joue pas."
+          ]
+        },
+        {
+          "ask": "Make it negative: \"Il mange.\"",
+          "answer": "Il ne mange pas.",
+          "distractors": [
+            "Il mange ne pas.",
+            "Il ne pas mange.",
+            "Il pas mange."
+          ]
+        },
+        {
+          "ask": "Make it negative: \"Tu danses.\"",
+          "answer": "Tu ne danses pas.",
+          "distractors": [
+            "Tu danses ne pas.",
+            "Tu ne pas danses.",
+            "Ne tu danses pas."
+          ]
+        },
+        {
+          "ask": "Make it negative: \"J'aime le thé.\"",
+          "answer": "Je n'aime pas le thé",
+          "distractors": [
+            "Je aime pas le thé",
+            "Je n'aime le thé pas",
+            "Ne j'aime pas le thé"
+          ]
+        },
+        {
+          "ask": "Make it negative: \"Il est grand.\"",
+          "answer": "Il n'est pas grand.",
+          "distractors": [
+            "Il ne est pas grand.",
+            "Il est ne pas grand.",
+            "Il n'est grand pas."
+          ]
+        },
+        {
+          "ask": "What does \"Je ne parle pas allemand.\" mean?",
+          "answer": "I don't speak German",
+          "distractors": [
+            "I speak German.",
+            "I don't like German",
+            "I don't learn German"
+          ]
+        },
+        {
+          "ask": "What does \"Il ne pleut pas.\" mean?",
+          "answer": "It isn't raining.",
+          "distractors": [
+            "It is raining.",
+            "It isn't snowing.",
+            "It isn't sunny."
+          ]
+        },
+        {
+          "ask": "English adds \"don't\". Where do \"ne\" and \"pas\" go in French?",
+          "answer": "around the verb",
+          "distractors": [
+            "before the verb",
+            "after the verb",
+            "at the very end"
+          ]
+        },
+        {
+          "ask": "Before a vowel, what does \"ne\" become?",
+          "answer": "n'",
+          "distractors": ["na", "pas", "non"]
+        },
+        {
+          "ask": "Make it negative: \"J'ai un chien.\"",
+          "answer": "Je n'ai pas de chien",
+          "distractors": [
+            "Je n'ai pas un chien",
+            "Je n'ai un chien pas",
+            "Je ne ai pas chien"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "french-sentence-stretcher",
+      "title": "Sentence Stretcher",
+      "station": "compare",
+      "prop": "dna",
+      "skillName": "Building longer French sentences",
+      "strand": "writing-sentences",
+      "statutoryRequirement": "Pupils should be taught to write phrases from memory, and adapt these to create new sentences, to express ideas clearly",
+      "instruction": "Read the English, then tap the best French.",
+      "hint": "Not quite. Check the verb, the gender and the little joining words, then try again.",
+      "questions": [
+        {
+          "ask": "Which word means \"but\": \"J'aime le foot … je déteste le rugby.\"?",
+          "answer": "mais",
+          "distractors": ["et", "parce que", "ou"]
+        },
+        {
+          "ask": "In \"… parce que c'est amusant\", what does \"parce que\" mean?",
+          "answer": "because",
+          "distractors": ["but", "and", "so"]
+        },
+        {
+          "ask": "Which means \"I am going to the park\"?",
+          "answer": "Je vais au parc.",
+          "distractors": [
+            "Je vais à le parc.",
+            "Je suis au parc.",
+            "Je va au parc."
+          ]
+        },
+        {
+          "ask": "Which means \"We are going to the pool\"? (on = we)",
+          "answer": "On va à la piscine.",
+          "distractors": [
+            "On va au piscine.",
+            "On vont à la piscine",
+            "On est à la piscine"
+          ]
+        },
+        {
+          "ask": "Which means \"My sister is funny\"?",
+          "answer": "Ma sœur est drôle.",
+          "distractors": [
+            "Mon sœur est drôle.",
+            "Ma sœur a drôle.",
+            "Ma sœur est drôles."
+          ]
+        },
+        {
+          "ask": "Change \"Je joue au tennis.\" so it means \"He plays tennis\".",
+          "answer": "Il joue au tennis.",
+          "distractors": [
+            "Il jouent au tennis",
+            "Il joues au tennis.",
+            "Je joue au tennis."
+          ]
+        },
+        {
+          "ask": "Which means \"I have two brothers\"?",
+          "answer": "J'ai deux frères.",
+          "distractors": [
+            "J'ai deux frère.",
+            "Je suis deux frères",
+            "J'ai des deux frères"
+          ]
+        },
+        {
+          "ask": "Which means \"It's a big park\"?",
+          "answer": "C'est un grand parc.",
+          "distractors": [
+            "C'est un parc grand.",
+            "C'est un grande parc",
+            "Il est un grand parc"
+          ]
+        },
+        {
+          "ask": "Which sentence uses \"et\" (and) correctly?",
+          "answer": "Paul et Léa jouent.",
+          "distractors": [
+            "Paul et Léa joue.",
+            "Paul et Léa jouez.",
+            "Paul est Léa jouent."
+          ]
+        }
+      ]
+    }
+  ]
+}

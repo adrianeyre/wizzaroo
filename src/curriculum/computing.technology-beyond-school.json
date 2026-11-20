@@ -1,0 +1,8 @@
+{
+  "id": "computing.technology-beyond-school",
+  "name": "Spotting technology beyond school",
+  "subject": "computing",
+  "yearGroup": 2,
+  "strand": "technology-around-us",
+  "prerequisites": ["computing.name-technology"]
+}

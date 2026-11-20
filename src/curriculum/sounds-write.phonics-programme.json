@@ -1,0 +1,917 @@
+{
+  "id": "sounds-write",
+  "name": "Sounds-Write",
+  "sources": [
+    "Sounds-Write Ltd, Sounds-Write sequence: Initial Code (scope and sequence), for the graphemes in each Initial Code unit and their order, and that Units 8 to 10 and the Bridging Unit add no new graphemes: https://sounds-write.co.uk/wp-content/uploads/2023/11/Initial-Code-Scope-and-Sequence.pdf",
+    "Sounds-Write Ltd, Sounds-Write sequence: Extended Code (scope and sequence), for the order of Extended Code Units 1 to 49 and the sound or spelling each one teaches: https://sounds-write.co.uk/wp-content/uploads/2023/11/Extended-Code-Scope-and-Sequence.pdf",
+    "The Avenue Primary School, Phonics - Sounds-Write Units, for the spellings taught in each Initial Code and Extended Code unit, Reception to Year 2, which the file follows where sources differ: https://www.theavenueprimaryschool.co.uk/wp-content/uploads/2021/02/Phonics-Sounds-Write-Overview-of-Units.pdf",
+    "Swannington CofE Primary School, Sounds Write Year 1 – Extended Code Overview 2026-2027, a second school list of the spellings in Extended Code Units 1 to 26, which mostly agrees (where it differs, the file follows The Avenue and the Sounds-Write unit order): https://www.swanningtonceprimary.org/attachments/download.asp?file=113&type=pdf",
+    "Ridgmont Lower School, Phonics Knowledge & Progression, confirming the Initial Code units taught in Reception: https://www.ridgmont-lower.org.uk/_site/data/files/users/template/documents/C3EDF9734DF3BB3C657A24E70049215D.pdf"
+  ],
+  "soundOrder": [
+    {
+      "term": "Initial Code Unit 1",
+      "graphemes": [
+        {
+          "grapheme": "a",
+          "sounds": ["a"]
+        },
+        {
+          "grapheme": "i",
+          "sounds": ["i"]
+        },
+        {
+          "grapheme": "m",
+          "sounds": ["m"]
+        },
+        {
+          "grapheme": "s",
+          "sounds": ["s"]
+        },
+        {
+          "grapheme": "t",
+          "sounds": ["t"]
+        }
+      ]
+    },
+    {
+      "term": "Initial Code Unit 2",
+      "graphemes": [
+        {
+          "grapheme": "n",
+          "sounds": ["n"]
+        },
+        {
+          "grapheme": "o",
+          "sounds": ["o"]
+        },
+        {
+          "grapheme": "p",
+          "sounds": ["p"]
+        }
+      ]
+    },
+    {
+      "term": "Initial Code Unit 3",
+      "graphemes": [
+        {
+          "grapheme": "b",
+          "sounds": ["b"]
+        },
+        {
+          "grapheme": "c",
+          "sounds": ["k"]
+        },
+        {
+          "grapheme": "g",
+          "sounds": ["g"]
+        },
+        {
+          "grapheme": "h",
+          "sounds": ["h"]
+        }
+      ]
+    },
+    {
+      "term": "Initial Code Unit 4",
+      "graphemes": [
+        {
+          "grapheme": "d",
+          "sounds": ["d"]
+        },
+        {
+          "grapheme": "e",
+          "sounds": ["e"]
+        },
+        {
+          "grapheme": "f",
+          "sounds": ["f"]
+        },
+        {
+          "grapheme": "v",
+          "sounds": ["v"]
+        }
+      ]
+    },
+    {
+      "term": "Initial Code Unit 5",
+      "graphemes": [
+        {
+          "grapheme": "k",
+          "sounds": ["k"]
+        },
+        {
+          "grapheme": "l",
+          "sounds": ["l"]
+        },
+        {
+          "grapheme": "r",
+          "sounds": ["r"]
+        },
+        {
+          "grapheme": "u",
+          "sounds": ["u"]
+        }
+      ]
+    },
+    {
+      "term": "Initial Code Unit 6",
+      "graphemes": [
+        {
+          "grapheme": "j",
+          "sounds": ["j"]
+        },
+        {
+          "grapheme": "w",
+          "sounds": ["w"]
+        },
+        {
+          "grapheme": "z",
+          "sounds": ["z"]
+        }
+      ]
+    },
+    {
+      "term": "Initial Code Unit 7",
+      "graphemes": [
+        {
+          "grapheme": "x",
+          "sounds": ["k", "s"]
+        },
+        {
+          "grapheme": "y",
+          "sounds": ["y"]
+        },
+        {
+          "grapheme": "ff",
+          "sounds": ["f"]
+        },
+        {
+          "grapheme": "ll",
+          "sounds": ["l"]
+        },
+        {
+          "grapheme": "ss",
+          "sounds": ["s"]
+        },
+        {
+          "grapheme": "zz",
+          "sounds": ["z"]
+        }
+      ]
+    },
+    {
+      "term": "Initial Code Unit 11",
+      "graphemes": [
+        {
+          "grapheme": "sh",
+          "sounds": ["sh"]
+        },
+        {
+          "grapheme": "ch",
+          "sounds": ["ch"]
+        },
+        {
+          "grapheme": "th",
+          "sounds": ["th-unvoiced"]
+        },
+        {
+          "grapheme": "th",
+          "sounds": ["th-voiced"]
+        },
+        {
+          "grapheme": "ck",
+          "sounds": ["k"]
+        },
+        {
+          "grapheme": "ng",
+          "sounds": ["ng"]
+        },
+        {
+          "grapheme": "wh",
+          "sounds": ["w"]
+        },
+        {
+          "grapheme": "qu",
+          "sounds": ["k", "w"]
+        },
+        {
+          "grapheme": "ve",
+          "sounds": ["v"]
+        },
+        {
+          "grapheme": "tch",
+          "sounds": ["ch"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 1",
+      "graphemes": [
+        {
+          "grapheme": "ai",
+          "sounds": ["ai"]
+        },
+        {
+          "grapheme": "ay",
+          "sounds": ["ai"]
+        },
+        {
+          "grapheme": "ea",
+          "sounds": ["ai"]
+        },
+        {
+          "grapheme": "a-e",
+          "sounds": ["ai"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 2",
+      "graphemes": [
+        {
+          "grapheme": "e",
+          "sounds": ["ee"]
+        },
+        {
+          "grapheme": "ea",
+          "sounds": ["ee"]
+        },
+        {
+          "grapheme": "ee",
+          "sounds": ["ee"]
+        },
+        {
+          "grapheme": "y",
+          "sounds": ["ee"]
+        },
+        {
+          "grapheme": "ie",
+          "sounds": ["ee"]
+        },
+        {
+          "grapheme": "e-e",
+          "sounds": ["ee"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 4",
+      "graphemes": [
+        {
+          "grapheme": "o",
+          "sounds": ["oa"]
+        },
+        {
+          "grapheme": "oa",
+          "sounds": ["oa"]
+        },
+        {
+          "grapheme": "o-e",
+          "sounds": ["oa"]
+        },
+        {
+          "grapheme": "ou",
+          "sounds": ["oa"]
+        },
+        {
+          "grapheme": "ow",
+          "sounds": ["oa"]
+        },
+        {
+          "grapheme": "oe",
+          "sounds": ["oa"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 6",
+      "graphemes": [
+        {
+          "grapheme": "er",
+          "sounds": ["ur"]
+        },
+        {
+          "grapheme": "ir",
+          "sounds": ["ur"]
+        },
+        {
+          "grapheme": "or",
+          "sounds": ["ur"]
+        },
+        {
+          "grapheme": "ur",
+          "sounds": ["ur"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 7",
+      "graphemes": [
+        {
+          "grapheme": "ea",
+          "sounds": ["e"]
+        },
+        {
+          "grapheme": "ai",
+          "sounds": ["e"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 8",
+      "graphemes": [
+        {
+          "grapheme": "ou",
+          "sounds": ["ow"]
+        },
+        {
+          "grapheme": "ow",
+          "sounds": ["ow"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 10",
+      "graphemes": [
+        {
+          "grapheme": "oo",
+          "sounds": ["oo-long"]
+        },
+        {
+          "grapheme": "ou",
+          "sounds": ["oo-long"]
+        },
+        {
+          "grapheme": "ue",
+          "sounds": ["oo-long"]
+        },
+        {
+          "grapheme": "ew",
+          "sounds": ["oo-long"]
+        },
+        {
+          "grapheme": "u-e",
+          "sounds": ["oo-long"]
+        },
+        {
+          "grapheme": "o",
+          "sounds": ["oo-long"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 11",
+      "graphemes": [
+        {
+          "grapheme": "i",
+          "sounds": ["igh"]
+        },
+        {
+          "grapheme": "igh",
+          "sounds": ["igh"]
+        },
+        {
+          "grapheme": "y",
+          "sounds": ["igh"]
+        },
+        {
+          "grapheme": "ie",
+          "sounds": ["igh"]
+        },
+        {
+          "grapheme": "i-e",
+          "sounds": ["igh"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 12",
+      "graphemes": [
+        {
+          "grapheme": "oo",
+          "sounds": ["oo-short"]
+        },
+        {
+          "grapheme": "u",
+          "sounds": ["oo-short"]
+        },
+        {
+          "grapheme": "oul",
+          "sounds": ["oo-short"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 14",
+      "graphemes": [
+        {
+          "grapheme": "o",
+          "sounds": ["u"]
+        },
+        {
+          "grapheme": "ou",
+          "sounds": ["u"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 16",
+      "graphemes": [
+        {
+          "grapheme": "st",
+          "sounds": ["s"]
+        },
+        {
+          "grapheme": "c",
+          "sounds": ["s"]
+        },
+        {
+          "grapheme": "ce",
+          "sounds": ["s"]
+        },
+        {
+          "grapheme": "se",
+          "sounds": ["s"]
+        },
+        {
+          "grapheme": "sc",
+          "sounds": ["s"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 17",
+      "graphemes": [
+        {
+          "grapheme": "s",
+          "sounds": ["z"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 18",
+      "graphemes": [
+        {
+          "grapheme": "al",
+          "sounds": ["l"]
+        },
+        {
+          "grapheme": "el",
+          "sounds": ["l"]
+        },
+        {
+          "grapheme": "il",
+          "sounds": ["l"]
+        },
+        {
+          "grapheme": "le",
+          "sounds": ["l"]
+        },
+        {
+          "grapheme": "ol",
+          "sounds": ["l"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 19",
+      "graphemes": [
+        {
+          "grapheme": "or",
+          "sounds": ["or"]
+        },
+        {
+          "grapheme": "aw",
+          "sounds": ["or"]
+        },
+        {
+          "grapheme": "au",
+          "sounds": ["or"]
+        },
+        {
+          "grapheme": "a",
+          "sounds": ["or"]
+        },
+        {
+          "grapheme": "ar",
+          "sounds": ["or"]
+        },
+        {
+          "grapheme": "al",
+          "sounds": ["or"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 20",
+      "graphemes": [
+        {
+          "grapheme": "air",
+          "sounds": ["air"]
+        },
+        {
+          "grapheme": "are",
+          "sounds": ["air"]
+        },
+        {
+          "grapheme": "ear",
+          "sounds": ["air"]
+        },
+        {
+          "grapheme": "ere",
+          "sounds": ["air"]
+        },
+        {
+          "grapheme": "eir",
+          "sounds": ["air"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 21",
+      "graphemes": [
+        {
+          "grapheme": "ue",
+          "sounds": ["y", "oo-long"]
+        },
+        {
+          "grapheme": "ew",
+          "sounds": ["y", "oo-long"]
+        },
+        {
+          "grapheme": "u",
+          "sounds": ["y", "oo-long"]
+        },
+        {
+          "grapheme": "u-e",
+          "sounds": ["y", "oo-long"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 23",
+      "graphemes": [
+        {
+          "grapheme": "oi",
+          "sounds": ["oi"]
+        },
+        {
+          "grapheme": "oy",
+          "sounds": ["oi"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 24",
+      "graphemes": [
+        {
+          "grapheme": "ar",
+          "sounds": ["ar"]
+        },
+        {
+          "grapheme": "a",
+          "sounds": ["ar"]
+        },
+        {
+          "grapheme": "al",
+          "sounds": ["ar"]
+        },
+        {
+          "grapheme": "au",
+          "sounds": ["ar"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 25",
+      "graphemes": [
+        {
+          "grapheme": "a",
+          "sounds": ["o"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 26",
+      "graphemes": [
+        {
+          "grapheme": "a",
+          "sounds": ["ai"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 27",
+      "graphemes": [
+        {
+          "grapheme": "ei",
+          "sounds": ["ai"]
+        },
+        {
+          "grapheme": "ey",
+          "sounds": ["ai"]
+        },
+        {
+          "grapheme": "eigh",
+          "sounds": ["ai"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 28",
+      "graphemes": [
+        {
+          "grapheme": "dd",
+          "sounds": ["d"]
+        },
+        {
+          "grapheme": "ed",
+          "sounds": ["d"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 29",
+      "graphemes": [
+        {
+          "grapheme": "ey",
+          "sounds": ["ee"]
+        },
+        {
+          "grapheme": "i",
+          "sounds": ["ee"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 30",
+      "graphemes": [
+        {
+          "grapheme": "ui",
+          "sounds": ["i"]
+        },
+        {
+          "grapheme": "e",
+          "sounds": ["i"]
+        },
+        {
+          "grapheme": "y",
+          "sounds": ["i"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 32",
+      "graphemes": [
+        {
+          "grapheme": "ough",
+          "sounds": ["oa"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 33",
+      "graphemes": [
+        {
+          "grapheme": "nn",
+          "sounds": ["n"]
+        },
+        {
+          "grapheme": "ne",
+          "sounds": ["n"]
+        },
+        {
+          "grapheme": "gn",
+          "sounds": ["n"]
+        },
+        {
+          "grapheme": "kn",
+          "sounds": ["n"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 34",
+      "graphemes": [
+        {
+          "grapheme": "ar",
+          "sounds": ["ur"]
+        },
+        {
+          "grapheme": "ear",
+          "sounds": ["ur"]
+        },
+        {
+          "grapheme": "our",
+          "sounds": ["ur"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 35",
+      "graphemes": [
+        {
+          "grapheme": "vv",
+          "sounds": ["v"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 36",
+      "graphemes": [
+        {
+          "grapheme": "u",
+          "sounds": ["oo-long"]
+        },
+        {
+          "grapheme": "ui",
+          "sounds": ["oo-long"]
+        },
+        {
+          "grapheme": "ough",
+          "sounds": ["oo-long"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 37",
+      "graphemes": [
+        {
+          "grapheme": "g",
+          "sounds": ["j"]
+        },
+        {
+          "grapheme": "ge",
+          "sounds": ["j"]
+        },
+        {
+          "grapheme": "dge",
+          "sounds": ["j"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 38",
+      "graphemes": [
+        {
+          "grapheme": "gg",
+          "sounds": ["g"]
+        },
+        {
+          "grapheme": "gh",
+          "sounds": ["g"]
+        },
+        {
+          "grapheme": "gu",
+          "sounds": ["g"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 40",
+      "graphemes": [
+        {
+          "grapheme": "gh",
+          "sounds": ["f"]
+        },
+        {
+          "grapheme": "ph",
+          "sounds": ["f"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 42",
+      "graphemes": [
+        {
+          "grapheme": "mm",
+          "sounds": ["m"]
+        },
+        {
+          "grapheme": "mb",
+          "sounds": ["m"]
+        },
+        {
+          "grapheme": "mn",
+          "sounds": ["m"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 43",
+      "graphemes": [
+        {
+          "grapheme": "oar",
+          "sounds": ["or"]
+        },
+        {
+          "grapheme": "ore",
+          "sounds": ["or"]
+        },
+        {
+          "grapheme": "our",
+          "sounds": ["or"]
+        },
+        {
+          "grapheme": "augh",
+          "sounds": ["or"]
+        },
+        {
+          "grapheme": "ough",
+          "sounds": ["or"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 44",
+      "graphemes": [
+        {
+          "grapheme": "wh",
+          "sounds": ["h"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 45",
+      "graphemes": [
+        {
+          "grapheme": "ch",
+          "sounds": ["k"]
+        },
+        {
+          "grapheme": "cc",
+          "sounds": ["k"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 46",
+      "graphemes": [
+        {
+          "grapheme": "rr",
+          "sounds": ["r"]
+        },
+        {
+          "grapheme": "rh",
+          "sounds": ["r"]
+        },
+        {
+          "grapheme": "wr",
+          "sounds": ["r"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 47",
+      "graphemes": [
+        {
+          "grapheme": "tt",
+          "sounds": ["t"]
+        },
+        {
+          "grapheme": "bt",
+          "sounds": ["t"]
+        },
+        {
+          "grapheme": "te",
+          "sounds": ["t"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 48",
+      "graphemes": [
+        {
+          "grapheme": "ze",
+          "sounds": ["z"]
+        },
+        {
+          "grapheme": "se",
+          "sounds": ["z"]
+        },
+        {
+          "grapheme": "ss",
+          "sounds": ["z"]
+        }
+      ]
+    },
+    {
+      "term": "Extended Code Unit 49",
+      "graphemes": [
+        {
+          "grapheme": "eer",
+          "sounds": ["ear"]
+        },
+        {
+          "grapheme": "ere",
+          "sounds": ["ear"]
+        },
+        {
+          "grapheme": "ear",
+          "sounds": ["ear"]
+        }
+      ]
+    }
+  ]
+}

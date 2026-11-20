@@ -1,0 +1,878 @@
+{
+  "quests": [
+    {
+      "id": "toy-box-time-machine",
+      "title": "Toy Box Time Machine",
+      "skill": {
+        "id": "history.toys-long-ago-and-now",
+        "name": "Toys long ago and now",
+        "subject": "history",
+        "yearGroup": 1,
+        "strand": "changes-within-living-memory",
+        "prerequisites": []
+      },
+      "story": "You have found a dusty toy box in the attic! Some toys are very old and some are new. Can you tell them apart?",
+      "instruction": "Is the toy from long ago, or from now? Tap the right basket.",
+      "hint": "Does it need a screen, a battery or a charger? Old toys were made of wood, tin or cloth.",
+      "scene": "attic-toybox",
+      "play": "sort",
+      "choiceProp": "basket",
+      "bins": ["Long ago", "Now"],
+      "questions": [
+        {
+          "ask": "A wooden spinning top",
+          "answer": "Long ago",
+          "fact": "Children have spun tops for thousands of years, even in Ancient Egypt."
+        },
+        {
+          "ask": "A rocking horse",
+          "answer": "Long ago",
+          "fact": "Wooden rocking horses were a favourite toy for Victorian children who had money to spare."
+        },
+        {
+          "ask": "A tin soldier",
+          "answer": "Long ago",
+          "fact": "Toy soldiers were made of tin or lead and painted by hand."
+        },
+        {
+          "ask": "A peg doll",
+          "answer": "Long ago",
+          "fact": "Peg dolls were made from wooden clothes pegs, with painted faces and scraps of cloth."
+        },
+        {
+          "ask": "A hoop and a stick",
+          "answer": "Long ago",
+          "fact": "Children raced along the street, tapping a big hoop with a stick to keep it rolling."
+        },
+        {
+          "ask": "A wooden cup and ball",
+          "answer": "Long ago",
+          "fact": "You swing the ball on its string and try to catch it in the cup. It is tricky!"
+        },
+        {
+          "ask": "A tablet with games on it",
+          "answer": "Now",
+          "fact": "Tablet computers only became common in homes about 15 years ago."
+        },
+        {
+          "ask": "A remote-control drone",
+          "answer": "Now",
+          "fact": "Toy drones have spinning blades and fly using a battery and a radio controller."
+        },
+        {
+          "ask": "A video game console",
+          "answer": "Now",
+          "fact": "Video games plug into a TV, so they could not exist before televisions and computers."
+        },
+        {
+          "ask": "A robot pet that talks",
+          "answer": "Now",
+          "fact": "Talking robot toys use tiny computer chips to listen and answer you."
+        },
+        {
+          "ask": "A toy you charge with a cable",
+          "answer": "Now",
+          "fact": "Toys with batteries you can charge are new. Most old toys needed no power at all."
+        },
+        {
+          "ask": "A virtual reality headset",
+          "answer": "Now",
+          "fact": "A VR headset shows a screen to each eye, so it feels like you are inside a game."
+        }
+      ]
+    },
+    {
+      "id": "grandmas-kitchen",
+      "title": "Grandma's Kitchen",
+      "skill": {
+        "id": "history.homes-long-ago",
+        "name": "Homes long ago",
+        "subject": "history",
+        "yearGroup": 1,
+        "strand": "changes-within-living-memory",
+        "prerequisites": []
+      },
+      "story": "Step into a kitchen from long ago! There is no fridge and no washing machine. How did people get their jobs done?",
+      "instruction": "Read each question about old homes, then tap the right answer.",
+      "hint": "Think about whether it needs electricity. Most homes long ago did not have it.",
+      "scene": "old-kitchen",
+      "play": "quiz",
+      "choiceProp": "wooden-crate",
+      "questions": [
+        {
+          "ask": "What did people scrub clothes on long ago?",
+          "answer": "A washboard",
+          "wrong": ["A breadboard", "A blackboard", "A skateboard"],
+          "fact": "They rubbed wet, soapy clothes up and down its bumpy ridges to get them clean."
+        },
+        {
+          "ask": "What did people use to squeeze wet clothes?",
+          "answer": "A mangle",
+          "wrong": ["A kettle", "A toaster", "A bucket"],
+          "fact": "You turned a big handle, and the clothes were squashed between two rollers."
+        },
+        {
+          "ask": "Where was food kept cool before fridges?",
+          "answer": "A larder",
+          "wrong": ["An oven", "An attic", "A bath"],
+          "fact": "A larder was a cool cupboard or small room, often with a cold stone shelf."
+        },
+        {
+          "ask": "What kept a home warm long ago?",
+          "answer": "A coal fire",
+          "wrong": ["A hairdryer", "A fridge", "A computer"],
+          "fact": "Someone had to carry in coal and sweep out the ashes every day."
+        },
+        {
+          "ask": "What gave light before electric lights?",
+          "answer": "An oil lamp",
+          "wrong": ["A television", "A tablet", "A laser"],
+          "fact": "Oil lamps had a wick that soaked up oil and burned with a small flame."
+        },
+        {
+          "ask": "What did people hit a dusty rug with?",
+          "answer": "A carpet beater",
+          "wrong": ["A robot vacuum", "A leaf blower", "A hairdryer"],
+          "fact": "They hung the rug on a washing line outside and whacked the dust out of it."
+        },
+        {
+          "ask": "What did many families have a bath in?",
+          "answer": "A tin bath",
+          "wrong": ["A hot tub", "A pond", "A paddling pool"],
+          "fact": "It was often put in front of the fire, and the family took turns in the same water."
+        },
+        {
+          "ask": "What did people heat up to iron clothes?",
+          "answer": "A flat iron",
+          "wrong": ["A frying pan", "A rolling pin", "A teapot"],
+          "fact": "It was warmed on the stove, so people used two and swapped them as one cooled."
+        },
+        {
+          "ask": "What big black stove did people cook on?",
+          "answer": "A range",
+          "wrong": ["A microwave", "A fridge", "A kettle"],
+          "fact": "A range had a fire, an oven and a hot plate all in one, and it warmed the kitchen."
+        },
+        {
+          "ask": "Where was the toilet in many old homes?",
+          "answer": "Outside",
+          "wrong": ["Upstairs", "In the kitchen", "In the loft"],
+          "fact": "Many homes had a toilet in the back yard. It was very chilly on winter nights!"
+        },
+        {
+          "ask": "Who brought milk to the door each day?",
+          "answer": "The milkman",
+          "wrong": ["The postman", "The doctor", "The teacher"],
+          "fact": "Milk came in glass bottles, and the milkman took the empty ones back to use again."
+        },
+        {
+          "ask": "What do we use now instead of a mangle?",
+          "answer": "A washing machine",
+          "wrong": ["A dishwasher", "A microwave", "A toaster"],
+          "fact": "Washing machines did not become common in British homes until about 60 years ago."
+        }
+      ]
+    },
+    {
+      "id": "school-bell-rings",
+      "title": "The School Bell Rings",
+      "skill": {
+        "id": "history.schools-long-ago",
+        "name": "Schools long ago",
+        "subject": "history",
+        "yearGroup": 1,
+        "strand": "changes-within-living-memory",
+        "prerequisites": []
+      },
+      "story": "Ding-a-ling! The bell rings in an old Victorian classroom. Help the teacher sort school life long ago from school today.",
+      "instruction": "Is it from school long ago, or today? Tap the right book.",
+      "hint": "Think about your own classroom. Do you have that at school today?",
+      "scene": "victorian-classroom",
+      "play": "sort",
+      "choiceProp": "book",
+      "bins": ["Long ago", "Today"],
+      "questions": [
+        {
+          "ask": "Writing on a slate",
+          "answer": "Long ago",
+          "fact": "A slate was a small board of grey stone. You could wipe it clean and use it again."
+        },
+        {
+          "ask": "Dipping a pen in an ink well",
+          "answer": "Long ago",
+          "fact": "Ink wells sat in a hole in the desk. Children had to be careful not to make blots!"
+        },
+        {
+          "ask": "Wearing a dunce's cap",
+          "answer": "Long ago",
+          "fact": "A child could be made to wear a tall paper cap. Today we know that was unkind."
+        },
+        {
+          "ask": "Boys and girls using separate doors",
+          "answer": "Long ago",
+          "fact": "Some old schools still have the words Boys and Girls carved over two doors."
+        },
+        {
+          "ask": "Standing up to answer the teacher",
+          "answer": "Long ago",
+          "fact": "Children stood up straight and called the teacher Sir or Ma'am."
+        },
+        {
+          "ask": "A class of 60 children",
+          "answer": "Long ago",
+          "fact": "Victorian classes were huge, and older pupils often helped to teach the younger ones."
+        },
+        {
+          "ask": "Learning on a tablet",
+          "answer": "Today",
+          "fact": "Tablets can show videos, games and books all on one screen."
+        },
+        {
+          "ask": "A whiteboard you can touch",
+          "answer": "Today",
+          "fact": "An interactive whiteboard is a big computer screen the whole class can see."
+        },
+        {
+          "ask": "Boys and girls playing together",
+          "answer": "Today",
+          "fact": "Today boys and girls learn and play together in the same class."
+        },
+        {
+          "ask": "The register on a computer",
+          "answer": "Today",
+          "fact": "Long ago the teacher wrote the register in a big book with a pen."
+        },
+        {
+          "ask": "Watching a video in class",
+          "answer": "Today",
+          "fact": "Videos need screens and electricity, which Victorian schools did not have."
+        },
+        {
+          "ask": "Seat belts on the school coach",
+          "answer": "Today",
+          "fact": "Seat belts on coaches keep you safe on school trips. Victorian children mostly walked."
+        }
+      ]
+    },
+    {
+      "id": "seaside-snapshots",
+      "title": "Seaside Snapshots",
+      "skill": {
+        "id": "history.seaside-holidays-long-ago",
+        "name": "Seaside holidays long ago and now",
+        "subject": "history",
+        "yearGroup": 1,
+        "strand": "changes-within-living-memory",
+        "prerequisites": []
+      },
+      "story": "Look at these old seaside photos! Find out what a day at the beach was like long ago, and how it has changed.",
+      "instruction": "Read each seaside question, then tap the right answer.",
+      "hint": "Think about what people had long ago. There were no phones, planes or screens.",
+      "scene": "seaside-pier",
+      "play": "quiz",
+      "choiceProp": "treasure-chest",
+      "questions": [
+        {
+          "ask": "How did families get to the sea long ago?",
+          "answer": "By steam train",
+          "wrong": ["By aeroplane", "By rocket", "By hot-air balloon"],
+          "fact": "In Victorian times, new railways made cheap day trips to the seaside possible."
+        },
+        {
+          "ask": "What hut on wheels took people into the sea?",
+          "answer": "A bathing machine",
+          "wrong": ["A sandcastle", "A deckchair", "A beach hut"],
+          "fact": "Horses pulled it into the water so people could get changed and step into the sea."
+        },
+        {
+          "ask": "Which puppet show was on the beach?",
+          "answer": "Punch and Judy",
+          "wrong": ["Peppa Pig", "The Gruffalo", "Paddington"],
+          "fact": "Punch and Judy shows have been on British beaches for well over 100 years."
+        },
+        {
+          "ask": "Which animal could you ride on the sand?",
+          "answer": "A donkey",
+          "wrong": ["A camel", "A zebra", "An elephant"],
+          "fact": "Donkey rides are still on some British beaches today."
+        },
+        {
+          "ask": "What is a long walkway out over the sea?",
+          "answer": "A pier",
+          "wrong": ["A tunnel", "A tower", "A slide"],
+          "fact": "Southend Pier is over 2 kilometres long, the longest pleasure pier in the world."
+        },
+        {
+          "ask": "What did people sit on to rest on the sand?",
+          "answer": "A deckchair",
+          "wrong": ["A sofa", "A throne", "A bunk bed"],
+          "fact": "Deckchairs fold flat, and people paid a few pennies to hire one for the day."
+        },
+        {
+          "ask": "What were old swimsuits made of?",
+          "answer": "Wool",
+          "wrong": ["Paper", "Metal", "Glass"],
+          "fact": "Woolly swimsuits covered arms and legs, and got heavy and saggy when wet!"
+        },
+        {
+          "ask": "What took seaside snaps long ago?",
+          "answer": "A film camera",
+          "wrong": ["A phone", "A tablet", "A drone"],
+          "fact": "You had to wait days for the photos to be printed before you could see them."
+        },
+        {
+          "ask": "How do lots of families get to the sea now?",
+          "answer": "By car",
+          "wrong": ["By horse", "By rocket", "By submarine"],
+          "fact": "Today many families also fly to beaches in other countries, which was rare long ago."
+        },
+        {
+          "ask": "Which sweet has words all the way through?",
+          "answer": "Rock",
+          "wrong": ["Toffee", "Fudge", "Jelly"],
+          "fact": "Seaside rock with letters running through it has been made since Victorian times."
+        },
+        {
+          "ask": "What new days off began in 1871?",
+          "answer": "Bank holidays",
+          "wrong": ["Birthdays", "Snow days", "Sports days"],
+          "fact": "Bank holidays gave workers a free day, so many went on a trip to the seaside."
+        },
+        {
+          "ask": "What do we put on now to stop sunburn?",
+          "answer": "Sun cream",
+          "wrong": ["Butter", "Jam", "Glue"],
+          "fact": "Long ago, people kept out of the sun with big hats and parasols instead."
+        }
+      ]
+    },
+    {
+      "id": "wheels-through-time",
+      "title": "Wheels Through Time",
+      "skill": {
+        "id": "history.transport-through-time",
+        "name": "Transport through time",
+        "subject": "history",
+        "yearGroup": 1,
+        "strand": "chronological-understanding",
+        "prerequisites": []
+      },
+      "story": "Beep beep! Clip clop! All sorts of transport are rolling down the country road. Help put them in time order.",
+      "instruction": "Tap the kind of transport that came first.",
+      "hint": "Did it need an engine? Animals and wind came first, then steam, then engines and jets.",
+      "scene": "country-road",
+      "play": "timeline",
+      "choiceProp": "stone-tablet",
+      "events": [
+        {
+          "label": "The first wheels",
+          "date": "c. 3500 BC",
+          "order": -3500,
+          "fact": "The first wheels were solid wood, made about 5,500 years ago in Mesopotamia."
+        },
+        {
+          "label": "Horse and chariot",
+          "date": "c. 2000 BC",
+          "order": -2000,
+          "fact": "Chariots had light wheels with spokes, so horses could pull them very fast."
+        },
+        {
+          "label": "Stagecoach",
+          "date": "c. 1650",
+          "order": 1650,
+          "fact": "Stagecoaches pulled by horses carried people from town to town, swapping horses on the way."
+        },
+        {
+          "label": "Hot-air balloon",
+          "date": "1783",
+          "order": 1783,
+          "fact": "The first people to fly rode in a hot-air balloon made by the Montgolfier brothers in France."
+        },
+        {
+          "label": "Steam train",
+          "date": "1825",
+          "order": 1825,
+          "fact": "Locomotion No. 1 pulled the first steam passenger train on a public railway in England."
+        },
+        {
+          "label": "Penny-farthing bike",
+          "date": "c. 1870",
+          "order": 1870,
+          "fact": "The penny-farthing had a giant front wheel and a tiny back one, like two old coins."
+        },
+        {
+          "label": "First motor car",
+          "date": "1886",
+          "order": 1886,
+          "fact": "Karl Benz built a car with three wheels and an engine that burned petrol."
+        },
+        {
+          "label": "First aeroplane",
+          "date": "1903",
+          "order": 1903,
+          "fact": "The Wright brothers' plane flew for just 12 seconds on its first flight."
+        },
+        {
+          "label": "Jet airliner",
+          "date": "1952",
+          "order": 1952,
+          "fact": "The British Comet was the first jet airliner to carry passengers."
+        },
+        {
+          "label": "Moon rocket",
+          "date": "1969",
+          "order": 1969,
+          "fact": "A giant rocket called Saturn V carried astronauts all the way to the Moon."
+        }
+      ]
+    },
+    {
+      "id": "lamplighters-night",
+      "title": "The Lamplighter's Night",
+      "skill": {
+        "id": "history.light-through-time",
+        "name": "How we made light through time",
+        "subject": "history",
+        "yearGroup": 1,
+        "strand": "chronological-understanding",
+        "prerequisites": []
+      },
+      "story": "Night is falling, and the lamplighter needs your help! Light up the street by putting ways of making light in time order.",
+      "instruction": "Tap the way of making light that came first.",
+      "hint": "Flames came first, then gas, then electricity. Which one needs a plug or a battery?",
+      "scene": "night-street",
+      "play": "timeline",
+      "choiceProp": "lantern",
+      "events": [
+        {
+          "label": "Campfire",
+          "date": "c. 400,000 BC",
+          "order": -400000,
+          "fact": "People have used fire for light and warmth for hundreds of thousands of years."
+        },
+        {
+          "label": "Stone fat lamp",
+          "date": "c. 15,000 BC",
+          "order": -15000,
+          "fact": "Stone Age people burned animal fat in hollow stones to light up dark caves."
+        },
+        {
+          "label": "Clay oil lamp",
+          "date": "c. 3000 BC",
+          "order": -3000,
+          "fact": "Small clay lamps burned olive oil or other oils through a wick."
+        },
+        {
+          "label": "Candle",
+          "date": "c. 500 BC",
+          "order": -500,
+          "fact": "The Romans made candles from beeswax or animal fat, called tallow."
+        },
+        {
+          "label": "Gas street lamp",
+          "date": "1807",
+          "order": 1807,
+          "fact": "Pall Mall in London got gas street lamps. Lamplighters lit them every evening."
+        },
+        {
+          "label": "Electric light bulb",
+          "date": "1879",
+          "order": 1879,
+          "fact": "Joseph Swan in England and Thomas Edison in America both made light bulbs that worked."
+        },
+        {
+          "label": "Battery torch",
+          "date": "c. 1899",
+          "order": 1899,
+          "fact": "The first torches had weak batteries, so they only gave short flashes of light."
+        },
+        {
+          "label": "Neon sign",
+          "date": "1910",
+          "order": 1910,
+          "fact": "Neon gas glows bright red-orange when electricity passes through it."
+        },
+        {
+          "label": "First LED light",
+          "date": "1962",
+          "order": 1962,
+          "fact": "The first LEDs glowed red and were tiny, used as lights on machines."
+        },
+        {
+          "label": "LED bulbs at home",
+          "date": "c. 2010",
+          "order": 2010,
+          "fact": "LED bulbs use much less electricity than old bulbs and last for years."
+        }
+      ]
+    },
+    {
+      "id": "grace-darlings-rescue",
+      "title": "Grace Darling's Rescue",
+      "skill": {
+        "id": "history.grace-darling",
+        "name": "Grace Darling",
+        "subject": "history",
+        "yearGroup": 1,
+        "strand": "significant-individuals",
+        "prerequisites": []
+      },
+      "story": "Wind howls round the lighthouse and waves crash on the rocks! Find out how brave Grace Darling helped people in danger.",
+      "instruction": "Read each question about Grace, then tap the right answer.",
+      "hint": "Picture the lighthouse on its rocky island in a storm. What would Grace see and use?",
+      "scene": "stormy-lighthouse",
+      "play": "quiz",
+      "choiceProp": "lantern",
+      "questions": [
+        {
+          "ask": "Where did Grace Darling live?",
+          "answer": "A lighthouse",
+          "wrong": ["A castle", "A windmill", "A farm"],
+          "fact": "Grace lived in the Longstone Lighthouse, on a rocky island out at sea."
+        },
+        {
+          "ask": "What was her dad's job?",
+          "answer": "Lighthouse keeper",
+          "wrong": ["Baker", "Farmer", "Teacher"],
+          "fact": "William Darling kept the lamp burning so ships could see the rocks at night."
+        },
+        {
+          "ask": "What hit the rocks in the storm?",
+          "answer": "A ship",
+          "wrong": ["A plane", "A whale", "A train"],
+          "fact": "The steamship Forfarshire hit a rock called Big Harcar and broke in two."
+        },
+        {
+          "ask": "In what year was the rescue?",
+          "answer": "1838",
+          "wrong": ["1066", "1666", "1969"],
+          "fact": "The rescue was early in the morning on 7 September 1838."
+        },
+        {
+          "ask": "How did Grace get to the people?",
+          "answer": "She rowed a boat",
+          "wrong": ["She swam", "She flew", "She walked"],
+          "fact": "The rowing boat was called a coble, and the waves were very big."
+        },
+        {
+          "ask": "Who rowed with Grace?",
+          "answer": "Her dad",
+          "wrong": ["Her mum", "The Queen", "A pirate"],
+          "fact": "Grace kept the boat steady while her dad helped people off the rock."
+        },
+        {
+          "ask": "How many people did they save?",
+          "answer": "Nine",
+          "wrong": ["Two", "Fifty", "One hundred"],
+          "fact": "They took some people back to the lighthouse, and her dad went back for the rest."
+        },
+        {
+          "ask": "What was the weather like?",
+          "answer": "Stormy",
+          "wrong": ["Sunny", "Calm", "Hot"],
+          "fact": "Strong winds and huge waves made the rescue very dangerous."
+        },
+        {
+          "ask": "How old was Grace?",
+          "answer": "22",
+          "wrong": ["6", "60", "100"],
+          "fact": "Grace was 22, and soon people all over Britain knew her name."
+        },
+        {
+          "ask": "Which islands is her lighthouse on?",
+          "answer": "The Farne Islands",
+          "wrong": ["Isle of Wight", "Orkney", "Jersey"],
+          "fact": "The Farne Islands are off the coast of Northumberland, and puffins and seals live there."
+        },
+        {
+          "ask": "Who sent Grace a gift of money?",
+          "answer": "Queen Victoria",
+          "wrong": ["Henry VIII", "Elizabeth II", "Neil Armstrong"],
+          "fact": "Queen Victoria sent her £50, and lots of people sent letters, poems and gifts."
+        },
+        {
+          "ask": "Where is the museum about Grace?",
+          "answer": "Bamburgh",
+          "wrong": ["London", "Paris", "New York"],
+          "fact": "The RNLI Grace Darling Museum in Bamburgh has the boat she rowed in the rescue."
+        }
+      ]
+    },
+    {
+      "id": "lady-with-the-lamp",
+      "title": "The Lady with the Lamp",
+      "skill": {
+        "id": "history.florence-nightingale",
+        "name": "Florence Nightingale",
+        "subject": "history",
+        "yearGroup": 1,
+        "strand": "significant-individuals",
+        "prerequisites": []
+      },
+      "story": "A soft light glows in the hospital at night. Meet Florence Nightingale, the nurse who changed hospitals for ever!",
+      "instruction": "Read each question about Florence, then tap the right answer.",
+      "hint": "Remember that Florence was a nurse who wanted sick people to get well in clean places.",
+      "scene": "hospital-ward",
+      "play": "quiz",
+      "choiceProp": "scroll",
+      "questions": [
+        {
+          "ask": "What was Florence's job?",
+          "answer": "A nurse",
+          "wrong": ["A teacher", "A pilot", "A queen"],
+          "fact": "In 1820, when Florence was born, nursing was not seen as a proper job for a rich girl."
+        },
+        {
+          "ask": "What was Florence called?",
+          "answer": "Lady with the Lamp",
+          "wrong": ["Lady of the Lake", "Queen of Hearts", "Lady of the Sea"],
+          "fact": "A newspaper gave her this name after she checked on soldiers at night."
+        },
+        {
+          "ask": "Which city was she named after?",
+          "answer": "Florence",
+          "wrong": ["London", "Paris", "Rome"],
+          "fact": "She was born in the city of Florence in Italy, while her English family was there."
+        },
+        {
+          "ask": "Who did Florence help in the war?",
+          "answer": "Soldiers",
+          "wrong": ["Kings", "Pirates", "Farmers"],
+          "fact": "She cared for British soldiers who were hurt or ill in the Crimean War."
+        },
+        {
+          "ask": "Which country was her hospital in?",
+          "answer": "Turkey",
+          "wrong": ["Wales", "Spain", "Australia"],
+          "fact": "Her hospital was at Scutari, which is now part of the city of Istanbul."
+        },
+        {
+          "ask": "How many nurses went with her?",
+          "answer": "38",
+          "wrong": ["2", "500", "1,000"],
+          "fact": "She set off in 1854 with 38 nurses to the army hospital."
+        },
+        {
+          "ask": "What was the hospital like when she came?",
+          "answer": "Dirty",
+          "wrong": ["Clean", "Brand new", "Empty"],
+          "fact": "There were rats, dirty sheets and not enough food or soap."
+        },
+        {
+          "ask": "What did Florence do to help?",
+          "answer": "Made it clean",
+          "wrong": ["Sang songs", "Built a ship", "Baked cakes"],
+          "fact": "Her nurses scrubbed floors, washed sheets and cooked better food."
+        },
+        {
+          "ask": "What did she carry on her night rounds?",
+          "answer": "A lamp",
+          "wrong": ["A sword", "A drum", "A flag"],
+          "fact": "Her lamp was a Turkish lantern, which folded up like a paper concertina."
+        },
+        {
+          "ask": "What did Florence draw to share her ideas?",
+          "answer": "Charts",
+          "wrong": ["Cartoons", "Comics", "Star maps"],
+          "fact": "Her clever charts showed that clean hospitals saved lives."
+        },
+        {
+          "ask": "What did she start in London in 1860?",
+          "answer": "A nursing school",
+          "wrong": ["A zoo", "A circus", "A bakery"],
+          "fact": "The Nightingale School at St Thomas' Hospital trained nurses for many years."
+        },
+        {
+          "ask": "Which day is now Nurses Day?",
+          "answer": "Her birthday",
+          "wrong": ["Christmas Day", "New Year's Day", "Bonfire Night"],
+          "fact": "International Nurses Day is on 12 May, the day Florence was born."
+        }
+      ]
+    },
+    {
+      "id": "castle-explorers",
+      "title": "Castle Explorers",
+      "skill": {
+        "id": "history.castles-long-ago",
+        "name": "Castles long ago",
+        "subject": "history",
+        "yearGroup": 1,
+        "strand": "local-history",
+        "prerequisites": []
+      },
+      "story": "Lower the drawbridge! You are exploring a castle. Find out what each part was for and who lived there.",
+      "instruction": "Read each castle question, then tap the right answer.",
+      "hint": "Castles were built to keep people safe. Think about how each part helped keep enemies out.",
+      "scene": "castle-courtyard",
+      "play": "quiz",
+      "choiceProp": "shield",
+      "questions": [
+        {
+          "ask": "What is the water around a castle?",
+          "answer": "A moat",
+          "wrong": ["A pond", "A puddle", "A fountain"],
+          "fact": "A moat made it hard for enemies to reach the walls."
+        },
+        {
+          "ask": "Which bridge can be pulled up?",
+          "answer": "A drawbridge",
+          "wrong": ["A footbridge", "A rope bridge", "A tunnel"],
+          "fact": "Chains pulled the drawbridge up so no one could cross the moat."
+        },
+        {
+          "ask": "What is the big strong tower called?",
+          "answer": "The keep",
+          "wrong": ["The shed", "The barn", "The porch"],
+          "fact": "The keep was the safest place in the castle, where the lord often lived."
+        },
+        {
+          "ask": "What metal gate drops down?",
+          "answer": "A portcullis",
+          "wrong": ["A fence", "A trapdoor", "A door mat"],
+          "fact": "A portcullis was a heavy grid of wood and iron that slid down to block the gate."
+        },
+        {
+          "ask": "What are the bumpy tops of the walls?",
+          "answer": "Battlements",
+          "wrong": ["Basements", "Chimneys", "Gutters"],
+          "fact": "Guards could hide behind the high parts and look out through the gaps."
+        },
+        {
+          "ask": "Where did everyone eat a big feast?",
+          "answer": "The great hall",
+          "wrong": ["The dungeon", "The stable", "The tower top"],
+          "fact": "The great hall had long tables, a big fire and sometimes music."
+        },
+        {
+          "ask": "Who was in charge of the castle?",
+          "answer": "The lord",
+          "wrong": ["The cook", "The blacksmith", "The jester"],
+          "fact": "The lord and lady ran the castle and the land around it."
+        },
+        {
+          "ask": "Who wore armour and rode a horse?",
+          "answer": "A knight",
+          "wrong": ["A jester", "A cook", "A monk"],
+          "fact": "A knight trained for years, starting as a young page."
+        },
+        {
+          "ask": "Who told jokes to make the lord laugh?",
+          "answer": "A jester",
+          "wrong": ["A knight", "A guard", "A baker"],
+          "fact": "Jesters wore bright clothes and hats with bells, and juggled and sang."
+        },
+        {
+          "ask": "What were the first Norman castles made of?",
+          "answer": "Wood",
+          "wrong": ["Glass", "Plastic", "Paper"],
+          "fact": "After 1066 the Normans built wooden castles quickly, then rebuilt many in stone."
+        },
+        {
+          "ask": "Who looked out of the thin window slits?",
+          "answer": "Archers",
+          "wrong": ["Cats", "Cooks", "Babies"],
+          "fact": "The slits were thin on the outside, so archers inside stayed safe."
+        },
+        {
+          "ask": "Which castle is a home for the King?",
+          "answer": "Windsor Castle",
+          "wrong": ["Dover Castle", "Conwy Castle", "Warwick Castle"],
+          "fact": "Windsor Castle is the oldest and largest castle in the world that people still live in."
+        }
+      ]
+    },
+    {
+      "id": "past-and-present-detectives",
+      "title": "Past and Present Detectives",
+      "skill": {
+        "id": "history.words-about-time",
+        "name": "Words about time and the past",
+        "subject": "history",
+        "yearGroup": 1,
+        "strand": "chronological-understanding",
+        "prerequisites": []
+      },
+      "story": "Welcome to the museum, detective! Use clues and time words to find out about the past.",
+      "instruction": "Read each detective question, then tap the right answer.",
+      "hint": "Past means before now, present means now, and future means after now.",
+      "scene": "museum-hall",
+      "play": "quiz",
+      "choiceProp": "gold-coin",
+      "questions": [
+        {
+          "ask": "Which words mean long ago?",
+          "answer": "The past",
+          "wrong": ["The future", "Tomorrow", "Next week"],
+          "fact": "History is the story of the past, from yesterday to thousands of years ago."
+        },
+        {
+          "ask": "Which words mean now?",
+          "answer": "The present",
+          "wrong": ["The past", "Long ago", "Last year"],
+          "fact": "The present is the time we are in right now."
+        },
+        {
+          "ask": "Which words mean after now?",
+          "answer": "The future",
+          "wrong": ["The past", "Long ago", "Yesterday"],
+          "fact": "Nobody knows the future yet, but we can make plans for it."
+        },
+        {
+          "ask": "What day came just before today?",
+          "answer": "Yesterday",
+          "wrong": ["Tomorrow", "Next week", "Today"],
+          "fact": "Today will be yesterday when you wake up tomorrow!"
+        },
+        {
+          "ask": "Where can you see very old things?",
+          "answer": "A museum",
+          "wrong": ["A supermarket", "A car park", "A bus stop"],
+          "fact": "Museums keep old things safe so everyone can learn from them."
+        },
+        {
+          "ask": "Who is the oldest?",
+          "answer": "Great-grandma",
+          "wrong": ["Grandma", "Mum", "Baby"],
+          "fact": "Great-grandma is your grandma's or grandad's mum."
+        },
+        {
+          "ask": "Who can tell us about the past?",
+          "answer": "Older people",
+          "wrong": ["Babies", "Puppies", "Robots"],
+          "fact": "Older people remember what life was like when they were young."
+        },
+        {
+          "ask": "What shows how Grandad looked as a boy?",
+          "answer": "An old photo",
+          "wrong": ["A new phone", "A calendar", "A map"],
+          "fact": "Photos are clues that show us clothes, toys and homes from the past."
+        },
+        {
+          "ask": "What colours are many very old photos?",
+          "answer": "Black and white",
+          "wrong": ["Pink and green", "Gold and silver", "Red and blue"],
+          "fact": "Most family photos were black and white until about 60 years ago."
+        },
+        {
+          "ask": "What shows events in time order?",
+          "answer": "A timeline",
+          "wrong": ["A shopping list", "A recipe", "A menu"],
+          "fact": "A timeline puts the oldest things at one end and the newest at the other."
+        },
+        {
+          "ask": "What do we call 100 years?",
+          "answer": "A century",
+          "wrong": ["A decade", "A week", "A month"],
+          "fact": "A decade is 10 years, and a century is 100 years."
+        },
+        {
+          "ask": "Who digs up old things from long ago?",
+          "answer": "An archaeologist",
+          "wrong": ["A dentist", "A plumber", "A chef"],
+          "fact": "Archaeologists use small trowels and brushes so they don't break what they find."
+        }
+      ]
+    }
+  ]
+}

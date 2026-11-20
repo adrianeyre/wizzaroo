@@ -1,0 +1,594 @@
+{
+  "subject": "design",
+  "yearGroup": 5,
+  "games": [
+    {
+      "id": "dt-spec-writer",
+      "title": "Spec Writer",
+      "station": "true-false",
+      "prop": "magnifier",
+      "skillName": "Writing a design specification",
+      "strand": "research-criteria",
+      "statutoryRequirement": "Pupils should be taught to use research and develop design criteria to inform the design of innovative, functional, appealing products that are fit for purpose, aimed at particular individuals or groups",
+      "instruction": "Read it, then decide if it is true or false.",
+      "hint": "Not quite. Think about clear, testable criteria and real users.",
+      "questions": [
+        {
+          "ask": "A design specification lists what a product must do.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "'Looks nice' is a precise, measurable criterion.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Testing ideas with real users is a good research method.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Innovative products copy an existing design exactly.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "'Must hold 1 kg without breaking' is a good criterion.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A product for older people might need large, easy-grip buttons.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "The target market is the group a product is aimed at.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Design criteria should be written after the product is finished.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Comparing similar products in shops is a kind of market research.",
+          "answer": "True",
+          "distractors": ["False"]
+        }
+      ]
+    },
+    {
+      "id": "dt-drawing-office",
+      "title": "Drawing Office",
+      "station": "compare",
+      "prop": "bulb",
+      "skillName": "Using diagrams, prototypes and CAD",
+      "strand": "design-communication",
+      "statutoryRequirement": "Pupils should be taught to generate, develop, model and communicate their ideas through discussion, annotated sketches, cross-sectional and exploded diagrams, prototypes, pattern pieces and computer-aided design",
+      "instruction": "Think about how designers show ideas, then tap the answer.",
+      "hint": "Not quite. Think about what each kind of drawing or model shows.",
+      "questions": [
+        {
+          "ask": "Which drawing shows parts spread apart to show how they fit?",
+          "answer": "Exploded diagram",
+          "distractors": ["Cross-section", "Bar chart", "Mind map"]
+        },
+        {
+          "ask": "Which drawing shows a product as if cut in half to see inside?",
+          "answer": "Cross-section",
+          "distractors": ["Exploded diagram", "Mind map", "Timeline"]
+        },
+        {
+          "ask": "CAD lets designers draw their ideas using a...",
+          "answer": "Computer",
+          "distractors": ["Paintbrush", "Saw", "Chisel"]
+        },
+        {
+          "ask": "Which machine builds a solid object from a CAD file?",
+          "answer": "3D printer",
+          "distractors": ["Toaster", "Stapler", "Hole punch"]
+        },
+        {
+          "ask": "Which machine cuts precise shapes from a CAD drawing with a beam?",
+          "answer": "Laser cutter",
+          "distractors": ["Hand drill", "Coping saw", "Glue gun"]
+        },
+        {
+          "ask": "A working test version of a product is a...",
+          "answer": "Prototype",
+          "distractors": ["Receipt", "Advert", "Recipe"]
+        },
+        {
+          "ask": "Why add annotations to a sketch?",
+          "answer": "To explain ideas",
+          "distractors": [
+            "To make it messy",
+            "To hide details",
+            "To fill space"
+          ]
+        },
+        {
+          "ask": "One advantage of CAD is that changes are...",
+          "answer": "Quick to make",
+          "distractors": ["Impossible", "Very slow", "Always wrong"]
+        },
+        {
+          "ask": "A pattern piece is used to cut out...",
+          "answer": "Fabric shapes",
+          "distractors": ["Circuits", "Gears", "Cakes"]
+        }
+      ]
+    },
+    {
+      "id": "dt-material-choices",
+      "title": "Material Choices",
+      "station": "compare",
+      "prop": "rock",
+      "skillName": "Choosing woods, metals and plastics",
+      "strand": "materials-components",
+      "statutoryRequirement": "Pupils should be taught to select from and use a wider range of materials and components, including construction materials, textiles and ingredients, according to their functional properties and aesthetic qualities",
+      "instruction": "Think about each material's properties, then tap the answer.",
+      "hint": "Not quite. Think about where the material comes from and what it is good at.",
+      "questions": [
+        {
+          "ask": "Which of these is a hardwood?",
+          "answer": "Oak",
+          "distractors": ["Pine", "MDF", "Plywood"]
+        },
+        {
+          "ask": "Which of these is a softwood?",
+          "answer": "Pine",
+          "distractors": ["Oak", "Beech", "Mahogany"]
+        },
+        {
+          "ask": "Which manufactured board is made from wood fibres?",
+          "answer": "MDF",
+          "distractors": ["Oak", "Pine", "Ash"]
+        },
+        {
+          "ask": "Plywood is thin layers of wood glued with the grain...",
+          "answer": "At right angles",
+          "distractors": ["In one direction", "In circles", "With no glue"]
+        },
+        {
+          "ask": "Which light metal is used to make kitchen foil?",
+          "answer": "Aluminium",
+          "distractors": ["Lead", "Gold", "Iron"]
+        },
+        {
+          "ask": "Which metal is best for electrical wiring in a model?",
+          "answer": "Copper",
+          "distractors": ["Lead", "Zinc", "Tin"]
+        },
+        {
+          "ask": "Corrugated plastic is good for outdoor signs because it is...",
+          "answer": "Waterproof",
+          "distractors": ["Absorbent", "Magnetic", "Edible"]
+        },
+        {
+          "ask": "Clear acrylic sheet suits a display case because it is...",
+          "answer": "Transparent",
+          "distractors": ["Absorbent", "Soft", "Magnetic"]
+        },
+        {
+          "ask": "Which of these is mostly an aesthetic quality?",
+          "answer": "Texture",
+          "distractors": ["Strength", "Hardness", "Conductivity"]
+        }
+      ]
+    },
+    {
+      "id": "dt-cam-toy-workshop",
+      "title": "Cam Toy Workshop",
+      "station": "compare",
+      "prop": "magnet",
+      "skillName": "Using cams in moving toys",
+      "strand": "mechanical-systems",
+      "statutoryRequirement": "Pupils should be taught to understand and use mechanical systems in their products [for example, gears, pulleys, cams, levers and linkages]",
+      "instruction": "Picture the cam turning, then tap the answer.",
+      "hint": "Not quite. Think about how the cam's shape pushes the follower.",
+      "questions": [
+        {
+          "ask": "A cam changes turning (rotary) motion into...",
+          "answer": "Up-and-down motion",
+          "distractors": ["Faster spinning", "Sideways rolling", "No motion"]
+        },
+        {
+          "ask": "The part that rests on a cam and moves up and down is the...",
+          "answer": "Follower",
+          "distractors": ["Driver", "Pulley", "Pivot"]
+        },
+        {
+          "ask": "Which cam gives a slow rise, then a sudden drop?",
+          "answer": "Snail cam",
+          "distractors": ["Round cam", "Pear cam", "Oval cam"]
+        },
+        {
+          "ask": "An off-centre round cam makes the follower...",
+          "answer": "Rise and fall evenly",
+          "distractors": ["Drop suddenly", "Never move", "Spin round"]
+        },
+        {
+          "ask": "In one turn, an oval cam lifts the follower...",
+          "answer": "Twice",
+          "distractors": ["Once", "Never", "Ten times"]
+        },
+        {
+          "ask": "The rod that a cam is fixed to and turns with is the...",
+          "answer": "Camshaft",
+          "distractors": ["Follower", "Pulley belt", "Lever"]
+        },
+        {
+          "ask": "A crank handle is used to...",
+          "answer": "Turn the camshaft",
+          "distractors": ["Stop the toy", "Light a bulb", "Glue the frame"]
+        },
+        {
+          "ask": "Which toy might use cams?",
+          "answer": "A bobbing toy horse",
+          "distractors": ["A paper plane", "A beanbag", "A kite"]
+        },
+        {
+          "ask": "A pear-shaped cam makes the follower...",
+          "answer": "Rise, fall and rest",
+          "distractors": ["Spin round", "Never move", "Drop suddenly"]
+        }
+      ]
+    },
+    {
+      "id": "dt-switch-it-up",
+      "title": "Switch It Up",
+      "station": "compare",
+      "prop": "battery",
+      "skillName": "Choosing switches and outputs",
+      "strand": "electrical-systems",
+      "statutoryRequirement": "Pupils should be taught to understand and use electrical systems in their products [for example, series circuits incorporating switches, bulbs, buzzers and motors]",
+      "instruction": "Think about how the switch works, then tap the answer.",
+      "hint": "Not quite. Think about what has to happen to turn the circuit on or off.",
+      "questions": [
+        {
+          "ask": "Which switch is turned on by a magnet?",
+          "answer": "Reed switch",
+          "distractors": ["Toggle switch", "Push switch", "Tilt switch"]
+        },
+        {
+          "ask": "Which switch works when it is tipped over?",
+          "answer": "Tilt switch",
+          "distractors": ["Reed switch", "Toggle switch", "Pressure pad"]
+        },
+        {
+          "ask": "Which switch stays on until you flick it back?",
+          "answer": "Toggle switch",
+          "distractors": ["Push-to-make switch", "Reed switch", "Pressure pad"]
+        },
+        {
+          "ask": "A doorbell rings only while pressed. Which switch?",
+          "answer": "Push-to-make switch",
+          "distractors": ["Toggle switch", "Tilt switch", "Reed switch"]
+        },
+        {
+          "ask": "Which switch could tell when someone steps on a mat?",
+          "answer": "Pressure pad",
+          "distractors": ["Tilt switch", "Reed switch", "Toggle switch"]
+        },
+        {
+          "ask": "A fridge light goes off when the door presses on it. Which switch?",
+          "answer": "Push-to-break",
+          "distractors": ["Push-to-make", "Tilt switch", "Reed switch"]
+        },
+        {
+          "ask": "Swapping the battery round makes a motor...",
+          "answer": "Spin the other way",
+          "distractors": ["Stop for ever", "Light up", "Make a beep"]
+        },
+        {
+          "ask": "Which output suits a burglar alarm?",
+          "answer": "Buzzer",
+          "distractors": ["Motor", "Switch", "Cell"]
+        },
+        {
+          "ask": "An LED only lights if it is connected...",
+          "answer": "The right way round",
+          "distractors": ["Upside down", "In water", "With no cell"]
+        }
+      ]
+    },
+    {
+      "id": "dt-input-or-output",
+      "title": "Input Or Output?",
+      "station": "sort",
+      "prop": "microscope",
+      "skillName": "Knowing inputs, outputs and controllers",
+      "strand": "computing-control",
+      "statutoryRequirement": "Pupils should be taught to apply their understanding of computing to program, monitor and control their products",
+      "instruction": "Think about what the part does, then tap its group.",
+      "hint": "Not quite. Does it sense, act, control or give power?",
+      "questions": [
+        {
+          "ask": "Which group does a light sensor belong in?",
+          "answer": "Input",
+          "distractors": ["Output", "Power supply", "Controller"]
+        },
+        {
+          "ask": "Which group does a motor belong in?",
+          "answer": "Output",
+          "distractors": ["Input", "Power supply", "Controller"]
+        },
+        {
+          "ask": "Which group does a buzzer belong in?",
+          "answer": "Output",
+          "distractors": ["Input", "Power supply", "Controller"]
+        },
+        {
+          "ask": "Which group does a push switch belong in?",
+          "answer": "Input",
+          "distractors": ["Output", "Power supply", "Controller"]
+        },
+        {
+          "ask": "Which group does a temperature sensor belong in?",
+          "answer": "Input",
+          "distractors": ["Output", "Power supply", "Controller"]
+        },
+        {
+          "ask": "Which group does an LED belong in?",
+          "answer": "Output",
+          "distractors": ["Input", "Power supply", "Controller"]
+        },
+        {
+          "ask": "Which group does a battery pack belong in?",
+          "answer": "Power supply",
+          "distractors": ["Input", "Output", "Controller"]
+        },
+        {
+          "ask": "Which group does a programmable microcontroller belong in?",
+          "answer": "Controller",
+          "distractors": ["Input", "Output", "Power supply"]
+        },
+        {
+          "ask": "Which group does a motion sensor belong in?",
+          "answer": "Input",
+          "distractors": ["Output", "Power supply", "Controller"]
+        }
+      ]
+    },
+    {
+      "id": "dt-reinforce-it",
+      "title": "Reinforce It",
+      "station": "compare",
+      "prop": "prism",
+      "skillName": "Reinforcing complex structures",
+      "strand": "complex-structures",
+      "statutoryRequirement": "Pupils should be taught to apply their understanding of how to strengthen, stiffen and reinforce more complex structures",
+      "instruction": "Compare the choices, then tap the answer.",
+      "hint": "Not quite. Think about squashing, stretching, triangles and stiff shapes.",
+      "questions": [
+        {
+          "ask": "A strut in a frame resists being...",
+          "answer": "Squashed",
+          "distractors": ["Stretched", "Painted", "Heated"]
+        },
+        {
+          "ask": "A tie in a frame resists being...",
+          "answer": "Stretched",
+          "distractors": ["Squashed", "Painted", "Heated"]
+        },
+        {
+          "ask": "Two diagonals crossing inside a rectangle frame is called...",
+          "answer": "Cross-bracing",
+          "distractors": ["Laminating", "Kneading", "Corrugating"]
+        },
+        {
+          "ask": "Why are bike frames made of tubes, not solid rods?",
+          "answer": "Strong but light",
+          "distractors": ["Heavier", "Bendier", "Softer"]
+        },
+        {
+          "ask": "Which beam shape makes steel girders stiff but light?",
+          "answer": "I-beam",
+          "distractors": ["Flat strip", "Round ball", "Thin sheet"]
+        },
+        {
+          "ask": "Why do tall towers have wide, deep foundations?",
+          "answer": "For stability",
+          "distractors": ["To look smart", "To be lighter", "To hold water"]
+        },
+        {
+          "ask": "Laminating thin layers of card makes it...",
+          "answer": "Thicker and stiffer",
+          "distractors": ["Thinner", "Floppier", "Lighter"]
+        },
+        {
+          "ask": "What does an arch do with the load on top?",
+          "answer": "Sends it to the ends",
+          "distractors": ["Pulls it upwards", "Makes it vanish", "Lets it drop"]
+        },
+        {
+          "ask": "A geodesic dome is built from many...",
+          "answer": "Triangles",
+          "distractors": ["Circles", "Ribbons", "Cubes"]
+        }
+      ]
+    },
+    {
+      "id": "dt-famous-firsts",
+      "title": "Famous Firsts",
+      "station": "compare",
+      "prop": "bulb",
+      "skillName": "Knowing designers, engineers and inventors",
+      "strand": "design-history",
+      "statutoryRequirement": "Pupils should be taught to understand how key events and individuals in design and technology have helped shape the world",
+      "instruction": "Think about each inventor, then tap the answer.",
+      "hint": "Not quite. Think about what each person is famous for designing.",
+      "questions": [
+        {
+          "ask": "Who wrote what is often called the first computer program, in 1843?",
+          "answer": "Ada Lovelace",
+          "distractors": ["Mary Anderson", "Josephine Cochrane", "Mary Quant"]
+        },
+        {
+          "ask": "Which engineer designed the Clifton Suspension Bridge?",
+          "answer": "Brunel",
+          "distractors": ["Dyson", "Edison", "Baird"]
+        },
+        {
+          "ask": "Alec Issigonis designed which small car, launched in 1959?",
+          "answer": "The Mini",
+          "distractors": ["Model T", "The Beetle", "Land Rover"]
+        },
+        {
+          "ask": "James Dyson made over 5,000 prototypes of his...",
+          "answer": "Vacuum cleaner",
+          "distractors": ["Toaster", "Kettle", "Bicycle"]
+        },
+        {
+          "ask": "Tim Berners-Lee invented the World Wide Web while working at...",
+          "answer": "CERN",
+          "distractors": ["NASA", "The BBC", "Buckingham Palace"]
+        },
+        {
+          "ask": "Percy Shaw's cat's eyes help drivers to...",
+          "answer": "See lanes at night",
+          "distractors": ["Park cars", "Go faster", "Find petrol"]
+        },
+        {
+          "ask": "Trevor Baylis invented a radio powered by...",
+          "answer": "Winding it up",
+          "distractors": ["Petrol", "Water", "Candles"]
+        },
+        {
+          "ask": "Who invented the jet engine, patenting it in 1930?",
+          "answer": "Frank Whittle",
+          "distractors": ["Percy Shaw", "Alec Issigonis", "John Logie Baird"]
+        },
+        {
+          "ask": "Christopher Cockerell invented a vehicle that rides on air. What is it?",
+          "answer": "Hovercraft",
+          "distractors": ["Helicopter", "Submarine", "Monorail"]
+        }
+      ]
+    },
+    {
+      "id": "dt-grown-reared-caught",
+      "title": "Grown, Reared, Caught",
+      "station": "sort",
+      "prop": "seedling",
+      "skillName": "Knowing how ingredients are produced",
+      "strand": "seasonality-origins",
+      "statutoryRequirement": "Pupils should be taught to understand seasonality, and know where and how a variety of ingredients are grown, reared, caught and processed",
+      "instruction": "Think about how the food is produced, then tap the group.",
+      "hint": "Not quite. Was it grown in a field, reared on a farm, caught wild or made from another food?",
+      "questions": [
+        {
+          "ask": "Which group does wheat in a field belong in?",
+          "answer": "Grown",
+          "distractors": ["Reared", "Caught", "Processed"]
+        },
+        {
+          "ask": "Which group does lamb from a sheep farm belong in?",
+          "answer": "Reared",
+          "distractors": ["Grown", "Caught", "Processed"]
+        },
+        {
+          "ask": "Which group does mackerel landed by a fishing boat belong in?",
+          "answer": "Caught",
+          "distractors": ["Grown", "Reared", "Processed"]
+        },
+        {
+          "ask": "Which group does cheese made from milk belong in?",
+          "answer": "Processed",
+          "distractors": ["Grown", "Reared", "Caught"]
+        },
+        {
+          "ask": "Which group do potatoes dug from a field belong in?",
+          "answer": "Grown",
+          "distractors": ["Reared", "Caught", "Processed"]
+        },
+        {
+          "ask": "Which group do chickens raised on a farm belong in?",
+          "answer": "Reared",
+          "distractors": ["Grown", "Caught", "Processed"]
+        },
+        {
+          "ask": "Which group does a crab from a lobster pot at sea belong in?",
+          "answer": "Caught",
+          "distractors": ["Grown", "Reared", "Processed"]
+        },
+        {
+          "ask": "Which group does bread baked from flour belong in?",
+          "answer": "Processed",
+          "distractors": ["Grown", "Reared", "Caught"]
+        },
+        {
+          "ask": "Which group does strawberry jam belong in?",
+          "answer": "Processed",
+          "distractors": ["Grown", "Reared", "Caught"]
+        }
+      ]
+    },
+    {
+      "id": "dt-savoury-chef",
+      "title": "Savoury Chef",
+      "station": "sequence",
+      "prop": "egg",
+      "skillName": "Following steps to cook savoury dishes",
+      "strand": "cooking-techniques",
+      "statutoryRequirement": "Pupils should be taught to prepare and cook a variety of predominantly savoury dishes using a range of cooking techniques",
+      "instruction": "Follow the recipe steps, then tap what comes next.",
+      "hint": "Not quite. Think about what a cook must do before the next step can happen.",
+      "questions": [
+        {
+          "ask": "Bread: mix flour, yeast and water, knead, then...?",
+          "answer": "Leave it to rise",
+          "distractors": ["Eat it raw", "Grate it", "Peel it"]
+        },
+        {
+          "ask": "Bread: knead, rise, shape, prove again, then...?",
+          "answer": "Bake in the oven",
+          "distractors": ["Add the yeast", "Weigh the flour", "Wash your hands"]
+        },
+        {
+          "ask": "Soup: wash your hands, wash the vegetables, then...?",
+          "answer": "Peel and chop them",
+          "distractors": ["Serve the soup", "Blend the soup", "Eat the soup"]
+        },
+        {
+          "ask": "Soup: chop veg, soften in a little oil, add stock, then...?",
+          "answer": "Simmer until soft",
+          "distractors": ["Peel the veg", "Wash your hands", "Grate it"]
+        },
+        {
+          "ask": "Pizza: make dough, roll it out, spread tomato sauce, then...?",
+          "answer": "Add toppings",
+          "distractors": ["Knead it", "Weigh the flour", "Wash up"]
+        },
+        {
+          "ask": "Couscous: pour on boiling water, cover, wait, then...?",
+          "answer": "Fluff with a fork",
+          "distractors": ["Add more water", "Weigh it", "Wash hands"]
+        },
+        {
+          "ask": "Cheese scones: rub butter into flour, stir in cheese, then...?",
+          "answer": "Add milk and mix",
+          "distractors": ["Bake them", "Cut them out", "Serve them"]
+        },
+        {
+          "ask": "Omelette: crack the eggs, whisk them, then...?",
+          "answer": "Pour into hot pan",
+          "distractors": ["Peel the eggs", "Grate the eggs", "Serve it"]
+        },
+        {
+          "ask": "Cook the dish, serve it, then...?",
+          "answer": "Wash up and wipe",
+          "distractors": [
+            "Weigh ingredients",
+            "Preheat the oven",
+            "Peel the onions"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "computing.design-a-game",
+  "name": "Designing and decomposing a game",
+  "subject": "computing",
+  "yearGroup": 6,
+  "strand": "algorithms",
+  "prerequisites": ["computing.decompose-a-task"]
+}

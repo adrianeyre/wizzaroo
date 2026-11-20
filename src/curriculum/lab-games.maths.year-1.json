@@ -1,0 +1,437 @@
+{
+  "subject": "maths",
+  "yearGroup": 1,
+  "games": [
+    {
+      "id": "number-word-wizard",
+      "title": "Number Word Wizard",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Reading and writing numbers to 20 in words",
+      "strand": "number-and-place-value",
+      "statutoryRequirement": "Pupils should be taught to read and write numbers from 1 to 20 in numerals and words",
+      "instruction": "Read the number, then tap the matching word or numeral.",
+      "hint": "Not quite. Say the number out loud slowly, then try again.",
+      "questions": [
+        {
+          "ask": "Which word is the number 7?",
+          "answer": "seven",
+          "distractors": ["eight", "six", "eleven"]
+        },
+        {
+          "ask": "Which word is the number 12?",
+          "answer": "twelve",
+          "distractors": ["twenty", "eleven", "two"]
+        },
+        {
+          "ask": "Which word is the number 15?",
+          "answer": "fifteen",
+          "distractors": ["fifty", "five", "sixteen"]
+        },
+        {
+          "ask": "What number is 'nineteen'?",
+          "answer": "19",
+          "distractors": ["90", "9", "18"]
+        },
+        {
+          "ask": "What number is 'thirteen'?",
+          "answer": "13",
+          "distractors": ["30", "3", "31"]
+        },
+        {
+          "ask": "Which is the correct spelling of 8?",
+          "answer": "eight",
+          "distractors": ["eihgt", "ate", "eigth"]
+        },
+        {
+          "ask": "Which word is the number 20?",
+          "answer": "twenty",
+          "distractors": ["twelve", "two", "twentee"]
+        },
+        {
+          "ask": "What number is 'eleven'?",
+          "answer": "11",
+          "distractors": ["7", "12", "1"]
+        },
+        {
+          "ask": "Which word is the number 4?",
+          "answer": "four",
+          "distractors": ["for", "fore", "fourteen"]
+        },
+        {
+          "ask": "Which word is the number 17?",
+          "answer": "seventeen",
+          "distractors": ["seventy", "seven", "sixteen"]
+        }
+      ]
+    },
+    {
+      "id": "most-or-least-match",
+      "title": "Most or Least?",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Equal to, more than, less than, most and least",
+      "strand": "number-and-place-value",
+      "statutoryRequirement": "Pupils should be taught to identify and represent numbers using objects and pictorial representations including the number line, and use the language of: equal to, more than, less than (fewer), most, least",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Picture the numbers on a number line, then try again.",
+      "questions": [
+        {
+          "ask": "Which number is more than 9?",
+          "answer": "12",
+          "distractors": ["5", "9", "7"]
+        },
+        {
+          "ask": "Which number is less than 6?",
+          "answer": "4",
+          "distractors": ["6", "8", "10"]
+        },
+        {
+          "ask": "Which is the most: 3, 11, 8 or 5?",
+          "answer": "11",
+          "distractors": ["3", "8", "5"]
+        },
+        {
+          "ask": "Which is the least: 14, 9, 17 or 12?",
+          "answer": "9",
+          "distractors": ["14", "17", "12"]
+        },
+        {
+          "ask": "Which is equal to 10?",
+          "answer": "5 + 5",
+          "distractors": ["5 + 4", "6 + 5", "3 + 6"]
+        },
+        {
+          "ask": "Sam has 6 sweets. Mia has 9 sweets. Who has fewer?",
+          "answer": "Sam",
+          "distractors": ["Mia", "They are equal", "Nobody"]
+        },
+        {
+          "ask": "Ali has 7 stickers. Jo has 7 stickers. What is true?",
+          "answer": "They are equal",
+          "distractors": ["Ali has more", "Jo has more", "Ali has fewer"]
+        },
+        {
+          "ask": "Which number is more than 12 but less than 15?",
+          "answer": "14",
+          "distractors": ["12", "15", "11"]
+        },
+        {
+          "ask": "Which group has the most?",
+          "answer": "9 dogs",
+          "distractors": ["4 cats", "6 fish", "2 hens"]
+        },
+        {
+          "ask": "Which number is 1 less than 20?",
+          "answer": "19",
+          "distractors": ["21", "18", "10"]
+        }
+      ]
+    },
+    {
+      "id": "hop-past-hundred",
+      "title": "Hop Past 100",
+      "station": "sequence",
+      "prop": "magnifier",
+      "skillName": "Counting forwards and backwards across 100",
+      "strand": "number-and-place-value",
+      "statutoryRequirement": "Pupils should be taught to count to and across 100, forwards and backwards, beginning with 0 or 1, or from any given number",
+      "instruction": "Count along in ones, then tap the next number.",
+      "hint": "Not quite. Say the numbers out loud in order, then try again.",
+      "questions": [
+        {
+          "ask": "98, 99, 100, ... What comes next?",
+          "answer": "101",
+          "distractors": ["200", "110", "1000"]
+        },
+        {
+          "ask": "103, 102, 101, ... What comes next?",
+          "answer": "100",
+          "distractors": ["99", "1000", "104"]
+        },
+        {
+          "ask": "97, 98, 99, ... What comes next?",
+          "answer": "100",
+          "distractors": ["910", "101", "90"]
+        },
+        {
+          "ask": "Count back: 101, 100, 99, ... What comes next?",
+          "answer": "98",
+          "distractors": ["97", "100", "89"]
+        },
+        {
+          "ask": "105, 106, 107, ... What comes next?",
+          "answer": "108",
+          "distractors": ["109", "106", "117"]
+        },
+        {
+          "ask": "89, 90, 91, ... What comes next?",
+          "answer": "92",
+          "distractors": ["93", "90", "82"]
+        },
+        {
+          "ask": "Count back: 112, 111, 110, ... What comes next?",
+          "answer": "109",
+          "distractors": ["100", "111", "119"]
+        },
+        {
+          "ask": "What number comes just before 100?",
+          "answer": "99",
+          "distractors": ["101", "90", "98"]
+        },
+        {
+          "ask": "What number comes just after 109?",
+          "answer": "110",
+          "distractors": ["1010", "100", "119"]
+        },
+        {
+          "ask": "Count back: 120, 119, 118, ... What comes next?",
+          "answer": "117",
+          "distractors": ["116", "119", "108"]
+        }
+      ]
+    },
+    {
+      "id": "heavy-full-quick",
+      "title": "Heavy, Full or Quick",
+      "station": "compare",
+      "prop": "beaker",
+      "skillName": "Comparing mass, capacity and time",
+      "strand": "measurement",
+      "statutoryRequirement": "Pupils should be taught to compare, describe and solve practical problems for: mass/weight [for example, heavy/light, heavier than, lighter than]; capacity and volume [for example, full/empty, more than, less than, half, half full, quarter]; time [for example, quicker, slower, earlier, later]",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Imagine holding, filling or racing them, then try again.",
+      "questions": [
+        {
+          "ask": "Which of these is the heaviest?",
+          "answer": "Elephant",
+          "distractors": ["Mouse", "Feather", "Apple"]
+        },
+        {
+          "ask": "Which of these is the lightest?",
+          "answer": "Feather",
+          "distractors": ["Brick", "Bag of potatoes", "Dog"]
+        },
+        {
+          "ask": "A jug has no water in it at all. It is...",
+          "answer": "empty",
+          "distractors": ["full", "half full", "heavy"]
+        },
+        {
+          "ask": "A cup is filled right up to the top. It is...",
+          "answer": "full",
+          "distractors": ["empty", "half full", "light"]
+        },
+        {
+          "ask": "A bath is filled up to the middle. It is...",
+          "answer": "half full",
+          "distractors": ["full", "empty", "quarter full"]
+        },
+        {
+          "ask": "Which animal is the quickest?",
+          "answer": "Cheetah",
+          "distractors": ["Snail", "Tortoise", "Slug"]
+        },
+        {
+          "ask": "Tom runs a race in 10 seconds. Ann takes 15 seconds. Who is quicker?",
+          "answer": "Tom",
+          "distractors": ["Ann", "They are equal", "Nobody"]
+        },
+        {
+          "ask": "Which meal happens earliest in the day?",
+          "answer": "Breakfast",
+          "distractors": ["Lunch", "Tea", "Supper"]
+        },
+        {
+          "ask": "On a balance, the side with the books goes down. Which is heavier?",
+          "answer": "The books",
+          "distractors": ["The feathers", "Both the same", "Neither"]
+        },
+        {
+          "ask": "Which is later in the same afternoon?",
+          "answer": "5 o'clock",
+          "distractors": ["3 o'clock", "2 o'clock", "1 o'clock"]
+        }
+      ]
+    },
+    {
+      "id": "coin-and-note-counter",
+      "title": "Coin Counter",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Recognising coins and notes",
+      "strand": "measurement",
+      "statutoryRequirement": "Pupils should be taught to recognise and know the value of different denominations of coins and notes",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Look at the number on each coin or note, then try again.",
+      "questions": [
+        {
+          "ask": "Which coin is worth the most?",
+          "answer": "£2",
+          "distractors": ["£1", "50p", "20p"]
+        },
+        {
+          "ask": "Which coin is worth the least?",
+          "answer": "1p",
+          "distractors": ["2p", "5p", "10p"]
+        },
+        {
+          "ask": "Which of these is a note, not a coin?",
+          "answer": "£5",
+          "distractors": ["£2", "£1", "50p"]
+        },
+        {
+          "ask": "How many pence is a £1 coin worth?",
+          "answer": "100p",
+          "distractors": ["10p", "1p", "50p"]
+        },
+        {
+          "ask": "Which coin is worth more than 20p?",
+          "answer": "50p",
+          "distractors": ["10p", "5p", "2p"]
+        },
+        {
+          "ask": "Which coin is worth the same as two 5p coins?",
+          "answer": "10p",
+          "distractors": ["5p", "2p", "20p"]
+        },
+        {
+          "ask": "Which note is worth the most?",
+          "answer": "£50",
+          "distractors": ["£20", "£10", "£5"]
+        },
+        {
+          "ask": "Which coin is worth the same as two £1 coins?",
+          "answer": "£2",
+          "distractors": ["£1", "50p", "20p"]
+        },
+        {
+          "ask": "Which coin is worth less than 5p?",
+          "answer": "2p",
+          "distractors": ["10p", "20p", "50p"]
+        }
+      ]
+    },
+    {
+      "id": "days-and-months-order",
+      "title": "Days and Months",
+      "station": "sequence",
+      "prop": "sun",
+      "skillName": "Days, months and ordering events",
+      "strand": "measurement",
+      "statutoryRequirement": "Pupils should be taught to sequence events in chronological order using language [for example, before and after, next, first, today, yesterday, tomorrow, morning, afternoon and evening]; recognise and use language relating to dates, including days of the week, weeks, months and years",
+      "instruction": "Think about the order, then tap what comes next.",
+      "hint": "Not quite. Say the days or months in order from the start, then try again.",
+      "questions": [
+        {
+          "ask": "Monday, Tuesday, Wednesday, ... What comes next?",
+          "answer": "Thursday",
+          "distractors": ["Friday", "Monday", "Sunday"]
+        },
+        {
+          "ask": "What day comes after Saturday?",
+          "answer": "Sunday",
+          "distractors": ["Friday", "Monday", "Thursday"]
+        },
+        {
+          "ask": "What day comes before Friday?",
+          "answer": "Thursday",
+          "distractors": ["Saturday", "Wednesday", "Monday"]
+        },
+        {
+          "ask": "January, February, March, ... What comes next?",
+          "answer": "April",
+          "distractors": ["May", "June", "December"]
+        },
+        {
+          "ask": "Which month comes after December?",
+          "answer": "January",
+          "distractors": ["November", "February", "June"]
+        },
+        {
+          "ask": "If today is Tuesday, what day was yesterday?",
+          "answer": "Monday",
+          "distractors": ["Wednesday", "Sunday", "Thursday"]
+        },
+        {
+          "ask": "If today is Sunday, what day is tomorrow?",
+          "answer": "Monday",
+          "distractors": ["Saturday", "Tuesday", "Friday"]
+        },
+        {
+          "ask": "Planting a seed: what do you do first?",
+          "answer": "Dig a hole",
+          "distractors": ["Water it", "Watch it grow", "Pick the flower"]
+        },
+        {
+          "ask": "How many days are in a week?",
+          "answer": "7",
+          "distractors": ["5", "12", "10"]
+        },
+        {
+          "ask": "Which part of the day comes first?",
+          "answer": "Morning",
+          "distractors": ["Afternoon", "Evening", "Night"]
+        }
+      ]
+    },
+    {
+      "id": "flat-shape-spotter",
+      "title": "Shape Spotter",
+      "station": "mystery",
+      "prop": "prism",
+      "skillName": "Naming 2-D shapes",
+      "strand": "properties-of-shapes",
+      "statutoryRequirement": "Pupils should be taught to recognise and name common 2-D and 3-D shapes, including: 2-D shapes [for example, rectangles (including squares), circles and triangles]",
+      "instruction": "Read the clues, then tap the shape.",
+      "hint": "Not quite. Count the sides and corners in the clue, then try again.",
+      "questions": [
+        {
+          "ask": "I have 3 straight sides and 3 corners. What am I?",
+          "answer": "Triangle",
+          "distractors": ["Square", "Circle", "Rectangle"]
+        },
+        {
+          "ask": "I am round and have no corners. What am I?",
+          "answer": "Circle",
+          "distractors": ["Square", "Triangle", "Rectangle"]
+        },
+        {
+          "ask": "I have 4 equal sides and 4 square corners. What am I?",
+          "answer": "Square",
+          "distractors": ["Triangle", "Circle", "Oval"]
+        },
+        {
+          "ask": "I have 4 sides: 2 long and 2 short, and 4 square corners. What am I?",
+          "answer": "Rectangle",
+          "distractors": ["Square", "Triangle", "Circle"]
+        },
+        {
+          "ask": "I have no straight sides at all. Which shape am I?",
+          "answer": "Circle",
+          "distractors": ["Square", "Triangle", "Rectangle"]
+        },
+        {
+          "ask": "A bicycle wheel is shaped like me. What am I?",
+          "answer": "Circle",
+          "distractors": ["Square", "Triangle", "Rectangle"]
+        },
+        {
+          "ask": "A door is usually shaped like me. What am I?",
+          "answer": "Rectangle",
+          "distractors": ["Circle", "Triangle", "Oval"]
+        },
+        {
+          "ask": "I am the only one of these with 3 corners. What am I?",
+          "answer": "Triangle",
+          "distractors": ["Square", "Rectangle", "Circle"]
+        },
+        {
+          "ask": "I am a rectangle with all 4 sides the same length. What am I?",
+          "answer": "Square",
+          "distractors": ["Triangle", "Circle", "Oval"]
+        }
+      ]
+    }
+  ]
+}

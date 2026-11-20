@@ -1,0 +1,545 @@
+{
+  "subject": "art",
+  "yearGroup": 1,
+  "games": [
+    {
+      "id": "art-tool-box",
+      "title": "Artist's Tool Box",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Naming art tools and what they do",
+      "strand": "drawing-painting-sculpture",
+      "statutoryRequirement": "Pupils should be taught to use drawing, painting and sculpture to develop and share their ideas, experiences and imagination",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about what each tool is used for.",
+      "questions": [
+        {
+          "ask": "What do you dip in paint to make a painting?",
+          "answer": "Paintbrush",
+          "distractors": ["Ruler", "Scissors", "Glue stick"]
+        },
+        {
+          "ask": "What do you use to draw thin grey lines?",
+          "answer": "Pencil",
+          "distractors": ["Paintbrush", "Sponge", "Glue stick"]
+        },
+        {
+          "ask": "What do you use to rub out a pencil mistake?",
+          "answer": "Rubber",
+          "distractors": ["Crayon", "Paintbrush", "Scissors"]
+        },
+        {
+          "ask": "Which soft material can you squeeze and shape into a model?",
+          "answer": "Clay",
+          "distractors": ["Paper", "Chalk", "Crayon"]
+        },
+        {
+          "ask": "Where do artists mix their paints?",
+          "answer": "Palette",
+          "distractors": ["Easel", "Sketchbook", "Bucket"]
+        },
+        {
+          "ask": "What stands up to hold a painting while the artist works?",
+          "answer": "Easel",
+          "distractors": ["Palette", "Rubber", "Ruler"]
+        },
+        {
+          "ask": "What is a 3D artwork you can walk all round called?",
+          "answer": "Sculpture",
+          "distractors": ["Painting", "Drawing", "Collage"]
+        },
+        {
+          "ask": "Which is best for drawing on the playground outside?",
+          "answer": "Chalk",
+          "distractors": ["Watercolour", "Glue stick", "Pencil"]
+        }
+      ]
+    },
+    {
+      "id": "art-shape-spotter",
+      "title": "Shape Spotter",
+      "station": "mystery",
+      "prop": "magnifier",
+      "skillName": "Recognising shapes in art",
+      "strand": "techniques",
+      "statutoryRequirement": "Pupils should be taught to develop a wide range of art and design techniques in using colour, pattern, texture, line, shape, form and space",
+      "instruction": "Read the clues, then tap who or what it is.",
+      "hint": "Not quite. Count the sides and corners in the clues.",
+      "questions": [
+        {
+          "ask": "I have 3 straight sides and 3 corners. What am I?",
+          "answer": "Triangle",
+          "distractors": ["Square", "Circle", "Rectangle"]
+        },
+        {
+          "ask": "I am perfectly round and have no corners. What am I?",
+          "answer": "Circle",
+          "distractors": ["Oval", "Square", "Triangle"]
+        },
+        {
+          "ask": "I have 4 equal sides and 4 corners. What am I?",
+          "answer": "Square",
+          "distractors": ["Pentagon", "Triangle", "Hexagon"]
+        },
+        {
+          "ask": "I have 4 sides: 2 long sides and 2 short sides. What am I?",
+          "answer": "Rectangle",
+          "distractors": ["Square", "Triangle", "Circle"]
+        },
+        {
+          "ask": "I have 5 points and twinkle in the night sky in pictures. What am I?",
+          "answer": "Star",
+          "distractors": ["Heart", "Oval", "Diamond"]
+        },
+        {
+          "ask": "I am like a stretched circle, the shape of an egg. What am I?",
+          "answer": "Oval",
+          "distractors": ["Square", "Star", "Triangle"]
+        },
+        {
+          "ask": "I have 6 sides, like a cell in a honeycomb. What am I?",
+          "answer": "Hexagon",
+          "distractors": ["Square", "Pentagon", "Circle"]
+        },
+        {
+          "ask": "I am drawn on cards to show love. What am I?",
+          "answer": "Heart",
+          "distractors": ["Star", "Hexagon", "Rectangle"]
+        }
+      ]
+    },
+    {
+      "id": "art-line-explorer",
+      "title": "Line Explorer",
+      "station": "compare",
+      "prop": "leaf",
+      "skillName": "Drawing different kinds of line",
+      "strand": "techniques",
+      "statutoryRequirement": "Pupils should be taught to develop a wide range of art and design techniques in using colour, pattern, texture, line, shape, form and space",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Picture the line in your head, then try again.",
+      "questions": [
+        {
+          "ask": "Which line goes up and down gently like waves?",
+          "answer": "Wavy line",
+          "distractors": ["Straight line", "Zigzag line", "Dotted line"]
+        },
+        {
+          "ask": "Which line has sharp points like a crocodile's teeth?",
+          "answer": "Zigzag line",
+          "distractors": ["Wavy line", "Spiral", "Dotted line"]
+        },
+        {
+          "ask": "Which line is made of lots of tiny spots?",
+          "answer": "Dotted line",
+          "distractors": ["Wavy line", "Zigzag line", "Spiral"]
+        },
+        {
+          "ask": "Which line goes round and round like a snail's shell?",
+          "answer": "Spiral",
+          "distractors": ["Zigzag line", "Straight line", "Dotted line"]
+        },
+        {
+          "ask": "Which line would you draw with a ruler?",
+          "answer": "Straight line",
+          "distractors": ["Wavy line", "Spiral", "Zigzag line"]
+        },
+        {
+          "ask": "Which line could show a flash of lightning?",
+          "answer": "Zigzag line",
+          "distractors": ["Spiral", "Wavy line", "Dotted line"]
+        },
+        {
+          "ask": "Which line goes straight across, like the edge of the sea?",
+          "answer": "Horizontal line",
+          "distractors": ["Vertical line", "Spiral", "Zigzag line"]
+        },
+        {
+          "ask": "Which line stands up tall, like a tree trunk?",
+          "answer": "Vertical line",
+          "distractors": ["Horizontal line", "Wavy line", "Spiral"]
+        }
+      ]
+    },
+    {
+      "id": "art-primary-pots",
+      "title": "Primary Paint Pots",
+      "station": "compare",
+      "prop": "water-drop",
+      "skillName": "Primary colours and simple mixing",
+      "strand": "techniques",
+      "statutoryRequirement": "Pupils should be taught to develop a wide range of art and design techniques in using colour, pattern, texture, line, shape, form and space",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about the paint pots red, yellow and blue.",
+      "questions": [
+        {
+          "ask": "Which of these is a primary colour?",
+          "answer": "Red",
+          "distractors": ["Green", "Purple", "Orange"]
+        },
+        {
+          "ask": "Which of these is also a primary colour?",
+          "answer": "Blue",
+          "distractors": ["Pink", "Brown", "Green"]
+        },
+        {
+          "ask": "How many primary colours are there?",
+          "answer": "3",
+          "distractors": ["2", "4", "7"]
+        },
+        {
+          "ask": "What do red and yellow make when you mix them?",
+          "answer": "Orange",
+          "distractors": ["Green", "Purple", "Brown"]
+        },
+        {
+          "ask": "What do blue and yellow make when you mix them?",
+          "answer": "Green",
+          "distractors": ["Orange", "Purple", "Pink"]
+        },
+        {
+          "ask": "What do red and blue make when you mix them?",
+          "answer": "Purple",
+          "distractors": ["Green", "Orange", "Yellow"]
+        },
+        {
+          "ask": "What colour do you get if you mix white into red?",
+          "answer": "Pink",
+          "distractors": ["Brown", "Orange", "Purple"]
+        },
+        {
+          "ask": "What happens to a colour when you add a little black?",
+          "answer": "It gets darker",
+          "distractors": [
+            "It gets lighter",
+            "It turns white",
+            "It turns yellow"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "art-texture-touch",
+      "title": "Texture Touch",
+      "station": "sort",
+      "prop": "rock",
+      "skillName": "Describing texture",
+      "strand": "techniques",
+      "statutoryRequirement": "Pupils should be taught to develop a wide range of art and design techniques in using colour, pattern, texture, line, shape, form and space",
+      "instruction": "Read it, then tap the group it belongs in.",
+      "hint": "Not quite. Imagine touching it with your fingers.",
+      "questions": [
+        {
+          "ask": "Tree bark: which texture group?",
+          "answer": "Rough",
+          "distractors": ["Smooth", "Soft", "Sticky"]
+        },
+        {
+          "ask": "A glass marble: which texture group?",
+          "answer": "Smooth",
+          "distractors": ["Rough", "Spiky", "Soft"]
+        },
+        {
+          "ask": "A kitten's fur: which texture group?",
+          "answer": "Soft",
+          "distractors": ["Spiky", "Rough", "Sticky"]
+        },
+        {
+          "ask": "A cactus: which texture group?",
+          "answer": "Spiky",
+          "distractors": ["Soft", "Smooth", "Sticky"]
+        },
+        {
+          "ask": "Sandpaper: which texture group?",
+          "answer": "Rough",
+          "distractors": ["Soft", "Smooth", "Spiky"]
+        },
+        {
+          "ask": "A holly leaf's edge: which texture group?",
+          "answer": "Spiky",
+          "distractors": ["Soft", "Sticky", "Smooth"]
+        },
+        {
+          "ask": "Wet glue: which texture group?",
+          "answer": "Sticky",
+          "distractors": ["Spiky", "Rough", "Soft"]
+        },
+        {
+          "ask": "A cotton wool ball: which texture group?",
+          "answer": "Soft",
+          "distractors": ["Rough", "Spiky", "Sticky"]
+        },
+        {
+          "ask": "A shiny mirror: which texture group?",
+          "answer": "Smooth",
+          "distractors": ["Rough", "Sticky", "Spiky"]
+        }
+      ]
+    },
+    {
+      "id": "art-junk-model",
+      "title": "Junk Model Maker",
+      "station": "compare",
+      "prop": "beaker",
+      "skillName": "Choosing materials to make a model",
+      "strand": "materials",
+      "statutoryRequirement": "Pupils should be taught to use a range of materials creatively to design and make products",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about how the material looks and feels.",
+      "questions": [
+        {
+          "ask": "Which would make a good tower for a model castle?",
+          "answer": "Cardboard tube",
+          "distractors": ["Tissue paper", "Cotton wool", "Ribbon"]
+        },
+        {
+          "ask": "Which is best for a fluffy sheep's coat?",
+          "answer": "Cotton wool",
+          "distractors": ["Kitchen foil", "Card", "Sandpaper"]
+        },
+        {
+          "ask": "Which is best for joining two cardboard boxes?",
+          "answer": "Masking tape",
+          "distractors": ["Water", "Crayon", "Paintbrush"]
+        },
+        {
+          "ask": "Which is best for making a shiny crown?",
+          "answer": "Kitchen foil",
+          "distractors": ["Sandpaper", "Newspaper", "Cotton wool"]
+        },
+        {
+          "ask": "Which is best for long hair on a puppet?",
+          "answer": "Wool",
+          "distractors": ["Kitchen foil", "Card", "Clay"]
+        },
+        {
+          "ask": "Which is best for sticking paper onto paper?",
+          "answer": "Glue stick",
+          "distractors": ["Water", "Chalk", "Pencil"]
+        },
+        {
+          "ask": "Which is best for cutting out a card shape?",
+          "answer": "Scissors",
+          "distractors": ["Rubber", "Glue stick", "Paintbrush"]
+        },
+        {
+          "ask": "Which is best for a see-through window on a model house?",
+          "answer": "Clear plastic",
+          "distractors": ["Card", "Felt", "Clay"]
+        }
+      ]
+    },
+    {
+      "id": "art-collage-creator",
+      "title": "Collage Creator",
+      "station": "true-false",
+      "prop": "leaf",
+      "skillName": "Making collages and models",
+      "strand": "materials",
+      "statutoryRequirement": "Pupils should be taught to use a range of materials creatively to design and make products",
+      "instruction": "Read the sentence, then tap True or False.",
+      "hint": "Not quite. Think about what you do when you make a collage.",
+      "questions": [
+        {
+          "ask": "A collage is a picture made by sticking things down.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "You can use torn paper in a collage.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A collage can only be made with paint.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Leaves and scraps of fabric can go in a collage.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Clay goes hard when it dries out.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Thin paper is stronger than thick card.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "You should wash your brush before using a new colour.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Wool and buttons can never be used in art.",
+          "answer": "False",
+          "distractors": ["True"]
+        }
+      ]
+    },
+    {
+      "id": "art-feelings-pictures",
+      "title": "Feelings in Pictures",
+      "station": "compare",
+      "prop": "sun",
+      "skillName": "Showing ideas and feelings in art",
+      "strand": "drawing-painting-sculpture",
+      "statutoryRequirement": "Pupils should be taught to use drawing, painting and sculpture to develop and share their ideas, experiences and imagination",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about how the colours and lines make you feel.",
+      "questions": [
+        {
+          "ask": "Which colours could show a happy, sunny day?",
+          "answer": "Bright yellows",
+          "distractors": ["Dark greys", "All black", "Dull browns"]
+        },
+        {
+          "ask": "Which colours could show a sad, rainy day?",
+          "answer": "Greys and blues",
+          "distractors": ["Bright pinks", "Sunny yellows", "Hot oranges"]
+        },
+        {
+          "ask": "Which colours look warm, like a fire?",
+          "answer": "Red and orange",
+          "distractors": ["Blue and green", "Grey and white", "Blue and purple"]
+        },
+        {
+          "ask": "Which lines could show a wild storm?",
+          "answer": "Zigzag lines",
+          "distractors": ["Gentle curves", "Neat dots", "Soft circles"]
+        },
+        {
+          "ask": "Which lines could show a calm, quiet sea?",
+          "answer": "Gentle wavy lines",
+          "distractors": ["Sharp zigzags", "Spiky stars", "Thick black blobs"]
+        },
+        {
+          "ask": "What could you use to make a model of your pet?",
+          "answer": "Clay",
+          "distractors": ["Paint water", "A rubber", "A ruler"]
+        },
+        {
+          "ask": "What is a picture of yourself called?",
+          "answer": "Self-portrait",
+          "distractors": ["Landscape", "Still life", "Seascape"]
+        },
+        {
+          "ask": "What is a picture of the countryside called?",
+          "answer": "Landscape",
+          "distractors": ["Portrait", "Self-portrait", "Still life"]
+        }
+      ]
+    },
+    {
+      "id": "art-maker-match",
+      "title": "Maker Match",
+      "station": "compare",
+      "prop": "tree",
+      "skillName": "Different kinds of artists and makers",
+      "strand": "artists-and-makers",
+      "statutoryRequirement": "Pupils should be taught about the work of a range of artists, craft makers and designers, describing the differences and similarities between different practices and disciplines, and making links to their own work",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about what each maker works with.",
+      "questions": [
+        {
+          "ask": "Who makes pots and bowls from clay?",
+          "answer": "Potter",
+          "distractors": ["Painter", "Weaver", "Architect"]
+        },
+        {
+          "ask": "Who designs buildings?",
+          "answer": "Architect",
+          "distractors": ["Potter", "Painter", "Weaver"]
+        },
+        {
+          "ask": "Who makes cloth by weaving threads?",
+          "answer": "Weaver",
+          "distractors": ["Sculptor", "Potter", "Photographer"]
+        },
+        {
+          "ask": "Who carves or models 3D artworks?",
+          "answer": "Sculptor",
+          "distractors": ["Weaver", "Painter", "Photographer"]
+        },
+        {
+          "ask": "Who paints pictures on paper or canvas?",
+          "answer": "Painter",
+          "distractors": ["Architect", "Sculptor", "Jeweller"]
+        },
+        {
+          "ask": "Who makes pictures with a camera?",
+          "answer": "Photographer",
+          "distractors": ["Potter", "Sculptor", "Weaver"]
+        },
+        {
+          "ask": "Who designs new clothes?",
+          "answer": "Fashion designer",
+          "distractors": ["Architect", "Potter", "Sculptor"]
+        },
+        {
+          "ask": "Who makes rings and necklaces?",
+          "answer": "Jeweller",
+          "distractors": ["Weaver", "Architect", "Painter"]
+        }
+      ]
+    },
+    {
+      "id": "art-meet-artists",
+      "title": "Meet the Artists",
+      "station": "mystery",
+      "prop": "flower",
+      "skillName": "Famous artists and their work",
+      "strand": "artists-and-makers",
+      "statutoryRequirement": "Pupils should be taught about the work of a range of artists, craft makers and designers, describing the differences and similarities between different practices and disciplines, and making links to their own work",
+      "instruction": "Read the clues, then tap who or what it is.",
+      "hint": "Not quite. Read the clue again and think about the famous picture.",
+      "questions": [
+        {
+          "ask": "I painted 'Sunflowers' and 'The Starry Night'. Who am I?",
+          "answer": "Vincent van Gogh",
+          "distractors": ["Claude Monet", "Henri Matisse", "L.S. Lowry"]
+        },
+        {
+          "ask": "I painted the water lilies in my garden pond in France. Who am I?",
+          "answer": "Claude Monet",
+          "distractors": ["Vincent van Gogh", "Frida Kahlo", "Hokusai"]
+        },
+        {
+          "ask": "When I was old, I cut out bright paper shapes to make pictures. Who am I?",
+          "answer": "Henri Matisse",
+          "distractors": ["Claude Monet", "L.S. Lowry", "Yayoi Kusama"]
+        },
+        {
+          "ask": "I am a Mexican artist famous for self-portraits with flowers. Who am I?",
+          "answer": "Frida Kahlo",
+          "distractors": ["Yayoi Kusama", "Claude Monet", "Henri Matisse"]
+        },
+        {
+          "ask": "I make art outdoors from leaves, sticks and stones. Who am I?",
+          "answer": "Andy Goldsworthy",
+          "distractors": ["Henri Matisse", "Hokusai", "Frida Kahlo"]
+        },
+        {
+          "ask": "I love polka dots and cover whole rooms in them. Who am I?",
+          "answer": "Yayoi Kusama",
+          "distractors": ["L.S. Lowry", "Claude Monet", "Andy Goldsworthy"]
+        },
+        {
+          "ask": "I painted busy northern towns full of 'matchstick' people. Who am I?",
+          "answer": "L.S. Lowry",
+          "distractors": ["Hokusai", "Frida Kahlo", "Vincent van Gogh"]
+        },
+        {
+          "ask": "I made 'The Great Wave', a famous Japanese print. Who am I?",
+          "answer": "Hokusai",
+          "distractors": ["Yayoi Kusama", "Claude Monet", "L.S. Lowry"]
+        }
+      ]
+    }
+  ]
+}

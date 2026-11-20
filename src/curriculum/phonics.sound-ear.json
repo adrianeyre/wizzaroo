@@ -1,0 +1,9 @@
+{
+  "id": "phonics.sound-ear",
+  "name": "The /ear/ sound, as in near",
+  "subject": "phonics",
+  "yearGroup": 1,
+  "strand": "grapheme-phoneme-correspondences",
+  "prerequisites": [],
+  "sounds": ["ear"]
+}

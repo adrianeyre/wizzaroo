@@ -1,0 +1,326 @@
+name: wizzaroo
+
+# Docker keeps each container's log until the container is removed, and its default json-file driver bounds it by
+# nothing. The app's log is a copy of what the server writes, which no export holds and no deletion reaches, so every
+# service keeps at most three files of 10 MB, 30 MB in all, and the oldest is dropped as each fills (pen-test H14, #282).
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: 10m
+    max-file: "3"
+
+# Every container drops every capability it doesn't add back, can't gain privileges through a setuid binary, and runs
+# on a read-only root filesystem with a tmpfs where it must write. Volumes and mounted files are written as before
+# (pen test I4, #314). A service that sets its own tmpfs replaces this one.
+x-hardening: &hardening
+  read_only: true
+  cap_drop:
+    - ALL
+  security_opt:
+    - no-new-privileges:true
+  tmpfs:
+    - /tmp
+
+# Postgres's entrypoint starts as root to own its data directory and switches to the postgres user, so it adds back
+# only what that needs. Its socket and lock file go in a tmpfs.
+x-postgres-hardening: &postgres-hardening
+  <<: *hardening
+  cap_add:
+    - CHOWN
+    - DAC_OVERRIDE
+    - FOWNER
+    - SETGID
+    - SETUID
+
+# The app's image installs @adrianeyre/email-client from GitHub Packages, which needs a token with read:packages. It is
+# given to that one install as a BuildKit secret from GITHUB_TOKEN, so it is in no layer of the image and no container.
+x-app-build: &app-build
+  context: .
+  secrets:
+    - github_token
+
+# Every image is named by its digest, so `docker compose pull` runs exactly what the repo names and a new image is a
+# reviewed commit. The tag beside it is only for whoever reads this (pen test I4, #313). To move on, resolve the tag
+# with `docker buildx imagetools inspect <image>:<tag>` and put its digest here, as in the Dockerfiles.
+
+services:
+  # Applies the schema as the tables' owner, and sets up the app's own login, then exits. Only it holds the owner's password.
+  migrate:
+    <<: *hardening
+    logging: *logging
+    build: *app-build
+    command: ["dist/src/server/index.js", "migrate"]
+    environment:
+      DATABASE_OWNER_URL: postgres://wizzaroo:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}@postgres:5432/wizzaroo
+      DATABASE_URL: postgres://wizzaroo_app:${APP_DATABASE_PASSWORD:?set APP_DATABASE_PASSWORD in .env}@postgres:5432/wizzaroo
+    networks:
+      - database
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # Downloads Read it to me's pinned Piper voices, about 800 MB, into a volume and exits; a file already there and
+  # matching its SHA-256 isn't fetched again. Only it has a way out for them, so the app needs none (ADR 0062).
+  voices:
+    <<: *hardening
+    logging: *logging
+    build: *app-build
+    command: ["dist/src/server/index.js", "download-voices"]
+    volumes:
+      - voice-models:/app/voice-models
+    networks:
+      - voices-egress
+
+  app:
+    <<: *hardening
+    logging: *logging
+    build: *app-build
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgres://wizzaroo_app:${APP_DATABASE_PASSWORD:?set APP_DATABASE_PASSWORD in .env}@postgres:5432/wizzaroo
+      PUBLIC_URL: https://wizzaroo.adrianeyre.co.uk
+      # The email platform that sends Wizzaroo's emails from its built-in templates, and the API key it gave Wizzaroo.
+      EMAIL_BASE_URL: ${EMAIL_BASE_URL:?set EMAIL_BASE_URL in .env}
+      EMAIL_API_KEY: ${EMAIL_API_KEY:?set EMAIL_API_KEY in .env}
+      # Seals each adult's TOTP secret (#254). Kept out of the database and its backups: back it up on its own.
+      TOTP_SECRET_KEY: ${TOTP_SECRET_KEY:?set TOTP_SECRET_KEY in .env}
+      SECOND_SCHOOL_GATE_MET: ${SECOND_SCHOOL_GATE_MET:-}
+      # cloudflared's fixed address on the tunnel network, below: the only socket whose CF-Connecting-IP the app believes.
+      # A request from any other socket, the host's loopback included, is recorded and limited under that socket (#332).
+      TUNNEL_PROXY_ADDRESS: 10.43.10.2
+    ports:
+      - "127.0.0.1:4310:4310"
+    networks:
+      - database
+      - tunnel
+      - mail
+    volumes:
+      - voice-models:/app/voice-models:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+      voices:
+        condition: service_completed_successfully
+    healthcheck:
+      test:
+        - CMD
+        - node
+        - -e
+        - "fetch('http://127.0.0.1:4310/health').then((response) => process.exit(response.ok ? 0 : 1), () => process.exit(1))"
+      interval: 30s
+      timeout: 5s
+      start_period: 30s
+      retries: 3
+
+  postgres:
+    <<: *postgres-hardening
+    logging: *logging
+    image: postgres:18-alpine@sha256:b6972e1115a4ff8eba5d7f7d19184926d1e16d7d1136ae1e1a7ebf286da0f015
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: wizzaroo
+      POSTGRES_DB: wizzaroo
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    volumes:
+      - postgres-data:/var/lib/postgresql
+    tmpfs:
+      - /tmp
+      - /var/run/postgresql
+    networks:
+      - database
+    healthcheck:
+      test: ["CMD", "pg_isready", "--username=wizzaroo", "--dbname=wizzaroo"]
+      interval: 10s
+      timeout: 5s
+      start_period: 30s
+      retries: 5
+
+  backup-role:
+    <<: *hardening
+    logging: *logging
+    build: ./backup
+    command: ["backup-role.sh"]
+    environment:
+      PGHOST: postgres
+      PGUSER: wizzaroo
+      PGDATABASE: wizzaroo
+      PGPASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      BACKUP_PGPASSWORD: ${BACKUP_POSTGRES_PASSWORD:?set BACKUP_POSTGRES_PASSWORD in .env}
+    networks:
+      - database
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  backup:
+    <<: *hardening
+    logging: *logging
+    build: ./backup
+    restart: unless-stopped
+    environment:
+      PGHOST: postgres
+      PGUSER: wizzaroo_backup
+      PGDATABASE: wizzaroo
+      PGPASSWORD: ${BACKUP_POSTGRES_PASSWORD:?set BACKUP_POSTGRES_PASSWORD in .env}
+      BACKUP_AGE_RECIPIENT: ${BACKUP_AGE_RECIPIENT:?set BACKUP_AGE_RECIPIENT in .env}
+      BACKUP_RCLONE_REMOTE: ${BACKUP_RCLONE_REMOTE:?set BACKUP_RCLONE_REMOTE in .env}
+      BACKUP_RCLONE_OFFSITE_REMOTE: ${BACKUP_RCLONE_OFFSITE_REMOTE:?set BACKUP_RCLONE_OFFSITE_REMOTE in .env}
+      BACKUP_KEEP_NIGHTS: ${BACKUP_KEEP_NIGHTS:-30}
+      BACKUP_HOUR_UTC: ${BACKUP_HOUR_UTC:-2}
+      RCLONE_CONFIG: /run/secrets/rclone.conf
+    volumes:
+      - ${BACKUP_RCLONE_CONFIG_FILE:?set BACKUP_RCLONE_CONFIG_FILE in .env}:/run/secrets/rclone.conf:ro
+    networks:
+      - database
+      - offsite
+    depends_on:
+      postgres:
+        condition: service_healthy
+      backup-role:
+        condition: service_completed_successfully
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - test -n "$$(find /tmp/backup-succeeded -mmin -1560)"
+      interval: 5m
+      timeout: 10s
+      start_period: 10m
+      retries: 1
+
+  # Compose asks only whether a variable is set, never how long it is, so these services, which are never started,
+  # borrow a check it does make: a container name must hold a letter or digit followed by another, or by _, . or -.
+  # That refuses a secret of one character, of nothing but spaces, or empty, naming it, before any container starts
+  # (#306). The app refuses its own secrets under 8 characters as well.
+  check-POSTGRES_PASSWORD:
+    logging: *logging
+    image: postgres:18-alpine@sha256:b6972e1115a4ff8eba5d7f7d19184926d1e16d7d1136ae1e1a7ebf286da0f015
+    profiles: [never-started]
+    container_name: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+
+  check-APP_DATABASE_PASSWORD:
+    logging: *logging
+    image: postgres:18-alpine@sha256:b6972e1115a4ff8eba5d7f7d19184926d1e16d7d1136ae1e1a7ebf286da0f015
+    profiles: [never-started]
+    container_name: ${APP_DATABASE_PASSWORD:?set APP_DATABASE_PASSWORD in .env}
+
+  check-BACKUP_POSTGRES_PASSWORD:
+    logging: *logging
+    image: postgres:18-alpine@sha256:b6972e1115a4ff8eba5d7f7d19184926d1e16d7d1136ae1e1a7ebf286da0f015
+    profiles: [never-started]
+    container_name: ${BACKUP_POSTGRES_PASSWORD:?set BACKUP_POSTGRES_PASSWORD in .env}
+
+  check-EMAIL_API_KEY:
+    logging: *logging
+    image: postgres:18-alpine@sha256:b6972e1115a4ff8eba5d7f7d19184926d1e16d7d1136ae1e1a7ebf286da0f015
+    profiles: [never-started]
+    container_name: ${EMAIL_API_KEY:?set EMAIL_API_KEY in .env}
+
+  # An unset token is #309's to refuse; one that is set is checked here.
+  check-CLOUDFLARE_TUNNEL_TOKEN:
+    logging: *logging
+    image: postgres:18-alpine@sha256:b6972e1115a4ff8eba5d7f7d19184926d1e16d7d1136ae1e1a7ebf286da0f015
+    profiles: [never-started]
+    container_name: ${CLOUDFLARE_TUNNEL_TOKEN:-not-set}
+
+  # Asks for a password over the network, as postgres does, so nothing else on the database network gets into a whole
+  # restored backup without one (pen test I4, #315). The drill's steps give the restore that password.
+  restore-drill:
+    <<: *postgres-hardening
+    logging: *logging
+    image: postgres:18-alpine@sha256:b6972e1115a4ff8eba5d7f7d19184926d1e16d7d1136ae1e1a7ebf286da0f015
+    profiles:
+      - drill
+    environment:
+      POSTGRES_USER: wizzaroo
+      POSTGRES_DB: wizzaroo
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    tmpfs:
+      - /tmp
+      - /var/lib/postgresql
+      - /var/run/postgresql
+    networks:
+      - database
+    healthcheck:
+      test: ["CMD", "pg_isready", "--username=wizzaroo", "--dbname=wizzaroo"]
+      interval: 5s
+      timeout: 5s
+      start_period: 30s
+      retries: 5
+
+  # Runs the tunnel from the routes below, not from Cloudflare's dashboard, so what it serves is in the repo and a change
+  # to it is a reviewed commit (pen test I4, #316). The tunnel must be one made with `cloudflared tunnel create`, which
+  # takes its routes from here: the deployment guide says how.
+  cloudflared:
+    <<: *hardening
+    logging: *logging
+    image: cloudflare/cloudflared:2026.11.0@sha256:b94b96edf2c9c4360f8879c8580cfaa99077f19c849ec595ca2f711b27d4f344
+    profiles:
+      - tunnel
+    restart: unless-stopped
+    command:
+      [
+        "tunnel",
+        "--no-autoupdate",
+        "--config",
+        "/etc/cloudflared/config.yml",
+        "run",
+      ]
+    configs:
+      - source: tunnel-routes
+        target: /etc/cloudflared/config.yml
+    environment:
+      # Refused when unset, as every other secret is, though only the tunnel profile starts it (pen test I3, #309).
+      TUNNEL_TOKEN: ${CLOUDFLARE_TUNNEL_TOKEN:?set CLOUDFLARE_TUNNEL_TOKEN in .env}
+    networks:
+      tunnel:
+        # The app's TUNNEL_PROXY_ADDRESS names this address (#332).
+        ipv4_address: 10.43.10.2
+      tunnel-egress: {}
+    depends_on:
+      app:
+        condition: service_healthy
+
+# Every route the tunnel serves: Wizzaroo's one hostname to the app, and a 404 for anything else (pen test I4, #316).
+configs:
+  tunnel-routes:
+    content: |
+      ingress:
+        - hostname: wizzaroo.adrianeyre.co.uk
+          service: http://app:4310
+        - service: http_status:404
+
+networks:
+  database:
+    internal: true
+  # cloudflared and the app alone, with no way out of Docker (pen test I4, #316). A fixed subnet, so cloudflared has a
+  # fixed address for the app to believe CF-Connecting-IP from (#332). It is outside Docker's default address pools
+  # (172.17.0.0/12 and 192.168.0.0/16), so no network Docker numbers itself can take it.
+  tunnel:
+    internal: true
+    ipam:
+      config:
+        - subnet: 10.43.10.0/24
+  # cloudflared's way out to Cloudflare, and the app's to the email platform. Their bridges are named so the home
+  # server's firewall can keep them off the LAN, which Compose can't (the deployment guide has the rules).
+  tunnel-egress:
+    driver_opts:
+      com.docker.network.bridge.name: wizzaroo-tunnel
+  mail:
+    driver_opts:
+      com.docker.network.bridge.name: wizzaroo-mail
+  # The voices service's way out to Bryce Beattie's bucket, and nothing else's. Named so the firewall can keep it off
+  # the LAN too (ADR 0062).
+  voices-egress:
+    driver_opts:
+      com.docker.network.bridge.name: wizzaroo-voices
+  offsite:
+
+volumes:
+  postgres-data:
+  voice-models:
+
+secrets:
+  github_token:
+    environment: GITHUB_TOKEN

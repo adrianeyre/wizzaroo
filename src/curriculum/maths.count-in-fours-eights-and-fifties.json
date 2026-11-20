@@ -1,0 +1,8 @@
+{
+  "id": "maths.count-in-fours-eights-and-fifties",
+  "name": "Counting in 4s, 8s and 50s",
+  "subject": "maths",
+  "yearGroup": 3,
+  "strand": "number-and-place-value",
+  "prerequisites": ["maths.count-in-threes-and-tens"]
+}

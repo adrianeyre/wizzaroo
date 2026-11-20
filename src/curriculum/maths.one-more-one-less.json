@@ -1,0 +1,8 @@
+{
+  "id": "maths.one-more-one-less",
+  "name": "One more and one less",
+  "subject": "maths",
+  "yearGroup": 1,
+  "strand": "number-and-place-value",
+  "prerequisites": ["maths.count-objects-to-20"]
+}

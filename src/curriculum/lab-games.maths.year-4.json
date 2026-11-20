@@ -1,0 +1,510 @@
+{
+  "subject": "maths",
+  "yearGroup": 4,
+  "games": [
+    {
+      "id": "thousands-rounding-ridge",
+      "title": "Big Number Ridge",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Ordering, comparing and rounding numbers beyond 1000",
+      "strand": "number-and-place-value",
+      "statutoryRequirement": "Pupils should be taught to order and compare numbers beyond 1000; round any number to the nearest 10, 100 or 1000",
+      "instruction": "Compare the numbers or round them, then tap the right answer.",
+      "hint": "Not quite. Look at the thousands first, then the hundreds, then try again.",
+      "questions": [
+        {
+          "ask": "Which number is the largest?",
+          "answer": "4,705",
+          "distractors": ["4,507", "4,570", "4,075"]
+        },
+        {
+          "ask": "Which number is the smallest?",
+          "answer": "6,213",
+          "distractors": ["6,321", "6,231", "6,312"]
+        },
+        {
+          "ask": "Round 3,486 to the nearest 10.",
+          "answer": "3,490",
+          "distractors": ["3,480", "3,500", "3,000"]
+        },
+        {
+          "ask": "Round 3,486 to the nearest 100.",
+          "answer": "3,500",
+          "distractors": ["3,400", "3,490", "4,000"]
+        },
+        {
+          "ask": "Round 7,650 to the nearest 1000.",
+          "answer": "8,000",
+          "distractors": ["7,000", "7,700", "7,600"]
+        },
+        {
+          "ask": "Round 2,449 to the nearest 100.",
+          "answer": "2,400",
+          "distractors": ["2,500", "2,450", "2,000"]
+        },
+        {
+          "ask": "Round 9,995 to the nearest 10.",
+          "answer": "10,000",
+          "distractors": ["9,990", "9,900", "9,000"]
+        },
+        {
+          "ask": "Round 1,500 to the nearest 1000.",
+          "answer": "2,000",
+          "distractors": ["1,000", "1,500", "1,600"]
+        },
+        {
+          "ask": "Which number is greater than 5,090?",
+          "answer": "5,100",
+          "distractors": ["5,009", "5,089", "4,999"]
+        },
+        {
+          "ask": "Which number is between 3,200 and 3,300?",
+          "answer": "3,250",
+          "distractors": ["3,025", "3,520", "3,305"]
+        }
+      ]
+    },
+    {
+      "id": "roman-numeral-gates",
+      "title": "Roman Numeral Gates",
+      "station": "compare",
+      "prop": "fossil",
+      "skillName": "Reading Roman numerals to 100",
+      "strand": "number-and-place-value",
+      "statutoryRequirement": "Pupils should be taught to read Roman numerals to 100 (I to C) and know that over time, the numeral system changed to include the concept of zero and place value",
+      "instruction": "Read the Roman numerals, then tap the right answer.",
+      "hint": "Not quite. Remember a smaller numeral before a bigger one means take it away, then try again.",
+      "questions": [
+        {
+          "ask": "What number is XIV?",
+          "answer": "14",
+          "distractors": ["16", "6", "114"]
+        },
+        {
+          "ask": "Which Roman numeral means 40?",
+          "answer": "XL",
+          "distractors": ["LX", "XXX", "XLI"]
+        },
+        {
+          "ask": "What number is XC?",
+          "answer": "90",
+          "distractors": ["110", "10", "60"]
+        },
+        {
+          "ask": "What number is LXXVII?",
+          "answer": "77",
+          "distractors": ["72", "57", "82"]
+        },
+        {
+          "ask": "Which Roman numeral means 99?",
+          "answer": "XCIX",
+          "distractors": ["XCVIII", "CIX", "LXXXIX"]
+        },
+        {
+          "ask": "What number is C?",
+          "answer": "100",
+          "distractors": ["50", "1000", "500"]
+        },
+        {
+          "ask": "Which Roman numeral means 49?",
+          "answer": "XLIX",
+          "distractors": ["LIX", "XLI", "XXXIX"]
+        },
+        {
+          "ask": "What number is XXXIX?",
+          "answer": "39",
+          "distractors": ["41", "31", "49"]
+        },
+        {
+          "ask": "Which Roman numeral means 64?",
+          "answer": "LXIV",
+          "distractors": ["XLIV", "LXVI", "LXXIV"]
+        },
+        {
+          "ask": "Which number did the Romans have no numeral for?",
+          "answer": "0",
+          "distractors": ["1", "10", "100"]
+        }
+      ]
+    },
+    {
+      "id": "factor-pair-forge",
+      "title": "Factor Pair Forge",
+      "station": "compare",
+      "prop": "magnet",
+      "skillName": "Multiplying by 0 and 1, three numbers and factor pairs",
+      "strand": "multiplication-and-division",
+      "statutoryRequirement": "Pupils should be taught to use place value, known and derived facts to multiply and divide mentally, including: multiplying by 0 and 1; dividing by 1; multiplying together three numbers; recognise and use factor pairs and commutativity in mental calculations",
+      "instruction": "Work it out in your head, then tap the right answer.",
+      "hint": "Not quite. Think about what happens when you times by 0 or 1, then try again.",
+      "questions": [
+        {
+          "ask": "37 × 0 = ?",
+          "answer": "0",
+          "distractors": ["37", "1", "370"]
+        },
+        {
+          "ask": "58 × 1 = ?",
+          "answer": "58",
+          "distractors": ["1", "0", "59"]
+        },
+        {
+          "ask": "46 ÷ 1 = ?",
+          "answer": "46",
+          "distractors": ["1", "0", "47"]
+        },
+        {
+          "ask": "2 × 3 × 5 = ?",
+          "answer": "30",
+          "distractors": ["10", "25", "35"]
+        },
+        {
+          "ask": "4 × 5 × 3 = ?",
+          "answer": "60",
+          "distractors": ["12", "45", "50"]
+        },
+        {
+          "ask": "0 × 9 × 7 = ?",
+          "answer": "0",
+          "distractors": ["63", "16", "1"]
+        },
+        {
+          "ask": "Which is a factor pair of 24?",
+          "answer": "3 and 8",
+          "distractors": ["4 and 5", "3 and 7", "2 and 14"]
+        },
+        {
+          "ask": "Which is a factor pair of 36?",
+          "answer": "4 and 9",
+          "distractors": ["6 and 7", "3 and 11", "5 and 7"]
+        },
+        {
+          "ask": "Which number is NOT a factor of 18?",
+          "answer": "4",
+          "distractors": ["3", "6", "9"]
+        },
+        {
+          "ask": "Which number has the factor pair 6 and 7?",
+          "answer": "42",
+          "distractors": ["13", "48", "36"]
+        }
+      ]
+    },
+    {
+      "id": "times-tower-climb",
+      "title": "Times Tower",
+      "station": "compare",
+      "prop": "bulb",
+      "skillName": "Multiplying 2- and 3-digit numbers by a 1-digit number",
+      "strand": "multiplication-and-division",
+      "statutoryRequirement": "Pupils should be taught to multiply two-digit and three-digit numbers by a one-digit number using formal written layout",
+      "instruction": "Multiply carefully, then tap the right answer.",
+      "hint": "Not quite. Multiply the ones, then the tens, then the hundreds, and remember to carry.",
+      "questions": [
+        {
+          "ask": "23 × 4 = ?",
+          "answer": "92",
+          "distractors": ["82", "27", "96"]
+        },
+        {
+          "ask": "34 × 6 = ?",
+          "answer": "204",
+          "distractors": ["184", "40", "214"]
+        },
+        {
+          "ask": "47 × 3 = ?",
+          "answer": "141",
+          "distractors": ["121", "50", "147"]
+        },
+        {
+          "ask": "125 × 4 = ?",
+          "answer": "500",
+          "distractors": ["480", "129", "520"]
+        },
+        {
+          "ask": "216 × 3 = ?",
+          "answer": "648",
+          "distractors": ["618", "219", "658"]
+        },
+        {
+          "ask": "308 × 5 = ?",
+          "answer": "1,540",
+          "distractors": ["1,504", "1,500", "1,550"]
+        },
+        {
+          "ask": "142 × 7 = ?",
+          "answer": "994",
+          "distractors": ["984", "149", "894"]
+        },
+        {
+          "ask": "509 × 6 = ?",
+          "answer": "3,054",
+          "distractors": ["3,004", "3,064", "354"]
+        },
+        {
+          "ask": "64 × 9 = ?",
+          "answer": "576",
+          "distractors": ["546", "73", "566"]
+        },
+        {
+          "ask": "99 × 8 = ?",
+          "answer": "792",
+          "distractors": ["712", "107", "782"]
+        }
+      ]
+    },
+    {
+      "id": "fraction-feast-hall",
+      "title": "Fraction Feast",
+      "station": "compare",
+      "prop": "beaker",
+      "skillName": "Fractions of amounts, adding fractions and hundredths",
+      "strand": "fractions",
+      "statutoryRequirement": "Pupils should be taught to solve problems involving increasingly harder fractions to calculate quantities, and fractions to divide quantities, including non-unit fractions where the answer is a whole number; add and subtract fractions with the same denominator; count up and down in hundredths; recognise that hundredths arise when dividing an object by one hundred and dividing tenths by ten",
+      "instruction": "Work out the fraction, then tap the right answer.",
+      "hint": "Not quite. Divide by the bottom number, then times by the top number.",
+      "questions": [
+        {
+          "ask": "What is 1/4 of 20?",
+          "answer": "5",
+          "distractors": ["4", "80", "10"]
+        },
+        {
+          "ask": "What is 3/4 of 20?",
+          "answer": "15",
+          "distractors": ["5", "60", "12"]
+        },
+        {
+          "ask": "What is 2/5 of 35?",
+          "answer": "14",
+          "distractors": ["7", "70", "10"]
+        },
+        {
+          "ask": "What is 3/8 of 40?",
+          "answer": "15",
+          "distractors": ["5", "120", "24"]
+        },
+        {
+          "ask": "2/7 + 3/7 = ?",
+          "answer": "5/7",
+          "distractors": ["5/14", "6/7", "1/7"]
+        },
+        {
+          "ask": "5/8 + 2/8 = ?",
+          "answer": "7/8",
+          "distractors": ["7/16", "3/8", "10/8"]
+        },
+        {
+          "ask": "7/9 − 4/9 = ?",
+          "answer": "3/9",
+          "distractors": ["11/9", "3/18", "4/9"]
+        },
+        {
+          "ask": "Count up in hundredths: 0.35, 0.36, 0.37. What comes next?",
+          "answer": "0.38",
+          "distractors": ["0.47", "1.37", "0.4"]
+        },
+        {
+          "ask": "Count down in hundredths: 0.50, 0.49, 0.48. What comes next?",
+          "answer": "0.47",
+          "distractors": ["0.38", "0.40", "0.57"]
+        },
+        {
+          "ask": "One tenth divided by 10 makes what?",
+          "answer": "1/100",
+          "distractors": ["1/10", "1", "1/1000"]
+        }
+      ]
+    },
+    {
+      "id": "decimal-round-dock",
+      "title": "Decimal Dock",
+      "station": "compare",
+      "prop": "water-drop",
+      "skillName": "Rounding and comparing decimals",
+      "strand": "fractions",
+      "statutoryRequirement": "Pupils should be taught to round decimals with one decimal place to the nearest whole number; compare numbers with the same number of decimal places up to two decimal places",
+      "instruction": "Round or compare the decimals, then tap the right answer.",
+      "hint": "Not quite. Look at the tenths digit: 5 or more rounds up.",
+      "questions": [
+        {
+          "ask": "Round 3.7 to the nearest whole number.",
+          "answer": "4",
+          "distractors": ["3", "3.8", "37"]
+        },
+        {
+          "ask": "Round 6.2 to the nearest whole number.",
+          "answer": "6",
+          "distractors": ["7", "5", "62"]
+        },
+        {
+          "ask": "Round 8.5 to the nearest whole number.",
+          "answer": "9",
+          "distractors": ["8", "8.6", "85"]
+        },
+        {
+          "ask": "Round 12.4 to the nearest whole number.",
+          "answer": "12",
+          "distractors": ["13", "12.5", "124"]
+        },
+        {
+          "ask": "Round 0.6 to the nearest whole number.",
+          "answer": "1",
+          "distractors": ["0", "0.7", "6"]
+        },
+        {
+          "ask": "Round 9.5 to the nearest whole number.",
+          "answer": "10",
+          "distractors": ["9", "9.6", "95"]
+        },
+        {
+          "ask": "Which decimal is the largest?",
+          "answer": "0.54",
+          "distractors": ["0.45", "0.44", "0.15"]
+        },
+        {
+          "ask": "Which decimal is the smallest?",
+          "answer": "2.03",
+          "distractors": ["2.31", "2.13", "2.30"]
+        },
+        {
+          "ask": "Which decimal is the largest of these?",
+          "answer": "7.9",
+          "distractors": ["7.6", "6.9", "7.1"]
+        },
+        {
+          "ask": "Which decimal is less than 4.5?",
+          "answer": "4.4",
+          "distractors": ["4.6", "5.4", "4.9"]
+        }
+      ]
+    },
+    {
+      "id": "unit-swap-shop",
+      "title": "Unit Swap Shop",
+      "station": "compare",
+      "prop": "thermometer",
+      "skillName": "Converting units of measure, time and money",
+      "strand": "measurement",
+      "statutoryRequirement": "Pupils should be taught to convert between different units of measure [for example, kilometre to metre; hour to minute]; estimate, compare and calculate different measures, including money in pounds and pence; solve problems involving converting from hours to minutes; minutes to seconds; years to months; weeks to days",
+      "instruction": "Swap the units, then tap the right answer.",
+      "hint": "Not quite. Think how many of the small unit make one big unit, then try again.",
+      "questions": [
+        {
+          "ask": "How many metres are in 3 km?",
+          "answer": "3,000 m",
+          "distractors": ["300 m", "30 m", "30,000 m"]
+        },
+        {
+          "ask": "How many minutes are in 4 hours?",
+          "answer": "240 minutes",
+          "distractors": ["400 minutes", "40 minutes", "160 minutes"]
+        },
+        {
+          "ask": "How many seconds are in 5 minutes?",
+          "answer": "300 seconds",
+          "distractors": ["500 seconds", "50 seconds", "360 seconds"]
+        },
+        {
+          "ask": "How many months are in 2 years?",
+          "answer": "24 months",
+          "distractors": ["20 months", "12 months", "52 months"]
+        },
+        {
+          "ask": "How many days are in 6 weeks?",
+          "answer": "42 days",
+          "distractors": ["36 days", "60 days", "48 days"]
+        },
+        {
+          "ask": "How many minutes are in one and a half hours?",
+          "answer": "90 minutes",
+          "distractors": ["150 minutes", "130 minutes", "65 minutes"]
+        },
+        {
+          "ask": "How many pence is £3.45?",
+          "answer": "345p",
+          "distractors": ["3,450p", "34.5p", "3.45p"]
+        },
+        {
+          "ask": "What is 250p in pounds?",
+          "answer": "£2.50",
+          "distractors": ["£25.00", "£0.25", "£2.05"]
+        },
+        {
+          "ask": "How many millimetres are in 7 cm?",
+          "answer": "70 mm",
+          "distractors": ["700 mm", "7 mm", "17 mm"]
+        },
+        {
+          "ask": "How many grams are in 2 kg?",
+          "answer": "2,000 g",
+          "distractors": ["200 g", "20 g", "20,000 g"]
+        }
+      ]
+    },
+    {
+      "id": "angle-and-mirror-hunt",
+      "title": "Angle Mirror Hunt",
+      "station": "compare",
+      "prop": "prism",
+      "skillName": "Acute and obtuse angles and lines of symmetry",
+      "strand": "properties-of-shapes",
+      "statutoryRequirement": "Pupils should be taught to identify acute and obtuse angles and compare and order angles up to two right angles by size; identify lines of symmetry in 2-D shapes presented in different orientations",
+      "instruction": "Think about the angle or shape, then tap the right answer.",
+      "hint": "Not quite. Compare the angle with a right angle, or picture folding the shape in half.",
+      "questions": [
+        {
+          "ask": "What type of angle is 35°?",
+          "answer": "Acute",
+          "distractors": ["Obtuse", "Right angle", "Straight line"]
+        },
+        {
+          "ask": "What type of angle is 120°?",
+          "answer": "Obtuse",
+          "distractors": ["Acute", "Right angle", "Straight line"]
+        },
+        {
+          "ask": "What type of angle is 89°?",
+          "answer": "Acute",
+          "distractors": ["Obtuse", "Right angle", "Straight line"]
+        },
+        {
+          "ask": "What type of angle is 90°?",
+          "answer": "Right angle",
+          "distractors": ["Acute", "Obtuse", "Straight line"]
+        },
+        {
+          "ask": "Which angle is the largest?",
+          "answer": "150°",
+          "distractors": ["95°", "60°", "120°"]
+        },
+        {
+          "ask": "Which angle is the smallest?",
+          "answer": "15°",
+          "distractors": ["50°", "85°", "100°"]
+        },
+        {
+          "ask": "How many lines of symmetry does a square have?",
+          "answer": "4",
+          "distractors": ["2", "1", "0"]
+        },
+        {
+          "ask": "How many lines of symmetry does a rectangle that is not a square have?",
+          "answer": "2",
+          "distractors": ["4", "1", "0"]
+        },
+        {
+          "ask": "How many lines of symmetry does an equilateral triangle have?",
+          "answer": "3",
+          "distractors": ["1", "0", "6"]
+        },
+        {
+          "ask": "How many lines of symmetry does a regular hexagon have?",
+          "answer": "6",
+          "distractors": ["3", "2", "12"]
+        }
+      ]
+    }
+  ]
+}

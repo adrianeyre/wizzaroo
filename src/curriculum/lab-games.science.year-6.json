@@ -1,0 +1,156 @@
+{
+  "subject": "science",
+  "yearGroup": 6,
+  "games": [
+    {
+      "id": "classify-with-reasons",
+      "title": "Classify It!",
+      "station": "compare",
+      "prop": "microscope",
+      "skillName": "Giving reasons for classifying plants and animals",
+      "strand": "living-things-and-their-habitats",
+      "statutoryRequirement": "Pupils should be taught to describe how living things are classified into broad groups according to common observable characteristics and based on similarities and differences, including micro-organisms, plants and animals; give reasons for classifying plants and animals based on specific characteristics",
+      "instruction": "Read the question, then tap the reason a scientist would give.",
+      "hint": "Not quite. Pick the feature that ONLY that group has, then try again.",
+      "questions": [
+        {
+          "ask": "Why is a whale classified as a mammal, not a fish?",
+          "answer": "It feeds young milk",
+          "distractors": ["It has fins", "It lives in the sea", "It can swim"]
+        },
+        {
+          "ask": "Why is a bat classified as a mammal, not a bird?",
+          "answer": "It has fur",
+          "distractors": ["It can fly", "It has wings", "It eats insects"]
+        },
+        {
+          "ask": "Why is a penguin classified as a bird?",
+          "answer": "It has feathers",
+          "distractors": ["It can swim", "It cannot fly", "It lives in cold"]
+        },
+        {
+          "ask": "Why is a spider not classified as an insect?",
+          "answer": "It has eight legs",
+          "distractors": ["It is small", "It has no backbone", "It eats flies"]
+        },
+        {
+          "ask": "Why is a snake classified as a reptile?",
+          "answer": "Dry, scaly skin",
+          "distractors": ["It has no legs", "It is long", "It eats mice"]
+        },
+        {
+          "ask": "Why is a frog classified as an amphibian?",
+          "answer": "Starts as a tadpole",
+          "distractors": ["It can jump", "It is green", "It eats flies"]
+        },
+        {
+          "ask": "Why is a fern not classified as a flowering plant?",
+          "answer": "It makes spores",
+          "distractors": ["It is green", "It has leaves", "It has roots"]
+        },
+        {
+          "ask": "Why is a pine tree classified as a conifer?",
+          "answer": "It makes cones",
+          "distractors": ["It is tall", "It has a trunk", "It has roots"]
+        },
+        {
+          "ask": "Why is a mushroom not classified as a plant?",
+          "answer": "Cannot make own food",
+          "distractors": [
+            "It has no colour",
+            "It is small",
+            "It grows in grass"
+          ]
+        },
+        {
+          "ask": "Why are insects, spiders and worms all classified as invertebrates?",
+          "answer": "No backbone",
+          "distractors": ["No legs", "They are small", "They live in soil"]
+        }
+      ]
+    },
+    {
+      "id": "evidence-detective",
+      "title": "Evidence Detective",
+      "station": "compare",
+      "prop": "fossil",
+      "skillName": "Using evidence to support or refute scientific ideas",
+      "strand": "working-scientifically",
+      "statutoryRequirement": "Pupils should be taught to identify scientific evidence that has been used to support or refute ideas or arguments; recognise that living things have changed over time and that fossils provide information about living things that inhabited the Earth millions of years ago",
+      "instruction": "Weigh up the evidence, then tap the best answer.",
+      "hint": "Not quite. Ask what the evidence actually shows, then try again.",
+      "questions": [
+        {
+          "ask": "Which evidence best shows that living things have changed over millions of years?",
+          "answer": "Fossils",
+          "distractors": ["Weather reports", "Road maps", "Old clocks"]
+        },
+        {
+          "ask": "Fossil sea shells are found high up on mountains. What does this suggest?",
+          "answer": "Land was once sea",
+          "distractors": [
+            "Shells can climb",
+            "Birds dropped them",
+            "Snails live there"
+          ]
+        },
+        {
+          "ask": "Dinosaur fossils are found in much older rock than human fossils. What does this show?",
+          "answer": "Dinosaurs came first",
+          "distractors": [
+            "Humans came first",
+            "They lived together",
+            "Dinosaurs are alive"
+          ]
+        },
+        {
+          "ask": "Darwin saw finches with different beaks on different islands. Which idea did this support?",
+          "answer": "Evolution",
+          "distractors": ["Gravity", "Magnetism", "The water cycle"]
+        },
+        {
+          "ask": "Some people once thought the Earth was flat. Which evidence refutes this?",
+          "answer": "Photos from space",
+          "distractors": ["Flat fields", "A flat map", "Calm seas"]
+        },
+        {
+          "ask": "Archaeopteryx fossils have feathers and teeth. They link birds to which group?",
+          "answer": "Dinosaurs",
+          "distractors": ["Fish", "Insects", "Mammals"]
+        },
+        {
+          "ask": "Fossils of early horses show small animals with several toes. What does this suggest?",
+          "answer": "Horses have changed",
+          "distractors": [
+            "Horses never change",
+            "Toes grow back",
+            "It was a dog"
+          ]
+        },
+        {
+          "ask": "When is a scientific idea best supported?",
+          "answer": "Evidence backs it up",
+          "distractors": [
+            "Many people like it",
+            "A famous person says",
+            "It sounds sensible"
+          ]
+        },
+        {
+          "ask": "Mary Anning found fossils of sea creatures that no longer live. What did they help show?",
+          "answer": "Extinction happens",
+          "distractors": [
+            "Fossils are fake",
+            "Dragons existed",
+            "Rocks are alive"
+          ]
+        },
+        {
+          "ask": "Peppered moths became darker when soot covered tree bark. Which idea does this support?",
+          "answer": "Natural selection",
+          "distractors": ["Moths paint wings", "Moths like the dark", "Gravity"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "subject": "history",
+  "programme": "key-stage",
+  "programmeOfStudyUrl": "https://www.gov.uk/government/publications/national-curriculum-in-england-history-programmes-of-study",
+  "years": [
+    {
+      "yearGroup": 1,
+      "points": [
+        {
+          "id": "changes-within-living-memory",
+          "heading": "Changes within living memory",
+          "summary": "Find out how everyday life, such as toys, homes, schools, holidays, transport and light, has changed within living memory.",
+          "skillIds": [
+            "history.toys-long-ago-and-now",
+            "history.homes-long-ago",
+            "history.schools-long-ago",
+            "history.seaside-holidays-long-ago",
+            "history.transport-through-time",
+            "history.light-through-time"
+          ]
+        },
+        {
+          "id": "events-beyond-living-memory",
+          "heading": "Events beyond living memory",
+          "summary": "Learn about significant events and ways of life beyond living memory, such as life in a castle.",
+          "skillIds": ["history.castles-long-ago"]
+        },
+        {
+          "id": "significant-individuals",
+          "heading": "Lives of significant individuals",
+          "summary": "Learn about the lives of significant people in the past who contributed to national and international achievements.",
+          "skillIds": ["history.grace-darling", "history.florence-nightingale"]
+        },
+        {
+          "id": "chronology",
+          "heading": "Chronology and words about time",
+          "summary": "Use common words and phrases about the passing of time, and know where people and events fit in a chronological framework.",
+          "skillIds": ["history.words-about-time"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 2,
+      "points": [
+        {
+          "id": "events-beyond-living-memory",
+          "heading": "Events beyond living memory",
+          "summary": "Learn about events beyond living memory that are significant nationally or globally, such as the Great Fire of London and the first Moon landing.",
+          "skillIds": [
+            "history.great-fire-of-london",
+            "history.firefighting-then-and-now",
+            "history.great-fire-in-order",
+            "history.moon-landing",
+            "history.first-flight",
+            "history.gunpowder-plot"
+          ]
+        },
+        {
+          "id": "significant-individuals",
+          "heading": "Lives of significant individuals",
+          "summary": "Compare the lives of significant people from different periods, such as Florence Nightingale and Mary Seacole.",
+          "skillIds": [
+            "history.florence-and-mary",
+            "history.explorers-compared",
+            "history.two-queens"
+          ]
+        },
+        {
+          "id": "chronology",
+          "heading": "Chronology and words about time",
+          "summary": "Put events in order, and know where people and events fit in a chronological framework.",
+          "skillIds": ["history.events-in-order"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 3,
+      "points": [
+        {
+          "id": "stone-age-to-iron-age",
+          "heading": "Changes in Britain from the Stone Age to the Iron Age",
+          "summary": "Learn how life in Britain changed from the hunter-gatherers of the Old Stone Age to the farmers, builders and hill forts of the Iron Age.",
+          "skillIds": [
+            "history.old-stone-age",
+            "history.skara-brae",
+            "history.stonehenge",
+            "history.three-ages",
+            "history.iron-age-life",
+            "history.prehistory-in-order"
+          ]
+        },
+        {
+          "id": "earliest-civilisations",
+          "heading": "The achievements of the earliest civilisations",
+          "summary": "Find out about the achievements of the earliest civilisations, with a depth study of Ancient Egypt.",
+          "skillIds": [
+            "history.egyptian-pyramids",
+            "history.mummification",
+            "history.tutankhamun",
+            "history.ancient-egypt-life"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 4,
+      "points": [
+        {
+          "id": "roman-empire",
+          "heading": "The Roman Empire and its impact on Britain",
+          "summary": "Learn how the Romans invaded and ruled Britain, how the Celts resisted, and what the Romans left behind.",
+          "skillIds": [
+            "history.roman-army",
+            "history.roman-britain-in-order",
+            "history.hadrians-wall",
+            "history.romans-and-celts",
+            "history.roman-legacy"
+          ]
+        },
+        {
+          "id": "anglo-saxons-and-scots",
+          "heading": "Britain's settlement by Anglo-Saxons and Scots",
+          "summary": "Find out how Anglo-Saxons and Scots settled in Britain, and what Sutton Hoo tells us about them.",
+          "skillIds": ["history.sutton-hoo", "history.anglo-saxon-life"]
+        },
+        {
+          "id": "ancient-greece",
+          "heading": "Ancient Greece",
+          "summary": "Study Greek life and achievements and their influence on the western world.",
+          "skillIds": [
+            "history.athens-and-sparta",
+            "history.ancient-olympics",
+            "history.greek-legacy"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 5,
+      "points": [
+        {
+          "id": "vikings-and-anglo-saxons",
+          "heading": "The Viking and Anglo-Saxon struggle for England",
+          "summary": "Follow the struggle for the Kingdom of England between the Vikings and Anglo-Saxons, up to the time of Edward the Confessor.",
+          "skillIds": [
+            "history.viking-raids",
+            "history.viking-ships-and-trade",
+            "history.road-to-1066",
+            "history.vikings-and-saxons-compared",
+            "history.viking-life",
+            "history.edward-the-confessor"
+          ]
+        },
+        {
+          "id": "non-european-society",
+          "heading": "A non-European society that contrasts with British history",
+          "summary": "Study the ancient Maya civilisation, and compare it with Britain at the same time.",
+          "skillIds": [
+            "history.maya-civilisation",
+            "history.maya-maths-and-writing",
+            "history.maya-and-britain-compared"
+          ]
+        },
+        {
+          "id": "british-history-beyond-1066",
+          "heading": "A theme in British history beyond 1066",
+          "summary": "Study an aspect of British history that extends pupils' chronological knowledge beyond 1066, such as Victorian Britain.",
+          "skillIds": ["history.victorian-britain"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 6,
+      "points": [
+        {
+          "id": "earliest-civilisations",
+          "heading": "The achievements of the earliest civilisations",
+          "summary": "Find out where and when the first civilisations appeared, including Ancient Sumer, the Indus Valley and the Shang dynasty of China.",
+          "skillIds": [
+            "history.earliest-civilisations",
+            "history.ancient-sumer",
+            "history.indus-valley",
+            "history.shang-dynasty"
+          ]
+        },
+        {
+          "id": "non-european-society",
+          "heading": "A non-European society that contrasts with British history",
+          "summary": "Study early Islamic civilisation, including Baghdad around AD 900, and the Kingdom of Benin.",
+          "skillIds": [
+            "history.baghdad-house-of-wisdom",
+            "history.kingdom-of-benin"
+          ]
+        },
+        {
+          "id": "british-history-beyond-1066",
+          "heading": "A theme in British history beyond 1066",
+          "summary": "Study a significant turning point in British history, such as the Battle of Britain and the Home Front.",
+          "skillIds": ["history.battle-of-britain", "history.home-front"]
+        },
+        {
+          "id": "historical-enquiry",
+          "heading": "Chronology and historical enquiry",
+          "summary": "Understand how our knowledge of the past is built from a range of sources, and place events securely in time.",
+          "skillIds": ["history.historical-sources", "history.history-in-order"]
+        }
+      ]
+    }
+  ]
+}

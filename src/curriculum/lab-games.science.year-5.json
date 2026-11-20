@@ -1,0 +1,93 @@
+{
+  "subject": "science",
+  "yearGroup": 5,
+  "games": [
+    {
+      "id": "material-reasons-lab",
+      "title": "Why This Material?",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Giving reasons for the uses of everyday materials",
+      "strand": "properties-and-changes-of-materials",
+      "statutoryRequirement": "Pupils should be taught to give reasons, based on evidence from comparative and fair tests, for the particular uses of everyday materials, including metals, wood and plastic",
+      "instruction": "Think about the material's properties, then tap the best reason.",
+      "hint": "Not quite. Think about what the object has to do, then try again.",
+      "questions": [
+        {
+          "ask": "Why are saucepans made of metal?",
+          "answer": "Conducts heat well",
+          "distractors": ["It floats", "It is see-through", "It is very light"]
+        },
+        {
+          "ask": "Why are saucepan handles often made of plastic or wood?",
+          "answer": "Poor heat conductor",
+          "distractors": [
+            "Strongly magnetic",
+            "Shiny surface",
+            "It is see-through"
+          ]
+        },
+        {
+          "ask": "Why are the wires inside a cable made of copper?",
+          "answer": "Conducts electricity",
+          "distractors": ["It is magnetic", "It is transparent", "It dissolves"]
+        },
+        {
+          "ask": "Why is a plastic coating put around electrical wires?",
+          "answer": "Electrical insulator",
+          "distractors": [
+            "Conducts heat",
+            "It is magnetic",
+            "It is transparent"
+          ]
+        },
+        {
+          "ask": "Why are windows made of glass?",
+          "answer": "It is transparent",
+          "distractors": [
+            "It is flexible",
+            "It is magnetic",
+            "It soaks up water"
+          ]
+        },
+        {
+          "ask": "Why is wood a good material for a garden bench?",
+          "answer": "Strong and rigid",
+          "distractors": ["Transparent", "Very stretchy", "Absorbent"]
+        },
+        {
+          "ask": "Why are raincoats made of plastic-coated fabric?",
+          "answer": "It is waterproof",
+          "distractors": [
+            "It is absorbent",
+            "It is magnetic",
+            "It conducts heat"
+          ]
+        },
+        {
+          "ask": "In a fair test, a plastic spoon stayed coolest in hot water. What does that show?",
+          "answer": "Plastic insulates",
+          "distractors": [
+            "Plastic conducts",
+            "Plastic is magnetic",
+            "Plastic melts fast"
+          ]
+        },
+        {
+          "ask": "A fair test showed kitchen roll soaked up the most water. What is it best used for?",
+          "answer": "Wiping up spills",
+          "distractors": ["Making a raincoat", "Building a roof", "An umbrella"]
+        },
+        {
+          "ask": "Why does a fridge magnet stick to a steel door but not a wooden one?",
+          "answer": "Steel is magnetic",
+          "distractors": [
+            "Wood is magnetic",
+            "Steel is softer",
+            "Wood is heavier"
+          ]
+        }
+      ]
+    }
+  ]
+}

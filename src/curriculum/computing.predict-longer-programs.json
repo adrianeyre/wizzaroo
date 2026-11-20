@@ -1,0 +1,8 @@
+{
+  "id": "computing.predict-longer-programs",
+  "name": "Predicting what a longer program does",
+  "subject": "computing",
+  "yearGroup": 2,
+  "strand": "logical-reasoning",
+  "prerequisites": ["computing.predict-a-route"]
+}

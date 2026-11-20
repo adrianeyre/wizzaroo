@@ -1,0 +1,906 @@
+{
+  "quests": [
+    {
+      "id": "legion-on-the-march",
+      "title": "Legion on the March",
+      "skill": {
+        "id": "history.roman-army",
+        "name": "The Roman army",
+        "subject": "history",
+        "yearGroup": 4,
+        "strand": "roman-britain",
+        "prerequisites": []
+      },
+      "story": "Left, right, left, right! The legion is marching into Britain. Grab your shield and learn what it took to be a Roman soldier.",
+      "instruction": "Read each question, then tap the shield with the right answer.",
+      "hint": "Think about how the Roman army stayed so organised: ranks, training, teamwork and special kit.",
+      "scene": "roman-fort",
+      "play": "quiz",
+      "choiceProp": "shield",
+      "questions": [
+        {
+          "ask": "What was a Roman foot soldier who was a Roman citizen called?",
+          "answer": "A legionary",
+          "wrong": ["A gladiator", "A senator", "A druid"],
+          "fact": "Legionaries usually served in the army for 20 to 25 years."
+        },
+        {
+          "ask": "Which officer was in charge of a group of about 80 soldiers?",
+          "answer": "A centurion",
+          "wrong": ["An emperor", "A legionary", "A senator"],
+          "fact": "Despite the name, a centurion's group, called a century, had 80 men, not 100."
+        },
+        {
+          "ask": "What was the Roman 'tortoise' shield formation called?",
+          "answer": "The testudo",
+          "wrong": ["The phalanx", "The shield wall", "The pincer"],
+          "fact": "Soldiers held their shields above and around them, like a tortoise's shell."
+        },
+        {
+          "ask": "What was the legionary's short sword called?",
+          "answer": "Gladius",
+          "wrong": ["Pilum", "Scutum", "Galea"],
+          "fact": "Its short blade suited fighting in tight, close lines of soldiers."
+        },
+        {
+          "ask": "What was a pilum?",
+          "answer": "A throwing spear",
+          "wrong": ["A helmet", "A shield", "A sandal"],
+          "fact": "Its thin iron neck bent when it struck, so it could not be thrown back."
+        },
+        {
+          "ask": "What was the large, curved Roman shield called?",
+          "answer": "Scutum",
+          "wrong": ["Gladius", "Toga", "Torc"],
+          "fact": "It was made of layers of wood covered with leather, with a metal boss in the middle."
+        },
+        {
+          "ask": "What was a legionary's body armour often made from?",
+          "answer": "Metal strips",
+          "wrong": ["Woollen cloth", "Gold plates", "Cotton padding"],
+          "fact": "We call strip armour lorica segmentata; other soldiers wore chain mail."
+        },
+        {
+          "ask": "About how many soldiers were in a Roman legion?",
+          "answer": "About 5,000",
+          "wrong": ["About 50", "About 500", "About 50,000"],
+          "fact": "For most of Roman times, three legions were based in Britain."
+        },
+        {
+          "ask": "What were soldiers who were not Roman citizens called?",
+          "answer": "Auxiliaries",
+          "wrong": ["Centurions", "Gladiators", "Senators"],
+          "fact": "Auxiliaries could become Roman citizens when they retired after 25 years."
+        },
+        {
+          "ask": "What did a legion build each night when it was on the march?",
+          "answer": "A marching camp",
+          "wrong": ["A stone castle", "A new town", "A bridge"],
+          "fact": "Soldiers dug a ditch and bank around neat rows of tents, ready by nightfall."
+        },
+        {
+          "ask": "About how far could Roman soldiers march in a day?",
+          "answer": "About 20 miles",
+          "wrong": ["About 2 miles", "About 200 miles", "About 500 miles"],
+          "fact": "They carried heavy packs with tools, food and cooking pots as they marched."
+        },
+        {
+          "ask": "What were the soldiers' studded sandals called?",
+          "answer": "Caligae",
+          "wrong": ["Togas", "Tunics", "Torcs"],
+          "fact": "Iron nails in the soles gave grip and helped the sandals last on long marches."
+        }
+      ]
+    },
+    {
+      "id": "romans-in-britain",
+      "title": "Romans in Britain",
+      "skill": {
+        "id": "history.roman-britain-in-order",
+        "name": "Key events in Roman Britain in order",
+        "subject": "history",
+        "yearGroup": 4,
+        "strand": "roman-britain",
+        "prerequisites": []
+      },
+      "story": "Hold your torch high and walk through nearly 500 years of Roman Britain, from Julius Caesar's first landing to the day the army left.",
+      "instruction": "Tap the Roman event that happened first.",
+      "hint": "Remember BC dates come before AD dates, and a bigger BC number is longer ago.",
+      "scene": "roman-town",
+      "play": "timeline",
+      "choiceProp": "torch",
+      "events": [
+        {
+          "label": "Caesar's first visit",
+          "date": "55 BC",
+          "order": -55,
+          "fact": "Julius Caesar landed in Kent but soon sailed back to Gaul, which is now France."
+        },
+        {
+          "label": "Caesar returns",
+          "date": "54 BC",
+          "order": -54,
+          "fact": "This time he beat the British leader Cassivellaunus, but still did not stay."
+        },
+        {
+          "label": "Claudius invades",
+          "date": "AD 43",
+          "order": 43,
+          "fact": "About 40,000 soldiers landed, and Emperor Claudius came to see the victory."
+        },
+        {
+          "label": "Caratacus captured",
+          "date": "AD 51",
+          "order": 51,
+          "fact": "He was taken to Rome, where his brave speech made Claudius spare his life."
+        },
+        {
+          "label": "Boudica's revolt",
+          "date": "AD 60",
+          "order": 60,
+          "fact": "Boudica, queen of the Iceni, led a huge uprising against Roman rule."
+        },
+        {
+          "label": "Fishbourne Palace",
+          "date": "c. AD 75",
+          "order": 75,
+          "fact": "This grand building in Sussex had beautiful mosaic floors and formal gardens."
+        },
+        {
+          "label": "Hadrian's Wall begun",
+          "date": "AD 122",
+          "order": 122,
+          "fact": "Emperor Hadrian visited Britain and ordered a wall across the north."
+        },
+        {
+          "label": "Antonine Wall begun",
+          "date": "c. AD 142",
+          "order": 142,
+          "fact": "This turf wall across Scotland was left after only about 20 years."
+        },
+        {
+          "label": "Constantine in York",
+          "date": "AD 306",
+          "order": 306,
+          "fact": "Constantine was declared emperor at York and later supported Christianity."
+        },
+        {
+          "label": "Romans leave Britain",
+          "date": "c. AD 410",
+          "order": 410,
+          "fact": "The army was needed elsewhere, so Britons had to defend themselves."
+        }
+      ]
+    },
+    {
+      "id": "hadrians-wall-watch",
+      "title": "Hadrian's Wall Watch",
+      "skill": {
+        "id": "history.hadrians-wall",
+        "name": "Hadrian's Wall",
+        "subject": "history",
+        "yearGroup": 4,
+        "strand": "roman-britain",
+        "prerequisites": []
+      },
+      "story": "Night has fallen on the wall and it's your turn on watch! Light your lantern and find out about life on the edge of the Roman Empire.",
+      "instruction": "Read each question, then tap the lantern with the right answer.",
+      "hint": "Imagine being a soldier far from home, guarding a long wall that crossed the whole of northern England.",
+      "scene": "hadrians-wall",
+      "play": "quiz",
+      "choiceProp": "lantern",
+      "questions": [
+        {
+          "ask": "Which Roman emperor ordered the wall to be built?",
+          "answer": "Hadrian",
+          "wrong": ["Claudius", "Julius Caesar", "Nero"],
+          "fact": "Hadrian visited Britain in AD 122, the year building began."
+        },
+        {
+          "ask": "About how long is Hadrian's Wall?",
+          "answer": "About 73 miles",
+          "wrong": ["About 7 miles", "About 700 miles", "About 3 miles"],
+          "fact": "It ran coast to coast, from Wallsend on the River Tyne to Bowness-on-Solway."
+        },
+        {
+          "ask": "What were the small forts placed every Roman mile along the wall?",
+          "answer": "Milecastles",
+          "wrong": ["Hillforts", "Lighthouses", "Castles"],
+          "fact": "Between each pair of milecastles stood two small watchtowers called turrets."
+        },
+        {
+          "ask": "Which fort near the wall is famous for its writing tablets?",
+          "answer": "Vindolanda",
+          "wrong": ["Skara Brae", "Sutton Hoo", "Maiden Castle"],
+          "fact": "Vindolanda was built before the wall and stands just south of it."
+        },
+        {
+          "ask": "What were the Vindolanda tablets made from?",
+          "answer": "Thin slices of wood",
+          "wrong": ["Clay", "Stone", "Animal bone"],
+          "fact": "Written in ink, they are some of the oldest handwritten documents found in Britain."
+        },
+        {
+          "ask": "In one tablet, Claudia Severa invites her friend to what?",
+          "answer": "Her birthday party",
+          "wrong": ["A chariot race", "A wedding", "A battle"],
+          "fact": "It is thought to be the oldest known writing in Latin by a woman."
+        },
+        {
+          "ask": "What do historians think was one reason the wall was built?",
+          "answer": "To control the border",
+          "wrong": ["To stop floods", "As a racetrack", "To keep sheep in"],
+          "fact": "Soldiers could watch who crossed the frontier and collect taxes on trade."
+        },
+        {
+          "ask": "Where did many soldiers on the wall come from?",
+          "answer": "All over the empire",
+          "wrong": ["Only from Rome", "Only from Britain", "From China"],
+          "fact": "Soldiers came from places such as modern Belgium, Spain, Syria and North Africa."
+        },
+        {
+          "ask": "What was Hadrian's Wall built from?",
+          "answer": "Stone and turf",
+          "wrong": ["Wood only", "Bricks and glass", "Iron and steel"],
+          "fact": "The western part was first built of turf and later rebuilt in stone."
+        },
+        {
+          "ask": "Which country is all of Hadrian's Wall in today?",
+          "answer": "England",
+          "wrong": ["Scotland", "Wales", "Ireland"],
+          "fact": "Many people think it marks the Scottish border, but it lies wholly in England."
+        },
+        {
+          "ask": "What was dug along the north side of the wall?",
+          "answer": "A deep ditch",
+          "wrong": ["A canal", "A railway", "A road"],
+          "fact": "Behind the wall, a bigger earthwork called the Vallum marked the army's zone."
+        },
+        {
+          "ask": "About how long did it take to build most of the wall?",
+          "answer": "About 6 years",
+          "wrong": ["About 6 days", "About 60 years", "About 600 years"],
+          "fact": "Most of the work was done by soldiers from the three legions in Britain."
+        }
+      ]
+    },
+    {
+      "id": "roman-or-celt",
+      "title": "Roman or Celt?",
+      "skill": {
+        "id": "history.romans-and-celts",
+        "name": "Romans and Celts compared",
+        "subject": "history",
+        "yearGroup": 4,
+        "strand": "roman-britain",
+        "prerequisites": []
+      },
+      "story": "The market is busy and everything is muddled up! Sort each thing into the right basket: did it belong to the Romans or the Celts?",
+      "instruction": "Is it Roman or Celtic? Tap the right basket.",
+      "hint": "Think about who brought towns, Latin and stone buildings, and who already lived in Britain's roundhouses.",
+      "scene": "roman-town",
+      "play": "sort",
+      "choiceProp": "basket",
+      "bins": ["Romans", "Celts"],
+      "questions": [
+        {
+          "ask": "Villas with mosaic floors",
+          "answer": "Romans",
+          "fact": "Mosaics were pictures made from thousands of tiny coloured tiles called tesserae."
+        },
+        {
+          "ask": "Long, straight roads",
+          "answer": "Romans",
+          "fact": "The Romans built about 2,000 miles of roads in Britain to move soldiers quickly."
+        },
+        {
+          "ask": "Speaking and writing Latin",
+          "answer": "Romans",
+          "fact": "Latin was the language of the Roman Empire and its laws."
+        },
+        {
+          "ask": "Public bath houses",
+          "answer": "Romans",
+          "fact": "Romans went to the baths to wash, relax, exercise and chat with friends."
+        },
+        {
+          "ask": "Wearing togas",
+          "answer": "Romans",
+          "fact": "Only Roman citizens were allowed to wear the toga."
+        },
+        {
+          "ask": "Towns with a forum",
+          "answer": "Romans",
+          "fact": "The forum was a market square at the heart of every Roman town."
+        },
+        {
+          "ask": "Living in roundhouses",
+          "answer": "Celts",
+          "fact": "Roundhouses had thatched roofs and a fire in the middle for warmth and cooking."
+        },
+        {
+          "ask": "Druid priests",
+          "answer": "Celts",
+          "fact": "Druids were religious leaders, teachers and judges for the Celtic tribes."
+        },
+        {
+          "ask": "Gold torcs worn by chiefs",
+          "answer": "Celts",
+          "fact": "A torc was a heavy neck ring that showed a person was rich and important."
+        },
+        {
+          "ask": "Painting skin blue with woad",
+          "answer": "Celts",
+          "fact": "Julius Caesar wrote that Britons coloured themselves blue with woad."
+        },
+        {
+          "ask": "Fighting from chariots",
+          "answer": "Celts",
+          "fact": "Caesar was amazed by British chariot drivers, who could leap out and run along the pole."
+        },
+        {
+          "ask": "Stories passed on by word of mouth",
+          "answer": "Celts",
+          "fact": "The Celts in Britain did not write books, so they remembered stories and laws."
+        }
+      ]
+    },
+    {
+      "id": "what-the-romans-gave",
+      "title": "What the Romans Gave Us",
+      "skill": {
+        "id": "history.roman-legacy",
+        "name": "What the Romans left behind in Britain",
+        "subject": "history",
+        "yearGroup": 4,
+        "strand": "roman-britain",
+        "prerequisites": []
+      },
+      "story": "What have the Romans ever done for us? Quite a lot, it turns out! Collect gold coins as you discover what they left behind in Britain.",
+      "instruction": "Read each question, then tap the coin with the right answer.",
+      "hint": "Think about things we still use today, like roads, towns, words and even the names of months.",
+      "scene": "roman-town",
+      "play": "quiz",
+      "choiceProp": "gold-coin",
+      "questions": [
+        {
+          "ask": "What were Roman roads famous for?",
+          "answer": "Being very straight",
+          "wrong": [
+            "Being very bendy",
+            "Being made of wood",
+            "Having traffic lights"
+          ],
+          "fact": "Many modern roads, like parts of the A5, follow the old Roman Watling Street."
+        },
+        {
+          "ask": "What did the Romans call London?",
+          "answer": "Londinium",
+          "wrong": ["Eboracum", "Aquae Sulis", "Camulodunum"],
+          "fact": "The Romans built the first bridge across the Thames in London."
+        },
+        {
+          "ask": "What did the Romans call the town of Bath?",
+          "answer": "Aquae Sulis",
+          "wrong": ["Londinium", "Eboracum", "Deva"],
+          "fact": "Hot spring water still bubbles up there at about 46°C."
+        },
+        {
+          "ask": "What was the Roman system of underfloor heating called?",
+          "answer": "A hypocaust",
+          "wrong": ["An aqueduct", "A mosaic", "A forum"],
+          "fact": "Hot air from a fire flowed under floors held up by stacks of tiles."
+        },
+        {
+          "ask": "Which month is named after Julius Caesar?",
+          "answer": "July",
+          "wrong": ["June", "March", "May"],
+          "fact": "August is named after the first Roman emperor, Augustus."
+        },
+        {
+          "ask": "Which language did the Romans speak?",
+          "answer": "Latin",
+          "wrong": ["Greek", "French", "German"],
+          "fact": "English words like 'video', 'audio' and 'animal' come straight from Latin."
+        },
+        {
+          "ask": "What did the Romans build to carry fresh water to towns?",
+          "answer": "Aqueducts",
+          "wrong": ["Hypocausts", "Mosaics", "Amphitheatres"],
+          "fact": "Water flowed gently downhill along channels, sometimes over tall bridges."
+        },
+        {
+          "ask": "Whose head was shown on most Roman coins?",
+          "answer": "The emperor's",
+          "wrong": ["A farmer's", "A gladiator's", "A druid's"],
+          "fact": "Coins spread the emperor's face and name across the whole empire."
+        },
+        {
+          "ask": "Which religion began to spread in Britain in later Roman times?",
+          "answer": "Christianity",
+          "wrong": ["Islam", "Sikhism", "Hinduism"],
+          "fact": "Emperor Constantine allowed Christians to worship freely in AD 313."
+        },
+        {
+          "ask": "The word 'plumber' comes from the Latin for which metal?",
+          "answer": "Lead",
+          "wrong": ["Gold", "Iron", "Tin"],
+          "fact": "Romans made water pipes from lead, which they called plumbum."
+        },
+        {
+          "ask": "What was the open square at the centre of a Roman town called?",
+          "answer": "The forum",
+          "wrong": ["The villa", "The hypocaust", "The testudo"],
+          "fact": "Around the forum stood shops, offices and the basilica, a kind of town hall."
+        },
+        {
+          "ask": "Town names ending in '-chester' come from a Latin word meaning what?",
+          "answer": "A fort or camp",
+          "wrong": ["A river", "A church", "A farm"],
+          "fact": "Manchester, Lancaster and Gloucester all grew up around Roman forts."
+        }
+      ]
+    },
+    {
+      "id": "athens-or-sparta",
+      "title": "Athens or Sparta?",
+      "skill": {
+        "id": "history.athens-and-sparta",
+        "name": "Athens and Sparta compared",
+        "subject": "history",
+        "yearGroup": 4,
+        "strand": "ancient-greece",
+        "prerequisites": []
+      },
+      "story": "Two great Greek city-states, two very different ways of life! Help the messenger sort out which city each fact belongs to.",
+      "instruction": "Athens or Sparta? Tap the shield of the right city.",
+      "hint": "Athens loved ideas, art and voting; Sparta put fighting and tough training first.",
+      "scene": "greek-temple",
+      "play": "sort",
+      "choiceProp": "shield",
+      "bins": ["Athens", "Sparta"],
+      "questions": [
+        {
+          "ask": "Citizens voted in a democracy",
+          "answer": "Athens",
+          "fact": "Athens had the world's first democracy, though only men who were citizens could vote."
+        },
+        {
+          "ask": "Home of the philosopher Socrates",
+          "answer": "Athens",
+          "fact": "Philosophers like Socrates and Plato asked big questions about life."
+        },
+        {
+          "ask": "Built the Parthenon temple",
+          "answer": "Athens",
+          "fact": "The Parthenon was built on the Acropolis, a rocky hill above the city."
+        },
+        {
+          "ask": "Named after the goddess Athena",
+          "answer": "Athens",
+          "fact": "The Greeks told a myth that Athena won the city in a contest with Poseidon."
+        },
+        {
+          "ask": "Famous for plays and theatres",
+          "answer": "Athens",
+          "fact": "Huge crowds watched plays at the Theatre of Dionysus on the Acropolis hillside."
+        },
+        {
+          "ask": "A great navy of triremes",
+          "answer": "Athens",
+          "fact": "A trireme was a fast warship rowed by about 170 oarsmen in three rows."
+        },
+        {
+          "ask": "Boys left home at 7 to train",
+          "answer": "Sparta",
+          "fact": "Spartan boys lived in groups and trained to be soldiers in the agoge."
+        },
+        {
+          "ask": "Ruled by two kings at once",
+          "answer": "Sparta",
+          "fact": "Having two kings meant one could lead the army while the other stayed home."
+        },
+        {
+          "ask": "Girls trained hard in sports",
+          "answer": "Sparta",
+          "fact": "Spartan girls ran, wrestled and threw the javelin to keep strong."
+        },
+        {
+          "ask": "Helots farmed the land",
+          "answer": "Sparta",
+          "fact": "Helots were people forced to work the land, so Spartan citizens could train."
+        },
+        {
+          "ask": "Warriors in red cloaks",
+          "answer": "Sparta",
+          "fact": "Spartan soldiers were famous across Greece for their red cloaks and discipline."
+        },
+        {
+          "ask": "Used iron bars as money",
+          "answer": "Sparta",
+          "fact": "Heavy iron bars made it hard to get rich, as Spartans were meant to live simply."
+        }
+      ]
+    },
+    {
+      "id": "the-first-olympics",
+      "title": "The First Olympics",
+      "skill": {
+        "id": "history.ancient-olympics",
+        "name": "The ancient Olympic Games",
+        "subject": "history",
+        "yearGroup": 4,
+        "strand": "ancient-greece",
+        "prerequisites": []
+      },
+      "story": "The crowd is roaring at Olympia! Step into the ancient stadium and discover how the very first Olympic Games were played.",
+      "instruction": "Read each question, then tap the pot with the right answer.",
+      "hint": "Remember the Games were a festival for the Greek gods, held long before modern sports were invented.",
+      "scene": "olympia-stadium",
+      "play": "quiz",
+      "choiceProp": "clay-pot",
+      "questions": [
+        {
+          "ask": "Where were the ancient Olympic Games held?",
+          "answer": "Olympia",
+          "wrong": ["Athens", "Sparta", "Rome"],
+          "fact": "Olympia was not a city but a holy site with temples, a stadium and training grounds."
+        },
+        {
+          "ask": "When were the first Olympic Games recorded?",
+          "answer": "776 BC",
+          "wrong": ["AD 43", "AD 410", "1066"],
+          "fact": "The Games were then held every four years for over a thousand years."
+        },
+        {
+          "ask": "Which god were the Games held to honour?",
+          "answer": "Zeus",
+          "wrong": ["Poseidon", "Ares", "Hermes"],
+          "fact": "A giant gold and ivory statue of Zeus at Olympia was a Wonder of the World."
+        },
+        {
+          "ask": "What prize did an Olympic winner receive at the Games?",
+          "answer": "An olive wreath",
+          "wrong": ["A gold medal", "A silver cup", "A bag of coins"],
+          "fact": "Back home, some cities gave winners free meals for the rest of their lives."
+        },
+        {
+          "ask": "What was the short sprint, one length of the stadium, called?",
+          "answer": "The stade",
+          "wrong": ["The marathon", "The relay", "The hurdles"],
+          "fact": "It was about 192 metres long, and our word 'stadium' comes from it."
+        },
+        {
+          "ask": "What was the pankration?",
+          "answer": "Boxing and wrestling",
+          "wrong": ["A chariot race", "A long jump", "A swimming race"],
+          "fact": "Its name means 'all strength' or 'all power' in Greek."
+        },
+        {
+          "ask": "How many events were there in the pentathlon?",
+          "answer": "Five",
+          "wrong": ["Two", "Ten", "Twenty"],
+          "fact": "They were running, long jump, discus, javelin and wrestling."
+        },
+        {
+          "ask": "In the chariot race, who was named the winner?",
+          "answer": "The chariot's owner",
+          "wrong": ["The fastest horse", "The crowd", "The judges"],
+          "fact": "That is how Kyniska, a Spartan princess, became the first woman to win."
+        },
+        {
+          "ask": "What was the Olympic truce?",
+          "answer": "A promise of peace",
+          "wrong": ["A big feast", "A type of race", "A gold prize"],
+          "fact": "It let athletes and fans travel safely to Olympia, even in times of war."
+        },
+        {
+          "ask": "Who was allowed to compete in the ancient Olympic Games?",
+          "answer": "Free Greek males",
+          "wrong": ["Anyone at all", "Only women", "Only soldiers"],
+          "fact": "Women held their own games for the goddess Hera, called the Heraia."
+        },
+        {
+          "ask": "What did athletes rub onto their skin before competing?",
+          "answer": "Olive oil",
+          "wrong": ["Sun cream", "Honey", "Mud"],
+          "fact": "Afterwards they scraped off the oil and dust with a curved tool called a strigil."
+        },
+        {
+          "ask": "In which year did the modern Olympic Games begin?",
+          "answer": "1896",
+          "wrong": ["776 BC", "1066", "2012"],
+          "fact": "The first modern Games were held in Athens, Greece."
+        }
+      ]
+    },
+    {
+      "id": "mount-olympus-mysteries",
+      "title": "Mount Olympus Mysteries",
+      "skill": {
+        "id": "history.greek-legacy",
+        "name": "Greek gods and what the Greeks gave us",
+        "subject": "history",
+        "yearGroup": 4,
+        "strand": "ancient-greece",
+        "prerequisites": []
+      },
+      "story": "Thunder rumbles over Mount Olympus! Unroll the scrolls to meet the Greek gods and discover the ideas the Greeks gave the world.",
+      "instruction": "Read each question, then tap the scroll with the right answer.",
+      "hint": "Think about Greek myths you know, and Greek ideas we still use in words, maths, sport and theatre.",
+      "scene": "greek-temple",
+      "play": "quiz",
+      "choiceProp": "scroll",
+      "questions": [
+        {
+          "ask": "Who did the Greeks believe was king of the gods?",
+          "answer": "Zeus",
+          "wrong": ["Poseidon", "Hades", "Apollo"],
+          "fact": "The Greeks believed Zeus threw thunderbolts from his home on Mount Olympus."
+        },
+        {
+          "ask": "Who did the Greeks believe was the god of the sea?",
+          "answer": "Poseidon",
+          "wrong": ["Zeus", "Ares", "Hermes"],
+          "fact": "He was often shown holding a three-pronged spear called a trident."
+        },
+        {
+          "ask": "Which goddess of wisdom was the protector of Athens?",
+          "answer": "Athena",
+          "wrong": ["Aphrodite", "Hera", "Artemis"],
+          "fact": "Her symbol was the owl, which appeared on the coins of Athens."
+        },
+        {
+          "ask": "In the famous myth, how did the Greeks get inside the city of Troy?",
+          "answer": "In a wooden horse",
+          "wrong": ["Through a tunnel", "Up a ladder", "Dressed as Trojans"],
+          "fact": "That's why a hidden trick is still called a 'Trojan horse' today."
+        },
+        {
+          "ask": "What does the Greek word 'democracy' mean?",
+          "answer": "Rule by the people",
+          "wrong": ["Rule by a king", "Rule by the gods", "Rule by soldiers"],
+          "fact": "In Athens, male citizens voted on laws; women and enslaved people could not."
+        },
+        {
+          "ask": "The word 'alphabet' comes from which two Greek letters?",
+          "answer": "Alpha and beta",
+          "wrong": ["Gamma and delta", "Pi and sigma", "Omega and rho"],
+          "fact": "Greek letters like pi (π) are still used in maths and science today."
+        },
+        {
+          "ask": "Which Greek thinker is said to have shouted 'Eureka!' in his bath?",
+          "answer": "Archimedes",
+          "wrong": ["Pythagoras", "Plato", "Homer"],
+          "fact": "'Eureka' means 'I have found it!'; he had worked out how to measure volume."
+        },
+        {
+          "ask": "Which Greek mathematician is famous for a rule about triangles?",
+          "answer": "Pythagoras",
+          "wrong": ["Archimedes", "Homer", "Socrates"],
+          "fact": "Pupils all over the world still learn Pythagoras' theorem in maths."
+        },
+        {
+          "ask": "Which race is named after a legendary messenger's run?",
+          "answer": "The marathon",
+          "wrong": ["The sprint", "The relay", "The hurdles"],
+          "fact": "The legend says a runner dashed about 25 miles from Marathon to Athens with news of victory."
+        },
+        {
+          "ask": "Which two kinds of play did the Greeks invent?",
+          "answer": "Tragedy and comedy",
+          "wrong": [
+            "Pantomime and opera",
+            "Ballet and musicals",
+            "Puppets and mime"
+          ],
+          "fact": "Actors wore big masks so people at the back of huge open-air theatres could see."
+        },
+        {
+          "ask": "Who did the Greeks believe ruled the underworld?",
+          "answer": "Hades",
+          "wrong": ["Zeus", "Apollo", "Hermes"],
+          "fact": "In the myths, a three-headed dog called Cerberus guarded its gates."
+        },
+        {
+          "ask": "Where did the Greeks believe their gods lived?",
+          "answer": "Mount Olympus",
+          "wrong": ["Mount Everest", "Mount Vesuvius", "Ben Nevis"],
+          "fact": "Mount Olympus is a real mountain, the highest in Greece, nearly 3,000 metres tall."
+        }
+      ]
+    },
+    {
+      "id": "the-sutton-hoo-ship",
+      "title": "The Sutton Hoo Ship",
+      "skill": {
+        "id": "history.sutton-hoo",
+        "name": "The Sutton Hoo ship burial",
+        "subject": "history",
+        "yearGroup": 4,
+        "strand": "anglo-saxons-and-scots",
+        "prerequisites": []
+      },
+      "story": "It's 1939 and something big is hidden under a grassy mound in Suffolk! Dig with Basil Brown to uncover an Anglo-Saxon king's treasure.",
+      "instruction": "Read each question, then tap the mound with the right answer.",
+      "hint": "Think about an Anglo-Saxon king who was buried with his finest things, about 1,400 years ago.",
+      "scene": "sutton-hoo",
+      "play": "quiz",
+      "choiceProp": "dig-mound",
+      "questions": [
+        {
+          "ask": "In which English county is Sutton Hoo?",
+          "answer": "Suffolk",
+          "wrong": ["Kent", "Cornwall", "Yorkshire"],
+          "fact": "Sutton Hoo is near the town of Woodbridge, beside the River Deben."
+        },
+        {
+          "ask": "Who began digging the great ship burial in 1939?",
+          "answer": "Basil Brown",
+          "wrong": ["Howard Carter", "Lord Carnarvon", "Julius Caesar"],
+          "fact": "Basil Brown was a local self-taught archaeologist who also loved astronomy."
+        },
+        {
+          "ask": "Who owned the land and asked for the mounds to be dug?",
+          "answer": "Edith Pretty",
+          "wrong": ["Queen Victoria", "Boudica", "Claudia Severa"],
+          "fact": "She gave the treasure to the British Museum, where you can still see it today."
+        },
+        {
+          "ask": "What huge object was buried inside the biggest mound?",
+          "answer": "A whole ship",
+          "wrong": ["A chariot", "A stone tower", "A wooden cart"],
+          "fact": "The wood had rotted away, but rows of iron rivets showed the ship's shape."
+        },
+        {
+          "ask": "About how long was the Sutton Hoo ship?",
+          "answer": "About 27 metres",
+          "wrong": ["About 2 metres", "About 7 metres", "About 270 metres"],
+          "fact": "That's longer than two double-decker buses parked end to end."
+        },
+        {
+          "ask": "Who do most experts think was buried at Sutton Hoo?",
+          "answer": "King Rædwald",
+          "wrong": ["King Alfred", "King Harold", "King Canute"],
+          "fact": "The acid soil dissolved the body, so experts cannot be completely sure."
+        },
+        {
+          "ask": "Which Anglo-Saxon kingdom did Rædwald rule?",
+          "answer": "East Anglia",
+          "wrong": ["Wessex", "Mercia", "Northumbria"],
+          "fact": "Rædwald was a powerful king who had influence over other kingdoms too."
+        },
+        {
+          "ask": "Which object with a face mask is Sutton Hoo's most famous find?",
+          "answer": "An iron helmet",
+          "wrong": ["A golden crown", "A clay pot", "A stone axe"],
+          "fact": "It was found in hundreds of pieces and put back together like a jigsaw."
+        },
+        {
+          "ask": "What was the great gold buckle made to fasten?",
+          "answer": "A belt",
+          "wrong": ["A door", "A book", "A boat"],
+          "fact": "Its hollow back opens up, so it may once have held something special."
+        },
+        {
+          "ask": "About when was the ship burial made?",
+          "answer": "About AD 625",
+          "wrong": ["About 3000 BC", "About AD 43", "About 1900"],
+          "fact": "Gold coins found in a purse helped experts work out the date."
+        },
+        {
+          "ask": "Which red gemstones decorate many of the gold treasures?",
+          "answer": "Garnets",
+          "wrong": ["Diamonds", "Sapphires", "Emeralds"],
+          "fact": "Thousands of tiny garnets were cut to fit, showing amazing Anglo-Saxon skill."
+        },
+        {
+          "ask": "Which event began just weeks after the 1939 dig ended?",
+          "answer": "World War Two",
+          "wrong": [
+            "The Great Fire",
+            "The Roman invasion",
+            "The first Olympics"
+          ],
+          "fact": "The treasure was kept safe in a London Underground tunnel during the war."
+        }
+      ]
+    },
+    {
+      "id": "saxon-settlers",
+      "title": "Saxon Settlers",
+      "skill": {
+        "id": "history.anglo-saxon-life",
+        "name": "Anglo-Saxon and Scots settlers in Britain",
+        "subject": "history",
+        "yearGroup": 4,
+        "strand": "anglo-saxons-and-scots",
+        "prerequisites": []
+      },
+      "story": "The Romans have gone and new boats are landing on the shore! Unpack the crates and discover how the Anglo-Saxons and Scots made new homes.",
+      "instruction": "Read each question, then tap the crate with the right answer.",
+      "hint": "Think about farmers who crossed the sea after the Romans left, and the names and words they gave us.",
+      "scene": "saxon-village",
+      "play": "quiz",
+      "choiceProp": "wooden-crate",
+      "questions": [
+        {
+          "ask": "About when did Anglo-Saxons begin to settle in Britain?",
+          "answer": "About AD 450",
+          "wrong": ["About 3000 BC", "About AD 43", "About 1066"],
+          "fact": "The Roman army had left around AD 410, and new settlers soon arrived."
+        },
+        {
+          "ask": "Which three groups were the main Anglo-Saxon settlers?",
+          "answer": "Angles, Saxons, Jutes",
+          "wrong": [
+            "Romans and Greeks",
+            "Vikings and Normans",
+            "Celts and Picts"
+          ],
+          "fact": "The name England comes from 'Angle-land', the land of the Angles."
+        },
+        {
+          "ask": "Where did the Anglo-Saxons come from?",
+          "answer": "Germany and Denmark",
+          "wrong": ["Italy and Greece", "Spain and France", "Egypt"],
+          "fact": "They crossed the North Sea in long wooden boats rowed by oars."
+        },
+        {
+          "ask": "Where did the Scots come from before settling in Scotland?",
+          "answer": "Ireland",
+          "wrong": ["Norway", "France", "Italy"],
+          "fact": "The Scots set up a kingdom called Dál Riata on the west coast of Scotland."
+        },
+        {
+          "ask": "Which Anglo-Saxon kingdom covered much of the Midlands?",
+          "answer": "Mercia",
+          "wrong": ["Wessex", "Kent", "Northumbria"],
+          "fact": "Other big kingdoms included Wessex, Northumbria and East Anglia."
+        },
+        {
+          "ask": "What were Anglo-Saxon village homes made from?",
+          "answer": "Wood and thatch",
+          "wrong": ["Stone and marble", "Brick and glass", "Concrete"],
+          "fact": "A chief and his people feasted together in a large wooden hall."
+        },
+        {
+          "ask": "What did the place-name ending '-ham' mean?",
+          "answer": "Home or village",
+          "wrong": ["Castle", "River", "Mountain"],
+          "fact": "'-ton' meant a farm or settlement, as in Brighton or Taunton."
+        },
+        {
+          "ask": "Who came from Rome in AD 597 to spread Christianity?",
+          "answer": "St Augustine",
+          "wrong": ["St Patrick", "St George", "Julius Caesar"],
+          "fact": "He became the first Archbishop of Canterbury, in the kingdom of Kent."
+        },
+        {
+          "ask": "What were the letters of the early Anglo-Saxon alphabet called?",
+          "answer": "Runes",
+          "wrong": ["Hieroglyphs", "Numerals", "Pictograms"],
+          "fact": "Runes were made of straight lines, which were easy to carve into wood or stone."
+        },
+        {
+          "ask": "Which Anglo-Saxon poem tells of a hero who fights a monster?",
+          "answer": "Beowulf",
+          "wrong": ["Robin Hood", "The Odyssey", "King Lear"],
+          "fact": "Beowulf battles the monster Grendel and, later, a dragon."
+        },
+        {
+          "ask": "How did most Anglo-Saxon people make a living?",
+          "answer": "By farming",
+          "wrong": ["Working in shops", "Mining gold", "Building roads"],
+          "fact": "Teams of oxen pulled heavy ploughs, and farmers grew wheat, barley and oats."
+        },
+        {
+          "ask": "Which language did the Anglo-Saxons speak?",
+          "answer": "Old English",
+          "wrong": ["Latin", "French", "Welsh"],
+          "fact": "Everyday words like 'house', 'bread' and 'day' come from Old English."
+        }
+      ]
+    }
+  ]
+}

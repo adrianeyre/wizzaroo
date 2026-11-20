@@ -1,0 +1,11 @@
+{
+  "id": "maths.coordinates-four-quadrants",
+  "name": "Coordinates in all four quadrants",
+  "subject": "maths",
+  "yearGroup": 6,
+  "strand": "geometry-position-and-direction",
+  "prerequisites": [
+    "maths.reflection-and-translation",
+    "maths.negative-numbers"
+  ]
+}

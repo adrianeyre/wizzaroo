@@ -1,0 +1,41 @@
+name: Release
+
+# Runs only when a pull request is merged into main, which the ruleset on main
+# lets nothing else into. semantic-release tags the merge and makes a GitHub
+# Release; it commits nothing, so the token needs no way past the ruleset.
+on:
+  push:
+    branches: [main]
+
+# packages: read installs @adrianeyre/email-client from GitHub Packages.
+permissions:
+  contents: write
+  packages: read
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6.1.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 26
+          cache: pnpm
+          # Writes a user-level .npmrc that logs in to GitHub Packages with NODE_AUTH_TOKEN, for
+          # @adrianeyre/email-client: pnpm takes no token from the repository's own .npmrc.
+          registry-url: https://npm.pkg.github.com
+          scope: "@adrianeyre"
+      - run: pnpm install --frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: pnpm exec semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

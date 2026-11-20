@@ -1,0 +1,8 @@
+{
+  "id": "computing.explain-algorithms",
+  "name": "Explaining how a search algorithm works",
+  "subject": "computing",
+  "yearGroup": 5,
+  "strand": "logical-reasoning",
+  "prerequisites": ["computing.predict-longer-programs"]
+}

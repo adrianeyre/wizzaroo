@@ -1,0 +1,8 @@
+{
+  "id": "computing.responsible-sharing",
+  "name": "Sharing responsibly online",
+  "subject": "computing",
+  "yearGroup": 6,
+  "strand": "online-safety",
+  "prerequisites": ["computing.report-concerns"]
+}

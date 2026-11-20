@@ -1,0 +1,555 @@
+{
+  "yearGroup": 2,
+  "games": [
+    {
+      "id": "second-habitat-homes",
+      "title": "Habitat Homes",
+      "station": "sort",
+      "prop": "tree",
+      "skillName": "Matching animals to the habitats that suit them",
+      "strand": "living-things-and-their-habitats",
+      "statutoryRequirement": "Identify that most living things live in habitats to which they are suited and describe how different habitats provide for the basic needs of different kinds of animals and plants, and how they depend on each other",
+      "instruction": "Tap the habitat where each animal lives.",
+      "hint": "Not quite. Think about whether the animal needs to keep warm, keep cool or swim, then try again.",
+      "questions": [
+        {
+          "ask": "A snowy owl",
+          "answer": "Polar",
+          "distractors": ["Desert", "Ocean", "Woodland"]
+        },
+        {
+          "ask": "A camel",
+          "answer": "Desert",
+          "distractors": ["Polar", "Ocean", "Woodland"]
+        },
+        {
+          "ask": "A shark",
+          "answer": "Ocean",
+          "distractors": ["Desert", "Polar", "Woodland"]
+        },
+        {
+          "ask": "A squirrel",
+          "answer": "Woodland",
+          "distractors": ["Desert", "Ocean", "Polar"]
+        },
+        {
+          "ask": "An arctic fox",
+          "answer": "Polar",
+          "distractors": ["Desert", "Woodland", "Ocean"]
+        },
+        {
+          "ask": "A fennec fox",
+          "answer": "Desert",
+          "distractors": ["Ocean", "Polar", "Woodland"]
+        },
+        {
+          "ask": "A jellyfish",
+          "answer": "Ocean",
+          "distractors": ["Woodland", "Desert", "Polar"]
+        },
+        {
+          "ask": "A badger",
+          "answer": "Woodland",
+          "distractors": ["Ocean", "Polar", "Desert"]
+        }
+      ]
+    },
+    {
+      "id": "second-alive-or-not",
+      "title": "Living Check",
+      "station": "odd-one-out",
+      "prop": "fossil",
+      "skillName": "Telling alive, dead and never-alive things apart",
+      "strand": "living-things-and-their-habitats",
+      "statutoryRequirement": "Explore and compare the differences between things that are living, dead, and things that have never been alive",
+      "instruction": "Tap the odd one out.",
+      "hint": "Not quite. Ask yourself: is it alive now, was it once alive, or was it never alive?",
+      "questions": [
+        {
+          "ask": "Which one has never been alive?",
+          "answer": "Stone",
+          "distractors": ["Fallen leaf", "Feather", "Wooden log"]
+        },
+        {
+          "ask": "Which one is alive now?",
+          "answer": "Growing daisy",
+          "distractors": ["Plastic flower", "Glass marble", "Metal key"]
+        },
+        {
+          "ask": "Which one was once alive but is dead now?",
+          "answer": "Dried leaf",
+          "distractors": ["Pebble", "Plastic cup", "Metal coin"]
+        },
+        {
+          "ask": "Which one is NOT a living thing?",
+          "answer": "Robot dog",
+          "distractors": ["Puppy", "Goldfish", "Oak tree"]
+        },
+        {
+          "ask": "Which of these was never part of a plant or an animal?",
+          "answer": "Glass bottle",
+          "distractors": ["Cotton sock", "Wool jumper", "Wooden spoon"]
+        },
+        {
+          "ask": "Which one is alive and can grow?",
+          "answer": "Tadpole",
+          "distractors": ["Toy frog", "Rock", "Teddy bear"]
+        },
+        {
+          "ask": "Three of these were once alive. Which one never was?",
+          "answer": "Plastic bag",
+          "distractors": ["Seashell", "Bone", "Pine cone"]
+        },
+        {
+          "ask": "Which one is living? The others are dead or were never alive.",
+          "answer": "Bumblebee",
+          "distractors": ["Dead beetle", "Feather", "Metal can"]
+        }
+      ]
+    },
+    {
+      "id": "second-plant-power",
+      "title": "Plant Power",
+      "station": "true-false",
+      "prop": "seedling",
+      "skillName": "Knowing how plants grow and what they need",
+      "strand": "plants",
+      "statutoryRequirement": "Observe and describe how seeds and bulbs grow into mature plants, and find out and describe how plants need water, light and a suitable temperature to grow and stay healthy",
+      "instruction": "Is it true or false? Tap your answer.",
+      "hint": "Not quite. Think about what a plant needs to grow and stay healthy, then try again.",
+      "questions": [
+        {
+          "ask": "Plants need water to grow and stay healthy.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A plant will stay healthy if you keep it in a dark cupboard.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A small seed can grow into a big plant.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A daffodil can grow from a bulb.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Most plants grow best when it is freezing cold.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Plants need light to grow well.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A bulb is a kind of animal egg.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Big plants never need water.",
+          "answer": "False",
+          "distractors": ["True"]
+        }
+      ]
+    },
+    {
+      "id": "second-healthy-me",
+      "title": "Healthy Me",
+      "station": "fill-gap",
+      "prop": "heart",
+      "skillName": "Knowing what animals need and how to stay healthy",
+      "strand": "animals-including-humans",
+      "statutoryRequirement": "Find out about and describe the basic needs of animals, including humans, for survival (water, food and air), and describe the importance for humans of exercise, eating the right amounts of different types of food, and hygiene",
+      "instruction": "Tap the word that fills the gap.",
+      "hint": "Not quite. Think about what keeps a body alive, healthy and strong, then try again.",
+      "questions": [
+        {
+          "ask": "We wash our hands to get rid of ___.",
+          "answer": "Germs",
+          "distractors": ["Muscles", "Bones", "Vitamins"]
+        },
+        {
+          "ask": "Running and jumping are kinds of ___.",
+          "answer": "Exercise",
+          "distractors": ["Hygiene", "Food", "Water"]
+        },
+        {
+          "ask": "All animals need food, water and ___ to stay alive.",
+          "answer": "Air",
+          "distractors": ["Toys", "Sweets", "Shoes"]
+        },
+        {
+          "ask": "We should eat lots of fruit and ___ every day.",
+          "answer": "Vegetables",
+          "distractors": ["Sweets", "Crisps", "Cake"]
+        },
+        {
+          "ask": "Brushing your teeth is part of good ___.",
+          "answer": "Hygiene",
+          "distractors": ["Exercise", "Habitat", "Offspring"]
+        },
+        {
+          "ask": "Exercise makes your heart and ___ stronger.",
+          "answer": "Muscles",
+          "distractors": ["Hair", "Nails", "Germs"]
+        },
+        {
+          "ask": "We should only eat a small amount of ___ food.",
+          "answer": "Sugary",
+          "distractors": ["Fresh", "Healthy", "Vegetable"]
+        },
+        {
+          "ask": "Fish need to live in ___.",
+          "answer": "Water",
+          "distractors": ["Sand", "Soil", "Grass"]
+        }
+      ]
+    },
+    {
+      "id": "second-growing-up",
+      "title": "Growing Up",
+      "station": "sequence",
+      "prop": "egg",
+      "skillName": "Seeing how young animals grow into adults",
+      "strand": "animals-including-humans",
+      "statutoryRequirement": "Notice that animals, including humans, have offspring which grow into adults",
+      "instruction": "Tap what comes next.",
+      "hint": "Not quite. Think about what the young animal will look like when it is a grown-up.",
+      "questions": [
+        {
+          "ask": "Egg → Chick → ?",
+          "answer": "Chicken",
+          "distractors": ["Duckling", "Tadpole", "Egg"]
+        },
+        {
+          "ask": "Frogspawn → Tadpole → Froglet → ?",
+          "answer": "Frog",
+          "distractors": ["Fish", "Lizard", "Caterpillar"]
+        },
+        {
+          "ask": "Baby → Toddler → Child → Teenager → ?",
+          "answer": "Adult",
+          "distractors": ["Baby", "Toddler", "Puppy"]
+        },
+        {
+          "ask": "Egg → Caterpillar → Chrysalis → ?",
+          "answer": "Butterfly",
+          "distractors": ["Bee", "Spider", "Worm"]
+        },
+        {
+          "ask": "A kitten grows up. Kitten → ?",
+          "answer": "Cat",
+          "distractors": ["Dog", "Rabbit", "Calf"]
+        },
+        {
+          "ask": "A lamb grows up. Lamb → ?",
+          "answer": "Sheep",
+          "distractors": ["Goat", "Cow", "Horse"]
+        },
+        {
+          "ask": "A foal grows up. Foal → ?",
+          "answer": "Horse",
+          "distractors": ["Cow", "Sheep", "Dog"]
+        },
+        {
+          "ask": "Egg → Duckling → ?",
+          "answer": "Duck",
+          "distractors": ["Swan", "Hen", "Goose"]
+        }
+      ]
+    },
+    {
+      "id": "second-minibeast-mystery",
+      "title": "Minibeast Mystery",
+      "station": "mystery",
+      "prop": "leaf",
+      "skillName": "Naming minibeasts in their microhabitats",
+      "strand": "living-things-and-their-habitats",
+      "statutoryRequirement": "Identify and name a variety of plants and animals in their habitats, including microhabitats",
+      "instruction": "Listen to the clues and tap the answer.",
+      "hint": "Not quite. Think about where the creature lives and what its body looks like.",
+      "questions": [
+        {
+          "ask": "I hide under damp logs. I have a hard grey shell and 14 legs. What am I?",
+          "answer": "Woodlouse",
+          "distractors": ["Butterfly", "Ladybird", "Bee"]
+        },
+        {
+          "ask": "I wriggle through the soil. I have no legs and I eat dead leaves. What am I?",
+          "answer": "Earthworm",
+          "distractors": ["Spider", "Beetle", "Ant"]
+        },
+        {
+          "ask": "I spin a web in the corner of a shed. I have eight legs. What am I?",
+          "answer": "Spider",
+          "distractors": ["Fly", "Ant", "Woodlouse"]
+        },
+        {
+          "ask": "I carry a shell on my back and leave a slimy trail. What am I?",
+          "answer": "Snail",
+          "distractors": ["Slug", "Beetle", "Worm"]
+        },
+        {
+          "ask": "I am red with black spots. I eat greenfly on leaves. What am I?",
+          "answer": "Ladybird",
+          "distractors": ["Ant", "Wasp", "Moth"]
+        },
+        {
+          "ask": "I am a tiny, dark, damp home under a log for minibeasts. What am I?",
+          "answer": "Microhabitat",
+          "distractors": ["Ocean", "Desert", "Mountain"]
+        },
+        {
+          "ask": "I live in a hive and make honey from flower nectar. What am I?",
+          "answer": "Honeybee",
+          "distractors": ["Wasp", "Fly", "Beetle"]
+        },
+        {
+          "ask": "I have six legs. I live with thousands of others in a nest underground. What am I?",
+          "answer": "Ant",
+          "distractors": ["Spider", "Snail", "Worm"]
+        }
+      ]
+    },
+    {
+      "id": "second-shape-changers",
+      "title": "Shape Changers",
+      "station": "predict",
+      "prop": "beaker",
+      "skillName": "Predicting how squashing and stretching change shapes",
+      "strand": "uses-of-everyday-materials",
+      "statutoryRequirement": "Find out how the shapes of solid objects made from some materials can be changed by squashing, bending, twisting and stretching",
+      "instruction": "Tap what you think will happen.",
+      "hint": "Not quite. Think about how the material feels and what your hands are doing to it.",
+      "questions": [
+        {
+          "ask": "What happens when you squash a ball of play dough?",
+          "answer": "It gets flatter",
+          "distractors": [
+            "It gets taller",
+            "It turns to water",
+            "It turns to glass"
+          ]
+        },
+        {
+          "ask": "What will happen if you stretch an elastic band?",
+          "answer": "It gets longer",
+          "distractors": ["It gets shorter", "It turns to metal", "It melts"]
+        },
+        {
+          "ask": "What will happen if you let go of a stretched elastic band?",
+          "answer": "It springs back",
+          "distractors": [
+            "It stays stretched",
+            "It turns to glass",
+            "It gets longer"
+          ]
+        },
+        {
+          "ask": "What happens when you bend a metal paperclip?",
+          "answer": "It stays bent",
+          "distractors": ["It turns to plastic", "It melts", "It gets longer"]
+        },
+        {
+          "ask": "What happens when you twist a wet cloth?",
+          "answer": "Water drips out",
+          "distractors": [
+            "It gets wetter",
+            "It turns to rock",
+            "It gets heavier"
+          ]
+        },
+        {
+          "ask": "What will happen if you try to bend a brick with your hands?",
+          "answer": "It will not bend",
+          "distractors": ["It bends easily", "It stretches", "It squashes flat"]
+        },
+        {
+          "ask": "What will happen if you squash a sponge and then let go?",
+          "answer": "It springs back",
+          "distractors": [
+            "It stays flat",
+            "It turns hard",
+            "It breaks into bits"
+          ]
+        },
+        {
+          "ask": "What will happen if you twist a pipe cleaner?",
+          "answer": "It stays twisted",
+          "distractors": ["It turns to water", "It snaps in half", "It melts"]
+        }
+      ]
+    },
+    {
+      "id": "second-food-chain-words",
+      "title": "Food Chain Words",
+      "station": "vocabulary",
+      "prop": "sun",
+      "skillName": "Using words for food chains and habitats",
+      "strand": "living-things-and-their-habitats",
+      "statutoryRequirement": "Describe how animals obtain their food from plants and other animals, using the idea of a simple food chain, and identify and name different sources of food",
+      "instruction": "Tap the word that matches.",
+      "hint": "Not quite. Think about who eats what, and where living things live, then try again.",
+      "questions": [
+        {
+          "ask": "A diagram that shows what eats what.",
+          "answer": "Food chain",
+          "distractors": ["Habitat", "Life cycle", "Microhabitat"]
+        },
+        {
+          "ask": "A place where an animal can hide and stay safe and dry.",
+          "answer": "Shelter",
+          "distractors": ["Food chain", "Offspring", "Life cycle"]
+        },
+        {
+          "ask": "Something that was once alive but is not alive now.",
+          "answer": "Dead",
+          "distractors": ["Living", "Habitat", "Shelter"]
+        },
+        {
+          "ask": "The place where a plant or animal lives.",
+          "answer": "Habitat",
+          "distractors": ["Food chain", "Offspring", "Bulb"]
+        },
+        {
+          "ask": "A very small habitat, like under a stone.",
+          "answer": "Microhabitat",
+          "distractors": ["Food chain", "Life cycle", "Offspring"]
+        },
+        {
+          "ask": "Living things at the start of a food chain. They make their own food.",
+          "answer": "Plants",
+          "distractors": ["Animals", "Offspring", "Habitats"]
+        },
+        {
+          "ask": "Where an animal gets its food from.",
+          "answer": "Source of food",
+          "distractors": ["Habitat", "Life cycle", "Offspring"]
+        },
+        {
+          "ask": "The young of an animal or plant.",
+          "answer": "Offspring",
+          "distractors": ["Food chain", "Habitat", "Adult"]
+        }
+      ]
+    },
+    {
+      "id": "second-material-match",
+      "title": "Material Match",
+      "station": "compare",
+      "prop": "rock",
+      "skillName": "Choosing the best material for a job",
+      "strand": "uses-of-everyday-materials",
+      "statutoryRequirement": "Identify and compare the suitability of a variety of everyday materials, including wood, metal, plastic, glass, brick, rock, paper and cardboard for particular uses",
+      "instruction": "Tap the best material for the job.",
+      "hint": "Not quite. Does the job need something strong, see-through, waterproof or easy to fold?",
+      "questions": [
+        {
+          "ask": "Which material is best for a window you can see through?",
+          "answer": "Glass",
+          "distractors": ["Wood", "Brick", "Cardboard"]
+        },
+        {
+          "ask": "Which material is best for building a strong house wall?",
+          "answer": "Brick",
+          "distractors": ["Paper", "Cardboard", "Fabric"]
+        },
+        {
+          "ask": "Which material is best for a saucepan that goes on a hot cooker?",
+          "answer": "Metal",
+          "distractors": ["Paper", "Plastic", "Cardboard"]
+        },
+        {
+          "ask": "Which material is best for writing a letter on?",
+          "answer": "Paper",
+          "distractors": ["Brick", "Metal", "Glass"]
+        },
+        {
+          "ask": "Which material is best for a raincoat to keep you dry?",
+          "answer": "Plastic",
+          "distractors": ["Paper", "Cardboard", "Wool"]
+        },
+        {
+          "ask": "Which material is best for a light box to post a parcel in?",
+          "answer": "Cardboard",
+          "distractors": ["Glass", "Rock", "Brick"]
+        },
+        {
+          "ask": "Which material is best for a strong garden path?",
+          "answer": "Rock",
+          "distractors": ["Paper", "Cardboard", "Sponge"]
+        },
+        {
+          "ask": "Which material comes from trees and is best for a cricket bat?",
+          "answer": "Wood",
+          "distractors": ["Glass", "Rock", "Plastic"]
+        }
+      ]
+    },
+    {
+      "id": "second-plant-detectives",
+      "title": "Plant Detectives",
+      "station": "investigate",
+      "prop": "magnifier",
+      "skillName": "Using simple equipment and tests to study plants",
+      "strand": "working-scientifically",
+      "statutoryRequirement": "Observing closely, using simple equipment; performing simple tests; gathering and recording data to help in answering questions; using their observations and ideas to suggest answers to questions",
+      "instruction": "Tap the best answer.",
+      "hint": "Not quite. Think about which tool or test would really help you find the answer.",
+      "questions": [
+        {
+          "ask": "Which would you use to measure how tall your bean plant grows?",
+          "answer": "Ruler",
+          "distractors": ["Weighing scales", "Thermometer", "Clock"]
+        },
+        {
+          "ask": "Which would you use to look closely at a tiny seed?",
+          "answer": "Magnifying glass",
+          "distractors": ["Ruler", "Measuring jug", "Clock"]
+        },
+        {
+          "ask": "Which would you use to find out how warm it is next to your plant?",
+          "answer": "Thermometer",
+          "distractors": ["Ruler", "Magnifying glass", "Measuring jug"]
+        },
+        {
+          "ask": "Which would you use to give each plant the same amount of water?",
+          "answer": "Measuring jug",
+          "distractors": ["Ruler", "Thermometer", "Magnifying glass"]
+        },
+        {
+          "ask": "One plant is in the light, one is in a dark cupboard. What should stay the same?",
+          "answer": "Amount of water",
+          "distractors": ["Amount of light", "Nothing", "Who looks at them"]
+        },
+        {
+          "ask": "Your plant in the dark cupboard went pale and weak. What does this tell you?",
+          "answer": "Plants need light",
+          "distractors": [
+            "Plants need dark",
+            "Plants need cold",
+            "Plants hate water"
+          ]
+        },
+        {
+          "ask": "How could you record how tall your plant is each day?",
+          "answer": "Make a table",
+          "distractors": ["Guess each day", "Just remember", "Draw a sun"]
+        },
+        {
+          "ask": "Which would you use to count how many days a seed takes to sprout?",
+          "answer": "Calendar",
+          "distractors": ["Ruler", "Thermometer", "Measuring jug"]
+        }
+      ]
+    }
+  ]
+}

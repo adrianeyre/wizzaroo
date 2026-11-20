@@ -1,0 +1,8 @@
+{
+  "id": "maths.equivalent-fractions",
+  "name": "Equivalent fractions",
+  "subject": "maths",
+  "yearGroup": 3,
+  "strand": "fractions",
+  "prerequisites": ["maths.fractions-of-shapes"]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "maths.classify-triangles-and-quadrilaterals",
+  "name": "Classifying triangles and quadrilaterals",
+  "subject": "maths",
+  "yearGroup": 4,
+  "strand": "geometry-properties-of-shapes",
+  "prerequisites": ["maths.right-angles-and-sides"]
+}

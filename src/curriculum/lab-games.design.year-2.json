@@ -1,0 +1,568 @@
+{
+  "subject": "design",
+  "yearGroup": 2,
+  "games": [
+    {
+      "id": "dt-join-it-up",
+      "title": "Join It Up",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Choosing ways to join and finish",
+      "strand": "choosing-tools",
+      "statutoryRequirement": "Pupils should be taught to select from and use a range of tools and equipment to perform practical tasks [for example, cutting, shaping, joining and finishing]",
+      "instruction": "Think about the materials, then tap the best way to join or finish.",
+      "hint": "Not quite. Think about whether the join needs to move, hold strongly or be quick.",
+      "questions": [
+        {
+          "ask": "Which joins two card strips but still lets them move?",
+          "answer": "Split pin",
+          "distractors": ["Glue stick", "Staple", "Sticky tape"]
+        },
+        {
+          "ask": "Which is the best way to join fabric for a hand puppet?",
+          "answer": "Sewing",
+          "distractors": ["Glue stick", "Paper clip", "Split pin"]
+        },
+        {
+          "ask": "Which holds sheets of paper for a short time?",
+          "answer": "Paper clip",
+          "distractors": ["PVA glue", "Sewing", "Nails"]
+        },
+        {
+          "ask": "Which glue is best for sticking wood?",
+          "answer": "PVA glue",
+          "distractors": ["Glue stick", "Water", "Paint"]
+        },
+        {
+          "ask": "Which tool cuts fabric best?",
+          "answer": "Fabric scissors",
+          "distractors": ["Hole punch", "Ruler", "Glue stick"]
+        },
+        {
+          "ask": "What can you use to smooth a rough wooden edge?",
+          "answer": "Sandpaper",
+          "distractors": ["Glue stick", "Ruler", "Paper clip"]
+        },
+        {
+          "ask": "Which tool makes a hole in card for an axle?",
+          "answer": "Hole punch",
+          "distractors": ["Ruler", "Sandpaper", "Glue stick"]
+        },
+        {
+          "ask": "How could you finish a model to add colour?",
+          "answer": "Paint it",
+          "distractors": ["Soak it", "Rip it", "Freeze it"]
+        },
+        {
+          "ask": "Which joins two boxes quickly and strongly?",
+          "answer": "Masking tape",
+          "distractors": ["Glue stick", "Paper clip", "Thread"]
+        }
+      ]
+    },
+    {
+      "id": "dt-material-odd-one",
+      "title": "Material Odd One Out",
+      "station": "odd-one-out",
+      "prop": "rock",
+      "skillName": "Comparing material characteristics",
+      "strand": "choosing-materials",
+      "statutoryRequirement": "Pupils should be taught to select from and use a wide range of materials and components, including construction materials, textiles and ingredients, according to their characteristics",
+      "instruction": "Look at them all, then tap the odd one out.",
+      "hint": "Not quite. Think about what the material is like: soft, hard, bendy or waterproof.",
+      "questions": [
+        {
+          "ask": "Odd one out: which is NOT waterproof?",
+          "answer": "Paper",
+          "distractors": ["Plastic", "Rubber", "Metal"]
+        },
+        {
+          "ask": "Odd one out: which is NOT a fabric?",
+          "answer": "Cardboard",
+          "distractors": ["Cotton", "Wool", "Felt"]
+        },
+        {
+          "ask": "Odd one out: which is NOT bendy?",
+          "answer": "Wooden block",
+          "distractors": ["Rubber band", "Pipe cleaner", "Fabric"]
+        },
+        {
+          "ask": "Odd one out: which is NOT see-through?",
+          "answer": "Wood",
+          "distractors": ["Glass", "Clear plastic", "Cling film"]
+        },
+        {
+          "ask": "Odd one out: which is NOT a cooking ingredient?",
+          "answer": "Glue",
+          "distractors": ["Flour", "Butter", "Sugar"]
+        },
+        {
+          "ask": "Odd one out: which is NOT a construction material?",
+          "answer": "Lettuce",
+          "distractors": ["Lolly sticks", "Card tubes", "Straws"]
+        },
+        {
+          "ask": "Odd one out: which would NOT be soft for a teddy?",
+          "answer": "Metal sheet",
+          "distractors": ["Fleece", "Felt", "Cotton wool"]
+        },
+        {
+          "ask": "Odd one out: which would NOT make a strong bridge?",
+          "answer": "Tissue paper",
+          "distractors": ["Lolly sticks", "Thick card", "Wooden strip"]
+        },
+        {
+          "ask": "Odd one out: which would NOT keep rain off?",
+          "answer": "Cotton wool",
+          "distractors": ["Plastic", "Rubber", "Nylon"]
+        }
+      ]
+    },
+    {
+      "id": "dt-criteria-checker",
+      "title": "Criteria Checker",
+      "station": "true-false",
+      "prop": "magnifier",
+      "skillName": "Using design criteria",
+      "strand": "design-criteria",
+      "statutoryRequirement": "Pupils should be taught to design purposeful, functional, appealing products for themselves and other users based on design criteria",
+      "instruction": "Read it, then decide if it is true or false.",
+      "hint": "Not quite. Think about who will use the product and what it must do.",
+      "questions": [
+        {
+          "ask": "A design criterion is a rule your product must meet.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "If a bag must hold three books, test it with three books.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A pencil pot for a desk does not need to stand up.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Knowing who will use a product helps you design it.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A toy for a toddler should have tiny parts that come off.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A good product should work well and look appealing.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A design only needs to look nice, not work.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A puppet for a small hand should be huge.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Asking the user what they like can help your design.",
+          "answer": "True",
+          "distractors": ["False"]
+        }
+      ]
+    },
+    {
+      "id": "dt-plan-it-out",
+      "title": "Plan It Out",
+      "station": "sequence",
+      "prop": "bulb",
+      "skillName": "Planning and modelling ideas",
+      "strand": "communicate-ideas",
+      "statutoryRequirement": "Pupils should be taught to generate, develop, model and communicate their ideas through talking, drawing, templates, mock-ups and, where appropriate, information and communication technology",
+      "instruction": "Follow the steps, then tap what comes next.",
+      "hint": "Not quite. Think about the order designers work in.",
+      "questions": [
+        {
+          "ask": "Design it, then make it, then...?",
+          "answer": "Evaluate it",
+          "distractors": ["Design it", "Throw it away", "Forget it"]
+        },
+        {
+          "ask": "Think who it is for, think what it must do, then...?",
+          "answer": "Draw ideas",
+          "distractors": ["Test it", "Evaluate it", "Paint it"]
+        },
+        {
+          "ask": "Put the template on the card, draw round it, then...?",
+          "answer": "Cut it out",
+          "distractors": ["Throw it away", "Paint the template", "Lose it"]
+        },
+        {
+          "ask": "Make a paper mock-up, test it, then...?",
+          "answer": "Improve the design",
+          "distractors": [
+            "Hide the mock-up",
+            "Stop designing",
+            "Forget the test"
+          ]
+        },
+        {
+          "ask": "Sketch three ideas, then...?",
+          "answer": "Choose the best one",
+          "distractors": ["Throw all away", "Sketch nothing", "Paint the table"]
+        },
+        {
+          "ask": "Share your drawing, listen to ideas, then...?",
+          "answer": "Change your design",
+          "distractors": ["Stop listening", "Rip the drawing", "Go home"]
+        },
+        {
+          "ask": "Measure the card, mark it with a pencil, then...?",
+          "answer": "Cut on the line",
+          "distractors": [
+            "Rub out the line",
+            "Paint the pencil",
+            "Fold it in four"
+          ]
+        },
+        {
+          "ask": "Draw your idea, then add...?",
+          "answer": "Labels",
+          "distractors": ["Crumbs", "Water", "Mud"]
+        }
+      ]
+    },
+    {
+      "id": "dt-moving-pictures",
+      "title": "Moving Picture Maker",
+      "station": "sort",
+      "prop": "magnet",
+      "skillName": "Choosing a mechanism for a movement",
+      "strand": "mechanisms",
+      "statutoryRequirement": "Pupils should be taught to explore and use mechanisms [for example, levers, sliders, wheels and axles], in their products",
+      "instruction": "Think about the movement, then tap the mechanism.",
+      "hint": "Not quite. Does it slide straight, turn on a pivot or roll?",
+      "questions": [
+        {
+          "ask": "A card bird's wing flaps as you push a strip on a pivot. Which group?",
+          "answer": "Lever",
+          "distractors": ["Slider", "Wheel and axle", "Spring"]
+        },
+        {
+          "ask": "A rocket picture moves straight up a slot. Which group?",
+          "answer": "Slider",
+          "distractors": ["Lever", "Wheel and axle", "Spring"]
+        },
+        {
+          "ask": "A toy lorry rolls across the floor. Which group?",
+          "answer": "Wheel and axle",
+          "distractors": ["Lever", "Slider", "Spring"]
+        },
+        {
+          "ask": "A pull tab in a book moves in a straight line. Which group?",
+          "answer": "Slider",
+          "distractors": ["Lever", "Wheel and axle", "Spring"]
+        },
+        {
+          "ask": "A shopping trolley rolls along. Which group?",
+          "answer": "Wheel and axle",
+          "distractors": ["Lever", "Slider", "Spring"]
+        },
+        {
+          "ask": "A card crane arm tips up and down on a split pin. Which group?",
+          "answer": "Lever",
+          "distractors": ["Slider", "Wheel and axle", "Spring"]
+        },
+        {
+          "ask": "A door handle that you push down to open the door. Which group?",
+          "answer": "Lever",
+          "distractors": ["Slider", "Wheel and axle", "Spring"]
+        },
+        {
+          "ask": "A picture of a fish swims along a straight slot. Which group?",
+          "answer": "Slider",
+          "distractors": ["Lever", "Wheel and axle", "Spring"]
+        }
+      ]
+    },
+    {
+      "id": "dt-axle-workshop",
+      "title": "Axle Workshop",
+      "station": "true-false",
+      "prop": "planet",
+      "skillName": "Making wheels and axles work",
+      "strand": "mechanisms",
+      "statutoryRequirement": "Pupils should be taught to explore and use mechanisms [for example, levers, sliders, wheels and axles], in their products",
+      "instruction": "Read it, then decide if it is true or false.",
+      "hint": "Not quite. Picture the wheel turning on its axle.",
+      "questions": [
+        {
+          "ask": "The axle goes through the centre of the wheel.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "The frame of a vehicle that holds the axles is called the chassis.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A wheel with its hole near the edge rolls smoothly.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "If an axle holder is too tight, the wheels might not turn.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Square wheels roll more smoothly than round wheels.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A drinking straw can be used as an axle holder.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Wheels on one axle should match in size for a car to roll straight.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Wheels turn best when they rub hard against the car body.",
+          "answer": "False",
+          "distractors": ["True"]
+        }
+      ]
+    },
+    {
+      "id": "dt-bridge-builders",
+      "title": "Bridge Builders",
+      "station": "compare",
+      "prop": "prism",
+      "skillName": "Making structures stronger and stiffer",
+      "strand": "structures",
+      "statutoryRequirement": "Pupils should be taught to build structures, exploring how they can be made stronger, stiffer and more stable",
+      "instruction": "Compare the choices, then tap the strongest idea.",
+      "hint": "Not quite. Think about folding, rolling, wide bases and triangles.",
+      "questions": [
+        {
+          "ask": "Which shape makes a frame most rigid?",
+          "answer": "Triangle",
+          "distractors": ["Square", "Circle", "Rectangle"]
+        },
+        {
+          "ask": "How can you make a paper bridge stiffer?",
+          "answer": "Fold it",
+          "distractors": ["Wet it", "Tear it", "Flatten it"]
+        },
+        {
+          "ask": "Which tower is most stable?",
+          "answer": "One with a wide base",
+          "distractors": [
+            "One on one leg",
+            "One with a tiny base",
+            "A top-heavy one"
+          ]
+        },
+        {
+          "ask": "How do you stop a square frame wobbling?",
+          "answer": "Add a diagonal",
+          "distractors": ["Remove a side", "Make it bigger", "Paint it"]
+        },
+        {
+          "ask": "Where should heavy blocks go in a tower?",
+          "answer": "At the bottom",
+          "distractors": ["At the top", "Only on one side", "Nowhere"]
+        },
+        {
+          "ask": "Which is stiffer?",
+          "answer": "A rolled paper tube",
+          "distractors": ["A flat sheet", "A tissue", "Wet paper"]
+        },
+        {
+          "ask": "Which would hold more weight as a bridge?",
+          "answer": "Folded zigzag card",
+          "distractors": ["Flat card", "Tissue paper", "Wet card"]
+        },
+        {
+          "ask": "Which of these is a structure?",
+          "answer": "A bridge",
+          "distractors": ["A song", "A smell", "A puddle"]
+        }
+      ]
+    },
+    {
+      "id": "dt-test-and-improve",
+      "title": "Test And Improve",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Evaluating products against criteria",
+      "strand": "evaluate-products",
+      "statutoryRequirement": "Pupils should be taught to explore and evaluate a range of existing products; evaluate their ideas and products against design criteria",
+      "instruction": "Read about the test, then tap the best answer.",
+      "hint": "Not quite. Check the result against what the product had to do.",
+      "questions": [
+        {
+          "ask": "A bag must hold 3 books. It tore with 2. What next?",
+          "answer": "Make it stronger",
+          "distractors": ["Make it smaller", "Paint it", "Say it is fine"]
+        },
+        {
+          "ask": "A puppet must fit a hand but it is too small. What next?",
+          "answer": "Make it bigger",
+          "distractors": ["Make it smaller", "Add glitter", "Give up"]
+        },
+        {
+          "ask": "A car must roll 1 metre. It rolled 2 metres. Did it pass?",
+          "answer": "Yes",
+          "distractors": ["No", "Not tested", "Cannot tell"]
+        },
+        {
+          "ask": "A boat must float. It sank. Did it meet the criteria?",
+          "answer": "No",
+          "distractors": ["Yes", "Nearly", "Not tested"]
+        },
+        {
+          "ask": "Which question checks a pencil pot works?",
+          "answer": "Does it hold pens?",
+          "distractors": ["Is it blue?", "Is it old?", "Is it Monday?"]
+        },
+        {
+          "ask": "Why do we test products?",
+          "answer": "To check they work",
+          "distractors": ["To break them all", "To waste time", "To hide them"]
+        },
+        {
+          "ask": "A hat must keep rain off. Which test is best?",
+          "answer": "Pour water on it",
+          "distractors": ["Sit on it", "Paint it", "Smell it"]
+        },
+        {
+          "ask": "Whose opinion matters most about a product?",
+          "answer": "The user",
+          "distractors": ["Nobody", "A dog", "A passing bird"]
+        }
+      ]
+    },
+    {
+      "id": "dt-balanced-lunchbox",
+      "title": "Balanced Lunchbox",
+      "station": "compare",
+      "prop": "heart",
+      "skillName": "Choosing a healthy, varied diet",
+      "strand": "healthy-diet",
+      "statutoryRequirement": "Pupils should be taught to use the basic principles of a healthy and varied diet to prepare dishes",
+      "instruction": "Compare the foods, then tap the healthiest choice.",
+      "hint": "Not quite. Think about fruit and vegetables, water and eating a bit of everything.",
+      "questions": [
+        {
+          "ask": "How many portions of fruit and veg should we aim for each day?",
+          "answer": "At least 5",
+          "distractors": ["1", "2", "None"]
+        },
+        {
+          "ask": "Which is the healthiest drink for a lunchbox?",
+          "answer": "Water",
+          "distractors": ["Cola", "Milkshake", "Fizzy orange"]
+        },
+        {
+          "ask": "Which snack is healthiest?",
+          "answer": "Apple slices",
+          "distractors": ["Crisps", "Chocolate bar", "Sweets"]
+        },
+        {
+          "ask": "Which sandwich filling adds protein?",
+          "answer": "Egg",
+          "distractors": ["Jam", "Chocolate spread", "Sugar"]
+        },
+        {
+          "ask": "Which food helps build strong bones and teeth?",
+          "answer": "Milk",
+          "distractors": ["Cola", "Sweets", "Crisps"]
+        },
+        {
+          "ask": "Which should we eat less often?",
+          "answer": "Cake",
+          "distractors": ["Carrots", "Water", "Apples"]
+        },
+        {
+          "ask": "A varied diet means eating...",
+          "answer": "Lots of foods",
+          "distractors": ["Only one food", "Only treats", "Only bread"]
+        },
+        {
+          "ask": "Which bread is the healthier choice?",
+          "answer": "Wholemeal bread",
+          "distractors": ["Doughnut", "Iced bun", "Cake"]
+        }
+      ]
+    },
+    {
+      "id": "dt-where-food-grows",
+      "title": "Where Food Grows",
+      "station": "sort",
+      "prop": "tree",
+      "skillName": "Sorting foods by where they come from",
+      "strand": "food-origins",
+      "statutoryRequirement": "Pupils should be taught to understand where food comes from",
+      "instruction": "Think about where it comes from, then tap the group.",
+      "hint": "Not quite. Does it grow on a tree, under the ground, come from a farm animal or the sea?",
+      "questions": [
+        {
+          "ask": "Which group does a potato belong in?",
+          "answer": "Grows underground",
+          "distractors": ["Grows on a tree", "Farm animal", "The sea"]
+        },
+        {
+          "ask": "Which group does an apple belong in?",
+          "answer": "Grows on a tree",
+          "distractors": ["Grows underground", "Farm animal", "The sea"]
+        },
+        {
+          "ask": "Which group does bacon belong in?",
+          "answer": "Farm animal",
+          "distractors": ["Grows on a tree", "Grows underground", "The sea"]
+        },
+        {
+          "ask": "Which group does a cod belong in?",
+          "answer": "The sea",
+          "distractors": ["Grows on a tree", "Grows underground", "Farm animal"]
+        },
+        {
+          "ask": "Which group does a carrot belong in?",
+          "answer": "Grows underground",
+          "distractors": ["Grows on a tree", "Farm animal", "The sea"]
+        },
+        {
+          "ask": "Which group does a cherry belong in?",
+          "answer": "Grows on a tree",
+          "distractors": ["Grows underground", "Farm animal", "The sea"]
+        },
+        {
+          "ask": "Which group does milk belong in?",
+          "answer": "Farm animal",
+          "distractors": ["Grows on a tree", "Grows underground", "The sea"]
+        },
+        {
+          "ask": "Which group do prawns belong in?",
+          "answer": "The sea",
+          "distractors": ["Grows on a tree", "Grows underground", "Farm animal"]
+        },
+        {
+          "ask": "Which group does an onion belong in?",
+          "answer": "Grows underground",
+          "distractors": ["Grows on a tree", "Farm animal", "The sea"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "maths.measure-in-millimetres",
+  "name": "Measuring height in millimetres",
+  "subject": "maths",
+  "yearGroup": 3,
+  "strand": "measurement",
+  "prerequisites": ["maths.measure-in-centimetres"]
+}

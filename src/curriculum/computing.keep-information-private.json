@@ -1,0 +1,8 @@
+{
+  "id": "computing.keep-information-private",
+  "name": "Keeping personal information private",
+  "subject": "computing",
+  "yearGroup": 2,
+  "strand": "online-safety",
+  "prerequisites": ["computing.ask-for-help-online"]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "computing.debug-an-algorithm",
+  "name": "Fixing mistakes in an algorithm",
+  "subject": "computing",
+  "yearGroup": 2,
+  "strand": "debugging",
+  "prerequisites": ["computing.debug-a-route"]
+}

@@ -1,0 +1,579 @@
+{
+  "yearGroup": 4,
+  "games": [
+    {
+      "id": "fourth-classification-keys",
+      "title": "Key Explorer",
+      "station": "sort",
+      "prop": "magnifier",
+      "skillName": "Using keys to group and name living things",
+      "strand": "living-things-and-their-habitats",
+      "statutoryRequirement": "Pupils should be taught to recognise that living things can be grouped in a variety of ways, and explore and use classification keys to help group, identify and name a variety of living things",
+      "instruction": "Follow the clues and tap the group this living thing belongs to.",
+      "hint": "Not quite. Check each clue like a key: look for a backbone, then count the legs and try again.",
+      "questions": [
+        {
+          "ask": "A ladybird: no backbone, 6 legs, 3 body parts",
+          "answer": "Insect",
+          "distractors": ["Arachnid", "Mollusc", "Reptile"]
+        },
+        {
+          "ask": "A garden spider: no backbone, 8 legs, 2 body parts",
+          "answer": "Arachnid",
+          "distractors": ["Insect", "Mollusc", "Worm"]
+        },
+        {
+          "ask": "A snail: no backbone, no legs, soft body and a shell",
+          "answer": "Mollusc",
+          "distractors": ["Insect", "Worm", "Arachnid"]
+        },
+        {
+          "ask": "An earthworm: no backbone, no legs, long body made of segments",
+          "answer": "Worm",
+          "distractors": ["Mollusc", "Insect", "Arachnid"]
+        },
+        {
+          "ask": "A robin: has a backbone, feathers and lays eggs",
+          "answer": "Bird",
+          "distractors": ["Mammal", "Reptile", "Amphibian"]
+        },
+        {
+          "ask": "A fox: has a backbone, fur and feeds its babies milk",
+          "answer": "Mammal",
+          "distractors": ["Bird", "Reptile", "Fish"]
+        },
+        {
+          "ask": "A newt: has a backbone, smooth damp skin and lays eggs in water",
+          "answer": "Amphibian",
+          "distractors": ["Reptile", "Fish", "Mammal"]
+        },
+        {
+          "ask": "A daisy: makes its own food and grows flowers",
+          "answer": "Flowering plant",
+          "distractors": ["Non-flowering plant", "Animal", "Fungus"]
+        }
+      ]
+    },
+    {
+      "id": "fourth-electricity-odd-one",
+      "title": "Power Puzzle",
+      "station": "odd-one-out",
+      "prop": "bulb",
+      "skillName": "Spotting appliances, conductors and insulators",
+      "strand": "electricity",
+      "statutoryRequirement": "Pupils should be taught to identify common appliances that run on electricity, and recognise some common conductors and insulators, and associate metals with being good conductors",
+      "instruction": "Tap the one that does not belong with the others.",
+      "hint": "Not quite. Ask yourself if it needs electricity, or if electricity can flow through it, then try again.",
+      "questions": [
+        {
+          "ask": "Which one does NOT run on electricity?",
+          "answer": "Kite",
+          "distractors": ["Toaster", "Fridge", "Television"]
+        },
+        {
+          "ask": "Which one does NOT need electricity to work?",
+          "answer": "Skipping rope",
+          "distractors": ["Hairdryer", "Washing machine", "Computer"]
+        },
+        {
+          "ask": "Which material is NOT a good conductor of electricity?",
+          "answer": "Plastic",
+          "distractors": ["Copper", "Iron", "Aluminium"]
+        },
+        {
+          "ask": "Which material is NOT an electrical insulator?",
+          "answer": "Steel",
+          "distractors": ["Rubber", "Wood", "Glass"]
+        },
+        {
+          "ask": "Which object would NOT let electricity flow through it?",
+          "answer": "Rubber band",
+          "distractors": ["Steel key", "Copper wire", "Aluminium foil"]
+        },
+        {
+          "ask": "Which object WOULD let electricity flow through it?",
+          "answer": "Steel paper clip",
+          "distractors": ["Plastic ruler", "Wooden peg", "Glass marble"]
+        },
+        {
+          "ask": "Which one is NOT a part you would use to build a simple circuit?",
+          "answer": "Magnet",
+          "distractors": ["Cell", "Wire", "Buzzer"]
+        },
+        {
+          "ask": "Three of these are metals that conduct electricity. Which is the odd one out?",
+          "answer": "Cork",
+          "distractors": ["Gold", "Iron", "Copper"]
+        }
+      ]
+    },
+    {
+      "id": "fourth-sound-facts",
+      "title": "Sound Check",
+      "station": "true-false",
+      "prop": "tuning-fork",
+      "skillName": "Knowing how sounds are made and travel",
+      "strand": "sound",
+      "statutoryRequirement": "Pupils should be taught to identify how sounds are made, associating some of them with something vibrating, and recognise that vibrations from sounds travel through a medium to the ear",
+      "instruction": "Is it true or false? Tap your answer.",
+      "hint": "Not quite. Think about vibrations and how they travel to your ear, then try again.",
+      "questions": [
+        {
+          "ask": "All sounds are made by something vibrating.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Sound can travel through solids, liquids and gases.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Plucking a guitar string gently makes a louder sound than plucking it hard.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A shorter guitar string makes a lower pitch than a longer one.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Hitting a drum harder makes bigger vibrations.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Sound can travel through empty space where there is no air or anything else.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A sound gets fainter as you move further away from it.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Pitch means how loud or quiet a sound is.",
+          "answer": "False",
+          "distractors": ["True"]
+        }
+      ]
+    },
+    {
+      "id": "fourth-circuit-gaps",
+      "title": "Circuit Builder",
+      "station": "fill-gap",
+      "prop": "battery",
+      "skillName": "Naming the parts of a simple series circuit",
+      "strand": "electricity",
+      "statutoryRequirement": "Pupils should be taught to construct a simple series electrical circuit, identifying and naming its basic parts, including cells, wires, bulbs, switches and buzzers",
+      "instruction": "Tap the word that fills the gap.",
+      "hint": "Not quite. Picture the circuit as a loop and think about what each part does, then try again.",
+      "questions": [
+        {
+          "ask": "A bulb will only light if the circuit is a complete ___.",
+          "answer": "Loop",
+          "distractors": ["Line", "Bulb", "Gap"]
+        },
+        {
+          "ask": "When a switch is open, there is a ___ in the circuit.",
+          "answer": "Gap",
+          "distractors": ["Bulb", "Cell", "Buzzer"]
+        },
+        {
+          "ask": "When the switch in a complete circuit is closed, the bulb turns ___.",
+          "answer": "On",
+          "distractors": ["Off", "Blue", "Cold"]
+        },
+        {
+          "ask": "A ___ pushes electricity around a circuit.",
+          "answer": "Cell",
+          "distractors": ["Bulb", "Buzzer", "Switch"]
+        },
+        {
+          "ask": "The ___ join all the parts of a circuit together.",
+          "answer": "Wires",
+          "distractors": ["Bulbs", "Buzzers", "Switches"]
+        },
+        {
+          "ask": "A ___ makes a sound when the circuit is complete.",
+          "answer": "Buzzer",
+          "distractors": ["Bulb", "Cell", "Wire"]
+        },
+        {
+          "ask": "A ___ is used to open or close a circuit.",
+          "answer": "Switch",
+          "distractors": ["Bulb", "Buzzer", "Cell"]
+        },
+        {
+          "ask": "Electricity flows well through metals, so they are good ___.",
+          "answer": "Conductors",
+          "distractors": ["Insulators", "Magnets", "Batteries"]
+        }
+      ]
+    },
+    {
+      "id": "fourth-water-cycle",
+      "title": "Water Cycle Trail",
+      "station": "sequence",
+      "prop": "cloud",
+      "skillName": "Ordering changes of state in the water cycle",
+      "strand": "states-of-matter",
+      "statutoryRequirement": "Pupils should be taught to identify the part played by evaporation and condensation in the water cycle, and observe that some materials change state when they are heated or cooled",
+      "instruction": "Tap the step that comes next.",
+      "hint": "Not quite. Think about whether the water is warming up or cooling down, then try again.",
+      "questions": [
+        {
+          "ask": "Sea water warms in the sun → Water evaporates → Water vapour rises → ?",
+          "answer": "Vapour condenses",
+          "distractors": ["Rain falls", "Sea freezes", "Water evaporates"]
+        },
+        {
+          "ask": "Water evaporates → Water vapour rises → Vapour cools and condenses → ?",
+          "answer": "Clouds form",
+          "distractors": ["Water evaporates", "Puddles grow", "Ice melts"]
+        },
+        {
+          "ask": "Vapour condenses → Clouds form → Water droplets get heavy → ?",
+          "answer": "Rain falls",
+          "distractors": ["Clouds rise", "Water evaporates", "Sea warms up"]
+        },
+        {
+          "ask": "Rain falls → Water flows into rivers → Rivers flow to the sea → ?",
+          "answer": "Water evaporates",
+          "distractors": ["Clouds form", "Rain falls", "Ice forms"]
+        },
+        {
+          "ask": "Ice → Heat it → Liquid water → Heat it more → ?",
+          "answer": "Water vapour",
+          "distractors": ["Ice", "Snow", "Rock"]
+        },
+        {
+          "ask": "Steam from a kettle rises → It hits a cold window → ?",
+          "answer": "Water droplets form",
+          "distractors": ["Ice cubes form", "Glass melts", "Steam gets hotter"]
+        },
+        {
+          "ask": "Liquid water → Put it in a freezer → ?",
+          "answer": "Ice",
+          "distractors": ["Steam", "Rain", "Water vapour"]
+        },
+        {
+          "ask": "Solid chocolate bar → Hold it in a warm hand → ?",
+          "answer": "Chocolate melts",
+          "distractors": [
+            "Chocolate freezes",
+            "Chocolate condenses",
+            "Chocolate evaporates"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fourth-digestion-riddles",
+      "title": "Tooth and Tummy",
+      "station": "mystery",
+      "prop": "tooth",
+      "skillName": "Naming teeth and parts of the digestive system",
+      "strand": "animals-including-humans",
+      "statutoryRequirement": "Pupils should be taught to describe the simple functions of the basic parts of the digestive system in humans, and identify the different types of teeth in humans and their simple functions",
+      "instruction": "Read the clues and tap what I am.",
+      "hint": "Not quite. Think about the job each part does to your food, then try again.",
+      "questions": [
+        {
+          "ask": "I am a sharp-edged tooth at the front of your mouth. I cut and bite food. What am I?",
+          "answer": "Incisor",
+          "distractors": ["Canine", "Molar", "Tongue"]
+        },
+        {
+          "ask": "I am a pointed, sharp tooth. I tear and rip food such as meat. What am I?",
+          "answer": "Canine",
+          "distractors": ["Incisor", "Molar", "Stomach"]
+        },
+        {
+          "ask": "I am a big, wide tooth at the back of your mouth. I grind and crush food. What am I?",
+          "answer": "Molar",
+          "distractors": ["Incisor", "Canine", "Oesophagus"]
+        },
+        {
+          "ask": "I am a tube that carries food from your mouth down to your stomach. What am I?",
+          "answer": "Oesophagus",
+          "distractors": ["Small intestine", "Large intestine", "Windpipe"]
+        },
+        {
+          "ask": "I am a stretchy bag. I churn your food and mix it with acid. What am I?",
+          "answer": "Stomach",
+          "distractors": ["Small intestine", "Oesophagus", "Large intestine"]
+        },
+        {
+          "ask": "I am a long, coiled tube. Goodness from food passes through my walls into the blood. What am I?",
+          "answer": "Small intestine",
+          "distractors": ["Large intestine", "Stomach", "Oesophagus"]
+        },
+        {
+          "ask": "I take water out of the waste that is left over after digestion. What am I?",
+          "answer": "Large intestine",
+          "distractors": ["Small intestine", "Stomach", "Mouth"]
+        },
+        {
+          "ask": "Digestion starts here. Teeth chew and saliva makes food soft and wet. What am I?",
+          "answer": "Mouth",
+          "distractors": ["Stomach", "Oesophagus", "Small intestine"]
+        }
+      ]
+    },
+    {
+      "id": "fourth-changing-habitats",
+      "title": "Habitat Watch",
+      "station": "predict",
+      "prop": "tree",
+      "skillName": "Predicting how changing environments affect life",
+      "strand": "living-things-and-their-habitats",
+      "statutoryRequirement": "Pupils should be taught to recognise that environments can change and that this can sometimes pose dangers to living things",
+      "instruction": "Tap what you think will happen.",
+      "hint": "Not quite. Think about what the living things need for food, shelter and safety, then try again.",
+      "questions": [
+        {
+          "ask": "What will happen to woodland birds if all the trees are cut down?",
+          "answer": "They lose homes",
+          "distractors": [
+            "They find more food",
+            "They grow bigger",
+            "Nothing changes"
+          ]
+        },
+        {
+          "ask": "What will happen to the fish if oil spills into their river?",
+          "answer": "Fish may die",
+          "distractors": [
+            "Fish grow faster",
+            "More fish hatch",
+            "Fish are safer"
+          ]
+        },
+        {
+          "ask": "What will happen to frogs if their pond dries up?",
+          "answer": "No place to lay eggs",
+          "distractors": [
+            "They lay more spawn",
+            "They grow gills",
+            "They become fish"
+          ]
+        },
+        {
+          "ask": "What will happen if people plant a wildflower meadow?",
+          "answer": "More bees visit",
+          "distractors": [
+            "Bees go away",
+            "Fewer insects come",
+            "Birds lose homes"
+          ]
+        },
+        {
+          "ask": "What happens to animals if a busy new road cuts through their wood?",
+          "answer": "Harder to move about",
+          "distractors": [
+            "More space to live",
+            "Food gets easier",
+            "Nothing changes"
+          ]
+        },
+        {
+          "ask": "What will happen if a hedgehog eats slugs killed with poison?",
+          "answer": "It may get ill",
+          "distractors": [
+            "It gets stronger",
+            "It sleeps less",
+            "Nothing happens"
+          ]
+        },
+        {
+          "ask": "What happens to animals when litter is dropped in their habitat?",
+          "answer": "They may get hurt",
+          "distractors": [
+            "They grow faster",
+            "They get more food",
+            "They are safer"
+          ]
+        },
+        {
+          "ask": "What will happen to polar bears if the Arctic sea ice melts?",
+          "answer": "Harder to hunt",
+          "distractors": [
+            "Easier to hunt",
+            "More ice to walk on",
+            "They grow more fur"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fourth-food-chain-words",
+      "title": "Food Chain Words",
+      "station": "vocabulary",
+      "prop": "leaf",
+      "skillName": "Using food chain words: producer, predator, prey",
+      "strand": "animals-including-humans",
+      "statutoryRequirement": "Pupils should be taught to construct and interpret a variety of food chains, identifying producers, predators and prey",
+      "instruction": "Listen to the meaning and tap the matching word.",
+      "hint": "Not quite. Think about who makes food, who eats and who gets eaten, then try again.",
+      "questions": [
+        {
+          "ask": "A living thing that makes its own food, such as a green plant",
+          "answer": "Producer",
+          "distractors": ["Predator", "Prey", "Consumer"]
+        },
+        {
+          "ask": "An animal that hunts and eats other animals",
+          "answer": "Predator",
+          "distractors": ["Prey", "Producer", "Herbivore"]
+        },
+        {
+          "ask": "An animal that is hunted and eaten by another animal",
+          "answer": "Prey",
+          "distractors": ["Predator", "Producer", "Carnivore"]
+        },
+        {
+          "ask": "A diagram with arrows that shows what eats what",
+          "answer": "Food chain",
+          "distractors": ["Habitat", "Life cycle", "Circuit"]
+        },
+        {
+          "ask": "An animal that eats only plants",
+          "answer": "Herbivore",
+          "distractors": ["Carnivore", "Omnivore", "Producer"]
+        },
+        {
+          "ask": "An animal that eats only other animals",
+          "answer": "Carnivore",
+          "distractors": ["Herbivore", "Omnivore", "Producer"]
+        },
+        {
+          "ask": "An animal that eats both plants and other animals",
+          "answer": "Omnivore",
+          "distractors": ["Herbivore", "Carnivore", "Producer"]
+        },
+        {
+          "ask": "A living thing that gets its energy by eating other living things",
+          "answer": "Consumer",
+          "distractors": ["Producer", "Food chain", "Habitat"]
+        }
+      ]
+    },
+    {
+      "id": "fourth-melt-and-boil",
+      "title": "Melt and Boil",
+      "station": "compare",
+      "prop": "thermometer",
+      "skillName": "Comparing temperatures and rates of evaporation",
+      "strand": "states-of-matter",
+      "statutoryRequirement": "Pupils should be taught to observe that some materials change state when they are heated or cooled, and measure the temperature at which this happens in degrees Celsius (°C); and associate the rate of evaporation with temperature",
+      "instruction": "Tap the one that best answers the question.",
+      "hint": "Not quite. Think about how hot or cold each one is, and how heat changes things, then try again.",
+      "questions": [
+        {
+          "ask": "Which puddle will dry up the fastest?",
+          "answer": "Hot sunny day",
+          "distractors": ["Cold cloudy day", "Frosty morning", "Chilly night"]
+        },
+        {
+          "ask": "Which wet washing will dry the quickest?",
+          "answer": "Warm windy day",
+          "distractors": ["Cold still day", "Damp foggy day", "Frosty night"]
+        },
+        {
+          "ask": "Which of these melts at the lowest temperature?",
+          "answer": "Ice",
+          "distractors": ["Candle wax", "Iron", "Glass"]
+        },
+        {
+          "ask": "Which of these needs the highest temperature to melt?",
+          "answer": "Iron",
+          "distractors": ["Ice", "Chocolate", "Butter"]
+        },
+        {
+          "ask": "Which of these is the hottest?",
+          "answer": "Boiling water",
+          "distractors": ["Melting ice", "Your body", "A cold drink"]
+        },
+        {
+          "ask": "Which of these places is the coldest?",
+          "answer": "Freezer",
+          "distractors": ["Fridge", "Classroom", "Oven"]
+        },
+        {
+          "ask": "Which state of matter keeps its own shape the best?",
+          "answer": "Solid",
+          "distractors": ["Liquid", "Gas", "Water vapour"]
+        },
+        {
+          "ask": "Which state of matter spreads out the most to fill its container?",
+          "answer": "Gas",
+          "distractors": ["Solid", "Liquid", "Ice"]
+        }
+      ]
+    },
+    {
+      "id": "fourth-evaporation-lab",
+      "title": "Evaporation Lab",
+      "station": "investigate",
+      "prop": "water-drop",
+      "skillName": "Planning fair tests and measuring accurately",
+      "strand": "working-scientifically",
+      "statutoryRequirement": "Pupils should be taught to set up simple practical enquiries and fair tests, and take accurate measurements using standard units and a range of equipment, including thermometers and data loggers",
+      "instruction": "Tap the best way to carry out the investigation.",
+      "hint": "Not quite. Think like a scientist about fair tests and the right equipment, then try again.",
+      "questions": [
+        {
+          "ask": "Which would you use to measure the temperature of warm water?",
+          "answer": "Thermometer",
+          "distractors": ["Ruler", "Measuring jug", "Stopwatch"]
+        },
+        {
+          "ask": "Which would you use to measure how much water is left in a dish?",
+          "answer": "Measuring jug",
+          "distractors": ["Thermometer", "Stopwatch", "Magnifying glass"]
+        },
+        {
+          "ask": "You test if warmth makes water evaporate faster. What should you change?",
+          "answer": "The temperature",
+          "distractors": [
+            "Amount of water",
+            "Size of the dish",
+            "Type of liquid"
+          ]
+        },
+        {
+          "ask": "You test if warmth makes water evaporate faster. What must stay the same?",
+          "answer": "Amount of water",
+          "distractors": ["The temperature", "Nothing at all", "The results"]
+        },
+        {
+          "ask": "What is the best way to record the water level in a dish every day for a week?",
+          "answer": "In a table",
+          "distractors": ["Guess at the end", "Remember it", "Ask a friend"]
+        },
+        {
+          "ask": "Dish A in the sun dried in 2 days. Dish B in the shade took 5. What can you conclude?",
+          "answer": "Warmth speeds drying",
+          "distractors": [
+            "Shade speeds drying",
+            "Sun stops drying",
+            "Dishes do not matter"
+          ]
+        },
+        {
+          "ask": "Which would you use to measure how loud a sound is?",
+          "answer": "Data logger",
+          "distractors": ["Thermometer", "Ruler", "Stopwatch"]
+        },
+        {
+          "ask": "You test which material best muffles a sound. What must stay the same?",
+          "answer": "The sound used",
+          "distractors": ["The material", "Nothing at all", "The winner"]
+        }
+      ]
+    }
+  ]
+}

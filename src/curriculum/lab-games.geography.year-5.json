@@ -1,0 +1,69 @@
+{
+  "subject": "geography",
+  "yearGroup": 5,
+  "games": [
+    {
+      "id": "atlas-ace-skills",
+      "title": "Atlas Ace",
+      "station": "compare",
+      "prop": "planet",
+      "skillName": "Finding places with an atlas",
+      "strand": "geographical-skills-and-fieldwork",
+      "statutoryRequirement": "Pupils should be taught to use maps, atlases, globes and digital/computer mapping to locate countries and describe features studied; use the eight points of a compass, four and six-figure grid references, symbols and key (including the use of Ordnance Survey maps) to build their knowledge of the United Kingdom and the wider world",
+      "instruction": "Think like an atlas expert, then tap the best answer.",
+      "hint": "Not quite. Think about which part of the atlas helps with this job, then try again.",
+      "questions": [
+        {
+          "ask": "Which part of an atlas lists places from A to Z with page numbers?",
+          "answer": "The index",
+          "distractors": ["The contents", "The cover", "The key"]
+        },
+        {
+          "ask": "Where would you look to find which pages show each continent?",
+          "answer": "The contents",
+          "distractors": ["The index", "The scale bar", "The key"]
+        },
+        {
+          "ask": "Which kind of map best shows where the mountains and lowlands are?",
+          "answer": "Physical map",
+          "distractors": ["Political map", "Road map", "Street map"]
+        },
+        {
+          "ask": "Which kind of map best shows country borders and capital cities?",
+          "answer": "Political map",
+          "distractors": ["Physical map", "Climate map", "Weather map"]
+        },
+        {
+          "ask": "Which kind of map shows rainfall and temperature around the world?",
+          "answer": "Climate map",
+          "distractors": ["Political map", "Street map", "Road map"]
+        },
+        {
+          "ask": "The index says \"Lima 34 B3\". What does the 34 mean?",
+          "answer": "The page number",
+          "distractors": ["The grid square", "The population", "The height"]
+        },
+        {
+          "ask": "The index says \"Lima 34 B3\". What does the B3 tell you?",
+          "answer": "The grid square",
+          "distractors": ["The page number", "The country", "The distance"]
+        },
+        {
+          "ask": "When reading a grid reference, which do you read first?",
+          "answer": "Along the bottom",
+          "distractors": ["Up the side", "Either one", "The key"]
+        },
+        {
+          "ask": "What does the key on a map explain?",
+          "answer": "What symbols mean",
+          "distractors": ["Who drew it", "The page numbers", "The date"]
+        },
+        {
+          "ask": "What does the scale bar on a map help you work out?",
+          "answer": "Real distances",
+          "distractors": ["Country names", "The date", "Page numbers"]
+        }
+      ]
+    }
+  ]
+}

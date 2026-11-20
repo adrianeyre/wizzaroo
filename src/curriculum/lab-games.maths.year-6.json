@@ -1,0 +1,877 @@
+{
+  "subject": "maths",
+  "yearGroup": 6,
+  "games": [
+    {
+      "id": "fraction-fusion-lab",
+      "title": "Fraction Fusion",
+      "station": "compare",
+      "prop": "beaker",
+      "skillName": "Adding and subtracting fractions",
+      "strand": "fractions",
+      "statutoryRequirement": "Pupils should be taught to add and subtract fractions with different denominators and mixed numbers, using the concept of equivalent fractions",
+      "instruction": "Make the denominators the same, then tap the right answer.",
+      "hint": "Not quite. Find a common denominator before you add or subtract.",
+      "skillId": "maths.add-subtract-fractions",
+      "questions": [
+        {
+          "ask": "1/2 + 1/3 = ?",
+          "answer": "5/6",
+          "distractors": ["2/5", "2/6", "1/6"]
+        },
+        {
+          "ask": "3/4 − 1/3 = ?",
+          "answer": "5/12",
+          "distractors": ["2/12", "1/4", "7/12"]
+        },
+        {
+          "ask": "2/5 + 3/10 = ?",
+          "answer": "7/10",
+          "distractors": ["5/15", "6/10", "7/20"]
+        },
+        {
+          "ask": "5/6 − 1/4 = ?",
+          "answer": "7/12",
+          "distractors": ["4/6", "4/24", "1/2"]
+        },
+        {
+          "ask": "7/8 − 1/2 = ?",
+          "answer": "3/8",
+          "distractors": ["6/6", "1/8", "5/8"]
+        },
+        {
+          "ask": "2/3 + 3/4 = ?",
+          "answer": "1 5/12",
+          "distractors": ["5/7", "5/12", "1 1/12"]
+        },
+        {
+          "ask": "1 1/2 + 2 1/4 = ?",
+          "answer": "3 3/4",
+          "distractors": ["3 2/6", "3 2/4", "4 1/4"]
+        },
+        {
+          "ask": "3 1/3 − 1 1/2 = ?",
+          "answer": "1 5/6",
+          "distractors": ["2 1/6", "1 1/6", "2 5/6"]
+        },
+        {
+          "ask": "4 − 2 1/3 = ?",
+          "answer": "1 2/3",
+          "distractors": ["2 1/3", "2 2/3", "1 1/3"]
+        }
+      ]
+    },
+    {
+      "id": "fraction-factory-floor",
+      "title": "Fraction Factory",
+      "station": "compare",
+      "prop": "bulb",
+      "skillName": "Multiplying and dividing fractions",
+      "strand": "fractions",
+      "statutoryRequirement": "Pupils should be taught to multiply simple pairs of proper fractions, writing the answer in its simplest form [for example, 1/4 × 1/2 = 1/8]; divide proper fractions by whole numbers [for example, 1/3 ÷ 2 = 1/6]",
+      "instruction": "Work out the fraction in its simplest form, then tap the answer.",
+      "hint": "Not quite. Multiply the tops and the bottoms, then simplify.",
+      "skillId": "maths.multiply-divide-fractions",
+      "questions": [
+        {
+          "ask": "1/4 × 1/2 = ?",
+          "answer": "1/8",
+          "distractors": ["2/6", "1/6", "2/8"]
+        },
+        {
+          "ask": "1/2 × 1/2 = ?",
+          "answer": "1/4",
+          "distractors": ["1", "1/2", "1/8"]
+        },
+        {
+          "ask": "2/3 × 3/4 = ?",
+          "answer": "1/2",
+          "distractors": ["5/7", "6/7", "8/9"]
+        },
+        {
+          "ask": "3/5 × 1/3 = ?",
+          "answer": "1/5",
+          "distractors": ["4/8", "3/8", "9/5"]
+        },
+        {
+          "ask": "5/6 × 2/5 = ?",
+          "answer": "1/3",
+          "distractors": ["7/11", "10/11", "2/3"]
+        },
+        {
+          "ask": "3/8 × 2/3 = ?",
+          "answer": "1/4",
+          "distractors": ["5/11", "6/11", "5/24"]
+        },
+        {
+          "ask": "1/3 ÷ 2 = ?",
+          "answer": "1/6",
+          "distractors": ["2/3", "1/5", "3/2"]
+        },
+        {
+          "ask": "3/4 ÷ 3 = ?",
+          "answer": "1/4",
+          "distractors": ["9/4", "3/7", "1/12"]
+        },
+        {
+          "ask": "2/5 ÷ 4 = ?",
+          "answer": "1/10",
+          "distractors": ["8/5", "2/9", "1/20"]
+        },
+        {
+          "ask": "4/7 ÷ 2 = ?",
+          "answer": "2/7",
+          "distractors": ["8/7", "2/14", "4/9"]
+        }
+      ]
+    },
+    {
+      "id": "percent-power-shop",
+      "title": "Percent Power",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Percentages of amounts",
+      "strand": "ratio-and-proportion",
+      "statutoryRequirement": "Pupils should be taught to solve problems involving the calculation of percentages [for example, of measures, and such as 15% of 360] and the use of percentages for comparison",
+      "instruction": "Work out the percentage, then tap the right answer.",
+      "hint": "Not quite. Find 10% or 1% first, then build up to the percentage you need.",
+      "skillId": "maths.percentages-of-amounts",
+      "questions": [
+        {
+          "ask": "What is 15% of 360?",
+          "answer": "54",
+          "distractors": ["36", "24", "45"]
+        },
+        {
+          "ask": "What is 10% of 80?",
+          "answer": "8",
+          "distractors": ["10", "80", "0.8"]
+        },
+        {
+          "ask": "What is 25% of 60?",
+          "answer": "15",
+          "distractors": ["25", "6", "20"]
+        },
+        {
+          "ask": "What is 50% of 140?",
+          "answer": "70",
+          "distractors": ["50", "7", "14"]
+        },
+        {
+          "ask": "What is 75% of 200?",
+          "answer": "150",
+          "distractors": ["75", "50", "125"]
+        },
+        {
+          "ask": "What is 5% of 40?",
+          "answer": "2",
+          "distractors": ["4", "5", "20"]
+        },
+        {
+          "ask": "What is 30% of £70?",
+          "answer": "£21",
+          "distractors": ["£30", "£7", "£24"]
+        },
+        {
+          "ask": "What is 1% of 600?",
+          "answer": "6",
+          "distractors": ["60", "1", "600"]
+        },
+        {
+          "ask": "What is 60% of 25?",
+          "answer": "15",
+          "distractors": ["16", "6", "10"]
+        },
+        {
+          "ask": "Which amount is the largest?",
+          "answer": "20% of 80",
+          "distractors": ["30% of 50", "10% of 120", "50% of 28"]
+        }
+      ]
+    },
+    {
+      "id": "formula-fixers",
+      "title": "Formula Fixers",
+      "station": "compare",
+      "prop": "dna",
+      "skillName": "Simple formulae and missing numbers",
+      "strand": "algebra",
+      "statutoryRequirement": "Pupils should be taught to use simple formulae; express missing number problems algebraically; find pairs of numbers that satisfy an equation with two unknowns; enumerate possibilities of combinations of two variables",
+      "instruction": "Use the formula or find the missing number, then tap the answer.",
+      "hint": "Not quite. Put the numbers into the formula one step at a time, then check.",
+      "skillId": "maths.simple-formulae",
+      "questions": [
+        {
+          "ask": "n + 7 = 15. What is n?",
+          "answer": "8",
+          "distractors": ["22", "7", "9"]
+        },
+        {
+          "ask": "4y = 28. What is y?",
+          "answer": "7",
+          "distractors": ["24", "32", "112"]
+        },
+        {
+          "ask": "30 − m = 12. What is m?",
+          "answer": "18",
+          "distractors": ["42", "12", "28"]
+        },
+        {
+          "ask": "If a = 5, what is 3a + 2?",
+          "answer": "17",
+          "distractors": ["37", "10", "15"]
+        },
+        {
+          "ask": "6 + k = 2k. What is k?",
+          "answer": "6",
+          "distractors": ["3", "12", "2"]
+        },
+        {
+          "ask": "Perimeter of a square: P = 4s. If s = 6 cm, what is P?",
+          "answer": "24 cm",
+          "distractors": ["36 cm", "10 cm", "12 cm"]
+        },
+        {
+          "ask": "Taxi cost = £2 + £3 per mile. What does a 4 mile ride cost?",
+          "answer": "£14",
+          "distractors": ["£20", "£9", "£12"]
+        },
+        {
+          "ask": "a + b = 10. Which pair works?",
+          "answer": "a = 3, b = 7",
+          "distractors": ["a = 4, b = 7", "a = 2, b = 9", "a = 5, b = 6"]
+        },
+        {
+          "ask": "2x + y = 12. Which pair works?",
+          "answer": "x = 4, y = 4",
+          "distractors": ["x = 5, y = 3", "x = 3, y = 5", "x = 2, y = 9"]
+        },
+        {
+          "ask": "a + b = 5 and a, b are whole numbers from 1 to 4. How many pairs (a, b)?",
+          "answer": "4",
+          "distractors": ["2", "5", "6"]
+        }
+      ]
+    },
+    {
+      "id": "miles-and-metres-dash",
+      "title": "Miles And Metres",
+      "station": "compare",
+      "prop": "thermometer",
+      "skillName": "Converting units of measure",
+      "strand": "measurement",
+      "statutoryRequirement": "Pupils should be taught to use, read, write and convert between standard units, converting measurements of length, mass, volume and time from a smaller unit of measure to a larger unit, and vice versa, using decimal notation to up to 3 decimal places; convert between miles and kilometres",
+      "instruction": "Convert the measure, then tap the right answer.",
+      "hint": "Not quite. Remember 5 miles is about 8 km, and check which way you multiply.",
+      "skillId": "maths.convert-units",
+      "questions": [
+        {
+          "ask": "5 miles is about how many kilometres?",
+          "answer": "8 km",
+          "distractors": ["5 km", "3 km", "10 km"]
+        },
+        {
+          "ask": "About how many miles is 40 km?",
+          "answer": "25 miles",
+          "distractors": ["64 miles", "40 miles", "50 miles"]
+        },
+        {
+          "ask": "About how many kilometres is 15 miles?",
+          "answer": "24 km",
+          "distractors": ["9 km", "20 km", "30 km"]
+        },
+        {
+          "ask": "What is 3.075 kg in grams?",
+          "answer": "3,075 g",
+          "distractors": ["3,750 g", "307.5 g", "3,705 g"]
+        },
+        {
+          "ask": "What is 2,450 ml in litres?",
+          "answer": "2.45 litres",
+          "distractors": ["24.5 litres", "0.245 litres", "2.045 litres"]
+        },
+        {
+          "ask": "What is 0.125 km in metres?",
+          "answer": "125 m",
+          "distractors": ["12.5 m", "1,250 m", "1.25 m"]
+        },
+        {
+          "ask": "What is 375 cm in metres?",
+          "answer": "3.75 m",
+          "distractors": ["37.5 m", "0.375 m", "3,750 m"]
+        },
+        {
+          "ask": "What is 150 minutes in hours?",
+          "answer": "2.5 hours",
+          "distractors": ["1.5 hours", "2.3 hours", "15 hours"]
+        },
+        {
+          "ask": "What is 4.2 m in millimetres?",
+          "answer": "4,200 mm",
+          "distractors": ["420 mm", "42 mm", "42,000 mm"]
+        },
+        {
+          "ask": "What is 9 g in kilograms?",
+          "answer": "0.009 kg",
+          "distractors": ["0.09 kg", "0.9 kg", "9,000 kg"]
+        }
+      ]
+    },
+    {
+      "id": "mean-machine-lab",
+      "title": "Mean Machine",
+      "station": "compare",
+      "prop": "bulb",
+      "skillName": "Calculating the mean",
+      "strand": "statistics",
+      "statutoryRequirement": "Pupils should be taught to calculate and interpret the mean as an average",
+      "instruction": "Find the mean, then tap the right answer.",
+      "hint": "Not quite. Add all the numbers, then divide by how many there are.",
+      "skillId": "maths.mean-and-tables",
+      "questions": [
+        {
+          "ask": "What is the mean of 4, 6 and 8?",
+          "answer": "6",
+          "distractors": ["18", "8", "5"]
+        },
+        {
+          "ask": "What is the mean of 3, 5, 7 and 9?",
+          "answer": "6",
+          "distractors": ["24", "5", "7"]
+        },
+        {
+          "ask": "What is the mean of 10, 20, 30, 40 and 50?",
+          "answer": "30",
+          "distractors": ["150", "25", "50"]
+        },
+        {
+          "ask": "What is the mean of 2, 2 and 5?",
+          "answer": "3",
+          "distractors": ["9", "2", "4"]
+        },
+        {
+          "ask": "What is the mean of 0, 0 and 9?",
+          "answer": "3",
+          "distractors": ["9", "0", "4.5"]
+        },
+        {
+          "ask": "What is the mean of 1.5, 2.5 and 3.5?",
+          "answer": "2.5",
+          "distractors": ["7.5", "3", "2"]
+        },
+        {
+          "ask": "Temperatures were 5°C, 9°C, 7°C and 11°C. What is the mean?",
+          "answer": "8°C",
+          "distractors": ["32°C", "7°C", "6°C"]
+        },
+        {
+          "ask": "Books read: Monday 12, Tuesday 8, Wednesday 10. What is the mean per day?",
+          "answer": "10",
+          "distractors": ["30", "8", "12"]
+        },
+        {
+          "ask": "The mean of 3 numbers is 7. What is their total?",
+          "answer": "21",
+          "distractors": ["10", "7", "3"]
+        },
+        {
+          "ask": "The mean of 4 numbers is 5. Three are 2, 4 and 6. What is the fourth?",
+          "answer": "8",
+          "distractors": ["5", "4", "12"]
+        }
+      ]
+    },
+    {
+      "id": "angle-sleuth-squad",
+      "title": "Angle Sleuths",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Finding missing angles",
+      "strand": "properties-of-shapes",
+      "statutoryRequirement": "Pupils should be taught to recognise angles where they meet at a point, are on a straight line, or are vertically opposite, and find missing angles; find unknown angles in any triangles, quadrilaterals, and regular polygons",
+      "instruction": "Find the missing angle, then tap the right answer.",
+      "hint": "Not quite. Triangles total 180°, quadrilaterals total 360°, and a straight line is 180°.",
+      "skillId": "maths.missing-angles",
+      "questions": [
+        {
+          "ask": "A triangle has angles 50° and 60°. What is the third angle?",
+          "answer": "70°",
+          "distractors": ["250°", "110°", "80°"]
+        },
+        {
+          "ask": "A right-angled triangle has a 35° angle. What is the other angle?",
+          "answer": "55°",
+          "distractors": ["145°", "65°", "45°"]
+        },
+        {
+          "ask": "An isosceles triangle has a top angle of 40°. What is each base angle?",
+          "answer": "70°",
+          "distractors": ["140°", "50°", "40°"]
+        },
+        {
+          "ask": "What is each angle in an equilateral triangle?",
+          "answer": "60°",
+          "distractors": ["90°", "45°", "180°"]
+        },
+        {
+          "ask": "A quadrilateral has angles 90°, 90° and 110°. What is the fourth?",
+          "answer": "70°",
+          "distractors": ["110°", "250°", "50°"]
+        },
+        {
+          "ask": "A quadrilateral has angles 100°, 80° and 75°. What is the fourth?",
+          "answer": "105°",
+          "distractors": ["75°", "85°", "255°"]
+        },
+        {
+          "ask": "Two lines cross. One angle is 65°. What is the vertically opposite angle?",
+          "answer": "65°",
+          "distractors": ["115°", "25°", "295°"]
+        },
+        {
+          "ask": "Two lines cross. One angle is 130°. What is the angle next to it?",
+          "answer": "50°",
+          "distractors": ["130°", "230°", "40°"]
+        },
+        {
+          "ask": "Angles on a straight line are 47° and ?",
+          "answer": "133°",
+          "distractors": ["143°", "43°", "313°"]
+        },
+        {
+          "ask": "What is each interior angle of a regular hexagon?",
+          "answer": "120°",
+          "distractors": ["60°", "108°", "135°"]
+        }
+      ]
+    },
+    {
+      "id": "big-times-rocket",
+      "title": "Big Times Rocket",
+      "station": "compare",
+      "prop": "planet",
+      "skillName": "Long multiplication",
+      "strand": "four-operations",
+      "statutoryRequirement": "Pupils should be taught to multiply multi-digit numbers up to 4 digits by a two-digit whole number using the formal written method of long multiplication",
+      "instruction": "Use long multiplication, then tap the right answer.",
+      "hint": "Not quite. Remember the zero placeholder when you multiply by the tens digit.",
+      "skillId": "maths.multiply-large-numbers",
+      "questions": [
+        {
+          "ask": "1,234 × 12 = ?",
+          "answer": "14,808",
+          "distractors": ["3,702", "15,808", "14,708"]
+        },
+        {
+          "ask": "2,056 × 24 = ?",
+          "answer": "49,344",
+          "distractors": ["12,336", "50,344", "49,244"]
+        },
+        {
+          "ask": "3,415 × 32 = ?",
+          "answer": "109,280",
+          "distractors": ["17,075", "110,280", "109,180"]
+        },
+        {
+          "ask": "4,700 × 15 = ?",
+          "answer": "70,500",
+          "distractors": ["28,200", "71,500", "70,400"]
+        },
+        {
+          "ask": "1,999 × 21 = ?",
+          "answer": "41,979",
+          "distractors": ["5,997", "42,979", "41,879"]
+        },
+        {
+          "ask": "6,083 × 45 = ?",
+          "answer": "273,735",
+          "distractors": ["54,747", "274,735", "273,635"]
+        },
+        {
+          "ask": "2,500 × 36 = ?",
+          "answer": "90,000",
+          "distractors": ["22,500", "91,000", "89,900"]
+        },
+        {
+          "ask": "7,342 × 18 = ?",
+          "answer": "132,156",
+          "distractors": ["66,078", "133,156", "132,056"]
+        },
+        {
+          "ask": "5,128 × 27 = ?",
+          "answer": "138,456",
+          "distractors": ["46,152", "139,456", "138,356"]
+        }
+      ]
+    },
+    {
+      "id": "long-division-den",
+      "title": "Division Den",
+      "station": "compare",
+      "prop": "battery",
+      "skillName": "Long division and remainders",
+      "strand": "four-operations",
+      "statutoryRequirement": "Pupils should be taught to divide numbers up to 4 digits by a two-digit whole number using the formal written method of long division, and interpret remainders as whole number remainders, fractions, or by rounding, as appropriate for the context; divide numbers up to 4 digits by a two-digit number using the formal written method of short division where appropriate, interpreting remainders according to the context",
+      "instruction": "Use a written method, then tap the right answer.",
+      "hint": "Not quite. Check how many times the divisor fits at each step, then try again.",
+      "skillId": "maths.divide-large-numbers",
+      "questions": [
+        {
+          "ask": "432 ÷ 12 = ?",
+          "answer": "36",
+          "distractors": ["34", "38", "26"]
+        },
+        {
+          "ask": "1,560 ÷ 24 = ?",
+          "answer": "65",
+          "distractors": ["56", "75", "64"]
+        },
+        {
+          "ask": "4,536 ÷ 21 = ?",
+          "answer": "216",
+          "distractors": ["206", "226", "2160"]
+        },
+        {
+          "ask": "7,488 ÷ 16 = ?",
+          "answer": "468",
+          "distractors": ["458", "486", "4680"]
+        },
+        {
+          "ask": "3,250 ÷ 25 = ?",
+          "answer": "130",
+          "distractors": ["13", "125", "1300"]
+        },
+        {
+          "ask": "496 ÷ 11 = ?",
+          "answer": "45 r 1",
+          "distractors": ["45", "44 r 12", "46 r 1"]
+        },
+        {
+          "ask": "2,000 ÷ 15 = ?",
+          "answer": "133 r 5",
+          "distractors": ["133 r 3", "134 r 5", "132 r 5"]
+        },
+        {
+          "ask": "Write 432 ÷ 15 as a mixed number.",
+          "answer": "28 4/5",
+          "distractors": ["28 4/15", "28 2/5", "29 4/5"]
+        },
+        {
+          "ask": "75 pizzas are shared equally between 12 tables. How much does each table get?",
+          "answer": "6 1/4",
+          "distractors": ["6 3/4", "7 1/4", "6 1/3"]
+        },
+        {
+          "ask": "500 children go on a trip. Each coach holds 45. How many coaches are needed?",
+          "answer": "12",
+          "distractors": ["11", "10", "13"]
+        }
+      ]
+    },
+    {
+      "id": "ten-million-ranker",
+      "title": "Ten Million Ranker",
+      "station": "compare",
+      "prop": "planet",
+      "skillName": "Comparing and rounding numbers to 10,000,000",
+      "strand": "number-and-place-value",
+      "statutoryRequirement": "Pupils should be taught to read, write, order and compare numbers up to 10 000 000 and determine the value of each digit; round any whole number to a required degree of accuracy",
+      "instruction": "Compare the numbers or round them, then tap the right answer.",
+      "hint": "Not quite. Start with the millions and work along, digit by digit.",
+      "questions": [
+        {
+          "ask": "Which number is the largest?",
+          "answer": "4,560,003",
+          "distractors": ["4,056,300", "4,506,030", "4,065,300"]
+        },
+        {
+          "ask": "Which number is the smallest?",
+          "answer": "7,009,999",
+          "distractors": ["7,099,999", "7,100,000", "7,090,000"]
+        },
+        {
+          "ask": "Round 3,682,415 to the nearest million.",
+          "answer": "4,000,000",
+          "distractors": ["3,000,000", "3,700,000", "3,680,000"]
+        },
+        {
+          "ask": "Round 3,682,415 to the nearest 100,000.",
+          "answer": "3,700,000",
+          "distractors": ["3,600,000", "3,680,000", "4,000,000"]
+        },
+        {
+          "ask": "Round 5,349,999 to the nearest 10,000.",
+          "answer": "5,350,000",
+          "distractors": ["5,340,000", "5,300,000", "5,349,000"]
+        },
+        {
+          "ask": "Round 9,999,600 to the nearest 1000.",
+          "answer": "10,000,000",
+          "distractors": ["9,999,000", "9,990,000", "9,000,000"]
+        },
+        {
+          "ask": "What is the value of the 6 in 2,604,513?",
+          "answer": "600,000",
+          "distractors": ["60,000", "6,000,000", "6,000"]
+        },
+        {
+          "ask": "Which number is between 6,500,000 and 6,600,000?",
+          "answer": "6,550,000",
+          "distractors": ["6,055,000", "6,650,000", "5,650,000"]
+        },
+        {
+          "ask": "Which of these is ten million?",
+          "answer": "10,000,000",
+          "distractors": ["1,000,000", "100,000,000", "10,000"]
+        }
+      ]
+    },
+    {
+      "id": "common-factor-quest",
+      "title": "Common Factor Quest",
+      "station": "compare",
+      "prop": "magnet",
+      "skillName": "Common factors, common multiples and primes",
+      "strand": "four-operations",
+      "statutoryRequirement": "Pupils should be taught to identify common factors, common multiples and prime numbers",
+      "instruction": "Think about factors and multiples, then tap the right answer.",
+      "hint": "Not quite. List the factors or multiples of each number, then look for a match.",
+      "questions": [
+        {
+          "ask": "What is the highest common factor of 18 and 30?",
+          "answer": "6",
+          "distractors": ["3", "2", "90"]
+        },
+        {
+          "ask": "What is the highest common factor of 24 and 40?",
+          "answer": "8",
+          "distractors": ["4", "2", "120"]
+        },
+        {
+          "ask": "Which number is a common factor of 21 and 35, other than 1?",
+          "answer": "7",
+          "distractors": ["3", "5", "105"]
+        },
+        {
+          "ask": "Which number is a common multiple of 4 and 6?",
+          "answer": "24",
+          "distractors": ["10", "18", "16"]
+        },
+        {
+          "ask": "What is the lowest common multiple of 6 and 8?",
+          "answer": "24",
+          "distractors": ["48", "14", "2"]
+        },
+        {
+          "ask": "What is the lowest common multiple of 5 and 7?",
+          "answer": "35",
+          "distractors": ["12", "70", "57"]
+        },
+        {
+          "ask": "Which number is prime?",
+          "answer": "37",
+          "distractors": ["39", "49", "51"]
+        },
+        {
+          "ask": "Which number is NOT prime?",
+          "answer": "57",
+          "distractors": ["53", "59", "61"]
+        },
+        {
+          "ask": "How many prime numbers are between 20 and 30?",
+          "answer": "2",
+          "distractors": ["3", "4", "1"]
+        },
+        {
+          "ask": "What are the prime factors of 12?",
+          "answer": "2 and 3",
+          "distractors": ["3 and 4", "2 and 6", "1 and 12"]
+        }
+      ]
+    },
+    {
+      "id": "simplify-squad",
+      "title": "Simplify Squad",
+      "station": "compare",
+      "prop": "prism",
+      "skillName": "Simplifying and comparing fractions",
+      "strand": "fractions",
+      "statutoryRequirement": "Pupils should be taught to use common factors to simplify fractions; use common multiples to express fractions in the same denomination; compare and order fractions, including fractions > 1",
+      "instruction": "Simplify or compare the fractions, then tap the right answer.",
+      "hint": "Not quite. Divide the top and bottom by the same number, or give them a common denominator.",
+      "questions": [
+        {
+          "ask": "Simplify 6/8.",
+          "answer": "3/4",
+          "distractors": ["2/4", "6/4", "3/8"]
+        },
+        {
+          "ask": "Simplify 10/15.",
+          "answer": "2/3",
+          "distractors": ["2/5", "5/3", "1/3"]
+        },
+        {
+          "ask": "Simplify 18/24.",
+          "answer": "3/4",
+          "distractors": ["2/3", "3/8", "9/16"]
+        },
+        {
+          "ask": "Simplify 20/45.",
+          "answer": "4/9",
+          "distractors": ["4/5", "2/9", "5/9"]
+        },
+        {
+          "ask": "Simplify 14/49.",
+          "answer": "2/7",
+          "distractors": ["7/2", "2/9", "1/7"]
+        },
+        {
+          "ask": "Simplify 25/100.",
+          "answer": "1/4",
+          "distractors": ["1/5", "2/5", "1/25"]
+        },
+        {
+          "ask": "Which fraction is equal to 2/3?",
+          "answer": "8/12",
+          "distractors": ["6/12", "4/12", "2/12"]
+        },
+        {
+          "ask": "Which fraction is the largest?",
+          "answer": "4/3",
+          "distractors": ["5/4", "7/6", "9/8"]
+        },
+        {
+          "ask": "Which is the smallest?",
+          "answer": "1 1/2",
+          "distractors": ["7/4", "5/3", "11/6"]
+        },
+        {
+          "ask": "Which fraction is greater than 2?",
+          "answer": "9/4",
+          "distractors": ["7/4", "5/3", "11/6"]
+        }
+      ]
+    },
+    {
+      "id": "slanted-area-workshop",
+      "title": "Area Workshop",
+      "station": "compare",
+      "prop": "leaf",
+      "skillName": "Area of triangles and parallelograms",
+      "strand": "measurement",
+      "statutoryRequirement": "Pupils should be taught to calculate the area of parallelograms and triangles; recognise that shapes with the same areas can have different perimeters and vice versa; recognise when it is possible to use formulae for area and volume of shapes",
+      "instruction": "Work out the area, then tap the right answer.",
+      "hint": "Not quite. A triangle is half of base × height; a parallelogram is base × height.",
+      "questions": [
+        {
+          "ask": "A triangle has base 8 cm and height 5 cm. What is its area?",
+          "answer": "20 cm²",
+          "distractors": ["40 cm²", "13 cm²", "26 cm²"]
+        },
+        {
+          "ask": "A triangle has base 10 cm and height 7 cm. What is its area?",
+          "answer": "35 cm²",
+          "distractors": ["70 cm²", "17 cm²", "34 cm²"]
+        },
+        {
+          "ask": "A triangle has base 6 cm and height 9 cm. What is its area?",
+          "answer": "27 cm²",
+          "distractors": ["54 cm²", "15 cm²", "30 cm²"]
+        },
+        {
+          "ask": "A parallelogram has base 9 cm and height 4 cm. What is its area?",
+          "answer": "36 cm²",
+          "distractors": ["18 cm²", "13 cm²", "26 cm²"]
+        },
+        {
+          "ask": "A parallelogram has base 12 cm, height 6 cm, slant side 7 cm. Area?",
+          "answer": "72 cm²",
+          "distractors": ["84 cm²", "36 cm²", "42 cm²"]
+        },
+        {
+          "ask": "A triangle has area 30 cm² and base 10 cm. What is its height?",
+          "answer": "6 cm",
+          "distractors": ["3 cm", "20 cm", "15 cm"]
+        },
+        {
+          "ask": "A parallelogram has area 48 cm² and base 8 cm. What is its height?",
+          "answer": "6 cm",
+          "distractors": ["40 cm", "12 cm", "4 cm"]
+        },
+        {
+          "ask": "A 6 cm × 4 cm and an 8 cm × 3 cm rectangle have the same what?",
+          "answer": "Area",
+          "distractors": ["Perimeter", "Area and perimeter", "Side lengths"]
+        },
+        {
+          "ask": "Which rectangle has area 24 cm² and perimeter 28 cm?",
+          "answer": "12 cm × 2 cm",
+          "distractors": ["6 cm × 4 cm", "8 cm × 3 cm", "24 cm × 1 cm"]
+        },
+        {
+          "ask": "Which rectangle has the same area as a 4 cm × 4 cm square?",
+          "answer": "8 cm × 2 cm",
+          "distractors": ["4 cm × 3 cm", "8 cm × 4 cm", "6 cm × 2 cm"]
+        }
+      ]
+    },
+    {
+      "id": "circle-secrets",
+      "title": "Circle Secrets",
+      "station": "compare",
+      "prop": "moon",
+      "skillName": "Parts of a circle",
+      "strand": "properties-of-shapes",
+      "statutoryRequirement": "Pupils should be taught to illustrate and name parts of circles, including radius, diameter and circumference and know that the diameter is twice the radius",
+      "instruction": "Think about the parts of a circle, then tap the right answer.",
+      "hint": "Not quite. The diameter goes right across through the centre; the radius is half of it.",
+      "questions": [
+        {
+          "ask": "What is the distance from the centre of a circle to its edge?",
+          "answer": "Radius",
+          "distractors": ["Diameter", "Circumference", "Centre"]
+        },
+        {
+          "ask": "What is the distance all the way round a circle called?",
+          "answer": "Circumference",
+          "distractors": ["Radius", "Diameter", "Centre"]
+        },
+        {
+          "ask": "What is a straight line across a circle through its centre?",
+          "answer": "Diameter",
+          "distractors": ["Radius", "Circumference", "Centre"]
+        },
+        {
+          "ask": "What is the point in the exact middle of a circle?",
+          "answer": "Centre",
+          "distractors": ["Radius", "Diameter", "Circumference"]
+        },
+        {
+          "ask": "The diameter is how many times the radius?",
+          "answer": "2 times",
+          "distractors": ["Half", "3 times", "4 times"]
+        },
+        {
+          "ask": "A circle has a radius of 5 cm. What is its diameter?",
+          "answer": "10 cm",
+          "distractors": ["2.5 cm", "5 cm", "15 cm"]
+        },
+        {
+          "ask": "A circle has a diameter of 18 cm. What is its radius?",
+          "answer": "9 cm",
+          "distractors": ["36 cm", "18 cm", "6 cm"]
+        },
+        {
+          "ask": "A circle has a radius of 3.5 cm. What is its diameter?",
+          "answer": "7 cm",
+          "distractors": ["1.75 cm", "3.5 cm", "10.5 cm"]
+        },
+        {
+          "ask": "A wheel has a diameter of 1 m. What is its radius?",
+          "answer": "50 cm",
+          "distractors": ["2 m", "1 m", "25 cm"]
+        }
+      ]
+    }
+  ]
+}

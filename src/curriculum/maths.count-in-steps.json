@@ -1,0 +1,8 @@
+{
+  "id": "maths.count-in-steps",
+  "name": "Counting in twos, fives and tens",
+  "subject": "maths",
+  "yearGroup": 1,
+  "strand": "number-and-place-value",
+  "prerequisites": ["maths.count-objects-to-20"]
+}

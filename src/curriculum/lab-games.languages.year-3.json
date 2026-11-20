@@ -1,0 +1,625 @@
+{
+  "subject": "languages",
+  "yearGroup": 3,
+  "games": [
+    {
+      "id": "french-greeting-gate",
+      "title": "Bonjour Bridge",
+      "station": "compare",
+      "prop": "sun",
+      "skillName": "Reading French greetings",
+      "strand": "reading-words-and-phrases",
+      "statutoryRequirement": "Pupils should be taught to read carefully and show understanding of words, phrases and simple writing",
+      "instruction": "Read the French word, then tap what it means.",
+      "hint": "Not quite. Think about when you would say it, then try again.",
+      "questions": [
+        {
+          "ask": "What does \"bonjour\" mean?",
+          "answer": "Hello",
+          "distractors": ["Goodbye", "Thank you", "Please"]
+        },
+        {
+          "ask": "What does \"au revoir\" mean?",
+          "answer": "Goodbye",
+          "distractors": ["Hello", "Good night", "See you soon"]
+        },
+        {
+          "ask": "What does \"merci\" mean?",
+          "answer": "Thank you",
+          "distractors": ["Please", "Sorry", "Yes"]
+        },
+        {
+          "ask": "What does \"s'il vous plaît\" mean?",
+          "answer": "Please",
+          "distractors": ["Thank you", "Excuse me", "You're welcome"]
+        },
+        {
+          "ask": "What does \"bonsoir\" mean?",
+          "answer": "Good evening",
+          "distractors": ["Good morning", "Goodbye", "Good night"]
+        },
+        {
+          "ask": "What does \"salut\" mean?",
+          "answer": "Hi",
+          "distractors": ["Sorry", "Thanks", "Good night"]
+        },
+        {
+          "ask": "What does \"oui\" mean?",
+          "answer": "Yes",
+          "distractors": ["No", "Hello", "Maybe"]
+        },
+        {
+          "ask": "What does \"non\" mean?",
+          "answer": "No",
+          "distractors": ["Yes", "Now", "Name"]
+        },
+        {
+          "ask": "What does \"bonne nuit\" mean?",
+          "answer": "Good night",
+          "distractors": ["Good evening", "Good day", "Good luck"]
+        }
+      ]
+    },
+    {
+      "id": "french-number-nest",
+      "title": "Counting Croissants",
+      "station": "sequence",
+      "prop": "egg",
+      "skillName": "French numbers to 10",
+      "strand": "vocabulary-and-dictionary",
+      "statutoryRequirement": "Pupils should be taught to broaden their vocabulary and develop their ability to understand new words that are introduced into familiar written material, including through using a dictionary",
+      "instruction": "Read the French numbers, then tap the one that comes next.",
+      "hint": "Not quite. Count along in English first, then try again.",
+      "questions": [
+        {
+          "ask": "un, deux, trois … what comes next?",
+          "answer": "quatre",
+          "distractors": ["cinq", "deux", "six"]
+        },
+        {
+          "ask": "quatre, cinq, six … what comes next?",
+          "answer": "sept",
+          "distractors": ["huit", "cinq", "neuf"]
+        },
+        {
+          "ask": "sept, huit, neuf … what comes next?",
+          "answer": "dix",
+          "distractors": ["onze", "six", "douze"]
+        },
+        {
+          "ask": "deux, quatre, six … what comes next?",
+          "answer": "huit",
+          "distractors": ["sept", "dix", "neuf"]
+        },
+        {
+          "ask": "dix, neuf, huit … what comes next?",
+          "answer": "sept",
+          "distractors": ["six", "neuf", "onze"]
+        },
+        {
+          "ask": "un, trois, cinq … what comes next?",
+          "answer": "sept",
+          "distractors": ["six", "huit", "neuf"]
+        },
+        {
+          "ask": "zéro, un, deux … what comes next?",
+          "answer": "trois",
+          "distractors": ["quatre", "treize", "dix"]
+        },
+        {
+          "ask": "cinq, six, sept … what comes next?",
+          "answer": "huit",
+          "distractors": ["neuf", "quatre", "dix"]
+        },
+        {
+          "ask": "six, cinq, quatre … what comes next?",
+          "answer": "trois",
+          "distractors": ["deux", "cinq", "sept"]
+        }
+      ]
+    },
+    {
+      "id": "french-colour-crayons",
+      "title": "Crayon Colours",
+      "station": "compare",
+      "prop": "prism",
+      "skillName": "Describing things by colour",
+      "strand": "describing",
+      "statutoryRequirement": "Pupils should be taught to describe people, places, things and actions orally and in writing",
+      "instruction": "Read the colour word, then tap the right answer.",
+      "hint": "Not quite. Picture the crayon in your mind, then try again.",
+      "questions": [
+        {
+          "ask": "What colour is \"rouge\"?",
+          "answer": "Red",
+          "distractors": ["Pink", "Orange", "Brown"]
+        },
+        {
+          "ask": "What colour is \"bleu\"?",
+          "answer": "Blue",
+          "distractors": ["Black", "Brown", "Green"]
+        },
+        {
+          "ask": "What colour is \"vert\"?",
+          "answer": "Green",
+          "distractors": ["White", "Grey", "Purple"]
+        },
+        {
+          "ask": "What colour is \"jaune\"?",
+          "answer": "Yellow",
+          "distractors": ["Orange", "Green", "White"]
+        },
+        {
+          "ask": "What colour is \"noir\"?",
+          "answer": "Black",
+          "distractors": ["Brown", "White", "Blue"]
+        },
+        {
+          "ask": "What colour is \"blanc\"?",
+          "answer": "White",
+          "distractors": ["Black", "Grey", "Pink"]
+        },
+        {
+          "ask": "What colour is \"rose\"?",
+          "answer": "Pink",
+          "distractors": ["Red", "Purple", "Orange"]
+        },
+        {
+          "ask": "What colour is \"marron\"?",
+          "answer": "Brown",
+          "distractors": ["Red", "Purple", "Orange"]
+        },
+        {
+          "ask": "Finish it: \"Le ciel est …\" (The sky is …)",
+          "answer": "bleu",
+          "distractors": ["rouge", "noir", "rose"]
+        },
+        {
+          "ask": "Finish it: \"Le soleil est …\" (The sun is …)",
+          "answer": "jaune",
+          "distractors": ["noir", "vert", "bleu"]
+        }
+      ]
+    },
+    {
+      "id": "french-day-train",
+      "title": "Day Train",
+      "station": "sequence",
+      "prop": "moon",
+      "skillName": "French days of the week",
+      "strand": "reading-words-and-phrases",
+      "statutoryRequirement": "Pupils should be taught to read carefully and show understanding of words, phrases and simple writing",
+      "instruction": "Read the days, then tap the one that comes next.",
+      "hint": "Not quite. Say the days of the week in order, then try again.",
+      "questions": [
+        {
+          "ask": "lundi, mardi, mercredi … what comes next?",
+          "answer": "jeudi",
+          "distractors": ["vendredi", "samedi", "mardi"]
+        },
+        {
+          "ask": "jeudi, vendredi, samedi … what comes next?",
+          "answer": "dimanche",
+          "distractors": ["lundi", "jeudi", "mardi"]
+        },
+        {
+          "ask": "samedi, dimanche … what comes next?",
+          "answer": "lundi",
+          "distractors": ["mardi", "samedi", "vendredi"]
+        },
+        {
+          "ask": "mardi, mercredi … what comes next?",
+          "answer": "jeudi",
+          "distractors": ["lundi", "vendredi", "dimanche"]
+        },
+        {
+          "ask": "Today is lundi. What day is tomorrow?",
+          "answer": "mardi",
+          "distractors": ["dimanche", "jeudi", "mercredi"]
+        },
+        {
+          "ask": "Today is vendredi. What day is tomorrow?",
+          "answer": "samedi",
+          "distractors": ["jeudi", "dimanche", "lundi"]
+        },
+        {
+          "ask": "Yesterday was mercredi. What day is today?",
+          "answer": "jeudi",
+          "distractors": ["mardi", "vendredi", "samedi"]
+        },
+        {
+          "ask": "Going backwards: dimanche, samedi, vendredi … what comes next?",
+          "answer": "jeudi",
+          "distractors": ["lundi", "mercredi", "dimanche"]
+        },
+        {
+          "ask": "In France, which day starts the week?",
+          "answer": "lundi",
+          "distractors": ["dimanche", "samedi", "mardi"]
+        }
+      ]
+    },
+    {
+      "id": "french-animal-riddles",
+      "title": "Animal Riddles",
+      "station": "mystery",
+      "prop": "leaf",
+      "skillName": "French animal words",
+      "strand": "vocabulary-and-dictionary",
+      "statutoryRequirement": "Pupils should be taught to broaden their vocabulary and develop their ability to understand new words that are introduced into familiar written material, including through using a dictionary",
+      "instruction": "Read the clues, then tap the French word for the animal.",
+      "hint": "Not quite. Picture the animal first, then try again.",
+      "questions": [
+        {
+          "ask": "I say \"woof\" and I am a pet. What am I in French?",
+          "answer": "un chien",
+          "distractors": ["un chat", "un lapin", "un oiseau"]
+        },
+        {
+          "ask": "I say \"miaow\" and I like to lap up milk. What am I in French?",
+          "answer": "un chat",
+          "distractors": ["un chien", "une souris", "un cheval"]
+        },
+        {
+          "ask": "I am small and grey, and I squeak. What am I in French?",
+          "answer": "une souris",
+          "distractors": ["un lapin", "un poisson", "un chat"]
+        },
+        {
+          "ask": "I have long ears and I hop. What am I in French?",
+          "answer": "un lapin",
+          "distractors": ["un cheval", "une souris", "un oiseau"]
+        },
+        {
+          "ask": "I live in water and I swim. What am I in French?",
+          "answer": "un poisson",
+          "distractors": ["un oiseau", "un lapin", "un chien"]
+        },
+        {
+          "ask": "I have feathers and I fly. What am I in French?",
+          "answer": "un oiseau",
+          "distractors": ["un poisson", "un cheval", "une souris"]
+        },
+        {
+          "ask": "I am big and you can ride me. What am I in French?",
+          "answer": "un cheval",
+          "distractors": ["un lapin", "un chat", "un poisson"]
+        },
+        {
+          "ask": "I live on a farm and say \"moo\". What am I in French?",
+          "answer": "une vache",
+          "distractors": ["un cochon", "un mouton", "un cheval"]
+        },
+        {
+          "ask": "I live on a farm, I am pink and I say \"oink\". What am I in French?",
+          "answer": "un cochon",
+          "distractors": ["une vache", "un mouton", "un lapin"]
+        }
+      ]
+    },
+    {
+      "id": "french-ca-va-cafe",
+      "title": "Ça Va Café",
+      "station": "compare",
+      "prop": "water-drop",
+      "skillName": "Answering simple French questions",
+      "strand": "conversation",
+      "statutoryRequirement": "Pupils should be taught to engage in conversations; ask and answer questions; express opinions and respond to those of others; seek clarification and help",
+      "instruction": "Read what is said, then tap the best reply or meaning.",
+      "hint": "Not quite. Think about what the person is asking you, then try again.",
+      "questions": [
+        {
+          "ask": "Someone says \"Bonjour !\" Which is a good reply?",
+          "answer": "Bonjour !",
+          "distractors": ["Au revoir !", "Merci !", "Bonne nuit !"]
+        },
+        {
+          "ask": "What does \"Comment ça va ?\" mean?",
+          "answer": "How are you?",
+          "distractors": [
+            "What's your name?",
+            "How old are you?",
+            "Where do you live?"
+          ]
+        },
+        {
+          "ask": "Which is the best reply to \"Comment ça va ?\"",
+          "answer": "Ça va bien, merci.",
+          "distractors": ["Je m'appelle Léo.", "J'ai huit ans.", "Au revoir."]
+        },
+        {
+          "ask": "Which is the best reply to \"Comment t'appelles-tu ?\"",
+          "answer": "Je m'appelle Zoé.",
+          "distractors": ["J'ai sept ans.", "Ça va bien.", "J'habite à Paris."]
+        },
+        {
+          "ask": "Which is the best reply to \"Quel âge as-tu ?\"",
+          "answer": "J'ai huit ans.",
+          "distractors": ["Je m'appelle Tom.", "Ça va mal.", "Merci beaucoup."]
+        },
+        {
+          "ask": "Someone asks \"Ça va ?\" Which reply means \"I'm not well\"?",
+          "answer": "Ça ne va pas.",
+          "distractors": ["Ça va bien.", "Très bien !", "Super !"]
+        },
+        {
+          "ask": "Someone says \"Merci !\" Which is a good reply?",
+          "answer": "De rien.",
+          "distractors": ["Pardon.", "Bonjour.", "Oui."]
+        },
+        {
+          "ask": "Your friend leaves and says \"Au revoir !\" Which is a good reply?",
+          "answer": "Au revoir !",
+          "distractors": ["Bonjour !", "Merci !", "Ça va ?"]
+        },
+        {
+          "ask": "What does \"Et toi ?\" mean?",
+          "answer": "And you?",
+          "distractors": ["Are you?", "It's you.", "Thank you."]
+        }
+      ]
+    },
+    {
+      "id": "french-le-la-les",
+      "title": "Le, La or Les?",
+      "station": "sort",
+      "prop": "magnet",
+      "skillName": "Masculine, feminine and plural nouns",
+      "strand": "grammar",
+      "statutoryRequirement": "Pupils should be taught to understand basic grammar appropriate to the language being studied, including (where relevant): feminine, masculine and neuter forms and the conjugation of high-frequency verbs; key features and patterns of the language; how to apply these, for instance, to build sentences; and how these differ from or are similar to English",
+      "instruction": "Read the noun, then tap the right word for \"the\".",
+      "hint": "Not quite. Is the word masculine, feminine, plural or does it start with a vowel? Try again.",
+      "questions": [
+        {
+          "ask": "Which word for \"the\" goes with \"chat\" (cat)?",
+          "answer": "le (masculine)",
+          "distractors": ["la (feminine)", "les (plural)", "l' (vowel start)"]
+        },
+        {
+          "ask": "Which word for \"the\" goes with \"maison\" (house)?",
+          "answer": "la (feminine)",
+          "distractors": ["le (masculine)", "les (plural)", "l' (vowel start)"]
+        },
+        {
+          "ask": "Which word for \"the\" goes with \"chiens\" (dogs)?",
+          "answer": "les (plural)",
+          "distractors": ["le (masculine)", "la (feminine)", "l' (vowel start)"]
+        },
+        {
+          "ask": "Which word for \"the\" goes with \"école\" (school)?",
+          "answer": "l' (vowel start)",
+          "distractors": ["le (masculine)", "la (feminine)", "les (plural)"]
+        },
+        {
+          "ask": "Which word for \"the\" goes with \"pomme\" (apple)?",
+          "answer": "la (feminine)",
+          "distractors": ["le (masculine)", "les (plural)", "l' (vowel start)"]
+        },
+        {
+          "ask": "Which word for \"the\" goes with \"livre\" (book)?",
+          "answer": "le (masculine)",
+          "distractors": ["la (feminine)", "les (plural)", "l' (vowel start)"]
+        },
+        {
+          "ask": "Which word for \"the\" goes with \"amis\" (friends)?",
+          "answer": "les (plural)",
+          "distractors": ["le (masculine)", "la (feminine)", "l' (vowel start)"]
+        },
+        {
+          "ask": "Which word for \"the\" goes with \"orange\" (orange)?",
+          "answer": "l' (vowel start)",
+          "distractors": ["le (masculine)", "la (feminine)", "les (plural)"]
+        },
+        {
+          "ask": "Which word for \"the\" goes with \"table\" (table)?",
+          "answer": "la (feminine)",
+          "distractors": ["le (masculine)", "les (plural)", "l' (vowel start)"]
+        },
+        {
+          "ask": "Which word for \"the\" goes with \"garçon\" (boy)?",
+          "answer": "le (masculine)",
+          "distractors": ["la (feminine)", "les (plural)", "l' (vowel start)"]
+        }
+      ]
+    },
+    {
+      "id": "french-silent-letter-spy",
+      "title": "Silent Letter Spy",
+      "station": "true-false",
+      "prop": "magnifier",
+      "skillName": "Silent letters in French",
+      "strand": "sounds-and-spelling",
+      "statutoryRequirement": "Pupils should be taught to explore the patterns and sounds of language through songs and rhymes and link the spelling, sound and meaning of words",
+      "instruction": "Read it carefully, then tap True or False.",
+      "hint": "Not quite. Lots of French words keep their last letter quiet. Try again.",
+      "questions": [
+        {
+          "ask": "In \"petit\", the t at the end is silent.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "In \"trois\", you say the s at the end.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "In \"grand\", the d at the end is silent.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "The h at the start of \"hôtel\" is silent in French.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "In \"vert\", you say the t at the end out loud.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "In \"chat\", the t at the end is silent.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "In \"souris\" (mouse), you say the s at the end.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "In \"chocolat\", the t at the end is silent.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "In \"deux\", you say the x at the end.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "French speakers say the s at the end of \"Paris\".",
+          "answer": "False",
+          "distractors": ["True"]
+        }
+      ]
+    },
+    {
+      "id": "french-frere-jacques",
+      "title": "Frère Jacques Song",
+      "station": "compare",
+      "prop": "tuning-fork",
+      "skillName": "The song Frère Jacques",
+      "strand": "stories-songs-and-rhymes",
+      "statutoryRequirement": "Pupils should be taught to appreciate stories, songs, poems and rhymes in the language",
+      "instruction": "Read about the song, then tap the right answer.",
+      "hint": "Not quite. Sing the song in your head, then try again.",
+      "questions": [
+        {
+          "ask": "\"Frère Jacques, frère Jacques, …\" Which line comes next?",
+          "answer": "Dormez-vous ?",
+          "distractors": [
+            "Ding, dang, dong.",
+            "Sonnez les matines !",
+            "Bonjour !"
+          ]
+        },
+        {
+          "ask": "\"Dormez-vous ? Dormez-vous ? …\" Which line comes next?",
+          "answer": "Sonnez les matines !",
+          "distractors": ["Frère Jacques", "Ding, dang, dong.", "Au revoir !"]
+        },
+        {
+          "ask": "\"Sonnez les matines ! Sonnez les matines ! …\" Which line comes next?",
+          "answer": "Ding, dang, dong.",
+          "distractors": ["Dormez-vous ?", "Frère Jacques", "Bonne nuit !"]
+        },
+        {
+          "ask": "In the song, what does \"frère\" mean?",
+          "answer": "brother",
+          "distractors": ["sister", "father", "friend"]
+        },
+        {
+          "ask": "What does \"Dormez-vous ?\" ask?",
+          "answer": "Are you sleeping?",
+          "distractors": ["Are you eating?", "Are you happy?", "Where are you?"]
+        },
+        {
+          "ask": "In the song, \"ding, dang, dong\" is the sound of …",
+          "answer": "bells",
+          "distractors": ["a dog", "rain", "a drum"]
+        },
+        {
+          "ask": "\"Sonnez les matines !\" tells Jacques to …",
+          "answer": "ring the bells",
+          "distractors": ["wake the dog", "sing a song", "eat breakfast"]
+        },
+        {
+          "ask": "What is the English version of the song called?",
+          "answer": "Are You Sleeping?",
+          "distractors": ["Twinkle Twinkle", "Row Your Boat", "Old MacDonald"]
+        },
+        {
+          "ask": "Which word in the song is a person's name?",
+          "answer": "Jacques",
+          "distractors": ["frère", "matines", "dormez"]
+        }
+      ]
+    },
+    {
+      "id": "french-sentence-builder",
+      "title": "Sentence Builder",
+      "station": "compare",
+      "prop": "battery",
+      "skillName": "Writing simple French sentences",
+      "strand": "writing-sentences",
+      "statutoryRequirement": "Pupils should be taught to write phrases from memory, and adapt these to create new sentences, to express ideas clearly",
+      "instruction": "Read the English, then tap the right French sentence.",
+      "hint": "Not quite. Check the verb and whether the noun is masculine or feminine, then try again.",
+      "questions": [
+        {
+          "ask": "Fill the gap: \"Je m'… Sophie.\" (My name is Sophie.)",
+          "answer": "appelle",
+          "distractors": ["appelles", "suis", "ai"]
+        },
+        {
+          "ask": "Fill the gap: \"J'… huit ans.\" (I am eight.)",
+          "answer": "ai",
+          "distractors": ["suis", "as", "est"]
+        },
+        {
+          "ask": "Which means \"I am eight years old\"?",
+          "answer": "J'ai huit ans.",
+          "distractors": ["Je suis huit.", "J'ai huit an.", "Il a huit ans."]
+        },
+        {
+          "ask": "Which means \"My name is Tom\"?",
+          "answer": "Je m'appelle Tom.",
+          "distractors": [
+            "Il s'appelle Tom.",
+            "Tu t'appelles Tom.",
+            "Je suis appelle Tom"
+          ]
+        },
+        {
+          "ask": "Which means \"I have a dog\"?",
+          "answer": "J'ai un chien.",
+          "distractors": [
+            "Je suis un chien.",
+            "J'ai une chien.",
+            "Il a un chien."
+          ]
+        },
+        {
+          "ask": "Which means \"I have a sister\"?",
+          "answer": "J'ai une sœur.",
+          "distractors": [
+            "J'ai un sœur.",
+            "Je suis une sœur.",
+            "J'ai une frère."
+          ]
+        },
+        {
+          "ask": "Change \"J'ai un chat.\" so it means \"I have a dog\".",
+          "answer": "J'ai un chien.",
+          "distractors": ["J'ai un lapin.", "J'ai un chat.", "J'ai deux chats."]
+        },
+        {
+          "ask": "Which means \"I live in London\"?",
+          "answer": "J'habite à Londres.",
+          "distractors": [
+            "J'habite en Londres",
+            "Je suis Londres.",
+            "J'ai à Londres."
+          ]
+        },
+        {
+          "ask": "Which means \"I have a brother\"?",
+          "answer": "J'ai un frère.",
+          "distractors": ["J'ai une frère.", "Je suis frère.", "J'ai un sœur."]
+        }
+      ]
+    }
+  ]
+}

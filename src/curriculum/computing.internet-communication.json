@@ -1,0 +1,8 @@
+{
+  "id": "computing.internet-communication",
+  "name": "How messages travel over the internet",
+  "subject": "computing",
+  "yearGroup": 6,
+  "strand": "networks",
+  "prerequisites": ["computing.online-collaboration"]
+}

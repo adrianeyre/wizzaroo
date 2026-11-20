@@ -1,0 +1,8 @@
+{
+  "id": "maths.percentages-of-amounts",
+  "name": "Finding percentages of amounts",
+  "subject": "maths",
+  "yearGroup": 6,
+  "strand": "ratio-and-proportion",
+  "prerequisites": ["maths.fractions-decimals-percentages"]
+}

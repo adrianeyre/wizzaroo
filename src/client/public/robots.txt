@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://wizzaroo.adrianeyre.co.uk/sitemap.xml

@@ -1,0 +1,549 @@
+{
+  "subject": "art",
+  "yearGroup": 3,
+  "games": [
+    {
+      "id": "art-sketchbook-secrets",
+      "title": "Sketchbook Secrets",
+      "station": "true-false",
+      "prop": "leaf",
+      "skillName": "What a sketchbook is for",
+      "strand": "sketchbooks",
+      "statutoryRequirement": "Pupils should be taught to create sketch books to record their observations and use them to review and revisit ideas",
+      "instruction": "Read the sentence, then tap True or False.",
+      "hint": "Not quite. Remember that a sketchbook is a place to explore.",
+      "questions": [
+        {
+          "ask": "A sketchbook is a place to try out ideas.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Every page of a sketchbook must be a perfect, finished picture.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "You can stick photos and cuttings in a sketchbook.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Artists use sketchbooks to record what they see.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "You should rip out any page with a mistake on it.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Notes and labels can go next to your drawings.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Looking back through a sketchbook can give you new ideas.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Only pencil is allowed in a sketchbook.",
+          "answer": "False",
+          "distractors": ["True"]
+        }
+      ]
+    },
+    {
+      "id": "art-look-and-record",
+      "title": "Look and Record",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Recording observations in a sketchbook",
+      "strand": "sketchbooks",
+      "statutoryRequirement": "Pupils should be taught to create sketch books to record their observations and use them to review and revisit ideas",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about how artists collect what they see.",
+      "questions": [
+        {
+          "ask": "Drawing what you can see in front of you is drawing from...?",
+          "answer": "Observation",
+          "distractors": ["Imagination", "Memory", "Tracing"]
+        },
+        {
+          "ask": "What is a quick, rough drawing called?",
+          "answer": "Sketch",
+          "distractors": ["Sculpture", "Mosaic", "Print"]
+        },
+        {
+          "ask": "Why do artists add notes next to their sketches?",
+          "answer": "To remember ideas",
+          "distractors": [
+            "To fill the page",
+            "To hide mistakes",
+            "To make it heavy"
+          ]
+        },
+        {
+          "ask": "What card frame helps you choose what to draw?",
+          "answer": "Viewfinder",
+          "distractors": ["Palette", "Easel", "Kiln"]
+        },
+        {
+          "ask": "What can you paint in a sketchbook to remember a colour?",
+          "answer": "Colour swatch",
+          "distractors": ["Clay coil", "Pencil grade", "Mosaic tile"]
+        },
+        {
+          "ask": "Drawing an object while not looking at the paper is called?",
+          "answer": "Blind drawing",
+          "distractors": ["Tracing", "Printing", "Collage"]
+        },
+        {
+          "ask": "What do artists often make before a big painting?",
+          "answer": "Practice sketches",
+          "distractors": ["Clay pots", "Weavings", "Nothing at all"]
+        },
+        {
+          "ask": "What should you mostly look at when drawing from observation?",
+          "answer": "The object",
+          "distractors": ["The clock", "Your friend", "The ceiling"]
+        }
+      ]
+    },
+    {
+      "id": "art-pencil-power",
+      "title": "Pencil Power",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Choosing pencil grades",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Remember: B pencils are soft and dark, H pencils are hard and light.",
+      "questions": [
+        {
+          "ask": "Which pencil makes the darkest line?",
+          "answer": "6B",
+          "distractors": ["HB", "2H", "4H"]
+        },
+        {
+          "ask": "Which pencil makes the lightest line?",
+          "answer": "4H",
+          "distractors": ["6B", "2B", "HB"]
+        },
+        {
+          "ask": "What does the B on a pencil stand for?",
+          "answer": "Black",
+          "distractors": ["Bold", "Bright", "Big"]
+        },
+        {
+          "ask": "What does the H on a pencil stand for?",
+          "answer": "Hard",
+          "distractors": ["Heavy", "Happy", "Huge"]
+        },
+        {
+          "ask": "Which is the middle, everyday pencil?",
+          "answer": "HB",
+          "distractors": ["6B", "4H", "8B"]
+        },
+        {
+          "ask": "What is the inside of a pencil really made of?",
+          "answer": "Graphite",
+          "distractors": ["Lead metal", "Coal", "Chalk"]
+        },
+        {
+          "ask": "Which pencil is the softest and darkest?",
+          "answer": "6B",
+          "distractors": ["2B", "HB", "2H"]
+        },
+        {
+          "ask": "To shade very lightly, how should you press?",
+          "answer": "Gently",
+          "distractors": ["Very hard", "With both hands", "Not at all"]
+        }
+      ]
+    },
+    {
+      "id": "art-shading-school",
+      "title": "Shading School",
+      "station": "compare",
+      "prop": "moon",
+      "skillName": "Shading techniques",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Picture the marks each technique makes.",
+      "questions": [
+        {
+          "ask": "Lots of parallel lines close together is called?",
+          "answer": "Hatching",
+          "distractors": ["Stippling", "Blending", "Cross-hatching"]
+        },
+        {
+          "ask": "Sets of lines crossing over each other is called?",
+          "answer": "Cross-hatching",
+          "distractors": ["Hatching", "Stippling", "Smudging"]
+        },
+        {
+          "ask": "Shading with lots of tiny dots is called?",
+          "answer": "Stippling",
+          "distractors": ["Hatching", "Blending", "Cross-hatching"]
+        },
+        {
+          "ask": "Smoothly rubbing shading so no lines show is called?",
+          "answer": "Blending",
+          "distractors": ["Stippling", "Hatching", "Cross-hatching"]
+        },
+        {
+          "ask": "To make hatching look darker, put the lines...?",
+          "answer": "Closer together",
+          "distractors": ["Further apart", "In one corner", "Off the paper"]
+        },
+        {
+          "ask": "The brightest part of an object, where light hits it, is the?",
+          "answer": "Highlight",
+          "distractors": ["Shadow", "Outline", "Background"]
+        },
+        {
+          "ask": "The dark side of an object, away from the light, is in?",
+          "answer": "Shadow",
+          "distractors": ["Highlight", "Tint", "Horizon"]
+        },
+        {
+          "ask": "A row of boxes shaded from light to dark is a...?",
+          "answer": "Tonal scale",
+          "distractors": ["Colour wheel", "Viewfinder", "Palette"]
+        }
+      ]
+    },
+    {
+      "id": "art-colour-wheel-spin",
+      "title": "Colour Wheel Spin",
+      "station": "compare",
+      "prop": "prism",
+      "skillName": "Using the colour wheel",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Picture the colour wheel and look straight across it.",
+      "questions": [
+        {
+          "ask": "Which colour is opposite red on the colour wheel?",
+          "answer": "Green",
+          "distractors": ["Orange", "Purple", "Blue"]
+        },
+        {
+          "ask": "Which colour is opposite blue on the colour wheel?",
+          "answer": "Orange",
+          "distractors": ["Green", "Purple", "Red"]
+        },
+        {
+          "ask": "Which colour is opposite yellow on the colour wheel?",
+          "answer": "Purple",
+          "distractors": ["Green", "Orange", "Blue"]
+        },
+        {
+          "ask": "Colours opposite each other on the wheel are called?",
+          "answer": "Complementary",
+          "distractors": ["Primary", "Tertiary", "Neutral"]
+        },
+        {
+          "ask": "Mixing a primary with a secondary next to it makes a...?",
+          "answer": "Tertiary colour",
+          "distractors": ["Primary colour", "Tint", "Neutral colour"]
+        },
+        {
+          "ask": "Which of these is a tertiary colour?",
+          "answer": "Blue-green",
+          "distractors": ["Blue", "Green", "Orange"]
+        },
+        {
+          "ask": "What do yellow and orange make when mixed?",
+          "answer": "Yellow-orange",
+          "distractors": ["Blue-green", "Red-purple", "Brown"]
+        },
+        {
+          "ask": "Colours that sit next to each other on the wheel look...?",
+          "answer": "Harmonious",
+          "distractors": ["Complementary", "Opposite", "Invisible"]
+        }
+      ]
+    },
+    {
+      "id": "art-charcoal-chalk",
+      "title": "Charcoal and Chalk",
+      "station": "compare",
+      "prop": "tree",
+      "skillName": "Drawing with charcoal and chalk",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about how soft and smudgy each material is.",
+      "questions": [
+        {
+          "ask": "What is drawing charcoal made from?",
+          "answer": "Burnt wood",
+          "distractors": ["Black clay", "Coal dust", "Pencil lead"]
+        },
+        {
+          "ask": "Which drawing material smudges most easily?",
+          "answer": "Charcoal",
+          "distractors": ["Biro", "Felt-tip pen", "Coloured pencil"]
+        },
+        {
+          "ask": "What can lift charcoal off paper to make highlights?",
+          "answer": "Putty rubber",
+          "distractors": ["Ruler", "Paintbrush", "Glue stick"]
+        },
+        {
+          "ask": "What spray stops a charcoal drawing smudging?",
+          "answer": "Fixative",
+          "distractors": ["Water", "Glue", "Paint"]
+        },
+        {
+          "ask": "Which is best for drawing on black paper?",
+          "answer": "White chalk",
+          "distractors": ["Black charcoal", "Graphite pencil", "Black felt-tip"]
+        },
+        {
+          "ask": "Smudging soft charcoal with your finger is called?",
+          "answer": "Blending",
+          "distractors": ["Hatching", "Printing", "Weaving"]
+        },
+        {
+          "ask": "Which drawing tool cannot be rubbed out?",
+          "answer": "Felt-tip pen",
+          "distractors": ["Pencil", "Charcoal", "Chalk"]
+        },
+        {
+          "ask": "Which is best for big, bold, dark drawings made quickly?",
+          "answer": "Charcoal",
+          "distractors": ["4H pencil", "Fine pen", "White crayon"]
+        }
+      ]
+    },
+    {
+      "id": "art-clay-workshop",
+      "title": "Clay Workshop",
+      "station": "sequence",
+      "prop": "rock",
+      "skillName": "Making pots with clay",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the steps, then tap what comes next.",
+      "hint": "Not quite. Think about the order a potter works in.",
+      "questions": [
+        {
+          "ask": "Pinch pot: roll a ball of clay, then...?",
+          "answer": "Push thumb in middle",
+          "distractors": ["Fire it in a kiln", "Add glaze", "Roll it flat"]
+        },
+        {
+          "ask": "Pinch pot: push your thumb in, then...?",
+          "answer": "Pinch and turn",
+          "distractors": ["Add glaze", "Roll a coil", "Fire it in a kiln"]
+        },
+        {
+          "ask": "Coil pot: make a flat base, then...?",
+          "answer": "Add coils on top",
+          "distractors": ["Fire it in a kiln", "Add glaze", "Push thumb in"]
+        },
+        {
+          "ask": "Coil pot: stack the coils up, then...?",
+          "answer": "Smooth the joins",
+          "distractors": ["Roll a ball", "Cut out a base", "Push thumb in"]
+        },
+        {
+          "ask": "Joining clay: scratch both surfaces, then...?",
+          "answer": "Add slip",
+          "distractors": ["Fire it", "Paint it", "Pull them apart"]
+        },
+        {
+          "ask": "Joining clay: add slip, then...?",
+          "answer": "Press together",
+          "distractors": ["Scratch again", "Wash it off", "Leave them apart"]
+        },
+        {
+          "ask": "Slab pot: roll the clay flat, then...?",
+          "answer": "Cut out the sides",
+          "distractors": ["Fire it in a kiln", "Add glaze", "Pinch and turn"]
+        },
+        {
+          "ask": "Finished pot: let it dry, then...?",
+          "answer": "Fire it in a kiln",
+          "distractors": ["Roll it flat", "Add slip", "Push thumb in"]
+        }
+      ]
+    },
+    {
+      "id": "art-ancient-art",
+      "title": "Ancient Art Detective",
+      "station": "compare",
+      "prop": "fossil",
+      "skillName": "Art from the ancient world",
+      "strand": "great-artists",
+      "statutoryRequirement": "Pupils should be taught about great artists, architects and designers in history",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about what people long ago had to make art with.",
+      "questions": [
+        {
+          "ask": "The Lascaux cave paintings are in which country?",
+          "answer": "France",
+          "distractors": ["Egypt", "Italy", "Greece"]
+        },
+        {
+          "ask": "What did Stone Age cave painters mostly paint?",
+          "answer": "Animals",
+          "distractors": ["Castles", "Ships", "Cars"]
+        },
+        {
+          "ask": "Red and yellow cave paint was made from...?",
+          "answer": "Coloured earth",
+          "distractors": ["Paint tubes", "Felt-tip ink", "Plastic"]
+        },
+        {
+          "ask": "Black cave paint was often made from...?",
+          "answer": "Charcoal",
+          "distractors": ["Chalk", "Milk", "Sand"]
+        },
+        {
+          "ask": "What are the small tiles in a Roman mosaic called?",
+          "answer": "Tesserae",
+          "distractors": ["Coils", "Slabs", "Pixels"]
+        },
+        {
+          "ask": "Ancient Egyptian art usually showed faces...?",
+          "answer": "From the side",
+          "distractors": ["From above", "Upside down", "From behind"]
+        },
+        {
+          "ask": "The pyramids at Giza were built as tombs for...?",
+          "answer": "Pharaohs",
+          "distractors": ["Romans", "Vikings", "Knights"]
+        },
+        {
+          "ask": "The Parthenon is a temple in which city?",
+          "answer": "Athens",
+          "distractors": ["Rome", "Cairo", "Paris"]
+        }
+      ]
+    },
+    {
+      "id": "art-artist-detective",
+      "title": "Artist Detective",
+      "station": "mystery",
+      "prop": "magnifier",
+      "skillName": "Famous artists and sculptors",
+      "strand": "great-artists",
+      "statutoryRequirement": "Pupils should be taught about great artists, architects and designers in history",
+      "instruction": "Read the clues, then tap who or what it is.",
+      "hint": "Not quite. Look for the place or artwork in the clue.",
+      "questions": [
+        {
+          "ask": "I painted 'The Starry Night' in 1889. Who am I?",
+          "answer": "Vincent van Gogh",
+          "distractors": ["Claude Monet", "L.S. Lowry", "Henry Moore"]
+        },
+        {
+          "ask": "My painting 'Impression, Sunrise' gave a whole art movement its name. Who am I?",
+          "answer": "Claude Monet",
+          "distractors": ["Vincent van Gogh", "Georgia O'Keeffe", "L.S. Lowry"]
+        },
+        {
+          "ask": "I am a Yorkshire sculptor famous for big reclining figures. Who am I?",
+          "answer": "Henry Moore",
+          "distractors": [
+            "Barbara Hepworth",
+            "Andy Goldsworthy",
+            "Claude Monet"
+          ]
+        },
+        {
+          "ask": "I carved shapes with holes in. A gallery in my home town, Wakefield, has my name. Who am I?",
+          "answer": "Barbara Hepworth",
+          "distractors": ["Henry Moore", "Yayoi Kusama", "Georgia O'Keeffe"]
+        },
+        {
+          "ask": "I painted giant flowers and the deserts of New Mexico. Who am I?",
+          "answer": "Georgia O'Keeffe",
+          "distractors": ["Barbara Hepworth", "Yayoi Kusama", "Claude Monet"]
+        },
+        {
+          "ask": "I am a Japanese artist famous for spotty pumpkins. Who am I?",
+          "answer": "Yayoi Kusama",
+          "distractors": ["Georgia O'Keeffe", "Henry Moore", "L.S. Lowry"]
+        },
+        {
+          "ask": "I painted mill towns around Salford full of crowds. Who am I?",
+          "answer": "L.S. Lowry",
+          "distractors": ["Henry Moore", "Vincent van Gogh", "Andy Goldsworthy"]
+        },
+        {
+          "ask": "My sculptures of ice, leaves and stones melt or blow away. Who am I?",
+          "answer": "Andy Goldsworthy",
+          "distractors": ["Henry Moore", "Barbara Hepworth", "Yayoi Kusama"]
+        }
+      ]
+    },
+    {
+      "id": "art-around-the-world",
+      "title": "Art Around the World",
+      "station": "sort",
+      "prop": "magnifier",
+      "skillName": "Where great artists came from",
+      "strand": "great-artists",
+      "statutoryRequirement": "Pupils should be taught about great artists, architects and designers in history",
+      "instruction": "Read it, then tap the group it belongs in.",
+      "hint": "Not quite. Think about where the artist was born.",
+      "questions": [
+        {
+          "ask": "Hokusai: which country group?",
+          "answer": "Japan",
+          "distractors": ["China", "Mexico", "France"]
+        },
+        {
+          "ask": "Frida Kahlo: which country group?",
+          "answer": "Mexico",
+          "distractors": ["Spain", "Italy", "Japan"]
+        },
+        {
+          "ask": "Vincent van Gogh: which country group?",
+          "answer": "The Netherlands",
+          "distractors": ["France", "Germany", "Spain"]
+        },
+        {
+          "ask": "Claude Monet: which country group?",
+          "answer": "France",
+          "distractors": ["Italy", "England", "The Netherlands"]
+        },
+        {
+          "ask": "Pablo Picasso: which country group?",
+          "answer": "Spain",
+          "distractors": ["Mexico", "France", "Italy"]
+        },
+        {
+          "ask": "Andy Warhol: which country group?",
+          "answer": "The USA",
+          "distractors": ["England", "Japan", "Russia"]
+        },
+        {
+          "ask": "Henry Moore: which country group?",
+          "answer": "England",
+          "distractors": ["The USA", "France", "Spain"]
+        },
+        {
+          "ask": "Michelangelo: which country group?",
+          "answer": "Italy",
+          "distractors": ["Spain", "Greece", "France"]
+        },
+        {
+          "ask": "Wassily Kandinsky: which country group?",
+          "answer": "Russia",
+          "distractors": ["Italy", "Japan", "The USA"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "phonics.sound-k",
+  "name": "The /k/ sound, as in kit",
+  "subject": "phonics",
+  "yearGroup": 1,
+  "strand": "grapheme-phoneme-correspondences",
+  "prerequisites": [],
+  "sounds": ["k"]
+}

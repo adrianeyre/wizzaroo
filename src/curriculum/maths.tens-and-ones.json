@@ -1,0 +1,8 @@
+{
+  "id": "maths.tens-and-ones",
+  "name": "Tens and ones to 100",
+  "subject": "maths",
+  "yearGroup": 2,
+  "strand": "number-and-place-value",
+  "prerequisites": ["maths.count-objects-to-20"]
+}

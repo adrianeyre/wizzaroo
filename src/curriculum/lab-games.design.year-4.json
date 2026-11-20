@@ -1,0 +1,610 @@
+{
+  "subject": "design",
+  "yearGroup": 4,
+  "games": [
+    {
+      "id": "dt-tool-for-the-job",
+      "title": "Tool For The Job",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Choosing workshop tools",
+      "strand": "tools-equipment",
+      "statutoryRequirement": "Pupils should be taught to select from and use a wider range of tools and equipment to perform practical tasks [for example, cutting, shaping, joining and finishing], accurately",
+      "instruction": "Think about the job, then tap the best tool.",
+      "hint": "Not quite. Think about exactly what the tool is designed to do.",
+      "questions": [
+        {
+          "ask": "Which tool holds wood steady against the table while sawing?",
+          "answer": "Bench hook",
+          "distractors": ["Whisk", "Hole punch", "Stapler"]
+        },
+        {
+          "ask": "Which saw cuts curves in thin wood?",
+          "answer": "Coping saw",
+          "distractors": ["Junior hacksaw", "Bread knife", "Ruler"]
+        },
+        {
+          "ask": "Which pointed tool makes a starter hole in wood?",
+          "answer": "Bradawl",
+          "distractors": ["Sandpaper", "Glue gun", "Ruler"]
+        },
+        {
+          "ask": "Which tool checks that a corner is a right angle?",
+          "answer": "Try square",
+          "distractors": ["Tape measure", "Bench hook", "Glue gun"]
+        },
+        {
+          "ask": "Which scissors give fabric a zigzag edge to stop fraying?",
+          "answer": "Pinking shears",
+          "distractors": ["Nail scissors", "Hacksaw", "Hole punch"]
+        },
+        {
+          "ask": "Which tool smooths the cut end of a dowel?",
+          "answer": "Sandpaper",
+          "distractors": ["Bench hook", "Hole punch", "Try square"]
+        },
+        {
+          "ask": "Which glue joins wood strongly but dries slowly?",
+          "answer": "PVA glue",
+          "distractors": ["Glue stick", "Water", "Sticky putty"]
+        },
+        {
+          "ask": "A craft knife should always be used with a...",
+          "answer": "Cutting mat",
+          "distractors": ["Plate", "Pillow", "Thimble"]
+        },
+        {
+          "ask": "Which tool drills a round hole for an axle in wood?",
+          "answer": "Hand drill",
+          "distractors": ["Hacksaw", "File", "Sandpaper"]
+        }
+      ]
+    },
+    {
+      "id": "dt-textile-workshop",
+      "title": "Textile Workshop",
+      "station": "compare",
+      "prop": "flower",
+      "skillName": "Choosing textiles, stitches and fastenings",
+      "strand": "materials-components",
+      "statutoryRequirement": "Pupils should be taught to select from and use a wider range of materials and components, including construction materials, textiles and ingredients, according to their functional properties and aesthetic qualities",
+      "instruction": "Think about the fabric job, then tap the answer.",
+      "hint": "Not quite. Think about how strong, neat or easy to use it needs to be.",
+      "questions": [
+        {
+          "ask": "Which stitch is a simple in-and-out line?",
+          "answer": "Running stitch",
+          "distractors": ["Blanket stitch", "Back stitch", "Cross stitch"]
+        },
+        {
+          "ask": "Which stitch is stronger, with each stitch going back on itself?",
+          "answer": "Back stitch",
+          "distractors": ["Running stitch", "Blanket stitch", "Tacking"]
+        },
+        {
+          "ask": "Which stitch neatly finishes and decorates an edge?",
+          "answer": "Blanket stitch",
+          "distractors": ["Running stitch", "Back stitch", "Tacking"]
+        },
+        {
+          "ask": "Which fabric does not fray when it is cut?",
+          "answer": "Felt",
+          "distractors": ["Cotton", "Hessian", "Denim"]
+        },
+        {
+          "ask": "The gap between the fabric edge and the stitching is the...",
+          "answer": "Seam allowance",
+          "distractors": ["Button", "Thimble", "Zip"]
+        },
+        {
+          "ask": "What protects your finger when sewing?",
+          "answer": "Thimble",
+          "distractors": ["Needle", "Pin", "Bobbin"]
+        },
+        {
+          "ask": "Which fastening is easiest for a young child?",
+          "answer": "Velcro",
+          "distractors": ["Tiny buttons", "Hook and eye", "Laces"]
+        },
+        {
+          "ask": "Which fabric is best for a waterproof bag?",
+          "answer": "Coated nylon",
+          "distractors": ["Felt", "Cotton", "Wool"]
+        },
+        {
+          "ask": "Which fabric is soft and warm for a hat?",
+          "answer": "Fleece",
+          "distractors": ["Hessian", "Netting", "Oilcloth"]
+        }
+      ]
+    },
+    {
+      "id": "dt-design-for-a-user",
+      "title": "Design For A User",
+      "station": "compare",
+      "prop": "heart",
+      "skillName": "Designing for particular users",
+      "strand": "research-criteria",
+      "statutoryRequirement": "Pupils should be taught to use research and develop design criteria to inform the design of innovative, functional, appealing products that are fit for purpose, aimed at particular individuals or groups",
+      "instruction": "Think about the user's needs, then tap the best answer.",
+      "hint": "Not quite. Picture the user and what they need from the product.",
+      "questions": [
+        {
+          "ask": "A cup for someone with shaky hands needs...",
+          "answer": "A lid and big handle",
+          "distractors": ["A thin glass", "No handle", "Sharp edges"]
+        },
+        {
+          "ask": "A torch for a toddler should be...",
+          "answer": "Chunky and tough",
+          "distractors": ["Tiny and fragile", "Very heavy", "Sharp-edged"]
+        },
+        {
+          "ask": "A key ring for a runner should be...",
+          "answer": "Light",
+          "distractors": ["Heavy", "Huge", "Noisy"]
+        },
+        {
+          "ask": "A bag for cycling at night needs...",
+          "answer": "Reflective strips",
+          "distractors": ["Dark colours", "No straps", "Glass beads"]
+        },
+        {
+          "ask": "Which is a measurable design criterion?",
+          "answer": "Holds 500 ml",
+          "distractors": ["Looks cool", "Is nice", "Feels good"]
+        },
+        {
+          "ask": "Why look at existing products first?",
+          "answer": "To get ideas",
+          "distractors": [
+            "To copy them exactly",
+            "To waste time",
+            "To avoid users"
+          ]
+        },
+        {
+          "ask": "Which survey question helps you design a lunchbox?",
+          "answer": "How much do you eat?",
+          "distractors": [
+            "Do you like rain?",
+            "Who is your hero?",
+            "What is 3 × 3?"
+          ]
+        },
+        {
+          "ask": "'Innovative' means the product is...",
+          "answer": "New and original",
+          "distractors": ["Old and copied", "Very cheap", "Very heavy"]
+        },
+        {
+          "ask": "A bird feeder must keep seed dry. Which criterion fits?",
+          "answer": "Has a roof",
+          "distractors": ["Made of paper", "Has no base", "Is very small"]
+        }
+      ]
+    },
+    {
+      "id": "dt-pulley-power",
+      "title": "Pulley Power",
+      "station": "true-false",
+      "prop": "magnet",
+      "skillName": "Understanding pulleys and belts",
+      "strand": "mechanical-systems",
+      "statutoryRequirement": "Pupils should be taught to understand and use mechanical systems in their products [for example, gears, pulleys, cams, levers and linkages]",
+      "instruction": "Read it, then decide if it is true or false.",
+      "hint": "Not quite. Picture the belt going round the pulley wheels.",
+      "questions": [
+        {
+          "ask": "A pulley is a wheel with a groove for a rope or belt.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Two pulleys joined by a straight belt turn the same way.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Crossing the belt makes the pulleys turn opposite ways.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A small pulley driving a large pulley makes the large one turn faster.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A pulley system can help lift heavy loads.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Flags are often raised up flagpoles using a pulley.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A belt that is too loose will grip the pulleys well.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "The pulley turned by the motor is called the driver.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Pulleys have teeth that lock together.",
+          "answer": "False",
+          "distractors": ["True"]
+        }
+      ]
+    },
+    {
+      "id": "dt-circuit-builder",
+      "title": "Circuit Builder",
+      "station": "compare",
+      "prop": "battery",
+      "skillName": "Building simple circuits for products",
+      "strand": "electrical-systems",
+      "statutoryRequirement": "Pupils should be taught to understand and use electrical systems in their products [for example, series circuits incorporating switches, bulbs, buzzers and motors]",
+      "instruction": "Think about the circuit, then tap the answer.",
+      "hint": "Not quite. Think about complete loops and what each component does.",
+      "questions": [
+        {
+          "ask": "What does a circuit need for a bulb to light?",
+          "answer": "A complete loop",
+          "distractors": ["A gap", "A magnet", "Plastic wires"]
+        },
+        {
+          "ask": "Which component makes a sound?",
+          "answer": "Buzzer",
+          "distractors": ["Bulb", "Switch", "Cell"]
+        },
+        {
+          "ask": "Which component makes things spin?",
+          "answer": "Motor",
+          "distractors": ["Buzzer", "Bulb", "Switch"]
+        },
+        {
+          "ask": "What does a switch do?",
+          "answer": "Turns it on and off",
+          "distractors": ["Stores energy", "Makes light", "Spins a wheel"]
+        },
+        {
+          "ask": "Which metal is used inside wires?",
+          "answer": "Copper",
+          "distractors": ["Plastic", "Wood", "Rubber"]
+        },
+        {
+          "ask": "Why are wires coated in plastic?",
+          "answer": "It is an insulator",
+          "distractors": [
+            "It is a magnet",
+            "It makes light",
+            "It is a conductor"
+          ]
+        },
+        {
+          "ask": "What gives the power in a torch circuit?",
+          "answer": "Battery",
+          "distractors": ["Bulb", "Switch", "Buzzer"]
+        },
+        {
+          "ask": "In a series circuit, adding another bulb makes them...",
+          "answer": "Dimmer",
+          "distractors": ["Brighter", "Change colour", "Spin"]
+        },
+        {
+          "ask": "Which switch works only while you press it?",
+          "answer": "Push switch",
+          "distractors": ["Toggle switch", "Slide switch", "Rocker switch"]
+        }
+      ]
+    },
+    {
+      "id": "dt-bridge-engineers",
+      "title": "Bridge Engineers",
+      "station": "compare",
+      "prop": "prism",
+      "skillName": "Understanding bridge structures",
+      "strand": "complex-structures",
+      "statutoryRequirement": "Pupils should be taught to apply their understanding of how to strengthen, stiffen and reinforce more complex structures",
+      "instruction": "Compare the bridges, then tap the answer.",
+      "hint": "Not quite. Think about how each bridge holds up its load.",
+      "questions": [
+        {
+          "ask": "Which bridge hangs its road from cables?",
+          "answer": "Suspension bridge",
+          "distractors": ["Beam bridge", "Arch bridge", "Log bridge"]
+        },
+        {
+          "ask": "Which is the simplest bridge, like a plank across a stream?",
+          "answer": "Beam bridge",
+          "distractors": ["Suspension bridge", "Arch bridge", "Truss bridge"]
+        },
+        {
+          "ask": "Which bridge uses a curve that pushes out onto its ends?",
+          "answer": "Arch bridge",
+          "distractors": ["Beam bridge", "Truss bridge", "Rope bridge"]
+        },
+        {
+          "ask": "Which bridge uses a frame of triangles to stiffen it?",
+          "answer": "Truss bridge",
+          "distractors": ["Beam bridge", "Arch bridge", "Log bridge"]
+        },
+        {
+          "ask": "Why do many bridges use triangles?",
+          "answer": "They are rigid",
+          "distractors": ["They are round", "They are bendy", "They are soft"]
+        },
+        {
+          "ask": "When a beam bridge bends under a load, its top is...",
+          "answer": "Squashed",
+          "distractors": ["Stretched", "Twisted", "Melted"]
+        },
+        {
+          "ask": "When a beam bridge bends under a load, its bottom is...",
+          "answer": "Stretched",
+          "distractors": ["Squashed", "Twisted", "Melted"]
+        },
+        {
+          "ask": "A pillar under the middle of a beam bridge makes it...",
+          "answer": "Stronger",
+          "distractors": ["Weaker", "Bendier", "Wobblier"]
+        },
+        {
+          "ask": "Folding a card strip into an L-shape makes a beam...",
+          "answer": "Stiffer",
+          "distractors": ["Floppier", "Wetter", "Shorter"]
+        }
+      ]
+    },
+    {
+      "id": "dt-inventor-gallery",
+      "title": "Inventor Gallery",
+      "station": "mystery",
+      "prop": "bulb",
+      "skillName": "Knowing inventors who shaped the world",
+      "strand": "design-history",
+      "statutoryRequirement": "Pupils should be taught to understand how key events and individuals in design and technology have helped shape the world",
+      "instruction": "Read the clues, then tap who it is.",
+      "hint": "Not quite. Think about what each inventor is famous for.",
+      "questions": [
+        {
+          "ask": "I invented a reading system of raised dots for blind people. Who am I?",
+          "answer": "Louis Braille",
+          "distractors": ["Thomas Edison", "James Dyson", "Percy Shaw"]
+        },
+        {
+          "ask": "I invented a bagless vacuum cleaner that uses a cyclone. Who am I?",
+          "answer": "James Dyson",
+          "distractors": ["Louis Braille", "Mary Anderson", "Thomas Edison"]
+        },
+        {
+          "ask": "I patented a windscreen wiper in 1903. Who am I?",
+          "answer": "Mary Anderson",
+          "distractors": ["James Dyson", "Louis Braille", "Percy Shaw"]
+        },
+        {
+          "ask": "I invented cat's eyes road studs in Halifax. Who am I?",
+          "answer": "Percy Shaw",
+          "distractors": ["Thomas Edison", "James Dyson", "Louis Braille"]
+        },
+        {
+          "ask": "I made a long-lasting electric light bulb in 1879. Who am I?",
+          "answer": "Thomas Edison",
+          "distractors": ["Percy Shaw", "Mary Anderson", "Tim Berners-Lee"]
+        },
+        {
+          "ask": "I invented the World Wide Web in 1989. Who am I?",
+          "answer": "Tim Berners-Lee",
+          "distractors": ["Thomas Edison", "Louis Braille", "Percy Shaw"]
+        },
+        {
+          "ask": "I built the SS Great Britain and the Great Western Railway. Who am I?",
+          "answer": "Isambard K. Brunel",
+          "distractors": ["James Dyson", "Tim Berners-Lee", "Thomas Edison"]
+        },
+        {
+          "ask": "I invented a dishwasher in the 1880s. Who am I?",
+          "answer": "Josephine Cochrane",
+          "distractors": ["Mary Anderson", "Louis Braille", "Percy Shaw"]
+        },
+        {
+          "ask": "I showed the first working television in 1926. Who am I?",
+          "answer": "John Logie Baird",
+          "distractors": ["Thomas Edison", "Percy Shaw", "James Dyson"]
+        }
+      ]
+    },
+    {
+      "id": "dt-take-it-apart",
+      "title": "Take It Apart",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Analysing how products are designed",
+      "strand": "analyse-products",
+      "statutoryRequirement": "Pupils should be taught to investigate and analyse a range of existing products; evaluate their ideas and products against their own design criteria and consider the views of others to improve their work",
+      "instruction": "Look closely at the product, then tap the best reason.",
+      "hint": "Not quite. Think about the material and what that part has to do.",
+      "questions": [
+        {
+          "ask": "Why is a kettle handle made of plastic?",
+          "answer": "It stays cool",
+          "distractors": [
+            "It conducts heat",
+            "It is magnetic",
+            "It is see-through"
+          ]
+        },
+        {
+          "ask": "Why is the base of a saucepan made of metal?",
+          "answer": "Conducts heat well",
+          "distractors": ["Stops heat", "Is see-through", "Is bendy"]
+        },
+        {
+          "ask": "Why do many torches have rubber grips?",
+          "answer": "Stops slipping",
+          "distractors": [
+            "Makes it brighter",
+            "Makes it heavier",
+            "Holds batteries"
+          ]
+        },
+        {
+          "ask": "Why do drinks bottles have screw tops?",
+          "answer": "Stops leaks",
+          "distractors": ["Makes it heavier", "Keeps it warm", "Looks pretty"]
+        },
+        {
+          "ask": "Who is a booster seat designed for?",
+          "answer": "Young children",
+          "distractors": ["Adults", "Pets", "Pilots"]
+        },
+        {
+          "ask": "Why do trainers have patterned soles?",
+          "answer": "Better grip",
+          "distractors": ["Make noise", "Keep feet wet", "Weigh more"]
+        },
+        {
+          "ask": "Which question asks about a product's user?",
+          "answer": "Who is it for?",
+          "distractors": [
+            "What is it made of?",
+            "How much is it?",
+            "How is it joined?"
+          ]
+        },
+        {
+          "ask": "Why do umbrellas have a folding frame?",
+          "answer": "To fit in a bag",
+          "distractors": ["To get wet", "To be heavier", "To catch wind"]
+        },
+        {
+          "ask": "Why is a pencil sharpener blade made of hard steel?",
+          "answer": "It stays sharp",
+          "distractors": ["It is soft", "It bends easily", "It is cheap paper"]
+        }
+      ]
+    },
+    {
+      "id": "dt-eatwell-explorer",
+      "title": "Eatwell Explorer",
+      "station": "sort",
+      "prop": "leaf",
+      "skillName": "Sorting foods with the Eatwell Guide",
+      "strand": "healthy-diet",
+      "statutoryRequirement": "Pupils should be taught to understand and apply the principles of a healthy and varied diet",
+      "instruction": "Think about the food, then tap its Eatwell Guide group.",
+      "hint": "Not quite. Think about what the food mostly gives your body.",
+      "questions": [
+        {
+          "ask": "Which Eatwell group does salmon belong in?",
+          "answer": "Protein",
+          "distractors": ["Dairy", "Starchy carbs", "Oils and spreads"]
+        },
+        {
+          "ask": "Which Eatwell group does wholemeal pasta belong in?",
+          "answer": "Starchy carbs",
+          "distractors": ["Protein", "Fruit and veg", "Dairy"]
+        },
+        {
+          "ask": "Which Eatwell group does spinach belong in?",
+          "answer": "Fruit and veg",
+          "distractors": ["Protein", "Dairy", "Starchy carbs"]
+        },
+        {
+          "ask": "Which Eatwell group does cheddar belong in?",
+          "answer": "Dairy",
+          "distractors": ["Protein", "Oils and spreads", "Fruit and veg"]
+        },
+        {
+          "ask": "Which Eatwell group does olive oil belong in?",
+          "answer": "Oils and spreads",
+          "distractors": ["Dairy", "Protein", "Starchy carbs"]
+        },
+        {
+          "ask": "Which Eatwell group does couscous belong in?",
+          "answer": "Starchy carbs",
+          "distractors": ["Fruit and veg", "Dairy", "Protein"]
+        },
+        {
+          "ask": "Which Eatwell group does tofu belong in?",
+          "answer": "Protein",
+          "distractors": ["Starchy carbs", "Dairy", "Oils and spreads"]
+        },
+        {
+          "ask": "Which Eatwell group do raisins belong in?",
+          "answer": "Fruit and veg",
+          "distractors": ["Starchy carbs", "Oils and spreads", "Dairy"]
+        },
+        {
+          "ask": "Which Eatwell group does yoghurt belong in?",
+          "answer": "Dairy",
+          "distractors": ["Fruit and veg", "Starchy carbs", "Oils and spreads"]
+        }
+      ]
+    },
+    {
+      "id": "dt-cooking-methods",
+      "title": "Cooking Methods",
+      "station": "compare",
+      "prop": "thermometer",
+      "skillName": "Knowing cooking techniques",
+      "strand": "cooking-techniques",
+      "statutoryRequirement": "Pupils should be taught to prepare and cook a variety of predominantly savoury dishes using a range of cooking techniques",
+      "instruction": "Think about how the heat cooks the food, then tap the answer.",
+      "hint": "Not quite. Think about where the heat comes from and what the food sits in.",
+      "questions": [
+        {
+          "ask": "Cooking food in water bubbling at 100 °C is...",
+          "answer": "Boiling",
+          "distractors": ["Baking", "Grilling", "Frying"]
+        },
+        {
+          "ask": "Cooking in an oven with dry heat, like bread, is...",
+          "answer": "Baking",
+          "distractors": ["Boiling", "Steaming", "Simmering"]
+        },
+        {
+          "ask": "Cooking gently in liquid just below boiling is...",
+          "answer": "Simmering",
+          "distractors": ["Grilling", "Roasting", "Baking"]
+        },
+        {
+          "ask": "Cooking food under strong heat from above is...",
+          "answer": "Grilling",
+          "distractors": ["Boiling", "Steaming", "Simmering"]
+        },
+        {
+          "ask": "Cooking food over the steam from boiling water is...",
+          "answer": "Steaming",
+          "distractors": ["Grilling", "Frying", "Roasting"]
+        },
+        {
+          "ask": "Cooking food in a little hot oil in a pan is...",
+          "answer": "Frying",
+          "distractors": ["Boiling", "Steaming", "Baking"]
+        },
+        {
+          "ask": "What makes bread dough rise?",
+          "answer": "Yeast",
+          "distractors": ["Salt", "Oil", "Pepper"]
+        },
+        {
+          "ask": "Which of these is a savoury dish?",
+          "answer": "Vegetable soup",
+          "distractors": ["Jelly", "Fruit cake", "Ice cream"]
+        },
+        {
+          "ask": "What should you use to take a hot tray out of the oven?",
+          "answer": "Oven gloves",
+          "distractors": ["Bare hands", "A tea bag", "A plastic bag"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "maths.right-angles-and-sides",
+  "name": "Right angles and sides of 2-D shapes",
+  "subject": "maths",
+  "yearGroup": 3,
+  "strand": "geometry-properties-of-shapes",
+  "prerequisites": ["maths.shape-properties"]
+}

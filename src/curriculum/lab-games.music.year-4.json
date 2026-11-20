@@ -1,0 +1,140 @@
+{
+  "subject": "music",
+  "yearGroup": 4,
+  "games": [
+    {
+      "id": "composer-choices",
+      "title": "Composer's Choice",
+      "station": "compare",
+      "prop": "tuning-fork",
+      "skillName": "Choosing tempo, dynamics and pitch for a purpose",
+      "strand": "composing",
+      "statutoryRequirement": "Pupils should be taught to improvise and compose music for a range of purposes using the inter-related dimensions of music",
+      "instruction": "Think about the purpose of the music, then tap the best choice.",
+      "hint": "Not quite. Imagine how the scene feels, then try again.",
+      "questions": [
+        {
+          "ask": "You are composing a lullaby. Which tempo suits it?",
+          "answer": "Slow",
+          "distractors": ["Fast", "Very fast", "Getting faster"]
+        },
+        {
+          "ask": "Music for an exciting chase scene needs which tempo?",
+          "answer": "Fast",
+          "distractors": ["Slow", "Very slow", "Getting slower"]
+        },
+        {
+          "ask": "Which dynamic suits a lullaby best?",
+          "answer": "Piano (quiet)",
+          "distractors": ["Forte (loud)", "Fortissimo", "Loud crashes"]
+        },
+        {
+          "ask": "Music for a giant's footsteps should use which pitch?",
+          "answer": "Low",
+          "distractors": ["High", "Very high", "Squeaky high"]
+        },
+        {
+          "ask": "Music for twinkling stars suits which pitch?",
+          "answer": "High",
+          "distractors": ["Low", "Very low", "Rumbling low"]
+        },
+        {
+          "ask": "To show a monster creeping nearer, which would you use?",
+          "answer": "Crescendo",
+          "distractors": ["Diminuendo", "A long rest", "Silence"]
+        },
+        {
+          "ask": "To show a train slowing down to stop, which would you use?",
+          "answer": "Rallentando",
+          "distractors": ["Accelerando", "Crescendo", "Staccato"]
+        },
+        {
+          "ask": "Which choice sounds happiest for a party song?",
+          "answer": "Fast, in a major key",
+          "distractors": [
+            "Slow, in a minor key",
+            "Very slow and quiet",
+            "Low and gloomy"
+          ]
+        },
+        {
+          "ask": "Which choice suits music for a spooky cave?",
+          "answer": "Quiet, minor key",
+          "distractors": [
+            "Bright, major key",
+            "Loud and jolly",
+            "Fast and bouncy"
+          ]
+        },
+        {
+          "ask": "What is a short pattern repeated under your piece called?",
+          "answer": "Ostinato",
+          "distractors": ["Crescendo", "Tempo", "Dynamics"]
+        }
+      ]
+    },
+    {
+      "id": "world-music-passport",
+      "title": "World Music Passport",
+      "station": "mystery",
+      "prop": "tuning-fork",
+      "skillName": "Music from different traditions and great musicians",
+      "strand": "appreciating",
+      "statutoryRequirement": "Pupils should be taught to appreciate and understand a wide range of high-quality live and recorded music drawn from different traditions and from great composers and musicians",
+      "instruction": "Read the clues, then tap the music or musician.",
+      "hint": "Not quite. Think about which country the clues point to, then try again.",
+      "questions": [
+        {
+          "ask": "Bronze gongs and metallophones played together in Indonesia. What am I?",
+          "answer": "Gamelan",
+          "distractors": ["Samba", "Reggae", "Blues"]
+        },
+        {
+          "ask": "Loud carnival street music from Brazil with big surdo drums. What am I?",
+          "answer": "Samba",
+          "distractors": ["Gamelan", "Blues", "Bhangra"]
+        },
+        {
+          "ask": "Off-beat guitar chops from Jamaica, made famous by Bob Marley. What am I?",
+          "answer": "Reggae",
+          "distractors": ["Samba", "Jazz", "Flamenco"]
+        },
+        {
+          "ask": "Songs of hard times from the American South, often 12 bars long. What am I?",
+          "answer": "Blues",
+          "distractors": ["Reggae", "Gamelan", "Samba"]
+        },
+        {
+          "ask": "Born in New Orleans, my players often make up solos on the spot. What am I?",
+          "answer": "Jazz",
+          "distractors": ["Gamelan", "Reggae", "Samba"]
+        },
+        {
+          "ask": "Songs from Hindi films made in Mumbai, often with big dances. What am I?",
+          "answer": "Bollywood music",
+          "distractors": ["Samba", "Blues", "Reggae"]
+        },
+        {
+          "ask": "A goblet-shaped West African drum played with bare hands. What am I?",
+          "answer": "Djembe",
+          "distractors": ["Tabla", "Steel pan", "Surdo"]
+        },
+        {
+          "ask": "A New Orleans jazz trumpeter and singer nicknamed Satchmo. Who am I?",
+          "answer": "Louis Armstrong",
+          "distractors": ["Bob Marley", "Ravi Shankar", "Elvis Presley"]
+        },
+        {
+          "ask": "An Indian sitar player who taught George Harrison of The Beatles. Who am I?",
+          "answer": "Ravi Shankar",
+          "distractors": ["Louis Armstrong", "Bob Marley", "Ella Fitzgerald"]
+        },
+        {
+          "ask": "A Jamaican reggae singer who sang \"Three Little Birds\". Who am I?",
+          "answer": "Bob Marley",
+          "distractors": ["Ravi Shankar", "Louis Armstrong", "B.B. King"]
+        }
+      ]
+    }
+  ]
+}

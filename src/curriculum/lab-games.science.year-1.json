@@ -1,0 +1,69 @@
+{
+  "subject": "science",
+  "yearGroup": 1,
+  "games": [
+    {
+      "id": "animal-body-builder",
+      "title": "Body Builder Zoo",
+      "station": "sort",
+      "prop": "egg",
+      "skillName": "Comparing the bodies of fish, amphibians, reptiles, birds and mammals",
+      "strand": "animals-including-humans",
+      "statutoryRequirement": "Pupils should be taught to identify and name a variety of common animals including fish, amphibians, reptiles, birds and mammals; describe and compare the structure of a variety of common animals (fish, amphibians, reptiles, birds and mammals, including pets)",
+      "instruction": "Read the body clues, then tap the animal group.",
+      "hint": "Not quite. Think about the animal's skin or covering, then try again.",
+      "questions": [
+        {
+          "ask": "Has fins and scales, and breathes underwater with gills",
+          "answer": "Fish",
+          "distractors": ["Amphibians", "Reptiles", "Mammals"]
+        },
+        {
+          "ask": "Has feathers, a beak and two wings",
+          "answer": "Birds",
+          "distractors": ["Mammals", "Reptiles", "Fish"]
+        },
+        {
+          "ask": "Has hair or fur and feeds its babies milk",
+          "answer": "Mammals",
+          "distractors": ["Birds", "Reptiles", "Amphibians"]
+        },
+        {
+          "ask": "Has dry, scaly skin and lays eggs on land",
+          "answer": "Reptiles",
+          "distractors": ["Amphibians", "Fish", "Birds"]
+        },
+        {
+          "ask": "Has smooth, damp skin and starts life in water as a tadpole",
+          "answer": "Amphibians",
+          "distractors": ["Fish", "Reptiles", "Mammals"]
+        },
+        {
+          "ask": "A pet goldfish: fins, scales and gills",
+          "answer": "Fish",
+          "distractors": ["Amphibians", "Mammals", "Reptiles"]
+        },
+        {
+          "ask": "A pet rabbit: soft fur, four legs and long ears",
+          "answer": "Mammals",
+          "distractors": ["Birds", "Reptiles", "Amphibians"]
+        },
+        {
+          "ask": "A pet budgie: feathers, a beak and two legs",
+          "answer": "Birds",
+          "distractors": ["Mammals", "Reptiles", "Fish"]
+        },
+        {
+          "ask": "A pet tortoise: dry, scaly skin and a hard shell",
+          "answer": "Reptiles",
+          "distractors": ["Amphibians", "Fish", "Mammals"]
+        },
+        {
+          "ask": "A frog: smooth, damp skin and long back legs for jumping",
+          "answer": "Amphibians",
+          "distractors": ["Reptiles", "Mammals", "Fish"]
+        }
+      ]
+    }
+  ]
+}
