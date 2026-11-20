@@ -215,12 +215,14 @@ configs:
       }
 
 networks:
-  # A subnet of its own, beside production's 10.43.10.0/24, so the two deployments can run on one host (#332).
+  # A subnet of its own, beside production's 10.43.10.0/24, so the two deployments can run on one host (#332). Docker
+  # hands out addresses only from the top half, so the app can't take the stand-in's 10.43.11.2 before it starts.
   tunnel:
     internal: true
     ipam: !override
       config:
         - subnet: 10.43.11.0/24
+          ip_range: 10.43.11.128/25
   offsite:
     internal: true
   # The app's way out in production, held inside Docker here. Neither network takes production's bridge name, so the
