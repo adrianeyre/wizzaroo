@@ -1,0 +1,8 @@
+{
+  "id": "computing.sequence-sounds",
+  "name": "Running commands in sequence",
+  "subject": "computing",
+  "yearGroup": 3,
+  "strand": "programming",
+  "prerequisites": ["computing.program-a-quiz"]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "computing.search-ranking",
+  "name": "How search results are chosen and ranked",
+  "subject": "computing",
+  "yearGroup": 5,
+  "strand": "searching-and-evaluating",
+  "prerequisites": ["computing.reliable-information"]
+}

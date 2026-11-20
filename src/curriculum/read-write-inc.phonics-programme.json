@@ -1,0 +1,282 @@
+{
+  "id": "read-write-inc",
+  "name": "Read Write Inc. Phonics",
+  "sources": [
+    "Oxford University Press, Parent guide to Read Write Inc. Phonics, Oxford Owl, for the sounds in each Set, with ck, and Set 3 in the order the guide lists them: https://home.oxfordowl.co.uk/reading/reading-schemes-oxford-levels/read-write-inc-phonics-guide/",
+    "St Cyprian's Primary Academy, Order of teaching sounds, for Set 1 in the order it is taught, and Set 2 in the order it lists them: https://www.stcypriansprimaryacademy.co.uk/wp-content/uploads/2024/02/Phonics-RWI-Summary.pdf",
+    "Alva Primary School, Read Write Inc: Speed Sounds Set 2 and Set 3 Phonics Guidance for Parents, confirming the order Set 1 is taught in: https://blogs.glowscotland.org.uk/cl/public/alvaprimaryschool/uploads/sites/3428/2016/11/Phonics-booklet-for-parents_set2_3-Alva-Primary-.pdf"
+  ],
+  "soundOrder": [
+    {
+      "term": "Set 1",
+      "graphemes": [
+        {
+          "grapheme": "m",
+          "sounds": ["m"]
+        },
+        {
+          "grapheme": "a",
+          "sounds": ["a"]
+        },
+        {
+          "grapheme": "s",
+          "sounds": ["s"]
+        },
+        {
+          "grapheme": "d",
+          "sounds": ["d"]
+        },
+        {
+          "grapheme": "t",
+          "sounds": ["t"]
+        },
+        {
+          "grapheme": "i",
+          "sounds": ["i"]
+        },
+        {
+          "grapheme": "n",
+          "sounds": ["n"]
+        },
+        {
+          "grapheme": "p",
+          "sounds": ["p"]
+        },
+        {
+          "grapheme": "g",
+          "sounds": ["g"]
+        },
+        {
+          "grapheme": "o",
+          "sounds": ["o"]
+        },
+        {
+          "grapheme": "c",
+          "sounds": ["k"]
+        },
+        {
+          "grapheme": "k",
+          "sounds": ["k"]
+        },
+        {
+          "grapheme": "u",
+          "sounds": ["u"]
+        },
+        {
+          "grapheme": "b",
+          "sounds": ["b"]
+        },
+        {
+          "grapheme": "f",
+          "sounds": ["f"]
+        },
+        {
+          "grapheme": "e",
+          "sounds": ["e"]
+        },
+        {
+          "grapheme": "l",
+          "sounds": ["l"]
+        },
+        {
+          "grapheme": "h",
+          "sounds": ["h"]
+        },
+        {
+          "grapheme": "sh",
+          "sounds": ["sh"]
+        },
+        {
+          "grapheme": "r",
+          "sounds": ["r"]
+        },
+        {
+          "grapheme": "j",
+          "sounds": ["j"]
+        },
+        {
+          "grapheme": "v",
+          "sounds": ["v"]
+        },
+        {
+          "grapheme": "y",
+          "sounds": ["y"]
+        },
+        {
+          "grapheme": "w",
+          "sounds": ["w"]
+        },
+        {
+          "grapheme": "th",
+          "sounds": ["th-unvoiced"]
+        },
+        {
+          "grapheme": "th",
+          "sounds": ["th-voiced"]
+        },
+        {
+          "grapheme": "z",
+          "sounds": ["z"]
+        },
+        {
+          "grapheme": "ch",
+          "sounds": ["ch"]
+        },
+        {
+          "grapheme": "qu",
+          "sounds": ["k", "w"]
+        },
+        {
+          "grapheme": "x",
+          "sounds": ["k", "s"]
+        },
+        {
+          "grapheme": "ng",
+          "sounds": ["ng"]
+        },
+        {
+          "grapheme": "nk",
+          "sounds": ["ng", "k"]
+        },
+        {
+          "grapheme": "ck",
+          "sounds": ["k"]
+        }
+      ]
+    },
+    {
+      "term": "Set 2",
+      "graphemes": [
+        {
+          "grapheme": "ay",
+          "sounds": ["ai"]
+        },
+        {
+          "grapheme": "ee",
+          "sounds": ["ee"]
+        },
+        {
+          "grapheme": "igh",
+          "sounds": ["igh"]
+        },
+        {
+          "grapheme": "ow",
+          "sounds": ["oa"]
+        },
+        {
+          "grapheme": "oo",
+          "sounds": ["oo-long"]
+        },
+        {
+          "grapheme": "oo",
+          "sounds": ["oo-short"]
+        },
+        {
+          "grapheme": "ar",
+          "sounds": ["ar"]
+        },
+        {
+          "grapheme": "or",
+          "sounds": ["or"]
+        },
+        {
+          "grapheme": "air",
+          "sounds": ["air"]
+        },
+        {
+          "grapheme": "ir",
+          "sounds": ["ur"]
+        },
+        {
+          "grapheme": "ou",
+          "sounds": ["ow"]
+        },
+        {
+          "grapheme": "oy",
+          "sounds": ["oi"]
+        }
+      ]
+    },
+    {
+      "term": "Set 3",
+      "graphemes": [
+        {
+          "grapheme": "ea",
+          "sounds": ["ee"]
+        },
+        {
+          "grapheme": "oi",
+          "sounds": ["oi"]
+        },
+        {
+          "grapheme": "a-e",
+          "sounds": ["ai"]
+        },
+        {
+          "grapheme": "i-e",
+          "sounds": ["igh"]
+        },
+        {
+          "grapheme": "o-e",
+          "sounds": ["oa"]
+        },
+        {
+          "grapheme": "u-e",
+          "sounds": ["y", "oo-long"]
+        },
+        {
+          "grapheme": "u-e",
+          "sounds": ["oo-long"]
+        },
+        {
+          "grapheme": "aw",
+          "sounds": ["or"]
+        },
+        {
+          "grapheme": "are",
+          "sounds": ["air"]
+        },
+        {
+          "grapheme": "ur",
+          "sounds": ["ur"]
+        },
+        {
+          "grapheme": "er",
+          "sounds": ["schwa"]
+        },
+        {
+          "grapheme": "ow",
+          "sounds": ["ow"]
+        },
+        {
+          "grapheme": "ai",
+          "sounds": ["ai"]
+        },
+        {
+          "grapheme": "oa",
+          "sounds": ["oa"]
+        },
+        {
+          "grapheme": "ew",
+          "sounds": ["oo-long"]
+        },
+        {
+          "grapheme": "ew",
+          "sounds": ["y", "oo-long"]
+        },
+        {
+          "grapheme": "ire",
+          "sounds": ["igh", "schwa"]
+        },
+        {
+          "grapheme": "ear",
+          "sounds": ["ear"]
+        },
+        {
+          "grapheme": "ure",
+          "sounds": ["ure"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "subject": "phonics",
+  "programme": "year",
+  "programmeOfStudyUrl": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study",
+  "years": [
+    {
+      "yearGroup": 1,
+      "points": [
+        {
+          "id": "grapheme-phoneme-correspondences",
+          "heading": "Sounds and the letters that make them",
+          "summary": "Respond speedily with the correct sound to graphemes for all 40+ phonemes, including letter teams and alternative sounds.",
+          "skillIds": [
+            "phonics.sound-b",
+            "phonics.sound-ch",
+            "phonics.sound-d",
+            "phonics.sound-f",
+            "phonics.sound-g",
+            "phonics.sound-h",
+            "phonics.sound-j",
+            "phonics.sound-k",
+            "phonics.sound-l",
+            "phonics.sound-m",
+            "phonics.sound-n",
+            "phonics.sound-ng",
+            "phonics.sound-p",
+            "phonics.sound-r",
+            "phonics.sound-s",
+            "phonics.sound-sh",
+            "phonics.sound-t",
+            "phonics.sound-th-unvoiced",
+            "phonics.sound-th-voiced",
+            "phonics.sound-v",
+            "phonics.sound-w",
+            "phonics.sound-y",
+            "phonics.sound-z",
+            "phonics.sound-zh",
+            "phonics.sound-a",
+            "phonics.sound-e",
+            "phonics.sound-i",
+            "phonics.sound-o",
+            "phonics.sound-u",
+            "phonics.sound-ai",
+            "phonics.sound-ee",
+            "phonics.sound-igh",
+            "phonics.sound-oa",
+            "phonics.sound-oo-long",
+            "phonics.sound-oo-short",
+            "phonics.sound-ar",
+            "phonics.sound-or",
+            "phonics.sound-ur",
+            "phonics.sound-ow",
+            "phonics.sound-oi",
+            "phonics.sound-ear",
+            "phonics.sound-air",
+            "phonics.sound-ure",
+            "phonics.sound-schwa",
+            "phonics.spot-digraphs-in-words",
+            "phonics.spot-alternative-spellings"
+          ]
+        },
+        {
+          "id": "blending",
+          "heading": "Blending sounds to read words",
+          "summary": "Apply phonic knowledge to decode words, blending sounds in unfamiliar and made-up words, including split digraphs.",
+          "skillIds": [
+            "phonics.blend-sounds-into-words",
+            "phonics.read-real-and-alien-words",
+            "phonics.count-sounds-in-words",
+            "phonics.split-digraph-magic-e"
+          ]
+        },
+        {
+          "id": "common-exception-words",
+          "heading": "Common exception words",
+          "summary": "Read common exception words, noting unusual correspondences between spelling and sound.",
+          "skillIds": ["phonics.read-common-exception-words"]
+        },
+        {
+          "id": "word-endings",
+          "heading": "Word endings and prefixes",
+          "summary": "Read words with -s, -es, -ing, -ed, -er and -est endings and the prefix un-.",
+          "skillIds": [
+            "phonics.plurals-s-and-es",
+            "phonics.add-ing-ed-er-est",
+            "phonics.prefix-un"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 2,
+      "points": [
+        {
+          "id": "alternative-spellings",
+          "heading": "Alternative spellings of sounds",
+          "summary": "Segment spoken words into phonemes and spell them with the right graphemes, including dge, soft c, silent letters and -le endings.",
+          "skillIds": [
+            "phonics.spell-j-sound-dge-ge",
+            "phonics.soft-c-before-e-i-y",
+            "phonics.silent-letters-kn-gn-wr",
+            "phonics.spell-l-endings-le-el-al-il"
+          ]
+        },
+        {
+          "id": "suffixes",
+          "heading": "Adding suffixes",
+          "summary": "Add suffixes to spell longer words, changing y to i, dropping e and doubling letters where needed.",
+          "skillIds": [
+            "phonics.suffixes-change-y-to-i",
+            "phonics.suffixes-drop-final-e",
+            "phonics.suffixes-double-consonant",
+            "phonics.suffixes-ment-ness-ful-less-ly"
+          ]
+        },
+        {
+          "id": "contractions",
+          "heading": "Contractions",
+          "summary": "Use the apostrophe to spell contractions, such as can't and didn't.",
+          "skillIds": ["phonics.contractions-apostrophe"]
+        },
+        {
+          "id": "homophones",
+          "heading": "Homophones",
+          "summary": "Tell homophones and near-homophones apart and spell each correctly.",
+          "skillIds": ["phonics.homophones-near-homophones"]
+        }
+      ]
+    }
+  ]
+}

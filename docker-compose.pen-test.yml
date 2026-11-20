@@ -1,0 +1,243 @@
+name: wizzaroo-pen-test
+
+# Docker keeps each container's log until the container is removed, and its default json-file driver bounds it by
+# nothing. Every service here keeps at most three files of 10 MB, 30 MB in all, as docker-compose.yml's do, and the
+# oldest is dropped as each fills (pen-test H14, #282).
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: 10m
+    max-file: "3"
+
+services:
+  app:
+    logging: *logging
+    environment:
+      PUBLIC_URL: http://localhost:43310
+      SECOND_SCHOOL_GATE_MET: "true"
+      # The stand-in's fixed address below, as production names cloudflared's (#332).
+      TUNNEL_PROXY_ADDRESS: 10.43.11.2
+    ports: !reset []
+    networks:
+      - mail
+
+  backup:
+    logging: *logging
+    environment:
+      RCLONE_CONFIG: /dev/null
+      RCLONE_CONFIG_OFFSITE_TYPE: s3
+      RCLONE_CONFIG_OFFSITE_PROVIDER: Rclone
+      RCLONE_CONFIG_OFFSITE_ENDPOINT: http://offsite-bucket-stand-in:8080
+      RCLONE_CONFIG_OFFSITE_ACCESS_KEY_ID: ${OFFSITE_BUCKET_ACCESS_KEY_ID:?run pnpm pen-test:up}
+      RCLONE_CONFIG_OFFSITE_SECRET_ACCESS_KEY: ${OFFSITE_BUCKET_SECRET_ACCESS_KEY:?run pnpm pen-test:up}
+      RCLONE_CONFIG_OFFSITE_USE_MULTIPART_UPLOADS: "false"
+      # The bucket stand-in deletes whatever it holds, as no locked bucket would, so the nightly check that the off-site
+      # key can't delete is off here, by name. Production sets nothing, so the check runs there (pen test I4, #317).
+      BACKUP_OFFSITE_LOCK_CHECK: off-for-a-stand-in
+    volumes: !override
+      - nas-stand-in:/srv/nas-stand-in
+    depends_on:
+      stand-in-directories:
+        condition: service_completed_successfully
+      offsite-bucket-stand-in:
+        condition: service_started
+
+  # Production's voices service downloads Read it to me's voices from the internet. The pen-test deployment has no
+  # way out, so it downloads none and exits at once; the app serves no voice, and a device reads in its own speech
+  # voice (ADR 0062).
+  voices:
+    logging: *logging
+    command: !override ["--eval", ""]
+
+  stand-in-directories:
+    logging: *logging
+    build: ./backup
+    user: root
+    network_mode: none
+    command:
+      - sh
+      - -c
+      - mkdir -p /srv/offsite-bucket-stand-in/wizzaroo-backups-pen-test && chown -R postgres:postgres /srv/nas-stand-in /srv/offsite-bucket-stand-in
+    volumes:
+      - nas-stand-in:/srv/nas-stand-in
+      - offsite-bucket-stand-in:/srv/offsite-bucket-stand-in
+
+  offsite-bucket-stand-in:
+    logging: *logging
+    build: ./backup
+    restart: unless-stopped
+    command:
+      - rclone
+      - serve
+      - s3
+      - --addr=:8080
+      - --auth-key=${OFFSITE_BUCKET_ACCESS_KEY_ID:?run pnpm pen-test:up},${OFFSITE_BUCKET_SECRET_ACCESS_KEY:?run pnpm pen-test:up}
+      - /srv/offsite-bucket-stand-in
+    volumes:
+      - offsite-bucket-stand-in:/srv/offsite-bucket-stand-in
+    networks:
+      - offsite
+    depends_on:
+      stand-in-directories:
+        condition: service_completed_successfully
+
+  cloudflared-stand-in:
+    logging: *logging
+    image: nginx:1.29-alpine@sha256:5616878291a2eed594aee8db4dade5878cf7edcb475e59193904b198d9b830de
+    restart: unless-stopped
+    configs:
+      - source: cloudflared-stand-in
+        target: /etc/nginx/conf.d/default.conf
+    ports:
+      - "127.0.0.1:43310:80"
+    networks:
+      edge:
+      tunnel:
+        # The app's TUNNEL_PROXY_ADDRESS names this address, as production's names cloudflared's (#332).
+        ipv4_address: 10.43.11.2
+    depends_on:
+      app:
+        condition: service_healthy
+
+  # Stands in for the email platform, on the internal mail network the app sends through, so no email leaves the
+  # pen-test deployment. It takes each send as the email platform's API does, keeps it in memory, and lists every one,
+  # newest first, with its template's slug and variables, links included, at 127.0.0.1:43380.
+  email-platform-stand-in:
+    logging: *logging
+    image: node:26-slim@sha256:e6bedef217677b276c591795e169840edd9096dbf13f29df8ef8d1856b8820bc
+    restart: unless-stopped
+    command: ["node", "/stand-in/email-platform.mjs"]
+    environment:
+      EMAIL_API_KEY: ${EMAIL_API_KEY:?run pnpm pen-test:up}
+    configs:
+      - source: email-platform-stand-in
+        target: /stand-in/email-platform.mjs
+    ports:
+      - "127.0.0.1:43380:8025"
+    networks:
+      - edge
+      - mail
+
+configs:
+  email-platform-stand-in:
+    content: |
+      import { randomUUID } from "node:crypto";
+      import { createServer } from "node:http";
+
+      const messages = [];
+      const largestBody = 1_000_000;
+      const answer = (response, status, body) => {
+        response.writeHead(status, { "Content-Type": "application/json" });
+        response.end(JSON.stringify(body, null, 2));
+      };
+
+      createServer((request, response) => {
+        if (request.method === "GET" && (request.url === "/" || request.url === "/v1/messages")) {
+          answer(response, 200, { messages });
+          return;
+        }
+        if (request.method !== "POST" || request.url !== "/v1/messages") {
+          answer(response, 404, { error: "not_found", message: "Not found" });
+          return;
+        }
+        if (request.headers.authorization !== "Bearer " + process.env.EMAIL_API_KEY) {
+          answer(response, 401, { error: "unauthorized", message: "The API key is wrong" });
+          return;
+        }
+        let body = "";
+        request.setEncoding("utf8");
+        request.on("data", (chunk) => {
+          body += chunk;
+          if (body.length > largestBody) {
+            answer(response, 413, { error: "too_large", message: "The message is too large" });
+            request.destroy();
+          }
+        });
+        request.on("end", () => {
+          let sent;
+          try {
+            sent = JSON.parse(body);
+          } catch {
+            answer(response, 400, { error: "invalid_json", message: "The body isn't JSON" });
+            return;
+          }
+          const message = {
+            id: randomUUID(),
+            createdAt: new Date().toISOString(),
+            templateId: null,
+            templateSlug: sent.templateSlug ?? null,
+            variables: sent.variables ?? {},
+            from: sent.from ?? "",
+            to: sent.to ?? [],
+            cc: [],
+            bcc: [],
+            replyTo: null,
+            subject: "",
+            status: "queued",
+            providerMessageId: null,
+            error: null,
+            attempts: 0,
+            sentAt: null,
+          };
+          messages.unshift(message);
+          answer(response, 202, message);
+        });
+      }).listen(8025);
+
+  cloudflared-stand-in:
+    content: |
+      resolver 127.0.0.11 valid=10s;
+
+      server {
+        listen 80;
+        server_tokens off;
+        client_max_body_size 100m;
+        large_client_header_buffers 8 64k;
+        underscores_in_headers on;
+        ignore_invalid_headers off;
+
+        location / {
+          set $$app_origin http://app:4310;
+          proxy_pass $$app_origin;
+          proxy_http_version 1.1;
+          proxy_buffering off;
+          proxy_read_timeout 100s;
+          proxy_set_header Connection "";
+          proxy_set_header Host $$http_host;
+          proxy_set_header X-Forwarded-For $$proxy_add_x_forwarded_for;
+          proxy_set_header X-Forwarded-Proto https;
+          proxy_set_header CF-Connecting-IP $$remote_addr;
+          proxy_set_header CF-Visitor '{"scheme":"https"}';
+          proxy_set_header CF-IPCountry XX;
+          proxy_set_header CF-Ray $$request_id;
+          proxy_set_header CDN-Loop cloudflare;
+        }
+      }
+
+networks:
+  # A subnet of its own, beside production's 10.43.10.0/24, so the two deployments can run on one host (#332).
+  tunnel:
+    internal: true
+    ipam: !override
+      config:
+        - subnet: 10.43.11.0/24
+  offsite:
+    internal: true
+  # The app's way out in production, held inside Docker here. Neither network takes production's bridge name, so the
+  # pen-test deployment can stand beside the production stack on one machine.
+  mail:
+    internal: true
+    driver_opts: !reset {}
+  # cloudflared's way out in production. The pen-test deployment runs no tunnel.
+  tunnel-egress:
+    internal: true
+    driver_opts: !reset {}
+  # The voices service's way out in production, held inside Docker here.
+  voices-egress:
+    internal: true
+    driver_opts: !reset {}
+  edge:
+
+volumes:
+  nas-stand-in:
+  offsite-bucket-stand-in:

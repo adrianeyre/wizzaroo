@@ -1,0 +1,9 @@
+{
+  "id": "phonics.sound-or",
+  "name": "The /or/ sound, as in fork",
+  "subject": "phonics",
+  "yearGroup": 1,
+  "strand": "grapheme-phoneme-correspondences",
+  "prerequisites": [],
+  "sounds": ["or"]
+}

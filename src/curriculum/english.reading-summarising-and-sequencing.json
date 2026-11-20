@@ -1,0 +1,8 @@
+{
+  "id": "english.reading-summarising-and-sequencing",
+  "name": "Summarising a text and putting its events in order",
+  "subject": "english",
+  "yearGroup": 6,
+  "strand": "reading",
+  "prerequisites": ["english.reading-retrieval"]
+}

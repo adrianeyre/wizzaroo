@@ -1,0 +1,8 @@
+{
+  "id": "maths.multiply-and-divide-with-objects",
+  "name": "Multiplying and dividing with groups and arrays",
+  "subject": "maths",
+  "yearGroup": 1,
+  "strand": "multiplication-and-division",
+  "prerequisites": ["maths.count-in-steps"]
+}

@@ -1,0 +1,73 @@
+name: Pen-test finding
+description: A confirmed weakness found in a pen-test round, one issue per finding.
+labels: ["prd:pen-test"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        One finding per issue, found on the pen-test deployment and never on production. Add exactly one `severity:*` label, judged against the remediation targets under **Findings workflow** in `docs/product-requirements-document/pen-testing.md`; triage confirms or changes it the same working day. How a finding is triaged, waived and verified is in `docs/pen-test/README.md`. Put no credential, token or real personal data in this issue: the fixtures are synthetic, so quote them.
+  - type: input
+    id: scope-issue
+    attributes:
+      label: Scope issue
+      description: The scope issue this was found under, by number and ID.
+      placeholder: "#123 (A5)"
+    validations:
+      required: true
+  - type: input
+    id: hypothesis
+    attributes:
+      label: H entry
+      description: The opening-register entry in pen-testing.md this confirms, or "None" if the register did not anticipate it.
+      placeholder: H1
+    validations:
+      required: true
+  - type: textarea
+    id: rule-broken
+    attributes:
+      label: Rule broken
+      description: The section of wizzaroo.md and the ADR whose rule this breaks, linked.
+      placeholder: |
+        Section 8 of wizzaroo.md: Teachers and the Admin use two-factor authentication or a passkey.
+        ADR 0036: …
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps against the pen-test deployment, as a named fixture identity, with each request and its body.
+      placeholder: |
+        1. Sign in as …
+        2. `POST /api/…` with …
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed
+      description: What happened, with the status and the relevant part of each response.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected
+      description: What should have happened under the rule above.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who can do this, to whose data, and which Families, Schools or Year Groups it crosses.
+    validations:
+      required: true
+  - type: textarea
+    id: catching-test
+    attributes:
+      label: Test that would have caught it
+      description: The probe test in the gated run, by file and name, that pins this today and becomes its regression test with the fix.
+      placeholder: "`src/integration.test.ts`: `today_…` beside the `it.fails` for the property that should hold"
+    validations:
+      required: true

@@ -1,0 +1,8 @@
+{
+  "id": "maths.ratio-and-scale",
+  "name": "Ratio, proportion and scale",
+  "subject": "maths",
+  "yearGroup": 6,
+  "strand": "ratio-and-proportion",
+  "prerequisites": ["maths.times-tables-to-12"]
+}

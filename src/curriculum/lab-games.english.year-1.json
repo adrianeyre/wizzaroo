@@ -1,0 +1,384 @@
+{
+  "subject": "english",
+  "yearGroup": 1,
+  "games": [
+    {
+      "id": "apostrophe-swap-shop",
+      "title": "Apostrophe Swap Shop",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Reading contractions",
+      "strand": "vocabulary-grammar-and-punctuation",
+      "statutoryRequirement": "Pupils should be taught to read words with contractions [for example, I'm, I'll, we'll], and understand that the apostrophe represents the omitted letter(s)",
+      "instruction": "Read the word, then tap the right answer.",
+      "hint": "Not quite. Say the two long words slowly, then try again.",
+      "questions": [
+        {
+          "ask": "In \"I'm\", which letter does the apostrophe replace?",
+          "answer": "a",
+          "distractors": ["i", "m", "e"]
+        },
+        {
+          "ask": "In \"can't\" (cannot), which letters does the apostrophe replace?",
+          "answer": "no",
+          "distractors": ["o", "n", "ot"]
+        },
+        {
+          "ask": "In \"I'll\" (I will), which letters does the apostrophe replace?",
+          "answer": "wi",
+          "distractors": ["w", "l", "il"]
+        },
+        {
+          "ask": "In \"don't\" (do not), which letter does the apostrophe replace?",
+          "answer": "o",
+          "distractors": ["n", "d", "t"]
+        },
+        {
+          "ask": "In \"it's\" (it is), which letter does the apostrophe replace?",
+          "answer": "i",
+          "distractors": ["s", "t", "e"]
+        },
+        {
+          "ask": "In \"you're\" (you are), which letter does the apostrophe replace?",
+          "answer": "a",
+          "distractors": ["r", "e", "u"]
+        },
+        {
+          "ask": "In \"we've\" (we have), which letters does the apostrophe replace?",
+          "answer": "ha",
+          "distractors": ["h", "e", "av"]
+        },
+        {
+          "ask": "In \"didn't\" (did not), which letter does the apostrophe replace?",
+          "answer": "o",
+          "distractors": ["n", "d", "t"]
+        },
+        {
+          "ask": "What does \"isn't\" mean?",
+          "answer": "is not",
+          "distractors": ["is it", "it is", "is no"]
+        },
+        {
+          "ask": "What does \"they're\" mean?",
+          "answer": "they are",
+          "distractors": ["there are", "they were", "their"]
+        }
+      ]
+    },
+    {
+      "id": "weekday-word-wizard",
+      "title": "Weekday Word Wizard",
+      "station": "compare",
+      "prop": "sun",
+      "skillName": "Spelling the days of the week and tricky words",
+      "strand": "spelling",
+      "statutoryRequirement": "Pupils should be taught to spell: words containing each of the 40+ phonemes already taught; common exception words; the days of the week",
+      "instruction": "Read it, then tap the right spelling.",
+      "hint": "Not quite. Picture the word written down, then try again.",
+      "questions": [
+        {
+          "ask": "Which is the right spelling of the day after Tuesday?",
+          "answer": "Wednesday",
+          "distractors": ["Wensday", "Wednsday", "Wedensday"]
+        },
+        {
+          "ask": "Which is the right spelling of the day after Wednesday?",
+          "answer": "Thursday",
+          "distractors": ["Thirsday", "Thursdy", "Thrusday"]
+        },
+        {
+          "ask": "Which is the right spelling of the day after Friday?",
+          "answer": "Saturday",
+          "distractors": ["Saterday", "Satuday", "Sattuday"]
+        },
+        {
+          "ask": "Which is the right spelling of the day before Saturday?",
+          "answer": "Friday",
+          "distractors": ["Fryday", "Frieday", "Fridy"]
+        },
+        {
+          "ask": "Which is the right spelling of the first day of the school week?",
+          "answer": "Monday",
+          "distractors": ["Munday", "Mondy", "Monnday"]
+        },
+        {
+          "ask": "Pick the right spelling: 'I ___ hello to my friend.'",
+          "answer": "said",
+          "distractors": ["sed", "sayd", "sedd"]
+        },
+        {
+          "ask": "Pick the right spelling: 'Can I have a cup ___ tea?'",
+          "answer": "of",
+          "distractors": ["ov", "off", "uv"]
+        },
+        {
+          "ask": "Pick the right spelling: 'Mum ___ it is time for bed.'",
+          "answer": "says",
+          "distractors": ["sez", "sayz", "seys"]
+        },
+        {
+          "ask": "Pick the right spelling: 'This is ___ coat.'",
+          "answer": "my",
+          "distractors": ["mi", "mie", "migh"]
+        },
+        {
+          "ask": "Pick the right spelling: 'What ___ you want to play?'",
+          "answer": "do",
+          "distractors": ["doo", "du", "dew"]
+        }
+      ]
+    },
+    {
+      "id": "spelling-rule-rover",
+      "title": "Spelling Rule Rover",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Using simple spelling rules",
+      "strand": "spelling",
+      "statutoryRequirement": "Pupils should be taught to apply simple spelling rules and guidance, as listed in English Appendix 1",
+      "instruction": "Read the clue, then tap the right spelling.",
+      "hint": "Not quite. Think about the spelling rule for that sound, then try again.",
+      "questions": [
+        {
+          "ask": "English words hardly ever end in v. Pick the right spelling: 'I ___ a pet.'",
+          "answer": "have",
+          "distractors": ["hav", "haf", "havv"]
+        },
+        {
+          "ask": "Pick the right spelling: you wear one on your hand.",
+          "answer": "glove",
+          "distractors": ["gluv", "glov", "gloov"]
+        },
+        {
+          "ask": "Pick the right spelling: a big grey animal with a trunk.",
+          "answer": "elephant",
+          "distractors": ["elefant", "elephent", "eliphant"]
+        },
+        {
+          "ask": "Pick the right spelling: a question word about a place, '___ is my bag?'",
+          "answer": "Where",
+          "distractors": ["Wair", "Whare", "Were"]
+        },
+        {
+          "ask": "Pick the right spelling: a question word, '___ is your name?'",
+          "answer": "What",
+          "distractors": ["Wot", "Wat", "Whot"]
+        },
+        {
+          "ask": "Before e, i or y, the /k/ sound is spelt k. Pick: you fly it on a windy day.",
+          "answer": "kite",
+          "distractors": ["cite", "kyte", "ckite"]
+        },
+        {
+          "ask": "Pick the right spelling: you open a lock with it.",
+          "answer": "key",
+          "distractors": ["cey", "kee", "ckey"]
+        },
+        {
+          "ask": "Pick the right spelling: feeling glad and smiley.",
+          "answer": "happy",
+          "distractors": ["happee", "hapy", "happey"]
+        },
+        {
+          "ask": "How many syllables are in the word 'pocket'?",
+          "answer": "2",
+          "distractors": ["1", "3", "4"]
+        },
+        {
+          "ask": "Which word has three syllables?",
+          "answer": "animal",
+          "distractors": ["rabbit", "dog", "carpet"]
+        }
+      ]
+    },
+    {
+      "id": "capital-space-patrol",
+      "title": "Capital Space Patrol",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Capital letters and spaces between words",
+      "strand": "vocabulary-grammar-and-punctuation",
+      "statutoryRequirement": "Pupils should be taught to develop their understanding of the concepts set out in English Appendix 2 by: leaving spaces between words; beginning to punctuate sentences using a capital letter and a full stop, question mark or exclamation mark",
+      "instruction": "Read them all, then tap the right one.",
+      "hint": "Not quite. Check the first letter and the gaps between words, then try again.",
+      "questions": [
+        {
+          "ask": "Which sentence is written correctly?",
+          "answer": "The cat sat.",
+          "distractors": ["the cat sat.", "Thecat sat.", "The catsat."]
+        },
+        {
+          "ask": "Which sentence has the spaces in the right places?",
+          "answer": "I like jam.",
+          "distractors": ["Ilike jam.", "I likejam.", "I lik ejam."]
+        },
+        {
+          "ask": "Which sentence starts in the right way?",
+          "answer": "We went home.",
+          "distractors": ["we went home.", "wE went home.", "we Went home."]
+        },
+        {
+          "ask": "Pick the sentence that is written correctly.",
+          "answer": "My dog is big.",
+          "distractors": ["my dog is big.", "My dogis big.", "Mydog is big."]
+        },
+        {
+          "ask": "Which sentence has a capital letter and spaces?",
+          "answer": "Sam can run.",
+          "distractors": ["sam can run.", "Sam canrun.", "Samcan run."]
+        },
+        {
+          "ask": "Which question is written correctly?",
+          "answer": "Can you hop?",
+          "distractors": ["can you hop?", "Canyou hop?", "Can youhop?"]
+        },
+        {
+          "ask": "Find the sentence with no mistakes.",
+          "answer": "The sun is hot.",
+          "distractors": ["the sun is hot.", "The sunis hot.", "The sun ishot."]
+        },
+        {
+          "ask": "Which word should start with a capital letter? 'the bus is red.'",
+          "answer": "the",
+          "distractors": ["bus", "is", "red"]
+        },
+        {
+          "ask": "Which word needs a capital letter? 'it is a big ship.'",
+          "answer": "it",
+          "distractors": ["big", "ship", "a"]
+        },
+        {
+          "ask": "How should 'Thefox ran.' be written?",
+          "answer": "The fox ran.",
+          "distractors": ["Th efox ran.", "Thefo xran.", "the fox ran."]
+        }
+      ]
+    },
+    {
+      "id": "fairy-tale-forest",
+      "title": "Fairy Tale Forest",
+      "station": "compare",
+      "prop": "tree",
+      "skillName": "Fairy stories and traditional tales",
+      "strand": "reading-comprehension",
+      "statutoryRequirement": "Pupils should be taught to develop pleasure in reading, motivation to read, vocabulary and understanding by: becoming very familiar with key stories, fairy stories and traditional tales, retelling them and considering their particular characteristics; recognising and joining in with predictable phrases; discussing word meanings, linking new meanings to those already known",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Think back to the story, then try again.",
+      "questions": [
+        {
+          "ask": "Many fairy tales begin with which words?",
+          "answer": "Once upon a time",
+          "distractors": ["The end", "In the end", "Yesterday"]
+        },
+        {
+          "ask": "Fairy tales often end: 'They all lived happily ever ___.'",
+          "answer": "after",
+          "distractors": ["more", "again", "before"]
+        },
+        {
+          "ask": "'Who's been eating my porridge?' Which story is this from?",
+          "answer": "Goldilocks",
+          "distractors": ["Cinderella", "Rapunzel", "Snow White"]
+        },
+        {
+          "ask": "'I'll huff and I'll puff and I'll blow your house down!' Who says this?",
+          "answer": "The big bad wolf",
+          "distractors": ["The first pig", "The troll", "The giant"]
+        },
+        {
+          "ask": "'Run, run, as fast as you can!' Which character says this?",
+          "answer": "Gingerbread Man",
+          "distractors": ["Little Red Hen", "Jack", "Goldilocks"]
+        },
+        {
+          "ask": "'Fee-fi-fo-fum!' Which character says this?",
+          "answer": "The giant",
+          "distractors": ["The wolf", "Jack", "The troll"]
+        },
+        {
+          "ask": "Who lives under the bridge in 'The Three Billy Goats Gruff'?",
+          "answer": "A troll",
+          "distractors": ["A giant", "A wolf", "A bear"]
+        },
+        {
+          "ask": "In a fairy tale, a 'cottage' is a ___.",
+          "answer": "small house",
+          "distractors": ["big castle", "forest", "shop"]
+        },
+        {
+          "ask": "A 'wicked' witch in a fairy tale is ___.",
+          "answer": "very bad",
+          "distractors": ["very kind", "very small", "very tired"]
+        },
+        {
+          "ask": "In 'Jack and the Beanstalk', what does Jack swap his cow for?",
+          "answer": "magic beans",
+          "distractors": ["a golden egg", "some gold", "a harp"]
+        }
+      ]
+    },
+    {
+      "id": "silly-word-spotter",
+      "title": "Silly Word Spotter",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Checking that writing makes sense",
+      "strand": "writing-composition",
+      "statutoryRequirement": "Pupils should be taught to write sentences by: re-reading what they have written to check that it makes sense",
+      "instruction": "Read the sentence, then tap the word that does not make sense.",
+      "hint": "Not quite. Read the sentence aloud and listen for the odd word, then try again.",
+      "questions": [
+        {
+          "ask": "Which word doesn't make sense? 'I ate my socks for lunch.'",
+          "answer": "socks",
+          "distractors": ["ate", "my", "lunch"]
+        },
+        {
+          "ask": "Which word doesn't make sense? 'The cat drank milk from a fork.'",
+          "answer": "fork",
+          "distractors": ["cat", "drank", "milk"]
+        },
+        {
+          "ask": "Which word doesn't make sense? 'I put on my hat to keep my feet warm.'",
+          "answer": "feet",
+          "distractors": ["keep", "put", "warm"]
+        },
+        {
+          "ask": "Which word doesn't make sense? 'We went to the park in the jumped.'",
+          "answer": "jumped",
+          "distractors": ["went", "park", "We"]
+        },
+        {
+          "ask": "Which word doesn't make sense? 'I brush my teeth with a spoon.'",
+          "answer": "spoon",
+          "distractors": ["brush", "teeth", "my"]
+        },
+        {
+          "ask": "Which word doesn't make sense? 'The bird sat in its nest and sang a cake.'",
+          "answer": "cake",
+          "distractors": ["bird", "nest", "sat"]
+        },
+        {
+          "ask": "Which word doesn't make sense? 'Snow is hot and white.'",
+          "answer": "hot",
+          "distractors": ["Snow", "white", "and"]
+        },
+        {
+          "ask": "Which word doesn't make sense? 'I drink milk out of a shoe.'",
+          "answer": "shoe",
+          "distractors": ["drink", "milk", "out"]
+        },
+        {
+          "ask": "Which word doesn't make sense? 'Fish swim in the sand.'",
+          "answer": "sand",
+          "distractors": ["Fish", "swim", "the"]
+        },
+        {
+          "ask": "Which word doesn't make sense? 'I can see with my ears.'",
+          "answer": "ears",
+          "distractors": ["can", "I", "my"]
+        }
+      ]
+    }
+  ]
+}

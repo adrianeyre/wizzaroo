@@ -1,0 +1,544 @@
+{
+  "subject": "art",
+  "yearGroup": 4,
+  "games": [
+    {
+      "id": "art-review-revisit",
+      "title": "Review and Revisit",
+      "station": "compare",
+      "prop": "leaf",
+      "skillName": "Reviewing work in a sketchbook",
+      "strand": "sketchbooks",
+      "statutoryRequirement": "Pupils should be taught to create sketch books to record their observations and use them to review and revisit ideas",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about how a sketchbook helps you improve.",
+      "questions": [
+        {
+          "ask": "Looking back at work to see what went well is called?",
+          "answer": "Evaluating",
+          "distractors": ["Erasing", "Tracing", "Glazing"]
+        },
+        {
+          "ask": "Which is the most helpful question when reviewing a sketch?",
+          "answer": "What can I improve?",
+          "distractors": [
+            "Is it the biggest?",
+            "Was it quick?",
+            "Who has more pages?"
+          ]
+        },
+        {
+          "ask": "Trying the same idea in different materials is called?",
+          "answer": "Experimenting",
+          "distractors": ["Copying", "Glazing", "Framing"]
+        },
+        {
+          "ask": "Adding notes to explain your work is called?",
+          "answer": "Annotating",
+          "distractors": ["Printing", "Blending", "Weaving"]
+        },
+        {
+          "ask": "Why is it useful to date your sketchbook pages?",
+          "answer": "To see progress",
+          "distractors": ["To fill space", "To look neat", "To hide work"]
+        },
+        {
+          "ask": "A page of collected pictures and colours for a project is a?",
+          "answer": "Mood board",
+          "distractors": ["Viewfinder", "Palette", "Kiln"]
+        },
+        {
+          "ask": "Going back to an old sketch can help you...?",
+          "answer": "Develop an idea",
+          "distractors": ["Lose the idea", "Copy a friend", "Waste paper"]
+        },
+        {
+          "ask": "What should you do with a sketch that went wrong?",
+          "answer": "Keep and learn",
+          "distractors": ["Rip it out", "Scribble on it", "Hide the book"]
+        }
+      ]
+    },
+    {
+      "id": "art-sketch-plan",
+      "title": "Sketch to Final Piece",
+      "station": "sequence",
+      "prop": "seedling",
+      "skillName": "Planning a piece of art",
+      "strand": "sketchbooks",
+      "statutoryRequirement": "Pupils should be taught to create sketch books to record their observations and use them to review and revisit ideas",
+      "instruction": "Read the steps, then tap what comes next.",
+      "hint": "Not quite. Think about the order an artist works in.",
+      "questions": [
+        {
+          "ask": "Collect ideas, then...?",
+          "answer": "Make quick sketches",
+          "distractors": ["Frame the final", "Evaluate it", "Varnish it"]
+        },
+        {
+          "ask": "Make quick sketches, then...?",
+          "answer": "Test materials",
+          "distractors": ["Collect ideas", "Frame the final", "Throw them away"]
+        },
+        {
+          "ask": "Test materials, then...?",
+          "answer": "Make the final piece",
+          "distractors": ["Collect ideas", "Evaluate it", "Buy a frame"]
+        },
+        {
+          "ask": "Make the final piece, then...?",
+          "answer": "Evaluate it",
+          "distractors": ["Collect ideas", "Test materials", "Start sketching"]
+        },
+        {
+          "ask": "Choose a view with a viewfinder, then...?",
+          "answer": "Sketch what you see",
+          "distractors": ["Frame it", "Glaze it", "Fire it"]
+        },
+        {
+          "ask": "Draw a light outline, then...?",
+          "answer": "Add tone and detail",
+          "distractors": ["Rub it all out", "Fire it", "Start again"]
+        },
+        {
+          "ask": "Painting a landscape: sketch it, mix the colours, then...?",
+          "answer": "Paint the sky first",
+          "distractors": ["Add tiny details", "Sign your name", "Frame it"]
+        },
+        {
+          "ask": "Evaluate your work, then...?",
+          "answer": "Plan improvements",
+          "distractors": ["Hide it", "Rip it up", "Forget it"]
+        }
+      ]
+    },
+    {
+      "id": "art-tints-tones",
+      "title": "Tints and Tones",
+      "station": "compare",
+      "prop": "water-drop",
+      "skillName": "Tints, shades and tones of colour",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about whether white, black or grey was added.",
+      "questions": [
+        {
+          "ask": "A colour mixed with white is called a...?",
+          "answer": "Tint",
+          "distractors": ["Shade", "Tone", "Hue"]
+        },
+        {
+          "ask": "A colour mixed with black is called a...?",
+          "answer": "Shade",
+          "distractors": ["Tint", "Tone", "Hue"]
+        },
+        {
+          "ask": "A colour mixed with grey is called a...?",
+          "answer": "Tone",
+          "distractors": ["Tint", "Shade", "Primary"]
+        },
+        {
+          "ask": "Which of these is a tint of red?",
+          "answer": "Pink",
+          "distractors": ["Maroon", "Orange", "Purple"]
+        },
+        {
+          "ask": "Which pair are complementary colours?",
+          "answer": "Red and green",
+          "distractors": [
+            "Red and orange",
+            "Blue and green",
+            "Yellow and orange"
+          ]
+        },
+        {
+          "ask": "Mixing two complementary colours makes...?",
+          "answer": "Brown or grey",
+          "distractors": ["Bright white", "A primary", "Pure red"]
+        },
+        {
+          "ask": "A painting using tints and shades of just one colour is...?",
+          "answer": "Monochrome",
+          "distractors": ["Rainbow", "Complementary", "Tertiary"]
+        },
+        {
+          "ask": "In a landscape, cool blues seem to...?",
+          "answer": "Move back",
+          "distractors": ["Jump forward", "Turn warm", "Disappear"]
+        }
+      ]
+    },
+    {
+      "id": "art-print-studio",
+      "title": "Print Studio",
+      "station": "true-false",
+      "prop": "leaf",
+      "skillName": "Printmaking techniques",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the sentence, then tap True or False.",
+      "hint": "Not quite. Think about where the ink goes on the block.",
+      "questions": [
+        {
+          "ask": "In relief printing, ink sits on the raised parts of the block.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A print comes out as a mirror image of the block.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Lines pressed into a polystyrene tile print in ink.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A monoprint makes lots of identical copies.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A brayer is a roller used to spread ink.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Hokusai's 'The Great Wave' is a woodblock print.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "In stencil printing, paint goes through cut-out holes.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Printing ink should be spread thick and lumpy.",
+          "answer": "False",
+          "distractors": ["True"]
+        }
+      ]
+    },
+    {
+      "id": "art-face-proportions",
+      "title": "Face Proportions",
+      "station": "compare",
+      "prop": "egg",
+      "skillName": "Drawing faces in proportion",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Picture a real face and where each part sits.",
+      "questions": [
+        {
+          "ask": "Where are the eyes on a head?",
+          "answer": "Halfway down",
+          "distractors": ["Near the top", "Near the chin", "A quarter down"]
+        },
+        {
+          "ask": "How big is the gap between the eyes?",
+          "answer": "About one eye",
+          "distractors": ["About two eyes", "Half an eye", "Three eyes"]
+        },
+        {
+          "ask": "The bottom of the nose is halfway between the eyes and the...?",
+          "answer": "Chin",
+          "distractors": ["Hair", "Ears", "Forehead"]
+        },
+        {
+          "ask": "The tops of the ears line up with the...?",
+          "answer": "Eyebrows",
+          "distractors": ["Chin", "Mouth", "Top of the head"]
+        },
+        {
+          "ask": "The bottoms of the ears line up with the...?",
+          "answer": "Bottom of the nose",
+          "distractors": ["Eyebrows", "Chin", "Top of the head"]
+        },
+        {
+          "ask": "The corners of the mouth line up below the...?",
+          "answer": "Centre of the eyes",
+          "distractors": ["Ears", "Nostrils", "Eyebrow ends"]
+        },
+        {
+          "ask": "About how many eyes wide is a face from the front?",
+          "answer": "Five",
+          "distractors": ["Two", "Ten", "One"]
+        },
+        {
+          "ask": "Drawing parts at the right size compared to each other is?",
+          "answer": "Proportion",
+          "distractors": ["Texture", "Pattern", "Colour"]
+        }
+      ]
+    },
+    {
+      "id": "art-mosaic-makers",
+      "title": "Mosaic Makers",
+      "station": "compare",
+      "prop": "rock",
+      "skillName": "Mosaic and collage",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about how the pieces are cut and stuck.",
+      "questions": [
+        {
+          "ask": "What fills the gaps between mosaic tiles?",
+          "answer": "Grout",
+          "distractors": ["Slip", "Glaze", "Paint"]
+        },
+        {
+          "ask": "'Collage' comes from a French word meaning...?",
+          "answer": "To glue",
+          "distractors": ["To cut", "To paint", "To fold"]
+        },
+        {
+          "ask": "Matisse said he was drawing with...?",
+          "answer": "Scissors",
+          "distractors": ["Charcoal", "Clay", "Chalk"]
+        },
+        {
+          "ask": "Roman mosaics were often used to decorate...?",
+          "answer": "Floors",
+          "distractors": ["Clothes", "Books", "Food"]
+        },
+        {
+          "ask": "Picasso and Braque made early collages with...?",
+          "answer": "Newspaper",
+          "distractors": ["Clay", "Wax", "Ice"]
+        },
+        {
+          "ask": "Which material is best for a long-lasting mosaic?",
+          "answer": "Glazed tiles",
+          "distractors": ["Tissue paper", "Cotton wool", "Wet sand"]
+        },
+        {
+          "ask": "A collage made from cut-up photographs is a...?",
+          "answer": "Photomontage",
+          "distractors": ["Mosaic", "Weaving", "Etching"]
+        },
+        {
+          "ask": "Torn paper in a collage gives edges that are...?",
+          "answer": "Soft and rough",
+          "distractors": ["Perfectly straight", "Sharp and neat", "Shiny"]
+        }
+      ]
+    },
+    {
+      "id": "art-genre-gallery",
+      "title": "Genre Gallery",
+      "station": "sort",
+      "prop": "magnifier",
+      "skillName": "Types of painting",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read it, then tap the group it belongs in.",
+      "hint": "Not quite. Think about the main subject of the painting.",
+      "questions": [
+        {
+          "ask": "A bowl of fruit and a jug on a table: which group?",
+          "answer": "Still life",
+          "distractors": ["Portrait", "Landscape", "Seascape"]
+        },
+        {
+          "ask": "A painting of a person's face: which group?",
+          "answer": "Portrait",
+          "distractors": ["Still life", "Landscape", "Cityscape"]
+        },
+        {
+          "ask": "Waves crashing on a beach: which group?",
+          "answer": "Seascape",
+          "distractors": ["Landscape", "Portrait", "Still life"]
+        },
+        {
+          "ask": "Hills, fields and trees: which group?",
+          "answer": "Landscape",
+          "distractors": ["Seascape", "Portrait", "Still life"]
+        },
+        {
+          "ask": "Busy streets and tall buildings: which group?",
+          "answer": "Cityscape",
+          "distractors": ["Seascape", "Still life", "Portrait"]
+        },
+        {
+          "ask": "An artist painting their own face: which group?",
+          "answer": "Self-portrait",
+          "distractors": ["Landscape", "Still life", "Cityscape"]
+        },
+        {
+          "ask": "Flowers in a vase: which group?",
+          "answer": "Still life",
+          "distractors": ["Seascape", "Self-portrait", "Cityscape"]
+        },
+        {
+          "ask": "A ship on a stormy ocean: which group?",
+          "answer": "Seascape",
+          "distractors": ["Still life", "Cityscape", "Portrait"]
+        }
+      ]
+    },
+    {
+      "id": "art-impressionist-mystery",
+      "title": "Impressionist Mystery",
+      "station": "mystery",
+      "prop": "flower",
+      "skillName": "Impressionist painters",
+      "strand": "great-artists",
+      "statutoryRequirement": "Pupils should be taught about great artists, architects and designers in history",
+      "instruction": "Read the clues, then tap who or what it is.",
+      "hint": "Not quite. Look for the subject each artist loved to paint.",
+      "questions": [
+        {
+          "ask": "I painted ballet dancers again and again. Who am I?",
+          "answer": "Edgar Degas",
+          "distractors": ["Claude Monet", "Georges Seurat", "Paul Cézanne"]
+        },
+        {
+          "ask": "I painted with thousands of tiny dots of colour. Who am I?",
+          "answer": "Georges Seurat",
+          "distractors": ["Edgar Degas", "Mary Cassatt", "Claude Monet"]
+        },
+        {
+          "ask": "I painted my water-lily pond at Giverny many times. Who am I?",
+          "answer": "Claude Monet",
+          "distractors": ["Paul Cézanne", "Edgar Degas", "Auguste Renoir"]
+        },
+        {
+          "ask": "I painted 'Sunflowers' while living in Arles. Who am I?",
+          "answer": "Vincent van Gogh",
+          "distractors": ["Georges Seurat", "Claude Monet", "Mary Cassatt"]
+        },
+        {
+          "ask": "I painted apples and the mountain Mont Sainte-Victoire. Who am I?",
+          "answer": "Paul Cézanne",
+          "distractors": ["Edgar Degas", "Mary Cassatt", "Georges Seurat"]
+        },
+        {
+          "ask": "I am an American painter of mothers and children. Who am I?",
+          "answer": "Mary Cassatt",
+          "distractors": ["Auguste Renoir", "Paul Cézanne", "Edgar Degas"]
+        },
+        {
+          "ask": "I painted happy crowds dancing at the Moulin de la Galette. Who am I?",
+          "answer": "Auguste Renoir",
+          "distractors": ["Mary Cassatt", "Georges Seurat", "Paul Cézanne"]
+        },
+        {
+          "ask": "I am the art movement named after Monet's 'Impression, Sunrise'. What am I?",
+          "answer": "Impressionism",
+          "distractors": ["Cubism", "Pop Art", "Surrealism"]
+        }
+      ]
+    },
+    {
+      "id": "art-sculpture-garden",
+      "title": "Sculpture Garden",
+      "station": "compare",
+      "prop": "rock",
+      "skillName": "Famous sculptors and sculptures",
+      "strand": "great-artists",
+      "statutoryRequirement": "Pupils should be taught about great artists, architects and designers in history",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about the sculptor's most famous work.",
+      "questions": [
+        {
+          "ask": "Who made the 'Angel of the North'?",
+          "answer": "Antony Gormley",
+          "distractors": ["Henry Moore", "Auguste Rodin", "Michelangelo"]
+        },
+        {
+          "ask": "The 'Angel of the North' stands beside which town?",
+          "answer": "Gateshead",
+          "distractors": ["St Ives", "Wakefield", "Bristol"]
+        },
+        {
+          "ask": "What is Michelangelo's 'David' carved from?",
+          "answer": "Marble",
+          "distractors": ["Wood", "Clay", "Steel"]
+        },
+        {
+          "ask": "Who sculpted 'The Thinker'?",
+          "answer": "Auguste Rodin",
+          "distractors": ["Antony Gormley", "Henry Moore", "Barbara Hepworth"]
+        },
+        {
+          "ask": "Barbara Hepworth had her studio in which Cornish town?",
+          "answer": "St Ives",
+          "distractors": ["Gateshead", "Salford", "Bath"]
+        },
+        {
+          "ask": "Henry Moore's famous figures are often...?",
+          "answer": "Lying down",
+          "distractors": ["Running", "Upside down", "Tiny"]
+        },
+        {
+          "ask": "Alberto Giacometti made human figures that are...?",
+          "answer": "Tall and very thin",
+          "distractors": ["Short and round", "Made of ice", "Cut from paper"]
+        },
+        {
+          "ask": "Which metal is often cast to make big outdoor sculptures?",
+          "answer": "Bronze",
+          "distractors": ["Gold", "Tin foil", "Mercury"]
+        }
+      ]
+    },
+    {
+      "id": "art-pattern-designers",
+      "title": "Pattern Designers",
+      "station": "compare",
+      "prop": "leaf",
+      "skillName": "Famous pattern designers",
+      "strand": "great-artists",
+      "statutoryRequirement": "Pupils should be taught about great artists, architects and designers in history",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about the designer's famous style.",
+      "questions": [
+        {
+          "ask": "William Morris is famous for designing...?",
+          "answer": "Wallpaper",
+          "distractors": ["Skyscrapers", "Cars", "Statues"]
+        },
+        {
+          "ask": "Which birds are in Morris's 'Strawberry Thief' pattern?",
+          "answer": "Thrushes",
+          "distractors": ["Eagles", "Penguins", "Parrots"]
+        },
+        {
+          "ask": "William Morris led which design movement?",
+          "answer": "Arts and Crafts",
+          "distractors": ["Pop Art", "Cubism", "Op Art"]
+        },
+        {
+          "ask": "Most of Morris's designs were inspired by...?",
+          "answer": "Plants and birds",
+          "distractors": ["Cars and trains", "Robots", "Comic strips"]
+        },
+        {
+          "ask": "Bridget Riley's black-and-white patterns seem to...?",
+          "answer": "Move or wobble",
+          "distractors": ["Smell nice", "Make sounds", "Glow at night"]
+        },
+        {
+          "ask": "Bridget Riley's style of art is called...?",
+          "answer": "Op Art",
+          "distractors": ["Pop Art", "Arts and Crafts", "Impressionism"]
+        },
+        {
+          "ask": "Yayoi Kusama is famous for covering things in...?",
+          "answer": "Polka dots",
+          "distractors": ["Stripes", "Tartan", "Zigzags"]
+        },
+        {
+          "ask": "Traditional Islamic art often uses...?",
+          "answer": "Geometric patterns",
+          "distractors": ["Comic strips", "Soup cans", "Melting clocks"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "computing.debug-with-variables",
+  "name": "Detecting and correcting errors in programs",
+  "subject": "computing",
+  "yearGroup": 6,
+  "strand": "debugging",
+  "prerequisites": ["computing.debug-loops"]
+}

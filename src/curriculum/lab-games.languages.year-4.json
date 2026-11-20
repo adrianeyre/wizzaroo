@@ -1,0 +1,680 @@
+{
+  "subject": "languages",
+  "yearGroup": 4,
+  "games": [
+    {
+      "id": "french-family-tree",
+      "title": "Family Tree",
+      "station": "compare",
+      "prop": "tree",
+      "skillName": "French family words",
+      "strand": "reading-words-and-phrases",
+      "statutoryRequirement": "Pupils should be taught to read carefully and show understanding of words, phrases and simple writing",
+      "instruction": "Read the French, then tap what it means.",
+      "hint": "Not quite. Look for words you know, such as \"mère\" or \"père\", then try again.",
+      "questions": [
+        {
+          "ask": "What does \"la mère\" mean?",
+          "answer": "mother",
+          "distractors": ["father", "sister", "aunt"]
+        },
+        {
+          "ask": "What does \"le père\" mean?",
+          "answer": "father",
+          "distractors": ["brother", "uncle", "grandfather"]
+        },
+        {
+          "ask": "What does \"le frère\" mean?",
+          "answer": "brother",
+          "distractors": ["sister", "father", "cousin"]
+        },
+        {
+          "ask": "What does \"la sœur\" mean?",
+          "answer": "sister",
+          "distractors": ["brother", "mother", "aunt"]
+        },
+        {
+          "ask": "What does \"la grand-mère\" mean?",
+          "answer": "grandmother",
+          "distractors": ["aunt", "mother", "sister"]
+        },
+        {
+          "ask": "What does \"le grand-père\" mean?",
+          "answer": "grandfather",
+          "distractors": ["uncle", "father", "brother"]
+        },
+        {
+          "ask": "What does \"l'oncle\" mean?",
+          "answer": "uncle",
+          "distractors": ["aunt", "cousin", "grandfather"]
+        },
+        {
+          "ask": "What does \"la tante\" mean?",
+          "answer": "aunt",
+          "distractors": ["uncle", "mother", "grandmother"]
+        },
+        {
+          "ask": "Read: \"Voici ma mère et mon père.\" Who is it about?",
+          "answer": "Mum and Dad",
+          "distractors": [
+            "Brother and sister",
+            "Aunt and uncle",
+            "Grandparents"
+          ]
+        },
+        {
+          "ask": "Read: \"Mon frère s'appelle Max.\" Who is Max?",
+          "answer": "My brother",
+          "distractors": ["My father", "My sister", "My uncle"]
+        }
+      ]
+    },
+    {
+      "id": "french-number-ladder",
+      "title": "Number Ladder",
+      "station": "sequence",
+      "prop": "bulb",
+      "skillName": "French numbers to 20",
+      "strand": "vocabulary-and-dictionary",
+      "statutoryRequirement": "Pupils should be taught to broaden their vocabulary and develop their ability to understand new words that are introduced into familiar written material, including through using a dictionary",
+      "instruction": "Read the French numbers, then tap the one that comes next.",
+      "hint": "Not quite. Work out the pattern in English first, then try again.",
+      "questions": [
+        {
+          "ask": "dix, onze, douze … what comes next?",
+          "answer": "treize",
+          "distractors": ["quatorze", "seize", "trois"]
+        },
+        {
+          "ask": "treize, quatorze, quinze … what comes next?",
+          "answer": "seize",
+          "distractors": ["dix-sept", "six", "treize"]
+        },
+        {
+          "ask": "seize, dix-sept, dix-huit … what comes next?",
+          "answer": "dix-neuf",
+          "distractors": ["vingt", "dix-sept", "neuf"]
+        },
+        {
+          "ask": "dix-sept, dix-huit, dix-neuf … what comes next?",
+          "answer": "vingt",
+          "distractors": ["dix", "seize", "douze"]
+        },
+        {
+          "ask": "deux, quatre, six, huit … what comes next?",
+          "answer": "dix",
+          "distractors": ["neuf", "douze", "onze"]
+        },
+        {
+          "ask": "dix, douze, quatorze … what comes next?",
+          "answer": "seize",
+          "distractors": ["quinze", "treize", "dix-huit"]
+        },
+        {
+          "ask": "cinq, dix, quinze … what comes next?",
+          "answer": "vingt",
+          "distractors": ["seize", "onze", "douze"]
+        },
+        {
+          "ask": "Going backwards: vingt, dix-neuf, dix-huit … what comes next?",
+          "answer": "dix-sept",
+          "distractors": ["seize", "dix-neuf", "vingt"]
+        },
+        {
+          "ask": "onze, treize, quinze … what comes next?",
+          "answer": "dix-sept",
+          "distractors": ["seize", "quatorze", "dix-huit"]
+        }
+      ]
+    },
+    {
+      "id": "french-months-parade",
+      "title": "Months Parade",
+      "station": "sequence",
+      "prop": "snowflake",
+      "skillName": "French months of the year",
+      "strand": "vocabulary-and-dictionary",
+      "statutoryRequirement": "Pupils should be taught to broaden their vocabulary and develop their ability to understand new words that are introduced into familiar written material, including through using a dictionary",
+      "instruction": "Read the months, then tap the one that comes next.",
+      "hint": "Not quite. Say the months in order in English first, then try again.",
+      "questions": [
+        {
+          "ask": "janvier, février, mars … what comes next?",
+          "answer": "avril",
+          "distractors": ["mai", "juin", "mardi"]
+        },
+        {
+          "ask": "mai, juin, juillet … what comes next?",
+          "answer": "août",
+          "distractors": ["avril", "septembre", "mars"]
+        },
+        {
+          "ask": "août, septembre, octobre … what comes next?",
+          "answer": "novembre",
+          "distractors": ["décembre", "juillet", "mars"]
+        },
+        {
+          "ask": "octobre, novembre … what comes next?",
+          "answer": "décembre",
+          "distractors": ["janvier", "septembre", "mai"]
+        },
+        {
+          "ask": "décembre … which month comes next?",
+          "answer": "janvier",
+          "distractors": ["novembre", "février", "juin"]
+        },
+        {
+          "ask": "mars, avril … what comes next?",
+          "answer": "mai",
+          "distractors": ["juin", "mars", "mardi"]
+        },
+        {
+          "ask": "juillet, août … what comes next?",
+          "answer": "septembre",
+          "distractors": ["octobre", "juin", "novembre"]
+        },
+        {
+          "ask": "février, mars … what comes next?",
+          "answer": "avril",
+          "distractors": ["mai", "janvier", "août"]
+        },
+        {
+          "ask": "Which month comes first in the year?",
+          "answer": "janvier",
+          "distractors": ["décembre", "juin", "février"]
+        }
+      ]
+    },
+    {
+      "id": "french-face-painter",
+      "title": "Face Painter",
+      "station": "compare",
+      "prop": "tooth",
+      "skillName": "Describing people",
+      "strand": "describing",
+      "statutoryRequirement": "Pupils should be taught to describe people, places, things and actions orally and in writing",
+      "instruction": "Read the description, then tap what it means.",
+      "hint": "Not quite. Look at the words for hair, eyes and size, then try again.",
+      "questions": [
+        {
+          "ask": "What does \"Il a les yeux bleus.\" mean?",
+          "answer": "He has blue eyes.",
+          "distractors": [
+            "She has blue eyes.",
+            "He has blue hair.",
+            "He is blue."
+          ]
+        },
+        {
+          "ask": "What does \"Elle a les cheveux longs.\" mean?",
+          "answer": "She has long hair.",
+          "distractors": [
+            "He has long hair.",
+            "She has short hair.",
+            "She is tall."
+          ]
+        },
+        {
+          "ask": "What does \"Il est grand.\" mean?",
+          "answer": "He is tall.",
+          "distractors": ["He is small.", "She is tall.", "He is old."]
+        },
+        {
+          "ask": "What does \"Elle est petite.\" mean?",
+          "answer": "She is small.",
+          "distractors": ["She is tall.", "He is small.", "She is pretty."]
+        },
+        {
+          "ask": "What does \"Il a les cheveux courts.\" mean?",
+          "answer": "He has short hair.",
+          "distractors": [
+            "He has long hair.",
+            "He has curly hair.",
+            "She has short hair."
+          ]
+        },
+        {
+          "ask": "What does \"J'ai les yeux marron.\" mean?",
+          "answer": "I have brown eyes.",
+          "distractors": [
+            "I have green eyes.",
+            "You have brown eyes",
+            "I have brown hair."
+          ]
+        },
+        {
+          "ask": "What is \"le nez\"?",
+          "answer": "the nose",
+          "distractors": ["the ear", "the mouth", "the neck"]
+        },
+        {
+          "ask": "What is \"la bouche\"?",
+          "answer": "the mouth",
+          "distractors": ["the nose", "the eye", "the cheek"]
+        },
+        {
+          "ask": "What are \"les oreilles\"?",
+          "answer": "the ears",
+          "distractors": ["the eyes", "the arms", "the legs"]
+        },
+        {
+          "ask": "What is \"la tête\"?",
+          "answer": "the head",
+          "distractors": ["the hand", "the tail", "the face"]
+        }
+      ]
+    },
+    {
+      "id": "french-sound-detective",
+      "title": "Sound Detective",
+      "station": "odd-one-out",
+      "prop": "tuning-fork",
+      "skillName": "Matching French sounds and spellings",
+      "strand": "sounds-and-spelling",
+      "statutoryRequirement": "Pupils should be taught to explore the patterns and sounds of language through songs and rhymes and link the spelling, sound and meaning of words",
+      "instruction": "Find the word that does not share the sound.",
+      "hint": "Not quite. Say each word quietly and listen for the sound, then try again.",
+      "questions": [
+        {
+          "ask": "Which word does NOT have the \"ou\" sound?",
+          "answer": "chat",
+          "distractors": ["rouge", "poule", "jour"]
+        },
+        {
+          "ask": "Which word does NOT have the \"oi\" sound?",
+          "answer": "lune",
+          "distractors": ["trois", "noir", "poisson"]
+        },
+        {
+          "ask": "Which word does NOT have the \"eau\" sound?",
+          "answer": "bleu",
+          "distractors": ["gâteau", "château", "bateau"]
+        },
+        {
+          "ask": "Which word does NOT have the \"on\" sound?",
+          "answer": "lapin",
+          "distractors": ["maison", "bonjour", "poisson"]
+        },
+        {
+          "ask": "Which word does NOT have the \"an\" sound (spelt an or en)?",
+          "answer": "rouge",
+          "distractors": ["enfant", "grand", "dimanche"]
+        },
+        {
+          "ask": "Which word does NOT have the \"ch\" sound, like \"sh\" in \"shop\"?",
+          "answer": "garçon",
+          "distractors": ["chat", "chien", "dimanche"]
+        },
+        {
+          "ask": "Which word does NOT rhyme with \"chat\"?",
+          "answer": "chien",
+          "distractors": ["rat", "plat", "chocolat"]
+        },
+        {
+          "ask": "Which word does NOT rhyme with \"deux\"?",
+          "answer": "dix",
+          "distractors": ["bleu", "feu", "jeu"]
+        },
+        {
+          "ask": "Which word does NOT have the \"-tion\" sound?",
+          "answer": "maison",
+          "distractors": ["natation", "addition", "attention"]
+        }
+      ]
+    },
+    {
+      "id": "french-into-the-woods",
+      "title": "Into the Woods",
+      "station": "compare",
+      "prop": "leaf",
+      "skillName": "The rhyme Un, deux, trois, nous irons au bois",
+      "strand": "stories-songs-and-rhymes",
+      "statutoryRequirement": "Pupils should be taught to appreciate stories, songs, poems and rhymes in the language",
+      "instruction": "Read about the rhyme, then tap the right answer.",
+      "hint": "Not quite. Say the rhyme in your head, then try again.",
+      "questions": [
+        {
+          "ask": "\"Un, deux, trois, …\" What comes next in the rhyme?",
+          "answer": "nous irons au bois",
+          "distractors": [
+            "cueillir des cerises",
+            "dans mon panier neuf",
+            "toutes rouges"
+          ]
+        },
+        {
+          "ask": "\"Quatre, cinq, six, …\" What comes next in the rhyme?",
+          "answer": "cueillir des cerises",
+          "distractors": [
+            "nous irons au bois",
+            "dans mon panier neuf",
+            "toutes rouges"
+          ]
+        },
+        {
+          "ask": "\"Sept, huit, neuf, …\" What comes next in the rhyme?",
+          "answer": "dans mon panier neuf",
+          "distractors": [
+            "cueillir des cerises",
+            "nous irons au bois",
+            "toutes rouges"
+          ]
+        },
+        {
+          "ask": "Finish the last line: \"Dix, onze, douze, elles seront toutes …\"",
+          "answer": "rouges",
+          "distractors": ["bleues", "vertes", "noires"]
+        },
+        {
+          "ask": "In this rhyme, what does \"bois\" mean?",
+          "answer": "woods",
+          "distractors": ["school", "garden", "sea"]
+        },
+        {
+          "ask": "In the rhyme, what are \"cerises\"?",
+          "answer": "cherries",
+          "distractors": ["apples", "strawberries", "grapes"]
+        },
+        {
+          "ask": "In the rhyme, what is a \"panier\"?",
+          "answer": "basket",
+          "distractors": ["box", "plate", "bread"]
+        },
+        {
+          "ask": "Which word in the rhyme rhymes with \"trois\"?",
+          "answer": "bois",
+          "distractors": ["six", "cerises", "panier"]
+        },
+        {
+          "ask": "Which word in the rhyme rhymes with \"six\"?",
+          "answer": "cerises",
+          "distractors": ["bois", "neuf", "rouges"]
+        }
+      ]
+    },
+    {
+      "id": "french-question-quest",
+      "title": "Question Quest",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Asking and answering questions",
+      "strand": "conversation",
+      "statutoryRequirement": "Pupils should be taught to engage in conversations; ask and answer questions; express opinions and respond to those of others; seek clarification and help",
+      "instruction": "Read the question or answer, then tap the best match.",
+      "hint": "Not quite. Look for the question word, such as \"Où\" or \"Quel\", then try again.",
+      "questions": [
+        {
+          "ask": "What does \"Où habites-tu ?\" mean?",
+          "answer": "Where do you live?",
+          "distractors": [
+            "How old are you?",
+            "What's your name?",
+            "How are you?"
+          ]
+        },
+        {
+          "ask": "Which is the best answer to \"Où habites-tu ?\"",
+          "answer": "J'habite à Leeds.",
+          "distractors": ["J'ai neuf ans.", "Je m'appelle Ali.", "Ça va bien."]
+        },
+        {
+          "ask": "What does \"Quel âge as-tu ?\" mean?",
+          "answer": "How old are you?",
+          "distractors": [
+            "Where do you live?",
+            "What's your name?",
+            "Who is it?"
+          ]
+        },
+        {
+          "ask": "The answer is \"J'habite à York.\" What was the question?",
+          "answer": "Où habites-tu ?",
+          "distractors": [
+            "Quel âge as-tu ?",
+            "Comment ça va ?",
+            "Tu as un chien ?"
+          ]
+        },
+        {
+          "ask": "The answer is \"J'ai dix ans.\" What was the question?",
+          "answer": "Quel âge as-tu ?",
+          "distractors": [
+            "Où habites-tu ?",
+            "Comment ça va ?",
+            "Tu as un frère ?"
+          ]
+        },
+        {
+          "ask": "What does \"As-tu un animal ?\" mean?",
+          "answer": "Do you have a pet?",
+          "distractors": [
+            "Are you an animal?",
+            "Do you like animals?",
+            "Where is the animal?"
+          ]
+        },
+        {
+          "ask": "Which is the best answer to \"As-tu un animal ?\"",
+          "answer": "Oui, j'ai un chat.",
+          "distractors": [
+            "Oui, je suis chat.",
+            "J'ai neuf ans.",
+            "J'habite à Nice."
+          ]
+        },
+        {
+          "ask": "Which is the best answer to \"Tu as des frères ou des sœurs ?\"",
+          "answer": "J'ai une sœur.",
+          "distractors": ["J'ai un chat.", "J'habite à Lyon.", "Ça va bien."]
+        },
+        {
+          "ask": "You did not understand a question. What can you say?",
+          "answer": "Pardon ?",
+          "distractors": ["Merci !", "Bonjour !", "Oui !"]
+        }
+      ]
+    },
+    {
+      "id": "french-un-une-des",
+      "title": "Un, Une or Des?",
+      "station": "compare",
+      "prop": "magnet",
+      "skillName": "Un, une and des with nouns",
+      "strand": "grammar",
+      "statutoryRequirement": "Pupils should be taught to understand basic grammar appropriate to the language being studied, including (where relevant): feminine, masculine and neuter forms and the conjugation of high-frequency verbs; key features and patterns of the language; how to apply these, for instance, to build sentences; and how these differ from or are similar to English",
+      "instruction": "Read the English, then tap the right French.",
+      "hint": "Not quite. Is the noun masculine or feminine, and is there one or more than one? Try again.",
+      "questions": [
+        {
+          "ask": "Which is right for \"a dog\"?",
+          "answer": "un chien",
+          "distractors": ["une chien", "des chien", "un chiens"]
+        },
+        {
+          "ask": "Which is right for \"a cat\"?",
+          "answer": "un chat",
+          "distractors": ["une chat", "des chat", "un chats"]
+        },
+        {
+          "ask": "Which is right for \"an apple\"?",
+          "answer": "une pomme",
+          "distractors": ["un pomme", "des pomme", "une pommes"]
+        },
+        {
+          "ask": "Which is right for \"some books\"?",
+          "answer": "des livres",
+          "distractors": ["des livre", "un livres", "une livres"]
+        },
+        {
+          "ask": "Which is right for \"a house\"?",
+          "answer": "une maison",
+          "distractors": ["un maison", "une maisons", "des maison"]
+        },
+        {
+          "ask": "Which is right for \"some pencils\"?",
+          "answer": "des crayons",
+          "distractors": ["des crayon", "un crayons", "une crayon"]
+        },
+        {
+          "ask": "Which is right for \"a table\"?",
+          "answer": "une table",
+          "distractors": ["un table", "des table", "une tables"]
+        },
+        {
+          "ask": "Which is right for \"a bike\"?",
+          "answer": "un vélo",
+          "distractors": ["une vélo", "des vélo", "un vélos"]
+        },
+        {
+          "ask": "Which is right for \"some cats\"?",
+          "answer": "des chats",
+          "distractors": ["des chat", "un chats", "une chats"]
+        }
+      ]
+    },
+    {
+      "id": "french-plural-patrol",
+      "title": "Plural Patrol",
+      "station": "true-false",
+      "prop": "ice-cube",
+      "skillName": "Making French nouns plural",
+      "strand": "grammar",
+      "statutoryRequirement": "Pupils should be taught to understand basic grammar appropriate to the language being studied, including (where relevant): feminine, masculine and neuter forms and the conjugation of high-frequency verbs; key features and patterns of the language; how to apply these, for instance, to build sentences; and how these differ from or are similar to English",
+      "instruction": "Read it carefully, then tap True or False.",
+      "hint": "Not quite. Most nouns just add -s, but some words change more. Try again.",
+      "questions": [
+        {
+          "ask": "To make most French nouns plural, you add -s.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "\"le chat\" becomes \"les chats\" in the plural.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "\"la pomme\" becomes \"la pommes\" in the plural.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "\"le gâteau\" becomes \"les gâteaux\" in the plural.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "\"l'oiseau\" becomes \"les oiseaus\" in the plural.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "The -s at the end of \"chats\" is usually silent.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "\"les\" is used for both masculine and feminine plural nouns.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "\"un cheval\" becomes \"des chevals\" in the plural.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "\"le nez\" stays \"les nez\" in the plural, because it ends in z.",
+          "answer": "True",
+          "distractors": ["False"]
+        }
+      ]
+    },
+    {
+      "id": "french-snack-shack",
+      "title": "Snack Shack",
+      "station": "compare",
+      "prop": "egg",
+      "skillName": "Writing sentences about food",
+      "strand": "writing-sentences",
+      "statutoryRequirement": "Pupils should be taught to write phrases from memory, and adapt these to create new sentences, to express ideas clearly",
+      "instruction": "Read the English, then tap the right French sentence.",
+      "hint": "Not quite. Check the verb and the little word before the food, then try again.",
+      "questions": [
+        {
+          "ask": "Which means \"I eat an apple\"?",
+          "answer": "Je mange une pomme.",
+          "distractors": [
+            "Je mange un pomme.",
+            "Je mange une pain.",
+            "Tu manges une pomme."
+          ]
+        },
+        {
+          "ask": "Which means \"I would like some bread\"?",
+          "answer": "Je voudrais du pain.",
+          "distractors": [
+            "Je suis du pain.",
+            "Je voudrais de pain",
+            "Tu voudrais du pain"
+          ]
+        },
+        {
+          "ask": "Which means \"I drink milk\"?",
+          "answer": "Je bois du lait.",
+          "distractors": [
+            "Je bois de la lait",
+            "Je mange du lait.",
+            "Il boit du lait."
+          ]
+        },
+        {
+          "ask": "Change \"Je mange une pomme.\" so it means \"I eat a banana\".",
+          "answer": "Je mange une banane.",
+          "distractors": [
+            "Je mange un banane.",
+            "Je mange une pomme.",
+            "Je bois une banane."
+          ]
+        },
+        {
+          "ask": "Which means \"I eat a cake\"?",
+          "answer": "Je mange un gâteau.",
+          "distractors": [
+            "Je mange une gâteau",
+            "Je bois un gâteau.",
+            "Je mange des gâteau"
+          ]
+        },
+        {
+          "ask": "Which means \"I'm hungry\"?",
+          "answer": "J'ai faim.",
+          "distractors": ["Je suis faim.", "J'ai soif.", "Je suis froid."]
+        },
+        {
+          "ask": "Which means \"I'm thirsty\"?",
+          "answer": "J'ai soif.",
+          "distractors": ["Je suis soif.", "J'ai faim.", "J'ai chaud."]
+        },
+        {
+          "ask": "Which means \"I like cheese\"?",
+          "answer": "J'aime le fromage.",
+          "distractors": [
+            "J'aime fromage.",
+            "J'aime la fromage.",
+            "Je mange fromage."
+          ]
+        },
+        {
+          "ask": "Which means \"I eat some soup\"?",
+          "answer": "Je mange de la soupe",
+          "distractors": [
+            "Je mange du soupe.",
+            "Je mange la soupes",
+            "Je bois du soupe."
+          ]
+        }
+      ]
+    }
+  ]
+}

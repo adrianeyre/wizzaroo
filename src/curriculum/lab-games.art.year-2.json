@@ -1,0 +1,556 @@
+{
+  "subject": "art",
+  "yearGroup": 2,
+  "games": [
+    {
+      "id": "art-pattern-path",
+      "title": "Pattern Path",
+      "station": "sequence",
+      "prop": "leaf",
+      "skillName": "Making repeating patterns",
+      "strand": "techniques",
+      "statutoryRequirement": "Pupils should be taught to develop a wide range of art and design techniques in using colour, pattern, texture, line, shape, form and space",
+      "instruction": "Read the steps, then tap what comes next.",
+      "hint": "Not quite. Say the pattern out loud from the start.",
+      "questions": [
+        {
+          "ask": "Red, blue, red, blue, red, ... What comes next?",
+          "answer": "Blue",
+          "distractors": ["Red", "Green", "Yellow"]
+        },
+        {
+          "ask": "Circle, square, circle, square, circle, ... What comes next?",
+          "answer": "Square",
+          "distractors": ["Circle", "Triangle", "Star"]
+        },
+        {
+          "ask": "Big dot, small dot, big dot, small dot, big dot, ... What comes next?",
+          "answer": "Small dot",
+          "distractors": ["Big dot", "Line", "Star"]
+        },
+        {
+          "ask": "Star, star, moon, star, star, ... What comes next?",
+          "answer": "Moon",
+          "distractors": ["Star", "Sun", "Heart"]
+        },
+        {
+          "ask": "Zigzag, wavy, zigzag, wavy, zigzag, ... What comes next?",
+          "answer": "Wavy",
+          "distractors": ["Zigzag", "Spiral", "Dotted"]
+        },
+        {
+          "ask": "Red, yellow, green, red, yellow, ... What comes next?",
+          "answer": "Green",
+          "distractors": ["Red", "Yellow", "Blue"]
+        },
+        {
+          "ask": "Dot, dot, line, dot, dot, ... What comes next?",
+          "answer": "Line",
+          "distractors": ["Dot", "Circle", "Square"]
+        },
+        {
+          "ask": "Triangle up, triangle down, triangle up, ... What comes next?",
+          "answer": "Triangle down",
+          "distractors": ["Triangle up", "Square", "Circle"]
+        }
+      ]
+    },
+    {
+      "id": "art-colour-mixer",
+      "title": "Colour Mixing Lab",
+      "station": "compare",
+      "prop": "beaker",
+      "skillName": "Mixing secondary colours, warm and cool",
+      "strand": "techniques",
+      "statutoryRequirement": "Pupils should be taught to develop a wide range of art and design techniques in using colour, pattern, texture, line, shape, form and space",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Picture the two paints swirling together.",
+      "questions": [
+        {
+          "ask": "Which of these is a secondary colour?",
+          "answer": "Green",
+          "distractors": ["Red", "Blue", "Yellow"]
+        },
+        {
+          "ask": "Which two primary colours make purple?",
+          "answer": "Red and blue",
+          "distractors": [
+            "Red and yellow",
+            "Blue and yellow",
+            "Yellow and white"
+          ]
+        },
+        {
+          "ask": "Which two primary colours make green?",
+          "answer": "Blue and yellow",
+          "distractors": ["Red and blue", "Red and yellow", "Red and white"]
+        },
+        {
+          "ask": "Which two primary colours make orange?",
+          "answer": "Red and yellow",
+          "distractors": ["Blue and yellow", "Red and blue", "Blue and white"]
+        },
+        {
+          "ask": "Which of these is a warm colour?",
+          "answer": "Orange",
+          "distractors": ["Blue", "Green", "Turquoise"]
+        },
+        {
+          "ask": "Which of these is a cool colour?",
+          "answer": "Blue",
+          "distractors": ["Red", "Orange", "Yellow"]
+        },
+        {
+          "ask": "What happens to a colour when you add white?",
+          "answer": "It gets lighter",
+          "distractors": ["It gets darker", "It gets warmer", "It turns black"]
+        },
+        {
+          "ask": "What colour do you usually get by mixing all three primaries?",
+          "answer": "Brown",
+          "distractors": ["White", "Pink", "Yellow"]
+        }
+      ]
+    },
+    {
+      "id": "art-form-finder",
+      "title": "Form Finder",
+      "station": "compare",
+      "prop": "egg",
+      "skillName": "Shape and 3D form",
+      "strand": "techniques",
+      "statutoryRequirement": "Pupils should be taught to develop a wide range of art and design techniques in using colour, pattern, texture, line, shape, form and space",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Imagine holding the object in your hands.",
+      "questions": [
+        {
+          "ask": "A football has the form of a...?",
+          "answer": "Sphere",
+          "distractors": ["Cube", "Cone", "Cylinder"]
+        },
+        {
+          "ask": "A dice has the form of a...?",
+          "answer": "Cube",
+          "distractors": ["Sphere", "Cone", "Pyramid"]
+        },
+        {
+          "ask": "An ice cream cone has the form of a...?",
+          "answer": "Cone",
+          "distractors": ["Cube", "Sphere", "Cuboid"]
+        },
+        {
+          "ask": "A tin of beans has the form of a...?",
+          "answer": "Cylinder",
+          "distractors": ["Cone", "Cube", "Sphere"]
+        },
+        {
+          "ask": "A cereal box has the form of a...?",
+          "answer": "Cuboid",
+          "distractors": ["Sphere", "Cone", "Cylinder"]
+        },
+        {
+          "ask": "In art, what word means a solid 3D shape?",
+          "answer": "Form",
+          "distractors": ["Line", "Colour", "Pattern"]
+        },
+        {
+          "ask": "Which of these artworks is 3D?",
+          "answer": "Clay sculpture",
+          "distractors": ["Pencil drawing", "Watercolour", "Crayon rubbing"]
+        },
+        {
+          "ask": "Which flat 2D shape matches the side view of a sphere?",
+          "answer": "Circle",
+          "distractors": ["Square", "Triangle", "Rectangle"]
+        }
+      ]
+    },
+    {
+      "id": "art-near-and-far",
+      "title": "Near and Far",
+      "station": "compare",
+      "prop": "tree",
+      "skillName": "Showing space in a picture",
+      "strand": "techniques",
+      "statutoryRequirement": "Pupils should be taught to develop a wide range of art and design techniques in using colour, pattern, texture, line, shape, form and space",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about how things look when they are far away.",
+      "questions": [
+        {
+          "ask": "In a picture, things far away look...?",
+          "answer": "Smaller",
+          "distractors": ["Bigger", "Closer", "Brighter"]
+        },
+        {
+          "ask": "In a picture, things close to you look...?",
+          "answer": "Bigger",
+          "distractors": ["Smaller", "Paler", "Further away"]
+        },
+        {
+          "ask": "What is the part of a picture closest to you called?",
+          "answer": "Foreground",
+          "distractors": ["Background", "Sky", "Frame"]
+        },
+        {
+          "ask": "What is the part of a picture furthest away called?",
+          "answer": "Background",
+          "distractors": ["Foreground", "Middle", "Border"]
+        },
+        {
+          "ask": "If one shape covers part of another, which looks nearer?",
+          "answer": "The front one",
+          "distractors": ["The back one", "The hidden one", "Neither one"]
+        },
+        {
+          "ask": "Faraway hills in a painting often look...?",
+          "answer": "Paler",
+          "distractors": ["Brighter", "Bigger", "Darker"]
+        },
+        {
+          "ask": "What is the line where the land meets the sky called?",
+          "answer": "Horizon",
+          "distractors": ["Equator", "Border", "Frame"]
+        },
+        {
+          "ask": "In a landscape picture, where is the sky usually?",
+          "answer": "At the top",
+          "distractors": ["At the bottom", "In the middle", "Down the side"]
+        }
+      ]
+    },
+    {
+      "id": "art-clay-creations",
+      "title": "Clay Creations",
+      "station": "compare",
+      "prop": "rock",
+      "skillName": "Making simple clay sculptures",
+      "strand": "drawing-painting-sculpture",
+      "statutoryRequirement": "Pupils should be taught to use drawing, painting and sculpture to develop and share their ideas, experiences and imagination",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about how you shape and join clay.",
+      "questions": [
+        {
+          "ask": "Roll a ball of clay and push your thumb in. What have you made?",
+          "answer": "Pinch pot",
+          "distractors": ["Coil pot", "Slab", "Print"]
+        },
+        {
+          "ask": "What do you call long sausages of rolled clay?",
+          "answer": "Coils",
+          "distractors": ["Slabs", "Pinches", "Tiles"]
+        },
+        {
+          "ask": "What is a flat sheet of rolled-out clay called?",
+          "answer": "Slab",
+          "distractors": ["Coil", "Pinch", "Ball"]
+        },
+        {
+          "ask": "What should you do before joining two bits of clay?",
+          "answer": "Scratch and wet them",
+          "distractors": ["Paint them", "Freeze them", "Dry them"]
+        },
+        {
+          "ask": "Which tool is best for cutting and shaping clay?",
+          "answer": "Modelling tool",
+          "distractors": ["Paintbrush", "Glue stick", "Crayon"]
+        },
+        {
+          "ask": "What is the very hot oven for baking clay called?",
+          "answer": "Kiln",
+          "distractors": ["Fridge", "Freezer", "Kettle"]
+        },
+        {
+          "ask": "What can you put over clay to stop it drying out?",
+          "answer": "Damp cloth",
+          "distractors": ["Hairdryer", "Sandpaper", "Dry paper"]
+        },
+        {
+          "ask": "Which of these is a kind of sculpture?",
+          "answer": "Statue",
+          "distractors": ["Poster", "Sketch", "Collage"]
+        }
+      ]
+    },
+    {
+      "id": "art-paint-pro",
+      "title": "Paint Like a Pro",
+      "station": "true-false",
+      "prop": "water-drop",
+      "skillName": "Painting skills and brushes",
+      "strand": "drawing-painting-sculpture",
+      "statutoryRequirement": "Pupils should be taught to use drawing, painting and sculpture to develop and share their ideas, experiences and imagination",
+      "instruction": "Read the sentence, then tap True or False.",
+      "hint": "Not quite. Think about how you look after paint and brushes.",
+      "questions": [
+        {
+          "ask": "You should wash your brush in water before using a new colour.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A big, thick brush is best for painting tiny details.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A palette is used for mixing paint.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Watercolour paint is mixed with water.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Brushes should be left standing on their bristles in water.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Thin brushes are good for painting fine lines.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Dabbing a sponge in paint can make a bumpy texture.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "You can never plan a painting with a sketch first.",
+          "answer": "False",
+          "distractors": ["True"]
+        }
+      ]
+    },
+    {
+      "id": "art-print-makers",
+      "title": "Print Makers",
+      "station": "compare",
+      "prop": "leaf",
+      "skillName": "Printing with everyday materials",
+      "strand": "materials",
+      "statutoryRequirement": "Pupils should be taught to use a range of materials creatively to design and make products",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about pressing paint onto paper.",
+      "questions": [
+        {
+          "ask": "How is a print made?",
+          "answer": "Pressing on paint",
+          "distractors": ["Drawing in pencil", "Folding paper", "Rolling clay"]
+        },
+        {
+          "ask": "Which vegetable is often cut to make a simple print?",
+          "answer": "Potato",
+          "distractors": ["Banana", "Lettuce", "Tomato"]
+        },
+        {
+          "ask": "What goes on a printing block before you press it down?",
+          "answer": "Paint",
+          "distractors": ["Water", "Glue", "Clay"]
+        },
+        {
+          "ask": "What do you make by printing the same shape again and again?",
+          "answer": "A pattern",
+          "distractors": ["A portrait", "A sculpture", "A sketch"]
+        },
+        {
+          "ask": "Which object makes a print showing veins?",
+          "answer": "A leaf",
+          "distractors": ["A pebble", "A button", "A coin"]
+        },
+        {
+          "ask": "What tool rolls ink out flat for printing?",
+          "answer": "Roller",
+          "distractors": ["Easel", "Palette", "Kiln"]
+        },
+        {
+          "ask": "What do you get by pressing a painted hand on paper?",
+          "answer": "A handprint",
+          "distractors": ["A sculpture", "A weaving", "A collage"]
+        },
+        {
+          "ask": "What do you press a print block onto?",
+          "answer": "Paper",
+          "distractors": ["Water", "Sand", "Clay"]
+        }
+      ]
+    },
+    {
+      "id": "art-weaving-wonders",
+      "title": "Weaving Wonders",
+      "station": "compare",
+      "prop": "seedling",
+      "skillName": "Weaving with threads and strips",
+      "strand": "materials",
+      "statutoryRequirement": "Pupils should be taught to use a range of materials creatively to design and make products",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about going over and under.",
+      "questions": [
+        {
+          "ask": "Weaving goes over, under, over, under... What comes next?",
+          "answer": "Over",
+          "distractors": ["Under", "Around", "Through"]
+        },
+        {
+          "ask": "What is a frame for weaving called?",
+          "answer": "Loom",
+          "distractors": ["Kiln", "Easel", "Palette"]
+        },
+        {
+          "ask": "Which material is good for weaving?",
+          "answer": "Wool",
+          "distractors": ["Clay", "Paint", "Chalk"]
+        },
+        {
+          "ask": "Which of these is made by weaving?",
+          "answer": "A basket",
+          "distractors": ["A clay pot", "A statue", "A drawing"]
+        },
+        {
+          "ask": "If row one starts by going over, how does row two start?",
+          "answer": "Under",
+          "distractors": ["Over", "Around", "Backwards"]
+        },
+        {
+          "ask": "What could you weave through a card loom?",
+          "answer": "Paper strips",
+          "distractors": ["Wet paint", "Glue", "Sand"]
+        },
+        {
+          "ask": "Which of these is a natural material for weaving?",
+          "answer": "Wool",
+          "distractors": ["Plastic", "Foil", "Polystyrene"]
+        },
+        {
+          "ask": "Woven cloth is also called...?",
+          "answer": "Fabric",
+          "distractors": ["Clay", "Canvas board", "Card"]
+        }
+      ]
+    },
+    {
+      "id": "art-same-different",
+      "title": "Same and Different",
+      "station": "odd-one-out",
+      "prop": "magnifier",
+      "skillName": "Comparing artists and makers",
+      "strand": "artists-and-makers",
+      "statutoryRequirement": "Pupils should be taught about the work of a range of artists, craft makers and designers, describing the differences and similarities between different practices and disciplines, and making links to their own work",
+      "instruction": "Read the list, then tap the one that does not belong.",
+      "hint": "Not quite. Think about what three of them share.",
+      "questions": [
+        {
+          "ask": "Odd one out: Monet, Van Gogh, Matisse, Hepworth",
+          "answer": "Hepworth",
+          "distractors": ["Monet", "Van Gogh", "Matisse"]
+        },
+        {
+          "ask": "Odd one out: paintbrush, palette, easel, kiln",
+          "answer": "Kiln",
+          "distractors": ["Paintbrush", "Palette", "Easel"]
+        },
+        {
+          "ask": "Odd one out: clay, kiln, glaze, loom",
+          "answer": "Loom",
+          "distractors": ["Clay", "Kiln", "Glaze"]
+        },
+        {
+          "ask": "Odd one out: loom, wool, thread, chalk",
+          "answer": "Chalk",
+          "distractors": ["Loom", "Wool", "Thread"]
+        },
+        {
+          "ask": "Odd one out: architect, builder, bricklayer, weaver",
+          "answer": "Weaver",
+          "distractors": ["Architect", "Builder", "Bricklayer"]
+        },
+        {
+          "ask": "Odd one out (William Morris designs): wallpaper, fabric, curtains, statue",
+          "answer": "Statue",
+          "distractors": ["Wallpaper", "Fabric", "Curtains"]
+        },
+        {
+          "ask": "Odd one out: sculpture, statue, clay model, watercolour",
+          "answer": "Watercolour",
+          "distractors": ["Sculpture", "Statue", "Clay model"]
+        },
+        {
+          "ask": "Odd one out (things to draw with): pencil, charcoal, crayon, clay",
+          "answer": "Clay",
+          "distractors": ["Pencil", "Charcoal", "Crayon"]
+        }
+      ]
+    },
+    {
+      "id": "art-who-made-it",
+      "title": "Who Made It?",
+      "station": "mystery",
+      "prop": "flower",
+      "skillName": "Artists, designers and their work",
+      "strand": "artists-and-makers",
+      "statutoryRequirement": "Pupils should be taught about the work of a range of artists, craft makers and designers, describing the differences and similarities between different practices and disciplines, and making links to their own work",
+      "instruction": "Read the clues, then tap who or what it is.",
+      "hint": "Not quite. Read the clue again and picture the artwork.",
+      "questions": [
+        {
+          "ask": "I made 'The Snail' from cut-out paper shapes. Who am I?",
+          "answer": "Henri Matisse",
+          "distractors": ["Pablo Picasso", "Andy Warhol", "William Morris"]
+        },
+        {
+          "ask": "I painted circles and lines that I said were like music. Who am I?",
+          "answer": "Wassily Kandinsky",
+          "distractors": [
+            "Henri Matisse",
+            "Georgia O'Keeffe",
+            "Leonardo da Vinci"
+          ]
+        },
+        {
+          "ask": "I painted the 'Mona Lisa'. Who am I?",
+          "answer": "Leonardo da Vinci",
+          "distractors": ["Pablo Picasso", "Andy Warhol", "Henri Matisse"]
+        },
+        {
+          "ask": "I designed wallpaper full of flowers, leaves and birds. Who am I?",
+          "answer": "William Morris",
+          "distractors": [
+            "Wassily Kandinsky",
+            "Barbara Hepworth",
+            "Andy Warhol"
+          ]
+        },
+        {
+          "ask": "I carved smooth sculptures with holes through them. Who am I?",
+          "answer": "Barbara Hepworth",
+          "distractors": ["Georgia O'Keeffe", "William Morris", "Pablo Picasso"]
+        },
+        {
+          "ask": "I painted giant close-up flowers in America. Who am I?",
+          "answer": "Georgia O'Keeffe",
+          "distractors": [
+            "Barbara Hepworth",
+            "Leonardo da Vinci",
+            "Pablo Picasso"
+          ]
+        },
+        {
+          "ask": "I made famous pictures of soup cans. Who am I?",
+          "answer": "Andy Warhol",
+          "distractors": [
+            "William Morris",
+            "Wassily Kandinsky",
+            "Henri Matisse"
+          ]
+        },
+        {
+          "ask": "I painted faces from many sides at once, in blocky shapes. Who am I?",
+          "answer": "Pablo Picasso",
+          "distractors": ["Georgia O'Keeffe", "Barbara Hepworth", "Andy Warhol"]
+        }
+      ]
+    }
+  ]
+}

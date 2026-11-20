@@ -1,0 +1,8 @@
+{
+  "id": "computing.variables-in-games",
+  "name": "Using variables in programs",
+  "subject": "computing",
+  "yearGroup": 6,
+  "strand": "programming",
+  "prerequisites": ["computing.selection-physical-computing"]
+}

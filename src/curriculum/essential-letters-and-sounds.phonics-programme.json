@@ -1,0 +1,527 @@
+{
+  "id": "essential-letters-and-sounds",
+  "name": "Essential Letters and Sounds",
+  "sources": [
+    "Knowledge Schools Trust, Essential Letters and Sounds: Phonics Overview and Term by Term Progression, Reception and Year 1, as published by a school using it, for the stages, the order the graphemes are taught in and the sounds they stand for: https://www.newingtongreen.co.uk/_site/data/files/0FB9F05E84AEF72E55C9EAA234A4FC96.pdf",
+    "Knowledge Schools Trust, Essential Letters and Sounds: Grapheme Information Sheet, Phase 2, as published by a school using it, confirming the Phase 2 order: https://yerbury.islington.sch.uk/wp-content/uploads/2022/09/ELS-Phonics-Order-of-Phase-2.pdf",
+    "Knowledge Schools Trust, Essential Letters and Sounds: Grapheme Information Sheet, Phase 3, as published by a school using it, confirming the Phase 3 order: https://yerbury.islington.sch.uk/wp-content/uploads/2022/09/ELS-Phonics-Order-of-Phase-3.pdf",
+    "Knowledge Schools Trust, Essential Letters and Sounds: Grapheme Information Sheet, Phase 5, as published by a school using it, confirming the Phase 5 order and its alternative pronunciations: https://yerbury.islington.sch.uk/wp-content/uploads/2022/09/ELS-Phonics-Order-of-Phase-5.pdf"
+  ],
+  "soundOrder": [
+    {
+      "term": "Phase 2",
+      "graphemes": [
+        {
+          "grapheme": "s",
+          "sounds": ["s"]
+        },
+        {
+          "grapheme": "a",
+          "sounds": ["a"]
+        },
+        {
+          "grapheme": "t",
+          "sounds": ["t"]
+        },
+        {
+          "grapheme": "p",
+          "sounds": ["p"]
+        },
+        {
+          "grapheme": "i",
+          "sounds": ["i"]
+        },
+        {
+          "grapheme": "n",
+          "sounds": ["n"]
+        },
+        {
+          "grapheme": "m",
+          "sounds": ["m"]
+        },
+        {
+          "grapheme": "d",
+          "sounds": ["d"]
+        },
+        {
+          "grapheme": "g",
+          "sounds": ["g"]
+        },
+        {
+          "grapheme": "o",
+          "sounds": ["o"]
+        },
+        {
+          "grapheme": "c",
+          "sounds": ["k"]
+        },
+        {
+          "grapheme": "k",
+          "sounds": ["k"]
+        },
+        {
+          "grapheme": "ck",
+          "sounds": ["k"]
+        },
+        {
+          "grapheme": "e",
+          "sounds": ["e"]
+        },
+        {
+          "grapheme": "u",
+          "sounds": ["u"]
+        },
+        {
+          "grapheme": "r",
+          "sounds": ["r"]
+        },
+        {
+          "grapheme": "ss",
+          "sounds": ["s"]
+        },
+        {
+          "grapheme": "h",
+          "sounds": ["h"]
+        },
+        {
+          "grapheme": "b",
+          "sounds": ["b"]
+        },
+        {
+          "grapheme": "f",
+          "sounds": ["f"]
+        },
+        {
+          "grapheme": "ff",
+          "sounds": ["f"]
+        },
+        {
+          "grapheme": "l",
+          "sounds": ["l"]
+        },
+        {
+          "grapheme": "ll",
+          "sounds": ["l"]
+        }
+      ]
+    },
+    {
+      "term": "Phase 3",
+      "graphemes": [
+        {
+          "grapheme": "j",
+          "sounds": ["j"]
+        },
+        {
+          "grapheme": "v",
+          "sounds": ["v"]
+        },
+        {
+          "grapheme": "w",
+          "sounds": ["w"]
+        },
+        {
+          "grapheme": "x",
+          "sounds": ["k", "s"]
+        },
+        {
+          "grapheme": "y",
+          "sounds": ["y"]
+        },
+        {
+          "grapheme": "z",
+          "sounds": ["z"]
+        },
+        {
+          "grapheme": "zz",
+          "sounds": ["z"]
+        },
+        {
+          "grapheme": "qu",
+          "sounds": ["k", "w"]
+        },
+        {
+          "grapheme": "ch",
+          "sounds": ["ch"]
+        },
+        {
+          "grapheme": "sh",
+          "sounds": ["sh"]
+        },
+        {
+          "grapheme": "th",
+          "sounds": ["th-voiced"]
+        },
+        {
+          "grapheme": "th",
+          "sounds": ["th-unvoiced"]
+        },
+        {
+          "grapheme": "ng",
+          "sounds": ["ng"]
+        },
+        {
+          "grapheme": "nk",
+          "sounds": ["ng", "k"]
+        },
+        {
+          "grapheme": "ai",
+          "sounds": ["ai"]
+        },
+        {
+          "grapheme": "ee",
+          "sounds": ["ee"]
+        },
+        {
+          "grapheme": "igh",
+          "sounds": ["igh"]
+        },
+        {
+          "grapheme": "oa",
+          "sounds": ["oa"]
+        },
+        {
+          "grapheme": "oo",
+          "sounds": ["oo-short"]
+        },
+        {
+          "grapheme": "ar",
+          "sounds": ["ar"]
+        },
+        {
+          "grapheme": "ur",
+          "sounds": ["ur"]
+        },
+        {
+          "grapheme": "oo",
+          "sounds": ["oo-long"]
+        },
+        {
+          "grapheme": "or",
+          "sounds": ["or"]
+        },
+        {
+          "grapheme": "ow",
+          "sounds": ["ow"]
+        },
+        {
+          "grapheme": "oi",
+          "sounds": ["oi"]
+        },
+        {
+          "grapheme": "ear",
+          "sounds": ["ear"]
+        },
+        {
+          "grapheme": "air",
+          "sounds": ["air"]
+        },
+        {
+          "grapheme": "ure",
+          "sounds": ["ure"]
+        },
+        {
+          "grapheme": "er",
+          "sounds": ["schwa"]
+        },
+        {
+          "grapheme": "ow",
+          "sounds": ["oa"]
+        }
+      ]
+    },
+    {
+      "term": "Phase 5",
+      "graphemes": [
+        {
+          "grapheme": "ay",
+          "sounds": ["ai"]
+        },
+        {
+          "grapheme": "ou",
+          "sounds": ["ow"]
+        },
+        {
+          "grapheme": "ie",
+          "sounds": ["igh"]
+        },
+        {
+          "grapheme": "ea",
+          "sounds": ["ee"]
+        },
+        {
+          "grapheme": "oy",
+          "sounds": ["oi"]
+        },
+        {
+          "grapheme": "ir",
+          "sounds": ["ur"]
+        },
+        {
+          "grapheme": "ue",
+          "sounds": ["oo-long"]
+        },
+        {
+          "grapheme": "ue",
+          "sounds": ["y", "oo-long"]
+        },
+        {
+          "grapheme": "aw",
+          "sounds": ["or"]
+        },
+        {
+          "grapheme": "wh",
+          "sounds": ["w"]
+        },
+        {
+          "grapheme": "ph",
+          "sounds": ["f"]
+        },
+        {
+          "grapheme": "ew",
+          "sounds": ["oo-long"]
+        },
+        {
+          "grapheme": "ew",
+          "sounds": ["y", "oo-long"]
+        },
+        {
+          "grapheme": "oe",
+          "sounds": ["oa"]
+        },
+        {
+          "grapheme": "au",
+          "sounds": ["or"]
+        },
+        {
+          "grapheme": "ey",
+          "sounds": ["ee"]
+        },
+        {
+          "grapheme": "a-e",
+          "sounds": ["ai"]
+        },
+        {
+          "grapheme": "e-e",
+          "sounds": ["ee"]
+        },
+        {
+          "grapheme": "i-e",
+          "sounds": ["igh"]
+        },
+        {
+          "grapheme": "o-e",
+          "sounds": ["oa"]
+        },
+        {
+          "grapheme": "u-e",
+          "sounds": ["oo-long"]
+        },
+        {
+          "grapheme": "u-e",
+          "sounds": ["y", "oo-long"]
+        },
+        {
+          "grapheme": "c",
+          "sounds": ["s"]
+        },
+        {
+          "grapheme": "y",
+          "sounds": ["ee"]
+        },
+        {
+          "grapheme": "al",
+          "sounds": ["or"]
+        },
+        {
+          "grapheme": "a",
+          "sounds": ["ai"]
+        },
+        {
+          "grapheme": "ey",
+          "sounds": ["ai"]
+        },
+        {
+          "grapheme": "ea",
+          "sounds": ["ai"]
+        },
+        {
+          "grapheme": "eigh",
+          "sounds": ["ai"]
+        },
+        {
+          "grapheme": "a",
+          "sounds": ["ar"]
+        },
+        {
+          "grapheme": "e",
+          "sounds": ["ee"]
+        },
+        {
+          "grapheme": "i",
+          "sounds": ["igh"]
+        },
+        {
+          "grapheme": "y",
+          "sounds": ["igh"]
+        },
+        {
+          "grapheme": "o",
+          "sounds": ["oa"]
+        },
+        {
+          "grapheme": "a",
+          "sounds": ["o"]
+        },
+        {
+          "grapheme": "u",
+          "sounds": ["oo-short"]
+        },
+        {
+          "grapheme": "u",
+          "sounds": ["y", "oo-long"]
+        },
+        {
+          "grapheme": "ch",
+          "sounds": ["k"]
+        },
+        {
+          "grapheme": "ch",
+          "sounds": ["sh"]
+        },
+        {
+          "grapheme": "ea",
+          "sounds": ["e"]
+        },
+        {
+          "grapheme": "or",
+          "sounds": ["ur"]
+        },
+        {
+          "grapheme": "ear",
+          "sounds": ["ur"]
+        },
+        {
+          "grapheme": "ou",
+          "sounds": ["oo-long"]
+        },
+        {
+          "grapheme": "ou",
+          "sounds": ["oa"]
+        },
+        {
+          "grapheme": "ie",
+          "sounds": ["ee"]
+        },
+        {
+          "grapheme": "ve",
+          "sounds": ["v"]
+        },
+        {
+          "grapheme": "y",
+          "sounds": ["i"]
+        },
+        {
+          "grapheme": "are",
+          "sounds": ["air"]
+        },
+        {
+          "grapheme": "ere",
+          "sounds": ["air"]
+        },
+        {
+          "grapheme": "ear",
+          "sounds": ["air"]
+        },
+        {
+          "grapheme": "tch",
+          "sounds": ["ch"]
+        },
+        {
+          "grapheme": "o",
+          "sounds": ["u"]
+        },
+        {
+          "grapheme": "g",
+          "sounds": ["j"]
+        },
+        {
+          "grapheme": "ge",
+          "sounds": ["j"]
+        },
+        {
+          "grapheme": "dge",
+          "sounds": ["j"]
+        },
+        {
+          "grapheme": "st",
+          "sounds": ["s"]
+        },
+        {
+          "grapheme": "ce",
+          "sounds": ["s"]
+        },
+        {
+          "grapheme": "se",
+          "sounds": ["s"]
+        },
+        {
+          "grapheme": "gn",
+          "sounds": ["n"]
+        },
+        {
+          "grapheme": "kn",
+          "sounds": ["n"]
+        },
+        {
+          "grapheme": "wr",
+          "sounds": ["r"]
+        },
+        {
+          "grapheme": "mb",
+          "sounds": ["m"]
+        },
+        {
+          "grapheme": "se",
+          "sounds": ["z"]
+        },
+        {
+          "grapheme": "ze",
+          "sounds": ["z"]
+        },
+        {
+          "grapheme": "eer",
+          "sounds": ["ear"]
+        },
+        {
+          "grapheme": "ere",
+          "sounds": ["ear"]
+        },
+        {
+          "grapheme": "ti",
+          "sounds": ["sh"]
+        },
+        {
+          "grapheme": "al",
+          "sounds": ["ar"]
+        },
+        {
+          "grapheme": "augh",
+          "sounds": ["or"]
+        },
+        {
+          "grapheme": "ssi",
+          "sounds": ["sh"]
+        },
+        {
+          "grapheme": "si",
+          "sounds": ["zh"]
+        },
+        {
+          "grapheme": "ci",
+          "sounds": ["sh"]
+        }
+      ]
+    }
+  ]
+}

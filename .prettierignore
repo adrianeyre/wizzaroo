@@ -1,0 +1,3 @@
+pnpm-lock.yaml
+docs/standards/**
+src/server/schema.sql

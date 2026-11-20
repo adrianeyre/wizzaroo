@@ -1,0 +1,243 @@
+{
+  "subject": "languages",
+  "programme": "key-stage",
+  "programmeOfStudyUrl": "https://www.gov.uk/government/publications/national-curriculum-in-england-languages-progammes-of-study",
+  "years": [
+    {
+      "yearGroup": 3,
+      "points": [
+        {
+          "id": "reading-words-and-phrases",
+          "heading": "Reading with understanding",
+          "summary": "Read carefully and show understanding of French words, phrases and simple writing.",
+          "skillIds": [
+            "languages.french-greeting-gate",
+            "languages.french-day-train"
+          ]
+        },
+        {
+          "id": "vocabulary-and-dictionary",
+          "heading": "Vocabulary and dictionary skills",
+          "summary": "Broaden French vocabulary and work out new words, including by using a bilingual dictionary.",
+          "skillIds": [
+            "languages.french-number-nest",
+            "languages.french-animal-riddles"
+          ]
+        },
+        {
+          "id": "conversation",
+          "heading": "Conversations, questions and opinions",
+          "summary": "Take part in conversations by asking and answering questions, giving and responding to opinions, and asking for help.",
+          "skillIds": ["languages.french-ca-va-cafe"]
+        },
+        {
+          "id": "sounds-and-spelling",
+          "heading": "Sounds and spelling",
+          "summary": "Explore French sound patterns through songs and rhymes and link the spelling, sound and meaning of words.",
+          "skillIds": ["languages.french-silent-letter-spy"]
+        },
+        {
+          "id": "stories-songs-and-rhymes",
+          "heading": "Stories, songs, poems and rhymes",
+          "summary": "Enjoy and understand French stories, songs, poems and rhymes.",
+          "skillIds": ["languages.french-frere-jacques"]
+        },
+        {
+          "id": "describing",
+          "heading": "Describing people, places and things",
+          "summary": "Describe people, places, things and actions in French.",
+          "skillIds": ["languages.french-colour-crayons"]
+        },
+        {
+          "id": "grammar",
+          "heading": "Grammar and language patterns",
+          "summary": "Understand basic French grammar, including masculine and feminine forms, high-frequency verbs and building sentences, and compare it with English.",
+          "skillIds": ["languages.french-le-la-les"]
+        },
+        {
+          "id": "writing-sentences",
+          "heading": "Writing sentences",
+          "summary": "Write French phrases from memory and adapt them to make new sentences that express ideas clearly.",
+          "skillIds": ["languages.french-sentence-builder"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 4,
+      "points": [
+        {
+          "id": "reading-words-and-phrases",
+          "heading": "Reading with understanding",
+          "summary": "Read carefully and show understanding of French words, phrases and simple writing.",
+          "skillIds": ["languages.french-family-tree"]
+        },
+        {
+          "id": "vocabulary-and-dictionary",
+          "heading": "Vocabulary and dictionary skills",
+          "summary": "Broaden French vocabulary and work out new words, including by using a bilingual dictionary.",
+          "skillIds": [
+            "languages.french-number-ladder",
+            "languages.french-months-parade"
+          ]
+        },
+        {
+          "id": "conversation",
+          "heading": "Conversations, questions and opinions",
+          "summary": "Take part in conversations by asking and answering questions, giving and responding to opinions, and asking for help.",
+          "skillIds": ["languages.french-question-quest"]
+        },
+        {
+          "id": "sounds-and-spelling",
+          "heading": "Sounds and spelling",
+          "summary": "Explore French sound patterns through songs and rhymes and link the spelling, sound and meaning of words.",
+          "skillIds": ["languages.french-sound-detective"]
+        },
+        {
+          "id": "stories-songs-and-rhymes",
+          "heading": "Stories, songs, poems and rhymes",
+          "summary": "Enjoy and understand French stories, songs, poems and rhymes.",
+          "skillIds": ["languages.french-into-the-woods"]
+        },
+        {
+          "id": "describing",
+          "heading": "Describing people, places and things",
+          "summary": "Describe people, places, things and actions in French.",
+          "skillIds": ["languages.french-face-painter"]
+        },
+        {
+          "id": "grammar",
+          "heading": "Grammar and language patterns",
+          "summary": "Understand basic French grammar, including masculine and feminine forms, high-frequency verbs and building sentences, and compare it with English.",
+          "skillIds": [
+            "languages.french-un-une-des",
+            "languages.french-plural-patrol"
+          ]
+        },
+        {
+          "id": "writing-sentences",
+          "heading": "Writing sentences",
+          "summary": "Write French phrases from memory and adapt them to make new sentences that express ideas clearly.",
+          "skillIds": ["languages.french-snack-shack"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 5,
+      "points": [
+        {
+          "id": "reading-words-and-phrases",
+          "heading": "Reading with understanding",
+          "summary": "Read carefully and show understanding of French words, phrases and simple writing.",
+          "skillIds": ["languages.french-weather-report"]
+        },
+        {
+          "id": "vocabulary-and-dictionary",
+          "heading": "Vocabulary and dictionary skills",
+          "summary": "Broaden French vocabulary and work out new words, including by using a bilingual dictionary.",
+          "skillIds": [
+            "languages.french-lookalike-words",
+            "languages.french-dictionary-detective"
+          ]
+        },
+        {
+          "id": "conversation",
+          "heading": "Conversations, questions and opinions",
+          "summary": "Take part in conversations by asking and answering questions, giving and responding to opinions, and asking for help.",
+          "skillIds": ["languages.french-opinion-orbit"]
+        },
+        {
+          "id": "sounds-and-spelling",
+          "heading": "Sounds and spelling",
+          "summary": "Explore French sound patterns through songs and rhymes and link the spelling, sound and meaning of words.",
+          "skillIds": ["languages.french-sound-sorter"]
+        },
+        {
+          "id": "stories-songs-and-rhymes",
+          "heading": "Stories, songs, poems and rhymes",
+          "summary": "Enjoy and understand French stories, songs, poems and rhymes.",
+          "skillIds": ["languages.french-goldilocks-tale"]
+        },
+        {
+          "id": "describing",
+          "heading": "Describing people, places and things",
+          "summary": "Describe people, places, things and actions in French.",
+          "skillIds": ["languages.french-catwalk-colours"]
+        },
+        {
+          "id": "grammar",
+          "heading": "Grammar and language patterns",
+          "summary": "Understand basic French grammar, including masculine and feminine forms, high-frequency verbs and building sentences, and compare it with English.",
+          "skillIds": [
+            "languages.french-avoir-etre-arena",
+            "languages.french-verb-engine"
+          ]
+        },
+        {
+          "id": "writing-sentences",
+          "heading": "Writing sentences",
+          "summary": "Write French phrases from memory and adapt them to make new sentences that express ideas clearly.",
+          "skillIds": ["languages.french-hobby-hub"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 6,
+      "points": [
+        {
+          "id": "reading-words-and-phrases",
+          "heading": "Reading with understanding",
+          "summary": "Read carefully and show understanding of French words, phrases and simple writing.",
+          "skillIds": [
+            "languages.french-clock-tower",
+            "languages.french-francophone-facts"
+          ]
+        },
+        {
+          "id": "vocabulary-and-dictionary",
+          "heading": "Vocabulary and dictionary skills",
+          "summary": "Broaden French vocabulary and work out new words, including by using a bilingual dictionary.",
+          "skillIds": ["languages.french-town-trail"]
+        },
+        {
+          "id": "conversation",
+          "heading": "Conversations, questions and opinions",
+          "summary": "Take part in conversations by asking and answering questions, giving and responding to opinions, and asking for help.",
+          "skillIds": ["languages.french-cafe-chat"]
+        },
+        {
+          "id": "sounds-and-spelling",
+          "heading": "Sounds and spelling",
+          "summary": "Explore French sound patterns through songs and rhymes and link the spelling, sound and meaning of words.",
+          "skillIds": ["languages.french-sound-sleuth"]
+        },
+        {
+          "id": "stories-songs-and-rhymes",
+          "heading": "Stories, songs, poems and rhymes",
+          "summary": "Enjoy and understand French stories, songs, poems and rhymes.",
+          "skillIds": ["languages.french-green-mouse"]
+        },
+        {
+          "id": "describing",
+          "heading": "Describing people, places and things",
+          "summary": "Describe people, places, things and actions in French.",
+          "skillIds": ["languages.french-town-describer"]
+        },
+        {
+          "id": "grammar",
+          "heading": "Grammar and language patterns",
+          "summary": "Understand basic French grammar, including masculine and feminine forms, high-frequency verbs and building sentences, and compare it with English.",
+          "skillIds": [
+            "languages.french-aller-faire",
+            "languages.french-ne-pas-sandwich"
+          ]
+        },
+        {
+          "id": "writing-sentences",
+          "heading": "Writing sentences",
+          "summary": "Write French phrases from memory and adapt them to make new sentences that express ideas clearly.",
+          "skillIds": ["languages.french-sentence-stretcher"]
+        }
+      ]
+    }
+  ]
+}

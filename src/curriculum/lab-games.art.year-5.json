@@ -1,0 +1,550 @@
+{
+  "subject": "art",
+  "yearGroup": 5,
+  "games": [
+    {
+      "id": "art-artists-notebook",
+      "title": "Artist's Notebook",
+      "station": "compare",
+      "prop": "leaf",
+      "skillName": "Using sketchbooks like great artists",
+      "strand": "sketchbooks",
+      "statutoryRequirement": "Pupils should be taught to create sketch books to record their observations and use them to review and revisit ideas",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about how artists use sketches to plan and learn.",
+      "questions": [
+        {
+          "ask": "Leonardo da Vinci wrote his notes in...?",
+          "answer": "Mirror writing",
+          "distractors": ["Hieroglyphs", "Morse code", "Capital letters"]
+        },
+        {
+          "ask": "Leonardo filled his notebooks with designs for a...?",
+          "answer": "Flying machine",
+          "distractors": ["Mobile phone", "Steam train", "Television"]
+        },
+        {
+          "ask": "A detailed practice drawing of part of a subject is a...?",
+          "answer": "Study",
+          "distractors": ["Mosaic", "Print", "Frame"]
+        },
+        {
+          "ask": "Notes written next to a sketch are called...?",
+          "answer": "Annotations",
+          "distractors": ["Captions only", "Signatures", "Titles"]
+        },
+        {
+          "ask": "A small, quick plan of a whole picture is a...?",
+          "answer": "Thumbnail sketch",
+          "distractors": ["Final piece", "Self-portrait", "Still life"]
+        },
+        {
+          "ask": "Fast drawing in 30 seconds to catch movement is...?",
+          "answer": "Gesture drawing",
+          "distractors": ["Tracing", "Stippling", "Etching"]
+        },
+        {
+          "ask": "Why sketch one object from different angles?",
+          "answer": "To learn its form",
+          "distractors": [
+            "To use more paper",
+            "To finish quickly",
+            "To copy a friend"
+          ]
+        },
+        {
+          "ask": "Which sketchbook note is most useful?",
+          "answer": "Used 4B for darks",
+          "distractors": ["This is nice", "Done", "Art"]
+        }
+      ]
+    },
+    {
+      "id": "art-critic-club",
+      "title": "Art Critic Club",
+      "station": "true-false",
+      "prop": "magnifier",
+      "skillName": "Reviewing and evaluating art",
+      "strand": "sketchbooks",
+      "statutoryRequirement": "Pupils should be taught to create sketch books to record their observations and use them to review and revisit ideas",
+      "instruction": "Read the sentence, then tap True or False.",
+      "hint": "Not quite. Think about how artists talk about and improve their work.",
+      "questions": [
+        {
+          "ask": "Composition means how things are arranged in an artwork.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Helpful feedback should only say what is bad.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Artists often revisit ideas from old sketchbooks.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Comparing your work with an artist's can help you improve.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A focal point is the part your eye goes to first.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Annotating means rubbing out your notes.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A sketchbook should only show finished work.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Experimenting with a new material is a waste of time.",
+          "answer": "False",
+          "distractors": ["True"]
+        }
+      ]
+    },
+    {
+      "id": "art-perspective-point",
+      "title": "Perspective Point",
+      "station": "compare",
+      "prop": "planet",
+      "skillName": "One-point perspective",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Picture a long straight road going into the distance.",
+      "questions": [
+        {
+          "ask": "In one-point perspective, lines meet at the...?",
+          "answer": "Vanishing point",
+          "distractors": ["Focal point", "Highlight", "Foreground"]
+        },
+        {
+          "ask": "The vanishing point sits on the...?",
+          "answer": "Horizon line",
+          "distractors": ["Bottom edge", "Frame", "Foreground"]
+        },
+        {
+          "ask": "In a drawing, railway lines going into the distance seem to...?",
+          "answer": "Meet far away",
+          "distractors": ["Get wider", "Curve upwards", "Disappear sideways"]
+        },
+        {
+          "ask": "The horizon line is always at the viewer's...?",
+          "answer": "Eye level",
+          "distractors": ["Feet", "Knees", "Shoulders"]
+        },
+        {
+          "ask": "How many vanishing points does two-point perspective use?",
+          "answer": "Two",
+          "distractors": ["One", "Three", "None"]
+        },
+        {
+          "ask": "Which Florentine architect showed how linear perspective works?",
+          "answer": "Brunelleschi",
+          "distractors": ["Monet", "Hokusai", "Kusama"]
+        },
+        {
+          "ask": "Looking up at a tower from the ground gives a...?",
+          "answer": "Worm's-eye view",
+          "distractors": ["Bird's-eye view", "Side view", "Close-up"]
+        },
+        {
+          "ask": "Looking down from high above gives a...?",
+          "answer": "Bird's-eye view",
+          "distractors": ["Worm's-eye view", "Eye-level view", "Close-up"]
+        }
+      ]
+    },
+    {
+      "id": "art-colour-theory",
+      "title": "Colour Theory Lab",
+      "station": "compare",
+      "prop": "prism",
+      "skillName": "Colour theory and colour schemes",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Picture where the colours sit on the colour wheel.",
+      "questions": [
+        {
+          "ask": "What word means the name of a pure colour, like red?",
+          "answer": "Hue",
+          "distractors": ["Tint", "Tone", "Shade"]
+        },
+        {
+          "ask": "How bright or dull a colour is, is its...?",
+          "answer": "Saturation",
+          "distractors": ["Hue", "Form", "Texture"]
+        },
+        {
+          "ask": "Colours next to each other on the wheel are...?",
+          "answer": "Analogous",
+          "distractors": ["Complementary", "Triadic", "Neutral"]
+        },
+        {
+          "ask": "A colour scheme using one hue only is...?",
+          "answer": "Monochromatic",
+          "distractors": ["Analogous", "Triadic", "Complementary"]
+        },
+        {
+          "ask": "What is the complementary colour of blue-violet?",
+          "answer": "Yellow-orange",
+          "distractors": ["Red-violet", "Blue-green", "Yellow-green"]
+        },
+        {
+          "ask": "What is the complementary colour of red-orange?",
+          "answer": "Blue-green",
+          "distractors": ["Yellow-green", "Red-violet", "Blue-violet"]
+        },
+        {
+          "ask": "Three colours evenly spaced on the wheel form a...?",
+          "answer": "Triadic scheme",
+          "distractors": ["Analogous scheme", "Monochrome", "Tint"]
+        },
+        {
+          "ask": "Placing complementary colours side by side makes them look?",
+          "answer": "Brighter",
+          "distractors": ["Duller", "Invisible", "Grey"]
+        }
+      ]
+    },
+    {
+      "id": "art-sculpture-methods",
+      "title": "Sculpture Methods",
+      "station": "compare",
+      "prop": "rock",
+      "skillName": "Sculpture techniques",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about whether material is taken away or added.",
+      "questions": [
+        {
+          "ask": "Carving away material, like stone or wood, is...?",
+          "answer": "Subtractive",
+          "distractors": ["Additive", "Casting", "Relief"]
+        },
+        {
+          "ask": "Building a sculpture up by adding clay is...?",
+          "answer": "Additive",
+          "distractors": ["Subtractive", "Etching", "Weaving"]
+        },
+        {
+          "ask": "A wire frame inside a sculpture to support it is an...?",
+          "answer": "Armature",
+          "distractors": ["Easel", "Palette", "Kiln"]
+        },
+        {
+          "ask": "Pouring liquid metal into a mould is called...?",
+          "answer": "Casting",
+          "distractors": ["Carving", "Glazing", "Weaving"]
+        },
+        {
+          "ask": "Clay fired once without glaze is called...?",
+          "answer": "Bisque",
+          "distractors": ["Slip", "Grout", "Plaster"]
+        },
+        {
+          "ask": "A design that stands out from a flat background is a...?",
+          "answer": "Relief",
+          "distractors": ["Collage", "Mosaic", "Monoprint"]
+        },
+        {
+          "ask": "Papier-mâché is made from...?",
+          "answer": "Paper and paste",
+          "distractors": ["Clay and water", "Wire and wax", "Sand and glass"]
+        },
+        {
+          "ask": "A sculpture you can walk all the way around is...?",
+          "answer": "Free-standing",
+          "distractors": ["A relief", "A print", "A collage"]
+        }
+      ]
+    },
+    {
+      "id": "art-paint-effects",
+      "title": "Paint Effects",
+      "station": "compare",
+      "prop": "water-drop",
+      "skillName": "Painting techniques",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Picture what the brush and paint are doing.",
+      "questions": [
+        {
+          "ask": "Painting wet paint onto wet paper is called...?",
+          "answer": "Wet-on-wet",
+          "distractors": ["Dry brush", "Impasto", "Sgraffito"]
+        },
+        {
+          "ask": "A thin, even layer of watercolour across paper is a...?",
+          "answer": "Wash",
+          "distractors": ["Glaze", "Impasto", "Stencil"]
+        },
+        {
+          "ask": "Thick paint with brush marks you can see is called...?",
+          "answer": "Impasto",
+          "distractors": ["Wash", "Wet-on-wet", "Stippling"]
+        },
+        {
+          "ask": "Scratching through a top layer to show colour beneath is?",
+          "answer": "Sgraffito",
+          "distractors": ["Impasto", "Wash", "Blending"]
+        },
+        {
+          "ask": "Using an almost dry brush for a scratchy texture is...?",
+          "answer": "Dry brush",
+          "distractors": ["Wet-on-wet", "Wash", "Glazing"]
+        },
+        {
+          "ask": "Painting with small dots of pure colour is called...?",
+          "answer": "Pointillism",
+          "distractors": ["Cubism", "Impasto", "Hatching"]
+        },
+        {
+          "ask": "In watercolour painting, white usually comes from...?",
+          "answer": "The paper",
+          "distractors": ["White paint", "Chalk", "Black paint"]
+        },
+        {
+          "ask": "Compared with acrylic, oil paint dries...?",
+          "answer": "More slowly",
+          "distractors": ["Instantly", "More quickly", "Never"]
+        }
+      ]
+    },
+    {
+      "id": "art-composition-craft",
+      "title": "Composition Craft",
+      "station": "compare",
+      "prop": "sun",
+      "skillName": "Composition in art",
+      "strand": "mastery",
+      "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about how the parts of a picture are arranged.",
+      "questions": [
+        {
+          "ask": "The main point of interest in an artwork is the...?",
+          "answer": "Focal point",
+          "distractors": ["Vanishing point", "Background", "Border"]
+        },
+        {
+          "ask": "The rule of thirds splits a picture into how many parts?",
+          "answer": "Nine",
+          "distractors": ["Three", "Four", "Six"]
+        },
+        {
+          "ask": "Empty space around and between objects is...?",
+          "answer": "Negative space",
+          "distractors": ["Positive space", "Foreground", "Texture"]
+        },
+        {
+          "ask": "The space taken up by the subject is...?",
+          "answer": "Positive space",
+          "distractors": ["Negative space", "Horizon", "Background"]
+        },
+        {
+          "ask": "A layout that is the same on both sides is...?",
+          "answer": "Symmetrical",
+          "distractors": ["Asymmetrical", "Abstract", "Monochrome"]
+        },
+        {
+          "ask": "A balanced layout with different things on each side is...?",
+          "answer": "Asymmetrical",
+          "distractors": ["Symmetrical", "Tertiary", "Monochrome"]
+        },
+        {
+          "ask": "Lines that guide your eye to the focal point are...?",
+          "answer": "Leading lines",
+          "distractors": ["Hatching lines", "Grid lines", "Contour lines"]
+        },
+        {
+          "ask": "A picture that is wider than it is tall is in...?",
+          "answer": "Landscape format",
+          "distractors": ["Portrait format", "Square format", "Round format"]
+        }
+      ]
+    },
+    {
+      "id": "art-renaissance-masters",
+      "title": "Renaissance Masters",
+      "station": "compare",
+      "prop": "sun",
+      "skillName": "Renaissance artists",
+      "strand": "great-artists",
+      "statutoryRequirement": "Pupils should be taught about great artists, architects and designers in history",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about the famous artwork in the question.",
+      "questions": [
+        {
+          "ask": "Who painted the ceiling of the Sistine Chapel?",
+          "answer": "Michelangelo",
+          "distractors": ["Leonardo da Vinci", "Raphael", "Botticelli"]
+        },
+        {
+          "ask": "Who painted 'The Last Supper'?",
+          "answer": "Leonardo da Vinci",
+          "distractors": ["Michelangelo", "Raphael", "Botticelli"]
+        },
+        {
+          "ask": "Who painted 'The Birth of Venus'?",
+          "answer": "Botticelli",
+          "distractors": ["Raphael", "Michelangelo", "Albrecht Dürer"]
+        },
+        {
+          "ask": "Who painted 'The School of Athens'?",
+          "answer": "Raphael",
+          "distractors": ["Botticelli", "Leonardo da Vinci", "Albrecht Dürer"]
+        },
+        {
+          "ask": "Which German artist made a famous woodcut of a rhinoceros?",
+          "answer": "Albrecht Dürer",
+          "distractors": ["Raphael", "Michelangelo", "Botticelli"]
+        },
+        {
+          "ask": "In which country did the Renaissance begin?",
+          "answer": "Italy",
+          "distractors": ["France", "England", "Spain"]
+        },
+        {
+          "ask": "What does the word 'Renaissance' mean?",
+          "answer": "Rebirth",
+          "distractors": ["Painting", "Kingdom", "Darkness"]
+        },
+        {
+          "ask": "In which city is Michelangelo's statue of David?",
+          "answer": "Florence",
+          "distractors": ["Paris", "London", "Athens"]
+        },
+        {
+          "ask": "In which museum does the 'Mona Lisa' hang?",
+          "answer": "The Louvre",
+          "distractors": ["Tate Modern", "The Uffizi", "The Prado"]
+        }
+      ]
+    },
+    {
+      "id": "art-amazing-architects",
+      "title": "Amazing Architects",
+      "station": "compare",
+      "prop": "planet",
+      "skillName": "Famous architects and buildings",
+      "strand": "great-artists",
+      "statutoryRequirement": "Pupils should be taught about great artists, architects and designers in history",
+      "instruction": "Read the question, then tap the best answer.",
+      "hint": "Not quite. Think about where the building is and when it was built.",
+      "questions": [
+        {
+          "ask": "Who designed St Paul's Cathedral in London?",
+          "answer": "Christopher Wren",
+          "distractors": ["Zaha Hadid", "Renzo Piano", "Antoni Gaudí"]
+        },
+        {
+          "ask": "St Paul's Cathedral was rebuilt after which event?",
+          "answer": "Great Fire of London",
+          "distractors": ["The Plague", "World War Two", "The Gunpowder Plot"]
+        },
+        {
+          "ask": "Who designed the London Aquatics Centre for the 2012 Olympics?",
+          "answer": "Zaha Hadid",
+          "distractors": ["Christopher Wren", "Joseph Paxton", "Antoni Gaudí"]
+        },
+        {
+          "ask": "Zaha Hadid was the first woman to win which architecture prize?",
+          "answer": "Pritzker Prize",
+          "distractors": ["Turner Prize", "Nobel Prize", "Booker Prize"]
+        },
+        {
+          "ask": "Who designed the Sagrada Família in Barcelona?",
+          "answer": "Antoni Gaudí",
+          "distractors": ["Renzo Piano", "Zaha Hadid", "Christopher Wren"]
+        },
+        {
+          "ask": "Who designed The Shard in London?",
+          "answer": "Renzo Piano",
+          "distractors": ["Christopher Wren", "Antoni Gaudí", "Joseph Paxton"]
+        },
+        {
+          "ask": "Who designed Fallingwater, a house built over a waterfall?",
+          "answer": "Frank Lloyd Wright",
+          "distractors": ["Joseph Paxton", "Renzo Piano", "Christopher Wren"]
+        },
+        {
+          "ask": "Who designed the Crystal Palace for the Great Exhibition of 1851?",
+          "answer": "Joseph Paxton",
+          "distractors": ["Zaha Hadid", "Frank Lloyd Wright", "Antoni Gaudí"]
+        }
+      ]
+    },
+    {
+      "id": "art-movement-sorter",
+      "title": "Art Movement Sorter",
+      "station": "sort",
+      "prop": "prism",
+      "skillName": "Modern art movements",
+      "strand": "great-artists",
+      "statutoryRequirement": "Pupils should be taught about great artists, architects and designers in history",
+      "instruction": "Read it, then tap the group it belongs in.",
+      "hint": "Not quite. Think about the style the artist is famous for.",
+      "questions": [
+        {
+          "ask": "Picasso's blocky faces seen from many sides: which movement?",
+          "answer": "Cubism",
+          "distractors": ["Pop Art", "Surrealism", "Op Art"]
+        },
+        {
+          "ask": "Warhol's soup can pictures: which movement?",
+          "answer": "Pop Art",
+          "distractors": ["Cubism", "Impressionism", "Surrealism"]
+        },
+        {
+          "ask": "Dalí's melting clocks: which movement?",
+          "answer": "Surrealism",
+          "distractors": ["Pop Art", "Op Art", "Impressionism"]
+        },
+        {
+          "ask": "Lichtenstein's comic-strip paintings: which movement?",
+          "answer": "Pop Art",
+          "distractors": ["Surrealism", "Cubism", "Op Art"]
+        },
+        {
+          "ask": "Riley's dizzy black-and-white stripes: which movement?",
+          "answer": "Op Art",
+          "distractors": ["Pop Art", "Cubism", "Impressionism"]
+        },
+        {
+          "ask": "Monet's quick, light-filled outdoor scenes: which movement?",
+          "answer": "Impressionism",
+          "distractors": ["Cubism", "Op Art", "Surrealism"]
+        },
+        {
+          "ask": "Kandinsky's shapes that show no real objects: which movement?",
+          "answer": "Abstract art",
+          "distractors": ["Impressionism", "Pop Art", "Op Art"]
+        },
+        {
+          "ask": "Magritte's man with an apple for a face: which movement?",
+          "answer": "Surrealism",
+          "distractors": ["Impressionism", "Op Art", "Cubism"]
+        },
+        {
+          "ask": "Braque's guitars broken into flat shapes: which movement?",
+          "answer": "Cubism",
+          "distractors": ["Op Art", "Pop Art", "Impressionism"]
+        }
+      ]
+    }
+  ]
+}

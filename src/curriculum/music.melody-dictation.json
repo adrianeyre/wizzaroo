@@ -1,0 +1,8 @@
+{
+  "id": "music.melody-dictation",
+  "name": "Matching a heard melody to staff notation",
+  "subject": "music",
+  "yearGroup": 6,
+  "strand": "notation",
+  "prerequisites": []
+}

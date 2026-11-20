@@ -1,0 +1,8 @@
+{
+  "id": "maths.clockwise-turns",
+  "name": "Turning clockwise and anticlockwise in right angles",
+  "subject": "maths",
+  "yearGroup": 2,
+  "strand": "geometry-position-and-direction",
+  "prerequisites": ["maths.position-and-turns"]
+}

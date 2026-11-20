@@ -1,0 +1,530 @@
+{
+  "subject": "english",
+  "yearGroup": 5,
+  "games": [
+    {
+      "id": "past-perfect-portal",
+      "title": "Past Perfect Portal",
+      "station": "compare",
+      "prop": "moon",
+      "skillName": "The past perfect and tense choices",
+      "strand": "vocabulary-grammar-and-punctuation",
+      "statutoryRequirement": "Pupils should be taught to develop their understanding of the concepts set out in English Appendix 2 by: linking ideas across paragraphs using adverbials of time [for example, later], place [for example, nearby] and number [for example, secondly] or tense choices [for example, he had seen her before]",
+      "instruction": "Read the sentence, then tap the verb that fits.",
+      "hint": "Not quite. Work out which action happened first, then try again.",
+      "questions": [
+        {
+          "ask": "'By the time we arrived, the film ___.'",
+          "answer": "had started",
+          "distractors": ["has started", "starts", "will start"]
+        },
+        {
+          "ask": "Which sentence uses the past perfect?",
+          "answer": "She had left.",
+          "distractors": ["She has left.", "She left.", "She was leaving."]
+        },
+        {
+          "ask": "'He ___ her before, so he waved.'",
+          "answer": "had seen",
+          "distractors": ["has seen", "sees", "had saw"]
+        },
+        {
+          "ask": "'After we ___ dinner, we played a game.'",
+          "answer": "had eaten",
+          "distractors": ["had ate", "have eaten", "eat"]
+        },
+        {
+          "ask": "'They had finished.' Which tense is this?",
+          "answer": "past perfect",
+          "distractors": ["present perfect", "simple past", "past progressive"]
+        },
+        {
+          "ask": "'Until last winter, I ___ snow.'",
+          "answer": "had never seen",
+          "distractors": ["have never seen", "never see", "had never saw"]
+        },
+        {
+          "ask": "'The ground was wet because it ___ in the night.'",
+          "answer": "had rained",
+          "distractors": ["has rained", "rains", "will rain"]
+        },
+        {
+          "ask": "Keep the tense: 'She opened the box and ___ a key.'",
+          "answer": "found",
+          "distractors": ["finds", "has found", "is finding"]
+        },
+        {
+          "ask": "'When I got home, Mum ___ a cake, so it was ready.'",
+          "answer": "had baked",
+          "distractors": ["has baked", "bakes", "had bake"]
+        },
+        {
+          "ask": "Which is the past perfect of 'write'?",
+          "answer": "had written",
+          "distractors": ["had wrote", "has written", "writed"]
+        }
+      ]
+    },
+    {
+      "id": "maybe-meadow-adverbs",
+      "title": "Maybe Over There",
+      "station": "compare",
+      "prop": "cloud",
+      "skillName": "Adverbs of possibility and adverbials of place",
+      "strand": "vocabulary-grammar-and-punctuation",
+      "statutoryRequirement": "Pupils should be taught to use modal verbs or adverbs to indicate degrees of possibility; indicating degrees of possibility using adverbs [for example, perhaps, surely] or modal verbs [for example, might, should, will, must]; linking ideas across paragraphs using adverbials of time [for example, later], place [for example, nearby] and number [for example, secondly]",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Ask yourself whether the word shows how sure or where, then try again.",
+      "questions": [
+        {
+          "ask": "Which word shows possibility? '___ it will snow tomorrow.'",
+          "answer": "Perhaps",
+          "distractors": ["Nearby", "Yesterday", "Quickly"]
+        },
+        {
+          "ask": "Which adverb shows the MOST certainty?",
+          "answer": "definitely",
+          "distractors": ["perhaps", "maybe", "possibly"]
+        },
+        {
+          "ask": "Which adverb shows the LEAST certainty?",
+          "answer": "possibly",
+          "distractors": ["certainly", "definitely", "surely"]
+        },
+        {
+          "ask": "'Surely you remember?' What does 'surely' show?",
+          "answer": "how certain",
+          "distractors": ["where", "when", "how fast"]
+        },
+        {
+          "ask": "Which is an adverbial of place?",
+          "answer": "nearby",
+          "distractors": ["later", "perhaps", "secondly"]
+        },
+        {
+          "ask": "'Under the old bridge, a troll waited.' What does the adverbial show?",
+          "answer": "place",
+          "distractors": ["time", "possibility", "number"]
+        },
+        {
+          "ask": "Which adverbial of place fits? '___, a fox was watching.'",
+          "answer": "Behind the shed",
+          "distractors": ["Later that day", "Perhaps", "Firstly"]
+        },
+        {
+          "ask": "'Clearly, the plan had failed.' Which word shows certainty?",
+          "answer": "Clearly",
+          "distractors": ["plan", "had", "failed"]
+        },
+        {
+          "ask": "Which pair are both adverbs of possibility?",
+          "answer": "maybe, probably",
+          "distractors": ["nearby, later", "here, there", "soon, now"]
+        },
+        {
+          "ask": "'In the distance, a bell rang.' Find the adverbial of place.",
+          "answer": "In the distance",
+          "distractors": ["a bell", "rang", "a bell rang"]
+        }
+      ]
+    },
+    {
+      "id": "verb-prefix-workshop",
+      "title": "Prefix Workshop",
+      "station": "compare",
+      "prop": "beaker",
+      "skillName": "Verb prefixes de- and over-",
+      "strand": "word-reading",
+      "statutoryRequirement": "Pupils should be taught to apply their growing knowledge of root words, prefixes and suffixes (morphology and etymology), as listed in English Appendix 1, both to read aloud and to understand the meaning of new words that they meet; verb prefixes [for example, dis–, de–, mis–, over– and re–]",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Think about what the prefix adds to the root word, then try again.",
+      "questions": [
+        {
+          "ask": "What does 'defrost' mean?",
+          "answer": "remove the ice",
+          "distractors": ["add more ice", "freeze again", "frost too much"]
+        },
+        {
+          "ask": "What does 'oversleep' mean?",
+          "answer": "sleep too long",
+          "distractors": ["sleep badly", "not sleep", "sleep again"]
+        },
+        {
+          "ask": "Add a prefix to 'cook' to mean 'cook too much'.",
+          "answer": "overcook",
+          "distractors": ["decook", "recook", "miscook"]
+        },
+        {
+          "ask": "Add a prefix to 'code' to mean 'work out a secret code'.",
+          "answer": "decode",
+          "distractors": ["overcode", "miscode", "encode"]
+        },
+        {
+          "ask": "What does the prefix 'de-' often mean?",
+          "answer": "remove or undo",
+          "distractors": ["too much", "again", "before"]
+        },
+        {
+          "ask": "What does the prefix 'over-' often mean?",
+          "answer": "too much",
+          "distractors": ["remove", "again", "not"]
+        },
+        {
+          "ask": "'The river overflowed.' What happened?",
+          "answer": "it spilled over",
+          "distractors": ["it dried up", "it froze", "it slowed down"]
+        },
+        {
+          "ask": "Which word means 'to remove the errors from a program'?",
+          "answer": "debug",
+          "distractors": ["overbug", "rebug", "misbug"]
+        },
+        {
+          "ask": "If you overestimate, your guess is ___.",
+          "answer": "too high",
+          "distractors": ["too low", "exactly right", "undone"]
+        },
+        {
+          "ask": "Which word means 'to turn off', as in an alarm?",
+          "answer": "deactivate",
+          "distractors": ["overactivate", "reactivate", "misactivate"]
+        }
+      ]
+    },
+    {
+      "id": "silent-letter-sleuth",
+      "title": "Silent Letter Sleuth",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Spelling ei after c, ough and silent letters",
+      "strand": "spelling",
+      "statutoryRequirement": "Pupils should be taught to spell some words with 'silent' letters [for example, knight, psalm, solemn]; use knowledge of morphology and etymology in spelling and understand that the spelling of some words needs to be learnt specifically, as listed in English Appendix 1",
+      "instruction": "Read the clue, then tap the right spelling.",
+      "hint": "Not quite. Remember 'i before e except after c' and look for silent letters.",
+      "questions": [
+        {
+          "ask": "Pick the right spelling: to get something given to you.",
+          "answer": "receive",
+          "distractors": ["recieve", "receeve", "resieve"]
+        },
+        {
+          "ask": "Pick the right spelling: the top surface inside a room.",
+          "answer": "ceiling",
+          "distractors": ["cieling", "seiling", "ceilling"]
+        },
+        {
+          "ask": "Pick the right spelling: to trick someone.",
+          "answer": "deceive",
+          "distractors": ["decieve", "deseive", "deceeve"]
+        },
+        {
+          "ask": "Pick the right spelling: not smooth.",
+          "answer": "rough",
+          "distractors": ["ruff", "rugh", "rouf"]
+        },
+        {
+          "ask": "Pick the right spelling: 'Even ___ it rained, we went out.'",
+          "answer": "though",
+          "distractors": ["tho", "thogh", "thow"]
+        },
+        {
+          "ask": "Pick the right spelling: the past tense of 'think'.",
+          "answer": "thought",
+          "distractors": ["thort", "thougt", "thawt"]
+        },
+        {
+          "ask": "Pick the right spelling: a soldier in armour on a horse.",
+          "answer": "knight",
+          "distractors": ["nite", "night", "knite"]
+        },
+        {
+          "ask": "Pick the right spelling: very serious and grave.",
+          "answer": "solemn",
+          "distractors": ["solem", "sollem", "solumn"]
+        },
+        {
+          "ask": "Pick the right spelling: a sacred song or hymn.",
+          "answer": "psalm",
+          "distractors": ["sarm", "salm", "psarm"]
+        },
+        {
+          "ask": "Pick the right spelling: land with water all around it.",
+          "answer": "island",
+          "distractors": ["iland", "ilend", "islend"]
+        }
+      ]
+    },
+    {
+      "id": "thesaurus-treasure-hunt",
+      "title": "Thesaurus Treasure",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Using a dictionary and thesaurus",
+      "strand": "word-reading",
+      "statutoryRequirement": "Pupils should be taught to use dictionaries to check the spelling and meaning of words; use the first three or four letters of a word to check spelling, meaning or both of these in a dictionary; use a thesaurus",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Think about what each book is for, then try again.",
+      "questions": [
+        {
+          "ask": "Which book lists words with similar meanings?",
+          "answer": "a thesaurus",
+          "distractors": ["a dictionary", "an atlas", "a glossary"]
+        },
+        {
+          "ask": "You look up 'big' in a thesaurus. Which synonym might you find?",
+          "answer": "enormous",
+          "distractors": ["tiny", "quickly", "small"]
+        },
+        {
+          "ask": "Which word could replace 'said' for someone shouting angrily?",
+          "answer": "bellowed",
+          "distractors": ["whispered", "mumbled", "sighed"]
+        },
+        {
+          "ask": "A thesaurus gives words for 'happy'. Which one fits?",
+          "answer": "cheerful",
+          "distractors": ["gloomy", "furious", "weary"]
+        },
+        {
+          "ask": "Which of these comes first in a dictionary?",
+          "answer": "persist",
+          "distractors": ["person", "perspire", "persuade"]
+        },
+        {
+          "ask": "Which of these comes last in a dictionary?",
+          "answer": "stretch",
+          "distractors": ["stream", "street", "strength"]
+        },
+        {
+          "ask": "A dictionary shows 'bow' twice, as a noun and as a verb. What does this show?",
+          "answer": "it has two meanings",
+          "distractors": [
+            "it is spelt wrongly",
+            "it is a rhyme",
+            "it is very old"
+          ]
+        },
+        {
+          "ask": "Which antonym of 'ancient' might a thesaurus give?",
+          "answer": "modern",
+          "distractors": ["old", "antique", "historic"]
+        },
+        {
+          "ask": "Which book would you use to check how to spell 'necessary'?",
+          "answer": "a dictionary",
+          "distractors": ["a thesaurus", "an atlas", "a calculator"]
+        },
+        {
+          "ask": "A thesaurus suggests words for 'walk'. Which shows walking slowly?",
+          "answer": "stroll",
+          "distractors": ["sprint", "dash", "race"]
+        }
+      ]
+    },
+    {
+      "id": "crystal-ball-clues",
+      "title": "Crystal Ball Clues",
+      "station": "compare",
+      "prop": "prism",
+      "skillName": "Predicting from details in the text",
+      "strand": "reading-comprehension",
+      "statutoryRequirement": "Pupils should be taught to understand what they read by: predicting what might happen from details stated and implied",
+      "instruction": "Read the clues, then tap the most likely answer.",
+      "hint": "Not quite. Look for the clue words in the sentence, then try again.",
+      "questions": [
+        {
+          "ask": "'Dark clouds gathered and the wind began to howl.' What will probably happen?",
+          "answer": "A storm will come.",
+          "distractors": [
+            "The sun will shine.",
+            "It will be calm.",
+            "Snow will melt."
+          ]
+        },
+        {
+          "ask": "'Ella packed her bucket, spade and swimsuit.' Where is she probably going?",
+          "answer": "the beach",
+          "distractors": ["school", "the shops", "bed"]
+        },
+        {
+          "ask": "'Leo's stomach rumbled as he smelt baking bread.' What might he do next?",
+          "answer": "eat something",
+          "distractors": ["go to sleep", "go swimming", "sing a song"]
+        },
+        {
+          "ask": "'The ice on the pond creaked under Jack's boots.' What might happen?",
+          "answer": "the ice may crack",
+          "distractors": ["it will snow", "he will fly", "the pond will dry"]
+        },
+        {
+          "ask": "'Mia yawned and her eyelids drooped.' What will she probably do?",
+          "answer": "go to sleep",
+          "distractors": ["run a race", "eat breakfast", "laugh loudly"]
+        },
+        {
+          "ask": "'The dog stared at its lead and wagged its tail.' What does it want?",
+          "answer": "a walk",
+          "distractors": ["a bath", "a nap", "a toy"]
+        },
+        {
+          "ask": "'Sam hid the pieces of the vase under the rug.' What has probably happened?",
+          "answer": "he broke the vase",
+          "distractors": ["he bought a vase", "he made a vase", "he won a vase"]
+        },
+        {
+          "ask": "'The candle flickered, then the room went dark.' What happened?",
+          "answer": "the candle went out",
+          "distractors": ["the sun rose", "a light came on", "it got hotter"]
+        },
+        {
+          "ask": "'The crowd held their breath as the striker ran up to the ball.' What comes next?",
+          "answer": "a kick at goal",
+          "distractors": ["a song", "a nap", "a dance"]
+        },
+        {
+          "ask": "'Grandad checked his watch again and tapped his foot.' How does he feel?",
+          "answer": "impatient",
+          "distractors": ["relaxed", "sleepy", "joyful"]
+        }
+      ]
+    },
+    {
+      "id": "myth-and-stage-quest",
+      "title": "Myth and Stage Quest",
+      "station": "compare",
+      "prop": "planet",
+      "skillName": "Myths, legends, plays and stories from other cultures",
+      "strand": "reading-comprehension",
+      "statutoryRequirement": "Pupils should be taught to maintain positive attitudes to reading and understanding of what they read by: increasing their familiarity with a wide range of books, including myths, legends and traditional stories, modern fiction, fiction from our literary heritage, and books from other cultures and traditions; preparing poems and plays to read aloud and to perform",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Think about the myths, legends and plays you know, then try again.",
+      "questions": [
+        {
+          "ask": "In Greek myth, who flew too close to the sun?",
+          "answer": "Icarus",
+          "distractors": ["Zeus", "Perseus", "Theseus"]
+        },
+        {
+          "ask": "Which creature lived in the labyrinth in the Greek myth?",
+          "answer": "the Minotaur",
+          "distractors": ["Medusa", "a dragon", "a cyclops"]
+        },
+        {
+          "ask": "In the legend, who pulled the sword from the stone?",
+          "answer": "Arthur",
+          "distractors": ["Merlin", "Robin Hood", "Lancelot"]
+        },
+        {
+          "ask": "Stories about Anansi the spider come from which continent?",
+          "answer": "Africa",
+          "distractors": ["Asia", "Europe", "Antarctica"]
+        },
+        {
+          "ask": "Thor, the god of thunder, belongs to which myths?",
+          "answer": "Norse",
+          "distractors": ["Greek", "Roman", "Egyptian"]
+        },
+        {
+          "ask": "In a playscript, the notes that tell actors what to do are called ___.",
+          "answer": "stage directions",
+          "distractors": ["speech marks", "a narrator", "the chorus"]
+        },
+        {
+          "ask": "In a playscript, where is a character's name written?",
+          "answer": "before their line",
+          "distractors": ["at the end", "in a footnote", "in the title"]
+        },
+        {
+          "ask": "In the Hindu story of Rama and Sita, who is the demon king?",
+          "answer": "Ravana",
+          "distractors": ["Hanuman", "Lakshmana", "Rama"]
+        },
+        {
+          "ask": "In the Old English poem, which monster does Beowulf fight first?",
+          "answer": "Grendel",
+          "distractors": ["Medusa", "the Minotaur", "Fenrir"]
+        },
+        {
+          "ask": "Which Chinese story explains the order of the zodiac animals?",
+          "answer": "The Great Race",
+          "distractors": ["The Lion King", "Anansi", "Beowulf"]
+        }
+      ]
+    },
+    {
+      "id": "dialogue-doctor",
+      "title": "Dialogue Doctor",
+      "station": "compare",
+      "prop": "heart",
+      "skillName": "Integrating dialogue and keeping tense consistent",
+      "strand": "writing-composition",
+      "statutoryRequirement": "Pupils should be taught to draft and write by: in narratives, describing settings, characters and atmosphere and integrating dialogue to convey character and advance the action; evaluate and edit by: ensuring the consistent and correct use of tense throughout a piece of writing",
+      "instruction": "Read it, then tap the best answer.",
+      "hint": "Not quite. Think about what the words show about the character or the time, then try again.",
+      "questions": [
+        {
+          "ask": "Which line of speech best shows that a character is nervous?",
+          "answer": "\"I-I'm not sure...\"",
+          "distractors": ["\"Let's go!\"", "\"Ha! Easy!\"", "\"I love it.\""]
+        },
+        {
+          "ask": "Which line of speech moves the action on?",
+          "answer": "\"Quick, hide!\"",
+          "distractors": [
+            "\"Nice day.\"",
+            "\"I like cake.\"",
+            "\"Hello there.\""
+          ]
+        },
+        {
+          "ask": "Which reporting verb best shows that a character is angry?",
+          "answer": "snapped",
+          "distractors": ["whispered", "giggled", "sighed"]
+        },
+        {
+          "ask": "Which is punctuated correctly?",
+          "answer": "\"Stop!\" she cried.",
+          "distractors": [
+            "\"Stop! she cried.\"",
+            "Stop! \"she cried.\"",
+            "\"Stop!\" She cried."
+          ]
+        },
+        {
+          "ask": "Keep the tense: 'Ali grabbed the map and ___ towards the cave.'",
+          "answer": "ran",
+          "distractors": ["runs", "is running", "will run"]
+        },
+        {
+          "ask": "Keep the tense: 'The wind howls as Kit ___ the door.'",
+          "answer": "opens",
+          "distractors": ["opened", "had opened", "will open"]
+        },
+        {
+          "ask": "Which sentence keeps the tense consistent?",
+          "answer": "She ran and hid.",
+          "distractors": [
+            "She runs and hid.",
+            "She ran and hides.",
+            "She run and hid."
+          ]
+        },
+        {
+          "ask": "When a new character starts to speak, you should start a ___.",
+          "answer": "new line",
+          "distractors": ["new chapter", "new title", "new poem"]
+        },
+        {
+          "ask": "Which reporting clause best shows that a character is tired?",
+          "answer": "she yawned",
+          "distractors": ["she yelled", "she giggled", "she snapped"]
+        },
+        {
+          "ask": "'I'm fine,' he muttered, staring at the floor. How does he really feel?",
+          "answer": "upset",
+          "distractors": ["excited", "proud", "fine"]
+        }
+      ]
+    }
+  ]
+}

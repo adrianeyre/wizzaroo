@@ -1,0 +1,8 @@
+{
+  "id": "maths.times-tables-3-4-8",
+  "name": "The 3, 4 and 8 times tables",
+  "subject": "maths",
+  "yearGroup": 3,
+  "strand": "multiplication-and-division",
+  "prerequisites": ["maths.add-subtract-facts-to-20"]
+}

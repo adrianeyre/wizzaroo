@@ -1,0 +1,1465 @@
+{
+  "yearGroup": 3,
+  "games": [
+    {
+      "skillId": "geography.countries-of-europe",
+      "title": "Europe Express",
+      "skillName": "Countries of Europe",
+      "strand": "locational-knowledge",
+      "scene": "globe-spinner",
+      "instruction": "Watch where the pin lands on the globe, then tap the country or capital city it marks.",
+      "questions": [
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": 41.9,
+              "longitude": 12.5
+            }
+          },
+          "answer": "Italy",
+          "wrongAnswers": ["Spain", "Greece", "Portugal"]
+        },
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": 48.86,
+              "longitude": 2.35
+            }
+          },
+          "answer": "France",
+          "wrongAnswers": ["Germany", "Poland", "Norway"]
+        },
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": 40.42,
+              "longitude": -3.7
+            }
+          },
+          "answer": "Spain",
+          "wrongAnswers": ["Italy", "Austria", "Sweden"]
+        },
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": 52.52,
+              "longitude": 13.4
+            }
+          },
+          "answer": "Germany",
+          "wrongAnswers": ["France", "Greece", "Portugal"]
+        },
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": 52.23,
+              "longitude": 21.01
+            }
+          },
+          "answer": "Poland",
+          "wrongAnswers": ["Spain", "Ireland", "Italy"]
+        },
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": 37.98,
+              "longitude": 23.73
+            }
+          },
+          "answer": "Greece",
+          "wrongAnswers": ["Norway", "Netherlands", "France"]
+        },
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": 59.91,
+              "longitude": 10.75
+            }
+          },
+          "answer": "Norway",
+          "wrongAnswers": ["Greece", "Spain", "Austria"]
+        },
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": 52.37,
+              "longitude": 4.9
+            }
+          },
+          "answer": "Netherlands",
+          "wrongAnswers": ["Italy", "Sweden", "Poland"]
+        },
+        {
+          "ask": "The pin marks a capital city. Which city is it?",
+          "show": {
+            "pin": {
+              "latitude": 59.33,
+              "longitude": 18.07
+            }
+          },
+          "answer": "Stockholm",
+          "wrongAnswers": ["Madrid", "Athens", "Lisbon"]
+        },
+        {
+          "ask": "The pin marks a capital city. Which city is it?",
+          "show": {
+            "pin": {
+              "latitude": 38.72,
+              "longitude": -9.14
+            }
+          },
+          "answer": "Lisbon",
+          "wrongAnswers": ["Warsaw", "Oslo", "Berlin"]
+        },
+        {
+          "ask": "The pin marks a capital city. Which city is it?",
+          "show": {
+            "pin": {
+              "latitude": 53.35,
+              "longitude": -6.26
+            }
+          },
+          "answer": "Dublin",
+          "wrongAnswers": ["Rome", "Vienna", "Athens"]
+        },
+        {
+          "ask": "The pin marks a capital city. Which city is it?",
+          "show": {
+            "pin": {
+              "latitude": 48.21,
+              "longitude": 16.37
+            }
+          },
+          "answer": "Vienna",
+          "wrongAnswers": ["Dublin", "Lisbon", "Oslo"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.eight-compass-points",
+      "title": "Eight-Point Island",
+      "skillName": "The eight points of a compass",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "compass-island",
+      "instruction": "Wizz is facing north, so use all eight compass points to find each landmark on the island.",
+      "questions": [
+        {
+          "ask": "Which direction is the cave from Wizz?",
+          "show": {
+            "target": "cave",
+            "direction": "south-west",
+            "points": 8
+          },
+          "answer": "South-west",
+          "wrongAnswers": ["South-east", "North-west", "North-east"]
+        },
+        {
+          "ask": "What is to the north-east of Wizz?",
+          "show": {
+            "target": "windmill",
+            "direction": "north-east",
+            "points": 8
+          },
+          "answer": "Windmill",
+          "wrongAnswers": ["Cave", "Castle", "Lighthouse", "Bridge"]
+        },
+        {
+          "ask": "Which direction is the lighthouse from Wizz?",
+          "show": {
+            "target": "lighthouse",
+            "direction": "north",
+            "points": 8
+          },
+          "answer": "North",
+          "wrongAnswers": ["South", "East", "North-west"]
+        },
+        {
+          "ask": "What is to the south of Wizz?",
+          "show": {
+            "target": "treasure-chest",
+            "direction": "south",
+            "points": 8
+          },
+          "answer": "Treasure chest",
+          "wrongAnswers": ["Volcano", "Palm tree", "Windmill", "Castle"]
+        },
+        {
+          "ask": "Which direction is the castle from Wizz?",
+          "show": {
+            "target": "castle",
+            "direction": "south-east",
+            "points": 8
+          },
+          "answer": "South-east",
+          "wrongAnswers": ["South-west", "North-east", "North-west"]
+        },
+        {
+          "ask": "What is to the north of Wizz?",
+          "show": {
+            "target": "volcano",
+            "direction": "north",
+            "points": 8
+          },
+          "answer": "Volcano",
+          "wrongAnswers": ["Bridge", "Cave", "Treasure chest", "Lighthouse"]
+        },
+        {
+          "ask": "Which direction is the palm tree from Wizz?",
+          "show": {
+            "target": "palm-tree",
+            "direction": "west",
+            "points": 8
+          },
+          "answer": "West",
+          "wrongAnswers": ["East", "North", "South-west"]
+        },
+        {
+          "ask": "What is to the south-east of Wizz?",
+          "show": {
+            "target": "cave",
+            "direction": "south-east",
+            "points": 8
+          },
+          "answer": "Cave",
+          "wrongAnswers": ["Windmill", "Lighthouse", "Palm tree", "Castle"]
+        },
+        {
+          "ask": "Which direction is the volcano from Wizz?",
+          "show": {
+            "target": "volcano",
+            "direction": "north-west",
+            "points": 8
+          },
+          "answer": "North-west",
+          "wrongAnswers": ["North-east", "South-west", "South-east"]
+        },
+        {
+          "ask": "What is to the south-west of Wizz?",
+          "show": {
+            "target": "bridge",
+            "direction": "south-west",
+            "points": 8
+          },
+          "answer": "Bridge",
+          "wrongAnswers": ["Treasure chest", "Volcano", "Windmill", "Cave"]
+        },
+        {
+          "ask": "Which direction is the bridge from Wizz?",
+          "show": {
+            "target": "bridge",
+            "direction": "east",
+            "points": 8
+          },
+          "answer": "East",
+          "wrongAnswers": ["West", "South", "North-east"]
+        },
+        {
+          "ask": "What is to the east of Wizz?",
+          "show": {
+            "target": "palm-tree",
+            "direction": "east",
+            "points": 8
+          },
+          "answer": "Palm tree",
+          "wrongAnswers": ["Castle", "Lighthouse", "Cave", "Bridge"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.letter-number-grids",
+      "title": "Grid Detective",
+      "skillName": "Letter and number grid references",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "grid-hunt",
+      "instruction": "Read the letter along the bottom first, then the number up the side, to name the pin's square.",
+      "questions": [
+        {
+          "ask": "Which square is the pin in?",
+          "show": {
+            "style": "letters",
+            "x": 2,
+            "y": 4
+          },
+          "answer": "C4",
+          "wrongAnswers": ["D3", "D4", "B4", "C5"]
+        },
+        {
+          "ask": "What is the grid reference of the pin?",
+          "show": {
+            "style": "letters",
+            "x": 0,
+            "y": 3
+          },
+          "answer": "A3",
+          "wrongAnswers": ["C1", "B3", "A4", "A2"]
+        },
+        {
+          "ask": "Find the pin. Which square is it in?",
+          "show": {
+            "style": "letters",
+            "x": 4,
+            "y": 1
+          },
+          "answer": "E1",
+          "wrongAnswers": ["A5", "F1", "D1", "E2"]
+        },
+        {
+          "ask": "Which square is the pin in?",
+          "show": {
+            "style": "letters",
+            "x": 1,
+            "y": 6
+          },
+          "answer": "B6",
+          "wrongAnswers": ["F2", "C6", "A6", "B5"]
+        },
+        {
+          "ask": "What is the grid reference of the pin?",
+          "show": {
+            "style": "letters",
+            "x": 5,
+            "y": 2
+          },
+          "answer": "F2",
+          "wrongAnswers": ["B6", "E2", "F3", "F1"]
+        },
+        {
+          "ask": "Find the pin. Which square is it in?",
+          "show": {
+            "style": "letters",
+            "x": 3,
+            "y": 5
+          },
+          "answer": "D5",
+          "wrongAnswers": ["E4", "E5", "C5", "D6"]
+        },
+        {
+          "ask": "Which square is the pin in?",
+          "show": {
+            "style": "letters",
+            "x": 0,
+            "y": 1
+          },
+          "answer": "A1",
+          "wrongAnswers": ["B1", "A2", "B2"]
+        },
+        {
+          "ask": "What is the grid reference of the pin?",
+          "show": {
+            "style": "letters",
+            "x": 2,
+            "y": 2
+          },
+          "answer": "C2",
+          "wrongAnswers": ["B3", "D2", "B2", "C3"]
+        },
+        {
+          "ask": "Find the pin. Which square is it in?",
+          "show": {
+            "style": "letters",
+            "x": 4,
+            "y": 6
+          },
+          "answer": "E6",
+          "wrongAnswers": ["F5", "F6", "D6", "E5"]
+        },
+        {
+          "ask": "Which square is the pin in?",
+          "show": {
+            "style": "letters",
+            "x": 5,
+            "y": 5
+          },
+          "answer": "F5",
+          "wrongAnswers": ["E6", "E5", "F6", "F4"]
+        },
+        {
+          "ask": "What is the grid reference of the pin?",
+          "show": {
+            "style": "letters",
+            "x": 1,
+            "y": 3
+          },
+          "answer": "B3",
+          "wrongAnswers": ["C2", "C3", "A3", "B4"]
+        },
+        {
+          "ask": "Find the pin. Which square is it in?",
+          "show": {
+            "style": "letters",
+            "x": 3,
+            "y": 1
+          },
+          "answer": "D1",
+          "wrongAnswers": ["A4", "E1", "C1", "D2"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.parts-of-a-volcano",
+      "title": "Volcano Lab",
+      "skillName": "Parts of a volcano",
+      "strand": "human-and-physical-geography",
+      "scene": "volcano-cutaway",
+      "instruction": "Look inside the volcano and name the glowing part.",
+      "questions": [
+        {
+          "ask": "Which part of the volcano is glowing?",
+          "show": {
+            "part": "crater"
+          },
+          "answer": "Crater",
+          "wrongAnswers": ["Magma chamber", "Side vent", "Lava flow"]
+        },
+        {
+          "ask": "Which part of the volcano is glowing?",
+          "show": {
+            "part": "main-vent"
+          },
+          "answer": "Main vent",
+          "wrongAnswers": ["Ash cloud", "Crater", "Magma chamber"]
+        },
+        {
+          "ask": "Which part of the volcano is glowing?",
+          "show": {
+            "part": "side-vent"
+          },
+          "answer": "Side vent",
+          "wrongAnswers": ["Magma chamber", "Ash cloud", "Crater"]
+        },
+        {
+          "ask": "Which part of the volcano is glowing?",
+          "show": {
+            "part": "magma-chamber"
+          },
+          "answer": "Magma chamber",
+          "wrongAnswers": ["Crater", "Ash cloud", "Lava flow"]
+        },
+        {
+          "ask": "Which part of the volcano is glowing?",
+          "show": {
+            "part": "lava-flow"
+          },
+          "answer": "Lava flow",
+          "wrongAnswers": ["Magma chamber", "Main vent", "Crater"]
+        },
+        {
+          "ask": "Which part of the volcano is glowing?",
+          "show": {
+            "part": "ash-cloud"
+          },
+          "answer": "Ash cloud",
+          "wrongAnswers": ["Magma chamber", "Side vent", "Lava flow"]
+        },
+        {
+          "ask": "The main vent opens out here at the top. What is it?",
+          "show": {
+            "part": "crater"
+          },
+          "answer": "Crater",
+          "wrongAnswers": ["Magma chamber", "Ash cloud", "Lava flow"]
+        },
+        {
+          "ask": "Which part carries magma straight up to the top?",
+          "show": {
+            "part": "main-vent"
+          },
+          "answer": "Main vent",
+          "wrongAnswers": ["Ash cloud", "Lava flow", "Crater"]
+        },
+        {
+          "ask": "Magma escapes through this smaller opening. What is it?",
+          "show": {
+            "part": "side-vent"
+          },
+          "answer": "Side vent",
+          "wrongAnswers": ["Magma chamber", "Ash cloud", "Lava flow"]
+        },
+        {
+          "ask": "What is stored deep down in the glowing part?",
+          "show": {
+            "part": "magma-chamber"
+          },
+          "answer": "Magma",
+          "wrongAnswers": ["Ice", "Sand", "Seawater"]
+        },
+        {
+          "ask": "What do we call molten rock once it erupts?",
+          "show": {
+            "part": "lava-flow"
+          },
+          "answer": "Lava",
+          "wrongAnswers": ["Magma", "Ash", "Crust"]
+        },
+        {
+          "ask": "What is the glowing cloud made of?",
+          "show": {
+            "part": "ash-cloud"
+          },
+          "answer": "Tiny bits of rock",
+          "wrongAnswers": ["Water droplets", "Snowflakes", "Pollen"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.layers-of-the-earth",
+      "title": "Journey to the Core",
+      "skillName": "The layers of the Earth",
+      "strand": "human-and-physical-geography",
+      "scene": "volcano-cutaway",
+      "instruction": "Dig down through the Earth and name each glowing layer from the crust to the core.",
+      "questions": [
+        {
+          "ask": "Which layer of the Earth is glowing?",
+          "show": {
+            "part": "crust"
+          },
+          "answer": "Crust",
+          "wrongAnswers": ["Mantle", "Outer core", "Inner core"]
+        },
+        {
+          "ask": "Which layer of the Earth is glowing?",
+          "show": {
+            "part": "mantle"
+          },
+          "answer": "Mantle",
+          "wrongAnswers": ["Crust", "Outer core", "Inner core"]
+        },
+        {
+          "ask": "Which layer of the Earth is glowing?",
+          "show": {
+            "part": "outer-core"
+          },
+          "answer": "Outer core",
+          "wrongAnswers": ["Crust", "Mantle", "Inner core"]
+        },
+        {
+          "ask": "Which layer of the Earth is glowing?",
+          "show": {
+            "part": "inner-core"
+          },
+          "answer": "Inner core",
+          "wrongAnswers": ["Crust", "Mantle", "Outer core"]
+        },
+        {
+          "ask": "We live on this thin, rocky outer layer. What is it?",
+          "show": {
+            "part": "crust"
+          },
+          "answer": "Crust",
+          "wrongAnswers": ["Mantle", "Outer core", "Inner core"]
+        },
+        {
+          "ask": "Which layer of the Earth is the thinnest?",
+          "show": {
+            "part": "crust"
+          },
+          "answer": "Crust",
+          "wrongAnswers": ["Mantle", "Outer core", "Inner core"]
+        },
+        {
+          "ask": "Which layer of the Earth is the thickest?",
+          "show": {
+            "part": "mantle"
+          },
+          "answer": "Mantle",
+          "wrongAnswers": ["Crust", "Outer core", "Inner core"]
+        },
+        {
+          "ask": "This layer is hot rock that moves very slowly. What is it?",
+          "show": {
+            "part": "mantle"
+          },
+          "answer": "Mantle",
+          "wrongAnswers": ["Crust", "Outer core", "Inner core"]
+        },
+        {
+          "ask": "Which layer is made of liquid metal?",
+          "show": {
+            "part": "outer-core"
+          },
+          "answer": "Outer core",
+          "wrongAnswers": ["Crust", "Mantle", "Inner core"]
+        },
+        {
+          "ask": "What is the glowing layer made of?",
+          "show": {
+            "part": "outer-core"
+          },
+          "answer": "Liquid metal",
+          "wrongAnswers": ["Solid metal", "Solid rock", "Seawater"]
+        },
+        {
+          "ask": "What is the glowing layer made of?",
+          "show": {
+            "part": "inner-core"
+          },
+          "answer": "Solid metal",
+          "wrongAnswers": ["Liquid metal", "Solid rock", "Seawater"]
+        },
+        {
+          "ask": "Which layer of the Earth is the hottest?",
+          "show": {
+            "part": "inner-core"
+          },
+          "answer": "Inner core",
+          "wrongAnswers": ["Crust", "Mantle", "Outer core"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.uk-cities",
+      "title": "UK City Spotter",
+      "skillName": "Cities of the UK",
+      "strand": "locational-knowledge",
+      "scene": "uk-explorer",
+      "instruction": "Fly over the map and tap the name of the city where the pin has landed.",
+      "questions": [
+        {
+          "ask": "The pin marks the capital of the glowing nation. Which city?",
+          "show": {
+            "highlight": "england",
+            "pin": {
+              "latitude": 51.507,
+              "longitude": -0.128
+            }
+          },
+          "answer": "London",
+          "wrongAnswers": ["Manchester", "Cardiff", "Edinburgh"]
+        },
+        {
+          "ask": "The pin marks the capital of the glowing nation. Which city?",
+          "show": {
+            "highlight": "scotland",
+            "pin": {
+              "latitude": 55.953,
+              "longitude": -3.188
+            }
+          },
+          "answer": "Edinburgh",
+          "wrongAnswers": ["Belfast", "London", "Cardiff"]
+        },
+        {
+          "ask": "The pin marks the capital of the glowing nation. Which city?",
+          "show": {
+            "highlight": "wales",
+            "pin": {
+              "latitude": 51.481,
+              "longitude": -3.179
+            }
+          },
+          "answer": "Cardiff",
+          "wrongAnswers": ["Belfast", "Edinburgh", "Leeds"]
+        },
+        {
+          "ask": "The pin marks the capital of the glowing nation. Which city?",
+          "show": {
+            "highlight": "northern-ireland",
+            "pin": {
+              "latitude": 54.597,
+              "longitude": -5.93
+            }
+          },
+          "answer": "Belfast",
+          "wrongAnswers": ["Cardiff", "Glasgow", "London"]
+        },
+        {
+          "ask": "Which city is the pin on?",
+          "show": {
+            "pin": {
+              "latitude": 53.481,
+              "longitude": -2.243
+            }
+          },
+          "answer": "Manchester",
+          "wrongAnswers": ["Bristol", "Aberdeen", "Cardiff"]
+        },
+        {
+          "ask": "Which city is the pin on?",
+          "show": {
+            "pin": {
+              "latitude": 52.486,
+              "longitude": -1.89
+            }
+          },
+          "answer": "Birmingham",
+          "wrongAnswers": ["Glasgow", "Belfast", "Newcastle upon Tyne"]
+        },
+        {
+          "ask": "This is Scotland's biggest city. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 55.864,
+              "longitude": -4.252
+            }
+          },
+          "answer": "Glasgow",
+          "wrongAnswers": ["Bristol", "Birmingham", "Cardiff"]
+        },
+        {
+          "ask": "This port city sits on the River Mersey. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 53.408,
+              "longitude": -2.991
+            }
+          },
+          "answer": "Liverpool",
+          "wrongAnswers": ["Aberdeen", "London", "Cardiff"]
+        },
+        {
+          "ask": "Which city is the pin on?",
+          "show": {
+            "pin": {
+              "latitude": 53.801,
+              "longitude": -1.549
+            }
+          },
+          "answer": "Leeds",
+          "wrongAnswers": ["Bristol", "Belfast", "Aberdeen"]
+        },
+        {
+          "ask": "Which city is the pin on?",
+          "show": {
+            "pin": {
+              "latitude": 54.978,
+              "longitude": -1.618
+            }
+          },
+          "answer": "Newcastle upon Tyne",
+          "wrongAnswers": ["Cardiff", "Birmingham", "Bristol"]
+        },
+        {
+          "ask": "Which city is the pin on?",
+          "show": {
+            "pin": {
+              "latitude": 51.454,
+              "longitude": -2.588
+            }
+          },
+          "answer": "Bristol",
+          "wrongAnswers": ["Edinburgh", "Leeds", "Belfast"]
+        },
+        {
+          "ask": "This city in north-east Scotland is near the North Sea. Which?",
+          "show": {
+            "pin": {
+              "latitude": 57.149,
+              "longitude": -2.094
+            }
+          },
+          "answer": "Aberdeen",
+          "wrongAnswers": ["Bristol", "Cardiff", "Birmingham"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.climate-zones",
+      "title": "Climate Zone Tour",
+      "skillName": "Climate zones of the world",
+      "strand": "human-and-physical-geography",
+      "scene": "biome-dome",
+      "instruction": "Peek inside each dome and decide which climate zone it belongs to.",
+      "questions": [
+        {
+          "ask": "Which climate zone does this place belong to?",
+          "show": {
+            "biome": "rainforest"
+          },
+          "answer": "Tropical",
+          "wrongAnswers": ["Polar", "Dry", "Temperate"]
+        },
+        {
+          "ask": "Which climate zone does this place belong to?",
+          "show": {
+            "biome": "savanna"
+          },
+          "answer": "Tropical",
+          "wrongAnswers": ["Polar", "Temperate", "Mountain"]
+        },
+        {
+          "ask": "Which climate zone does this place belong to?",
+          "show": {
+            "biome": "coral-reef"
+          },
+          "answer": "Tropical",
+          "wrongAnswers": ["Polar", "Mountain", "Temperate"]
+        },
+        {
+          "ask": "Which climate zone does this place belong to?",
+          "show": {
+            "biome": "desert"
+          },
+          "answer": "Dry",
+          "wrongAnswers": ["Polar", "Temperate", "Mountain"]
+        },
+        {
+          "ask": "Which climate zone does this place belong to?",
+          "show": {
+            "biome": "polar"
+          },
+          "answer": "Polar",
+          "wrongAnswers": ["Tropical", "Temperate", "Mountain"]
+        },
+        {
+          "ask": "Which climate zone does this place belong to?",
+          "show": {
+            "biome": "tundra"
+          },
+          "answer": "Polar",
+          "wrongAnswers": ["Tropical", "Temperate", "Dry"]
+        },
+        {
+          "ask": "Which climate zone does this place belong to?",
+          "show": {
+            "biome": "temperate-forest"
+          },
+          "answer": "Temperate",
+          "wrongAnswers": ["Tropical", "Polar", "Dry"]
+        },
+        {
+          "ask": "Which climate zone does this place belong to?",
+          "show": {
+            "biome": "mountain"
+          },
+          "answer": "Mountain",
+          "wrongAnswers": ["Tropical", "Dry", "Temperate"]
+        },
+        {
+          "ask": "What is the weather like here?",
+          "show": {
+            "biome": "rainforest"
+          },
+          "answer": "Hot and wet all year",
+          "wrongAnswers": [
+            "Hot and very dry",
+            "Freezing all year",
+            "Mild with four seasons"
+          ]
+        },
+        {
+          "ask": "What is the weather like here?",
+          "show": {
+            "biome": "desert"
+          },
+          "answer": "Hot and very dry",
+          "wrongAnswers": [
+            "Hot and wet all year",
+            "Freezing all year",
+            "Mild with four seasons"
+          ]
+        },
+        {
+          "ask": "What is the weather like here?",
+          "show": {
+            "biome": "polar"
+          },
+          "answer": "Freezing all year",
+          "wrongAnswers": [
+            "Hot and wet all year",
+            "Hot and very dry",
+            "Mild with four seasons"
+          ]
+        },
+        {
+          "ask": "What is the weather like here?",
+          "show": {
+            "biome": "temperate-forest"
+          },
+          "answer": "Mild with four seasons",
+          "wrongAnswers": [
+            "Hot and wet all year",
+            "Hot and very dry",
+            "Freezing all year"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.land-use",
+      "title": "Land Use Lookout",
+      "skillName": "Types of land use",
+      "strand": "human-and-physical-geography",
+      "scene": "settlement-board",
+      "instruction": "Look at each model and work out how the land is being used.",
+      "questions": [
+        {
+          "ask": "What type of land use is shown here?",
+          "show": {
+            "tile": "residential"
+          },
+          "answer": "Residential",
+          "wrongAnswers": ["Commercial", "Industrial", "Agricultural"]
+        },
+        {
+          "ask": "What type of land use is shown here?",
+          "show": {
+            "tile": "commercial"
+          },
+          "answer": "Commercial",
+          "wrongAnswers": ["Industrial", "Agricultural", "Recreational"]
+        },
+        {
+          "ask": "What type of land use is shown here?",
+          "show": {
+            "tile": "industrial"
+          },
+          "answer": "Industrial",
+          "wrongAnswers": ["Agricultural", "Recreational", "Transport"]
+        },
+        {
+          "ask": "What type of land use is shown here?",
+          "show": {
+            "tile": "agricultural"
+          },
+          "answer": "Agricultural",
+          "wrongAnswers": ["Recreational", "Transport", "Residential"]
+        },
+        {
+          "ask": "What type of land use is shown here?",
+          "show": {
+            "tile": "recreational"
+          },
+          "answer": "Recreational",
+          "wrongAnswers": ["Transport", "Residential", "Commercial"]
+        },
+        {
+          "ask": "What type of land use is shown here?",
+          "show": {
+            "tile": "transport"
+          },
+          "answer": "Transport",
+          "wrongAnswers": ["Residential", "Commercial", "Industrial"]
+        },
+        {
+          "ask": "What is this land mainly used for?",
+          "show": {
+            "tile": "residential"
+          },
+          "answer": "Homes",
+          "wrongAnswers": ["Shops and offices", "Farming", "Leisure and sport"]
+        },
+        {
+          "ask": "What is this land mainly used for?",
+          "show": {
+            "tile": "commercial"
+          },
+          "answer": "Shops and offices",
+          "wrongAnswers": [
+            "Factories",
+            "Leisure and sport",
+            "Moving people and goods"
+          ]
+        },
+        {
+          "ask": "What is this land mainly used for?",
+          "show": {
+            "tile": "industrial"
+          },
+          "answer": "Factories",
+          "wrongAnswers": ["Farming", "Moving people and goods", "Homes"]
+        },
+        {
+          "ask": "What is this land mainly used for?",
+          "show": {
+            "tile": "agricultural"
+          },
+          "answer": "Farming",
+          "wrongAnswers": ["Leisure and sport", "Homes", "Shops and offices"]
+        },
+        {
+          "ask": "What is this land mainly used for?",
+          "show": {
+            "tile": "recreational"
+          },
+          "answer": "Leisure and sport",
+          "wrongAnswers": [
+            "Moving people and goods",
+            "Shops and offices",
+            "Factories"
+          ]
+        },
+        {
+          "ask": "What is this land mainly used for?",
+          "show": {
+            "tile": "transport"
+          },
+          "answer": "Moving people and goods",
+          "wrongAnswers": ["Homes", "Factories", "Farming"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.os-map-symbols",
+      "title": "Symbol Safari",
+      "skillName": "Ordnance Survey map symbols",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "map-key",
+      "instruction": "Study each Ordnance Survey map symbol and tap what it stands for.",
+      "questions": [
+        {
+          "ask": "What does this map symbol show?",
+          "show": {
+            "symbol": "church-with-tower"
+          },
+          "answer": "Church with a tower",
+          "wrongAnswers": [
+            "Church with a spire",
+            "Railway station",
+            "Viewpoint"
+          ]
+        },
+        {
+          "ask": "Which place does this symbol mark on the map?",
+          "show": {
+            "symbol": "church-with-spire"
+          },
+          "answer": "Church with a spire",
+          "wrongAnswers": ["Post office", "Campsite", "Information centre"]
+        },
+        {
+          "ask": "What does this map symbol show?",
+          "show": {
+            "symbol": "post-office"
+          },
+          "answer": "Post office",
+          "wrongAnswers": ["Parking", "Picnic site", "Coniferous wood"]
+        },
+        {
+          "ask": "Which place does this symbol mark on the map?",
+          "show": {
+            "symbol": "parking"
+          },
+          "answer": "Parking",
+          "wrongAnswers": ["Railway station", "Viewpoint", "Deciduous wood"]
+        },
+        {
+          "ask": "What does this map symbol show?",
+          "show": {
+            "symbol": "railway-station"
+          },
+          "answer": "Railway station",
+          "wrongAnswers": ["Campsite", "Information centre", "Trig point"]
+        },
+        {
+          "ask": "Which place does this symbol mark on the map?",
+          "show": {
+            "symbol": "campsite"
+          },
+          "answer": "Campsite",
+          "wrongAnswers": [
+            "Picnic site",
+            "Coniferous wood",
+            "Church with a tower"
+          ]
+        },
+        {
+          "ask": "What does this map symbol show?",
+          "show": {
+            "symbol": "picnic-site"
+          },
+          "answer": "Picnic site",
+          "wrongAnswers": ["Viewpoint", "Deciduous wood", "Church with a spire"]
+        },
+        {
+          "ask": "Which place does this symbol mark on the map?",
+          "show": {
+            "symbol": "viewpoint"
+          },
+          "answer": "Viewpoint",
+          "wrongAnswers": ["Information centre", "Trig point", "Post office"]
+        },
+        {
+          "ask": "What does this map symbol show?",
+          "show": {
+            "symbol": "information-centre"
+          },
+          "answer": "Information centre",
+          "wrongAnswers": ["Coniferous wood", "Church with a tower", "Parking"]
+        },
+        {
+          "ask": "Which place does this symbol mark on the map?",
+          "show": {
+            "symbol": "coniferous-wood"
+          },
+          "answer": "Coniferous wood",
+          "wrongAnswers": [
+            "Deciduous wood",
+            "Church with a spire",
+            "Railway station"
+          ]
+        },
+        {
+          "ask": "What does this map symbol show?",
+          "show": {
+            "symbol": "deciduous-wood"
+          },
+          "answer": "Deciduous wood",
+          "wrongAnswers": ["Trig point", "Post office", "Campsite"]
+        },
+        {
+          "ask": "Which place does this symbol mark on the map?",
+          "show": {
+            "symbol": "trig-point"
+          },
+          "answer": "Trig point",
+          "wrongAnswers": ["Church with a tower", "Parking", "Picnic site"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.rainfall-charts",
+      "title": "Rain Gauge Records",
+      "skillName": "Reading rainfall bar charts",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "data-towers",
+      "instruction": "Read the rainfall towers carefully against the numbers on the side, then answer the question.",
+      "questions": [
+        {
+          "ask": "Which month had the most rain?",
+          "show": {
+            "title": "Rainfall at Wizzaroo School",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Jan",
+                "value": 90
+              },
+              {
+                "label": "Feb",
+                "value": 60
+              },
+              {
+                "label": "Mar",
+                "value": 70
+              },
+              {
+                "label": "Apr",
+                "value": 40
+              }
+            ]
+          },
+          "answer": "January",
+          "wrongAnswers": ["February", "March", "April"]
+        },
+        {
+          "ask": "Which month was the driest?",
+          "show": {
+            "title": "Rainfall at Wizzaroo School",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Jan",
+                "value": 90
+              },
+              {
+                "label": "Feb",
+                "value": 60
+              },
+              {
+                "label": "Mar",
+                "value": 70
+              },
+              {
+                "label": "Apr",
+                "value": 40
+              }
+            ]
+          },
+          "answer": "April",
+          "wrongAnswers": ["January", "February", "March"]
+        },
+        {
+          "ask": "How much rain fell in March?",
+          "show": {
+            "title": "Rainfall at Wizzaroo School",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Jan",
+                "value": 90
+              },
+              {
+                "label": "Feb",
+                "value": 60
+              },
+              {
+                "label": "Mar",
+                "value": 70
+              },
+              {
+                "label": "Apr",
+                "value": 40
+              }
+            ]
+          },
+          "answer": "70 mm",
+          "wrongAnswers": ["60 mm", "80 mm", "90 mm"]
+        },
+        {
+          "ask": "How much more rain fell in January than in April?",
+          "show": {
+            "title": "Rainfall at Wizzaroo School",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Jan",
+                "value": 90
+              },
+              {
+                "label": "Feb",
+                "value": 60
+              },
+              {
+                "label": "Mar",
+                "value": 70
+              },
+              {
+                "label": "Apr",
+                "value": 40
+              }
+            ]
+          },
+          "answer": "50 mm",
+          "wrongAnswers": ["40 mm", "60 mm", "130 mm"]
+        },
+        {
+          "ask": "What was the total rainfall for all three months?",
+          "show": {
+            "title": "Autumn rainfall in Cardiff",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Sep",
+                "value": 90
+              },
+              {
+                "label": "Oct",
+                "value": 130
+              },
+              {
+                "label": "Nov",
+                "value": 120
+              }
+            ]
+          },
+          "answer": "340 mm",
+          "wrongAnswers": ["300 mm", "330 mm", "350 mm"]
+        },
+        {
+          "ask": "Which two months had the same rainfall?",
+          "show": {
+            "title": "Summer rainfall in our town",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Jun",
+                "value": 50
+              },
+              {
+                "label": "Jul",
+                "value": 50
+              },
+              {
+                "label": "Aug",
+                "value": 70
+              },
+              {
+                "label": "Sep",
+                "value": 80
+              }
+            ]
+          },
+          "answer": "June and July",
+          "wrongAnswers": [
+            "July and August",
+            "June and August",
+            "August and September"
+          ]
+        },
+        {
+          "ask": "Which place had the least rain?",
+          "show": {
+            "title": "July rainfall around the UK",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Fort William",
+                "value": 130
+              },
+              {
+                "label": "Belfast",
+                "value": 80
+              },
+              {
+                "label": "Cardiff",
+                "value": 90
+              },
+              {
+                "label": "London",
+                "value": 50
+              }
+            ]
+          },
+          "answer": "London",
+          "wrongAnswers": ["Fort William", "Belfast", "Cardiff"]
+        },
+        {
+          "ask": "Which place had the most rain?",
+          "show": {
+            "title": "July rainfall around the UK",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Fort William",
+                "value": 130
+              },
+              {
+                "label": "Belfast",
+                "value": 80
+              },
+              {
+                "label": "Cardiff",
+                "value": 90
+              },
+              {
+                "label": "London",
+                "value": 50
+              }
+            ]
+          },
+          "answer": "Fort William",
+          "wrongAnswers": ["London", "Belfast", "Cardiff"]
+        },
+        {
+          "ask": "How much rain fell in Belfast?",
+          "show": {
+            "title": "July rainfall around the UK",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Fort William",
+                "value": 130
+              },
+              {
+                "label": "Belfast",
+                "value": 80
+              },
+              {
+                "label": "Cardiff",
+                "value": 90
+              },
+              {
+                "label": "London",
+                "value": 50
+              }
+            ]
+          },
+          "answer": "80 mm",
+          "wrongAnswers": ["50 mm", "70 mm", "90 mm"]
+        },
+        {
+          "ask": "On which day did it not rain at all?",
+          "show": {
+            "title": "Rain gauge readings for one week",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Mon",
+                "value": 4
+              },
+              {
+                "label": "Tue",
+                "value": 0
+              },
+              {
+                "label": "Wed",
+                "value": 12
+              },
+              {
+                "label": "Thu",
+                "value": 6
+              },
+              {
+                "label": "Fri",
+                "value": 8
+              }
+            ]
+          },
+          "answer": "Tuesday",
+          "wrongAnswers": ["Monday", "Wednesday", "Thursday", "Friday"]
+        },
+        {
+          "ask": "How many days had more than 5 mm of rain?",
+          "show": {
+            "title": "Rain gauge readings for one week",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Mon",
+                "value": 4
+              },
+              {
+                "label": "Tue",
+                "value": 0
+              },
+              {
+                "label": "Wed",
+                "value": 12
+              },
+              {
+                "label": "Thu",
+                "value": 6
+              },
+              {
+                "label": "Fri",
+                "value": 8
+              }
+            ]
+          },
+          "answer": "3 days",
+          "wrongAnswers": ["2 days", "4 days", "5 days"]
+        },
+        {
+          "ask": "How much rain fell on Wednesday and Friday altogether?",
+          "show": {
+            "title": "Rain gauge readings for one week",
+            "unit": "mm",
+            "bars": [
+              {
+                "label": "Mon",
+                "value": 4
+              },
+              {
+                "label": "Tue",
+                "value": 0
+              },
+              {
+                "label": "Wed",
+                "value": 12
+              },
+              {
+                "label": "Thu",
+                "value": 6
+              },
+              {
+                "label": "Fri",
+                "value": 8
+              }
+            ]
+          },
+          "answer": "20 mm",
+          "wrongAnswers": ["4 mm", "18 mm", "22 mm"]
+        }
+      ]
+    }
+  ]
+}

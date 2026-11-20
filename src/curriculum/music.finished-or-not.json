@@ -1,0 +1,8 @@
+{
+  "id": "music.finished-or-not",
+  "name": "Hearing if a tune sounds finished",
+  "subject": "music",
+  "yearGroup": 2,
+  "strand": "structure",
+  "prerequisites": []
+}

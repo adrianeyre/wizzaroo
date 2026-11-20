@@ -1,0 +1,195 @@
+{
+  "subject": "english",
+  "yearGroup": 4,
+  "games": [
+    {
+      "id": "noun-phrase-forge",
+      "title": "Noun Phrase Forge",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Expanding noun phrases with adjectives, nouns and preposition phrases",
+      "strand": "vocabulary-grammar-and-punctuation",
+      "statutoryRequirement": "Pupils should be taught to develop their understanding of the concepts set out in English Appendix 2 by: noun phrases expanded by the addition of modifying adjectives, nouns and preposition phrases [for example, the teacher expanded to: the strict maths teacher with curly hair]",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Find the main noun first, then look at what describes it.",
+      "questions": [
+        {
+          "ask": "Which preposition phrase could expand 'the teacher'?",
+          "answer": "with curly hair",
+          "distractors": ["strict", "smiled", "quickly"]
+        },
+        {
+          "ask": "In 'the strict maths teacher', which noun is used to describe the teacher?",
+          "answer": "maths",
+          "distractors": ["strict", "the", "teacher"]
+        },
+        {
+          "ask": "In 'the old oak tree by the river', what is the preposition phrase?",
+          "answer": "by the river",
+          "distractors": ["the old", "oak tree", "old oak"]
+        },
+        {
+          "ask": "Which word is the main noun in 'the shiny bike in the shed'?",
+          "answer": "bike",
+          "distractors": ["shed", "shiny", "the"]
+        },
+        {
+          "ask": "Which adjective could expand 'the ___ castle'?",
+          "answer": "crumbling",
+          "distractors": ["slowly", "crumbles", "beside"]
+        },
+        {
+          "ask": "Which noun phrase includes a preposition phrase?",
+          "answer": "a cat on the wall",
+          "distractors": ["a black cat", "the cat ran", "cats are cute"]
+        },
+        {
+          "ask": "In 'muddy football boots', which noun describes the boots?",
+          "answer": "football",
+          "distractors": ["muddy", "boots", "very"]
+        },
+        {
+          "ask": "Which phrase adds detail to 'the girl'?",
+          "answer": "with a red scarf",
+          "distractors": ["is running", "happily", "and the boy"]
+        },
+        {
+          "ask": "Pick the best expanded noun phrase for a scary story.",
+          "answer": "a dark, empty house",
+          "distractors": ["a house", "the house is", "houses"]
+        },
+        {
+          "ask": "In 'a tall glass of cold milk', which word is the main noun?",
+          "answer": "glass",
+          "distractors": ["milk", "tall", "cold"]
+        }
+      ]
+    },
+    {
+      "id": "pronoun-power-up",
+      "title": "Pronoun Power-Up",
+      "station": "compare",
+      "prop": "magnet",
+      "skillName": "Choosing nouns or pronouns for cohesion",
+      "strand": "vocabulary-grammar-and-punctuation",
+      "statutoryRequirement": "Pupils should be taught to choose nouns or pronouns appropriately for clarity and cohesion and to avoid repetition",
+      "instruction": "Read it, then tap the word that makes it clearest.",
+      "hint": "Not quite. Ask who or what the word stands for, then try again.",
+      "questions": [
+        {
+          "ask": "'Tom fed the dog. Tom then walked the dog.' Best word for the second 'Tom'?",
+          "answer": "He",
+          "distractors": ["She", "It", "They"]
+        },
+        {
+          "ask": "'The children ran outside. ___ were excited.'",
+          "answer": "They",
+          "distractors": ["He", "It", "We"]
+        },
+        {
+          "ask": "'Mia found a coin. Mia kept the coin.' Best word for 'the coin'?",
+          "answer": "it",
+          "distractors": ["him", "them", "her"]
+        },
+        {
+          "ask": "'Tom and Ali met Jo. He waved.' Why is 'He' unclear?",
+          "answer": "Tom or Ali?",
+          "distractors": ["it is a noun", "it is plural", "it is a verb"]
+        },
+        {
+          "ask": "Which keeps it clear? 'Tom and Ali met Jo. ___ waved.'",
+          "answer": "Ali",
+          "distractors": ["He", "Him", "It"]
+        },
+        {
+          "ask": "'My grandma baked a cake. ___ was delicious.'",
+          "answer": "It",
+          "distractors": ["She", "They", "He"]
+        },
+        {
+          "ask": "Which pronoun can replace 'Lucy and I' at the start of a sentence?",
+          "answer": "We",
+          "distractors": ["Us", "They", "She"]
+        },
+        {
+          "ask": "Which pronoun replaces 'the boys' in 'I saw the boys.'?",
+          "answer": "them",
+          "distractors": ["they", "him", "us"]
+        },
+        {
+          "ask": "'The dragon roared. ___ breathed fire.' Which avoids repeating 'dragon'?",
+          "answer": "The beast",
+          "distractors": ["Them", "Us", "We"]
+        },
+        {
+          "ask": "'Ben's sister lent Ben her bike.' Which word can replace the second 'Ben'?",
+          "answer": "him",
+          "distractors": ["he", "his", "them"]
+        }
+      ]
+    },
+    {
+      "id": "fact-and-verse-finder",
+      "title": "Fact and Verse Finder",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Finding facts and knowing poetry forms",
+      "strand": "reading-comprehension",
+      "statutoryRequirement": "Pupils should be taught to retrieve and record information from non-fiction; recognise some different forms of poetry [for example, free verse, narrative poetry]",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Look back at the words in the text, then try again.",
+      "questions": [
+        {
+          "ask": "Text: 'Bees make honey from nectar.' What do bees use to make honey?",
+          "answer": "nectar",
+          "distractors": ["pollen", "water", "leaves"]
+        },
+        {
+          "ask": "Text: 'Owls hunt at night and sleep by day.' When do owls hunt?",
+          "answer": "at night",
+          "distractors": ["by day", "at noon", "in the morning"]
+        },
+        {
+          "ask": "Text: 'Mount Everest is about 8,849 m tall.' How tall is it?",
+          "answer": "about 8,849 m",
+          "distractors": ["about 8,849 km", "about 849 m", "about 88,490 m"]
+        },
+        {
+          "ask": "Text: 'Penguins live in the Southern Hemisphere.' Where do they live?",
+          "answer": "Southern Hemisphere",
+          "distractors": ["Northern Hemisphere", "the Arctic", "the Sahara"]
+        },
+        {
+          "ask": "Which feature of a report helps you find facts quickly?",
+          "answer": "subheadings",
+          "distractors": ["the blurb", "rhymes", "speech marks"]
+        },
+        {
+          "ask": "How many lines does a haiku have?",
+          "answer": "3",
+          "distractors": ["5", "4", "14"]
+        },
+        {
+          "ask": "How many lines does a limerick have?",
+          "answer": "5",
+          "distractors": ["3", "4", "14"]
+        },
+        {
+          "ask": "A poem with 14 lines is called a ___.",
+          "answer": "sonnet",
+          "distractors": ["haiku", "limerick", "cinquain"]
+        },
+        {
+          "ask": "Which poem uses the first letter of each line to spell a word?",
+          "answer": "acrostic",
+          "distractors": ["haiku", "limerick", "sonnet"]
+        },
+        {
+          "ask": "A narrative poem ___.",
+          "answer": "tells a story",
+          "distractors": ["has 3 lines", "never rhymes", "is a list"]
+        }
+      ]
+    }
+  ]
+}

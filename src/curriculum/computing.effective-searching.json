@@ -1,0 +1,8 @@
+{
+  "id": "computing.effective-searching",
+  "name": "Searching the web effectively",
+  "subject": "computing",
+  "yearGroup": 6,
+  "strand": "searching-and-evaluating",
+  "prerequisites": ["computing.search-ranking"]
+}

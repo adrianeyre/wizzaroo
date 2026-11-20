@@ -1,0 +1,8 @@
+{
+  "id": "computing.video-production",
+  "name": "Planning and filming video",
+  "subject": "computing",
+  "yearGroup": 5,
+  "strand": "creating-content",
+  "prerequisites": ["computing.audio-editing"]
+}

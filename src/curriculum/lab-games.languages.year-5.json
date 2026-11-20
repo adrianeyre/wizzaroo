@@ -1,0 +1,670 @@
+{
+  "subject": "languages",
+  "yearGroup": 5,
+  "games": [
+    {
+      "id": "french-weather-report",
+      "title": "Weather Report",
+      "station": "compare",
+      "prop": "cloud",
+      "skillName": "Reading French weather",
+      "strand": "reading-words-and-phrases",
+      "statutoryRequirement": "Pupils should be taught to read carefully and show understanding of words, phrases and simple writing",
+      "instruction": "Read the weather, then tap what it means.",
+      "hint": "Not quite. Look for the key word, such as \"pleut\" or \"froid\", then try again.",
+      "questions": [
+        {
+          "ask": "What does \"Il fait chaud.\" mean?",
+          "answer": "It is hot.",
+          "distractors": ["It is cold.", "It is sunny.", "It is windy."]
+        },
+        {
+          "ask": "What does \"Il fait froid.\" mean?",
+          "answer": "It is cold.",
+          "distractors": ["It is hot.", "It is snowing.", "It is foggy."]
+        },
+        {
+          "ask": "What does \"Il pleut.\" mean?",
+          "answer": "It is raining.",
+          "distractors": ["It is snowing.", "It is windy.", "It is foggy."]
+        },
+        {
+          "ask": "What does \"Il neige.\" mean?",
+          "answer": "It is snowing.",
+          "distractors": ["It is raining.", "It is cold.", "It is cloudy."]
+        },
+        {
+          "ask": "What does \"Il y a du vent.\" mean?",
+          "answer": "It is windy.",
+          "distractors": ["It is sunny.", "It is raining.", "It is hot."]
+        },
+        {
+          "ask": "What does \"Il fait beau.\" mean?",
+          "answer": "It is nice weather.",
+          "distractors": [
+            "It is bad weather.",
+            "It is raining.",
+            "It is foggy."
+          ]
+        },
+        {
+          "ask": "What does \"Il y a du soleil.\" mean?",
+          "answer": "It is sunny.",
+          "distractors": ["It is snowing.", "It is windy.", "It is cold."]
+        },
+        {
+          "ask": "What does \"Il y a du brouillard.\" mean?",
+          "answer": "It is foggy.",
+          "distractors": ["It is windy.", "It is sunny.", "It is stormy."]
+        },
+        {
+          "ask": "What does \"Il fait mauvais.\" mean?",
+          "answer": "It is bad weather.",
+          "distractors": ["It is nice weather.", "It is hot.", "It is sunny."]
+        },
+        {
+          "ask": "Read: \"Aujourd'hui, il pleut et il fait froid.\" What should you wear?",
+          "answer": "A warm raincoat",
+          "distractors": ["Sun cream", "Shorts", "Sandals"]
+        }
+      ]
+    },
+    {
+      "id": "french-lookalike-words",
+      "title": "Lookalike Words",
+      "station": "true-false",
+      "prop": "prism",
+      "skillName": "Cognates and false friends",
+      "strand": "vocabulary-and-dictionary",
+      "statutoryRequirement": "Pupils should be taught to broaden their vocabulary and develop their ability to understand new words that are introduced into familiar written material, including through using a dictionary",
+      "instruction": "Read it carefully, then tap True or False.",
+      "hint": "Not quite. Some words look English but mean something else. Try again.",
+      "questions": [
+        {
+          "ask": "\"le chocolat\" means \"the chocolate\".",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "\"la librairie\" means \"the library\".",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "\"un éléphant\" means \"an elephant\".",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "\"la table\" means \"the table\".",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "\"le car\" in French means \"the car\".",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "\"une fraise\" means \"a phrase\".",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "\"la musique\" means \"the music\".",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "\"un raisin\" means \"a raisin\".",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "In French, \"un crayon\" usually means \"a pencil\".",
+          "answer": "True",
+          "distractors": ["False"]
+        }
+      ]
+    },
+    {
+      "id": "french-dictionary-detective",
+      "title": "Dictionary Detective",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Using a bilingual dictionary",
+      "strand": "vocabulary-and-dictionary",
+      "statutoryRequirement": "Pupils should be taught to broaden their vocabulary and develop their ability to understand new words that are introduced into familiar written material, including through using a dictionary",
+      "instruction": "Read the dictionary clue, then tap the right answer.",
+      "hint": "Not quite. Check the little letters after the word, such as m. or f., then try again.",
+      "questions": [
+        {
+          "ask": "In a French–English dictionary, what does \"m.\" after a noun mean?",
+          "answer": "masculine noun",
+          "distractors": ["feminine noun", "verb", "adjective"]
+        },
+        {
+          "ask": "In a French–English dictionary, what does \"f.\" after a noun mean?",
+          "answer": "feminine noun",
+          "distractors": ["masculine noun", "verb", "plural noun"]
+        },
+        {
+          "ask": "In a French–English dictionary, what does \"v.\" mean?",
+          "answer": "verb",
+          "distractors": ["noun", "adjective", "vowel"]
+        },
+        {
+          "ask": "In a French–English dictionary, what does \"adj.\" mean?",
+          "answer": "adjective",
+          "distractors": ["adverb", "noun", "verb"]
+        },
+        {
+          "ask": "The dictionary says \"chaise (f.) – chair\". How do you say \"the chair\"?",
+          "answer": "la chaise",
+          "distractors": ["le chaise", "les chaise", "un chaise"]
+        },
+        {
+          "ask": "The dictionary says \"livre (m.) – book\". How do you say \"a book\"?",
+          "answer": "un livre",
+          "distractors": ["une livre", "des livre", "la livre"]
+        },
+        {
+          "ask": "The dictionary says \"manger (v.) – to eat\". What is \"manger\"?",
+          "answer": "a verb",
+          "distractors": ["a noun", "an adjective", "a colour"]
+        },
+        {
+          "ask": "The dictionary says \"grand (adj.) – big, tall\". What is \"grand\"?",
+          "answer": "an adjective",
+          "distractors": ["a verb", "a noun", "a number"]
+        },
+        {
+          "ask": "Which word comes first in a French–English dictionary?",
+          "answer": "arbre",
+          "distractors": ["banane", "chat", "école"]
+        },
+        {
+          "ask": "Which word comes last in a French–English dictionary?",
+          "answer": "voiture",
+          "distractors": ["lapin", "fenêtre", "rouge"]
+        }
+      ]
+    },
+    {
+      "id": "french-opinion-orbit",
+      "title": "Opinion Orbit",
+      "station": "compare",
+      "prop": "planet",
+      "skillName": "Giving and responding to opinions",
+      "strand": "conversation",
+      "statutoryRequirement": "Pupils should be taught to engage in conversations; ask and answer questions; express opinions and respond to those of others; seek clarification and help",
+      "instruction": "Read the opinion, then tap the best answer.",
+      "hint": "Not quite. Is it a like or a dislike, and how strong is it? Try again.",
+      "questions": [
+        {
+          "ask": "What does \"J'adore le chocolat.\" mean?",
+          "answer": "I love chocolate.",
+          "distractors": [
+            "I like chocolate.",
+            "I hate chocolate.",
+            "I eat chocolate."
+          ]
+        },
+        {
+          "ask": "What does \"Je déteste les araignées.\" mean?",
+          "answer": "I hate spiders.",
+          "distractors": [
+            "I love spiders.",
+            "I like spiders.",
+            "I see spiders."
+          ]
+        },
+        {
+          "ask": "What does \"Je n'aime pas le thé.\" mean?",
+          "answer": "I don't like tea.",
+          "distractors": ["I like tea.", "I love tea.", "I drink tea."]
+        },
+        {
+          "ask": "Which opinion shows the strongest liking?",
+          "answer": "J'adore",
+          "distractors": ["J'aime", "J'aime bien", "Je n'aime pas"]
+        },
+        {
+          "ask": "Which opinion shows the strongest dislike?",
+          "answer": "Je déteste",
+          "distractors": ["Je n'aime pas", "J'aime bien", "J'adore"]
+        },
+        {
+          "ask": "Your friend says \"J'aime le tennis.\" You agree. What do you say?",
+          "answer": "Moi aussi !",
+          "distractors": ["Moi non plus.", "Au revoir !", "J'ai dix ans."]
+        },
+        {
+          "ask": "Your friend says \"Je n'aime pas les maths.\" You agree. What do you say?",
+          "answer": "Moi non plus.",
+          "distractors": ["Moi aussi.", "Merci.", "Bonjour."]
+        },
+        {
+          "ask": "What does \"Pourquoi ?\" mean?",
+          "answer": "Why?",
+          "distractors": ["Where?", "When?", "Who?"]
+        },
+        {
+          "ask": "Finish the reason: \"J'aime le sport parce que …\"",
+          "answer": "c'est amusant.",
+          "distractors": ["c'est ennuyeux.", "c'est nul.", "c'est horrible."]
+        },
+        {
+          "ask": "What does \"Tu aimes les chats ?\" mean?",
+          "answer": "Do you like cats?",
+          "distractors": [
+            "Do you have cats?",
+            "Are you a cat?",
+            "Where are the cats?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "french-sound-sorter",
+      "title": "Sound Sorter",
+      "station": "sort",
+      "prop": "tuning-fork",
+      "skillName": "French sound and spelling patterns",
+      "strand": "sounds-and-spelling",
+      "statutoryRequirement": "Pupils should be taught to explore the patterns and sounds of language through songs and rhymes and link the spelling, sound and meaning of words",
+      "instruction": "Read the word, then tap the sound group it belongs in.",
+      "hint": "Not quite. Look for the letters that make the sound in the middle or end of the word. Try again.",
+      "questions": [
+        {
+          "ask": "Which sound group does \"bateau\" (boat) belong in?",
+          "answer": "eau",
+          "distractors": ["ou", "oi", "an/en"]
+        },
+        {
+          "ask": "Which sound group does \"poisson\" (fish) belong in?",
+          "answer": "oi",
+          "distractors": ["ou", "eau", "an/en"]
+        },
+        {
+          "ask": "Which sound group does \"rouge\" (red) belong in?",
+          "answer": "ou",
+          "distractors": ["oi", "eau", "an/en"]
+        },
+        {
+          "ask": "Which sound group does \"enfant\" (child) belong in?",
+          "answer": "an/en",
+          "distractors": ["ou", "oi", "eau"]
+        },
+        {
+          "ask": "Which sound group does \"noir\" (black) belong in?",
+          "answer": "oi",
+          "distractors": ["ou", "eau", "an/en"]
+        },
+        {
+          "ask": "Which sound group does \"soupe\" (soup) belong in?",
+          "answer": "ou",
+          "distractors": ["oi", "eau", "an/en"]
+        },
+        {
+          "ask": "Which sound group does \"chapeau\" (hat) belong in?",
+          "answer": "eau",
+          "distractors": ["ou", "oi", "an/en"]
+        },
+        {
+          "ask": "Which sound group does \"maman\" (mum) belong in?",
+          "answer": "an/en",
+          "distractors": ["ou", "oi", "eau"]
+        },
+        {
+          "ask": "Which sound group does \"étoile\" (star) belong in?",
+          "answer": "oi",
+          "distractors": ["ou", "eau", "an/en"]
+        },
+        {
+          "ask": "Which sound group does \"hibou\" (owl) belong in?",
+          "answer": "ou",
+          "distractors": ["oi", "eau", "an/en"]
+        }
+      ]
+    },
+    {
+      "id": "french-catwalk-colours",
+      "title": "Catwalk Colours",
+      "station": "compare",
+      "prop": "heart",
+      "skillName": "Describing clothes with adjectives",
+      "strand": "describing",
+      "statutoryRequirement": "Pupils should be taught to describe people, places, things and actions orally and in writing",
+      "instruction": "Read the English, then tap the right French.",
+      "hint": "Not quite. Check whether the noun is feminine and where the adjective goes, then try again.",
+      "questions": [
+        {
+          "ask": "Which is right for \"a black skirt\"?",
+          "answer": "une jupe noire",
+          "distractors": ["une jupe noir", "une noire jupe", "un jupe noire"]
+        },
+        {
+          "ask": "Which is right for \"a green T-shirt\"?",
+          "answer": "un tee-shirt vert",
+          "distractors": [
+            "un tee-shirt verte",
+            "un vert tee-shirt",
+            "une tee-shirt vert"
+          ]
+        },
+        {
+          "ask": "Which is right for \"a white shirt\"?",
+          "answer": "une chemise blanche",
+          "distractors": [
+            "une chemise blanc",
+            "une blanche chemise",
+            "un chemise blanche"
+          ]
+        },
+        {
+          "ask": "Which is right for \"blue trousers\" (un pantalon)?",
+          "answer": "un pantalon bleu",
+          "distractors": [
+            "une pantalon bleue",
+            "un pantalon bleue",
+            "un bleu pantalon"
+          ]
+        },
+        {
+          "ask": "Which is right for \"a red hat\"?",
+          "answer": "un chapeau rouge",
+          "distractors": [
+            "un rouge chapeau",
+            "une chapeau rouge",
+            "un chapeau rouges"
+          ]
+        },
+        {
+          "ask": "Which is right for \"a big dress\"? \"grand\" goes before the noun.",
+          "answer": "une grande robe",
+          "distractors": ["une robe grande", "un grand robe", "une grand robe"]
+        },
+        {
+          "ask": "Which is right for \"a small hat\"? \"petit\" goes before the noun.",
+          "answer": "un petit chapeau",
+          "distractors": [
+            "un chapeau petit",
+            "une petite chapeau",
+            "un petite chapeau"
+          ]
+        },
+        {
+          "ask": "Which is right for \"a pretty dress\"? \"joli\" goes before the noun.",
+          "answer": "une jolie robe",
+          "distractors": ["une robe jolie", "un joli robe", "une joli robe"]
+        },
+        {
+          "ask": "In \"Il porte un pull jaune.\", what is yellow?",
+          "answer": "the jumper",
+          "distractors": ["the shirt", "the hat", "the coat"]
+        }
+      ]
+    },
+    {
+      "id": "french-avoir-etre-arena",
+      "title": "Avoir and Être Arena",
+      "station": "compare",
+      "prop": "battery",
+      "skillName": "The verbs avoir and être",
+      "strand": "grammar",
+      "statutoryRequirement": "Pupils should be taught to understand basic grammar appropriate to the language being studied, including (where relevant): feminine, masculine and neuter forms and the conjugation of high-frequency verbs; key features and patterns of the language; how to apply these, for instance, to build sentences; and how these differ from or are similar to English",
+      "instruction": "Read the sentence, then tap the right verb.",
+      "hint": "Not quite. Is it \"to have\" (avoir) or \"to be\" (être), and who is doing it? Try again.",
+      "questions": [
+        {
+          "ask": "Fill the gap with avoir: \"J'… un chien.\" (I have a dog.)",
+          "answer": "ai",
+          "distractors": ["as", "a", "suis"]
+        },
+        {
+          "ask": "Fill the gap with avoir: \"Tu … un frère ?\" (Do you have a brother?)",
+          "answer": "as",
+          "distractors": ["ai", "a", "es"]
+        },
+        {
+          "ask": "Fill the gap with être: \"Il … grand.\" (He is tall.)",
+          "answer": "est",
+          "distractors": ["es", "a", "suis"]
+        },
+        {
+          "ask": "Fill the gap with être: \"Nous … contents.\" (We are happy.)",
+          "answer": "sommes",
+          "distractors": ["avons", "êtes", "sont"]
+        },
+        {
+          "ask": "Fill the gap with avoir: \"Elles … deux chats.\" (They have two cats.)",
+          "answer": "ont",
+          "distractors": ["sont", "a", "avons"]
+        },
+        {
+          "ask": "Fill the gap with être: \"Vous … français ?\" (Are you French?)",
+          "answer": "êtes",
+          "distractors": ["avez", "sommes", "est"]
+        },
+        {
+          "ask": "Fill the gap with être: \"Je … anglais.\" (I am English.)",
+          "answer": "suis",
+          "distractors": ["ai", "es", "est"]
+        },
+        {
+          "ask": "Fill the gap with avoir: \"Nous … une maison.\" (We have a house.)",
+          "answer": "avons",
+          "distractors": ["sommes", "avez", "ont"]
+        },
+        {
+          "ask": "In French, which verb do you use to say \"I am ten years old\"?",
+          "answer": "avoir (to have)",
+          "distractors": ["être (to be)", "aller (to go)", "faire (to do)"]
+        }
+      ]
+    },
+    {
+      "id": "french-verb-engine",
+      "title": "Verb Engine",
+      "station": "compare",
+      "prop": "bulb",
+      "skillName": "Regular -er verbs",
+      "strand": "grammar",
+      "statutoryRequirement": "Pupils should be taught to understand basic grammar appropriate to the language being studied, including (where relevant): feminine, masculine and neuter forms and the conjugation of high-frequency verbs; key features and patterns of the language; how to apply these, for instance, to build sentences; and how these differ from or are similar to English",
+      "instruction": "Read the sentence, then tap the right verb ending.",
+      "hint": "Not quite. Match the ending to the person: je, tu, il, nous, vous or ils. Try again.",
+      "questions": [
+        {
+          "ask": "Use \"jouer\": \"Je … au foot.\"",
+          "answer": "joue",
+          "distractors": ["joues", "jouons", "jouent"]
+        },
+        {
+          "ask": "Use \"jouer\": \"Tu … au tennis ?\"",
+          "answer": "joues",
+          "distractors": ["joue", "jouez", "jouons"]
+        },
+        {
+          "ask": "Use \"parler\": \"Nous … français.\"",
+          "answer": "parlons",
+          "distractors": ["parlez", "parle", "parlent"]
+        },
+        {
+          "ask": "Use \"aimer\": \"Vous … les chiens ?\"",
+          "answer": "aimez",
+          "distractors": ["aimons", "aime", "aiment"]
+        },
+        {
+          "ask": "Use \"danser\": \"Ils … bien.\"",
+          "answer": "dansent",
+          "distractors": ["danses", "dansons", "dansez"]
+        },
+        {
+          "ask": "Use \"chanter\": \"Elle … une chanson.\"",
+          "answer": "chante",
+          "distractors": ["chantes", "chantons", "chantez"]
+        },
+        {
+          "ask": "Use \"regarder\": \"Nous … la télé.\"",
+          "answer": "regardons",
+          "distractors": ["regardez", "regarde", "regardent"]
+        },
+        {
+          "ask": "Use \"habiter\": \"J'… à Londres.\"",
+          "answer": "habite",
+          "distractors": ["habites", "habitons", "habitez"]
+        },
+        {
+          "ask": "In regular -er verbs, which ending goes with \"vous\"?",
+          "answer": "-ez",
+          "distractors": ["-ons", "-ent", "-es"]
+        }
+      ]
+    },
+    {
+      "id": "french-goldilocks-tale",
+      "title": "Goldilocks in French",
+      "station": "compare",
+      "prop": "flower",
+      "skillName": "Reading a French story",
+      "strand": "stories-songs-and-rhymes",
+      "statutoryRequirement": "Pupils should be taught to appreciate stories, songs, poems and rhymes in the language",
+      "instruction": "Read the line from the story, then tap the right answer.",
+      "hint": "Not quite. Find the word you know in the line, then try again.",
+      "questions": [
+        {
+          "ask": "In English, the story \"Boucle d'or et les trois ours\" is called …",
+          "answer": "Goldilocks",
+          "distractors": ["Snow White", "Cinderella", "Red Riding Hood"]
+        },
+        {
+          "ask": "In \"Boucle d'or et les trois ours\", how many bears are there?",
+          "answer": "Three",
+          "distractors": ["Two", "Four", "One"]
+        },
+        {
+          "ask": "\"La soupe de Papa Ours est trop chaude.\" Daddy Bear's soup is …",
+          "answer": "too hot",
+          "distractors": ["too cold", "just right", "too big"]
+        },
+        {
+          "ask": "\"La soupe de Bébé Ours est parfaite.\" Baby Bear's soup is …",
+          "answer": "just right",
+          "distractors": ["too hot", "too cold", "too salty"]
+        },
+        {
+          "ask": "\"La chaise de Bébé Ours est cassée.\" The chair is …",
+          "answer": "broken",
+          "distractors": ["big", "soft", "hard"]
+        },
+        {
+          "ask": "\"Le lit de Papa Ours est trop dur.\" The bed is …",
+          "answer": "too hard",
+          "distractors": ["too soft", "just right", "too small"]
+        },
+        {
+          "ask": "\"Boucle d'or dort dans le petit lit.\" What is she doing?",
+          "answer": "sleeping",
+          "distractors": ["eating", "running", "singing"]
+        },
+        {
+          "ask": "\"Les trois ours rentrent à la maison.\" What do the bears do?",
+          "answer": "come home",
+          "distractors": ["go to school", "eat soup", "go to sleep"]
+        },
+        {
+          "ask": "\"Boucle d'or a peur et elle part en courant.\" How does she feel?",
+          "answer": "scared",
+          "distractors": ["happy", "hungry", "sleepy"]
+        }
+      ]
+    },
+    {
+      "id": "french-hobby-hub",
+      "title": "Hobby Hub",
+      "station": "compare",
+      "prop": "battery",
+      "skillName": "Writing about hobbies",
+      "strand": "writing-sentences",
+      "statutoryRequirement": "Pupils should be taught to write phrases from memory, and adapt these to create new sentences, to express ideas clearly",
+      "instruction": "Read the English, then tap the right French sentence.",
+      "hint": "Not quite. Check the verb ending and the little word after \"jouer\" or \"faire\", then try again.",
+      "questions": [
+        {
+          "ask": "Which means \"I play football\"?",
+          "answer": "Je joue au foot.",
+          "distractors": [
+            "Je joue le foot.",
+            "Je fais au foot.",
+            "Je joue du foot."
+          ]
+        },
+        {
+          "ask": "Which means \"I play tennis\"?",
+          "answer": "Je joue au tennis.",
+          "distractors": [
+            "Je joue à tennis.",
+            "Je fais au tennis.",
+            "Je joue la tennis."
+          ]
+        },
+        {
+          "ask": "Which means \"I swim\"?",
+          "answer": "Je nage.",
+          "distractors": ["Je nages.", "Je nageons.", "Je suis nage."]
+        },
+        {
+          "ask": "Which means \"I play the piano\"?",
+          "answer": "Je joue du piano.",
+          "distractors": [
+            "Je joue au piano.",
+            "Je fais le piano.",
+            "Je joue piano."
+          ]
+        },
+        {
+          "ask": "Which means \"I dance\"?",
+          "answer": "Je danse.",
+          "distractors": ["Je danses.", "Je dansez.", "Je suis danse."]
+        },
+        {
+          "ask": "Which means \"I read books\"?",
+          "answer": "Je lis des livres.",
+          "distractors": [
+            "Je lis les livre.",
+            "Je lire des livres.",
+            "Je lit des livres."
+          ]
+        },
+        {
+          "ask": "Which means \"I like singing\"?",
+          "answer": "J'aime chanter.",
+          "distractors": [
+            "J'aime chante.",
+            "J'aime chantes.",
+            "Je aime chanter."
+          ]
+        },
+        {
+          "ask": "Change \"Je joue au foot.\" so it means \"We play football\".",
+          "answer": "Nous jouons au foot.",
+          "distractors": [
+            "Nous jouez au foot.",
+            "Nous joue au foot.",
+            "Je joue au foot."
+          ]
+        },
+        {
+          "ask": "Which means \"I go cycling\"?",
+          "answer": "Je fais du vélo.",
+          "distractors": [
+            "Je joue au vélo.",
+            "Je fais le vélo.",
+            "Je fais de vélo."
+          ]
+        }
+      ]
+    }
+  ]
+}

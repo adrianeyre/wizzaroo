@@ -1,0 +1,20 @@
+node_modules
+dist
+coverage
+cdk.out
+.cdk.staging
+cdk.context.json
+.npmrc
+# The committed .npmrc names GitHub Packages for the @adrianeyre scope, and reads its token from GITHUB_TOKEN.
+!/.npmrc
+.npmtoken
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+.pnpm-store/
+rclone.conf
+.pen-test-deployment/
+# Read it to me's Piper voices, downloaded by `pnpm download:voices` (ADR 0062)
+voice-models/

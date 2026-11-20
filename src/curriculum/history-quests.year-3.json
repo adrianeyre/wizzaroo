@@ -1,0 +1,903 @@
+{
+  "quests": [
+    {
+      "id": "cave-painters",
+      "title": "Cave Painters",
+      "skill": {
+        "id": "history.old-stone-age",
+        "name": "Old Stone Age hunter-gatherers",
+        "subject": "history",
+        "yearGroup": 3,
+        "strand": "stone-age-to-iron-age",
+        "prerequisites": []
+      },
+      "story": "Brrr, it's the Ice Age! Light your torch and step into a cave to discover how the very first people in Britain lived.",
+      "instruction": "Read each question, then tap the torch with the right answer.",
+      "hint": "Think about a world with no farms or metal, only stone, bone, plants and wild animals.",
+      "scene": "stone-age-cave",
+      "play": "quiz",
+      "choiceProp": "torch",
+      "questions": [
+        {
+          "ask": "What stone did Old Stone Age people chip to make sharp tools?",
+          "answer": "Flint",
+          "wrong": ["Marble", "Chalk", "Slate"],
+          "fact": "Toolmakers knocked flakes off flint to make hand axes with sharp, strong edges."
+        },
+        {
+          "ask": "Where in England have Ice Age cave carvings been found?",
+          "answer": "Creswell Crags",
+          "wrong": ["Hadrian's Wall", "Sutton Hoo", "Maiden Castle"],
+          "fact": "In 2003, carvings of animals such as a deer and birds were spotted on the cave walls there."
+        },
+        {
+          "ask": "Which famous cave in France is covered in Ice Age animal paintings?",
+          "answer": "Lascaux",
+          "wrong": ["Vindolanda", "Skara Brae", "Olympia"],
+          "fact": "Four teenagers and a dog found the Lascaux paintings in 1940."
+        },
+        {
+          "ask": "What coloured earth did cave artists use to make red and yellow paint?",
+          "answer": "Ochre",
+          "wrong": ["Ink", "Crushed glass", "Oil paint"],
+          "fact": "Black paint often came from charcoal, left over from their fires."
+        },
+        {
+          "ask": "Why did Old Stone Age people move from place to place?",
+          "answer": "To follow animals",
+          "wrong": ["To visit towns", "To go to market", "To build castles"],
+          "fact": "People who move around like this are called nomads."
+        },
+        {
+          "ask": "Which huge, hairy animal did Ice Age people hunt?",
+          "answer": "Woolly mammoth",
+          "wrong": ["Giraffe", "Tyrannosaurus", "Kangaroo"],
+          "fact": "Dinosaurs died out millions of years before any people lived."
+        },
+        {
+          "ask": "What do we call people who hunt animals and gather wild plants?",
+          "answer": "Hunter-gatherers",
+          "wrong": ["Farmers", "Knights", "Merchants"],
+          "fact": "They gathered berries, nuts, roots and shellfish as well as hunting."
+        },
+        {
+          "ask": "What did fire help Old Stone Age people to do?",
+          "answer": "Cook and keep warm",
+          "wrong": ["Melt iron", "Make glass", "Bake bricks"],
+          "fact": "Fire also lit up dark caves and helped keep wild animals away."
+        },
+        {
+          "ask": "What was the weather like at the coldest times of the Ice Age?",
+          "answer": "Freezing cold",
+          "wrong": ["Boiling hot", "Warm and sunny", "Hot and steamy"],
+          "fact": "Thick sheets of ice covered much of Britain at the coldest times."
+        },
+        {
+          "ask": "How did cave artists make outlines of their hands on the walls?",
+          "answer": "Blew paint over hand",
+          "wrong": ["Used stickers", "Used a camera", "Printed them"],
+          "fact": "They may have blown paint through a hollow bone or reed onto the rock."
+        },
+        {
+          "ask": "What did Old Stone Age people make their clothes from?",
+          "answer": "Animal skins",
+          "wrong": ["Cotton", "Silk", "Plastic"],
+          "fact": "Needles made from bone were used to sew skins together."
+        },
+        {
+          "ask": "These people did not write. How do we know how they lived?",
+          "answer": "From things they left",
+          "wrong": [
+            "From their books",
+            "From newspapers",
+            "From their letters"
+          ],
+          "fact": "Archaeologists study tools, bones and art to piece together how people lived."
+        }
+      ]
+    },
+    {
+      "id": "skara-brae-storm",
+      "title": "Skara Brae Storm",
+      "skill": {
+        "id": "history.skara-brae",
+        "name": "Skara Brae, a New Stone Age village",
+        "subject": "history",
+        "yearGroup": 3,
+        "strand": "stone-age-to-iron-age",
+        "prerequisites": []
+      },
+      "story": "A wild storm has blown the sand away and uncovered a village of stone houses! Explore Skara Brae and find out who lived here.",
+      "instruction": "Read each question, then tap the tablet with the right answer.",
+      "hint": "Remember these people were early farmers who lived by the sea, with very few trees around.",
+      "scene": "skara-brae",
+      "play": "quiz",
+      "choiceProp": "stone-tablet",
+      "questions": [
+        {
+          "ask": "Where is the village of Skara Brae?",
+          "answer": "Orkney, Scotland",
+          "wrong": ["Cornwall, England", "Kent, England", "Anglesey, Wales"],
+          "fact": "Orkney is a group of islands off the north coast of Scotland."
+        },
+        {
+          "ask": "What uncovered Skara Brae in 1850?",
+          "answer": "A great storm",
+          "wrong": ["An earthquake", "A volcano", "A digger"],
+          "fact": "Wind and huge waves stripped the grass and sand from a dune, showing the houses."
+        },
+        {
+          "ask": "About how long ago did people live at Skara Brae?",
+          "answer": "About 5,000 years ago",
+          "wrong": [
+            "About 500 years ago",
+            "About 50 years ago",
+            "About 1,000 years ago"
+          ],
+          "fact": "That makes the village even older than the Great Pyramid in Egypt."
+        },
+        {
+          "ask": "What was the furniture in the houses made from?",
+          "answer": "Stone",
+          "wrong": ["Wood", "Metal", "Plastic"],
+          "fact": "Orkney had few trees, so people built beds and shelves from flat stone slabs."
+        },
+        {
+          "ask": "What was in the middle of each house?",
+          "answer": "A fireplace",
+          "wrong": ["A bathtub", "A staircase", "A well"],
+          "fact": "The fire, or hearth, gave heat and light and was used for cooking."
+        },
+        {
+          "ask": "Which stone furniture faced the door, maybe to show off special things?",
+          "answer": "A dresser",
+          "wrong": ["A wardrobe", "A sofa", "A bookcase"],
+          "fact": "A visitor would see the dresser first, so it may have held prized objects."
+        },
+        {
+          "ask": "What did the people of Skara Brae sleep in?",
+          "answer": "Stone box beds",
+          "wrong": ["Hammocks", "Wooden bunks", "Rope beds"],
+          "fact": "The beds were probably filled with heather or bracken and furs to keep cosy."
+        },
+        {
+          "ask": "How did the villagers get most of their food?",
+          "answer": "Farming and fishing",
+          "wrong": [
+            "Buying at market",
+            "Hunting mammoths",
+            "Trading with Romans"
+          ],
+          "fact": "They kept cattle and sheep, grew barley and wheat, and gathered shellfish."
+        },
+        {
+          "ask": "How were the houses joined to each other?",
+          "answer": "Covered passages",
+          "wrong": ["Wooden bridges", "Paved roads", "Rope ladders"],
+          "fact": "The houses were dug into mounds of old rubbish, called midden, to keep out the wind."
+        },
+        {
+          "ask": "Which period of history is Skara Brae from?",
+          "answer": "New Stone Age",
+          "wrong": ["Iron Age", "Roman times", "Viking times"],
+          "fact": "The New Stone Age, or Neolithic, is when people in Britain began to farm."
+        },
+        {
+          "ask": "What name is given to the patterned pots found at Skara Brae?",
+          "answer": "Grooved Ware",
+          "wrong": ["Willow Pattern", "Blue china", "Samian ware"],
+          "fact": "Grooved Ware pots have patterns of lines pressed or cut into the clay."
+        },
+        {
+          "ask": "What were the tools at Skara Brae made from?",
+          "answer": "Stone and bone",
+          "wrong": ["Iron and steel", "Bronze and gold", "Plastic and glass"],
+          "fact": "Beads and pins were carved from bone and even whale teeth."
+        }
+      ]
+    },
+    {
+      "id": "stonehenge-sunrise",
+      "title": "Stonehenge Sunrise",
+      "skill": {
+        "id": "history.stonehenge",
+        "name": "Stonehenge",
+        "subject": "history",
+        "yearGroup": 3,
+        "strand": "stone-age-to-iron-age",
+        "prerequisites": []
+      },
+      "story": "The sun is rising over the great stones! Dig into the mysteries of Stonehenge and find out what we know, and what we still don't.",
+      "instruction": "Read each question, then tap the mound with the right answer.",
+      "hint": "Remember the builders had no metal tools or machines, and some things about Stonehenge are still a mystery.",
+      "scene": "stonehenge-plain",
+      "play": "quiz",
+      "choiceProp": "dig-mound",
+      "questions": [
+        {
+          "ask": "Where in England is Stonehenge?",
+          "answer": "Salisbury Plain",
+          "wrong": ["Dartmoor", "The Lake District", "The Fens"],
+          "fact": "Salisbury Plain is in Wiltshire, in the south of England."
+        },
+        {
+          "ask": "About when did people begin building Stonehenge?",
+          "answer": "About 3000 BC",
+          "wrong": ["About AD 1066", "About AD 43", "About 500 BC"],
+          "fact": "It began as a round ditch and bank, long before the big stones arrived."
+        },
+        {
+          "ask": "What are the giant stones of Stonehenge called?",
+          "answer": "Sarsens",
+          "wrong": ["Marble", "Granite", "Slate"],
+          "fact": "The sarsens came from West Woods, about 15 miles (25 km) to the north."
+        },
+        {
+          "ask": "Where did the smaller bluestones come from?",
+          "answer": "Wales",
+          "wrong": ["Scotland", "France", "Ireland"],
+          "fact": "They came from the Preseli Hills, around 150 miles (240 km) away!"
+        },
+        {
+          "ask": "Which sunrise does Stonehenge line up with?",
+          "answer": "Midsummer sunrise",
+          "wrong": ["New Year sunrise", "Easter sunrise", "Harvest sunrise"],
+          "fact": "It also lines up with the sunset on midwinter's day, the shortest day."
+        },
+        {
+          "ask": "Do we know for certain why Stonehenge was built?",
+          "answer": "No, it's a mystery",
+          "wrong": ["Yes, as a castle", "Yes, as a market", "Yes, as a palace"],
+          "fact": "It may have been a temple, a calendar or a place to remember the dead."
+        },
+        {
+          "ask": "Stonehenge was built in stages. About how long did that take?",
+          "answer": "About 1,500 years",
+          "wrong": ["About a week", "About 10 years", "About 100 years"],
+          "fact": "Many generations of people added to it and changed its shape over time."
+        },
+        {
+          "ask": "What did the builders use as picks to dig the ditch?",
+          "answer": "Deer antlers",
+          "wrong": ["Iron spades", "Steel shovels", "Bronze diggers"],
+          "fact": "Archaeologists have found antler picks left in the bottom of the ditch."
+        },
+        {
+          "ask": "How do many experts think the huge stones were moved?",
+          "answer": "On wooden sledges",
+          "wrong": ["By lorry", "By iron crane", "On horse carts"],
+          "fact": "No one knows for sure, but teams of people may have hauled sledges along wooden tracks."
+        },
+        {
+          "ask": "Which nearby place may have been a village for Stonehenge's builders?",
+          "answer": "Durrington Walls",
+          "wrong": ["Skara Brae", "Maiden Castle", "Vindolanda"],
+          "fact": "Lots of pig bones found there suggest big midwinter feasts."
+        },
+        {
+          "ask": "What are the stones laid across the tops of the uprights called?",
+          "answer": "Lintels",
+          "wrong": ["Chimneys", "Roofs", "Pillars"],
+          "fact": "Lintels were fixed with joints like woodwork: a bump fitted into a hollow."
+        },
+        {
+          "ask": "In which period of history was Stonehenge begun?",
+          "answer": "New Stone Age",
+          "wrong": ["Iron Age", "Roman times", "Viking times"],
+          "fact": "Its first builders used tools of stone, wood, bone and antler, not metal."
+        }
+      ]
+    },
+    {
+      "id": "stone-bronze-or-iron",
+      "title": "Stone, Bronze or Iron?",
+      "skill": {
+        "id": "history.three-ages",
+        "name": "The Stone Age, Bronze Age and Iron Age",
+        "subject": "history",
+        "yearGroup": 3,
+        "strand": "stone-age-to-iron-age",
+        "prerequisites": []
+      },
+      "story": "The museum's new crates have arrived, but the labels have fallen off! Help the curator put each find in the right age.",
+      "instruction": "Which age does it belong to? Tap the right crate.",
+      "hint": "Think about which material people had learned to use: stone came first, then bronze, then iron.",
+      "scene": "museum-hall",
+      "play": "sort",
+      "choiceProp": "wooden-crate",
+      "bins": ["Stone Age", "Bronze Age", "Iron Age"],
+      "questions": [
+        {
+          "ask": "A flint hand axe",
+          "answer": "Stone Age",
+          "fact": "Hand axes were made by chipping flint into shape with another stone."
+        },
+        {
+          "ask": "Hunting woolly mammoths",
+          "answer": "Stone Age",
+          "fact": "Woolly mammoths lived in Britain during the Ice Age."
+        },
+        {
+          "ask": "The first farmers in Britain",
+          "answer": "Stone Age",
+          "fact": "Farming reached Britain around 4000 BC, in the New Stone Age."
+        },
+        {
+          "ask": "The stone village of Skara Brae",
+          "answer": "Stone Age",
+          "fact": "Skara Brae was built around 3100 BC, before metal reached Britain."
+        },
+        {
+          "ask": "A dagger made of bronze",
+          "answer": "Bronze Age",
+          "fact": "Bronze is made by mixing copper with a little tin."
+        },
+        {
+          "ask": "The Amesbury Archer",
+          "answer": "Bronze Age",
+          "fact": "He was buried around 2300 BC with some of the earliest metal objects found in Britain."
+        },
+        {
+          "ask": "Bell-shaped beaker pots",
+          "answer": "Bronze Age",
+          "fact": "Beakers were often buried with people, perhaps holding a special drink."
+        },
+        {
+          "ask": "Mining tin in Cornwall",
+          "answer": "Bronze Age",
+          "fact": "Tin was rare, so Cornwall's tin was valuable for making bronze."
+        },
+        {
+          "ask": "A sword made of iron",
+          "answer": "Iron Age",
+          "fact": "Iron was harder to work than bronze, but iron ore was easier to find."
+        },
+        {
+          "ask": "Hillforts like Maiden Castle",
+          "answer": "Iron Age",
+          "fact": "Maiden Castle in Dorset is one of the biggest hillforts in Europe."
+        },
+        {
+          "ask": "The first coins made in Britain",
+          "answer": "Iron Age",
+          "fact": "Some tribes made coins showing horses and the names of their leaders."
+        },
+        {
+          "ask": "Ploughs tipped with iron",
+          "answer": "Iron Age",
+          "fact": "Strong iron tools helped farmers clear and plough more land."
+        }
+      ]
+    },
+    {
+      "id": "hillfort-defenders",
+      "title": "Hillfort Defenders",
+      "skill": {
+        "id": "history.iron-age-life",
+        "name": "Life in Iron Age Britain",
+        "subject": "history",
+        "yearGroup": 3,
+        "strand": "stone-age-to-iron-age",
+        "prerequisites": []
+      },
+      "story": "Welcome to the hillfort! Grab a shield and join the tribe to discover how people lived high on the hill in the Iron Age.",
+      "instruction": "Read each question, then tap the shield with the right answer.",
+      "hint": "Picture a tribe living in roundhouses inside high earth banks, with new iron tools to farm the land.",
+      "scene": "iron-age-hillfort",
+      "play": "quiz",
+      "choiceProp": "shield",
+      "questions": [
+        {
+          "ask": "What was a hillfort?",
+          "answer": "A village on a hill",
+          "wrong": ["A stone castle", "A Roman camp", "A cave home"],
+          "fact": "Hillforts were protected by huge earth banks and deep ditches."
+        },
+        {
+          "ask": "What is the name of the giant hillfort in Dorset?",
+          "answer": "Maiden Castle",
+          "wrong": ["Windsor Castle", "Dover Castle", "Edinburgh Castle"],
+          "fact": "Its earth banks surround an area bigger than 20 football pitches."
+        },
+        {
+          "ask": "What shape were most Iron Age houses in Britain?",
+          "answer": "Round",
+          "wrong": ["Square", "Triangular", "Star-shaped"],
+          "fact": "Roundhouses had a cone-shaped thatched roof and a fire in the middle."
+        },
+        {
+          "ask": "What were roundhouse walls often made of?",
+          "answer": "Wattle and daub",
+          "wrong": ["Bricks", "Glass", "Concrete"],
+          "fact": "Wattle is woven sticks; daub is a sticky mix of mud, straw and dung."
+        },
+        {
+          "ask": "Which metal gave the Iron Age its name?",
+          "answer": "Iron",
+          "wrong": ["Bronze", "Gold", "Copper"],
+          "fact": "Iron ore was easier to find than copper and tin, so more people had metal tools."
+        },
+        {
+          "ask": "Who were the religious leaders in Iron Age Britain?",
+          "answer": "Druids",
+          "wrong": ["Pharaohs", "Vikings", "Knights"],
+          "fact": "Druids learned everything by heart, so much of what we know comes from Roman writers."
+        },
+        {
+          "ask": "What is a torc?",
+          "answer": "A metal neck ring",
+          "wrong": ["A type of sword", "A kind of hat", "A clay pot"],
+          "fact": "The Snettisham hoard in Norfolk held dozens of beautiful gold and silver torcs."
+        },
+        {
+          "ask": "What did some Iron Age warriors ride in?",
+          "answer": "Chariots",
+          "wrong": ["Camels", "Bicycles", "Elephants"],
+          "fact": "Light chariots pulled by two small horses could race across the land."
+        },
+        {
+          "ask": "What were the large groups of Iron Age people called?",
+          "answer": "Tribes",
+          "wrong": ["Legions", "Empires", "Councils"],
+          "fact": "Tribes included the Iceni in East Anglia and the Brigantes in the north."
+        },
+        {
+          "ask": "What did some tribes start to make for buying and trading?",
+          "answer": "Coins",
+          "wrong": ["Banknotes", "Credit cards", "Cheques"],
+          "fact": "Some coins show the names of tribal leaders, such as Cunobelin."
+        },
+        {
+          "ask": "What kind of languages did many Iron Age Britons speak?",
+          "answer": "Celtic languages",
+          "wrong": ["Latin", "English", "Ancient Greek"],
+          "fact": "Welsh, Cornish and Gaelic all grew from old Celtic languages."
+        },
+        {
+          "ask": "Where did Iron Age farmers often store their grain?",
+          "answer": "Pits in the ground",
+          "wrong": ["Fridges", "Supermarkets", "Treehouses"],
+          "fact": "Sealed pits kept grain dry and safe until it was time to sow it again."
+        }
+      ]
+    },
+    {
+      "id": "journey-through-prehistory",
+      "title": "Journey Through Prehistory",
+      "skill": {
+        "id": "history.prehistory-in-order",
+        "name": "Britain from the Stone Age to the Iron Age in order",
+        "subject": "history",
+        "yearGroup": 3,
+        "strand": "stone-age-to-iron-age",
+        "prerequisites": []
+      },
+      "story": "Unroll the great scroll of time! Travel from the very first footprints in Britain all the way to the day the Romans arrived.",
+      "instruction": "Tap the event that happened longest ago first.",
+      "hint": "Remember the order of the ages: Stone Age, then Bronze Age, then Iron Age, then the Romans.",
+      "scene": "stonehenge-plain",
+      "play": "timeline",
+      "choiceProp": "scroll",
+      "events": [
+        {
+          "label": "Happisburgh tools",
+          "date": "c. 900,000 BC",
+          "order": -900000,
+          "fact": "Flint tools and footprints at Happisburgh in Norfolk are the oldest signs of people in Britain."
+        },
+        {
+          "label": "Last Ice Age ends",
+          "date": "c. 10,000 BC",
+          "order": -10000,
+          "fact": "As the ice melted, forests grew and hunters followed deer and wild cattle into Britain."
+        },
+        {
+          "label": "Cheddar Man lives",
+          "date": "c. 7100 BC",
+          "order": -7100,
+          "fact": "His skeleton, found in a Somerset cave, is Britain's oldest almost complete skeleton."
+        },
+        {
+          "label": "Britain is an island",
+          "date": "c. 6500 BC",
+          "order": -6500,
+          "fact": "Rising seas flooded Doggerland, the land that once joined Britain to Europe."
+        },
+        {
+          "label": "Farming begins",
+          "date": "c. 4000 BC",
+          "order": -4000,
+          "fact": "Farmers from Europe brought seeds and animals such as sheep and cattle."
+        },
+        {
+          "label": "Stonehenge begun",
+          "date": "c. 3000 BC",
+          "order": -3000,
+          "fact": "It began as a round ditch and bank; the big stones came later."
+        },
+        {
+          "label": "Bronze Age begins",
+          "date": "c. 2500 BC",
+          "order": -2500,
+          "fact": "People learned to mix copper and tin to make strong bronze."
+        },
+        {
+          "label": "Iron Age begins",
+          "date": "c. 800 BC",
+          "order": -800,
+          "fact": "Iron tools and weapons slowly replaced bronze ones across Britain."
+        },
+        {
+          "label": "Romans invade",
+          "date": "AD 43",
+          "order": 43,
+          "fact": "Emperor Claudius sent an army, and Britain became part of the Roman Empire."
+        }
+      ]
+    },
+    {
+      "id": "pyramid-builders",
+      "title": "Pyramid Builders",
+      "skill": {
+        "id": "history.egyptian-pyramids",
+        "name": "The pyramids of Ancient Egypt",
+        "subject": "history",
+        "yearGroup": 3,
+        "strand": "ancient-egypt",
+        "prerequisites": []
+      },
+      "story": "The desert sun is blazing and the Great Pyramid towers above you! Join the builders and uncover the secrets of Giza.",
+      "instruction": "Read each question, then tap the tablet with the right answer.",
+      "hint": "The Egyptians had no machines, so think what clever people could do with ropes, ramps and teamwork.",
+      "scene": "egypt-desert",
+      "play": "quiz",
+      "choiceProp": "stone-tablet",
+      "questions": [
+        {
+          "ask": "Who were the pyramids built for?",
+          "answer": "Pharaohs",
+          "wrong": ["Farmers", "Soldiers", "Scribes"],
+          "fact": "A pyramid was a tomb, built to protect the pharaoh's body and treasures."
+        },
+        {
+          "ask": "Which pharaoh had the Great Pyramid built?",
+          "answer": "Khufu",
+          "wrong": ["Tutankhamun", "Cleopatra", "Ramesses"],
+          "fact": "It was finished around 2560 BC and stayed the world's tallest building for over 3,800 years."
+        },
+        {
+          "ask": "Where are the most famous pyramids in Egypt?",
+          "answer": "Giza",
+          "wrong": ["Rome", "Athens", "Babylon"],
+          "fact": "Giza is beside the River Nile, close to Egypt's capital city, Cairo."
+        },
+        {
+          "ask": "Which giant statue at Giza has a lion's body and a human head?",
+          "answer": "The Sphinx",
+          "wrong": ["The Minotaur", "A griffin", "A mummy"],
+          "fact": "The Great Sphinx was carved out of one huge lump of limestone rock."
+        },
+        {
+          "ask": "Who do archaeologists think built the pyramids?",
+          "answer": "Skilled workers",
+          "wrong": ["Slaves", "Roman soldiers", "Greek builders"],
+          "fact": "The workers' town has been found nearby, with bakeries and the workers' own tombs."
+        },
+        {
+          "ask": "What stone was mostly used to build the Great Pyramid?",
+          "answer": "Limestone",
+          "wrong": ["Marble", "Glass", "Concrete"],
+          "fact": "Smooth white limestone once covered the outside so it shone in the sun."
+        },
+        {
+          "ask": "How were the heavy blocks probably raised up high?",
+          "answer": "Up ramps",
+          "wrong": ["By crane", "In lifts", "By catapult"],
+          "fact": "Experts still debate whether the ramps were straight, zigzag or spiralling."
+        },
+        {
+          "ask": "About how many stone blocks are in the Great Pyramid?",
+          "answer": "Over 2 million",
+          "wrong": ["About 100", "About 1,000", "About 10,000"],
+          "fact": "An average block weighs about 2.5 tonnes, as much as two cars."
+        },
+        {
+          "ask": "What shape is the bottom (base) of a pyramid?",
+          "answer": "A square",
+          "wrong": ["A circle", "A triangle", "A hexagon"],
+          "fact": "The Great Pyramid's sides face almost exactly north, south, east and west."
+        },
+        {
+          "ask": "About how long did it take to build the Great Pyramid?",
+          "answer": "About 20 years",
+          "wrong": ["About 2 weeks", "About 2 months", "About 200 years"],
+          "fact": "Thousands of workers took turns, with many coming to help when the Nile flooded."
+        },
+        {
+          "ask": "On which side of the Nile were the pyramids built?",
+          "answer": "The west bank",
+          "wrong": ["The east bank", "On islands", "Under the river"],
+          "fact": "The Egyptians linked the west, where the sun set, with the land of the dead."
+        },
+        {
+          "ask": "How did workers make it easier to drag blocks across sand?",
+          "answer": "Wet the sand",
+          "wrong": ["Used lorries", "Used trains", "Used elephants"],
+          "fact": "An Egyptian painting shows a worker pouring water in front of a sledge."
+        }
+      ]
+    },
+    {
+      "id": "the-mummy-makers",
+      "title": "The Mummy Makers",
+      "skill": {
+        "id": "history.mummification",
+        "name": "How the Ancient Egyptians made mummies",
+        "subject": "history",
+        "yearGroup": 3,
+        "strand": "ancient-egypt",
+        "prerequisites": []
+      },
+      "story": "The embalmers need an apprentice! Learn the steps the Egyptians followed to prepare a body for its journey to the afterlife.",
+      "instruction": "Tap the step the embalmers did first, then the next.",
+      "hint": "Think about it like a recipe: clean first, then dry, and finally wrap and protect.",
+      "scene": "egypt-tomb",
+      "play": "timeline",
+      "choiceProp": "clay-pot",
+      "events": [
+        {
+          "label": "Wash the body",
+          "date": "Step 1",
+          "order": 1,
+          "fact": "The body was washed with palm wine and water from the River Nile."
+        },
+        {
+          "label": "Remove the brain",
+          "date": "Step 2",
+          "order": 2,
+          "fact": "The Egyptians did not think the brain was needed in the afterlife, so it was not kept."
+        },
+        {
+          "label": "Remove the organs",
+          "date": "Step 3",
+          "order": 3,
+          "fact": "Embalmers took out the organs through a small cut in the left side."
+        },
+        {
+          "label": "Fill canopic jars",
+          "date": "Step 4",
+          "order": 4,
+          "fact": "Four canopic jars held the liver, lungs, stomach and intestines."
+        },
+        {
+          "label": "Leave the heart in",
+          "date": "Step 5",
+          "order": 5,
+          "fact": "The Egyptians believed the heart would be weighed in the afterlife."
+        },
+        {
+          "label": "Cover in natron",
+          "date": "Step 6",
+          "order": 6,
+          "fact": "Natron, a kind of salt, dried the body out over about 40 days."
+        },
+        {
+          "label": "Stuff and oil body",
+          "date": "Step 7",
+          "order": 7,
+          "fact": "Linen and sawdust filled out the shape, and oils kept the skin soft."
+        },
+        {
+          "label": "Wrap in linen",
+          "date": "Step 8",
+          "order": 8,
+          "fact": "Lucky charms called amulets were tucked between the layers of bandages."
+        },
+        {
+          "label": "Put on the mask",
+          "date": "Step 9",
+          "order": 9,
+          "fact": "The Egyptians believed the mask helped the spirit recognise its body."
+        },
+        {
+          "label": "Place in the coffin",
+          "date": "Step 10",
+          "order": 10,
+          "fact": "Important people had coffins inside a stone box called a sarcophagus."
+        }
+      ]
+    },
+    {
+      "id": "tutankhamuns-treasure",
+      "title": "Tutankhamun's Treasure",
+      "skill": {
+        "id": "history.tutankhamun",
+        "name": "Tutankhamun and the discovery of his tomb",
+        "subject": "history",
+        "yearGroup": 3,
+        "strand": "ancient-egypt",
+        "prerequisites": []
+      },
+      "story": "It's 1922 in the Valley of the Kings, and a stone step has just been found! Dig with Howard Carter and discover the boy king's tomb.",
+      "instruction": "Read each question, then tap the mound with the right answer.",
+      "hint": "Remember Tutankhamun was a young pharaoh, and his tomb lay hidden for over 3,000 years.",
+      "scene": "egypt-tomb",
+      "play": "quiz",
+      "choiceProp": "dig-mound",
+      "questions": [
+        {
+          "ask": "Who found Tutankhamun's tomb in 1922?",
+          "answer": "Howard Carter",
+          "wrong": ["Basil Brown", "Captain Cook", "Mary Anning"],
+          "fact": "Carter had searched for years before his team uncovered the first step."
+        },
+        {
+          "ask": "Where was Tutankhamun's tomb found?",
+          "answer": "Valley of the Kings",
+          "wrong": ["Sahara Desert", "Nile Delta", "Red Sea coast"],
+          "fact": "Over 60 tombs have been found there, cut deep into the rocky hills."
+        },
+        {
+          "ask": "About how old was Tutankhamun when he became pharaoh?",
+          "answer": "About 9",
+          "wrong": ["About 30", "About 50", "About 70"],
+          "fact": "He became king around 1332 BC, which is why he is called the boy king."
+        },
+        {
+          "ask": "About how old was Tutankhamun when he died?",
+          "answer": "About 19",
+          "wrong": ["About 45", "About 60", "About 90"],
+          "fact": "No one knows for certain why he died so young; experts are still studying it."
+        },
+        {
+          "ask": "Who paid for Howard Carter's search?",
+          "answer": "Lord Carnarvon",
+          "wrong": ["Queen Victoria", "Henry VIII", "Julius Caesar"],
+          "fact": "Lord Carnarvon was an English lord who loved Ancient Egypt."
+        },
+        {
+          "ask": "Peering in by candlelight, what did Carter say he could see?",
+          "answer": "Wonderful things",
+          "wrong": ["Lots of sand", "Nothing at all", "Just old pots"],
+          "fact": "Gold glinted everywhere in the flickering light of his candle."
+        },
+        {
+          "ask": "What is Tutankhamun's famous death mask mostly made of?",
+          "answer": "Gold",
+          "wrong": ["Wood", "Clay", "Plastic"],
+          "fact": "It weighs about 10 kg and is decorated with blue glass and precious stones."
+        },
+        {
+          "ask": "Why was finding this tomb so exciting?",
+          "answer": "Treasure still inside",
+          "wrong": ["It was empty", "It was underwater", "It was in Rome"],
+          "fact": "Robbers had broken in long ago, but most of the treasure was left behind."
+        },
+        {
+          "ask": "About how many objects were found in the tomb?",
+          "answer": "Over 5,000",
+          "wrong": ["About 10", "About 50", "About 100"],
+          "fact": "It took Carter's team about ten years to record and clear them all."
+        },
+        {
+          "ask": "In which country are Tutankhamun's treasures kept today?",
+          "answer": "Egypt",
+          "wrong": ["England", "America", "France"],
+          "fact": "Museums in Egypt look after the treasures, and millions of visitors come to see them."
+        },
+        {
+          "ask": "What did the Egyptians believe the tomb's treasures were for?",
+          "answer": "Use in the afterlife",
+          "wrong": [
+            "Selling at market",
+            "Paying workers",
+            "Decorating a palace"
+          ],
+          "fact": "The tomb held chariots, beds, board games and food for his next life."
+        },
+        {
+          "ask": "What was Tutankhamun's innermost coffin made of?",
+          "answer": "Solid gold",
+          "wrong": ["Stone", "Glass", "Bronze"],
+          "fact": "He lay inside three coffins, one inside another, within a stone sarcophagus."
+        }
+      ]
+    },
+    {
+      "id": "life-on-the-nile",
+      "title": "Life on the Nile",
+      "skill": {
+        "id": "history.ancient-egypt-life",
+        "name": "Everyday life in Ancient Egypt",
+        "subject": "history",
+        "yearGroup": 3,
+        "strand": "ancient-egypt",
+        "prerequisites": []
+      },
+      "story": "The great river is rising! Spend a year beside the Nile with farmers, scribes and priests, and earn gold coins as you learn.",
+      "instruction": "Read each question, then tap the coin with the right answer.",
+      "hint": "Remember that almost everything in Egypt depended on the River Nile and its yearly flood.",
+      "scene": "egypt-desert",
+      "play": "quiz",
+      "choiceProp": "gold-coin",
+      "questions": [
+        {
+          "ask": "What did the Nile's yearly flood leave behind on the fields?",
+          "answer": "Rich, dark mud",
+          "wrong": ["Salt", "Sand dunes", "Pebbles"],
+          "fact": "The Egyptians called their land Kemet, 'the black land', after this rich soil."
+        },
+        {
+          "ask": "How many seasons were there in the Egyptian farming year?",
+          "answer": "Three",
+          "wrong": ["Two", "Four", "Twelve"],
+          "fact": "Each of the three seasons was about four months long."
+        },
+        {
+          "ask": "What was the season of the Nile flood called?",
+          "answer": "Akhet",
+          "wrong": ["Peret", "Shemu", "Kemet"],
+          "fact": "Peret was the growing season and Shemu was harvest time."
+        },
+        {
+          "ask": "What plant did the Egyptians use to make paper?",
+          "answer": "Papyrus",
+          "wrong": ["Bamboo", "Cotton", "Oak bark"],
+          "fact": "Papyrus reeds grew along the Nile; our word 'paper' comes from 'papyrus'."
+        },
+        {
+          "ask": "What is Egyptian picture writing called?",
+          "answer": "Hieroglyphs",
+          "wrong": ["Runes", "Latin", "Numerals"],
+          "fact": "There were hundreds of signs; some stood for sounds and some for whole words."
+        },
+        {
+          "ask": "Which stone helped experts learn to read hieroglyphs?",
+          "answer": "The Rosetta Stone",
+          "wrong": [
+            "The Blarney Stone",
+            "A sarsen stone",
+            "The Stone of Scone"
+          ],
+          "fact": "It has one message in three scripts; Jean-François Champollion cracked it in 1822."
+        },
+        {
+          "ask": "Who trained for years to read and write in Ancient Egypt?",
+          "answer": "Scribes",
+          "wrong": ["Farmers", "Sailors", "Bakers"],
+          "fact": "Few Egyptians could write, so scribes were important and respected."
+        },
+        {
+          "ask": "Who did the Egyptians believe was the god of the sun?",
+          "answer": "Ra",
+          "wrong": ["Anubis", "Osiris", "Isis"],
+          "fact": "The Egyptians believed Ra sailed across the sky in a boat each day."
+        },
+        {
+          "ask": "Which god with a jackal's head did Egyptians link with mummies?",
+          "answer": "Anubis",
+          "wrong": ["Ra", "Bastet", "Thoth"],
+          "fact": "The Egyptians believed Anubis guided the dead on their journey to the afterlife."
+        },
+        {
+          "ask": "Which god did the Egyptians believe ruled the afterlife?",
+          "answer": "Osiris",
+          "wrong": ["Ra", "Bastet", "Thoth"],
+          "fact": "Osiris's wife, the goddess Isis, was known for her magic and protection."
+        },
+        {
+          "ask": "What did Egyptian farmers grow to make bread and beer?",
+          "answer": "Wheat and barley",
+          "wrong": ["Rice and maize", "Potatoes", "Oats and rye"],
+          "fact": "Workers were often paid in bread and beer instead of money."
+        },
+        {
+          "ask": "What was the easiest way to travel a long way in Ancient Egypt?",
+          "answer": "By boat on the Nile",
+          "wrong": ["Along stone roads", "On horseback", "By camel train"],
+          "fact": "Winds blew south, so boats could sail upstream and drift back north."
+        }
+      ]
+    }
+  ]
+}

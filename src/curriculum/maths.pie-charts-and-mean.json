@@ -1,0 +1,8 @@
+{
+  "id": "maths.pie-charts-and-mean",
+  "name": "Reading pie charts and finding the mean",
+  "subject": "maths",
+  "yearGroup": 6,
+  "strand": "statistics",
+  "prerequisites": ["maths.tables-and-timetables"]
+}

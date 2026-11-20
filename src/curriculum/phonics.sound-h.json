@@ -1,0 +1,9 @@
+{
+  "id": "phonics.sound-h",
+  "name": "The /h/ sound, as in hat",
+  "subject": "phonics",
+  "yearGroup": 1,
+  "strand": "grapheme-phoneme-correspondences",
+  "prerequisites": [],
+  "sounds": ["h"]
+}

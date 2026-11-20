@@ -1,0 +1,207 @@
+{
+  "subject": "art",
+  "programme": "key-stage",
+  "programmeOfStudyUrl": "https://www.gov.uk/government/publications/national-curriculum-in-england-art-and-design-programmes-of-study",
+  "years": [
+    {
+      "yearGroup": 1,
+      "points": [
+        {
+          "id": "materials",
+          "heading": "Using materials creatively",
+          "summary": "Use a range of materials creatively to design and make products.",
+          "skillIds": ["art.art-junk-model", "art.art-collage-creator"]
+        },
+        {
+          "id": "drawing-painting-sculpture",
+          "heading": "Drawing, painting and sculpture",
+          "summary": "Use drawing, painting and sculpture to develop and share ideas, experiences and imagination.",
+          "skillIds": ["art.art-tool-box", "art.art-feelings-pictures"]
+        },
+        {
+          "id": "techniques",
+          "heading": "Colour, pattern, texture, line, shape, form and space",
+          "summary": "Develop a wide range of art and design techniques using colour, pattern, texture, line, shape, form and space.",
+          "skillIds": [
+            "art.art-shape-spotter",
+            "art.art-line-explorer",
+            "art.art-primary-pots",
+            "art.art-texture-touch"
+          ]
+        },
+        {
+          "id": "artists-and-makers",
+          "heading": "Artists, craft makers and designers",
+          "summary": "Learn about a range of artists, craft makers and designers, describing differences and similarities and linking them to their own work.",
+          "skillIds": ["art.art-maker-match", "art.art-meet-artists"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 2,
+      "points": [
+        {
+          "id": "materials",
+          "heading": "Using materials creatively",
+          "summary": "Use a range of materials creatively to design and make products.",
+          "skillIds": ["art.art-print-makers", "art.art-weaving-wonders"]
+        },
+        {
+          "id": "drawing-painting-sculpture",
+          "heading": "Drawing, painting and sculpture",
+          "summary": "Use drawing, painting and sculpture to develop and share ideas, experiences and imagination.",
+          "skillIds": ["art.art-clay-creations", "art.art-paint-pro"]
+        },
+        {
+          "id": "techniques",
+          "heading": "Colour, pattern, texture, line, shape, form and space",
+          "summary": "Develop a wide range of art and design techniques using colour, pattern, texture, line, shape, form and space.",
+          "skillIds": [
+            "art.art-pattern-path",
+            "art.art-colour-mixer",
+            "art.art-form-finder",
+            "art.art-near-and-far"
+          ]
+        },
+        {
+          "id": "artists-and-makers",
+          "heading": "Artists, craft makers and designers",
+          "summary": "Learn about a range of artists, craft makers and designers, describing differences and similarities and linking them to their own work.",
+          "skillIds": ["art.art-same-different", "art.art-who-made-it"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 3,
+      "points": [
+        {
+          "id": "sketchbooks",
+          "heading": "Sketchbooks",
+          "summary": "Create sketchbooks to record observations and use them to review and revisit ideas.",
+          "skillIds": ["art.art-sketchbook-secrets", "art.art-look-and-record"]
+        },
+        {
+          "id": "mastery",
+          "heading": "Mastering art techniques",
+          "summary": "Improve mastery of drawing, painting and sculpture techniques with a range of materials such as pencil, charcoal, paint and clay.",
+          "skillIds": [
+            "art.art-pencil-power",
+            "art.art-shading-school",
+            "art.art-colour-wheel-spin",
+            "art.art-charcoal-chalk",
+            "art.art-clay-workshop"
+          ]
+        },
+        {
+          "id": "great-artists",
+          "heading": "Great artists, architects and designers",
+          "summary": "Learn about great artists, architects and designers in history.",
+          "skillIds": [
+            "art.art-ancient-art",
+            "art.art-artist-detective",
+            "art.art-around-the-world"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 4,
+      "points": [
+        {
+          "id": "sketchbooks",
+          "heading": "Sketchbooks",
+          "summary": "Create sketchbooks to record observations and use them to review and revisit ideas.",
+          "skillIds": ["art.art-review-revisit", "art.art-sketch-plan"]
+        },
+        {
+          "id": "mastery",
+          "heading": "Mastering art techniques",
+          "summary": "Improve mastery of drawing, painting and sculpture techniques with a range of materials such as pencil, charcoal, paint and clay.",
+          "skillIds": [
+            "art.art-tints-tones",
+            "art.art-print-studio",
+            "art.art-face-proportions",
+            "art.art-mosaic-makers",
+            "art.art-genre-gallery"
+          ]
+        },
+        {
+          "id": "great-artists",
+          "heading": "Great artists, architects and designers",
+          "summary": "Learn about great artists, architects and designers in history.",
+          "skillIds": [
+            "art.art-impressionist-mystery",
+            "art.art-sculpture-garden",
+            "art.art-pattern-designers"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 5,
+      "points": [
+        {
+          "id": "sketchbooks",
+          "heading": "Sketchbooks",
+          "summary": "Create sketchbooks to record observations and use them to review and revisit ideas.",
+          "skillIds": ["art.art-artists-notebook", "art.art-critic-club"]
+        },
+        {
+          "id": "mastery",
+          "heading": "Mastering art techniques",
+          "summary": "Improve mastery of drawing, painting and sculpture techniques with a range of materials such as pencil, charcoal, paint and clay.",
+          "skillIds": [
+            "art.art-perspective-point",
+            "art.art-colour-theory",
+            "art.art-sculpture-methods",
+            "art.art-paint-effects",
+            "art.art-composition-craft"
+          ]
+        },
+        {
+          "id": "great-artists",
+          "heading": "Great artists, architects and designers",
+          "summary": "Learn about great artists, architects and designers in history.",
+          "skillIds": [
+            "art.art-renaissance-masters",
+            "art.art-amazing-architects",
+            "art.art-movement-sorter"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 6,
+      "points": [
+        {
+          "id": "sketchbooks",
+          "heading": "Sketchbooks",
+          "summary": "Create sketchbooks to record observations and use them to review and revisit ideas.",
+          "skillIds": ["art.art-idea-developer", "art.art-sketchbook-reviewer"]
+        },
+        {
+          "id": "mastery",
+          "heading": "Mastering art techniques",
+          "summary": "Improve mastery of drawing, painting and sculpture techniques with a range of materials such as pencil, charcoal, paint and clay.",
+          "skillIds": [
+            "art.art-light-and-shadow",
+            "art.art-two-point-towers",
+            "art.art-right-material",
+            "art.art-print-masters",
+            "art.art-figure-drawing"
+          ]
+        },
+        {
+          "id": "great-artists",
+          "heading": "Great artists, architects and designers",
+          "summary": "Learn about great artists, architects and designers in history.",
+          "skillIds": [
+            "art.art-old-masters",
+            "art.art-design-legends",
+            "art.art-world-gallery"
+          ]
+        }
+      ]
+    }
+  ]
+}

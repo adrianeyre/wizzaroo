@@ -1,0 +1,64 @@
+import { afterEach, describe, expect, it, vi } from "vitest";
+import { enterFullScreen, leaveFullScreen } from "./full-screen.js";
+
+const showFullScreen = (isShown: boolean) => {
+  Object.defineProperty(document, "fullscreenElement", {
+    configurable: true,
+    get: () => (isShown ? document.documentElement : null),
+  });
+};
+
+describe("full screen", () => {
+  afterEach(() => {
+    ["fullscreenElement", "fullscreenEnabled", "exitFullscreen"].forEach(
+      (property) => {
+        Reflect.deleteProperty(document, property);
+      },
+    );
+    Reflect.deleteProperty(document.documentElement, "requestFullscreen");
+  });
+
+  it("asks the browser for full screen where it can, and copes when it says no", () => {
+    const requestFullscreen = vi.fn(() => Promise.reject(new Error("no")));
+    Reflect.set(document, "fullscreenEnabled", true);
+    Reflect.set(
+      document.documentElement,
+      "requestFullscreen",
+      requestFullscreen,
+    );
+    showFullScreen(false);
+
+    enterFullScreen();
+
+    expect(requestFullscreen).toHaveBeenCalledOnce();
+  });
+
+  it("asks for nothing where the browser can't show full screen, or already is", () => {
+    const requestFullscreen = vi.fn(() => Promise.resolve());
+    Reflect.set(
+      document.documentElement,
+      "requestFullscreen",
+      requestFullscreen,
+    );
+
+    enterFullScreen();
+    Reflect.set(document, "fullscreenEnabled", true);
+    showFullScreen(true);
+    enterFullScreen();
+
+    expect(requestFullscreen).not.toHaveBeenCalled();
+  });
+
+  it("leaves full screen only when it is showing", () => {
+    const exitFullscreen = vi.fn(() => Promise.resolve());
+    Reflect.set(document, "exitFullscreen", exitFullscreen);
+
+    showFullScreen(false);
+    leaveFullScreen();
+    expect(exitFullscreen).not.toHaveBeenCalled();
+
+    showFullScreen(true);
+    leaveFullScreen();
+    expect(exitFullscreen).toHaveBeenCalledOnce();
+  });
+});

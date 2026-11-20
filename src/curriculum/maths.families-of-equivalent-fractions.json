@@ -1,0 +1,8 @@
+{
+  "id": "maths.families-of-equivalent-fractions",
+  "name": "Families of equivalent fractions",
+  "subject": "maths",
+  "yearGroup": 4,
+  "strand": "fractions",
+  "prerequisites": ["maths.equivalent-fractions"]
+}

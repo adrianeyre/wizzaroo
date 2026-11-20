@@ -1,0 +1,1257 @@
+{
+  "yearGroup": 4,
+  "games": [
+    {
+      "skillId": "geography.river-features",
+      "title": "River Run",
+      "skillName": "Features of a river",
+      "strand": "human-and-physical-geography",
+      "scene": "river-valley",
+      "instruction": "Follow the river from its source to the sea and name the feature the marker points at.",
+      "questions": [
+        {
+          "ask": "Which river feature is the marker pointing at?",
+          "show": {
+            "marker": "source"
+          },
+          "answer": "Source",
+          "wrongAnswers": ["Mouth", "Meander", "Delta"]
+        },
+        {
+          "ask": "Which river feature is the marker pointing at?",
+          "show": {
+            "marker": "tributary"
+          },
+          "answer": "Tributary",
+          "wrongAnswers": ["Waterfall", "Ox-bow lake", "Estuary"]
+        },
+        {
+          "ask": "Which river feature is the marker pointing at?",
+          "show": {
+            "marker": "confluence"
+          },
+          "answer": "Confluence",
+          "wrongAnswers": ["Source", "Waterfall", "Delta"]
+        },
+        {
+          "ask": "Which river feature is the marker pointing at?",
+          "show": {
+            "marker": "waterfall"
+          },
+          "answer": "Waterfall",
+          "wrongAnswers": ["Floodplain", "Estuary", "Confluence"]
+        },
+        {
+          "ask": "Which river feature is the marker pointing at?",
+          "show": {
+            "marker": "meander"
+          },
+          "answer": "Meander",
+          "wrongAnswers": ["Source", "Waterfall", "Estuary"]
+        },
+        {
+          "ask": "Which river feature is the marker pointing at?",
+          "show": {
+            "marker": "ox-bow-lake"
+          },
+          "answer": "Ox-bow lake",
+          "wrongAnswers": ["Source", "Waterfall", "Tributary"]
+        },
+        {
+          "ask": "Which river feature is the marker pointing at?",
+          "show": {
+            "marker": "floodplain"
+          },
+          "answer": "Floodplain",
+          "wrongAnswers": ["Source", "Waterfall", "Tributary"]
+        },
+        {
+          "ask": "Which river feature is the marker pointing at?",
+          "show": {
+            "marker": "mouth"
+          },
+          "answer": "Mouth",
+          "wrongAnswers": ["Source", "Meander", "Tributary"]
+        },
+        {
+          "ask": "Which river feature is the marker pointing at?",
+          "show": {
+            "marker": "estuary"
+          },
+          "answer": "Estuary",
+          "wrongAnswers": ["Source", "Waterfall", "Ox-bow lake"]
+        },
+        {
+          "ask": "Which river feature is the marker pointing at?",
+          "show": {
+            "marker": "delta"
+          },
+          "answer": "Delta",
+          "wrongAnswers": ["Source", "Waterfall", "Confluence"]
+        },
+        {
+          "ask": "This is where the river begins. What is it called?",
+          "show": {
+            "marker": "source"
+          },
+          "answer": "Source",
+          "wrongAnswers": ["Mouth", "Floodplain", "Estuary"]
+        },
+        {
+          "ask": "Two rivers join together here. What is this place called?",
+          "show": {
+            "marker": "confluence"
+          },
+          "answer": "Confluence",
+          "wrongAnswers": ["Meander", "Source", "Waterfall"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.water-cycle",
+      "title": "Water Cycle Workshop",
+      "skillName": "The water cycle",
+      "strand": "human-and-physical-geography",
+      "scene": "river-valley",
+      "instruction": "Watch the arrows move water around the valley and name each stage of the water cycle.",
+      "questions": [
+        {
+          "ask": "Which stage of the water cycle is shown?",
+          "show": {
+            "marker": "evaporation"
+          },
+          "answer": "Evaporation",
+          "wrongAnswers": ["Condensation", "Precipitation", "Transpiration"]
+        },
+        {
+          "ask": "Which stage of the water cycle is shown?",
+          "show": {
+            "marker": "condensation"
+          },
+          "answer": "Condensation",
+          "wrongAnswers": ["Precipitation", "Collection", "Infiltration"]
+        },
+        {
+          "ask": "Which stage of the water cycle is shown?",
+          "show": {
+            "marker": "precipitation"
+          },
+          "answer": "Precipitation",
+          "wrongAnswers": ["Collection", "Transpiration", "Evaporation"]
+        },
+        {
+          "ask": "Which stage of the water cycle is shown?",
+          "show": {
+            "marker": "collection"
+          },
+          "answer": "Collection",
+          "wrongAnswers": ["Transpiration", "Infiltration", "Condensation"]
+        },
+        {
+          "ask": "Which stage of the water cycle is shown?",
+          "show": {
+            "marker": "transpiration"
+          },
+          "answer": "Transpiration",
+          "wrongAnswers": ["Infiltration", "Evaporation", "Precipitation"]
+        },
+        {
+          "ask": "Which stage of the water cycle is shown?",
+          "show": {
+            "marker": "infiltration"
+          },
+          "answer": "Infiltration",
+          "wrongAnswers": ["Evaporation", "Condensation", "Collection"]
+        },
+        {
+          "ask": "What is happening where the arrows point?",
+          "show": {
+            "marker": "evaporation"
+          },
+          "answer": "Water turns to vapour",
+          "wrongAnswers": [
+            "Vapour cools into cloud",
+            "Water flows back to sea",
+            "Water soaks into ground"
+          ]
+        },
+        {
+          "ask": "What is happening where the arrows point?",
+          "show": {
+            "marker": "condensation"
+          },
+          "answer": "Vapour cools into cloud",
+          "wrongAnswers": [
+            "Rain falls from clouds",
+            "Plants give off vapour",
+            "Water turns to vapour"
+          ]
+        },
+        {
+          "ask": "What is happening where the arrows point?",
+          "show": {
+            "marker": "precipitation"
+          },
+          "answer": "Rain falls from clouds",
+          "wrongAnswers": [
+            "Water flows back to sea",
+            "Water soaks into ground",
+            "Vapour cools into cloud"
+          ]
+        },
+        {
+          "ask": "What is happening where the arrows point?",
+          "show": {
+            "marker": "collection"
+          },
+          "answer": "Water flows back to sea",
+          "wrongAnswers": [
+            "Plants give off vapour",
+            "Water turns to vapour",
+            "Rain falls from clouds"
+          ]
+        },
+        {
+          "ask": "What is happening where the arrows point?",
+          "show": {
+            "marker": "transpiration"
+          },
+          "answer": "Plants give off vapour",
+          "wrongAnswers": [
+            "Water soaks into ground",
+            "Vapour cools into cloud",
+            "Water flows back to sea"
+          ]
+        },
+        {
+          "ask": "What is happening where the arrows point?",
+          "show": {
+            "marker": "infiltration"
+          },
+          "answer": "Water soaks into ground",
+          "wrongAnswers": [
+            "Water turns to vapour",
+            "Rain falls from clouds",
+            "Plants give off vapour"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.hemispheres",
+      "title": "Hemisphere Hop",
+      "skillName": "Hemispheres and the Equator",
+      "strand": "locational-knowledge",
+      "scene": "globe-spinner",
+      "instruction": "Spin the globe to find the Equator, the Prime Meridian and the four hemispheres.",
+      "questions": [
+        {
+          "ask": "Which line is glowing on the globe?",
+          "show": {
+            "highlight": "equator"
+          },
+          "answer": "Equator",
+          "wrongAnswers": [
+            "Prime Meridian",
+            "Tropic of Cancer",
+            "Arctic Circle"
+          ]
+        },
+        {
+          "ask": "Which line is glowing on the globe?",
+          "show": {
+            "highlight": "prime-meridian"
+          },
+          "answer": "Prime Meridian",
+          "wrongAnswers": ["Equator", "Tropic of Capricorn", "Antarctic Circle"]
+        },
+        {
+          "ask": "Which half of the Earth is glowing?",
+          "show": {
+            "highlight": "northern-hemisphere"
+          },
+          "answer": "Northern Hemisphere",
+          "wrongAnswers": [
+            "Southern Hemisphere",
+            "Eastern Hemisphere",
+            "Western Hemisphere"
+          ]
+        },
+        {
+          "ask": "Which half of the Earth is glowing?",
+          "show": {
+            "highlight": "southern-hemisphere"
+          },
+          "answer": "Southern Hemisphere",
+          "wrongAnswers": [
+            "Northern Hemisphere",
+            "Eastern Hemisphere",
+            "Western Hemisphere"
+          ]
+        },
+        {
+          "ask": "Which half of the Earth is glowing?",
+          "show": {
+            "highlight": "eastern-hemisphere"
+          },
+          "answer": "Eastern Hemisphere",
+          "wrongAnswers": [
+            "Western Hemisphere",
+            "Northern Hemisphere",
+            "Southern Hemisphere"
+          ]
+        },
+        {
+          "ask": "Which half of the Earth is glowing?",
+          "show": {
+            "highlight": "western-hemisphere"
+          },
+          "answer": "Western Hemisphere",
+          "wrongAnswers": [
+            "Eastern Hemisphere",
+            "Northern Hemisphere",
+            "Southern Hemisphere"
+          ]
+        },
+        {
+          "ask": "The glowing line splits the Earth into which halves?",
+          "show": {
+            "highlight": "equator"
+          },
+          "answer": "North and south",
+          "wrongAnswers": ["East and west", "Land and sea", "Day and night"]
+        },
+        {
+          "ask": "The glowing line splits the Earth into which halves?",
+          "show": {
+            "highlight": "prime-meridian"
+          },
+          "answer": "East and west",
+          "wrongAnswers": ["North and south", "Land and sea", "Day and night"]
+        },
+        {
+          "ask": "Which continent does the glowing line not cross?",
+          "show": {
+            "highlight": "equator"
+          },
+          "answer": "Europe",
+          "wrongAnswers": ["Africa", "South America", "Asia"]
+        },
+        {
+          "ask": "Which continent lies wholly in the glowing half?",
+          "show": {
+            "highlight": "southern-hemisphere"
+          },
+          "answer": "Antarctica",
+          "wrongAnswers": ["Europe", "North America", "Asia"]
+        },
+        {
+          "ask": "The Equator runs through this country. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": -0.18,
+              "longitude": -78.47
+            }
+          },
+          "answer": "Ecuador",
+          "wrongAnswers": ["Egypt", "Norway", "Canada"]
+        },
+        {
+          "ask": "This country is in the Southern Hemisphere. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": -35.28,
+              "longitude": 149.13
+            }
+          },
+          "answer": "Australia",
+          "wrongAnswers": ["Canada", "Russia", "United Kingdom"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.four-figure-grid-references",
+      "title": "Four-Figure Finder",
+      "skillName": "Four-figure grid references",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "grid-hunt",
+      "instruction": "Go along the corridor for the eastings, then up the stairs for the northings.",
+      "questions": [
+        {
+          "ask": "What is the four-figure grid reference of the pin?",
+          "show": {
+            "style": "four-figure",
+            "x": 22,
+            "y": 43
+          },
+          "answer": "2243",
+          "wrongAnswers": ["4322", "2343", "2244", "2142"]
+        },
+        {
+          "ask": "Which square is the pin in? Eastings first!",
+          "show": {
+            "style": "four-figure",
+            "x": 31,
+            "y": 17
+          },
+          "answer": "3117",
+          "wrongAnswers": ["1731", "3217", "3118", "3016"]
+        },
+        {
+          "ask": "Give the four-figure grid reference for the pin.",
+          "show": {
+            "style": "four-figure",
+            "x": 46,
+            "y": 52
+          },
+          "answer": "4652",
+          "wrongAnswers": ["5246", "4752", "4653", "4551"]
+        },
+        {
+          "ask": "What is the four-figure grid reference of the pin?",
+          "show": {
+            "style": "four-figure",
+            "x": 13,
+            "y": 28
+          },
+          "answer": "1328",
+          "wrongAnswers": ["2813", "1428", "1329", "1227"]
+        },
+        {
+          "ask": "Which square is the pin in? Eastings first!",
+          "show": {
+            "style": "four-figure",
+            "x": 57,
+            "y": 34
+          },
+          "answer": "5734",
+          "wrongAnswers": ["3457", "5834", "5735", "5633"]
+        },
+        {
+          "ask": "Give the four-figure grid reference for the pin.",
+          "show": {
+            "style": "four-figure",
+            "x": 64,
+            "y": 71
+          },
+          "answer": "6471",
+          "wrongAnswers": ["7164", "6571", "6472", "6370"]
+        },
+        {
+          "ask": "What is the four-figure grid reference of the pin?",
+          "show": {
+            "style": "four-figure",
+            "x": 28,
+            "y": 65
+          },
+          "answer": "2865",
+          "wrongAnswers": ["6528", "2965", "2866", "2764"]
+        },
+        {
+          "ask": "Which square is the pin in? Eastings first!",
+          "show": {
+            "style": "four-figure",
+            "x": 73,
+            "y": 49
+          },
+          "answer": "7349",
+          "wrongAnswers": ["4973", "7449", "7350", "7248"]
+        },
+        {
+          "ask": "Give the four-figure grid reference for the pin.",
+          "show": {
+            "style": "four-figure",
+            "x": 35,
+            "y": 86
+          },
+          "answer": "3586",
+          "wrongAnswers": ["8635", "3686", "3587", "3485"]
+        },
+        {
+          "ask": "What is the four-figure grid reference of the pin?",
+          "show": {
+            "style": "four-figure",
+            "x": 41,
+            "y": 12
+          },
+          "answer": "4112",
+          "wrongAnswers": ["1241", "4212", "4113", "4011"]
+        },
+        {
+          "ask": "Which square is the pin in? Eastings first!",
+          "show": {
+            "style": "four-figure",
+            "x": 82,
+            "y": 57
+          },
+          "answer": "8257",
+          "wrongAnswers": ["5782", "8357", "8258", "8156"]
+        },
+        {
+          "ask": "Give the four-figure grid reference for the pin.",
+          "show": {
+            "style": "four-figure",
+            "x": 19,
+            "y": 36
+          },
+          "answer": "1936",
+          "wrongAnswers": ["3619", "2036", "1937", "1835"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.countries-of-the-americas",
+      "title": "Americas Adventure",
+      "skillName": "Countries of North and South America",
+      "strand": "locational-knowledge",
+      "scene": "globe-spinner",
+      "instruction": "Spin the globe across the Americas and tap the country or continent you can see.",
+      "questions": [
+        {
+          "ask": "Which continent is glowing?",
+          "show": {
+            "highlight": "north-america"
+          },
+          "answer": "North America",
+          "wrongAnswers": ["South America", "Europe", "Africa"]
+        },
+        {
+          "ask": "Which continent is glowing?",
+          "show": {
+            "highlight": "south-america"
+          },
+          "answer": "South America",
+          "wrongAnswers": ["North America", "Africa", "Oceania"]
+        },
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": 56.0,
+              "longitude": -106.0
+            }
+          },
+          "answer": "Canada",
+          "wrongAnswers": ["Brazil", "Peru", "Mexico"]
+        },
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": 39.0,
+              "longitude": -98.0
+            }
+          },
+          "answer": "United States",
+          "wrongAnswers": ["Argentina", "Chile", "Colombia"]
+        },
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": 19.43,
+              "longitude": -99.13
+            }
+          },
+          "answer": "Mexico",
+          "wrongAnswers": ["Canada", "Argentina", "Brazil"]
+        },
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": -10.0,
+              "longitude": -52.0
+            }
+          },
+          "answer": "Brazil",
+          "wrongAnswers": ["Canada", "Mexico", "Chile"]
+        },
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": -35.0,
+              "longitude": -65.0
+            }
+          },
+          "answer": "Argentina",
+          "wrongAnswers": ["Colombia", "United States", "Cuba"]
+        },
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": -9.2,
+              "longitude": -75.0
+            }
+          },
+          "answer": "Peru",
+          "wrongAnswers": ["Canada", "Argentina", "Mexico"]
+        },
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": -33.45,
+              "longitude": -70.67
+            }
+          },
+          "answer": "Chile",
+          "wrongAnswers": ["Venezuela", "Cuba", "United States"]
+        },
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": 4.71,
+              "longitude": -74.07
+            }
+          },
+          "answer": "Colombia",
+          "wrongAnswers": ["Argentina", "Canada", "Chile"]
+        },
+        {
+          "ask": "This island country is in the Caribbean Sea. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 23.11,
+              "longitude": -82.37
+            }
+          },
+          "answer": "Cuba",
+          "wrongAnswers": ["Chile", "Canada", "Bolivia"]
+        },
+        {
+          "ask": "Which country has the pin landed in?",
+          "show": {
+            "pin": {
+              "latitude": 8.0,
+              "longitude": -66.0
+            }
+          },
+          "answer": "Venezuela",
+          "wrongAnswers": ["Chile", "Argentina", "Canada"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.uk-mountains-and-rivers",
+      "title": "Peaks and Rivers",
+      "skillName": "Mountains and rivers of the UK",
+      "strand": "locational-knowledge",
+      "scene": "uk-explorer",
+      "instruction": "Fly over the UK and name the mountain or river where the pin has landed.",
+      "questions": [
+        {
+          "ask": "The pin is on the UK's highest mountain. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 56.797,
+              "longitude": -5.004
+            }
+          },
+          "answer": "Ben Nevis",
+          "wrongAnswers": [
+            "Yr Wyddfa (Snowdon)",
+            "Scafell Pike",
+            "Slieve Donard"
+          ]
+        },
+        {
+          "ask": "The pin is on the highest mountain in Wales. Which is it?",
+          "show": {
+            "highlight": "wales",
+            "pin": {
+              "latitude": 53.068,
+              "longitude": -4.076
+            }
+          },
+          "answer": "Yr Wyddfa (Snowdon)",
+          "wrongAnswers": ["Ben Nevis", "Scafell Pike", "Slieve Donard"]
+        },
+        {
+          "ask": "The pin is on England's highest mountain. Which is it?",
+          "show": {
+            "highlight": "england",
+            "pin": {
+              "latitude": 54.454,
+              "longitude": -3.212
+            }
+          },
+          "answer": "Scafell Pike",
+          "wrongAnswers": ["Ben Nevis", "Yr Wyddfa (Snowdon)", "Slieve Donard"]
+        },
+        {
+          "ask": "The pin is on Northern Ireland's highest mountain. Which?",
+          "show": {
+            "highlight": "northern-ireland",
+            "pin": {
+              "latitude": 54.18,
+              "longitude": -5.921
+            }
+          },
+          "answer": "Slieve Donard",
+          "wrongAnswers": ["Ben Nevis", "Scafell Pike", "Yr Wyddfa (Snowdon)"]
+        },
+        {
+          "ask": "These hills are called the backbone of England. Which are they?",
+          "show": {
+            "pin": {
+              "latitude": 54.703,
+              "longitude": -2.487
+            }
+          },
+          "answer": "The Pennines",
+          "wrongAnswers": [
+            "The Cairngorms",
+            "The Mourne Mountains",
+            "The Cambrian Mountains"
+          ]
+        },
+        {
+          "ask": "This mountain range is in the Scottish Highlands. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 57.117,
+              "longitude": -3.644
+            }
+          },
+          "answer": "The Cairngorms",
+          "wrongAnswers": [
+            "The Pennines",
+            "The Mourne Mountains",
+            "The Cambrian Mountains"
+          ]
+        },
+        {
+          "ask": "This river flows through London. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 51.505,
+              "longitude": -0.115
+            }
+          },
+          "answer": "River Thames",
+          "wrongAnswers": ["River Clyde", "River Tyne", "River Mersey"]
+        },
+        {
+          "ask": "The UK's longest river flows through here. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 52.707,
+              "longitude": -2.754
+            }
+          },
+          "answer": "River Severn",
+          "wrongAnswers": ["River Thames", "River Tyne", "River Clyde"]
+        },
+        {
+          "ask": "This river flows through Nottingham. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 52.937,
+              "longitude": -1.137
+            }
+          },
+          "answer": "River Trent",
+          "wrongAnswers": ["River Clyde", "River Thames", "River Mersey"]
+        },
+        {
+          "ask": "This river flows through Newcastle. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 54.967,
+              "longitude": -1.607
+            }
+          },
+          "answer": "River Tyne",
+          "wrongAnswers": ["River Severn", "River Thames", "River Mersey"]
+        },
+        {
+          "ask": "This river flows through Glasgow. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 55.856,
+              "longitude": -4.258
+            }
+          },
+          "answer": "River Clyde",
+          "wrongAnswers": ["River Thames", "River Trent", "River Severn"]
+        },
+        {
+          "ask": "This river meets the sea at Liverpool. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 53.4,
+              "longitude": -3.01
+            }
+          },
+          "answer": "River Mersey",
+          "wrongAnswers": ["River Tyne", "River Thames", "River Clyde"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.types-of-settlement",
+      "title": "Settlement Sizer",
+      "skillName": "Types of settlement",
+      "strand": "human-and-physical-geography",
+      "scene": "settlement-board",
+      "instruction": "Look at each model and decide how big the settlement is, from one home to a city.",
+      "questions": [
+        {
+          "ask": "What type of settlement is this?",
+          "show": {
+            "tile": "isolated-dwelling"
+          },
+          "answer": "Isolated dwelling",
+          "wrongAnswers": ["Village", "Town", "City"]
+        },
+        {
+          "ask": "What type of settlement is this?",
+          "show": {
+            "tile": "hamlet"
+          },
+          "answer": "Hamlet",
+          "wrongAnswers": ["Village", "Town", "City"]
+        },
+        {
+          "ask": "What type of settlement is this?",
+          "show": {
+            "tile": "village"
+          },
+          "answer": "Village",
+          "wrongAnswers": ["Hamlet", "Town", "City"]
+        },
+        {
+          "ask": "What type of settlement is this?",
+          "show": {
+            "tile": "town"
+          },
+          "answer": "Town",
+          "wrongAnswers": ["Isolated dwelling", "Hamlet", "Village"]
+        },
+        {
+          "ask": "What type of settlement is this?",
+          "show": {
+            "tile": "city"
+          },
+          "answer": "City",
+          "wrongAnswers": ["Isolated dwelling", "Hamlet", "Village"]
+        },
+        {
+          "ask": "Which settlement type is the next size up from this one?",
+          "show": {
+            "tile": "isolated-dwelling"
+          },
+          "answer": "Hamlet",
+          "wrongAnswers": ["Town", "City", "Village"]
+        },
+        {
+          "ask": "Which settlement type is the next size up from this one?",
+          "show": {
+            "tile": "hamlet"
+          },
+          "answer": "Village",
+          "wrongAnswers": ["City", "Isolated dwelling", "Town"]
+        },
+        {
+          "ask": "Which settlement type is the next size up from this one?",
+          "show": {
+            "tile": "village"
+          },
+          "answer": "Town",
+          "wrongAnswers": ["Hamlet", "Isolated dwelling", "City"]
+        },
+        {
+          "ask": "Which settlement type is the next size up from this one?",
+          "show": {
+            "tile": "town"
+          },
+          "answer": "City",
+          "wrongAnswers": ["Hamlet", "Village", "Isolated dwelling"]
+        },
+        {
+          "ask": "Which settlement type is the next size down from this one?",
+          "show": {
+            "tile": "city"
+          },
+          "answer": "Town",
+          "wrongAnswers": ["Hamlet", "Isolated dwelling", "Village"]
+        },
+        {
+          "ask": "How many homes are in this settlement?",
+          "show": {
+            "tile": "isolated-dwelling"
+          },
+          "answer": "Just one",
+          "wrongAnswers": ["About ten", "Hundreds", "Thousands"]
+        },
+        {
+          "ask": "Which type of settlement has the most people and services?",
+          "show": {
+            "tile": "city"
+          },
+          "answer": "City",
+          "wrongAnswers": ["Town", "Village", "Hamlet"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.world-biomes",
+      "title": "Biome Builders",
+      "skillName": "Biomes of the world",
+      "strand": "human-and-physical-geography",
+      "scene": "biome-dome",
+      "instruction": "Peer into each glass dome and work out which of the world's biomes is growing inside.",
+      "questions": [
+        {
+          "ask": "Which biome is inside the dome?",
+          "show": {
+            "biome": "desert"
+          },
+          "answer": "Desert",
+          "wrongAnswers": ["Savanna", "Taiga", "Tundra"]
+        },
+        {
+          "ask": "Which biome is inside the dome?",
+          "show": {
+            "biome": "rainforest"
+          },
+          "answer": "Tropical rainforest",
+          "wrongAnswers": ["Temperate forest", "Grassland", "Mountain"]
+        },
+        {
+          "ask": "Which biome is inside the dome?",
+          "show": {
+            "biome": "polar"
+          },
+          "answer": "Polar",
+          "wrongAnswers": ["Taiga", "Coral reef", "Temperate forest"]
+        },
+        {
+          "ask": "Which biome is inside the dome?",
+          "show": {
+            "biome": "savanna"
+          },
+          "answer": "Savanna",
+          "wrongAnswers": ["Mountain", "Desert", "Taiga"]
+        },
+        {
+          "ask": "Which biome is inside the dome?",
+          "show": {
+            "biome": "temperate-forest"
+          },
+          "answer": "Temperate forest",
+          "wrongAnswers": ["Tundra", "Coral reef", "Tropical rainforest"]
+        },
+        {
+          "ask": "Which biome is inside the dome?",
+          "show": {
+            "biome": "taiga"
+          },
+          "answer": "Taiga",
+          "wrongAnswers": ["Mountain", "Desert", "Polar"]
+        },
+        {
+          "ask": "Which biome is inside the dome?",
+          "show": {
+            "biome": "grassland"
+          },
+          "answer": "Grassland",
+          "wrongAnswers": ["Coral reef", "Tropical rainforest", "Mountain"]
+        },
+        {
+          "ask": "Which biome is inside the dome?",
+          "show": {
+            "biome": "tundra"
+          },
+          "answer": "Tundra",
+          "wrongAnswers": ["Desert", "Temperate forest", "Coral reef"]
+        },
+        {
+          "ask": "Which biome is inside the dome?",
+          "show": {
+            "biome": "mountain"
+          },
+          "answer": "Mountain",
+          "wrongAnswers": ["Tropical rainforest", "Savanna", "Taiga"]
+        },
+        {
+          "ask": "Which biome is inside the dome?",
+          "show": {
+            "biome": "coral-reef"
+          },
+          "answer": "Coral reef",
+          "wrongAnswers": ["Polar", "Temperate forest", "Grassland"]
+        },
+        {
+          "ask": "Which trees mostly grow in this biome?",
+          "show": {
+            "biome": "taiga"
+          },
+          "answer": "Conifers",
+          "wrongAnswers": ["Palm trees", "Cacti", "Mangroves"]
+        },
+        {
+          "ask": "Which continent has the most of this biome?",
+          "show": {
+            "biome": "savanna"
+          },
+          "answer": "Africa",
+          "wrongAnswers": ["Europe", "Antarctica", "North America"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.coastal-landforms",
+      "title": "Coastal Carvers",
+      "skillName": "Coastal landforms",
+      "strand": "human-and-physical-geography",
+      "scene": "landscape-lookout",
+      "instruction": "See how the sea carves the coast, then name each landform and what it will become.",
+      "questions": [
+        {
+          "ask": "Which coastal landform is this?",
+          "show": {
+            "feature": "headland"
+          },
+          "answer": "Headland",
+          "wrongAnswers": ["Bay", "Stump", "Cave"]
+        },
+        {
+          "ask": "Which coastal landform is this?",
+          "show": {
+            "feature": "bay"
+          },
+          "answer": "Bay",
+          "wrongAnswers": ["Headland", "Stack", "Arch"]
+        },
+        {
+          "ask": "Which coastal landform is this?",
+          "show": {
+            "feature": "sea-cave"
+          },
+          "answer": "Cave",
+          "wrongAnswers": ["Stump", "Bay", "Stack"]
+        },
+        {
+          "ask": "Which coastal landform is this?",
+          "show": {
+            "feature": "sea-arch"
+          },
+          "answer": "Arch",
+          "wrongAnswers": ["Bay", "Stump", "Headland"]
+        },
+        {
+          "ask": "Which coastal landform is this?",
+          "show": {
+            "feature": "sea-stack"
+          },
+          "answer": "Stack",
+          "wrongAnswers": ["Bay", "Cave", "Headland"]
+        },
+        {
+          "ask": "Which coastal landform is this?",
+          "show": {
+            "feature": "sea-stump"
+          },
+          "answer": "Stump",
+          "wrongAnswers": ["Arch", "Headland", "Bay"]
+        },
+        {
+          "ask": "What will this landform be worn into next?",
+          "show": {
+            "feature": "sea-cave"
+          },
+          "answer": "Arch",
+          "wrongAnswers": ["Bay", "Stump", "Headland"]
+        },
+        {
+          "ask": "What will this landform be worn into next?",
+          "show": {
+            "feature": "sea-arch"
+          },
+          "answer": "Stack",
+          "wrongAnswers": ["Cave", "Bay", "Headland"]
+        },
+        {
+          "ask": "What will this landform be worn into next?",
+          "show": {
+            "feature": "sea-stack"
+          },
+          "answer": "Stump",
+          "wrongAnswers": ["Arch", "Cave", "Bay"]
+        },
+        {
+          "ask": "Which is the last stage of headland erosion?",
+          "show": {
+            "feature": "sea-stump"
+          },
+          "answer": "Stump",
+          "wrongAnswers": ["Cave", "Arch", "Bay"]
+        },
+        {
+          "ask": "What kind of rock was worn away to make this?",
+          "show": {
+            "feature": "bay"
+          },
+          "answer": "Soft rock",
+          "wrongAnswers": ["Hard rock", "Lava", "Ice"]
+        },
+        {
+          "ask": "What kind of rock sticks out to form this?",
+          "show": {
+            "feature": "headland"
+          },
+          "answer": "Hard rock",
+          "wrongAnswers": ["Soft rock", "Loose sand", "Mud"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.ring-of-fire",
+      "title": "Ring of Fire",
+      "skillName": "Where volcanoes and earthquakes happen",
+      "strand": "human-and-physical-geography",
+      "scene": "globe-spinner",
+      "instruction": "Find where volcanoes and earthquakes happen around the world, then tap the right answer.",
+      "questions": [
+        {
+          "ask": "The Ring of Fire circles the glowing ocean. Which is it?",
+          "show": {
+            "highlight": "pacific-ocean"
+          },
+          "answer": "Pacific Ocean",
+          "wrongAnswers": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean"]
+        },
+        {
+          "ask": "The pin is on Mount Fuji. Which country is it in?",
+          "show": {
+            "pin": {
+              "latitude": 35.36,
+              "longitude": 138.73
+            }
+          },
+          "answer": "Japan",
+          "wrongAnswers": ["Brazil", "Egypt", "Australia"]
+        },
+        {
+          "ask": "The pin is on Mount St Helens. Which country is it in?",
+          "show": {
+            "pin": {
+              "latitude": 46.19,
+              "longitude": -122.19
+            }
+          },
+          "answer": "United States",
+          "wrongAnswers": ["Australia", "Brazil", "Egypt"]
+        },
+        {
+          "ask": "The pin is on Krakatoa. Which country is it in?",
+          "show": {
+            "pin": {
+              "latitude": -6.1,
+              "longitude": 105.42
+            }
+          },
+          "answer": "Indonesia",
+          "wrongAnswers": ["Canada", "Egypt", "Brazil"]
+        },
+        {
+          "ask": "This volcano is on the Ring of Fire. Which country is it in?",
+          "show": {
+            "pin": {
+              "latitude": -0.68,
+              "longitude": -78.44
+            }
+          },
+          "answer": "Ecuador",
+          "wrongAnswers": ["Australia", "Egypt", "Russia"]
+        },
+        {
+          "ask": "This volcano is on the Ring of Fire. Which country is it in?",
+          "show": {
+            "pin": {
+              "latitude": -39.42,
+              "longitude": -71.93
+            }
+          },
+          "answer": "Chile",
+          "wrongAnswers": ["Brazil", "Egypt", "India"]
+        },
+        {
+          "ask": "This volcano is on the Ring of Fire. Which country is it in?",
+          "show": {
+            "pin": {
+              "latitude": -39.28,
+              "longitude": 175.57
+            }
+          },
+          "answer": "New Zealand",
+          "wrongAnswers": ["Brazil", "Egypt", "Canada"]
+        },
+        {
+          "ask": "The pin is on Mount Pinatubo. Which country is it in?",
+          "show": {
+            "pin": {
+              "latitude": 15.14,
+              "longitude": 120.35
+            }
+          },
+          "answer": "Philippines",
+          "wrongAnswers": ["Brazil", "Egypt", "Australia"]
+        },
+        {
+          "ask": "This volcano is on the Ring of Fire. Which country is it in?",
+          "show": {
+            "pin": {
+              "latitude": 19.02,
+              "longitude": -98.62
+            }
+          },
+          "answer": "Mexico",
+          "wrongAnswers": ["Egypt", "Australia", "India"]
+        },
+        {
+          "ask": "This volcano is in the North Atlantic, far from the Pacific. Where?",
+          "show": {
+            "pin": {
+              "latitude": 63.63,
+              "longitude": -19.62
+            }
+          },
+          "answer": "Iceland",
+          "wrongAnswers": ["Japan", "Indonesia", "New Zealand"]
+        },
+        {
+          "ask": "The pin is on Mount Etna, a volcano in Europe. Which country?",
+          "show": {
+            "pin": {
+              "latitude": 37.75,
+              "longitude": 14.99
+            }
+          },
+          "answer": "Italy",
+          "wrongAnswers": ["Norway", "France", "Germany"]
+        },
+        {
+          "ask": "Why does this country have so many earthquakes?",
+          "show": {
+            "pin": {
+              "latitude": 35.68,
+              "longitude": 139.69
+            }
+          },
+          "answer": "On a plate boundary",
+          "wrongAnswers": [
+            "Near the Equator",
+            "Too much rain",
+            "Near the North Pole"
+          ]
+        }
+      ]
+    }
+  ]
+}

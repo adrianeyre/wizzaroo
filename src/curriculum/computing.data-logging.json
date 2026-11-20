@@ -1,0 +1,8 @@
+{
+  "id": "computing.data-logging",
+  "name": "Collecting data with sensors",
+  "subject": "computing",
+  "yearGroup": 4,
+  "strand": "data-and-information",
+  "prerequisites": ["computing.branching-databases"]
+}

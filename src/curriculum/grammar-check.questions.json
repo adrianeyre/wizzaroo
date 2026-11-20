@@ -1,0 +1,527 @@
+[
+  {
+    "id": "which-is-a-command",
+    "questionType": "sentence-types",
+    "skillId": "english.list-commas-and-sentence-types",
+    "prompt": "Which sentence is a command? Tick one.",
+    "answerShape": "choice",
+    "choices": [
+      "What a lovely day it is!",
+      "Close the gate behind you.",
+      "Is the gate closed?",
+      "The gate is closed."
+    ],
+    "answers": ["Close the gate behind you."]
+  },
+  {
+    "id": "which-is-a-question",
+    "questionType": "sentence-types",
+    "skillId": "english.list-commas-and-sentence-types",
+    "prompt": "Which sentence is a question? Tick one.",
+    "answerShape": "choice",
+    "choices": [
+      "How quickly you ran!",
+      "Run to the shop.",
+      "How far did you run?",
+      "You ran very far."
+    ],
+    "answers": ["How far did you run?"]
+  },
+  {
+    "id": "which-is-an-exclamation",
+    "questionType": "sentence-types",
+    "skillId": "english.list-commas-and-sentence-types",
+    "prompt": "Which sentence is an exclamation? Tick one.",
+    "answerShape": "choice",
+    "choices": [
+      "Look at that castle.",
+      "What a huge castle that is!",
+      "Where is the castle?",
+      "That castle is huge."
+    ],
+    "answers": ["What a huge castle that is!"]
+  },
+  {
+    "id": "type-of-sentence-statement",
+    "questionType": "sentence-types",
+    "skillId": "english.list-commas-and-sentence-types",
+    "prompt": "What type of sentence is this? Tick one.\nThe swimming pool opens at nine o'clock.",
+    "answerShape": "choice",
+    "choices": ["Statement", "Question", "Command", "Exclamation"],
+    "answers": ["Statement"]
+  },
+  {
+    "id": "type-of-sentence-question",
+    "questionType": "sentence-types",
+    "skillId": "english.list-commas-and-sentence-types",
+    "prompt": "What type of sentence is this? Tick one.\nHow many eggs do we need for the cake?",
+    "answerShape": "choice",
+    "choices": ["Statement", "Question", "Command", "Exclamation"],
+    "answers": ["Question"]
+  },
+  {
+    "id": "present-perfect-sentence",
+    "questionType": "verb-tenses",
+    "skillId": "english.verb-tenses",
+    "prompt": "Which sentence is written in the present perfect? Tick one.",
+    "answerShape": "choice",
+    "choices": [
+      "Sam ate his lunch.",
+      "Sam is eating his lunch.",
+      "Sam has eaten his lunch.",
+      "Sam was eating his lunch."
+    ],
+    "answers": ["Sam has eaten his lunch."]
+  },
+  {
+    "id": "past-progressive-sentence",
+    "questionType": "verb-tenses",
+    "skillId": "english.verb-tenses",
+    "prompt": "Which sentence uses the past progressive? Tick one.",
+    "answerShape": "choice",
+    "choices": [
+      "The birds sing in the trees.",
+      "The birds have sung in the trees.",
+      "The birds sang in the trees.",
+      "The birds were singing in the trees."
+    ],
+    "answers": ["The birds were singing in the trees."]
+  },
+  {
+    "id": "simple-past-swim",
+    "questionType": "verb-tenses",
+    "skillId": "english.verb-tenses",
+    "prompt": "Write the verb in brackets in the simple past tense.\nYesterday, we ___ in the sea. (swim)",
+    "answerShape": "words",
+    "answers": ["swam"]
+  },
+  {
+    "id": "present-perfect-finish",
+    "questionType": "verb-tenses",
+    "skillId": "english.verb-tenses",
+    "prompt": "Complete the sentence with the present perfect form of the verb to finish.\nAli ___ his homework already.",
+    "answerShape": "words",
+    "answers": ["has finished"]
+  },
+  {
+    "id": "past-progressive-run",
+    "questionType": "verb-tenses",
+    "skillId": "english.verb-tenses",
+    "prompt": "Complete the sentence with the past progressive form of the verb to run.\nWe ___ for the bus when it began to rain.",
+    "answerShape": "words",
+    "answers": ["were running"]
+  },
+  {
+    "id": "simple-past-bring",
+    "questionType": "verb-tenses",
+    "skillId": "english.verb-tenses",
+    "prompt": "Write the verb in brackets in the simple past tense.\nMum ___ a cake to the party. (bring)",
+    "answerShape": "words",
+    "answers": ["brought"]
+  },
+  {
+    "id": "name-the-tense",
+    "questionType": "verb-tenses",
+    "skillId": "english.verb-tenses",
+    "prompt": "Which tense is the verb in this sentence? Tick one.\nLucy is reading a book about space.",
+    "answerShape": "choice",
+    "choices": [
+      "Simple past",
+      "Present progressive",
+      "Present perfect",
+      "Simple present"
+    ],
+    "answers": ["Present progressive"]
+  },
+  {
+    "id": "simple-present-catch",
+    "questionType": "verb-tenses",
+    "skillId": "english.verb-tenses",
+    "prompt": "Write the verb in brackets in the simple present tense.\nMy brother ___ the bus every morning. (catch)",
+    "answerShape": "words",
+    "answers": ["catches"]
+  },
+  {
+    "id": "which-is-passive",
+    "questionType": "active-and-passive",
+    "skillId": "english.active-and-passive-voice",
+    "prompt": "Which sentence is written in the passive voice? Tick one.",
+    "answerShape": "choice",
+    "choices": [
+      "The dog chased the cat.",
+      "The cat was chased by the dog.",
+      "The cat ran away from the dog.",
+      "The dog is chasing the cat."
+    ],
+    "answers": ["The cat was chased by the dog."]
+  },
+  {
+    "id": "which-is-active",
+    "questionType": "active-and-passive",
+    "skillId": "english.active-and-passive-voice",
+    "prompt": "Which sentence is written in the active voice? Tick one.",
+    "answerShape": "choice",
+    "choices": [
+      "The window was broken by a ball.",
+      "The cake was eaten by the children.",
+      "The letters were posted yesterday.",
+      "Jack painted the fence."
+    ],
+    "answers": ["Jack painted the fence."]
+  },
+  {
+    "id": "passive-version",
+    "questionType": "active-and-passive",
+    "skillId": "english.active-and-passive-voice",
+    "prompt": "Which sentence is the passive version of this sentence? Tick one.\nThe chef cooked the meal.",
+    "answerShape": "choice",
+    "choices": [
+      "The chef was cooking the meal.",
+      "The meal was cooked by the chef.",
+      "The chef has cooked the meal.",
+      "The meal cooked the chef."
+    ],
+    "answers": ["The meal was cooked by the chef."]
+  },
+  {
+    "id": "passive-win",
+    "questionType": "active-and-passive",
+    "skillId": "english.active-and-passive-voice",
+    "prompt": "Complete the sentence in the passive voice, using the verb to win.\nThe match ___ by our team.",
+    "answerShape": "words",
+    "answers": [
+      "was won",
+      "has been won",
+      "had been won",
+      "is won",
+      "will be won"
+    ]
+  },
+  {
+    "id": "active-or-passive",
+    "questionType": "active-and-passive",
+    "skillId": "english.active-and-passive-voice",
+    "prompt": "Is this sentence written in the active or the passive voice?\nThe treasure was found by two divers.",
+    "answerShape": "choice",
+    "choices": ["Active", "Passive"],
+    "answers": ["Passive"]
+  },
+  {
+    "id": "plural-possessive-coats",
+    "questionType": "apostrophes",
+    "skillId": "english.plural-possessive-apostrophes",
+    "prompt": "Which sentence uses apostrophes correctly? Tick one.",
+    "answerShape": "choice",
+    "choices": [
+      "The girl's coats' were wet.",
+      "The girls coat's were wet.",
+      "The girls' coats were wet.",
+      "The girls's coats were wet."
+    ],
+    "answers": ["The girls' coats were wet."]
+  },
+  {
+    "id": "why-the-apostrophe",
+    "questionType": "apostrophes",
+    "skillId": "english.contractions",
+    "prompt": "Why is an apostrophe used in this sentence? Tick one.\nWe're going to the park.",
+    "answerShape": "choice",
+    "choices": [
+      "To show belonging",
+      "To show missing letters",
+      "To show there is more than one",
+      "To end the sentence"
+    ],
+    "answers": ["To show missing letters"]
+  },
+  {
+    "id": "childrens-toys",
+    "questionType": "apostrophes",
+    "skillId": "english.irregular-plural-possessives",
+    "prompt": "Which is the correct way to write the toys belonging to the children? Tick one.",
+    "answerShape": "choice",
+    "choices": [
+      "the childrens' toys",
+      "the childrens toys",
+      "the children's toys",
+      "the childrens's toys"
+    ],
+    "answers": ["the children's toys"]
+  },
+  {
+    "id": "its-or-its",
+    "questionType": "apostrophes",
+    "skillId": "english.contractions",
+    "prompt": "Which word completes the sentence correctly? Tick one.\nThe dog wagged ___ tail.",
+    "answerShape": "choice",
+    "choices": ["it's", "its", "its'", "it is"],
+    "answers": ["its"]
+  },
+  {
+    "id": "contract-they-are",
+    "questionType": "apostrophes",
+    "skillId": "english.contractions",
+    "prompt": "Write the contracted form of the words in brackets.\n___ coming to my party. (They are)",
+    "answerShape": "words",
+    "answers": ["They're"]
+  },
+  {
+    "id": "prefix-for-possible",
+    "questionType": "vocabulary",
+    "skillId": "english.prefixes-in-il-im-ir-inter",
+    "prompt": "Which prefix makes the word possible mean the opposite? Tick one.",
+    "answerShape": "choice",
+    "choices": ["un", "im", "dis", "ir"],
+    "answers": ["im"]
+  },
+  {
+    "id": "prefix-for-appear",
+    "questionType": "vocabulary",
+    "skillId": "english.prefixes-dis-mis-re-sub-super-anti-auto",
+    "prompt": "Which prefix makes the word appear mean the opposite? Tick one.",
+    "answerShape": "choice",
+    "choices": ["un", "im", "mis", "dis"],
+    "answers": ["dis"]
+  },
+  {
+    "id": "synonym-for-journey",
+    "questionType": "vocabulary",
+    "skillId": "english.synonym-nouns",
+    "prompt": "Which word is closest in meaning to journey? Tick one.",
+    "answerShape": "choice",
+    "choices": ["map", "trip", "road", "ticket"],
+    "answers": ["trip"]
+  },
+  {
+    "id": "synonym-for-dwelling",
+    "questionType": "vocabulary",
+    "skillId": "english.synonym-nouns",
+    "prompt": "Which word is closest in meaning to dwelling? Tick one.",
+    "answerShape": "choice",
+    "choices": ["farm", "street", "home", "village"],
+    "answers": ["home"]
+  },
+  {
+    "id": "same-family-as-sign",
+    "questionType": "vocabulary",
+    "skillId": "english.word-families",
+    "prompt": "Which word is in the same word family as sign? Tick one.",
+    "answerShape": "choice",
+    "choices": ["sing", "sigh", "single", "signal"],
+    "answers": ["signal"]
+  },
+  {
+    "id": "suffix-for-kind",
+    "questionType": "vocabulary",
+    "skillId": "english.suffixes-ful-less-ness-ly",
+    "prompt": "Which suffix turns the adjective kind into a noun? Tick one.",
+    "answerShape": "choice",
+    "choices": ["-ly", "-ness", "-ful", "-less"],
+    "answers": ["-ness"]
+  },
+  {
+    "id": "word-class-of-carefully",
+    "questionType": "word-classes",
+    "skillId": "english.nouns-verbs-adjectives-adverbs",
+    "prompt": "What is the word class of carefully in this sentence? Tick one.\nShe carefully opened the box.",
+    "answerShape": "choice",
+    "choices": ["Adjective", "Verb", "Adverb", "Noun"],
+    "answers": ["Adverb"]
+  },
+  {
+    "id": "find-the-preposition",
+    "questionType": "word-classes",
+    "skillId": "english.prepositions-and-conjunctions",
+    "prompt": "Which word in this sentence is a preposition? Tick one.\nThe cat slept under the warm blanket.",
+    "answerShape": "choice",
+    "choices": ["slept", "under", "warm", "blanket"],
+    "answers": ["under"]
+  },
+  {
+    "id": "find-the-conjunction",
+    "questionType": "word-classes",
+    "skillId": "english.prepositions-and-conjunctions",
+    "prompt": "Which word in this sentence is a conjunction? Tick one.\nWe stayed inside because it was raining.",
+    "answerShape": "choice",
+    "choices": ["stayed", "inside", "because", "raining"],
+    "answers": ["because"]
+  },
+  {
+    "id": "find-the-determiner",
+    "questionType": "word-classes",
+    "skillId": "english.determiners-and-pronouns",
+    "prompt": "Which word in this sentence is a determiner? Tick one.\nThose apples look ripe.",
+    "answerShape": "choice",
+    "choices": ["Those", "apples", "look", "ripe"],
+    "answers": ["Those"]
+  },
+  {
+    "id": "word-class-of-play",
+    "questionType": "word-classes",
+    "skillId": "english.nouns-verbs-adjectives-adverbs",
+    "prompt": "What is the word class of play in this sentence? Tick one.\nWe watched a play at the theatre.",
+    "answerShape": "choice",
+    "choices": ["Verb", "Adverb", "Adjective", "Noun"],
+    "answers": ["Noun"]
+  },
+  {
+    "id": "find-the-adjective",
+    "questionType": "word-classes",
+    "skillId": "english.nouns-verbs-adjectives-adverbs",
+    "prompt": "Which word in this sentence is an adjective? Tick one.\nThe tired runner crossed the line.",
+    "answerShape": "choice",
+    "choices": ["runner", "tired", "crossed", "line"],
+    "answers": ["tired"]
+  },
+  {
+    "id": "find-the-possessive-pronoun",
+    "questionType": "word-classes",
+    "skillId": "english.determiners-and-pronouns",
+    "prompt": "Which word in this sentence is a possessive pronoun? Tick one.\nThat red bike is mine.",
+    "answerShape": "choice",
+    "choices": ["That", "red", "bike", "mine"],
+    "answers": ["mine"]
+  },
+  {
+    "id": "inverted-commas",
+    "questionType": "punctuation",
+    "skillId": "english.inverted-commas-for-speech",
+    "prompt": "Which sentence uses inverted commas correctly? Tick one.",
+    "answerShape": "choice",
+    "choices": [
+      "“Hurry up, said Mum.”",
+      "“Hurry up,” said Mum.",
+      "Hurry up, “said Mum.”",
+      "“Hurry up” said, Mum."
+    ],
+    "answers": ["“Hurry up,” said Mum."]
+  },
+  {
+    "id": "fronted-adverbial-comma",
+    "questionType": "punctuation",
+    "skillId": "english.fronted-adverbial-commas-and-speech",
+    "prompt": "Which sentence is punctuated correctly? Tick one.",
+    "answerShape": "choice",
+    "choices": [
+      "After, lunch we played football.",
+      "After lunch we, played football.",
+      "After lunch, we played football.",
+      "After lunch we played, football."
+    ],
+    "answers": ["After lunch, we played football."]
+  },
+  {
+    "id": "list-commas",
+    "questionType": "punctuation",
+    "skillId": "english.list-commas-and-sentence-types",
+    "prompt": "Which sentence uses commas correctly? Tick one.",
+    "answerShape": "choice",
+    "choices": [
+      "I bought, apples pears plums and grapes.",
+      "I bought apples, pears, plums and grapes.",
+      "I bought apples pears, plums, and, grapes.",
+      "I, bought apples, pears plums and grapes."
+    ],
+    "answers": ["I bought apples, pears, plums and grapes."]
+  },
+  {
+    "id": "brackets-for-parenthesis",
+    "questionType": "punctuation",
+    "skillId": "english.parenthesis-and-clarifying-commas",
+    "prompt": "Which sentence uses brackets correctly? Tick one.",
+    "answerShape": "choice",
+    "choices": [
+      "My aunt who (is a pilot) flies to Spain.",
+      "My (aunt who is a pilot) flies to Spain.",
+      "My aunt who is a pilot (flies to Spain).",
+      "My aunt (who is a pilot) flies to Spain."
+    ],
+    "answers": ["My aunt (who is a pilot) flies to Spain."]
+  },
+  {
+    "id": "semi-colon",
+    "questionType": "punctuation",
+    "skillId": "english.colons-semi-colons-and-hyphens",
+    "prompt": "Which sentence uses a semi-colon correctly? Tick one.",
+    "answerShape": "choice",
+    "choices": [
+      "The sun set; the stars came out.",
+      "The sun; set the stars came out.",
+      "The sun set the; stars came out.",
+      "The; sun set the stars came out."
+    ],
+    "answers": ["The sun set; the stars came out."]
+  },
+  {
+    "id": "colon-before-a-list",
+    "questionType": "punctuation",
+    "skillId": "english.colons-semi-colons-and-hyphens",
+    "prompt": "Which sentence uses a colon correctly? Tick one.",
+    "answerShape": "choice",
+    "choices": [
+      "We packed: three things a tent, a stove and a map.",
+      "We packed three things: a tent, a stove and a map.",
+      "We: packed three things a tent, a stove and a map.",
+      "We packed three: things a tent, a stove and a map."
+    ],
+    "answers": ["We packed three things: a tent, a stove and a map."]
+  },
+  {
+    "id": "find-the-subordinate-clause",
+    "questionType": "clauses",
+    "skillId": "english.subordinating-conjunctions",
+    "prompt": "Which part of this sentence is the subordinate clause? Tick one.\nAlthough it was cold, we went for a swim.",
+    "answerShape": "choice",
+    "choices": [
+      "we went for a swim",
+      "Although it was cold",
+      "for a swim",
+      "we went"
+    ],
+    "answers": ["Although it was cold"]
+  },
+  {
+    "id": "find-the-main-clause",
+    "questionType": "clauses",
+    "skillId": "english.subordinating-conjunctions",
+    "prompt": "Which part of this sentence is the main clause? Tick one.\nThe bell rang when the lesson ended.",
+    "answerShape": "choice",
+    "choices": [
+      "when the lesson ended",
+      "the lesson ended",
+      "The bell rang",
+      "when"
+    ],
+    "answers": ["The bell rang"]
+  },
+  {
+    "id": "which-has-a-relative-clause",
+    "questionType": "clauses",
+    "skillId": "english.relative-clauses",
+    "prompt": "Which sentence contains a relative clause? Tick one.",
+    "answerShape": "choice",
+    "choices": [
+      "The boy smiled at the prize.",
+      "The boy won and smiled.",
+      "The boy who won the prize smiled.",
+      "The smiling boy won."
+    ],
+    "answers": ["The boy who won the prize smiled."]
+  },
+  {
+    "id": "write-a-subordinating-conjunction",
+    "questionType": "clauses",
+    "skillId": "english.subordinating-conjunctions",
+    "prompt": "Write a subordinating conjunction to complete the sentence.\nYou can't go outside ___ you finish your lunch.",
+    "answerShape": "words",
+    "answers": ["until", "unless", "before", "till"]
+  },
+  {
+    "id": "write-a-relative-pronoun",
+    "questionType": "clauses",
+    "skillId": "english.relative-clauses",
+    "prompt": "Write a relative pronoun to complete the sentence.\nThe house ___ we stayed in had a pool.",
+    "answerShape": "words",
+    "answers": ["which", "that"]
+  }
+]

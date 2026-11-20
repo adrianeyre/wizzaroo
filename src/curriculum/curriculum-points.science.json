@@ -1,0 +1,320 @@
+{
+  "subject": "science",
+  "programme": "year",
+  "programmeOfStudyUrl": "https://www.gov.uk/government/publications/national-curriculum-in-england-science-programmes-of-study",
+  "years": [
+    {
+      "yearGroup": 1,
+      "points": [
+        {
+          "id": "plants",
+          "heading": "Plants",
+          "summary": "Identify and name common wild and garden plants and trees, and describe the parts of flowering plants and trees.",
+          "skillIds": [
+            "science.first-plant-spotter",
+            "science.first-plant-parts"
+          ]
+        },
+        {
+          "id": "animals-including-humans",
+          "heading": "Animals, including humans",
+          "summary": "Identify and compare fish, amphibians, reptiles, birds and mammals, what they eat, and name the parts of the human body and the senses.",
+          "skillIds": [
+            "science.first-animal-groups",
+            "science.first-sense-check",
+            "science.first-who-eats-what",
+            "science.animal-body-builder"
+          ]
+        },
+        {
+          "id": "everyday-materials",
+          "heading": "Everyday materials",
+          "summary": "Tell an object from the material it is made of, and describe and compare the simple physical properties of materials.",
+          "skillIds": [
+            "science.first-object-or-material",
+            "science.first-material-tests"
+          ]
+        },
+        {
+          "id": "seasonal-changes",
+          "heading": "Seasonal changes",
+          "summary": "Observe changes across the four seasons, and the weather and day length in each.",
+          "skillIds": [
+            "science.first-season-circle",
+            "science.first-weather-watch"
+          ]
+        },
+        {
+          "id": "working-scientifically",
+          "heading": "Working scientifically",
+          "summary": "Ask simple questions, observe closely with simple equipment and carry out simple tests to answer them.",
+          "skillIds": ["science.first-science-detectives"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 2,
+      "points": [
+        {
+          "id": "living-things-and-their-habitats",
+          "heading": "Living things and their habitats",
+          "summary": "Tell living, dead and never-alive things apart, match animals to their habitats and microhabitats, and describe simple food chains.",
+          "skillIds": [
+            "science.second-habitat-homes",
+            "science.second-alive-or-not",
+            "science.second-minibeast-mystery",
+            "science.second-food-chain-words"
+          ]
+        },
+        {
+          "id": "plants",
+          "heading": "Plants",
+          "summary": "Describe how seeds and bulbs grow into mature plants, and what plants need to grow and stay healthy.",
+          "skillIds": ["science.second-plant-power"]
+        },
+        {
+          "id": "animals-including-humans",
+          "heading": "Animals, including humans",
+          "summary": "Notice that animals have offspring that grow into adults, and describe what animals and humans need to survive and stay healthy.",
+          "skillIds": ["science.second-healthy-me", "science.second-growing-up"]
+        },
+        {
+          "id": "uses-of-everyday-materials",
+          "heading": "Uses of everyday materials",
+          "summary": "Compare how suitable materials are for particular uses, and how squashing, bending, twisting and stretching change solid objects.",
+          "skillIds": [
+            "science.second-shape-changers",
+            "science.second-material-match"
+          ]
+        },
+        {
+          "id": "working-scientifically",
+          "heading": "Working scientifically",
+          "summary": "Observe closely with simple equipment, perform simple tests and use observations to answer questions.",
+          "skillIds": ["science.second-plant-detectives"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 3,
+      "points": [
+        {
+          "id": "plants",
+          "heading": "Plants",
+          "summary": "Identify the jobs of the parts of flowering plants, and explore the part flowers play in the life cycle.",
+          "skillIds": [
+            "science.third-plant-part-jobs",
+            "science.third-seed-to-flower",
+            "science.cactus-or-fern"
+          ]
+        },
+        {
+          "id": "animals-including-humans",
+          "heading": "Animals, including humans",
+          "summary": "Know that animals need the right nutrition from what they eat, and that some animals have skeletons and muscles for support, protection and movement.",
+          "skillIds": ["science.third-food-and-bones"]
+        },
+        {
+          "id": "rocks",
+          "heading": "Rocks",
+          "summary": "Compare and group rocks by their properties, describe how fossils are formed, and know that soils are made from rocks and organic matter.",
+          "skillIds": [
+            "science.third-rock-detective",
+            "science.third-fossil-words"
+          ]
+        },
+        {
+          "id": "light",
+          "heading": "Light",
+          "summary": "Recognise that we need light to see, that light is reflected from surfaces, and how shadows form and change size.",
+          "skillIds": [
+            "science.third-light-and-dark",
+            "science.third-shiny-or-dull",
+            "science.sun-safe-eyes"
+          ]
+        },
+        {
+          "id": "forces-and-magnets",
+          "heading": "Forces and magnets",
+          "summary": "Compare how things move on different surfaces, group materials as magnetic or not, and predict whether magnets attract or repel.",
+          "skillIds": [
+            "science.third-magnet-match",
+            "science.third-magnet-moves"
+          ]
+        },
+        {
+          "id": "working-scientifically",
+          "heading": "Working scientifically",
+          "summary": "Set up simple practical enquiries and fair tests, and record findings to draw simple conclusions.",
+          "skillIds": ["science.third-plant-growth-lab"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 4,
+      "points": [
+        {
+          "id": "living-things-and-their-habitats",
+          "heading": "Living things and their habitats",
+          "summary": "Group living things in a variety of ways, use classification keys, and recognise that changing environments can pose dangers to living things.",
+          "skillIds": [
+            "science.fourth-classification-keys",
+            "science.fourth-changing-habitats"
+          ]
+        },
+        {
+          "id": "animals-including-humans",
+          "heading": "Animals, including humans",
+          "summary": "Describe the digestive system and the types of teeth and their jobs, and construct food chains with producers, predators and prey.",
+          "skillIds": [
+            "science.fourth-digestion-riddles",
+            "science.fourth-food-chain-words"
+          ]
+        },
+        {
+          "id": "states-of-matter",
+          "heading": "States of matter",
+          "summary": "Compare solids, liquids and gases, the temperatures at which they change state, and the part evaporation and condensation play in the water cycle.",
+          "skillIds": [
+            "science.fourth-water-cycle",
+            "science.fourth-melt-and-boil",
+            "science.matter-sorting-lab"
+          ]
+        },
+        {
+          "id": "sound",
+          "heading": "Sound",
+          "summary": "Know how sounds are made by vibrations, how they travel to the ear, and how pitch and volume change.",
+          "skillIds": ["science.fourth-sound-facts"]
+        },
+        {
+          "id": "electricity",
+          "heading": "Electricity",
+          "summary": "Identify common appliances that run on electricity, build simple series circuits, and know common conductors and insulators.",
+          "skillIds": [
+            "science.fourth-electricity-odd-one",
+            "science.fourth-circuit-gaps"
+          ]
+        },
+        {
+          "id": "working-scientifically",
+          "heading": "Working scientifically",
+          "summary": "Plan fair tests, take accurate measurements with thermometers and data loggers, and report findings.",
+          "skillIds": [
+            "science.fourth-evaporation-lab",
+            "science.next-step-scientist"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 5,
+      "points": [
+        {
+          "id": "living-things-and-their-habitats",
+          "heading": "Living things and their habitats",
+          "summary": "Describe the differences in the life cycles of mammals, amphibians, insects and birds, and how plants and animals reproduce.",
+          "skillIds": [
+            "science.fifth-life-cycle-sorter",
+            "science.fifth-new-life-steps"
+          ]
+        },
+        {
+          "id": "animals-including-humans",
+          "heading": "Animals, including humans",
+          "summary": "Describe the changes as humans develop to old age.",
+          "skillIds": ["science.fifth-growing-up-riddles"]
+        },
+        {
+          "id": "properties-and-changes-of-materials",
+          "heading": "Properties and changes of materials",
+          "summary": "Compare and group materials by their properties, separate mixtures, and tell reversible changes from irreversible ones.",
+          "skillIds": [
+            "science.fifth-material-misfit",
+            "science.fifth-change-predictor",
+            "science.fifth-solution-words",
+            "science.material-reasons-lab"
+          ]
+        },
+        {
+          "id": "earth-and-space",
+          "heading": "Earth and space",
+          "summary": "Describe how the Earth and planets move around the Sun, how the Moon moves around the Earth, and how day and night happen.",
+          "skillIds": [
+            "science.fifth-sun-earth-moon",
+            "science.fifth-solar-system-ranks"
+          ]
+        },
+        {
+          "id": "forces",
+          "heading": "Forces",
+          "summary": "Explain gravity, air resistance, water resistance and friction, and how levers, pulleys and gears let a smaller force have a greater effect.",
+          "skillIds": ["science.fifth-force-finder"]
+        },
+        {
+          "id": "working-scientifically",
+          "heading": "Working scientifically",
+          "summary": "Plan different kinds of enquiry, control variables and take repeat readings when appropriate.",
+          "skillIds": ["science.fifth-force-lab"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 6,
+      "points": [
+        {
+          "id": "living-things-and-their-habitats",
+          "heading": "Living things and their habitats",
+          "summary": "Classify living things into broad groups by their observable characteristics, including micro-organisms, plants and animals.",
+          "skillIds": [
+            "science.sixth-classify-living-things",
+            "science.classify-with-reasons"
+          ]
+        },
+        {
+          "id": "animals-including-humans",
+          "heading": "Animals, including humans",
+          "summary": "Name the main parts of the circulatory system and their jobs, and the effects of diet, exercise, drugs and lifestyle on the body.",
+          "skillIds": [
+            "science.sixth-circulatory-system",
+            "science.sixth-healthy-body-choices"
+          ]
+        },
+        {
+          "id": "evolution-and-inheritance",
+          "heading": "Evolution and inheritance",
+          "summary": "Know that fossils tell us about living things long ago, that offspring vary from their parents, and how living things are adapted to their environment.",
+          "skillIds": [
+            "science.sixth-changes-over-time",
+            "science.sixth-evolution-words",
+            "science.sixth-adaptation-odd-one-out"
+          ]
+        },
+        {
+          "id": "light",
+          "heading": "Light",
+          "summary": "Explain that light travels in straight lines, how we see objects, and why shadows have the same shape as the objects that cast them.",
+          "skillIds": ["science.sixth-light-true-or-false"]
+        },
+        {
+          "id": "electricity",
+          "heading": "Electricity",
+          "summary": "Explain how the number and voltage of cells affect a circuit, and use recognised symbols in circuit diagrams.",
+          "skillIds": [
+            "science.sixth-circuit-symbols",
+            "science.sixth-circuit-predictions"
+          ]
+        },
+        {
+          "id": "working-scientifically",
+          "heading": "Working scientifically",
+          "summary": "Plan enquiries that control variables, measure with increasing accuracy and precision, and explain degrees of trust in results.",
+          "skillIds": [
+            "science.sixth-shadow-investigation",
+            "science.evidence-detective"
+          ]
+        }
+      ]
+    }
+  ]
+}

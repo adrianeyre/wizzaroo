@@ -1,0 +1,8 @@
+{
+  "id": "music.intervals",
+  "name": "Hearing intervals from a 2nd to an octave",
+  "subject": "music",
+  "yearGroup": 5,
+  "strand": "pitch",
+  "prerequisites": []
+}

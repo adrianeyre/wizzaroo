@@ -1,0 +1,8 @@
+{
+  "id": "maths.numbers-to-ten-million",
+  "name": "Reading numbers up to 10,000,000",
+  "subject": "maths",
+  "yearGroup": 6,
+  "strand": "number-and-place-value",
+  "prerequisites": ["maths.decimal-place-value"]
+}

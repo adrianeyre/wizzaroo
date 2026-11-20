@@ -1,0 +1,8 @@
+{
+  "id": "maths.order-of-operations",
+  "name": "Using the order of operations",
+  "subject": "maths",
+  "yearGroup": 6,
+  "strand": "addition-subtraction-multiplication-and-division",
+  "prerequisites": ["maths.multiply-divide-by-10-100-1000"]
+}

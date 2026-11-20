@@ -1,0 +1,460 @@
+{
+  "subject": "english",
+  "yearGroup": 3,
+  "games": [
+    {
+      "id": "tense-tower-tumble",
+      "title": "Tense Tower",
+      "station": "compare",
+      "prop": "moon",
+      "skillId": "english.verb-tenses",
+      "skillName": "Choosing verb tenses, like the present perfect and past progressive",
+      "strand": "vocabulary-grammar-and-punctuation",
+      "statutoryRequirement": "Pupils should be taught to develop their understanding of the concepts set out in English Appendix 2 by: use of the present perfect form of verbs instead of the simple past [for example, He has gone out to play contrasted with He went out to play]",
+      "instruction": "Read the sentence, then tap the verb that fits.",
+      "hint": "Not quite. Ask yourself when it happened and whether it matters now, then try again.",
+      "questions": [
+        {
+          "ask": "Which is the present perfect? 'She ___ out to play.'",
+          "answer": "has gone",
+          "distractors": ["went", "goes", "was going"]
+        },
+        {
+          "ask": "What is the simple past of 'go'?",
+          "answer": "went",
+          "distractors": ["has gone", "goed", "going"]
+        },
+        {
+          "ask": "'I ___ my homework, so now I can play.'",
+          "answer": "have finished",
+          "distractors": ["finish", "was finishing", "finishing"]
+        },
+        {
+          "ask": "'Yesterday, we ___ a film.'",
+          "answer": "watched",
+          "distractors": ["have watched", "watch", "are watching"]
+        },
+        {
+          "ask": "'He was running.' Which tense is this?",
+          "answer": "past progressive",
+          "distractors": [
+            "present perfect",
+            "simple past",
+            "present progressive"
+          ]
+        },
+        {
+          "ask": "'They have eaten.' Which tense is this?",
+          "answer": "present perfect",
+          "distractors": ["simple past", "past progressive", "future"]
+        },
+        {
+          "ask": "'Look out of the window! It ___ right now.'",
+          "answer": "is snowing",
+          "distractors": ["has snowed", "snowed", "was snowing"]
+        },
+        {
+          "ask": "Which sentence uses the present perfect?",
+          "answer": "I have seen it.",
+          "distractors": ["I saw it.", "I was seeing it.", "I see it."]
+        },
+        {
+          "ask": "'When the bell rang, we ___ lunch.'",
+          "answer": "were eating",
+          "distractors": ["have eaten", "are eating", "eat"]
+        },
+        {
+          "ask": "Pick the present perfect of 'write': 'She ___ a letter.'",
+          "answer": "has written",
+          "distractors": ["has wrote", "wrote", "has writed"]
+        }
+      ]
+    },
+    {
+      "id": "clause-castle-quest",
+      "title": "Clause Castle",
+      "station": "compare",
+      "prop": "rock",
+      "skillName": "Clauses and subordinate clauses",
+      "strand": "vocabulary-grammar-and-punctuation",
+      "statutoryRequirement": "Pupils should be taught to use and understand the grammatical terminology in English Appendix 2 accurately and appropriately when discussing their writing and reading (clause, subordinate clause); express time, place and cause using conjunctions [for example, when, before, after, while, so, because]",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Look for the verb and the word that starts the clause, then try again.",
+      "questions": [
+        {
+          "ask": "A clause must contain a ___.",
+          "answer": "verb",
+          "distractors": ["comma", "adjective", "full stop"]
+        },
+        {
+          "ask": "Which of these is a clause?",
+          "answer": "the dog barked",
+          "distractors": ["in the garden", "the big dog", "very loudly"]
+        },
+        {
+          "ask": "Which of these is NOT a clause?",
+          "answer": "under the bed",
+          "distractors": ["she smiled", "we ran home", "it rained"]
+        },
+        {
+          "ask": "'I ate lunch because I was hungry.' Find the subordinate clause.",
+          "answer": "because I was hungry",
+          "distractors": ["I ate lunch", "I ate", "lunch because"]
+        },
+        {
+          "ask": "'When the bell rang, we went in.' Find the subordinate clause.",
+          "answer": "When the bell rang",
+          "distractors": ["we went in", "the bell", "went in"]
+        },
+        {
+          "ask": "A subordinate clause ___ make sense on its own.",
+          "answer": "does not",
+          "distractors": ["does", "must always", "can only"]
+        },
+        {
+          "ask": "Which word often starts a subordinate clause?",
+          "answer": "because",
+          "distractors": ["and", "the", "very"]
+        },
+        {
+          "ask": "'We played out after it stopped raining.' Find the main clause.",
+          "answer": "We played out",
+          "distractors": [
+            "after it stopped",
+            "it stopped raining",
+            "stopped raining"
+          ]
+        },
+        {
+          "ask": "How many clauses are in 'I sang and Mia danced.'?",
+          "answer": "2",
+          "distractors": ["1", "3", "4"]
+        },
+        {
+          "ask": "Which conjunction starts a subordinate clause? 'Wash your hands ___ you eat.'",
+          "answer": "before",
+          "distractors": ["and", "but", "or"]
+        }
+      ]
+    },
+    {
+      "id": "sound-spelling-sleuth",
+      "title": "Sound Spelling Sleuth",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Spelling tricky sounds from Appendix 1",
+      "strand": "spelling",
+      "statutoryRequirement": "Pupils should be taught to spell words that are often misspelt (English Appendix 1); use further prefixes and suffixes and understand how to add them (English Appendix 1)",
+      "instruction": "Read the clue, then tap the right spelling.",
+      "hint": "Not quite. Think about the unusual spelling of that sound, then try again.",
+      "questions": [
+        {
+          "ask": "Pick the right spelling: an old story about gods and heroes.",
+          "answer": "myth",
+          "distractors": ["mith", "mythe", "mifth"]
+        },
+        {
+          "ask": "Pick the right spelling: not old.",
+          "answer": "young",
+          "distractors": ["yung", "yong", "yuong"]
+        },
+        {
+          "ask": "Pick the right spelling: to find out how long something is.",
+          "answer": "measure",
+          "distractors": ["meazure", "mesure", "measher"]
+        },
+        {
+          "ask": "Pick the right spelling: a group singing together (sounds like 'kor-us').",
+          "answer": "chorus",
+          "distractors": ["korus", "corus", "chorrus"]
+        },
+        {
+          "ask": "Pick the right spelling: a cook in a restaurant (sounds like 'shef').",
+          "answer": "chef",
+          "distractors": ["shef", "cheff", "sheff"]
+        },
+        {
+          "ask": "Pick the right spelling: the long muscle in your mouth.",
+          "answer": "tongue",
+          "distractors": ["tung", "tounge", "tonge"]
+        },
+        {
+          "ask": "Pick the right spelling: the only one of its kind.",
+          "answer": "unique",
+          "distractors": ["unik", "uneek", "unic"]
+        },
+        {
+          "ask": "Pick the right spelling: a person who works in science.",
+          "answer": "scientist",
+          "distractors": ["sientist", "syentist", "scintist"]
+        },
+        {
+          "ask": "Pick the right spelling: 'How much does the parcel ___?'",
+          "answer": "weigh",
+          "distractors": ["way", "wey", "weih"]
+        },
+        {
+          "ask": "Pick the right spelling: 'My friends said ___ would come.'",
+          "answer": "they",
+          "distractors": ["thay", "thei", "theigh"]
+        }
+      ]
+    },
+    {
+      "id": "tricky-word-tower",
+      "title": "Tricky Word Tower",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Spelling words from the statutory word list",
+      "strand": "spelling",
+      "statutoryRequirement": "Pupils should be taught to spell words that are often misspelt (English Appendix 1)",
+      "instruction": "Read the clue, then tap the right spelling.",
+      "hint": "Not quite. Picture the word and check the tricky part, then try again.",
+      "questions": [
+        {
+          "ask": "Pick the right spelling: something that happens by mistake.",
+          "answer": "accident",
+          "distractors": ["acident", "accidant", "axident"]
+        },
+        {
+          "ask": "Pick the right spelling: another way to say 'in fact' or 'really'.",
+          "answer": "actually",
+          "distractors": ["actualy", "acshually", "actully"]
+        },
+        {
+          "ask": "Pick the right spelling: a reply to a question.",
+          "answer": "answer",
+          "distractors": ["anser", "answere", "arnser"]
+        },
+        {
+          "ask": "Pick the right spelling: to think something is true.",
+          "answer": "believe",
+          "distractors": ["beleive", "belive", "beleave"]
+        },
+        {
+          "ask": "Pick the right spelling: a two-wheeled ride with pedals.",
+          "answer": "bicycle",
+          "distractors": ["bycycle", "bicicle", "bisycle"]
+        },
+        {
+          "ask": "Pick the right spelling: to make something, like a wall.",
+          "answer": "build",
+          "distractors": ["bild", "biuld", "bulid"]
+        },
+        {
+          "ask": "Pick the right spelling: having lots to do.",
+          "answer": "busy",
+          "distractors": ["bizzy", "busey", "bizy"]
+        },
+        {
+          "ask": "Pick the right spelling: it shows the days and months of the year.",
+          "answer": "calendar",
+          "distractors": ["calender", "calandar", "callendar"]
+        },
+        {
+          "ask": "Pick the right spelling: a period of 100 years.",
+          "answer": "century",
+          "distractors": ["centery", "sentury", "centurey"]
+        },
+        {
+          "ask": "Pick the right spelling: the middle of something.",
+          "answer": "centre",
+          "distractors": ["center", "sentre", "centr"]
+        }
+      ]
+    },
+    {
+      "id": "dictionary-dash",
+      "title": "Dictionary Dash",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Using a dictionary to find meanings",
+      "strand": "word-reading",
+      "statutoryRequirement": "Pupils should be taught to develop positive attitudes to reading and understanding of what they read by: using dictionaries to check the meaning of words that they have read",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Think about alphabetical order and the definition, then try again.",
+      "questions": [
+        {
+          "ask": "In a dictionary, words are listed in ___ order.",
+          "answer": "alphabetical",
+          "distractors": ["number", "size", "colour"]
+        },
+        {
+          "ask": "Which word comes first in a dictionary?",
+          "answer": "castle",
+          "distractors": ["cat", "catch", "cave"]
+        },
+        {
+          "ask": "A dictionary tells you what a word ___.",
+          "answer": "means",
+          "distractors": ["rhymes with", "costs", "looks like"]
+        },
+        {
+          "ask": "Dictionary: 'ancient: very old'. What does 'ancient' mean?",
+          "answer": "very old",
+          "distractors": ["very new", "very big", "very fast"]
+        },
+        {
+          "ask": "Dictionary: 'nocturnal: active at night'. Which animal is nocturnal?",
+          "answer": "an owl",
+          "distractors": ["a butterfly", "a bee", "a robin"]
+        },
+        {
+          "ask": "Dictionary: 'fragile: easily broken'. Which is fragile?",
+          "answer": "a glass vase",
+          "distractors": ["a brick", "a rock", "a metal pan"]
+        },
+        {
+          "ask": "Dictionary: 'drowsy: sleepy'. If you are drowsy, you feel ___.",
+          "answer": "sleepy",
+          "distractors": ["angry", "hungry", "excited"]
+        },
+        {
+          "ask": "The guide words on a dictionary page are 'bell' and 'bone'. Which word is on it?",
+          "answer": "bird",
+          "distractors": ["bag", "boy", "cat"]
+        },
+        {
+          "ask": "Which word would you find near the end of a dictionary?",
+          "answer": "zebra",
+          "distractors": ["apple", "kite", "mouse"]
+        },
+        {
+          "ask": "Dictionary: 'timid: shy and easily scared'. A timid mouse is ___.",
+          "answer": "shy",
+          "distractors": ["brave", "loud", "bossy"]
+        }
+      ]
+    },
+    {
+      "id": "book-explorer-quest",
+      "title": "Book Explorer",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Non-fiction, poetry forms, myths and legends",
+      "strand": "reading-comprehension",
+      "statutoryRequirement": "Pupils should be taught to retrieve and record information from non-fiction; discuss words and phrases that capture the reader's interest and imagination; recognise some different forms of poetry [for example, free verse, narrative poetry]; increase their familiarity with a wide range of books, including fairy stories, myths and legends, and retell some of these orally",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Read the text again carefully, then try again.",
+      "questions": [
+        {
+          "ask": "Fact: 'Hedgehogs eat beetles, worms and slugs.' What do hedgehogs eat?",
+          "answer": "worms",
+          "distractors": ["carrots", "grass", "bread"]
+        },
+        {
+          "ask": "Fact: 'The River Thames is about 346 km long.' How long is the Thames?",
+          "answer": "about 346 km",
+          "distractors": ["about 34 km", "about 3,460 km", "about 346 m"]
+        },
+        {
+          "ask": "Where do you look in a non-fiction book to find the page for a topic?",
+          "answer": "the index",
+          "distractors": ["the title", "the blurb", "the cover"]
+        },
+        {
+          "ask": "Which part of a non-fiction book explains tricky words?",
+          "answer": "the glossary",
+          "distractors": ["the index", "the blurb", "the author"]
+        },
+        {
+          "ask": "'The sea roared and hurled its fists at the rocks.' Why is this exciting?",
+          "answer": "the sea seems alive",
+          "distractors": ["it is a fact", "it has numbers", "it is a list"]
+        },
+        {
+          "ask": "A poem that tells a story is called a ___ poem.",
+          "answer": "narrative",
+          "distractors": ["shape", "list", "haiku"]
+        },
+        {
+          "ask": "Which kind of poem has no regular rhyme or rhythm?",
+          "answer": "free verse",
+          "distractors": ["limerick", "haiku", "shape poem"]
+        },
+        {
+          "ask": "A poem written in the outline of its subject is a ___.",
+          "answer": "shape poem",
+          "distractors": ["limerick", "narrative poem", "free verse"]
+        },
+        {
+          "ask": "An old story about gods that explains how the world began is a ___.",
+          "answer": "myth",
+          "distractors": ["fable", "recipe", "report"]
+        },
+        {
+          "ask": "Old stories about the hero Robin Hood are called ___.",
+          "answer": "legends",
+          "distractors": ["fact files", "diaries", "letters"]
+        }
+      ]
+    },
+    {
+      "id": "proofreading-pixie",
+      "title": "Proofreading Pixie",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Proof-reading for spelling and punctuation",
+      "strand": "writing-composition",
+      "statutoryRequirement": "Pupils should be taught to evaluate and edit by: proof-read for spelling and punctuation errors",
+      "instruction": "Read it carefully, then tap the right answer.",
+      "hint": "Not quite. Read each word slowly and check every mark, then try again.",
+      "questions": [
+        {
+          "ask": "Which word is spelt wrongly? 'We went to the libary on Monday.'",
+          "answer": "libary",
+          "distractors": ["went", "Monday", "the"]
+        },
+        {
+          "ask": "Which word is spelt wrongly? 'She was suprised by the noise.'",
+          "answer": "suprised",
+          "distractors": ["noise", "was", "She"]
+        },
+        {
+          "ask": "Find the spelling mistake: 'The peple cheered loudly.'",
+          "answer": "peple",
+          "distractors": ["cheered", "loudly", "The"]
+        },
+        {
+          "ask": "Find the spelling mistake: 'Blue is my favorite colour.'",
+          "answer": "favorite",
+          "distractors": ["Blue", "colour", "my"]
+        },
+        {
+          "ask": "What is missing? Tom said, Hello.",
+          "answer": "inverted commas",
+          "distractors": ["a full stop", "a capital letter", "a question mark"]
+        },
+        {
+          "ask": "What is missing? 'where is the station?'",
+          "answer": "a capital letter",
+          "distractors": ["a full stop", "a comma", "an apostrophe"]
+        },
+        {
+          "ask": "What is missing? 'I like apples pears and plums.'",
+          "answer": "a comma",
+          "distractors": ["a full stop", "a question mark", "an apostrophe"]
+        },
+        {
+          "ask": "What is missing? 'Its my birthday today.'",
+          "answer": "an apostrophe",
+          "distractors": ["a comma", "a question mark", "a capital letter"]
+        },
+        {
+          "ask": "Which sentence is correct?",
+          "answer": "Where are you going?",
+          "distractors": [
+            "Where are you going.",
+            "where are you going?",
+            "Were are you going?"
+          ]
+        },
+        {
+          "ask": "Find the spelling mistake: 'We herd a strange sound.'",
+          "answer": "herd",
+          "distractors": ["We", "strange", "sound"]
+        }
+      ]
+    }
+  ]
+}

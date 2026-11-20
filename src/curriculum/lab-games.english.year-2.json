@@ -1,0 +1,495 @@
+{
+  "subject": "english",
+  "yearGroup": 2,
+  "games": [
+    {
+      "id": "tense-time-machine",
+      "title": "Tense Time Machine",
+      "station": "compare",
+      "prop": "sun",
+      "skillName": "Present and past tense, including the progressive form",
+      "strand": "vocabulary-grammar-and-punctuation",
+      "statutoryRequirement": "Pupils should be taught to learn how to use: the present and past tenses correctly and consistently including the progressive form",
+      "instruction": "Read the sentence, then tap the verb that fits.",
+      "hint": "Not quite. Look for words that tell you when it happens, then try again.",
+      "questions": [
+        {
+          "ask": "Yesterday, I ___ to the shop.",
+          "answer": "walked",
+          "distractors": ["walk", "walking", "walks"]
+        },
+        {
+          "ask": "Right now, Sam ___ a book.",
+          "answer": "is reading",
+          "distractors": ["was reading", "readed", "will read"]
+        },
+        {
+          "ask": "Last night, we ___ when the phone rang.",
+          "answer": "were eating",
+          "distractors": ["are eating", "eat", "is eating"]
+        },
+        {
+          "ask": "Is 'she is drumming' in the past or the present?",
+          "answer": "Present",
+          "distractors": ["Past", "Future", "Both"]
+        },
+        {
+          "ask": "What is the past tense of 'run'?",
+          "answer": "ran",
+          "distractors": ["runned", "runs", "running"]
+        },
+        {
+          "ask": "What is the past tense of 'jump'?",
+          "answer": "jumped",
+          "distractors": ["jumpt", "jumping", "jumps"]
+        },
+        {
+          "ask": "Which is the past progressive of 'shout'?",
+          "answer": "was shouting",
+          "distractors": ["is shouting", "shouted", "shouts"]
+        },
+        {
+          "ask": "Which verb is in the present tense?",
+          "answer": "sings",
+          "distractors": ["sang", "was singing", "danced"]
+        },
+        {
+          "ask": "Look! The baby ___ at us right now.",
+          "answer": "is smiling",
+          "distractors": ["smiled", "was smiling", "smile"]
+        },
+        {
+          "ask": "The dog ___ at the cat all day yesterday.",
+          "answer": "barked",
+          "distractors": ["barks", "barking", "bark"]
+        }
+      ]
+    },
+    {
+      "id": "noun-phrase-builder",
+      "title": "Noun Phrase Builder",
+      "station": "compare",
+      "prop": "flower",
+      "skillName": "Expanded noun phrases",
+      "strand": "vocabulary-grammar-and-punctuation",
+      "statutoryRequirement": "Pupils should be taught to learn how to use: expanded noun phrases to describe and specify [for example, the blue butterfly]",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Find the noun first, then the words that describe it.",
+      "questions": [
+        {
+          "ask": "Which is an expanded noun phrase?",
+          "answer": "the blue butterfly",
+          "distractors": ["a butterfly", "flew away", "blue"]
+        },
+        {
+          "ask": "Which word fits best? 'the ___ dragon'",
+          "answer": "fiery",
+          "distractors": ["quickly", "ran", "and"]
+        },
+        {
+          "ask": "Which word is the noun in 'the tall green tree'?",
+          "answer": "tree",
+          "distractors": ["the", "tall", "green"]
+        },
+        {
+          "ask": "Which word describes the noun in 'a fluffy cat'?",
+          "answer": "fluffy",
+          "distractors": ["a", "cat", "an"]
+        },
+        {
+          "ask": "Which phrase tells us the most about the dog?",
+          "answer": "the big brown dog",
+          "distractors": ["the dog", "a dog", "dogs"]
+        },
+        {
+          "ask": "Which word could expand 'the ___ cake'?",
+          "answer": "chocolate",
+          "distractors": ["eat", "slowly", "under"]
+        },
+        {
+          "ask": "Which is NOT a noun phrase?",
+          "answer": "ran very fast",
+          "distractors": ["a red bus", "the old man", "some cold milk"]
+        },
+        {
+          "ask": "Which noun phrase is the most descriptive?",
+          "answer": "a tiny shiny shell",
+          "distractors": ["a shell", "the shell", "shells"]
+        },
+        {
+          "ask": "In 'the man in the moon', which part adds detail about the man?",
+          "answer": "in the moon",
+          "distractors": ["the man", "the", "man"]
+        },
+        {
+          "ask": "Which word fits? 'I saw a ___ rainbow.'",
+          "answer": "colourful",
+          "distractors": ["colour", "colours", "colouring"]
+        }
+      ]
+    },
+    {
+      "id": "whose-is-it-apostrophe",
+      "title": "Whose Is It?",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "The possessive apostrophe for one owner",
+      "strand": "spelling",
+      "statutoryRequirement": "Pupils should be taught to spell by: learning the possessive apostrophe (singular) [for example, the girl's book]",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. One owner gets an apostrophe before the s, so try again.",
+      "questions": [
+        {
+          "ask": "How do we write 'the book that belongs to the girl'?",
+          "answer": "the girl's book",
+          "distractors": ["the girls book", "the girls' book", "the girl book"]
+        },
+        {
+          "ask": "Pick the right one: the ball belonging to Sam.",
+          "answer": "Sam's ball",
+          "distractors": ["Sams ball", "Sams' ball", "Sam ball"]
+        },
+        {
+          "ask": "The dog has a bone. Whose bone is it?",
+          "answer": "the dog's bone",
+          "distractors": ["the dogs bone", "the dogs' bone", "the do'gs bone"]
+        },
+        {
+          "ask": "One cat has a tail. Which is right?",
+          "answer": "the cat's tail",
+          "distractors": ["the cats' tail", "the cats tail", "the cat's' tail"]
+        },
+        {
+          "ask": "Mum has a car. Which is right?",
+          "answer": "Mum's car",
+          "distractors": ["Mums car", "Mum car", "Mums' car"]
+        },
+        {
+          "ask": "In 'Ben's hat', what does the 's show?",
+          "answer": "it belongs to Ben",
+          "distractors": [
+            "more than one Ben",
+            "Ben is a hat",
+            "a letter is missing"
+          ]
+        },
+        {
+          "ask": "The teacher has a pen. Which is right?",
+          "answer": "the teacher's pen",
+          "distractors": [
+            "the teachers pen",
+            "the teachers' pen",
+            "the teacher pen's"
+          ]
+        },
+        {
+          "ask": "Which sentence uses the apostrophe correctly?",
+          "answer": "Tom's coat is red.",
+          "distractors": [
+            "Toms coat is red.",
+            "Tom coat's is red.",
+            "Toms' coat is red."
+          ]
+        },
+        {
+          "ask": "The baby has a toy. Whose toy is it?",
+          "answer": "the baby's toy",
+          "distractors": ["the babys toy", "the babies toy", "the babys' toy"]
+        },
+        {
+          "ask": "The king has a crown. Which is right?",
+          "answer": "the king's crown",
+          "distractors": [
+            "the kings crown",
+            "the kings' crown",
+            "the king crown's"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spelling-sound-safari",
+      "title": "Spelling Sound Safari",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Spelling patterns from Appendix 1",
+      "strand": "spelling",
+      "statutoryRequirement": "Pupils should be taught to spell by: learning new ways of spelling phonemes for which one or more spellings are already known, and learn some words with each spelling, including a few common homophones; apply spelling rules and guidance, as listed in English Appendix 1",
+      "instruction": "Read the clue, then tap the right spelling.",
+      "hint": "Not quite. Think about how that sound is often spelt, then try again.",
+      "questions": [
+        {
+          "ask": "Pick the right spelling: when tears fall, you ___.",
+          "answer": "cry",
+          "distractors": ["crie", "crigh", "cri"]
+        },
+        {
+          "ask": "Pick the right spelling: a round thing you kick or throw.",
+          "answer": "ball",
+          "distractors": ["bawl", "borl", "baul"]
+        },
+        {
+          "ask": "Pick the right spelling: another word for mum.",
+          "answer": "mother",
+          "distractors": ["muther", "mothur", "muvver"]
+        },
+        {
+          "ask": "Pick the right spelling: an animal that swings in trees.",
+          "answer": "monkey",
+          "distractors": ["monky", "monkee", "munkey"]
+        },
+        {
+          "ask": "Pick the right spelling: 'I ___ to go to the park.'",
+          "answer": "want",
+          "distractors": ["wont", "whant", "wunt"]
+        },
+        {
+          "ask": "Pick the right spelling: to press something flat.",
+          "answer": "squash",
+          "distractors": ["squosh", "skwosh", "sqush"]
+        },
+        {
+          "ask": "Pick the right spelling: 'Say the magic ___!'",
+          "answer": "word",
+          "distractors": ["werd", "wurd", "whord"]
+        },
+        {
+          "ask": "Pick the right spelling: not cold, but ___.",
+          "answer": "warm",
+          "distractors": ["worm", "wawm", "whorm"]
+        },
+        {
+          "ask": "Pick the right spelling: a pirate's chest of gold.",
+          "answer": "treasure",
+          "distractors": ["trezure", "treazure", "tresher"]
+        },
+        {
+          "ask": "Pick the right spelling: a place where trains stop.",
+          "answer": "station",
+          "distractors": ["stashun", "stasion", "staytion"]
+        }
+      ]
+    },
+    {
+      "id": "tricky-word-trail",
+      "title": "Tricky Word Trail",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "More common exception words",
+      "strand": "spelling",
+      "statutoryRequirement": "Pupils should be taught to spell by: learning to spell common exception words",
+      "instruction": "Read the sentence, then tap the right spelling.",
+      "hint": "Not quite. These words break the rules, so picture them carefully and try again.",
+      "questions": [
+        {
+          "ask": "Pick the right spelling: 'I ___ like a drink, please.'",
+          "answer": "would",
+          "distractors": ["wood", "wuld", "woud"]
+        },
+        {
+          "ask": "Pick the right spelling: '___ is at the door?'",
+          "answer": "Who",
+          "distractors": ["Hoo", "Whoo", "Wo"]
+        },
+        {
+          "ask": "Pick the right spelling: 'I ___ swim when I was five.'",
+          "answer": "could",
+          "distractors": ["cud", "culd", "coud"]
+        },
+        {
+          "ask": "Pick the right spelling: 'You ___ wear a coat today.'",
+          "answer": "should",
+          "distractors": ["shud", "shoud", "shuld"]
+        },
+        {
+          "ask": "Pick the right spelling: 'Are you ___ it is right?'",
+          "answer": "sure",
+          "distractors": ["shore", "shure", "shur"]
+        },
+        {
+          "ask": "Pick the right spelling: 'Are there ___ sweets left?'",
+          "answer": "any",
+          "distractors": ["eny", "enny", "ani"]
+        },
+        {
+          "ask": "Pick the right spelling: 'My ___ came to see the school play.'",
+          "answer": "parents",
+          "distractors": ["perents", "parrents", "parants"]
+        },
+        {
+          "ask": "Pick the right spelling: 'We open presents on ___ Day.'",
+          "answer": "Christmas",
+          "distractors": ["Crismas", "Chrismas", "Christmass"]
+        },
+        {
+          "ask": "Pick the right spelling: 'I have ___ one apple left.'",
+          "answer": "only",
+          "distractors": ["ownly", "onley", "onli"]
+        },
+        {
+          "ask": "Pick the right spelling: 'We went to the park ___ lunch.'",
+          "answer": "after",
+          "distractors": ["arfter", "aftur", "afta"]
+        }
+      ]
+    },
+    {
+      "id": "proofreading-parrot",
+      "title": "Proofreading Parrot",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Proof-reading sentences",
+      "strand": "writing-composition",
+      "statutoryRequirement": "Pupils should be taught to make simple additions, revisions and corrections to their own writing by: re-reading to check that their writing makes sense and that verbs to indicate time are used correctly and consistently, including verbs in the continuous form; proof-reading to check for errors in spelling, grammar and punctuation [for example, ends of sentences punctuated correctly]",
+      "instruction": "Read them all, then tap the one with no mistakes.",
+      "hint": "Not quite. Check the capital letter, the end mark and the verbs, then try again.",
+      "questions": [
+        {
+          "ask": "Which sentence is punctuated correctly?",
+          "answer": "Where is my hat?",
+          "distractors": [
+            "Where is my hat.",
+            "where is my hat?",
+            "Where is my hat"
+          ]
+        },
+        {
+          "ask": "Which question ends correctly?",
+          "answer": "Can we go now?",
+          "distractors": ["Can we go now.", "can we go now?", "Can we go now"]
+        },
+        {
+          "ask": "Which sentence keeps to one tense?",
+          "answer": "I ran and jumped.",
+          "distractors": [
+            "I ran and jump.",
+            "I run and jumped.",
+            "I runs and jumped."
+          ]
+        },
+        {
+          "ask": "Which sentence uses the past tense all the way through?",
+          "answer": "She sat and ate.",
+          "distractors": [
+            "She sits and ate.",
+            "She sat and eats.",
+            "She sat and eat."
+          ]
+        },
+        {
+          "ask": "Which sentence is correct?",
+          "answer": "We were playing.",
+          "distractors": ["We was playing.", "We were play.", "We is playing."]
+        },
+        {
+          "ask": "Pick the correctly written sentence.",
+          "answer": "Tom has a red kite.",
+          "distractors": [
+            "tom has a red kite.",
+            "Tom has a red kite",
+            "Tom has a redkite."
+          ]
+        },
+        {
+          "ask": "Which sentence keeps the same tense?",
+          "answer": "He is singing now.",
+          "distractors": [
+            "He was singing now.",
+            "He is sang now.",
+            "He singing now."
+          ]
+        },
+        {
+          "ask": "Pick the correctly punctuated list.",
+          "answer": "red, blue and green",
+          "distractors": [
+            "red blue and green",
+            "red blue, and green",
+            "red, blue and, green"
+          ]
+        },
+        {
+          "ask": "Pick the best ending: 'Yesterday we ___'",
+          "answer": "went to the zoo.",
+          "distractors": [
+            "go to the zoo.",
+            "are going to zoo.",
+            "will go to the zoo."
+          ]
+        },
+        {
+          "ask": "Which exclamation is written correctly?",
+          "answer": "What a big dog!",
+          "distractors": [
+            "what a big dog!",
+            "What a big dog?",
+            "What a big dog"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "story-word-lantern",
+      "title": "Story Word Lantern",
+      "station": "compare",
+      "prop": "bulb",
+      "skillName": "Story language and word meanings",
+      "strand": "reading-comprehension",
+      "statutoryRequirement": "Pupils should be taught to develop pleasure in reading, motivation to read, vocabulary and understanding by: recognising simple recurring literary language in stories and poetry; discussing and clarifying the meanings of words, linking new meanings to known vocabulary",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Think about the stories and poems you know, then try again.",
+      "questions": [
+        {
+          "ask": "'Once upon a time' tells you the story is set ___.",
+          "answer": "long ago",
+          "distractors": ["tomorrow", "right now", "next year"]
+        },
+        {
+          "ask": "Why do poets often repeat words, like 'twinkle, twinkle'?",
+          "answer": "for rhythm and fun",
+          "distractors": ["to fill space", "by mistake", "to end the poem"]
+        },
+        {
+          "ask": "In fairy tales, how many wishes are often granted?",
+          "answer": "three",
+          "distractors": ["ten", "one hundred", "none"]
+        },
+        {
+          "ask": "'Mirror, mirror, on the wall.' Which story is this from?",
+          "answer": "Snow White",
+          "distractors": ["Cinderella", "Rapunzel", "Goldilocks"]
+        },
+        {
+          "ask": "'Rapunzel, Rapunzel, let down your ___!'",
+          "answer": "hair",
+          "distractors": ["rope", "ladder", "basket"]
+        },
+        {
+          "ask": "In a poem, 'the moon was a silver coin'. What does 'silver' tell us?",
+          "answer": "its colour",
+          "distractors": ["its size", "its smell", "its sound"]
+        },
+        {
+          "ask": "What does 'enormous' mean in 'an enormous turnip'?",
+          "answer": "very big",
+          "distractors": ["very small", "very old", "very soft"]
+        },
+        {
+          "ask": "A 'feast' in a story is ___.",
+          "answer": "a big special meal",
+          "distractors": ["a small snack", "a type of beast", "a party hat"]
+        },
+        {
+          "ask": "'He gobbled his food.' What does 'gobbled' mean?",
+          "answer": "ate quickly",
+          "distractors": ["ate slowly", "spat out", "cooked"]
+        },
+        {
+          "ask": "'And they all lived happily ever after' comes at the ___ of a tale.",
+          "answer": "end",
+          "distractors": ["start", "middle", "title"]
+        }
+      ]
+    }
+  ]
+}

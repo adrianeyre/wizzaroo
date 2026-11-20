@@ -1,0 +1,8 @@
+{
+  "id": "maths.add-subtract-fractions",
+  "name": "Adding and taking away fractions and mixed numbers",
+  "subject": "maths",
+  "yearGroup": 6,
+  "strand": "fractions-including-decimals-and-percentages",
+  "prerequisites": ["maths.families-of-equivalent-fractions"]
+}

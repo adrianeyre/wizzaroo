@@ -1,0 +1,346 @@
+{
+  "subject": "english",
+  "programme": "year",
+  "programmeOfStudyUrl": "https://www.gov.uk/government/publications/national-curriculum-in-england-english-programmes-of-study",
+  "years": [
+    {
+      "yearGroup": 1,
+      "points": [
+        {
+          "id": "letter-names",
+          "heading": "Writing: letter names",
+          "summary": "Name the letters of the alphabet in order, and match each capital letter to its small letter.",
+          "skillIds": ["english.alphabet-order", "english.capital-letters"]
+        },
+        {
+          "id": "spelling",
+          "heading": "Writing: spelling",
+          "summary": "Spell common exception words and words with ff, ll, ss, zz, ck, nk and tch, add -s, -es, -ing, -ed, -er and -est, and use the prefix un-.",
+          "skillIds": [
+            "english.spelling-ff-ll-ss-zz-ck-nk-tch",
+            "english.common-exception-words",
+            "english.plurals-s-es",
+            "english.suffixes-ing-ed-er-est",
+            "english.prefix-un",
+            "english.compound-words",
+            "english.weekday-word-wizard",
+            "english.spelling-rule-rover"
+          ]
+        },
+        {
+          "id": "vocabulary-grammar-and-punctuation",
+          "heading": "Vocabulary, grammar and punctuation",
+          "summary": "Join words and clauses with and, and use capital letters, full stops, question marks, exclamation marks and capital letters for names and I.",
+          "skillIds": [
+            "english.capital-letters-for-names",
+            "english.joining-with-and",
+            "english.sentence-punctuation",
+            "english.apostrophe-swap-shop",
+            "english.capital-space-patrol"
+          ]
+        },
+        {
+          "id": "reading-comprehension",
+          "heading": "Reading: comprehension",
+          "summary": "Understand stories and poems by discussing what happens, predicting what might happen next and making simple inferences, and enjoy rhymes.",
+          "skillIds": [
+            "english.understanding-what-i-read",
+            "english.rhyming-words",
+            "english.fairy-tale-forest"
+          ]
+        },
+        {
+          "id": "writing-composition",
+          "heading": "Writing: composition",
+          "summary": "Say out loud what they are going to write about, and sequence sentences to form short narratives.",
+          "skillIds": [
+            "english.sequencing-sentences",
+            "english.silly-word-spotter"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 2,
+      "points": [
+        {
+          "id": "spelling",
+          "heading": "Writing: spelling",
+          "summary": "Spell more common exception words, homophones, contractions and words with suffixes such as -ment, -ness, -ful, -less and -ly.",
+          "skillIds": [
+            "english.more-common-exception-words",
+            "english.homophones",
+            "english.contractions",
+            "english.suffix-spelling-rules",
+            "english.suffixes-ful-less-ness-ly",
+            "english.plurals-y-to-ies",
+            "english.rhymes-with-different-spellings",
+            "english.whose-is-it-apostrophe",
+            "english.spelling-sound-safari",
+            "english.tricky-word-trail"
+          ]
+        },
+        {
+          "id": "vocabulary-grammar-and-punctuation",
+          "heading": "Vocabulary, grammar and punctuation",
+          "summary": "Join ideas with and, but, or, because, when, if and that, use commas in lists, tell statements, questions, exclamations and commands apart, and name nouns, verbs, adjectives and adverbs.",
+          "skillIds": [
+            "english.conjunctions",
+            "english.list-commas-and-sentence-types",
+            "english.nouns-verbs-adjectives-adverbs",
+            "english.comparatives-and-superlatives-er-est",
+            "english.tense-time-machine",
+            "english.noun-phrase-builder"
+          ]
+        },
+        {
+          "id": "reading-comprehension",
+          "heading": "Reading: comprehension",
+          "summary": "Answer and ask questions about a text, retell events in order and predict what might happen next.",
+          "skillIds": [
+            "english.questions-about-a-text",
+            "english.story-word-lantern"
+          ]
+        },
+        {
+          "id": "writing-composition",
+          "heading": "Writing: composition",
+          "summary": "Plan or say out loud what they are going to write, and write narratives with a beginning, middle and end.",
+          "skillIds": [
+            "english.planning-a-narrative",
+            "english.proofreading-parrot"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 3,
+      "points": [
+        {
+          "id": "word-reading",
+          "heading": "Reading: word reading",
+          "summary": "Apply knowledge of root words, prefixes and suffixes to read aloud and understand new words.",
+          "skillIds": [
+            "english.word-families",
+            "english.prefixes-dis-mis-re-sub-super-anti-auto",
+            "english.dictionary-dash"
+          ]
+        },
+        {
+          "id": "spelling",
+          "heading": "Writing: spelling",
+          "summary": "Spell words with suffixes, homophones and words from the Years 3 and 4 list, use the possessive apostrophe with plurals, and use the first two letters to find a word in a dictionary.",
+          "skillIds": [
+            "english.suffixes-ly-ation-and-doubling",
+            "english.homophones-accept-to-mail",
+            "english.word-list-lower-key-stage-2",
+            "english.plural-possessive-apostrophes",
+            "english.alphabetical-order-first-two-letters",
+            "english.sound-spelling-sleuth",
+            "english.tricky-word-tower"
+          ]
+        },
+        {
+          "id": "vocabulary-grammar-and-punctuation",
+          "heading": "Vocabulary, grammar and punctuation",
+          "summary": "Choose a or an, express time and cause with conjunctions, adverbs and prepositions, and punctuate direct speech with inverted commas.",
+          "skillIds": [
+            "english.a-or-an",
+            "english.time-and-cause-conjunctions",
+            "english.prepositions-and-conjunctions",
+            "english.inverted-commas-for-speech",
+            "english.verb-tenses",
+            "english.clause-castle-quest"
+          ]
+        },
+        {
+          "id": "reading-comprehension",
+          "heading": "Reading: comprehension",
+          "summary": "Draw inferences about characters' feelings, thoughts and motives, and predict what might happen from details given.",
+          "skillIds": [
+            "english.inference-and-prediction",
+            "english.book-explorer-quest"
+          ]
+        },
+        {
+          "id": "writing-composition",
+          "heading": "Writing: composition",
+          "summary": "Organise writing into paragraphs around a theme, and use headings and sub-headings in non-narrative writing.",
+          "skillIds": [
+            "english.paragraphs-and-headings",
+            "english.proofreading-pixie"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 4,
+      "points": [
+        {
+          "id": "word-reading",
+          "heading": "Reading: word reading",
+          "summary": "Apply knowledge of root words, prefixes and suffixes to read aloud and understand new words.",
+          "skillIds": [
+            "english.prefixes-in-il-im-ir-inter",
+            "english.suffixes-ous-tion-sion-cian"
+          ]
+        },
+        {
+          "id": "spelling",
+          "heading": "Writing: spelling",
+          "summary": "Spell further homophones and irregular plural possessives, and use the first three letters to check a spelling in a dictionary.",
+          "skillIds": [
+            "english.homophones-main-to-whose",
+            "english.irregular-plural-possessives",
+            "english.alphabetical-order-first-three-letters"
+          ]
+        },
+        {
+          "id": "vocabulary-grammar-and-punctuation",
+          "heading": "Vocabulary, grammar and punctuation",
+          "summary": "Use Standard English verb forms, fronted adverbials with commas, determiners, pronouns and conjunctions, and choose nouns or pronouns to avoid repetition.",
+          "skillIds": [
+            "english.standard-english-verb-forms",
+            "english.fronted-adverbial-commas-and-speech",
+            "english.determiners-and-pronouns",
+            "english.subordinating-conjunctions",
+            "english.synonym-nouns",
+            "english.noun-phrase-forge",
+            "english.pronoun-power-up"
+          ]
+        },
+        {
+          "id": "reading-comprehension",
+          "heading": "Reading: comprehension",
+          "summary": "Identify main ideas drawn from more than one paragraph and summarise them, and spot themes across stories.",
+          "skillIds": [
+            "english.main-ideas-and-themes",
+            "english.fact-and-verse-finder"
+          ]
+        },
+        {
+          "id": "writing-composition",
+          "heading": "Writing: composition",
+          "summary": "Create settings, characters and plot in narratives, and improve writing by suggesting changes.",
+          "skillIds": ["english.settings-characters-and-plot"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 5,
+      "points": [
+        {
+          "id": "word-reading",
+          "heading": "Reading: word reading",
+          "summary": "Apply knowledge of root words, prefixes and suffixes, including Greek and Latin roots, to read aloud and understand new words.",
+          "skillIds": [
+            "english.greek-and-latin-roots",
+            "english.verb-suffixes-ate-ise-ify-en",
+            "english.verb-prefix-workshop",
+            "english.thesaurus-treasure-hunt"
+          ]
+        },
+        {
+          "id": "spelling",
+          "heading": "Writing: spelling",
+          "summary": "Spell words ending -able, -ible, -cious and -cial, homophones and words from the Years 5 and 6 list, and use the first four letters to find a word in a dictionary.",
+          "skillIds": [
+            "english.suffixes-able-ible-cious-cial",
+            "english.homophones-advice-to-guessed",
+            "english.word-list-upper-key-stage-2",
+            "english.alphabetical-order-first-four-letters",
+            "english.silent-letter-sleuth"
+          ]
+        },
+        {
+          "id": "vocabulary-grammar-and-punctuation",
+          "heading": "Vocabulary, grammar and punctuation",
+          "summary": "Use relative clauses, modal verbs, and brackets, dashes or commas for parenthesis, and make subjects and verbs agree.",
+          "skillIds": [
+            "english.modal-verb-contractions",
+            "english.modal-verbs-and-relative-pronouns",
+            "english.parenthesis-and-clarifying-commas",
+            "english.relative-clauses",
+            "english.subject-verb-agreement",
+            "english.past-perfect-portal",
+            "english.maybe-meadow-adverbs"
+          ]
+        },
+        {
+          "id": "reading-comprehension",
+          "heading": "Reading: comprehension",
+          "summary": "Draw inferences and justify them with evidence from the text, and tell fact from opinion.",
+          "skillIds": [
+            "english.inference-with-evidence",
+            "english.crystal-ball-clues",
+            "english.myth-and-stage-quest"
+          ]
+        },
+        {
+          "id": "writing-composition",
+          "heading": "Writing: composition",
+          "summary": "Identify the audience and purpose of writing, and choose the right form and vocabulary for it.",
+          "skillIds": [
+            "english.writing-for-audience-and-purpose",
+            "english.dialogue-doctor"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 6,
+      "points": [
+        {
+          "id": "spelling",
+          "heading": "Writing: spelling",
+          "summary": "Spell words with suffixes after -fer and endings -ant, -ance, -ent and -ence, further homophones, and use hyphens after prefixes.",
+          "skillIds": [
+            "english.suffixes-fer-ant-ance-ent-ence",
+            "english.homophones-heard-to-wary",
+            "english.hyphens-after-prefixes"
+          ]
+        },
+        {
+          "id": "vocabulary-grammar-and-punctuation",
+          "heading": "Vocabulary, grammar and punctuation",
+          "summary": "Recognise formal speech and writing, including the subjunctive, identify the subject and object, and use colons, semi-colons and hyphens.",
+          "skillIds": [
+            "english.formal-expanded-contractions",
+            "english.formal-vocabulary",
+            "english.subject-and-object",
+            "english.subjunctive-and-formal-verbs",
+            "english.colons-semi-colons-and-hyphens",
+            "english.active-and-passive-voice",
+            "english.same-or-opposite-words",
+            "english.formal-or-chatty-tags",
+            "english.semi-colon-signal-box"
+          ]
+        },
+        {
+          "id": "reading-comprehension",
+          "heading": "Reading: comprehension",
+          "summary": "Summarise the main ideas across paragraphs, and explain how language, structure and presentation contribute to meaning.",
+          "skillIds": [
+            "english.summarising-and-comparing-texts",
+            "english.reading-retrieval",
+            "english.reading-inference",
+            "english.reading-vocabulary",
+            "english.reading-summarising-and-sequencing"
+          ]
+        },
+        {
+          "id": "writing-composition",
+          "heading": "Writing: composition",
+          "summary": "Link ideas within and across paragraphs with adverbials and other cohesive devices, and improve writing for its purpose.",
+          "skillIds": [
+            "english.cohesion-across-paragraphs",
+            "english.linking-adverbials",
+            "english.adverbials-of-time-and-number",
+            "english.cohesion-layout-lab",
+            "english.squeeze-the-sentence"
+          ]
+        }
+      ]
+    }
+  ]
+}

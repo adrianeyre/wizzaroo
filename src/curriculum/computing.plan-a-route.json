@@ -1,0 +1,8 @@
+{
+  "id": "computing.plan-a-route",
+  "name": "Planning an algorithm for a route",
+  "subject": "computing",
+  "yearGroup": 2,
+  "strand": "algorithms",
+  "prerequisites": ["computing.single-step-instructions"]
+}

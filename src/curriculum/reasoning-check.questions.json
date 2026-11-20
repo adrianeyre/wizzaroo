@@ -1,0 +1,335 @@
+[
+  {
+    "id": "coaches-for-a-trip",
+    "questionType": "number",
+    "skillId": "maths.divide-large-numbers",
+    "prompt": "456 pupils are going on a school trip. Each coach holds 52 pupils. How many coaches are needed so that every pupil has a seat?",
+    "answerShape": "number",
+    "answers": ["9"]
+  },
+  {
+    "id": "temperature-at-midday",
+    "questionType": "number",
+    "skillId": "maths.negative-numbers",
+    "prompt": "At midnight the temperature was −6°C. By midday it had risen by 13 degrees. What was the temperature at midday, in °C?",
+    "answerShape": "number",
+    "answers": ["7"]
+  },
+  {
+    "id": "round-the-population",
+    "questionType": "number",
+    "skillId": "maths.numbers-to-ten-million",
+    "prompt": "The population of a city is 2,456,789. Round this number to the nearest hundred thousand.",
+    "answerShape": "number",
+    "answers": ["2500000"]
+  },
+  {
+    "id": "sticker-collection",
+    "questionType": "number",
+    "skillId": "maths.subtract-large-numbers",
+    "prompt": "Amir has 3,250 stickers. He gives 875 to his sister, then buys 1,460 more. How many stickers does he have now?",
+    "answerShape": "number",
+    "answers": ["3835"]
+  },
+  {
+    "id": "square-and-cube",
+    "questionType": "number",
+    "skillId": "maths.squares-cubes-and-powers-of-ten",
+    "prompt": "Which of these numbers is both a square number and a cube number? Tick one.",
+    "answerShape": "choice",
+    "choices": ["16", "27", "64", "100"],
+    "answers": ["64"]
+  },
+  {
+    "id": "common-multiple",
+    "questionType": "number",
+    "skillId": "maths.times-tables-to-12",
+    "prompt": "Which number is a common multiple of 6 and 8? Tick one.",
+    "answerShape": "choice",
+    "choices": ["14", "16", "24", "30"],
+    "answers": ["24"]
+  },
+  {
+    "id": "boxes-of-books",
+    "questionType": "number",
+    "skillId": "maths.divide-large-numbers",
+    "prompt": "A library packs 1,344 books into boxes. Each box holds 24 books. How many boxes does the library fill?",
+    "answerShape": "number",
+    "answers": ["56"]
+  },
+  {
+    "id": "walking-to-school",
+    "questionType": "number",
+    "skillId": "maths.multiply-divide-fractions",
+    "prompt": "There are 32 children in a class. 3/8 of them walk to school. How many children walk to school?",
+    "answerShape": "number",
+    "answers": ["12"]
+  },
+  {
+    "id": "juice-left-in-the-jug",
+    "questionType": "measures",
+    "skillId": "maths.convert-units",
+    "prompt": "A jug holds 1.5 litres of juice. Mia pours 6 glasses of 175 ml each. How many millilitres of juice are left in the jug?",
+    "answerShape": "number",
+    "answers": ["450"]
+  },
+  {
+    "id": "train-journey",
+    "questionType": "measures",
+    "skillId": "maths.durations",
+    "prompt": "A train leaves at 14:35 and arrives at 16:10. How many minutes does the journey take?",
+    "answerShape": "number",
+    "answers": ["95"]
+  },
+  {
+    "id": "ribbon-pieces",
+    "questionType": "measures",
+    "skillId": "maths.convert-units",
+    "prompt": "A ribbon is 3 m long. Sam cuts off 8 pieces, each 35 cm long. How many centimetres of ribbon are left?",
+    "answerShape": "number",
+    "answers": ["20"]
+  },
+  {
+    "id": "two-parcels",
+    "questionType": "measures",
+    "skillId": "maths.convert-units",
+    "prompt": "One parcel weighs 2.4 kg. Another parcel weighs 850 g. What is their total mass in grams?",
+    "answerShape": "number",
+    "answers": ["3250"]
+  },
+  {
+    "id": "volume-of-a-box",
+    "questionType": "measures",
+    "skillId": "maths.volume-of-cuboids",
+    "prompt": "A cuboid is 6 cm long, 4 cm wide and 5 cm tall. What is its volume, in cm³?",
+    "answerShape": "number",
+    "answers": ["120"]
+  },
+  {
+    "id": "width-of-a-garden",
+    "questionType": "measures",
+    "skillId": "maths.perimeter-of-rectangles",
+    "prompt": "A rectangular garden is 12 m long. Its perimeter is 40 m. How wide is the garden, in metres?",
+    "answerShape": "number",
+    "answers": ["8"]
+  },
+  {
+    "id": "miles-to-kilometres",
+    "questionType": "measures",
+    "skillId": "maths.convert-units",
+    "prompt": "5 miles is about the same as 8 km. About how many kilometres is 25 miles?",
+    "answerShape": "number",
+    "answers": ["40"]
+  },
+  {
+    "id": "angles-on-a-straight-line",
+    "questionType": "geometry",
+    "skillId": "maths.missing-angles",
+    "prompt": "Two angles sit side by side on a straight line. One of them is 127°. What is the size of the other angle, in degrees?",
+    "answerShape": "number",
+    "answers": ["53"]
+  },
+  {
+    "id": "third-angle-of-a-triangle",
+    "questionType": "geometry",
+    "skillId": "maths.missing-angles",
+    "prompt": "Two angles in a triangle are 48° and 75°. What is the size of the third angle, in degrees?",
+    "answerShape": "number",
+    "answers": ["57"]
+  },
+  {
+    "id": "angles-around-a-point",
+    "questionType": "geometry",
+    "skillId": "maths.missing-angles",
+    "prompt": "Three angles meet at a point. Two of them are 140° and 95°. What is the size of the third angle, in degrees?",
+    "answerShape": "number",
+    "answers": ["125"]
+  },
+  {
+    "id": "isosceles-triangle",
+    "questionType": "geometry",
+    "skillId": "maths.missing-angles",
+    "prompt": "One angle of an isosceles triangle is 40°. The other two angles are equal to each other. What is the size of each of them, in degrees?",
+    "answerShape": "number",
+    "answers": ["70"]
+  },
+  {
+    "id": "hexagon-sides",
+    "questionType": "geometry",
+    "skillId": "maths.regular-and-irregular-polygons",
+    "prompt": "A regular hexagon has a perimeter of 54 cm. How long is each side, in cm?",
+    "answerShape": "number",
+    "answers": ["9"]
+  },
+  {
+    "id": "net-of-six-squares",
+    "questionType": "geometry",
+    "skillId": "maths.nets-of-3d-shapes",
+    "prompt": "A net is made of six squares, all the same size. Which 3-D shape does it fold into? Tick one.",
+    "answerShape": "choice",
+    "choices": ["Square-based pyramid", "Triangular prism", "Cube", "Cylinder"],
+    "answers": ["Cube"]
+  },
+  {
+    "id": "area-of-a-triangle",
+    "questionType": "geometry",
+    "skillId": "maths.area-of-rectangles",
+    "prompt": "A triangle has a base of 10 cm and a perpendicular height of 7 cm. What is its area, in cm²?",
+    "answerShape": "number",
+    "answers": ["35"]
+  },
+  {
+    "id": "one-pair-of-parallel-sides",
+    "questionType": "geometry",
+    "skillId": "maths.classify-triangles-and-quadrilaterals",
+    "prompt": "Which quadrilateral has exactly one pair of parallel sides? Tick one.",
+    "answerShape": "choice",
+    "choices": ["Rhombus", "Rectangle", "Kite", "Trapezium"],
+    "answers": ["Trapezium"]
+  },
+  {
+    "id": "mean-spelling-score",
+    "questionType": "statistics",
+    "skillId": "maths.mean-and-tables",
+    "prompt": "Five children scored 7, 9, 6, 10 and 8 in a spelling test. What was the mean score?",
+    "answerShape": "number",
+    "answers": ["8"]
+  },
+  {
+    "id": "missing-number-from-a-mean",
+    "questionType": "statistics",
+    "skillId": "maths.mean-and-tables",
+    "prompt": "The mean of four numbers is 15. Three of the numbers are 12, 18 and 11. What is the fourth number?",
+    "answerShape": "number",
+    "answers": ["19"]
+  },
+  {
+    "id": "library-books-table",
+    "questionType": "statistics",
+    "skillId": "maths.mean-and-tables",
+    "prompt": "A table shows the books a library lent. Monday: 145. Tuesday: 98. Wednesday: 167. Thursday: 120. How many more books were lent on Wednesday than on Tuesday?",
+    "answerShape": "number",
+    "answers": ["69"]
+  },
+  {
+    "id": "pie-chart-quarter",
+    "questionType": "statistics",
+    "skillId": "maths.mean-and-tables",
+    "prompt": "60 children chose their favourite fruit. In a pie chart of their answers, the apple section is exactly one quarter of the circle. How many children chose apple?",
+    "answerShape": "number",
+    "answers": ["15"]
+  },
+  {
+    "id": "plant-growth-graph",
+    "questionType": "statistics",
+    "skillId": "maths.mean-and-tables",
+    "prompt": "A line graph shows that a plant was 12 cm tall on Monday and 19.5 cm tall on Friday. How many centimetres did it grow?",
+    "answerShape": "number",
+    "answers": ["7.5"]
+  },
+  {
+    "id": "mean-lap-time",
+    "questionType": "statistics",
+    "skillId": "maths.mean-and-tables",
+    "prompt": "Ali ran three laps of the field. His times were 96 seconds, 102 seconds and 99 seconds. What was his mean time, in seconds?",
+    "answerShape": "number",
+    "answers": ["99"]
+  },
+  {
+    "id": "orange-paint",
+    "questionType": "ratio",
+    "skillId": "maths.ratio-and-scale",
+    "prompt": "To make orange paint, red and yellow paint are mixed in the ratio 2 : 3. How many litres of red paint are needed to make 20 litres of orange paint?",
+    "answerShape": "number",
+    "answers": ["8"]
+  },
+  {
+    "id": "flour-for-ten",
+    "questionType": "ratio",
+    "skillId": "maths.ratio-and-scale",
+    "prompt": "A recipe for 4 people uses 300 g of flour. How many grams of flour are needed to make the recipe for 10 people?",
+    "answerShape": "number",
+    "answers": ["750"]
+  },
+  {
+    "id": "coat-in-a-sale",
+    "questionType": "ratio",
+    "skillId": "maths.percentages-of-amounts",
+    "prompt": "A coat costs £60. In a sale, the price is reduced by 15%. What is the sale price, in pounds?",
+    "answerShape": "number",
+    "answers": ["51"]
+  },
+  {
+    "id": "blue-and-red-beads",
+    "questionType": "ratio",
+    "skillId": "maths.ratio-and-scale",
+    "prompt": "A necklace has 3 blue beads for every 2 red beads. There are 30 beads altogether. How many blue beads are there?",
+    "answerShape": "number",
+    "answers": ["18"]
+  },
+  {
+    "id": "map-scale",
+    "questionType": "ratio",
+    "skillId": "maths.ratio-and-scale",
+    "prompt": "On a map, 1 cm stands for 5 km. Two towns are 7.5 cm apart on the map. How far apart are they in real life, in km?",
+    "answerShape": "number",
+    "answers": ["37.5"]
+  },
+  {
+    "id": "children-with-pets",
+    "questionType": "ratio",
+    "skillId": "maths.percentages-of-amounts",
+    "prompt": "There are 25 children in a class. 40% of them have a pet. How many children have a pet?",
+    "answerShape": "number",
+    "answers": ["10"]
+  },
+  {
+    "id": "bike-hire-formula",
+    "questionType": "algebra",
+    "skillId": "maths.simple-formulae",
+    "prompt": "The cost in pounds of hiring a bike for h hours is worked out with the formula: cost = 5 + 3h. What is the cost, in pounds, of hiring a bike for 6 hours?",
+    "answerShape": "number",
+    "answers": ["23"]
+  },
+  {
+    "id": "two-unknowns",
+    "questionType": "algebra",
+    "skillId": "maths.simple-formulae",
+    "prompt": "a + b = 12 and a − b = 4. What is the value of a?",
+    "answerShape": "number",
+    "answers": ["8"]
+  },
+  {
+    "id": "tenth-term",
+    "questionType": "algebra",
+    "skillId": "maths.linear-sequences",
+    "prompt": "A sequence starts at 5 and goes up by 7 each time: 5, 12, 19, 26, … What is the 10th number in the sequence?",
+    "answerShape": "number",
+    "answers": ["68"]
+  },
+  {
+    "id": "solve-for-n",
+    "questionType": "algebra",
+    "skillId": "maths.simple-formulae",
+    "prompt": "3n + 4 = 31. What is the value of n?",
+    "answerShape": "number",
+    "answers": ["9"]
+  },
+  {
+    "id": "sequence-below-zero",
+    "questionType": "algebra",
+    "skillId": "maths.linear-sequences",
+    "prompt": "This sequence goes down by the same amount each time: 50, 43, 36, 29, … What is the first number in the sequence that is less than zero?",
+    "answerShape": "number",
+    "answers": ["-6"]
+  },
+  {
+    "id": "brothers-age",
+    "questionType": "algebra",
+    "skillId": "maths.simple-formulae",
+    "prompt": "Ella is n years old. Her brother is 4 years older than her. Which expression shows her brother's age? Tick one.",
+    "answerShape": "choice",
+    "choices": ["n − 4", "4n", "n + 4", "n ÷ 4"],
+    "answers": ["n + 4"]
+  }
+]

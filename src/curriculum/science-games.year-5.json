@@ -1,0 +1,563 @@
+{
+  "yearGroup": 5,
+  "games": [
+    {
+      "id": "fifth-life-cycle-sorter",
+      "title": "Life Cycle Sorter",
+      "station": "sort",
+      "prop": "egg",
+      "skillName": "Comparing life cycles of different animal groups",
+      "strand": "living-things-and-their-habitats",
+      "statutoryRequirement": "Pupils should be taught to describe the differences in the life cycles of a mammal, an amphibian, an insect and a bird",
+      "instruction": "Tap the animal group each life cycle stage belongs to.",
+      "hint": "Not quite. Think about how the young are born and how they change as they grow, then try again.",
+      "questions": [
+        {
+          "ask": "A caterpillar turning into a butterfly",
+          "answer": "Insect",
+          "distractors": ["Amphibian", "Bird", "Mammal"]
+        },
+        {
+          "ask": "A tadpole growing back legs",
+          "answer": "Amphibian",
+          "distractors": ["Insect", "Bird", "Mammal"]
+        },
+        {
+          "ask": "A chick hatching from a hard-shelled egg in a nest",
+          "answer": "Bird",
+          "distractors": ["Amphibian", "Insect", "Mammal"]
+        },
+        {
+          "ask": "A calf drinking its mother's milk",
+          "answer": "Mammal",
+          "distractors": ["Bird", "Amphibian", "Insect"]
+        },
+        {
+          "ask": "A larva becoming a pupa, then an adult beetle",
+          "answer": "Insect",
+          "distractors": ["Mammal", "Amphibian", "Bird"]
+        },
+        {
+          "ask": "Frogspawn laid in a pond in spring",
+          "answer": "Amphibian",
+          "distractors": ["Bird", "Insect", "Mammal"]
+        },
+        {
+          "ask": "Parents feeding nestlings until they can fly",
+          "answer": "Bird",
+          "distractors": ["Insect", "Mammal", "Amphibian"]
+        },
+        {
+          "ask": "A furry baby fed on milk by its mother",
+          "answer": "Mammal",
+          "distractors": ["Insect", "Bird", "Amphibian"]
+        }
+      ]
+    },
+    {
+      "id": "fifth-material-misfit",
+      "title": "Material Misfit",
+      "station": "odd-one-out",
+      "prop": "magnet",
+      "skillName": "Grouping materials by their properties",
+      "strand": "properties-and-changes-of-materials",
+      "statutoryRequirement": "Pupils should be taught to compare and group together everyday materials on the basis of their properties, including their hardness, solubility, transparency, conductivity (electrical and thermal), and response to magnets",
+      "instruction": "Tap the material that does not belong with the others.",
+      "hint": "Not quite. Think about the property in the question and test each material in your head, then try again.",
+      "questions": [
+        {
+          "ask": "Which one is NOT attracted to a magnet?",
+          "answer": "Aluminium can",
+          "distractors": ["Iron nail", "Steel paperclip", "Steel scissors"]
+        },
+        {
+          "ask": "Which one does NOT conduct electricity?",
+          "answer": "Plastic ruler",
+          "distractors": ["Copper wire", "Steel spoon", "Aluminium foil"]
+        },
+        {
+          "ask": "Which one does NOT dissolve in water?",
+          "answer": "Sand",
+          "distractors": ["Sugar", "Salt", "Instant coffee"]
+        },
+        {
+          "ask": "Which one is NOT transparent?",
+          "answer": "Cardboard",
+          "distractors": ["Clear glass", "Clear plastic", "Water"]
+        },
+        {
+          "ask": "Which one is NOT a good thermal insulator?",
+          "answer": "Copper",
+          "distractors": ["Wool", "Polystyrene", "Cork"]
+        },
+        {
+          "ask": "Which one is NOT a hard material?",
+          "answer": "Sponge",
+          "distractors": ["Diamond", "Steel", "Granite"]
+        },
+        {
+          "ask": "Which one is NOT a reversible change?",
+          "answer": "Burning wood",
+          "distractors": ["Melting ice", "Dissolving salt", "Freezing water"]
+        },
+        {
+          "ask": "Which one is NOT a way to separate a mixture?",
+          "answer": "Stirring",
+          "distractors": ["Filtering", "Sieving", "Evaporating"]
+        }
+      ]
+    },
+    {
+      "id": "fifth-sun-earth-moon",
+      "title": "Orbit Truths",
+      "station": "true-false",
+      "prop": "planet",
+      "skillName": "Movement of the Earth and Moon and day and night",
+      "strand": "earth-and-space",
+      "statutoryRequirement": "Pupils should be taught to describe the movement of the Earth and other planets relative to the Sun, the movement of the Moon relative to the Earth, and use the idea of the Earth's rotation to explain day and night and the apparent movement of the Sun across the sky",
+      "instruction": "Is each statement true or false?",
+      "hint": "Not quite. Picture the Earth spinning and orbiting, with the Moon going round it, then try again.",
+      "questions": [
+        {
+          "ask": "The Earth orbits the Sun.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "The Sun orbits the Earth.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "The Moon orbits the Earth.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "The Sun, Earth and Moon are all roughly spherical.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Day and night happen because the Sun travels around the Earth.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "The Earth spins on its axis about once every 24 hours.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "The Earth is flat, like a plate.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "The Earth takes about one month to orbit the Sun.",
+          "answer": "False",
+          "distractors": ["True"]
+        }
+      ]
+    },
+    {
+      "id": "fifth-force-finder",
+      "title": "Force Finder",
+      "station": "fill-gap",
+      "prop": "rock",
+      "skillName": "Gravity, resistance forces, friction and mechanisms",
+      "strand": "forces",
+      "statutoryRequirement": "Pupils should be taught to explain that unsupported objects fall towards the Earth because of gravity, identify the effects of air resistance, water resistance and friction, and recognise that levers, pulleys and gears allow a smaller force to have a greater effect",
+      "instruction": "Tap the word that fills the gap.",
+      "hint": "Not quite. Think about which force or machine the sentence describes, then try again.",
+      "questions": [
+        {
+          "ask": "An apple falls to the ground because of the force of ___.",
+          "answer": "Gravity",
+          "distractors": ["Friction", "Magnetism", "Air resistance"]
+        },
+        {
+          "ask": "Gravity pulls unsupported objects down towards the ___.",
+          "answer": "Earth",
+          "distractors": ["Sky", "Moon", "Clouds"]
+        },
+        {
+          "ask": "A parachute falls slowly because of ___ resistance.",
+          "answer": "Air",
+          "distractors": ["Water", "Ground", "Magnet"]
+        },
+        {
+          "ask": "A fish's streamlined shape helps it reduce ___ resistance as it swims.",
+          "answer": "Water",
+          "distractors": ["Air", "Ground", "Magnet"]
+        },
+        {
+          "ask": "The force between two surfaces rubbing together is called ___.",
+          "answer": "Friction",
+          "distractors": ["Gravity", "Magnetism", "Upthrust"]
+        },
+        {
+          "ask": "A lever lets a smaller force have a ___ effect.",
+          "answer": "Greater",
+          "distractors": ["Smaller", "Weaker", "Slower"]
+        },
+        {
+          "ask": "A ___ uses a wheel and a rope to help lift heavy loads.",
+          "answer": "Pulley",
+          "distractors": ["Lever", "Gear", "Spring"]
+        },
+        {
+          "ask": "___ are toothed wheels that turn each other in bikes and clocks.",
+          "answer": "Gears",
+          "distractors": ["Pulleys", "Levers", "Springs"]
+        }
+      ]
+    },
+    {
+      "id": "fifth-new-life-steps",
+      "title": "New Life Steps",
+      "station": "sequence",
+      "prop": "flower",
+      "skillName": "Reproduction in plants and animals",
+      "strand": "living-things-and-their-habitats",
+      "statutoryRequirement": "Pupils should be taught to describe the life process of reproduction in some plants and animals",
+      "instruction": "Tap the step that comes next.",
+      "hint": "Not quite. Think about what has to happen before a new plant or animal can start to grow, then try again.",
+      "questions": [
+        {
+          "ask": "Pollination → Fertilisation → ?",
+          "answer": "Seeds form",
+          "distractors": ["Germination", "Seed dispersal", "Pollen is made"]
+        },
+        {
+          "ask": "Pollination → Fertilisation → Seeds form → ?",
+          "answer": "Seed dispersal",
+          "distractors": ["Germination", "Pollination", "Fertilisation"]
+        },
+        {
+          "ask": "Seeds form → Seed dispersal → ?",
+          "answer": "Germination",
+          "distractors": ["Fertilisation", "Pollination", "Seeds form"]
+        },
+        {
+          "ask": "Bee carries pollen → Pollen lands on stigma → ?",
+          "answer": "Fertilisation",
+          "distractors": ["Seed dispersal", "Germination", "Pollen is made"]
+        },
+        {
+          "ask": "Cut a stem from a geranium → Place it in water → ?",
+          "answer": "Roots grow",
+          "distractors": ["Pollination", "Fertilisation", "Seeds are dispersed"]
+        },
+        {
+          "ask": "Plant an old potato → Shoots grow from its eyes → ?",
+          "answer": "New potatoes form",
+          "distractors": ["Pollination", "Fertilisation", "Seeds are dispersed"]
+        },
+        {
+          "ask": "Mammal parents mate → Baby grows inside mother → ?",
+          "answer": "Baby is born",
+          "distractors": ["Egg hatches", "Metamorphosis", "Pupa forms"]
+        },
+        {
+          "ask": "Birds mate → Female lays eggs → ?",
+          "answer": "Eggs kept warm",
+          "distractors": ["Chicks fly away", "Baby is born", "Tadpoles hatch"]
+        }
+      ]
+    },
+    {
+      "id": "fifth-growing-up-riddles",
+      "title": "Growing Up Riddles",
+      "station": "mystery",
+      "prop": "heart",
+      "skillName": "Changes as humans develop to old age",
+      "strand": "animals-including-humans",
+      "statutoryRequirement": "Pupils should be taught to describe the changes as humans develop to old age",
+      "instruction": "Read the clues and tap the answer.",
+      "hint": "Not quite. Think about how the body changes from birth to old age, then try again.",
+      "questions": [
+        {
+          "ask": "I drink milk, cannot walk yet and need adults to do everything for me. What am I?",
+          "answer": "Baby",
+          "distractors": ["Toddler", "Child", "Teenager"]
+        },
+        {
+          "ask": "I am about one to three years old and learning to walk and say words. What am I?",
+          "answer": "Toddler",
+          "distractors": ["Baby", "Teenager", "Adult"]
+        },
+        {
+          "ask": "I go to primary school, lose my milk teeth and grow steadily. What am I?",
+          "answer": "Child",
+          "distractors": ["Toddler", "Baby", "Older adult"]
+        },
+        {
+          "ask": "My body is going through puberty and I am growing quickly. What am I?",
+          "answer": "Teenager",
+          "distractors": ["Baby", "Toddler", "Older adult"]
+        },
+        {
+          "ask": "I have stopped growing taller and my body is fully grown. What am I?",
+          "answer": "Adult",
+          "distractors": ["Baby", "Toddler", "Child"]
+        },
+        {
+          "ask": "My hair may turn grey, my skin wrinkles and my bones grow weaker. What am I?",
+          "answer": "Older adult",
+          "distractors": ["Teenager", "Child", "Toddler"]
+        },
+        {
+          "ask": "I am the time when a child's body changes into an adult's body. What am I?",
+          "answer": "Puberty",
+          "distractors": ["Gestation", "Old age", "Metamorphosis"]
+        },
+        {
+          "ask": "I am the time a baby grows inside its mother before it is born. What am I?",
+          "answer": "Gestation",
+          "distractors": ["Puberty", "Old age", "Metamorphosis"]
+        }
+      ]
+    },
+    {
+      "id": "fifth-change-predictor",
+      "title": "Change Predictor",
+      "station": "predict",
+      "prop": "beaker",
+      "skillName": "Predicting reversible and irreversible changes",
+      "strand": "properties-and-changes-of-materials",
+      "statutoryRequirement": "Pupils should be taught to demonstrate that dissolving, mixing and changes of state are reversible changes, and explain that some changes result in the formation of new materials, and that this kind of change is not usually reversible, including changes associated with burning and the action of acid on bicarbonate of soda",
+      "instruction": "Tap what you think will happen.",
+      "hint": "Not quite. Ask yourself whether a new material is made or the change can be undone, then try again.",
+      "questions": [
+        {
+          "ask": "What will happen if you stir sugar into warm water?",
+          "answer": "It dissolves",
+          "distractors": ["It melts", "It burns", "It floats on top"]
+        },
+        {
+          "ask": "What happens when you add vinegar to bicarbonate of soda?",
+          "answer": "Gas bubbles form",
+          "distractors": ["Nothing happens", "It freezes", "It turns to sand"]
+        },
+        {
+          "ask": "What will happen if you leave salty water in a warm place for a few days?",
+          "answer": "Salt is left behind",
+          "distractors": [
+            "Salt evaporates too",
+            "Water turns to salt",
+            "Nothing changes"
+          ]
+        },
+        {
+          "ask": "What will happen if you burn a piece of paper?",
+          "answer": "New materials form",
+          "distractors": [
+            "The paper melts",
+            "Nothing changes",
+            "The paper dissolves"
+          ]
+        },
+        {
+          "ask": "What happens when melted chocolate cools down?",
+          "answer": "It goes solid again",
+          "distractors": ["It stays a liquid", "It turns to gas", "It burns"]
+        },
+        {
+          "ask": "What will happen if you pour sandy water through filter paper?",
+          "answer": "Sand is caught",
+          "distractors": [
+            "Sand goes through",
+            "Sand dissolves",
+            "Water is caught"
+          ]
+        },
+        {
+          "ask": "What will happen if you shake rice and flour in a sieve?",
+          "answer": "Rice stays in sieve",
+          "distractors": [
+            "Rice falls through",
+            "Both dissolve",
+            "Both stay in sieve"
+          ]
+        },
+        {
+          "ask": "What will happen if you leave an iron nail in damp air for weeks?",
+          "answer": "It rusts",
+          "distractors": ["It melts", "It dissolves", "It turns to glass"]
+        }
+      ]
+    },
+    {
+      "id": "fifth-solution-words",
+      "title": "Solution Words",
+      "station": "vocabulary",
+      "prop": "water-drop",
+      "skillName": "Words for dissolving, separating and changes",
+      "strand": "properties-and-changes-of-materials",
+      "statutoryRequirement": "Pupils should be taught to know that some materials will dissolve in liquid to form a solution, describe how to recover a substance from a solution, and decide how mixtures might be separated, including through filtering, sieving and evaporating",
+      "instruction": "Tap the word that matches the meaning.",
+      "hint": "Not quite. Read the meaning again and think about what happens to the materials, then try again.",
+      "questions": [
+        {
+          "ask": "A liquid with a solid dissolved completely in it",
+          "answer": "Solution",
+          "distractors": ["Sieve", "Insoluble", "Evaporation"]
+        },
+        {
+          "ask": "Describes a material that can dissolve in a liquid",
+          "answer": "Soluble",
+          "distractors": ["Insoluble", "Transparent", "Magnetic"]
+        },
+        {
+          "ask": "Describes a material that will not dissolve in a liquid",
+          "answer": "Insoluble",
+          "distractors": ["Soluble", "Transparent", "Conductor"]
+        },
+        {
+          "ask": "Separating an undissolved solid from a liquid using paper with tiny holes",
+          "answer": "Filtering",
+          "distractors": ["Sieving", "Evaporating", "Dissolving"]
+        },
+        {
+          "ask": "Separating large solid pieces from small solid pieces using a mesh",
+          "answer": "Sieving",
+          "distractors": ["Filtering", "Evaporating", "Melting"]
+        },
+        {
+          "ask": "Letting a liquid turn into a gas so a dissolved solid is left behind",
+          "answer": "Evaporating",
+          "distractors": ["Condensing", "Melting", "Freezing"]
+        },
+        {
+          "ask": "A change that can be undone, such as melting or dissolving",
+          "answer": "Reversible",
+          "distractors": ["Irreversible", "Soluble", "Transparent"]
+        },
+        {
+          "ask": "A change that makes new materials and usually cannot be undone",
+          "answer": "Irreversible",
+          "distractors": ["Reversible", "Dissolving", "Evaporating"]
+        }
+      ]
+    },
+    {
+      "id": "fifth-solar-system-ranks",
+      "title": "Solar System Ranks",
+      "station": "compare",
+      "prop": "sun",
+      "skillName": "Comparing the Sun, Moon and planets",
+      "strand": "earth-and-space",
+      "statutoryRequirement": "Pupils should be taught to describe the movement of the Earth and other planets relative to the Sun in the solar system, and describe the Sun, Earth and Moon as approximately spherical bodies",
+      "instruction": "Tap the one that best answers the question.",
+      "hint": "Not quite. Picture the planets in order from the Sun and think about their sizes, then try again.",
+      "questions": [
+        {
+          "ask": "Which planet is closest to the Sun?",
+          "answer": "Mercury",
+          "distractors": ["Venus", "Earth", "Mars"]
+        },
+        {
+          "ask": "Which planet is furthest from the Sun?",
+          "answer": "Neptune",
+          "distractors": ["Saturn", "Uranus", "Jupiter"]
+        },
+        {
+          "ask": "Which is the largest planet?",
+          "answer": "Jupiter",
+          "distractors": ["Saturn", "Earth", "Neptune"]
+        },
+        {
+          "ask": "Which of these spherical bodies is the largest?",
+          "answer": "Sun",
+          "distractors": ["Earth", "Moon", "Jupiter"]
+        },
+        {
+          "ask": "Which of these spherical bodies is the smallest?",
+          "answer": "Moon",
+          "distractors": ["Earth", "Sun", "Jupiter"]
+        },
+        {
+          "ask": "Which of these takes the longest time?",
+          "answer": "Earth orbits Sun",
+          "distractors": [
+            "Moon orbits Earth",
+            "Earth spins once",
+            "Sun crosses the sky"
+          ]
+        },
+        {
+          "ask": "Which planet takes the shortest time to orbit the Sun?",
+          "answer": "Mercury",
+          "distractors": ["Earth", "Mars", "Saturn"]
+        },
+        {
+          "ask": "Which planet takes the longest time to orbit the Sun?",
+          "answer": "Neptune",
+          "distractors": ["Jupiter", "Saturn", "Mars"]
+        }
+      ]
+    },
+    {
+      "id": "fifth-force-lab",
+      "title": "Force Lab",
+      "station": "investigate",
+      "prop": "magnifier",
+      "skillName": "Planning fair tests on air resistance and friction",
+      "strand": "working-scientifically",
+      "statutoryRequirement": "Pupils should plan different types of scientific enquiries, recognising and controlling variables where necessary, take measurements with increasing accuracy and precision, take repeat readings when appropriate, and record data in tables",
+      "instruction": "Tap the best answer for this investigation.",
+      "hint": "Not quite. Think about what a fair test needs and what you are measuring, then try again.",
+      "questions": [
+        {
+          "ask": "Which would you use to measure the force needed to drag a shoe across a mat?",
+          "answer": "Newton meter",
+          "distractors": ["Thermometer", "Ruler", "Measuring jug"]
+        },
+        {
+          "ask": "Testing parachutes: which equipment times how long each one takes to fall?",
+          "answer": "Stopwatch",
+          "distractors": ["Newton meter", "Thermometer", "Ruler"]
+        },
+        {
+          "ask": "In a fair test of parachute size, which one thing should you change?",
+          "answer": "Canopy size",
+          "distractors": ["Drop height", "Weight of load", "Everything"]
+        },
+        {
+          "ask": "In a friction test on different surfaces, what must stay the same?",
+          "answer": "The shoe used",
+          "distractors": ["The surface", "Nothing", "The results"]
+        },
+        {
+          "ask": "Why should you repeat each parachute drop three times?",
+          "answer": "To check results",
+          "distractors": [
+            "To make it unfair",
+            "To change the answer",
+            "To use more paper"
+          ]
+        },
+        {
+          "ask": "What is the best way to record fall times for five parachutes?",
+          "answer": "A results table",
+          "distractors": ["A Venn diagram", "A storyboard", "A Carroll diagram"]
+        },
+        {
+          "ask": "Bigger parachutes fell more slowly. What does this show about bigger canopies?",
+          "answer": "More air resistance",
+          "distractors": [
+            "Less air resistance",
+            "More gravity",
+            "Less friction"
+          ]
+        },
+        {
+          "ask": "Testing clay boat shapes for water resistance: what must be the same for each?",
+          "answer": "The amount of clay",
+          "distractors": ["The shape", "Nothing at all", "The results"]
+        }
+      ]
+    }
+  ]
+}

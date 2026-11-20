@@ -1,0 +1,8 @@
+{
+  "id": "maths.fractions-as-decimal-equivalents",
+  "name": "Decimal equivalents of fractions such as 3/8",
+  "subject": "maths",
+  "yearGroup": 6,
+  "strand": "fractions-including-decimals-and-percentages",
+  "prerequisites": ["maths.fractions-decimals-percentages"]
+}

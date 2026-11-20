@@ -1,0 +1,635 @@
+{
+  "yearGroup": 6,
+  "games": [
+    {
+      "id": "sixth-classify-living-things",
+      "title": "Kingdom Sorter",
+      "station": "sort",
+      "prop": "microscope",
+      "skillName": "Classifying living things into broad groups",
+      "strand": "living-things-and-their-habitats",
+      "statutoryRequirement": "Pupils should be taught to describe how living things are classified into broad groups according to common observable characteristics and based on similarities and differences, including micro-organisms, plants and animals",
+      "instruction": "Tap the group each living thing belongs to.",
+      "hint": "Not quite. Does it have a backbone, does it make flowers, or is it too tiny to see? Try again.",
+      "questions": [
+        {
+          "ask": "A bacterium",
+          "answer": "Micro-organism",
+          "distractors": ["Fungus", "Invertebrate", "Non-flowering plant"]
+        },
+        {
+          "ask": "A toadstool",
+          "answer": "Fungus",
+          "distractors": [
+            "Flowering plant",
+            "Micro-organism",
+            "Non-flowering plant"
+          ]
+        },
+        {
+          "ask": "A fern",
+          "answer": "Non-flowering plant",
+          "distractors": ["Flowering plant", "Fungus", "Invertebrate"]
+        },
+        {
+          "ask": "A daisy",
+          "answer": "Flowering plant",
+          "distractors": ["Non-flowering plant", "Fungus", "Micro-organism"]
+        },
+        {
+          "ask": "A snail",
+          "answer": "Invertebrate",
+          "distractors": ["Vertebrate", "Fungus", "Micro-organism"]
+        },
+        {
+          "ask": "A salmon",
+          "answer": "Vertebrate",
+          "distractors": ["Invertebrate", "Micro-organism", "Fungus"]
+        },
+        {
+          "ask": "A clump of moss",
+          "answer": "Non-flowering plant",
+          "distractors": ["Flowering plant", "Fungus", "Vertebrate"]
+        },
+        {
+          "ask": "An earthworm",
+          "answer": "Invertebrate",
+          "distractors": ["Vertebrate", "Fungus", "Non-flowering plant"]
+        }
+      ]
+    },
+    {
+      "id": "sixth-adaptation-odd-one-out",
+      "title": "Adaptation Spotter",
+      "station": "odd-one-out",
+      "prop": "leaf",
+      "skillName": "Spotting how living things are adapted to their habitat",
+      "strand": "evolution-and-inheritance",
+      "statutoryRequirement": "Pupils should be taught to identify how animals and plants are adapted to suit their environment in different ways and that adaptation may lead to evolution",
+      "instruction": "Tap the one that does not belong.",
+      "hint": "Think about where this living thing lives and what would really help it survive there.",
+      "questions": [
+        {
+          "ask": "Which is NOT an adaptation that helps a camel live in the desert?",
+          "answer": "Thick blubber",
+          "distractors": [
+            "Wide flat feet",
+            "Long eyelashes",
+            "Fat stored in humps"
+          ]
+        },
+        {
+          "ask": "Which is NOT an adaptation that helps a polar bear survive in the Arctic?",
+          "answer": "Very thin fur",
+          "distractors": ["Thick layer of fat", "Small ears", "Wide furry paws"]
+        },
+        {
+          "ask": "Which is NOT an adaptation that helps a cactus survive in a dry desert?",
+          "answer": "Large thin leaves",
+          "distractors": [
+            "Sharp spines",
+            "Thick waxy stem",
+            "Wide shallow roots"
+          ]
+        },
+        {
+          "ask": "Which is NOT an adaptation that helps a fish live in water?",
+          "answer": "Lungs for breathing",
+          "distractors": ["Gills", "Fins", "Streamlined body"]
+        },
+        {
+          "ask": "Which is NOT an adaptation that helps an owl hunt at night?",
+          "answer": "Loud flapping wings",
+          "distractors": [
+            "Large forward eyes",
+            "Sharp talons",
+            "Excellent hearing"
+          ]
+        },
+        {
+          "ask": "Which is NOT an adaptation that helps a woodpecker feed on insects inside trees?",
+          "answer": "Webbed feet",
+          "distractors": [
+            "Strong pointed beak",
+            "Long sticky tongue",
+            "Stiff tail feathers"
+          ]
+        },
+        {
+          "ask": "Which of these is NOT a characteristic inherited from your parents?",
+          "answer": "A scar from a fall",
+          "distractors": [
+            "Natural eye colour",
+            "Natural hair colour",
+            "Shape of earlobes"
+          ]
+        },
+        {
+          "ask": "Which is NOT an adaptation that helps a duck live on a pond?",
+          "answer": "Long sharp talons",
+          "distractors": [
+            "Webbed feet",
+            "Waterproof feathers",
+            "Flat wide bill"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sixth-light-true-or-false",
+      "title": "Light Line Check",
+      "station": "true-false",
+      "prop": "prism",
+      "skillName": "Explaining how we see objects and why shadows form",
+      "strand": "light",
+      "statutoryRequirement": "Pupils should be taught to recognise that light appears to travel in straight lines; use the idea that light travels in straight lines to explain that objects are seen because they give out or reflect light into the eye; explain that we see things because light travels from light sources to our eyes or from light sources to objects and then to our eyes; use the idea that light travels in straight lines to explain why shadows have the same shape as the objects that cast them",
+      "instruction": "Tap True or False for each statement about light.",
+      "hint": "Remember that light travels in straight lines, and we only see things when light enters our eyes.",
+      "questions": [
+        {
+          "ask": "Light travels in straight lines.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "We see objects because light travels out of our eyes and onto them.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "We can see a book because light from a source reflects off it into our eyes.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A shadow has the same shape as the object that casts it.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "A mirror is a light source because it makes its own light.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "In a room with no light at all, you could still see a red ball.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "The Moon is a light source.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A periscope uses mirrors to reflect light into your eye.",
+          "answer": "True",
+          "distractors": ["False"]
+        }
+      ]
+    },
+    {
+      "id": "sixth-circulatory-system",
+      "title": "Heart and Blood",
+      "station": "fill-gap",
+      "prop": "heart",
+      "skillName": "Naming parts of the circulatory system and their jobs",
+      "strand": "animals-including-humans",
+      "statutoryRequirement": "Pupils should be taught to identify and name the main parts of the human circulatory system, and describe the functions of the heart, blood vessels and blood; describe the ways in which nutrients and water are transported within animals, including humans",
+      "instruction": "Tap the word that fills the gap.",
+      "hint": "Think about the job each part of the circulatory system does, then try again.",
+      "questions": [
+        {
+          "ask": "The ___ pumps blood all around the body.",
+          "answer": "Heart",
+          "distractors": ["Lungs", "Stomach", "Brain"]
+        },
+        {
+          "ask": "Blood vessels that carry blood away from the heart are called ___.",
+          "answer": "Arteries",
+          "distractors": ["Veins", "Nerves", "Tendons"]
+        },
+        {
+          "ask": "Blood vessels that carry blood back to the heart are called ___.",
+          "answer": "Veins",
+          "distractors": ["Arteries", "Nerves", "Tendons"]
+        },
+        {
+          "ask": "Tiny blood vessels with very thin walls are called ___.",
+          "answer": "Capillaries",
+          "distractors": ["Arteries", "Veins", "Nerves"]
+        },
+        {
+          "ask": "Blood picks up oxygen as it passes through the ___.",
+          "answer": "Lungs",
+          "distractors": ["Stomach", "Kidneys", "Bladder"]
+        },
+        {
+          "ask": "Nutrients from digested food pass into the blood through the walls of the small ___.",
+          "answer": "Intestine",
+          "distractors": ["Heart", "Lungs", "Bladder"]
+        },
+        {
+          "ask": "Blood carries water, nutrients and ___ to every cell in the body.",
+          "answer": "Oxygen",
+          "distractors": ["Bones", "Saliva", "Urine"]
+        },
+        {
+          "ask": "The heart is a strong organ made mostly of ___.",
+          "answer": "Muscle",
+          "distractors": ["Bone", "Fat", "Cartilage"]
+        }
+      ]
+    },
+    {
+      "id": "sixth-changes-over-time",
+      "title": "Changes Over Time",
+      "station": "sequence",
+      "prop": "fossil",
+      "skillName": "Ordering how fossils form and how species change",
+      "strand": "evolution-and-inheritance",
+      "statutoryRequirement": "Pupils should be taught to recognise that living things have changed over time and that fossils provide information about living things that inhabited the Earth millions of years ago",
+      "instruction": "Tap what comes next in the sequence.",
+      "hint": "Think about the order things happen over thousands or millions of years, then try again.",
+      "questions": [
+        {
+          "ask": "Animal dies → Body sinks to the seabed → Soft parts rot away → ?",
+          "answer": "Covered by sediment",
+          "distractors": [
+            "Fossil is dug up",
+            "Animal is born",
+            "Rock wears away"
+          ]
+        },
+        {
+          "ask": "Bones covered by sediment → More layers build up on top → ?",
+          "answer": "Layers become rock",
+          "distractors": ["Animal dies", "Fossil is found", "Body sinks"]
+        },
+        {
+          "ask": "Bones buried in rock → Minerals replace the bones → Rock above is worn away → ?",
+          "answer": "Fossil is exposed",
+          "distractors": ["Animal dies", "Soft parts rot", "Bones sink"]
+        },
+        {
+          "ask": "Leaf falls into mud → Mud covers the leaf → Mud slowly hardens → ?",
+          "answer": "Leaf print in rock",
+          "distractors": [
+            "Leaf grows again",
+            "Mud turns to water",
+            "Leaf turns green"
+          ]
+        },
+        {
+          "ask": "Dinosaur walks in soft mud → Footprint dries hard → Sand fills the print → ?",
+          "answer": "Layers turn to rock",
+          "distractors": [
+            "Dinosaur hatches",
+            "Mud turns to sand",
+            "Sand turns to mud"
+          ]
+        },
+        {
+          "ask": "Giraffes with longer necks reach more food → They survive and breed → Young inherit long necks → ?",
+          "answer": "Long necks common",
+          "distractors": [
+            "All giraffes die",
+            "Necks get shorter",
+            "Giraffes stop eating"
+          ]
+        },
+        {
+          "ask": "Soot darkens tree bark → Birds spot pale moths easily → More dark moths survive → ?",
+          "answer": "Most moths are dark",
+          "distractors": [
+            "Most moths are pale",
+            "Birds stop eating",
+            "Bark turns pale"
+          ]
+        },
+        {
+          "ask": "Island seeds get harder → Finches with strong beaks eat more → They have more chicks → ?",
+          "answer": "More strong beaks",
+          "distractors": [
+            "Beaks get weaker",
+            "Finches stop eating",
+            "Seeds get softer"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sixth-circuit-symbols",
+      "title": "Symbol Sleuth",
+      "station": "mystery",
+      "prop": "battery",
+      "skillName": "Recognising the symbols used in circuit diagrams",
+      "strand": "electricity",
+      "statutoryRequirement": "Pupils should be taught to use recognised symbols when representing a simple circuit in a diagram",
+      "instruction": "Read the clues and tap the circuit part they describe.",
+      "hint": "Picture each circuit symbol in your head and match it to the clues.",
+      "questions": [
+        {
+          "ask": "My symbol is a circle with a cross inside. I light up when current flows. What am I?",
+          "answer": "Bulb",
+          "distractors": ["Buzzer", "Motor", "Cell"]
+        },
+        {
+          "ask": "My symbol is a long thin line beside a short thick line. I push the current. What am I?",
+          "answer": "Cell",
+          "distractors": ["Bulb", "Switch", "Wire"]
+        },
+        {
+          "ask": "My symbol shows a hinged line lifted away from a gap. The circuit is broken. What am I?",
+          "answer": "Open switch",
+          "distractors": ["Closed switch", "Cell", "Bulb"]
+        },
+        {
+          "ask": "My symbol shows a hinged line touching across the gap. The circuit is complete. What am I?",
+          "answer": "Closed switch",
+          "distractors": ["Open switch", "Cell", "Wire"]
+        },
+        {
+          "ask": "My symbol is a circle with the letter M inside. I make things spin. What am I?",
+          "answer": "Motor",
+          "distractors": ["Bulb", "Buzzer", "Cell"]
+        },
+        {
+          "ask": "My symbol is a plain straight line. I join components so current can flow. What am I?",
+          "answer": "Wire",
+          "distractors": ["Cell", "Buzzer", "Bulb"]
+        },
+        {
+          "ask": "My symbol is two or more cells joined together. I give a bigger voltage. What am I?",
+          "answer": "Battery",
+          "distractors": ["Bulb", "Motor", "Buzzer"]
+        },
+        {
+          "ask": "My symbol looks like a dome with two legs. I make a noise when current flows. What am I?",
+          "answer": "Buzzer",
+          "distractors": ["Bulb", "Motor", "Cell"]
+        }
+      ]
+    },
+    {
+      "id": "sixth-circuit-predictions",
+      "title": "Circuit Predictor",
+      "station": "predict",
+      "prop": "bulb",
+      "skillName": "Predicting how cells and switches change components",
+      "strand": "electricity",
+      "statutoryRequirement": "Pupils should be taught to associate the brightness of a lamp or the volume of a buzzer with the number and voltage of cells used in the circuit; compare and give reasons for variations in how components function, including the brightness of bulbs, the loudness of buzzers and the on/off position of switches",
+      "instruction": "Tap what you think will happen to the circuit.",
+      "hint": "Think about how the voltage, the number of cells and the switch change the current, then try again.",
+      "questions": [
+        {
+          "ask": "What will happen if you add a second cell to a circuit with one cell and one bulb?",
+          "answer": "Bulb gets brighter",
+          "distractors": [
+            "Bulb gets dimmer",
+            "Bulb goes out",
+            "Nothing changes"
+          ]
+        },
+        {
+          "ask": "What will happen if you add a second bulb in the same loop as the first, with one cell?",
+          "answer": "Bulbs glow dimmer",
+          "distractors": [
+            "Bulbs glow brighter",
+            "Only one bulb lights",
+            "Nothing changes"
+          ]
+        },
+        {
+          "ask": "What will happen if you open the switch in a working circuit with a buzzer?",
+          "answer": "Buzzer stops",
+          "distractors": [
+            "Buzzer gets louder",
+            "Buzzer gets quieter",
+            "Nothing changes"
+          ]
+        },
+        {
+          "ask": "What happens when you swap a 1.5 V cell for a 3 V battery in a buzzer circuit?",
+          "answer": "Buzzer gets louder",
+          "distractors": [
+            "Buzzer gets quieter",
+            "Buzzer stops",
+            "Nothing changes"
+          ]
+        },
+        {
+          "ask": "What happens when you use two cells instead of three in a bulb circuit?",
+          "answer": "Bulb gets dimmer",
+          "distractors": [
+            "Bulb gets brighter",
+            "Bulb goes out",
+            "Nothing changes"
+          ]
+        },
+        {
+          "ask": "What will happen if you turn the cell round in a circuit with one bulb?",
+          "answer": "Bulb still lights",
+          "distractors": [
+            "Bulb goes out",
+            "Bulb gets brighter",
+            "Bulb gets dimmer"
+          ]
+        },
+        {
+          "ask": "What will happen if one wire comes loose from the cell in a bulb circuit?",
+          "answer": "Bulb goes out",
+          "distractors": [
+            "Bulb gets brighter",
+            "Bulb gets dimmer",
+            "Bulb stays the same"
+          ]
+        },
+        {
+          "ask": "What happens when you close the switch in a circuit with a cell and a motor?",
+          "answer": "Motor starts to spin",
+          "distractors": [
+            "Motor stops",
+            "Motor spins slower",
+            "Nothing happens"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sixth-evolution-words",
+      "title": "Evolution Words",
+      "station": "vocabulary",
+      "prop": "dna",
+      "skillName": "Using the vocabulary of evolution and inheritance",
+      "strand": "evolution-and-inheritance",
+      "statutoryRequirement": "Pupils should be taught to recognise that living things produce offspring of the same kind, but normally offspring vary and are not identical to their parents; identify how animals and plants are adapted to suit their environment in different ways and that adaptation may lead to evolution",
+      "instruction": "Tap the science word that matches the meaning.",
+      "hint": "Read the meaning carefully and think about which science word describes it best.",
+      "questions": [
+        {
+          "ask": "The young produced by a living thing",
+          "answer": "Offspring",
+          "distractors": ["Fossil", "Variation", "Adaptation"]
+        },
+        {
+          "ask": "Differences between living things of the same kind",
+          "answer": "Variation",
+          "distractors": ["Evolution", "Inheritance", "Extinction"]
+        },
+        {
+          "ask": "Characteristics being passed on from parents to their offspring",
+          "answer": "Inheritance",
+          "distractors": ["Variation", "Extinction", "Fossil"]
+        },
+        {
+          "ask": "A feature that helps a living thing survive in its environment",
+          "answer": "Adaptation",
+          "distractors": ["Inheritance", "Extinction", "Fossil"]
+        },
+        {
+          "ask": "The slow change in living things over many, many generations",
+          "answer": "Evolution",
+          "distractors": ["Extinction", "Inheritance", "Offspring"]
+        },
+        {
+          "ask": "The preserved remains or traces of a living thing from long ago, found in rock",
+          "answer": "Fossil",
+          "distractors": ["Offspring", "Habitat", "Variation"]
+        },
+        {
+          "ask": "When every member of a species has died out",
+          "answer": "Extinction",
+          "distractors": ["Evolution", "Variation", "Adaptation"]
+        },
+        {
+          "ask": "The process where the best-suited living things survive and breed",
+          "answer": "Natural selection",
+          "distractors": ["Inheritance", "Extinction", "Variation"]
+        }
+      ]
+    },
+    {
+      "id": "sixth-healthy-body-choices",
+      "title": "Healthy Choices",
+      "station": "compare",
+      "prop": "heart",
+      "skillName": "Comparing how diet, exercise and drugs affect the body",
+      "strand": "animals-including-humans",
+      "statutoryRequirement": "Pupils should be taught to recognise the impact of diet, exercise, drugs and lifestyle on the way their bodies function",
+      "instruction": "Tap the best answer to each question.",
+      "hint": "Think about what each choice does to your heart, lungs and body, then try again.",
+      "questions": [
+        {
+          "ask": "Which activity makes your heart beat the fastest?",
+          "answer": "Sprinting",
+          "distractors": ["Walking", "Sitting", "Sleeping"]
+        },
+        {
+          "ask": "Which drink is the healthiest choice for quenching thirst every day?",
+          "answer": "Water",
+          "distractors": ["Cola", "Energy drink", "Milkshake"]
+        },
+        {
+          "ask": "Which of these contains the most sugar?",
+          "answer": "Can of cola",
+          "distractors": ["An apple", "Carrot sticks", "Boiled egg"]
+        },
+        {
+          "ask": "Which is the most harmful to the heart and lungs?",
+          "answer": "Smoking",
+          "distractors": ["Swimming", "Cycling", "Drinking water"]
+        },
+        {
+          "ask": "Which food is the best source of protein for growth and repair?",
+          "answer": "Chicken",
+          "distractors": ["Crisps", "Apple", "Butter"]
+        },
+        {
+          "ask": "Which habit would best help a child's body rest, recover and grow?",
+          "answer": "Ten hours of sleep",
+          "distractors": [
+            "Late night gaming",
+            "Skipping breakfast",
+            "Lots of sweets"
+          ]
+        },
+        {
+          "ask": "Whose heart is likely to beat the slowest when resting?",
+          "answer": "A fit athlete",
+          "distractors": [
+            "An unfit smoker",
+            "A newborn baby",
+            "An inactive adult"
+          ]
+        },
+        {
+          "ask": "Which drink is most likely to damage the liver if drunk often?",
+          "answer": "Alcohol",
+          "distractors": ["Water", "Milk", "Orange juice"]
+        }
+      ]
+    },
+    {
+      "id": "sixth-shadow-investigation",
+      "title": "Shadow Lab",
+      "station": "investigate",
+      "prop": "sun",
+      "skillName": "Planning a fair test and measuring shadows accurately",
+      "strand": "working-scientifically",
+      "statutoryRequirement": "Pupils should be taught to plan different types of scientific enquiries, including recognising and controlling variables; take measurements with increasing accuracy and precision, taking repeat readings; record results using tables and line graphs; and report conclusions",
+      "instruction": "Tap the best way to investigate shadows like a scientist.",
+      "hint": "Think about fair tests, the right equipment and changing only one thing at a time.",
+      "questions": [
+        {
+          "ask": "Which would you use to measure the length of a shadow?",
+          "answer": "Ruler",
+          "distractors": ["Thermometer", "Stopwatch", "Measuring jug"]
+        },
+        {
+          "ask": "You test how the torch's distance affects shadow size. What do you change?",
+          "answer": "Torch distance",
+          "distractors": ["The object", "Screen position", "Torch brightness"]
+        },
+        {
+          "ask": "In that test, what should you keep the same to make it fair?",
+          "answer": "The object used",
+          "distractors": ["Torch distance", "The shadow size", "Nothing at all"]
+        },
+        {
+          "ask": "Which is the best way to record shadow lengths at different torch distances?",
+          "answer": "A results table",
+          "distractors": ["A tally chart", "A Venn diagram", "A food chain"]
+        },
+        {
+          "ask": "Which graph best shows how shadow length changes as the torch moves away?",
+          "answer": "Line graph",
+          "distractors": ["Pie chart", "Venn diagram", "Pictogram"]
+        },
+        {
+          "ask": "Why should you measure each shadow three times?",
+          "answer": "For reliable results",
+          "distractors": [
+            "To use more paper",
+            "To change the torch",
+            "To darken shadows"
+          ]
+        },
+        {
+          "ask": "After testing you write: the closer the torch, the bigger the shadow. What is this?",
+          "answer": "A conclusion",
+          "distractors": ["A prediction", "A method", "An equipment list"]
+        },
+        {
+          "ask": "Shadow readings were 10 cm, 11 cm, 12 cm and 30 cm. Which looks like an error?",
+          "answer": "Thirty centimetres",
+          "distractors": [
+            "Ten centimetres",
+            "Eleven centimetres",
+            "Twelve centimetres"
+          ]
+        }
+      ]
+    }
+  ]
+}

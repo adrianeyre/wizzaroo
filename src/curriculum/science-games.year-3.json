@@ -1,0 +1,559 @@
+{
+  "yearGroup": 3,
+  "games": [
+    {
+      "id": "third-plant-part-jobs",
+      "title": "Plant Part Jobs",
+      "station": "sort",
+      "prop": "seedling",
+      "skillName": "Matching plant parts to their jobs",
+      "strand": "plants",
+      "statutoryRequirement": "Pupils should be taught to identify and describe the functions of different parts of flowering plants: roots, stem/trunk, leaves and flowers, and investigate the way in which water is transported within plants",
+      "instruction": "Tap the plant part that does each job.",
+      "hint": "Not quite. Think about where that part is on the plant and what it touches, then try again.",
+      "questions": [
+        {
+          "ask": "Takes in water from the soil",
+          "answer": "Roots",
+          "distractors": ["Stem", "Leaves", "Flowers"]
+        },
+        {
+          "ask": "Holds the plant firmly in the ground",
+          "answer": "Roots",
+          "distractors": ["Stem", "Leaves", "Flowers"]
+        },
+        {
+          "ask": "Carries water up from the roots to the rest of the plant",
+          "answer": "Stem",
+          "distractors": ["Roots", "Leaves", "Flowers"]
+        },
+        {
+          "ask": "Holds the leaves and flowers up towards the light",
+          "answer": "Stem",
+          "distractors": ["Roots", "Leaves", "Flowers"]
+        },
+        {
+          "ask": "Uses sunlight to make food for the plant",
+          "answer": "Leaves",
+          "distractors": ["Roots", "Stem", "Flowers"]
+        },
+        {
+          "ask": "Wide and flat to catch as much light as possible",
+          "answer": "Leaves",
+          "distractors": ["Roots", "Stem", "Flowers"]
+        },
+        {
+          "ask": "Bright and scented to attract insects",
+          "answer": "Flowers",
+          "distractors": ["Roots", "Stem", "Leaves"]
+        },
+        {
+          "ask": "The part where seeds are made",
+          "answer": "Flowers",
+          "distractors": ["Roots", "Stem", "Leaves"]
+        }
+      ]
+    },
+    {
+      "id": "third-magnet-match",
+      "title": "Magnet Match",
+      "station": "odd-one-out",
+      "prop": "magnet",
+      "skillName": "Grouping magnetic and non-magnetic materials",
+      "strand": "forces-and-magnets",
+      "statutoryRequirement": "Pupils should be taught to compare and group together a variety of everyday materials on the basis of whether they are attracted to a magnet, and identify some magnetic materials; notice that some forces need contact between two objects, but magnetic forces can act at a distance",
+      "instruction": "Tap the odd one out.",
+      "hint": "Not quite. Think about which materials a magnet pulls towards it, then try again.",
+      "questions": [
+        {
+          "ask": "Which one is NOT attracted to a magnet?",
+          "answer": "Plastic ruler",
+          "distractors": ["Iron nail", "Steel paperclip", "Steel pin"]
+        },
+        {
+          "ask": "Which one IS attracted to a magnet?",
+          "answer": "Iron nail",
+          "distractors": ["Wooden spoon", "Glass marble", "Rubber band"]
+        },
+        {
+          "ask": "Which of these metals is NOT magnetic?",
+          "answer": "Copper",
+          "distractors": ["Iron", "Steel", "Nickel"]
+        },
+        {
+          "ask": "Which metal object will a magnet NOT pick up?",
+          "answer": "Aluminium can",
+          "distractors": ["Iron nail", "Steel paperclip", "Iron bolt"]
+        },
+        {
+          "ask": "Which force can act without touching the object?",
+          "answer": "Magnetic force",
+          "distractors": ["Push on a door", "Kicking a ball", "Friction"]
+        },
+        {
+          "ask": "Which one is NOT true about magnets?",
+          "answer": "Like poles attract",
+          "distractors": [
+            "Like poles repel",
+            "Unlike poles attract",
+            "Magnets have 2 poles"
+          ]
+        },
+        {
+          "ask": "Which surface would a fridge magnet NOT stick to?",
+          "answer": "Wooden door",
+          "distractors": ["Steel fridge", "Iron gate", "Steel cabinet"]
+        },
+        {
+          "ask": "Which is the only one a magnet will NOT attract?",
+          "answer": "Gold ring",
+          "distractors": ["Iron filings", "Steel pin", "Steel needle"]
+        }
+      ]
+    },
+    {
+      "id": "third-light-and-dark",
+      "title": "Light and Dark",
+      "station": "true-false",
+      "prop": "sun",
+      "skillName": "Knowing we need light to see and how shadows form",
+      "strand": "light",
+      "statutoryRequirement": "Pupils should be taught to recognise that they need light in order to see things and that dark is the absence of light; recognise that light from the sun can be dangerous; recognise that shadows are formed when the light from a light source is blocked by an opaque object",
+      "instruction": "Tap True or False for each sentence.",
+      "hint": "Not quite. Think about where light comes from and what happens when it is blocked.",
+      "questions": [
+        {
+          "ask": "We need light to be able to see things.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Dark is when there is no light.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "The Moon is a source of light.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A shadow forms when an opaque object blocks light.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "It is safe to look straight at the Sun if you squint.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Light can pass straight through an opaque object.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Your eyes can see things in a room with no light at all.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "A mirror reflects light.",
+          "answer": "True",
+          "distractors": ["False"]
+        }
+      ]
+    },
+    {
+      "id": "third-food-and-bones",
+      "title": "Food and Bones",
+      "station": "fill-gap",
+      "prop": "tooth",
+      "skillName": "Nutrition, skeletons and muscles in animals",
+      "strand": "animals-including-humans",
+      "statutoryRequirement": "Pupils should be taught to identify that animals, including humans, need the right types and amount of nutrition, and that they cannot make their own food; they get nutrition from what they eat; identify that humans and some other animals have skeletons and muscles for support, protection and movement",
+      "instruction": "Tap the word that fills the gap.",
+      "hint": "Not quite. Think about what food gives us and what bones and muscles do, then try again.",
+      "questions": [
+        {
+          "ask": "Animals cannot make their own ___, so they must eat.",
+          "answer": "Food",
+          "distractors": ["Bones", "Muscles", "Blood"]
+        },
+        {
+          "ask": "Your skull protects your ___.",
+          "answer": "Brain",
+          "distractors": ["Heart", "Lungs", "Stomach"]
+        },
+        {
+          "ask": "Your ribs protect your heart and ___.",
+          "answer": "Lungs",
+          "distractors": ["Brain", "Eyes", "Teeth"]
+        },
+        {
+          "ask": "Muscles ___ on bones to make them move.",
+          "answer": "Pull",
+          "distractors": ["Push", "Melt", "Grow"]
+        },
+        {
+          "ask": "Your skeleton holds your body up and gives it ___.",
+          "answer": "Support",
+          "distractors": ["Food", "Light", "Water"]
+        },
+        {
+          "ask": "Meat, fish and beans help our bodies grow and repair because they contain ___.",
+          "answer": "Protein",
+          "distractors": ["Sugar", "Salt", "Air"]
+        },
+        {
+          "ask": "A worm has no skeleton, so it uses ___ to move.",
+          "answer": "Muscles",
+          "distractors": ["Bones", "Shells", "Wings"]
+        },
+        {
+          "ask": "Eating the right ___ of each type of food helps keep us healthy.",
+          "answer": "Amount",
+          "distractors": ["Colour", "Shape", "Smell"]
+        }
+      ]
+    },
+    {
+      "id": "third-seed-to-flower",
+      "title": "Seed to Flower",
+      "station": "sequence",
+      "prop": "flower",
+      "skillName": "Ordering the life cycle of a flowering plant",
+      "strand": "plants",
+      "statutoryRequirement": "Pupils should be taught to explore the part that flowers play in the life cycle of flowering plants, including pollination, seed formation and seed dispersal",
+      "instruction": "Tap the step that comes next.",
+      "hint": "Not quite. Think about the life cycle: flowers, pollination, seeds, then spreading the seeds.",
+      "questions": [
+        {
+          "ask": "Seed → Germination → Seedling → ?",
+          "answer": "Adult plant",
+          "distractors": ["Seed dispersal", "Fruit grows", "Pollination"]
+        },
+        {
+          "ask": "Seedling → Adult plant → Flowers open → ?",
+          "answer": "Pollination",
+          "distractors": ["Germination", "Seed dispersal", "Seedling"]
+        },
+        {
+          "ask": "Flowers open → Pollination → ?",
+          "answer": "Seeds form",
+          "distractors": ["Germination", "Seed dispersal", "Seedling"]
+        },
+        {
+          "ask": "Bee visits flower → Pollen sticks to bee → Bee flies to another flower → ?",
+          "answer": "Pollination",
+          "distractors": ["Germination", "Seed dispersal", "Leaves grow"]
+        },
+        {
+          "ask": "Pollination → Seeds form → Fruit grows → ?",
+          "answer": "Seed dispersal",
+          "distractors": ["Pollination", "Flowers open", "Seedling"]
+        },
+        {
+          "ask": "Seeds form → Seed dispersal → Seed lands in soil → ?",
+          "answer": "Germination",
+          "distractors": ["Pollination", "Flowers open", "Fruit grows"]
+        },
+        {
+          "ask": "Dandelion flower → Fluffy seed head → ?",
+          "answer": "Wind blows seeds",
+          "distractors": ["Flower reopens", "Pollen forms", "Roots grow up"]
+        },
+        {
+          "ask": "Bird eats berry → Bird flies far away → ?",
+          "answer": "Seed is dropped",
+          "distractors": ["Berry grows back", "Pollination", "Flower opens"]
+        }
+      ]
+    },
+    {
+      "id": "third-rock-detective",
+      "title": "Rock Detective",
+      "station": "mystery",
+      "prop": "rock",
+      "skillName": "Identifying rocks and soils from their properties",
+      "strand": "rocks",
+      "statutoryRequirement": "Pupils should be taught to compare and group together different kinds of rocks on the basis of their appearance and simple physical properties; recognise that soils are made from rocks and organic matter",
+      "instruction": "Read the clues and tap what I am.",
+      "hint": "Not quite. Look again at each clue about hardness, grains and what it is used for.",
+      "questions": [
+        {
+          "ask": "I am made of grains stuck together. I crumble when rubbed. Water soaks into me. What am I?",
+          "answer": "Sandstone",
+          "distractors": ["Granite", "Slate", "Marble"]
+        },
+        {
+          "ask": "I am hard with sparkly crystals. Water does not soak in. Kerbs are made of me. What am I?",
+          "answer": "Granite",
+          "distractors": ["Chalk", "Sandstone", "Soil"]
+        },
+        {
+          "ask": "I am soft and white. You can draw on a pavement with me. What am I?",
+          "answer": "Chalk",
+          "distractors": ["Granite", "Slate", "Marble"]
+        },
+        {
+          "ask": "I split into thin, flat sheets. I am used to make roof tiles. What am I?",
+          "answer": "Slate",
+          "distractors": ["Chalk", "Sandstone", "Granite"]
+        },
+        {
+          "ask": "I am tiny bits of rock mixed with rotted plants and animals. Plants grow in me. What am I?",
+          "answer": "Soil",
+          "distractors": ["Sand", "Chalk", "Granite"]
+        },
+        {
+          "ask": "I was once a living thing. Over millions of years I turned to rock. What am I?",
+          "answer": "Fossil",
+          "distractors": ["Crystal", "Pebble", "Soil"]
+        },
+        {
+          "ask": "I am the rotting remains of plants and animals found in soil. What am I?",
+          "answer": "Organic matter",
+          "distractors": ["Sand", "Gravel", "Clay"]
+        },
+        {
+          "ask": "I am a soil with very tiny bits. I am sticky when wet and hold lots of water. What am I?",
+          "answer": "Clay soil",
+          "distractors": ["Sandy soil", "Gravel", "Pebbles"]
+        }
+      ]
+    },
+    {
+      "id": "third-magnet-moves",
+      "title": "Magnet Moves",
+      "station": "predict",
+      "prop": "magnet",
+      "skillName": "Predicting how magnets and surfaces affect movement",
+      "strand": "forces-and-magnets",
+      "statutoryRequirement": "Pupils should be taught to compare how things move on different surfaces; describe magnets as having two poles; predict whether two magnets will attract or repel each other, depending on which poles are facing",
+      "instruction": "Tap what you think will happen.",
+      "hint": "Not quite. Think about which poles are facing, or how rough the surface is, then try again.",
+      "questions": [
+        {
+          "ask": "What will happen if you hold the north pole of a magnet near the south pole of another?",
+          "answer": "They attract",
+          "distractors": ["They repel", "Nothing happens", "They get hot"]
+        },
+        {
+          "ask": "What will happen if you push two north poles towards each other?",
+          "answer": "They repel",
+          "distractors": ["They attract", "Nothing happens", "They lose power"]
+        },
+        {
+          "ask": "What happens when you bring a magnet close to, but not touching, a steel paperclip?",
+          "answer": "It is pulled in",
+          "distractors": [
+            "It is pushed away",
+            "Nothing happens",
+            "It gets heavier"
+          ]
+        },
+        {
+          "ask": "What will happen if you hold a magnet next to a plastic cup?",
+          "answer": "Nothing happens",
+          "distractors": ["It is pulled in", "It is pushed away", "It breaks"]
+        },
+        {
+          "ask": "What will happen if you roll a toy car on carpet instead of a smooth floor?",
+          "answer": "It goes less far",
+          "distractors": ["It goes further", "It goes the same", "It speeds up"]
+        },
+        {
+          "ask": "What will happen if you slide a shoe across ice instead of grass?",
+          "answer": "It goes further",
+          "distractors": [
+            "It goes less far",
+            "It stops at once",
+            "It goes backwards"
+          ]
+        },
+        {
+          "ask": "What will happen if you put a sheet of paper between a magnet and a steel paperclip?",
+          "answer": "Still attracted",
+          "distractors": [
+            "Not attracted",
+            "It is pushed away",
+            "The paper sticks"
+          ]
+        },
+        {
+          "ask": "What will happen if you stop pushing a heavy box across a rough floor?",
+          "answer": "It stops",
+          "distractors": ["It speeds up", "It keeps going", "It floats up"]
+        }
+      ]
+    },
+    {
+      "id": "third-fossil-words",
+      "title": "Fossil Words",
+      "station": "vocabulary",
+      "prop": "fossil",
+      "skillName": "Using words about rocks, soils and fossils",
+      "strand": "rocks",
+      "statutoryRequirement": "Pupils should be taught to describe in simple terms how fossils are formed when things that have lived are trapped within rock; recognise that soils are made from rocks and organic matter",
+      "instruction": "Tap the word that matches the meaning.",
+      "hint": "Not quite. Read the meaning again and think about rocks, soil and fossils.",
+      "questions": [
+        {
+          "ask": "The remains or print of a living thing from long ago, kept in rock",
+          "answer": "Fossil",
+          "distractors": ["Crystal", "Soil", "Sediment"]
+        },
+        {
+          "ask": "Layers of sand, mud and tiny bits of rock that settle and build up",
+          "answer": "Sediment",
+          "distractors": ["Fossil", "Crystal", "Pollen"]
+        },
+        {
+          "ask": "Describes a rock that lets water soak into it",
+          "answer": "Permeable",
+          "distractors": ["Impermeable", "Magnetic", "Opaque"]
+        },
+        {
+          "ask": "Describes a rock that does not let water soak into it",
+          "answer": "Impermeable",
+          "distractors": ["Permeable", "Transparent", "Magnetic"]
+        },
+        {
+          "ask": "Bits of dead plants and animals that rot into the soil",
+          "answer": "Organic matter",
+          "distractors": ["Sediment", "Fossil", "Pollen"]
+        },
+        {
+          "ask": "A scientist who studies fossils",
+          "answer": "Palaeontologist",
+          "distractors": ["Botanist", "Astronaut", "Dentist"]
+        },
+        {
+          "ask": "The top layer of the ground, made of rock bits and organic matter",
+          "answer": "Soil",
+          "distractors": ["Fossil", "Crystal", "Pebble"]
+        },
+        {
+          "ask": "A natural solid material made of minerals, such as granite or chalk",
+          "answer": "Rock",
+          "distractors": ["Soil", "Fossil", "Plastic"]
+        }
+      ]
+    },
+    {
+      "id": "third-shiny-or-dull",
+      "title": "Shiny or Dull",
+      "station": "compare",
+      "prop": "moon",
+      "skillName": "Comparing reflections and the size of shadows",
+      "strand": "light",
+      "statutoryRequirement": "Pupils should be taught to notice that light is reflected from surfaces; recognise that light from the sun can be dangerous; find patterns in the way that the size of shadows change",
+      "instruction": "Tap the best answer to each question.",
+      "hint": "Not quite. Think about shiny and dull surfaces, and how close the object is to the light.",
+      "questions": [
+        {
+          "ask": "Which surface reflects light best?",
+          "answer": "Mirror",
+          "distractors": ["Black felt", "Wood", "Cardboard"]
+        },
+        {
+          "ask": "Which surface reflects the least light?",
+          "answer": "Black velvet",
+          "distractors": ["Mirror", "Kitchen foil", "White paper"]
+        },
+        {
+          "ask": "Which is best for a cyclist to wear so they are easy to see at night?",
+          "answer": "Reflective strip",
+          "distractors": ["Dark wool", "Black cotton", "Brown leather"]
+        },
+        {
+          "ask": "Which object will make the darkest shadow?",
+          "answer": "Wooden block",
+          "distractors": ["Clear glass", "Tissue paper", "Cling film"]
+        },
+        {
+          "ask": "Which material lets the most light through?",
+          "answer": "Clear glass",
+          "distractors": ["Tissue paper", "Cardboard", "Wood"]
+        },
+        {
+          "ask": "A torch shines on a toy. Where should the toy be to make the biggest shadow?",
+          "answer": "Close to the torch",
+          "distractors": [
+            "Far from the torch",
+            "Next to the wall",
+            "Behind the torch"
+          ]
+        },
+        {
+          "ask": "On a sunny day, when is your shadow the longest?",
+          "answer": "Early morning",
+          "distractors": ["Late morning", "Midday", "Early afternoon"]
+        },
+        {
+          "ask": "Which is the most dangerous to look straight at?",
+          "answer": "The Sun",
+          "distractors": ["A night light", "A glow stick", "A candle"]
+        }
+      ]
+    },
+    {
+      "id": "third-plant-growth-lab",
+      "title": "Plant Growth Lab",
+      "station": "investigate",
+      "prop": "magnifier",
+      "skillName": "Planning fair tests about plants and surfaces",
+      "strand": "working-scientifically",
+      "statutoryRequirement": "Pupils should be taught to explore the requirements of plants for life and growth (air, light, water, nutrients from soil, and room to grow), setting up simple practical enquiries, comparative and fair tests, and making accurate measurements using standard units",
+      "instruction": "Tap the best choice for each science test.",
+      "hint": "Not quite. Think about what you change, what you keep the same and what you measure.",
+      "questions": [
+        {
+          "ask": "Which would you use to measure how tall a bean plant grows?",
+          "answer": "Ruler",
+          "distractors": ["Thermometer", "Stopwatch", "Weighing scales"]
+        },
+        {
+          "ask": "To test if plants need light, what should be different for the two plants?",
+          "answer": "Amount of light",
+          "distractors": ["Amount of water", "Size of pot", "Type of soil"]
+        },
+        {
+          "ask": "In a fair test of how water affects plant growth, what must stay the same?",
+          "answer": "Amount of light",
+          "distractors": ["Amount of water", "Final height", "Number of leaves"]
+        },
+        {
+          "ask": "A plant kept in a dark cupboard turns yellow and weak. What can you conclude?",
+          "answer": "Plants need light",
+          "distractors": [
+            "Plants need dark",
+            "Plants need no water",
+            "Soil is not needed"
+          ]
+        },
+        {
+          "ask": "Which is the best way to record a plant's height each week?",
+          "answer": "A table",
+          "distractors": ["A guess", "A poem", "A story"]
+        },
+        {
+          "ask": "How could you see water moving up a celery stalk?",
+          "answer": "Coloured water",
+          "distractors": ["Hot water", "Ice", "Fizzy water"]
+        },
+        {
+          "ask": "Which would help you see the tiny root hairs on a seedling?",
+          "answer": "Magnifying glass",
+          "distractors": ["Ruler", "Thermometer", "Stopwatch"]
+        },
+        {
+          "ask": "Testing which surface lets a toy car go furthest, what must stay the same?",
+          "answer": "The ramp height",
+          "distractors": ["Surface material", "Distance it goes", "The result"]
+        }
+      ]
+    }
+  ]
+}

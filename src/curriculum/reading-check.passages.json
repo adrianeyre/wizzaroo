@@ -1,0 +1,682 @@
+[
+  {
+    "id": "the-storm-bell",
+    "title": "The Storm Bell",
+    "form": "fiction",
+    "text": "The wind had been rising all afternoon. By the time Ada finished her chores, it was hurling rain against the cottage windows like handfuls of gravel, and the sea beyond the harbour wall had turned the colour of wet slate.\n\nAda's grandmother sat by the stove, mending a net. \"Your grandad's boat should be home by now,\" she said, without looking up. Her fingers, which never usually paused, had stopped moving.\n\nAda pressed her face to the glass. Out past the rocks, where the waves were breaking in great white fans, she thought she saw a light. It flickered, vanished, and then flickered again.\n\n\"Gran, there's a boat out there. It's heading for the Teeth!\"\n\nThe Teeth were a row of jagged rocks at the mouth of the bay. Every child on the island knew the stories of the ships they had swallowed. In the old days, someone had always rung the storm bell on the cliff to warn sailors away, but nobody had climbed up to the bell tower for years.\n\nBefore her grandmother could stop her, Ada had pulled on her boots and was out of the door. The wind snatched her breath away. She bent almost double and scrambled up the cliff path, clinging to tufts of grass whenever her feet slipped on the mud.\n\nThe bell tower was little more than a stone hut with a rusty bell hanging from a beam. Ada grabbed the frayed rope and pulled with all her strength. Nothing happened. She pulled again, leaning back until she was almost sitting on the floor, and at last the bell gave a deep, groaning clang.\n\nAgain and again she rang it, until her arms burned and her palms were raw. Far below, the little light swung away from the rocks and began to creep slowly along the safe channel towards the harbour.\n\nWhen Ada finally staggered home, her grandad was standing in the kitchen, dripping seawater onto the floor. He didn't say a word. He simply wrapped her in a hug that smelt of salt and diesel, and held on for a very long time.",
+    "questions": [
+      {
+        "id": "what-gran-was-doing",
+        "questionType": "retrieval",
+        "skillId": "english.reading-retrieval",
+        "prompt": "What was Ada's grandmother doing at the start of the story? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "Cooking dinner",
+          "Mending a net",
+          "Reading a book",
+          "Ringing the bell"
+        ],
+        "answers": ["Mending a net"]
+      },
+      {
+        "id": "word-for-throwing-hard",
+        "questionType": "vocabulary",
+        "skillId": "english.reading-vocabulary",
+        "prompt": "Look at the first paragraph. Find and copy one word that shows the wind was throwing the rain hard.",
+        "answerShape": "words",
+        "choices": [],
+        "answers": ["hurling"]
+      },
+      {
+        "id": "why-gran-stopped",
+        "questionType": "inference",
+        "skillId": "english.reading-inference",
+        "prompt": "Why do you think Gran's fingers had stopped moving? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "She was tired.",
+          "She was worried about Grandad.",
+          "She had finished the net.",
+          "Her hands were cold."
+        ],
+        "answers": ["She was worried about Grandad."]
+      },
+      {
+        "id": "what-the-teeth-were",
+        "questionType": "retrieval",
+        "skillId": "english.reading-retrieval",
+        "prompt": "What were the Teeth? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "A cliff path",
+          "A group of fishing boats",
+          "A row of jagged rocks",
+          "An old bell tower"
+        ],
+        "answers": ["A row of jagged rocks"]
+      },
+      {
+        "id": "first-event",
+        "questionType": "sequencing",
+        "skillId": "english.reading-summarising-and-sequencing",
+        "prompt": "Which of these happened first? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "Ada climbed the cliff path.",
+          "The bell gave a deep clang.",
+          "Ada saw a light out past the rocks.",
+          "Grandad hugged Ada."
+        ],
+        "answers": ["Ada saw a light out past the rocks."]
+      },
+      {
+        "id": "little-more-than-a-hut",
+        "questionType": "vocabulary",
+        "skillId": "english.reading-vocabulary",
+        "prompt": "The bell tower was \"little more than a stone hut\". What does this tell you about the bell tower? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "It was very grand.",
+          "It was small and simple.",
+          "It had just been built.",
+          "It was made of wood."
+        ],
+        "answers": ["It was small and simple."]
+      },
+      {
+        "id": "pulls-before-the-clang",
+        "questionType": "retrieval",
+        "skillId": "english.reading-retrieval",
+        "prompt": "How many times did Ada pull the rope before the bell made a sound?",
+        "answerShape": "words",
+        "choices": [],
+        "answers": ["twice", "two", "2", "two times", "2 times"]
+      },
+      {
+        "id": "how-hard-ada-worked",
+        "questionType": "inference",
+        "skillId": "english.reading-inference",
+        "prompt": "Find and copy a group of words that shows how hard Ada worked to ring the bell.",
+        "answerShape": "words",
+        "choices": [],
+        "answers": [
+          "until her arms burned and her palms were raw",
+          "her arms burned and her palms were raw",
+          "until her arms burned",
+          "her arms burned",
+          "her palms were raw",
+          "pulled with all her strength",
+          "with all her strength",
+          "leaning back until she was almost sitting on the floor",
+          "again and again she rang it"
+        ]
+      },
+      {
+        "id": "why-the-light-turned",
+        "questionType": "inference",
+        "skillId": "english.reading-inference",
+        "prompt": "Why did the little light swing away from the rocks? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "The wind blew it out.",
+          "The tide went out.",
+          "Ada waved a torch.",
+          "The sailors heard the bell and changed course."
+        ],
+        "answers": ["The sailors heard the bell and changed course."]
+      },
+      {
+        "id": "who-was-in-the-boat",
+        "questionType": "inference",
+        "skillId": "english.reading-inference",
+        "prompt": "Who was in the boat that Ada saved?",
+        "answerShape": "words",
+        "choices": [],
+        "answers": [
+          "grandad",
+          "her grandad",
+          "ada's grandad",
+          "grandfather",
+          "her grandfather",
+          "ada's grandfather"
+        ]
+      },
+      {
+        "id": "snatched-means",
+        "questionType": "vocabulary",
+        "skillId": "english.reading-vocabulary",
+        "prompt": "\"The wind snatched her breath away.\" Which word is closest in meaning to snatched? Tick one.",
+        "answerShape": "choice",
+        "choices": ["gave", "grabbed", "blew", "calmed"],
+        "answers": ["grabbed"]
+      },
+      {
+        "id": "how-grandad-felt",
+        "questionType": "inference",
+        "skillId": "english.reading-inference",
+        "prompt": "How do you think Grandad felt at the end of the story? Tick one.",
+        "answerShape": "choice",
+        "choices": ["Angry", "Bored", "Confused", "Grateful"],
+        "answers": ["Grateful"]
+      },
+      {
+        "id": "sum-up-the-story",
+        "questionType": "summarising",
+        "skillId": "english.reading-summarising-and-sequencing",
+        "prompt": "Which sentence best sums up the story? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "A girl is scared of a storm and hides at home.",
+          "A girl bravely rings an old bell to guide a boat to safety.",
+          "A grandmother teaches a girl how to mend nets.",
+          "A fisherman gets lost at sea and is never found."
+        ],
+        "answers": [
+          "A girl bravely rings an old bell to guide a boat to safety."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hedgehogs-in-our-gardens",
+    "title": "Hedgehogs in Our Gardens",
+    "form": "non-fiction",
+    "text": "Hedgehogs are one of Britain's best-loved wild animals, yet many people have never seen one. That is because hedgehogs are nocturnal: they sleep during the day and come out at dusk to search for food.\n\nWhat do hedgehogs look like?\nAn adult hedgehog is about 25 centimetres long and is covered in around 5,000 to 7,000 spines. Each spine is a hollow, stiffened hair. When a hedgehog is frightened, it rolls into a tight ball, so that its soft face and belly are hidden and only the sharp spines point outwards.\n\nWhat do they eat?\nDespite their name, hedgehogs do not eat hedges! They are insectivores, which means that most of their diet is made up of insects and other small creatures. Beetles, caterpillars, earwigs and earthworms are among their favourite foods. A hungry hedgehog can travel up to two kilometres in a single night while it searches for a meal.\n\nHow do they survive the winter?\nWhen food becomes hard to find in late autumn, hedgehogs hibernate. They build a nest of dry leaves under a hedge, a shed or a pile of logs, and their body temperature drops dramatically so that they use very little energy. Most hedgehogs sleep from around November until March, although they may wake up and move to a new nest once or twice.\n\nWhy do hedgehogs need our help?\nSadly, the number of hedgehogs in the countryside has fallen sharply in recent years. Many of their old homes, such as hedgerows and rough grassland, have disappeared, and busy roads are a serious danger to them.\n\nHow can you help?\n• Make a \"hedgehog highway\" by cutting a hole about 13 centimetres square at the bottom of your garden fence, so that hedgehogs can travel between gardens.\n• Leave a corner of your garden wild, with long grass and a pile of leaves.\n• Put out a shallow dish of fresh water. Never give hedgehogs milk, because it can make them very ill.\n• Check bonfires and long grass carefully before you light or cut them.\n\nWith a little care, every garden can become a safe stop on a hedgehog's night-time journey.",
+    "questions": [
+      {
+        "id": "when-they-come-out",
+        "questionType": "retrieval",
+        "skillId": "english.reading-retrieval",
+        "prompt": "When do hedgehogs come out to look for food? Tick one.",
+        "answerShape": "choice",
+        "choices": ["At dawn", "At midday", "In the morning", "At dusk"],
+        "answers": ["At dusk"]
+      },
+      {
+        "id": "word-for-active-at-night",
+        "questionType": "vocabulary",
+        "skillId": "english.reading-vocabulary",
+        "prompt": "Look at the first paragraph. Find and copy one word that means active at night.",
+        "answerShape": "words",
+        "choices": [],
+        "answers": ["nocturnal"]
+      },
+      {
+        "id": "when-frightened",
+        "questionType": "retrieval",
+        "skillId": "english.reading-retrieval",
+        "prompt": "What does a hedgehog do when it is frightened? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "It runs up a tree.",
+          "It rolls into a tight ball.",
+          "It hides in a pond.",
+          "It makes a loud noise."
+        ],
+        "answers": ["It rolls into a tight ball."]
+      },
+      {
+        "id": "despite-their-name",
+        "questionType": "inference",
+        "skillId": "english.reading-inference",
+        "prompt": "Why does the writer say \"Despite their name, hedgehogs do not eat hedges!\"? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "To explain where hedges grow",
+          "To correct a mistake a reader might make",
+          "To show that hedgehogs are greedy",
+          "To describe a hedgehog's spines"
+        ],
+        "answers": ["To correct a mistake a reader might make"]
+      },
+      {
+        "id": "insectivores-means",
+        "questionType": "vocabulary",
+        "skillId": "english.reading-vocabulary",
+        "prompt": "The text says hedgehogs are insectivores. What does this mean? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "They mostly eat plants.",
+          "They only eat at night.",
+          "They mostly eat insects and other small creatures.",
+          "They eat hedges."
+        ],
+        "answers": ["They mostly eat insects and other small creatures."]
+      },
+      {
+        "id": "distance-in-a-night",
+        "questionType": "retrieval",
+        "skillId": "english.reading-retrieval",
+        "prompt": "How far can a hungry hedgehog travel in a single night?",
+        "answerShape": "words",
+        "choices": [],
+        "answers": [
+          "up to two kilometres",
+          "two kilometres",
+          "up to 2 kilometres",
+          "2 kilometres",
+          "2 km",
+          "up to 2 km",
+          "2km",
+          "two km"
+        ]
+      },
+      {
+        "id": "why-temperature-drops",
+        "questionType": "retrieval",
+        "skillId": "english.reading-retrieval",
+        "prompt": "Why does a hibernating hedgehog's body temperature drop? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "So that it can stay awake",
+          "So that it can find more food",
+          "So that its spines grow",
+          "So that it uses very little energy"
+        ],
+        "answers": ["So that it uses very little energy"]
+      },
+      {
+        "id": "not-milk",
+        "questionType": "retrieval",
+        "skillId": "english.reading-retrieval",
+        "prompt": "Which of these should you never give a hedgehog? Tick one.",
+        "answerShape": "choice",
+        "choices": ["Fresh water", "A pile of leaves", "Milk", "A wild corner"],
+        "answers": ["Milk"]
+      },
+      {
+        "id": "check-the-bonfire",
+        "questionType": "inference",
+        "skillId": "english.reading-inference",
+        "prompt": "Why is it important to check a bonfire before lighting it? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "A hedgehog may be sleeping inside it.",
+          "Bonfires need dry leaves to burn.",
+          "Hedgehogs like warm fires.",
+          "The wood might be wet."
+        ],
+        "answers": ["A hedgehog may be sleeping inside it."]
+      },
+      {
+        "id": "fallen-sharply",
+        "questionType": "vocabulary",
+        "skillId": "english.reading-vocabulary",
+        "prompt": "\"The number of hedgehogs in the countryside has fallen sharply.\" What does sharply mean here? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "With a pointed edge",
+          "Slowly and gently",
+          "Quickly and by a lot",
+          "Loudly"
+        ],
+        "answers": ["Quickly and by a lot"]
+      },
+      {
+        "id": "first-topic",
+        "questionType": "sequencing",
+        "skillId": "english.reading-summarising-and-sequencing",
+        "prompt": "Which of these topics comes first in the text? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "How you can help hedgehogs",
+          "What hedgehogs eat",
+          "What hedgehogs look like",
+          "How hedgehogs survive the winter"
+        ],
+        "answers": ["What hedgehogs look like"]
+      },
+      {
+        "id": "purpose-of-the-text",
+        "questionType": "summarising",
+        "skillId": "english.reading-summarising-and-sequencing",
+        "prompt": "What is the main purpose of this text? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "To tell a funny story about a hedgehog",
+          "To persuade people to keep a hedgehog as a pet",
+          "To tell readers about hedgehogs and how to help them",
+          "To explain how to build a garden shed"
+        ],
+        "answers": ["To tell readers about hedgehogs and how to help them"]
+      },
+      {
+        "id": "another-heading",
+        "questionType": "summarising",
+        "skillId": "english.reading-summarising-and-sequencing",
+        "prompt": "Which of these would be the best new heading for the section \"Why do hedgehogs need our help?\" Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "A hedgehog's dinner",
+          "A creature in trouble",
+          "Spines and more spines",
+          "Sleeping through winter"
+        ],
+        "answers": ["A creature in trouble"]
+      }
+    ]
+  },
+  {
+    "id": "the-night-train",
+    "title": "The Night Train",
+    "form": "poetry",
+    "text": "At ten o'clock the platform sighs,\nthe clock above it blinks its eyes,\nand out of darkness, long and low,\nthe night train rumbles, steady, slow.\n\nIts windows glow like rows of moons,\nits whistle hums forgotten tunes;\nit stops to breathe a cloud of steam,\nthen gathers up the town's last dream.\n\nA sleepy man with an umbrella,\na girl who hugs a shining cello,\na grandmother with knitting bag,\na puppy with a paper tag.\n\nThey climb aboard and find their seats,\nthey leave behind the empty streets,\nand as the doors slide shut, they hear\nthe guard's long whistle, sharp and clear.\n\nClickety-clack, the wheels begin,\nclickety-clack, the world spins in:\nthe sleeping fields, the silver mill,\nthe lonely farmhouse on the hill.\n\nThrough tunnels black as ink it flies,\npast rivers holding starry skies,\npast towns where every curtain's drawn\nand no one's thinking yet of dawn.\n\nThe puppy dreams of chasing hares,\nthe sleepy man forgets his cares,\nthe grandmother has dropped a stitch,\nthe cello hums at every switch.\n\nAnd when the eastern sky turns grey,\nthe night train slows and finds its way\nout of the miles of dark it crossed,\nand not a passenger is lost.\n\nIt sighs again, it settles down\nbeside some new, still-sleeping town,\nand every traveller steps out new,\nwith morning shining through and through.\n\nSo if you wake at ten o'clock\nand hear a rumble, hear a knock,\nthen close your eyes and count to three:\nthe night train waits for you and me.",
+    "questions": [
+      {
+        "id": "when-the-train-comes",
+        "questionType": "retrieval",
+        "skillId": "english.reading-retrieval",
+        "prompt": "At what time does the night train arrive at the platform? Tick one.",
+        "answerShape": "choice",
+        "choices": ["Nine o'clock", "Ten o'clock", "Midnight", "Dawn"],
+        "answers": ["Ten o'clock"]
+      },
+      {
+        "id": "rows-of-moons",
+        "questionType": "vocabulary",
+        "skillId": "english.reading-vocabulary",
+        "prompt": "\"Its windows glow like rows of moons\". What does this tell you about the windows? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "They are broken.",
+          "They shine brightly in the dark.",
+          "They are very dirty.",
+          "They are open."
+        ],
+        "answers": ["They shine brightly in the dark."]
+      },
+      {
+        "id": "missing-passenger",
+        "questionType": "retrieval",
+        "skillId": "english.reading-retrieval",
+        "prompt": "Which of these passengers is not in the poem? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "A puppy",
+          "A grandmother",
+          "A police officer",
+          "A girl with a cello"
+        ],
+        "answers": ["A police officer"]
+      },
+      {
+        "id": "empty-streets",
+        "questionType": "inference",
+        "skillId": "english.reading-inference",
+        "prompt": "Why do you think the streets are empty? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "There has been a storm.",
+          "Everyone in the town is on the train.",
+          "It is late at night and people are asleep.",
+          "The streets have been closed for repairs."
+        ],
+        "answers": ["It is late at night and people are asleep."]
+      },
+      {
+        "id": "sound-of-the-wheels",
+        "questionType": "vocabulary",
+        "skillId": "english.reading-vocabulary",
+        "prompt": "Look at the fifth verse. Find and copy the word that copies the sound of the wheels.",
+        "answerShape": "words",
+        "choices": [],
+        "answers": ["clickety-clack", "clickety clack"]
+      },
+      {
+        "id": "first-thing-passed",
+        "questionType": "sequencing",
+        "skillId": "english.reading-summarising-and-sequencing",
+        "prompt": "Which of these does the train pass first? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "Rivers holding starry skies",
+          "The sleeping fields",
+          "Towns where every curtain's drawn",
+          "Tunnels black as ink"
+        ],
+        "answers": ["The sleeping fields"]
+      },
+      {
+        "id": "black-as-ink",
+        "questionType": "vocabulary",
+        "skillId": "english.reading-vocabulary",
+        "prompt": "\"Through tunnels black as ink\". What does this tell you about the tunnels? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "They are wet.",
+          "They are very short.",
+          "They are very dark.",
+          "They are freshly painted."
+        ],
+        "answers": ["They are very dark."]
+      },
+      {
+        "id": "what-gran-dropped",
+        "questionType": "retrieval",
+        "skillId": "english.reading-retrieval",
+        "prompt": "What has the grandmother dropped?",
+        "answerShape": "words",
+        "choices": [],
+        "answers": ["a stitch", "stitch", "her stitch"]
+      },
+      {
+        "id": "train-seems-alive",
+        "questionType": "inference",
+        "skillId": "english.reading-inference",
+        "prompt": "How does the poet make the train seem alive? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "By giving its speed in miles per hour",
+          "By saying that it sighs and breathes",
+          "By telling us the driver's name",
+          "By listing every station"
+        ],
+        "answers": ["By saying that it sighs and breathes"]
+      },
+      {
+        "id": "last-event",
+        "questionType": "sequencing",
+        "skillId": "english.reading-summarising-and-sequencing",
+        "prompt": "Which of these happens last? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "The passengers climb aboard.",
+          "The guard blows a whistle.",
+          "The wheels begin to clack.",
+          "The eastern sky turns grey."
+        ],
+        "answers": ["The eastern sky turns grey."]
+      },
+      {
+        "id": "mood-at-the-end",
+        "questionType": "inference",
+        "skillId": "english.reading-inference",
+        "prompt": "What is the mood at the end of the journey? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "Frightened and gloomy",
+          "Angry and loud",
+          "Calm and hopeful",
+          "Sad and lonely"
+        ],
+        "answers": ["Calm and hopeful"]
+      },
+      {
+        "id": "sum-up-the-poem",
+        "questionType": "summarising",
+        "skillId": "english.reading-summarising-and-sequencing",
+        "prompt": "Which sentence best sums up the poem? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "A train breaks down inside a tunnel.",
+          "A puppy runs away from a railway station.",
+          "A grandmother knits a scarf on a long journey.",
+          "A train carries sleepy passengers safely through the night to a new town."
+        ],
+        "answers": [
+          "A train carries sleepy passengers safely through the night to a new town."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "the-journey-of-a-raindrop",
+    "title": "The Journey of a Raindrop",
+    "form": "non-fiction",
+    "text": "Have you ever wondered where rain comes from, or where a puddle goes when it disappears? The answer is the water cycle: a journey that the Earth's water has been making, over and over again, for billions of years. The water in your glass today may once have been drunk by a dinosaur!\n\nStep 1: Evaporation\nThe journey begins when the Sun warms the water in seas, lakes and rivers. As the water heats up, some of it turns into an invisible gas called water vapour. This process is called evaporation. Water vapour also rises from the leaves of plants, and even from wet washing hanging on a line.\n\nStep 2: Condensation\nAs the water vapour rises, it cools down. High in the sky the air is much colder, and the vapour turns back into tiny droplets of liquid water. This is called condensation. Billions of these droplets gather together to form clouds. You can see condensation at home, too: just look at the misty droplets that appear on a cold bathroom mirror after a hot shower.\n\nStep 3: Precipitation\nInside a cloud, the droplets bump into each other and join together. Gradually they grow larger and heavier, until the air can no longer hold them up and they fall back to the ground. Any water that falls from the sky is called precipitation. It is often rain, but if the air is cold enough, it can also be sleet, hail or snow.\n\nStep 4: Collection\nWhen precipitation reaches the ground, it collects in rivers, lakes, oceans and underground. Some of it soaks into the soil, where it is taken up by the roots of plants. Much of it flows downhill in streams and rivers until it reaches the sea. There, the Sun warms it once more, and the whole cycle begins again.\n\nThe water cycle never stops. It moves water around our planet, fills our rivers and reservoirs, and keeps every living thing supplied with the water it needs to survive.",
+    "questions": [
+      {
+        "id": "what-warms-the-water",
+        "questionType": "retrieval",
+        "skillId": "english.reading-retrieval",
+        "prompt": "What warms the water at the start of the water cycle? Tick one.",
+        "answerShape": "choice",
+        "choices": ["The Moon", "The wind", "The Sun", "The clouds"],
+        "answers": ["The Sun"]
+      },
+      {
+        "id": "why-a-dinosaur",
+        "questionType": "inference",
+        "skillId": "english.reading-inference",
+        "prompt": "Why does the writer mention a dinosaur in the first paragraph? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "To explain how dinosaurs died out",
+          "To show that the water cycle has been going on for a very long time",
+          "To show that dinosaurs were very thirsty",
+          "To start a story about dinosaurs"
+        ],
+        "answers": [
+          "To show that the water cycle has been going on for a very long time"
+        ]
+      },
+      {
+        "id": "name-of-the-gas",
+        "questionType": "vocabulary",
+        "skillId": "english.reading-vocabulary",
+        "prompt": "Find and copy the name of the invisible gas that water turns into when it is heated.",
+        "answerShape": "words",
+        "choices": [],
+        "answers": ["water vapour", "vapour"]
+      },
+      {
+        "id": "other-sources-of-vapour",
+        "questionType": "retrieval",
+        "skillId": "english.reading-retrieval",
+        "prompt": "Apart from seas, lakes and rivers, name one thing that water vapour rises from.",
+        "answerShape": "words",
+        "choices": [],
+        "answers": [
+          "leaves",
+          "plants",
+          "the leaves of plants",
+          "leaves of plants",
+          "wet washing",
+          "washing",
+          "wet washing hanging on a line",
+          "washing on a line"
+        ]
+      },
+      {
+        "id": "what-droplets-form",
+        "questionType": "retrieval",
+        "skillId": "english.reading-retrieval",
+        "prompt": "What do billions of droplets form when they gather together? Tick one.",
+        "answerShape": "choice",
+        "choices": ["Rivers", "Puddles", "Snowflakes", "Clouds"],
+        "answers": ["Clouds"]
+      },
+      {
+        "id": "why-the-mirror",
+        "questionType": "inference",
+        "skillId": "english.reading-inference",
+        "prompt": "Why does the writer describe a bathroom mirror? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "To give an everyday example of condensation",
+          "To explain how to clean a mirror",
+          "To show that showers waste water",
+          "To describe how plants give off water"
+        ],
+        "answers": ["To give an everyday example of condensation"]
+      },
+      {
+        "id": "after-condensation",
+        "questionType": "sequencing",
+        "skillId": "english.reading-summarising-and-sequencing",
+        "prompt": "Which step comes straight after condensation? Tick one.",
+        "answerShape": "choice",
+        "choices": ["Evaporation", "Collection", "Precipitation", "Melting"],
+        "answers": ["Precipitation"]
+      },
+      {
+        "id": "why-droplets-fall",
+        "questionType": "retrieval",
+        "skillId": "english.reading-retrieval",
+        "prompt": "Why do the droplets fall out of the cloud? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "The cloud gets too hot.",
+          "They become too heavy for the air to hold up.",
+          "The wind pushes them down.",
+          "The Sun pulls them down."
+        ],
+        "answers": ["They become too heavy for the air to hold up."]
+      },
+      {
+        "id": "not-precipitation",
+        "questionType": "vocabulary",
+        "skillId": "english.reading-vocabulary",
+        "prompt": "Which of these is not a kind of precipitation? Tick one.",
+        "answerShape": "choice",
+        "choices": ["Rain", "Hail", "Steam", "Snow"],
+        "answers": ["Steam"]
+      },
+      {
+        "id": "order-of-the-steps",
+        "questionType": "sequencing",
+        "skillId": "english.reading-summarising-and-sequencing",
+        "prompt": "Which shows the steps of the water cycle in the right order? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "Condensation, evaporation, collection, precipitation",
+          "Evaporation, condensation, precipitation, collection",
+          "Precipitation, collection, condensation, evaporation",
+          "Collection, precipitation, evaporation, condensation"
+        ],
+        "answers": ["Evaporation, condensation, precipitation, collection"]
+      },
+      {
+        "id": "reservoir-means",
+        "questionType": "vocabulary",
+        "skillId": "english.reading-vocabulary",
+        "prompt": "Look at the last paragraph. What is a reservoir? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "A kind of cloud",
+          "A large store of water",
+          "A type of plant",
+          "A misty mirror"
+        ],
+        "answers": ["A large store of water"]
+      },
+      {
+        "id": "sum-up-the-text",
+        "questionType": "summarising",
+        "skillId": "english.reading-summarising-and-sequencing",
+        "prompt": "Which sentence best sums up the text? Tick one.",
+        "answerShape": "choice",
+        "choices": [
+          "Rain only falls in the winter.",
+          "Clouds are made of tiny pieces of ice and dust.",
+          "Water moves round and round between the sea, the sky and the land.",
+          "Dinosaurs drank most of the water on Earth."
+        ],
+        "answers": [
+          "Water moves round and round between the sea, the sky and the land."
+        ]
+      }
+    ]
+  }
+]

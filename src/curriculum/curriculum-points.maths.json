@@ -1,0 +1,447 @@
+{
+  "subject": "maths",
+  "programme": "year",
+  "programmeOfStudyUrl": "https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study",
+  "years": [
+    {
+      "yearGroup": 1,
+      "points": [
+        {
+          "id": "number-and-place-value",
+          "heading": "Number and place value",
+          "summary": "Count to and across 100, count objects, find one more and one less, and count in 2s, 5s and 10s.",
+          "skillIds": [
+            "maths.count-objects-to-20",
+            "maths.one-more-one-less",
+            "maths.count-in-steps",
+            "maths.number-word-wizard",
+            "maths.most-or-least-match",
+            "maths.hop-past-hundred"
+          ]
+        },
+        {
+          "id": "addition-and-subtraction",
+          "heading": "Addition and subtraction",
+          "summary": "Know number bonds within 20, and add and subtract one-digit and two-digit numbers to 20, including zero.",
+          "skillIds": [
+            "maths.number-bonds-10",
+            "maths.add-within-20",
+            "maths.subtract-within-20"
+          ]
+        },
+        {
+          "id": "multiplication-and-division",
+          "heading": "Multiplication and division",
+          "summary": "Solve one-step multiplication and division problems with objects, pictures and arrays.",
+          "skillIds": ["maths.multiply-and-divide-with-objects"]
+        },
+        {
+          "id": "fractions",
+          "heading": "Fractions",
+          "summary": "Recognise, find and name a half and a quarter of an object, shape or quantity.",
+          "skillIds": ["maths.halves-and-quarters"]
+        },
+        {
+          "id": "measurement",
+          "heading": "Measurement",
+          "summary": "Compare, describe and measure lengths and heights, and tell the time to the hour and half past.",
+          "skillIds": [
+            "maths.compare-heights",
+            "maths.tell-the-time",
+            "maths.heavy-full-quick",
+            "maths.coin-and-note-counter",
+            "maths.days-and-months-order"
+          ]
+        },
+        {
+          "id": "properties-of-shapes",
+          "heading": "Geometry: properties of shapes",
+          "summary": "Recognise and name common 2-D and 3-D shapes.",
+          "skillIds": ["maths.name-3d-shapes", "maths.flat-shape-spotter"]
+        },
+        {
+          "id": "position-and-direction",
+          "heading": "Geometry: position and direction",
+          "summary": "Describe position, direction and movement, including whole, half, quarter and three-quarter turns.",
+          "skillIds": ["maths.position-and-turns"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 2,
+      "points": [
+        {
+          "id": "number-and-place-value",
+          "heading": "Number and place value",
+          "summary": "Count in steps of 2, 3, 5 and 10, and know the place value of each digit in a two-digit number.",
+          "skillIds": [
+            "maths.tens-and-ones",
+            "maths.ten-more-ten-less",
+            "maths.count-in-threes-and-tens",
+            "maths.hundred-word-match"
+          ]
+        },
+        {
+          "id": "addition-and-subtraction",
+          "heading": "Addition and subtraction",
+          "summary": "Recall facts to 20 fluently, and add and subtract two-digit numbers and ones.",
+          "skillIds": [
+            "maths.add-subtract-facts-to-20",
+            "maths.add-two-digit",
+            "maths.subtract-two-digit",
+            "maths.triple-dice-total"
+          ]
+        },
+        {
+          "id": "multiplication-and-division",
+          "heading": "Multiplication and division",
+          "summary": "Recall and use multiplication and division facts for the 2, 5 and 10 times tables.",
+          "skillIds": ["maths.times-tables-2-5-10"]
+        },
+        {
+          "id": "fractions",
+          "heading": "Fractions",
+          "summary": "Recognise, find, name and write 1/3, 1/4, 2/4 and 3/4 of a length, shape or set of objects.",
+          "skillIds": [
+            "maths.fractions-of-shapes",
+            "maths.fair-share-fractions"
+          ]
+        },
+        {
+          "id": "measurement",
+          "heading": "Measurement",
+          "summary": "Measure length in centimetres, and tell the time to five minutes.",
+          "skillIds": [
+            "maths.measure-in-centimetres",
+            "maths.time-to-five-minutes",
+            "maths.scale-and-thermometer",
+            "maths.pocket-money-shop",
+            "maths.hours-and-minutes-facts"
+          ]
+        },
+        {
+          "id": "properties-of-shapes",
+          "heading": "Geometry: properties of shapes",
+          "summary": "Describe the properties of 2-D and 3-D shapes, including their edges, vertices and faces.",
+          "skillIds": ["maths.shape-properties", "maths.corners-and-faces"]
+        },
+        {
+          "id": "position-and-direction",
+          "heading": "Geometry: position and direction",
+          "summary": "Use mathematical words for position and movement, including clockwise and anticlockwise right-angle turns.",
+          "skillIds": ["maths.clockwise-turns", "maths.pattern-parade"]
+        },
+        {
+          "id": "statistics",
+          "heading": "Statistics",
+          "summary": "Interpret and construct pictograms, tally charts, block diagrams and tables.",
+          "skillIds": ["maths.tally-charts-and-pictograms"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 3,
+      "points": [
+        {
+          "id": "number-and-place-value",
+          "heading": "Number and place value",
+          "summary": "Count in multiples of 4, 8, 50 and 100, find 10 or 100 more or less, and know the place value of each digit in a three-digit number.",
+          "skillIds": [
+            "maths.hundreds-tens-and-ones",
+            "maths.ten-or-hundred-more-or-less",
+            "maths.count-in-fours-eights-and-fifties",
+            "maths.thousand-word-match"
+          ]
+        },
+        {
+          "id": "addition-and-subtraction",
+          "heading": "Addition and subtraction",
+          "summary": "Add and subtract numbers with up to three digits, using formal written methods of columnar addition and subtraction.",
+          "skillIds": [
+            "maths.add-three-digit",
+            "maths.subtract-three-digit",
+            "maths.estimate-and-check"
+          ]
+        },
+        {
+          "id": "multiplication-and-division",
+          "heading": "Multiplication and division",
+          "summary": "Recall and use multiplication and division facts for the 3, 4 and 8 times tables.",
+          "skillIds": ["maths.times-tables-3-4-8", "maths.times-tower"]
+        },
+        {
+          "id": "fractions",
+          "heading": "Fractions",
+          "summary": "Recognise and use unit and non-unit fractions, and equivalent fractions with small denominators.",
+          "skillIds": [
+            "maths.equivalent-fractions",
+            "maths.unit-and-non-unit-fractions",
+            "maths.fraction-mix-lab"
+          ]
+        },
+        {
+          "id": "measurement",
+          "heading": "Measurement",
+          "summary": "Measure lengths in millimetres, and tell the time to the minute, including from Roman numerals.",
+          "skillIds": [
+            "maths.measure-in-millimetres",
+            "maths.time-to-the-minute",
+            "maths.weigh-and-pour",
+            "maths.market-stall-change",
+            "maths.calendar-countdown"
+          ]
+        },
+        {
+          "id": "properties-of-shapes",
+          "heading": "Geometry: properties of shapes",
+          "summary": "Recognise right angles, and identify horizontal, vertical, perpendicular and parallel lines.",
+          "skillIds": [
+            "maths.right-angles-and-sides",
+            "maths.lines-and-angles-lab"
+          ]
+        },
+        {
+          "id": "statistics",
+          "heading": "Statistics",
+          "summary": "Interpret and present data using bar charts, pictograms and tables.",
+          "skillIds": ["maths.bar-charts-and-tables"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 4,
+      "points": [
+        {
+          "id": "number-and-place-value",
+          "heading": "Number and place value",
+          "summary": "Count in multiples of 6, 7, 9, 25 and 1,000, count back through zero, and know the place value of each digit in a four-digit number.",
+          "skillIds": [
+            "maths.thousands-hundreds-tens-and-ones",
+            "maths.thousand-more-or-less",
+            "maths.count-in-sixes-sevens-and-twenty-fives",
+            "maths.thousands-rounding-ridge",
+            "maths.roman-numeral-gates"
+          ]
+        },
+        {
+          "id": "addition-and-subtraction",
+          "heading": "Addition and subtraction",
+          "summary": "Add and subtract numbers with up to four digits, using formal written methods of columnar addition and subtraction.",
+          "skillIds": ["maths.add-four-digit", "maths.subtract-four-digit"]
+        },
+        {
+          "id": "multiplication-and-division",
+          "heading": "Multiplication and division",
+          "summary": "Recall multiplication and division facts for times tables up to 12 × 12.",
+          "skillIds": [
+            "maths.times-tables-to-12",
+            "maths.factor-pair-forge",
+            "maths.times-tower-climb"
+          ]
+        },
+        {
+          "id": "fractions",
+          "heading": "Fractions (including decimals)",
+          "summary": "Recognise families of equivalent fractions, and write tenths and hundredths as decimals.",
+          "skillIds": [
+            "maths.fractions-as-decimals",
+            "maths.families-of-equivalent-fractions",
+            "maths.fraction-feast-hall",
+            "maths.decimal-round-dock"
+          ]
+        },
+        {
+          "id": "measurement",
+          "heading": "Measurement",
+          "summary": "Find the perimeter of rectilinear shapes, and convert between the 12-hour and 24-hour clock.",
+          "skillIds": [
+            "maths.perimeter-of-rectangles",
+            "maths.twenty-four-hour-clock",
+            "maths.unit-swap-shop"
+          ]
+        },
+        {
+          "id": "properties-of-shapes",
+          "heading": "Geometry: properties of shapes",
+          "summary": "Compare and classify geometric shapes, including quadrilaterals and triangles.",
+          "skillIds": [
+            "maths.classify-triangles-and-quadrilaterals",
+            "maths.angle-and-mirror-hunt"
+          ]
+        },
+        {
+          "id": "position-and-direction",
+          "heading": "Geometry: position and direction",
+          "summary": "Describe positions on a 2-D grid as coordinates in the first quadrant, and describe translations.",
+          "skillIds": ["maths.coordinates-first-quadrant"]
+        },
+        {
+          "id": "statistics",
+          "heading": "Statistics",
+          "summary": "Interpret and present discrete and continuous data using bar charts and time graphs.",
+          "skillIds": ["maths.line-graphs"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 5,
+      "points": [
+        {
+          "id": "number-and-place-value",
+          "heading": "Number and place value",
+          "summary": "Read, write and order numbers to 1,000,000, count in powers of 10, and know the value of each digit in a decimal.",
+          "skillIds": [
+            "maths.decimal-place-value",
+            "maths.powers-of-ten-more-or-less",
+            "maths.count-in-powers-of-ten-and-tenths",
+            "maths.million-mountain-climb",
+            "maths.roman-year-reader"
+          ]
+        },
+        {
+          "id": "addition-and-subtraction",
+          "heading": "Addition and subtraction",
+          "summary": "Add and subtract whole numbers and decimals, using formal written methods.",
+          "skillIds": ["maths.add-decimals", "maths.subtract-decimals"]
+        },
+        {
+          "id": "multiplication-and-division",
+          "heading": "Multiplication and division",
+          "summary": "Multiply and divide by 10, 100 and 1,000, and recognise square and cube numbers.",
+          "skillIds": [
+            "maths.multiply-divide-by-10-100-1000",
+            "maths.squares-cubes-and-powers-of-ten",
+            "maths.prime-number-hunters",
+            "maths.long-multiply-mill"
+          ]
+        },
+        {
+          "id": "fractions",
+          "heading": "Fractions (including decimals and percentages)",
+          "summary": "Connect fractions, decimals and percentages, and compare and order them.",
+          "skillIds": [
+            "maths.fractions-decimals-percentages",
+            "maths.mixed-number-mixer",
+            "maths.thousandths-tracker"
+          ]
+        },
+        {
+          "id": "measurement",
+          "heading": "Measurement",
+          "summary": "Calculate the area of rectangles, and solve problems involving time.",
+          "skillIds": [
+            "maths.area-of-rectangles",
+            "maths.later-times",
+            "maths.pints-and-pounds-swap"
+          ]
+        },
+        {
+          "id": "properties-of-shapes",
+          "heading": "Geometry: properties of shapes",
+          "summary": "Distinguish between regular and irregular polygons from their sides and angles.",
+          "skillIds": [
+            "maths.regular-and-irregular-polygons",
+            "maths.reflex-angle-arena"
+          ]
+        },
+        {
+          "id": "position-and-direction",
+          "heading": "Geometry: position and direction",
+          "summary": "Identify, describe and represent the position of a shape after a reflection or translation.",
+          "skillIds": ["maths.reflection-and-translation"]
+        },
+        {
+          "id": "statistics",
+          "heading": "Statistics",
+          "summary": "Solve problems using information presented in line graphs, tables and timetables.",
+          "skillIds": ["maths.tables-and-timetables"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 6,
+      "points": [
+        {
+          "id": "number-and-place-value",
+          "heading": "Number and place value",
+          "summary": "Read, write, order and compare numbers up to 10,000,000, and use negative numbers in context.",
+          "skillIds": [
+            "maths.numbers-to-ten-million",
+            "maths.negative-numbers",
+            "maths.ten-million-ranker"
+          ]
+        },
+        {
+          "id": "four-operations",
+          "heading": "Addition, subtraction, multiplication and division",
+          "summary": "Solve multi-step problems with large numbers, using the order of operations.",
+          "skillIds": [
+            "maths.order-of-operations",
+            "maths.add-large-numbers",
+            "maths.subtract-large-numbers",
+            "maths.multiply-large-numbers",
+            "maths.divide-large-numbers",
+            "maths.common-factor-quest"
+          ]
+        },
+        {
+          "id": "fractions",
+          "heading": "Fractions (including decimals and percentages)",
+          "summary": "Use equivalence between fractions, decimals and percentages, including decimal equivalents such as 3/8.",
+          "skillIds": [
+            "maths.fractions-as-decimal-equivalents",
+            "maths.add-subtract-fractions",
+            "maths.multiply-divide-fractions",
+            "maths.percentages-of-amounts",
+            "maths.simplify-squad"
+          ]
+        },
+        {
+          "id": "ratio-and-proportion",
+          "heading": "Ratio and proportion",
+          "summary": "Solve problems involving relative sizes, scale factors and unequal sharing.",
+          "skillIds": ["maths.ratio-and-scale"]
+        },
+        {
+          "id": "algebra",
+          "heading": "Algebra",
+          "summary": "Generate and describe linear number sequences, and use simple formulae.",
+          "skillIds": ["maths.linear-sequences", "maths.simple-formulae"]
+        },
+        {
+          "id": "measurement",
+          "heading": "Measurement",
+          "summary": "Calculate the volume of cuboids, and convert between units of time.",
+          "skillIds": [
+            "maths.volume-of-cuboids",
+            "maths.durations",
+            "maths.convert-units",
+            "maths.slanted-area-workshop"
+          ]
+        },
+        {
+          "id": "properties-of-shapes",
+          "heading": "Geometry: properties of shapes",
+          "summary": "Recognise, describe and build simple 3-D shapes, including making nets.",
+          "skillIds": [
+            "maths.nets-of-3d-shapes",
+            "maths.missing-angles",
+            "maths.circle-secrets"
+          ]
+        },
+        {
+          "id": "position-and-direction",
+          "heading": "Geometry: position and direction",
+          "summary": "Describe positions on the full coordinate grid, in all four quadrants.",
+          "skillIds": ["maths.coordinates-four-quadrants"]
+        },
+        {
+          "id": "statistics",
+          "heading": "Statistics",
+          "summary": "Interpret and construct pie charts and line graphs, and calculate the mean as an average.",
+          "skillIds": ["maths.pie-charts-and-mean", "maths.mean-and-tables"]
+        }
+      ]
+    }
+  ]
+}

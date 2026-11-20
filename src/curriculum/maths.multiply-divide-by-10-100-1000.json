@@ -1,0 +1,8 @@
+{
+  "id": "maths.multiply-divide-by-10-100-1000",
+  "name": "Multiplying and dividing by 10, 100 and 1,000",
+  "subject": "maths",
+  "yearGroup": 5,
+  "strand": "multiplication-and-division",
+  "prerequisites": ["maths.times-tables-to-12"]
+}

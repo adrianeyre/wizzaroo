@@ -1,0 +1,910 @@
+{
+  "quests": [
+    {
+      "id": "raid-on-lindisfarne",
+      "title": "Raid on Lindisfarne",
+      "skill": {
+        "id": "history.viking-raids",
+        "name": "The Viking raid on Lindisfarne",
+        "subject": "history",
+        "yearGroup": 5,
+        "strand": "vikings-and-anglo-saxons",
+        "prerequisites": []
+      },
+      "story": "Strange ships with striped sails are heading for a quiet island! Find out who the Vikings were and why they sailed to Lindisfarne.",
+      "instruction": "Read each question about the raid, then tap the right shield.",
+      "hint": "Think about where the Vikings sailed from, and what a rich monastery had that they wanted.",
+      "scene": "viking-fjord",
+      "play": "quiz",
+      "choiceProp": "shield",
+      "questions": [
+        {
+          "ask": "In which year did Vikings raid the monastery at Lindisfarne?",
+          "answer": "AD 793",
+          "wrong": ["AD 43", "AD 410", "AD 1066"],
+          "fact": "News of the raid shocked people across Europe, and it is often seen as the start of the Viking Age."
+        },
+        {
+          "ask": "Lindisfarne is a small island off the coast of which English county today?",
+          "answer": "Northumberland",
+          "wrong": ["Cornwall", "Kent", "Norfolk"],
+          "fact": "At low tide you can walk across the sand to the island, which is also called Holy Island."
+        },
+        {
+          "ask": "Who lived and worked at the monastery on Lindisfarne?",
+          "answer": "Monks",
+          "wrong": ["Knights", "Roman soldiers", "Pirates"],
+          "fact": "The monks prayed, farmed, studied and made beautiful handwritten books."
+        },
+        {
+          "ask": "Which part of northern Europe did the Vikings come from?",
+          "answer": "Scandinavia",
+          "wrong": ["North Africa", "Ireland", "Greece"],
+          "fact": "Scandinavia is the area that is today Norway, Denmark and Sweden."
+        },
+        {
+          "ask": "Why did Vikings raid monasteries like Lindisfarne?",
+          "answer": "For treasure",
+          "wrong": ["To build castles", "To learn to read", "To play games"],
+          "fact": "Monasteries held gold, silver and jewelled objects, and had no soldiers to guard them."
+        },
+        {
+          "ask": "What were the Vikings' fast wooden ships called?",
+          "answer": "Longships",
+          "wrong": ["Galleons", "Steamships", "Canoes"],
+          "fact": "Longships could cross the open sea and also row up shallow rivers."
+        },
+        {
+          "ask": "Later, many Vikings came to Britain to stay. What were they looking for?",
+          "answer": "Land to farm",
+          "wrong": ["Gold mines", "Hot weather", "Spices"],
+          "fact": "Good farmland was hard to find in parts of Scandinavia, so many Vikings settled in Britain."
+        },
+        {
+          "ask": "Which famous decorated book was made by monks at Lindisfarne?",
+          "answer": "Lindisfarne Gospels",
+          "wrong": ["Domesday Book", "Magna Carta", "Book of Kells"],
+          "fact": "The Lindisfarne Gospels were made over 1,300 years ago and are kept at the British Library."
+        },
+        {
+          "ask": "Which scholar from York wrote letters full of sadness about the raid?",
+          "answer": "Alcuin",
+          "wrong": ["Bede", "Alfred", "Offa"],
+          "fact": "Alcuin was working for the Frankish king Charlemagne when he heard the news."
+        },
+        {
+          "ask": "Which saint is closely linked with Lindisfarne?",
+          "answer": "St Cuthbert",
+          "wrong": ["St George", "St Patrick", "St David"],
+          "fact": "After more raids, the monks left the island, carrying St Cuthbert's coffin with them."
+        },
+        {
+          "ask": "Which year-by-year record of English history tells us about the raid?",
+          "answer": "Anglo-Saxon Chronicle",
+          "wrong": ["Bayeux Tapestry", "Domesday Book", "Magna Carta"],
+          "fact": "The Chronicle was started in King Alfred's time and was added to for over 250 years."
+        },
+        {
+          "ask": "Which sea did the Vikings cross to reach Lindisfarne?",
+          "answer": "The North Sea",
+          "wrong": ["The Irish Sea", "The Red Sea", "The Black Sea"],
+          "fact": "With a good wind, a longship could cross the North Sea in just a few days."
+        }
+      ]
+    },
+    {
+      "id": "longship-builders",
+      "title": "Longship Builders",
+      "skill": {
+        "id": "history.viking-ships-and-trade",
+        "name": "Viking ships, travel and trade",
+        "subject": "history",
+        "yearGroup": 5,
+        "strand": "vikings-and-anglo-saxons",
+        "prerequisites": []
+      },
+      "story": "The shipyard is busy and the sea is calling! Help the Viking shipbuilders finish their longship, then sail off to explore and trade.",
+      "instruction": "Read each question about Viking ships, then tap the right crate.",
+      "hint": "Remember the Vikings had no engines or maps like ours. Think about wood, wind, oars and the sky.",
+      "scene": "viking-fjord",
+      "play": "quiz",
+      "choiceProp": "wooden-crate",
+      "questions": [
+        {
+          "ask": "Which wood were most Viking longships built from?",
+          "answer": "Oak",
+          "wrong": ["Bamboo", "Palm", "Balsa"],
+          "fact": "Shipbuilders split oak trunks into long planks using axes and wedges."
+        },
+        {
+          "ask": "What do we call a ship whose planks overlap like tiles on a roof?",
+          "answer": "Clinker-built",
+          "wrong": ["Brick-built", "Flat-packed", "Patchwork"],
+          "fact": "Overlapping planks held with iron rivets made the hull strong but able to bend in the waves."
+        },
+        {
+          "ask": "What was a longship's big square sail usually made from?",
+          "answer": "Wool",
+          "wrong": ["Silk", "Leather", "Cotton"],
+          "fact": "Spinning and weaving one huge woollen sail took a great deal of time and work."
+        },
+        {
+          "ask": "Which fierce carved head sometimes decorated the front of a longship?",
+          "answer": "A dragon",
+          "wrong": ["A lion", "An owl", "A unicorn"],
+          "fact": "Carved dragon or snake heads on the prow made the ships look frightening to enemies."
+        },
+        {
+          "ask": "Why could longships travel far up shallow rivers?",
+          "answer": "A shallow hull",
+          "wrong": ["Wheels underneath", "A huge anchor", "Very tall masts"],
+          "fact": "Longships could even be pulled up onto a beach, so no harbour was needed."
+        },
+        {
+          "ask": "When there was no wind, how did the Vikings move their longship?",
+          "answer": "With oars",
+          "wrong": ["With an engine", "With pedals", "With kites"],
+          "fact": "Oars poked through holes in the side of the ship, which could be closed when sailing."
+        },
+        {
+          "ask": "How did Viking sailors find their way across the open sea?",
+          "answer": "Sun and stars",
+          "wrong": ["Satellite maps", "Lighthouses", "Road signs"],
+          "fact": "They also watched birds, whales and the colour of the water to tell when land was near."
+        },
+        {
+          "ask": "Which Viking explorer reached North America around AD 1000?",
+          "answer": "Leif Erikson",
+          "wrong": ["Erik the Red", "Harald Hardrada", "Christopher Columbus"],
+          "fact": "Remains of Viking buildings have been found at L'Anse aux Meadows in Newfoundland, Canada."
+        },
+        {
+          "ask": "Vikings sailed down rivers to trade in which great city, now Istanbul?",
+          "answer": "Constantinople",
+          "wrong": ["Rome", "Paris", "Athens"],
+          "fact": "Some Vikings joined the emperor's bodyguard there, known as the Varangian Guard."
+        },
+        {
+          "ask": "Viking traders reached the markets of which faraway Islamic city?",
+          "answer": "Baghdad",
+          "wrong": ["Beijing", "Timbuktu", "Delhi"],
+          "fact": "Thousands of Arab silver coins have been found buried in Viking treasure hoards."
+        },
+        {
+          "ask": "Which Viking ship was found in a burial mound in Norway in 1904?",
+          "answer": "The Oseberg ship",
+          "wrong": ["The Mary Rose", "The Golden Hind", "HMS Victory"],
+          "fact": "Two women were buried in the Oseberg ship with a cart, sledges and many fine objects."
+        },
+        {
+          "ask": "The Gokstad ship, found in Norway, had holes for about how many oars?",
+          "answer": "32",
+          "wrong": ["4", "200", "1,000"],
+          "fact": "In 1893 a copy of the Gokstad ship sailed all the way across the Atlantic to America."
+        }
+      ]
+    },
+    {
+      "id": "alfred-and-the-danelaw",
+      "title": "Alfred and the Danelaw",
+      "skill": {
+        "id": "history.road-to-1066",
+        "name": "Vikings and Anglo-Saxons from 793 to 1066",
+        "subject": "history",
+        "yearGroup": 5,
+        "strand": "vikings-and-anglo-saxons",
+        "prerequisites": []
+      },
+      "story": "The village storyteller has dropped her scroll, and the story of England is all jumbled! Put nearly 300 years of kings and battles back in order.",
+      "instruction": "Tap the event that happened first, then the next one.",
+      "hint": "Think about who came first: the Viking raiders, then Alfred, then his family, then the later kings.",
+      "scene": "saxon-village",
+      "play": "timeline",
+      "choiceProp": "scroll",
+      "events": [
+        {
+          "label": "Lindisfarne raid",
+          "date": "AD 793",
+          "order": 793,
+          "fact": "Vikings attacked the island monastery, and the news shocked people across Europe."
+        },
+        {
+          "label": "Great Heathen Army",
+          "date": "AD 865",
+          "order": 865,
+          "fact": "A large Viking army landed in East Anglia and went on to conquer much of England."
+        },
+        {
+          "label": "Alfred becomes king",
+          "date": "AD 871",
+          "order": 871,
+          "fact": "Alfred became king of Wessex after his older brother, King Æthelred, died."
+        },
+        {
+          "label": "Battle of Edington",
+          "date": "AD 878",
+          "order": 878,
+          "fact": "After hiding in the marshes at Athelney, Alfred beat the Viking leader Guthrum at Edington."
+        },
+        {
+          "label": "Danelaw agreed",
+          "date": "c. AD 886",
+          "order": 886,
+          "fact": "Alfred and Guthrum agreed a border; the Viking-ruled lands became known as the Danelaw."
+        },
+        {
+          "label": "Athelstan unites",
+          "date": "AD 927",
+          "order": 927,
+          "fact": "Alfred's grandson Athelstan became the first king to rule all of England."
+        },
+        {
+          "label": "Battle of Brunanburh",
+          "date": "AD 937",
+          "order": 937,
+          "fact": "Athelstan beat an alliance of Scots, Vikings from Dublin and Britons from Strathclyde."
+        },
+        {
+          "label": "Cnut becomes king",
+          "date": "1016",
+          "order": 1016,
+          "fact": "Cnut, a Danish prince, became king of England and later of Denmark and Norway too."
+        },
+        {
+          "label": "Edward the Confessor",
+          "date": "1042",
+          "order": 1042,
+          "fact": "Edward, a son of Æthelred the Unready, became king and was known for being very religious."
+        },
+        {
+          "label": "Battle of Hastings",
+          "date": "1066",
+          "order": 1066,
+          "fact": "William of Normandy beat King Harold, and Anglo-Saxon rule of England came to an end."
+        }
+      ]
+    },
+    {
+      "id": "viking-or-saxon",
+      "title": "Viking or Saxon?",
+      "skill": {
+        "id": "history.vikings-and-saxons-compared",
+        "name": "Telling Vikings and Anglo-Saxons apart",
+        "subject": "history",
+        "yearGroup": 5,
+        "strand": "vikings-and-anglo-saxons",
+        "prerequisites": []
+      },
+      "story": "The harbour stalls have got their goods muddled up! Sort out what belongs to the Vikings and what belongs to the Anglo-Saxons.",
+      "instruction": "Viking or Anglo-Saxon? Tap the right basket for each one.",
+      "hint": "Think about who sailed in from Scandinavia, and who already ruled the English kingdoms.",
+      "scene": "viking-fjord",
+      "play": "sort",
+      "choiceProp": "basket",
+      "bins": ["Vikings", "Anglo-Saxons"],
+      "questions": [
+        {
+          "ask": "A longship with a carved dragon prow",
+          "answer": "Vikings",
+          "fact": "Longships carried Viking raiders, traders and settlers across the seas."
+        },
+        {
+          "ask": "The city of Jorvik",
+          "answer": "Vikings",
+          "fact": "Jorvik was the Viking name for York, which became a busy Viking trading town."
+        },
+        {
+          "ask": "Land ruled by Danish law, called the Danelaw",
+          "answer": "Vikings",
+          "fact": "The Danelaw covered much of northern and eastern England."
+        },
+        {
+          "ask": "Sagas telling of heroes and voyages",
+          "answer": "Vikings",
+          "fact": "Many sagas were written down in Iceland, long after the stories were first told aloud."
+        },
+        {
+          "ask": "Rune stones raised across Scandinavia",
+          "answer": "Vikings",
+          "fact": "Many rune stones were put up to remember family members or great journeys."
+        },
+        {
+          "ask": "Leif Erikson, the explorer",
+          "answer": "Vikings",
+          "fact": "Leif Erikson sailed from Greenland and reached North America around AD 1000."
+        },
+        {
+          "ask": "King Alfred the Great",
+          "answer": "Anglo-Saxons",
+          "fact": "Alfred is the only English king to be called 'the Great'."
+        },
+        {
+          "ask": "Burhs, the walled towns built for defence",
+          "answer": "Anglo-Saxons",
+          "fact": "Alfred planned burhs so that no one in Wessex lived more than a day's walk from safety."
+        },
+        {
+          "ask": "Bede, the monk who wrote a history of England",
+          "answer": "Anglo-Saxons",
+          "fact": "Bede lived at Jarrow and finished his history in AD 731."
+        },
+        {
+          "ask": "The royal ship burial at Sutton Hoo",
+          "answer": "Anglo-Saxons",
+          "fact": "Sutton Hoo in Suffolk held a famous helmet and is thought to be the grave of King Rædwald."
+        },
+        {
+          "ask": "The Lindisfarne Gospels",
+          "answer": "Anglo-Saxons",
+          "fact": "This beautiful book was made by Anglo-Saxon monks, probably by a monk called Eadfrith."
+        },
+        {
+          "ask": "Offa's Dyke, the long earth bank",
+          "answer": "Anglo-Saxons",
+          "fact": "King Offa of Mercia had the dyke built along the border with Wales."
+        }
+      ]
+    },
+    {
+      "id": "jorvik-market",
+      "title": "Jorvik Market",
+      "skill": {
+        "id": "history.viking-life",
+        "name": "Viking daily life and the city of Jorvik",
+        "subject": "history",
+        "yearGroup": 5,
+        "strand": "vikings-and-anglo-saxons",
+        "prerequisites": []
+      },
+      "story": "Welcome to Jorvik, where the market is buzzing with traders from far and wide! Discover how the Vikings lived, worked and told their stories.",
+      "instruction": "Read each question about Viking life, then tap the right coin.",
+      "hint": "Picture a busy Viking town: what people traded, how they paid, and what they believed about their gods.",
+      "scene": "saxon-village",
+      "play": "quiz",
+      "choiceProp": "gold-coin",
+      "questions": [
+        {
+          "ask": "What did the Vikings call the city we know today as York?",
+          "answer": "Jorvik",
+          "wrong": ["Eboracum", "Londinium", "Lundenwic"],
+          "fact": "The Romans called it Eboracum, and the Anglo-Saxons called it Eoforwic."
+        },
+        {
+          "ask": "In which year did the Viking Great Army capture York?",
+          "answer": "AD 866",
+          "wrong": ["AD 43", "AD 1066", "AD 1666"],
+          "fact": "York became the capital of a Viking kingdom in the north of England."
+        },
+        {
+          "ask": "In which York street did archaeologists dig up Viking houses from 1976 to 1981?",
+          "answer": "Coppergate",
+          "wrong": ["Pudding Lane", "Downing Street", "Baker Street"],
+          "fact": "The wet ground stopped wood, leather and cloth from rotting for over 1,000 years."
+        },
+        {
+          "ask": "What do we call silver chopped into pieces and used to pay for things?",
+          "answer": "Hacksilver",
+          "wrong": ["Pocket money", "Banknotes", "Copper pennies"],
+          "fact": "Traders weighed hacksilver on small folding scales to work out what it was worth."
+        },
+        {
+          "ask": "Which golden stone, made from ancient tree sap, did Viking traders bring?",
+          "answer": "Amber",
+          "wrong": ["Coral", "Glass", "Copper"],
+          "fact": "Much of the amber came from the shores of the Baltic Sea and was made into beads."
+        },
+        {
+          "ask": "Which Arctic sea animal's tusks gave Viking traders precious ivory?",
+          "answer": "Walrus",
+          "wrong": ["Penguin", "Seal", "Puffin"],
+          "fact": "Walrus ivory was carved into combs, handles and even chess pieces."
+        },
+        {
+          "ask": "In Scandinavia, many Viking families lived in what kind of home?",
+          "answer": "Longhouses",
+          "wrong": ["Castles", "Tower blocks", "Igloos"],
+          "fact": "A fire burned in the middle of the longhouse, and animals sometimes lived at one end."
+        },
+        {
+          "ask": "What was the Viking meeting called where free men made laws?",
+          "answer": "A Thing",
+          "wrong": ["A Feast", "A Saga", "A Raid"],
+          "fact": "Iceland's great Thing, the Althing, first met around AD 930 and still meets today."
+        },
+        {
+          "ask": "Which god did the Vikings believe carried a mighty hammer?",
+          "answer": "Thor",
+          "wrong": ["Loki", "Odin", "Freya"],
+          "fact": "Vikings believed thunder was the sound of Thor's hammer, which was called Mjölnir."
+        },
+        {
+          "ask": "What were the letters of the Viking alphabet called?",
+          "answer": "Runes",
+          "wrong": ["Glyphs", "Hieroglyphs", "Cuneiform"],
+          "fact": "Runes were made of straight lines, so they were easy to carve into wood or stone."
+        },
+        {
+          "ask": "Where did Vikings believe brave warriors went after they died?",
+          "answer": "Valhalla",
+          "wrong": ["Olympus", "Atlantis", "Avalon"],
+          "fact": "Vikings believed Valhalla was the god Odin's great hall, where warriors feasted."
+        },
+        {
+          "ask": "Who usually ran a Viking farm and home while the men were away trading?",
+          "answer": "The women",
+          "wrong": ["The king", "The monks", "The priests"],
+          "fact": "Unusually for that time, Viking women could own property and ask for a divorce."
+        }
+      ]
+    },
+    {
+      "id": "the-last-saxon-kings",
+      "title": "The Last Saxon Kings",
+      "skill": {
+        "id": "history.edward-the-confessor",
+        "name": "Edward the Confessor and the events of 1066",
+        "subject": "history",
+        "yearGroup": 5,
+        "strand": "vikings-and-anglo-saxons",
+        "prerequisites": []
+      },
+      "story": "King Edward has died, and three powerful men all want his crown! Find out what happened in the most famous year in English history.",
+      "instruction": "Read each question about 1066, then tap the right shield.",
+      "hint": "Think about the order things happened in 1066, and which claimant came from Norway, Normandy or England.",
+      "scene": "castle-courtyard",
+      "play": "quiz",
+      "choiceProp": "shield",
+      "questions": [
+        {
+          "ask": "In which year did Edward the Confessor become king of England?",
+          "answer": "1042",
+          "wrong": ["793", "1066", "1215"],
+          "fact": "Edward reigned for about 24 years, until he died in January 1066."
+        },
+        {
+          "ask": "Why was King Edward known as 'the Confessor'?",
+          "answer": "He was very holy",
+          "wrong": ["He told secrets", "He was a judge", "He wrote books"],
+          "fact": "Edward was made a saint in 1161, nearly 100 years after he died."
+        },
+        {
+          "ask": "Which great church in London did Edward have built?",
+          "answer": "Westminster Abbey",
+          "wrong": [
+            "St Paul's Cathedral",
+            "York Minster",
+            "Canterbury Cathedral"
+          ],
+          "fact": "It was consecrated in December 1065, and nearly every monarch since has been crowned there."
+        },
+        {
+          "ask": "Why was there a struggle for the crown when Edward died?",
+          "answer": "He had no children",
+          "wrong": [
+            "He lost a battle",
+            "He moved to France",
+            "His crown was lost"
+          ],
+          "fact": "With no son to follow him, three powerful men each said the crown should be theirs."
+        },
+        {
+          "ask": "Which English earl was crowned king the day after Edward died?",
+          "answer": "Harold Godwinson",
+          "wrong": ["Harald Hardrada", "William of Normandy", "Cnut the Great"],
+          "fact": "Harold was Earl of Wessex and the brother of Edward's wife, Edith."
+        },
+        {
+          "ask": "Which king of Norway also claimed the English throne in 1066?",
+          "answer": "Harald Hardrada",
+          "wrong": ["Erik the Red", "Cnut the Great", "Guthrum"],
+          "fact": "His nickname, Hardrada, means 'hard ruler' in Old Norse."
+        },
+        {
+          "ask": "Which duke from France said Edward had promised him the crown?",
+          "answer": "William of Normandy",
+          "wrong": ["Charlemagne", "Philip of France", "Robert the Bruce"],
+          "fact": "William's great-aunt Emma was Edward's mother, so the two men were related."
+        },
+        {
+          "ask": "Where did Harold defeat Harald Hardrada in September 1066?",
+          "answer": "Stamford Bridge",
+          "wrong": ["Hastings", "Edington", "Brunanburh"],
+          "fact": "Days later, Harold had to march his tired army hundreds of miles south to face William."
+        },
+        {
+          "ask": "On which date was the Battle of Hastings fought?",
+          "answer": "14 October 1066",
+          "wrong": ["25 December 1066", "1 January 1066", "5 November 1066"],
+          "fact": "The battle lasted most of the day, which was unusually long for that time."
+        },
+        {
+          "ask": "Who won the Battle of Hastings and became king?",
+          "answer": "William of Normandy",
+          "wrong": ["Harold Godwinson", "Harald Hardrada", "Edgar Ætheling"],
+          "fact": "William was crowned in Westminster Abbey on Christmas Day 1066."
+        },
+        {
+          "ask": "Which long embroidered cloth tells the story of 1066 in pictures?",
+          "answer": "Bayeux Tapestry",
+          "wrong": ["Domesday Book", "Magna Carta", "Lindisfarne Gospels"],
+          "fact": "It is about 70 metres long and is kept in the town of Bayeux, in Normandy, France."
+        },
+        {
+          "ask": "What appeared in the sky in April 1066 that some people saw as a sign?",
+          "answer": "A comet",
+          "wrong": ["An eclipse", "A rainbow", "A meteor shower"],
+          "fact": "It was Halley's Comet, which returns about every 76 years and appears on the tapestry."
+        }
+      ]
+    },
+    {
+      "id": "city-in-the-jungle",
+      "title": "City in the Jungle",
+      "skill": {
+        "id": "history.maya-civilisation",
+        "name": "The ancient Maya civilisation",
+        "subject": "history",
+        "yearGroup": 5,
+        "strand": "non-european-society",
+        "prerequisites": []
+      },
+      "story": "Deep in the rainforest, giant stone pyramids peep above the trees! Explore the great cities of the ancient Maya.",
+      "instruction": "Read each question about the Maya, then tap the right stone tablet.",
+      "hint": "Think about the hot, green rainforest of Central America, and the stone cities the Maya built there.",
+      "scene": "maya-jungle",
+      "play": "quiz",
+      "choiceProp": "stone-tablet",
+      "questions": [
+        {
+          "ask": "Roughly when was the Classic period, when Maya cities were at their greatest?",
+          "answer": "AD 250 to 900",
+          "wrong": ["3000 to 2000 BC", "AD 1500 to 1700", "AD 1900 to 2000"],
+          "fact": "At the same time, Britain was ruled by the Romans, then the Anglo-Saxons and Vikings."
+        },
+        {
+          "ask": "In which part of the world did the ancient Maya live?",
+          "answer": "Central America",
+          "wrong": ["Southern Africa", "Northern Europe", "East Asia"],
+          "fact": "Maya lands covered parts of today's Mexico, Guatemala, Belize, Honduras and El Salvador."
+        },
+        {
+          "ask": "Which great Maya city in Guatemala has temples rising above the rainforest?",
+          "answer": "Tikal",
+          "wrong": ["Machu Picchu", "Petra", "Angkor Wat"],
+          "fact": "Tikal's tallest temple is about 65 metres high, taller than Nelson's Column."
+        },
+        {
+          "ask": "What shape were the big Maya temples?",
+          "answer": "Stepped pyramids",
+          "wrong": ["Round towers", "Onion domes", "Wooden huts"],
+          "fact": "A small temple sat on top, where kings and priests held ceremonies."
+        },
+        {
+          "ask": "Which king of Palenque was buried in a tomb deep inside a pyramid?",
+          "answer": "Pakal the Great",
+          "wrong": ["Montezuma", "Tutankhamun", "Alfred the Great"],
+          "fact": "K'inich Janaab' Pakal became king aged 12 and ruled from AD 615 to 683."
+        },
+        {
+          "ask": "What was the most important crop grown by Maya farmers?",
+          "answer": "Maize",
+          "wrong": ["Wheat", "Rice", "Barley"],
+          "fact": "Maya stories told that the first people were made from maize dough."
+        },
+        {
+          "ask": "In the Maya ball game, which part of the body did players mostly hit the ball with?",
+          "answer": "Their hips",
+          "wrong": ["Their hands", "Their feet", "A bat"],
+          "fact": "The heavy ball was made of rubber from rainforest trees."
+        },
+        {
+          "ask": "Each Maya city had its own ruler. What do historians call this kind of city?",
+          "answer": "A city-state",
+          "wrong": ["An empire", "A colony", "A hamlet"],
+          "fact": "Powerful city-states such as Tikal and Calakmul were often rivals."
+        },
+        {
+          "ask": "Which Maya city in Mexico has the famous pyramid El Castillo?",
+          "answer": "Chichén Itzá",
+          "wrong": ["Tenochtitlan", "Cusco", "Babylon"],
+          "fact": "At the spring and autumn equinoxes, a shadow like a snake seems to slide down its steps."
+        },
+        {
+          "ask": "What kind of land surrounded many Maya cities?",
+          "answer": "Rainforest",
+          "wrong": ["Desert", "Frozen tundra", "Snowy mountains"],
+          "fact": "Jaguars, monkeys and brightly coloured quetzal birds lived in the forests."
+        },
+        {
+          "ask": "What happened to many Maya cities in the south around AD 900?",
+          "answer": "People left them",
+          "wrong": ["They froze over", "Romans took them", "They sank at sea"],
+          "fact": "Historians think droughts, wars and too many people may all have played a part."
+        },
+        {
+          "ask": "What is true of the Maya people today?",
+          "answer": "Millions live there",
+          "wrong": [
+            "None are left",
+            "They all moved away",
+            "They live in Europe"
+          ],
+          "fact": "Millions of Maya people still live in Central America and speak Maya languages."
+        }
+      ]
+    },
+    {
+      "id": "maya-number-keepers",
+      "title": "Maya Number Keepers",
+      "skill": {
+        "id": "history.maya-maths-and-writing",
+        "name": "Maya numbers, calendars and writing",
+        "subject": "history",
+        "yearGroup": 5,
+        "strand": "non-european-society",
+        "prerequisites": []
+      },
+      "story": "The royal scribes need a helper! Learn to count with dots, bars and shells, and read the secrets of the Maya calendars.",
+      "instruction": "Read each question about Maya numbers, then tap the right pot.",
+      "hint": "Remember: a dot is small, a bar is bigger, and a shell means nothing at all. Count up carefully.",
+      "scene": "maya-jungle",
+      "play": "quiz",
+      "choiceProp": "clay-pot",
+      "questions": [
+        {
+          "ask": "In Maya numbers, what did a single dot stand for?",
+          "answer": "One",
+          "wrong": ["Five", "Ten", "Twenty"],
+          "fact": "Three dots side by side meant the number 3."
+        },
+        {
+          "ask": "In Maya numbers, what did a bar stand for?",
+          "answer": "Five",
+          "wrong": ["One", "Ten", "Hundred"],
+          "fact": "A bar with two dots above it showed the number 7."
+        },
+        {
+          "ask": "How would a Maya scribe write the number 10?",
+          "answer": "Two bars",
+          "wrong": ["Ten dots", "One shell", "Two shells"],
+          "fact": "Numbers up to 19 used bars and dots; bigger numbers were stacked in levels."
+        },
+        {
+          "ask": "Which symbol did the Maya use for zero?",
+          "answer": "A shell",
+          "wrong": ["A feather", "A star", "A leaf"],
+          "fact": "The Maya were one of the first peoples in the world to use a symbol for zero."
+        },
+        {
+          "ask": "Maya counting was based on groups of which number?",
+          "answer": "20",
+          "wrong": ["10", "60", "100"],
+          "fact": "Counting on both fingers and toes makes twenty, which may be how it began."
+        },
+        {
+          "ask": "How many days were in the Maya solar calendar, the Haab'?",
+          "answer": "365",
+          "wrong": ["100", "260", "1,000"],
+          "fact": "The Haab' had 18 months of 20 days, plus 5 extra days at the end."
+        },
+        {
+          "ask": "How many days were in the sacred Maya calendar, the Tzolk'in?",
+          "answer": "260",
+          "wrong": ["7", "52", "365"],
+          "fact": "Both calendars fitted together in a great cycle that lasted 52 years."
+        },
+        {
+          "ask": "What do we call the picture-signs the Maya used for writing?",
+          "answer": "Glyphs",
+          "wrong": ["Runes", "Cuneiform", "Braille"],
+          "fact": "Maya glyphs could stand for whole words or for the sounds of syllables."
+        },
+        {
+          "ask": "What were Maya folding books, called codices, made from?",
+          "answer": "Bark paper",
+          "wrong": ["Clay tablets", "Silk", "Gold sheets"],
+          "fact": "Only four Maya codices survive today; most were destroyed in the 1500s."
+        },
+        {
+          "ask": "Which beans did the Maya grind to make a frothy drink?",
+          "answer": "Cacao beans",
+          "wrong": ["Coffee beans", "Baked beans", "Broad beans"],
+          "fact": "The Maya poured the drink from pot to pot to make froth on top."
+        },
+        {
+          "ask": "Besides making drinks, how were cacao beans sometimes used?",
+          "answer": "As money",
+          "wrong": ["As glue", "As fuel", "As toys"],
+          "fact": "Cacao beans are what we still use to make chocolate today."
+        },
+        {
+          "ask": "Which planet did Maya astronomers track very carefully?",
+          "answer": "Venus",
+          "wrong": ["Neptune", "Uranus", "Pluto"],
+          "fact": "A Maya book called the Dresden Codex has tables showing when Venus would appear."
+        }
+      ]
+    },
+    {
+      "id": "maya-or-anglo-saxon",
+      "title": "Maya or Anglo-Saxon?",
+      "skill": {
+        "id": "history.maya-and-britain-compared",
+        "name": "Comparing the Maya with Anglo-Saxon Britain",
+        "subject": "history",
+        "yearGroup": 5,
+        "strand": "non-european-society",
+        "prerequisites": []
+      },
+      "story": "Two worlds, one moment in time! Around AD 900, life in the Maya rainforest and in Anglo-Saxon England was very different. Can you tell them apart?",
+      "instruction": "Maya or Anglo-Saxon? Tap the right basket for each one.",
+      "hint": "Ask yourself: is this from a hot rainforest in Central America, or a cool, green English village?",
+      "scene": "maya-jungle",
+      "play": "sort",
+      "choiceProp": "basket",
+      "bins": ["Maya", "Anglo-Saxons"],
+      "questions": [
+        {
+          "ask": "Stone pyramid cities home to tens of thousands",
+          "answer": "Maya",
+          "fact": "Big Maya cities had plazas, palaces and pyramids built from limestone."
+        },
+        {
+          "ask": "Fields of maize",
+          "answer": "Maya",
+          "fact": "Maize was ground into dough to make tortillas and tamales."
+        },
+        {
+          "ask": "Jaguars prowling the rainforest",
+          "answer": "Maya",
+          "fact": "Maya kings sometimes wore jaguar skins to show their power."
+        },
+        {
+          "ask": "A shell symbol meaning zero",
+          "answer": "Maya",
+          "fact": "Zero let Maya astronomers write down very large numbers."
+        },
+        {
+          "ask": "A frothy chocolate drink",
+          "answer": "Maya",
+          "fact": "Maya chocolate was bitter, not sweet, and was sometimes flavoured with chilli."
+        },
+        {
+          "ask": "Ball courts for a sacred game",
+          "answer": "Maya",
+          "fact": "Ball courts had long sloping walls, and some had stone rings high up."
+        },
+        {
+          "ask": "Small villages of wooden, thatched houses",
+          "answer": "Anglo-Saxons",
+          "fact": "Most Anglo-Saxon villages had only a few families living in them."
+        },
+        {
+          "ask": "Fields of wheat and barley",
+          "answer": "Anglo-Saxons",
+          "fact": "Wheat was baked into bread, and barley was used for brewing ale."
+        },
+        {
+          "ask": "Wolves roaming the woodland",
+          "answer": "Anglo-Saxons",
+          "fact": "Wolves still lived wild in England in Anglo-Saxon times."
+        },
+        {
+          "ask": "Roman numerals, with no zero",
+          "answer": "Anglo-Saxons",
+          "fact": "Monks wrote numbers using Roman letters such as I, V, X and C."
+        },
+        {
+          "ask": "Mead made from honey",
+          "answer": "Anglo-Saxons",
+          "fact": "Mead was drunk at feasts in a lord's great hall."
+        },
+        {
+          "ask": "Monks copying books in Latin",
+          "answer": "Anglo-Saxons",
+          "fact": "Monks wrote with quill pens on parchment made from animal skin."
+        }
+      ]
+    },
+    {
+      "id": "victorian-inventors",
+      "title": "Victorian Inventors",
+      "skill": {
+        "id": "history.victorian-britain",
+        "name": "Victorian Britain and its inventions",
+        "subject": "history",
+        "yearGroup": 5,
+        "strand": "beyond-1066",
+        "prerequisites": []
+      },
+      "story": "Steam whistles, ticking clocks and gas lamps fill the street! Meet the inventors, builders and writers who changed Britain in Queen Victoria's time.",
+      "instruction": "Read each question about the Victorians, then tap the right coin.",
+      "hint": "Think about steam, railways and factories, and how life slowly got better for Victorian children.",
+      "scene": "victorian-street",
+      "play": "quiz",
+      "choiceProp": "gold-coin",
+      "questions": [
+        {
+          "ask": "When did Queen Victoria reign?",
+          "answer": "1837 to 1901",
+          "wrong": ["1066 to 1087", "1558 to 1603", "1952 to 2022"],
+          "fact": "Victoria reigned for 63 years, longer than any British monarch before her."
+        },
+        {
+          "ask": "Which father and son built the famous steam engine Rocket in 1829?",
+          "answer": "The Stephensons",
+          "wrong": ["The Wright brothers", "The Brunels", "The Darwins"],
+          "fact": "Rocket won the Rainhill Trials, reaching about 30 miles per hour."
+        },
+        {
+          "ask": "Which engineer built the Great Western Railway?",
+          "answer": "Isambard Brunel",
+          "wrong": ["Thomas Telford", "Charles Darwin", "Michael Faraday"],
+          "fact": "Brunel also designed the SS Great Britain, one of the first big iron ships with a propeller."
+        },
+        {
+          "ask": "Which fuel was burned to power most Victorian steam engines?",
+          "answer": "Coal",
+          "wrong": ["Petrol", "Sunlight", "Batteries"],
+          "fact": "Burning coal boiled water, and the steam pushed pistons to make engines move."
+        },
+        {
+          "ask": "In which giant glass building was the Great Exhibition of 1851 held?",
+          "answer": "The Crystal Palace",
+          "wrong": [
+            "Buckingham Palace",
+            "Westminster Abbey",
+            "The Tower of London"
+          ],
+          "fact": "The Crystal Palace was built of iron and glass in Hyde Park, London."
+        },
+        {
+          "ask": "Which member of the royal family helped organise the Great Exhibition?",
+          "answer": "Prince Albert",
+          "wrong": ["Prince Charles", "King Henry VIII", "Lord Nelson"],
+          "fact": "Over six million visits were made to the exhibition in under six months."
+        },
+        {
+          "ask": "What was the Penny Black, first used in 1840?",
+          "answer": "A postage stamp",
+          "wrong": ["A steam train", "A penny coin", "A top hat"],
+          "fact": "It was the world's first sticky postage stamp, showing the young Queen Victoria."
+        },
+        {
+          "ask": "Who invented the telephone in 1876?",
+          "answer": "Alexander Graham Bell",
+          "wrong": ["Thomas Edison", "Charles Babbage", "Michael Faraday"],
+          "fact": "Bell was born in Edinburgh, Scotland, and later moved to Canada and the USA."
+        },
+        {
+          "ask": "Why did many factory and mine owners hire young children?",
+          "answer": "They were paid less",
+          "wrong": [
+            "They were stronger",
+            "The law said so",
+            "They asked to go"
+          ],
+          "fact": "Small children could crawl under machines and through narrow tunnels in mines."
+        },
+        {
+          "ask": "What were the laws passed to protect children in factories called?",
+          "answer": "Factory Acts",
+          "wrong": ["Magna Carta", "Corn Laws", "Highway Code"],
+          "fact": "The Factory Act of 1833 banned children under 9 from working in textile mills."
+        },
+        {
+          "ask": "From 1880, what did all children aged 5 to 10 have to do?",
+          "answer": "Go to school",
+          "wrong": ["Get a job", "Join the army", "Learn to ride"],
+          "fact": "Victorian pupils often wrote on slates with chalk and copied from the blackboard."
+        },
+        {
+          "ask": "Which Victorian author wrote Oliver Twist?",
+          "answer": "Charles Dickens",
+          "wrong": ["William Shakespeare", "Roald Dahl", "Beatrix Potter"],
+          "fact": "Dickens worked in a boot-polish factory when he was just 12 years old."
+        }
+      ]
+    }
+  ]
+}

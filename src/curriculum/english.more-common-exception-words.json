@@ -1,0 +1,8 @@
+{
+  "id": "english.more-common-exception-words",
+  "name": "Spelling Year 2 common exception words",
+  "subject": "english",
+  "yearGroup": 2,
+  "strand": "spelling",
+  "prerequisites": ["english.common-exception-words"]
+}

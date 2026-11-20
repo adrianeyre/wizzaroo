@@ -1,0 +1,543 @@
+{
+  "yearGroup": 1,
+  "games": [
+    {
+      "id": "first-animal-groups",
+      "title": "Animal Groups",
+      "station": "sort",
+      "prop": "egg",
+      "skillName": "Sorting animals into groups",
+      "strand": "animals-including-humans",
+      "statutoryRequirement": "Pupils should be taught to identify and name a variety of common animals including fish, amphibians, reptiles, birds and mammals",
+      "instruction": "Tap the group each animal belongs to.",
+      "hint": "Not quite. Think about its skin, scales, feathers or fur, then try again.",
+      "questions": [
+        {
+          "ask": "A frog",
+          "answer": "Amphibian",
+          "distractors": ["Fish", "Reptile", "Mammal"]
+        },
+        {
+          "ask": "A goldfish",
+          "answer": "Fish",
+          "distractors": ["Amphibian", "Reptile", "Bird"]
+        },
+        {
+          "ask": "A snake",
+          "answer": "Reptile",
+          "distractors": ["Amphibian", "Mammal", "Fish"]
+        },
+        {
+          "ask": "A robin",
+          "answer": "Bird",
+          "distractors": ["Mammal", "Reptile", "Amphibian"]
+        },
+        {
+          "ask": "A cow",
+          "answer": "Mammal",
+          "distractors": ["Bird", "Reptile", "Fish"]
+        },
+        {
+          "ask": "A newt",
+          "answer": "Amphibian",
+          "distractors": ["Reptile", "Fish", "Mammal"]
+        },
+        {
+          "ask": "A crocodile",
+          "answer": "Reptile",
+          "distractors": ["Amphibian", "Mammal", "Fish"]
+        },
+        {
+          "ask": "A penguin",
+          "answer": "Bird",
+          "distractors": ["Fish", "Mammal", "Reptile"]
+        }
+      ]
+    },
+    {
+      "id": "first-object-or-material",
+      "title": "Material Match",
+      "station": "odd-one-out",
+      "prop": "rock",
+      "skillName": "Telling objects from the materials they are made of",
+      "strand": "everyday-materials",
+      "statutoryRequirement": "Pupils should be taught to distinguish between an object and the material from which it is made, and identify and name a variety of everyday materials, including wood, plastic, glass, metal, water, and rock",
+      "instruction": "Tap the one that does not belong.",
+      "hint": "Look again. Think about what each thing is made of.",
+      "questions": [
+        {
+          "ask": "Which one is a material, not an object?",
+          "answer": "Wood",
+          "distractors": ["Chair", "Table", "Door"]
+        },
+        {
+          "ask": "Which one is an object, not a material?",
+          "answer": "Spoon",
+          "distractors": ["Metal", "Plastic", "Glass"]
+        },
+        {
+          "ask": "Which one is NOT made of metal?",
+          "answer": "Wooden spoon",
+          "distractors": ["Coin", "Key", "Paper clip"]
+        },
+        {
+          "ask": "Which one is NOT made of glass?",
+          "answer": "Plastic cup",
+          "distractors": ["Window", "Jam jar", "Mirror"]
+        },
+        {
+          "ask": "Which one is NOT made of wood?",
+          "answer": "Metal fork",
+          "distractors": ["Log", "Wooden chair", "Cricket bat"]
+        },
+        {
+          "ask": "Which one is NOT made of rock?",
+          "answer": "Teddy bear",
+          "distractors": ["Pebble", "Stone wall", "Boulder"]
+        },
+        {
+          "ask": "Which one is NOT see-through?",
+          "answer": "Wooden door",
+          "distractors": ["Glass window", "Clear water", "Clear plastic bag"]
+        },
+        {
+          "ask": "Which one is NOT bendy?",
+          "answer": "Stone",
+          "distractors": ["Rubber band", "Sheet of paper", "Sock"]
+        }
+      ]
+    },
+    {
+      "id": "first-sense-check",
+      "title": "Sense Check",
+      "station": "true-false",
+      "prop": "heart",
+      "skillName": "Naming body parts and the sense each one helps with",
+      "strand": "animals-including-humans",
+      "statutoryRequirement": "Pupils should be taught to identify, name, draw and label the basic parts of the human body and say which part of the body is associated with each sense",
+      "instruction": "Is it true or false? Tap your answer.",
+      "hint": "Not quite. Point to that part of your body and think about what it does.",
+      "questions": [
+        {
+          "ask": "You use your eyes to see.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "You use your ears to taste.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "You use your nose to smell.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Your tongue helps you hear.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "You can feel things with your skin.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Your elbow is part of your leg.",
+          "answer": "False",
+          "distractors": ["True"]
+        },
+        {
+          "ask": "Your knee is part of your leg.",
+          "answer": "True",
+          "distractors": ["False"]
+        },
+        {
+          "ask": "Your toes are on your hands.",
+          "answer": "False",
+          "distractors": ["True"]
+        }
+      ]
+    },
+    {
+      "id": "first-who-eats-what",
+      "title": "Who Eats What",
+      "station": "fill-gap",
+      "prop": "tooth",
+      "skillName": "Knowing what animals eat and how their bodies look",
+      "strand": "animals-including-humans",
+      "statutoryRequirement": "Pupils should be taught to identify and name a variety of common animals that are carnivores, herbivores and omnivores, and describe and compare the structure of a variety of common animals",
+      "instruction": "Tap the word that fills the gap.",
+      "hint": "Not quite. Think about what the animal eats, or how its body helps it, then try again.",
+      "questions": [
+        {
+          "ask": "Cows eat grass. Cows are ___.",
+          "answer": "Herbivores",
+          "distractors": ["Carnivores", "Omnivores", "Fish"]
+        },
+        {
+          "ask": "Lions eat meat. Lions are ___.",
+          "answer": "Carnivores",
+          "distractors": ["Herbivores", "Omnivores", "Birds"]
+        },
+        {
+          "ask": "Foxes eat meat and berries. Foxes are ___.",
+          "answer": "Omnivores",
+          "distractors": ["Herbivores", "Carnivores", "Reptiles"]
+        },
+        {
+          "ask": "Sharks eat fish and seals. Sharks are ___.",
+          "answer": "Carnivores",
+          "distractors": ["Herbivores", "Omnivores", "Mammals"]
+        },
+        {
+          "ask": "A herbivore eats only ___.",
+          "answer": "Plants",
+          "distractors": ["Meat", "Fish", "Insects"]
+        },
+        {
+          "ask": "An omnivore eats plants and ___.",
+          "answer": "Animals",
+          "distractors": ["Grass", "Leaves", "Seeds"]
+        },
+        {
+          "ask": "A fish uses its ___ to swim.",
+          "answer": "Fins",
+          "distractors": ["Wings", "Legs", "Beak"]
+        },
+        {
+          "ask": "A bird's body is covered in ___.",
+          "answer": "Feathers",
+          "distractors": ["Fur", "Scales", "Spikes"]
+        }
+      ]
+    },
+    {
+      "id": "first-season-circle",
+      "title": "Season Circle",
+      "station": "sequence",
+      "prop": "sun",
+      "skillName": "Ordering the four seasons and their changes",
+      "strand": "seasonal-changes",
+      "statutoryRequirement": "Pupils should be taught to observe changes across the four seasons, and observe and describe how day length varies",
+      "instruction": "Tap what comes next.",
+      "hint": "Not quite. Think about which season comes after the last one shown, then try again.",
+      "questions": [
+        {
+          "ask": "Spring → Summer → Autumn → ?",
+          "answer": "Winter",
+          "distractors": ["Spring", "Summer", "Autumn"]
+        },
+        {
+          "ask": "Summer → Autumn → Winter → ?",
+          "answer": "Spring",
+          "distractors": ["Summer", "Autumn", "Winter"]
+        },
+        {
+          "ask": "Autumn → Winter → Spring → ?",
+          "answer": "Summer",
+          "distractors": ["Spring", "Autumn", "Winter"]
+        },
+        {
+          "ask": "Winter → Spring → Summer → ?",
+          "answer": "Autumn",
+          "distractors": ["Spring", "Summer", "Winter"]
+        },
+        {
+          "ask": "Bare tree in winter → Buds in spring → Green leaves in summer → ?",
+          "answer": "Leaves change colour",
+          "distractors": ["New buds grow", "Blossom opens", "Leaves stay green"]
+        },
+        {
+          "ask": "Short days in winter → Longer days in spring → ?",
+          "answer": "Longest days",
+          "distractors": ["Shortest days", "Short days", "No daylight"]
+        },
+        {
+          "ask": "Long days in summer → Shorter days in autumn → ?",
+          "answer": "Shortest days",
+          "distractors": ["Longest days", "Longer days", "No night at all"]
+        },
+        {
+          "ask": "Hot summer → Cool autumn → ?",
+          "answer": "Cold winter",
+          "distractors": ["Hot summer", "Warm spring", "Cool autumn"]
+        }
+      ]
+    },
+    {
+      "id": "first-plant-spotter",
+      "title": "Plant Spotter",
+      "station": "mystery",
+      "prop": "tree",
+      "skillName": "Naming common wild and garden plants and trees",
+      "strand": "plants",
+      "statutoryRequirement": "Pupils should be taught to identify and name a variety of common wild and garden plants, including deciduous and evergreen trees",
+      "instruction": "Listen to the clues and tap the plant.",
+      "hint": "Not quite. Listen to the clues again and think about plants you have seen.",
+      "questions": [
+        {
+          "ask": "I am yellow. I grow on lawns. My seeds float away like fluff. What am I?",
+          "answer": "Dandelion",
+          "distractors": ["Daisy", "Rose", "Sunflower"]
+        },
+        {
+          "ask": "I am small with white petals and a yellow middle. I grow in grass. What am I?",
+          "answer": "Daisy",
+          "distractors": ["Dandelion", "Tulip", "Bluebell"]
+        },
+        {
+          "ask": "I am a tall tree. I lose my leaves in autumn. My seeds are acorns. What am I?",
+          "answer": "Oak tree",
+          "distractors": ["Pine tree", "Holly tree", "Apple tree"]
+        },
+        {
+          "ask": "I am an evergreen tree. My leaves are prickly and I have red berries. What am I?",
+          "answer": "Holly tree",
+          "distractors": ["Oak tree", "Beech tree", "Apple tree"]
+        },
+        {
+          "ask": "I am an evergreen tree. I have thin green needles and cones. What am I?",
+          "answer": "Pine tree",
+          "distractors": ["Oak tree", "Beech tree", "Apple tree"]
+        },
+        {
+          "ask": "I am a tree. I have blossom in spring and crunchy fruit in autumn. What am I?",
+          "answer": "Apple tree",
+          "distractors": ["Pine tree", "Holly tree", "Oak tree"]
+        },
+        {
+          "ask": "I am a tall garden flower with a big yellow head full of seeds. What am I?",
+          "answer": "Sunflower",
+          "distractors": ["Daisy", "Bluebell", "Dandelion"]
+        },
+        {
+          "ask": "I am a blue wild flower shaped like a bell. I grow in woods in spring. What am I?",
+          "answer": "Bluebell",
+          "distractors": ["Daffodil", "Rose", "Daisy"]
+        }
+      ]
+    },
+    {
+      "id": "first-material-tests",
+      "title": "Material Tests",
+      "station": "predict",
+      "prop": "water-drop",
+      "skillName": "Predicting how materials behave from their properties",
+      "strand": "everyday-materials",
+      "statutoryRequirement": "Pupils should be taught to describe the simple physical properties of a variety of everyday materials",
+      "instruction": "Tap what you think will happen.",
+      "hint": "Think about the material. Is it hard or soft, bendy or stiff, waterproof or not?",
+      "questions": [
+        {
+          "ask": "What will happen if you drop a glass jar on a stone floor?",
+          "answer": "It will smash",
+          "distractors": ["It will bounce", "It will bend", "It will melt"]
+        },
+        {
+          "ask": "What will happen if you pour water on a paper towel?",
+          "answer": "It soaks it up",
+          "distractors": ["Water rolls off", "It stays dry", "It turns hard"]
+        },
+        {
+          "ask": "What will happen if you pour water on a plastic sheet?",
+          "answer": "Water runs off",
+          "distractors": ["It soaks it up", "It melts", "It tears"]
+        },
+        {
+          "ask": "What will happen if you squeeze a sponge?",
+          "answer": "It squashes",
+          "distractors": ["It snaps", "It smashes", "It stays the same"]
+        },
+        {
+          "ask": "What will happen if you pull a rubber band?",
+          "answer": "It stretches",
+          "distractors": ["It smashes", "It melts", "It goes see-through"]
+        },
+        {
+          "ask": "What will happen if you put a wooden block in water?",
+          "answer": "It floats",
+          "distractors": ["It sinks", "It melts", "It turns to metal"]
+        },
+        {
+          "ask": "What will happen if you put a metal key in water?",
+          "answer": "It sinks",
+          "distractors": ["It floats", "It melts", "It goes soft"]
+        },
+        {
+          "ask": "What will happen if you try to bend a stone with your hands?",
+          "answer": "It will not bend",
+          "distractors": ["It bends", "It stretches", "It squashes"]
+        }
+      ]
+    },
+    {
+      "id": "first-plant-parts",
+      "title": "Plant Parts",
+      "station": "vocabulary",
+      "prop": "flower",
+      "skillName": "Naming the parts of flowering plants and trees",
+      "strand": "plants",
+      "statutoryRequirement": "Pupils should be taught to identify and describe the basic structure of a variety of common flowering plants, including trees",
+      "instruction": "Tap the word that matches.",
+      "hint": "Not quite. Think about where that part is on a plant or tree.",
+      "questions": [
+        {
+          "ask": "The part under the soil that holds the plant in place",
+          "answer": "Root",
+          "distractors": ["Stem", "Leaf", "Petal"]
+        },
+        {
+          "ask": "The thin stalk that holds up the flower and leaves",
+          "answer": "Stem",
+          "distractors": ["Root", "Trunk", "Petal"]
+        },
+        {
+          "ask": "The flat green part of a plant",
+          "answer": "Leaf",
+          "distractors": ["Root", "Petal", "Stem"]
+        },
+        {
+          "ask": "One of the coloured parts of a flower",
+          "answer": "Petal",
+          "distractors": ["Leaf", "Root", "Trunk"]
+        },
+        {
+          "ask": "The thick, woody stem of a tree",
+          "answer": "Trunk",
+          "distractors": ["Branch", "Root", "Petal"]
+        },
+        {
+          "ask": "The part of a tree that grows out from the trunk",
+          "answer": "Branch",
+          "distractors": ["Root", "Petal", "Flower"]
+        },
+        {
+          "ask": "A tree that loses its leaves in autumn",
+          "answer": "Deciduous",
+          "distractors": ["Evergreen", "Branch", "Blossom"]
+        },
+        {
+          "ask": "A tree that keeps its leaves all year round",
+          "answer": "Evergreen",
+          "distractors": ["Deciduous", "Branch", "Root"]
+        }
+      ]
+    },
+    {
+      "id": "first-weather-watch",
+      "title": "Weather Watch",
+      "station": "compare",
+      "prop": "thermometer",
+      "skillName": "Comparing weather and day length in each season",
+      "strand": "seasonal-changes",
+      "statutoryRequirement": "Pupils should be taught to observe and describe weather associated with the seasons and how day length varies",
+      "instruction": "Tap the best answer.",
+      "hint": "Not quite. Think about the weather and the daylight in each season.",
+      "questions": [
+        {
+          "ask": "Which season is usually the coldest?",
+          "answer": "Winter",
+          "distractors": ["Spring", "Summer", "Autumn"]
+        },
+        {
+          "ask": "Which season is usually the hottest?",
+          "answer": "Summer",
+          "distractors": ["Spring", "Autumn", "Winter"]
+        },
+        {
+          "ask": "Which season has the longest days?",
+          "answer": "Summer",
+          "distractors": ["Spring", "Autumn", "Winter"]
+        },
+        {
+          "ask": "Which season has the shortest days?",
+          "answer": "Winter",
+          "distractors": ["Spring", "Summer", "Autumn"]
+        },
+        {
+          "ask": "In which season are you most likely to see snow?",
+          "answer": "Winter",
+          "distractors": ["Spring", "Summer", "Autumn"]
+        },
+        {
+          "ask": "In which season do the most leaves fall from trees?",
+          "answer": "Autumn",
+          "distractors": ["Spring", "Summer", "Winter"]
+        },
+        {
+          "ask": "In which season do the most new buds and leaves appear?",
+          "answer": "Spring",
+          "distractors": ["Summer", "Autumn", "Winter"]
+        },
+        {
+          "ask": "Which month is usually the coldest in the UK?",
+          "answer": "January",
+          "distractors": ["June", "July", "August"]
+        }
+      ]
+    },
+    {
+      "id": "first-science-detectives",
+      "title": "Science Detectives",
+      "station": "investigate",
+      "prop": "magnifier",
+      "skillName": "Choosing simple equipment and tests to find things out",
+      "strand": "working-scientifically",
+      "statutoryRequirement": "Pupils should be taught to observe closely using simple equipment, perform simple tests, identify and classify, and gather and record data to help in answering questions",
+      "instruction": "Tap the best way to find out.",
+      "hint": "Not quite. Think about which tool or test would help you find out, then try again.",
+      "questions": [
+        {
+          "ask": "What would you use to look closely at a tiny bug?",
+          "answer": "Magnifying glass",
+          "distractors": ["Ruler", "Rain gauge", "Thermometer"]
+        },
+        {
+          "ask": "What would you use to find out how much rain fell?",
+          "answer": "Rain gauge",
+          "distractors": ["Magnifying glass", "Thermometer", "Clock"]
+        },
+        {
+          "ask": "What would you use to find out how hot it is outside?",
+          "answer": "Thermometer",
+          "distractors": ["Rain gauge", "Magnifying glass", "Ruler"]
+        },
+        {
+          "ask": "What would you use to measure how tall a sunflower is?",
+          "answer": "Tape measure",
+          "distractors": ["Thermometer", "Rain gauge", "Magnifying glass"]
+        },
+        {
+          "ask": "How can you find out if a material is waterproof?",
+          "answer": "Pour water on it",
+          "distractors": ["Look at its colour", "Smell it", "Shake it"]
+        },
+        {
+          "ask": "How can you find out which material is the bendiest?",
+          "answer": "Try to bend each one",
+          "distractors": [
+            "Look at each colour",
+            "Smell each one",
+            "Count each one"
+          ]
+        },
+        {
+          "ask": "You want to sort animals into groups. Which question helps?",
+          "answer": "Does it have fur?",
+          "distractors": ["What is its name?", "Do I like it?", "Is it cute?"]
+        },
+        {
+          "ask": "How can you keep a record of the weather each day?",
+          "answer": "Use a weather chart",
+          "distractors": [
+            "Guess it next week",
+            "Try to remember it",
+            "Look once a month"
+          ]
+        }
+      ]
+    }
+  ]
+}

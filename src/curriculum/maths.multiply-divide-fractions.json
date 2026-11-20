@@ -1,0 +1,8 @@
+{
+  "id": "maths.multiply-divide-fractions",
+  "name": "Multiplying fractions, and dividing them by whole numbers",
+  "subject": "maths",
+  "yearGroup": 6,
+  "strand": "fractions-including-decimals-and-percentages",
+  "prerequisites": ["maths.add-subtract-fractions"]
+}

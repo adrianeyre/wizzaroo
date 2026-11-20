@@ -1,0 +1,8 @@
+{
+  "id": "maths.add-within-20",
+  "name": "Adding to 20",
+  "subject": "maths",
+  "yearGroup": 1,
+  "strand": "addition-and-subtraction",
+  "prerequisites": ["maths.count-objects-to-20"]
+}

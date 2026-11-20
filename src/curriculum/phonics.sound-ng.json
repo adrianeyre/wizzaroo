@@ -1,0 +1,9 @@
+{
+  "id": "phonics.sound-ng",
+  "name": "The /ng/ sound, as in ring",
+  "subject": "phonics",
+  "yearGroup": 1,
+  "strand": "grapheme-phoneme-correspondences",
+  "prerequisites": [],
+  "sounds": ["ng"]
+}

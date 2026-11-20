@@ -1,0 +1,5292 @@
+{
+  "islands": [
+    {
+      "id": "meadow-isle",
+      "name": "Meadow Isle",
+      "yearGroup": 1,
+      "seaPosition": {
+        "x": 0,
+        "z": 0
+      },
+      "landmarks": [
+        "bright-meadow",
+        "volcano",
+        "mountain-lake",
+        "river",
+        "three-villages",
+        "lighthouse"
+      ],
+      "theme": {
+        "id": "bright-meadow",
+        "palette": {
+          "sky": "#8fd3ff",
+          "ground": "#7ccf6a",
+          "accent": "#ffd23f"
+        },
+        "music": {
+          "id": "bright-meadow-chiptune",
+          "beatsPerMinute": 112,
+          "regionTunes": {
+            "bubble-bay": "C5 - A4 D5 C5 A4 D5 - C5 - A4 E4 A4 D5 C5 C5",
+            "whispering-woods": "C5 G4 G4 C5 D5 A4 G4 A4 G4 E4 G4 C5 C5 - A4 C5",
+            "crystal-caves": "C5 E5 C5 A4 G4 A4 A4 D5 A4 D5 E5 E5 C5 E5 G5 C5",
+            "cloud-castle": "C5 D5 A4 A4 G4 C5 E5 A5 E5 D5 C5 G4 C5 A4 G4 E5",
+            "brainwave-big-top": "C5 D5 C5 A4 E4 G4 G4 G4 E4 - G4 E4 G4 E4 E4 E5",
+            "challenge-arena": "E5 E4 E4 G4 E4 G4 - E4 G4 G4 G4 E4 A4 C5 D5 C5",
+            "crescendo-canyon": "C5 G4 E4 E4 E4 G4 E4 E4 E4 E4 E4 G4 C5 A4 C5 E5",
+            "compass-peak": "C5 D5 A4 E4 E4 G4 A4 C5 D5 C5 D5 - E5 C5 D5 E5",
+            "hourglass-heights": "C5 D5 E5 G5 A5 G5 G5 E5 D5 E5 C5 A4 G4 A4 A4 C5",
+            "circuit-spire": "C5 - A4 C5 A4 E4 E4 G4 C5 E5 C5 D5 A4 A4 A4 E5",
+            "rainbow-easel": "G4 E4 G4 C5 C5 - A4 C5 C5 G4 G4 C5 D5 A4 G4 A4",
+            "tinker-mill": "G4 A4 A4 D5 A4 D5 E5 E5 C5 E5 G5 C5 C5 E5 C5 A4"
+          }
+        },
+        "modelSet": "low-poly-meadow",
+        "companionStyle": "round-owl"
+      }
+    },
+    {
+      "id": "frost-isle",
+      "name": "Frost Isle",
+      "yearGroup": 2,
+      "seaPosition": {
+        "x": 236,
+        "z": -8
+      },
+      "landmarks": [
+        "snowfields",
+        "frozen-waterfall",
+        "igloo-village",
+        "aurora-sky",
+        "ice-bridge"
+      ],
+      "theme": {
+        "id": "frost-isle",
+        "palette": {
+          "sky": "#a9d8ff",
+          "ground": "#e8f1f8",
+          "accent": "#5ec8f2"
+        },
+        "music": {
+          "id": "frost-isle-chiptune",
+          "beatsPerMinute": 96,
+          "regionTunes": {
+            "icicle-inlet": "D5 E5 F#5 A5 A5 - A5 - B5 B5 A5 B5 B5 F#5 F#5 D5",
+            "snowdrift-library": "D5 B4 F#4 F#4 F#4 - F#4 B4 D5 D5 B4 D5 E5 D5 B4 F#5",
+            "glacier-grotto": "D5 B4 B4 - D5 - B4 A4 B4 E5 F#5 A5 B5 B5 A5 D5",
+            "aurora-lab": "D5 B4 B4 - E5 E5 A5 F#5 B5 - F#5 A5 E5 D5 B4 D5",
+            "brainwave-big-top": "D5 E5 D5 B4 F#4 A4 A4 A4 F#4 - A4 F#4 A4 F#4 F#4 F#5",
+            "chiming-icefall": "D5 - B4 A4 A4 B4 E5 F#5 D5 D5 F#5 D5 E5 B4 A4 F#5",
+            "polar-lookout": "D5 E5 D5 F#5 E5 B4 D5 F#5 A5 - B5 A5 A5 B5 A5 F#5",
+            "frozen-fort": "D5 E5 B4 - A4 F#4 F#4 F#4 A4 D5 A4 - D5 - E5 F#5",
+            "snowbot-works": "D5 D5 E5 D5 B4 D5 B4 - B4 E5 F#5 E5 F#5 - F#5 D5",
+            "frost-gallery": "D5 D5 B4 D5 E5 D5 B4 F#5 D5 B4 F#4 F#4 F#4 - F#4 B4",
+            "sleigh-workshop": "D5 - B4 A4 B4 E5 F#5 A5 B5 B5 A5 D5 D5 B4 B4 -"
+          }
+        },
+        "modelSet": "low-poly-frost",
+        "companionStyle": "snowy-owl"
+      }
+    },
+    {
+      "id": "sunscorch-sands",
+      "name": "Sunscorch Sands",
+      "yearGroup": 3,
+      "seaPosition": {
+        "x": 472,
+        "z": 0
+      },
+      "landmarks": [
+        "dunes",
+        "oasis",
+        "desert-ruins",
+        "market-town",
+        "caravan-trail"
+      ],
+      "theme": {
+        "id": "sunscorch-sands",
+        "palette": {
+          "sky": "#ffd9a0",
+          "ground": "#e6c27a",
+          "accent": "#f28c28"
+        },
+        "music": {
+          "id": "sunscorch-sands-chiptune",
+          "beatsPerMinute": 120,
+          "regionTunes": {
+            "oasis-pools": "E5 D5 E5 G5 A5 - E5 G5 E5 E5 G5 E5 D5 E5 D5 E5",
+            "scroll-bazaar": "E5 G5 E5 D5 A4 D5 G5 A5 E5 D5 E5 - D5 B4 D5 A5",
+            "mirage-prism": "E5 A5 G5 E5 E5 - G5 - B5 - G5 B5 G5 D5 E5 E5",
+            "brainwave-big-top": "E5 G5 E5 D5 A4 B4 B4 B4 A4 - B4 A4 B4 A4 A4 A5",
+            "drumbeat-dunes": "E5 D5 E5 G5 A5 A5 A5 G5 D5 E5 D5 D5 E5 D5 B4 E5",
+            "caravan-crossing": "E5 D5 D5 - E5 D5 E5 - G5 E5 A5 E5 D5 - E5 E5",
+            "pyramid-steps": "E5 G5 G5 E5 E5 B4 A4 B4 E5 B4 A4 A4 B4 A4 D5 E5",
+            "sandstorm-relay": "E5 A5 E5 B4 A4 - A4 A4 A4 A4 B4 A4 B4 A4 A4 E5",
+            "mosaic-courtyard": "E5 D5 E5 - D5 B4 D5 A5 E5 G5 E5 D5 A4 D5 G5 A5",
+            "echo-well": "B4 A4 A4 A5 E5 G5 E5 D5 A4 B4 B4 B4 A4 - B4 A4",
+            "camel-gearworks": "E5 - G5 - B5 - G5 B5 G5 D5 E5 E5 E5 A5 G5 E5"
+          }
+        },
+        "modelSet": "low-poly-desert",
+        "companionStyle": "desert-fox"
+      }
+    },
+    {
+      "id": "jungle-reach",
+      "name": "Jungle Reach",
+      "yearGroup": 4,
+      "seaPosition": {
+        "x": 472,
+        "z": -72
+      },
+      "landmarks": [
+        "rainforest-canopy",
+        "waterfalls",
+        "river-delta",
+        "rope-bridges",
+        "overgrown-temple"
+      ],
+      "theme": {
+        "id": "jungle-reach",
+        "palette": {
+          "sky": "#9fe0c8",
+          "ground": "#3f8f3a",
+          "accent": "#ff4f8b"
+        },
+        "music": {
+          "id": "jungle-reach-chiptune",
+          "beatsPerMinute": 126,
+          "regionTunes": {
+            "monkey-falls": "F5 G5 G5 A5 C6 G5 D5 C5 D5 F5 D5 - A4 A4 D5 F5",
+            "storyvine-temple": "F5 D5 C5 - A4 C5 C5 A4 A4 D5 F5 C5 D5 F5 A5 A5",
+            "orchid-hollow": "F5 D5 A4 - C5 D5 G5 F5 G5 A5 F5 - F5 D5 C5 A5",
+            "brainwave-big-top": "F5 G5 F5 D5 A4 C5 C5 C5 A4 - C5 A4 C5 A4 A4 A5",
+            "challenge-arena": "A5 A4 A4 C5 A4 C5 - A4 C5 C5 C5 A4 D5 F5 G5 F5",
+            "rainbeat-ridge": "F5 A5 D6 D6 D6 A5 C6 G5 F5 D5 C5 F5 A5 C6 D6 A5",
+            "delta-mapworks": "F5 - G5 A5 C6 - A5 C6 G5 D5 C5 C5 D5 D5 C5 A5",
+            "lost-temple": "F5 A5 A5 G5 F5 A5 D6 D6 C6 D6 D6 D6 D6 D6 C6 F5",
+            "firefly-circuit": "F5 G5 D5 A4 A4 - C5 A4 C5 D5 C5 A4 D5 F5 C5 F5",
+            "canopy-studio": "A4 D5 F5 C5 D5 F5 A5 A5 F5 D5 C5 - A4 C5 C5 A4",
+            "parrot-point": "C5 A4 A4 A5 F5 G5 F5 D5 A4 C5 C5 C5 A4 - C5 A4",
+            "vine-workshop": "C5 D5 G5 F5 G5 A5 F5 - F5 D5 C5 A5 F5 D5 A4 -"
+          }
+        },
+        "modelSet": "low-poly-jungle",
+        "companionStyle": "bright-toucan"
+      }
+    },
+    {
+      "id": "ember-isle",
+      "name": "Ember Isle",
+      "yearGroup": 5,
+      "seaPosition": {
+        "x": 236,
+        "z": -80
+      },
+      "landmarks": [
+        "volcanic-forge",
+        "lava-rivers",
+        "obsidian-cliffs",
+        "iron-keep",
+        "steam-vents"
+      ],
+      "theme": {
+        "id": "ember-isle",
+        "palette": {
+          "sky": "#ffb08a",
+          "ground": "#5a463f",
+          "accent": "#ff5a1f"
+        },
+        "music": {
+          "id": "ember-isle-chiptune",
+          "beatsPerMinute": 108,
+          "regionTunes": {
+            "anvil-quarry": "A5 E5 D5 D5 D5 D5 D5 G5 A5 A5 G5 E5 D5 D5 D5 D6",
+            "inkfire-archive": "A5 C6 A5 - C6 A5 G5 G5 E5 - A5 G5 G5 E5 D5 A5",
+            "magma-crucible": "A5 D6 D6 A5 C6 - D6 E6 G6 G6 G6 - D6 - E6 A5",
+            "brainwave-big-top": "A5 C6 A5 G5 D5 E5 E5 E5 D5 - E5 D5 E5 D5 D5 D6",
+            "thunder-forge": "A5 - E5 G5 D5 D5 E5 G5 E5 G5 E5 D5 E5 - D5 D6",
+            "obsidian-peaks": "A5 - G5 E5 E5 D5 D5 E5 A5 C6 A5 D6 E6 G6 D6 A5",
+            "ironclad-keep": "A5 - C6 D6 D6 C6 A5 A5 A5 G5 D5 D5 D5 - D5 A5",
+            "cinder-core": "A5 A5 G5 - D5 D5 D5 D5 D5 E5 D5 D5 D5 G5 D5 D6",
+            "molten-gallery": "E5 - A5 G5 G5 E5 D5 A5 A5 C6 A5 - C6 A5 G5 G5",
+            "ember-embassy": "E5 D5 D5 D6 A5 C6 A5 G5 D5 E5 E5 E5 D5 - E5 D5",
+            "bellows-workshop": "C6 - D6 E6 G6 G6 G6 - D6 - E6 A5 A5 D6 D6 A5"
+          }
+        },
+        "modelSet": "low-poly-volcanic",
+        "companionStyle": "fire-salamander"
+      }
+    },
+    {
+      "id": "starfall-isle",
+      "name": "Starfall Isle",
+      "yearGroup": 6,
+      "seaPosition": {
+        "x": 0,
+        "z": -72
+      },
+      "landmarks": [
+        "floating-rocks",
+        "observatory",
+        "standing-stones",
+        "crystal-spires",
+        "comet"
+      ],
+      "theme": {
+        "id": "starfall-isle",
+        "palette": {
+          "sky": "#2b2d6e",
+          "ground": "#55658f",
+          "accent": "#c9a8ff"
+        },
+        "music": {
+          "id": "starfall-isle-chiptune",
+          "beatsPerMinute": 90,
+          "regionTunes": {
+            "constellation-court": "G5 G5 B5 - A5 G5 D5 E5 B4 B4 D5 B4 B4 B4 B4 G5",
+            "moonlit-scriptorium": "G5 A5 B5 A5 D6 A5 E5 D5 B4 B4 B4 D5 B4 D5 G5 G5",
+            "comet-observatory": "G5 B5 A5 - A5 G5 A5 A5 B5 B5 A5 G5 B5 D6 A5 B5",
+            "brainwave-big-top": "G5 A5 G5 E5 B4 D5 D5 D5 B4 - D5 B4 D5 B4 B4 B5",
+            "challenge-arena": "B5 B4 B4 D5 B4 D5 - B4 D5 D5 D5 B4 E5 G5 A5 G5",
+            "nebula-hall": "G5 - E5 A5 B5 D6 B5 A5 B5 E6 E6 D6 E6 E6 E6 G5",
+            "meridian-stones": "G5 E5 G5 - E5 - D5 E5 D5 G5 G5 A5 G5 - E5 B5",
+            "starfall-ruins": "G5 - A5 G5 E5 B4 D5 B4 B4 - B4 D5 E5 - A5 B5",
+            "signal-tower": "G5 D5 D5 - D5 B4 E5 - D5 - G5 A5 E5 G5 G5 G5",
+            "stardust-studio": "B4 B4 B4 D5 B4 D5 G5 G5 G5 A5 B5 A5 D6 A5 E5 D5",
+            "galaxy-gate": "D5 B4 B4 B5 G5 A5 G5 E5 B4 D5 D5 D5 B4 - D5 B4",
+            "orbit-workshop": "A5 G5 A5 A5 B5 B5 A5 G5 B5 D6 A5 B5 G5 B5 A5 -"
+          }
+        },
+        "modelSet": "low-poly-starlit",
+        "companionStyle": "night-raven"
+      }
+    }
+  ],
+  "regions": [
+    {
+      "islandId": "meadow-isle",
+      "id": "bubble-bay",
+      "name": "Bubble Bay",
+      "subject": "maths",
+      "story": "The bubble machine is jammed! Solve the maths puzzles of the bay, from counting fish to reading the ship's clock, to set it bubbling again.",
+      "landmark": "bubbles",
+      "mapPosition": {
+        "x": -14,
+        "z": 9
+      },
+      "games": [
+        {
+          "id": "popping-bubbles",
+          "gameType": "popping-bubbles",
+          "subject": "maths"
+        },
+        {
+          "id": "fish-count",
+          "gameType": "fish-count",
+          "subject": "maths"
+        },
+        {
+          "id": "ten-frames",
+          "gameType": "ten-frames",
+          "subject": "maths"
+        },
+        {
+          "id": "shape-hunt",
+          "gameType": "shape-hunt",
+          "subject": "maths"
+        },
+        {
+          "id": "shell-sums",
+          "gameType": "shell-sums",
+          "subject": "maths"
+        },
+        {
+          "id": "crab-take-away",
+          "gameType": "crab-take-away",
+          "subject": "maths"
+        },
+        {
+          "id": "skip-count",
+          "gameType": "skip-count",
+          "subject": "maths"
+        },
+        {
+          "id": "coral-heights",
+          "gameType": "coral-heights",
+          "subject": "maths"
+        },
+        {
+          "id": "fraction-find",
+          "gameType": "fraction-find",
+          "subject": "maths"
+        },
+        {
+          "id": "ship-clock",
+          "gameType": "ship-clock",
+          "subject": "maths"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "fair-shares",
+          "gameType": "fair-shares",
+          "subject": "maths"
+        },
+        {
+          "id": "treasure-map",
+          "gameType": "treasure-map",
+          "subject": "maths"
+        },
+        {
+          "id": "number-word-wizard",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "most-or-least-match",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "hop-past-hundred",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "heavy-full-quick",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "coin-and-note-counter",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "days-and-months-order",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "flat-shape-spotter",
+          "gameType": "science-lab",
+          "subject": "maths"
+        }
+      ]
+    },
+    {
+      "islandId": "meadow-isle",
+      "id": "whispering-woods",
+      "name": "Whispering Woods",
+      "subject": "english",
+      "story": "The owls have lost their voices. Help them find their words again: spell them, join them and punctuate them, and the whole wood will sing.",
+      "landmark": "forest",
+      "mapPosition": {
+        "x": -6,
+        "z": -3
+      },
+      "games": [
+        {
+          "id": "alphabet-train",
+          "gameType": "alphabet-train",
+          "subject": "english"
+        },
+        {
+          "id": "word-lanterns",
+          "gameType": "word-lanterns",
+          "subject": "english"
+        },
+        {
+          "id": "one-or-many",
+          "gameType": "one-or-many",
+          "subject": "english"
+        },
+        {
+          "id": "word-workshop",
+          "gameType": "word-workshop",
+          "subject": "english"
+        },
+        {
+          "id": "punctuation-stones",
+          "gameType": "punctuation-stones",
+          "subject": "english"
+        },
+        {
+          "id": "suffix-potions",
+          "gameType": "suffix-potions",
+          "subject": "english"
+        },
+        {
+          "id": "word-squeeze",
+          "gameType": "word-squeeze",
+          "subject": "english"
+        },
+        {
+          "id": "sound-alikes",
+          "gameType": "sound-alikes",
+          "subject": "english"
+        },
+        {
+          "id": "bridge-builder",
+          "gameType": "bridge-builder",
+          "subject": "english"
+        },
+        {
+          "id": "word-detectives",
+          "gameType": "word-detectives",
+          "subject": "english"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "letter-match",
+          "gameType": "letter-match",
+          "subject": "english"
+        },
+        {
+          "id": "story-scrolls",
+          "gameType": "story-scrolls",
+          "subject": "english"
+        },
+        {
+          "id": "story-builder",
+          "gameType": "story-builder",
+          "subject": "english"
+        },
+        {
+          "id": "apostrophe-swap-shop",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "weekday-word-wizard",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "spelling-rule-rover",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "capital-space-patrol",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "fairy-tale-forest",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "silly-word-spotter",
+          "gameType": "science-lab",
+          "subject": "english"
+        }
+      ]
+    },
+    {
+      "islandId": "meadow-isle",
+      "id": "crystal-caves",
+      "name": "Crystal Caves",
+      "subject": "phonics",
+      "story": "The crystals have gone dark. Read the words carved into the cave, blend the sounds and spell them right to light the crystals one by one.",
+      "landmark": "crystals",
+      "mapPosition": {
+        "x": 6,
+        "z": -8
+      },
+      "games": [
+        {
+          "id": "crystal-blend",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "real-or-alien",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "sound-counter",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "digraph-dig",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "magic-e",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "tricky-words",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "one-or-more",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "word-endings",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "un-words",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "sound-spotter",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "listen-and-pick",
+          "gameType": "listen-and-pick",
+          "subject": "phonics"
+        }
+      ]
+    },
+    {
+      "islandId": "meadow-isle",
+      "id": "cloud-castle",
+      "name": "Cloud Castle",
+      "subject": "science",
+      "story": "The castle's laboratory has gone dark. Run the experiments, sort the specimens and test your ideas to switch every lab light back on.",
+      "landmark": "castle",
+      "mapPosition": {
+        "x": 15,
+        "z": -10
+      },
+      "games": [
+        {
+          "id": "first-animal-groups",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "first-object-or-material",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "first-sense-check",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "first-who-eats-what",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "first-season-circle",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "first-plant-spotter",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "first-material-tests",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "first-plant-parts",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "first-weather-watch",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "first-science-detectives",
+          "gameType": "science-lab",
+          "subject": "science"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "animal-body-builder",
+          "gameType": "science-lab",
+          "subject": "science"
+        }
+      ]
+    },
+    {
+      "islandId": "meadow-isle",
+      "id": "brainwave-big-top",
+      "name": "Brainwave Big Top",
+      "story": "Roll up, roll up! The ringmaster's puzzles have got into a terrible muddle. Hunt for hidden words, fill the number grids, sweep for sneaky mines, crack the crossword, match the tiles, build number pyramids, follow number trails, play bingo, pair up the clocks, spell across the tightrope, sort the rings and line up the sentence parade to get the show back on the road.",
+      "landmark": "big-top",
+      "mapPosition": {
+        "x": 16,
+        "z": 2
+      },
+      "games": [
+        {
+          "id": "word-search",
+          "gameType": "word-search",
+          "subject": "english"
+        },
+        {
+          "id": "sudoku",
+          "gameType": "sudoku",
+          "subject": "maths"
+        },
+        {
+          "id": "mine-sweeper",
+          "gameType": "mine-sweeper",
+          "subject": "maths"
+        },
+        {
+          "id": "crossword",
+          "gameType": "crossword",
+          "subject": "english"
+        },
+        {
+          "id": "mahjong",
+          "gameType": "mahjong",
+          "subject": "maths"
+        },
+        {
+          "id": "number-pyramid",
+          "gameType": "number-pyramid",
+          "subject": "maths"
+        },
+        {
+          "id": "number-trail",
+          "gameType": "number-trail",
+          "subject": "maths"
+        },
+        {
+          "id": "bingo",
+          "gameType": "bingo",
+          "subject": "maths"
+        },
+        {
+          "id": "clock-pairs",
+          "gameType": "clock-pairs",
+          "subject": "maths"
+        },
+        {
+          "id": "tightrope-words",
+          "gameType": "tightrope-words",
+          "subject": "english"
+        },
+        {
+          "id": "ring-sort",
+          "gameType": "ring-sort",
+          "subject": "english"
+        },
+        {
+          "id": "sentence-parade",
+          "gameType": "sentence-parade",
+          "subject": "english"
+        }
+      ]
+    },
+    {
+      "islandId": "meadow-isle",
+      "id": "crescendo-canyon",
+      "name": "Crescendo Canyon",
+      "subject": "music",
+      "story": "The canyon's giant echo has fallen silent! Listen, play and read music to fill the band shell with song, so the echo sings back louder and louder.",
+      "landmark": "music",
+      "mapPosition": {
+        "x": -17,
+        "z": 1
+      },
+      "games": [
+        {
+          "id": "big-drum-little-drum",
+          "gameType": "big-drum-little-drum",
+          "subject": "music"
+        },
+        {
+          "id": "hare-and-tortoise",
+          "gameType": "hare-and-tortoise",
+          "subject": "music"
+        },
+        {
+          "id": "bird-or-bear",
+          "gameType": "bird-or-bear",
+          "subject": "music"
+        },
+        {
+          "id": "drum-beat-counter",
+          "gameType": "drum-beat-counter",
+          "subject": "music"
+        },
+        {
+          "id": "clap-stamp-click",
+          "gameType": "clap-stamp-click",
+          "subject": "music"
+        },
+        {
+          "id": "percussion-detective",
+          "gameType": "percussion-detective",
+          "subject": "music"
+        },
+        {
+          "id": "carnival-of-the-animals",
+          "gameType": "carnival-of-the-animals",
+          "subject": "music"
+        },
+        {
+          "id": "long-and-short",
+          "gameType": "long-and-short",
+          "subject": "music"
+        },
+        {
+          "id": "echo-mountain",
+          "gameType": "echo-mountain",
+          "subject": "music"
+        },
+        {
+          "id": "up-down-or-stay",
+          "gameType": "up-down-or-stay",
+          "subject": "music"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "chant-along",
+          "gameType": "chant-along",
+          "subject": "music"
+        }
+      ]
+    },
+    {
+      "islandId": "meadow-isle",
+      "id": "compass-peak",
+      "name": "Compass Peak",
+      "subject": "geography",
+      "story": "The Great Globe on Compass Peak has stopped spinning and the explorers' maps have blown away! Find the continents, read the maps and follow the rivers to set the world turning again.",
+      "landmark": "globe",
+      "mapPosition": {
+        "x": -11,
+        "z": -10
+      },
+      "games": [
+        {
+          "id": "daily-weather",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "four-seasons",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "uk-countries",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "directional-language",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "physical-features",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "human-features",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "hot-and-cold-places",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "land-and-sea",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "birds-eye-view",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "weather-chart",
+          "gameType": "geography-games",
+          "subject": "geography"
+        }
+      ]
+    },
+    {
+      "islandId": "meadow-isle",
+      "id": "hourglass-heights",
+      "name": "Hourglass Heights",
+      "subject": "history",
+      "story": "The Great Hourglass has cracked, and moments from the past are spilling across the hills! Travel back in time, solve history's puzzles and fill the hourglass with golden sand again.",
+      "landmark": "hourglass",
+      "mapPosition": {
+        "x": -2,
+        "z": 5
+      },
+      "games": [
+        {
+          "id": "toy-box-time-machine",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "grandmas-kitchen",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "school-bell-rings",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "seaside-snapshots",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "wheels-through-time",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "lamplighters-night",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "grace-darlings-rescue",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "lady-with-the-lamp",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "castle-explorers",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "past-and-present-detectives",
+          "gameType": "history-quest",
+          "subject": "history"
+        }
+      ]
+    },
+    {
+      "islandId": "meadow-isle",
+      "id": "circuit-spire",
+      "name": "Circuit Spire",
+      "subject": "computing",
+      "story": "The beacon on top of the Circuit Spire has gone dark and Bolt the robot is muddled! Write programs, squash bugs, send messages and stay safe online to power it up again.",
+      "landmark": "spire",
+      "mapPosition": {
+        "x": 12,
+        "z": 8
+      },
+      "games": [
+        {
+          "id": "robot-steps",
+          "gameType": "robot-steps",
+          "subject": "computing"
+        },
+        {
+          "id": "tech-spotter",
+          "gameType": "tech-spotter",
+          "subject": "computing"
+        },
+        {
+          "id": "pixel-painter",
+          "gameType": "pixel-painter",
+          "subject": "computing"
+        },
+        {
+          "id": "sort-it-out",
+          "gameType": "sort-it-out",
+          "subject": "computing"
+        },
+        {
+          "id": "step-by-step",
+          "gameType": "step-by-step",
+          "subject": "computing"
+        },
+        {
+          "id": "bug-catcher",
+          "gameType": "bug-catcher",
+          "subject": "computing"
+        },
+        {
+          "id": "where-will-bolt-go",
+          "gameType": "where-will-bolt-go",
+          "subject": "computing"
+        },
+        {
+          "id": "safe-surfer",
+          "gameType": "safe-surfer",
+          "subject": "computing"
+        },
+        {
+          "id": "word-wizard",
+          "gameType": "word-wizard",
+          "subject": "computing"
+        },
+        {
+          "id": "jump-and-go",
+          "gameType": "jump-and-go",
+          "subject": "computing"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "bossy-robot-orders",
+          "gameType": "science-lab",
+          "subject": "computing"
+        }
+      ]
+    },
+    {
+      "islandId": "meadow-isle",
+      "id": "rainbow-easel",
+      "name": "Rainbow Easel",
+      "subject": "art",
+      "story": "The meadow has lost its colours! Mix paints, spot shapes and meet great artists to paint it bright again.",
+      "landmark": "easel",
+      "mapPosition": { "x": 3.5, "z": 13 },
+      "games": [
+        {
+          "id": "art-tool-box",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-shape-spotter",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-line-explorer",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-primary-pots",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-texture-touch",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-junk-model",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-collage-creator",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-feelings-pictures",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-maker-match",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-meet-artists",
+          "gameType": "science-lab",
+          "subject": "art"
+        }
+      ]
+    },
+    {
+      "islandId": "meadow-isle",
+      "id": "tinker-mill",
+      "name": "Tinker Mill",
+      "subject": "design",
+      "story": "The old mill has stopped turning. Choose the right tools, materials and mechanisms to set its wheel spinning.",
+      "landmark": "workshop",
+      "mapPosition": { "x": -20.5, "z": -8 },
+      "games": [
+        {
+          "id": "dt-tool-picker",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-material-match",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-healthy-plate",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-farm-to-fork",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-who-is-it-for",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-product-detectives",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-slide-and-lever",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-wheels-on-the-go",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-tower-test",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-idea-builder",
+          "gameType": "science-lab",
+          "subject": "design"
+        }
+      ]
+    },
+    {
+      "islandId": "frost-isle",
+      "id": "icicle-inlet",
+      "name": "Icicle Inlet",
+      "subject": "maths",
+      "story": "The puzzles of Icicle Inlet have all come undone. Count, measure and calculate to put them right again.",
+      "landmark": "bubbles",
+      "mapPosition": {
+        "x": -4,
+        "z": 10
+      },
+      "games": [
+        {
+          "id": "popping-bubbles",
+          "gameType": "popping-bubbles",
+          "subject": "maths"
+        },
+        {
+          "id": "fish-count",
+          "gameType": "fish-count",
+          "subject": "maths"
+        },
+        {
+          "id": "ten-frames",
+          "gameType": "ten-frames",
+          "subject": "maths"
+        },
+        {
+          "id": "shape-hunt",
+          "gameType": "shape-hunt",
+          "subject": "maths"
+        },
+        {
+          "id": "shell-sums",
+          "gameType": "shell-sums",
+          "subject": "maths"
+        },
+        {
+          "id": "crab-take-away",
+          "gameType": "crab-take-away",
+          "subject": "maths"
+        },
+        {
+          "id": "skip-count",
+          "gameType": "skip-count",
+          "subject": "maths"
+        },
+        {
+          "id": "coral-heights",
+          "gameType": "coral-heights",
+          "subject": "maths"
+        },
+        {
+          "id": "fraction-find",
+          "gameType": "fraction-find",
+          "subject": "maths"
+        },
+        {
+          "id": "ship-clock",
+          "gameType": "ship-clock",
+          "subject": "maths"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "fair-shares",
+          "gameType": "fair-shares",
+          "subject": "maths"
+        },
+        {
+          "id": "treasure-map",
+          "gameType": "treasure-map",
+          "subject": "maths"
+        },
+        {
+          "id": "chart-tower",
+          "gameType": "chart-tower",
+          "subject": "maths"
+        },
+        {
+          "id": "hundred-word-match",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "triple-dice-total",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "fair-share-fractions",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "scale-and-thermometer",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "pocket-money-shop",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "hours-and-minutes-facts",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "corners-and-faces",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "pattern-parade",
+          "gameType": "science-lab",
+          "subject": "maths"
+        }
+      ]
+    },
+    {
+      "islandId": "frost-isle",
+      "id": "snowdrift-library",
+      "name": "Snowdrift Library",
+      "subject": "english",
+      "story": "The books of Snowdrift Library have lost their words. Spell them, join them and punctuate them to bring the stories back.",
+      "landmark": "forest",
+      "mapPosition": {
+        "x": -6,
+        "z": 1
+      },
+      "games": [
+        {
+          "id": "alphabet-train",
+          "gameType": "alphabet-train",
+          "subject": "english"
+        },
+        {
+          "id": "word-lanterns",
+          "gameType": "word-lanterns",
+          "subject": "english"
+        },
+        {
+          "id": "one-or-many",
+          "gameType": "one-or-many",
+          "subject": "english"
+        },
+        {
+          "id": "word-workshop",
+          "gameType": "word-workshop",
+          "subject": "english"
+        },
+        {
+          "id": "punctuation-stones",
+          "gameType": "punctuation-stones",
+          "subject": "english"
+        },
+        {
+          "id": "suffix-potions",
+          "gameType": "suffix-potions",
+          "subject": "english"
+        },
+        {
+          "id": "word-squeeze",
+          "gameType": "word-squeeze",
+          "subject": "english"
+        },
+        {
+          "id": "sound-alikes",
+          "gameType": "sound-alikes",
+          "subject": "english"
+        },
+        {
+          "id": "bridge-builder",
+          "gameType": "bridge-builder",
+          "subject": "english"
+        },
+        {
+          "id": "word-detectives",
+          "gameType": "word-detectives",
+          "subject": "english"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "story-scrolls",
+          "gameType": "story-scrolls",
+          "subject": "english"
+        },
+        {
+          "id": "story-builder",
+          "gameType": "story-builder",
+          "subject": "english"
+        },
+        {
+          "id": "tense-time-machine",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "noun-phrase-builder",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "whose-is-it-apostrophe",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "spelling-sound-safari",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "tricky-word-trail",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "proofreading-parrot",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "story-word-lantern",
+          "gameType": "science-lab",
+          "subject": "english"
+        }
+      ]
+    },
+    {
+      "islandId": "frost-isle",
+      "id": "glacier-grotto",
+      "name": "Glacier Grotto",
+      "subject": "phonics",
+      "story": "The crystals of Glacier Grotto only glow for words read aloud. Sound them out to light the way.",
+      "landmark": "crystals",
+      "mapPosition": {
+        "x": -18,
+        "z": 2
+      },
+      "games": [
+        {
+          "id": "edge-or-age",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "soft-c",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "silent-starts",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "le-el-al-il",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "change-y-to-i",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "drop-the-e",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "double-up",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "suffix-smith",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "short-forms",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        },
+        {
+          "id": "homophone-hunt",
+          "gameType": "phonics-games",
+          "subject": "phonics"
+        }
+      ]
+    },
+    {
+      "islandId": "frost-isle",
+      "id": "aurora-lab",
+      "name": "Aurora Lab",
+      "subject": "science",
+      "story": "The experiments in Aurora Lab are waiting. Sort, predict and investigate to find out how the world works.",
+      "landmark": "castle",
+      "mapPosition": {
+        "x": 3,
+        "z": -8
+      },
+      "games": [
+        {
+          "id": "second-habitat-homes",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "second-alive-or-not",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "second-plant-power",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "second-healthy-me",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "second-growing-up",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "second-minibeast-mystery",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "second-shape-changers",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "second-food-chain-words",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "second-material-match",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "second-plant-detectives",
+          "gameType": "science-lab",
+          "subject": "science"
+        }
+      ]
+    },
+    {
+      "islandId": "frost-isle",
+      "id": "brainwave-big-top",
+      "name": "Brainwave Big Top",
+      "story": "Roll up, roll up! The ringmaster's puzzles have got into a terrible muddle. Hunt for hidden words, fill the number grids, sweep for sneaky mines, crack the crossword, match the tiles, build number pyramids, follow number trails, play bingo, pair up the clocks, spell across the tightrope, sort the rings and line up the sentence parade to get the show back on the road.",
+      "landmark": "big-top",
+      "mapPosition": {
+        "x": 4,
+        "z": 3
+      },
+      "games": [
+        {
+          "id": "word-search",
+          "gameType": "word-search",
+          "subject": "english"
+        },
+        {
+          "id": "sudoku",
+          "gameType": "sudoku",
+          "subject": "maths"
+        },
+        {
+          "id": "mine-sweeper",
+          "gameType": "mine-sweeper",
+          "subject": "maths"
+        },
+        {
+          "id": "crossword",
+          "gameType": "crossword",
+          "subject": "english"
+        },
+        {
+          "id": "mahjong",
+          "gameType": "mahjong",
+          "subject": "maths"
+        },
+        {
+          "id": "number-pyramid",
+          "gameType": "number-pyramid",
+          "subject": "maths"
+        },
+        {
+          "id": "number-trail",
+          "gameType": "number-trail",
+          "subject": "maths"
+        },
+        {
+          "id": "bingo",
+          "gameType": "bingo",
+          "subject": "maths"
+        },
+        {
+          "id": "clock-pairs",
+          "gameType": "clock-pairs",
+          "subject": "maths"
+        },
+        {
+          "id": "tightrope-words",
+          "gameType": "tightrope-words",
+          "subject": "english"
+        },
+        {
+          "id": "ring-sort",
+          "gameType": "ring-sort",
+          "subject": "english"
+        },
+        {
+          "id": "sentence-parade",
+          "gameType": "sentence-parade",
+          "subject": "english"
+        }
+      ]
+    },
+    {
+      "islandId": "frost-isle",
+      "id": "chiming-icefall",
+      "name": "Chiming Icefall",
+      "subject": "music",
+      "story": "Chiming Icefall has fallen silent. Listen, clap and compose to fill it with music again.",
+      "landmark": "music",
+      "mapPosition": {
+        "x": -13,
+        "z": -8
+      },
+      "games": [
+        {
+          "id": "ta-and-ti-ti",
+          "gameType": "ta-and-ti-ti",
+          "subject": "music"
+        },
+        {
+          "id": "volume-rollercoaster",
+          "gameType": "volume-rollercoaster",
+          "subject": "music"
+        },
+        {
+          "id": "music-train",
+          "gameType": "music-train",
+          "subject": "music"
+        },
+        {
+          "id": "frog-steps-and-leaps",
+          "gameType": "frog-steps-and-leaps",
+          "subject": "music"
+        },
+        {
+          "id": "glockenspiel-echo",
+          "gameType": "glockenspiel-echo",
+          "subject": "music"
+        },
+        {
+          "id": "find-the-rest",
+          "gameType": "find-the-rest",
+          "subject": "music"
+        },
+        {
+          "id": "tuned-instrument-detective",
+          "gameType": "tuned-instrument-detective",
+          "subject": "music"
+        },
+        {
+          "id": "feelings-theatre",
+          "gameType": "feelings-theatre",
+          "subject": "music"
+        },
+        {
+          "id": "dot-to-dot-tunes",
+          "gameType": "dot-to-dot-tunes",
+          "subject": "music"
+        },
+        {
+          "id": "is-it-home",
+          "gameType": "is-it-home",
+          "subject": "music"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "storm-sound-mixer",
+          "gameType": "science-lab",
+          "subject": "music"
+        }
+      ]
+    },
+    {
+      "islandId": "frost-isle",
+      "id": "polar-lookout",
+      "name": "Polar Lookout",
+      "subject": "geography",
+      "story": "The maps of Polar Lookout are blank. Explore places near and far to fill them in.",
+      "landmark": "globe",
+      "mapPosition": {
+        "x": 19,
+        "z": -6
+      },
+      "games": [
+        {
+          "id": "seven-continents",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "five-oceans",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "uk-capital-cities",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "seas-around-the-uk",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "four-compass-points",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "seaside-features",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "map-keys",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "kenya-and-the-uk",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "equator-and-poles",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "traffic-survey",
+          "gameType": "geography-games",
+          "subject": "geography"
+        }
+      ]
+    },
+    {
+      "islandId": "frost-isle",
+      "id": "frozen-fort",
+      "name": "Frozen Fort",
+      "subject": "history",
+      "story": "The past of Frozen Fort is full of secrets. Follow the clues back through time to uncover them.",
+      "landmark": "hourglass",
+      "mapPosition": {
+        "x": 18,
+        "z": 6
+      },
+      "games": [
+        {
+          "id": "pudding-lane-blaze",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "fire-fighters-then-and-now",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "mr-pepys-diary",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "one-small-step",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "up-up-and-away",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "nurses-of-the-crimea",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "remember-remember",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "brave-explorers",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "two-queens",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "great-museum-timeline",
+          "gameType": "history-quest",
+          "subject": "history"
+        }
+      ]
+    },
+    {
+      "islandId": "frost-isle",
+      "id": "snowbot-works",
+      "name": "Snowbot Works",
+      "subject": "computing",
+      "story": "The machines of Snowbot Works need new instructions. Write, test and debug to get them working.",
+      "landmark": "spire",
+      "mapPosition": {
+        "x": -15,
+        "z": 10
+      },
+      "games": [
+        {
+          "id": "tech-detective",
+          "gameType": "tech-detective",
+          "subject": "computing"
+        },
+        {
+          "id": "photo-studio",
+          "gameType": "photo-studio",
+          "subject": "computing"
+        },
+        {
+          "id": "robot-route",
+          "gameType": "robot-route",
+          "subject": "computing"
+        },
+        {
+          "id": "pictogram-party",
+          "gameType": "pictogram-party",
+          "subject": "computing"
+        },
+        {
+          "id": "music-maker",
+          "gameType": "music-maker",
+          "subject": "computing"
+        },
+        {
+          "id": "quiz-coder",
+          "gameType": "quiz-coder",
+          "subject": "computing"
+        },
+        {
+          "id": "debug-the-dance",
+          "gameType": "debug-the-dance",
+          "subject": "computing"
+        },
+        {
+          "id": "predict-the-path",
+          "gameType": "predict-the-path",
+          "subject": "computing"
+        },
+        {
+          "id": "private-pals",
+          "gameType": "private-pals",
+          "subject": "computing"
+        },
+        {
+          "id": "kind-clicks",
+          "gameType": "kind-clicks",
+          "subject": "computing"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "folder-tidy-up",
+          "gameType": "science-lab",
+          "subject": "computing"
+        }
+      ]
+    },
+    {
+      "islandId": "frost-isle",
+      "id": "frost-gallery",
+      "name": "Frost Gallery",
+      "subject": "art",
+      "story": "The ice sculptures need finishing touches. Learn patterns, colours and clay to fill the gallery with art.",
+      "landmark": "easel",
+      "mapPosition": { "x": 6, "z": 13 },
+      "games": [
+        {
+          "id": "art-pattern-path",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-colour-mixer",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-form-finder",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-near-and-far",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-clay-creations",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-paint-pro",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-print-makers",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-weaving-wonders",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-same-different",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-who-made-it",
+          "gameType": "science-lab",
+          "subject": "art"
+        }
+      ]
+    },
+    {
+      "islandId": "frost-isle",
+      "id": "sleigh-workshop",
+      "name": "Sleigh Workshop",
+      "subject": "design",
+      "story": "The sleighs are snowed in and broken. Design, build and test them so the village can glide again.",
+      "landmark": "workshop",
+      "mapPosition": { "x": 11, "z": -13 },
+      "games": [
+        {
+          "id": "dt-join-it-up",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-material-odd-one",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-criteria-checker",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-plan-it-out",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-moving-pictures",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-axle-workshop",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-bridge-builders",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-test-and-improve",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-balanced-lunchbox",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-where-food-grows",
+          "gameType": "science-lab",
+          "subject": "design"
+        }
+      ]
+    },
+    {
+      "islandId": "sunscorch-sands",
+      "id": "oasis-pools",
+      "name": "Oasis Pools",
+      "subject": "maths",
+      "story": "The puzzles of Oasis Pools have all come undone. Count, measure and calculate to put them right again.",
+      "landmark": "bubbles",
+      "mapPosition": {
+        "x": 2,
+        "z": 2
+      },
+      "games": [
+        {
+          "id": "popping-bubbles",
+          "gameType": "popping-bubbles",
+          "subject": "maths"
+        },
+        {
+          "id": "fish-count",
+          "gameType": "fish-count",
+          "subject": "maths"
+        },
+        {
+          "id": "ten-frames",
+          "gameType": "ten-frames",
+          "subject": "maths"
+        },
+        {
+          "id": "shape-hunt",
+          "gameType": "shape-hunt",
+          "subject": "maths"
+        },
+        {
+          "id": "shell-sums",
+          "gameType": "shell-sums",
+          "subject": "maths"
+        },
+        {
+          "id": "crab-take-away",
+          "gameType": "crab-take-away",
+          "subject": "maths"
+        },
+        {
+          "id": "skip-count",
+          "gameType": "skip-count",
+          "subject": "maths"
+        },
+        {
+          "id": "coral-heights",
+          "gameType": "coral-heights",
+          "subject": "maths"
+        },
+        {
+          "id": "fraction-find",
+          "gameType": "fraction-find",
+          "subject": "maths"
+        },
+        {
+          "id": "ship-clock",
+          "gameType": "ship-clock",
+          "subject": "maths"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "chart-tower",
+          "gameType": "chart-tower",
+          "subject": "maths"
+        },
+        {
+          "id": "thousand-word-match",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "estimate-and-check",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "times-tower",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "fraction-mix-lab",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "weigh-and-pour",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "market-stall-change",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "calendar-countdown",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "lines-and-angles-lab",
+          "gameType": "science-lab",
+          "subject": "maths"
+        }
+      ]
+    },
+    {
+      "islandId": "sunscorch-sands",
+      "id": "scroll-bazaar",
+      "name": "Scroll Bazaar",
+      "subject": "english",
+      "story": "The books of Scroll Bazaar have lost their words. Spell them, join them and punctuate them to bring the stories back.",
+      "landmark": "forest",
+      "mapPosition": {
+        "x": 13,
+        "z": 6
+      },
+      "games": [
+        {
+          "id": "alphabet-train",
+          "gameType": "alphabet-train",
+          "subject": "english"
+        },
+        {
+          "id": "word-lanterns",
+          "gameType": "word-lanterns",
+          "subject": "english"
+        },
+        {
+          "id": "one-or-many",
+          "gameType": "one-or-many",
+          "subject": "english"
+        },
+        {
+          "id": "word-workshop",
+          "gameType": "word-workshop",
+          "subject": "english"
+        },
+        {
+          "id": "punctuation-stones",
+          "gameType": "punctuation-stones",
+          "subject": "english"
+        },
+        {
+          "id": "suffix-potions",
+          "gameType": "suffix-potions",
+          "subject": "english"
+        },
+        {
+          "id": "word-squeeze",
+          "gameType": "word-squeeze",
+          "subject": "english"
+        },
+        {
+          "id": "sound-alikes",
+          "gameType": "sound-alikes",
+          "subject": "english"
+        },
+        {
+          "id": "bridge-builder",
+          "gameType": "bridge-builder",
+          "subject": "english"
+        },
+        {
+          "id": "word-detectives",
+          "gameType": "word-detectives",
+          "subject": "english"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "story-scrolls",
+          "gameType": "story-scrolls",
+          "subject": "english"
+        },
+        {
+          "id": "story-builder",
+          "gameType": "story-builder",
+          "subject": "english"
+        },
+        {
+          "id": "tense-tower-tumble",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "clause-castle-quest",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "sound-spelling-sleuth",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "tricky-word-tower",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "dictionary-dash",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "book-explorer-quest",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "proofreading-pixie",
+          "gameType": "science-lab",
+          "subject": "english"
+        }
+      ]
+    },
+    {
+      "islandId": "sunscorch-sands",
+      "id": "mirage-prism",
+      "name": "Mirage Prism",
+      "subject": "science",
+      "story": "The experiments in Mirage Prism are waiting. Sort, predict and investigate to find out how the world works.",
+      "landmark": "castle",
+      "mapPosition": {
+        "x": 6,
+        "z": -8
+      },
+      "games": [
+        {
+          "id": "third-plant-part-jobs",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "third-magnet-match",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "third-light-and-dark",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "third-food-and-bones",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "third-seed-to-flower",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "third-rock-detective",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "third-magnet-moves",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "third-fossil-words",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "third-shiny-or-dull",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "third-plant-growth-lab",
+          "gameType": "science-lab",
+          "subject": "science"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "cactus-or-fern",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "sun-safe-eyes",
+          "gameType": "science-lab",
+          "subject": "science"
+        }
+      ]
+    },
+    {
+      "islandId": "sunscorch-sands",
+      "id": "brainwave-big-top",
+      "name": "Brainwave Big Top",
+      "story": "Roll up, roll up! The ringmaster's puzzles have got into a terrible muddle. Hunt for hidden words, fill the number grids, sweep for sneaky mines, crack the crossword, match the tiles, build number pyramids, follow number trails, play bingo, pair up the clocks, spell across the tightrope, sort the rings and line up the sentence parade to get the show back on the road.",
+      "landmark": "big-top",
+      "mapPosition": {
+        "x": -6,
+        "z": 9
+      },
+      "games": [
+        {
+          "id": "word-search",
+          "gameType": "word-search",
+          "subject": "english"
+        },
+        {
+          "id": "sudoku",
+          "gameType": "sudoku",
+          "subject": "maths"
+        },
+        {
+          "id": "mine-sweeper",
+          "gameType": "mine-sweeper",
+          "subject": "maths"
+        },
+        {
+          "id": "crossword",
+          "gameType": "crossword",
+          "subject": "english"
+        },
+        {
+          "id": "mahjong",
+          "gameType": "mahjong",
+          "subject": "maths"
+        },
+        {
+          "id": "number-pyramid",
+          "gameType": "number-pyramid",
+          "subject": "maths"
+        },
+        {
+          "id": "number-trail",
+          "gameType": "number-trail",
+          "subject": "maths"
+        },
+        {
+          "id": "bingo",
+          "gameType": "bingo",
+          "subject": "maths"
+        },
+        {
+          "id": "clock-pairs",
+          "gameType": "clock-pairs",
+          "subject": "maths"
+        },
+        {
+          "id": "tightrope-words",
+          "gameType": "tightrope-words",
+          "subject": "english"
+        },
+        {
+          "id": "ring-sort",
+          "gameType": "ring-sort",
+          "subject": "english"
+        },
+        {
+          "id": "sentence-parade",
+          "gameType": "sentence-parade",
+          "subject": "english"
+        }
+      ]
+    },
+    {
+      "islandId": "sunscorch-sands",
+      "id": "drumbeat-dunes",
+      "name": "Drumbeat Dunes",
+      "subject": "music",
+      "story": "Drumbeat Dunes has fallen silent. Listen, clap and compose to fill it with music again.",
+      "landmark": "music",
+      "mapPosition": {
+        "x": -17,
+        "z": 4
+      },
+      "games": [
+        {
+          "id": "march-or-waltz",
+          "gameType": "march-or-waltz",
+          "subject": "music"
+        },
+        {
+          "id": "how-many-beats",
+          "gameType": "how-many-beats",
+          "subject": "music"
+        },
+        {
+          "id": "forte-or-piano",
+          "gameType": "forte-or-piano",
+          "subject": "music"
+        },
+        {
+          "id": "allegro-or-adagio",
+          "gameType": "allegro-or-adagio",
+          "subject": "music"
+        },
+        {
+          "id": "loop-counter",
+          "gameType": "loop-counter",
+          "subject": "music"
+        },
+        {
+          "id": "staff-climbers",
+          "gameType": "staff-climbers",
+          "subject": "music"
+        },
+        {
+          "id": "layer-cake",
+          "gameType": "layer-cake",
+          "subject": "music"
+        },
+        {
+          "id": "orchestra-families",
+          "gameType": "orchestra-families",
+          "subject": "music"
+        },
+        {
+          "id": "bar-builder",
+          "gameType": "bar-builder",
+          "subject": "music"
+        },
+        {
+          "id": "solfa-ladder",
+          "gameType": "solfa-ladder",
+          "subject": "music"
+        }
+      ]
+    },
+    {
+      "islandId": "sunscorch-sands",
+      "id": "caravan-crossing",
+      "name": "Caravan Crossing",
+      "subject": "geography",
+      "story": "The maps of Caravan Crossing are blank. Explore places near and far to fill them in.",
+      "landmark": "globe",
+      "mapPosition": {
+        "x": -6,
+        "z": -7
+      },
+      "games": [
+        {
+          "id": "countries-of-europe",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "eight-compass-points",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "letter-number-grids",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "parts-of-a-volcano",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "layers-of-the-earth",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "uk-cities",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "climate-zones",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "land-use",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "os-map-symbols",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "rainfall-charts",
+          "gameType": "geography-games",
+          "subject": "geography"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "land-use-time-machine",
+          "gameType": "science-lab",
+          "subject": "geography"
+        }
+      ]
+    },
+    {
+      "islandId": "sunscorch-sands",
+      "id": "pyramid-steps",
+      "name": "Pyramid Steps",
+      "subject": "history",
+      "story": "The past of Pyramid Steps is full of secrets. Follow the clues back through time to uncover them.",
+      "landmark": "hourglass",
+      "mapPosition": {
+        "x": -16,
+        "z": -7
+      },
+      "games": [
+        {
+          "id": "cave-painters",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "skara-brae-storm",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "stonehenge-sunrise",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "stone-bronze-or-iron",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "hillfort-defenders",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "journey-through-prehistory",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "pyramid-builders",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "the-mummy-makers",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "tutankhamuns-treasure",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "life-on-the-nile",
+          "gameType": "history-quest",
+          "subject": "history"
+        }
+      ]
+    },
+    {
+      "islandId": "sunscorch-sands",
+      "id": "sandstorm-relay",
+      "name": "Sandstorm Relay",
+      "subject": "computing",
+      "story": "The machines of Sandstorm Relay need new instructions. Write, test and debug to get them working.",
+      "landmark": "spire",
+      "mapPosition": {
+        "x": 19,
+        "z": -4
+      },
+      "games": [
+        {
+          "id": "network-builder",
+          "gameType": "network-builder",
+          "subject": "computing"
+        },
+        {
+          "id": "frame-by-frame",
+          "gameType": "frame-by-frame",
+          "subject": "computing"
+        },
+        {
+          "id": "sound-sequencer",
+          "gameType": "sound-sequencer",
+          "subject": "computing"
+        },
+        {
+          "id": "branch-explorer",
+          "gameType": "branch-explorer",
+          "subject": "computing"
+        },
+        {
+          "id": "page-designer",
+          "gameType": "page-designer",
+          "subject": "computing"
+        },
+        {
+          "id": "event-explorer",
+          "gameType": "event-explorer",
+          "subject": "computing"
+        },
+        {
+          "id": "break-it-down",
+          "gameType": "break-it-down",
+          "subject": "computing"
+        },
+        {
+          "id": "code-bug-hunt",
+          "gameType": "code-bug-hunt",
+          "subject": "computing"
+        },
+        {
+          "id": "password-power",
+          "gameType": "password-power",
+          "subject": "computing"
+        },
+        {
+          "id": "in-or-out",
+          "gameType": "in-or-out",
+          "subject": "computing"
+        }
+      ]
+    },
+    {
+      "islandId": "sunscorch-sands",
+      "id": "mosaic-courtyard",
+      "name": "Mosaic Courtyard",
+      "subject": "art",
+      "story": "The courtyard mosaic has crumbled. Sketch, shade and learn from great artists to piece it back together.",
+      "landmark": "easel",
+      "mapPosition": { "x": 19.5, "z": 13 },
+      "games": [
+        {
+          "id": "art-sketchbook-secrets",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-look-and-record",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-pencil-power",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-shading-school",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-colour-wheel-spin",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-charcoal-chalk",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-clay-workshop",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-ancient-art",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-artist-detective",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-around-the-world",
+          "gameType": "science-lab",
+          "subject": "art"
+        }
+      ]
+    },
+    {
+      "islandId": "sunscorch-sands",
+      "id": "echo-well",
+      "name": "Echo Well",
+      "subject": "languages",
+      "story": "The well echoes back in French! Learn the words it calls, and it will share its cool water.",
+      "landmark": "embassy",
+      "mapPosition": { "x": 14.5, "z": -11.5 },
+      "games": [
+        {
+          "id": "french-greeting-gate",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-number-nest",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-colour-crayons",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-day-train",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-animal-riddles",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-ca-va-cafe",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-le-la-les",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-silent-letter-spy",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-frere-jacques",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-sentence-builder",
+          "gameType": "science-lab",
+          "subject": "languages"
+        }
+      ]
+    },
+    {
+      "islandId": "sunscorch-sands",
+      "id": "camel-gearworks",
+      "name": "Camel Gearworks",
+      "subject": "design",
+      "story": "The water wheel by the caravan trail is jammed. Use levers, structures and good design to fix it.",
+      "landmark": "workshop",
+      "mapPosition": { "x": 3.5, "z": 10.5 },
+      "games": [
+        {
+          "id": "dt-tool-safety-check",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-property-picker",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-product-investigator",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-design-brief-detective",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-sketch-and-label",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-structure-strength",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-lever-linkage-lab",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-healthy-swaps",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-season-picker",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-kitchen-skills",
+          "gameType": "science-lab",
+          "subject": "design"
+        }
+      ]
+    },
+    {
+      "islandId": "jungle-reach",
+      "id": "monkey-falls",
+      "name": "Monkey Falls",
+      "subject": "maths",
+      "story": "The puzzles of Monkey Falls have all come undone. Count, measure and calculate to put them right again.",
+      "landmark": "bubbles",
+      "mapPosition": {
+        "x": -4,
+        "z": -4
+      },
+      "games": [
+        {
+          "id": "popping-bubbles",
+          "gameType": "popping-bubbles",
+          "subject": "maths"
+        },
+        {
+          "id": "fish-count",
+          "gameType": "fish-count",
+          "subject": "maths"
+        },
+        {
+          "id": "ten-frames",
+          "gameType": "ten-frames",
+          "subject": "maths"
+        },
+        {
+          "id": "shape-hunt",
+          "gameType": "shape-hunt",
+          "subject": "maths"
+        },
+        {
+          "id": "shell-sums",
+          "gameType": "shell-sums",
+          "subject": "maths"
+        },
+        {
+          "id": "crab-take-away",
+          "gameType": "crab-take-away",
+          "subject": "maths"
+        },
+        {
+          "id": "skip-count",
+          "gameType": "skip-count",
+          "subject": "maths"
+        },
+        {
+          "id": "coral-heights",
+          "gameType": "coral-heights",
+          "subject": "maths"
+        },
+        {
+          "id": "fraction-find",
+          "gameType": "fraction-find",
+          "subject": "maths"
+        },
+        {
+          "id": "ship-clock",
+          "gameType": "ship-clock",
+          "subject": "maths"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "treasure-map",
+          "gameType": "treasure-map",
+          "subject": "maths"
+        },
+        {
+          "id": "chart-tower",
+          "gameType": "chart-tower",
+          "subject": "maths"
+        },
+        {
+          "id": "thousands-rounding-ridge",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "roman-numeral-gates",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "factor-pair-forge",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "times-tower-climb",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "fraction-feast-hall",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "decimal-round-dock",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "unit-swap-shop",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "angle-and-mirror-hunt",
+          "gameType": "science-lab",
+          "subject": "maths"
+        }
+      ]
+    },
+    {
+      "islandId": "jungle-reach",
+      "id": "storyvine-temple",
+      "name": "Storyvine Temple",
+      "subject": "english",
+      "story": "The books of Storyvine Temple have lost their words. Spell them, join them and punctuate them to bring the stories back.",
+      "landmark": "forest",
+      "mapPosition": {
+        "x": -15,
+        "z": 7
+      },
+      "games": [
+        {
+          "id": "alphabet-train",
+          "gameType": "alphabet-train",
+          "subject": "english"
+        },
+        {
+          "id": "word-lanterns",
+          "gameType": "word-lanterns",
+          "subject": "english"
+        },
+        {
+          "id": "one-or-many",
+          "gameType": "one-or-many",
+          "subject": "english"
+        },
+        {
+          "id": "word-workshop",
+          "gameType": "word-workshop",
+          "subject": "english"
+        },
+        {
+          "id": "punctuation-stones",
+          "gameType": "punctuation-stones",
+          "subject": "english"
+        },
+        {
+          "id": "suffix-potions",
+          "gameType": "suffix-potions",
+          "subject": "english"
+        },
+        {
+          "id": "word-squeeze",
+          "gameType": "word-squeeze",
+          "subject": "english"
+        },
+        {
+          "id": "sound-alikes",
+          "gameType": "sound-alikes",
+          "subject": "english"
+        },
+        {
+          "id": "bridge-builder",
+          "gameType": "bridge-builder",
+          "subject": "english"
+        },
+        {
+          "id": "word-detectives",
+          "gameType": "word-detectives",
+          "subject": "english"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "story-scrolls",
+          "gameType": "story-scrolls",
+          "subject": "english"
+        },
+        {
+          "id": "story-builder",
+          "gameType": "story-builder",
+          "subject": "english"
+        },
+        {
+          "id": "noun-phrase-forge",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "pronoun-power-up",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "fact-and-verse-finder",
+          "gameType": "science-lab",
+          "subject": "english"
+        }
+      ]
+    },
+    {
+      "islandId": "jungle-reach",
+      "id": "orchid-hollow",
+      "name": "Orchid Hollow",
+      "subject": "science",
+      "story": "The experiments in Orchid Hollow are waiting. Sort, predict and investigate to find out how the world works.",
+      "landmark": "castle",
+      "mapPosition": {
+        "x": 6,
+        "z": -9
+      },
+      "games": [
+        {
+          "id": "fourth-classification-keys",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fourth-electricity-odd-one",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fourth-sound-facts",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fourth-circuit-gaps",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fourth-water-cycle",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fourth-digestion-riddles",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fourth-changing-habitats",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fourth-food-chain-words",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fourth-melt-and-boil",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fourth-evaporation-lab",
+          "gameType": "science-lab",
+          "subject": "science"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "matter-sorting-lab",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "next-step-scientist",
+          "gameType": "science-lab",
+          "subject": "science"
+        }
+      ]
+    },
+    {
+      "islandId": "jungle-reach",
+      "id": "brainwave-big-top",
+      "name": "Brainwave Big Top",
+      "story": "Roll up, roll up! The ringmaster's puzzles have got into a terrible muddle. Hunt for hidden words, fill the number grids, sweep for sneaky mines, crack the crossword, match the tiles, build number pyramids, follow number trails, play bingo, pair up the clocks, spell across the tightrope, sort the rings and line up the sentence parade to get the show back on the road.",
+      "landmark": "big-top",
+      "mapPosition": {
+        "x": -8,
+        "z": 12
+      },
+      "games": [
+        {
+          "id": "word-search",
+          "gameType": "word-search",
+          "subject": "english"
+        },
+        {
+          "id": "sudoku",
+          "gameType": "sudoku",
+          "subject": "maths"
+        },
+        {
+          "id": "mine-sweeper",
+          "gameType": "mine-sweeper",
+          "subject": "maths"
+        },
+        {
+          "id": "crossword",
+          "gameType": "crossword",
+          "subject": "english"
+        },
+        {
+          "id": "mahjong",
+          "gameType": "mahjong",
+          "subject": "maths"
+        },
+        {
+          "id": "number-pyramid",
+          "gameType": "number-pyramid",
+          "subject": "maths"
+        },
+        {
+          "id": "number-trail",
+          "gameType": "number-trail",
+          "subject": "maths"
+        },
+        {
+          "id": "bingo",
+          "gameType": "bingo",
+          "subject": "maths"
+        },
+        {
+          "id": "clock-pairs",
+          "gameType": "clock-pairs",
+          "subject": "maths"
+        },
+        {
+          "id": "tightrope-words",
+          "gameType": "tightrope-words",
+          "subject": "english"
+        },
+        {
+          "id": "ring-sort",
+          "gameType": "ring-sort",
+          "subject": "english"
+        },
+        {
+          "id": "sentence-parade",
+          "gameType": "sentence-parade",
+          "subject": "english"
+        }
+      ]
+    },
+    {
+      "islandId": "jungle-reach",
+      "id": "rainbeat-ridge",
+      "name": "Rainbeat Ridge",
+      "subject": "music",
+      "story": "Rainbeat Ridge has fallen silent. Listen, clap and compose to fill it with music again.",
+      "landmark": "music",
+      "mapPosition": {
+        "x": 18,
+        "z": -6
+      },
+      "games": [
+        {
+          "id": "spot-the-mistake",
+          "gameType": "spot-the-mistake",
+          "subject": "music"
+        },
+        {
+          "id": "sunshine-or-rain",
+          "gameType": "sunshine-or-rain",
+          "subject": "music"
+        },
+        {
+          "id": "piano-key-detective",
+          "gameType": "piano-key-detective",
+          "subject": "music"
+        },
+        {
+          "id": "dynamics-journey",
+          "gameType": "dynamics-journey",
+          "subject": "music"
+        },
+        {
+          "id": "shape-of-the-song",
+          "gameType": "shape-of-the-song",
+          "subject": "music"
+        },
+        {
+          "id": "time-signature-tiles",
+          "gameType": "time-signature-tiles",
+          "subject": "music"
+        },
+        {
+          "id": "note-stack",
+          "gameType": "note-stack",
+          "subject": "music"
+        },
+        {
+          "id": "orchestra-seating-plan",
+          "gameType": "orchestra-seating-plan",
+          "subject": "music"
+        },
+        {
+          "id": "round-and-round",
+          "gameType": "round-and-round",
+          "subject": "music"
+        },
+        {
+          "id": "how-is-it-played",
+          "gameType": "how-is-it-played",
+          "subject": "music"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "composer-choices",
+          "gameType": "science-lab",
+          "subject": "music"
+        },
+        {
+          "id": "world-music-passport",
+          "gameType": "science-lab",
+          "subject": "music"
+        }
+      ]
+    },
+    {
+      "islandId": "jungle-reach",
+      "id": "delta-mapworks",
+      "name": "Delta Mapworks",
+      "subject": "geography",
+      "story": "The maps of Delta Mapworks are blank. Explore places near and far to fill them in.",
+      "landmark": "globe",
+      "mapPosition": {
+        "x": 15,
+        "z": 6
+      },
+      "games": [
+        {
+          "id": "river-features",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "water-cycle",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "hemispheres",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "four-figure-grid-references",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "countries-of-the-americas",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "uk-mountains-and-rivers",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "types-of-settlement",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "world-biomes",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "coastal-landforms",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "ring-of-fire",
+          "gameType": "geography-games",
+          "subject": "geography"
+        }
+      ]
+    },
+    {
+      "islandId": "jungle-reach",
+      "id": "lost-temple",
+      "name": "Lost Temple",
+      "subject": "history",
+      "story": "The past of Lost Temple is full of secrets. Follow the clues back through time to uncover them.",
+      "landmark": "hourglass",
+      "mapPosition": {
+        "x": -17,
+        "z": -4
+      },
+      "games": [
+        {
+          "id": "legion-on-the-march",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "romans-in-britain",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "hadrians-wall-watch",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "roman-or-celt",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "what-the-romans-gave",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "athens-or-sparta",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "the-first-olympics",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "mount-olympus-mysteries",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "the-sutton-hoo-ship",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "saxon-settlers",
+          "gameType": "history-quest",
+          "subject": "history"
+        }
+      ]
+    },
+    {
+      "islandId": "jungle-reach",
+      "id": "firefly-circuit",
+      "name": "Firefly Circuit",
+      "subject": "computing",
+      "story": "The machines of Firefly Circuit need new instructions. Write, test and debug to get them working.",
+      "landmark": "spire",
+      "mapPosition": {
+        "x": -2,
+        "z": 5
+      },
+      "games": [
+        {
+          "id": "packet-path",
+          "gameType": "packet-path",
+          "subject": "computing"
+        },
+        {
+          "id": "web-wonders",
+          "gameType": "web-wonders",
+          "subject": "computing"
+        },
+        {
+          "id": "sound-studio",
+          "gameType": "sound-studio",
+          "subject": "computing"
+        },
+        {
+          "id": "turtle-shapes",
+          "gameType": "turtle-shapes",
+          "subject": "computing"
+        },
+        {
+          "id": "loop-legends",
+          "gameType": "loop-legends",
+          "subject": "computing"
+        },
+        {
+          "id": "data-logger",
+          "gameType": "data-logger",
+          "subject": "computing"
+        },
+        {
+          "id": "photo-fixer",
+          "gameType": "photo-fixer",
+          "subject": "computing"
+        },
+        {
+          "id": "fix-the-loop",
+          "gameType": "fix-the-loop",
+          "subject": "computing"
+        },
+        {
+          "id": "fact-or-fake",
+          "gameType": "fact-or-fake",
+          "subject": "computing"
+        },
+        {
+          "id": "footprint-finder",
+          "gameType": "footprint-finder",
+          "subject": "computing"
+        }
+      ]
+    },
+    {
+      "islandId": "jungle-reach",
+      "id": "canopy-studio",
+      "name": "Canopy Studio",
+      "subject": "art",
+      "story": "The tree-top studio is waiting for artists. Print, mix tints and shades, and meet the masters of sculpture.",
+      "landmark": "easel",
+      "mapPosition": { "x": 4, "z": 13 },
+      "games": [
+        {
+          "id": "art-review-revisit",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-sketch-plan",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-tints-tones",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-print-studio",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-face-proportions",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-mosaic-makers",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-genre-gallery",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-impressionist-mystery",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-sculpture-garden",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-pattern-designers",
+          "gameType": "science-lab",
+          "subject": "art"
+        }
+      ]
+    },
+    {
+      "islandId": "jungle-reach",
+      "id": "parrot-point",
+      "name": "Parrot Point",
+      "subject": "languages",
+      "story": "The parrots only speak French. Learn to chat with them and they will show you the jungle's secrets.",
+      "landmark": "embassy",
+      "mapPosition": { "x": -7, "z": -12 },
+      "games": [
+        {
+          "id": "french-family-tree",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-number-ladder",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-months-parade",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-face-painter",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-sound-detective",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-into-the-woods",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-question-quest",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-un-une-des",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-plural-patrol",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-snack-shack",
+          "gameType": "science-lab",
+          "subject": "languages"
+        }
+      ]
+    },
+    {
+      "islandId": "jungle-reach",
+      "id": "vine-workshop",
+      "name": "Vine Workshop",
+      "subject": "design",
+      "story": "The rope bridges need mending. Plan, build and test strong structures and clever mechanisms.",
+      "landmark": "workshop",
+      "mapPosition": { "x": 13.5, "z": -13 },
+      "games": [
+        {
+          "id": "dt-tool-for-the-job",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-textile-workshop",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-design-for-a-user",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-pulley-power",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-circuit-builder",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-bridge-engineers",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-inventor-gallery",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-take-it-apart",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-eatwell-explorer",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-cooking-methods",
+          "gameType": "science-lab",
+          "subject": "design"
+        }
+      ]
+    },
+    {
+      "islandId": "ember-isle",
+      "id": "anvil-quarry",
+      "name": "Anvil Quarry",
+      "subject": "maths",
+      "story": "The puzzles of Anvil Quarry have all come undone. Count, measure and calculate to put them right again.",
+      "landmark": "bubbles",
+      "mapPosition": {
+        "x": -17,
+        "z": 5
+      },
+      "games": [
+        {
+          "id": "popping-bubbles",
+          "gameType": "popping-bubbles",
+          "subject": "maths"
+        },
+        {
+          "id": "fish-count",
+          "gameType": "fish-count",
+          "subject": "maths"
+        },
+        {
+          "id": "ten-frames",
+          "gameType": "ten-frames",
+          "subject": "maths"
+        },
+        {
+          "id": "shape-hunt",
+          "gameType": "shape-hunt",
+          "subject": "maths"
+        },
+        {
+          "id": "shell-sums",
+          "gameType": "shell-sums",
+          "subject": "maths"
+        },
+        {
+          "id": "crab-take-away",
+          "gameType": "crab-take-away",
+          "subject": "maths"
+        },
+        {
+          "id": "skip-count",
+          "gameType": "skip-count",
+          "subject": "maths"
+        },
+        {
+          "id": "coral-heights",
+          "gameType": "coral-heights",
+          "subject": "maths"
+        },
+        {
+          "id": "fraction-find",
+          "gameType": "fraction-find",
+          "subject": "maths"
+        },
+        {
+          "id": "ship-clock",
+          "gameType": "ship-clock",
+          "subject": "maths"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "treasure-map",
+          "gameType": "treasure-map",
+          "subject": "maths"
+        },
+        {
+          "id": "chart-tower",
+          "gameType": "chart-tower",
+          "subject": "maths"
+        },
+        {
+          "id": "million-mountain-climb",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "roman-year-reader",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "prime-number-hunters",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "long-multiply-mill",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "mixed-number-mixer",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "thousandths-tracker",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "pints-and-pounds-swap",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "reflex-angle-arena",
+          "gameType": "science-lab",
+          "subject": "maths"
+        }
+      ]
+    },
+    {
+      "islandId": "ember-isle",
+      "id": "inkfire-archive",
+      "name": "Inkfire Archive",
+      "subject": "english",
+      "story": "The books of Inkfire Archive have lost their words. Spell them, join them and punctuate them to bring the stories back.",
+      "landmark": "forest",
+      "mapPosition": {
+        "x": -8,
+        "z": 9
+      },
+      "games": [
+        {
+          "id": "alphabet-train",
+          "gameType": "alphabet-train",
+          "subject": "english"
+        },
+        {
+          "id": "word-lanterns",
+          "gameType": "word-lanterns",
+          "subject": "english"
+        },
+        {
+          "id": "one-or-many",
+          "gameType": "one-or-many",
+          "subject": "english"
+        },
+        {
+          "id": "word-workshop",
+          "gameType": "word-workshop",
+          "subject": "english"
+        },
+        {
+          "id": "punctuation-stones",
+          "gameType": "punctuation-stones",
+          "subject": "english"
+        },
+        {
+          "id": "suffix-potions",
+          "gameType": "suffix-potions",
+          "subject": "english"
+        },
+        {
+          "id": "word-squeeze",
+          "gameType": "word-squeeze",
+          "subject": "english"
+        },
+        {
+          "id": "sound-alikes",
+          "gameType": "sound-alikes",
+          "subject": "english"
+        },
+        {
+          "id": "bridge-builder",
+          "gameType": "bridge-builder",
+          "subject": "english"
+        },
+        {
+          "id": "word-detectives",
+          "gameType": "word-detectives",
+          "subject": "english"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "story-scrolls",
+          "gameType": "story-scrolls",
+          "subject": "english"
+        },
+        {
+          "id": "story-builder",
+          "gameType": "story-builder",
+          "subject": "english"
+        },
+        {
+          "id": "past-perfect-portal",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "maybe-meadow-adverbs",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "verb-prefix-workshop",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "silent-letter-sleuth",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "thesaurus-treasure-hunt",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "crystal-ball-clues",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "myth-and-stage-quest",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "dialogue-doctor",
+          "gameType": "science-lab",
+          "subject": "english"
+        }
+      ]
+    },
+    {
+      "islandId": "ember-isle",
+      "id": "magma-crucible",
+      "name": "Magma Crucible",
+      "subject": "science",
+      "story": "The experiments in Magma Crucible are waiting. Sort, predict and investigate to find out how the world works.",
+      "landmark": "castle",
+      "mapPosition": {
+        "x": 9,
+        "z": -3
+      },
+      "games": [
+        {
+          "id": "fifth-life-cycle-sorter",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fifth-material-misfit",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fifth-sun-earth-moon",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fifth-force-finder",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fifth-new-life-steps",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fifth-growing-up-riddles",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fifth-change-predictor",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fifth-solution-words",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fifth-solar-system-ranks",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "fifth-force-lab",
+          "gameType": "science-lab",
+          "subject": "science"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "material-reasons-lab",
+          "gameType": "science-lab",
+          "subject": "science"
+        }
+      ]
+    },
+    {
+      "islandId": "ember-isle",
+      "id": "brainwave-big-top",
+      "name": "Brainwave Big Top",
+      "story": "Roll up, roll up! The ringmaster's puzzles have got into a terrible muddle. Hunt for hidden words, fill the number grids, sweep for sneaky mines, crack the crossword, match the tiles, build number pyramids, follow number trails, play bingo, pair up the clocks, spell across the tightrope, sort the rings and line up the sentence parade to get the show back on the road.",
+      "landmark": "big-top",
+      "mapPosition": {
+        "x": -17,
+        "z": -5
+      },
+      "games": [
+        {
+          "id": "word-search",
+          "gameType": "word-search",
+          "subject": "english"
+        },
+        {
+          "id": "sudoku",
+          "gameType": "sudoku",
+          "subject": "maths"
+        },
+        {
+          "id": "mine-sweeper",
+          "gameType": "mine-sweeper",
+          "subject": "maths"
+        },
+        {
+          "id": "crossword",
+          "gameType": "crossword",
+          "subject": "english"
+        },
+        {
+          "id": "mahjong",
+          "gameType": "mahjong",
+          "subject": "maths"
+        },
+        {
+          "id": "number-pyramid",
+          "gameType": "number-pyramid",
+          "subject": "maths"
+        },
+        {
+          "id": "number-trail",
+          "gameType": "number-trail",
+          "subject": "maths"
+        },
+        {
+          "id": "bingo",
+          "gameType": "bingo",
+          "subject": "maths"
+        },
+        {
+          "id": "clock-pairs",
+          "gameType": "clock-pairs",
+          "subject": "maths"
+        },
+        {
+          "id": "tightrope-words",
+          "gameType": "tightrope-words",
+          "subject": "english"
+        },
+        {
+          "id": "ring-sort",
+          "gameType": "ring-sort",
+          "subject": "english"
+        },
+        {
+          "id": "sentence-parade",
+          "gameType": "sentence-parade",
+          "subject": "english"
+        }
+      ]
+    },
+    {
+      "islandId": "ember-isle",
+      "id": "thunder-forge",
+      "name": "Thunder Forge",
+      "subject": "music",
+      "story": "Thunder Forge has fallen silent. Listen, clap and compose to fill it with music again.",
+      "landmark": "music",
+      "mapPosition": {
+        "x": -7,
+        "z": -4
+      },
+      "games": [
+        {
+          "id": "dotted-rhythm-detective",
+          "gameType": "dotted-rhythm-detective",
+          "subject": "music"
+        },
+        {
+          "id": "chord-castle",
+          "gameType": "chord-castle",
+          "subject": "music"
+        },
+        {
+          "id": "interval-leap",
+          "gameType": "interval-leap",
+          "subject": "music"
+        },
+        {
+          "id": "note-word-puzzle",
+          "gameType": "note-word-puzzle",
+          "subject": "music"
+        },
+        {
+          "id": "sharps-and-flats",
+          "gameType": "sharps-and-flats",
+          "subject": "music"
+        },
+        {
+          "id": "composer-gallery",
+          "gameType": "composer-gallery",
+          "subject": "music"
+        },
+        {
+          "id": "off-beat-party",
+          "gameType": "off-beat-party",
+          "subject": "music"
+        },
+        {
+          "id": "scale-explorer",
+          "gameType": "scale-explorer",
+          "subject": "music"
+        },
+        {
+          "id": "beat-sums",
+          "gameType": "beat-sums",
+          "subject": "music"
+        },
+        {
+          "id": "rondo-roundabout",
+          "gameType": "rondo-roundabout",
+          "subject": "music"
+        }
+      ]
+    },
+    {
+      "islandId": "ember-isle",
+      "id": "obsidian-peaks",
+      "name": "Obsidian Peaks",
+      "subject": "geography",
+      "story": "The maps of Obsidian Peaks are blank. Explore places near and far to fill them in.",
+      "landmark": "globe",
+      "mapPosition": {
+        "x": 19,
+        "z": -4
+      },
+      "games": [
+        {
+          "id": "latitude-and-tropics",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "longitude-and-prime-meridian",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "six-figure-grid-references",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "mountains-of-the-world",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "natural-resources",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "food-and-trade-links",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "climate-graphs",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "compass-navigation",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "rivers-of-the-world",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "earthquakes",
+          "gameType": "geography-games",
+          "subject": "geography"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "comparing-regions",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "atlas-ace-skills",
+          "gameType": "science-lab",
+          "subject": "geography"
+        }
+      ]
+    },
+    {
+      "islandId": "ember-isle",
+      "id": "ironclad-keep",
+      "name": "Ironclad Keep",
+      "subject": "history",
+      "story": "The past of Ironclad Keep is full of secrets. Follow the clues back through time to uncover them.",
+      "landmark": "hourglass",
+      "mapPosition": {
+        "x": 15,
+        "z": 7
+      },
+      "games": [
+        {
+          "id": "raid-on-lindisfarne",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "longship-builders",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "alfred-and-the-danelaw",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "viking-or-saxon",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "jorvik-market",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "the-last-saxon-kings",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "city-in-the-jungle",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "maya-number-keepers",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "maya-or-anglo-saxon",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "victorian-inventors",
+          "gameType": "history-quest",
+          "subject": "history"
+        }
+      ]
+    },
+    {
+      "islandId": "ember-isle",
+      "id": "cinder-core",
+      "name": "Cinder Core",
+      "subject": "computing",
+      "story": "The machines of Cinder Core need new instructions. Write, test and debug to get them working.",
+      "landmark": "spire",
+      "mapPosition": {
+        "x": 3,
+        "z": 7
+      },
+      "games": [
+        {
+          "id": "team-up-online",
+          "gameType": "team-up-online",
+          "subject": "computing"
+        },
+        {
+          "id": "video-director",
+          "gameType": "video-director",
+          "subject": "computing"
+        },
+        {
+          "id": "if-this-then-that",
+          "gameType": "if-this-then-that",
+          "subject": "computing"
+        },
+        {
+          "id": "database-detective",
+          "gameType": "database-detective",
+          "subject": "computing"
+        },
+        {
+          "id": "vector-artist",
+          "gameType": "vector-artist",
+          "subject": "computing"
+        },
+        {
+          "id": "quiz-master",
+          "gameType": "quiz-master",
+          "subject": "computing"
+        },
+        {
+          "id": "higher-or-lower",
+          "gameType": "higher-or-lower",
+          "subject": "computing"
+        },
+        {
+          "id": "search-ranker",
+          "gameType": "search-ranker",
+          "subject": "computing"
+        },
+        {
+          "id": "sensor-sense",
+          "gameType": "sensor-sense",
+          "subject": "computing"
+        },
+        {
+          "id": "report-it",
+          "gameType": "report-it",
+          "subject": "computing"
+        }
+      ]
+    },
+    {
+      "islandId": "ember-isle",
+      "id": "molten-gallery",
+      "name": "Molten Gallery",
+      "subject": "art",
+      "story": "The forge wants art for its walls. Master perspective, colour and sculpture, and meet great architects.",
+      "landmark": "easel",
+      "mapPosition": { "x": -2.5, "z": -13 },
+      "games": [
+        {
+          "id": "art-artists-notebook",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-critic-club",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-perspective-point",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-colour-theory",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-sculpture-methods",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-paint-effects",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-composition-craft",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-renaissance-masters",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-amazing-architects",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-movement-sorter",
+          "gameType": "science-lab",
+          "subject": "art"
+        }
+      ]
+    },
+    {
+      "islandId": "ember-isle",
+      "id": "ember-embassy",
+      "name": "Ember Embassy",
+      "subject": "languages",
+      "story": "Visitors are arriving from France. Learn to welcome them, describe the island and answer their questions.",
+      "landmark": "embassy",
+      "mapPosition": { "x": 9, "z": -12.5 },
+      "games": [
+        {
+          "id": "french-weather-report",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-lookalike-words",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-dictionary-detective",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-opinion-orbit",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-sound-sorter",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-catwalk-colours",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-avoir-etre-arena",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-verb-engine",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-goldilocks-tale",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-hobby-hub",
+          "gameType": "science-lab",
+          "subject": "languages"
+        }
+      ]
+    },
+    {
+      "islandId": "ember-isle",
+      "id": "bellows-workshop",
+      "name": "Bellows Workshop",
+      "subject": "design",
+      "story": "The great bellows need gears, pulleys and circuits. Design and test them to keep the forge alight.",
+      "landmark": "workshop",
+      "mapPosition": { "x": 1, "z": -4.5 },
+      "games": [
+        {
+          "id": "dt-spec-writer",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-drawing-office",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-material-choices",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-cam-toy-workshop",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-switch-it-up",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-input-or-output",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-reinforce-it",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-famous-firsts",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-grown-reared-caught",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-savoury-chef",
+          "gameType": "science-lab",
+          "subject": "design"
+        }
+      ]
+    },
+    {
+      "islandId": "starfall-isle",
+      "id": "constellation-court",
+      "name": "Constellation Court",
+      "subject": "maths",
+      "story": "The puzzles of Constellation Court have all come undone. Count, measure and calculate to put them right again.",
+      "landmark": "bubbles",
+      "mapPosition": {
+        "x": -14,
+        "z": 6
+      },
+      "games": [
+        {
+          "id": "popping-bubbles",
+          "gameType": "popping-bubbles",
+          "subject": "maths"
+        },
+        {
+          "id": "fish-count",
+          "gameType": "fish-count",
+          "subject": "maths"
+        },
+        {
+          "id": "ten-frames",
+          "gameType": "ten-frames",
+          "subject": "maths"
+        },
+        {
+          "id": "shape-hunt",
+          "gameType": "shape-hunt",
+          "subject": "maths"
+        },
+        {
+          "id": "shell-sums",
+          "gameType": "shell-sums",
+          "subject": "maths"
+        },
+        {
+          "id": "crab-take-away",
+          "gameType": "crab-take-away",
+          "subject": "maths"
+        },
+        {
+          "id": "skip-count",
+          "gameType": "skip-count",
+          "subject": "maths"
+        },
+        {
+          "id": "coral-heights",
+          "gameType": "coral-heights",
+          "subject": "maths"
+        },
+        {
+          "id": "fraction-find",
+          "gameType": "fraction-find",
+          "subject": "maths"
+        },
+        {
+          "id": "ship-clock",
+          "gameType": "ship-clock",
+          "subject": "maths"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "fair-shares",
+          "gameType": "fair-shares",
+          "subject": "maths"
+        },
+        {
+          "id": "treasure-map",
+          "gameType": "treasure-map",
+          "subject": "maths"
+        },
+        {
+          "id": "chart-tower",
+          "gameType": "chart-tower",
+          "subject": "maths"
+        },
+        {
+          "id": "fraction-fusion-lab",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "fraction-factory-floor",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "percent-power-shop",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "formula-fixers",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "miles-and-metres-dash",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "mean-machine-lab",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "angle-sleuth-squad",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "big-times-rocket",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "long-division-den",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "ten-million-ranker",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "common-factor-quest",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "simplify-squad",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "slanted-area-workshop",
+          "gameType": "science-lab",
+          "subject": "maths"
+        },
+        {
+          "id": "circle-secrets",
+          "gameType": "science-lab",
+          "subject": "maths"
+        }
+      ]
+    },
+    {
+      "islandId": "starfall-isle",
+      "id": "moonlit-scriptorium",
+      "name": "Moonlit Scriptorium",
+      "subject": "english",
+      "story": "The books of Moonlit Scriptorium have lost their words. Spell them, join them and punctuate them to bring the stories back.",
+      "landmark": "forest",
+      "mapPosition": {
+        "x": -5,
+        "z": -6
+      },
+      "games": [
+        {
+          "id": "alphabet-train",
+          "gameType": "alphabet-train",
+          "subject": "english"
+        },
+        {
+          "id": "word-lanterns",
+          "gameType": "word-lanterns",
+          "subject": "english"
+        },
+        {
+          "id": "one-or-many",
+          "gameType": "one-or-many",
+          "subject": "english"
+        },
+        {
+          "id": "word-workshop",
+          "gameType": "word-workshop",
+          "subject": "english"
+        },
+        {
+          "id": "punctuation-stones",
+          "gameType": "punctuation-stones",
+          "subject": "english"
+        },
+        {
+          "id": "suffix-potions",
+          "gameType": "suffix-potions",
+          "subject": "english"
+        },
+        {
+          "id": "word-squeeze",
+          "gameType": "word-squeeze",
+          "subject": "english"
+        },
+        {
+          "id": "sound-alikes",
+          "gameType": "sound-alikes",
+          "subject": "english"
+        },
+        {
+          "id": "bridge-builder",
+          "gameType": "bridge-builder",
+          "subject": "english"
+        },
+        {
+          "id": "word-detectives",
+          "gameType": "word-detectives",
+          "subject": "english"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "story-scrolls",
+          "gameType": "story-scrolls",
+          "subject": "english"
+        },
+        {
+          "id": "story-builder",
+          "gameType": "story-builder",
+          "subject": "english"
+        },
+        {
+          "id": "active-or-passive-portal",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "same-or-opposite-words",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "formal-or-chatty-tags",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "semi-colon-signal-box",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "cohesion-layout-lab",
+          "gameType": "science-lab",
+          "subject": "english"
+        },
+        {
+          "id": "squeeze-the-sentence",
+          "gameType": "science-lab",
+          "subject": "english"
+        }
+      ]
+    },
+    {
+      "islandId": "starfall-isle",
+      "id": "comet-observatory",
+      "name": "Comet Observatory",
+      "subject": "science",
+      "story": "The experiments in Comet Observatory are waiting. Sort, predict and investigate to find out how the world works.",
+      "landmark": "castle",
+      "mapPosition": {
+        "x": 7,
+        "z": -9
+      },
+      "games": [
+        {
+          "id": "sixth-classify-living-things",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "sixth-adaptation-odd-one-out",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "sixth-light-true-or-false",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "sixth-circulatory-system",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "sixth-changes-over-time",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "sixth-circuit-symbols",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "sixth-circuit-predictions",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "sixth-evolution-words",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "sixth-healthy-body-choices",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "sixth-shadow-investigation",
+          "gameType": "science-lab",
+          "subject": "science"
+        }
+      ],
+      "extraGames": [
+        {
+          "id": "classify-with-reasons",
+          "gameType": "science-lab",
+          "subject": "science"
+        },
+        {
+          "id": "evidence-detective",
+          "gameType": "science-lab",
+          "subject": "science"
+        }
+      ]
+    },
+    {
+      "islandId": "starfall-isle",
+      "id": "brainwave-big-top",
+      "name": "Brainwave Big Top",
+      "story": "Roll up, roll up! The ringmaster's puzzles have got into a terrible muddle. Hunt for hidden words, fill the number grids, sweep for sneaky mines, crack the crossword, match the tiles, build number pyramids, follow number trails, play bingo, pair up the clocks, spell across the tightrope, sort the rings and line up the sentence parade to get the show back on the road.",
+      "landmark": "big-top",
+      "mapPosition": {
+        "x": -4,
+        "z": 11
+      },
+      "games": [
+        {
+          "id": "word-search",
+          "gameType": "word-search",
+          "subject": "english"
+        },
+        {
+          "id": "sudoku",
+          "gameType": "sudoku",
+          "subject": "maths"
+        },
+        {
+          "id": "mine-sweeper",
+          "gameType": "mine-sweeper",
+          "subject": "maths"
+        },
+        {
+          "id": "crossword",
+          "gameType": "crossword",
+          "subject": "english"
+        },
+        {
+          "id": "mahjong",
+          "gameType": "mahjong",
+          "subject": "maths"
+        },
+        {
+          "id": "number-pyramid",
+          "gameType": "number-pyramid",
+          "subject": "maths"
+        },
+        {
+          "id": "number-trail",
+          "gameType": "number-trail",
+          "subject": "maths"
+        },
+        {
+          "id": "bingo",
+          "gameType": "bingo",
+          "subject": "maths"
+        },
+        {
+          "id": "clock-pairs",
+          "gameType": "clock-pairs",
+          "subject": "maths"
+        },
+        {
+          "id": "tightrope-words",
+          "gameType": "tightrope-words",
+          "subject": "english"
+        },
+        {
+          "id": "ring-sort",
+          "gameType": "ring-sort",
+          "subject": "english"
+        },
+        {
+          "id": "sentence-parade",
+          "gameType": "sentence-parade",
+          "subject": "english"
+        }
+      ]
+    },
+    {
+      "islandId": "starfall-isle",
+      "id": "nebula-hall",
+      "name": "Nebula Hall",
+      "subject": "music",
+      "story": "Nebula Hall has fallen silent. Listen, clap and compose to fill it with music again.",
+      "landmark": "music",
+      "mapPosition": {
+        "x": 17,
+        "z": -3
+      },
+      "games": [
+        {
+          "id": "music-time-machine",
+          "gameType": "music-time-machine",
+          "subject": "music"
+        },
+        {
+          "id": "romantic-composer-gallery",
+          "gameType": "romantic-composer-gallery",
+          "subject": "music"
+        },
+        {
+          "id": "bass-clef-basement",
+          "gameType": "bass-clef-basement",
+          "subject": "music"
+        },
+        {
+          "id": "smooth-or-spiky",
+          "gameType": "smooth-or-spiky",
+          "subject": "music"
+        },
+        {
+          "id": "triad-tower",
+          "gameType": "triad-tower",
+          "subject": "music"
+        },
+        {
+          "id": "key-signature-codebreaker",
+          "gameType": "key-signature-codebreaker",
+          "subject": "music"
+        },
+        {
+          "id": "movie-score-studio",
+          "gameType": "movie-score-studio",
+          "subject": "music"
+        },
+        {
+          "id": "triplet-trail",
+          "gameType": "triplet-trail",
+          "subject": "music"
+        },
+        {
+          "id": "melody-dictation",
+          "gameType": "melody-dictation",
+          "subject": "music"
+        },
+        {
+          "id": "conductors-challenge",
+          "gameType": "conductors-challenge",
+          "subject": "music"
+        }
+      ]
+    },
+    {
+      "islandId": "starfall-isle",
+      "id": "meridian-stones",
+      "name": "Meridian Stones",
+      "subject": "geography",
+      "story": "The maps of Meridian Stones are blank. Explore places near and far to fill them in.",
+      "landmark": "globe",
+      "mapPosition": {
+        "x": -17,
+        "z": -5
+      },
+      "games": [
+        {
+          "id": "time-zones",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "world-capital-cities",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "energy-resources",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "urban-zones",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "population-data",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "os-map-skills",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "river-landforms",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "grid-reference-challenge",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "extreme-environments",
+          "gameType": "geography-games",
+          "subject": "geography"
+        },
+        {
+          "id": "uk-regions",
+          "gameType": "geography-games",
+          "subject": "geography"
+        }
+      ]
+    },
+    {
+      "islandId": "starfall-isle",
+      "id": "starfall-ruins",
+      "name": "Starfall Ruins",
+      "subject": "history",
+      "story": "The past of Starfall Ruins is full of secrets. Follow the clues back through time to uncover them.",
+      "landmark": "hourglass",
+      "mapPosition": {
+        "x": 5,
+        "z": 6
+      },
+      "games": [
+        {
+          "id": "the-house-of-wisdom",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "bronzes-of-benin",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "where-it-all-began",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "scribes-of-sumer",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "indus-city-planners",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "the-shang-oracle",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "battle-of-britain-skies",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "blitz-night",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "the-historians-toolkit",
+          "gameType": "history-quest",
+          "subject": "history"
+        },
+        {
+          "id": "the-grand-timeline",
+          "gameType": "history-quest",
+          "subject": "history"
+        }
+      ]
+    },
+    {
+      "islandId": "starfall-isle",
+      "id": "signal-tower",
+      "name": "Signal Tower",
+      "subject": "computing",
+      "story": "The machines of Signal Tower need new instructions. Write, test and debug to get them working.",
+      "landmark": "spire",
+      "mapPosition": {
+        "x": 16,
+        "z": 8
+      },
+      "games": [
+        {
+          "id": "search-skills",
+          "gameType": "search-skills",
+          "subject": "computing"
+        },
+        {
+          "id": "web-builder",
+          "gameType": "web-builder",
+          "subject": "computing"
+        },
+        {
+          "id": "variable-vault",
+          "gameType": "variable-vault",
+          "subject": "computing"
+        },
+        {
+          "id": "spreadsheet-sums",
+          "gameType": "spreadsheet-sums",
+          "subject": "computing"
+        },
+        {
+          "id": "model-maker",
+          "gameType": "model-maker",
+          "subject": "computing"
+        },
+        {
+          "id": "step-counter",
+          "gameType": "step-counter",
+          "subject": "computing"
+        },
+        {
+          "id": "game-designer",
+          "gameType": "game-designer",
+          "subject": "computing"
+        },
+        {
+          "id": "debug-detective",
+          "gameType": "debug-detective",
+          "subject": "computing"
+        },
+        {
+          "id": "message-route",
+          "gameType": "message-route",
+          "subject": "computing"
+        },
+        {
+          "id": "think-before-you-share",
+          "gameType": "think-before-you-share",
+          "subject": "computing"
+        }
+      ]
+    },
+    {
+      "islandId": "starfall-isle",
+      "id": "stardust-studio",
+      "name": "Stardust Studio",
+      "subject": "art",
+      "story": "The night sky is a giant canvas. Use light, shadow and perspective, and learn from the Old Masters.",
+      "landmark": "easel",
+      "mapPosition": { "x": -22, "z": -12.5 },
+      "games": [
+        {
+          "id": "art-idea-developer",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-sketchbook-reviewer",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-light-and-shadow",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-two-point-towers",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-right-material",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-print-masters",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-figure-drawing",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-old-masters",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-design-legends",
+          "gameType": "science-lab",
+          "subject": "art"
+        },
+        {
+          "id": "art-world-gallery",
+          "gameType": "science-lab",
+          "subject": "art"
+        }
+      ]
+    },
+    {
+      "islandId": "starfall-isle",
+      "id": "galaxy-gate",
+      "name": "Galaxy Gate",
+      "subject": "languages",
+      "story": "The gate opens only to French speakers. Read, write and chat in French to travel through it.",
+      "landmark": "embassy",
+      "mapPosition": { "x": -6, "z": 2.5 },
+      "games": [
+        {
+          "id": "french-clock-tower",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-town-trail",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-francophone-facts",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-sound-sleuth",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-green-mouse",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-aller-faire",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-town-describer",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-cafe-chat",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-ne-pas-sandwich",
+          "gameType": "science-lab",
+          "subject": "languages"
+        },
+        {
+          "id": "french-sentence-stretcher",
+          "gameType": "science-lab",
+          "subject": "languages"
+        }
+      ]
+    },
+    {
+      "islandId": "starfall-isle",
+      "id": "orbit-workshop",
+      "name": "Orbit Workshop",
+      "subject": "design",
+      "story": "The star machines need inventors. Research, design and program them, like the great inventors did.",
+      "landmark": "workshop",
+      "mapPosition": { "x": 1, "z": -1 },
+      "games": [
+        {
+          "id": "dt-design-studio",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-precision-workshop",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-material-matchmaker",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-design-critic",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-world-changers",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-product-circuits",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-gear-train-challenge",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-balanced-plate-pro",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-food-miles",
+          "gameType": "science-lab",
+          "subject": "design"
+        },
+        {
+          "id": "dt-code-and-control",
+          "gameType": "science-lab",
+          "subject": "design"
+        }
+      ]
+    },
+    {
+      "islandId": "meadow-isle",
+      "id": "challenge-arena",
+      "name": "Challenge Arena",
+      "story": "The arena's new reading champion is about to be crowned, but the judges need to hear every word read out loud. Sit down with a grown-up, read the real words and the alien words, and show the judges what you can do.",
+      "landmark": "challenge-arena",
+      "mapPosition": {
+        "x": 2,
+        "z": -3
+      },
+      "games": [
+        {
+          "id": "phonics-screening-check",
+          "gameType": "phonics-screening-check",
+          "subject": "phonics"
+        }
+      ]
+    },
+    {
+      "islandId": "jungle-reach",
+      "id": "challenge-arena",
+      "name": "Challenge Arena",
+      "story": "The jungle's timekeeper has set up the arena for the great times tables challenge. Answer each times table question before the vine bell rings, and see how many of the 25 you can catch.",
+      "landmark": "challenge-arena",
+      "mapPosition": {
+        "x": 10,
+        "z": 1
+      },
+      "games": [
+        {
+          "id": "multiplication-tables-check",
+          "gameType": "times-tables-check",
+          "subject": "maths"
+        }
+      ]
+    },
+    {
+      "islandId": "starfall-isle",
+      "id": "challenge-arena",
+      "name": "Challenge Arena",
+      "story": "The arena under the comet hosts the Year 6 papers. Pick a paper, practise it at your own pace, or try it against the clock just like the real thing.",
+      "landmark": "challenge-arena",
+      "mapPosition": {
+        "x": 9,
+        "z": -1
+      },
+      "games": [
+        {
+          "id": "arithmetic-paper",
+          "gameType": "arithmetic-check",
+          "subject": "maths"
+        },
+        {
+          "id": "reasoning-paper",
+          "gameType": "reasoning-check",
+          "subject": "maths"
+        },
+        {
+          "id": "grammar-paper",
+          "gameType": "grammar-check",
+          "subject": "english"
+        },
+        {
+          "id": "spelling-paper",
+          "gameType": "spelling-check",
+          "subject": "english"
+        },
+        {
+          "id": "reading-paper",
+          "gameType": "reading-check",
+          "subject": "english"
+        }
+      ]
+    }
+  ]
+}

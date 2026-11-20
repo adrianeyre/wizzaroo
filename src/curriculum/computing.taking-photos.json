@@ -1,0 +1,8 @@
+{
+  "id": "computing.taking-photos",
+  "name": "Taking good digital photos",
+  "subject": "computing",
+  "yearGroup": 2,
+  "strand": "creating-content",
+  "prerequisites": ["computing.digital-painting"]
+}

@@ -1,0 +1,77 @@
+{
+  "subject": "music",
+  "yearGroup": 2,
+  "games": [
+    {
+      "id": "storm-sound-mixer",
+      "title": "Sound Effect Studio",
+      "station": "compare",
+      "prop": "tuning-fork",
+      "skillName": "Choosing and combining sounds for an effect",
+      "strand": "dimensions",
+      "statutoryRequirement": "Pupils should be taught to experiment with, create, select and combine sounds using the inter-related dimensions of music",
+      "instruction": "Imagine the sound, then tap the best choice.",
+      "hint": "Not quite. Think about whether it should be loud or quiet, fast or slow, high or low.",
+      "questions": [
+        {
+          "ask": "Which sound is best for rain just starting to fall?",
+          "answer": "Quiet finger taps",
+          "distractors": [
+            "Loud cymbal crash",
+            "Big drum boom",
+            "Fast loud shaking"
+          ]
+        },
+        {
+          "ask": "Which sound is best for a rumble of thunder?",
+          "answer": "Loud, low drum",
+          "distractors": ["Quiet high bell", "Soft triangle", "Gentle shaker"]
+        },
+        {
+          "ask": "Which sound could show a sudden flash of lightning?",
+          "answer": "Cymbal crash",
+          "distractors": ["Soft shaker", "Gentle hum", "Slow woodblock"]
+        },
+        {
+          "ask": "How should the music change as the storm gets closer?",
+          "answer": "Get louder",
+          "distractors": ["Get quieter", "Stop", "Get slower"]
+        },
+        {
+          "ask": "How should the music change as the storm goes away?",
+          "answer": "Get quieter",
+          "distractors": ["Get louder", "Get faster", "Add more drums"]
+        },
+        {
+          "ask": "Which sounds could you combine for wind and rain?",
+          "answer": "Shakers and whooshes",
+          "distractors": [
+            "Birdsong and bells",
+            "A ticking clock",
+            "Happy singing"
+          ]
+        },
+        {
+          "ask": "Which music fits a sleeping baby?",
+          "answer": "Quiet and slow",
+          "distractors": ["Loud and fast", "Loud and high", "Crashing drums"]
+        },
+        {
+          "ask": "Which tempo fits a rabbit running away from a fox?",
+          "answer": "Fast",
+          "distractors": ["Slow", "Very slow", "Stopping"]
+        },
+        {
+          "ask": "Which pitch fits a big, heavy elephant?",
+          "answer": "Low",
+          "distractors": ["High", "Very high", "Squeaky"]
+        },
+        {
+          "ask": "Which sound fits a tiny mouse creeping by?",
+          "answer": "High and quiet",
+          "distractors": ["Low and loud", "Low and slow", "Booming"]
+        }
+      ]
+    }
+  ]
+}

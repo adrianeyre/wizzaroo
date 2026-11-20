@@ -1,0 +1,8 @@
+{
+  "id": "computing.stop-frame-animation",
+  "name": "Making a stop-frame animation",
+  "subject": "computing",
+  "yearGroup": 3,
+  "strand": "creating-content",
+  "prerequisites": ["computing.taking-photos"]
+}

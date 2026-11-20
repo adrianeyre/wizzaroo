@@ -1,0 +1,1364 @@
+{
+  "yearGroup": 1,
+  "games": [
+    {
+      "skillId": "geography.daily-weather",
+      "title": "Weather Watchers",
+      "skillName": "Naming daily weather",
+      "strand": "human-and-physical-geography",
+      "scene": "weather-window",
+      "instruction": "Look out of the window, then tap the word for the weather.",
+      "questions": [
+        {
+          "ask": "What is the weather like today?",
+          "show": {
+            "weather": "sunny"
+          },
+          "answer": "Sunny",
+          "wrongAnswers": ["Rainy", "Snowy", "Foggy"]
+        },
+        {
+          "ask": "What is the weather like today?",
+          "show": {
+            "weather": "rainy"
+          },
+          "answer": "Rainy",
+          "wrongAnswers": ["Sunny", "Snowy", "Foggy"]
+        },
+        {
+          "ask": "What is the weather doing now?",
+          "show": {
+            "weather": "snowy"
+          },
+          "answer": "Snowy",
+          "wrongAnswers": ["Sunny", "Rainy", "Foggy"]
+        },
+        {
+          "ask": "Which word fits this weather?",
+          "show": {
+            "weather": "cloudy"
+          },
+          "answer": "Cloudy",
+          "wrongAnswers": ["Sunny", "Snowy", "Rainy"]
+        },
+        {
+          "ask": "Which word matches this weather?",
+          "show": {
+            "weather": "windy"
+          },
+          "answer": "Windy",
+          "wrongAnswers": ["Snowy", "Foggy", "Rainy"]
+        },
+        {
+          "ask": "What is the weather like outside?",
+          "show": {
+            "weather": "foggy"
+          },
+          "answer": "Foggy",
+          "wrongAnswers": ["Sunny", "Snowy", "Windy"]
+        },
+        {
+          "ask": "Look at the sky. What weather is it?",
+          "show": {
+            "weather": "stormy"
+          },
+          "answer": "Stormy",
+          "wrongAnswers": ["Sunny", "Snowy", "Foggy"]
+        },
+        {
+          "ask": "What has come out in the sky?",
+          "show": {
+            "weather": "rainbow"
+          },
+          "answer": "A rainbow",
+          "wrongAnswers": ["Snowflakes", "Thick fog", "Lightning"]
+        },
+        {
+          "ask": "What will keep you dry today?",
+          "show": {
+            "weather": "rainy"
+          },
+          "answer": "An umbrella",
+          "wrongAnswers": ["Sun cream", "Sunglasses", "A sledge"]
+        },
+        {
+          "ask": "What should you wear today?",
+          "show": {
+            "weather": "sunny"
+          },
+          "answer": "A sun hat",
+          "wrongAnswers": ["A woolly hat", "A raincoat", "Snow boots"]
+        },
+        {
+          "ask": "What could you make outside today?",
+          "show": {
+            "weather": "snowy"
+          },
+          "answer": "A snowman",
+          "wrongAnswers": ["A sandcastle", "A paddling pool", "A daisy chain"]
+        },
+        {
+          "ask": "What would be fun to fly today?",
+          "show": {
+            "weather": "windy"
+          },
+          "answer": "A kite",
+          "wrongAnswers": ["A sledge", "A snowman", "A paddling pool"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.four-seasons",
+      "title": "Season Spinner",
+      "skillName": "The four seasons and their weather",
+      "strand": "human-and-physical-geography",
+      "scene": "weather-window",
+      "instruction": "Look at the tree and the weather, then tap the season.",
+      "questions": [
+        {
+          "ask": "What season is it?",
+          "show": {
+            "season": "spring"
+          },
+          "answer": "Spring",
+          "wrongAnswers": ["Summer", "Autumn", "Winter"]
+        },
+        {
+          "ask": "What season is it?",
+          "show": {
+            "season": "summer"
+          },
+          "answer": "Summer",
+          "wrongAnswers": ["Spring", "Autumn", "Winter"]
+        },
+        {
+          "ask": "What season is it?",
+          "show": {
+            "season": "autumn"
+          },
+          "answer": "Autumn",
+          "wrongAnswers": ["Spring", "Summer", "Winter"]
+        },
+        {
+          "ask": "What season is it?",
+          "show": {
+            "season": "winter"
+          },
+          "answer": "Winter",
+          "wrongAnswers": ["Spring", "Summer", "Autumn"]
+        },
+        {
+          "ask": "Which season is this?",
+          "show": {
+            "season": "winter",
+            "weather": "snowy"
+          },
+          "answer": "Winter",
+          "wrongAnswers": ["Spring", "Summer", "Autumn"]
+        },
+        {
+          "ask": "Which season do you see?",
+          "show": {
+            "season": "summer",
+            "weather": "sunny"
+          },
+          "answer": "Summer",
+          "wrongAnswers": ["Spring", "Autumn", "Winter"]
+        },
+        {
+          "ask": "The leaves are falling. Which season is it?",
+          "show": {
+            "season": "autumn",
+            "weather": "windy"
+          },
+          "answer": "Autumn",
+          "wrongAnswers": ["Spring", "Summer", "Winter"]
+        },
+        {
+          "ask": "The tree has new blossom. What season is it?",
+          "show": {
+            "season": "spring",
+            "weather": "rainy"
+          },
+          "answer": "Spring",
+          "wrongAnswers": ["Summer", "Autumn", "Winter"]
+        },
+        {
+          "ask": "Which season comes after winter?",
+          "show": {
+            "season": "winter"
+          },
+          "answer": "Spring",
+          "wrongAnswers": ["Summer", "Autumn", "Winter"]
+        },
+        {
+          "ask": "Which season comes after summer?",
+          "show": {
+            "season": "summer"
+          },
+          "answer": "Autumn",
+          "wrongAnswers": ["Spring", "Summer", "Winter"]
+        },
+        {
+          "ask": "Which season is usually hottest in the UK?",
+          "show": {
+            "weather": "sunny"
+          },
+          "answer": "Summer",
+          "wrongAnswers": ["Spring", "Autumn", "Winter"]
+        },
+        {
+          "ask": "Which season is usually coldest in the UK?",
+          "show": {
+            "weather": "snowy"
+          },
+          "answer": "Winter",
+          "wrongAnswers": ["Spring", "Summer", "Autumn"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.uk-countries",
+      "title": "Four Nations Flight",
+      "skillName": "The four countries of the UK",
+      "strand": "locational-knowledge",
+      "scene": "uk-explorer",
+      "instruction": "Fly over the map with Wizz and tap the UK country that glows or has the pin.",
+      "questions": [
+        {
+          "ask": "Which country is glowing?",
+          "show": {
+            "highlight": "england"
+          },
+          "answer": "England",
+          "wrongAnswers": ["Scotland", "Wales", "Northern Ireland"]
+        },
+        {
+          "ask": "Which country is glowing?",
+          "show": {
+            "highlight": "scotland"
+          },
+          "answer": "Scotland",
+          "wrongAnswers": ["England", "Wales", "Northern Ireland"]
+        },
+        {
+          "ask": "Which UK country is lit up?",
+          "show": {
+            "highlight": "wales"
+          },
+          "answer": "Wales",
+          "wrongAnswers": ["England", "Scotland", "Northern Ireland"]
+        },
+        {
+          "ask": "Which UK country is lit up?",
+          "show": {
+            "highlight": "northern-ireland"
+          },
+          "answer": "Northern Ireland",
+          "wrongAnswers": ["England", "Scotland", "Wales"]
+        },
+        {
+          "ask": "London is at the pin. Which country is it in?",
+          "show": {
+            "pin": {
+              "latitude": 51.5074,
+              "longitude": -0.1278
+            }
+          },
+          "answer": "England",
+          "wrongAnswers": ["Scotland", "Wales", "Northern Ireland"]
+        },
+        {
+          "ask": "Edinburgh is at the pin. Which country is it in?",
+          "show": {
+            "pin": {
+              "latitude": 55.9533,
+              "longitude": -3.1883
+            }
+          },
+          "answer": "Scotland",
+          "wrongAnswers": ["England", "Wales", "Northern Ireland"]
+        },
+        {
+          "ask": "Cardiff is at the pin. Which country is it in?",
+          "show": {
+            "pin": {
+              "latitude": 51.4816,
+              "longitude": -3.1791
+            }
+          },
+          "answer": "Wales",
+          "wrongAnswers": ["England", "Scotland", "Northern Ireland"]
+        },
+        {
+          "ask": "Belfast is at the pin. Which country is it in?",
+          "show": {
+            "pin": {
+              "latitude": 54.5973,
+              "longitude": -5.9301
+            }
+          },
+          "answer": "Northern Ireland",
+          "wrongAnswers": ["England", "Scotland", "Wales"]
+        },
+        {
+          "ask": "Ben Nevis is the UK's tallest mountain. Which country is it in?",
+          "show": {
+            "pin": {
+              "latitude": 56.7969,
+              "longitude": -5.0036
+            }
+          },
+          "answer": "Scotland",
+          "wrongAnswers": ["England", "Wales", "Northern Ireland"]
+        },
+        {
+          "ask": "Which country is the mountain Yr Wyddfa (Snowdon) in?",
+          "show": {
+            "pin": {
+              "latitude": 53.0685,
+              "longitude": -4.0763
+            }
+          },
+          "answer": "Wales",
+          "wrongAnswers": ["England", "Scotland", "Northern Ireland"]
+        },
+        {
+          "ask": "The Giant's Causeway is at the pin. Which country is it in?",
+          "show": {
+            "pin": {
+              "latitude": 55.2408,
+              "longitude": -6.5116
+            }
+          },
+          "answer": "Northern Ireland",
+          "wrongAnswers": ["England", "Scotland", "Wales"]
+        },
+        {
+          "ask": "Stonehenge is at the pin. Which country is it in?",
+          "show": {
+            "pin": {
+              "latitude": 51.1789,
+              "longitude": -1.8262
+            }
+          },
+          "answer": "England",
+          "wrongAnswers": ["Scotland", "Wales", "Northern Ireland"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.directional-language",
+      "title": "Which Way, Wizz?",
+      "skillName": "Near, far, left and right",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "compass-island",
+      "instruction": "Wizz is looking up the island. Find what is in front, behind, left, right, near or far.",
+      "questions": [
+        {
+          "ask": "What is in front of Wizz?",
+          "show": {
+            "target": "castle",
+            "direction": "north",
+            "points": 4
+          },
+          "answer": "Castle",
+          "wrongAnswers": ["Lighthouse", "Windmill", "Cave"]
+        },
+        {
+          "ask": "What is behind Wizz?",
+          "show": {
+            "target": "windmill",
+            "direction": "south",
+            "points": 4
+          },
+          "answer": "Windmill",
+          "wrongAnswers": ["Castle", "Palm tree", "Bridge"]
+        },
+        {
+          "ask": "What is on Wizz's left?",
+          "show": {
+            "target": "palm-tree",
+            "direction": "west",
+            "points": 4
+          },
+          "answer": "Palm tree",
+          "wrongAnswers": ["Volcano", "Lighthouse", "Treasure chest"]
+        },
+        {
+          "ask": "What is on Wizz's right?",
+          "show": {
+            "target": "lighthouse",
+            "direction": "east",
+            "points": 4
+          },
+          "answer": "Lighthouse",
+          "wrongAnswers": ["Cave", "Castle", "Windmill"]
+        },
+        {
+          "ask": "Where is the cave from Wizz?",
+          "show": {
+            "target": "cave",
+            "direction": "east",
+            "points": 4
+          },
+          "answer": "Right",
+          "wrongAnswers": ["Left", "In front", "Behind"]
+        },
+        {
+          "ask": "Where is the volcano from Wizz?",
+          "show": {
+            "target": "volcano",
+            "direction": "west",
+            "points": 4
+          },
+          "answer": "Left",
+          "wrongAnswers": ["Right", "In front", "Behind"]
+        },
+        {
+          "ask": "Where is the bridge?",
+          "show": {
+            "target": "bridge",
+            "direction": "north",
+            "points": 4
+          },
+          "answer": "In front",
+          "wrongAnswers": ["Behind", "Left", "Right"]
+        },
+        {
+          "ask": "Where is the treasure chest?",
+          "show": {
+            "target": "treasure-chest",
+            "direction": "south",
+            "points": 4
+          },
+          "answer": "Behind",
+          "wrongAnswers": ["In front", "Left", "Right"]
+        },
+        {
+          "ask": "Which is nearest to Wizz?",
+          "show": {
+            "target": "treasure-chest",
+            "direction": "north",
+            "points": 4,
+            "distance": "near"
+          },
+          "answer": "Treasure chest",
+          "wrongAnswers": ["Volcano", "Castle", "Lighthouse"]
+        },
+        {
+          "ask": "Which is furthest from Wizz?",
+          "show": {
+            "target": "volcano",
+            "direction": "east",
+            "points": 4,
+            "distance": "far"
+          },
+          "answer": "Volcano",
+          "wrongAnswers": ["Treasure chest", "Palm tree", "Bridge"]
+        },
+        {
+          "ask": "What is closest to Wizz?",
+          "show": {
+            "target": "lighthouse",
+            "direction": "west",
+            "points": 4,
+            "distance": "near"
+          },
+          "answer": "Lighthouse",
+          "wrongAnswers": ["Windmill", "Cave", "Bridge"]
+        },
+        {
+          "ask": "What is the furthest thing from Wizz?",
+          "show": {
+            "target": "castle",
+            "direction": "south",
+            "points": 4,
+            "distance": "far"
+          },
+          "answer": "Castle",
+          "wrongAnswers": ["Palm tree", "Volcano", "Treasure chest"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.physical-features",
+      "title": "Land Explorer",
+      "skillName": "Naming physical features",
+      "strand": "human-and-physical-geography",
+      "scene": "landscape-lookout",
+      "instruction": "Spin the model round, then tap the name of this natural feature.",
+      "questions": [
+        {
+          "ask": "What is this?",
+          "show": {
+            "feature": "beach"
+          },
+          "answer": "Beach",
+          "wrongAnswers": ["Forest", "Mountain", "River"]
+        },
+        {
+          "ask": "What is this called?",
+          "show": {
+            "feature": "cliff"
+          },
+          "answer": "Cliff",
+          "wrongAnswers": ["Forest", "River", "Lake"]
+        },
+        {
+          "ask": "Lots of trees grow here. What is it?",
+          "show": {
+            "feature": "forest"
+          },
+          "answer": "Forest",
+          "wrongAnswers": ["Beach", "River", "Cliff"]
+        },
+        {
+          "ask": "What is this low, round bump of land?",
+          "show": {
+            "feature": "hill"
+          },
+          "answer": "Hill",
+          "wrongAnswers": ["Lake", "Beach", "River"]
+        },
+        {
+          "ask": "This is very high and rocky. What is it?",
+          "show": {
+            "feature": "mountain"
+          },
+          "answer": "Mountain",
+          "wrongAnswers": ["Beach", "Lake", "River"]
+        },
+        {
+          "ask": "Water flows along here. What is it?",
+          "show": {
+            "feature": "river"
+          },
+          "answer": "River",
+          "wrongAnswers": ["Mountain", "Cliff", "Beach"]
+        },
+        {
+          "ask": "What is this big area of salty water?",
+          "show": {
+            "feature": "sea"
+          },
+          "answer": "Sea",
+          "wrongAnswers": ["Forest", "Hill", "Mountain"]
+        },
+        {
+          "ask": "What is this low land between hills?",
+          "show": {
+            "feature": "valley"
+          },
+          "answer": "Valley",
+          "wrongAnswers": ["Beach", "Island", "Sea"]
+        },
+        {
+          "ask": "What is this water with land all around it?",
+          "show": {
+            "feature": "lake"
+          },
+          "answer": "Lake",
+          "wrongAnswers": ["Mountain", "Cliff", "Forest"]
+        },
+        {
+          "ask": "This land has water all around it. What is it?",
+          "show": {
+            "feature": "island"
+          },
+          "answer": "Island",
+          "wrongAnswers": ["Valley", "River", "Waterfall"]
+        },
+        {
+          "ask": "What is this called?",
+          "show": {
+            "feature": "waterfall"
+          },
+          "answer": "Waterfall",
+          "wrongAnswers": ["Beach", "Forest", "Island"]
+        },
+        {
+          "ask": "Where could you build a sandcastle?",
+          "show": {
+            "feature": "beach"
+          },
+          "answer": "Beach",
+          "wrongAnswers": ["Mountain", "Forest", "Waterfall"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.human-features",
+      "title": "Busy Town Builder",
+      "skillName": "Naming human features",
+      "strand": "human-and-physical-geography",
+      "scene": "landscape-lookout",
+      "instruction": "Spin the model round, then tap the name of this place that people have built.",
+      "questions": [
+        {
+          "ask": "What is this building?",
+          "show": {
+            "feature": "house"
+          },
+          "answer": "House",
+          "wrongAnswers": ["Farm", "Lighthouse", "Church"]
+        },
+        {
+          "ask": "What is this place?",
+          "show": {
+            "feature": "farm"
+          },
+          "answer": "Farm",
+          "wrongAnswers": ["Factory", "Office", "Harbour"]
+        },
+        {
+          "ask": "Things are made here. What is it?",
+          "show": {
+            "feature": "factory"
+          },
+          "answer": "Factory",
+          "wrongAnswers": ["House", "Church", "Lighthouse"]
+        },
+        {
+          "ask": "People work at desks here. What is it?",
+          "show": {
+            "feature": "office"
+          },
+          "answer": "Office",
+          "wrongAnswers": ["Farm", "Lighthouse", "Church"]
+        },
+        {
+          "ask": "What is this building?",
+          "show": {
+            "feature": "shop"
+          },
+          "answer": "Shop",
+          "wrongAnswers": ["Farm", "Lighthouse", "Harbour"]
+        },
+        {
+          "ask": "Children learn here. What is it?",
+          "show": {
+            "feature": "school"
+          },
+          "answer": "School",
+          "wrongAnswers": ["Farm", "Lighthouse", "Factory"]
+        },
+        {
+          "ask": "What is this building called?",
+          "show": {
+            "feature": "church"
+          },
+          "answer": "Church",
+          "wrongAnswers": ["Shop", "Farm", "Factory"]
+        },
+        {
+          "ask": "Big ships load and unload here. What is it?",
+          "show": {
+            "feature": "port"
+          },
+          "answer": "Port",
+          "wrongAnswers": ["Farm", "School", "Office"]
+        },
+        {
+          "ask": "Boats are kept safe here. What is it?",
+          "show": {
+            "feature": "harbour"
+          },
+          "answer": "Harbour",
+          "wrongAnswers": ["Farm", "Church", "Factory"]
+        },
+        {
+          "ask": "What is this tall building by the sea?",
+          "show": {
+            "feature": "lighthouse"
+          },
+          "answer": "Lighthouse",
+          "wrongAnswers": ["Farm", "Shop", "School"]
+        },
+        {
+          "ask": "Where might you see cows and crops?",
+          "show": {
+            "feature": "farm"
+          },
+          "answer": "Farm",
+          "wrongAnswers": ["Office", "Church", "Lighthouse"]
+        },
+        {
+          "ask": "Where could you buy some bread?",
+          "show": {
+            "feature": "shop"
+          },
+          "answer": "Shop",
+          "wrongAnswers": ["Lighthouse", "Church", "Harbour"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.hot-and-cold-places",
+      "title": "Hot or Cold?",
+      "skillName": "Hot and cold places",
+      "strand": "place-knowledge",
+      "scene": "biome-dome",
+      "instruction": "Peek inside the glass dome and decide what this hot or cold place is like.",
+      "questions": [
+        {
+          "ask": "What kind of place is this?",
+          "show": {
+            "biome": "desert"
+          },
+          "answer": "Desert",
+          "wrongAnswers": ["Rainforest", "Icy polar land", "Coral reef"]
+        },
+        {
+          "ask": "What kind of place is this?",
+          "show": {
+            "biome": "polar"
+          },
+          "answer": "Icy polar land",
+          "wrongAnswers": ["Desert", "Rainforest", "Coral reef"]
+        },
+        {
+          "ask": "What kind of place is this?",
+          "show": {
+            "biome": "rainforest"
+          },
+          "answer": "Rainforest",
+          "wrongAnswers": ["Desert", "Icy polar land", "Coral reef"]
+        },
+        {
+          "ask": "How does it feel here?",
+          "show": {
+            "biome": "desert"
+          },
+          "answer": "Hot and dry",
+          "wrongAnswers": ["Cold and icy", "Cold and wet", "Hot and wet"]
+        },
+        {
+          "ask": "How does it feel here?",
+          "show": {
+            "biome": "polar"
+          },
+          "answer": "Cold and icy",
+          "wrongAnswers": ["Hot and dry", "Hot and wet", "Warm and sunny"]
+        },
+        {
+          "ask": "What is the weather like here?",
+          "show": {
+            "biome": "rainforest"
+          },
+          "answer": "Hot and wet",
+          "wrongAnswers": ["Cold and icy", "Hot and dry", "Cold and snowy"]
+        },
+        {
+          "ask": "What should you wear here?",
+          "show": {
+            "biome": "polar"
+          },
+          "answer": "A thick coat",
+          "wrongAnswers": ["Shorts", "A swimsuit", "Flip-flops"]
+        },
+        {
+          "ask": "What should you wear here?",
+          "show": {
+            "biome": "desert"
+          },
+          "answer": "A sun hat",
+          "wrongAnswers": ["A thick coat", "Woolly mittens", "Snow boots"]
+        },
+        {
+          "ask": "Which animal lives here?",
+          "show": {
+            "biome": "desert"
+          },
+          "answer": "Camel",
+          "wrongAnswers": ["Polar bear", "Penguin", "Seal"]
+        },
+        {
+          "ask": "Which animal lives here?",
+          "show": {
+            "biome": "rainforest"
+          },
+          "answer": "Monkey",
+          "wrongAnswers": ["Polar bear", "Penguin", "Camel"]
+        },
+        {
+          "ask": "Which animal could you see in this hot place?",
+          "show": {
+            "biome": "savanna"
+          },
+          "answer": "Giraffe",
+          "wrongAnswers": ["Polar bear", "Penguin", "Walrus"]
+        },
+        {
+          "ask": "What covers the ground here?",
+          "show": {
+            "biome": "polar"
+          },
+          "answer": "Ice and snow",
+          "wrongAnswers": ["Hot sand", "Tall trees", "Green grass"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.land-and-sea",
+      "title": "Globe Hop",
+      "skillName": "Land and sea on a globe",
+      "strand": "locational-knowledge",
+      "scene": "globe-spinner",
+      "instruction": "Spin the globe and find out if the gold part or the red pin is land or sea.",
+      "questions": [
+        {
+          "ask": "What is the gold part of the globe?",
+          "show": {
+            "highlight": "africa"
+          },
+          "answer": "Land",
+          "wrongAnswers": ["Sea", "Ocean", "Lake"]
+        },
+        {
+          "ask": "What is the gold part of the globe?",
+          "show": {
+            "highlight": "pacific-ocean"
+          },
+          "answer": "Ocean",
+          "wrongAnswers": ["Land", "Desert", "Forest"]
+        },
+        {
+          "ask": "What is shining gold here?",
+          "show": {
+            "highlight": "asia"
+          },
+          "answer": "Land",
+          "wrongAnswers": ["Sea", "Ocean", "River"]
+        },
+        {
+          "ask": "What is shining gold here?",
+          "show": {
+            "highlight": "atlantic-ocean"
+          },
+          "answer": "Ocean",
+          "wrongAnswers": ["Land", "Desert", "Mountain"]
+        },
+        {
+          "ask": "What is under the red pin?",
+          "show": {
+            "pin": {
+              "latitude": 23,
+              "longitude": 12
+            }
+          },
+          "answer": "Land",
+          "wrongAnswers": ["Sea", "Ocean", "Lake"]
+        },
+        {
+          "ask": "What is under the red pin?",
+          "show": {
+            "pin": {
+              "latitude": 0,
+              "longitude": -150
+            }
+          },
+          "answer": "Sea",
+          "wrongAnswers": ["Land", "Desert", "Forest"]
+        },
+        {
+          "ask": "What is under the red pin?",
+          "show": {
+            "pin": {
+              "latitude": -20,
+              "longitude": 80
+            }
+          },
+          "answer": "Sea",
+          "wrongAnswers": ["Land", "Desert", "Mountain"]
+        },
+        {
+          "ask": "What is under the red pin?",
+          "show": {
+            "pin": {
+              "latitude": -10,
+              "longitude": -55
+            }
+          },
+          "answer": "Land",
+          "wrongAnswers": ["Sea", "Ocean", "Lake"]
+        },
+        {
+          "ask": "The pin is on the UK. What is all around the UK?",
+          "show": {
+            "pin": {
+              "latitude": 51.5074,
+              "longitude": -0.1278
+            }
+          },
+          "answer": "Sea",
+          "wrongAnswers": ["Desert", "Jungle", "Mountains"]
+        },
+        {
+          "ask": "What do we call a really big sea?",
+          "show": {
+            "highlight": "indian-ocean"
+          },
+          "answer": "An ocean",
+          "wrongAnswers": ["A pond", "A puddle", "A stream"]
+        },
+        {
+          "ask": "What do we call a really big piece of land?",
+          "show": {
+            "highlight": "africa"
+          },
+          "answer": "A continent",
+          "wrongAnswers": ["A garden", "A pond", "A street"]
+        },
+        {
+          "ask": "What covers most of planet Earth?",
+          "show": {
+            "highlight": "pacific-ocean"
+          },
+          "answer": "Water",
+          "wrongAnswers": ["Sand", "Grass", "Trees"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.birds-eye-view",
+      "title": "Bird's-Eye Spy",
+      "skillName": "Simple map symbols seen from above",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "map-key",
+      "instruction": "Look down like a bird flying over the map, then tap what the picture shows.",
+      "questions": [
+        {
+          "ask": "What is this, seen from above?",
+          "show": {
+            "symbol": "house"
+          },
+          "answer": "House",
+          "wrongAnswers": ["Tree", "Pond", "Road"]
+        },
+        {
+          "ask": "What is this, seen from above?",
+          "show": {
+            "symbol": "tree"
+          },
+          "answer": "Tree",
+          "wrongAnswers": ["House", "Road", "Bridge"]
+        },
+        {
+          "ask": "Cars drive along this. What is it?",
+          "show": {
+            "symbol": "road"
+          },
+          "answer": "Road",
+          "wrongAnswers": ["Pond", "Tree", "House"]
+        },
+        {
+          "ask": "What is this on the map?",
+          "show": {
+            "symbol": "river"
+          },
+          "answer": "River",
+          "wrongAnswers": ["House", "Tree", "Field"]
+        },
+        {
+          "ask": "Ducks swim here. What is it?",
+          "show": {
+            "symbol": "pond"
+          },
+          "answer": "Pond",
+          "wrongAnswers": ["Road", "House", "Bridge"]
+        },
+        {
+          "ask": "This helps you cross water. What is it?",
+          "show": {
+            "symbol": "bridge"
+          },
+          "answer": "Bridge",
+          "wrongAnswers": ["Tree", "Pond", "Field"]
+        },
+        {
+          "ask": "What is this, seen from the sky?",
+          "show": {
+            "symbol": "field"
+          },
+          "answer": "Field",
+          "wrongAnswers": ["House", "Bridge", "Pond"]
+        },
+        {
+          "ask": "Children play here. What is it?",
+          "show": {
+            "symbol": "playground"
+          },
+          "answer": "Playground",
+          "wrongAnswers": ["River", "Pond", "Bridge"]
+        },
+        {
+          "ask": "What building is this on the map?",
+          "show": {
+            "symbol": "school"
+          },
+          "answer": "School",
+          "wrongAnswers": ["Tree", "River", "Pond"]
+        },
+        {
+          "ask": "What place does this map show?",
+          "show": {
+            "symbol": "parking"
+          },
+          "answer": "Car park",
+          "wrongAnswers": ["Tree", "River", "Pond"]
+        },
+        {
+          "ask": "Trains run along this. What is it?",
+          "show": {
+            "symbol": "railway-line"
+          },
+          "answer": "Railway line",
+          "wrongAnswers": ["Tree", "Pond", "Field"]
+        },
+        {
+          "ask": "A bird flies over. What does it see?",
+          "show": {
+            "symbol": "pond"
+          },
+          "answer": "Pond",
+          "wrongAnswers": ["House", "Tree", "Road"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.weather-chart",
+      "title": "Weather Chart Champs",
+      "skillName": "Reading a class weather chart",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "data-towers",
+      "instruction": "Count up the towers on our class weather chart to answer the question.",
+      "questions": [
+        {
+          "ask": "Which weather did we have most?",
+          "show": {
+            "title": "Our weather in May",
+            "unit": "days",
+            "bars": [
+              {
+                "label": "Sunny",
+                "value": 8
+              },
+              {
+                "label": "Rainy",
+                "value": 5
+              },
+              {
+                "label": "Cloudy",
+                "value": 6
+              },
+              {
+                "label": "Windy",
+                "value": 3
+              }
+            ]
+          },
+          "answer": "Sunny",
+          "wrongAnswers": ["Rainy", "Cloudy", "Windy"]
+        },
+        {
+          "ask": "Which weather did we have least?",
+          "show": {
+            "title": "Our weather in May",
+            "unit": "days",
+            "bars": [
+              {
+                "label": "Sunny",
+                "value": 8
+              },
+              {
+                "label": "Rainy",
+                "value": 5
+              },
+              {
+                "label": "Cloudy",
+                "value": 6
+              },
+              {
+                "label": "Windy",
+                "value": 3
+              }
+            ]
+          },
+          "answer": "Windy",
+          "wrongAnswers": ["Sunny", "Rainy", "Cloudy"]
+        },
+        {
+          "ask": "How many rainy days were there?",
+          "show": {
+            "title": "Our weather in May",
+            "unit": "days",
+            "bars": [
+              {
+                "label": "Sunny",
+                "value": 8
+              },
+              {
+                "label": "Rainy",
+                "value": 5
+              },
+              {
+                "label": "Cloudy",
+                "value": 6
+              },
+              {
+                "label": "Windy",
+                "value": 3
+              }
+            ]
+          },
+          "answer": "5",
+          "wrongAnswers": ["3", "6", "8"]
+        },
+        {
+          "ask": "Which weather did we have most?",
+          "show": {
+            "title": "Our weather in January",
+            "unit": "days",
+            "bars": [
+              {
+                "label": "Rainy",
+                "value": 7
+              },
+              {
+                "label": "Cloudy",
+                "value": 9
+              },
+              {
+                "label": "Snowy",
+                "value": 2
+              },
+              {
+                "label": "Sunny",
+                "value": 4
+              }
+            ]
+          },
+          "answer": "Cloudy",
+          "wrongAnswers": ["Rainy", "Snowy", "Sunny"]
+        },
+        {
+          "ask": "How many snowy days were there?",
+          "show": {
+            "title": "Our weather in January",
+            "unit": "days",
+            "bars": [
+              {
+                "label": "Rainy",
+                "value": 7
+              },
+              {
+                "label": "Cloudy",
+                "value": 9
+              },
+              {
+                "label": "Snowy",
+                "value": 2
+              },
+              {
+                "label": "Sunny",
+                "value": 4
+              }
+            ]
+          },
+          "answer": "2",
+          "wrongAnswers": ["3", "4", "7"]
+        },
+        {
+          "ask": "How many more rainy days than sunny days?",
+          "show": {
+            "title": "Our weather in January",
+            "unit": "days",
+            "bars": [
+              {
+                "label": "Rainy",
+                "value": 7
+              },
+              {
+                "label": "Cloudy",
+                "value": 9
+              },
+              {
+                "label": "Snowy",
+                "value": 2
+              },
+              {
+                "label": "Sunny",
+                "value": 4
+              }
+            ]
+          },
+          "answer": "3",
+          "wrongAnswers": ["2", "4", "11"]
+        },
+        {
+          "ask": "How many sunny days were there?",
+          "show": {
+            "title": "Our weather in July",
+            "unit": "days",
+            "bars": [
+              {
+                "label": "Sunny",
+                "value": 12
+              },
+              {
+                "label": "Cloudy",
+                "value": 5
+              },
+              {
+                "label": "Rainy",
+                "value": 3
+              },
+              {
+                "label": "Stormy",
+                "value": 1
+              }
+            ]
+          },
+          "answer": "12",
+          "wrongAnswers": ["10", "5", "13"]
+        },
+        {
+          "ask": "Which weather did we have least?",
+          "show": {
+            "title": "Our weather in July",
+            "unit": "days",
+            "bars": [
+              {
+                "label": "Sunny",
+                "value": 12
+              },
+              {
+                "label": "Cloudy",
+                "value": 5
+              },
+              {
+                "label": "Rainy",
+                "value": 3
+              },
+              {
+                "label": "Stormy",
+                "value": 1
+              }
+            ]
+          },
+          "answer": "Stormy",
+          "wrongAnswers": ["Sunny", "Cloudy", "Rainy"]
+        },
+        {
+          "ask": "How many more sunny days than cloudy days?",
+          "show": {
+            "title": "Our weather in July",
+            "unit": "days",
+            "bars": [
+              {
+                "label": "Sunny",
+                "value": 12
+              },
+              {
+                "label": "Cloudy",
+                "value": 5
+              },
+              {
+                "label": "Rainy",
+                "value": 3
+              },
+              {
+                "label": "Stormy",
+                "value": 1
+              }
+            ]
+          },
+          "answer": "7",
+          "wrongAnswers": ["5", "6", "17"]
+        },
+        {
+          "ask": "Which weather did we have on 6 days?",
+          "show": {
+            "title": "Our weather in October",
+            "unit": "days",
+            "bars": [
+              {
+                "label": "Rainy",
+                "value": 8
+              },
+              {
+                "label": "Windy",
+                "value": 6
+              },
+              {
+                "label": "Foggy",
+                "value": 2
+              },
+              {
+                "label": "Sunny",
+                "value": 4
+              }
+            ]
+          },
+          "answer": "Windy",
+          "wrongAnswers": ["Rainy", "Foggy", "Sunny"]
+        },
+        {
+          "ask": "How many rainy and foggy days altogether?",
+          "show": {
+            "title": "Our weather in October",
+            "unit": "days",
+            "bars": [
+              {
+                "label": "Rainy",
+                "value": 8
+              },
+              {
+                "label": "Windy",
+                "value": 6
+              },
+              {
+                "label": "Foggy",
+                "value": 2
+              },
+              {
+                "label": "Sunny",
+                "value": 4
+              }
+            ]
+          },
+          "answer": "10",
+          "wrongAnswers": ["8", "6", "12"]
+        },
+        {
+          "ask": "Which weather did we have most?",
+          "show": {
+            "title": "Our weather in October",
+            "unit": "days",
+            "bars": [
+              {
+                "label": "Rainy",
+                "value": 8
+              },
+              {
+                "label": "Windy",
+                "value": 6
+              },
+              {
+                "label": "Foggy",
+                "value": 2
+              },
+              {
+                "label": "Sunny",
+                "value": 4
+              }
+            ]
+          },
+          "answer": "Rainy",
+          "wrongAnswers": ["Windy", "Foggy", "Sunny"]
+        }
+      ]
+    }
+  ]
+}

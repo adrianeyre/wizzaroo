@@ -1,0 +1,9 @@
+{
+  "id": "phonics.sound-ai",
+  "name": "The /ai/ sound, as in rain",
+  "subject": "phonics",
+  "yearGroup": 1,
+  "strand": "grapheme-phoneme-correspondences",
+  "prerequisites": [],
+  "sounds": ["ai"]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "computing.choose-sensors",
+  "name": "Choosing the right sensor or input",
+  "subject": "computing",
+  "yearGroup": 5,
+  "strand": "technology-around-us",
+  "prerequisites": ["computing.inputs-and-outputs"]
+}

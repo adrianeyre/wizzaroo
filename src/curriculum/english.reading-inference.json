@@ -1,0 +1,8 @@
+{
+  "id": "english.reading-inference",
+  "name": "Working out what a text suggests",
+  "subject": "english",
+  "yearGroup": 6,
+  "strand": "reading",
+  "prerequisites": ["english.reading-retrieval"]
+}

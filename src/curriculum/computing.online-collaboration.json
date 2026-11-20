@@ -1,0 +1,8 @@
+{
+  "id": "computing.online-collaboration",
+  "name": "Working together using the internet",
+  "subject": "computing",
+  "yearGroup": 5,
+  "strand": "networks",
+  "prerequisites": ["computing.how-the-internet-works"]
+}

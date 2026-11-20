@@ -1,0 +1,148 @@
+{
+  "subject": "science",
+  "yearGroup": 4,
+  "games": [
+    {
+      "id": "matter-sorting-lab",
+      "title": "Matter Sorter",
+      "station": "compare",
+      "prop": "beaker",
+      "skillName": "Grouping everyday materials as solids, liquids or gases",
+      "strand": "states-of-matter",
+      "statutoryRequirement": "Pupils should be taught to compare and group materials together, according to whether they are solids, liquids or gases",
+      "instruction": "Compare the materials, then tap the right answer.",
+      "hint": "Not quite. Ask yourself: does it keep its shape, pour, or spread out to fill the space?",
+      "questions": [
+        {
+          "ask": "Which of these is a gas?",
+          "answer": "Steam",
+          "distractors": ["Ice cube", "Honey", "Sand"]
+        },
+        {
+          "ask": "Which of these is a liquid?",
+          "answer": "Orange juice",
+          "distractors": ["Salt", "Air", "Butter"]
+        },
+        {
+          "ask": "Which of these is a solid?",
+          "answer": "Wooden block",
+          "distractors": ["Milk", "Oxygen", "Shampoo"]
+        },
+        {
+          "ask": "Sand can be poured, but each grain keeps its shape. What is sand?",
+          "answer": "A solid",
+          "distractors": ["A liquid", "A gas", "Liquid and gas"]
+        },
+        {
+          "ask": "Which gas makes the bubbles in a fizzy drink?",
+          "answer": "Carbon dioxide",
+          "distractors": ["Oxygen", "Helium", "Hydrogen"]
+        },
+        {
+          "ask": "Which of these is a liquid that pours very slowly?",
+          "answer": "Honey",
+          "distractors": ["Wood", "Steam", "Pebble"]
+        },
+        {
+          "ask": "Which of these spreads out to fill any container it is in?",
+          "answer": "Air",
+          "distractors": ["Water", "Rice", "Ice"]
+        },
+        {
+          "ask": "Which group do milk, water and cooking oil all belong to?",
+          "answer": "Liquids",
+          "distractors": ["Solids", "Gases", "Metals"]
+        },
+        {
+          "ask": "Which group do steam, air and helium all belong to?",
+          "answer": "Gases",
+          "distractors": ["Liquids", "Solids", "Metals"]
+        },
+        {
+          "ask": "Which group do ice, flour and a coin all belong to?",
+          "answer": "Solids",
+          "distractors": ["Liquids", "Gases", "Powders"]
+        }
+      ]
+    },
+    {
+      "id": "next-step-scientist",
+      "title": "Next Step Scientist",
+      "station": "compare",
+      "prop": "thermometer",
+      "skillName": "Using results to predict, improve and ask new questions",
+      "strand": "working-scientifically",
+      "statutoryRequirement": "Pupils should be taught to use results to draw simple conclusions, make predictions for new values, suggest improvements and raise further questions",
+      "instruction": "Look at the results, then tap the best next step.",
+      "hint": "Not quite. Look for the pattern in the results, then try again.",
+      "questions": [
+        {
+          "ask": "A plant grew to 2 cm, 4 cm, then 6 cm in weeks 1 to 3. Predict week 4.",
+          "answer": "8 cm",
+          "distractors": ["7 cm", "6 cm", "10 cm"]
+        },
+        {
+          "ask": "A ball bounced 20 cm when dropped from 50 cm, and 40 cm from 100 cm. Predict for 150 cm.",
+          "answer": "60 cm",
+          "distractors": ["50 cm", "80 cm", "40 cm"]
+        },
+        {
+          "ask": "A car rolled 1 m off a 10 cm ramp and 2 m off a 20 cm ramp. Predict for 30 cm.",
+          "answer": "3 m",
+          "distractors": ["2 m", "4 m", "6 m"]
+        },
+        {
+          "ask": "A room was 15 °C, 17 °C, 19 °C and 21 °C at 9, 10, 11 and 12 o'clock. Predict 1 o'clock.",
+          "answer": "23 °C",
+          "distractors": ["21 °C", "22 °C", "25 °C"]
+        },
+        {
+          "ask": "Sugar dissolved fastest in the warmest water tested. Predict for even hotter water.",
+          "answer": "Faster still",
+          "distractors": ["Slower", "Not at all", "The same speed"]
+        },
+        {
+          "ask": "Mia tested each paper towel only once. How could she improve her test?",
+          "answer": "Repeat each test",
+          "distractors": [
+            "Use more colours",
+            "Stop sooner",
+            "Change everything"
+          ]
+        },
+        {
+          "ask": "Sam poured a different amount of water on each towel. What should he change?",
+          "answer": "Keep water the same",
+          "distractors": [
+            "Use more towels",
+            "Use hotter water",
+            "Test fewer towels"
+          ]
+        },
+        {
+          "ask": "Results were 3 cm, 3 cm, 9 cm and 3 cm. Which result should be checked again?",
+          "answer": "9 cm",
+          "distractors": ["3 cm", "All of them", "None of them"]
+        },
+        {
+          "ask": "Which change would make timings in a test more accurate?",
+          "answer": "Use a stopwatch",
+          "distractors": [
+            "Count in your head",
+            "Guess the time",
+            "Look at the sky"
+          ]
+        },
+        {
+          "ask": "After an ice-melting test, which is a good further question to test?",
+          "answer": "Does salt melt ice?",
+          "distractors": [
+            "Is ice pretty?",
+            "Who likes ice?",
+            "Is ice the best?"
+          ]
+        }
+      ]
+    }
+  ]
+}

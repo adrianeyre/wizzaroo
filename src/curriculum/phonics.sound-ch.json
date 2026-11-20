@@ -1,0 +1,9 @@
+{
+  "id": "phonics.sound-ch",
+  "name": "The /ch/ sound, as in chip",
+  "subject": "phonics",
+  "yearGroup": 1,
+  "strand": "grapheme-phoneme-correspondences",
+  "prerequisites": [],
+  "sounds": ["ch"]
+}

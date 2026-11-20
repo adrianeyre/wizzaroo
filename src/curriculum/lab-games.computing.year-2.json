@@ -1,0 +1,81 @@
+{
+  "subject": "computing",
+  "yearGroup": 2,
+  "games": [
+    {
+      "id": "folder-tidy-up",
+      "title": "Folder Tidy-Up",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Organising, saving and finding digital work",
+      "strand": "digital-content",
+      "statutoryRequirement": "Pupils should be taught to use technology purposefully to create, organise, store, manipulate and retrieve digital content",
+      "instruction": "Think about keeping your work safe and tidy, then tap the best answer.",
+      "hint": "Not quite. Think about how you would find your work again tomorrow, then try again.",
+      "questions": [
+        {
+          "ask": "Where can you keep lots of files together on a computer?",
+          "answer": "In a folder",
+          "distractors": ["In the mouse", "In the keyboard", "In the speaker"]
+        },
+        {
+          "ask": "Which is the best file name for your story about a dragon?",
+          "answer": "Dragon story",
+          "distractors": ["Untitled", "abc123", "Thing"]
+        },
+        {
+          "ask": "What should you do so you don't lose your work?",
+          "answer": "Save it",
+          "distractors": ["Close it quickly", "Delete it", "Switch off"]
+        },
+        {
+          "ask": "How do you get back to work you saved yesterday?",
+          "answer": "Open the file",
+          "distractors": [
+            "Delete the file",
+            "Make a new file",
+            "Turn off screen"
+          ]
+        },
+        {
+          "ask": "You want to keep all your animal pictures together. What could you make?",
+          "answer": "An Animals folder",
+          "distractors": ["A new keyboard", "A blank page", "A bigger screen"]
+        },
+        {
+          "ask": "When you click \"Save as\", what do you get to choose?",
+          "answer": "A name for the file",
+          "distractors": ["Screen colour", "Mouse speed", "Keyboard size"]
+        },
+        {
+          "ask": "Why should you give your files sensible names?",
+          "answer": "To find them easily",
+          "distractors": [
+            "To make them bigger",
+            "To colour them in",
+            "To delete them"
+          ]
+        },
+        {
+          "ask": "Where does a photo usually go after you take it on a tablet?",
+          "answer": "The photo gallery",
+          "distractors": ["The charger", "The case", "The camera lens"]
+        },
+        {
+          "ask": "What might happen if you close your work without saving it?",
+          "answer": "Work could be lost",
+          "distractors": [
+            "It gets better",
+            "It prints itself",
+            "It gets bigger"
+          ]
+        },
+        {
+          "ask": "What do we keep inside a folder on a computer?",
+          "answer": "Files",
+          "distractors": ["Wires", "Batteries", "Buttons"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "subject": "music",
+  "programme": "key-stage",
+  "programmeOfStudyUrl": "https://www.gov.uk/government/publications/national-curriculum-in-england-music-programmes-of-study",
+  "years": [
+    {
+      "yearGroup": 1,
+      "points": [
+        {
+          "id": "singing",
+          "heading": "Using their voices",
+          "summary": "Use their voices expressively and creatively by singing songs and speaking chants and rhymes.",
+          "skillIds": ["music.chants-and-rhymes"]
+        },
+        {
+          "id": "playing",
+          "heading": "Playing instruments",
+          "summary": "Play tuned and untuned instruments musically.",
+          "skillIds": [
+            "music.untuned-percussion",
+            "music.body-percussion-patterns",
+            "music.steady-beat"
+          ]
+        },
+        {
+          "id": "listening",
+          "heading": "Listening and understanding",
+          "summary": "Listen with concentration and understanding to a range of high-quality live and recorded music.",
+          "skillIds": [
+            "music.music-describes-animals",
+            "music.same-or-different"
+          ]
+        },
+        {
+          "id": "dimensions",
+          "heading": "Exploring sounds",
+          "summary": "Experiment with, create, select and combine sounds using the inter-related dimensions of music.",
+          "skillIds": [
+            "music.loud-and-quiet",
+            "music.fast-and-slow",
+            "music.high-and-low",
+            "music.long-and-short",
+            "music.melody-direction"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 2,
+      "points": [
+        {
+          "id": "playing",
+          "heading": "Playing instruments",
+          "summary": "Play tuned and untuned instruments musically.",
+          "skillIds": [
+            "music.tuned-percussion",
+            "music.tuned-instruments",
+            "music.crotchets-and-quavers",
+            "music.dot-notation"
+          ]
+        },
+        {
+          "id": "listening",
+          "heading": "Listening and understanding",
+          "summary": "Listen with concentration and understanding to a range of high-quality live and recorded music.",
+          "skillIds": ["music.music-and-mood", "music.finished-or-not"]
+        },
+        {
+          "id": "dimensions",
+          "heading": "Exploring sounds",
+          "summary": "Experiment with, create, select and combine sounds using the inter-related dimensions of music.",
+          "skillIds": [
+            "music.getting-louder-and-quieter",
+            "music.getting-faster-and-slower",
+            "music.steps-and-leaps",
+            "music.hearing-rests",
+            "music.storm-sound-mixer"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 3,
+      "points": [
+        {
+          "id": "composing",
+          "heading": "Improvising and composing",
+          "summary": "Improvise and compose music for a range of purposes using the inter-related dimensions of music.",
+          "skillIds": [
+            "music.forte-and-piano",
+            "music.tempo-words",
+            "music.layers-of-sound"
+          ]
+        },
+        {
+          "id": "aural-memory",
+          "heading": "Listening and aural memory",
+          "summary": "Listen with attention to detail and recall sounds with increasing aural memory.",
+          "skillIds": [
+            "music.beats-in-a-bar",
+            "music.do-re-mi",
+            "music.ostinato"
+          ]
+        },
+        {
+          "id": "notation",
+          "heading": "Musical notation",
+          "summary": "Use and understand staff and other musical notations.",
+          "skillIds": [
+            "music.note-values",
+            "music.notes-on-the-stave",
+            "music.complete-the-bar"
+          ]
+        },
+        {
+          "id": "appreciating",
+          "heading": "Appreciating music",
+          "summary": "Appreciate and understand a wide range of high-quality live and recorded music from different traditions and from great composers and musicians.",
+          "skillIds": ["music.instrument-families"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 4,
+      "points": [
+        {
+          "id": "performing",
+          "heading": "Performing",
+          "summary": "Play and perform in solo and ensemble contexts, using voices and instruments with increasing accuracy, fluency, control and expression.",
+          "skillIds": ["music.unison-harmony-and-rounds"]
+        },
+        {
+          "id": "composing",
+          "heading": "Improvising and composing",
+          "summary": "Improvise and compose music for a range of purposes using the inter-related dimensions of music.",
+          "skillIds": [
+            "music.crescendo-and-diminuendo",
+            "music.composer-choices"
+          ]
+        },
+        {
+          "id": "aural-memory",
+          "heading": "Listening and aural memory",
+          "summary": "Listen with attention to detail and recall sounds with increasing aural memory.",
+          "skillIds": [
+            "music.major-and-minor",
+            "music.chords-and-single-notes",
+            "music.binary-and-ternary"
+          ]
+        },
+        {
+          "id": "notation",
+          "heading": "Musical notation",
+          "summary": "Use and understand staff and other musical notations.",
+          "skillIds": [
+            "music.rhythm-dictation",
+            "music.keyboard-letter-names",
+            "music.time-signatures"
+          ]
+        },
+        {
+          "id": "appreciating",
+          "heading": "Appreciating music",
+          "summary": "Appreciate and understand a wide range of high-quality live and recorded music from different traditions and from great composers and musicians.",
+          "skillIds": [
+            "music.orchestral-instruments",
+            "music.how-instruments-make-sound",
+            "music.world-music-passport"
+          ]
+        }
+      ]
+    },
+    {
+      "yearGroup": 5,
+      "points": [
+        {
+          "id": "aural-memory",
+          "heading": "Listening and aural memory",
+          "summary": "Listen with attention to detail and recall sounds with increasing aural memory.",
+          "skillIds": [
+            "music.chords-one-four-five",
+            "music.intervals",
+            "music.scales",
+            "music.syncopation",
+            "music.rondo-form"
+          ]
+        },
+        {
+          "id": "notation",
+          "heading": "Musical notation",
+          "summary": "Use and understand staff and other musical notations.",
+          "skillIds": [
+            "music.dotted-rhythms",
+            "music.treble-clef-notes",
+            "music.sharps-and-flats",
+            "music.adding-note-values"
+          ]
+        },
+        {
+          "id": "history-of-music",
+          "heading": "The history of music",
+          "summary": "Develop an understanding of the history of music.",
+          "skillIds": ["music.baroque-and-classical-composers"]
+        }
+      ]
+    },
+    {
+      "yearGroup": 6,
+      "points": [
+        {
+          "id": "performing",
+          "heading": "Performing",
+          "summary": "Play and perform in solo and ensemble contexts, using voices and instruments with increasing accuracy, fluency, control and expression.",
+          "skillIds": ["music.articulation", "music.conducting-patterns"]
+        },
+        {
+          "id": "composing",
+          "heading": "Improvising and composing",
+          "summary": "Improvise and compose music for a range of purposes using the inter-related dimensions of music.",
+          "skillIds": ["music.music-for-film"]
+        },
+        {
+          "id": "aural-memory",
+          "heading": "Listening and aural memory",
+          "summary": "Listen with attention to detail and recall sounds with increasing aural memory.",
+          "skillIds": ["music.melody-dictation"]
+        },
+        {
+          "id": "notation",
+          "heading": "Musical notation",
+          "summary": "Use and understand staff and other musical notations.",
+          "skillIds": [
+            "music.bass-clef-notes",
+            "music.key-signatures",
+            "music.triplets-and-syncopation",
+            "music.triads"
+          ]
+        },
+        {
+          "id": "appreciating",
+          "heading": "Appreciating music",
+          "summary": "Appreciate and understand a wide range of high-quality live and recorded music from different traditions and from great composers and musicians.",
+          "skillIds": ["music.romantic-composers"]
+        },
+        {
+          "id": "history-of-music",
+          "heading": "The history of music",
+          "summary": "Develop an understanding of the history of music.",
+          "skillIds": ["music.periods-of-music"]
+        }
+      ]
+    }
+  ]
+}

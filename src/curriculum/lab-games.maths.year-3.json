@@ -1,0 +1,508 @@
+{
+  "subject": "maths",
+  "yearGroup": 3,
+  "games": [
+    {
+      "id": "thousand-word-match",
+      "title": "Words to 1000",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Numbers to 1000 in words, comparing and ordering",
+      "strand": "number-and-place-value",
+      "statutoryRequirement": "Pupils should be taught to compare and order numbers up to 1000; read and write numbers up to 1000 in numerals and in words",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Look at the hundreds first, then the tens, then the ones.",
+      "questions": [
+        {
+          "ask": "What is 'three hundred and forty-two' in numerals?",
+          "answer": "342",
+          "distractors": ["3042", "324", "30042"]
+        },
+        {
+          "ask": "What is 'six hundred and five' in numerals?",
+          "answer": "605",
+          "distractors": ["650", "6005", "65"]
+        },
+        {
+          "ask": "What is 'nine hundred and ninety' in numerals?",
+          "answer": "990",
+          "distractors": ["909", "999", "9090"]
+        },
+        {
+          "ask": "What is 'two hundred and twelve' in numerals?",
+          "answer": "212",
+          "distractors": ["2012", "220", "221"]
+        },
+        {
+          "ask": "In 784, what does the 7 stand for?",
+          "answer": "7 hundreds",
+          "distractors": ["7 tens", "7 ones", "7 thousands"]
+        },
+        {
+          "ask": "Which is the greatest: 458, 485, 548 or 584?",
+          "answer": "584",
+          "distractors": ["458", "485", "548"]
+        },
+        {
+          "ask": "Which is the smallest: 709, 790, 907 or 970?",
+          "answer": "709",
+          "distractors": ["790", "907", "970"]
+        },
+        {
+          "ask": "Which sign makes 640 ? 604 true?",
+          "answer": ">",
+          "distractors": ["<", "=", "+"]
+        },
+        {
+          "ask": "Which list is in order, smallest first?",
+          "answer": "199, 201, 210",
+          "distractors": ["210, 201, 199", "201, 199, 210", "199, 210, 201"]
+        },
+        {
+          "ask": "What is 'one thousand' in numerals?",
+          "answer": "1000",
+          "distractors": ["100", "10000", "1100"]
+        }
+      ]
+    },
+    {
+      "id": "estimate-and-check",
+      "title": "Check It Twice",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Estimating and checking with inverse operations",
+      "strand": "addition-and-subtraction",
+      "statutoryRequirement": "Pupils should be taught to estimate the answer to a calculation and use inverse operations to check answers",
+      "instruction": "Estimate or check, then tap the right answer.",
+      "hint": "Not quite. Round each number first, or undo the sum with the opposite operation.",
+      "questions": [
+        {
+          "ask": "Estimate 198 + 403 by rounding each number to the nearest hundred.",
+          "answer": "600",
+          "distractors": ["500", "700", "601"]
+        },
+        {
+          "ask": "Estimate 52 + 39 by rounding each number to the nearest ten.",
+          "answer": "90",
+          "distractors": ["80", "100", "91"]
+        },
+        {
+          "ask": "Which is the best estimate for 299 + 101?",
+          "answer": "400",
+          "distractors": ["300", "500", "200"]
+        },
+        {
+          "ask": "Estimate 487 − 212 by rounding each number to the nearest hundred.",
+          "answer": "300",
+          "distractors": ["200", "400", "275"]
+        },
+        {
+          "ask": "Estimate 71 + 18 + 29 by rounding each number to the nearest ten.",
+          "answer": "120",
+          "distractors": ["100", "110", "130"]
+        },
+        {
+          "ask": "312 + 145 = 457. Which calculation checks it?",
+          "answer": "457 − 145",
+          "distractors": ["457 + 145", "312 − 145", "145 − 312"]
+        },
+        {
+          "ask": "640 − 230 = 410. Which calculation checks it?",
+          "answer": "410 + 230",
+          "distractors": ["640 + 230", "410 − 230", "230 − 410"]
+        },
+        {
+          "ask": "Ben says 523 − 198 = 325. Which check shows he is right?",
+          "answer": "325 + 198 = 523",
+          "distractors": [
+            "523 + 198 = 721",
+            "325 − 198 = 127",
+            "523 + 325 = 848"
+          ]
+        },
+        {
+          "ask": "Kim works out 250 + 380 = 530. Checking with 530 − 380 shows...",
+          "answer": "It should be 630",
+          "distractors": ["It is right", "It should be 520", "It should be 730"]
+        }
+      ]
+    },
+    {
+      "id": "times-tower",
+      "title": "Times Tower",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Multiplying two-digit numbers by one-digit numbers",
+      "strand": "multiplication-and-division",
+      "statutoryRequirement": "Pupils should be taught to write and calculate mathematical statements for multiplication and division using the multiplication tables that they know, including for two-digit numbers times one-digit numbers, using mental and progressing to formal written methods",
+      "instruction": "Work it out, then tap the answer.",
+      "hint": "Not quite. Multiply the tens, then the ones, then add the two parts.",
+      "questions": [
+        {
+          "ask": "What is 23 × 3?",
+          "answer": "69",
+          "distractors": ["66", "63", "96"]
+        },
+        {
+          "ask": "What is 14 × 5?",
+          "answer": "70",
+          "distractors": ["45", "55", "20"]
+        },
+        {
+          "ask": "What is 32 × 4?",
+          "answer": "128",
+          "distractors": ["36", "98", "1208"]
+        },
+        {
+          "ask": "What is 25 × 4?",
+          "answer": "100",
+          "distractors": ["80", "90", "29"]
+        },
+        {
+          "ask": "What is 12 × 6?",
+          "answer": "72",
+          "distractors": ["62", "18", "612"]
+        },
+        {
+          "ask": "What is 41 × 3?",
+          "answer": "123",
+          "distractors": ["43", "120", "1203"]
+        },
+        {
+          "ask": "What is 18 × 2?",
+          "answer": "36",
+          "distractors": ["26", "20", "16"]
+        },
+        {
+          "ask": "What is 13 × 8?",
+          "answer": "104",
+          "distractors": ["84", "24", "94"]
+        },
+        {
+          "ask": "What is 27 × 3?",
+          "answer": "81",
+          "distractors": ["61", "30", "621"]
+        },
+        {
+          "ask": "What is 15 × 4?",
+          "answer": "60",
+          "distractors": ["45", "19", "50"]
+        }
+      ]
+    },
+    {
+      "id": "fraction-mix-lab",
+      "title": "Fraction Mix Lab",
+      "station": "compare",
+      "prop": "beaker",
+      "skillName": "Fractions of a set, adding, subtracting and ordering fractions",
+      "strand": "fractions",
+      "statutoryRequirement": "Pupils should be taught to recognise, find and write fractions of a discrete set of objects: unit fractions and non-unit fractions with small denominators; add and subtract fractions with the same denominator within one whole [for example, 5/7 + 1/7 = 6/7]; compare and order unit fractions, and fractions with the same denominators",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Keep the bottom number the same, or share into equal groups first.",
+      "questions": [
+        {
+          "ask": "What is 1/4 of 20?",
+          "answer": "5",
+          "distractors": ["4", "16", "10"]
+        },
+        {
+          "ask": "What is 2/3 of 12?",
+          "answer": "8",
+          "distractors": ["4", "6", "9"]
+        },
+        {
+          "ask": "What is 3/5 of 10?",
+          "answer": "6",
+          "distractors": ["2", "3", "5"]
+        },
+        {
+          "ask": "2/7 + 3/7 = ?",
+          "answer": "5/7",
+          "distractors": ["5/14", "6/7", "1/7"]
+        },
+        {
+          "ask": "5/8 − 2/8 = ?",
+          "answer": "3/8",
+          "distractors": ["7/8", "3/16", "2/8"]
+        },
+        {
+          "ask": "9/10 − 4/10 = ?",
+          "answer": "5/10",
+          "distractors": ["13/10", "4/10", "5/20"]
+        },
+        {
+          "ask": "Which unit fraction is the biggest?",
+          "answer": "1/2",
+          "distractors": ["1/3", "1/4", "1/8"]
+        },
+        {
+          "ask": "Which unit fraction is the smallest?",
+          "answer": "1/10",
+          "distractors": ["1/3", "1/5", "1/6"]
+        },
+        {
+          "ask": "Which list is in order, smallest first?",
+          "answer": "1/8, 1/4, 1/2",
+          "distractors": ["1/2, 1/4, 1/8", "1/4, 1/8, 1/2", "1/2, 1/8, 1/4"]
+        },
+        {
+          "ask": "Which fraction is the greatest?",
+          "answer": "6/9",
+          "distractors": ["2/9", "4/9", "5/9"]
+        }
+      ]
+    },
+    {
+      "id": "weigh-and-pour",
+      "title": "Weigh and Pour",
+      "station": "compare",
+      "prop": "beaker",
+      "skillName": "Adding and subtracting mass, capacity and length",
+      "strand": "measurement",
+      "statutoryRequirement": "Pupils should be taught to measure, compare, add and subtract: lengths (m/cm/mm); mass (kg/g); volume/capacity (l/ml)",
+      "instruction": "Work it out, then tap the answer.",
+      "hint": "Not quite. Check both amounts use the same unit, then add or subtract.",
+      "questions": [
+        {
+          "ask": "350 g + 200 g = ?",
+          "answer": "550 g",
+          "distractors": ["150 g", "5500 g", "570 g"]
+        },
+        {
+          "ask": "How many grams are in 1 kg?",
+          "answer": "1000 g",
+          "distractors": ["100 g", "10 g", "10000 g"]
+        },
+        {
+          "ask": "A jug holds 750 ml. You pour out 250 ml. How much is left?",
+          "answer": "500 ml",
+          "distractors": ["1000 ml", "550 ml", "400 ml"]
+        },
+        {
+          "ask": "400 ml + 600 ml = ?",
+          "answer": "1 l",
+          "distractors": ["100 ml", "10 l", "1000 l"]
+        },
+        {
+          "ask": "A ribbon is 45 cm. Another is 38 cm. What is their total length?",
+          "answer": "83 cm",
+          "distractors": ["73 cm", "7 cm", "713 cm"]
+        },
+        {
+          "ask": "Add 2 m 30 cm and 1 m 50 cm.",
+          "answer": "3 m 80 cm",
+          "distractors": ["3 m 20 cm", "1 m 80 cm", "4 m 80 cm"]
+        },
+        {
+          "ask": "One bag is 5 kg. Another is 3 kg. How much heavier is the first bag?",
+          "answer": "2 kg",
+          "distractors": ["8 kg", "3 kg", "15 kg"]
+        },
+        {
+          "ask": "Which is the heaviest?",
+          "answer": "1 kg",
+          "distractors": ["900 g", "500 g", "999 g"]
+        },
+        {
+          "ask": "60 mm + 25 mm = ?",
+          "answer": "85 mm",
+          "distractors": ["35 mm", "95 mm", "625 mm"]
+        }
+      ]
+    },
+    {
+      "id": "market-stall-change",
+      "title": "Market Stall Change",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Adding and subtracting money and giving change",
+      "strand": "measurement",
+      "statutoryRequirement": "Pupils should be taught to add and subtract amounts of money to give change, using both £ and p in practical contexts",
+      "instruction": "Work it out, then tap the right amount.",
+      "hint": "Not quite. Change everything to pence, or count on from the price.",
+      "questions": [
+        {
+          "ask": "£2.50 + £1.20 = ?",
+          "answer": "£3.70",
+          "distractors": ["£3.50", "£1.30", "£3.07"]
+        },
+        {
+          "ask": "A book costs £3.45. You pay with £5. How much change?",
+          "answer": "£1.55",
+          "distractors": ["£2.55", "£1.65", "£8.45"]
+        },
+        {
+          "ask": "A pen costs 85p and a ruler costs 60p. What is the total?",
+          "answer": "£1.45",
+          "distractors": ["£1.35", "£14.50", "25p"]
+        },
+        {
+          "ask": "You pay £1 for a 37p lolly. How much change?",
+          "answer": "63p",
+          "distractors": ["73p", "37p", "67p"]
+        },
+        {
+          "ask": "£4.20 − £1.50 = ?",
+          "answer": "£2.70",
+          "distractors": ["£3.30", "£2.30", "£5.70"]
+        },
+        {
+          "ask": "Juice costs 75p and crisps cost 50p. What is the total?",
+          "answer": "£1.25",
+          "distractors": ["£1.20", "25p", "£12.50"]
+        },
+        {
+          "ask": "You pay £10 for a £6.40 toy. How much change?",
+          "answer": "£3.60",
+          "distractors": ["£4.60", "£4.40", "£16.40"]
+        },
+        {
+          "ask": "How much is £3 + 45p?",
+          "answer": "£3.45",
+          "distractors": ["48p", "£3.54", "£7.50"]
+        },
+        {
+          "ask": "You have £2. A comic costs £1.25. How much is left?",
+          "answer": "75p",
+          "distractors": ["85p", "£1.75", "£3.25"]
+        },
+        {
+          "ask": "Two cakes cost 65p each. How much for both?",
+          "answer": "£1.30",
+          "distractors": ["£1.20", "£1.10", "65p"]
+        }
+      ]
+    },
+    {
+      "id": "calendar-countdown",
+      "title": "Calendar Countdown",
+      "station": "compare",
+      "prop": "sun",
+      "skillName": "Seconds, days in each month, years and leap years",
+      "strand": "measurement",
+      "statutoryRequirement": "Pupils should be taught to know the number of seconds in a minute and the number of days in each month, year and leap year; compare durations of events [for example, to calculate the time taken by particular events or tasks]",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Try the knuckle trick for months, or count on in minutes.",
+      "questions": [
+        {
+          "ask": "How many seconds are in a minute?",
+          "answer": "60",
+          "distractors": ["100", "24", "30"]
+        },
+        {
+          "ask": "How many days are in a year that is not a leap year?",
+          "answer": "365",
+          "distractors": ["366", "360", "52"]
+        },
+        {
+          "ask": "How many days are in a leap year?",
+          "answer": "366",
+          "distractors": ["365", "364", "400"]
+        },
+        {
+          "ask": "How many days does February have in a leap year?",
+          "answer": "29",
+          "distractors": ["28", "30", "31"]
+        },
+        {
+          "ask": "How many days does February have in a year that is not a leap year?",
+          "answer": "28",
+          "distractors": ["29", "30", "31"]
+        },
+        {
+          "ask": "How many days does April have?",
+          "answer": "30",
+          "distractors": ["31", "28", "29"]
+        },
+        {
+          "ask": "Which month has 30 days?",
+          "answer": "September",
+          "distractors": ["August", "July", "January"]
+        },
+        {
+          "ask": "A race took 75 seconds. How long is that?",
+          "answer": "1 min 15 s",
+          "distractors": ["1 min 75 s", "7 min 5 s", "1 min 5 s"]
+        },
+        {
+          "ask": "Mia's bath took 20 minutes. Jo's took 35 minutes. How much longer was Jo's?",
+          "answer": "15 minutes",
+          "distractors": ["55 minutes", "25 minutes", "10 minutes"]
+        },
+        {
+          "ask": "A film starts at 2:00 and ends at 3:30. How long is it?",
+          "answer": "1 hour 30 min",
+          "distractors": ["1 hour", "2 hours", "3 hours 30 min"]
+        }
+      ]
+    },
+    {
+      "id": "lines-and-angles-lab",
+      "title": "Lines and Angles",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Comparing angles with a right angle and naming lines",
+      "strand": "properties-of-shapes",
+      "statutoryRequirement": "Pupils should be taught to identify whether angles are greater than or less than a right angle; identify horizontal and vertical lines and pairs of perpendicular and parallel lines",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Picture a square corner, or picture the lines, then try again.",
+      "questions": [
+        {
+          "ask": "At 2 o'clock, how does the angle between the clock hands compare with a right angle?",
+          "answer": "Smaller",
+          "distractors": ["Greater", "The same", "Two right angles"]
+        },
+        {
+          "ask": "At 4 o'clock, how does the angle between the clock hands compare with a right angle?",
+          "answer": "Greater",
+          "distractors": ["Smaller", "The same", "Two right angles"]
+        },
+        {
+          "ask": "At 3 o'clock, how does the angle between the clock hands compare with a right angle?",
+          "answer": "The same",
+          "distractors": ["Smaller", "Greater", "Two right angles"]
+        },
+        {
+          "ask": "At 6 o'clock, the hands make a straight line. How big is that angle?",
+          "answer": "Two right angles",
+          "distractors": [
+            "One right angle",
+            "Three right angles",
+            "Half a right angle"
+          ]
+        },
+        {
+          "ask": "At 5 o'clock, how does the angle between the clock hands compare with a right angle?",
+          "answer": "Greater",
+          "distractors": ["Smaller", "The same", "Two right angles"]
+        },
+        {
+          "ask": "How does the corner of a square compare with a right angle?",
+          "answer": "The same",
+          "distractors": ["Smaller", "Greater", "Two right angles"]
+        },
+        {
+          "ask": "A line going straight across, like the horizon, is...",
+          "answer": "horizontal",
+          "distractors": ["vertical", "diagonal", "curved"]
+        },
+        {
+          "ask": "A line going straight up and down, like a flagpole, is...",
+          "answer": "vertical",
+          "distractors": ["horizontal", "diagonal", "curved"]
+        },
+        {
+          "ask": "Lines that never meet and stay the same distance apart are...",
+          "answer": "parallel",
+          "distractors": ["perpendicular", "vertical", "curved"]
+        },
+        {
+          "ask": "Two straight lines that meet at a right angle are...",
+          "answer": "perpendicular",
+          "distractors": ["parallel", "horizontal", "curved"]
+        }
+      ]
+    }
+  ]
+}

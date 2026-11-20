@@ -1,0 +1,8 @@
+{
+  "id": "computing.repetition-in-shapes",
+  "name": "Using repeat loops to draw shapes",
+  "subject": "computing",
+  "yearGroup": 4,
+  "strand": "programming",
+  "prerequisites": ["computing.sequence-sounds"]
+}

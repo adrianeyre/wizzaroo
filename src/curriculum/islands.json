@@ -1,0 +1,573 @@
+{
+  "islands": [
+    {
+      "id": "frost-isle",
+      "name": "Frost Isle",
+      "yearGroup": 2,
+      "sky": "aurora",
+      "theme": {
+        "id": "frost-isle",
+        "palette": {
+          "sky": "#a9d8ff",
+          "ground": "#e8f1f8",
+          "accent": "#5ec8f2"
+        },
+        "music": {
+          "id": "frost-isle-chiptune",
+          "beatsPerMinute": 96,
+          "regionTunes": {
+            "icicle-inlet": "D5 E5 F#5 A5 A5 - A5 - B5 B5 A5 B5 B5 F#5 F#5 D5",
+            "snowdrift-library": "D5 B4 F#4 F#4 F#4 - F#4 B4 D5 D5 B4 D5 E5 D5 B4 F#5",
+            "glacier-grotto": "D5 B4 B4 - D5 - B4 A4 B4 E5 F#5 A5 B5 B5 A5 D5",
+            "aurora-lab": "D5 B4 B4 - E5 E5 A5 F#5 B5 - F#5 A5 E5 D5 B4 D5",
+            "brainwave-big-top": "D5 E5 D5 B4 F#4 A4 A4 A4 F#4 - A4 F#4 A4 F#4 F#4 F#5",
+            "chiming-icefall": "D5 - B4 A4 A4 B4 E5 F#5 D5 D5 F#5 D5 E5 B4 A4 F#5",
+            "polar-lookout": "D5 E5 D5 F#5 E5 B4 D5 F#5 A5 - B5 A5 A5 B5 A5 F#5",
+            "frozen-fort": "D5 E5 B4 - A4 F#4 F#4 F#4 A4 D5 A4 - D5 - E5 F#5",
+            "snowbot-works": "D5 D5 E5 D5 B4 D5 B4 - B4 E5 F#5 E5 F#5 - F#5 D5",
+            "frost-gallery": "D5 D5 B4 D5 E5 D5 B4 F#5 D5 B4 F#4 F#4 F#4 - F#4 B4",
+            "sleigh-workshop": "D5 - B4 A4 B4 E5 F#5 A5 B5 B5 A5 D5 D5 B4 B4 -"
+          }
+        },
+        "modelSet": "low-poly-frost",
+        "companionStyle": "snowy-owl"
+      },
+      "regions": [
+        {
+          "id": "icicle-inlet",
+          "name": "Icicle Inlet",
+          "subject": "maths",
+          "landmark": "ice-harbour",
+          "mapPosition": { "x": -4, "z": 10 }
+        },
+        {
+          "id": "snowdrift-library",
+          "name": "Snowdrift Library",
+          "subject": "english",
+          "landmark": "snow-library",
+          "mapPosition": { "x": -6, "z": 1 }
+        },
+        {
+          "id": "glacier-grotto",
+          "name": "Glacier Grotto",
+          "subject": "phonics",
+          "landmark": "ice-grotto",
+          "mapPosition": { "x": -18, "z": 2 }
+        },
+        {
+          "id": "aurora-lab",
+          "name": "Aurora Lab",
+          "subject": "science",
+          "landmark": "aurora-lab",
+          "mapPosition": { "x": 3, "z": -8 }
+        },
+        {
+          "id": "chiming-icefall",
+          "name": "Chiming Icefall",
+          "subject": "music",
+          "landmark": "frozen-waterfall",
+          "mapPosition": { "x": -13, "z": -8 }
+        },
+        {
+          "id": "polar-lookout",
+          "name": "Polar Lookout",
+          "subject": "geography",
+          "landmark": "polar-lookout",
+          "mapPosition": { "x": 19, "z": -6 }
+        },
+        {
+          "id": "frozen-fort",
+          "name": "Frozen Fort",
+          "subject": "history",
+          "landmark": "ice-fort",
+          "mapPosition": { "x": 18, "z": 6 }
+        },
+        {
+          "id": "snowbot-works",
+          "name": "Snowbot Works",
+          "subject": "computing",
+          "landmark": "snowbot-works",
+          "mapPosition": { "x": -15, "z": 10 }
+        },
+        {
+          "id": "frost-gallery",
+          "name": "Frost Gallery",
+          "subject": "art",
+          "landmark": "easel",
+          "mapPosition": { "x": 6, "z": 13 }
+        },
+        {
+          "id": "sleigh-workshop",
+          "name": "Sleigh Workshop",
+          "subject": "design",
+          "landmark": "workshop",
+          "mapPosition": { "x": 11, "z": -13 }
+        },
+        {
+          "id": "brainwave-big-top",
+          "name": "Brainwave Big Top",
+          "landmark": "big-top",
+          "mapPosition": { "x": 4, "z": 3 }
+        }
+      ]
+    },
+    {
+      "id": "sunscorch-sands",
+      "name": "Sunscorch Sands",
+      "yearGroup": 3,
+      "sky": "desert-haze",
+      "theme": {
+        "id": "sunscorch-sands",
+        "palette": {
+          "sky": "#ffd9a0",
+          "ground": "#e6c27a",
+          "accent": "#f28c28"
+        },
+        "music": {
+          "id": "sunscorch-sands-chiptune",
+          "beatsPerMinute": 120,
+          "regionTunes": {
+            "oasis-pools": "E5 D5 E5 G5 A5 - E5 G5 E5 E5 G5 E5 D5 E5 D5 E5",
+            "scroll-bazaar": "E5 G5 E5 D5 A4 D5 G5 A5 E5 D5 E5 - D5 B4 D5 A5",
+            "mirage-prism": "E5 A5 G5 E5 E5 - G5 - B5 - G5 B5 G5 D5 E5 E5",
+            "brainwave-big-top": "E5 G5 E5 D5 A4 B4 B4 B4 A4 - B4 A4 B4 A4 A4 A5",
+            "drumbeat-dunes": "E5 D5 E5 G5 A5 A5 A5 G5 D5 E5 D5 D5 E5 D5 B4 E5",
+            "caravan-crossing": "E5 D5 D5 - E5 D5 E5 - G5 E5 A5 E5 D5 - E5 E5",
+            "pyramid-steps": "E5 G5 G5 E5 E5 B4 A4 B4 E5 B4 A4 A4 B4 A4 D5 E5",
+            "sandstorm-relay": "E5 A5 E5 B4 A4 - A4 A4 A4 A4 B4 A4 B4 A4 A4 E5",
+            "mosaic-courtyard": "E5 D5 E5 - D5 B4 D5 A5 E5 G5 E5 D5 A4 D5 G5 A5",
+            "echo-well": "B4 A4 A4 A5 E5 G5 E5 D5 A4 B4 B4 B4 A4 - B4 A4",
+            "camel-gearworks": "E5 - G5 - B5 - G5 B5 G5 D5 E5 E5 E5 A5 G5 E5"
+          }
+        },
+        "modelSet": "low-poly-desert",
+        "companionStyle": "desert-fox"
+      },
+      "regions": [
+        {
+          "id": "oasis-pools",
+          "name": "Oasis Pools",
+          "subject": "maths",
+          "landmark": "oasis-fountain",
+          "mapPosition": { "x": 2, "z": 2 }
+        },
+        {
+          "id": "scroll-bazaar",
+          "name": "Scroll Bazaar",
+          "subject": "english",
+          "landmark": "scroll-bazaar",
+          "mapPosition": { "x": 13, "z": 6 }
+        },
+        {
+          "id": "mirage-prism",
+          "name": "Mirage Prism",
+          "subject": "science",
+          "landmark": "mirage-prism",
+          "mapPosition": { "x": 6, "z": -8 }
+        },
+        {
+          "id": "drumbeat-dunes",
+          "name": "Drumbeat Dunes",
+          "subject": "music",
+          "landmark": "dune-drums",
+          "mapPosition": { "x": -17, "z": 4 }
+        },
+        {
+          "id": "caravan-crossing",
+          "name": "Caravan Crossing",
+          "subject": "geography",
+          "landmark": "caravan-signpost",
+          "mapPosition": { "x": -6, "z": -7 }
+        },
+        {
+          "id": "pyramid-steps",
+          "name": "Pyramid Steps",
+          "subject": "history",
+          "landmark": "stepped-pyramid",
+          "mapPosition": { "x": -16, "z": -7 }
+        },
+        {
+          "id": "sandstorm-relay",
+          "name": "Sandstorm Relay",
+          "subject": "computing",
+          "landmark": "relay-mast",
+          "mapPosition": { "x": 19, "z": -4 }
+        },
+        {
+          "id": "mosaic-courtyard",
+          "name": "Mosaic Courtyard",
+          "subject": "art",
+          "landmark": "easel",
+          "mapPosition": { "x": 19.5, "z": 13 }
+        },
+        {
+          "id": "echo-well",
+          "name": "Echo Well",
+          "subject": "languages",
+          "landmark": "embassy",
+          "mapPosition": { "x": 14.5, "z": -11.5 }
+        },
+        {
+          "id": "camel-gearworks",
+          "name": "Camel Gearworks",
+          "subject": "design",
+          "landmark": "workshop",
+          "mapPosition": { "x": 3.5, "z": 10.5 }
+        },
+        {
+          "id": "brainwave-big-top",
+          "name": "Brainwave Big Top",
+          "landmark": "big-top",
+          "mapPosition": { "x": -6, "z": 9 }
+        }
+      ]
+    },
+    {
+      "id": "jungle-reach",
+      "name": "Jungle Reach",
+      "yearGroup": 4,
+      "sky": "rainforest-mist",
+      "theme": {
+        "id": "jungle-reach",
+        "palette": {
+          "sky": "#9fe0c8",
+          "ground": "#3f8f3a",
+          "accent": "#ff4f8b"
+        },
+        "music": {
+          "id": "jungle-reach-chiptune",
+          "beatsPerMinute": 126,
+          "regionTunes": {
+            "monkey-falls": "F5 G5 G5 A5 C6 G5 D5 C5 D5 F5 D5 - A4 A4 D5 F5",
+            "storyvine-temple": "F5 D5 C5 - A4 C5 C5 A4 A4 D5 F5 C5 D5 F5 A5 A5",
+            "orchid-hollow": "F5 D5 A4 - C5 D5 G5 F5 G5 A5 F5 - F5 D5 C5 A5",
+            "brainwave-big-top": "F5 G5 F5 D5 A4 C5 C5 C5 A4 - C5 A4 C5 A4 A4 A5",
+            "challenge-arena": "A5 A4 A4 C5 A4 C5 - A4 C5 C5 C5 A4 D5 F5 G5 F5",
+            "rainbeat-ridge": "F5 A5 D6 D6 D6 A5 C6 G5 F5 D5 C5 F5 A5 C6 D6 A5",
+            "delta-mapworks": "F5 - G5 A5 C6 - A5 C6 G5 D5 C5 C5 D5 D5 C5 A5",
+            "lost-temple": "F5 A5 A5 G5 F5 A5 D6 D6 C6 D6 D6 D6 D6 D6 C6 F5",
+            "firefly-circuit": "F5 G5 D5 A4 A4 - C5 A4 C5 D5 C5 A4 D5 F5 C5 F5",
+            "canopy-studio": "A4 D5 F5 C5 D5 F5 A5 A5 F5 D5 C5 - A4 C5 C5 A4",
+            "parrot-point": "C5 A4 A4 A5 F5 G5 F5 D5 A4 C5 C5 C5 A4 - C5 A4",
+            "vine-workshop": "C5 D5 G5 F5 G5 A5 F5 - F5 D5 C5 A5 F5 D5 A4 -"
+          }
+        },
+        "modelSet": "low-poly-jungle",
+        "companionStyle": "bright-toucan"
+      },
+      "regions": [
+        {
+          "id": "monkey-falls",
+          "name": "Monkey Falls",
+          "subject": "maths",
+          "landmark": "monkey-falls",
+          "mapPosition": { "x": -4, "z": -4 }
+        },
+        {
+          "id": "storyvine-temple",
+          "name": "Storyvine Temple",
+          "subject": "english",
+          "landmark": "storyvine-shrine",
+          "mapPosition": { "x": -15, "z": 7 }
+        },
+        {
+          "id": "orchid-hollow",
+          "name": "Orchid Hollow",
+          "subject": "science",
+          "landmark": "orchid-glasshouse",
+          "mapPosition": { "x": 6, "z": -9 }
+        },
+        {
+          "id": "rainbeat-ridge",
+          "name": "Rainbeat Ridge",
+          "subject": "music",
+          "landmark": "bamboo-drums",
+          "mapPosition": { "x": 18, "z": -6 }
+        },
+        {
+          "id": "delta-mapworks",
+          "name": "Delta Mapworks",
+          "subject": "geography",
+          "landmark": "stilt-mapworks",
+          "mapPosition": { "x": 15, "z": 6 }
+        },
+        {
+          "id": "lost-temple",
+          "name": "Lost Temple",
+          "subject": "history",
+          "landmark": "overgrown-temple",
+          "mapPosition": { "x": -17, "z": -4 }
+        },
+        {
+          "id": "firefly-circuit",
+          "name": "Firefly Circuit",
+          "subject": "computing",
+          "landmark": "firefly-treehouse",
+          "mapPosition": { "x": -2, "z": 5 }
+        },
+        {
+          "id": "canopy-studio",
+          "name": "Canopy Studio",
+          "subject": "art",
+          "landmark": "easel",
+          "mapPosition": { "x": 4, "z": 13 }
+        },
+        {
+          "id": "parrot-point",
+          "name": "Parrot Point",
+          "subject": "languages",
+          "landmark": "embassy",
+          "mapPosition": { "x": -7, "z": -12 }
+        },
+        {
+          "id": "vine-workshop",
+          "name": "Vine Workshop",
+          "subject": "design",
+          "landmark": "workshop",
+          "mapPosition": { "x": 13.5, "z": -13 }
+        },
+        {
+          "id": "brainwave-big-top",
+          "name": "Brainwave Big Top",
+          "landmark": "big-top",
+          "mapPosition": { "x": -8, "z": 12 }
+        },
+        {
+          "id": "challenge-arena",
+          "name": "Challenge Arena",
+          "landmark": "challenge-arena",
+          "mapPosition": { "x": 10, "z": 1 }
+        }
+      ]
+    },
+    {
+      "id": "ember-isle",
+      "name": "Ember Isle",
+      "yearGroup": 5,
+      "sky": "volcanic-smoke",
+      "theme": {
+        "id": "ember-isle",
+        "palette": {
+          "sky": "#ffb08a",
+          "ground": "#5a463f",
+          "accent": "#ff5a1f"
+        },
+        "music": {
+          "id": "ember-isle-chiptune",
+          "beatsPerMinute": 108,
+          "regionTunes": {
+            "anvil-quarry": "A5 E5 D5 D5 D5 D5 D5 G5 A5 A5 G5 E5 D5 D5 D5 D6",
+            "inkfire-archive": "A5 C6 A5 - C6 A5 G5 G5 E5 - A5 G5 G5 E5 D5 A5",
+            "magma-crucible": "A5 D6 D6 A5 C6 - D6 E6 G6 G6 G6 - D6 - E6 A5",
+            "brainwave-big-top": "A5 C6 A5 G5 D5 E5 E5 E5 D5 - E5 D5 E5 D5 D5 D6",
+            "thunder-forge": "A5 - E5 G5 D5 D5 E5 G5 E5 G5 E5 D5 E5 - D5 D6",
+            "obsidian-peaks": "A5 - G5 E5 E5 D5 D5 E5 A5 C6 A5 D6 E6 G6 D6 A5",
+            "ironclad-keep": "A5 - C6 D6 D6 C6 A5 A5 A5 G5 D5 D5 D5 - D5 A5",
+            "cinder-core": "A5 A5 G5 - D5 D5 D5 D5 D5 E5 D5 D5 D5 G5 D5 D6",
+            "molten-gallery": "E5 - A5 G5 G5 E5 D5 A5 A5 C6 A5 - C6 A5 G5 G5",
+            "ember-embassy": "E5 D5 D5 D6 A5 C6 A5 G5 D5 E5 E5 E5 D5 - E5 D5",
+            "bellows-workshop": "C6 - D6 E6 G6 G6 G6 - D6 - E6 A5 A5 D6 D6 A5"
+          }
+        },
+        "modelSet": "low-poly-volcanic",
+        "companionStyle": "fire-salamander"
+      },
+      "regions": [
+        {
+          "id": "anvil-quarry",
+          "name": "Anvil Quarry",
+          "subject": "maths",
+          "landmark": "anvil-quarry",
+          "mapPosition": { "x": -17, "z": 5 }
+        },
+        {
+          "id": "inkfire-archive",
+          "name": "Inkfire Archive",
+          "subject": "english",
+          "landmark": "inkfire-archive",
+          "mapPosition": { "x": -8, "z": 9 }
+        },
+        {
+          "id": "magma-crucible",
+          "name": "Magma Crucible",
+          "subject": "science",
+          "landmark": "magma-crucible",
+          "mapPosition": { "x": 9, "z": -3 }
+        },
+        {
+          "id": "thunder-forge",
+          "name": "Thunder Forge",
+          "subject": "music",
+          "landmark": "volcanic-forge",
+          "mapPosition": { "x": -7, "z": -4 }
+        },
+        {
+          "id": "obsidian-peaks",
+          "name": "Obsidian Peaks",
+          "subject": "geography",
+          "landmark": "obsidian-lookout",
+          "mapPosition": { "x": 19, "z": -4 }
+        },
+        {
+          "id": "ironclad-keep",
+          "name": "Ironclad Keep",
+          "subject": "history",
+          "landmark": "iron-keep",
+          "mapPosition": { "x": 15, "z": 7 }
+        },
+        {
+          "id": "cinder-core",
+          "name": "Cinder Core",
+          "subject": "computing",
+          "landmark": "cinder-core",
+          "mapPosition": { "x": 3, "z": 7 }
+        },
+        {
+          "id": "molten-gallery",
+          "name": "Molten Gallery",
+          "subject": "art",
+          "landmark": "easel",
+          "mapPosition": { "x": -2.5, "z": -13 }
+        },
+        {
+          "id": "ember-embassy",
+          "name": "Ember Embassy",
+          "subject": "languages",
+          "landmark": "embassy",
+          "mapPosition": { "x": 9, "z": -12.5 }
+        },
+        {
+          "id": "bellows-workshop",
+          "name": "Bellows Workshop",
+          "subject": "design",
+          "landmark": "workshop",
+          "mapPosition": { "x": 1, "z": -4.5 }
+        },
+        {
+          "id": "brainwave-big-top",
+          "name": "Brainwave Big Top",
+          "landmark": "big-top",
+          "mapPosition": { "x": -17, "z": -5 }
+        }
+      ]
+    },
+    {
+      "id": "starfall-isle",
+      "name": "Starfall Isle",
+      "yearGroup": 6,
+      "sky": "starlit-night",
+      "theme": {
+        "id": "starfall-isle",
+        "palette": {
+          "sky": "#2b2d6e",
+          "ground": "#55658f",
+          "accent": "#c9a8ff"
+        },
+        "music": {
+          "id": "starfall-isle-chiptune",
+          "beatsPerMinute": 90,
+          "regionTunes": {
+            "constellation-court": "G5 G5 B5 - A5 G5 D5 E5 B4 B4 D5 B4 B4 B4 B4 G5",
+            "moonlit-scriptorium": "G5 A5 B5 A5 D6 A5 E5 D5 B4 B4 B4 D5 B4 D5 G5 G5",
+            "comet-observatory": "G5 B5 A5 - A5 G5 A5 A5 B5 B5 A5 G5 B5 D6 A5 B5",
+            "brainwave-big-top": "G5 A5 G5 E5 B4 D5 D5 D5 B4 - D5 B4 D5 B4 B4 B5",
+            "challenge-arena": "B5 B4 B4 D5 B4 D5 - B4 D5 D5 D5 B4 E5 G5 A5 G5",
+            "nebula-hall": "G5 - E5 A5 B5 D6 B5 A5 B5 E6 E6 D6 E6 E6 E6 G5",
+            "meridian-stones": "G5 E5 G5 - E5 - D5 E5 D5 G5 G5 A5 G5 - E5 B5",
+            "starfall-ruins": "G5 - A5 G5 E5 B4 D5 B4 B4 - B4 D5 E5 - A5 B5",
+            "signal-tower": "G5 D5 D5 - D5 B4 E5 - D5 - G5 A5 E5 G5 G5 G5",
+            "stardust-studio": "B4 B4 B4 D5 B4 D5 G5 G5 G5 A5 B5 A5 D6 A5 E5 D5",
+            "galaxy-gate": "D5 B4 B4 B5 G5 A5 G5 E5 B4 D5 D5 D5 B4 - D5 B4",
+            "orbit-workshop": "A5 G5 A5 A5 B5 B5 A5 G5 B5 D6 A5 B5 G5 B5 A5 -"
+          }
+        },
+        "modelSet": "low-poly-starlit",
+        "companionStyle": "night-raven"
+      },
+      "regions": [
+        {
+          "id": "constellation-court",
+          "name": "Constellation Court",
+          "subject": "maths",
+          "landmark": "constellation-court",
+          "mapPosition": { "x": -14, "z": 6 }
+        },
+        {
+          "id": "moonlit-scriptorium",
+          "name": "Moonlit Scriptorium",
+          "subject": "english",
+          "landmark": "moonlit-scriptorium",
+          "mapPosition": { "x": -5, "z": -6 }
+        },
+        {
+          "id": "comet-observatory",
+          "name": "Comet Observatory",
+          "subject": "science",
+          "landmark": "observatory",
+          "mapPosition": { "x": 7, "z": -9 }
+        },
+        {
+          "id": "nebula-hall",
+          "name": "Nebula Hall",
+          "subject": "music",
+          "landmark": "nebula-hall",
+          "mapPosition": { "x": 17, "z": -3 }
+        },
+        {
+          "id": "meridian-stones",
+          "name": "Meridian Stones",
+          "subject": "geography",
+          "landmark": "standing-stones",
+          "mapPosition": { "x": -17, "z": -5 }
+        },
+        {
+          "id": "starfall-ruins",
+          "name": "Starfall Ruins",
+          "subject": "history",
+          "landmark": "starfall-ruins",
+          "mapPosition": { "x": 5, "z": 6 }
+        },
+        {
+          "id": "signal-tower",
+          "name": "Signal Tower",
+          "subject": "computing",
+          "landmark": "signal-tower",
+          "mapPosition": { "x": 16, "z": 8 }
+        },
+        {
+          "id": "stardust-studio",
+          "name": "Stardust Studio",
+          "subject": "art",
+          "landmark": "easel",
+          "mapPosition": { "x": -22, "z": -12.5 }
+        },
+        {
+          "id": "galaxy-gate",
+          "name": "Galaxy Gate",
+          "subject": "languages",
+          "landmark": "embassy",
+          "mapPosition": { "x": -6, "z": 2.5 }
+        },
+        {
+          "id": "orbit-workshop",
+          "name": "Orbit Workshop",
+          "subject": "design",
+          "landmark": "workshop",
+          "mapPosition": { "x": 1, "z": -1 }
+        },
+        {
+          "id": "brainwave-big-top",
+          "name": "Brainwave Big Top",
+          "landmark": "big-top",
+          "mapPosition": { "x": -4, "z": 11 }
+        },
+        {
+          "id": "challenge-arena",
+          "name": "Challenge Arena",
+          "landmark": "challenge-arena",
+          "mapPosition": { "x": 9, "z": -1 }
+        }
+      ]
+    }
+  ]
+}

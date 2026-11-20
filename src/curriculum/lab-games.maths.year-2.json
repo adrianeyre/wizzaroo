@@ -1,0 +1,518 @@
+{
+  "subject": "maths",
+  "yearGroup": 2,
+  "games": [
+    {
+      "id": "hundred-word-match",
+      "title": "Words to 100",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Numbers to 100 in words and comparing with <, > and =",
+      "strand": "number-and-place-value",
+      "statutoryRequirement": "Pupils should be taught to read and write numbers to at least 100 in numerals and in words; compare and order numbers from 0 up to 100; use <, > and = signs",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Look at the tens digit first, then the ones, and try again.",
+      "questions": [
+        {
+          "ask": "What is 'forty-seven' in numerals?",
+          "answer": "47",
+          "distractors": ["74", "407", "40"]
+        },
+        {
+          "ask": "Which words show 63?",
+          "answer": "sixty-three",
+          "distractors": ["thirty-six", "sixty", "six-three"]
+        },
+        {
+          "ask": "Which word is 90?",
+          "answer": "ninety",
+          "distractors": ["nineteen", "nine", "ninty"]
+        },
+        {
+          "ask": "What is 'eighty-five' in numerals?",
+          "answer": "85",
+          "distractors": ["58", "805", "80"]
+        },
+        {
+          "ask": "Which sign makes 56 ? 65 true?",
+          "answer": "<",
+          "distractors": [">", "=", "+"]
+        },
+        {
+          "ask": "Which sign makes 72 ? 27 true?",
+          "answer": ">",
+          "distractors": ["<", "=", "−"]
+        },
+        {
+          "ask": "Which sign makes 40 ? 40 true?",
+          "answer": "=",
+          "distractors": ["<", ">", "+"]
+        },
+        {
+          "ask": "Which is the greatest: 39, 93, 59 or 83?",
+          "answer": "93",
+          "distractors": ["39", "59", "83"]
+        },
+        {
+          "ask": "Which is the smallest: 41, 14, 40 or 44?",
+          "answer": "14",
+          "distractors": ["41", "40", "44"]
+        },
+        {
+          "ask": "Which of these is true?",
+          "answer": "34 < 43",
+          "distractors": ["43 < 34", "34 > 43", "34 = 43"]
+        }
+      ]
+    },
+    {
+      "id": "triple-dice-total",
+      "title": "Triple Dice Total",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Adding three one-digit numbers",
+      "strand": "addition-and-subtraction",
+      "statutoryRequirement": "Pupils should be taught to add and subtract numbers using concrete objects, pictorial representations, and mentally, including: adding three one-digit numbers",
+      "instruction": "Add all three numbers, then tap the total.",
+      "hint": "Not quite. Look for two numbers that make 10 first, then add the last one.",
+      "questions": [
+        {
+          "ask": "What is 3 + 4 + 5?",
+          "answer": "12",
+          "distractors": ["11", "13", "7"]
+        },
+        {
+          "ask": "What is 6 + 2 + 8?",
+          "answer": "16",
+          "distractors": ["14", "15", "8"]
+        },
+        {
+          "ask": "What is 9 + 1 + 7?",
+          "answer": "17",
+          "distractors": ["16", "10", "18"]
+        },
+        {
+          "ask": "What is 5 + 5 + 5?",
+          "answer": "15",
+          "distractors": ["10", "25", "20"]
+        },
+        {
+          "ask": "What is 8 + 7 + 2?",
+          "answer": "17",
+          "distractors": ["15", "16", "18"]
+        },
+        {
+          "ask": "What is 4 + 6 + 9?",
+          "answer": "19",
+          "distractors": ["10", "18", "20"]
+        },
+        {
+          "ask": "What is 7 + 3 + 3?",
+          "answer": "13",
+          "distractors": ["10", "12", "14"]
+        },
+        {
+          "ask": "What is 9 + 9 + 2?",
+          "answer": "20",
+          "distractors": ["18", "19", "21"]
+        },
+        {
+          "ask": "What is 2 + 8 + 6?",
+          "answer": "16",
+          "distractors": ["10", "15", "14"]
+        },
+        {
+          "ask": "Which is the quickest way to add 7 + 5 + 3?",
+          "answer": "7 + 3, then + 5",
+          "distractors": [
+            "7 + 5, then + 4",
+            "5 + 5, then + 7",
+            "7 + 7, then + 3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fair-share-fractions",
+      "title": "Fair Share Fractions",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Finding fractions of a set or quantity",
+      "strand": "fractions",
+      "statutoryRequirement": "Pupils should be taught to recognise, find, name and write fractions 1/3, 1/4, 2/4 and 3/4 of a length, shape, set of objects or quantity",
+      "instruction": "Share them out fairly, then tap the answer.",
+      "hint": "Not quite. Split the amount into equal groups, then count the groups you need.",
+      "questions": [
+        {
+          "ask": "What is 1/2 of 6?",
+          "answer": "3",
+          "distractors": ["2", "4", "12"]
+        },
+        {
+          "ask": "What is 1/3 of 9?",
+          "answer": "3",
+          "distractors": ["6", "9", "4"]
+        },
+        {
+          "ask": "What is 3/4 of 8?",
+          "answer": "6",
+          "distractors": ["2", "4", "3"]
+        },
+        {
+          "ask": "There are 12 sweets. 1/4 of them are red. How many are red?",
+          "answer": "3",
+          "distractors": ["4", "6", "8"]
+        },
+        {
+          "ask": "What is 1/2 of 14?",
+          "answer": "7",
+          "distractors": ["6", "8", "12"]
+        },
+        {
+          "ask": "What is 2/4 of 8?",
+          "answer": "4",
+          "distractors": ["2", "6", "3"]
+        },
+        {
+          "ask": "There are 12 eggs. 1/3 are brown. How many are brown?",
+          "answer": "4",
+          "distractors": ["3", "6", "9"]
+        },
+        {
+          "ask": "What is 3/4 of 12?",
+          "answer": "9",
+          "distractors": ["3", "4", "8"]
+        },
+        {
+          "ask": "What is 1/4 of 20?",
+          "answer": "5",
+          "distractors": ["4", "10", "15"]
+        },
+        {
+          "ask": "Share 15 apples into 3 equal groups. What is 1/3 of 15?",
+          "answer": "5",
+          "distractors": ["3", "10", "12"]
+        }
+      ]
+    },
+    {
+      "id": "scale-and-thermometer",
+      "title": "Read the Scales",
+      "station": "compare",
+      "prop": "thermometer",
+      "skillName": "Reading scales for mass, temperature and capacity",
+      "strand": "measurement",
+      "statutoryRequirement": "Pupils should be taught to choose and use appropriate standard units to estimate and measure length/height in any direction (m/cm); mass (kg/g); temperature (°C); capacity (litres/ml) to the nearest appropriate unit, using rulers, scales, thermometers and measuring vessels; compare and order lengths, mass, volume/capacity and record the results using >, < and =",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Check the units and count the steps on the scale, then try again.",
+      "questions": [
+        {
+          "ask": "Which unit would you use to weigh a bag of potatoes?",
+          "answer": "kg",
+          "distractors": ["ml", "°C", "cm"]
+        },
+        {
+          "ask": "Which unit tells you how hot or cold it is?",
+          "answer": "°C",
+          "distractors": ["kg", "litres", "g"]
+        },
+        {
+          "ask": "Which unit would you use for a spoonful of medicine?",
+          "answer": "ml",
+          "distractors": ["litres", "kg", "°C"]
+        },
+        {
+          "ask": "A thermometer goes up in 2s. It reads 1 mark after 20°C. What is the temperature?",
+          "answer": "22°C",
+          "distractors": ["21°C", "30°C", "20°C"]
+        },
+        {
+          "ask": "A scale counts in 100 g. The arrow is 3 marks after 0. What is the mass?",
+          "answer": "300 g",
+          "distractors": ["3 g", "30 g", "103 g"]
+        },
+        {
+          "ask": "A jug counts in 50 ml. The water is 2 marks above 100 ml. How much water?",
+          "answer": "200 ml",
+          "distractors": ["102 ml", "150 ml", "250 ml"]
+        },
+        {
+          "ask": "Which sign makes 3 kg ? 5 kg true?",
+          "answer": "<",
+          "distractors": [">", "=", "+"]
+        },
+        {
+          "ask": "Which sign makes 40°C ? 14°C true?",
+          "answer": ">",
+          "distractors": ["<", "=", "−"]
+        },
+        {
+          "ask": "Which sign makes 60 ml ? 60 ml true?",
+          "answer": "=",
+          "distractors": ["<", ">", "−"]
+        },
+        {
+          "ask": "Which temperature is the warmest?",
+          "answer": "25°C",
+          "distractors": ["5°C", "15°C", "0°C"]
+        }
+      ]
+    },
+    {
+      "id": "pocket-money-shop",
+      "title": "Pocket Money Shop",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Using £ and p, combining coins and giving change",
+      "strand": "measurement",
+      "statutoryRequirement": "Pupils should be taught to recognise and use symbols for pounds (£) and pence (p); combine amounts to make a particular value; find different combinations of coins that equal the same amounts of money; solve simple problems in a practical context involving addition and subtraction of money of the same unit, including giving change",
+      "instruction": "Read it, then tap the right amount.",
+      "hint": "Not quite. Add the coins one at a time, or count on to find the change.",
+      "questions": [
+        {
+          "ask": "How much is 20p + 20p + 5p?",
+          "answer": "45p",
+          "distractors": ["40p", "25p", "50p"]
+        },
+        {
+          "ask": "Which two coins make 30p?",
+          "answer": "20p and 10p",
+          "distractors": ["20p and 5p", "10p and 5p", "50p and 20p"]
+        },
+        {
+          "ask": "Which coins make exactly 50p?",
+          "answer": "20p, 20p and 10p",
+          "distractors": [
+            "20p, 20p and 5p",
+            "10p, 10p and 20p",
+            "20p, 10p and 5p"
+          ]
+        },
+        {
+          "ask": "You buy a 7p sweet with a 10p coin. How much change do you get?",
+          "answer": "3p",
+          "distractors": ["17p", "7p", "2p"]
+        },
+        {
+          "ask": "You pay 50p for a 35p apple. How much change do you get?",
+          "answer": "15p",
+          "distractors": ["25p", "85p", "5p"]
+        },
+        {
+          "ask": "You pay £1 for a 60p comic. How much change do you get?",
+          "answer": "40p",
+          "distractors": ["30p", "50p", "60p"]
+        },
+        {
+          "ask": "How much is £5 + £2?",
+          "answer": "£7",
+          "distractors": ["£3", "7p", "£52"]
+        },
+        {
+          "ask": "How many 10p coins make £1?",
+          "answer": "10",
+          "distractors": ["100", "5", "20"]
+        },
+        {
+          "ask": "How much is 50p + 20p + 2p + 1p?",
+          "answer": "73p",
+          "distractors": ["72p", "83p", "53p"]
+        },
+        {
+          "ask": "A pen costs 25p. How much do 2 pens cost?",
+          "answer": "50p",
+          "distractors": ["27p", "45p", "52p"]
+        }
+      ]
+    },
+    {
+      "id": "hours-and-minutes-facts",
+      "title": "Hours and Minutes",
+      "station": "compare",
+      "prop": "sun",
+      "skillName": "Minutes in an hour, hours in a day and comparing time",
+      "strand": "measurement",
+      "statutoryRequirement": "Pupils should be taught to know the number of minutes in an hour and the number of hours in a day; compare and sequence intervals of time",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Remember there are 60 minutes in an hour and 24 hours in a day.",
+      "questions": [
+        {
+          "ask": "How many minutes are in an hour?",
+          "answer": "60",
+          "distractors": ["100", "24", "30"]
+        },
+        {
+          "ask": "How many hours are in a day?",
+          "answer": "24",
+          "distractors": ["12", "60", "7"]
+        },
+        {
+          "ask": "How many minutes are in half an hour?",
+          "answer": "30",
+          "distractors": ["50", "15", "60"]
+        },
+        {
+          "ask": "How many minutes are in a quarter of an hour?",
+          "answer": "15",
+          "distractors": ["25", "4", "30"]
+        },
+        {
+          "ask": "How many minutes are in 2 hours?",
+          "answer": "120",
+          "distractors": ["200", "60", "100"]
+        },
+        {
+          "ask": "How many hours are in 2 days?",
+          "answer": "48",
+          "distractors": ["24", "12", "36"]
+        },
+        {
+          "ask": "Which is the longest time?",
+          "answer": "1 hour",
+          "distractors": ["50 minutes", "45 minutes", "30 minutes"]
+        },
+        {
+          "ask": "Which is the shortest time?",
+          "answer": "20 minutes",
+          "distractors": ["half an hour", "1 hour", "40 minutes"]
+        },
+        {
+          "ask": "Film A lasts 90 minutes. Film B lasts 1 hour. Which is longer?",
+          "answer": "Film A",
+          "distractors": ["Film B", "Same length", "Can't tell"]
+        },
+        {
+          "ask": "Which of these would take the longest?",
+          "answer": "A night's sleep",
+          "distractors": ["Brushing teeth", "Eating an apple", "Tying a shoe"]
+        }
+      ]
+    },
+    {
+      "id": "corners-and-faces",
+      "title": "Corners and Faces",
+      "station": "compare",
+      "prop": "prism",
+      "skillName": "Sides, vertices, symmetry and faces of shapes",
+      "strand": "properties-of-shapes",
+      "statutoryRequirement": "Pupils should be taught to identify and describe the properties of 2-D shapes, including the number of sides and line symmetry in a vertical line; identify 2-D shapes on the surface of 3-D shapes [for example, a circle on a cylinder and a triangle on a pyramid]",
+      "instruction": "Read it, then tap the right answer.",
+      "hint": "Not quite. Count the sides or corners one at a time, then try again.",
+      "questions": [
+        {
+          "ask": "How many sides does a pentagon have?",
+          "answer": "5",
+          "distractors": ["6", "4", "8"]
+        },
+        {
+          "ask": "How many vertices does a hexagon have?",
+          "answer": "6",
+          "distractors": ["5", "8", "4"]
+        },
+        {
+          "ask": "How many vertices does a triangle have?",
+          "answer": "3",
+          "distractors": ["4", "2", "6"]
+        },
+        {
+          "ask": "How many sides does an octagon have?",
+          "answer": "8",
+          "distractors": ["6", "10", "7"]
+        },
+        {
+          "ask": "Which shape has 4 sides and 4 vertices?",
+          "answer": "Rectangle",
+          "distractors": ["Triangle", "Pentagon", "Circle"]
+        },
+        {
+          "ask": "What 2-D shape is on each end of a cylinder?",
+          "answer": "Circle",
+          "distractors": ["Square", "Triangle", "Rectangle"]
+        },
+        {
+          "ask": "What 2-D shape is every face of a cube?",
+          "answer": "Square",
+          "distractors": ["Triangle", "Circle", "Hexagon"]
+        },
+        {
+          "ask": "What 2-D shape are the sloping faces of a square-based pyramid?",
+          "answer": "Triangle",
+          "distractors": ["Square", "Circle", "Rectangle"]
+        },
+        {
+          "ask": "Which capital letter has a vertical line of symmetry?",
+          "answer": "A",
+          "distractors": ["F", "G", "J"]
+        },
+        {
+          "ask": "Which capital letter does NOT have a vertical line of symmetry?",
+          "answer": "R",
+          "distractors": ["A", "M", "T"]
+        }
+      ]
+    },
+    {
+      "id": "pattern-parade",
+      "title": "Pattern Parade",
+      "station": "sequence",
+      "prop": "magnifier",
+      "skillName": "Patterns and sequences of objects and shapes",
+      "strand": "position-and-direction",
+      "statutoryRequirement": "Pupils should be taught to order and arrange combinations of mathematical objects in patterns and sequences",
+      "instruction": "Find the repeating part, then tap what comes next.",
+      "hint": "Not quite. Find where the pattern starts again, then try again.",
+      "questions": [
+        {
+          "ask": "circle, square, circle, square, ... What comes next?",
+          "answer": "circle",
+          "distractors": ["square", "triangle", "star"]
+        },
+        {
+          "ask": "red, red, blue, red, red, blue, red, ... What comes next?",
+          "answer": "red",
+          "distractors": ["blue", "green", "yellow"]
+        },
+        {
+          "ask": "triangle, square, pentagon, ... What comes next?",
+          "answer": "hexagon",
+          "distractors": ["octagon", "triangle", "circle"]
+        },
+        {
+          "ask": "star, moon, sun, star, moon, ... What comes next?",
+          "answer": "sun",
+          "distractors": ["star", "moon", "cloud"]
+        },
+        {
+          "ask": "big, small, small, big, small, small, big, ... What comes next?",
+          "answer": "small",
+          "distractors": ["big", "medium", "tiny"]
+        },
+        {
+          "ask": "A, B, B, A, B, B, A, ... What comes next?",
+          "answer": "B",
+          "distractors": ["A", "C", "AB"]
+        },
+        {
+          "ask": "1 dot, 2 dots, 3 dots, ... What comes next?",
+          "answer": "4 dots",
+          "distractors": ["5 dots", "3 dots", "1 dot"]
+        },
+        {
+          "ask": "up, down, down, up, down, down, ... What comes next?",
+          "answer": "up",
+          "distractors": ["down", "left", "right"]
+        },
+        {
+          "ask": "cat, dog, fish, cat, dog, fish, cat, ... What comes next?",
+          "answer": "dog",
+          "distractors": ["cat", "fish", "bird"]
+        },
+        {
+          "ask": "square, square, circle, circle, square, square, circle, ... What comes next?",
+          "answer": "circle",
+          "distractors": ["square", "triangle", "star"]
+        }
+      ]
+    }
+  ]
+}

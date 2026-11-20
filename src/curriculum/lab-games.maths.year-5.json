@@ -1,0 +1,515 @@
+{
+  "subject": "maths",
+  "yearGroup": 5,
+  "games": [
+    {
+      "id": "million-mountain-climb",
+      "title": "Million Mountain",
+      "station": "compare",
+      "prop": "planet",
+      "skillName": "Comparing and rounding numbers to 1,000,000",
+      "strand": "number-and-place-value",
+      "statutoryRequirement": "Pupils should be taught to read, write, order and compare numbers to at least 1 000 000 and determine the value of each digit; round any number up to 1 000 000 to the nearest 10, 100, 1000, 10 000 and 100 000",
+      "instruction": "Compare the numbers or round them, then tap the right answer.",
+      "hint": "Not quite. Find the digit you are rounding to, then look at the digit to its right.",
+      "questions": [
+        {
+          "ask": "Which number is the largest?",
+          "answer": "573,000",
+          "distractors": ["507,300", "570,030", "537,000"]
+        },
+        {
+          "ask": "Which number is the smallest?",
+          "answer": "99,999",
+          "distractors": ["100,001", "909,000", "190,000"]
+        },
+        {
+          "ask": "Round 348,762 to the nearest 1000.",
+          "answer": "349,000",
+          "distractors": ["348,000", "348,800", "350,000"]
+        },
+        {
+          "ask": "Round 348,762 to the nearest 10,000.",
+          "answer": "350,000",
+          "distractors": ["340,000", "349,000", "300,000"]
+        },
+        {
+          "ask": "Round 648,500 to the nearest 100,000.",
+          "answer": "600,000",
+          "distractors": ["700,000", "650,000", "640,000"]
+        },
+        {
+          "ask": "Round 72,951 to the nearest 100.",
+          "answer": "73,000",
+          "distractors": ["72,900", "72,950", "72,000"]
+        },
+        {
+          "ask": "Round 409,996 to the nearest 10.",
+          "answer": "410,000",
+          "distractors": ["409,990", "409,900", "400,000"]
+        },
+        {
+          "ask": "What is the value of the 7 in 573,214?",
+          "answer": "70,000",
+          "distractors": ["7,000", "700,000", "7"]
+        },
+        {
+          "ask": "Which number is greater than 450,000?",
+          "answer": "450,100",
+          "distractors": ["449,999", "405,000", "45,000"]
+        },
+        {
+          "ask": "What is 999,999 + 1?",
+          "answer": "1,000,000",
+          "distractors": ["100,000", "999,000", "10,000,000"]
+        }
+      ]
+    },
+    {
+      "id": "roman-year-reader",
+      "title": "Roman Year Reader",
+      "station": "compare",
+      "prop": "fossil",
+      "skillName": "Reading Roman numerals to 1000 and years",
+      "strand": "number-and-place-value",
+      "statutoryRequirement": "Pupils should be taught to read Roman numerals to 1000 (M) and recognise years written in Roman numerals",
+      "instruction": "Read the Roman numerals, then tap the right answer.",
+      "hint": "Not quite. Split the numeral into thousands, hundreds, tens and ones, then try again.",
+      "questions": [
+        {
+          "ask": "What number is M?",
+          "answer": "1,000",
+          "distractors": ["100", "500", "10,000"]
+        },
+        {
+          "ask": "What number is D?",
+          "answer": "500",
+          "distractors": ["50", "5,000", "1,000"]
+        },
+        {
+          "ask": "What number is CD?",
+          "answer": "400",
+          "distractors": ["600", "450", "550"]
+        },
+        {
+          "ask": "What number is CM?",
+          "answer": "900",
+          "distractors": ["1,100", "950", "800"]
+        },
+        {
+          "ask": "Which Roman numeral means 800?",
+          "answer": "DCCC",
+          "distractors": ["DCC", "MCC", "CCC"]
+        },
+        {
+          "ask": "What year is MCMXC?",
+          "answer": "1990",
+          "distractors": ["2190", "1890", "1110"]
+        },
+        {
+          "ask": "What year is MMXXIV?",
+          "answer": "2024",
+          "distractors": ["2026", "2014", "2004"]
+        },
+        {
+          "ask": "What year is MDCLXVI?",
+          "answer": "1666",
+          "distractors": ["1466", "1646", "1556"]
+        },
+        {
+          "ask": "Which Roman numeral is the year 1945?",
+          "answer": "MCMXLV",
+          "distractors": ["MCMLXV", "MCMXLIV", "MDCCCXLV"]
+        },
+        {
+          "ask": "Which Roman numeral is the year 2019?",
+          "answer": "MMXIX",
+          "distractors": ["MMXXI", "MMIX", "MMXVIII"]
+        }
+      ]
+    },
+    {
+      "id": "prime-number-hunters",
+      "title": "Prime Hunters",
+      "station": "compare",
+      "prop": "magnifier",
+      "skillName": "Multiples, factors and prime numbers",
+      "strand": "multiplication-and-division",
+      "statutoryRequirement": "Pupils should be taught to identify multiples and factors, including finding all factor pairs of a number, and common factors of two numbers; know and use the vocabulary of prime numbers, prime factors and composite (non-prime) numbers; establish whether a number up to 100 is prime and recall prime numbers up to 19",
+      "instruction": "Think about the factors, then tap the right answer.",
+      "hint": "Not quite. A prime number has exactly two factors: 1 and itself.",
+      "questions": [
+        {
+          "ask": "Which number is prime?",
+          "answer": "17",
+          "distractors": ["15", "21", "9"]
+        },
+        {
+          "ask": "Which number is NOT prime?",
+          "answer": "15",
+          "distractors": ["13", "17", "19"]
+        },
+        {
+          "ask": "Which number is composite?",
+          "answer": "12",
+          "distractors": ["2", "7", "11"]
+        },
+        {
+          "ask": "Which of these is prime?",
+          "answer": "89",
+          "distractors": ["91", "87", "93"]
+        },
+        {
+          "ask": "Which is the only even prime number?",
+          "answer": "2",
+          "distractors": ["4", "6", "8"]
+        },
+        {
+          "ask": "How many prime numbers are less than 20?",
+          "answer": "8",
+          "distractors": ["9", "7", "10"]
+        },
+        {
+          "ask": "Which number is a common factor of 12 and 18?",
+          "answer": "6",
+          "distractors": ["4", "9", "36"]
+        },
+        {
+          "ask": "Which number is a factor of 45?",
+          "answer": "9",
+          "distractors": ["4", "6", "90"]
+        },
+        {
+          "ask": "Which number is a multiple of 7?",
+          "answer": "63",
+          "distractors": ["37", "17", "71"]
+        },
+        {
+          "ask": "How many factors does 16 have?",
+          "answer": "5",
+          "distractors": ["4", "8", "2"]
+        }
+      ]
+    },
+    {
+      "id": "long-multiply-mill",
+      "title": "Long Multiply Mill",
+      "station": "compare",
+      "prop": "battery",
+      "skillName": "Long multiplication and short division with remainders",
+      "strand": "multiplication-and-division",
+      "statutoryRequirement": "Pupils should be taught to multiply numbers up to 4 digits by a one- or two-digit number using a formal written method, including long multiplication for two-digit numbers; divide numbers up to 4 digits by a one-digit number using the formal written method of short division and interpret remainders appropriately for the context",
+      "instruction": "Use a written method, then tap the right answer.",
+      "hint": "Not quite. Set it out in columns and check each carry, then try again.",
+      "questions": [
+        {
+          "ask": "34 × 12 = ?",
+          "answer": "408",
+          "distractors": ["102", "374", "418"]
+        },
+        {
+          "ask": "23 × 45 = ?",
+          "answer": "1,035",
+          "distractors": ["207", "1,025", "1,135"]
+        },
+        {
+          "ask": "156 × 24 = ?",
+          "answer": "3,744",
+          "distractors": ["936", "3,644", "3,754"]
+        },
+        {
+          "ask": "1,234 × 6 = ?",
+          "answer": "7,404",
+          "distractors": ["6,204", "7,304", "7,414"]
+        },
+        {
+          "ask": "847 ÷ 7 = ?",
+          "answer": "121",
+          "distractors": ["112", "120", "131"]
+        },
+        {
+          "ask": "1,000 ÷ 8 = ?",
+          "answer": "125",
+          "distractors": ["120", "250", "128"]
+        },
+        {
+          "ask": "95 ÷ 4 = ?",
+          "answer": "23 r 3",
+          "distractors": ["23 r 1", "22 r 7", "24 r 1"]
+        },
+        {
+          "ask": "1,234 ÷ 5 = ?",
+          "answer": "246 r 4",
+          "distractors": ["246 r 3", "247", "24 r 34"]
+        },
+        {
+          "ask": "50 children ride in minibuses with 8 seats each. How many minibuses are needed?",
+          "answer": "7",
+          "distractors": ["6", "8", "5"]
+        },
+        {
+          "ask": "47 eggs are packed in boxes of 6. How many boxes are full?",
+          "answer": "7",
+          "distractors": ["8", "6", "5"]
+        }
+      ]
+    },
+    {
+      "id": "mixed-number-mixer",
+      "title": "Mixed Number Mixer",
+      "station": "compare",
+      "prop": "beaker",
+      "skillName": "Mixed numbers, comparing and multiplying fractions",
+      "strand": "fractions",
+      "statutoryRequirement": "Pupils should be taught to compare and order fractions whose denominators are all multiples of the same number; recognise mixed numbers and improper fractions and convert from one form to the other and write mathematical statements > 1 as a mixed number; multiply proper fractions and mixed numbers by whole numbers, supported by materials and diagrams",
+      "instruction": "Work out the fraction, then tap the right answer.",
+      "hint": "Not quite. Count how many wholes you can make, then look at what is left over.",
+      "questions": [
+        {
+          "ask": "Write 7/3 as a mixed number.",
+          "answer": "2 1/3",
+          "distractors": ["7 1/3", "3 1/3", "2 2/3"]
+        },
+        {
+          "ask": "Write 11/5 as a mixed number.",
+          "answer": "2 1/5",
+          "distractors": ["1 1/5", "2 2/5", "5 1/5"]
+        },
+        {
+          "ask": "Write 3 1/4 as an improper fraction.",
+          "answer": "13/4",
+          "distractors": ["7/4", "12/4", "31/4"]
+        },
+        {
+          "ask": "Write 4 2/3 as an improper fraction.",
+          "answer": "14/3",
+          "distractors": ["9/3", "8/3", "42/3"]
+        },
+        {
+          "ask": "Which fraction is the largest?",
+          "answer": "7/8",
+          "distractors": ["3/4", "5/8", "1/2"]
+        },
+        {
+          "ask": "Which fraction is the smallest?",
+          "answer": "7/12",
+          "distractors": ["2/3", "5/6", "3/4"]
+        },
+        {
+          "ask": "Which fraction is greater than 2?",
+          "answer": "9/4",
+          "distractors": ["7/4", "8/5", "2/3"]
+        },
+        {
+          "ask": "2/5 × 3 = ?",
+          "answer": "6/5",
+          "distractors": ["6/15", "2/15", "5/5"]
+        },
+        {
+          "ask": "3/4 × 4 = ?",
+          "answer": "3",
+          "distractors": ["12/16", "3/16", "7/4"]
+        },
+        {
+          "ask": "1 1/2 × 3 = ?",
+          "answer": "4 1/2",
+          "distractors": ["3 1/2", "4 1/6", "4 3/4"]
+        }
+      ]
+    },
+    {
+      "id": "thousandths-tracker",
+      "title": "Thousandths Tracker",
+      "station": "compare",
+      "prop": "microscope",
+      "skillName": "Thousandths, rounding and ordering decimals",
+      "strand": "fractions",
+      "statutoryRequirement": "Pupils should be taught to read, write, order and compare numbers with up to three decimal places; recognise and use thousandths and relate them to tenths, hundredths and decimal equivalents; round decimals with two decimal places to the nearest whole number and to one decimal place",
+      "instruction": "Look carefully at each decimal place, then tap the right answer.",
+      "hint": "Not quite. Line up the decimal points and compare the tenths first.",
+      "questions": [
+        {
+          "ask": "Write 7/1000 as a decimal.",
+          "answer": "0.007",
+          "distractors": ["0.07", "0.7", "0.0007"]
+        },
+        {
+          "ask": "Write 0.045 as a fraction.",
+          "answer": "45/1000",
+          "distractors": ["45/100", "45/10", "4/5"]
+        },
+        {
+          "ask": "What is the value of the 3 in 2.103?",
+          "answer": "3 thousandths",
+          "distractors": ["3 hundredths", "3 tenths", "3 ones"]
+        },
+        {
+          "ask": "How many thousandths make one hundredth?",
+          "answer": "10",
+          "distractors": ["100", "1000", "1"]
+        },
+        {
+          "ask": "Round 4.76 to one decimal place.",
+          "answer": "4.8",
+          "distractors": ["4.7", "5", "4.6"]
+        },
+        {
+          "ask": "Round 4.76 to the nearest whole number.",
+          "answer": "5",
+          "distractors": ["4", "4.8", "4.7"]
+        },
+        {
+          "ask": "Round 12.35 to one decimal place.",
+          "answer": "12.4",
+          "distractors": ["12.3", "12", "12.5"]
+        },
+        {
+          "ask": "Which decimal is the largest?",
+          "answer": "0.35",
+          "distractors": ["0.305", "0.053", "0.3"]
+        },
+        {
+          "ask": "Which decimal is the smallest?",
+          "answer": "1.092",
+          "distractors": ["1.209", "1.29", "1.9"]
+        },
+        {
+          "ask": "Which number is between 2.4 and 2.5?",
+          "answer": "2.456",
+          "distractors": ["2.546", "2.045", "2.54"]
+        }
+      ]
+    },
+    {
+      "id": "pints-and-pounds-swap",
+      "title": "Inches And Pints",
+      "station": "compare",
+      "prop": "beaker",
+      "skillName": "Metric conversions and imperial approximations",
+      "strand": "measurement",
+      "statutoryRequirement": "Pupils should be taught to convert between different units of metric measure (for example, kilometre and metre; centimetre and metre; centimetre and millimetre; gram and kilogram; litre and millilitre); understand and use approximate equivalences between metric units and common imperial units such as inches, pounds and pints",
+      "instruction": "Convert the measure, then tap the right answer.",
+      "hint": "Not quite. Think how many small units make one big unit, then try again.",
+      "questions": [
+        {
+          "ask": "How many metres are in 2.5 km?",
+          "answer": "2,500 m",
+          "distractors": ["250 m", "25,000 m", "2,050 m"]
+        },
+        {
+          "ask": "How many centimetres are in 3.2 m?",
+          "answer": "320 cm",
+          "distractors": ["32 cm", "3,200 cm", "302 cm"]
+        },
+        {
+          "ask": "What is 45 mm in centimetres?",
+          "answer": "4.5 cm",
+          "distractors": ["45 cm", "450 cm", "0.45 cm"]
+        },
+        {
+          "ask": "What is 1,750 g in kilograms?",
+          "answer": "1.75 kg",
+          "distractors": ["17.5 kg", "175 kg", "0.175 kg"]
+        },
+        {
+          "ask": "How many millilitres are in 0.6 litres?",
+          "answer": "600 ml",
+          "distractors": ["60 ml", "6 ml", "6,000 ml"]
+        },
+        {
+          "ask": "1 inch is about how many centimetres?",
+          "answer": "2.5 cm",
+          "distractors": ["25 cm", "1 cm", "10 cm"]
+        },
+        {
+          "ask": "About how many centimetres is 4 inches?",
+          "answer": "10 cm",
+          "distractors": ["4 cm", "40 cm", "6.5 cm"]
+        },
+        {
+          "ask": "1 kg is about how many pounds?",
+          "answer": "2.2 pounds",
+          "distractors": ["1 pound", "22 pounds", "0.5 pounds"]
+        },
+        {
+          "ask": "About how many pounds is 10 kg?",
+          "answer": "22 pounds",
+          "distractors": ["10 pounds", "4.5 pounds", "100 pounds"]
+        },
+        {
+          "ask": "About how many millilitres are in 1 pint?",
+          "answer": "570 ml",
+          "distractors": ["100 ml", "1,000 ml", "57 ml"]
+        },
+        {
+          "ask": "Which amount is closest to 2 pints?",
+          "answer": "1 litre",
+          "distractors": ["2 litres", "500 ml", "5 litres"]
+        }
+      ]
+    },
+    {
+      "id": "reflex-angle-arena",
+      "title": "Angle Arena",
+      "station": "compare",
+      "prop": "prism",
+      "skillName": "Acute, obtuse and reflex angles; angles at a point and on a line",
+      "strand": "properties-of-shapes",
+      "statutoryRequirement": "Pupils should be taught to know angles are measured in degrees: estimate and compare acute, obtuse and reflex angles; identify: angles at a point and one whole turn (total 360°); angles at a point on a straight line and half a turn (total 180°); other multiples of 90°",
+      "instruction": "Think about the angle, then tap the right answer.",
+      "hint": "Not quite. Remember a straight line makes 180° and a whole turn makes 360°.",
+      "questions": [
+        {
+          "ask": "What type of angle is 250°?",
+          "answer": "Reflex",
+          "distractors": ["Obtuse", "Acute", "Right angle"]
+        },
+        {
+          "ask": "What type of angle is 100°?",
+          "answer": "Obtuse",
+          "distractors": ["Reflex", "Acute", "Right angle"]
+        },
+        {
+          "ask": "What type of angle is 45°?",
+          "answer": "Acute",
+          "distractors": ["Obtuse", "Reflex", "Right angle"]
+        },
+        {
+          "ask": "What type of angle is 190°?",
+          "answer": "Reflex",
+          "distractors": ["Obtuse", "Straight line", "Acute"]
+        },
+        {
+          "ask": "How many degrees are in a whole turn?",
+          "answer": "360°",
+          "distractors": ["180°", "90°", "270°"]
+        },
+        {
+          "ask": "How many degrees are in a three-quarter turn?",
+          "answer": "270°",
+          "distractors": ["90°", "180°", "300°"]
+        },
+        {
+          "ask": "Two angles sit on a straight line. One is 65°. What is the other?",
+          "answer": "115°",
+          "distractors": ["295°", "25°", "125°"]
+        },
+        {
+          "ask": "Three angles on a straight line are 40°, 75° and ?",
+          "answer": "65°",
+          "distractors": ["245°", "115°", "85°"]
+        },
+        {
+          "ask": "Angles at a point are 100°, 140° and ?",
+          "answer": "120°",
+          "distractors": ["60°", "140°", "220°"]
+        },
+        {
+          "ask": "Two angles meet at a point. One is 290°. What is the other?",
+          "answer": "70°",
+          "distractors": ["110°", "80°", "170°"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "id": "computing.selection-physical-computing",
+  "name": "Using selection to control a device",
+  "subject": "computing",
+  "yearGroup": 5,
+  "strand": "programming",
+  "prerequisites": ["computing.repetition-in-shapes"]
+}

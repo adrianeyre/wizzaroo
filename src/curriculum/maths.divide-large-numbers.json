@@ -1,0 +1,8 @@
+{
+  "id": "maths.divide-large-numbers",
+  "name": "Short and long division",
+  "subject": "maths",
+  "yearGroup": 6,
+  "strand": "multiplication-and-division",
+  "prerequisites": ["maths.times-tables-to-12"]
+}

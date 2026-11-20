@@ -1,0 +1,702 @@
+[
+  {
+    "word": "accommodate",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The new hotel can accommodate fifty guests."
+  },
+  {
+    "word": "accompany",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Will you accompany me to the shops?"
+  },
+  {
+    "word": "according",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "We built the model according to the instructions."
+  },
+  {
+    "word": "achieve",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "If you keep practising, you will achieve your goal."
+  },
+  {
+    "word": "aggressive",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The swan became aggressive when we went near its nest."
+  },
+  {
+    "word": "amateur",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "My uncle is a keen amateur photographer."
+  },
+  {
+    "word": "ancient",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "We explored an ancient castle on the hill."
+  },
+  {
+    "word": "apparent",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "It soon became apparent that we were lost."
+  },
+  {
+    "word": "appreciate",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "We really appreciate all of your help."
+  },
+  {
+    "word": "attached",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "A label was attached to the parcel."
+  },
+  {
+    "word": "available",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Tickets for the school play are available from the office."
+  },
+  {
+    "word": "average",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The average height of the class was measured."
+  },
+  {
+    "word": "awkward",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "There was an awkward silence after the joke."
+  },
+  {
+    "word": "bargain",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The winter coat was a real bargain in the sale."
+  },
+  {
+    "word": "bruise",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "She had a purple bruise on her knee after the fall."
+  },
+  {
+    "word": "category",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Which category of animal does a whale belong to?"
+  },
+  {
+    "word": "cemetery",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The old church has a quiet cemetery behind it."
+  },
+  {
+    "word": "committee",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The school committee planned the summer fair."
+  },
+  {
+    "word": "communicate",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Dolphins communicate using clicks and whistles."
+  },
+  {
+    "word": "community",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The whole community helped to clean the beach."
+  },
+  {
+    "word": "competition",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Our class won the poetry competition."
+  },
+  {
+    "word": "conscience",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "His conscience told him to hand in the wallet he had found."
+  },
+  {
+    "word": "conscious",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Be conscious of other people when you ride your bike on the path."
+  },
+  {
+    "word": "controversy",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The plan for a new road caused a lot of controversy in the village."
+  },
+  {
+    "word": "convenience",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The shop stays open late for the convenience of its customers."
+  },
+  {
+    "word": "correspond",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "I correspond with a pen pal who lives in France."
+  },
+  {
+    "word": "criticise",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "It is easy to criticise but harder to help."
+  },
+  {
+    "word": "curiosity",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The kitten's curiosity led it into the cupboard."
+  },
+  {
+    "word": "definite",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "We need a definite answer by Friday."
+  },
+  {
+    "word": "desperate",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The thirsty explorers were desperate for water."
+  },
+  {
+    "word": "determined",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Ravi was determined to finish the race."
+  },
+  {
+    "word": "develop",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Tadpoles slowly develop into frogs."
+  },
+  {
+    "word": "dictionary",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "You can look up the meaning in a dictionary."
+  },
+  {
+    "word": "disastrous",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The flood had disastrous effects on the farm."
+  },
+  {
+    "word": "embarrass",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Please don't embarrass me in front of my friends."
+  },
+  {
+    "word": "environment",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "We should all help to protect the environment."
+  },
+  {
+    "word": "equipment",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The PE equipment is kept in the shed."
+  },
+  {
+    "word": "especially",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "I love fruit, especially strawberries."
+  },
+  {
+    "word": "exaggerate",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Don't exaggerate, because the fish wasn't that big!"
+  },
+  {
+    "word": "excellent",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "You did an excellent job on your project."
+  },
+  {
+    "word": "existence",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "For years, people doubted the existence of the giant squid."
+  },
+  {
+    "word": "explanation",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Our teacher gave a clear explanation of the rules."
+  },
+  {
+    "word": "familiar",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The tune sounded familiar to me."
+  },
+  {
+    "word": "foreign",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Learning a foreign language can be great fun."
+  },
+  {
+    "word": "forty",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "There are forty children in the school choir."
+  },
+  {
+    "word": "frequently",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Buses run frequently from the station."
+  },
+  {
+    "word": "government",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The government has announced a new law."
+  },
+  {
+    "word": "guarantee",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "I can't guarantee that it will be sunny tomorrow."
+  },
+  {
+    "word": "harass",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Visitors must not harass the animals at the farm."
+  },
+  {
+    "word": "hindrance",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The heavy bag was a hindrance on the long walk."
+  },
+  {
+    "word": "identity",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The superhero kept her real identity a secret."
+  },
+  {
+    "word": "immediately",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Come inside immediately, because it's starting to pour!"
+  },
+  {
+    "word": "individual",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Each individual runner will receive a medal."
+  },
+  {
+    "word": "interfere",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Please don't interfere with the science experiment."
+  },
+  {
+    "word": "interrupt",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "It is rude to interrupt when someone is speaking."
+  },
+  {
+    "word": "language",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Sign language uses the hands to make words."
+  },
+  {
+    "word": "leisure",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The town has opened a new leisure centre."
+  },
+  {
+    "word": "lightning",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "A flash of lightning lit up the sky."
+  },
+  {
+    "word": "marvellous",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "We had a marvellous time at the seaside."
+  },
+  {
+    "word": "mischievous",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The mischievous puppy chewed my slipper."
+  },
+  {
+    "word": "muscle",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Your heart is a muscle that never stops working."
+  },
+  {
+    "word": "necessary",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Is it necessary to bring a packed lunch?"
+  },
+  {
+    "word": "neighbour",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Our neighbour feeds the cat when we are away."
+  },
+  {
+    "word": "nuisance",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The wasps were a nuisance at the picnic."
+  },
+  {
+    "word": "occupy",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "A book of puzzles will occupy you on the journey."
+  },
+  {
+    "word": "occur",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Earthquakes occur when parts of the Earth's crust move."
+  },
+  {
+    "word": "opportunity",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The trip is a wonderful opportunity to learn."
+  },
+  {
+    "word": "parliament",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Each country's parliament makes new laws."
+  },
+  {
+    "word": "persuade",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Can you persuade Dad to let us stay up late?"
+  },
+  {
+    "word": "physical",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Swimming is good physical exercise."
+  },
+  {
+    "word": "prejudice",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "We should treat everyone fairly and without prejudice."
+  },
+  {
+    "word": "privilege",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "It was a privilege to meet the famous author."
+  },
+  {
+    "word": "profession",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Nursing is a caring profession."
+  },
+  {
+    "word": "programme",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "My favourite television programme starts at six o'clock."
+  },
+  {
+    "word": "pronunciation",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The pronunciation of some place names is tricky."
+  },
+  {
+    "word": "queue",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "We waited in a long queue for the roller coaster."
+  },
+  {
+    "word": "recognise",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Did you recognise your old teacher at the party?"
+  },
+  {
+    "word": "recommend",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "I would recommend the chocolate cake."
+  },
+  {
+    "word": "relevant",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Only include facts that are relevant to the question."
+  },
+  {
+    "word": "restaurant",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "We had pizza at an Italian restaurant."
+  },
+  {
+    "word": "rhyme",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Can you think of a word that will rhyme with moon?"
+  },
+  {
+    "word": "rhythm",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Clap along to the rhythm of the music."
+  },
+  {
+    "word": "sacrifice",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The team made a sacrifice by training every weekend."
+  },
+  {
+    "word": "secretary",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The school secretary answered the phone."
+  },
+  {
+    "word": "shoulder",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The parrot sat on the pirate's shoulder."
+  },
+  {
+    "word": "signature",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Please write your signature at the bottom of the form."
+  },
+  {
+    "word": "sincerely",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "I sincerely hope you feel better soon."
+  },
+  {
+    "word": "soldier",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "A soldier stood on guard at the palace gate."
+  },
+  {
+    "word": "stomach",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "My stomach rumbled loudly before lunch."
+  },
+  {
+    "word": "sufficient",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "There was sufficient food for everyone at the party."
+  },
+  {
+    "word": "suggest",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "I suggest that we leave early to avoid the traffic."
+  },
+  {
+    "word": "symbol",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "A dove is often used as a symbol of peace."
+  },
+  {
+    "word": "system",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Our school has a new recycling system."
+  },
+  {
+    "word": "temperature",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The nurse took my temperature."
+  },
+  {
+    "word": "thorough",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The kitchen floor needs a thorough clean."
+  },
+  {
+    "word": "twelfth",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "Today is my sister's twelfth birthday."
+  },
+  {
+    "word": "variety",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "The market sells a variety of cheeses."
+  },
+  {
+    "word": "vegetable",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "A carrot is my favourite vegetable."
+  },
+  {
+    "word": "vehicle",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "A tractor is a useful vehicle on a farm."
+  },
+  {
+    "word": "yacht",
+    "skillId": "english.word-list-upper-key-stage-2",
+    "sentence": "A white yacht sailed into the harbour."
+  },
+  {
+    "word": "vicious",
+    "skillId": "english.suffixes-able-ible-cious-cial",
+    "sentence": "A vicious storm blew down the garden fence."
+  },
+  {
+    "word": "delicious",
+    "skillId": "english.suffixes-able-ible-cious-cial",
+    "sentence": "The soup Grandma made was delicious."
+  },
+  {
+    "word": "ambitious",
+    "skillId": "english.suffixes-able-ible-cious-cial",
+    "sentence": "She has an ambitious plan to climb the highest mountain in Wales."
+  },
+  {
+    "word": "cautious",
+    "skillId": "english.suffixes-able-ible-cious-cial",
+    "sentence": "Be cautious when you cross the busy road."
+  },
+  {
+    "word": "official",
+    "skillId": "english.suffixes-able-ible-cious-cial",
+    "sentence": "The official result will be announced tomorrow."
+  },
+  {
+    "word": "essential",
+    "skillId": "english.suffixes-able-ible-cious-cial",
+    "sentence": "Water is essential for all living things."
+  },
+  {
+    "word": "adorable",
+    "skillId": "english.suffixes-able-ible-cious-cial",
+    "sentence": "The baby panda at the zoo was adorable."
+  },
+  {
+    "word": "sensible",
+    "skillId": "english.suffixes-able-ible-cious-cial",
+    "sentence": "Wearing a helmet is the sensible thing to do."
+  },
+  {
+    "word": "reliable",
+    "skillId": "english.suffixes-able-ible-cious-cial",
+    "sentence": "Our old car is slow but very reliable."
+  },
+  {
+    "word": "possible",
+    "skillId": "english.suffixes-able-ible-cious-cial",
+    "sentence": "Is it possible to see the sea from here?"
+  },
+  {
+    "word": "observant",
+    "skillId": "english.suffixes-fer-ant-ance-ent-ence",
+    "sentence": "An observant pupil spotted the mistake on the board."
+  },
+  {
+    "word": "hesitant",
+    "skillId": "english.suffixes-fer-ant-ance-ent-ence",
+    "sentence": "He was hesitant to dive into the cold water."
+  },
+  {
+    "word": "innocent",
+    "skillId": "english.suffixes-fer-ant-ance-ent-ence",
+    "sentence": "The judge decided that the man was innocent."
+  },
+  {
+    "word": "confident",
+    "skillId": "english.suffixes-fer-ant-ance-ent-ence",
+    "sentence": "I feel confident about my times tables."
+  },
+  {
+    "word": "referring",
+    "skillId": "english.suffixes-fer-ant-ance-ent-ence",
+    "sentence": "Which book are you referring to?"
+  },
+  {
+    "word": "preferred",
+    "skillId": "english.suffixes-fer-ant-ance-ent-ence",
+    "sentence": "She preferred the blue dress to the red one."
+  },
+  {
+    "word": "transferred",
+    "skillId": "english.suffixes-fer-ant-ance-ent-ence",
+    "sentence": "The footballer transferred to a new club."
+  },
+  {
+    "word": "reference",
+    "skillId": "english.suffixes-fer-ant-ance-ent-ence",
+    "sentence": "Keep the atlas on your desk for reference."
+  },
+  {
+    "word": "obedience",
+    "skillId": "english.suffixes-fer-ant-ance-ent-ence",
+    "sentence": "Our dog won a prize for obedience."
+  },
+  {
+    "word": "tolerance",
+    "skillId": "english.suffixes-fer-ant-ance-ent-ence",
+    "sentence": "Kindness and tolerance help everyone to get along."
+  },
+  {
+    "word": "advice",
+    "skillId": "english.homophones-advice-to-guessed",
+    "sentence": "My grandad gave me some good advice."
+  },
+  {
+    "word": "advise",
+    "skillId": "english.homophones-advice-to-guessed",
+    "sentence": "The doctor will advise you on what to do."
+  },
+  {
+    "word": "aloud",
+    "skillId": "english.homophones-advice-to-guessed",
+    "sentence": "Please read the poem aloud to the class."
+  },
+  {
+    "word": "allowed",
+    "skillId": "english.homophones-advice-to-guessed",
+    "sentence": "Dogs are not allowed in the café."
+  },
+  {
+    "word": "affect",
+    "skillId": "english.homophones-advice-to-guessed",
+    "sentence": "The rain did not affect our plans."
+  },
+  {
+    "word": "effect",
+    "skillId": "english.homophones-advice-to-guessed",
+    "sentence": "The medicine had a good effect on my cough."
+  },
+  {
+    "word": "dessert",
+    "skillId": "english.homophones-advice-to-guessed",
+    "sentence": "For dessert we had apple pie and custard."
+  },
+  {
+    "word": "desert",
+    "skillId": "english.homophones-advice-to-guessed",
+    "sentence": "Camels can cross the hot, dry desert."
+  },
+  {
+    "word": "cereal",
+    "skillId": "english.homophones-advice-to-guessed",
+    "sentence": "I eat a bowl of cereal for breakfast."
+  },
+  {
+    "word": "guessed",
+    "skillId": "english.homophones-advice-to-guessed",
+    "sentence": "Nobody guessed the answer to the riddle."
+  },
+  {
+    "word": "stationery",
+    "skillId": "english.homophones-heard-to-wary",
+    "sentence": "Pens and paper are kept in the stationery cupboard."
+  },
+  {
+    "word": "stationary",
+    "skillId": "english.homophones-heard-to-wary",
+    "sentence": "The car was stationary at the red light."
+  },
+  {
+    "word": "principal",
+    "skillId": "english.homophones-heard-to-wary",
+    "sentence": "The principal reason for the trip is to learn about rivers."
+  },
+  {
+    "word": "mourning",
+    "skillId": "english.homophones-heard-to-wary",
+    "sentence": "The whole village was in mourning for the old fisherman."
+  },
+  {
+    "word": "passed",
+    "skillId": "english.homophones-heard-to-wary",
+    "sentence": "We passed the bakery on the way to school."
+  },
+  {
+    "word": "past",
+    "skillId": "english.homophones-heard-to-wary",
+    "sentence": "Walk past the church and turn left."
+  },
+  {
+    "word": "proceed",
+    "skillId": "english.homophones-heard-to-wary",
+    "sentence": "Please proceed calmly to the nearest exit."
+  },
+  {
+    "word": "weary",
+    "skillId": "english.homophones-heard-to-wary",
+    "sentence": "The weary travellers rested by the fire."
+  },
+  {
+    "word": "steel",
+    "skillId": "english.homophones-heard-to-wary",
+    "sentence": "The bridge is built from steel and concrete."
+  },
+  {
+    "word": "herd",
+    "skillId": "english.homophones-heard-to-wary",
+    "sentence": "A herd of cows blocked the lane."
+  }
+]

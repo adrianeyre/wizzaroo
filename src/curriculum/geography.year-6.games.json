@@ -1,0 +1,1619 @@
+{
+  "yearGroup": 6,
+  "games": [
+    {
+      "skillId": "geography.time-zones",
+      "title": "Time Zone Trekker",
+      "skillName": "Time zones, day and night",
+      "strand": "locational-knowledge",
+      "scene": "globe-spinner",
+      "instruction": "Watch where the Sun lights the globe, then work out the time around the world.",
+      "questions": [
+        {
+          "ask": "It is noon GMT. Tokyo is 9 hours ahead. What time is it there?",
+          "show": {
+            "pin": {
+              "latitude": 35.68,
+              "longitude": 139.69
+            },
+            "sunLongitude": 0
+          },
+          "answer": "9 pm",
+          "wrongAnswers": ["3 am", "9 am", "3 pm"]
+        },
+        {
+          "ask": "It is noon GMT. Honolulu is 10 hours behind. What time is it there?",
+          "show": {
+            "pin": {
+              "latitude": 21.31,
+              "longitude": -157.86
+            },
+            "sunLongitude": 0
+          },
+          "answer": "2 am",
+          "wrongAnswers": ["10 pm", "10 am", "2 pm"]
+        },
+        {
+          "ask": "It is noon in London in January. Dubai is GMT+4. What time is it there?",
+          "show": {
+            "pin": {
+              "latitude": 25.2,
+              "longitude": 55.27
+            },
+            "sunLongitude": 0
+          },
+          "answer": "4 pm",
+          "wrongAnswers": ["8 am", "4 am", "2 pm"]
+        },
+        {
+          "ask": "It is 9 am in London in January. Bangkok is 7 hours ahead. Time there?",
+          "show": {
+            "pin": {
+              "latitude": 13.76,
+              "longitude": 100.5
+            },
+            "sunLongitude": 45
+          },
+          "answer": "4 pm",
+          "wrongAnswers": ["2 am", "4 am", "2 pm"]
+        },
+        {
+          "ask": "The Sun is right over this line. What time is it at Greenwich?",
+          "show": {
+            "highlight": "prime-meridian",
+            "sunLongitude": 0
+          },
+          "answer": "12 noon",
+          "wrongAnswers": ["Midnight", "6 am", "6 pm"]
+        },
+        {
+          "ask": "The Sun is over the far side of the Earth. What time is it at Greenwich?",
+          "show": {
+            "highlight": "prime-meridian",
+            "sunLongitude": 180
+          },
+          "answer": "Midnight",
+          "wrongAnswers": ["12 noon", "6 am", "6 pm"]
+        },
+        {
+          "ask": "How many degrees of longitude does the Earth turn each hour?",
+          "show": {
+            "highlight": "equator",
+            "sunLongitude": 0
+          },
+          "answer": "15°",
+          "wrongAnswers": ["1°", "24°", "60°"]
+        },
+        {
+          "ask": "It is noon GMT in January. New York is GMT−5. What time is it there?",
+          "show": {
+            "pin": {
+              "latitude": 40.71,
+              "longitude": -74.01
+            },
+            "sunLongitude": 0
+          },
+          "answer": "7 am",
+          "wrongAnswers": ["5 pm", "5 am", "7 pm"]
+        },
+        {
+          "ask": "It is noon GMT. Beijing is 8 hours ahead. What time is it there?",
+          "show": {
+            "pin": {
+              "latitude": 39.9,
+              "longitude": 116.41
+            },
+            "sunLongitude": 0
+          },
+          "answer": "8 pm",
+          "wrongAnswers": ["4 am", "8 am", "4 pm"]
+        },
+        {
+          "ask": "Reykjavik uses GMT all year. In January, London says 15:00. What does Reykjavik say?",
+          "show": {
+            "pin": {
+              "latitude": 64.15,
+              "longitude": -21.94
+            },
+            "sunLongitude": -45
+          },
+          "answer": "3 pm",
+          "wrongAnswers": ["2 pm", "4 pm", "3 am"]
+        },
+        {
+          "ask": "It is noon GMT. Lagos is 1 hour ahead. What time is it there?",
+          "show": {
+            "pin": {
+              "latitude": 6.52,
+              "longitude": 3.38
+            },
+            "sunLongitude": 0
+          },
+          "answer": "1 pm",
+          "wrongAnswers": ["11 am", "1 am", "12 noon"]
+        },
+        {
+          "ask": "It is 6 pm GMT. Nairobi is 3 hours ahead. What time is it there?",
+          "show": {
+            "pin": {
+              "latitude": -1.29,
+              "longitude": 36.82
+            },
+            "sunLongitude": -90
+          },
+          "answer": "9 pm",
+          "wrongAnswers": ["3 pm", "9 am", "3 am"]
+        },
+        {
+          "ask": "Why is it night over this ocean right now?",
+          "show": {
+            "highlight": "pacific-ocean",
+            "sunLongitude": 0
+          },
+          "answer": "Facing away from the Sun",
+          "wrongAnswers": [
+            "Covered by thick cloud",
+            "The Moon blocks the Sun",
+            "It is winter there"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.world-capital-cities",
+      "title": "Capital Quest",
+      "skillName": "Capital cities of the world",
+      "strand": "locational-knowledge",
+      "scene": "globe-spinner",
+      "instruction": "Spin to the red pin and name the capital city it marks.",
+      "questions": [
+        {
+          "ask": "The pin marks the capital of Australia. Which city is it?",
+          "show": {
+            "pin": {
+              "latitude": -35.28,
+              "longitude": 149.13
+            }
+          },
+          "answer": "Canberra",
+          "wrongAnswers": ["Sydney", "Melbourne", "Perth"]
+        },
+        {
+          "ask": "The pin marks the capital of Canada. Which city is it?",
+          "show": {
+            "pin": {
+              "latitude": 45.42,
+              "longitude": -75.7
+            }
+          },
+          "answer": "Ottawa",
+          "wrongAnswers": ["Toronto", "Vancouver", "Montreal"]
+        },
+        {
+          "ask": "The pin marks the capital of Brazil. Which city is it?",
+          "show": {
+            "pin": {
+              "latitude": -15.79,
+              "longitude": -47.88
+            }
+          },
+          "answer": "Brasília",
+          "wrongAnswers": ["Rio de Janeiro", "São Paulo", "Salvador"]
+        },
+        {
+          "ask": "The pin marks the capital of Egypt. Which city is it?",
+          "show": {
+            "pin": {
+              "latitude": 30.04,
+              "longitude": 31.24
+            }
+          },
+          "answer": "Cairo",
+          "wrongAnswers": ["Alexandria", "Luxor", "Aswan"]
+        },
+        {
+          "ask": "The pin marks the capital of Kenya. Which city is it?",
+          "show": {
+            "pin": {
+              "latitude": -1.29,
+              "longitude": 36.82
+            }
+          },
+          "answer": "Nairobi",
+          "wrongAnswers": ["Mombasa", "Kisumu", "Nakuru"]
+        },
+        {
+          "ask": "The pin marks the capital of Japan. Which city is it?",
+          "show": {
+            "pin": {
+              "latitude": 35.68,
+              "longitude": 139.69
+            }
+          },
+          "answer": "Tokyo",
+          "wrongAnswers": ["Osaka", "Kyoto", "Hiroshima"]
+        },
+        {
+          "ask": "The pin marks the capital of India. Which city is it?",
+          "show": {
+            "pin": {
+              "latitude": 28.61,
+              "longitude": 77.21
+            }
+          },
+          "answer": "New Delhi",
+          "wrongAnswers": ["Mumbai", "Kolkata", "Chennai"]
+        },
+        {
+          "ask": "The pin marks the capital of Argentina. Which city is it?",
+          "show": {
+            "pin": {
+              "latitude": -34.6,
+              "longitude": -58.38
+            }
+          },
+          "answer": "Buenos Aires",
+          "wrongAnswers": ["Córdoba", "Rosario", "Mendoza"]
+        },
+        {
+          "ask": "The pin marks the capital of the USA. Which city is it?",
+          "show": {
+            "pin": {
+              "latitude": 38.9,
+              "longitude": -77.04
+            }
+          },
+          "answer": "Washington, D.C.",
+          "wrongAnswers": ["New York", "Los Angeles", "Chicago"]
+        },
+        {
+          "ask": "The pin marks the capital of China. Which city is it?",
+          "show": {
+            "pin": {
+              "latitude": 39.9,
+              "longitude": 116.41
+            }
+          },
+          "answer": "Beijing",
+          "wrongAnswers": ["Shanghai", "Hong Kong", "Guangzhou"]
+        },
+        {
+          "ask": "The pin marks the capital of Nigeria. Which city is it?",
+          "show": {
+            "pin": {
+              "latitude": 9.06,
+              "longitude": 7.49
+            }
+          },
+          "answer": "Abuja",
+          "wrongAnswers": ["Lagos", "Kano", "Ibadan"]
+        },
+        {
+          "ask": "The pin marks the capital of Russia. Which city is it?",
+          "show": {
+            "pin": {
+              "latitude": 55.76,
+              "longitude": 37.62
+            }
+          },
+          "answer": "Moscow",
+          "wrongAnswers": ["St Petersburg", "Novosibirsk", "Volgograd"]
+        },
+        {
+          "ask": "The pin marks a capital city. Which country is it the capital of?",
+          "show": {
+            "pin": {
+              "latitude": 48.857,
+              "longitude": 2.352
+            }
+          },
+          "answer": "France",
+          "wrongAnswers": ["Spain", "Italy", "Germany"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.energy-resources",
+      "title": "Power Up!",
+      "skillName": "Renewable and non-renewable energy",
+      "strand": "human-and-physical-geography",
+      "scene": "resource-dock",
+      "instruction": "Check each energy crate and sort out where our power comes from.",
+      "questions": [
+        {
+          "ask": "Which energy source is in this crate?",
+          "show": {
+            "resource": "coal"
+          },
+          "answer": "Coal",
+          "wrongAnswers": ["Oil", "Uranium", "Natural gas"]
+        },
+        {
+          "ask": "What kind of energy source is this?",
+          "show": {
+            "resource": "coal"
+          },
+          "answer": "Fossil fuel",
+          "wrongAnswers": ["Renewable energy", "Nuclear fuel", "Metal ore"]
+        },
+        {
+          "ask": "What kind of energy source is this?",
+          "show": {
+            "resource": "oil"
+          },
+          "answer": "Fossil fuel",
+          "wrongAnswers": ["Renewable energy", "Nuclear fuel", "Metal ore"]
+        },
+        {
+          "ask": "Which energy source is in this crate?",
+          "show": {
+            "resource": "natural-gas"
+          },
+          "answer": "Natural gas",
+          "wrongAnswers": ["Coal", "Uranium", "Wind"]
+        },
+        {
+          "ask": "What kind of energy source is this?",
+          "show": {
+            "resource": "uranium"
+          },
+          "answer": "Nuclear fuel",
+          "wrongAnswers": ["Fossil fuel", "Renewable energy", "Metal ore"]
+        },
+        {
+          "ask": "What kind of energy source is this?",
+          "show": {
+            "resource": "wind"
+          },
+          "answer": "Renewable energy",
+          "wrongAnswers": ["Fossil fuel", "Nuclear fuel", "Metal ore"]
+        },
+        {
+          "ask": "What turns this energy into electricity?",
+          "show": {
+            "resource": "solar"
+          },
+          "answer": "Solar panels",
+          "wrongAnswers": ["Wind turbines", "Hydro dams", "Oil rigs"]
+        },
+        {
+          "ask": "What turns this energy into electricity?",
+          "show": {
+            "resource": "wind"
+          },
+          "answer": "Wind turbines",
+          "wrongAnswers": ["Solar panels", "Hydro dams", "Oil rigs"]
+        },
+        {
+          "ask": "Where does this energy come from?",
+          "show": {
+            "resource": "hydro"
+          },
+          "answer": "Flowing water",
+          "wrongAnswers": [
+            "Burning coal",
+            "Hot rocks underground",
+            "Splitting atoms"
+          ]
+        },
+        {
+          "ask": "Where does this energy come from?",
+          "show": {
+            "resource": "geothermal"
+          },
+          "answer": "Heat from inside Earth",
+          "wrongAnswers": ["Flowing water", "Burning oil", "Sunlight"]
+        },
+        {
+          "ask": "Which country gets lots of its power and heat from this?",
+          "show": {
+            "resource": "geothermal"
+          },
+          "answer": "Iceland",
+          "wrongAnswers": ["Netherlands", "Egypt", "Bangladesh"]
+        },
+        {
+          "ask": "How did this fuel form over millions of years?",
+          "show": {
+            "resource": "oil"
+          },
+          "answer": "From ancient sea life",
+          "wrongAnswers": [
+            "From volcanic lava",
+            "From melted ice",
+            "From sea salt"
+          ]
+        },
+        {
+          "ask": "Burning this releases which gas that warms the climate?",
+          "show": {
+            "resource": "coal"
+          },
+          "answer": "Carbon dioxide",
+          "wrongAnswers": ["Oxygen", "Helium", "Nitrogen"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.urban-zones",
+      "title": "City Zone Planner",
+      "skillName": "Zones of a city",
+      "strand": "human-and-physical-geography",
+      "scene": "settlement-board",
+      "instruction": "Look at the glowing part of the city model and tap the right answer.",
+      "questions": [
+        {
+          "ask": "Which zone of the city is glowing?",
+          "show": {
+            "tile": "central-business-district"
+          },
+          "answer": "City centre (CBD)",
+          "wrongAnswers": ["Inner city", "Suburbs", "Rural-urban fringe"]
+        },
+        {
+          "ask": "Which zone of the city is glowing?",
+          "show": {
+            "tile": "inner-city"
+          },
+          "answer": "Inner city",
+          "wrongAnswers": ["City centre (CBD)", "Suburbs", "Rural-urban fringe"]
+        },
+        {
+          "ask": "Which zone of the city is glowing?",
+          "show": {
+            "tile": "suburbs"
+          },
+          "answer": "Suburbs",
+          "wrongAnswers": [
+            "City centre (CBD)",
+            "Inner city",
+            "Rural-urban fringe"
+          ]
+        },
+        {
+          "ask": "Which zone of the city is glowing?",
+          "show": {
+            "tile": "rural-urban-fringe"
+          },
+          "answer": "Rural-urban fringe",
+          "wrongAnswers": ["City centre (CBD)", "Inner city", "Suburbs"]
+        },
+        {
+          "ask": "Which zone is where the city meets the countryside?",
+          "show": {
+            "tile": "rural-urban-fringe"
+          },
+          "answer": "Rural-urban fringe",
+          "wrongAnswers": ["City centre (CBD)", "Inner city", "Suburbs"]
+        },
+        {
+          "ask": "What would you mostly find in this zone?",
+          "show": {
+            "tile": "central-business-district"
+          },
+          "answer": "Offices and big shops",
+          "wrongAnswers": [
+            "Farms and fields",
+            "Leafy cul-de-sacs",
+            "Golf courses"
+          ]
+        },
+        {
+          "ask": "Why are the buildings in this zone so tall?",
+          "show": {
+            "tile": "central-business-district"
+          },
+          "answer": "Land is very expensive",
+          "wrongAnswers": [
+            "Land is very cheap",
+            "It rarely rains here",
+            "Planes need them"
+          ]
+        },
+        {
+          "ask": "What kind of houses are typical in this zone?",
+          "show": {
+            "tile": "inner-city"
+          },
+          "answer": "Terraced houses",
+          "wrongAnswers": ["Detached houses", "Farmhouses", "Country cottages"]
+        },
+        {
+          "ask": "Homes in this zone were first built for people working in…?",
+          "show": {
+            "tile": "inner-city"
+          },
+          "answer": "Factories",
+          "wrongAnswers": ["Castles", "Airports", "Shopping malls"]
+        },
+        {
+          "ask": "What kind of houses are typical in this zone?",
+          "show": {
+            "tile": "suburbs"
+          },
+          "answer": "Semi-detached houses",
+          "wrongAnswers": [
+            "Back-to-back terraces",
+            "Isolated farmhouses",
+            "Tents and huts"
+          ]
+        },
+        {
+          "ask": "How do many people travel from this zone to work in the centre?",
+          "show": {
+            "tile": "suburbs"
+          },
+          "answer": "By car, bus or train",
+          "wrongAnswers": ["By ski lift", "By camel", "By rowing boat"]
+        },
+        {
+          "ask": "What might be built in this zone?",
+          "show": {
+            "tile": "rural-urban-fringe"
+          },
+          "answer": "Out-of-town retail park",
+          "wrongAnswers": [
+            "Skyscraper offices",
+            "Old terraced streets",
+            "Town hall"
+          ]
+        },
+        {
+          "ask": "Why might people object to building in this zone?",
+          "show": {
+            "tile": "rural-urban-fringe"
+          },
+          "answer": "It loses green fields",
+          "wrongAnswers": [
+            "Too many skyscrapers",
+            "It blocks the sea view",
+            "It floods the CBD"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.population-data",
+      "title": "Population Towers",
+      "skillName": "Comparing population data",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "data-towers",
+      "instruction": "Read the population towers against the scale and compare the numbers.",
+      "questions": [
+        {
+          "ask": "Which nation has the most people?",
+          "show": {
+            "title": "Population of the UK nations",
+            "unit": "millions",
+            "bars": [
+              {
+                "label": "England",
+                "value": 57
+              },
+              {
+                "label": "Scotland",
+                "value": 5
+              },
+              {
+                "label": "Wales",
+                "value": 3
+              },
+              {
+                "label": "Northern Ireland",
+                "value": 2
+              }
+            ]
+          },
+          "answer": "England",
+          "wrongAnswers": ["Scotland", "Wales", "Northern Ireland"]
+        },
+        {
+          "ask": "Which nation has the fewest people?",
+          "show": {
+            "title": "Population of the UK nations",
+            "unit": "millions",
+            "bars": [
+              {
+                "label": "England",
+                "value": 57
+              },
+              {
+                "label": "Scotland",
+                "value": 5
+              },
+              {
+                "label": "Wales",
+                "value": 3
+              },
+              {
+                "label": "Northern Ireland",
+                "value": 2
+              }
+            ]
+          },
+          "answer": "Northern Ireland",
+          "wrongAnswers": ["England", "Scotland", "Wales"]
+        },
+        {
+          "ask": "How many more people live in Scotland than in Wales?",
+          "show": {
+            "title": "Population of the UK nations",
+            "unit": "millions",
+            "bars": [
+              {
+                "label": "England",
+                "value": 57
+              },
+              {
+                "label": "Scotland",
+                "value": 5
+              },
+              {
+                "label": "Wales",
+                "value": 3
+              },
+              {
+                "label": "Northern Ireland",
+                "value": 2
+              }
+            ]
+          },
+          "answer": "2 million",
+          "wrongAnswers": ["3 million", "1 million", "8 million"]
+        },
+        {
+          "ask": "Add the towers together. About how many people live in the UK?",
+          "show": {
+            "title": "Population of the UK nations",
+            "unit": "millions",
+            "bars": [
+              {
+                "label": "England",
+                "value": 57
+              },
+              {
+                "label": "Scotland",
+                "value": 5
+              },
+              {
+                "label": "Wales",
+                "value": 3
+              },
+              {
+                "label": "Northern Ireland",
+                "value": 2
+              }
+            ]
+          },
+          "answer": "67 million",
+          "wrongAnswers": ["57 million", "76 million", "60 million"]
+        },
+        {
+          "ask": "Which continent has the most people?",
+          "show": {
+            "title": "Population of the continents",
+            "unit": "millions",
+            "bars": [
+              {
+                "label": "Asia",
+                "value": 4750
+              },
+              {
+                "label": "Africa",
+                "value": 1460
+              },
+              {
+                "label": "Europe",
+                "value": 740
+              },
+              {
+                "label": "North America",
+                "value": 600
+              },
+              {
+                "label": "South America",
+                "value": 440
+              },
+              {
+                "label": "Oceania",
+                "value": 45
+              }
+            ]
+          },
+          "answer": "Asia",
+          "wrongAnswers": ["Africa", "Europe", "Oceania"]
+        },
+        {
+          "ask": "Which continent has the fewest people?",
+          "show": {
+            "title": "Population of the continents",
+            "unit": "millions",
+            "bars": [
+              {
+                "label": "Asia",
+                "value": 4750
+              },
+              {
+                "label": "Africa",
+                "value": 1460
+              },
+              {
+                "label": "Europe",
+                "value": 740
+              },
+              {
+                "label": "North America",
+                "value": 600
+              },
+              {
+                "label": "South America",
+                "value": 440
+              },
+              {
+                "label": "Oceania",
+                "value": 45
+              }
+            ]
+          },
+          "answer": "Oceania",
+          "wrongAnswers": ["South America", "Europe", "Asia"]
+        },
+        {
+          "ask": "Which continent has the second-largest population?",
+          "show": {
+            "title": "Population of the continents",
+            "unit": "millions",
+            "bars": [
+              {
+                "label": "Asia",
+                "value": 4750
+              },
+              {
+                "label": "Africa",
+                "value": 1460
+              },
+              {
+                "label": "Europe",
+                "value": 740
+              },
+              {
+                "label": "North America",
+                "value": 600
+              },
+              {
+                "label": "South America",
+                "value": 440
+              },
+              {
+                "label": "Oceania",
+                "value": 45
+              }
+            ]
+          },
+          "answer": "Africa",
+          "wrongAnswers": ["Europe", "North America", "Oceania"]
+        },
+        {
+          "ask": "Which city area has the most people?",
+          "show": {
+            "title": "Population of big city areas",
+            "unit": "millions",
+            "bars": [
+              {
+                "label": "Tokyo",
+                "value": 37
+              },
+              {
+                "label": "Delhi",
+                "value": 33
+              },
+              {
+                "label": "Shanghai",
+                "value": 29
+              },
+              {
+                "label": "London",
+                "value": 9
+              }
+            ]
+          },
+          "answer": "Tokyo",
+          "wrongAnswers": ["Delhi", "Shanghai", "London"]
+        },
+        {
+          "ask": "How many more million people live in the Tokyo area than London's?",
+          "show": {
+            "title": "Population of big city areas",
+            "unit": "millions",
+            "bars": [
+              {
+                "label": "Tokyo",
+                "value": 37
+              },
+              {
+                "label": "Delhi",
+                "value": 33
+              },
+              {
+                "label": "Shanghai",
+                "value": 29
+              },
+              {
+                "label": "London",
+                "value": 9
+              }
+            ]
+          },
+          "answer": "28 million",
+          "wrongAnswers": ["37 million", "46 million", "18 million"]
+        },
+        {
+          "ask": "By how much did the UK population grow from 1951 to 2021?",
+          "show": {
+            "title": "Population of the UK over time",
+            "unit": "millions",
+            "bars": [
+              {
+                "label": "1901",
+                "value": 38
+              },
+              {
+                "label": "1951",
+                "value": 50
+              },
+              {
+                "label": "2001",
+                "value": 59
+              },
+              {
+                "label": "2021",
+                "value": 67
+              }
+            ]
+          },
+          "answer": "17 million",
+          "wrongAnswers": ["29 million", "8 million", "67 million"]
+        },
+        {
+          "ask": "In which year on the chart was the UK population smallest?",
+          "show": {
+            "title": "Population of the UK over time",
+            "unit": "millions",
+            "bars": [
+              {
+                "label": "1901",
+                "value": 38
+              },
+              {
+                "label": "1951",
+                "value": 50
+              },
+              {
+                "label": "2001",
+                "value": 59
+              },
+              {
+                "label": "2021",
+                "value": 67
+              }
+            ]
+          },
+          "answer": "1901",
+          "wrongAnswers": ["1951", "2001", "2021"]
+        },
+        {
+          "ask": "What does this chart show about the UK population?",
+          "show": {
+            "title": "Population of the UK over time",
+            "unit": "millions",
+            "bars": [
+              {
+                "label": "1901",
+                "value": 38
+              },
+              {
+                "label": "1951",
+                "value": 50
+              },
+              {
+                "label": "2001",
+                "value": 59
+              },
+              {
+                "label": "2021",
+                "value": 67
+              }
+            ]
+          },
+          "answer": "It keeps going up",
+          "wrongAnswers": [
+            "It keeps going down",
+            "It stays the same",
+            "It rises, then falls"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.os-map-skills",
+      "title": "OS Map Master",
+      "skillName": "Advanced OS map symbols and contours",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "map-key",
+      "instruction": "Study the Ordnance Survey map tile and work out what the symbol shows.",
+      "questions": [
+        {
+          "ask": "What do these thin brown lines join together?",
+          "show": {
+            "symbol": "contour-lines"
+          },
+          "answer": "Points of equal height",
+          "wrongAnswers": [
+            "Points of equal rainfall",
+            "Footpaths",
+            "Field edges"
+          ]
+        },
+        {
+          "ask": "When these lines are drawn close together, what do they show?",
+          "show": {
+            "symbol": "contour-lines"
+          },
+          "answer": "A steep slope",
+          "wrongAnswers": ["Flat ground", "A lake", "A forest"]
+        },
+        {
+          "ask": "What does the number by this dot tell you?",
+          "show": {
+            "symbol": "spot-height"
+          },
+          "answer": "Height above sea level",
+          "wrongAnswers": [
+            "Distance to town",
+            "Number of houses",
+            "Road number"
+          ]
+        },
+        {
+          "ask": "Which Ordnance Survey map symbol is this?",
+          "show": {
+            "symbol": "trig-point"
+          },
+          "answer": "Trig point",
+          "wrongAnswers": ["Spot height", "Viewpoint", "Campsite"]
+        },
+        {
+          "ask": "What is this pillar on a hilltop used for?",
+          "show": {
+            "symbol": "trig-point"
+          },
+          "answer": "Surveying and mapping",
+          "wrongAnswers": ["Parking cars", "Camping", "Phoning for help"]
+        },
+        {
+          "ask": "Which Ordnance Survey map symbol is this?",
+          "show": {
+            "symbol": "coniferous-wood"
+          },
+          "answer": "Coniferous wood",
+          "wrongAnswers": ["Deciduous wood", "Golf course", "Campsite"]
+        },
+        {
+          "ask": "Which Ordnance Survey map symbol is this?",
+          "show": {
+            "symbol": "deciduous-wood"
+          },
+          "answer": "Deciduous wood",
+          "wrongAnswers": ["Coniferous wood", "Golf course", "Picnic site"]
+        },
+        {
+          "ask": "Which Ordnance Survey map symbol is this?",
+          "show": {
+            "symbol": "motorway"
+          },
+          "answer": "Motorway",
+          "wrongAnswers": ["Railway line", "Footpath", "River"]
+        },
+        {
+          "ask": "Which Ordnance Survey map symbol is this?",
+          "show": {
+            "symbol": "footpath"
+          },
+          "answer": "Footpath",
+          "wrongAnswers": ["Motorway", "Railway line", "Contour line"]
+        },
+        {
+          "ask": "Which Ordnance Survey map symbol is this?",
+          "show": {
+            "symbol": "railway-line"
+          },
+          "answer": "Railway line",
+          "wrongAnswers": ["Motorway", "Footpath", "River"]
+        },
+        {
+          "ask": "Which Ordnance Survey map symbol is this?",
+          "show": {
+            "symbol": "church-with-tower"
+          },
+          "answer": "Church with a tower",
+          "wrongAnswers": ["Church with a spire", "Windmill", "Lighthouse"]
+        },
+        {
+          "ask": "Which Ordnance Survey map symbol is this?",
+          "show": {
+            "symbol": "church-with-spire"
+          },
+          "answer": "Church with a spire",
+          "wrongAnswers": ["Church with a tower", "Windmill", "Lighthouse"]
+        },
+        {
+          "ask": "Which Ordnance Survey map symbol is this?",
+          "show": {
+            "symbol": "golf-course"
+          },
+          "answer": "Golf course",
+          "wrongAnswers": ["Campsite", "Picnic site", "Viewpoint"]
+        },
+        {
+          "ask": "Which Ordnance Survey map symbol is this?",
+          "show": {
+            "symbol": "viewpoint"
+          },
+          "answer": "Viewpoint",
+          "wrongAnswers": ["Campsite", "Information centre", "Trig point"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.river-landforms",
+      "title": "River Deep Dive",
+      "skillName": "River landforms from source to mouth",
+      "strand": "human-and-physical-geography",
+      "scene": "river-valley",
+      "instruction": "Follow the river from source to sea and explain the landform at the marker.",
+      "questions": [
+        {
+          "ask": "How does this feature form?",
+          "show": {
+            "marker": "waterfall"
+          },
+          "answer": "Soft rock erodes faster",
+          "wrongAnswers": [
+            "Hard rock erodes faster",
+            "Lava cools in layers",
+            "Ice freezes the river"
+          ]
+        },
+        {
+          "ask": "In which course of the river is this feature usually found?",
+          "show": {
+            "marker": "waterfall"
+          },
+          "answer": "Upper course",
+          "wrongAnswers": ["Middle course", "Lower course", "Out at sea"]
+        },
+        {
+          "ask": "In which course of the river is this feature usually found?",
+          "show": {
+            "marker": "source"
+          },
+          "answer": "Upper course",
+          "wrongAnswers": ["Middle course", "Lower course", "Out at sea"]
+        },
+        {
+          "ask": "Near here the river cuts down steeply. What valley shape forms?",
+          "show": {
+            "marker": "source"
+          },
+          "answer": "V-shaped valley",
+          "wrongAnswers": ["U-shaped valley", "Flat floodplain", "Wide delta"]
+        },
+        {
+          "ask": "On this bend, where does the river flow fastest?",
+          "show": {
+            "marker": "meander"
+          },
+          "answer": "Outside of the bend",
+          "wrongAnswers": [
+            "Inside of the bend",
+            "Same speed everywhere",
+            "Only at the surface"
+          ]
+        },
+        {
+          "ask": "In which course of the river is this feature usually found?",
+          "show": {
+            "marker": "meander"
+          },
+          "answer": "Middle and lower",
+          "wrongAnswers": ["Upper course only", "At the source", "Out at sea"]
+        },
+        {
+          "ask": "How does this lake form?",
+          "show": {
+            "marker": "ox-bow-lake"
+          },
+          "answer": "A meander is cut off",
+          "wrongAnswers": [
+            "A glacier melts",
+            "A dam is built",
+            "A volcano erupts"
+          ]
+        },
+        {
+          "ask": "Why is this flat land so good for farming?",
+          "show": {
+            "marker": "floodplain"
+          },
+          "answer": "Floods leave rich silt",
+          "wrongAnswers": [
+            "Farmers add sand",
+            "Rocks fall from cliffs",
+            "Snow melts on it"
+          ]
+        },
+        {
+          "ask": "In which course of the river is this feature usually found?",
+          "show": {
+            "marker": "floodplain"
+          },
+          "answer": "Middle and lower",
+          "wrongAnswers": ["Upper course only", "At the source", "Out at sea"]
+        },
+        {
+          "ask": "How does this feature form?",
+          "show": {
+            "marker": "delta"
+          },
+          "answer": "Silt drops at the mouth",
+          "wrongAnswers": [
+            "Waves cut a cave",
+            "Ice carves a valley",
+            "A meander is cut off"
+          ]
+        },
+        {
+          "ask": "Where does fresh river water mix with salty sea water?",
+          "show": {
+            "marker": "estuary"
+          },
+          "answer": "Estuary",
+          "wrongAnswers": ["Source", "Waterfall", "Confluence"]
+        },
+        {
+          "ask": "What is this place where two rivers meet called?",
+          "show": {
+            "marker": "confluence"
+          },
+          "answer": "Confluence",
+          "wrongAnswers": ["Tributary", "Source", "Delta"]
+        },
+        {
+          "ask": "What is a smaller river that joins a bigger one called?",
+          "show": {
+            "marker": "tributary"
+          },
+          "answer": "Tributary",
+          "wrongAnswers": ["Confluence", "Estuary", "Meander"]
+        },
+        {
+          "ask": "In which course of the river is this feature usually found?",
+          "show": {
+            "marker": "mouth"
+          },
+          "answer": "Lower course",
+          "wrongAnswers": ["Upper course", "Middle course", "In the mountains"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.grid-reference-challenge",
+      "title": "Grid Ref Rescue",
+      "skillName": "Mixed four- and six-figure grid references",
+      "strand": "geographical-skills-and-fieldwork",
+      "scene": "grid-hunt",
+      "instruction": "Find the red pin and give its four- or six-figure grid reference, eastings first.",
+      "questions": [
+        {
+          "ask": "What is the four-figure grid reference of the pin's square?",
+          "show": {
+            "style": "four-figure",
+            "x": 22,
+            "y": 43
+          },
+          "answer": "2243",
+          "wrongAnswers": ["4322", "2342", "2244"]
+        },
+        {
+          "ask": "What is the six-figure grid reference of the red pin?",
+          "show": {
+            "style": "six-figure",
+            "x": 14.6,
+            "y": 52.3
+          },
+          "answer": "146523",
+          "wrongAnswers": ["523146", "156523", "146533"]
+        },
+        {
+          "ask": "Eastings first: which four-figure reference is the pin's square?",
+          "show": {
+            "style": "four-figure",
+            "x": 5,
+            "y": 17
+          },
+          "answer": "0517",
+          "wrongAnswers": ["1705", "0617", "0516"]
+        },
+        {
+          "ask": "Which six-figure grid reference pinpoints the red pin?",
+          "show": {
+            "style": "six-figure",
+            "x": 67.2,
+            "y": 7.9
+          },
+          "answer": "672079",
+          "wrongAnswers": ["079672", "672790", "682079"]
+        },
+        {
+          "ask": "What is the four-figure grid reference of the pin's square?",
+          "show": {
+            "style": "four-figure",
+            "x": 38,
+            "y": 61
+          },
+          "answer": "3861",
+          "wrongAnswers": ["6138", "3961", "3862"]
+        },
+        {
+          "ask": "What is the six-figure grid reference of the red pin?",
+          "show": {
+            "style": "six-figure",
+            "x": 29.8,
+            "y": 88.1
+          },
+          "answer": "298881",
+          "wrongAnswers": ["881298", "289881", "298891"]
+        },
+        {
+          "ask": "Eastings first: which four-figure reference is the pin's square?",
+          "show": {
+            "style": "four-figure",
+            "x": 74,
+            "y": 29
+          },
+          "answer": "7429",
+          "wrongAnswers": ["2974", "7529", "7430"]
+        },
+        {
+          "ask": "Which six-figure grid reference pinpoints the red pin?",
+          "show": {
+            "style": "six-figure",
+            "x": 43.5,
+            "y": 34.5
+          },
+          "answer": "435345",
+          "wrongAnswers": ["345435", "445345", "435355"]
+        },
+        {
+          "ask": "What is the four-figure grid reference of the pin's square?",
+          "show": {
+            "style": "four-figure",
+            "x": 51,
+            "y": 8
+          },
+          "answer": "5108",
+          "wrongAnswers": ["0851", "5208", "5107"]
+        },
+        {
+          "ask": "What is the six-figure grid reference of the red pin?",
+          "show": {
+            "style": "six-figure",
+            "x": 8.3,
+            "y": 66.7
+          },
+          "answer": "083667",
+          "wrongAnswers": ["667083", "83667", "093667"]
+        },
+        {
+          "ask": "Eastings first: which four-figure reference is the pin's square?",
+          "show": {
+            "style": "four-figure",
+            "x": 90,
+            "y": 94
+          },
+          "answer": "9094",
+          "wrongAnswers": ["9490", "9194", "9095"]
+        },
+        {
+          "ask": "Which six-figure grid reference pinpoints the red pin?",
+          "show": {
+            "style": "six-figure",
+            "x": 71.1,
+            "y": 19.4
+          },
+          "answer": "711194",
+          "wrongAnswers": ["194711", "721194", "711184"]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.extreme-environments",
+      "title": "Extreme Environments",
+      "skillName": "Life in extreme environments",
+      "strand": "place-knowledge",
+      "scene": "biome-dome",
+      "instruction": "Peer into the dome and discover how life survives in the toughest places on Earth.",
+      "questions": [
+        {
+          "ask": "Which extreme environment is inside this dome?",
+          "show": {
+            "biome": "desert"
+          },
+          "answer": "Hot desert",
+          "wrongAnswers": ["Polar region", "Tundra", "Rainforest"]
+        },
+        {
+          "ask": "How does a cactus survive here?",
+          "show": {
+            "biome": "desert"
+          },
+          "answer": "Stores water in its stem",
+          "wrongAnswers": [
+            "Grows big thin leaves",
+            "Lives under the snow",
+            "Drinks from the sea"
+          ]
+        },
+        {
+          "ask": "How is a camel adapted to live here?",
+          "show": {
+            "biome": "desert"
+          },
+          "answer": "Stores fat in its hump",
+          "wrongAnswers": [
+            "Has thick blubber",
+            "Hibernates all winter",
+            "Swims to find food"
+          ]
+        },
+        {
+          "ask": "Which is the largest hot desert on Earth?",
+          "show": {
+            "biome": "desert"
+          },
+          "answer": "Sahara",
+          "wrongAnswers": ["Gobi", "Kalahari", "Atacama"]
+        },
+        {
+          "ask": "Why are nights here so cold?",
+          "show": {
+            "biome": "desert"
+          },
+          "answer": "No clouds to trap heat",
+          "wrongAnswers": [
+            "Snow falls each evening",
+            "Sea breezes blow in",
+            "The Sun shines at night"
+          ]
+        },
+        {
+          "ask": "Which extreme environment is inside this dome?",
+          "show": {
+            "biome": "polar"
+          },
+          "answer": "Polar region",
+          "wrongAnswers": ["Hot desert", "Tundra", "Rainforest"]
+        },
+        {
+          "ask": "How does a polar bear keep warm?",
+          "show": {
+            "biome": "polar"
+          },
+          "answer": "Thick fur and blubber",
+          "wrongAnswers": [
+            "Big ears to lose heat",
+            "Sweating a lot",
+            "Living in trees"
+          ]
+        },
+        {
+          "ask": "Which continent is almost all covered by this ice?",
+          "show": {
+            "biome": "polar"
+          },
+          "answer": "Antarctica",
+          "wrongAnswers": ["Africa", "Europe", "South America"]
+        },
+        {
+          "ask": "Which extreme environment is inside this dome?",
+          "show": {
+            "biome": "tundra"
+          },
+          "answer": "Tundra",
+          "wrongAnswers": ["Hot desert", "Polar region", "Rainforest"]
+        },
+        {
+          "ask": "Why do only small plants grow here?",
+          "show": {
+            "biome": "tundra"
+          },
+          "answer": "Permafrost underground",
+          "wrongAnswers": ["Too much rain", "Too much shade", "Sand blows away"]
+        },
+        {
+          "ask": "Which layer of this forest gets the most sunlight?",
+          "show": {
+            "biome": "rainforest"
+          },
+          "answer": "Emergent layer",
+          "wrongAnswers": ["Forest floor", "Understorey", "Shrub layer"]
+        },
+        {
+          "ask": "Why do many leaves here have pointed drip tips?",
+          "show": {
+            "biome": "rainforest"
+          },
+          "answer": "To shed heavy rain",
+          "wrongAnswers": [
+            "To catch snow",
+            "To store water",
+            "To scare animals"
+          ]
+        },
+        {
+          "ask": "Why does it get colder as you climb higher?",
+          "show": {
+            "biome": "mountain"
+          },
+          "answer": "Air is thinner up high",
+          "wrongAnswers": [
+            "The Sun is further away",
+            "Rocks are made of ice",
+            "Rivers cool the air"
+          ]
+        }
+      ]
+    },
+    {
+      "skillId": "geography.uk-regions",
+      "title": "UK Road Trip",
+      "skillName": "Regions and counties of the UK",
+      "strand": "place-knowledge",
+      "scene": "uk-explorer",
+      "instruction": "Take a road trip around the UK and name the region, county or capital at each stop.",
+      "questions": [
+        {
+          "ask": "The pin is in England's most south-westerly county. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 50.4,
+              "longitude": -4.9
+            }
+          },
+          "answer": "Cornwall",
+          "wrongAnswers": ["Kent", "Cumbria", "Norfolk"]
+        },
+        {
+          "ask": "The pin is in the south-east county called the Garden of England. Which?",
+          "show": {
+            "pin": {
+              "latitude": 51.2,
+              "longitude": 0.75
+            }
+          },
+          "answer": "Kent",
+          "wrongAnswers": ["Cornwall", "Devon", "Lancashire"]
+        },
+        {
+          "ask": "The pin is in England's largest historic county. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 54.0,
+              "longitude": -1.5
+            }
+          },
+          "answer": "Yorkshire",
+          "wrongAnswers": ["Cornwall", "Kent", "Essex"]
+        },
+        {
+          "ask": "The pin is in Scotland's mountainous north. What is this region called?",
+          "show": {
+            "pin": {
+              "latitude": 57.3,
+              "longitude": -5.0
+            }
+          },
+          "answer": "The Highlands",
+          "wrongAnswers": ["The Lowlands", "The Fens", "The Cotswolds"]
+        },
+        {
+          "ask": "This National Park in Cumbria has England's highest peak. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 54.46,
+              "longitude": -3.09
+            }
+          },
+          "answer": "Lake District",
+          "wrongAnswers": ["Peak District", "New Forest", "Dartmoor"]
+        },
+        {
+          "ask": "The pin is in a mountainous National Park in north Wales. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 53.07,
+              "longitude": -3.9
+            }
+          },
+          "answer": "Eryri (Snowdonia)",
+          "wrongAnswers": ["Dartmoor", "Lake District", "Cairngorms"]
+        },
+        {
+          "ask": "This was the UK's first National Park, near Sheffield. Which is it?",
+          "show": {
+            "pin": {
+              "latitude": 53.3,
+              "longitude": -1.78
+            }
+          },
+          "answer": "Peak District",
+          "wrongAnswers": ["Lake District", "Cairngorms", "Exmoor"]
+        },
+        {
+          "ask": "The pin is in a flat region famous for growing wheat. Which region?",
+          "show": {
+            "pin": {
+              "latitude": 52.5,
+              "longitude": 1.0
+            }
+          },
+          "answer": "East Anglia",
+          "wrongAnswers": ["The Highlands", "Lake District", "Peak District"]
+        },
+        {
+          "ask": "The pin is on limestone hills famous for honey-coloured villages. Where?",
+          "show": {
+            "pin": {
+              "latitude": 51.83,
+              "longitude": -1.83
+            }
+          },
+          "answer": "The Cotswolds",
+          "wrongAnswers": ["The Fens", "The Highlands", "The Broads"]
+        },
+        {
+          "ask": "What is the capital city of the glowing nation?",
+          "show": {
+            "highlight": "wales"
+          },
+          "answer": "Cardiff",
+          "wrongAnswers": ["Swansea", "Belfast", "Newport"]
+        },
+        {
+          "ask": "What is the capital city of the glowing nation?",
+          "show": {
+            "highlight": "northern-ireland"
+          },
+          "answer": "Belfast",
+          "wrongAnswers": ["Dublin", "Cardiff", "Derry"]
+        },
+        {
+          "ask": "What is the capital city of the glowing nation?",
+          "show": {
+            "highlight": "scotland"
+          },
+          "answer": "Edinburgh",
+          "wrongAnswers": ["Glasgow", "Aberdeen", "Cardiff"]
+        },
+        {
+          "ask": "Which sea is glowing between Great Britain and Ireland?",
+          "show": {
+            "highlight": "irish-sea"
+          },
+          "answer": "Irish Sea",
+          "wrongAnswers": ["North Sea", "English Channel", "Atlantic Ocean"]
+        }
+      ]
+    }
+  ]
+}
