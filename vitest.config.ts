@@ -26,6 +26,8 @@ const domTests = [
   "src/client/world-map-islands.test.tsx",
   "src/client/islands/island-scene.test.tsx",
   "src/client/islands/island-explore.test.tsx",
+  "src/client/islands/island-explore-arrivals.test.tsx",
+  "src/client/islands/island-explore-travel.test.tsx",
   "src/client/islands/island-stage-props.test.tsx",
   "src/client/geography/**/*.test.tsx",
   "src/client/character/room-play*.test.tsx",
