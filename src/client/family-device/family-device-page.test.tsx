@@ -4679,8 +4679,9 @@ describe("FamilyDevicePage", () => {
     const minutesAfterNow = (minutes: number) =>
       new Date(now.getTime() + minutes * 60_000);
 
+    // Mocks Date alone, not fake timers: with fake timers on, each vi.waitFor retry moves the clock on 50 ms,
+    // so a busy runner recorded the Session's end late.
     const freezeClockAt = (frozenTime: Date) => {
-      vi.useFakeTimers({ toFake: ["Date"] });
       vi.setSystemTime(frozenTime);
     };
 

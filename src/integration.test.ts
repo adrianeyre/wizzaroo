@@ -6878,18 +6878,20 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
             }),
           );
 
+        // Each insert starts only once it is awaited: started together, those refused before their turn
+        // were unhandled rejections.
         const refusals = [
-          insertAs(parentReach, { stars: 7 }),
-          insertAs(parentReach, { stars: 1000 }),
-          insertAs(parentReach, { givenByParent: false }),
-          insertAs(parentReach, { awardedByUserId: other.userId }),
-          insertAs(parentReach, { awardedByUserId: null }),
-          insertAs(parentReach, { childId: other.childId }),
-          insertAs(deviceReach, {}),
+          () => insertAs(parentReach, { stars: 7 }),
+          () => insertAs(parentReach, { stars: 1000 }),
+          () => insertAs(parentReach, { givenByParent: false }),
+          () => insertAs(parentReach, { awardedByUserId: other.userId }),
+          () => insertAs(parentReach, { awardedByUserId: null }),
+          () => insertAs(parentReach, { childId: other.childId }),
+          () => insertAs(deviceReach, {}),
         ];
 
         for (const refusal of refusals) {
-          await expect(refusal).rejects.toMatchObject({
+          await expect(refusal()).rejects.toMatchObject({
             cause: { code: "42501" },
           });
         }
@@ -35835,6 +35837,11 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
           })),
         ).toEqual([
           {
+            fileName: "island-sweeps.yml",
+            permissions: ["contents: read", "packages: read"],
+            hasJobPermissions: false,
+          },
+          {
             fileName: "lint-pr-title.yml",
             permissions: ["pull-requests: read"],
             hasJobPermissions: false,
@@ -35857,7 +35864,7 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
         ]);
       });
 
-      it("runs each workflow only on a pull request to main, by hand, for the scheduled audit on a schedule, or for the release on a merge to main, never on pull_request_target, workflow_run or issue_comment", async () => {
+      it("runs each workflow only on a pull request to main, by hand, for the scheduled audit and the Island sweeps on a schedule, or for the release on a merge to main, never on pull_request_target, workflow_run or issue_comment", async () => {
         const workflows = await loadWorkflows();
 
         expect(
@@ -35869,6 +35876,11 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
               .map((line) => line.trim()),
           })),
         ).toEqual([
+          {
+            fileName: "island-sweeps.yml",
+            triggers: ["schedule", "workflow_dispatch"],
+            branches: [],
+          },
           {
             fileName: "lint-pr-title.yml",
             triggers: ["pull_request", "workflow_dispatch"],
@@ -35892,7 +35904,7 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
         ]);
       });
 
-      it("evaluates no expression in any workflow but the GITHUB_TOKEN handed to the PR title check, the PR checks' and the release's installs, and the release, so no other secret and no pull request's text reaches a step", async () => {
+      it("evaluates no expression in any workflow but the GITHUB_TOKEN handed to the PR title check, the PR checks', the Island sweeps' and the release's installs, and the release, so no other secret and no pull request's text reaches a step", async () => {
         const expressions = (await loadWorkflows()).flatMap((workflow) =>
           [...workflow.text.matchAll(workflowExpressionPattern)].map(
             ([, expression]) => `${workflow.fileName}: ${expression}`,
@@ -35900,7 +35912,9 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
         );
 
         expect(expressions).toEqual([
+          "island-sweeps.yml: secrets.GITHUB_TOKEN",
           "lint-pr-title.yml: secrets.GITHUB_TOKEN",
+          "pr-checks.yml: secrets.GITHUB_TOKEN",
           "pr-checks.yml: secrets.GITHUB_TOKEN",
           "release.yml: secrets.GITHUB_TOKEN",
           "release.yml: secrets.GITHUB_TOKEN",
@@ -35929,7 +35943,8 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
           ),
         );
 
-        expect(installLines).toHaveLength(3);
+        // The PR checks' two jobs, the Island sweeps, the release and the image.
+        expect(installLines).toHaveLength(5);
         expect(
           installLines.filter((line) => line.includes("--frozen-lockfile")),
         ).toEqual(installLines);
@@ -36291,6 +36306,11 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
   });
 
   it("reports an error from /health once Postgres goes down, and keeps serving", async () => {
+    // Postgres ends the suite's own idle connections as it stops, as the server's pools expect; without a listener
+    // that was an uncaught exception.
+    for (const pool of listPools(database)) {
+      pool.on("error", () => undefined);
+    }
     await container.stop();
 
     const response = await server.inject({ method: "GET", url: "/health" });

@@ -65,7 +65,7 @@ All 90 land on the far reaches. `pnpm run generate:attraction-sites` writes thei
 The new Attractions are solid in explore mode in the same way as everything else ([0061](./0061-explore-mode-is-solid-worked-out-from-the-models.md)). Every triangle of each near model, and of its moving parts that stay put enough to bump into, is cut to the slice of air the Character's body fills and marked on the obstacle grid. Walls, fences, trunks, hulls, columns and stalls block the Character, and it slides along them. Where a model is meant to be walked on (a boardwalk, a ship's deck, a rampart, a temple's steps, a stage, a grandstand), it has a deck, with steps or ramps no steeper than the Character can climb. Every sign, and every ride's start and finish, stands on open ground.
 
 - `island-solids.test.ts` checks every Island's Attractions are solid, every ride can be started, and every place to visit can be reached.
-- `island-explore-solids.test.tsx` draws each Island and checks every part of every model at the Character's height is solid.
+- `island-explore-solids.sweep.test.tsx` draws each Island and checks every part of every model at the Character's height is solid.
 
 ## Budgets
 

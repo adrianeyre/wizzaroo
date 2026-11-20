@@ -1,3 +1,5 @@
+// Every model on every Island checked solid, triangle by triangle: minutes an Island, so this runs in the
+// Island sweeps workflow (pnpm test:sweeps), not on every pull request.
 import ReactThreeTestRenderer from "@react-three/test-renderer";
 import { InstancedMesh, Matrix4, Mesh, Vector3, type Object3D } from "three";
 import { beforeAll, describe, expect, it, vi } from "vitest";
@@ -321,6 +323,6 @@ describe.each(islandsOnMap.map(({ id }) => [id] as const))(
       }
       await renderer.unmount();
       expect(hollow).toEqual([]);
-    }, 600_000);
+    });
   },
 );

@@ -10,3 +10,8 @@ allowBuilds:
   cpu-features: false
   protobufjs: false
   ssh2: false
+# testcontainers' archiver takes glob 10 (GHSA-3g3m-2fjr-6pw4, fixed from glob 14.0.2), and glob 10 takes minimatch 9
+# (GHSA-g3hv-75wg-m249, fixed from minimatch 11.0.1). glob 14 takes minimatch 11, and archiver-utils calls only
+# glob.sync, which glob 14 keeps.
+overrides:
+  "glob@>=9.0.0 <14.0.2": ^14.0.2
