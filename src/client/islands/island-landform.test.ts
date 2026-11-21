@@ -88,9 +88,11 @@ describe.each(islands.map((island) => [island.name, island] as const))(
 
     it("scatters the same things in the same places every visit, clear of every Region", () => {
       const regionPlaces = island.regions.map(({ mapPosition }) => mapPosition);
-      const scatters = landform.listScatters(regionPlaces, []);
+      const scatters = landform.listScatters(regionPlaces, [], () => true);
 
-      expect(scatters).toEqual(landform.listScatters(regionPlaces, []));
+      expect(scatters).toEqual(
+        landform.listScatters(regionPlaces, [], () => true),
+      );
       for (const { name, things } of scatters) {
         expect(things.length, name).toBeGreaterThan(0);
         for (const thing of things) {

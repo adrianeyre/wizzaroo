@@ -10,6 +10,7 @@ import {
   findTerrainHeight,
   footpathCourses,
   isInNewLandRiver,
+  isOnAirfield,
   lighthousePosition,
   listAirfieldPlaces,
   meadowAirfield,
@@ -5862,6 +5863,19 @@ export const findDistanceToTrail = (
         .map((end, index) => findDistanceToSegment(point, trail[index], end)),
     ),
   );
+
+const sceneryTrailClearance = 1;
+
+/**
+ * Whether a tree, bush or rock can stand at a point of the Island's map,
+ * off its trails and clear of its airfield.
+ */
+export const isClearOfTrailsAndAirfield = (
+  adventure: IslandAdventure,
+  point: MapPoint,
+): boolean =>
+  !isOnAirfield(adventure.airfield, point) &&
+  findDistanceToTrail(adventure, point) > sceneryTrailClearance;
 
 const findBridgeUnderfoot = (
   world: AdventureWorld,

@@ -94,8 +94,8 @@ import {
   type SharedSubjectLandmark,
 } from "./island-landform.js";
 import {
-  findDistanceToTrail,
   findIslandAdventure,
+  isClearOfTrailsAndAirfield,
   listAdventurePlaces,
 } from "./island-adventures.js";
 import { buildIslandSkyLook } from "./island-sky.js";
@@ -191,7 +191,6 @@ export const findIslandDesign = (islandId: string): IslandDesign => {
 };
 
 const newLandClearance = 3;
-const newLandTrailClearance = 0.6;
 const newLandWaterClearance = 1.2;
 
 export const listIslandScatters = (island: Island): IslandScatter[] => {
@@ -209,28 +208,32 @@ export const listIslandScatters = (island: Island): IslandScatter[] => {
   ];
   const isClearForNewLand = (point: MapPoint) =>
     landform.findDistanceToWater(point) > newLandWaterClearance &&
-    findDistanceToTrail(adventure, point) > newLandTrailClearance &&
+    isClearOfTrailsAndAirfield(adventure, point) &&
     isClearOfProps(point, propPlaces) &&
     keepClearOf.every(
       (place) =>
         Math.hypot(point.x - place.x, point.z - place.z) > newLandClearance,
     );
-  return landform.listScatters(keepClearOf, propPlaces).map((scatter) => ({
-    ...scatter,
-    things: [
-      ...scatter.things,
-      ...mirrorOntoNewLands(scatter.things, {
-        keepEvery: 1,
-        findHeight: landform.findHeight,
-        isClear: isClearForNewLand,
-      }),
-      ...mirrorOntoFarReaches(scatter.things, {
-        keepEvery: 2,
-        findHeight: landform.findHeight,
-        isClear: isClearForNewLand,
-      }),
-    ],
-  }));
+  return landform
+    .listScatters(keepClearOf, propPlaces, (point) =>
+      isClearOfTrailsAndAirfield(adventure, point),
+    )
+    .map((scatter) => ({
+      ...scatter,
+      things: [
+        ...scatter.things,
+        ...mirrorOntoNewLands(scatter.things, {
+          keepEvery: 1,
+          findHeight: landform.findHeight,
+          isClear: isClearForNewLand,
+        }),
+        ...mirrorOntoFarReaches(scatter.things, {
+          keepEvery: 2,
+          findHeight: landform.findHeight,
+          isClear: isClearForNewLand,
+        }),
+      ],
+    }));
 };
 
 const regionLandmarkDesigns: Record<IslandOwnLandmark, RegionLandmarkDesign> = {

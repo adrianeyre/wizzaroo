@@ -1,6 +1,12 @@
 import { useFrame } from "@react-three/fiber";
 import { useEffect, useMemo, useRef, type RefObject } from "react";
-import type { BufferGeometry, Group, Matrix4, Mesh } from "three";
+import {
+  DoubleSide,
+  type BufferGeometry,
+  type Group,
+  type Matrix4,
+  type Mesh,
+} from "three";
 import { isMotionReduced } from "../reduced-motion.js";
 import { useBuiltGeometry } from "../world-map-hooks.js";
 import { GrainedMaterial } from "../world-map-scene.js";
@@ -44,7 +50,36 @@ import {
   placeHovercraftRamp,
   placeHovercraftSkirt,
 } from "./island-hovercraft-design.js";
+import {
+  buildJetskiGeometry,
+  buildJetskiHandlebarGeometry,
+  buildJetskiLiveryGeometry,
+  buildJetskiSprayGeometry,
+  placeJetskiHandlebar,
+  placeJetskiSpray,
+} from "./island-jetski-design.js";
 import { LiveryDecals } from "./island-livery-models.js";
+import {
+  buildPortalGeometry,
+  buildPortalGlowGeometry,
+  buildPortalLiveryGeometry,
+  buildPortalOrbitGeometry,
+  findPortalScale,
+  placePortalGlow,
+  placePortalOrbit,
+  portalGrowthCentre,
+} from "./island-portal-design.js";
+import type { Triple } from "../world-map-models.js";
+import {
+  buildRocketFlameGeometry,
+  buildRocketGeometry,
+  buildRocketHatchGeometry,
+  buildRocketLiveryGeometry,
+  buildRocketStairGeometry,
+  placeRocketFlame,
+  placeRocketHatch,
+  placeRocketStair,
+} from "./island-rocket-design.js";
 import {
   buildMovingPartsModel,
   moveParts,
@@ -62,7 +97,14 @@ import {
 } from "./island-submarine-design.js";
 
 export type Craft =
-  "aeroplane" | "helicopter" | "hovercraft" | "submarine" | "balloon";
+  | "aeroplane"
+  | "helicopter"
+  | "hovercraft"
+  | "submarine"
+  | "balloon"
+  | "jetski"
+  | "rocket"
+  | "portal";
 
 export interface CraftPose {
   placement: CraftPlacement;
@@ -78,9 +120,11 @@ const reducedRotorSpeed = 3;
 interface CraftGlow {
   build: () => BufferGeometry;
   place: (pose: CraftPose, turn: number) => Matrix4;
+  opacity?: number;
 }
 
 interface CraftDesign {
+  scaleBody?: { centre: Triple; find: (pose: CraftPose) => number };
   buildBody: () => BufferGeometry;
   buildLivery: () => BufferGeometry;
   buildMovingParts: () => BufferGeometry[];
@@ -159,6 +203,51 @@ const craftDesigns: Record<Craft, CraftDesign> = {
       place: ({ burn = 0 }, turn) => placeBurnerFlame(burn, turn),
     },
   },
+  jetski: {
+    buildBody: buildJetskiGeometry,
+    buildLivery: buildJetskiLiveryGeometry,
+    buildMovingParts: () => [buildJetskiHandlebarGeometry()],
+    placeMovingParts: ({ placement }) => [
+      placeJetskiHandlebar(-placement.roll * 2.5),
+    ],
+    glow: {
+      build: buildJetskiSprayGeometry,
+      place: ({ burn = 0 }, turn) => placeJetskiSpray(burn, turn),
+      opacity: 0.6,
+    },
+  },
+  rocket: {
+    buildBody: buildRocketGeometry,
+    buildLivery: buildRocketLiveryGeometry,
+    buildMovingParts: () => [
+      buildRocketHatchGeometry(),
+      buildRocketStairGeometry(),
+    ],
+    placeMovingParts: ({ opening }) => [
+      placeRocketHatch(opening),
+      placeRocketStair(opening),
+    ],
+    glow: {
+      build: buildRocketFlameGeometry,
+      place: ({ burn = 0 }, turn) => placeRocketFlame(burn, turn),
+    },
+  },
+  portal: {
+    scaleBody: {
+      centre: portalGrowthCentre,
+      find: ({ opening }) => findPortalScale(opening),
+    },
+    buildBody: buildPortalGeometry,
+    buildLivery: buildPortalLiveryGeometry,
+    buildMovingParts: () => [buildPortalOrbitGeometry()],
+    placeMovingParts: ({ opening }, turn) => [placePortalOrbit(opening, turn)],
+    grain: surfaceGrains.stone,
+    glow: {
+      build: buildPortalGlowGeometry,
+      place: ({ opening }, turn) => placePortalGlow(opening, turn),
+      opacity: 0.85,
+    },
+  },
 };
 
 const CraftGlowMesh = ({
@@ -182,7 +271,8 @@ const CraftGlowMesh = ({
       <meshBasicMaterial
         vertexColors
         transparent
-        opacity={0.9}
+        side={DoubleSide}
+        opacity={glow.opacity ?? 0.9}
         depthWrite={false}
         toneMapped={false}
       />
@@ -214,6 +304,7 @@ export const VoyageCraft = ({
     [movingParts],
   );
   const group = useRef<Group>(null);
+  const scaled = useRef<Group>(null);
   const glowMesh = useRef<Mesh>(null);
   const rotorTurn = useRef(0);
   useFrame((_state, deltaSeconds) => {
@@ -237,6 +328,16 @@ export const VoyageCraft = ({
       "YXZ",
     );
     moveParts(movingParts, design.placeMovingParts(pose, rotorTurn.current));
+    if (design.scaleBody !== undefined && scaled.current !== null) {
+      const size = design.scaleBody.find(pose);
+      const [x, y, z] = design.scaleBody.centre;
+      scaled.current.scale.setScalar(size);
+      scaled.current.position.set(
+        x * (1 - size),
+        y * (1 - size),
+        z * (1 - size),
+      );
+    }
     if (design.glow !== undefined && glowMesh.current !== null) {
       glowMesh.current.matrix.copy(design.glow.place(pose, rotorTurn.current));
     }
@@ -244,9 +345,15 @@ export const VoyageCraft = ({
   const grain = design.grain ?? surfaceGrains.metal;
   return (
     <group ref={group} name={name} scale={scale} visible={false}>
-      <mesh geometry={body} castShadow receiveShadow>
-        <GrainedMaterial grain={grain} />
-      </mesh>
+      <group ref={scaled}>
+        <mesh geometry={body} castShadow receiveShadow>
+          <GrainedMaterial grain={grain} />
+        </mesh>
+        <LiveryDecals
+          buildGeometry={design.buildLivery}
+          name={`${name}-livery`}
+        />
+      </group>
       <mesh
         geometry={movingParts.geometry}
         castShadow
@@ -255,10 +362,6 @@ export const VoyageCraft = ({
       >
         <GrainedMaterial grain={grain} />
       </mesh>
-      <LiveryDecals
-        buildGeometry={design.buildLivery}
-        name={`${name}-livery`}
-      />
       {design.glow === undefined ? null : (
         <CraftGlowMesh
           glow={design.glow}

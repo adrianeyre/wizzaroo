@@ -13,6 +13,8 @@ import {
   balloonBasketHalfWidth,
   findAircraftPlacement,
   findBurnerBlast,
+  findRocketBurn,
+  rocketCruiseHeight,
   type Aircraft,
   type LandPhase,
 } from "./island-flight.js";
@@ -20,6 +22,8 @@ import {
   buildJourneyCourse,
   buildJourneyRoute,
   chooseTransport,
+  findCrossingCraftPlacement,
+  findCraftPose,
   findCraftPlacement,
   findJourneyCarriedSpot,
   findJourneyCrossingSeconds,
@@ -30,19 +34,29 @@ import {
   transports,
 } from "./island-journey.js";
 import {
+  findPortalOpening,
+  portalDaisHeight,
+  portalPhaseSeconds,
+} from "./island-portal.js";
+import {
   findCarriedSpot,
   findPierWaitingSpot,
   findShipPlacement,
 } from "./island-voyage.js";
 
-const aircraft: readonly Aircraft[] = ["aeroplane", "helicopter", "balloon"];
+const aircraft: readonly Aircraft[] = [
+  "aeroplane",
+  "helicopter",
+  "balloon",
+  "rocket",
+];
 
 const ports = worldMap.islands.map(({ id, seaPosition }) => ({
   islandId: id,
   seaPosition,
 }));
 
-const everyFlight = aircraft.flatMap((transport) =>
+const everyFlight = [...aircraft, "portal" as const].flatMap((transport) =>
   ports.flatMap((from) =>
     ports
       .filter((to) => to.islandId !== from.islandId)
@@ -60,6 +74,7 @@ const findLandingLevel = (islandId: string, transport: Aircraft): number => {
     aeroplane: airfield.runway.level,
     helicopter: airfield.helipad.level,
     balloon: airfield.balloonField.level,
+    rocket: airfield.helipad.level,
   }[transport];
 };
 
@@ -78,14 +93,7 @@ const findGroundUnder = (point: { x: number; z: number }): number =>
   );
 
 describe("choosing how to travel", () => {
-  it("chooses the ship, the aeroplane, the helicopter, the hovercraft, the submarine or the hot-air balloon, each a sixth of the time", () => {
-    expect(chooseTransport(() => 0)).toBe("ship");
-    expect(chooseTransport(() => 0.2)).toBe("aeroplane");
-    expect(chooseTransport(() => 0.4)).toBe("helicopter");
-    expect(chooseTransport(() => 0.55)).toBe("hovercraft");
-    expect(chooseTransport(() => 0.7)).toBe("submarine");
-    expect(chooseTransport(() => 0.9)).toBe("balloon");
-    expect(chooseTransport(() => 0.999_999)).toBe("balloon");
+  it("chooses any of the ten ways to travel, each a tenth of the time", () => {
     expect(transports).toStrictEqual([
       "ship",
       "aeroplane",
@@ -93,7 +101,18 @@ describe("choosing how to travel", () => {
       "hovercraft",
       "submarine",
       "balloon",
+      "pirateShip",
+      "jetski",
+      "rocket",
+      "portal",
     ]);
+    transports.forEach((transport, index) => {
+      expect(chooseTransport(() => (index + 0.5) / transports.length)).toBe(
+        transport,
+      );
+    });
+    expect(chooseTransport(() => 0)).toBe("ship");
+    expect(chooseTransport(() => 0.999_999)).toBe("portal");
   });
 
   it("still sails the ship exactly as before", () => {
@@ -110,6 +129,24 @@ describe("choosing how to travel", () => {
     });
     expect(findJourneyWaitingSpot(adventure, "ship")).toStrictEqual(
       findPierWaitingSpot(adventure.dock),
+    );
+  });
+
+  it("sails the pirate ship into the Dock and walks the Character up its gangplank just as the ship does", () => {
+    const adventure = findExploreAdventure("ember-isle");
+    (["calling", "boarding", "departing", "landing"] as const).forEach(
+      (phase) => {
+        expect(
+          findCraftPlacement(adventure, "pirateShip", phase, 0.4),
+        ).toStrictEqual(findCraftPlacement(adventure, "ship", phase, 0.4));
+        expect(
+          findJourneyCarriedSpot(adventure, "pirateShip", phase, 0.6),
+        ).toStrictEqual(findJourneyCarriedSpot(adventure, "ship", phase, 0.6));
+      },
+    );
+    const [meadow, frost] = ports;
+    expect(buildJourneyRoute(meadow, frost, "pirateShip")).toStrictEqual(
+      buildJourneyRoute(meadow, frost, "ship"),
     );
   });
 });
@@ -240,6 +277,140 @@ describe("riding in the hot-air balloon's basket", () => {
     expect(findBurnerBlast("landing", 0.5)).toBe(0);
   });
 });
+
+describe("the rocket", () => {
+  const adventure = findExploreAdventure("starfall-isle");
+
+  it("fires its engines to come down onto the Helipad and to blast off, and rests them on the ground", () => {
+    expect(findRocketBurn("calling", 0.5)).toBeCloseTo(1);
+    expect(findRocketBurn("calling", 1)).toBe(0);
+    expect(findRocketBurn("boarding", 0.5)).toBe(0);
+    expect(findRocketBurn("departing", 0.1)).toBe(0);
+    expect(findRocketBurn("departing", 0.6)).toBeCloseTo(1);
+    expect(findRocketBurn("crossing", 0.1)).toBeCloseTo(1);
+    expect(findRocketBurn("crossing", 0.6)).toBe(0);
+    expect(findRocketBurn("crossing", 0.95)).toBeCloseTo(1);
+  });
+
+  it("stands upright on the Helipad and climbs straight up into the sky", () => {
+    const parked = findCraftPlacement(adventure, "rocket", "boarding", 0);
+    expect(parked.pitch).toBe(0);
+    const away = findCraftPlacement(adventure, "rocket", "departing", 1);
+    expect(away.y - parked.y).toBeCloseTo(rocketCruiseHeight);
+    expect(Math.abs(away.pitch)).toBeLessThan(0.2);
+  });
+
+  it("flies nose first as it climbs, flips over the top and comes down engine first", () => {
+    const [meadow, frost] = ports;
+    const course = buildJourneyCourse(
+      buildJourneyRoute(meadow, frost, "rocket"),
+    );
+    const tiltAt = (share: number) => {
+      const { pitch, heading } = findCrossingCraftPlacement(
+        "rocket",
+        course,
+        share,
+      );
+      const ahead = course.getPointAt(Math.min(1, share + 0.01));
+      const here = course.getPointAt(share);
+      const along =
+        (ahead.x - here.x) * Math.sin(heading) +
+        (ahead.z - here.z) * Math.cos(heading);
+      return { pitch, along };
+    };
+    expect(Math.abs(tiltAt(0).pitch)).toBeLessThan(0.3);
+    expect(tiltAt(0.3).pitch).toBeLessThan(-0.3);
+    expect(tiltAt(0.75).pitch).toBeGreaterThan(0.3);
+    expect(Math.abs(tiltAt(1).pitch)).toBeLessThan(0.3);
+  });
+});
+
+describe.each(islandAdventures.map(({ islandId }) => [islandId] as const))(
+  "the portal on %s",
+  (islandId) => {
+    const adventure = findExploreAdventure(islandId);
+    const level = adventure.airfield.balloonField.level;
+
+    it("opens on the Balloon Field while the Character waits beside it", () => {
+      expect(findPortalOpening("calling", 0)).toBe(0);
+      expect(findPortalOpening("calling", 1)).toBe(1);
+      const portal = findCraftPlacement(adventure, "portal", "calling", 1);
+      expect(portal.y).toBeCloseTo(level);
+      const waiting = findJourneyWaitingSpot(adventure, "portal");
+      const world = buildAdventureWorld(adventure);
+      const surface = findWalkSurface(world, waiting, level);
+      expect(surface.kind === "ground" || surface.kind === "trail").toBe(true);
+      expect(surface.height).toBeCloseTo(level, 1);
+    });
+
+    it("walks the Character up onto its dais and through the light, and out of it on the other side", () => {
+      const before = findJourneyCarriedSpot(adventure, "portal", "boarding", 0);
+      expect(before.isInside).toBe(false);
+      expect(isWalkingAboard("portal", "boarding", 0.5)).toBe(true);
+      const middle = findJourneyCarriedSpot(
+        adventure,
+        "portal",
+        "boarding",
+        0.6,
+      );
+      expect(middle.y).toBeCloseTo(level + portalDaisHeight);
+      const through = findJourneyCarriedSpot(
+        adventure,
+        "portal",
+        "boarding",
+        1,
+      );
+      expect(through.isInside).toBe(true);
+      expect(
+        findJourneyCarriedSpot(adventure, "portal", "departing", 0.5).isInside,
+      ).toBe(true);
+      const out = findJourneyCarriedSpot(adventure, "portal", "landing", 1);
+      expect(out.isInside).toBe(false);
+      const waiting = findJourneyWaitingSpot(adventure, "portal");
+      expect(out.x).toBeCloseTo(waiting.x);
+      expect(out.z).toBeCloseTo(waiting.z);
+    });
+
+    it("closes to a wisp of light that shoots up into the sky, and falls from it to open", () => {
+      expect(findPortalOpening("departing", 1)).toBe(0);
+      expect(findPortalOpening("crossing", 0.5)).toBe(0);
+      const gone = findCraftPlacement(adventure, "portal", "departing", 1);
+      expect(gone.y - level).toBeGreaterThan(40);
+      const coming = findCraftPlacement(adventure, "portal", "docking", 0);
+      expect(coming.y - level).toBeGreaterThan(40);
+      expect(
+        findCraftPlacement(adventure, "portal", "docking", 1).y,
+      ).toBeCloseTo(level);
+      const pose = findCraftPose(
+        adventure,
+        "portal",
+        "boarding",
+        0.5,
+        findCraftPlacement(adventure, "portal", "boarding", 0.5),
+      );
+      expect(pose.opening).toBe(1);
+    });
+
+    it("stands its ring solid on either side of the way through while it is open", () => {
+      const open = findCraftPlacement(adventure, "portal", "leaving", 0);
+      const blockers = listCraftBlockers(adventure, "portal", open);
+      expect(blockers).toHaveLength(2);
+      const waiting = findJourneyWaitingSpot(adventure, "portal");
+      blockers.forEach(({ centre, radius }) => {
+        expect(
+          Math.hypot(centre.x - waiting.x, centre.z - waiting.z),
+        ).toBeGreaterThan(radius + 1);
+      });
+    });
+
+    it("takes a few seconds for each part of the journey", () => {
+      Object.values(portalPhaseSeconds).forEach((seconds) => {
+        expect(seconds).toBeGreaterThan(3);
+        expect(seconds).toBeLessThan(12);
+      });
+    });
+  },
+);
 
 describe("flying between Islands", () => {
   it.each(everyFlight)(

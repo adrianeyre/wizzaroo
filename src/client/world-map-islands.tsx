@@ -22,9 +22,9 @@ import {
 } from "../curriculum/world-map.js";
 import {
   exploreScale,
-  findDistanceToTrail,
   findIslandAdventure,
   hasIslandAdventure,
+  isClearOfTrailsAndAirfield,
   listAdventurePlaces,
 } from "./islands/island-adventures.js";
 import { IslandDock } from "./islands/island-ship-models.js";
@@ -390,6 +390,8 @@ export const listMeadowScatters = (
       highest,
       keepClearOf: landmarks,
       propPlaces,
+      isClearOfTrailsAndAirfield: (point) =>
+        isClearOfTrailsAndAirfield(meadowAdventure, point),
       clearance,
     });
   const isClearForNewLand = (point: MapPoint) =>
@@ -397,7 +399,7 @@ export const listMeadowScatters = (
       findDistanceToFreshWater(point),
       findDistanceToNewLandRivers(point, meadowNewLands),
     ) > 1.2 &&
-    findDistanceToTrail(meadowAdventure, point) > 0.6 &&
+    isClearOfTrailsAndAirfield(meadowAdventure, point) &&
     isClearOfProps(point, propPlaces) &&
     landmarks.every(
       (place) => Math.hypot(point.x - place.x, point.z - place.z) > 3,

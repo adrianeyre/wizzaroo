@@ -62,16 +62,31 @@ type LimitsChange = (
   busyLabel: string,
 ) => void;
 
-type IslandAccess = "open" | "locked-by-you" | "locked-by-teacher";
+type IslandAccess =
+  "open" | "above-year" | "locked-by-you" | "locked-by-teacher";
 
 const findIslandAccess = ({
   isUnlocked,
+  isUnlockedByDefault,
   isLockedByTeacher,
 }: IslandOnMap): IslandAccess => {
   if (isLockedByTeacher) {
     return "locked-by-teacher";
   }
-  return isUnlocked ? "open" : "locked-by-you";
+  if (isUnlocked) {
+    return "open";
+  }
+  return isUnlockedByDefault ? "locked-by-you" : "above-year";
+};
+
+const describeOpenIsland = (
+  { isHome, isUnlockedByDefault }: IslandOnMap,
+  nickname: string,
+): string => {
+  if (isHome) {
+    return `Open: ${nickname}'s own Year`;
+  }
+  return isUnlockedByDefault ? "Open" : "Opened early";
 };
 
 const islandAccessBadges: Record<
@@ -83,8 +98,14 @@ const islandAccessBadges: Record<
 > = {
   open: {
     icon: <StarIcon />,
-    describe: ({ isHome }, nickname) =>
-      isHome ? `Open: ${nickname}'s own Year` : "Open",
+    describe: describeOpenIsland,
+  },
+  "above-year": {
+    icon: <LockIcon />,
+    describe: (_island, nickname, mode) =>
+      mode === "parent"
+        ? `Locked: above ${nickname}'s Year`
+        : `Locked at home: above ${nickname}'s Year`,
   },
   "locked-by-you": {
     icon: <LockIcon />,
@@ -278,8 +299,11 @@ const LockNote = ({ note }: { note: string | undefined }) =>
 const SwitchKey = ({ mode }: { mode: LockMode }) => (
   <dl className="switch-key" aria-label="What the switches do">
     <div>
-      <dt>Can visit</dt>
-      <dd>On an Island: the Child can go there and play its Regions.</dd>
+      <dt>Regions open</dt>
+      <dd>
+        On an Island: the Child can play its Regions and Games. They can travel
+        to and explore every Island whatever this says.
+      </dd>
     </div>
     <div>
       <dt>Can play</dt>
@@ -541,7 +565,7 @@ const IslandCard = ({
         <Switch
           name="unlockedIslandIds"
           value={island.id}
-          caption="Can visit"
+          caption="Regions open"
           detail={`${island.name} for ${nickname}`}
           isOn={isOn}
           isDisabled={
@@ -731,7 +755,8 @@ export const ChildIslands = ({
           {child.yearGroup === null
             ? "no Year yet"
             : `Year ${String(child.yearGroup)}`}{" "}
-          and can visit {openIslandCount} of {islands.length} Islands.
+          and can play the Regions on {openIslandCount} of {islands.length}{" "}
+          Islands.
         </p>
       </header>
       <p role="status">{news}</p>
@@ -805,12 +830,13 @@ export const IslandsPanel = ({
       <div className="view-intro">
         <h1>Islands</h1>
         <p>
-          Each Island teaches one Year, and a Child can visit every Island,
-          whatever their own Year. Lock an Island, turn a Region or a single
-          Game off, or open every Game in a Region at once. Every switch can be
-          turned back, and a Child keeps the Stars and Games they have already
-          earned. Anything their Teacher has turned off stays off until their
-          Teacher turns it back on.
+          Each Island teaches one Year. A Child can travel to and explore every
+          Island, and plays the Regions on the Islands for their own Year and
+          below. Open an Island above their Year early, lock an Island, turn a
+          Region or a single Game off, or open every Game in a Region at once.
+          Every switch can be turned back, and a Child keeps the Stars and Games
+          they have already earned. Anything their Teacher has turned off stays
+          off until their Teacher turns it back on.
         </p>
       </div>
       {view.kind === "loading" ? (

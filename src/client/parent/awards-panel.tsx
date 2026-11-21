@@ -8,7 +8,7 @@ import {
   type SubmitEvent,
 } from "react";
 import { BusyProgress, useBusyAction } from "../busy/busy-progress.js";
-import { buildIslandsOnMap } from "../../curriculum/island-access.js";
+import { canExploreIsland } from "../../curriculum/island-access.js";
 import {
   findQuestProgress,
   isPuzzleWithinReach,
@@ -506,8 +506,8 @@ const QuestCard = ({
       {canVisit ? null : (
         <p className="lock-note">
           <LockIcon />
-          {island?.name ?? "This Island"} is locked for {nickname}, so this
-          Quest waits until it's open again.
+          {island?.name ?? "This Island"} is locked for {nickname} to explore,
+          so this Quest waits until it's open again.
         </p>
       )}
       {state === "finished" ? (
@@ -563,9 +563,6 @@ interface QuestsSectionProps {
 
 const QuestsSection = ({ child, awards }: QuestsSectionProps) => {
   const headingId = useId();
-  const visitableIslandIds = buildIslandsOnMap(child.yearGroup, child.limits)
-    .filter(({ isUnlocked }) => isUnlocked)
-    .map(({ id }) => id);
   const questProgress = islandQuests.map((quest) =>
     findQuestProgress(awards.questProgress, quest.islandId),
   );
@@ -593,7 +590,7 @@ const QuestsSection = ({ child, awards }: QuestsSectionProps) => {
             key={quest.islandId}
             quest={quest}
             progress={questProgress[index]}
-            canVisit={visitableIslandIds.includes(quest.islandId)}
+            canVisit={canExploreIsland(child.limits, quest.islandId)}
             nickname={child.nickname}
             isOpenAtFirst={index === firstUnderWay}
           />

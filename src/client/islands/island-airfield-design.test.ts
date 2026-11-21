@@ -179,19 +179,21 @@ describe.each(islandIds)("the airfield on %s", (islandId) => {
       ...landform.features.map(({ position }) => position),
     ];
     const propPlaces = listAdventurePlaces(adventure);
-    landform.listScatters(keepClearOf, propPlaces).forEach((scatter) => {
-      const things = [
-        ...scatter.things,
-        ...mirrorOntoNewLands(scatter.things, {
-          keepEvery: 1,
-          findHeight: landform.findHeight,
-          isClear: (point) => isClearOfProps(point, propPlaces),
-        }),
-      ];
-      things.forEach((thing) => {
-        expect(isOnAirfield(islandId, thing, 0.5), scatter.name).toBe(false);
+    landform
+      .listScatters(keepClearOf, propPlaces, () => true)
+      .forEach((scatter) => {
+        const things = [
+          ...scatter.things,
+          ...mirrorOntoNewLands(scatter.things, {
+            keepEvery: 1,
+            findHeight: landform.findHeight,
+            isClear: (point) => isClearOfProps(point, propPlaces),
+          }),
+        ];
+        things.forEach((thing) => {
+          expect(isOnAirfield(islandId, thing, 0.5), scatter.name).toBe(false);
+        });
       });
-    });
     landform.features.forEach(({ name, position }) => {
       expect(isOnAirfield(islandId, position, 2.5), name).toBe(false);
     });

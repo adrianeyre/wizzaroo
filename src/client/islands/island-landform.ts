@@ -96,6 +96,7 @@ export interface IslandLandform {
   listScatters: (
     keepClearOf: MapPoint[],
     propPlaces: readonly MapPoint[],
+    isClearOfTrailsAndAirfield: (point: MapPoint) => boolean,
   ) => IslandScatter[];
   features: IslandFeature[];
   newLands: NewLands;

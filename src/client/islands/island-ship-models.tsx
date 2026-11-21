@@ -4,6 +4,7 @@ import {
   BoxGeometry,
   BufferAttribute,
   BufferGeometry,
+  type CanvasTexture,
   ConeGeometry,
   CylinderGeometry,
   SphereGeometry,
@@ -23,7 +24,17 @@ import {
   islandFlagHoists,
 } from "./island-flagpole.js";
 import { buildHoverSlipwayGeometry } from "./island-hover-slipway.js";
-import { useWizzarooFlagTexture } from "./island-livery-models.js";
+import {
+  LiveryDecals,
+  useJollyRogerTexture,
+  useWizzarooFlagTexture,
+} from "./island-livery-models.js";
+import {
+  buildPirateShipGeometry,
+  buildPirateShipLiveryGeometry,
+  jollyRogerHoists,
+  pirateFlagHoists,
+} from "./island-pirate-ship-design.js";
 import { buildMapHarbourGeometry } from "./island-map-harbour.js";
 import { listOverheadLineGeometries } from "./island-overhead-line.js";
 import { buildMapRailwayGeometry } from "./island-railway-design.js";
@@ -35,6 +46,8 @@ import {
   findCraftPlacement,
   findCraftPose,
   findLandPhaseSeconds,
+  isShipLike,
+  type ShipTransport,
   type Transport,
 } from "./island-journey.js";
 import { useBuiltGeometry } from "../world-map-hooks.js";
@@ -157,15 +170,16 @@ export const waveFlagCloth = (cloth: FlagCloth, seconds: number): void => {
   cloth.geometry.computeVertexNormals();
 };
 
-const WizzarooFlags = ({
-  hoists = shipFlagHoists,
-  name = "wizzaroo-flags",
+const WavingFlags = ({
+  hoists,
+  name,
+  texture,
 }: {
-  hoists?: readonly FlagHoist[];
-  name?: string;
+  hoists: readonly FlagHoist[];
+  name: string;
+  texture: CanvasTexture;
 }) => {
   const cloth = useMemo(() => buildFlagCloth(hoists), [hoists]);
-  const texture = useWizzarooFlagTexture();
   const age = useRef(0);
   useEffect(
     () => () => {
@@ -184,16 +198,58 @@ const WizzarooFlags = ({
   );
 };
 
+const WizzarooFlags = ({
+  hoists = shipFlagHoists,
+  name = "wizzaroo-flags",
+}: {
+  hoists?: readonly FlagHoist[];
+  name?: string;
+}) => (
+  <WavingFlags hoists={hoists} name={name} texture={useWizzarooFlagTexture()} />
+);
+
+const JollyRogerFlags = () => (
+  <WavingFlags
+    hoists={jollyRogerHoists}
+    name="jolly-roger-flags"
+    texture={useJollyRogerTexture()}
+  />
+);
+
+interface ShipDesign {
+  buildGeometry: () => BufferGeometry;
+  buildLivery?: () => BufferGeometry;
+  hoists: readonly FlagHoist[];
+  hasJollyRoger: boolean;
+}
+
+const shipDesigns: Record<ShipTransport, ShipDesign> = {
+  ship: {
+    buildGeometry: buildShipGeometry,
+    hoists: shipFlagHoists,
+    hasJollyRoger: false,
+  },
+  pirateShip: {
+    buildGeometry: buildPirateShipGeometry,
+    buildLivery: buildPirateShipLiveryGeometry,
+    hoists: pirateFlagHoists,
+    hasJollyRoger: true,
+  },
+};
+
 export const VoyageShip = ({
   findPlacement,
   scale = 1,
   name = "voyage-ship",
+  ship: shipKind = "ship",
 }: {
   findPlacement: (deltaSeconds: number) => ShipPlacement | undefined;
   scale?: number;
   name?: string;
+  ship?: ShipTransport;
 }) => {
-  const geometry = useBuiltGeometry(buildShipGeometry);
+  const design = shipDesigns[shipKind];
+  const geometry = useBuiltGeometry(design.buildGeometry);
   const ship = useRef<Group>(null);
   const age = useRef(0);
   useFrame((_state, deltaSeconds) => {
@@ -220,9 +276,20 @@ export const VoyageShip = ({
   return (
     <group ref={ship} name={name} scale={scale} visible={false}>
       <mesh geometry={geometry} castShadow receiveShadow>
-        <GrainedMaterial grain={surfaceGrains.metal} />
+        <GrainedMaterial
+          grain={
+            shipKind === "ship" ? surfaceGrains.metal : surfaceGrains.timber
+          }
+        />
       </mesh>
-      <WizzarooFlags />
+      <WizzarooFlags hoists={design.hoists} />
+      {design.hasJollyRoger ? <JollyRogerFlags /> : null}
+      {design.buildLivery === undefined ? null : (
+        <LiveryDecals
+          buildGeometry={design.buildLivery}
+          name={`${name}-livery`}
+        />
+      )}
     </group>
   );
 };
@@ -448,9 +515,11 @@ const Gangplank = ({
 const IslandDockShip = ({
   adventure,
   clock,
+  ship,
 }: {
   adventure: IslandAdventure;
   clock: RefObject<VoyageClock>;
+  ship: ShipTransport;
 }) => {
   const findPlacement = () => {
     const { phase, seconds } = clock.current;
@@ -464,7 +533,11 @@ const IslandDockShip = ({
   };
   return (
     <>
-      <VoyageShip findPlacement={findPlacement} />
+      <VoyageShip
+        findPlacement={findPlacement}
+        ship={ship}
+        name={ship === "ship" ? "voyage-ship" : `voyage-${ship}`}
+      />
       <Gangplank adventure={adventure} clock={clock} />
     </>
   );
@@ -479,8 +552,10 @@ export const IslandJourneyCraft = ({
   transport: Transport;
   clock: RefObject<VoyageClock>;
 }) => {
-  if (transport === "ship") {
-    return <IslandDockShip adventure={adventure} clock={clock} />;
+  if (isShipLike(transport)) {
+    return (
+      <IslandDockShip adventure={adventure} clock={clock} ship={transport} />
+    );
   }
   const findPose = () => {
     const { phase, seconds } = clock.current;

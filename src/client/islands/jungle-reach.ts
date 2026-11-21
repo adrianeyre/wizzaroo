@@ -752,7 +752,7 @@ export const jungleReach: IslandLandform = {
     ),
   waterCourses: jungleRivers,
   pools: [],
-  listScatters: (keepClearOf, propPlaces) => {
+  listScatters: (keepClearOf, propPlaces, isClearOfTrailsAndAirfield) => {
     const clearOfBridges = [
       ...keepClearOf,
       ...ropeBridgeCrossings.map(({ at }) => at),
@@ -769,6 +769,7 @@ export const jungleReach: IslandLandform = {
           highest: 5.5,
           keepClearOf: clearOfBridges,
           propPlaces,
+          isClearOfTrailsAndAirfield,
           clearance: 3.6,
           findHeight: findJungleHeight,
           findDistanceToWater: findDistanceToJungleWater,
@@ -786,6 +787,7 @@ export const jungleReach: IslandLandform = {
           highest: 5.5,
           keepClearOf: clearOfBridges,
           propPlaces,
+          isClearOfTrailsAndAirfield,
           clearance: 2.6,
           findHeight: findJungleHeight,
           findDistanceToWater: findDistanceToJungleWater,

@@ -16,7 +16,7 @@ import {
 } from "./island-flight.js";
 import type { VoyagePhase } from "./island-voyage.js";
 
-export type SeaCraft = "hovercraft" | "submarine";
+export type SeaCraft = "hovercraft" | "submarine" | "jetski";
 
 export const seaCraftPhaseSeconds: Record<
   SeaCraft,
@@ -37,6 +37,14 @@ export const seaCraftPhaseSeconds: Record<
     docking: 11,
     landing: 6,
     leaving: 11,
+  },
+  jetski: {
+    calling: 8,
+    boarding: 4.5,
+    departing: 8,
+    docking: 8,
+    landing: 4.5,
+    leaving: 8,
   },
 };
 
@@ -286,6 +294,90 @@ const findSubDeparture = (dock: Dock, share: number): CraftPlacement => {
   };
 };
 
+export const jetskiLength = 3.6;
+export const jetskiBeam = 1.3;
+export const jetskiFootwell = 0.5;
+export const jetskiRiderZ = 0.3;
+const jetskiBerthGap = 0.35;
+const jetskiBerthSetBack = 1.6;
+const jetskiApproach = 95;
+const jetskiCarve = 7;
+const jetskiPlaningPitch = 0.12;
+const jetskiDepartureSwing = 3;
+
+export const findJetskiBerth = (dock: Dock): CraftPlacement => {
+  const { seaward, across, landwardHeading } = findDockFrame(dock);
+  const along = jetskiLength / 2 + jetskiBerthSetBack;
+  const out = pierHalfWidth + jetskiBeam / 2 + jetskiBerthGap;
+  return {
+    x: dock.to.x - seaward.x * along + across.x * out,
+    y: 0,
+    z: dock.to.z - seaward.z * along + across.z * out,
+    heading: landwardHeading,
+    pitch: 0,
+    roll: 0,
+  };
+};
+
+const findJetskiArrivalSpot = (dock: Dock, share: number): MapPoint => {
+  const berth = findJetskiBerth(dock);
+  const { seaward, across } = findDockFrame(dock);
+  const left = 1 - easeOut(Math.min(1, share));
+  const still = jetskiApproach * left;
+  const carve = jetskiCarve * Math.sin(Math.PI * left) * left;
+  return {
+    x: berth.x + seaward.x * still + across.x * carve,
+    z: berth.z + seaward.z * still + across.z * carve,
+  };
+};
+
+const findJetskiArrival = (dock: Dock, share: number): CraftPlacement => {
+  const berth = findJetskiBerth(dock);
+  const here = findJetskiArrivalSpot(dock, share);
+  const ahead = findJetskiArrivalSpot(dock, share + 0.01);
+  const moved = Math.hypot(ahead.x - here.x, ahead.z - here.z);
+  const steer = Math.atan2(ahead.x - here.x, ahead.z - here.z) - berth.heading;
+  const turned = Math.atan2(Math.sin(steer), Math.cos(steer));
+  const left = 1 - easeOut(share);
+  return {
+    ...berth,
+    ...here,
+    heading: berth.heading + turned * smoothStep(0.02, 0.2, moved),
+    pitch: jetskiPlaningPitch * smoothStep(0.05, 0.5, 1 - share),
+    roll: -0.6 * turned * smoothStep(0.02, 0.2, moved) * Math.min(1, left * 3),
+  };
+};
+
+const findJetskiDeparture = (dock: Dock, share: number): CraftPlacement => {
+  const berth = findJetskiBerth(dock);
+  const { seaward, across } = findDockFrame(dock);
+  const underway = Math.max(0, (share - 0.1) / 0.9);
+  const swing = smoothStep(0, 0.3, underway);
+  const turn = smoothStep(0.15, 0.5, underway);
+  const out = jetskiApproach * Math.max(0, underway - 0.2) ** 2 * 1.56;
+  return {
+    x: berth.x + across.x * jetskiDepartureSwing * swing + seaward.x * out,
+    y: 0,
+    z: berth.z + across.z * jetskiDepartureSwing * swing + seaward.z * out,
+    heading: berth.heading + Math.PI * turn,
+    pitch: jetskiPlaningPitch * smoothStep(0.45, 0.75, underway),
+    roll: 0.2 * Math.sin(Math.PI * turn),
+  };
+};
+
+export const findJetskiSpray = (phase: VoyagePhase, share: number): number => {
+  if (phase === "crossing") {
+    return 1;
+  }
+  if (phase === "calling" || phase === "docking") {
+    return 1 - smoothStep(0.55, 0.95, share);
+  }
+  if (phase === "departing" || phase === "leaving") {
+    return smoothStep(0.35, 0.65, share);
+  }
+  return 0;
+};
+
 export const findSeaCraftPlacement = (
   adventure: IslandAdventure,
   craft: SeaCraft,
@@ -300,6 +392,15 @@ export const findSeaCraftPlacement = (
       return findHovercraftTakeOff(adventure, share);
     }
     return findHovercraftLanding(adventure, 1);
+  }
+  if (craft === "jetski") {
+    if (isArriving(phase)) {
+      return findJetskiArrival(adventure.dock, share);
+    }
+    if (isGoing(phase)) {
+      return findJetskiDeparture(adventure.dock, share);
+    }
+    return findJetskiBerth(adventure.dock);
   }
   if (isArriving(phase)) {
     return findSubArrival(adventure.dock, share);
@@ -351,6 +452,30 @@ const findSubWay = (dock: Dock): Spot3[] => {
   ];
 };
 
+const findJetskiWay = (dock: Dock): Spot3[] => {
+  const side = findSubPierSide(dock);
+  const pierEdge = jetskiBeam / 2 + jetskiBerthGap;
+  return [
+    {
+      x: side * (pierEdge + pierHalfWidth * 0.7),
+      y: pierDeckHeight,
+      z: jetskiRiderZ,
+    },
+    { x: side * (pierEdge + 0.05), y: pierDeckHeight, z: jetskiRiderZ },
+    { x: side * 0.35, y: jetskiFootwell, z: jetskiRiderZ },
+    { x: 0, y: jetskiFootwell, z: jetskiRiderZ },
+  ];
+};
+
+const findSeaCraftWay = (adventure: IslandAdventure, craft: SeaCraft) => {
+  if (craft === "hovercraft") {
+    return findHovercraftWay();
+  }
+  return craft === "jetski"
+    ? findJetskiWay(adventure.dock)
+    : findSubWay(adventure.dock);
+};
+
 const findParked = (
   adventure: IslandAdventure,
   craft: SeaCraft,
@@ -376,6 +501,13 @@ export const findSeaCraftWaitingSpot = (
 ): MapPoint => {
   if (craft === "submarine") {
     return findSubWaitingSpot(adventure.dock);
+  }
+  if (craft === "jetski") {
+    const { x, z } = placeOnCraft(
+      findParked(adventure, craft),
+      findJetskiWay(adventure.dock)[0],
+    );
+    return { x, z };
   }
   const { x, z } = placeOnCraft(
     findParked(adventure, craft),
@@ -423,8 +555,8 @@ export const findSeaCraftCarriedSpot = (
   share: number,
 ): BoardingSpot => {
   const placement = findSeaCraftPlacement(adventure, craft, phase, share);
-  const way =
-    craft === "hovercraft" ? findHovercraftWay() : findSubWay(adventure.dock);
+  const way = findSeaCraftWay(adventure, craft);
+  const isRidingInView = craft === "jetski";
   const arrivalHeading = findSeaCraftArrivalHeading(adventure, craft);
   const towardsCraft = arrivalHeading + Math.PI;
   if (phase === "calling") {
@@ -440,7 +572,8 @@ export const findSeaCraftCarriedSpot = (
     const path = phase === "boarding" ? way : way.toReversed();
     const local = findAlongWay(path, walked);
     const isInside =
-      phase === "boarding" ? share >= boardedShare : share < doorOpeningShare;
+      !isRidingInView &&
+      (phase === "boarding" ? share >= boardedShare : share < doorOpeningShare);
     return {
       ...settleOnGround(
         adventure,
@@ -455,13 +588,14 @@ export const findSeaCraftCarriedSpot = (
   return {
     ...placeOnCraft(placement, way[way.length - 1]),
     heading: placement.heading,
-    isInside: true,
+    isInside: !isRidingInView,
   };
 };
 
 const seaCraftCameraOffsets: Record<SeaCraft, Spot3> = {
   hovercraft: { x: 9, y: 6, z: 9 },
   submarine: { x: -6, y: 6, z: 12 },
+  jetski: { x: -5, y: 4, z: 8 },
 };
 
 export const findSeaCraftCameraSpot = (
@@ -487,8 +621,20 @@ export const findSeaCraftCameraSpot = (
 
 const hovercraftBlockerRadius = 3.2;
 const subBlockerRadius = 1.4;
-const blockerCount = 5;
 const groundedWithin = 1.5;
+
+const seaCraftBlockerShapes: Record<
+  SeaCraft,
+  { length: number; radius: number; count: number }
+> = {
+  hovercraft: {
+    length: hovercraftLength,
+    radius: hovercraftBlockerRadius,
+    count: 3,
+  },
+  submarine: { length: subLength, radius: subBlockerRadius, count: 5 },
+  jetski: { length: jetskiLength, radius: jetskiBeam / 2, count: 2 },
+};
 
 export const listSeaCraftBlockers = (
   adventure: IslandAdventure,
@@ -496,17 +642,13 @@ export const listSeaCraftBlockers = (
   placement: CraftPlacement,
 ): { centre: MapPoint; radius: number }[] => {
   const parked = findParked(adventure, craft);
+  const { length, radius, count } = seaCraftBlockerShapes[craft];
   const isAtBerth =
     Math.abs(placement.y - parked.y) < groundedWithin &&
-    Math.hypot(placement.x - parked.x, placement.z - parked.z) <
-      (craft === "hovercraft" ? hovercraftLength : subLength);
+    Math.hypot(placement.x - parked.x, placement.z - parked.z) < length;
   if (!isAtBerth) {
     return [];
   }
-  const length = craft === "hovercraft" ? hovercraftLength : subLength;
-  const radius =
-    craft === "hovercraft" ? hovercraftBlockerRadius : subBlockerRadius;
-  const count = craft === "hovercraft" ? 3 : blockerCount;
   return Array.from({ length: count }, (_, index) => ({
     centre: placeLocal(placement, {
       x: 0,

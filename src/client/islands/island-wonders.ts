@@ -33,7 +33,8 @@ import { attractionSites } from "./island-attraction-sites.js";
 import { frostIsle } from "./frost-isle.js";
 import {
   exploreScale,
-  findDistanceToTrail,
+  findIslandAdventure,
+  isClearOfTrailsAndAirfield,
   isInsideFirstLands,
   listAdventurePlaces,
   type IslandAdventure,
@@ -1402,6 +1403,7 @@ const buildSceneryClearance = (
     ),
   ];
   const newLands = findNewLands(adventure.islandId);
+  const mapAdventure = findIslandAdventure(adventure.islandId);
   return (point) => {
     const mapPoint = { x: point.x / exploreScale, z: point.z / exploreScale };
     if (
@@ -1421,7 +1423,7 @@ const buildSceneryClearance = (
       height <= groveHighest &&
       findDistanceToNewLandRivers(mapPoint, newLands) > 0.9 &&
       adventure.findCourseKind(point) === undefined &&
-      findDistanceToTrail(adventure, point) > 0.6 * exploreScale
+      isClearOfTrailsAndAirfield(mapAdventure, mapPoint)
     );
   };
 };

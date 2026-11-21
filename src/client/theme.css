@@ -17,6 +17,7 @@
 }
 
 :root {
+  --layer-open-menu: 100;
   color-scheme: light dark;
 
   --colour-on-primary: light-dark(#ffffff, #0b1020);
@@ -1782,6 +1783,13 @@ table.mastery td {
   box-shadow: 0 4px 20px light-dark(rgb(15 23 42 / 0.08), rgb(0 0 0 / 0.3));
   -webkit-backdrop-filter: blur(14px) saturate(150%);
   backdrop-filter: blur(14px) saturate(150%);
+}
+
+/* An open Menu drops down over everything else in the game: Region panels,
+   side panels, explore pop-ups and fireworks. */
+.play-nav:has(.play-menu-toggle[aria-expanded="true"]),
+.site-header:has(.site-menu-toggle[aria-expanded="true"]) {
+  z-index: var(--layer-open-menu);
 }
 
 .play-nav p {
@@ -13237,6 +13245,7 @@ li.island-card {
   box-shadow: var(--shadow-card);
 }
 
+li.island-card[data-access="above-year"],
 li.island-card[data-access="locked-by-you"],
 li.island-card[data-access="locked-by-teacher"] {
   background: var(--colour-muted);

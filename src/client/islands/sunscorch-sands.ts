@@ -769,7 +769,7 @@ export const sunscorchSands: IslandLandform = {
     ),
   waterCourses: [],
   pools: [oasisPool],
-  listScatters: (keepClearOf, propPlaces) => {
+  listScatters: (keepClearOf, propPlaces, isClearOfTrailsAndAirfield) => {
     const clearOfTowns = [...keepClearOf, marketTownCentre, desertRuinsCentre];
     return [
       {
@@ -784,7 +784,9 @@ export const sunscorchSands: IslandLandform = {
             (palm) =>
               keepClearOf.every(
                 (place) => Math.hypot(palm.x - place.x, palm.z - place.z) > 3,
-              ) && isClearOfProps(palm, propPlaces),
+              ) &&
+              isClearOfProps(palm, propPlaces) &&
+              isClearOfTrailsAndAirfield(palm),
           ),
           ...scatterAcrossLand({
             count: 26,
@@ -793,6 +795,7 @@ export const sunscorchSands: IslandLandform = {
             highest: 0.7,
             keepClearOf: clearOfTowns,
             propPlaces,
+            isClearOfTrailsAndAirfield,
             clearance: 3.2,
             findHeight: findSandsHeight,
             findDistanceToWater: findDistanceToSandsWater,
@@ -811,6 +814,7 @@ export const sunscorchSands: IslandLandform = {
           highest: 5,
           keepClearOf: clearOfTowns,
           propPlaces,
+          isClearOfTrailsAndAirfield,
           clearance: 2.8,
           findHeight: findSandsHeight,
           findDistanceToWater: findDistanceToSandsWater,

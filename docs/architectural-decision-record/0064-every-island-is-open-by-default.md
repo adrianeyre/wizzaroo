@@ -2,6 +2,8 @@
 
 > **Personal use only.** Wizzaroo is intended for your own personal use only. It is not intended for use with or by a school, teacher, parent or student. Only use it for yourself.
 
+Superseded in part by [0071](./0071-islands-above-a-childs-year-are-explored-but-not-played-by-default.md): only the Islands for the Child's own Year and below are open to play by default; the ones above can still be travelled to and explored, and a Parent opens them early.
+
 Until now a Child could visit the Island for their own Year and every one below it, and the Islands above were locked until a Parent opened them early ([ADR 0025](./0025-one-island-per-year-group.md)). The owner asked for a Child to be able to visit every Island by default.
 
 ## What changes

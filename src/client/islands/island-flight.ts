@@ -6,7 +6,7 @@ import {
 import { exploreScale, type IslandAdventure } from "./island-adventures.js";
 import type { CarriedSpot, VoyagePhase } from "./island-voyage.js";
 
-export type Aircraft = "aeroplane" | "helicopter" | "balloon";
+export type Aircraft = "aeroplane" | "helicopter" | "balloon" | "rocket";
 
 export type LandPhase = Exclude<VoyagePhase, "crossing">;
 
@@ -44,6 +44,11 @@ export const balloonDoor: Spot3 = {
   z: 0,
 };
 
+export const rocketBodyRadius = 1.25;
+export const rocketHatch: Spot3 = { x: rocketBodyRadius, y: 2.3, z: 0 };
+export const rocketStairRun = 2.9;
+export const rocketLegReach = 3.4;
+
 export const aircraftPhaseSeconds: Record<
   Aircraft,
   Record<LandPhase, number>
@@ -65,6 +70,14 @@ export const aircraftPhaseSeconds: Record<
     leaving: 8,
   },
   balloon: {
+    calling: 11,
+    boarding: 5,
+    departing: 10,
+    docking: 11,
+    landing: 5,
+    leaving: 10,
+  },
+  rocket: {
     calling: 11,
     boarding: 5,
     departing: 10,
@@ -136,6 +149,7 @@ const aircraftFrames: Record<Aircraft, (adventure: IslandAdventure) => Frame> =
     aeroplane: findRunwayFrame,
     helicopter: findHelipadFrame,
     balloon: findBalloonFieldFrame,
+    rocket: findHelipadFrame,
   };
 
 const findAircraftFrame = (
@@ -326,6 +340,66 @@ const findBalloonTakeOff = (frame: Frame, share: number): CraftPlacement => {
   };
 };
 
+export const rocketCruiseHeight = 90;
+const rocketSettlingShare = 0.9;
+const rocketDrift = 36;
+const rocketLiftOffShare = 0.3;
+const rocketTilt = 0.1;
+
+const findRocketLanding = (frame: Frame, share: number): CraftPlacement => {
+  const left = 1 - Math.min(1, share / rocketSettlingShare);
+  const spot = placeInFrame(frame, {
+    x: 0,
+    y: rocketCruiseHeight * left ** 2,
+    z: -rocketDrift * left ** 3,
+  });
+  return {
+    ...spot,
+    heading: frame.heading,
+    pitch: rocketTilt * left ** 2,
+    roll: 0,
+  };
+};
+
+const findRocketTakeOff = (frame: Frame, share: number): CraftPlacement => {
+  const risen = Math.max(
+    0,
+    (share - rocketLiftOffShare) / (1 - rocketLiftOffShare),
+  );
+  const spot = placeInFrame(frame, {
+    x: 0,
+    y: rocketCruiseHeight * risen ** 2,
+    z: rocketDrift * risen ** 3,
+  });
+  return {
+    ...spot,
+    heading: frame.heading,
+    pitch: -rocketTilt * risen ** 2,
+    roll: 0,
+  };
+};
+
+const rocketBurns: Partial<Record<VoyagePhase, [number, number][]>> = {
+  calling: [[0, 0.93]],
+  docking: [[0, 0.93]],
+  departing: [[0.2, 1.1]],
+  leaving: [[0.2, 1.1]],
+  crossing: [
+    [-0.1, 0.38],
+    [0.78, 1.1],
+  ],
+};
+
+export const findRocketBurn = (phase: VoyagePhase, share: number): number =>
+  Math.max(
+    0,
+    ...(rocketBurns[phase] ?? []).map(
+      ([from, to]) =>
+        smoothStep(from - 0.03, from, share) *
+        (1 - smoothStep(to, to + 0.03, share)),
+    ),
+  );
+
 const burnerBlasts: Partial<Record<VoyagePhase, [number, number][]>> = {
   calling: [
     [0.3, 0.42],
@@ -371,6 +445,20 @@ export const findAircraftPlacement = (
       return findAeroplaneTakeOff(frame, share);
     }
     return placeAlongRunway(frame, 0, 0, 0);
+  }
+  if (aircraft === "rocket") {
+    if (isArriving(phase)) {
+      return findRocketLanding(frame, share);
+    }
+    if (isGoing(phase)) {
+      return findRocketTakeOff(frame, share);
+    }
+    return {
+      ...placeInFrame(frame, { x: 0, y: 0, z: 0 }),
+      heading: frame.heading,
+      pitch: 0,
+      roll: 0,
+    };
   }
   if (aircraft === "balloon") {
     if (isArriving(phase)) {
@@ -454,10 +542,21 @@ const balloonBoardingWay: BoardingWay = {
   isRidingInView: true,
 };
 
+const rocketBoardingWay: BoardingWay = {
+  waiting: { x: rocketHatch.x + rocketStairRun + 2.4, y: 0, z: rocketHatch.z },
+  path: [
+    { x: rocketHatch.x + rocketStairRun + 2.4, y: 0, z: rocketHatch.z },
+    { x: rocketHatch.x + rocketStairRun + 0.3, y: 0, z: rocketHatch.z },
+    { x: rocketHatch.x + 0.1, y: rocketHatch.y, z: rocketHatch.z },
+    { x: rocketHatch.x - 0.55, y: rocketHatch.y, z: rocketHatch.z },
+  ],
+};
+
 const boardingWays: Record<Aircraft, BoardingWay> = {
   aeroplane: aeroplaneBoardingWay,
   helicopter: helicopterBoardingWay,
   balloon: balloonBoardingWay,
+  rocket: rocketBoardingWay,
 };
 
 const findAlongWay = (path: readonly Spot3[], share: number): Spot3 => {
@@ -558,6 +657,7 @@ const aircraftCameraOffsets: Record<Aircraft, Spot3> = {
   aeroplane: { x: 9, y: 6, z: 14 },
   helicopter: { x: 5, y: 6, z: 10 },
   balloon: { x: 8, y: 7, z: 13 },
+  rocket: { x: 9, y: 6, z: 16 },
 };
 
 export const findAircraftCameraSpot = (
@@ -589,6 +689,11 @@ export const listAircraftBlockers = (
   }
   if (aircraft === "helicopter") {
     return [{ centre: { x: craft.x, z: craft.z }, radius: 1.6 }];
+  }
+  if (aircraft === "rocket") {
+    return [
+      { centre: { x: craft.x, z: craft.z }, radius: rocketBodyRadius + 0.9 },
+    ];
   }
   if (aircraft === "balloon") {
     return [

@@ -34,11 +34,16 @@ import {
 } from "./island-journey.js";
 import {
   findHoverSurface,
+  findJetskiBerth,
+  findJetskiSpray,
   findSeaCraftPlacement,
   findSkirtLift,
   findSubBerth,
   findSubPierSide,
   hovercraftCushion,
+  jetskiBeam,
+  jetskiFootwell,
+  jetskiLength,
   seaCraftPhaseSeconds,
   subBrowLength,
   subDeckHalfWidth,
@@ -69,7 +74,7 @@ const ports = worldMap.islands.map(({ id, seaPosition }) => ({
   seaPosition,
 }));
 
-const seaCraft: readonly SeaCraft[] = ["hovercraft", "submarine"];
+const seaCraft: readonly SeaCraft[] = ["hovercraft", "submarine", "jetski"];
 
 describe.each(islandIds)("the hovercraft on %s", (islandId) => {
   const adventure = findExploreAdventure(islandId);
@@ -195,18 +200,20 @@ describe.each(islandIds)("the hover slipway on %s", (islandId) => {
       ...landform.features.map(({ position }) => position),
     ];
     const propPlaces = listAdventurePlaces(adventure);
-    landform.listScatters(keepClearOf, propPlaces).forEach((scatter) => {
-      [
-        ...scatter.things,
-        ...mirrorOntoNewLands(scatter.things, {
-          keepEvery: 1,
-          findHeight: landform.findHeight,
-          isClear: (point) => isClearOfProps(point, propPlaces),
-        }),
-      ].forEach((thing) => {
-        expect(isOnPad(thing, 1), scatter.name).toBe(false);
+    landform
+      .listScatters(keepClearOf, propPlaces, () => true)
+      .forEach((scatter) => {
+        [
+          ...scatter.things,
+          ...mirrorOntoNewLands(scatter.things, {
+            keepEvery: 1,
+            findHeight: landform.findHeight,
+            isClear: (point) => isClearOfProps(point, propPlaces),
+          }),
+        ].forEach((thing) => {
+          expect(isOnPad(thing, 1), scatter.name).toBe(false);
+        });
       });
-    });
     landform.features.forEach(({ name, position }) => {
       expect(isOnPad(position, 2), name).toBe(false);
     });
@@ -306,6 +313,105 @@ describe.each(islandIds)("the submarine on %s", (islandId) => {
   });
 });
 
+describe.each(islandIds)("the jetski on %s", (islandId) => {
+  const adventure = findExploreAdventure(islandId);
+  const world = buildAdventureWorld(adventure);
+  const findClearance = (placement: MapPoint) =>
+    -Math.max(
+      ...[-1, 0, 1].map((along) =>
+        adventure.findHeight({
+          x: placement.x + Math.sin(along) * jetskiLength * 0.5 * along,
+          z: placement.z + Math.cos(along) * jetskiLength * 0.5 * along,
+        }),
+      ),
+    );
+
+  it("zooms in over open water and stops at its berth beside the pier", () => {
+    listShares(400).forEach((share) => {
+      const craft = findSeaCraftPlacement(
+        adventure,
+        "jetski",
+        "calling",
+        share,
+      );
+      expect(findClearance(craft)).toBeGreaterThan(0.2);
+    });
+    const berthed = findSeaCraftPlacement(adventure, "jetski", "calling", 1);
+    const berth = findJetskiBerth(adventure.dock);
+    (["x", "z", "heading", "pitch", "roll"] as const).forEach((key) => {
+      expect(berthed[key]).toBeCloseTo(berth[key]);
+    });
+    const pier = buildDockPier(adventure);
+    const across = Math.abs(
+      ((berthed.x - pier.from.x) * (pier.to.z - pier.from.z) -
+        (berthed.z - pier.from.z) * (pier.to.x - pier.from.x)) /
+        Math.hypot(pier.to.x - pier.from.x, pier.to.z - pier.from.z),
+    );
+    expect(across).toBeGreaterThan(pierHalfWidth + jetskiBeam / 2);
+    expect(across).toBeLessThan(pierHalfWidth + jetskiBeam);
+  });
+
+  it("turns round and speeds away out to sea, keeping off the seabed", () => {
+    listShares(400).forEach((share) => {
+      const craft = findSeaCraftPlacement(
+        adventure,
+        "jetski",
+        "departing",
+        share,
+      );
+      expect(findClearance(craft)).toBeGreaterThan(0.2);
+    });
+    const berth = findJetskiBerth(adventure.dock);
+    const away = findSeaCraftPlacement(adventure, "jetski", "departing", 1);
+    expect(Math.hypot(away.x - berth.x, away.z - berth.z)).toBeGreaterThan(60);
+  });
+
+  it("steps the Character down from the pier onto its footwell, where they ride in view", () => {
+    const waiting = findJourneyWaitingSpot(adventure, "jetski");
+    const pierDeck = buildDockPier(adventure).endHeight;
+    expect(findWalkSurface(world, waiting, pierDeck).height).toBeCloseTo(
+      pierDeck,
+      1,
+    );
+    expect(isWalkingAboard("jetski", "boarding", 0.5)).toBe(true);
+    const aboard = findJourneyCarriedSpot(adventure, "jetski", "boarding", 1);
+    expect(aboard.isInside).toBe(false);
+    expect(aboard.y).toBeCloseTo(jetskiFootwell);
+    const riding = findJourneyCarriedSpot(
+      adventure,
+      "jetski",
+      "departing",
+      0.7,
+    );
+    const craft = findCraftPlacement(adventure, "jetski", "departing", 0.7);
+    expect(riding.isInside).toBe(false);
+    expect(Math.hypot(riding.x - craft.x, riding.z - craft.z)).toBeLessThan(
+      jetskiLength / 2,
+    );
+    const landed = findJourneyCarriedSpot(adventure, "jetski", "landing", 1);
+    expect(landed.isInside).toBe(false);
+    expect(landed.x).toBeCloseTo(waiting.x);
+    expect(landed.z).toBeCloseTo(waiting.z);
+  });
+
+  it("is solid at its berth, and not once it has zoomed off", () => {
+    const berthed = findCraftPlacement(adventure, "jetski", "leaving", 0);
+    const away = findCraftPlacement(adventure, "jetski", "leaving", 1);
+    expect(listCraftBlockers(adventure, "jetski", berthed).length).toBe(2);
+    expect(listCraftBlockers(adventure, "jetski", away)).toStrictEqual([]);
+  });
+});
+
+describe("the jetski's spray", () => {
+  it("kicks up spray while it is under way, and none while it waits at the pier", () => {
+    expect(findJetskiSpray("crossing", 0.5)).toBe(1);
+    expect(findJetskiSpray("calling", 0.1)).toBeCloseTo(1);
+    expect(findJetskiSpray("calling", 1)).toBe(0);
+    expect(findJetskiSpray("boarding", 0.5)).toBe(0);
+    expect(findJetskiSpray("departing", 0.9)).toBeCloseTo(1);
+  });
+});
+
 describe("crossing the sea between Islands", () => {
   it.each(seaCraft)(
     "takes a few seconds for each part of the %s's journey",
@@ -336,6 +442,16 @@ describe("crossing the sea between Islands", () => {
       });
     },
   );
+
+  it("skims the jetski along the top of the waves", () => {
+    const [meadow, frost] = ports;
+    const course = buildJourneyCourse(
+      buildJourneyRoute(meadow, frost, "jetski"),
+    );
+    listShares(100).forEach((share) => {
+      expect(course.getPointAt(share).y).toBeCloseTo(0);
+    });
+  });
 
   it("hovers the hovercraft just above the waves and keeps the submarine under them", () => {
     const [meadow, frost] = ports;
