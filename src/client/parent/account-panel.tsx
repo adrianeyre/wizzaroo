@@ -14,6 +14,7 @@ import {
   PasskeyList,
   type ParentPasskey,
 } from "./passkeys.js";
+import { SignInCodeForm } from "./sign-in-code-forms.js";
 import {
   NewPasswordForm,
   PasswordForm,
@@ -55,6 +56,7 @@ type AccountTask =
   | { kind: "setting-password" }
   | { kind: "removing-password" }
   | { kind: "adding-passkey" }
+  | { kind: "making-sign-in-code" }
   | { kind: "turning-on-two-factor"; setup: TotpSetup }
   | { kind: "turning-off-two-factor" };
 
@@ -448,6 +450,29 @@ const SignInMethodsSummary = ({
   );
 };
 
+/** Signs another device in as this adult with a short code, for one that can't use their passkey (ADR 0073). */
+const AnotherDeviceSignIn = ({
+  onTaskChosen,
+}: {
+  onTaskChosen: (task: AccountTask) => void;
+}) => (
+  <>
+    <h3>Another device</h3>
+    <p>
+      To sign in on a tablet or computer that can&apos;t use your passkey, make
+      a sign-in code here and type it there.
+    </p>
+    <button
+      type="button"
+      onClick={() => {
+        onTaskChosen({ kind: "making-sign-in-code" });
+      }}
+    >
+      Sign in on another device
+    </button>
+  </>
+);
+
 const otherSignInsProblem =
   "Wizzaroo couldn't sign out your other browsers. Try again in a moment.";
 
@@ -567,6 +592,17 @@ const AccountTaskForm = ({
           onCancelled={onCancelled}
         />
       );
+    case "making-sign-in-code":
+      return (
+        <SignInCodeForm
+          hasPassword={signInMethods.hasPassword}
+          hasPasskey={signInMethods.passkeys.length > 0}
+          isTwoFactorOn={signInMethods.isTwoFactorOn}
+          isStaff={isStaff}
+          onDone={onCancelled}
+          onCancelled={onCancelled}
+        />
+      );
     case "turning-on-two-factor":
       return (
         <TwoFactorSetupForm
@@ -654,6 +690,7 @@ export const AccountPanel = ({
               finishTask(`Your passkey on ${name} is removed.`);
             }}
           />
+          <AnotherDeviceSignIn onTaskChosen={chooseTask} />
           <OtherBrowsersSignOut
             onSignedOut={() => {
               finishTask(

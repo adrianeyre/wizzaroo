@@ -241,6 +241,7 @@ import {
   roomShowcases,
   schoolParents,
   schools,
+  signInCodes,
   signIns,
   teacherYearGroups,
   teachers,
@@ -5115,6 +5116,233 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
         });
         expect(await loadStoredTeacherLocks(devId)).toEqual(locksBefore);
       });
+    });
+  });
+
+  describe("signing in on another device with a sign-in code", () => {
+    const quinn = {
+      email: "quinn-codes@example.com",
+      password: "quinn's-long-password",
+    };
+    const quinnsMac = buildSoftAuthenticator(publicUrl);
+    const signInCodePattern =
+      /^[0-9ABCDEFGHJKMNPQRSTVWXYZ]{5}-[0-9ABCDEFGHJKMNPQRSTVWXYZ]{5}$/u;
+    let quinnUserId: string;
+    let quinnToken: string;
+
+    const makeSignInCode = (payload: Record<string, unknown>) =>
+      injectAs(quinnToken, {
+        method: "POST",
+        url: "/api/sign-in-codes",
+        payload,
+      });
+
+    const answerWithQuinnsMac = async () => {
+      const options = await injectAs(quinnToken, {
+        method: "POST",
+        url: "/api/passkey-confirmation-options",
+      });
+      expect(options.statusCode).toBe(200);
+      return quinnsMac.signIn(readChallenge(options.json()));
+    };
+
+    const readCode = (response: { json: () => unknown }): string => {
+      const body = response.json();
+      if (
+        typeof body !== "object" ||
+        body === null ||
+        !("code" in body) ||
+        typeof body.code !== "string"
+      ) {
+        throw new Error("no sign-in code was made");
+      }
+      return body.code;
+    };
+
+    const signInWithCode = (code: string) =>
+      server.inject({
+        method: "POST",
+        url: "/api/sign-in-code-sign-ins",
+        payload: { code },
+      });
+
+    const loadSignIn = async (response: {
+      cookies: { name: string; value: string }[];
+    }) => {
+      const cookie = response.cookies.find(
+        ({ name }) => name === signInCookieName,
+      );
+      if (cookie === undefined) {
+        throw new Error("the sign-in code set no sign-in cookie");
+      }
+      const [signIn] = await database
+        .select({ userId: signIns.userId, isTwoStep: signIns.isTwoStep })
+        .from(signIns)
+        .where(eq(signIns.tokenHash, hashSecretToken(cookie.value)));
+      return signIn;
+    };
+
+    beforeAll(async () => {
+      ({ userId: quinnUserId } = await insertUser({
+        email: quinn.email,
+        password: quinn.password,
+        roles: ["parent"],
+        familyName: "The Quinns",
+      }));
+      quinnToken = await signIn(quinn.email, quinn.password);
+      const registration = await injectAs(quinnToken, {
+        method: "POST",
+        url: "/api/passkey-registration-options",
+      });
+      const added = await injectAs(quinnToken, {
+        method: "POST",
+        url: "/api/passkeys",
+        payload: {
+          name: "Quinn's Mac",
+          response: quinnsMac.register(readChallenge(registration.json())),
+        },
+      });
+      expect(added.statusCode).toBe(201);
+    });
+
+    it("makes a code with the passkey on Quinn's Mac that signs a tablet in, two-step, once, however the code is typed", async () => {
+      const made = await makeSignInCode({
+        passkey: await answerWithQuinnsMac(),
+      });
+
+      expect(made.statusCode).toBe(201);
+      const code = readCode(made);
+      expect(code).toMatch(signInCodePattern);
+      expect(made.json()).toMatchObject({
+        url: new URL(`/parent/#sign-in-code=${code}`, publicUrl).href,
+      });
+
+      const typedOnTablet = ` ${code.replace("-", " ").toLowerCase()} `;
+      const signedIn = await signInWithCode(typedOnTablet);
+      expect(signedIn.statusCode).toBe(204);
+      expect(await loadSignIn(signedIn)).toEqual({
+        userId: quinnUserId,
+        isTwoStep: true,
+      });
+
+      const usedAgain = await signInWithCode(code);
+      expect(usedAgain.statusCode).toBe(401);
+      expect(usedAgain.cookies).toEqual([]);
+    });
+
+    it("makes a code with Quinn's password whose sign-in isn't two-step, as a password sign-in isn't", async () => {
+      const made = await makeSignInCode({ currentPassword: quinn.password });
+
+      expect(made.statusCode).toBe(201);
+      const signedIn = await signInWithCode(readCode(made));
+      expect(signedIn.statusCode).toBe(204);
+      expect(await loadSignIn(signedIn)).toEqual({
+        userId: quinnUserId,
+        isTwoStep: false,
+      });
+    });
+
+    it("makes no code without a proof, or with a wrong password", async () => {
+      expect((await makeSignInCode({})).statusCode).toBe(403);
+      expect(
+        (await makeSignInCode({ currentPassword: "not-quinn's-password" }))
+          .statusCode,
+      ).toBe(403);
+      const [{ codes }] = await database
+        .select({ codes: count() })
+        .from(signInCodes)
+        .where(eq(signInCodes.userId, quinnUserId));
+      expect(codes).toBe(0);
+    });
+
+    it("makes no code for someone who isn't signed in", async () => {
+      const response = await server.inject({
+        method: "POST",
+        url: "/api/sign-in-codes",
+        payload: { currentPassword: quinn.password },
+      });
+
+      expect(response.statusCode).toBe(401);
+    });
+
+    it("keeps only Quinn's newest code, so an earlier one no longer signs in", async () => {
+      const earlier = readCode(
+        await makeSignInCode({ currentPassword: quinn.password }),
+      );
+      const newer = readCode(
+        await makeSignInCode({ currentPassword: quinn.password }),
+      );
+
+      expect((await signInWithCode(earlier)).statusCode).toBe(401);
+      expect((await signInWithCode(newer)).statusCode).toBe(204);
+    });
+
+    it("refuses an expired code, and one that was never made, and records each refusal", async () => {
+      const code = readCode(
+        await makeSignInCode({ currentPassword: quinn.password }),
+      );
+      await database
+        .update(signInCodes)
+        .set({ expiresAt: sql`now() - interval '1 second'` })
+        .where(eq(signInCodes.userId, quinnUserId));
+      const [{ failuresBefore }] = await database
+        .select({ failuresBefore: count() })
+        .from(auditLogEntries)
+        .where(
+          and(
+            eq(auditLogEntries.action, "sign-in.failed"),
+            eq(auditLogEntries.detail, "sign-in-code"),
+          ),
+        );
+
+      expect((await signInWithCode(code)).statusCode).toBe(401);
+      expect((await signInWithCode("00000-00000")).statusCode).toBe(401);
+
+      const [{ failuresAfter }] = await database
+        .select({ failuresAfter: count() })
+        .from(auditLogEntries)
+        .where(
+          and(
+            eq(auditLogEntries.action, "sign-in.failed"),
+            eq(auditLogEntries.detail, "sign-in-code"),
+          ),
+        );
+      expect(failuresAfter).toBe(failuresBefore + 2);
+    });
+
+    it("refuses a code once Quinn's account is deactivated", async () => {
+      const code = readCode(
+        await makeSignInCode({ currentPassword: quinn.password }),
+      );
+      await database
+        .update(users)
+        .set({ deactivatedAt: sql`now()` })
+        .where(eq(users.id, quinnUserId));
+
+      try {
+        expect((await signInWithCode(code)).statusCode).toBe(401);
+      } finally {
+        await database
+          .update(users)
+          .set({ deactivatedAt: null })
+          .where(eq(users.id, quinnUserId));
+      }
+    });
+
+    it("records each code made in the Audit Log, with how it was proved", async () => {
+      await makeSignInCode({ currentPassword: quinn.password });
+
+      const entries = await database
+        .select({ detail: auditLogEntries.detail })
+        .from(auditLogEntries)
+        .where(
+          and(
+            eq(auditLogEntries.action, "sign-in-code.created"),
+            eq(auditLogEntries.actorId, quinnUserId),
+          ),
+        );
+      expect(entries.map(({ detail }) => detail)).toContain("password");
+      expect(entries.map(({ detail }) => detail)).toContain("passkey");
     });
   });
 
@@ -10996,6 +11224,7 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
       passkeys,
       passkeyChallenges,
       passkeyHandOffs,
+      signInCodes,
       totpSetups,
       totpSecrets,
       recoveryCodes,
@@ -11096,6 +11325,12 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
       await database
         .insert(passkeyHandOffs)
         .values({ tokenHash: `${secret}-hand-off`, userId, expiresAt });
+      await database.insert(signInCodes).values({
+        codeHash: `${secret}-sign-in-code`,
+        userId,
+        isTwoStep: true,
+        expiresAt,
+      });
       await database
         .insert(totpSetups)
         .values({ userId, secret: `${secret}-totp-setup`, expiresAt });
@@ -11700,6 +11935,7 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
           "passkeys",
           "passkey_challenges",
           "passkey_hand_offs",
+          "sign_in_codes",
           "totp_setups",
           "totp_secrets",
           "recovery_codes",
@@ -13802,6 +14038,7 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
       "POST /api/passkey-confirmation-options",
       "POST /api/passkey-confirmations",
       "POST /api/password",
+      "POST /api/sign-in-codes",
       "PUT /api/password",
     ].sort();
     const staffDataRoutes = [
@@ -17981,6 +18218,7 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
         path: "/api/passkey-hand-off-passkeys",
         wrapper: "none",
       },
+      { method: "POST", path: "/api/sign-in-code-sign-ins", wrapper: "none" },
       { method: "GET", path: "/api/me", wrapper: "user" },
       { method: "GET", path: "/api/sign-in-methods", wrapper: "user" },
       { method: "GET", path: "/api/email-address", wrapper: "user" },
@@ -18061,6 +18299,7 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
       },
       { method: "DELETE", path: "/api/passkeys/:passkeyId", wrapper: "user" },
       { method: "POST", path: "/api/passkey-hand-offs", wrapper: "user" },
+      { method: "POST", path: "/api/sign-in-codes", wrapper: "user" },
       { method: "GET", path: "/api/schools", wrapper: "adult" },
       {
         method: "PUT",
@@ -18600,7 +18839,7 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
         }
       }
 
-      expect(unwrappedRoutes).toHaveLength(14);
+      expect(unwrappedRoutes).toHaveLength(15);
       expect(signInRefusals).toEqual([]);
     });
 
@@ -25693,6 +25932,7 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
       roomShowcases,
       schoolParents,
       schools,
+      signInCodes,
       signIns,
       starAwards,
       teacherYearGroups,
@@ -25735,6 +25975,8 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
       ["room_showcases", everyWrite, "INSERT,SELECT,UPDATE"],
       ["school_parents", everyWrite, "SELECT"],
       ["schools", everyWrite, everyWrite],
+      // Made after #298, so granted only what its routes make from the start (ADR 0073).
+      ["sign_in_codes", "DELETE,INSERT,SELECT", "DELETE,INSERT,SELECT"],
       ["sign_ins", everyWrite, "DELETE,SELECT,UPDATE"],
       ["star_awards", "INSERT,SELECT", "INSERT,SELECT"],
       ["teacher_year_groups", everyWrite, "DELETE,INSERT,SELECT"],
@@ -25865,6 +26107,7 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
       ["school_parents", "school_parents_within_admin_reach", "ALL"],
       ["schools", "schools_seen", "SELECT"],
       ["schools", "schools_within_admin_reach", "ALL"],
+      ["sign_in_codes", "sign_in_codes_within_reach", "ALL"],
       ["sign_ins", "sign_ins_within_reach", "ALL"],
       ["star_awards", "star_awards_given_by_admin", "ALL"],
       ["star_awards", "star_awards_given_by_parent", "INSERT"],
@@ -27250,6 +27493,13 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
         method: "POST",
         path: "/api/passkey-hand-offs",
         gate: "adult-account",
+      },
+      { method: "POST", path: "/api/sign-in-codes", gate: "adult-account" },
+      {
+        method: "POST",
+        path: "/api/sign-in-code-sign-ins",
+        gate: "anyone",
+        buildPayload: () => ({ code: "00000-00000" }),
       },
       {
         method: "POST",
@@ -29974,6 +30224,12 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
       },
       { method: "DELETE", path: "/api/passkeys/:passkeyId" },
       { method: "POST", path: "/api/passkey-hand-offs" },
+      { method: "POST", path: "/api/sign-in-codes" },
+      {
+        method: "POST",
+        path: "/api/sign-in-code-sign-ins",
+        payload: { code: "00000-00000" },
+      },
       { method: "GET", path: "/api/schools" },
       {
         method: "POST",

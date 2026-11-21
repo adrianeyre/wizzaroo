@@ -100,7 +100,8 @@ CREATE TYPE public.audit_action AS ENUM (
     'child.limits-changed',
     'child.teacher-locks-changed',
     'child.classmate-visits-changed',
-    'child.birth-given'
+    'child.birth-given',
+    'sign-in-code.created'
 );
 
 CREATE TYPE public.audit_actor_type AS ENUM (
@@ -399,6 +400,20 @@ CREATE TABLE public.passkey_hand_offs (
     CONSTRAINT passkey_hand_offs_user_id_users_id_fk FOREIGN KEY (user_id) REFERENCES public.users(id) ON DELETE CASCADE
 );
 CREATE INDEX passkey_hand_offs_user_id_index ON public.passkey_hand_offs USING btree (user_id);
+
+-- A short code a signed-in adult makes to sign in on another device, such as a tablet that can't use their passkey. It is
+-- kept only as a SHA-256 hash, works once and for 10 minutes, and making a new one replaces the adult's earlier one. The
+-- sign-in it makes is two-step when the code was made with a passkey or an authenticator code (ADR 0073).
+CREATE TABLE public.sign_in_codes (
+    code_hash text NOT NULL,
+    user_id uuid NOT NULL,
+    is_two_step boolean NOT NULL,
+    created_at timestamp with time zone DEFAULT now() NOT NULL,
+    expires_at timestamp with time zone NOT NULL,
+    CONSTRAINT sign_in_codes_pkey PRIMARY KEY (code_hash),
+    CONSTRAINT sign_in_codes_user_id_users_id_fk FOREIGN KEY (user_id) REFERENCES public.users(id) ON DELETE CASCADE
+);
+CREATE INDEX sign_in_codes_user_id_index ON public.sign_in_codes USING btree (user_id);
 
 -- A passkey's WebAuthn user handle is an opaque id of its own, so registration options never carry the account id (#238).
 CREATE TABLE public.passkeys (
@@ -1146,6 +1161,16 @@ CREATE POLICY passkey_hand_offs_within_reach ON public.passkey_hand_offs TO wizz
 
 GRANT SELECT,INSERT,DELETE ON TABLE public.passkey_hand_offs TO wizzaroo_reach;
 GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.passkey_hand_offs TO wizzaroo_server;
+
+-- sign_in_codes
+ALTER TABLE public.sign_in_codes ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY sign_in_codes_on_server_paths ON public.sign_in_codes TO wizzaroo_server USING (true) WITH CHECK (true);
+
+CREATE POLICY sign_in_codes_within_reach ON public.sign_in_codes TO wizzaroo_reach USING (public.wizzaroo_is_caller(user_id));
+
+GRANT SELECT,INSERT,DELETE ON TABLE public.sign_in_codes TO wizzaroo_reach;
+GRANT SELECT,INSERT,DELETE,UPDATE ON TABLE public.sign_in_codes TO wizzaroo_server;
 
 -- passkeys
 ALTER TABLE public.passkeys ENABLE ROW LEVEL SECURITY;

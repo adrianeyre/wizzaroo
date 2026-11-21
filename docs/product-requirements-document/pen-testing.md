@@ -459,12 +459,12 @@ This section is the only home of Wizzaroo's request-rate figures. Configuration 
 
 **Set on 17 November 2026.** The owner adopted every figure below, as I2b (#221) proposed them, together with [the reasoning](#the-reasoning) beside them.
 
-|                                       | Per IP                                                 | Per account                                                           |
-| ------------------------------------- | ------------------------------------------------------ | --------------------------------------------------------------------- |
-| Window                                | 15 minutes, sliding                                    | 1 hour, sliding                                                       |
-| Burst                                 | 20 requests in any one minute                          | 5 requests in any one minute                                          |
-| Sign-in, reset and Invite routes      | 100 requests a window, the six routes counted together | 10 failed sign-ins, 10 pending sign-ins and 3 reset requests a window |
-| Per process, or across the deployment | per process                                            | per process                                                           |
+|                                       | Per IP                                                   | Per account                                                           |
+| ------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------------------- |
+| Window                                | 15 minutes, sliding                                      | 1 hour, sliding                                                       |
+| Burst                                 | 20 requests in any one minute                            | 5 requests in any one minute                                          |
+| Sign-in, reset and Invite routes      | 100 requests a window, the seven routes counted together | 10 failed sign-ins, 10 pending sign-ins and 3 reset requests a window |
+| Per process, or across the deployment | per process                                              | per process                                                           |
 
 - The figures are set by the owner while I2 is worked, and recorded here with the date.
 - **Until they are set, an unset policy is a closed door, not "no limit":** once rate limiting is built, a production server with no policy refuses to start. A development policy may be named explicitly; there is no implicit production default.
@@ -477,7 +477,7 @@ This section is the only home of Wizzaroo's request-rate figures. Configuration 
 
 Proposed on 17 November 2026 by I2b (#221), from the numbers and the key in [I2a's findings note](../pen-test/findings/I2a.md#for-i2b-the-numbers-and-the-key), and adopted by the owner the same day. Every rate is arithmetic, not load, as I2a's are.
 
-**What the rows mean.** The window is how long a key's requests are counted. The burst is the most one key may send in any one minute inside it, so a window's allowance can't be spent at once. The routes row is what each key may send in a window. The last row is where the counters live. The six routes are the ones I2a probed: `POST /api/sign-in`, `POST /api/sign-in/two-factor-code`, `POST /api/password-reset-requests`, `POST /api/password-resets`, `POST /api/invite-acceptances` and `POST /api/passkey-sign-in-options`.
+**What the rows mean.** The window is how long a key's requests are counted. The burst is the most one key may send in any one minute inside it, so a window's allowance can't be spent at once. The routes row is what each key may send in a window. The last row is where the counters live. The six routes are the ones I2a probed: `POST /api/sign-in`, `POST /api/sign-in/two-factor-code`, `POST /api/password-reset-requests`, `POST /api/password-resets`, `POST /api/invite-acceptances` and `POST /api/passkey-sign-in-options`. `POST /api/sign-in-code-sign-ins` joined them as the seventh with [ADR 0073](../architectural-decision-record/0073-signing-in-on-another-device-with-a-code.md).
 
 **Per IP: 15 minutes, 20 a minute, 100 a window.** Today one caller gets about 400 requests a second on the argon2 routes, bounded only by four libuv threads (A1, #246). 100 a window is 400 an hour, 3,600 times less. One address then:
 

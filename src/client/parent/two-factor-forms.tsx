@@ -7,6 +7,7 @@ import {
   readTextAnswer,
   sendAccountChange,
 } from "./account-changes.js";
+import { QrCode } from "./qr-code.js";
 
 export interface TotpSetup {
   setupKey: string;
@@ -136,8 +137,15 @@ export const TwoFactorSetupForm = ({
     >
       <h2>Turn on two-factor authentication</h2>
       <p>
-        In your authenticator app, add an account by typing in this key:{" "}
-        <code>{setupKey}</code>
+        In your authenticator app, such as Google Authenticator, add an account
+        and scan this QR code.
+      </p>
+      <QrCode
+        text={setupUri}
+        label="QR code to add Wizzaroo to your authenticator app"
+      />
+      <p>
+        Can&apos;t scan it? Type in this key instead: <code>{setupKey}</code>
       </p>
       <p>
         <a href={setupUri}>Or open it in an authenticator app on this device</a>

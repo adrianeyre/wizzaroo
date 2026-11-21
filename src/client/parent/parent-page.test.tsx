@@ -278,6 +278,8 @@ const fakePasskeyRegistration: RegistrationResponseJSON = {
   clientExtensionResults: {},
 };
 
+const fakeSignInCode = "7KQ2M-X9TPA";
+
 const readFakeCode = (body: unknown): string | undefined =>
   typeof body === "object" &&
   body !== null &&
@@ -578,6 +580,32 @@ const startFakeApi = ({
     }
     if (path === "/api/passkey-confirmation-options") {
       return Response.json({ challenge: "a-confirmation-challenge" });
+    }
+    if (method === "POST" && path === "/api/sign-in-codes") {
+      const isProved =
+        typeof body === "object" &&
+        body !== null &&
+        (("currentPassword" in body &&
+          body.currentPassword === ownerPassword) ||
+          readFakeCode(body) === rightTwoFactorCode ||
+          "passkey" in body);
+      return isProved
+        ? Response.json(
+            {
+              code: fakeSignInCode,
+              url: `https://wizzaroo.example/parent/#sign-in-code=${fakeSignInCode}`,
+              expiresAt: "2026-11-14T15:10:00.000Z",
+            },
+            { status: 201 },
+          )
+        : Response.json({ code: "wrong-proof" }, { status: 403 });
+    }
+    if (method === "POST" && path === "/api/sign-in-code-sign-ins") {
+      const typedCode = readFakeCode(body)
+        ?.toUpperCase()
+        .replaceAll(/[\s-]/gu, "");
+      signedIn = typedCode === fakeSignInCode.replace("-", "");
+      return new Response(null, { status: signedIn ? 204 : 401 });
     }
     if (path === "/api/passkey-confirmations") {
       mustSetUpSecondFactor = false;
@@ -1227,7 +1255,7 @@ describe("ParentPage", () => {
         expect(getPageText()).toContain("Sign in to Wizzaroo");
       });
       expect(getPageText()).toContain(
-        "you sign in with your password or passkey each time you open the Parent page",
+        "you sign in with your password, a passkey or a sign-in code from another device each time you open the Parent page",
       );
     });
 
@@ -1589,6 +1617,52 @@ describe("ParentPage", () => {
         method: "POST",
         path: "/api/passkey-sign-ins",
         body: { response: fakePasskeySignIn },
+      });
+    });
+
+    it("signs a tablet in with a sign-in code made on another device, however it's typed", async () => {
+      const { requests } = startFakeApi({ isSignedIn: false });
+      root.render(<ParentPage />);
+      await waitForSignInForm();
+
+      findButton("Sign in with a code from another device").click();
+      await vi.waitFor(() => {
+        expect(getPageText()).toContain(
+          "Sign in with a code from another device",
+        );
+      });
+      findElement('input[name="signInCode"]', isInput).value = "7kq2m x9tpa";
+      findButton("Sign in").click();
+
+      await vi.waitFor(() => {
+        expect(getPageText()).toContain("The Eyres");
+      });
+      expect(requests).toContainEqual({
+        method: "POST",
+        path: "/api/sign-in-code-sign-ins",
+        body: { code: "7kq2m x9tpa" },
+      });
+    });
+
+    it("fills in the code from a sign-in code's link, and says when a code didn't work", async () => {
+      startFakeApi({ isSignedIn: false });
+      root.render(<ParentPage signInCode="WRONG-CODE0" />);
+
+      await vi.waitFor(() => {
+        expect(findElement('input[name="signInCode"]', isInput).value).toBe(
+          "WRONG-CODE0",
+        );
+      });
+      findButton("Sign in").click();
+
+      await vi.waitFor(() => {
+        expect(document.querySelector('[role="alert"]')?.textContent).toBe(
+          "That code didn't work. It may have expired or been used: make a new one on your other device.",
+        );
+      });
+      findButton("Sign in another way").click();
+      await vi.waitFor(() => {
+        expect(getPageText()).toContain("Sign in to Wizzaroo");
       });
     });
 
@@ -4922,6 +4996,42 @@ describe("ParentPage", () => {
       });
     });
 
+    it("makes a sign-in code for another device once the Parent proves it's them, and shows it with a QR code", async () => {
+      const { requests } = startFakeApi({ isSignedIn: true });
+      await showSigningIn();
+
+      findButton("Sign in on another device").click();
+      await waitForText("Prove it's you first");
+      fillAnswers({ currentPassword: "not-the-password" });
+      findButton("Make a sign-in code").click();
+      await vi.waitFor(() => {
+        expect(getAlertText()).toBe(
+          "That didn't prove it's you, so Wizzaroo made no code. Try again.",
+        );
+      });
+      fillAnswers({ currentPassword: ownerPassword });
+      findButton("Make a sign-in code").click();
+
+      await waitForText("7KQ2M-X9TPA");
+      expect(getPageText()).toContain(
+        "Choose Sign in with a code from another device",
+      );
+      expect(
+        document
+          .querySelector(
+            'svg[aria-label="QR code to sign in on another device"] path',
+          )
+          ?.getAttribute("d"),
+      ).toMatch(/^M\d/);
+      expect(requests).toContainEqual({
+        method: "POST",
+        path: "/api/sign-in-codes",
+        body: { currentPassword: ownerPassword },
+      });
+      findButton("Done").click();
+      await waitForText("Sign in on another device");
+    });
+
     it("turns two-factor authentication on with a code from the app, then shows the recovery codes only once", async () => {
       const { requests } = startFakeApi({ isSignedIn: true });
       await showSigningIn();
@@ -4932,6 +5042,13 @@ describe("ParentPage", () => {
       expect(
         findElement('a[href^="otpauth:"]', isLink).getAttribute("href"),
       ).toBe("otpauth://totp/Wizzaroo:owner%40example.com?secret=ABCD");
+      expect(
+        document
+          .querySelector(
+            'svg[aria-label="QR code to add Wizzaroo to your authenticator app"] path',
+          )
+          ?.getAttribute("d"),
+      ).toMatch(/^M\d/);
       fillAnswers({ code: "000000" });
       findButton("Turn on two-factor authentication").click();
       await vi.waitFor(() => {

@@ -70,6 +70,7 @@ const auditActionNames: Record<AuditAction, string> = {
   "child.teacher-locks-changed": "Changed a Child's Teacher locks",
   "child.classmate-visits-changed": "Changed a Child's Classmate visits",
   "child.birth-given": "Gave a Child's birth month and year",
+  "sign-in-code.created": "Made a code to sign in on another device",
 };
 
 const happenedAtFormat = new Intl.DateTimeFormat("en-GB", {

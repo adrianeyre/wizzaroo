@@ -19,6 +19,7 @@ import {
   schoolParents,
   passkeyChallenges,
   passkeyHandOffs,
+  signInCodes,
   passkeys,
   passwordResets,
   pendingSignIns,
@@ -343,6 +344,15 @@ export const loadFamilyExport = async (
       })
       .from(passkeyHandOffs)
       .where(eq(passkeyHandOffs.userId, userId)),
+    signInCodes: await reachDatabase
+      .select({
+        userId: signInCodes.userId,
+        isTwoStep: signInCodes.isTwoStep,
+        createdAt: signInCodes.createdAt,
+        expiresAt: signInCodes.expiresAt,
+      })
+      .from(signInCodes)
+      .where(eq(signInCodes.userId, userId)),
     totpSetups: await reachDatabase
       .select({
         userId: totpSetups.userId,

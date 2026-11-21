@@ -343,6 +343,8 @@ interface ParentPageProps {
   passwordResetToken?: string;
   inviteToken?: string;
   passkeyHandOffToken?: string;
+  /** A code from another device's "Sign in on another device", from the link its QR code holds. */
+  signInCode?: string;
 }
 
 export const ParentPage = ({
@@ -350,6 +352,7 @@ export const ParentPage = ({
   passwordResetToken,
   inviteToken,
   passkeyHandOffToken,
+  signInCode,
 }: ParentPageProps) => {
   const [view, setView] = useState<ParentView>({ kind: "loading" });
   const [dashboardVersion, setDashboardVersion] = useState(0);
@@ -512,11 +515,13 @@ export const ParentPage = ({
                 ? "Wizzaroo signed you out because no one had used the Parent page for a while. "
                 : ""}
               This is a Family Device that Children share, so you sign in with
-              your password or passkey each time you open the Parent page.
+              your password, a passkey or a sign-in code from another device
+              each time you open the Parent page.
             </p>
           ) : null}
           {view.kind === "signed-out" && shownSection === "sign-in" ? (
             <SignInForm
+              signInCode={signInCode}
               onSignedIn={() => {
                 setWasSignedOutForIdling(false);
                 showParentView();

@@ -296,6 +296,23 @@ export const passkeyHandOffs = pgTable(
   (table) => [index("passkey_hand_offs_user_id_index").on(table.userId)],
 );
 
+export const signInCodes = pgTable(
+  "sign_in_codes",
+  {
+    codeHash: text("code_hash").primaryKey(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    // Whether the code was made with a second factor, so the sign-in it makes counts as two-step (ADR 0073).
+    isTwoStep: boolean("is_two_step").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .notNull()
+      .defaultNow(),
+    expiresAt: timestamp("expires_at", { withTimezone: true }).notNull(),
+  },
+  (table) => [index("sign_in_codes_user_id_index").on(table.userId)],
+);
+
 export const totpSetups = pgTable("totp_setups", {
   userId: uuid("user_id")
     .primaryKey()
