@@ -74,6 +74,7 @@ import { isCarriedByVoyage, type VoyagePhase } from "./island-voyage.js";
 import {
   findCraftPlacement,
   findJourneyArrivalHeading,
+  findJourneyCameraAnchor,
   findJourneyCameraSpot,
   findJourneyCarriedSpot,
   findJourneyWaitingSpot,
@@ -800,14 +801,20 @@ const Explorer = ({
       );
       if (!wasCarried.current) {
         const dockCamera = findJourneyCameraSpot(adventure, transport);
+        const anchor = findJourneyCameraAnchor(
+          adventure,
+          transport,
+          carriedPhase,
+          share,
+        );
         const reach = Math.hypot(
-          dockCamera.x - spot.x,
-          dockCamera.y - spot.y,
-          dockCamera.z - spot.z,
+          dockCamera.x - anchor.x,
+          dockCamera.y - anchor.y,
+          dockCamera.z - anchor.z,
         );
         aim.current = {
-          yaw: Math.atan2(dockCamera.x - spot.x, dockCamera.z - spot.z),
-          pitch: Math.asin((dockCamera.y - spot.y) / reach),
+          yaw: Math.atan2(dockCamera.x - anchor.x, dockCamera.z - anchor.z),
+          pitch: Math.asin((dockCamera.y - anchor.y) / reach),
           distance: Math.min(furthestFollow, reach),
         };
       }

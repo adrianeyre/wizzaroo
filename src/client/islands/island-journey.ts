@@ -211,6 +211,24 @@ export const findJourneyCameraSpot = (
     : findDockCameraSpot(adventure);
 };
 
+// Where the camera's angle onto the Character is measured from when they're
+// first carried. A craft arriving from the sky starts docking high above its
+// landing place, so measuring from there would set the camera below the
+// Character and leave it underground once they land: arriving, the angle is
+// measured from where the craft comes down instead.
+export const findJourneyCameraAnchor = (
+  adventure: IslandAdventure,
+  transport: Transport,
+  phase: LandPhase,
+  share: number,
+): BoardingSpot =>
+  findJourneyCarriedSpot(
+    adventure,
+    transport,
+    phase,
+    phase === "docking" ? 1 : share,
+  );
+
 export const isWalkingAboard = (
   transport: Transport,
   phase: VoyagePhase,
