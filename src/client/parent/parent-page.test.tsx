@@ -4639,6 +4639,33 @@ describe("ParentPage", () => {
       });
     });
 
+    it("adds another passkey beside the first, then lists both", async () => {
+      const { requests } = startFakeApi({ isSignedIn: true });
+      vi.mocked(startRegistration).mockResolvedValue(fakePasskeyRegistration);
+      await showSigningIn();
+      findButton("Add a passkey").click();
+      await waitForText("What is it on?");
+      fillAnswers({ passkeyName: "My phone" });
+      findButton("Add the passkey").click();
+      await waitForText("My phone, added 14 November 2026");
+
+      findButton("Add another passkey").click();
+      await waitForText("What is it on?");
+      fillAnswers({ passkeyName: "My laptop" });
+      findButton("Add the passkey").click();
+
+      await vi.waitFor(() => {
+        expect(getStatusText()).toBe("Your passkey on My laptop is added.");
+      });
+      await waitForText("My phone, added 14 November 2026");
+      await waitForText("My laptop, added 14 November 2026");
+      expect(
+        requests.filter(
+          ({ method, path }) => method === "POST" && path === "/api/passkeys",
+        ),
+      ).toHaveLength(2);
+    });
+
     it("says Wizzaroo couldn't add the passkey when the Parent cancels it, and keeps nothing", async () => {
       const { requests } = startFakeApi({ isSignedIn: true });
       vi.mocked(startRegistration).mockRejectedValue(

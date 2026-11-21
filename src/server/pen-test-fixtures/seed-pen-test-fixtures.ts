@@ -1,4 +1,3 @@
-import { createHash } from "node:crypto";
 import type { Readable, Writable } from "node:stream";
 import { text } from "node:stream/consumers";
 import { hash } from "@node-rs/argon2";
@@ -168,17 +167,6 @@ const buildRecoveryCodeRows = (
     ),
   );
 
-/** A passkey handle that is the same on every load from one seed, so reloading leaves the users rows as they were. */
-const buildFixturePasskeyUserHandle = (
-  seed: string,
-  userId: string,
-): string => {
-  const hex = createHash("sha256")
-    .update(`passkey-user-handle:${seed}:${userId}`)
-    .digest("hex");
-  return `${hex.slice(0, 8)}-${hex.slice(8, 12)}-4${hex.slice(13, 16)}-8${hex.slice(17, 20)}-${hex.slice(20, 32)}`;
-};
-
 const buildFixtureRows = async (
   plan: PenTestFixturePlan,
   credentials: PenTestFixtureCredentials,
@@ -201,7 +189,6 @@ const buildFixtureRows = async (
       deactivatedAt: adult.deactivatedAt,
       // Reloading closes a probe's reopened setup, so a staff fixture 30 days old has its first setup closed (#243).
       secondFactorSetupUntil: null,
-      passkeyUserHandle: buildFixturePasskeyUserHandle(seed, adult.id),
       createdAt: adult.createdAt,
     })),
   ),

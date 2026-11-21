@@ -3361,34 +3361,20 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
         );
       });
 
-      it("gives a caller holding only a hand-off code a user named only Wizzaroo, under the adult's opaque passkey handle, and the ids of its passkeys so none is made twice (regression)", async () => {
+      it("gives a caller holding only a hand-off code a user named only Wizzaroo, under a fresh opaque handle, and none of the adult's passkey ids (regression)", async () => {
         const handOffToken = await createHandOffAs(
           await signInWithFixturePasskey("parentA2PasskeyOnly"),
         );
-        const [{ passkeyUserHandle }] = await probeDatabase
-          .select({ passkeyUserHandle: users.passkeyUserHandle })
-          .from(users)
-          .where(eq(users.id, penTestFixtureIds.parentA2PasskeyOnly));
 
         const response = await fetchHandOffOptions(handOffToken);
 
         expect(response.statusCode).toBe(200);
-        expect(passkeyUserHandle).not.toBe(
-          penTestFixtureIds.parentA2PasskeyOnly,
-        );
         expect(response.json()).toMatchObject({
-          user: {
-            name: "Wizzaroo",
-            displayName: "",
-            id: isoBase64URL.fromUTF8String(passkeyUserHandle),
-          },
-          excludeCredentials: [
-            {
-              id: findFixturePasskey("parentA2PasskeyOnly").credentialId,
-              type: "public-key",
-            },
-          ],
+          user: { name: "Wizzaroo", displayName: "" },
         });
+        expect(response.body).not.toContain(
+          findFixturePasskey("parentA2PasskeyOnly").credentialId,
+        );
       });
     });
 
@@ -5311,17 +5297,77 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
       });
     });
 
-    it("never offers the same passkey to be added twice", async () => {
-      const response = await injectAs(robinToken, {
+    it("asks for each new passkey under a user handle of its own, never the account id, excluding none of the Parent's passkeys, so a password manager keeps it beside the others", async () => {
+      const askForOptions = async () => {
+        const response = await injectAs(robinToken, {
+          method: "POST",
+          url: "/api/passkey-registration-options",
+        });
+        expect(response.statusCode).toBe(200);
+        const options: unknown = response.json();
+        if (
+          typeof options !== "object" ||
+          options === null ||
+          !("user" in options) ||
+          typeof options.user !== "object" ||
+          options.user === null ||
+          !("id" in options.user) ||
+          typeof options.user.id !== "string"
+        ) {
+          throw new Error("the registration options named no user");
+        }
+        return {
+          userHandle: options.user.id,
+          excludeCredentials:
+            "excludeCredentials" in options ? options.excludeCredentials : [],
+        };
+      };
+
+      const first = await askForOptions();
+      const second = await askForOptions();
+
+      expect(first.excludeCredentials).toEqual([]);
+      expect(second.excludeCredentials).toEqual([]);
+      expect(first.userHandle).not.toBe(second.userHandle);
+      expect([first.userHandle, second.userHandle]).not.toContain(
+        isoBase64URL.fromUTF8String(robinUserId),
+      );
+    });
+
+    it("adds a second passkey beside the first, lists both, and signs in with either", async () => {
+      const robinsLaptop = buildSoftAuthenticator(passkeyOrigin);
+      const challenge = await fetchPasskeyChallenge(
+        "/api/passkey-registration-options",
+        robinToken,
+      );
+
+      const added = await injectAs(robinToken, {
         method: "POST",
-        url: "/api/passkey-registration-options",
+        url: "/api/passkeys",
+        payload: {
+          name: "Robin's laptop",
+          response: robinsLaptop.register(challenge),
+        },
       });
 
-      expect(response.json()).toMatchObject({
-        excludeCredentials: [
-          { id: robinsPhone.credentialId, type: "public-key" },
+      expect(added.statusCode).toBe(201);
+      expect(await fetchSignInMethodsAs(robinToken)).toMatchObject({
+        passkeys: [
+          { id: robinsPhone.credentialId, name: "Robin's phone" },
+          { id: robinsLaptop.credentialId, name: "Robin's laptop" },
         ],
       });
+      const signIn = await signInWithPasskey(
+        robinsLaptop.signIn(
+          await fetchPasskeyChallenge("/api/passkey-sign-in-options"),
+        ),
+      );
+      expect(signIn.statusCode).toBe(204);
+
+      // The tests after this one expect Robin's phone to be their only passkey.
+      await database
+        .delete(passkeys)
+        .where(eq(passkeys.id, robinsLaptop.credentialId));
     });
 
     it("refuses a passkey made in answer to another Parent's challenge", async () => {

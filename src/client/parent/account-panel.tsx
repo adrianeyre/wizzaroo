@@ -392,7 +392,7 @@ const SignInMethodsSummary = ({
           onTaskChosen({ kind: "adding-passkey" });
         }}
       >
-        Add a passkey
+        {passkeys.length === 0 ? "Add a passkey" : "Add another passkey"}
       </button>
       <h3>Two-factor authentication</h3>
       {isTwoFactorOn ? (

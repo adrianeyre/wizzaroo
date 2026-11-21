@@ -68,6 +68,7 @@ export class PasskeyNotFoundError extends Error {
 const relyingPartyName = "Wizzaroo";
 const passkeyChallengeLifetimeMinutes = 5;
 const longestPasskeyName = 40;
+const passkeyUserHandleBytes = 32;
 
 export interface PasskeyRegistrationBody {
   name: string;
@@ -208,8 +209,11 @@ const consumePasskeyChallenge = async (
 };
 
 /**
- * The user handle is the adult's opaque passkey handle, never their account id (#238). A signed-in browser shows the
- * adult's email address as the passkey's account name; options for someone holding only a hand-off code name no one.
+ * An adult may keep as many passkeys as they like, several of them in one password manager, so each is registered
+ * under a user handle of its own: random, so never the account id (#238), and new each time, so a password manager
+ * keeps a new passkey beside the adult's others rather than in place of one. Sign-in finds a passkey by its credential
+ * id, never its user handle. A signed-in browser shows the adult's email address as the passkey's account name; options
+ * for someone holding only a hand-off code name no one.
  */
 export const buildPasskeyRegistrationOptions = async (
   database: ReachDatabase,
@@ -218,20 +222,15 @@ export const buildPasskeyRegistrationOptions = async (
   { isNamedByEmail }: { isNamedByEmail: boolean },
 ): Promise<PublicKeyCredentialCreationOptionsJSON> => {
   const [user] = await database
-    .select({ email: users.email, passkeyUserHandle: users.passkeyUserHandle })
+    .select({ email: users.email })
     .from(users)
     .where(eq(users.id, userId));
-  const userPasskeys = await database
-    .select({ id: passkeys.id, transports: passkeys.transports })
-    .from(passkeys)
-    .where(eq(passkeys.userId, userId));
   const options = await generateRegistrationOptions({
     rpName: relyingPartyName,
     rpID: relyingPartyId,
     userName: isNamedByEmail ? user.email : relyingPartyName,
-    userID: new TextEncoder().encode(user.passkeyUserHandle),
+    userID: crypto.getRandomValues(new Uint8Array(passkeyUserHandleBytes)),
     attestationType: "none",
-    excludeCredentials: userPasskeys,
     authenticatorSelection: {
       residentKey: "required",
       userVerification: "required",

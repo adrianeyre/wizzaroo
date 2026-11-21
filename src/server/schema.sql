@@ -234,7 +234,6 @@ CREATE TABLE public.users (
     last_login_at timestamp with time zone,
     deactivated_at timestamp with time zone,
     second_factor_setup_until timestamp with time zone,
-    passkey_user_handle uuid DEFAULT gen_random_uuid() NOT NULL,
     CONSTRAINT users_email_unique UNIQUE (email),
     CONSTRAINT users_pkey PRIMARY KEY (id)
 );
