@@ -58,8 +58,6 @@ export const users = pgTable("users", {
   secondFactorSetupUntil: timestamp("second_factor_setup_until", {
     withTimezone: true,
   }),
-  // The WebAuthn user handle every passkey of the adult's is registered under: opaque, so it isn't the account id (#238).
-  passkeyUserHandle: uuid("passkey_user_handle").notNull().defaultRandom(),
   createdAt: timestamp("created_at", { withTimezone: true })
     .notNull()
     .defaultNow(),

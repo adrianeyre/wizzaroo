@@ -145,7 +145,8 @@ export const PasskeyForm = ({
     <h2 id="add-a-passkey">Add a passkey</h2>
     <p>
       A passkey lets you sign in with your fingerprint, face or screen lock
-      instead of a password.
+      instead of a password. Add one on each device or password manager you use,
+      as many as you like.
     </p>
     <div className="passkey-adding-ways">
       {browserSupportsWebAuthn() ? (
