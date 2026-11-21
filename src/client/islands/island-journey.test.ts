@@ -25,6 +25,8 @@ import {
   findCrossingCraftPlacement,
   findCraftPose,
   findCraftPlacement,
+  findJourneyCameraAnchor,
+  findJourneyCameraSpot,
   findJourneyCarriedSpot,
   findJourneyCrossingSeconds,
   findJourneyWaitingSpot,
@@ -243,6 +245,28 @@ describe.each(everyLanding)("the %s on %s", (transport, islandId) => {
       expect(aircraftPhaseSeconds[transport][phase]).toBeGreaterThan(3);
       expect(aircraftPhaseSeconds[transport][phase]).toBeLessThan(12);
     });
+  });
+});
+
+describe.each(
+  transports.flatMap((transport) =>
+    islandAdventures.map(({ islandId }) => [transport, islandId] as const),
+  ),
+)("arriving by %s on %s", (transport, islandId) => {
+  const adventure = findExploreAdventure(islandId);
+
+  it("looks down on the Character from above, so the camera isn't underground once they land", () => {
+    const camera = findJourneyCameraSpot(adventure, transport);
+    const anchor = findJourneyCameraAnchor(adventure, transport, "docking", 0);
+    const landed = findJourneyCarriedSpot(adventure, transport, "docking", 1);
+    expect(anchor).toEqual(landed);
+    expect(camera.y).toBeGreaterThan(anchor.y);
+  });
+
+  it("measures the camera from where the Character stands when leaving", () => {
+    expect(
+      findJourneyCameraAnchor(adventure, transport, "calling", 0.3),
+    ).toEqual(findJourneyCarriedSpot(adventure, transport, "calling", 0.3));
   });
 });
 
