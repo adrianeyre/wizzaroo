@@ -305,6 +305,46 @@ export const describeVoyagePhase = (
       landing: `Welcome to ${toIslandName}!`,
       leaving: undefined,
     },
+    pirateShip: {
+      calling:
+        "Ahoy! Here comes the pirate ship! It's sailing into the Dock to pick you up.",
+      boarding: "Up the gangplank, me hearty!",
+      departing: `Hoist the Jolly Roger! Setting sail for ${toIslandName}.`,
+      crossing: `Sailing the high seas to ${toIslandName}...`,
+      docking: `Land ho! The pirate ship is sailing into the Dock on ${toIslandName}.`,
+      landing: `Welcome to ${toIslandName}, me hearty!`,
+      leaving: undefined,
+    },
+    jetski: {
+      calling:
+        "Here comes the jetski! It's zooming in beside the Dock to pick you up.",
+      boarding: "Step down from the pier and hold on tight!",
+      departing: `Full throttle! Zooming off to ${toIslandName}.`,
+      crossing: `Skimming over the waves to ${toIslandName}...`,
+      docking: `Slowing down beside the Dock on ${toIslandName}.`,
+      landing: `Welcome to ${toIslandName}!`,
+      leaving: undefined,
+    },
+    rocket: {
+      calling:
+        "Here comes the rocket! It's landing on the Helipad to pick you up.",
+      boarding: "Up the steps and through the hatch!",
+      departing: `3, 2, 1... blast off! Rocketing to ${toIslandName}.`,
+      crossing: `Rocketing high above the clouds to ${toIslandName}...`,
+      docking: `Coming down engine first onto the Helipad on ${toIslandName}.`,
+      landing: `Welcome to ${toIslandName}!`,
+      leaving: undefined,
+    },
+    portal: {
+      calling:
+        "Look! A magic portal is opening on the Balloon Field to take you.",
+      boarding: "Walk through the swirling light!",
+      departing: `Whoosh! The portal is whisking you away to ${toIslandName}.`,
+      crossing: `Zooming through the portal to ${toIslandName}...`,
+      docking: `A portal is opening on the Balloon Field on ${toIslandName}.`,
+      landing: `Welcome to ${toIslandName}!`,
+      leaving: undefined,
+    },
   };
   return descriptions[transport][phase];
 };
@@ -320,10 +360,14 @@ export const describeMapJourney = (
     hovercraft: `All aboard! The hovercraft is hovering to ${toIslandName}.`,
     submarine: `All aboard! The submarine is diving to ${toIslandName}.`,
     balloon: `All aboard! The hot-air balloon is floating to ${toIslandName}.`,
+    pirateShip: `All aboard! The pirate ship is sailing to ${toIslandName}.`,
+    jetski: `Hold on tight! The jetski is zooming to ${toIslandName}.`,
+    rocket: `All aboard! The rocket is blasting off to ${toIslandName}.`,
+    portal: `Step through! The magic portal is taking you to ${toIslandName}.`,
   })[transport];
 
 const dockStory =
-  "Big ships sail from this Dock to every Island. Press an Island's Year at the top and a ship, an aeroplane, a helicopter, a hovercraft, a submarine or a hot-air balloon will come to take you there!";
+  "Big ships sail from this Dock to every Island. Press an Island's Year at the top and a ship, an aeroplane, a helicopter, a hovercraft, a submarine, a hot-air balloon, a pirate ship, a jetski or a rocket will come to take you there, or a magic portal will open!";
 
 const statusMessages: Record<WalkerStatus, string | undefined> = {
   walking: undefined,

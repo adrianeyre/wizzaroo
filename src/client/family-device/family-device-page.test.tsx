@@ -1794,7 +1794,7 @@ describe("FamilyDevicePage", () => {
       ).toHaveLength(10);
     });
 
-    it("opens the World Map on a Year 2 Child's own Island, zoomed out with no Region chosen, and every Island open", async () => {
+    it("opens the World Map on a Year 2 Child's own Island, zoomed out with no Region chosen, and the Islands above their Year locked", async () => {
       startFakeServer(answerWithPlayableChildren([sparkle, thunderpaws]));
       openPage(renderMission());
       await waitForText("Who's playing?");
@@ -1817,10 +1817,10 @@ describe("FamilyDevicePage", () => {
       ).toEqual([
         ["meadow-isle", true],
         ["frost-isle", true],
-        ["sunscorch-sands", true],
-        ["jungle-reach", true],
-        ["ember-isle", true],
-        ["starfall-isle", true],
+        ["sunscorch-sands", false],
+        ["jungle-reach", false],
+        ["ember-isle", false],
+        ["starfall-isle", false],
       ]);
       expect(getPageText()).not.toContain(missionChoice);
     });
@@ -2144,7 +2144,7 @@ describe("FamilyDevicePage", () => {
       expect(readShownWorldMap().selectedRegionId).toBe("bubble-bay");
 
       pickTransport("balloon");
-      await chooseFromMenu("Islands", "Frost Isle, Year 2");
+      await chooseFromMenu("Islands", "Frost Isle, Year 2, locked");
       await vi.waitFor(() => {
         expect(readShownWorldMap().voyage).toStrictEqual({
           fromIslandId: "meadow-isle",
@@ -2348,7 +2348,7 @@ describe("FamilyDevicePage", () => {
       expect(document.querySelector(".play-side-panel")).toBeNull();
     });
 
-    it("lists each Island with its Year from the Menu, and moves the map to the Island chosen", async () => {
+    it("lists each Island with its Year from the Menu, and travels to the Island chosen, even one above the Child's Year", async () => {
       startFakeServer(answerWithPlayableChildren([sparkle]));
       openPage(renderMission());
       await playAsSparkle(everyRegionsName);
@@ -2364,7 +2364,7 @@ describe("FamilyDevicePage", () => {
       ).toContain("Year 1");
 
       pickTransport("ship");
-      findButton("Frost Isle, Year 2").click();
+      findButton("Frost Isle, Year 2, locked").click();
 
       await vi.waitFor(() => {
         expect(readShownWorldMap().voyage).toStrictEqual({
@@ -3442,7 +3442,7 @@ describe("FamilyDevicePage", () => {
 
       await waitForText("The Dock on Meadow Isle");
       expect(getPageText()).toContain(
-        "a ship, an aeroplane, a helicopter, a hovercraft, a submarine or a hot-air balloon will come to take you there",
+        "a ship, an aeroplane, a helicopter, a hovercraft, a submarine, a hot-air balloon, a pirate ship, a jetski or a rocket will come to take you there, or a magic portal will open",
       );
     });
 

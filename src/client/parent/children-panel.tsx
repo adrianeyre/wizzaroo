@@ -289,6 +289,7 @@ const describeGameCount = (
 /** What a Child can play, as their Parents set it, for anyone allowed to see their progress. */
 export const describeLimits = ({
   dailyMinutes,
+  unlockedIslandIds,
   lockedIslandIds,
   turnedOffRegionKeys,
   openRegionKeys,
@@ -306,6 +307,14 @@ export const describeLimits = ({
       : `Up to ${String(dailyMinutes)} minutes a day on each Family Device`;
   return [
     `${dailyLimit}.`,
+    describeNamed(
+      "Islands you've opened early",
+      listIslandNames(
+        unlockedIslandIds.filter(
+          (islandId) => !lockedIslandIds.includes(islandId),
+        ),
+      ),
+    ),
     describeNamed("Islands you've locked", listIslandNames(lockedIslandIds)),
     describeNamed(
       "Regions you've turned off",

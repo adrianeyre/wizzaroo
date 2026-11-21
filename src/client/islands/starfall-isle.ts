@@ -741,7 +741,7 @@ export const starfallIsle: IslandLandform = {
     findDistanceToNewLandRivers(point, starfallNewLands),
   waterCourses: [],
   pools: [],
-  listScatters: (keepClearOf, propPlaces) => {
+  listScatters: (keepClearOf, propPlaces, isClearOfTrailsAndAirfield) => {
     const clearOfCrater = [...keepClearOf, starCraterPosition];
     return [
       {
@@ -753,6 +753,7 @@ export const starfallIsle: IslandLandform = {
           highest: 4,
           keepClearOf: clearOfCrater,
           propPlaces,
+          isClearOfTrailsAndAirfield,
           clearance: 3.6,
           findHeight: findStarfallHeight,
           findDistanceToWater: findNoWater,
@@ -770,6 +771,7 @@ export const starfallIsle: IslandLandform = {
           highest: 5,
           keepClearOf: clearOfCrater,
           propPlaces,
+          isClearOfTrailsAndAirfield,
           clearance: 3,
           findHeight: findStarfallHeight,
           findDistanceToWater: findNoWater,
@@ -788,6 +790,7 @@ export const starfallIsle: IslandLandform = {
           highest: 4,
           keepClearOf: clearOfCrater,
           propPlaces,
+          isClearOfTrailsAndAirfield,
           clearance: 3,
           findHeight: findStarfallHeight,
           findDistanceToWater: findNoWater,

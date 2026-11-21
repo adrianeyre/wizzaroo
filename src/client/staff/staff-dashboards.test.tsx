@@ -394,7 +394,7 @@ describe("the staff dashboards", () => {
       expect(getPageText()).toContain(
         "Frost Isle, Year 2: open (their Home Island)",
       );
-      expect(getPageText()).toContain("Sunscorch Sands, Year 3: open");
+      expect(getPageText()).toContain("Sunscorch Sands, Year 3: locked");
       expect(getPageText()).toContain(
         "Bubble Bay: 11 of 19 Games unlocked (Popping bubbles, Fish count, Fair shares, Treasure map, Number word wizard, Most or least match, Hop past hundred, Heavy full quick, Coin and note counter, Days and months order, Flat shape spotter)",
       );

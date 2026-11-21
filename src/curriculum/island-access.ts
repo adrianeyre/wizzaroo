@@ -153,20 +153,42 @@ export interface GameOnMap extends RegionGame {
 const findPlayingYear = (yearGroup: YearGroup | null): number =>
   yearGroup ?? worldMap.islands[0].yearGroup;
 
+/**
+ * An Island's Regions and Games are open by default up to the Child's own
+ * Year; the Islands above wait for a Parent to open them early. Every Island
+ * can still be travelled to and explored whatever its Year (ADR 0071).
+ */
+const isOpenByDefault = (
+  island: Pick<Island, "yearGroup">,
+  yearGroup: YearGroup | null,
+): boolean => island.yearGroup <= findPlayingYear(yearGroup);
+
+const isOpenedByParent = (
+  { unlockedIslandIds, lockedIslandIds }: ParentChoices,
+  islandId: string,
+  isUnlockedByDefault: boolean,
+): boolean =>
+  !lockedIslandIds.includes(islandId) &&
+  (isUnlockedByDefault || unlockedIslandIds.includes(islandId));
+
 export const buildIslandsOnMap = (
   yearGroup: YearGroup | null,
-  { lockedIslandIds, teacherLocks }: ChildLimits,
+  limits: ChildLimits,
   { islands }: WorldMap = worldMap,
 ): IslandOnMap[] =>
   islands.map((island) => {
-    const isLockedByTeacher = teacherLocks.lockedIslandIds.includes(island.id);
+    const isLockedByTeacher = limits.teacherLocks.lockedIslandIds.includes(
+      island.id,
+    );
+    const isUnlockedByDefault = isOpenByDefault(island, yearGroup);
     return {
       ...island,
       isHome: island.yearGroup === findPlayingYear(yearGroup),
-      // Every Island is open by default, whatever the Child's Year; only a Parent's or a Teacher's lock closes one (ADR 0064).
-      isUnlockedByDefault: true,
+      isUnlockedByDefault,
       isLockedByTeacher,
-      isUnlocked: !isLockedByTeacher && !lockedIslandIds.includes(island.id),
+      isUnlocked:
+        !isLockedByTeacher &&
+        isOpenedByParent(limits, island.id, isUnlockedByDefault),
     };
   });
 
@@ -330,9 +352,9 @@ const changeIds = (
   return keepInMapOrder(changed, orderedIds);
 };
 
-// A Parent's Island switch overrides the default: every Island is open by
-// default, so it locks one, and opens it again. An Island opened early before
-// every Island was open stays in unlockedIslandIds and changes nothing.
+// A Parent's Island switch overrides the default: it opens an Island above
+// the Child's Year early, or locks one at or below it, and switching it back
+// returns the Island to its default.
 export const switchIsland = (
   limits: ChildLimits,
   { id, isUnlocked, isUnlockedByDefault }: IslandOnMap,

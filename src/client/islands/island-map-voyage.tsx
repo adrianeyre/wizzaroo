@@ -11,6 +11,7 @@ import {
   findCraftPose,
   findCrossingCraftPlacement,
   findJourneyPhaseSeconds,
+  isShipLike,
   placeCraftOnMap,
   type Transport,
 } from "./island-journey.js";
@@ -126,16 +127,15 @@ export const MapVoyage = ({
         phase === "crossing"
           ? findCrossingCraftPlacement(transport, course, share)
           : placeCraftOnMap(port, transport, phase, share);
-      poseRef.current =
-        transport === "ship"
-          ? { placement, opening: 0 }
-          : findCraftPose(
-              findExploreAdventure(port.islandId),
-              transport,
-              phase,
-              share,
-              placement,
-            );
+      poseRef.current = isShipLike(transport)
+        ? { placement, opening: 0 }
+        : findCraftPose(
+            findExploreAdventure(port.islandId),
+            transport,
+            phase,
+            share,
+            placement,
+          );
       placementRef.current = placement;
       if (clock.seconds >= phaseSeconds) {
         clock.seconds = 0;
@@ -153,11 +153,12 @@ export const MapVoyage = ({
 
   useCraftFollowingControls(placementRef);
 
-  return transport === "ship" ? (
+  return isShipLike(transport) ? (
     <VoyageShip
       findPlacement={(deltaSeconds) => moveCraft(deltaSeconds)?.placement}
       scale={shipMapScale}
-      name="map-ship"
+      name={transport === "ship" ? "map-ship" : `map-${transport}`}
+      ship={transport}
     />
   ) : (
     <VoyageCraft

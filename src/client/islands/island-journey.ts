@@ -15,6 +15,7 @@ import {
   findAircraftPlacement,
   findAircraftWaitingSpot,
   findBurnerBlast,
+  findRocketBurn,
   isWalkingToAircraft,
   listAircraftBlockers,
   type Aircraft,
@@ -29,6 +30,7 @@ import {
   findSeaCraftCarriedSpot,
   findSeaCraftPlacement,
   findSeaCraftWaitingSpot,
+  findJetskiSpray,
   findSkirtLift,
   findSubPierSide,
   hovercraftCushion,
@@ -38,6 +40,17 @@ import {
   subDivingDepth,
   type SeaCraft,
 } from "./island-sea-craft.js";
+import {
+  findPortalArrivalHeading,
+  findPortalCameraSpot,
+  findPortalCarriedSpot,
+  findPortalOpening,
+  findPortalPlacement,
+  findPortalWaitingSpot,
+  isWalkingThroughPortal,
+  listPortalBlockers,
+  portalPhaseSeconds,
+} from "./island-portal.js";
 import {
   buildSeaRoute,
   buildVoyageRoute,
@@ -62,6 +75,10 @@ export const transports = [
   "hovercraft",
   "submarine",
   "balloon",
+  "pirateShip",
+  "jetski",
+  "rocket",
+  "portal",
 ] as const;
 
 export type Transport = (typeof transports)[number];
@@ -78,13 +95,21 @@ export const chooseTransport = (
     Math.min(transports.length - 1, Math.floor(random() * transports.length))
   ];
 
+export type ShipTransport = "ship" | "pirateShip";
+
+export const isShipLike = (transport: Transport): transport is ShipTransport =>
+  transport === "ship" || transport === "pirateShip";
+
 const isAircraft = (transport: Transport): transport is Aircraft =>
   transport === "aeroplane" ||
   transport === "helicopter" ||
-  transport === "balloon";
+  transport === "balloon" ||
+  transport === "rocket";
 
 const isSeaCraft = (transport: Transport): transport is SeaCraft =>
-  transport === "hovercraft" || transport === "submarine";
+  transport === "hovercraft" ||
+  transport === "submarine" ||
+  transport === "jetski";
 
 const asCraftPlacement = (placement: {
   x: number;
@@ -96,6 +121,9 @@ export const findLandPhaseSeconds = (
   transport: Transport,
   phase: LandPhase,
 ): number => {
+  if (transport === "portal") {
+    return portalPhaseSeconds[phase];
+  }
   if (isAircraft(transport)) {
     return aircraftPhaseSeconds[transport][phase];
   }
@@ -110,6 +138,9 @@ export const findCraftPlacement = (
   phase: LandPhase,
   share: number,
 ): CraftPlacement => {
+  if (transport === "portal") {
+    return findPortalPlacement(adventure, phase, share);
+  }
   if (isAircraft(transport)) {
     return findAircraftPlacement(adventure, transport, phase, share);
   }
@@ -124,6 +155,9 @@ export const findJourneyCarriedSpot = (
   phase: LandPhase,
   share: number,
 ): BoardingSpot => {
+  if (transport === "portal") {
+    return findPortalCarriedSpot(adventure, phase, share);
+  }
   if (isAircraft(transport)) {
     return findAircraftCarriedSpot(adventure, transport, phase, share);
   }
@@ -136,6 +170,9 @@ export const findJourneyWaitingSpot = (
   adventure: IslandAdventure,
   transport: Transport,
 ): MapPoint => {
+  if (transport === "portal") {
+    return findPortalWaitingSpot(adventure);
+  }
   if (isAircraft(transport)) {
     return findAircraftWaitingSpot(adventure, transport);
   }
@@ -148,6 +185,9 @@ export const findJourneyArrivalHeading = (
   adventure: IslandAdventure,
   transport: Transport,
 ): number => {
+  if (transport === "portal") {
+    return findPortalArrivalHeading(adventure);
+  }
   if (isAircraft(transport)) {
     return findAircraftArrivalHeading(adventure, transport);
   }
@@ -160,6 +200,9 @@ export const findJourneyCameraSpot = (
   adventure: IslandAdventure,
   transport: Transport,
 ): Spot3 => {
+  if (transport === "portal") {
+    return findPortalCameraSpot(adventure);
+  }
   if (isAircraft(transport)) {
     return findAircraftCameraSpot(adventure, transport);
   }
@@ -173,6 +216,9 @@ export const isWalkingAboard = (
   phase: VoyagePhase,
   share: number,
 ): boolean => {
+  if (transport === "portal") {
+    return isWalkingThroughPortal(phase, share);
+  }
   if (isAircraft(transport)) {
     return isWalkingToAircraft(phase, share);
   }
@@ -186,6 +232,9 @@ export const listCraftBlockers = (
   transport: Transport,
   craft: CraftPlacement,
 ): { centre: MapPoint; radius: number }[] => {
+  if (transport === "portal") {
+    return listPortalBlockers(adventure, craft);
+  }
   if (isAircraft(transport)) {
     return listAircraftBlockers(adventure, transport, craft);
   }
@@ -219,6 +268,7 @@ const periscopeDepth = 3.3;
 const seaCruiseHeights: Record<SeaCraft, number> = {
   hovercraft: hovercraftCushion / exploreScale,
   submarine: -Math.min(subDivingDepth, periscopeDepth) / exploreScale,
+  jetski: 0,
 };
 
 const flightLead = 22;
@@ -232,6 +282,26 @@ const leadAhead = (
   y: cruiseHeight,
   z: z + Math.cos(heading) * distance,
 });
+
+const rocketArcHeight = 34;
+const wispArcHeight = 22;
+const arcClimb = 7;
+
+const buildArcRoute = (
+  leaving: Spot3,
+  arriving: Spot3,
+  height: number,
+): Spot3[] => [
+  { x: leaving.x, y: leaving.y, z: leaving.z },
+  { x: leaving.x, y: leaving.y + arcClimb, z: leaving.z },
+  {
+    x: (leaving.x + arriving.x) / 2,
+    y: Math.max(leaving.y, arriving.y) + height,
+    z: (leaving.z + arriving.z) / 2,
+  },
+  { x: arriving.x, y: arriving.y + arcClimb, z: arriving.z },
+  { x: arriving.x, y: arriving.y, z: arriving.z },
+];
 
 export const buildJourneyRoute = (
   from: VoyagePort,
@@ -253,8 +323,15 @@ export const buildJourneyRoute = (
       z,
     }));
   }
-  if (!isAircraft(transport)) {
+  if (isShipLike(transport)) {
     return buildVoyageRoute(from, to).map(({ x, z }) => ({ x, y: 0, z }));
+  }
+  if (transport === "portal" || transport === "rocket") {
+    return buildArcRoute(
+      placeCraftOnMap(from, transport, "departing", 1),
+      placeCraftOnMap(to, transport, "docking", 0),
+      transport === "rocket" ? rocketArcHeight : wispArcHeight,
+    );
   }
   const leaving = placeCraftOnMap(from, transport, "departing", 1);
   const arriving = placeCraftOnMap(to, transport, "docking", 0);
@@ -274,10 +351,12 @@ export const buildJourneyCourse = (route: readonly Spot3[]) =>
     "centripetal",
   );
 
-const flyingSpeeds: Record<Aircraft, number> = {
+const flyingSpeeds: Record<Aircraft | "portal", number> = {
   aeroplane: 42,
   helicopter: 30,
   balloon: 22,
+  rocket: 48,
+  portal: 40,
 };
 const shortestFlightSeconds = 4;
 const longestFlightSeconds = 9;
@@ -286,7 +365,7 @@ export const findJourneyCrossingSeconds = (
   transport: Transport,
   route: readonly Spot3[],
 ): number =>
-  isAircraft(transport)
+  isAircraft(transport) || transport === "portal"
     ? Math.min(
         longestFlightSeconds,
         Math.max(
@@ -310,6 +389,7 @@ const bankPerTurn: Record<Aircraft, number> = {
   aeroplane: 9,
   helicopter: 6,
   balloon: 0,
+  rocket: 0,
 };
 const steepestBank = 0.55;
 const helicopterNoseDown = 0.12;
@@ -325,6 +405,37 @@ const findTurn = (course: CatmullRomCurve3, share: number): number => {
   return Math.atan2(Math.sin(after - before), Math.cos(after - before));
 };
 
+const flipFrom = 0.4;
+const flipTo = 0.6;
+
+// The rocket flies nose first while it climbs, flips over the top of its arc
+// and comes down engine first, ready to land upright.
+const findRocketCrossing = (
+  course: CatmullRomCurve3,
+  share: number,
+): CraftPlacement => {
+  const point = course.getPointAt(share);
+  const tangent = course.getTangentAt(share);
+  const climb = Math.atan2(tangent.y, Math.hypot(tangent.x, tangent.z));
+  const noseFirst = Math.PI / 2 - climb;
+  const engineFirst = -(Math.PI / 2 + climb);
+  const flip = smoothStep(flipFrom, flipTo, share);
+  const heading = Math.atan2(
+    course.getPointAt(1).x - course.getPointAt(0).x,
+    course.getPointAt(1).z - course.getPointAt(0).z,
+  );
+  return {
+    x: point.x,
+    y: point.y,
+    z: point.z,
+    heading,
+    pitch: -(noseFirst * (1 - flip) + engineFirst * flip),
+    roll: 0,
+  };
+};
+
+const jetskiCrossingPitch = 0.1;
+
 export const findCrossingCraftPlacement = (
   transport: Transport,
   course: CatmullRomCurve3,
@@ -334,20 +445,36 @@ export const findCrossingCraftPlacement = (
     const eased = smoothStep(0, 1, share);
     const point = course.getPointAt(eased);
     const tangent = course.getTangentAt(eased);
+    const isJetski = transport === "jetski";
     return {
       x: point.x,
       y: point.y,
       z: point.z,
       heading: Math.atan2(tangent.x, tangent.z),
-      pitch: Math.atan2(tangent.y, Math.hypot(tangent.x, tangent.z)),
-      roll: 0,
+      pitch: isJetski
+        ? jetskiCrossingPitch + 0.03 * Math.sin(share * Math.PI * 23)
+        : Math.atan2(tangent.y, Math.hypot(tangent.x, tangent.z)),
+      roll: isJetski ? -findTurn(course, eased) * 4 : 0,
     };
   }
-  if (!isAircraft(transport)) {
+  if (isShipLike(transport)) {
     return asCraftPlacement(findCrossingPlacement(course, share));
+  }
+  if (transport === "rocket") {
+    return findRocketCrossing(course, share);
   }
   const point = course.getPointAt(share);
   const tangent = course.getTangentAt(share);
+  if (transport === "portal") {
+    return {
+      x: point.x,
+      y: point.y,
+      z: point.z,
+      heading: Math.atan2(tangent.x, tangent.z),
+      pitch: 0,
+      roll: 0,
+    };
+  }
   if (transport === "balloon") {
     return {
       x: point.x,
@@ -374,7 +501,24 @@ export const findCrossingCraftPlacement = (
   };
 };
 
-export type CraftTransport = Exclude<Transport, "ship">;
+export type CraftTransport = Exclude<Transport, ShipTransport>;
+
+const findCraftGlow = (
+  transport: CraftTransport,
+  phase: VoyagePhase,
+  share: number,
+): number => {
+  if (transport === "balloon") {
+    return findBurnerBlast(phase, share);
+  }
+  if (transport === "rocket") {
+    return findRocketBurn(phase, share);
+  }
+  if (transport === "jetski") {
+    return findJetskiSpray(phase, share);
+  }
+  return 0;
+};
 
 export const findCraftPose = (
   adventure: IslandAdventure,
@@ -384,8 +528,11 @@ export const findCraftPose = (
   placement: CraftPlacement,
 ): CraftPose => ({
   placement,
-  opening: findDoorOpening(phase, share),
+  opening:
+    transport === "portal"
+      ? findPortalOpening(phase, share)
+      : findDoorOpening(phase, share),
   lift: findSkirtLift(phase, share),
   side: findSubPierSide(adventure.dock),
-  burn: transport === "balloon" ? findBurnerBlast(phase, share) : 0,
+  burn: findCraftGlow(transport, phase, share),
 });

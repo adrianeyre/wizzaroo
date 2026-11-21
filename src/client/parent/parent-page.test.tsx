@@ -2784,6 +2784,7 @@ describe("ParentPage", () => {
       const switchedLimits = {
         ...noLimits,
         dailyMinutes: 20,
+        unlockedIslandIds: ["jungle-reach"],
         lockedIslandIds: ["frost-isle"],
         turnedOffRegionKeys: ["meadow-isle/bubble-bay"],
       };
@@ -2793,7 +2794,7 @@ describe("ParentPage", () => {
       });
       await showDashboard();
       expect(getPageText()).toContain(
-        "Up to 20 minutes a day on each Family Device. Islands you've locked: Frost Isle. Regions you've turned off: Bubble Bay on Meadow Isle.",
+        "Up to 20 minutes a day on each Family Device. Islands you've opened early: Jungle Reach. Islands you've locked: Frost Isle. Regions you've turned off: Bubble Bay on Meadow Isle.",
       );
       findButton("Set Bea's limits").click();
       await vi.waitFor(() => {
@@ -3246,22 +3247,25 @@ describe("ParentPage", () => {
       });
     };
 
-    it("opens every Island to a Child, whatever their Year", async () => {
+    it("opens the Regions on a Child's own Island and the ones below, and locks those above their Year", async () => {
       startFakeApi({ isSignedIn: true, familyChildren: [ali] });
 
       await showIslands();
 
       expect(
         islandIds.map((islandId) => findIslandSwitch(islandId).checked),
-      ).toEqual([true, true, true, true, true, true]);
+      ).toEqual([true, true, false, false, false, false]);
+      expect(findIslandBadge("meadow-isle")).toBe("Open");
       expect(findIslandBadge("frost-isle")).toBe("Open: Ali's own Year");
-      expect(findIslandBadge("sunscorch-sands")).toBe("Open");
+      expect(findIslandBadge("sunscorch-sands")).toBe(
+        "Locked: above Ali's Year",
+      );
       expect(getPageText()).toContain(
-        "Ali is in Year 2 and can visit 6 of 6 Islands.",
+        "Ali is in Year 2 and can play the Regions on 2 of 6 Islands.",
       );
     });
 
-    it("locks an Island above a Year 2 Child's Year, and opens it again", async () => {
+    it("opens an Island above a Year 2 Child's Year early, and locks it again", async () => {
       const { requests } = startFakeApi({
         isSignedIn: true,
         familyChildren: [ali],
@@ -3272,21 +3276,24 @@ describe("ParentPage", () => {
 
       await vi.waitFor(() => {
         expect(readStatus()).toBe(
-          "Sunscorch Sands is locked for Ali. Each Family Device locks it once it next goes online.",
+          "Sunscorch Sands is open for Ali. Each Family Device opens it once it next goes online.",
         );
       });
       await expectLimitsSent(requests, ali.id, {
         ...noLimits,
-        lockedIslandIds: ["sunscorch-sands"],
+        unlockedIslandIds: ["sunscorch-sands"],
       });
-      expect(findIslandBadge("sunscorch-sands")).toBe("Locked by you");
+      expect(findIslandBadge("sunscorch-sands")).toBe("Opened early");
 
       findIslandSwitch("sunscorch-sands").click();
 
       await expectLimitsSent(requests, ali.id, noLimits);
       await vi.waitFor(() => {
-        expect(findIslandSwitch("sunscorch-sands").checked).toBe(true);
+        expect(findIslandSwitch("sunscorch-sands").checked).toBe(false);
       });
+      expect(findIslandBadge("sunscorch-sands")).toBe(
+        "Locked: above Ali's Year",
+      );
     });
 
     it("locks a Child's own Island, and opens it again", async () => {
@@ -3512,7 +3519,7 @@ describe("ParentPage", () => {
       await expectLimitsSent(requests, ali.id, {
         ...noLimits,
         dailyMinutes: 20,
-        lockedIslandIds: ["jungle-reach"],
+        unlockedIslandIds: ["jungle-reach"],
       });
     });
 
@@ -3531,7 +3538,7 @@ describe("ParentPage", () => {
           "Wizzaroo couldn't save that change for Ali. Try again in a moment.",
         );
       });
-      expect(findIslandSwitch("sunscorch-sands").checked).toBe(true);
+      expect(findIslandSwitch("sunscorch-sands").checked).toBe(false);
       expect(findIslandSwitch("sunscorch-sands").disabled).toBe(false);
     });
 
@@ -3579,7 +3586,7 @@ describe("ParentPage", () => {
           term.textContent.trim(),
         ),
       ).toEqual([
-        "Can visit",
+        "Regions open",
         "Can play",
         "All Games open",
         "Locked by their Teacher",
@@ -3655,7 +3662,7 @@ describe("ParentPage", () => {
       startFakeApi({ isSignedIn: true, familyChildren: [bea, ali] });
       await showIslands();
       expect(getPageText()).toContain("Bea's Islands");
-      expect(findIslandBadge("frost-isle")).toBe("Open");
+      expect(findIslandBadge("frost-isle")).toBe("Locked: above Bea's Year");
 
       findChildTile("Ali").click();
 
@@ -3944,7 +3951,10 @@ describe("ParentPage", () => {
         familyChildren: [
           {
             ...ali,
-            limits: { ...noLimits, lockedIslandIds: ["sunscorch-sands"] },
+            limits: {
+              ...noLimits,
+              exploreLockedIslandIds: ["sunscorch-sands"],
+            },
           },
         ],
         childAwards: { [ali.id]: { questProgress: [meadowIsleUnderWay] } },
@@ -3977,7 +3987,7 @@ describe("ParentPage", () => {
         null,
       );
       expect(findQuestCard("Sunscorch Sands").textContent).toContain(
-        "Sunscorch Sands is locked for Ali, so this Quest waits until it's open again.",
+        "Sunscorch Sands is locked for Ali to explore, so this Quest waits until it's open again.",
       );
       expect(getPageText()).toContain("Ali has finished 0 of 6.");
     });

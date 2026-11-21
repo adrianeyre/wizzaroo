@@ -693,7 +693,7 @@ export const emberIsle: IslandLandform = {
     ),
   waterCourses: lavaRivers,
   pools: [],
-  listScatters: (keepClearOf, propPlaces) => {
+  listScatters: (keepClearOf, propPlaces, isClearOfTrailsAndAirfield) => {
     const clearOfVolcano = [
       ...keepClearOf,
       emberVolcanoPosition,
@@ -709,6 +709,7 @@ export const emberIsle: IslandLandform = {
           highest: 7,
           keepClearOf: clearOfVolcano,
           propPlaces,
+          isClearOfTrailsAndAirfield,
           clearance: 2.6,
           findHeight: findEmberHeight,
           findDistanceToWater: findDistanceToLava,
@@ -726,6 +727,7 @@ export const emberIsle: IslandLandform = {
           highest: 3,
           keepClearOf: clearOfVolcano,
           propPlaces,
+          isClearOfTrailsAndAirfield,
           clearance: 3.2,
           findHeight: findEmberHeight,
           findDistanceToWater: findDistanceToLava,
@@ -743,6 +745,7 @@ export const emberIsle: IslandLandform = {
           highest: 5,
           keepClearOf: clearOfVolcano,
           propPlaces,
+          isClearOfTrailsAndAirfield,
           clearance: 2.6,
           findHeight: findEmberHeight,
           findDistanceToWater: findDistanceToLava,

@@ -409,6 +409,31 @@ export const findRunwayOffset = (
   };
 };
 
+export const runwayApproachLength = 12;
+const airfieldMargin = 1;
+
+/**
+ * Whether a point is on the Runway or the strip beyond either end that
+ * aeroplanes fly low over, on the Helipad or on the Balloon Field.
+ */
+export const isOnAirfield = (
+  { runway, helipad, balloonField }: Airfield,
+  point: MapPoint,
+): boolean => {
+  const { along, across } = findRunwayOffset(runway, point);
+  return (
+    (Math.abs(along) <= runwayHalfLength + runwayApproachLength &&
+      Math.abs(across) <= runwayFlatHalfWidth + airfieldMargin) ||
+    Math.hypot(point.x - helipad.centre.x, point.z - helipad.centre.z) <=
+      helipadFlatRadius + airfieldMargin ||
+    Math.hypot(
+      point.x - balloonField.centre.x,
+      point.z - balloonField.centre.z,
+    ) <=
+      balloonFieldFlatRadius + airfieldMargin
+  );
+};
+
 const findReachBeyondRunway = (runway: Runway, point: MapPoint): number => {
   const { along, across } = findRunwayOffset(runway, point);
   return Math.hypot(
@@ -705,6 +730,7 @@ interface ScatterRules {
   keepClearOf: MapPoint[];
   clearance: number;
   propPlaces?: readonly MapPoint[];
+  isClearOfTrailsAndAirfield?: (point: MapPoint) => boolean;
   findHeight?: (point: MapPoint) => number;
   findDistanceToWater?: (point: MapPoint) => number;
 }
@@ -777,6 +803,7 @@ export const scatterAcrossLand = ({
   keepClearOf,
   clearance,
   propPlaces = [],
+  isClearOfTrailsAndAirfield = () => true,
   findHeight = findTerrainHeight,
   findDistanceToWater = findDistanceToFreshWater,
 }: ScatterRules): ScatteredThing[] => {
@@ -797,7 +824,8 @@ export const scatterAcrossLand = ({
       keepClearOf.every(
         (place) => Math.hypot(point.x - place.x, point.z - place.z) > clearance,
       ) &&
-      isClearOfProps(point, propPlaces);
+      isClearOfProps(point, propPlaces) &&
+      isClearOfTrailsAndAirfield(point);
     if (height >= lowest && height <= highest && isClear) {
       scattered.push({
         ...point,

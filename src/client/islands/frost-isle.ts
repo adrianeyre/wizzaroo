@@ -838,7 +838,7 @@ export const frostIsle: IslandLandform = {
     ),
   waterCourses: [frozenChannel],
   pools: [],
-  listScatters: (keepClearOf, propPlaces) => {
+  listScatters: (keepClearOf, propPlaces, isClearOfTrailsAndAirfield) => {
     const clearOfVillage = [
       ...keepClearOf,
       iglooVillageCentre,
@@ -854,6 +854,7 @@ export const frostIsle: IslandLandform = {
           highest: 4.6,
           keepClearOf: clearOfVillage,
           propPlaces,
+          isClearOfTrailsAndAirfield,
           clearance: 3.6,
           findHeight: findFrostHeight,
           findDistanceToWater: findDistanceToFrostWater,
@@ -871,6 +872,7 @@ export const frostIsle: IslandLandform = {
           highest: 6,
           keepClearOf: clearOfVillage,
           propPlaces,
+          isClearOfTrailsAndAirfield,
           clearance: 3,
           findHeight: findFrostHeight,
           findDistanceToWater: findDistanceToFrostWater,

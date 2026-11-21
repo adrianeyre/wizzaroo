@@ -4,15 +4,15 @@
 
 > **Personal use only.** Wizzaroo is intended for your own personal use only. It is not intended for use with or by a school, teacher, parent or student. Only use it for yourself.
 
-Everything a Child can ride in Wizzaroo: the six craft that carry them between Islands, each Island's own Train, and the 30 Vehicles they can buy and drive while exploring. Where each Island keeps them is in [the Islands](islands.md), and every detail of the journeys is in [the World Map](world-map.md).
+Everything a Child can ride in Wizzaroo: the nine craft and the magic portal that carry them between Islands, each Island's own Train, and the 30 Vehicles they can buy and drive while exploring. Where each Island keeps them is in [the Islands](islands.md), and every detail of the journeys is in [the World Map](world-map.md).
 
 ## Travelling between Islands
 
-Choosing another Island's Year, locked or not, on the World Map (**Islands** in the Menu) or with the **Y1** to **Y6** buttons in the explore bar, sends a craft to fetch the Character. It is picked at random from six (`chooseTransport` in `src/client/islands/island-journey.ts`), and a pop-up says which is coming, such as "All aboard! The hot-air balloon is floating to Meadow Isle." The camera follows the craft across the World Map, and **Fast forward** skips the rest of the journey at any point. Every craft carries the Wizzaroo flag and name.
+Choosing another Island's Year, locked or not, on the World Map (**Islands** in the Menu) or with the **Y1** to **Y6** buttons in the explore bar, sends a craft to fetch the Character, or opens a portal for them. It is picked at random from ten (`chooseTransport` in `src/client/islands/island-journey.ts`), and a pop-up says which is coming, such as "All aboard! The hot-air balloon is floating to Meadow Isle." The camera follows the craft across the World Map, and **Fast forward** skips the rest of the journey at any point. Every craft, and the portal, carries the Wizzaroo flag and name.
 
-Every Island has a place for each craft to come in: a **Dock** for the ship and the submarine, a **Runway**, a **Helipad**, a **Balloon Field** and a **hover slipway** ([ADR 0043](../architectural-decision-record/0043-aeroplanes-and-helicopters-fly-between-runways-and-helipads.md), [ADR 0045](../architectural-decision-record/0045-a-hovercraft-a-submarine-and-the-wizzaroo-flag-on-every-island-and-aircraft.md), [ADR 0050](../architectural-decision-record/0050-a-hot-air-balloon-floats-between-balloon-fields.md)).
+Every Island has a place for each craft to come in: a **Dock** for the ship, the pirate ship, the submarine and the jetski, a **Runway**, a **Helipad** for the helicopter and the rocket, a **Balloon Field** for the balloon and the portal, and a **hover slipway** ([ADR 0043](../architectural-decision-record/0043-aeroplanes-and-helicopters-fly-between-runways-and-helipads.md), [ADR 0045](../architectural-decision-record/0045-a-hovercraft-a-submarine-and-the-wizzaroo-flag-on-every-island-and-aircraft.md), [ADR 0050](../architectural-decision-record/0050-a-hot-air-balloon-floats-between-balloon-fields.md), [ADR 0070](../architectural-decision-record/0070-a-pirate-ship-a-jetski-a-rocket-and-a-magic-portal.md)).
 
-The screenshots below were taken during real journeys, with the pop-up moved out of the way.
+The screenshots below were taken during real journeys, with the pop-up moved out of the way; the close-ups of the four newest were rendered from the same models.
 
 ### The ship
 
@@ -49,6 +49,40 @@ It comes in over the sea and rides up the hover slipway onto the land, where its
 ![The submarine diving away from Starfall Isle's Dock](../images/transport/submarine.jpg)
 
 It rises from deep under the sea and glides in beside the Dock, slides out its brow to the pier and opens its hatch. The Character climbs down the hatch, and it dives, crossing the World Map under the waves with only its masts showing (`island-submarine-design.ts`).
+
+### The pirate ship
+
+![The pirate ship at Meadow Isle's Dock, its gangplank out to the pier](../images/transport/pirate-ship.jpg)
+
+|                                                                                                                  |                                                                                                         |
+| ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| ![The pirate ship under full sail, the Jolly Roger at its masthead](../images/transport/pirate-ship-sailing.jpg) | ![The pirate ship's stern gallery, lanterns and Jolly Roger](../images/transport/pirate-ship-stern.jpg) |
+
+A three-masted galleon that comes in exactly like the ship: it sails into the Dock, slides out the gangplank to an entry port in its bulwark, and the Character walks aboard onto its waist deck (`island-pirate-ship-design.ts`). It flies the **Jolly Roger**, a white skull over crossed bones on black, from its main masthead and its stern (`jolly-roger-flag.ts`), and Wizzaroo flags from its fore and mizzen mastheads. Its mainsail carries the Wizzaroo crest, its hull the gold Wizzaroo name, and its stern the crest above a gallery of lit windows and three lanterns. It has a raised forecastle and quarterdeck, gunports with cannons, billowing cream sails with red bands, rigging and ratlines, a ship's wheel, barrels and a treasure chest of gold coins.
+
+### The jetski
+
+![The jetski waiting beside the end of Meadow Isle's pier](../images/transport/jetski.jpg)
+
+![The jetski zooming off, a rooster tail of spray behind it](../images/transport/jetski-spray.jpg)
+
+It zooms in from the sea in a curve, nose up, and stops beside the end of the pier. The Character steps down from the pier onto its footwell behind the handlebars and rides it standing, in view the whole way. It swings away from the pier, turns and speeds off, kicking up a rooster tail of spray, and skims the sea lane across the World Map (`island-jetski-design.ts`). It is white with a purple and gold stripe, the Wizzaroo name on both sides and the crest on its purple cowl.
+
+### The rocket
+
+![The rocket standing on Starfall Isle's Helipad, its stair down to the ground](../images/transport/rocket.jpg)
+
+![The rocket blasting off on its three engine flames](../images/transport/rocket-launch.jpg)
+
+It comes down engine first onto the Helipad on a landing burn and stands on the feet of its four fins. Its stair folds down from the hatch and the Character climbs aboard; then the stair folds up, the hatch shuts, and it blasts off straight up. Over the World Map it arcs high above the sea, nose first as it climbs, flipping over the top and coming down engine first onto the other Island's Helipad (`island-rocket-design.ts`). It is white with a purple nose and fins, gold bands and a crew band of round windows, with the Wizzaroo name and crest on three sides.
+
+### The magic portal
+
+![The magic portal open on the Balloon Field, swirling with light](../images/transport/portal.jpg)
+
+![The portal growing up around its light as it opens](../images/transport/portal-opening.jpg)
+
+A standing ring of carved stone on a round dais opens on the Balloon Field while the Character waits, growing up around a swirling disc of violet and cyan light with rune stones orbiting it. The Character walks up onto the dais and through the light, and the portal closes behind them to a wisp of light that shoots up and streaks across the World Map. It falls onto the other Island's Balloon Field, opens there, and the Character walks out of it (`island-portal.ts`, `island-portal-design.ts`). The crest is on its gold keystone and the Wizzaroo name on a plaque at its foot.
 
 ## Trains
 

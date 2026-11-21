@@ -8,6 +8,7 @@ import {
   flagTextureSize,
   liveryTextureSize,
 } from "./wizzaroo-flag.js";
+import { drawJollyRoger } from "./jolly-roger-flag.js";
 
 const useCanvasTexture = (
   width: number,
@@ -55,6 +56,17 @@ const paintFlag = (context: CanvasRenderingContext2D) => {
 const paintLivery = (context: CanvasRenderingContext2D) => {
   drawWizzarooLivery(context, liveryTextureSize.width);
 };
+
+const paintJollyRoger = (context: CanvasRenderingContext2D) => {
+  drawJollyRoger(context, flagTextureSize.width, flagTextureSize.height);
+};
+
+export const useJollyRogerTexture = (): CanvasTexture =>
+  useCanvasTexture(
+    flagTextureSize.width,
+    flagTextureSize.height,
+    paintJollyRoger,
+  );
 
 export const useWizzarooFlagTexture = (): CanvasTexture =>
   useCanvasTexture(flagTextureSize.width, flagTextureSize.height, paintFlag);
