@@ -518,7 +518,7 @@ describe("buildHttpServer's request-rate limits on reset requests", () => {
     });
   });
 
-  it("counts the six sign-in, reset and Invite routes together for one caller's address, refusing each before reading its body (#246)", async () => {
+  it("counts the seven sign-in, reset and Invite routes together for one caller's address, refusing each before reading its body (#246)", async () => {
     const routes = perIpAddressLimitedRoutes.map((route) =>
       route.replace(/^POST /, ""),
     );
@@ -536,7 +536,7 @@ describe("buildHttpServer's request-rate limits on reset requests", () => {
       answers.push({ url, statusCode: response.statusCode });
     }
 
-    expect(routes).toHaveLength(6);
+    expect(routes).toHaveLength(7);
     expect(answers.slice(allowedFromOneCaller)).toEqual(
       expect.arrayContaining(routes.map((url) => ({ url, statusCode: 429 }))),
     );
@@ -565,6 +565,7 @@ const wrapperTable: Record<string, RouteReach> = {
   "POST /api/invite-acceptances": "none",
   "POST /api/passkey-hand-off-registration-options": "none",
   "POST /api/passkey-hand-off-passkeys": "none",
+  "POST /api/sign-in-code-sign-ins": "none",
   "GET /api/me": "user",
   "GET /api/sign-in-methods": "user",
   "GET /api/email-address": "user",
@@ -582,6 +583,7 @@ const wrapperTable: Record<string, RouteReach> = {
   "POST /api/passkey-confirmations": "user",
   "DELETE /api/passkeys/:passkeyId": "user",
   "POST /api/passkey-hand-offs": "user",
+  "POST /api/sign-in-codes": "user",
   "GET /api/schools": "adult",
   "PUT /api/children/:childId": "adult",
   "PUT /api/children/:childId/limits": "adult",

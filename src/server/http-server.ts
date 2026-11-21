@@ -11,6 +11,7 @@ import { registerPasskeyRoutes } from "./auth/passkey-routes.js";
 import { registerPasswordChangeRoutes } from "./auth/password-change-routes.js";
 import { registerPasswordResetRoutes } from "./auth/password-reset-routes.js";
 import { registerOtherSignInsRoutes } from "./auth/other-sign-ins-routes.js";
+import { registerSignInCodeRoutes } from "./auth/sign-in-code-routes.js";
 import { registerSignInMethodsRoutes } from "./auth/sign-in-methods-routes.js";
 import { registerSignInRoutes } from "./auth/sign-in-routes.js";
 import { runAsSignedInParent } from "./auth/signed-in-parent.js";
@@ -186,6 +187,12 @@ export const buildHttpServer = async ({
     clock: requestRateClock,
   });
   registerPasskeyHandOffRoutes(server, { database, sendEmail, publicUrl });
+  registerSignInCodeRoutes(server, {
+    database,
+    publicUrl,
+    requestRateLimits,
+    totpSecretKey,
+  });
   registerTwoFactorRoutes(server, { database, sendEmail, totpSecretKey });
   registerInviteRoutes(server, { database, sendEmail, publicUrl });
 

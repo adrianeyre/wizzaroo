@@ -13433,6 +13433,13 @@ dl.switch-key dd {
   box-shadow: 0 0 0 1px var(--colour-border);
 }
 
+.sign-in-code code {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  overflow-wrap: anywhere;
+}
+
 .explore-launchers {
   position: absolute;
   z-index: 1;

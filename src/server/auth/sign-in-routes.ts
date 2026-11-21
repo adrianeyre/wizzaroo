@@ -128,9 +128,9 @@ interface SignInRouteParts {
 }
 
 export type SignInMethod =
-  "password" | "password-and-code" | "passkey" | "invite";
+  "password" | "password-and-code" | "passkey" | "invite" | "sign-in-code";
 
-type FailedSignInStep = "password" | "code" | "passkey";
+type FailedSignInStep = "password" | "code" | "passkey" | "sign-in-code";
 
 interface SignInParts {
   userId: string;

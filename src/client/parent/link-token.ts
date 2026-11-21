@@ -1,5 +1,9 @@
 type LinkTokenName =
-  "accept-invite" | "add-passkey" | "confirm-email" | "reset-password";
+  | "accept-invite"
+  | "add-passkey"
+  | "confirm-email"
+  | "reset-password"
+  | "sign-in-code";
 
 export const takeLinkToken = (name: LinkTokenName): string | undefined => {
   const linkFragment = new RegExp(`^#${name}=([\\w-]+)$`);

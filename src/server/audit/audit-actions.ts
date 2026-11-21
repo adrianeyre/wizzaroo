@@ -45,6 +45,7 @@ export const auditActions = [
   "child.teacher-locks-changed",
   "child.classmate-visits-changed",
   "child.birth-given",
+  "sign-in-code.created",
 ] as const;
 
 export type AuditAction = (typeof auditActions)[number];

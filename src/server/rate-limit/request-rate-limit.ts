@@ -213,7 +213,7 @@ export const buildPerIpAddressLimit =
     done(refusal);
   };
 
-/** The six routes the policy counts together per caller's address: every way in front of a credential (#246). */
+/** The seven routes the policy counts together per caller's address: every way in front of a credential (#246). */
 export const perIpAddressLimitedRoutes: readonly string[] = [
   "POST /api/sign-in",
   "POST /api/sign-in/two-factor-code",
@@ -221,10 +221,11 @@ export const perIpAddressLimitedRoutes: readonly string[] = [
   "POST /api/password-resets",
   "POST /api/invite-acceptances",
   "POST /api/passkey-sign-in-options",
+  "POST /api/sign-in-code-sign-ins",
 ];
 
 /**
- * Puts the per-address limit first on each of the six routes as it is registered, so the list lives in one place and a
+ * Puts the per-address limit first on each of the seven routes as it is registered, so the list lives in one place and a
  * refused request costs no parsing. Added before the routes are, since an onRoute hook sees only routes after it.
  */
 export const limitRoutesPerIpAddress = (

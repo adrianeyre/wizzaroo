@@ -18,7 +18,8 @@ import {
 } from "./passkey-options.js";
 import { ForgottenPasswordForm } from "./password-reset.js";
 
-type SignInStep = "password" | "two-factor-code" | "forgotten-password";
+type SignInStep =
+  "password" | "two-factor-code" | "forgotten-password" | "sign-in-code";
 
 const signInFailedMessage =
   "Wizzaroo couldn't sign you in. Try again in a moment.";
@@ -132,7 +133,96 @@ const TwoFactorCodeForm = ({
   );
 };
 
+const signInCodeFailedMessage =
+  "Wizzaroo couldn't sign you in with that code. Try again in a moment.";
+
+interface SignInCodeFormProps {
+  signInCode?: string;
+  onSignedIn: () => void;
+  onStartedAgain: () => void;
+}
+
+/**
+ * Signs this device in with a code made on a device that is already signed in, for a tablet or computer that can't use
+ * the adult's passkey, such as one whose passkey is kept on another device (ADR 0073).
+ */
+const SignInCodeForm = ({
+  signInCode,
+  onSignedIn,
+  onStartedAgain,
+}: SignInCodeFormProps) => {
+  const [problem, setProblem] = useState<string>();
+  const { busyLabel, isBusy, runBusy } = useBusyAction();
+
+  const sendSignInCode = async (code: string) => {
+    const response = await sendAccountChange(
+      "POST",
+      "/api/sign-in-code-sign-ins",
+      { code },
+    );
+    if (response.status === 401) {
+      throw new ProblemToShowError(
+        "That code didn't work. It may have expired or been used: make a new one on your other device.",
+      );
+    }
+    if (response.status === 429) {
+      throw new ProblemToShowError(tooManySignInsMessage);
+    }
+    if (!response.ok) {
+      throw new Error(signInCodeFailedMessage);
+    }
+    onSignedIn();
+  };
+
+  return (
+    <form
+      aria-busy={isBusy}
+      onSubmit={(event: SubmitEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        const code = readTextAnswer(
+          new FormData(event.currentTarget),
+          "signInCode",
+        );
+        setProblem(undefined);
+        runBusy("Checking the code and signing you in…", () =>
+          sendSignInCode(code),
+        ).catch((error: unknown) => {
+          setProblem(readProblem(error, signInCodeFailedMessage));
+        });
+      }}
+    >
+      <h1>Sign in with a code from another device</h1>
+      <p>
+        On a device where you&apos;re already signed in, open Your account and
+        choose <strong>Sign in on another device</strong>. Then type the code it
+        shows here.
+      </p>
+      <label>
+        Sign-in code
+        <input
+          name="signInCode"
+          defaultValue={signInCode}
+          autoComplete="off"
+          autoCapitalize="characters"
+          spellCheck={false}
+          required
+        />
+      </label>
+      {problem === undefined ? null : <p role="alert">{problem}</p>}
+      {busyLabel === undefined ? null : <BusyProgress label={busyLabel} />}
+      <button type="submit" disabled={isBusy}>
+        Sign in
+      </button>
+      <button type="button" onClick={onStartedAgain}>
+        Sign in another way
+      </button>
+    </form>
+  );
+};
+
 interface SignInFormProps {
+  /** A code from another device's link, which starts this form at the sign-in code step with it filled in. */
+  signInCode?: string;
   onSignedIn: () => void;
 }
 
@@ -140,10 +230,13 @@ const signInPageTitles: Record<SignInStep, string> = {
   password: "Sign in",
   "two-factor-code": "Enter your code",
   "forgotten-password": "Reset your password",
+  "sign-in-code": "Sign in with a code",
 };
 
-export const SignInForm = ({ onSignedIn }: SignInFormProps) => {
-  const [step, setStep] = useState<SignInStep>("password");
+export const SignInForm = ({ signInCode, onSignedIn }: SignInFormProps) => {
+  const [step, setStep] = useState<SignInStep>(
+    signInCode === undefined ? "password" : "sign-in-code",
+  );
   const [problem, setProblem] = useState<string>();
   const { busyLabel, isBusy, runBusy } = useBusyAction();
   const [passkeyStep, setPasskeyStep] = useState<string>();
@@ -152,6 +245,19 @@ export const SignInForm = ({ onSignedIn }: SignInFormProps) => {
   if (step === "two-factor-code") {
     return (
       <TwoFactorCodeForm
+        onSignedIn={onSignedIn}
+        onStartedAgain={() => {
+          setProblem(undefined);
+          setStep("password");
+        }}
+      />
+    );
+  }
+
+  if (step === "sign-in-code") {
+    return (
+      <SignInCodeForm
+        signInCode={signInCode}
         onSignedIn={onSignedIn}
         onStartedAgain={() => {
           setProblem(undefined);
@@ -253,6 +359,15 @@ export const SignInForm = ({ onSignedIn }: SignInFormProps) => {
           Sign in with a passkey
         </button>
       ) : null}
+      <button
+        type="button"
+        onClick={() => {
+          setProblem(undefined);
+          setStep("sign-in-code");
+        }}
+      >
+        Sign in with a code from another device
+      </button>
     </form>
   );
 };

@@ -50,6 +50,10 @@ _Avoid_: Kid, student, pupil, player
 A tablet or computer a Parent has signed in on, so the Family's Children can play on it. Children log in there with a picture password.
 _Avoid_: Trusted device, kiosk, child device
 
+**Sign-in Code**:
+A short code an adult makes on a device where they're signed in, and types on another device to sign in there, such as a tablet that can't use their passkey. It works once, for 10 minutes.
+_Avoid_: Pairing code, device code, login link
+
 **Classmate**:
 Another Child at the same School in the same Year Group, from another Family. A Child can visit a Classmate's Room only if both their Parents have turned it on, and sees the Room and the Character's portrait, never a name.
 _Avoid_: Friend, classfellow, peer

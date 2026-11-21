@@ -21,6 +21,7 @@ const emailConfirmationToken = takeLinkToken("confirm-email");
 const passwordResetToken = takeLinkToken("reset-password");
 const inviteToken = takeLinkToken("accept-invite");
 const passkeyHandOffToken = takeLinkToken("add-passkey");
+const signInCode = takeLinkToken("sign-in-code");
 
 createRoot(rootElement).render(
   <StrictMode>
@@ -29,6 +30,7 @@ createRoot(rootElement).render(
       passwordResetToken={passwordResetToken}
       inviteToken={inviteToken}
       passkeyHandOffToken={passkeyHandOffToken}
+      signInCode={signInCode}
     />
     <SiteFooter />
   </StrictMode>,
