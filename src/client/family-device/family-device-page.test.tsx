@@ -3971,6 +3971,81 @@ describe("FamilyDevicePage", () => {
       Reflect.deleteProperty(document.documentElement, "requestFullscreen");
     });
 
+    it("offers Full screen from the Menu, so a tablet can fill its whole screen, and Leave full screen once it does", async () => {
+      let fullScreenElement: Element | null = null;
+      const showFullScreen = (element: Element | null) => {
+        fullScreenElement = element;
+        document.dispatchEvent(new Event("fullscreenchange"));
+        return Promise.resolve();
+      };
+      const exitFullscreen = vi.fn(() => showFullScreen(null));
+      Object.defineProperties(document, {
+        fullscreenEnabled: { configurable: true, get: () => true },
+        fullscreenElement: { configurable: true, get: () => fullScreenElement },
+        exitFullscreen: { configurable: true, value: exitFullscreen },
+      });
+      const requestFullscreen = vi.fn(() =>
+        showFullScreen(document.documentElement),
+      );
+      Object.defineProperty(document.documentElement, "requestFullscreen", {
+        configurable: true,
+        value: requestFullscreen,
+      });
+      startFakeServer(answerWithPlayableChildren([sparkle]));
+      openPage(renderMission());
+      await playAsSparkleOnTheWorldMap();
+
+      findButton("Menu").click();
+      await vi.waitFor(() => {
+        expect(listMenuItemNames()).toContain("Full screen");
+      });
+      expect(
+        document.getElementById(
+          findMenuItem("Full screen").getAttribute("aria-describedby") ?? "",
+        )?.textContent,
+      ).toBe("Fill the whole screen");
+      findMenuItem("Full screen").click();
+      await vi.waitFor(() => {
+        expect(requestFullscreen).toHaveBeenCalledOnce();
+      });
+      expect(document.querySelector('[role="menu"]')).toBeNull();
+
+      findButton("Menu").click();
+      await vi.waitFor(() => {
+        expect(listMenuItemNames()).toContain("Leave full screen");
+      });
+      expect(listMenuItemNames()).not.toContain("Full screen");
+      findMenuItem("Leave full screen").click();
+      await vi.waitFor(() => {
+        expect(exitFullscreen).toHaveBeenCalledOnce();
+      });
+      for (const property of [
+        "fullscreenEnabled",
+        "fullscreenElement",
+        "exitFullscreen",
+      ]) {
+        Reflect.deleteProperty(document, property);
+      }
+      Reflect.deleteProperty(document.documentElement, "requestFullscreen");
+    });
+
+    it("leaves Full screen out of the Menu where the browser can't show full screen", async () => {
+      Object.defineProperty(document, "fullscreenEnabled", {
+        configurable: true,
+        get: () => false,
+      });
+      startFakeServer(answerWithPlayableChildren([sparkle]));
+      openPage(renderMission());
+      await playAsSparkleOnTheWorldMap();
+
+      findButton("Menu").click();
+      await vi.waitFor(() => {
+        expect(listMenuItemNames()).toContain("Settings");
+      });
+      expect(listMenuItemNames()).not.toContain("Full screen");
+      Reflect.deleteProperty(document, "fullscreenEnabled");
+    });
+
     it("leaves the Full screen button out where the browser can't show full screen", async () => {
       Object.defineProperty(document, "fullscreenEnabled", {
         configurable: true,

@@ -751,6 +751,29 @@ const ExitFullScreenIcon = () => (
   </LineIcon>
 );
 
+// Full screen hides the browser's bars and the tablet's own, so a Game fills
+// the whole screen. It is a Menu item on every screen that has the Menu, left
+// out where the browser can't show full screen (an iPhone, for one).
+const fullScreenMenuOptions = (
+  isFullScreen: boolean,
+  isFullScreenOffered: boolean,
+): PlayMenuOption[] =>
+  isFullScreenOffered
+    ? [
+        {
+          label: isFullScreen ? "Leave full screen" : "Full screen",
+          hint: isFullScreen
+            ? "Show the browser bars again"
+            : "Fill the whole screen",
+          icon: isFullScreen ? <ExitFullScreenIcon /> : <FullScreenIcon />,
+          group: "pages",
+          onChoose: () => {
+            toggleFullScreen().catch(() => undefined);
+          },
+        },
+      ]
+    : [];
+
 const MovePanelIcon = () => (
   <LineIcon>
     <path d="M12 2v20M2 12h20M9 5l3-3 3 3M9 19l3 3 3-3M5 9l-3 3 3 3M19 9l3 3-3 3" />
@@ -1708,6 +1731,7 @@ const WorldMapScreen = ({
       group: "pages",
       onChoose: onSettings,
     },
+    ...fullScreenMenuOptions(isFullScreen, isFullScreenOffered),
     {
       label: "Finish playing",
       hint: "End your turn for now",
@@ -3021,6 +3045,7 @@ const MissionScreen = ({
     </button>
   );
 
+  const { isFullScreen, isFullScreenOffered } = useFullScreen();
   const pageMenu = (
     <PlayMenu
       options={[
@@ -3040,6 +3065,7 @@ const MissionScreen = ({
             setView({ kind: "settings" });
           },
         },
+        ...fullScreenMenuOptions(isFullScreen, isFullScreenOffered),
         {
           label: "Finish playing",
           hint: "End your turn for now",
