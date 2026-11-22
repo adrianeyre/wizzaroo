@@ -18,3 +18,12 @@ rclone.conf
 .pen-test-deployment/
 # Read it to me's Piper voices, downloaded by `pnpm download:voices` (ADR 0062)
 voice-models/
+# Impeccable's working files: runtime state, screenshots and build scratch. Its shared
+# artifacts (config.json, design.json, surfaces/*.md) stay tracked.
+**/.impeccable/config.local.json
+**/.impeccable/hook.cache.json
+**/.impeccable/hook.pending.json
+**/.impeccable/build/
+**/.impeccable/review/
+**/.impeccable/questions/
+**/.impeccable/mocks/

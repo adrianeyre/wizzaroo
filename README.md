@@ -1,8 +1,18 @@
-# Wizzaroo
+<h1 align="center">
+  <img src="docs/images/readme/cover-band.png" alt="Wizzaroo: Explorer Map, UK National Curriculum, Years 1 to 6" width="100%">
+</h1>
 
 > **Personal use only.** Wizzaroo is intended for your own personal use only. It is not intended for use with or by a school, teacher, parent or student. Only use it for yourself.
 
 A 3D learning game for primary-school children, covering the UK National Curriculum for Years 1-6. Children earn Items for their own Character by learning. It is built for one family, runs as an offline-first PWA, and is self-hosted at `wizzaroo.adrianeyre.co.uk`.
+
+Every screen is drawn as a sheet of an explorer's map: the sea is ruled into grid squares, panels are land inside a keyline, and the header is the sheet's orange cover band. The home page below follows your GitHub theme, light or dark.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/images/screenshots/home-page.png">
+  <source media="(prefers-color-scheme: light)" srcset="docs/images/screenshots/home-page-light.png">
+  <img src="docs/images/screenshots/home-page-light.png" alt="The Wizzaroo home page: a map sheet with grid references on its edges, the headline Learning that feels like an adventure, and Meadow Isle on the World Map">
+</picture>
 
 ![Meadow Isle on the World Map, with a Region for each Subject](docs/images/screenshots/world-map-meadow-isle.jpg)
 

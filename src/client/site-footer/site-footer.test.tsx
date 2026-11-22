@@ -129,6 +129,8 @@ describe("SiteFooter", () => {
       "three.js",
       "React",
       "Fastify",
+      "Barlow Condensed",
+      "Andika",
       "Baloo 2",
       "Nunito",
       "Piper",

@@ -1660,6 +1660,7 @@ const WorldMapScreen = ({
             <CloseIcon />
           </button>
         </header>
+        <h2>{region.name}</h2>
         <p className="region-subject">
           {findRegionHeading(region) === undefined ? null : (
             <span className="region-subject-name">
@@ -1670,7 +1671,6 @@ const WorldMapScreen = ({
             {islandInView.name} · Year {islandInView.yearGroup}
           </span>
         </p>
-        <h2>{region.name}</h2>
         {region.isUnlocked ? (
           <>
             <p className="region-story">{region.story}</p>

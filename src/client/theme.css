@@ -1,4 +1,76 @@
 @font-face {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url("@fontsource/barlow-condensed/files/barlow-condensed-latin-500-normal.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url("@fontsource/barlow-condensed/files/barlow-condensed-latin-600-normal.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("@fontsource/barlow-condensed/files/barlow-condensed-latin-700-normal.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 800;
+  src: url("@fontsource/barlow-condensed/files/barlow-condensed-latin-800-normal.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Andika";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("@fontsource/andika/files/andika-latin-400-normal.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Andika";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 400;
+  src: url("@fontsource/andika/files/andika-latin-400-italic.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Andika";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("@fontsource/andika/files/andika-latin-700-normal.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Andika";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+  src: url("@fontsource/andika/files/andika-latin-700-italic.woff2")
+    format("woff2");
+}
+
+@font-face {
   font-family: "Nunito Variable";
   font-style: normal;
   font-display: swap;
@@ -20,27 +92,41 @@
   --layer-open-menu: 100;
   color-scheme: light dark;
 
-  --colour-on-primary: light-dark(#ffffff, #0b1020);
+  /* The Island Explorer Map: every screen is a sheet of the map. The ground is
+     the sea, panels are land, the header is the sheet's orange cover band, and
+     map lettering is condensed. */
+  --colour-on-primary: light-dark(#ffffff, #071318);
+  --colour-cover: light-dark(#f27a1a, #f0852b);
+  --colour-cover-strong: light-dark(#d4610a, #f59a4e);
+  --colour-on-cover: #1a1206;
+  --colour-map-magenta: light-dark(#b8166f, #f27ab9);
+  --colour-contour: light-dark(#a95a16, #d9965a);
+  --colour-woodland: light-dark(#2f7d32, #7fcf77);
+  --colour-keyline: light-dark(#22323d, #7ea3b2);
+  --colour-grid: light-dark(rgb(29 95 168 / 0.11), rgb(150 205 230 / 0.07));
   --colour-play: #f59e0b;
   --colour-play-soft: light-dark(#fef3c7, #3b2a0a);
-  --colour-play-strong: light-dark(#b45309, #fbbf24);
-  --colour-foreground: light-dark(#0f172a, #e8edf6);
-  --colour-muted-foreground: light-dark(#475569, #a9b5c8);
-  --colour-input-border: light-dark(#64748b, #8391a7);
-  --colour-error: light-dark(#b91c1c, #fca5a5);
-  --colour-error-soft: light-dark(#fef2f2, #3a1418);
-  --colour-success: light-dark(#15803d, #86efac);
-  --colour-success-soft: light-dark(#f0fdf4, #0e2a1a);
-  --colour-ring: var(--colour-primary);
+  --colour-play-strong: light-dark(#a14a06, #fbbf24);
+  --colour-foreground: light-dark(#14212b, #e8f1f4);
+  --colour-muted-foreground: light-dark(#3b505d, #a6bfc9);
+  --colour-input-border: light-dark(#5a7382, #7f9dac);
+  --colour-error: light-dark(#b3261e, #ffa69e);
+  --colour-error-soft: light-dark(#fdeceb, #3a1614);
+  --colour-success: light-dark(#21712a, #8fdc96);
+  --colour-success-soft: light-dark(#e8f5e4, #10291a);
+  --colour-ring: var(--colour-map-magenta);
   --colour-in-game-ink: #0f172a;
 
-  --font-body: "Nunito Variable", "Nunito", ui-rounded, system-ui, sans-serif;
-  --font-heading: "Baloo 2 Variable", "Baloo 2", var(--font-body);
+  --font-body: "Andika", ui-rounded, system-ui, sans-serif;
+  --font-heading: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
+  --tracking-label: 0.08em;
 
-  --radius-small: 0.75rem;
-  --radius-medium: 1rem;
-  --radius-large: 1.5rem;
-  --radius-round: 999px;
+  --radius-small: 3px;
+  --radius-medium: 4px;
+  --radius-large: 6px;
+  /* Map symbols are drawn square, so even "pill" controls have the small
+     corner; true circles say border-radius: 50%. */
+  --radius-round: 3px;
 
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -49,49 +135,35 @@
   --space-5: 1.5rem;
   --space-6: 2rem;
 
+  --map-square: 4rem;
+
   --duration-quick: 150ms;
 
   --play-bar-height: 4rem;
   --play-bar-top: env(safe-area-inset-top, 0px);
   --play-control-size: 44px;
-  --play-glass: color-mix(in srgb, var(--colour-card) 86%, transparent);
-  --play-glass-strong: color-mix(in srgb, var(--colour-card) 96%, transparent);
-  --play-glass-border: color-mix(
-    in srgb,
-    var(--colour-border) 70%,
-    transparent
-  );
-  --shadow-play-control:
-    0 1px 2px light-dark(rgb(15 23 42 / 0.08), rgb(0 0 0 / 0.35)),
-    0 6px 16px light-dark(rgb(15 23 42 / 0.12), rgb(0 0 0 / 0.4));
+  /* Map panels are printed on the sheet, so the play bar's glass is solid land. */
+  --play-glass: var(--colour-card);
+  --play-glass-strong: var(--colour-card);
+  --play-glass-border: var(--colour-keyline);
+  --shadow-play-control: 0 1px 2px
+    light-dark(rgb(20 33 43 / 0.16), rgb(0 0 0 / 0.45));
   --duration-press: 200ms;
   --duration-chart: 400ms;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 
-  --colour-hairline: light-dark(rgb(15 23 42 / 0.08), rgb(255 255 255 / 0.07));
-  --shadow-card:
-    0 1px 2px light-dark(rgb(15 23 42 / 0.05), rgb(0 0 0 / 0.3)),
-    0 12px 32px -12px
-      light-dark(
-        color-mix(in srgb, var(--colour-primary) 14%, rgb(15 23 42 / 0.1)),
-        rgb(0 0 0 / 0.5)
-      );
-  --shadow-hero:
-    0 0 0 1px var(--colour-hairline),
-    0 2px 4px light-dark(rgb(15 23 42 / 0.05), rgb(0 0 0 / 0.3)),
-    0 24px 56px -16px light-dark(rgb(15 23 42 / 0.28), rgb(0 0 0 / 0.65));
-  --shadow-satellite:
-    0 0 0 1px var(--colour-hairline),
-    0 2px 4px light-dark(rgb(15 23 42 / 0.06), rgb(0 0 0 / 0.35)),
-    0 10px 24px -6px light-dark(rgb(15 23 42 / 0.22), rgb(0 0 0 / 0.55));
-  --shadow-ground:
-    0 0 0 1px var(--colour-hairline),
-    0 16px 32px -20px light-dark(rgb(15 23 42 / 0.25), rgb(0 0 0 / 0.6));
-  --shadow-button: 0 4px 0 light-dark(rgb(15 23 42 / 0.15), rgb(0 0 0 / 0.45));
-  --shadow-button-pressed: 0 1px 0
-    light-dark(rgb(15 23 42 / 0.15), rgb(0 0 0 / 0.45));
-  --shadow-menu:
-    0 4px 8px light-dark(rgb(15 23 42 / 0.06), rgb(0 0 0 / 0.3)),
-    0 16px 40px light-dark(rgb(15 23 42 / 0.16), rgb(0 0 0 / 0.5));
+  /* Depth comes from the map's layers (sea, land, keylines), so shadows stay
+     low: a short soft drop that lifts a layer off the one below it. */
+  --colour-hairline: light-dark(rgb(20 33 43 / 0.12), rgb(200 230 240 / 0.1));
+  --shadow-card: none;
+  --shadow-hero: none;
+  --shadow-satellite: 0 0 0 4px var(--colour-card);
+  --shadow-ground: none;
+  --shadow-button: none;
+  --shadow-button-pressed: none;
+  /* A menu floats over the sheet, so it alone keeps a short drop. */
+  --shadow-menu: 0 6px 14px -8px
+    light-dark(rgb(20 33 43 / 0.45), rgb(0 0 0 / 0.7));
 
   --chart-mastered: #1baf7a;
   --chart-due-for-review: #eb6834;
@@ -120,71 +192,68 @@
   color-scheme: dark;
 }
 
+/* The six themes are six printings of the same map: each inks the links,
+   buttons and chosen states, and tints the sea and land a little towards
+   itself. */
 :root,
 [data-theme="sky"] {
-  --colour-primary: light-dark(#2563eb, #60a5fa);
-  --colour-primary-hover: light-dark(#1d4ed8, #93c5fd);
-  --colour-accent: light-dark(#ec4899, #f472b6);
-  --colour-background: light-dark(#eff6ff, #0b1222);
-  --colour-card: light-dark(#ffffff, #141d31);
-  --colour-muted: light-dark(#f1f5fd, #1c2740);
-  --colour-border: light-dark(#dbe5fb, #2b3a5a);
-  --chart-track: light-dark(#eef2fb, #222e48);
+  --colour-primary: light-dark(#1b5ea6, #7bb9ec);
+  --colour-primary-hover: light-dark(#144a85, #a6d1f3);
+  --colour-accent: var(--colour-map-magenta);
 }
 
 [data-theme="grape"] {
-  --colour-primary: light-dark(#7c3aed, #a78bfa);
-  --colour-primary-hover: light-dark(#6d28d9, #c4b5fd);
-  --colour-accent: light-dark(#ec4899, #f472b6);
-  --colour-background: light-dark(#f5f3ff, #100c1f);
-  --colour-card: light-dark(#ffffff, #1a1530);
-  --colour-muted: light-dark(#f4f1fe, #241d3f);
-  --colour-border: light-dark(#e4dcfb, #3a2f62);
-  --chart-track: light-dark(#efeafd, #2a2347);
+  --colour-primary: light-dark(#6a3d9f, #b9a0f0);
+  --colour-primary-hover: light-dark(#542e80, #d2c2f7);
+  --colour-accent: var(--colour-map-magenta);
 }
 
 [data-theme="forest"] {
-  --colour-primary: light-dark(#15803d, #4ade80);
-  --colour-primary-hover: light-dark(#166534, #86efac);
-  --colour-accent: light-dark(#ec4899, #f472b6);
-  --colour-background: light-dark(#f0fdf4, #07140d);
-  --colour-card: light-dark(#ffffff, #0f1f16);
-  --colour-muted: light-dark(#eaf7ef, #172b20);
-  --colour-border: light-dark(#cdeedb, #24452f);
-  --chart-track: light-dark(#e3f4ea, #1b3326);
+  --colour-primary: light-dark(#2b7a30, #7fcf7f);
+  --colour-primary-hover: light-dark(#1f5f24, #a9e3a8);
+  --colour-accent: var(--colour-map-magenta);
 }
 
 [data-theme="sunset"] {
-  --colour-primary: light-dark(#c2410c, #fb923c);
-  --colour-primary-hover: light-dark(#9a3412, #fdba74);
-  --colour-accent: light-dark(#ec4899, #f472b6);
-  --colour-background: light-dark(#fff7ed, #170e07);
-  --colour-card: light-dark(#ffffff, #22160d);
-  --colour-muted: light-dark(#fdf1e6, #2e1f13);
-  --colour-border: light-dark(#fbdcc0, #4a311d);
-  --chart-track: light-dark(#fbeadb, #36251a);
+  --colour-primary: light-dark(#b2430a, #f59a52);
+  --colour-primary-hover: light-dark(#8d3507, #f8b783);
+  --colour-accent: var(--colour-map-magenta);
 }
 
 [data-theme="berry"] {
-  --colour-primary: light-dark(#be185d, #f472b6);
-  --colour-primary-hover: light-dark(#9d174d, #f9a8d4);
-  --colour-accent: light-dark(#7c3aed, #a78bfa);
-  --colour-background: light-dark(#fdf2f8, #180a12);
-  --colour-card: light-dark(#ffffff, #22111b);
-  --colour-muted: light-dark(#fcedf5, #2e1825);
-  --colour-border: light-dark(#f8d4e6, #4d2439);
-  --chart-track: light-dark(#f9e3ee, #3a1c2d);
+  --colour-primary: light-dark(#ad176a, #f27cb9);
+  --colour-primary-hover: light-dark(#8a1254, #f6a7d0);
+  --colour-accent: var(--colour-map-magenta);
 }
 
 [data-theme="lagoon"] {
-  --colour-primary: light-dark(#0f766e, #2dd4bf);
-  --colour-primary-hover: light-dark(#115e59, #5eead4);
-  --colour-accent: light-dark(#ec4899, #f472b6);
-  --colour-background: light-dark(#f0fdfa, #061413);
-  --colour-card: light-dark(#ffffff, #0d1f1d);
-  --colour-muted: light-dark(#e8f7f5, #142b28);
-  --colour-border: light-dark(#c9ede7, #1f4541);
-  --chart-track: light-dark(#dff2ef, #183532);
+  --colour-primary: light-dark(#0d6c66, #52d3c4);
+  --colour-primary-hover: light-dark(#0a5550, #8be3d8);
+  --colour-accent: var(--colour-map-magenta);
+}
+
+:root,
+[data-theme] {
+  --colour-background: light-dark(
+    color-mix(in oklab, var(--colour-primary) 9%, #e4f1f6),
+    color-mix(in oklab, var(--colour-primary) 12%, #08161d)
+  );
+  --colour-card: light-dark(
+    color-mix(in oklab, var(--colour-primary) 2%, #fcfdf8),
+    color-mix(in oklab, var(--colour-primary) 8%, #11252e)
+  );
+  --colour-muted: light-dark(
+    color-mix(in oklab, var(--colour-primary) 6%, #eef4e4),
+    color-mix(in oklab, var(--colour-primary) 12%, #18323c)
+  );
+  --colour-border: light-dark(
+    color-mix(in oklab, var(--colour-primary) 22%, #b9cdd6),
+    color-mix(in oklab, var(--colour-primary) 20%, #2c4955)
+  );
+  --chart-track: light-dark(
+    color-mix(in oklab, var(--colour-primary) 8%, #e6eee8),
+    color-mix(in oklab, var(--colour-primary) 12%, #1d3843)
+  );
 }
 
 *,
@@ -200,12 +269,27 @@ body {
   background: var(--colour-background);
 }
 
+/* The sea is ruled into map squares, so every page sits on the same grid. */
 body {
+  background-color: var(--colour-background);
+  background-image:
+    linear-gradient(var(--colour-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--colour-grid) 1px, transparent 1px);
+  background-position: -1px -1px;
+  background-size: var(--map-square) var(--map-square);
   color: var(--colour-foreground);
+  caret-color: var(--colour-map-magenta);
   font-family: var(--font-body);
   font-size: 1.0625rem;
-  line-height: 1.5;
+  line-height: 1.55;
+  scrollbar-color: color-mix(in srgb, var(--colour-keyline) 45%, transparent)
+    transparent;
   -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--colour-cover) 45%, transparent);
+  color: var(--colour-foreground);
 }
 
 h1,
@@ -214,20 +298,27 @@ h3 {
   margin: 0;
   font-family: var(--font-heading);
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.1;
+  letter-spacing: 0.005em;
   text-wrap: balance;
 }
 
 h1 {
-  font-size: clamp(1.75rem, 1.4rem + 1.5vw, 2.25rem);
+  font-size: clamp(2.125rem, 1.7rem + 1.8vw, 2.75rem);
 }
 
 h2 {
-  font-size: 1.375rem;
+  font-size: 1.625rem;
 }
 
 h3 {
-  font-size: 1.125rem;
+  font-size: 1.3125rem;
+}
+
+table,
+time,
+.stat-value {
+  font-variant-numeric: tabular-nums;
 }
 
 p {
@@ -237,7 +328,8 @@ p {
 a {
   color: var(--colour-primary);
   font-weight: 700;
-  text-underline-offset: 0.2em;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.22em;
 }
 
 a:hover {
@@ -253,13 +345,14 @@ main {
   padding: var(--space-6) var(--space-4) calc(var(--space-6) * 2);
 }
 
+/* A panel is land on the sea: printed paper inside a keyline. */
 section,
 main > form {
   display: grid;
   gap: var(--space-4);
   padding: var(--space-5);
-  border: 1px solid var(--colour-border);
-  border-radius: var(--radius-large);
+  border: 2px solid var(--colour-keyline);
+  border-radius: var(--radius-small);
   background: var(--colour-card);
   box-shadow: var(--shadow-card);
 }
@@ -294,6 +387,7 @@ select {
   color: var(--colour-foreground);
   font: inherit;
   font-weight: 400;
+  accent-color: var(--colour-primary);
   transition:
     border-color var(--duration-quick) ease-out,
     box-shadow var(--duration-quick) ease-out;
@@ -339,11 +433,11 @@ button {
   min-height: 48px;
   padding: 0 var(--space-5);
   border: 0;
-  border-radius: var(--radius-round);
+  border-radius: var(--radius-small);
   background: var(--colour-primary);
   color: var(--colour-on-primary);
   font: inherit;
-  font-weight: 800;
+  font-weight: 700;
   cursor: pointer;
   box-shadow: var(--shadow-button);
   transition:
@@ -359,7 +453,7 @@ button:where(:hover) {
 }
 
 button:active {
-  transform: translateY(3px);
+  transform: translateY(1px);
   box-shadow: var(--shadow-button-pressed);
 }
 
@@ -370,7 +464,7 @@ a:focus-visible {
 }
 
 button:where([type="button"]) {
-  border: 2px solid var(--colour-border);
+  border: 2px solid var(--colour-keyline);
   background: var(--colour-card);
   color: var(--colour-primary);
 }
@@ -393,13 +487,15 @@ fieldset {
   margin: 0;
   padding: var(--space-4);
   border: 1px solid var(--colour-border);
-  border-radius: var(--radius-medium);
+  border-radius: var(--radius-small);
   background: var(--colour-muted);
 }
 
 legend {
   padding: 0 var(--space-2);
-  font-weight: 800;
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: 700;
 }
 
 ul {
@@ -426,7 +522,7 @@ li li {
 /* Messages stay at no specificity, so a component's own class sets their colours. */
 :where([role="alert"]) {
   padding: var(--space-3) var(--space-4);
-  border-left: 4px solid var(--colour-error);
+  border: 2px solid var(--colour-error);
   border-radius: var(--radius-small);
   background: var(--colour-error-soft);
   color: var(--colour-error);
@@ -435,7 +531,7 @@ li li {
 
 :where([role="status"]) {
   padding: var(--space-3) var(--space-4);
-  border-left: 4px solid var(--colour-success);
+  border: 2px solid var(--colour-success);
   border-radius: var(--radius-small);
   background: var(--colour-success-soft);
   color: var(--colour-success);
@@ -919,7 +1015,7 @@ main.mission {
 .mission-feedback.right,
 .mission-feedback.wrong {
   padding: var(--space-2) var(--space-3);
-  border-left: 4px solid currentcolor;
+  border: 2px solid currentcolor;
   border-radius: var(--radius-small);
 }
 
@@ -1486,8 +1582,8 @@ main.mission {
   gap: var(--space-3);
   width: min(100%, 30rem);
   padding: var(--space-6) var(--space-5) var(--space-5);
-  border: 1px solid var(--mission-glass-border);
-  border-radius: 1.75rem;
+  border: 2px solid var(--mission-glass-border);
+  border-radius: var(--radius-small);
   background: var(--mission-glass-strong);
   -webkit-backdrop-filter: blur(20px) saturate(140%);
   backdrop-filter: blur(20px) saturate(140%);
@@ -1574,19 +1670,21 @@ main.mission {
 }
 
 .celebration-actions button.celebration-again {
-  background: linear-gradient(
-    180deg,
-    var(--mission-accent),
-    var(--mission-accent-strong)
-  );
-  color: var(--mission-on-accent);
-  box-shadow: 0 8px 24px rgb(34 211 238 / 0.3);
+  border: 2px solid var(--colour-on-cover);
+  background: var(--colour-cover);
+  color: var(--colour-on-cover);
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  box-shadow: var(--shadow-button);
 }
 
 .celebration-actions button.celebration-map {
+  border: 2px solid var(--colour-on-cover);
   background: var(--mission-ink);
   color: var(--colour-in-game-ink);
-  box-shadow: 0 8px 24px rgb(2 8 23 / 0.35);
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  box-shadow: var(--shadow-button);
 }
 
 .celebration-actions button:hover {
@@ -1594,11 +1692,7 @@ main.mission {
 }
 
 .celebration-actions button.celebration-again:hover {
-  background: linear-gradient(
-    180deg,
-    var(--mission-accent),
-    var(--mission-accent-strong)
-  );
+  background: var(--colour-cover-strong);
 }
 
 .celebration-actions button.celebration-map:hover {
@@ -1778,11 +1872,9 @@ table.mastery td {
   padding: var(--play-bar-top)
     calc(max(var(--space-3), env(safe-area-inset-right)) + 11rem) 0
     max(var(--space-4), env(safe-area-inset-left));
-  border-bottom: 1px solid var(--play-glass-border);
+  border-bottom: 2px solid var(--play-glass-border);
   background: var(--play-glass);
-  box-shadow: 0 4px 20px light-dark(rgb(15 23 42 / 0.08), rgb(0 0 0 / 0.3));
-  -webkit-backdrop-filter: blur(14px) saturate(150%);
-  backdrop-filter: blur(14px) saturate(150%);
+  box-shadow: var(--shadow-card);
 }
 
 /* An open Menu drops down over everything else in the game: Region panels,
@@ -2093,7 +2185,7 @@ button.panel-close:active {
   overflow-wrap: anywhere;
 }
 
-.region-subject + h2 {
+.region-panel h2 + .region-subject {
   margin-top: calc(-1 * var(--space-1));
 }
 
@@ -3873,7 +3965,7 @@ ul.status-totals {
   align-items: center;
   padding: var(--space-3);
   border: 1px solid var(--colour-border);
-  border-left: 6px solid var(--status-colour);
+  border: 2px solid var(--status-colour);
   border-radius: var(--radius-medium);
   background: var(--colour-muted);
 }
@@ -4020,7 +4112,7 @@ button.gaps-only[aria-pressed="true"] {
 
 details.curriculum-subject {
   border: 1px solid var(--colour-border);
-  border-left: 6px solid var(--subject-colour, var(--colour-primary));
+  border: 2px solid var(--subject-colour, var(--colour-primary));
   background: var(--colour-card);
 }
 
@@ -4129,7 +4221,7 @@ ul.curriculum-points {
   gap: var(--space-2);
   padding: var(--space-4);
   border: 1px solid var(--colour-border);
-  border-left: 6px solid var(--status-colour);
+  border: 2px solid var(--status-colour);
   border-radius: var(--radius-medium);
   background: var(--colour-muted);
 }
@@ -4290,14 +4382,13 @@ ul.point-games {
 
 main.home {
   gap: clamp(4rem, 3rem + 4vw, 6.5rem);
-  max-width: 76rem;
-  padding-top: clamp(1.5rem, 1rem + 2vw, 3rem);
+  max-width: 78rem;
+  padding-top: clamp(1.25rem, 0.75rem + 2vw, 2.5rem);
 }
 
 .home h2 {
-  font-size: clamp(1.75rem, 1.35rem + 1.8vw, 2.625rem);
-  line-height: 1.1;
-  letter-spacing: -0.01em;
+  font-size: clamp(2rem, 1.5rem + 2vw, 3rem);
+  line-height: 1.02;
 }
 
 .home ul,
@@ -4313,58 +4404,197 @@ main.home {
   background: none;
 }
 
+/* The map sheet: a keylined face inside a margin that carries the grid
+   references, A to H across and the Years down, and the sheet's title. */
+.map-sheet {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.75rem minmax(0, 1fr) 1.75rem;
+  grid-template-rows: 1.75rem auto 1.75rem auto;
+  padding: var(--space-2);
+  border: 2px solid var(--colour-keyline);
+  border-radius: var(--radius-small);
+  background: var(--colour-card);
+  box-shadow: var(--shadow-hero);
+}
+
+.map-sheet-face {
+  position: relative;
+  grid-column: 2;
+  grid-row: 2;
+  min-width: 0;
+  border: 2px solid var(--colour-keyline);
+  background-color: var(--colour-card);
+  background-image:
+    linear-gradient(var(--colour-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--colour-grid) 1px, transparent 1px);
+  background-size:
+    calc(100% / var(--map-sheet-columns)) calc(100% / var(--map-sheet-rows)),
+    calc(100% / var(--map-sheet-columns)) calc(100% / var(--map-sheet-rows));
+}
+
+.map-sheet-edge {
+  display: grid;
+  color: var(--colour-muted-foreground);
+  font-family: var(--font-heading);
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: var(--tracking-label);
+  user-select: none;
+}
+
+.map-sheet-edge > span {
+  display: grid;
+  place-items: center;
+  transition:
+    color var(--duration-quick) ease-out,
+    background-color var(--duration-quick) ease-out;
+}
+
+.map-sheet-edge > span[data-lit] {
+  background: var(--colour-map-magenta);
+  color: #ffffff;
+}
+
+.map-sheet-edge-top,
+.map-sheet-edge-bottom {
+  grid-column: 2;
+  grid-template-columns: repeat(var(--map-sheet-columns), minmax(0, 1fr));
+}
+
+.map-sheet-edge-top {
+  grid-row: 1;
+}
+
+.map-sheet-edge-bottom {
+  grid-row: 3;
+}
+
+.map-sheet-edge-left,
+.map-sheet-edge-right {
+  grid-row: 2;
+  grid-template-rows: repeat(var(--map-sheet-rows), minmax(0, 1fr));
+}
+
+.map-sheet-edge-left {
+  grid-column: 1;
+}
+
+.map-sheet-edge-right {
+  grid-column: 3;
+}
+
+.map-sheet-title {
+  grid-column: 1 / -1;
+  grid-row: 4;
+  padding: var(--space-2) var(--space-2) var(--space-1);
+  color: var(--colour-muted-foreground);
+  font-family: var(--font-heading);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-label);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* The one authored moment: the sheet arrives folded and flattens, its
+   crease fading as it opens. The sheet itself is visible throughout. */
+.map-sheet-face::after {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  background: linear-gradient(
+    90deg,
+    transparent 46%,
+    light-dark(rgb(20 33 43 / 0.16), rgb(0 0 0 / 0.4)) 50%,
+    transparent 54%
+  );
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .home-sheet {
+    animation: sheet-unfold 900ms var(--ease-out-expo) both;
+  }
+
+  .home-sheet .map-sheet-face::after {
+    animation: sheet-crease 1100ms var(--ease-out-expo) both;
+  }
+}
+
+@keyframes sheet-unfold {
+  from {
+    transform: perspective(1600px) rotateY(-5deg) scale(0.985);
+  }
+}
+
+@keyframes sheet-crease {
+  from {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 40rem) {
+  .map-sheet {
+    grid-template-columns: 0 minmax(0, 1fr) 0;
+    grid-template-rows: 1.25rem auto 1.25rem auto;
+    padding: var(--space-1);
+  }
+
+  .map-sheet-edge-left,
+  .map-sheet-edge-right {
+    visibility: hidden;
+  }
+
+  .map-sheet-edge {
+    font-size: 0.75rem;
+  }
+}
+
 .home-hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   align-items: center;
-  gap: clamp(2rem, 1rem + 3vw, 3.5rem);
+  gap: clamp(1.5rem, 1rem + 2.5vw, 3rem);
+  padding: clamp(1.25rem, 0.5rem + 2.5vw, 2.5rem);
 }
 
 @media (min-width: 60rem) {
   .home-hero {
-    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   }
 }
 
 .home-hero-text {
   display: grid;
-  gap: var(--space-5);
-}
-
-.home-eyebrow {
-  justify-self: start;
-  padding: 0.3rem var(--space-3);
-  border: 1px solid color-mix(in srgb, var(--colour-play) 45%, transparent);
-  border-radius: var(--radius-round);
-  background: var(--colour-play-soft);
-  color: light-dark(#92400e, #fcd34d);
-  font-size: 0.875rem;
-  font-weight: 800;
-  letter-spacing: 0.01em;
+  gap: var(--space-4);
 }
 
 .home h1 {
-  font-size: clamp(2.5rem, 1.6rem + 3.6vw, 4.25rem);
-  line-height: 1;
-  letter-spacing: -0.02em;
+  font-size: clamp(2.75rem, 1.6rem + 2.8vw, 4.125rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.005em;
 }
 
+/* "adventure" is the route the Child will walk: a footpath marked in the
+   map's magenta, dashed as a path is on a printed map. */
 .home h1 span {
-  background: linear-gradient(
-    90deg,
-    var(--colour-primary),
-    #9b3fd1,
-    var(--colour-accent)
-  );
-  background-clip: text;
-  color: transparent;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: var(--colour-map-magenta);
+  text-decoration-thickness: 0.07em;
+  text-underline-offset: 0.12em;
 }
 
 .home-lead {
   max-width: 36rem;
   color: var(--colour-muted-foreground);
-  font-size: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
-  line-height: 1.6;
+  font-size: clamp(1.0625rem, 1rem + 0.2vw, 1.1875rem);
+  line-height: 1.55;
 }
 
 .home-actions {
@@ -4379,10 +4609,14 @@ a.button-link {
   justify-content: center;
   min-height: 52px;
   padding: 0 var(--space-5);
-  border-radius: var(--radius-round);
+  border: 2px solid transparent;
+  border-radius: var(--radius-small);
   background: var(--colour-primary);
   color: var(--colour-on-primary);
-  font-weight: 800;
+  font-family: var(--font-heading);
+  font-size: 1.3125rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
   text-decoration: none;
   box-shadow: var(--shadow-button);
   transition:
@@ -4397,29 +4631,42 @@ a.button-link:hover {
 }
 
 a.button-link:active {
-  transform: translateY(3px);
+  transform: translateY(1px);
   box-shadow: var(--shadow-button-pressed);
 }
 
+/* The main way in is printed in the sheet's cover orange. */
+a.button-link.cover {
+  border-color: var(--colour-keyline);
+  background: var(--colour-cover);
+  color: var(--colour-on-cover);
+}
+
+a.button-link.cover:hover {
+  background: var(--colour-cover-strong);
+  color: var(--colour-on-cover);
+}
+
 a.button-link.secondary {
-  border: 2px solid var(--colour-border);
+  border-color: var(--colour-keyline);
   background: var(--colour-card);
-  color: var(--colour-primary);
+  color: var(--colour-foreground);
 }
 
 a.button-link.secondary:hover {
-  border-color: var(--colour-primary);
   background: var(--colour-muted);
+  color: var(--colour-foreground);
 }
 
-a.button-link.light {
-  background: #ffffff;
-  color: #1d4ed8;
+a.button-link.ink {
+  border-color: var(--colour-on-cover);
+  background: var(--colour-on-cover);
+  color: #fff4e8;
 }
 
-a.button-link.light:hover {
-  background: #fef3c7;
-  color: #1e3a8a;
+a.button-link.ink:hover {
+  background: #3a2a14;
+  color: #ffffff;
 }
 
 .home-note {
@@ -4429,8 +4676,8 @@ a.button-link.light:hover {
 
 .home-device-status {
   padding: var(--space-3) var(--space-4);
-  border: 1px solid color-mix(in srgb, var(--colour-play) 40%, transparent);
-  border-radius: var(--radius-medium);
+  border: 2px solid var(--colour-keyline);
+  border-radius: var(--radius-small);
   background: var(--colour-play-soft);
   font-weight: 700;
 }
@@ -4459,28 +4706,16 @@ a.button-link.light:hover {
 .home-hero-stage {
   --stage-ems: 37.5;
   aspect-ratio: 600 / 342;
-  border-radius: var(--radius-large);
-  background:
-    radial-gradient(
-      120% 90% at 100% 0%,
-      color-mix(in srgb, var(--colour-primary) 30%, transparent),
-      transparent 60%
-    ),
-    radial-gradient(
-      90% 80% at 0% 100%,
-      color-mix(in srgb, var(--colour-accent) 22%, transparent),
-      transparent 60%
-    ),
-    var(--colour-muted);
 }
 
 .home-hero-game {
   position: absolute;
-  top: 1.75em;
-  left: 9em;
-  width: 34em;
+  top: 0.5em;
+  left: 4em;
+  width: 33.25em;
   overflow: hidden;
-  border-radius: 1em;
+  border: 2px solid var(--colour-keyline);
+  border-radius: var(--radius-small);
   background: #0b3a6e;
   box-shadow: var(--shadow-hero);
 }
@@ -4491,8 +4726,10 @@ a.button-link.light:hover {
   gap: 0.5em;
   height: 3.25em;
   padding: 0 0.875em;
-  background: #141d31;
-  color: #e8edf6;
+  border-bottom: 2px solid var(--colour-keyline);
+  background: var(--colour-card);
+  color: var(--colour-foreground);
+  font-family: var(--font-heading);
 }
 
 .home-hero-portrait {
@@ -4513,14 +4750,14 @@ a.button-link.light:hover {
   gap: 0.4em;
   height: 2.25em;
   padding: 0 0.75em;
-  border-radius: 0.625em;
-  font-size: 0.8125em;
+  border-radius: var(--radius-small);
+  font-size: 0.9375em;
   font-weight: 700;
 }
 
 .home-hero-tab[data-current] {
-  background: rgb(96 165 250 / 0.16);
-  color: #93c5fd;
+  background: var(--colour-primary);
+  color: var(--colour-on-primary);
 }
 
 .home-hero-tab svg {
@@ -4530,9 +4767,9 @@ a.button-link.light:hover {
 
 .home-hero-stars {
   margin-left: auto;
-  border-radius: var(--radius-round);
-  background: #3b2a0a;
-  color: #fde68a;
+  border: 2px solid var(--colour-keyline);
+  background: var(--colour-play-soft);
+  color: var(--colour-play-strong);
 }
 
 .home-hero-stars svg,
@@ -4551,13 +4788,14 @@ a.button-link.light:hover {
 
 .home-hero-reward {
   position: absolute;
-  top: 9em;
-  left: 1.75em;
+  top: 8.5em;
+  left: 0;
   display: grid;
   gap: 0.5em;
   width: 12.5em;
   padding: 0.875em 1em 1em;
-  border-radius: 1em;
+  border: 2px solid var(--colour-keyline);
+  border-radius: var(--radius-small);
   background: var(--colour-card);
   color: var(--colour-foreground);
   box-shadow: var(--shadow-satellite);
@@ -4755,82 +4993,63 @@ a.button-link.light:hover {
 
 .home-section {
   display: grid;
-  gap: clamp(1.75rem, 1.25rem + 1.5vw, 2.75rem);
+  gap: clamp(1.5rem, 1rem + 1.5vw, 2.5rem);
 }
 
+/* Section headings sit at the left like a map's own titling, not centred
+   over a grid of cards. */
 .home-section-heading {
   display: grid;
-  justify-items: center;
+  justify-items: start;
   gap: var(--space-3);
-  max-width: 46rem;
-  margin: 0 auto;
-  text-align: center;
+  max-width: 48rem;
 }
 
-.home-section-heading p:not(.home-kicker) {
+.home-section-heading p {
   color: var(--colour-muted-foreground);
   font-size: 1.125rem;
 }
 
-.home-kicker {
-  color: var(--colour-primary);
-  font-size: 0.9375rem;
-  font-weight: 800;
-}
-
+/* The map key: each Subject is a symbol in its own colour, set in a legend
+   of ruled rows inside one keyline. */
 .home ul.home-subjects {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15.5rem), 1fr));
-  gap: 1px;
-  overflow: hidden;
-  border: 1px solid var(--colour-border);
-  border-radius: var(--radius-large);
-  background: var(--colour-border);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+  gap: 0 var(--space-6);
+  padding: var(--space-2) var(--space-5);
+  border: 2px solid var(--colour-keyline);
+  border-radius: var(--radius-small);
+  background: var(--colour-card);
   box-shadow: var(--shadow-card);
 }
 
 .home-subject-every-island {
-  --subject-colour: var(--colour-play);
+  --subject-colour: var(--colour-cover);
 }
 
 .home li.home-subject {
   display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
   align-content: start;
-  gap: var(--space-2);
-  padding: var(--space-5);
-  background: var(--colour-card);
+  column-gap: var(--space-4);
+  row-gap: 0.125rem;
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--colour-border);
 }
 
-@media (max-width: 36rem) {
-  .home li.home-subject {
-    grid-template-columns: auto minmax(0, 1fr);
-    column-gap: var(--space-4);
-    row-gap: var(--space-1);
-    padding: var(--space-4);
-  }
-
-  .home-subject > :not(.home-subject-icon) {
-    grid-column: 2;
-  }
-
-  .home .home-subject-icon {
-    grid-row: span 3;
-    margin-bottom: 0;
-  }
+.home-subject > :not(.home-subject-icon) {
+  grid-column: 2;
 }
 
 .home-subject-icon {
   display: grid;
+  grid-row: span 3;
   place-items: center;
   width: 2.75rem;
   height: 2.75rem;
-  margin-bottom: var(--space-2);
-  border-radius: var(--radius-small);
-  background: color-mix(in srgb, var(--subject-colour) 15%, var(--colour-card));
-  color: light-dark(
-    color-mix(in oklab, var(--subject-colour) 70%, #000000),
-    color-mix(in oklab, var(--subject-colour) 50%, #ffffff)
-  );
+  border: 2px solid var(--colour-keyline);
+  background: var(--subject-colour);
+  color: #ffffff;
 }
 
 .home-subject-icon svg {
@@ -4839,16 +5058,16 @@ a.button-link.light:hover {
 }
 
 .home-subject h3 {
-  font-size: 1.1875rem;
+  font-size: 1.375rem;
 }
 
 .home .home-subject-region {
-  color: light-dark(
-    color-mix(in oklab, var(--subject-colour) 58%, #000000),
-    color-mix(in oklab, var(--subject-colour) 45%, #ffffff)
-  );
-  font-size: 0.875rem;
-  font-weight: 800;
+  color: var(--colour-foreground);
+  font-family: var(--font-heading);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .home-subject p:last-child {
@@ -4856,10 +5075,11 @@ a.button-link.light:hover {
   font-size: 0.9875rem;
 }
 
+/* Insets: each feature is a framed inset map, set at different sizes. */
 .home ul.home-bento {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: var(--space-4);
+  gap: var(--space-5);
 }
 
 @media (min-width: 40rem) {
@@ -4888,51 +5108,72 @@ a.button-link.light:hover {
   gap: var(--space-4);
   container: home-tile / inline-size;
   overflow: hidden;
-  border: 1px solid var(--colour-border);
-  border-radius: var(--radius-large);
+  border: 2px solid var(--colour-keyline);
+  border-radius: var(--radius-small);
   background: var(--colour-muted);
 }
 
 .home-tile-copy {
   padding: var(--space-5) var(--space-5) 0;
   color: var(--colour-muted-foreground);
-  font-size: 1.1875rem;
-  line-height: 1.4;
+  font-size: 1.125rem;
+  line-height: 1.45;
   text-wrap: pretty;
 }
 
 .home-tile-copy strong {
   color: var(--colour-foreground);
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .home-tile .home-stage {
   margin-top: auto;
 }
 
-.home li.home-tile-stat {
-  justify-content: center;
-  gap: var(--space-2);
-  padding: var(--space-6) var(--space-5);
-  border-color: color-mix(in srgb, var(--colour-play) 35%, transparent);
-  background: var(--colour-play-soft);
+/* The index to the six Islands, one square per Year, as a map's sheet index. */
+.home li.home-tile-islands {
+  background: var(--colour-card);
 }
 
-.home-stat-lead,
-.home-stat-label {
-  color: light-dark(#78350f, #fde68a);
-  font-size: 1.125rem;
-  font-weight: 700;
+.home ol.home-island-index {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: auto var(--space-5) var(--space-5);
+  border-top: 2px solid var(--colour-keyline);
+  border-left: 2px solid var(--colour-keyline);
 }
 
-.home-stat {
-  color: var(--colour-play-strong);
+.home-island-index li {
+  display: grid;
+  gap: 0;
+  padding: var(--space-3);
+  border-right: 2px solid var(--colour-keyline);
+  border-bottom: 2px solid var(--colour-keyline);
+}
+
+.home-island-index li:nth-child(4n + 1),
+.home-island-index li:nth-child(4n + 4) {
+  background: color-mix(
+    in srgb,
+    var(--colour-woodland) 14%,
+    var(--colour-card)
+  );
+}
+
+.home-island-year {
+  color: var(--colour-muted-foreground);
   font-family: var(--font-heading);
-  font-size: clamp(3.5rem, 2.5rem + 3vw, 4.75rem);
-  font-weight: 800;
-  line-height: 1;
-  letter-spacing: -0.02em;
-  white-space: nowrap;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+.home-island-name {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.1;
 }
 
 .home-region-stage {
@@ -4947,7 +5188,7 @@ a.button-link.light:hover {
   width: 36em;
   height: 24em;
   overflow: hidden;
-  border-radius: 1em;
+  border-radius: var(--radius-small);
   background: var(--colour-card);
   box-shadow: var(--shadow-hero);
 }
@@ -4967,7 +5208,7 @@ a.button-link.light:hover {
   place-items: center;
   width: 2.25em;
   height: 2.25em;
-  border-radius: 0.625em;
+  border-radius: var(--radius-small);
   background: color-mix(in srgb, var(--chart-maths) 15%, var(--colour-card));
   color: light-dark(#4c3bb8, #b4a9f2);
 }
@@ -5011,7 +5252,7 @@ a.button-link.light:hover {
   gap: 0.75em;
   min-height: 3.25em;
   padding: 0.5em 0.625em;
-  border-radius: 0.75em;
+  border-radius: var(--radius-small);
 }
 
 .home-region-game:first-child {
@@ -5124,7 +5365,7 @@ a.button-link.light:hover {
   left: 1.75em;
   height: 20em;
   padding: 0.875em;
-  border-radius: 1em;
+  border-radius: var(--radius-small);
   background: var(--colour-card);
   box-shadow: var(--shadow-ground);
 }
@@ -5155,7 +5396,7 @@ a.button-link.light:hover {
   place-items: center;
   height: 2em;
   border: 2px solid var(--colour-border);
-  border-radius: 0.5em;
+  border-radius: var(--radius-small);
   font-size: 1.5em;
   background: var(--colour-muted);
 }
@@ -5372,10 +5613,11 @@ a.button-link.light:hover {
   animation-delay: calc(sibling-index() * 40ms);
 }
 
+/* Notes in the map's margin: a symbol, a title and a line or two, ruled. */
 .home ul.home-facts {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
-  gap: var(--space-6) clamp(1.5rem, 1rem + 2vw, 3rem);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+  gap: 0 clamp(1.5rem, 1rem + 2vw, 3rem);
 }
 
 .home-facts li {
@@ -5384,8 +5626,8 @@ a.button-link.light:hover {
   align-content: start;
   column-gap: var(--space-4);
   row-gap: var(--space-1);
-  padding-top: var(--space-5);
-  border-top: 1px solid var(--colour-border);
+  padding: var(--space-4) 0 var(--space-5);
+  border-top: 2px solid var(--colour-keyline);
 }
 
 .home-fact-icon {
@@ -5394,8 +5636,8 @@ a.button-link.light:hover {
   place-items: center;
   width: 2.5rem;
   height: 2.5rem;
-  border-radius: var(--radius-small);
-  background: color-mix(in srgb, var(--colour-primary) 12%, var(--colour-card));
+  border: 2px solid var(--colour-keyline);
+  background: color-mix(in srgb, var(--colour-primary) 14%, var(--colour-card));
   color: var(--colour-primary);
 }
 
@@ -5406,7 +5648,7 @@ a.button-link.light:hover {
 
 .home-facts h3 {
   align-self: center;
-  font-size: 1.0625rem;
+  font-size: 1.3125rem;
 }
 
 .home-facts p {
@@ -5414,66 +5656,82 @@ a.button-link.light:hover {
   font-size: 0.9875rem;
 }
 
+/* How it works is a route: three waypoints joined by a footpath. */
 .home-steps ol {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
-  gap: var(--space-4);
+  gap: var(--space-6);
   counter-reset: home-step;
 }
 
+@media (min-width: 52rem) {
+  .home-steps ol::before {
+    position: absolute;
+    top: 1.5rem;
+    right: 8%;
+    left: 1.5rem;
+    border-top: 4px dashed var(--colour-map-magenta);
+    content: "";
+  }
+}
+
 .home-steps li {
+  position: relative;
   display: grid;
   align-content: start;
   gap: var(--space-2);
-  padding: var(--space-5);
-  border: 1px solid var(--colour-border);
-  border-radius: var(--radius-large);
-  background: var(--colour-card);
-  box-shadow: var(--shadow-card);
   counter-increment: home-step;
 }
 
 .home-steps li::before {
   display: grid;
   place-items: center;
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 3rem;
+  height: 3rem;
   margin-bottom: var(--space-2);
+  border: 3px solid var(--colour-map-magenta);
   border-radius: 50%;
-  background: color-mix(in srgb, var(--colour-primary) 14%, var(--colour-card));
-  color: var(--colour-primary);
+  background: var(--colour-card);
+  color: var(--colour-map-magenta);
   font-family: var(--font-heading);
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 800;
   content: counter(home-step);
 }
 
+.home-steps h3 {
+  font-size: 1.5rem;
+}
+
 .home-steps p {
+  max-width: 22rem;
   color: var(--colour-muted-foreground);
 }
 
+/* The back cover: the sheet's orange band, with the way in set in ink. */
 .home-call {
   display: grid;
-  justify-items: center;
+  justify-items: start;
   gap: var(--space-4);
-  padding: clamp(2.5rem, 2rem + 3vw, 4.5rem) var(--space-5);
-  border-radius: var(--radius-large);
-  background:
-    radial-gradient(
-      80% 120% at 85% 0%,
-      rgb(236 72 153 / 0.35),
-      transparent 60%
-    ),
-    linear-gradient(135deg, #1e3a8a, #4c1d95);
-  color: #ffffff;
-  text-align: center;
+  padding: clamp(2rem, 1.5rem + 3vw, 4rem) clamp(1.5rem, 1rem + 3vw, 4rem);
+  border: 2px solid var(--colour-keyline);
+  border-radius: var(--radius-small);
+  background: var(--colour-cover);
+  color: var(--colour-on-cover);
   box-shadow: var(--shadow-hero);
+}
+
+.home .home-call h2 {
+  font-size: clamp(2.25rem, 1.5rem + 3vw, 3.75rem);
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .home-call p {
   max-width: 32rem;
-  color: #dbeafe;
-  font-size: 1.125rem;
+  color: var(--colour-on-cover);
+  font-size: 1.1875rem;
 }
 
 html {
@@ -5524,11 +5782,12 @@ html:has(dialog[open]) {
   margin-top: auto;
   padding: var(--space-1) var(--space-4)
     max(var(--space-1), env(safe-area-inset-bottom));
-  border-top: 1px solid var(--colour-border);
-  background: color-mix(in srgb, var(--colour-card) 88%, transparent);
-  backdrop-filter: saturate(1.4) blur(12px);
+  border-top: 2px solid var(--colour-keyline);
+  background: var(--colour-card);
   color: var(--colour-muted-foreground);
-  font-size: 0.875rem;
+  font-family: var(--font-heading);
+  font-size: 0.9375rem;
+  letter-spacing: 0.03em;
 }
 
 .site-footer > nav > ul {
@@ -5557,7 +5816,7 @@ html:has(dialog[open]) {
   box-shadow: none;
   color: var(--colour-muted-foreground);
   font: inherit;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   cursor: pointer;
 }
@@ -5565,6 +5824,9 @@ html:has(dialog[open]) {
 .site-footer .site-footer-link:hover {
   background: none;
   color: var(--colour-foreground);
+  text-decoration: underline;
+  text-decoration-color: var(--colour-map-magenta);
+  text-decoration-thickness: 2px;
 }
 
 .site-footer .site-footer-link:active {
@@ -5808,9 +6070,9 @@ html:has(dialog[open]) {
   padding: max(var(--space-2), env(safe-area-inset-top))
     max(var(--space-4), env(safe-area-inset-right)) var(--space-2)
     max(var(--space-4), env(safe-area-inset-left));
-  border-bottom: 1px solid var(--colour-border);
-  background: color-mix(in srgb, var(--colour-card) 88%, transparent);
-  backdrop-filter: saturate(1.4) blur(12px);
+  border-bottom: 2px solid var(--colour-keyline);
+  background: var(--colour-cover);
+  color: var(--colour-on-cover);
 }
 
 a.site-header-brand {
@@ -5822,17 +6084,25 @@ a.site-header-brand {
   margin-right: auto;
   padding-right: var(--space-2);
   border-radius: var(--radius-small);
-  color: var(--colour-foreground);
+  color: var(--colour-on-cover);
   text-decoration: none;
 }
 
 a.site-header-brand:hover {
-  color: var(--colour-foreground);
+  color: var(--colour-on-cover);
+}
+
+.site-header a:focus-visible,
+.site-header button:focus-visible {
+  outline-color: var(--colour-on-cover);
 }
 
 .site-header-brand img {
   flex: none;
+  padding: 2px;
+  border: 2px solid var(--colour-on-cover);
   border-radius: var(--radius-small);
+  background: #fcfdf8;
   image-rendering: pixelated;
 }
 
@@ -5844,13 +6114,16 @@ a.site-header-brand:hover {
 
 .site-header-title {
   font-family: var(--font-heading);
-  font-size: 1.375rem;
+  font-size: 2.125rem;
   font-weight: 800;
+  letter-spacing: var(--tracking-label);
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .site-header-subtitle {
   overflow: hidden;
-  color: var(--colour-muted-foreground);
+  color: var(--colour-on-cover);
   font-size: 0.875rem;
   font-weight: 700;
   text-overflow: ellipsis;
@@ -5860,9 +6133,9 @@ a.site-header-brand:hover {
 .site-header .site-menu-toggle,
 a.site-header-settings {
   min-height: 44px;
-  border: 2px solid var(--colour-border);
-  background: var(--colour-card);
-  color: var(--colour-foreground);
+  border: 2px solid var(--colour-on-cover);
+  background: #fcfdf8;
+  color: #14212b;
   box-shadow: none;
 }
 
@@ -5873,9 +6146,9 @@ a.site-header-settings {
 
 .site-header .site-menu-toggle:hover,
 a.site-header-settings:hover {
-  border-color: var(--colour-primary);
-  background: var(--colour-muted);
-  color: var(--colour-foreground);
+  border-color: var(--colour-on-cover);
+  background: #ffe7d1;
+  color: #14212b;
 }
 
 .site-header .site-menu-toggle:active {
@@ -5883,8 +6156,9 @@ a.site-header-settings:hover {
 }
 
 .site-header .site-menu-toggle[aria-expanded="true"] {
-  border-color: var(--colour-primary);
-  background: var(--colour-muted);
+  border-color: var(--colour-on-cover);
+  background: var(--colour-on-cover);
+  color: #fcfdf8;
 }
 
 .site-menu-chevron {
@@ -5901,7 +6175,7 @@ a.site-header-settings {
   flex: none;
   place-items: center;
   width: 44px;
-  border-radius: var(--radius-round);
+  border-radius: var(--radius-small);
   transition:
     border-color var(--duration-quick) ease-out,
     background-color var(--duration-quick) ease-out;
@@ -5916,9 +6190,9 @@ a.site-header-settings:hover svg {
 }
 
 a.site-header-settings[aria-current="page"] {
-  border-color: var(--colour-primary);
-  background: var(--colour-primary);
-  color: var(--colour-on-primary);
+  border-color: var(--colour-on-cover);
+  background: var(--colour-on-cover);
+  color: #fcfdf8;
 }
 
 ul.site-menu-list {
@@ -5933,9 +6207,10 @@ ul.site-menu-list {
   );
   overflow-y: auto;
   padding: var(--space-2);
-  border: 1px solid var(--colour-border);
-  border-radius: var(--radius-large);
+  border: 2px solid var(--colour-keyline);
+  border-radius: var(--radius-small);
   background: var(--colour-card);
+  color: var(--colour-foreground);
   box-shadow: var(--shadow-menu);
   animation: site-menu-in var(--duration-quick) ease-out;
 }
@@ -6066,20 +6341,9 @@ fieldset.choice-cards {
   align-items: center;
   gap: var(--space-5);
   padding: var(--space-5);
-  border: 2px solid var(--colour-border);
-  border-radius: var(--radius-large);
-  background:
-    radial-gradient(
-      circle at 15% 20%,
-      color-mix(in srgb, var(--colour-primary) 22%, transparent),
-      transparent 60%
-    ),
-    radial-gradient(
-      circle at 90% 90%,
-      color-mix(in srgb, var(--colour-play) 18%, transparent),
-      transparent 55%
-    ),
-    var(--colour-card);
+  border: 2px solid var(--colour-keyline);
+  border-radius: var(--radius-small);
+  background: var(--colour-card);
   box-shadow: var(--shadow-card);
 }
 
@@ -6266,13 +6530,9 @@ details.voice-group[open] > summary::before {
   line-height: 1.05;
 }
 
-.voice-studio-kicker {
-  margin: 0;
-  color: var(--colour-primary);
-  font-size: 0.8125rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
+.voice-studio-role {
+  color: var(--colour-foreground);
+  font-weight: 700;
 }
 
 .voice-studio-detail,
@@ -6539,7 +6799,7 @@ fieldset.choice-cards legend {
     overscroll-behavior: contain;
     padding: var(--space-4) var(--space-3) var(--space-4)
       max(var(--space-3), env(safe-area-inset-left));
-    border-right: 1px solid var(--colour-border);
+    border-right: 2px solid var(--colour-keyline);
     background: var(--colour-card);
   }
 }
@@ -6558,15 +6818,12 @@ fieldset.choice-cards legend {
   place-items: center;
   width: 2.75rem;
   height: 2.75rem;
-  border-radius: var(--radius-medium);
-  background: linear-gradient(
-    135deg,
-    var(--colour-primary),
-    var(--colour-accent)
-  );
-  color: var(--colour-on-primary);
+  border: 2px solid var(--colour-keyline);
+  border-radius: var(--radius-small);
+  background: var(--colour-cover);
+  color: var(--colour-on-cover);
   font-family: var(--font-heading);
-  font-size: 1.375rem;
+  font-size: 1.5rem;
   font-weight: 800;
 }
 
@@ -6584,13 +6841,18 @@ fieldset.choice-cards legend {
   white-space: nowrap;
 }
 
-.parent-sidebar-eyebrow,
+.parent-sidebar-role {
+  color: var(--colour-muted-foreground);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
 .parent-sidebar-heading {
   color: var(--colour-muted-foreground);
-  font-family: var(--font-body);
-  font-size: 0.8125rem;
-  font-weight: 800;
-  letter-spacing: 0.06em;
+  font-family: var(--font-heading);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-label);
   text-transform: uppercase;
 }
 
@@ -6631,7 +6893,7 @@ summary.parent-sidebar-summary:focus-visible {
 
 h2.parent-sidebar-heading {
   margin: 0;
-  font-size: 0.8125rem;
+  font-size: 0.9375rem;
 }
 
 .parent-sidebar-chevron {
@@ -6721,23 +6983,20 @@ h2.parent-sidebar-heading {
   outline-offset: -3px;
 }
 
+/* The open section is the square you are in: inked in the theme's colour. */
 .parent-sidebar a.parent-sidebar-link[aria-current="page"] {
-  background: color-mix(in srgb, var(--colour-primary) 14%, var(--colour-card));
-}
-
-.parent-sidebar a.parent-sidebar-link[aria-current="page"]::before {
-  position: absolute;
-  top: var(--space-2);
-  bottom: var(--space-2);
-  left: 0;
-  width: 4px;
-  border-radius: var(--radius-round);
   background: var(--colour-primary);
-  content: "";
+  color: var(--colour-on-primary);
 }
 
-.parent-sidebar-link[aria-current="page"] svg {
-  color: var(--colour-primary);
+.parent-sidebar-link[aria-current="page"] svg,
+.parent-sidebar-link[aria-current="page"]:hover svg {
+  color: var(--colour-on-primary);
+}
+
+.parent-sidebar a.parent-sidebar-link[aria-current="page"]:hover {
+  background: var(--colour-primary-hover);
+  color: var(--colour-on-primary);
 }
 
 .parent-sidebar button.parent-sidebar-action,
@@ -7911,7 +8170,7 @@ li.region-card[data-access="earned"]
   min-height: 3em;
   margin: 0;
   padding: var(--space-3);
-  border-left: 4px solid var(--puzzle-accent);
+  border: 2px solid var(--puzzle-accent);
   border-radius: var(--radius-small);
   background: rgb(255 255 255 / 0.08);
   color: var(--puzzle-ink);
@@ -14309,7 +14568,7 @@ ul.explore-garage-list > li {
 .check-question-passage {
   margin: 0;
   padding: var(--space-3);
-  border-left: 4px solid var(--check-accent);
+  border: 2px solid var(--check-accent);
   background: var(--check-accent-soft);
 }
 
@@ -14437,7 +14696,7 @@ button.check-read-aloud {
 
 .check-feedback {
   padding: var(--space-2) var(--space-3);
-  border-left: 4px solid var(--check-accent);
+  border: 2px solid var(--check-accent);
   border-radius: var(--radius-small);
   background: var(--check-accent-soft);
   color: var(--check-paper-ink);
@@ -14662,12 +14921,6 @@ button.room-play-start:hover {
   justify-self: center;
 }
 
-.parent-sidebar-family .parent-sidebar-eyebrow {
-  font-size: 0.75rem;
-  letter-spacing: 0.04em;
-  line-height: 1.35;
-}
-
 .page-loading,
 .staff-loading {
   display: inline-flex;
@@ -14706,22 +14959,6 @@ button.room-play-start:hover {
   border-bottom: 1px solid var(--colour-border);
 }
 
-.staff-eyebrow {
-  justify-self: start;
-  padding: 0.125rem var(--space-3);
-  border-radius: var(--radius-round);
-  background: color-mix(in srgb, var(--colour-primary) 12%, var(--colour-card));
-  color: color-mix(
-    in srgb,
-    var(--colour-primary) 75%,
-    var(--colour-foreground)
-  );
-  font-size: 0.8125rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
 .staff-page-header p.view-intro {
   display: block;
   max-width: 46rem;
@@ -14744,21 +14981,10 @@ dl.staff-stats {
   align-content: start;
   gap: 0.125rem;
   overflow: hidden;
-  padding: var(--space-3) var(--space-4) var(--space-3) var(--space-5);
-  border: 1px solid var(--colour-border);
-  border-radius: var(--radius-medium);
-  background: var(--colour-card);
-}
-
-.staff-stat::before {
-  position: absolute;
-  top: var(--space-3);
-  bottom: var(--space-3);
-  left: var(--space-2);
-  width: 4px;
-  border-radius: var(--radius-round);
-  background: var(--stat-tone);
-  content: "";
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid var(--stat-tone);
+  border-radius: var(--radius-small);
+  background: color-mix(in srgb, var(--stat-tone) 8%, var(--colour-card));
 }
 
 .staff-stat[data-tone="good"] {
@@ -15488,7 +15714,7 @@ label.file-drop input[type="file"]::file-selector-button {
 }
 
 ul.admin-deletions > li {
-  border-left: 4px solid var(--colour-warning);
+  border: 2px solid var(--colour-warning);
 }
 
 ul.admin-deletions > li > button,
@@ -15729,10 +15955,11 @@ button.read-aloud-button {
   max-width: 100%;
   min-height: 44px;
   padding: 0 var(--space-4) 0 6px;
-  border: 1px solid color-mix(in srgb, var(--ra-accent) 32%, transparent);
-  border-radius: var(--radius-round);
+  border: 2px solid color-mix(in srgb, var(--ra-accent) 55%, transparent);
+  border-radius: var(--radius-small);
   background: color-mix(in srgb, var(--ra-accent) 7%, var(--ra-surface));
   color: var(--ra-ink);
+  font-family: var(--font-body);
   font-size: 0.9375rem;
   font-weight: 700;
   line-height: 1.2;
@@ -15871,12 +16098,13 @@ button.read-aloud-button[data-speaking] .read-aloud-icon {
 
 .home .home-section-heading button.read-aloud-button,
 .home .home-call button.read-aloud-button {
-  justify-self: center;
+  justify-self: start;
 }
 
 .home .home-call button.read-aloud-button {
-  --read-aloud-ink: #ffffff;
-  --read-aloud-accent: #ffffff;
+  --read-aloud-ink: var(--colour-on-cover);
+  --read-aloud-accent: var(--colour-on-cover);
+  --read-aloud-icon-ink: var(--colour-on-cover);
   --read-aloud-surface: transparent;
 }
 
@@ -16619,7 +16847,7 @@ ul.play-side-panel-list {
 .quest-question-feedback {
   margin: 0;
   padding: var(--space-2) var(--space-3);
-  border-left: 4px solid var(--colour-warning);
+  border: 2px solid var(--colour-warning);
   border-radius: var(--radius-small);
   background: var(--colour-warning-soft);
   color: var(--colour-foreground);
@@ -17065,4 +17293,58 @@ ul.play-side-panel-list {
 /* An Award's 3D stage saying it is being got ready. */
 .busy.award-stage-busy {
   color: #f4f4f0;
+}
+
+/* Map lettering for the controls that name places and actions in big type:
+   the play bar's tabs and form submits. Small text inside buttons stays in
+   the reading face, for Children still learning to read. */
+.play-nav-tabs button,
+form button[type="submit"],
+.home-actions a {
+  font-family: var(--font-heading);
+  font-size: 1.1875rem;
+  letter-spacing: 0.01em;
+}
+
+/* The Region chips are the map's own place labels. */
+button.region-chip {
+  font-family: var(--font-heading);
+  font-size: 1.0625rem;
+  letter-spacing: 0.01em;
+}
+
+/* On a phone the footer's links wrap to three rows, so on the home and
+   adult pages it sits at the foot of the page rather than over the sheet. */
+@media (max-width: 40rem) {
+  body:has(main.home, main.parent-page, main.menu) .site-footer {
+    position: static;
+  }
+}
+
+/* Progress is grid squares inked in, as a route is marked off square by
+   square on the map: the meter's fill and track are cut into squares. */
+.child-tile-meter,
+.quest-card-meter,
+.family-chest-meter,
+.stars-today-meter,
+.stacked-track,
+.home-hero-reward-meter {
+  border-radius: 0;
+  -webkit-mask: repeating-linear-gradient(
+    90deg,
+    #000 0 0.625rem,
+    transparent 0.625rem 0.75rem
+  );
+  mask: repeating-linear-gradient(
+    90deg,
+    #000 0 0.625rem,
+    transparent 0.625rem 0.75rem
+  );
+}
+
+.child-tile-meter > span,
+.quest-card-meter > span,
+.stacked-track > span,
+.home-hero-reward-meter span {
+  border-radius: 0;
 }

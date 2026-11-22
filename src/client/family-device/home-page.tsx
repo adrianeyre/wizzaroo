@@ -29,6 +29,7 @@ import {
   RegionPanelPicture,
 } from "./home-pictures.js";
 import { ReadAloudButton } from "../read-aloud-button.js";
+import { MapSheet } from "../map-sheet.js";
 
 const subjectLessons: Record<Subject, string> = {
   maths:
@@ -160,40 +161,49 @@ const listSubjectNames = (): string => {
     : `${names.join(", ")}, and ${lastName ?? ""}`;
 };
 
+const sheetColumns = ["A", "B", "C", "D", "E", "F", "G", "H"] as const;
+
 export const HomePage = () => (
   <main className="home">
-    <div className="home-hero">
-      <div className="home-hero-text" data-read-aloud-section>
-        <p className="home-eyebrow">UK National Curriculum · Years 1 to 6</p>
-        <h1 id="home-hero-heading">
-          Learning that feels like an <span>adventure</span>
-        </h1>
-        <p className="home-lead">
-          Wizzaroo is a 3D adventure world where Children learn{" "}
-          {listSubjectNames()} in short Missions, and earn Stars for a Character
-          of their own, while you see exactly how they&apos;re getting on.
-        </p>
-        <ReadAloudButton
-          className="read-aloud is-small"
-          readsSection
-          describedBy="home-hero-heading"
-        />
-        <div className="home-actions">
-          <a className="button-link" href="/parent/">
-            Get started as a Parent
-          </a>
-          <a className="button-link secondary" href="#how-it-works">
-            See how it works
-          </a>
+    <MapSheet
+      className="home-sheet"
+      columns={sheetColumns}
+      rows={worldMap.islands.map(({ yearGroup }) => String(yearGroup))}
+      title={`Explorer Map · UK National Curriculum · Years 1 to 6 · ${String(worldMap.islands.length)} Islands`}
+    >
+      <div className="home-hero">
+        <div className="home-hero-text" data-read-aloud-section>
+          <h1 id="home-hero-heading">
+            Learning that feels like an <span>adventure</span>
+          </h1>
+          <p className="home-lead">
+            Wizzaroo is a 3D adventure world where Children learn{" "}
+            {listSubjectNames()} in short Missions, and earn Stars for a
+            Character of their own, while you see exactly how they&apos;re
+            getting on.
+          </p>
+          <ReadAloudButton
+            className="read-aloud is-small"
+            readsSection
+            describedBy="home-hero-heading"
+          />
+          <div className="home-actions">
+            <a className="button-link cover" href="/parent/">
+              Get started as a Parent
+            </a>
+            <a className="button-link secondary" href="#how-it-works">
+              See how it works
+            </a>
+          </div>
+          <p className="home-note">
+            Another adult joins your Family from an Invite you send them.
+          </p>
         </div>
-        <p className="home-note">
-          Another adult joins your Family from an Invite you send them.
-        </p>
+        <div className="home-hero-picture">
+          <HeroStage />
+        </div>
       </div>
-      <div className="home-hero-picture">
-        <HeroStage />
-      </div>
-    </div>
+    </MapSheet>
 
     <p className="home-device-status">
       Wizzaroo is signed out on this device. A Parent can sign it in from the{" "}
@@ -201,12 +211,11 @@ export const HomePage = () => (
     </p>
 
     <div
-      className="home-section"
+      className="home-section home-key"
       data-read-aloud-section
       aria-labelledby="home-subjects-heading"
     >
       <div className="home-section-heading">
-        <p className="home-kicker">What they learn</p>
         <h2 id="home-subjects-heading">
           {taughtSubjects.length} Subjects, one World Map
         </h2>
@@ -260,7 +269,6 @@ export const HomePage = () => (
       aria-labelledby="home-inside-heading"
     >
       <div className="home-section-heading">
-        <p className="home-kicker">Inside Wizzaroo</p>
         <h2 id="home-inside-heading">
           Everything a young learner needs, nothing they don&apos;t
         </h2>
@@ -278,12 +286,24 @@ export const HomePage = () => (
           </p>
           <RegionPanelPicture />
         </li>
-        <li className="home-tile home-tile-stat">
-          <p className="home-stat-lead">Years 1 to 6 across</p>
-          <p className="home-stat">{worldMap.islands.length} Islands</p>
-          <p className="home-stat-label">
-            From {firstIslandName} to {lastIslandName}, one for each Year Group.
+        <li className="home-tile home-tile-islands">
+          <p className="home-tile-copy">
+            <strong>
+              {worldMap.islands.length} Islands, one for each Year Group.
+            </strong>{" "}
+            A Child starts on their own Year&apos;s Island, from{" "}
+            {firstIslandName} to {lastIslandName}.
           </p>
+          <ol className="home-island-index">
+            {worldMap.islands.map(({ id, name, yearGroup }) => (
+              <li key={id}>
+                <span className="home-island-year">
+                  Year {String(yearGroup)}
+                </span>
+                <span className="home-island-name">{name}</span>
+              </li>
+            ))}
+          </ol>
         </li>
         <li className="home-tile">
           <p className="home-tile-copy">
@@ -315,7 +335,6 @@ export const HomePage = () => (
       aria-labelledby="home-facts-heading"
     >
       <div className="home-section-heading">
-        <p className="home-kicker">Good to know</p>
         <h2 id="home-facts-heading">Made for Children, run by grown-ups</h2>
         <ReadAloudButton
           className="read-aloud is-small"
@@ -343,7 +362,6 @@ export const HomePage = () => (
       aria-labelledby="home-steps-heading"
     >
       <div className="home-section-heading">
-        <p className="home-kicker">How it works</p>
         <h2 id="home-steps-heading">Playing in three steps</h2>
         <ReadAloudButton
           className="read-aloud is-small"
@@ -369,7 +387,7 @@ export const HomePage = () => (
         readsSection
         describedBy="home-call-heading"
       />
-      <a className="button-link light" href="/parent/">
+      <a className="button-link ink" href="/parent/">
         Get started as a Parent
       </a>
     </div>

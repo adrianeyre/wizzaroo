@@ -1,0 +1,755 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-22T20:21:59+00:00",
+  "title": "Design System: Wizzaroo",
+  "extensions": {
+    "colorMeta": {
+      "cover-orange": {
+        "role": "primary",
+        "displayName": "Cover Orange",
+        "canonical": "light-dark(#f27a1a, #f0852b)",
+        "tonalRamp": [
+          "oklch(15% 0.030 52)",
+          "oklch(25% 0.079 52)",
+          "oklch(35% 0.100 52)",
+          "oklch(48% 0.127 52)",
+          "oklch(60% 0.153 52)",
+          "oklch(72% 0.172 52)",
+          "oklch(85% 0.144 52)",
+          "oklch(95% 0.030 52)"
+        ]
+      },
+      "cover-orange-strong": {
+        "role": "primary",
+        "displayName": "Cover Orange Strong",
+        "canonical": "light-dark(#d4610a, #f59a4e)",
+        "tonalRamp": [
+          "oklch(15% 0.030 48)",
+          "oklch(25% 0.092 48)",
+          "oklch(35% 0.111 48)",
+          "oklch(48% 0.137 48)",
+          "oklch(60% 0.161 48)",
+          "oklch(72% 0.147 48)",
+          "oklch(85% 0.121 48)",
+          "oklch(95% 0.030 48)"
+        ]
+      },
+      "cover-orange-night": {
+        "role": "primary",
+        "displayName": "Cover Orange (night)",
+        "canonical": "#f0852b",
+        "tonalRamp": [
+          "oklch(15% 0.030 52)",
+          "oklch(25% 0.079 52)",
+          "oklch(35% 0.100 52)",
+          "oklch(48% 0.127 52)",
+          "oklch(60% 0.153 52)",
+          "oklch(72% 0.172 52)",
+          "oklch(85% 0.144 52)",
+          "oklch(95% 0.030 52)"
+        ]
+      },
+      "on-cover-ink": {
+        "role": "primary",
+        "displayName": "On-Cover Ink",
+        "canonical": "#1a1206",
+        "tonalRamp": [
+          "oklch(15% 0.025 77)",
+          "oklch(25% 0.024 77)",
+          "oklch(35% 0.021 77)",
+          "oklch(48% 0.017 77)",
+          "oklch(60% 0.013 77)",
+          "oklch(72% 0.009 77)",
+          "oklch(85% 0.005 77)",
+          "oklch(95% 0.005 77)"
+        ]
+      },
+      "map-magenta": {
+        "role": "secondary",
+        "displayName": "Map Magenta",
+        "canonical": "light-dark(#b8166f, #f27ab9)",
+        "tonalRamp": [
+          "oklch(15% 0.030 355)",
+          "oklch(25% 0.137 355)",
+          "oklch(35% 0.161 355)",
+          "oklch(48% 0.192 355)",
+          "oklch(60% 0.182 355)",
+          "oklch(72% 0.153 355)",
+          "oklch(85% 0.122 355)",
+          "oklch(95% 0.030 355)"
+        ]
+      },
+      "map-magenta-night": {
+        "role": "secondary",
+        "displayName": "Map Magenta (night)",
+        "canonical": "#f27ab9",
+        "tonalRamp": [
+          "oklch(15% 0.030 355)",
+          "oklch(25% 0.137 355)",
+          "oklch(35% 0.161 355)",
+          "oklch(48% 0.192 355)",
+          "oklch(60% 0.182 355)",
+          "oklch(72% 0.153 355)",
+          "oklch(85% 0.122 355)",
+          "oklch(95% 0.030 355)"
+        ]
+      },
+      "keyline-ink": {
+        "role": "neutral",
+        "displayName": "Keyline Ink",
+        "canonical": "light-dark(#22323d, #7ea3b2)",
+        "tonalRamp": [
+          "oklch(15% 0.024 239)",
+          "oklch(25% 0.027 239)",
+          "oklch(35% 0.028 239)",
+          "oklch(48% 0.023 239)",
+          "oklch(60% 0.019 239)",
+          "oklch(72% 0.015 239)",
+          "oklch(85% 0.010 239)",
+          "oklch(95% 0.007 239)"
+        ]
+      },
+      "keyline-ink-night": {
+        "role": "neutral",
+        "displayName": "Keyline Ink (night)",
+        "canonical": "#7ea3b2",
+        "tonalRamp": [
+          "oklch(15% 0.024 239)",
+          "oklch(25% 0.027 239)",
+          "oklch(35% 0.028 239)",
+          "oklch(48% 0.023 239)",
+          "oklch(60% 0.019 239)",
+          "oklch(72% 0.015 239)",
+          "oklch(85% 0.010 239)",
+          "oklch(95% 0.007 239)"
+        ]
+      },
+      "woodland-green": {
+        "role": "tertiary",
+        "displayName": "Woodland Green",
+        "canonical": "light-dark(#2f7d32, #7fcf77)",
+        "tonalRamp": [
+          "oklch(15% 0.030 144)",
+          "oklch(25% 0.090 144)",
+          "oklch(35% 0.106 144)",
+          "oklch(48% 0.127 144)",
+          "oklch(60% 0.122 144)",
+          "oklch(72% 0.103 144)",
+          "oklch(85% 0.082 144)",
+          "oklch(95% 0.030 144)"
+        ]
+      },
+      "sea-paper": {
+        "role": "neutral",
+        "displayName": "Sea Paper",
+        "canonical": "light-dark(color-mix(in oklab, var(--colour-primary) 9%, #e4f1f6), color-mix(in oklab, var(--colour-primary) 12%, #08161d))",
+        "tonalRamp": [
+          "oklch(15% 0.005 223)",
+          "oklch(25% 0.005 223)",
+          "oklch(35% 0.005 223)",
+          "oklch(48% 0.007 223)",
+          "oklch(60% 0.009 223)",
+          "oklch(72% 0.011 223)",
+          "oklch(85% 0.014 223)",
+          "oklch(95% 0.015 223)"
+        ]
+      },
+      "sea-paper-night": {
+        "role": "neutral",
+        "displayName": "Night Chart Sea",
+        "canonical": "color-mix(in oklab, var(--colour-primary) 12%, #08161d)",
+        "tonalRamp": [
+          "oklch(15% 0.023 231)",
+          "oklch(25% 0.023 231)",
+          "oklch(35% 0.020 231)",
+          "oklch(48% 0.016 231)",
+          "oklch(60% 0.012 231)",
+          "oklch(72% 0.009 231)",
+          "oklch(85% 0.005 231)",
+          "oklch(95% 0.005 231)"
+        ]
+      },
+      "land-paper": {
+        "role": "neutral",
+        "displayName": "Land Paper",
+        "canonical": "light-dark(color-mix(in oklab, var(--colour-primary) 2%, #fcfdf8), color-mix(in oklab, var(--colour-primary) 8%, #11252e))",
+        "tonalRamp": [
+          "oklch(15% 0.005 116)",
+          "oklch(25% 0.005 116)",
+          "oklch(35% 0.005 116)",
+          "oklch(48% 0.005 116)",
+          "oklch(60% 0.005 116)",
+          "oklch(72% 0.005 116)",
+          "oklch(85% 0.006 116)",
+          "oklch(95% 0.006 116)"
+        ]
+      },
+      "land-paper-night": {
+        "role": "neutral",
+        "displayName": "Night Chart Land",
+        "canonical": "color-mix(in oklab, var(--colour-primary) 8%, #11252e)",
+        "tonalRamp": [
+          "oklch(15% 0.027 229)",
+          "oklch(25% 0.031 229)",
+          "oklch(35% 0.027 229)",
+          "oklch(48% 0.023 229)",
+          "oklch(60% 0.018 229)",
+          "oklch(72% 0.014 229)",
+          "oklch(85% 0.009 229)",
+          "oklch(95% 0.005 229)"
+        ]
+      },
+      "muted-land": {
+        "role": "neutral",
+        "displayName": "Muted Land",
+        "canonical": "light-dark(color-mix(in oklab, var(--colour-primary) 6%, #eef4e4), color-mix(in oklab, var(--colour-primary) 12%, #18323c))",
+        "tonalRamp": [
+          "oklch(15% 0.005 124)",
+          "oklch(25% 0.005 124)",
+          "oklch(35% 0.006 124)",
+          "oklch(48% 0.009 124)",
+          "oklch(60% 0.013 124)",
+          "oklch(72% 0.016 124)",
+          "oklch(85% 0.019 124)",
+          "oklch(95% 0.022 124)"
+        ]
+      },
+      "border-wash": {
+        "role": "neutral",
+        "displayName": "Border Wash",
+        "canonical": "light-dark(color-mix(in oklab, var(--colour-primary) 22%, #b9cdd6), color-mix(in oklab, var(--colour-primary) 20%, #2c4955))",
+        "tonalRamp": [
+          "oklch(15% 0.005 227)",
+          "oklch(25% 0.007 227)",
+          "oklch(35% 0.010 227)",
+          "oklch(48% 0.014 227)",
+          "oklch(60% 0.018 227)",
+          "oklch(72% 0.022 227)",
+          "oklch(85% 0.025 227)",
+          "oklch(95% 0.022 227)"
+        ]
+      },
+      "ink-foreground": {
+        "role": "neutral",
+        "displayName": "Ink Foreground",
+        "canonical": "light-dark(#14212b, #e8f1f4)",
+        "tonalRamp": [
+          "oklch(15% 0.024 242)",
+          "oklch(25% 0.026 242)",
+          "oklch(35% 0.023 242)",
+          "oklch(48% 0.019 242)",
+          "oklch(60% 0.015 242)",
+          "oklch(72% 0.011 242)",
+          "oklch(85% 0.007 242)",
+          "oklch(95% 0.005 242)"
+        ]
+      },
+      "ink-foreground-night": {
+        "role": "neutral",
+        "displayName": "Ink Foreground (night)",
+        "canonical": "#e8f1f4",
+        "tonalRamp": [
+          "oklch(15% 0.005 220)",
+          "oklch(25% 0.005 220)",
+          "oklch(35% 0.005 220)",
+          "oklch(48% 0.005 220)",
+          "oklch(60% 0.006 220)",
+          "oklch(72% 0.008 220)",
+          "oklch(85% 0.009 220)",
+          "oklch(95% 0.010 220)"
+        ]
+      },
+      "muted-ink": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "light-dark(#3b505d, #a6bfc9)",
+        "tonalRamp": [
+          "oklch(15% 0.023 236)",
+          "oklch(25% 0.027 236)",
+          "oklch(35% 0.031 236)",
+          "oklch(48% 0.031 236)",
+          "oklch(60% 0.027 236)",
+          "oklch(72% 0.022 236)",
+          "oklch(85% 0.016 236)",
+          "oklch(95% 0.012 236)"
+        ]
+      },
+      "input-border": {
+        "role": "neutral",
+        "displayName": "Input Border",
+        "canonical": "light-dark(#5a7382, #7f9dac)",
+        "tonalRamp": [
+          "oklch(15% 0.020 235)",
+          "oklch(25% 0.024 235)",
+          "oklch(35% 0.029 235)",
+          "oklch(48% 0.035 235)",
+          "oklch(60% 0.035 235)",
+          "oklch(72% 0.029 235)",
+          "oklch(85% 0.024 235)",
+          "oklch(95% 0.019 235)"
+        ]
+      },
+      "on-primary": {
+        "role": "neutral",
+        "displayName": "On Primary",
+        "canonical": "light-dark(#ffffff, #071318)",
+        "tonalRamp": [
+          "oklch(15% 0.005 116)",
+          "oklch(25% 0.005 116)",
+          "oklch(35% 0.005 116)",
+          "oklch(48% 0.005 116)",
+          "oklch(60% 0.005 116)",
+          "oklch(72% 0.005 116)",
+          "oklch(85% 0.006 116)",
+          "oklch(95% 0.006 116)"
+        ]
+      },
+      "on-primary-night": {
+        "role": "neutral",
+        "displayName": "On Primary (night)",
+        "canonical": "#071318",
+        "tonalRamp": [
+          "oklch(15% 0.023 231)",
+          "oklch(25% 0.023 231)",
+          "oklch(35% 0.020 231)",
+          "oklch(48% 0.016 231)",
+          "oklch(60% 0.012 231)",
+          "oklch(72% 0.009 231)",
+          "oklch(85% 0.005 231)",
+          "oklch(95% 0.005 231)"
+        ]
+      },
+      "theme-sky": {
+        "role": "primary",
+        "displayName": "Sky Printing",
+        "canonical": "light-dark(#1b5ea6, #7bb9ec)",
+        "tonalRamp": [
+          "oklch(15% 0.030 254)",
+          "oklch(25% 0.096 254)",
+          "oklch(35% 0.112 254)",
+          "oklch(48% 0.133 254)",
+          "oklch(60% 0.114 254)",
+          "oklch(72% 0.095 254)",
+          "oklch(85% 0.074 254)",
+          "oklch(95% 0.030 254)"
+        ]
+      },
+      "theme-sky-hover": {
+        "role": "primary",
+        "displayName": "Sky Printing Hover",
+        "canonical": "light-dark(#144a85, #a6d1f3)",
+        "tonalRamp": [
+          "oklch(15% 0.030 254)",
+          "oklch(25% 0.096 254)",
+          "oklch(35% 0.112 254)",
+          "oklch(48% 0.133 254)",
+          "oklch(60% 0.114 254)",
+          "oklch(72% 0.095 254)",
+          "oklch(85% 0.074 254)",
+          "oklch(95% 0.030 254)"
+        ]
+      },
+      "theme-sky-night": {
+        "role": "primary",
+        "displayName": "Sky Printing (night)",
+        "canonical": "#7bb9ec",
+        "tonalRamp": [
+          "oklch(15% 0.030 254)",
+          "oklch(25% 0.096 254)",
+          "oklch(35% 0.112 254)",
+          "oklch(48% 0.133 254)",
+          "oklch(60% 0.114 254)",
+          "oklch(72% 0.095 254)",
+          "oklch(85% 0.074 254)",
+          "oklch(95% 0.030 254)"
+        ]
+      },
+      "theme-grape": {
+        "role": "primary",
+        "displayName": "Grape Printing",
+        "canonical": "light-dark(#6a3d9f, #b9a0f0)",
+        "tonalRamp": [
+          "oklch(15% 0.030 302)",
+          "oklch(25% 0.114 302)",
+          "oklch(35% 0.133 302)",
+          "oklch(48% 0.151 302)",
+          "oklch(60% 0.129 302)",
+          "oklch(72% 0.106 302)",
+          "oklch(85% 0.083 302)",
+          "oklch(95% 0.030 302)"
+        ]
+      },
+      "theme-forest": {
+        "role": "primary",
+        "displayName": "Forest Printing",
+        "canonical": "light-dark(#2b7a30, #7fcf7f)",
+        "tonalRamp": [
+          "oklch(15% 0.030 144)",
+          "oklch(25% 0.091 144)",
+          "oklch(35% 0.107 144)",
+          "oklch(48% 0.128 144)",
+          "oklch(60% 0.120 144)",
+          "oklch(72% 0.101 144)",
+          "oklch(85% 0.080 144)",
+          "oklch(95% 0.030 144)"
+        ]
+      },
+      "theme-sunset": {
+        "role": "primary",
+        "displayName": "Sunset Printing",
+        "canonical": "light-dark(#b2430a, #f59a52)",
+        "tonalRamp": [
+          "oklch(15% 0.030 42)",
+          "oklch(25% 0.104 42)",
+          "oklch(35% 0.123 42)",
+          "oklch(48% 0.147 42)",
+          "oklch(60% 0.143 42)",
+          "oklch(72% 0.120 42)",
+          "oklch(85% 0.096 42)",
+          "oklch(95% 0.030 42)"
+        ]
+      },
+      "theme-berry": {
+        "role": "primary",
+        "displayName": "Berry Printing",
+        "canonical": "light-dark(#ad176a, #f27cb9)",
+        "tonalRamp": [
+          "oklch(15% 0.030 354)",
+          "oklch(25% 0.135 354)",
+          "oklch(35% 0.158 354)",
+          "oklch(48% 0.188 354)",
+          "oklch(60% 0.168 354)",
+          "oklch(72% 0.141 354)",
+          "oklch(85% 0.111 354)",
+          "oklch(95% 0.030 354)"
+        ]
+      },
+      "theme-lagoon": {
+        "role": "primary",
+        "displayName": "Lagoon Printing",
+        "canonical": "light-dark(#0d6c66, #52d3c4)",
+        "tonalRamp": [
+          "oklch(15% 0.030 188)",
+          "oklch(25% 0.058 188)",
+          "oklch(35% 0.068 188)",
+          "oklch(48% 0.080 188)",
+          "oklch(60% 0.069 188)",
+          "oklch(72% 0.057 188)",
+          "oklch(85% 0.045 188)",
+          "oklch(95% 0.030 188)"
+        ]
+      },
+      "error-red": {
+        "role": "neutral",
+        "displayName": "Error Red",
+        "canonical": "light-dark(#b3261e, #ffa69e)",
+        "tonalRamp": [
+          "oklch(15% 0.030 29)",
+          "oklch(25% 0.125 29)",
+          "oklch(35% 0.146 29)",
+          "oklch(48% 0.174 29)",
+          "oklch(60% 0.157 29)",
+          "oklch(72% 0.132 29)",
+          "oklch(85% 0.104 29)",
+          "oklch(95% 0.030 29)"
+        ]
+      },
+      "success-green": {
+        "role": "neutral",
+        "displayName": "Success Green",
+        "canonical": "light-dark(#21712a, #8fdc96)",
+        "tonalRamp": [
+          "oklch(15% 0.030 145)",
+          "oklch(25% 0.094 145)",
+          "oklch(35% 0.110 145)",
+          "oklch(48% 0.130 145)",
+          "oklch(60% 0.113 145)",
+          "oklch(72% 0.094 145)",
+          "oklch(85% 0.073 145)",
+          "oklch(95% 0.030 145)"
+        ]
+      },
+      "star-amber": {
+        "role": "tertiary",
+        "displayName": "Star Amber",
+        "canonical": "#f59e0b",
+        "tonalRamp": [
+          "oklch(15% 0.030 70)",
+          "oklch(25% 0.062 70)",
+          "oklch(35% 0.082 70)",
+          "oklch(48% 0.108 70)",
+          "oklch(60% 0.131 70)",
+          "oklch(72% 0.155 70)",
+          "oklch(85% 0.149 70)",
+          "oklch(95% 0.030 70)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Home hero heading only; sentence case."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Page h1."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Section h2."
+      },
+      "title-small": {
+        "displayName": "Title Small",
+        "purpose": "h3, map-key entries, legends."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading text, in Andika for early readers."
+      },
+      "body-strong": {
+        "displayName": "Body Strong",
+        "purpose": "Generic buttons, labels, links, sidebar links."
+      },
+      "map-lettering": {
+        "displayName": "Map Lettering",
+        "purpose": "Uppercase WIZZAROO title in the cover band."
+      },
+      "grid-reference": {
+        "displayName": "Grid Reference",
+        "purpose": "A to H and Year references around the map sheet."
+      },
+      "label-lettering": {
+        "displayName": "Label Lettering",
+        "purpose": "Play-bar tabs, form submits, home actions; Region chips at 1.0625rem."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shadow-menu",
+        "value": "0 6px 14px -8px light-dark(rgb(20 33 43 / 0.45), rgb(0 0 0 / 0.7))",
+        "purpose": "An open menu floating over the sheet; the only drop on HTML chrome."
+      },
+      {
+        "name": "shadow-play-control",
+        "value": "0 1px 2px light-dark(rgb(20 33 43 / 0.16), rgb(0 0 0 / 0.45))",
+        "purpose": "Island and Region chips and zoom controls over the 3D world."
+      },
+      {
+        "name": "shadow-satellite",
+        "value": "0 0 0 4px var(--colour-card)",
+        "purpose": "Land-coloured halo separating a small symbol from what is behind it."
+      },
+      {
+        "name": "shadow-card / shadow-hero / shadow-ground / shadow-button",
+        "value": "none",
+        "purpose": "Panels, sheets and buttons are flat print; depth is land on sea inside a keyline."
+      }
+    ],
+    "motion": [
+      {
+        "name": "duration-quick",
+        "value": "150ms",
+        "purpose": "Colour and border state changes, ease-out."
+      },
+      {
+        "name": "duration-press",
+        "value": "200ms",
+        "purpose": "Button press (1px drop), ease-out."
+      },
+      {
+        "name": "duration-chart",
+        "value": "400ms",
+        "purpose": "Chart transitions."
+      },
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The authored sheet entrance."
+      },
+      {
+        "name": "sheet-unfold",
+        "value": "900ms ease-out-expo, from perspective(1600px) rotateY(-5deg) scale(0.985)",
+        "purpose": "Home map sheet arrives folded and flattens; skipped under reduced motion."
+      },
+      {
+        "name": "sheet-crease",
+        "value": "1100ms ease-out-expo, crease opacity 1 to 0",
+        "purpose": "The fold's crease fades as the sheet opens."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone-narrow",
+        "value": "30rem"
+      },
+      {
+        "name": "phone",
+        "value": "40rem"
+      },
+      {
+        "name": "map-compact",
+        "value": "52rem"
+      },
+      {
+        "name": "desktop-sidebar",
+        "value": "60rem"
+      },
+      {
+        "name": "wide",
+        "value": "64rem"
+      },
+      {
+        "name": "extra-wide",
+        "value": "80rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Submit and generic primary actions, inked in the theme colour.",
+      "html": "<button class=\"ds-btn-primary\">Save changes</button>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;min-height:48px;padding:0 1.5rem;border:0;border-radius:3px;background:var(--colour-primary,#1b5ea6);color:var(--colour-on-primary,#fff);font-family:Andika,ui-rounded,system-ui,sans-serif;font-weight:700;font-size:1.0625rem;cursor:pointer;transition:background-color 150ms ease-out,transform 200ms ease-out}.ds-btn-primary:hover{background:var(--colour-primary-hover,#144a85)}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary:focus-visible{outline:3px solid var(--colour-map-magenta,#b8166f);outline-offset:3px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "type=button: land paper in a keyline, theme-ink text.",
+      "html": "<button type=\"button\" class=\"ds-btn-secondary\">Read it to me</button>",
+      "css": ".ds-btn-secondary{display:inline-flex;align-items:center;min-height:48px;padding:0 1.5rem;border:2px solid var(--colour-keyline,#22323d);border-radius:3px;background:var(--colour-card,#fcfdf8);color:var(--colour-primary,#1b5ea6);font-family:Andika,ui-rounded,system-ui,sans-serif;font-weight:700;font-size:1.0625rem;cursor:pointer;transition:background-color 150ms ease-out,border-color 150ms ease-out}.ds-btn-secondary:hover{border-color:var(--colour-primary,#1b5ea6);background:var(--colour-muted,#eef4e4)}.ds-btn-secondary:active{transform:translateY(1px)}.ds-btn-secondary:focus-visible{outline:3px solid var(--colour-map-magenta,#b8166f);outline-offset:3px}"
+    },
+    {
+      "name": "Cover Action",
+      "kind": "button",
+      "refersTo": "button-cover",
+      "description": "The main way in, printed in the sheet's cover orange.",
+      "html": "<a href=\"#\" class=\"ds-btn-cover\">Get started as a Parent</a>",
+      "css": ".ds-btn-cover{display:inline-flex;align-items:center;min-height:52px;padding:0 1.5rem;border:2px solid var(--colour-keyline,#22323d);border-radius:3px;background:var(--colour-cover,#f27a1a);color:#1a1206;font-family:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;font-size:1.3125rem;font-weight:700;letter-spacing:.01em;text-decoration:none;transition:background-color 150ms ease-out,transform 200ms ease-out}.ds-btn-cover:hover{background:var(--colour-cover-strong,#d4610a)}.ds-btn-cover:active{transform:translateY(1px)}.ds-btn-cover:focus-visible{outline:3px solid var(--colour-map-magenta,#b8166f);outline-offset:3px}"
+    },
+    {
+      "name": "Sheet Action",
+      "kind": "button",
+      "refersTo": "button-sheet",
+      "description": "Companion home action on land paper.",
+      "html": "<a href=\"#\" class=\"ds-btn-sheet\">See how it works</a>",
+      "css": ".ds-btn-sheet{display:inline-flex;align-items:center;min-height:52px;padding:0 1.5rem;border:2px solid var(--colour-keyline,#22323d);border-radius:3px;background:var(--colour-card,#fcfdf8);color:var(--colour-foreground,#14212b);font-family:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;font-size:1.3125rem;font-weight:700;letter-spacing:.01em;text-decoration:none;transition:background-color 150ms ease-out}.ds-btn-sheet:hover{background:var(--colour-muted,#eef4e4)}.ds-btn-sheet:focus-visible{outline:3px solid var(--colour-map-magenta,#b8166f);outline-offset:3px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "48px field, 2px outline, magenta focus ring.",
+      "html": "<label class=\"ds-field\">Family name<input class=\"ds-input\" value=\"The Rivers\"></label>",
+      "css": ".ds-field{display:grid;gap:.25rem;font-family:Andika,ui-rounded,system-ui,sans-serif;font-weight:700;color:var(--colour-foreground,#14212b)}.ds-input{min-height:48px;padding:0 .75rem;border:2px solid var(--colour-input-border,#5a7382);border-radius:3px;background:var(--colour-card,#fcfdf8);color:var(--colour-foreground,#14212b);font:inherit;font-weight:400;transition:border-color 150ms ease-out}.ds-input:hover{border-color:var(--colour-muted-foreground,#3b505d)}.ds-input:focus-visible{border-color:var(--colour-primary,#1b5ea6);outline:3px solid var(--colour-map-magenta,#b8166f);outline-offset:1px}"
+    },
+    {
+      "name": "Region Chip",
+      "kind": "chip",
+      "refersTo": "region-chip",
+      "description": "The map's own place label over the 3D world; pressed takes the theme ink.",
+      "html": "<button class=\"ds-chip\" aria-pressed=\"false\">Number Bay <span class=\"ds-chip-tag\">Maths</span></button> <button class=\"ds-chip\" aria-pressed=\"true\">Letter Cove <span class=\"ds-chip-tag\">Phonics</span></button>",
+      "css": ".ds-chip{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;padding:0 .75rem 0 .5rem;border:1px solid var(--colour-keyline,#22323d);border-radius:3px;background:var(--colour-card,#fcfdf8);color:var(--colour-foreground,#14212b);font-family:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;font-size:1.0625rem;font-weight:700;letter-spacing:.01em;box-shadow:0 1px 2px rgb(20 33 43 / .16);cursor:pointer;white-space:nowrap}.ds-chip-tag{padding:.0625rem .5rem;border-radius:3px;background:var(--colour-primary,#1b5ea6);color:var(--colour-on-primary,#fff);font-size:.75rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.ds-chip:hover{border-color:var(--colour-primary,#1b5ea6)}.ds-chip:active{transform:scale(.96);box-shadow:none}.ds-chip[aria-pressed=true]{border-color:var(--colour-primary,#1b5ea6);background:var(--colour-primary,#1b5ea6);color:var(--colour-on-primary,#fff)}.ds-chip[aria-pressed=true] .ds-chip-tag{background:var(--colour-on-primary,#fff);color:var(--colour-primary,#1b5ea6)}.ds-chip:focus-visible{outline:3px solid var(--colour-map-magenta,#b8166f);outline-offset:3px}"
+    },
+    {
+      "name": "Land Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "A section printed as land on the sea, inside a 2px keyline.",
+      "html": "<section class=\"ds-panel\"><h2>Your Family</h2><p>Two Children are exploring the Islands.</p></section>",
+      "css": ".ds-panel{display:grid;gap:1rem;padding:1.5rem;border:2px solid var(--colour-keyline,#22323d);border-radius:3px;background:var(--colour-card,#fcfdf8);color:var(--colour-foreground,#14212b);font-family:Andika,ui-rounded,system-ui,sans-serif;font-size:1.0625rem;line-height:1.55}.ds-panel h2{margin:0;font-family:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;font-size:1.625rem;font-weight:700;line-height:1.1}.ds-panel p{margin:0}"
+    },
+    {
+      "name": "Cover Band",
+      "kind": "nav",
+      "refersTo": "cover-band",
+      "description": "Site header: the sheet's orange cover with uppercase map lettering.",
+      "html": "<header class=\"ds-cover\"><span class=\"ds-cover-title\">Wizzaroo</span><button class=\"ds-cover-menu\">Menu</button></header>",
+      "css": ".ds-cover{display:flex;align-items:center;gap:.5rem;padding:.5rem 1rem;border-bottom:2px solid var(--colour-keyline,#22323d);background:var(--colour-cover,#f27a1a);color:#1a1206}.ds-cover-title{margin-right:auto;font-family:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;font-size:2.125rem;font-weight:800;letter-spacing:.08em;line-height:1;text-transform:uppercase}.ds-cover-menu{min-height:44px;padding:0 1rem;border:2px solid #1a1206;border-radius:3px;background:#fcfdf8;color:#14212b;font-family:Andika,ui-rounded,system-ui,sans-serif;font-weight:700;cursor:pointer}.ds-cover-menu:hover{background:#ffe7d1}.ds-cover-menu:focus-visible{outline:3px solid #1a1206;outline-offset:3px}"
+    },
+    {
+      "name": "Sidebar Link",
+      "kind": "nav",
+      "refersTo": "sidebar-link",
+      "description": "Parent sidebar: the current section is the square you are in, inked in the theme colour.",
+      "html": "<nav class=\"ds-side\"><a class=\"ds-side-link\" href=\"#\" aria-current=\"page\">Dashboard</a><a class=\"ds-side-link\" href=\"#\">Progress</a></nav>",
+      "css": ".ds-side{display:grid;gap:.25rem;width:17rem;padding:1rem .75rem;border-right:2px solid var(--colour-keyline,#22323d);background:var(--colour-card,#fcfdf8)}.ds-side-link{display:flex;align-items:center;min-height:44px;padding:0 .75rem;border-radius:4px;color:var(--colour-foreground,#14212b);font-family:Andika,ui-rounded,system-ui,sans-serif;font-weight:700;text-decoration:none;transition:background-color 150ms ease-out}.ds-side-link:hover{background:var(--colour-muted,#eef4e4)}.ds-side-link[aria-current=page]{background:var(--colour-primary,#1b5ea6);color:var(--colour-on-primary,#fff)}.ds-side-link:focus-visible{outline:3px solid var(--colour-map-magenta,#b8166f);outline-offset:-3px}"
+    },
+    {
+      "name": "Map Sheet",
+      "kind": "custom",
+      "description": "Signature frame: grid references in the margin, one lit in magenta, and an uppercase sheet title.",
+      "html": "<div class=\"ds-sheet\"><div class=\"ds-sheet-top\"><span>A</span><span class=\"lit\">B</span><span>C</span><span>D</span></div><div class=\"ds-sheet-face\"></div><div class=\"ds-sheet-title\">Explorer map · Years 1 to 6</div></div>",
+      "css": ".ds-sheet{display:grid;gap:.25rem;padding:.5rem;border:2px solid var(--colour-keyline,#22323d);border-radius:3px;background:var(--colour-card,#fcfdf8);width:22rem}.ds-sheet-top{display:grid;grid-template-columns:repeat(4,1fr);font-family:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;font-size:.875rem;font-weight:700;letter-spacing:.08em;color:var(--colour-muted-foreground,#3b505d);text-align:center}.ds-sheet-top .lit{background:var(--colour-map-magenta,#b8166f);color:#fff}.ds-sheet-face{height:8rem;border:2px solid var(--colour-keyline,#22323d);background-image:linear-gradient(rgb(29 95 168 / .11) 1px,transparent 1px),linear-gradient(90deg,rgb(29 95 168 / .11) 1px,transparent 1px);background-size:25% 50%}.ds-sheet-title{padding-top:.25rem;font-family:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;font-size:.9375rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-align:center;color:var(--colour-muted-foreground,#3b505d)}"
+    },
+    {
+      "name": "Square Meter",
+      "kind": "custom",
+      "description": "Progress marked off square by square: the meter is masked into squares.",
+      "html": "<div class=\"ds-meter\"><span style=\"width:70%\"></span></div>",
+      "css": ".ds-meter{width:12rem;height:.625rem;background:color-mix(in oklab,#1b5ea6 8%,#e6eee8);-webkit-mask:repeating-linear-gradient(90deg,#000 0 .625rem,transparent .625rem .75rem);mask:repeating-linear-gradient(90deg,#000 0 .625rem,transparent .625rem .75rem)}.ds-meter span{display:block;height:100%;background:var(--colour-primary,#1b5ea6)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Island Explorer Map",
+    "overview": "**Creative North Star: \"The Island Explorer Map\"**\n\nEvery HTML screen is a sheet of the explorer's map: the home page, signing in, the Parent, Teacher and Admin pages, Settings, and the menus, panels and bars over the game. The page is the sea, ruled into 4rem grid squares. Panels are land, printed inside a 2px ink keyline with small square corners. The header is the sheet's orange cover band. Map lettering and headings are condensed; body text is set in a primer face for children still learning to read.\n\nThe world refuses the ed-tech default of dark navy, gradient text and rows of rounded cards. Depth comes from the map's printed layers (sea, land, keyline), not from soft shadows, glass or gradients. Colour is functional, as on a real map: orange is the cover and the main way in, magenta marks routes, labels and focus, the user's theme colour inks links, buttons and chosen states.\n\nThe system ships in light and dark (\"sea-blue paper\" by day, \"night chart\" in navy-teal by night) and in six theme printings. The product's default colour mode is Dark; that is a product setting and this system leaves it unchanged. The 3D world and the in-Game boards' own art are out of scope: they keep their own look, and Baloo 2 and Nunito remain bundled only for canvas lettering in the 3D world.",
+    "keyCharacteristics": [
+      "Sea ground ruled into map squares; land panels inside 2px keylines.",
+      "Orange cover band for the header, the closing call and the primary home action.",
+      "Magenta for map labels, routes, lit grid references and every focus ring.",
+      "Barlow Condensed for map lettering and headings, Andika for reading.",
+      "Square corners (3px), never pills; true circles only where a symbol is round.",
+      "Flat print: no ambient shadows on panels, cards or buttons."
+    ],
+    "rules": [
+      {
+        "name": "The Six Printings Rule",
+        "body": "The six themes are six printings of one map. A theme changes only the theme ink and a few percent of tint in sea, land, muted and border; cover orange, magenta and keyline ink never change with the theme.",
+        "section": "colors"
+      },
+      {
+        "name": "The Chosen-Is-Theme, Focus-Is-Magenta Rule",
+        "body": "Chosen, current and pressed states take the user's theme colour. Focus is always a 3px magenta outline. Never swap them.",
+        "section": "colors"
+      },
+      {
+        "name": "The Orange Cover Rule",
+        "body": "Orange is the cover: the header band, the main way in, and the closing call. Text on orange is On-Cover Ink (#1a1206), never white.",
+        "section": "colors"
+      },
+      {
+        "name": "The Sentence-Case Rule",
+        "body": "Headings are sentence case, for early readers. Uppercase is reserved for map lettering: the cover-band title, the sheet title, Island Years, map-key Region names and Region chip subject tags.",
+        "section": "typography"
+      },
+      {
+        "name": "The Reading-Face-In-Buttons Rule",
+        "body": "Generic buttons and small text inside controls stay in Andika (700). Condensed lettering goes only on play-bar tabs, form submits, home actions and Region chips, the controls that name places and actions in big type.",
+        "section": "typography"
+      },
+      {
+        "name": "The Printed-Layer Rule",
+        "body": "A panel lifts off the sea by being land inside a keyline, not by a shadow. If a new surface needs separation, give it land paper and a 2px keyline.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do put every new panel on land paper inside a 2px keyline with a 3px corner.",
+      "Do ink chosen, current and pressed states in the user's theme colour, and focus in a 3px magenta outline.",
+      "Do set headings in sentence case Barlow Condensed, and keep uppercase for map lettering.",
+      "Do keep reading text and generic button labels in Andika.",
+      "Do draw progress as squares (0.625rem squares, 0.125rem gaps) and routes as dashed magenta.",
+      "Do give every theme the same cover orange, magenta and keyline ink; only the theme ink and tints change."
+    ],
+    "donts": [
+      "Don't use dark navy as a fixed brand ground, gradient text, or rows of rounded cards.",
+      "Don't give panels, cards or buttons soft ambient shadows; separation is land on sea inside a keyline.",
+      "Don't put white text on cover orange; use on-cover ink.",
+      "Don't use full pill radii on controls; the round token is 3px.",
+      "Don't use Baloo 2 or Nunito in HTML; they are for canvas lettering in the 3D world only.",
+      "Don't restyle the 3D world or the in-Game boards' own art with these tokens."
+    ]
+  }
+}

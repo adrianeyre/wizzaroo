@@ -62,13 +62,9 @@ interface StaffPageHeaderProps {
   intro: ReactNode;
 }
 
-export const StaffPageHeader = ({
-  area,
-  title,
-  intro,
-}: StaffPageHeaderProps) => (
+// The sidebar already names the area, so the header starts with its title.
+export const StaffPageHeader = ({ title, intro }: StaffPageHeaderProps) => (
   <header className="staff-page-header">
-    <p className="staff-eyebrow">{staffAreaNames[area]}</p>
     <h1>{title}</h1>
     <p className="view-intro">{intro}</p>
   </header>

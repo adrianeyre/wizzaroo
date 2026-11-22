@@ -71,14 +71,26 @@ export const soundCredits: readonly Credit[] = [
 
 export const fontCredits: readonly Credit[] = [
   {
+    name: "Barlow Condensed, by Jeremy Tribby",
+    what: "The headings and map-lettering font, from Fontsource",
+    licence: "SIL Open Font License 1.1",
+    href: "https://fontsource.org/fonts/barlow-condensed",
+  },
+  {
+    name: "Andika, by SIL International",
+    what: "The body text font, made for children learning to read, from Fontsource",
+    licence: "SIL Open Font License 1.1",
+    href: "https://fontsource.org/fonts/andika",
+  },
+  {
     name: "Baloo 2, by Ek Type",
-    what: "The headings font, from Fontsource",
+    what: "The lettering drawn in the 3D world, from Fontsource",
     licence: "SIL Open Font License 1.1",
     href: "https://fontsource.org/fonts/baloo-2",
   },
   {
     name: "Nunito, by Vernon Adams, Jacques Le Bailly and Manvel Shmavonyan",
-    what: "The body text font, from Fontsource",
+    what: "The small text drawn in the 3D world, from Fontsource",
     licence: "SIL Open Font License 1.1",
     href: "https://fontsource.org/fonts/nunito",
   },

@@ -89,8 +89,8 @@ export const ParentSidebar = ({
           {getInitial(familyName)}
         </span>
         <span className="parent-sidebar-family-name">
-          <span className="parent-sidebar-eyebrow">{roleLabel}</span>
           <strong>{familyName}</strong>
+          <span className="parent-sidebar-role">{roleLabel}</span>
         </span>
       </div>
     )}

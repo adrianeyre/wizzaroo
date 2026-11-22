@@ -243,9 +243,11 @@ const VoiceStudio = ({
           aria-live="polite"
           aria-busy={isDownloading ? true : undefined}
         >
-          <p className="voice-studio-kicker">Reading voice</p>
           <h2 id="voice-studio-heading">{voice.name}</h2>
-          <p className="voice-studio-detail">{voice.description}</p>
+          <p className="voice-studio-detail">
+            <span className="voice-studio-role">Reading voice</span> ·{" "}
+            {voice.description}
+          </p>
           <p className="voice-studio-bubble">
             “{describeVoiceSample(voiceName)}”
           </p>
