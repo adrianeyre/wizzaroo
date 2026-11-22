@@ -1,67 +1,97 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-22T20:21:59+00:00",
+  "generatedAt": "2026-11-22T21:00:00+00:00",
   "title": "Design System: Wizzaroo",
   "extensions": {
     "colorMeta": {
-      "cover-orange": {
+      "cover": {
         "role": "primary",
-        "displayName": "Cover Orange",
-        "canonical": "light-dark(#f27a1a, #f0852b)",
+        "displayName": "Cover",
+        "canonical": "light-dark(var(--colour-primary), color-mix(in oklab, var(--colour-primary) 45%, #08161d))",
         "tonalRamp": [
-          "oklch(15% 0.030 52)",
-          "oklch(25% 0.079 52)",
-          "oklch(35% 0.100 52)",
-          "oklch(48% 0.127 52)",
-          "oklch(60% 0.153 52)",
-          "oklch(72% 0.172 52)",
-          "oklch(85% 0.144 52)",
-          "oklch(95% 0.030 52)"
+          "oklch(15% 0.040 254)",
+          "oklch(25% 0.100 254)",
+          "oklch(35% 0.120 254)",
+          "oklch(48% 0.133 254)",
+          "oklch(60% 0.133 254)",
+          "oklch(72% 0.113 254)",
+          "oklch(85% 0.067 254)",
+          "oklch(95% 0.027 254)"
         ]
       },
-      "cover-orange-strong": {
+      "cover-strong": {
         "role": "primary",
-        "displayName": "Cover Orange Strong",
-        "canonical": "light-dark(#d4610a, #f59a4e)",
+        "displayName": "Cover Strong",
+        "canonical": "light-dark(var(--colour-primary-hover), color-mix(in oklab, var(--colour-primary) 58%, #08161d))",
         "tonalRamp": [
-          "oklch(15% 0.030 48)",
-          "oklch(25% 0.092 48)",
-          "oklch(35% 0.111 48)",
-          "oklch(48% 0.137 48)",
-          "oklch(60% 0.161 48)",
-          "oklch(72% 0.147 48)",
-          "oklch(85% 0.121 48)",
-          "oklch(95% 0.030 48)"
+          "oklch(15% 0.034 254)",
+          "oklch(25% 0.085 254)",
+          "oklch(35% 0.102 254)",
+          "oklch(48% 0.113 254)",
+          "oklch(60% 0.113 254)",
+          "oklch(72% 0.096 254)",
+          "oklch(85% 0.057 254)",
+          "oklch(95% 0.023 254)"
         ]
       },
-      "cover-orange-night": {
+      "cover-night": {
         "role": "primary",
-        "displayName": "Cover Orange (night)",
-        "canonical": "#f0852b",
+        "displayName": "Cover (night, Sky)",
+        "canonical": "color-mix(in oklab, #7bb9ec 45%, #08161d)",
         "tonalRamp": [
-          "oklch(15% 0.030 52)",
-          "oklch(25% 0.079 52)",
-          "oklch(35% 0.100 52)",
-          "oklch(48% 0.127 52)",
-          "oklch(60% 0.153 52)",
-          "oklch(72% 0.172 52)",
-          "oklch(85% 0.144 52)",
-          "oklch(95% 0.030 52)"
+          "oklch(15% 0.017 242)",
+          "oklch(25% 0.043 242)",
+          "oklch(35% 0.051 242)",
+          "oklch(48% 0.057 242)",
+          "oklch(60% 0.057 242)",
+          "oklch(72% 0.048 242)",
+          "oklch(85% 0.029 242)",
+          "oklch(95% 0.011 242)"
         ]
       },
-      "on-cover-ink": {
+      "cover-strong-night": {
         "role": "primary",
-        "displayName": "On-Cover Ink",
-        "canonical": "#1a1206",
+        "displayName": "Cover Strong (night, Sky)",
+        "canonical": "color-mix(in oklab, #7bb9ec 58%, #08161d)",
         "tonalRamp": [
-          "oklch(15% 0.025 77)",
-          "oklch(25% 0.024 77)",
-          "oklch(35% 0.021 77)",
-          "oklch(48% 0.017 77)",
-          "oklch(60% 0.013 77)",
-          "oklch(72% 0.009 77)",
-          "oklch(85% 0.005 77)",
-          "oklch(95% 0.005 77)"
+          "oklch(15% 0.020 243)",
+          "oklch(25% 0.050 243)",
+          "oklch(35% 0.060 243)",
+          "oklch(48% 0.067 243)",
+          "oklch(60% 0.067 243)",
+          "oklch(72% 0.057 243)",
+          "oklch(85% 0.034 243)",
+          "oklch(95% 0.013 243)"
+        ]
+      },
+      "on-cover": {
+        "role": "primary",
+        "displayName": "On-Cover",
+        "canonical": "light-dark(var(--colour-on-primary), #f4f8fa)",
+        "tonalRamp": [
+          "oklch(15% 0.005 229)",
+          "oklch(25% 0.005 229)",
+          "oklch(35% 0.005 229)",
+          "oklch(48% 0.005 229)",
+          "oklch(60% 0.005 229)",
+          "oklch(72% 0.005 229)",
+          "oklch(85% 0.005 229)",
+          "oklch(95% 0.005 229)"
+        ]
+      },
+      "on-cover-night": {
+        "role": "primary",
+        "displayName": "On-Cover (night)",
+        "canonical": "#f4f8fa",
+        "tonalRamp": [
+          "oklch(15% 0.005 229)",
+          "oklch(25% 0.005 229)",
+          "oklch(35% 0.005 229)",
+          "oklch(48% 0.005 229)",
+          "oklch(60% 0.005 229)",
+          "oklch(72% 0.005 229)",
+          "oklch(85% 0.005 229)",
+          "oklch(95% 0.005 229)"
         ]
       },
       "map-magenta": {
@@ -257,6 +287,36 @@
           "oklch(72% 0.008 220)",
           "oklch(85% 0.009 220)",
           "oklch(95% 0.010 220)"
+        ]
+      },
+      "ink-hover": {
+        "role": "neutral",
+        "displayName": "Ink Hover",
+        "canonical": "#24384a",
+        "tonalRamp": [
+          "oklch(15% 0.012 247)",
+          "oklch(25% 0.031 247)",
+          "oklch(35% 0.037 247)",
+          "oklch(48% 0.041 247)",
+          "oklch(60% 0.041 247)",
+          "oklch(72% 0.035 247)",
+          "oklch(85% 0.021 247)",
+          "oklch(95% 0.008 247)"
+        ]
+      },
+      "cover-control-hover": {
+        "role": "neutral",
+        "displayName": "Cover Control Hover",
+        "canonical": "color-mix(in srgb, var(--colour-primary) 16%, #fcfdf8)",
+        "tonalRamp": [
+          "oklch(15% 0.005 233)",
+          "oklch(25% 0.012 233)",
+          "oklch(35% 0.014 233)",
+          "oklch(48% 0.016 233)",
+          "oklch(60% 0.016 233)",
+          "oklch(72% 0.014 233)",
+          "oklch(85% 0.008 233)",
+          "oklch(95% 0.005 233)"
         ]
       },
       "muted-ink": {
@@ -625,9 +685,17 @@
       "name": "Cover Action",
       "kind": "button",
       "refersTo": "button-cover",
-      "description": "The main way in, printed in the sheet's cover orange.",
+      "description": "The main way in, printed in the cover: the chosen theme's ink.",
       "html": "<a href=\"#\" class=\"ds-btn-cover\">Get started as a Parent</a>",
-      "css": ".ds-btn-cover{display:inline-flex;align-items:center;min-height:52px;padding:0 1.5rem;border:2px solid var(--colour-keyline,#22323d);border-radius:3px;background:var(--colour-cover,#f27a1a);color:#1a1206;font-family:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;font-size:1.3125rem;font-weight:700;letter-spacing:.01em;text-decoration:none;transition:background-color 150ms ease-out,transform 200ms ease-out}.ds-btn-cover:hover{background:var(--colour-cover-strong,#d4610a)}.ds-btn-cover:active{transform:translateY(1px)}.ds-btn-cover:focus-visible{outline:3px solid var(--colour-map-magenta,#b8166f);outline-offset:3px}"
+      "css": ".ds-btn-cover{display:inline-flex;align-items:center;min-height:52px;padding:0 1.5rem;border:2px solid var(--colour-keyline,#22323d);border-radius:3px;background:var(--colour-cover,#1b5ea6);color:var(--colour-on-cover,#ffffff);font-family:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;font-size:1.3125rem;font-weight:700;letter-spacing:.01em;text-decoration:none;transition:background-color 150ms ease-out,transform 200ms ease-out}.ds-btn-cover:hover{background:var(--colour-cover-strong,#144a85)}.ds-btn-cover:active{transform:translateY(1px)}.ds-btn-cover:focus-visible{outline:3px solid var(--colour-map-magenta,#b8166f);outline-offset:3px}"
+    },
+    {
+      "name": "Ink Action",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "The way in on the closing band: ink with paper text, the same on every printing.",
+      "html": "<a href=\"#\" class=\"ds-btn-ink\">Get started</a>",
+      "css": ".ds-btn-ink{display:inline-flex;align-items:center;min-height:52px;padding:0 1.5rem;border:2px solid #14212b;border-radius:3px;background:#14212b;color:#fcfdf8;font-family:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;font-size:1.3125rem;font-weight:700;letter-spacing:.01em;text-decoration:none;transition:background-color 150ms ease-out,transform 200ms ease-out}.ds-btn-ink:hover{background:#24384a;color:#ffffff}.ds-btn-ink:active{transform:translateY(1px)}.ds-btn-ink:focus-visible{outline:3px solid var(--colour-map-magenta,#b8166f);outline-offset:3px}"
     },
     {
       "name": "Sheet Action",
@@ -665,9 +733,9 @@
       "name": "Cover Band",
       "kind": "nav",
       "refersTo": "cover-band",
-      "description": "Site header: the sheet's orange cover with uppercase map lettering.",
-      "html": "<header class=\"ds-cover\"><span class=\"ds-cover-title\">Wizzaroo</span><button class=\"ds-cover-menu\">Menu</button></header>",
-      "css": ".ds-cover{display:flex;align-items:center;gap:.5rem;padding:.5rem 1rem;border-bottom:2px solid var(--colour-keyline,#22323d);background:var(--colour-cover,#f27a1a);color:#1a1206}.ds-cover-title{margin-right:auto;font-family:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;font-size:2.125rem;font-weight:800;letter-spacing:.08em;line-height:1;text-transform:uppercase}.ds-cover-menu{min-height:44px;padding:0 1rem;border:2px solid #1a1206;border-radius:3px;background:#fcfdf8;color:#14212b;font-family:Andika,ui-rounded,system-ui,sans-serif;font-weight:700;cursor:pointer}.ds-cover-menu:hover{background:#ffe7d1}.ds-cover-menu:focus-visible{outline:3px solid #1a1206;outline-offset:3px}"
+      "description": "Site header: the sheet's cover printed in the theme's ink, with uppercase map lettering and paper controls.",
+      "html": "<header class=\"ds-cover\"><span class=\"ds-cover-title\">Wizzaroo</span><button class=\"ds-cover-menu\" aria-expanded=\"false\">Menu</button><button class=\"ds-cover-menu\" aria-expanded=\"true\">Menu</button></header>",
+      "css": ".ds-cover{display:flex;align-items:center;gap:.5rem;padding:.5rem 1rem;border-bottom:2px solid var(--colour-keyline,#22323d);background:var(--colour-cover,#1b5ea6);color:var(--colour-on-cover,#ffffff)}.ds-cover-title{margin-right:auto;font-family:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;font-size:2.125rem;font-weight:800;letter-spacing:.08em;line-height:1;text-transform:uppercase}.ds-cover-menu{min-height:44px;padding:0 1rem;border:2px solid var(--colour-on-cover,#ffffff);border-radius:3px;background:#fcfdf8;color:#14212b;font-family:Andika,ui-rounded,system-ui,sans-serif;font-weight:700;cursor:pointer}.ds-cover-menu:hover{background:color-mix(in srgb,var(--colour-primary,#1b5ea6) 16%,#fcfdf8)}.ds-cover-menu[aria-expanded=true]{border-color:#14212b;background:#14212b;color:#fcfdf8}.ds-cover-menu:focus-visible{outline:3px solid var(--colour-on-cover,#ffffff);outline-offset:3px}"
     },
     {
       "name": "Sidebar Link",
@@ -694,10 +762,10 @@
   ],
   "narrative": {
     "northStar": "The Island Explorer Map",
-    "overview": "**Creative North Star: \"The Island Explorer Map\"**\n\nEvery HTML screen is a sheet of the explorer's map: the home page, signing in, the Parent, Teacher and Admin pages, Settings, and the menus, panels and bars over the game. The page is the sea, ruled into 4rem grid squares. Panels are land, printed inside a 2px ink keyline with small square corners. The header is the sheet's orange cover band. Map lettering and headings are condensed; body text is set in a primer face for children still learning to read.\n\nThe world refuses the ed-tech default of dark navy, gradient text and rows of rounded cards. Depth comes from the map's printed layers (sea, land, keyline), not from soft shadows, glass or gradients. Colour is functional, as on a real map: orange is the cover and the main way in, magenta marks routes, labels and focus, the user's theme colour inks links, buttons and chosen states.\n\nThe system ships in light and dark (\"sea-blue paper\" by day, \"night chart\" in navy-teal by night) and in six theme printings. The product's default colour mode is Dark; that is a product setting and this system leaves it unchanged. The 3D world and the in-Game boards' own art are out of scope: they keep their own look, and Baloo 2 and Nunito remain bundled only for canvas lettering in the 3D world.",
+    "overview": "**Creative North Star: \"The Island Explorer Map\"**\n\nEvery HTML screen is a sheet of the explorer's map: the home page, signing in, the Parent, Teacher and Admin pages, Settings, and the menus, panels and bars over the game. The page is the sea, ruled into 4rem grid squares. Panels are land, printed inside a 2px ink keyline with small square corners. The header is the sheet's cover band, printed in the chosen theme's ink. Map lettering and headings are condensed; body text is set in a primer face for children still learning to read.\n\nThe world refuses the ed-tech default of dark navy, gradient text and rows of rounded cards. Depth comes from the map's printed layers (sea, land, keyline), not from soft shadows, glass or gradients. Colour is functional, as on a real map: the user's theme colour prints the cover and the main way in and inks links, buttons and chosen states; magenta marks routes, labels and focus.\n\nThe system ships in light and dark (\"sea-blue paper\" by day, \"night chart\" in navy-teal by night) and in six theme printings. The product's default colour mode is Dark; that is a product setting and this system leaves it unchanged. The 3D world and the in-Game boards' own art are out of scope: they keep their own look, and Baloo 2 and Nunito remain bundled only for canvas lettering in the 3D world.",
     "keyCharacteristics": [
       "Sea ground ruled into map squares; land panels inside 2px keylines.",
-      "Orange cover band for the header, the closing call and the primary home action.",
+      "A cover band in the theme's ink for the header, the closing call and the primary home action.",
       "Magenta for map labels, routes, lit grid references and every focus ring.",
       "Barlow Condensed for map lettering and headings, Andika for reading.",
       "Square corners (3px), never pills; true circles only where a symbol is round.",
@@ -706,7 +774,7 @@
     "rules": [
       {
         "name": "The Six Printings Rule",
-        "body": "The six themes are six printings of one map. A theme changes only the theme ink and a few percent of tint in sea, land, muted and border; cover orange, magenta and keyline ink never change with the theme.",
+        "body": "The six themes are six printings of one map. A theme changes only the theme ink and a few percent of tint in sea, land, muted and border; the cover follows the theme ink, while magenta and keyline ink never change with the theme.",
         "section": "colors"
       },
       {
@@ -715,8 +783,8 @@
         "section": "colors"
       },
       {
-        "name": "The Orange Cover Rule",
-        "body": "Orange is the cover: the header band, the main way in, and the closing call. Text on orange is On-Cover Ink (#1a1206), never white.",
+        "name": "The Theme Cover Rule",
+        "body": "The cover is printed in the chosen theme's ink: the header band, the main way in, and the closing call. Text on it is always `--colour-on-cover`. Controls that sit on the band (Menu, Settings) stay light paper #fcfdf8 with ink #14212b, so they read on every printing.",
         "section": "colors"
       },
       {
@@ -741,12 +809,12 @@
       "Do set headings in sentence case Barlow Condensed, and keep uppercase for map lettering.",
       "Do keep reading text and generic button labels in Andika.",
       "Do draw progress as squares (0.625rem squares, 0.125rem gaps) and routes as dashed magenta.",
-      "Do give every theme the same cover orange, magenta and keyline ink; only the theme ink and tints change."
+      "Do print the cover in the chosen theme's ink and give every theme the same magenta and keyline ink; only the theme ink, the cover and tints change."
     ],
     "donts": [
       "Don't use dark navy as a fixed brand ground, gradient text, or rows of rounded cards.",
       "Don't give panels, cards or buttons soft ambient shadows; separation is land on sea inside a keyline.",
-      "Don't put white text on cover orange; use on-cover ink.",
+      "Don't hard-code a fixed cover colour or its text; use `--colour-cover` and `--colour-on-cover`, and keep band controls on light paper with ink text.",
       "Don't use full pill radii on controls; the round token is 3px.",
       "Don't use Baloo 2 or Nunito in HTML; they are for canvas lettering in the 3D world only.",
       "Don't restyle the 3D world or the in-Game boards' own art with these tokens."

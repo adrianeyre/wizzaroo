@@ -93,12 +93,9 @@
   color-scheme: light dark;
 
   /* The Island Explorer Map: every screen is a sheet of the map. The ground is
-     the sea, panels are land, the header is the sheet's orange cover band, and
+     the sea, panels are land, the header is the sheet's cover band, printed in the theme's ink, and
      map lettering is condensed. */
   --colour-on-primary: light-dark(#ffffff, #071318);
-  --colour-cover: light-dark(#f27a1a, #f0852b);
-  --colour-cover-strong: light-dark(#d4610a, #f59a4e);
-  --colour-on-cover: #1a1206;
   --colour-map-magenta: light-dark(#b8166f, #f27ab9);
   --colour-contour: light-dark(#a95a16, #d9965a);
   --colour-woodland: light-dark(#2f7d32, #7fcf77);
@@ -234,6 +231,17 @@
 
 :root,
 [data-theme] {
+  /* The cover band, the main way in and the back cover are printed in the
+     chosen theme's ink. */
+  --colour-cover: light-dark(
+    var(--colour-primary),
+    color-mix(in oklab, var(--colour-primary) 45%, #08161d)
+  );
+  --colour-cover-strong: light-dark(
+    var(--colour-primary-hover),
+    color-mix(in oklab, var(--colour-primary) 58%, #08161d)
+  );
+  --colour-on-cover: light-dark(var(--colour-on-primary), #f4f8fa);
   --colour-background: light-dark(
     color-mix(in oklab, var(--colour-primary) 9%, #e4f1f6),
     color-mix(in oklab, var(--colour-primary) 12%, #08161d)
@@ -4635,7 +4643,7 @@ a.button-link:active {
   box-shadow: var(--shadow-button-pressed);
 }
 
-/* The main way in is printed in the sheet's cover orange. */
+/* The main way in is printed in the cover band's ink. */
 a.button-link.cover {
   border-color: var(--colour-keyline);
   background: var(--colour-cover);
@@ -4659,13 +4667,13 @@ a.button-link.secondary:hover {
 }
 
 a.button-link.ink {
-  border-color: var(--colour-on-cover);
-  background: var(--colour-on-cover);
-  color: #fff4e8;
+  border-color: #14212b;
+  background: #14212b;
+  color: #fcfdf8;
 }
 
 a.button-link.ink:hover {
-  background: #3a2a14;
+  background: #24384a;
   color: #ffffff;
 }
 
@@ -5709,7 +5717,7 @@ a.button-link.ink:hover {
   color: var(--colour-muted-foreground);
 }
 
-/* The back cover: the sheet's orange band, with the way in set in ink. */
+/* The back cover: the sheet's cover band again, with the way in set in ink. */
 .home-call {
   display: grid;
   justify-items: start;
@@ -6147,7 +6155,7 @@ a.site-header-settings {
 .site-header .site-menu-toggle:hover,
 a.site-header-settings:hover {
   border-color: var(--colour-on-cover);
-  background: #ffe7d1;
+  background: color-mix(in srgb, var(--colour-primary) 16%, #fcfdf8);
   color: #14212b;
 }
 
@@ -6156,8 +6164,8 @@ a.site-header-settings:hover {
 }
 
 .site-header .site-menu-toggle[aria-expanded="true"] {
-  border-color: var(--colour-on-cover);
-  background: var(--colour-on-cover);
+  border-color: #14212b;
+  background: #14212b;
   color: #fcfdf8;
 }
 
@@ -6190,8 +6198,8 @@ a.site-header-settings:hover svg {
 }
 
 a.site-header-settings[aria-current="page"] {
-  border-color: var(--colour-on-cover);
-  background: var(--colour-on-cover);
+  border-color: #14212b;
+  background: #14212b;
   color: #fcfdf8;
 }
 
@@ -17347,4 +17355,52 @@ button.region-chip {
 .stacked-track > span,
 .home-hero-reward-meter span {
   border-radius: 0;
+}
+
+/* A Child's Picture Password fits one screen. Lying down (a laptop or a
+   tablet on its side) the greeting and the buttons sit beside the pictures;
+   stood up, the pictures shrink with the screen's height. */
+.menu .picture-grid button {
+  min-height: clamp(52px, 9dvh, 88px);
+  font-size: clamp(2rem, 5dvh, 3rem);
+}
+
+.menu form:has(> fieldset .picture-grid) {
+  gap: var(--space-3);
+}
+
+.menu form:has(> fieldset .picture-grid) > fieldset {
+  gap: var(--space-2);
+}
+
+@media (min-width: 48rem) and (orientation: landscape) {
+  main.menu:has(> form > fieldset .picture-grid) {
+    align-content: center;
+    max-width: 60rem;
+    min-height: calc(
+      100dvh - var(--site-header-height, 4rem) - var(--site-footer-height, 3rem)
+    );
+    padding-block: var(--space-4);
+  }
+
+  .menu form:has(> fieldset .picture-grid) {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    grid-auto-flow: row dense;
+    align-content: center;
+    column-gap: var(--space-6);
+  }
+
+  .menu form:has(> fieldset .picture-grid) > :not(fieldset) {
+    grid-column: 1;
+  }
+
+  .menu form:has(> fieldset .picture-grid) > fieldset {
+    grid-column: 2;
+    grid-row: 1 / span 8;
+    align-self: center;
+  }
+
+  .menu form:has(> fieldset .picture-grid) > h1 {
+    align-self: end;
+  }
 }

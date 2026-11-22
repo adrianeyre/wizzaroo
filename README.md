@@ -6,7 +6,7 @@
 
 A 3D learning game for primary-school children, covering the UK National Curriculum for Years 1-6. Children earn Items for their own Character by learning. It is built for one family, runs as an offline-first PWA, and is self-hosted at `wizzaroo.adrianeyre.co.uk`.
 
-Every screen is drawn as a sheet of an explorer's map: the sea is ruled into grid squares, panels are land inside a keyline, and the header is the sheet's orange cover band. The home page below follows your GitHub theme, light or dark.
+Every screen is drawn as a sheet of an explorer's map: the sea is ruled into grid squares, panels are land inside a keyline, and the header is the sheet's cover band, in the colour of the chosen theme. The home page below follows your GitHub theme, light or dark.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/images/screenshots/home-page.png">

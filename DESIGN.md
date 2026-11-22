@@ -2,10 +2,12 @@
 name: Wizzaroo
 description: Every HTML screen is a sheet of the explorer's map of six Islands.
 colors:
-  cover-orange: "#f27a1a"
-  cover-orange-strong: "#d4610a"
-  cover-orange-night: "#f0852b"
-  on-cover-ink: "#1a1206"
+  cover: "#1b5ea6"
+  cover-strong: "#144a85"
+  cover-night: "#375972"
+  cover-strong-night: "#466e8d"
+  on-cover: "#ffffff"
+  on-cover-night: "#f4f8fa"
   map-magenta: "#b8166f"
   map-magenta-night: "#f27ab9"
   keyline-ink: "#22323d"
@@ -19,6 +21,8 @@ colors:
   border-wash: "#b9cdd6"
   ink-foreground: "#14212b"
   ink-foreground-night: "#e8f1f4"
+  ink-hover: "#24384a"
+  cover-control-hover: "#d8e4eb"
   muted-ink: "#3b505d"
   input-border: "#5a7382"
   on-primary: "#ffffff"
@@ -119,14 +123,24 @@ components:
   button-secondary-hover:
     backgroundColor: "{colors.muted-land}"
   button-cover:
-    backgroundColor: "{colors.cover-orange}"
-    textColor: "{colors.on-cover-ink}"
+    backgroundColor: "{colors.cover}"
+    textColor: "{colors.on-cover}"
     typography: "{typography.label-lettering}"
     rounded: "{rounded.small}"
     padding: "0 1.5rem"
     height: "52px"
   button-cover-hover:
-    backgroundColor: "{colors.cover-orange-strong}"
+    backgroundColor: "{colors.cover-strong}"
+  button-ink:
+    backgroundColor: "{colors.ink-foreground}"
+    textColor: "{colors.land-paper}"
+    typography: "{typography.label-lettering}"
+    rounded: "{rounded.small}"
+    padding: "0 1.5rem"
+    height: "52px"
+  button-ink-hover:
+    backgroundColor: "{colors.ink-hover}"
+    textColor: "#ffffff"
   button-sheet:
     backgroundColor: "{colors.land-paper}"
     textColor: "{colors.ink-foreground}"
@@ -158,10 +172,21 @@ components:
     rounded: "{rounded.small}"
     padding: "1.5rem"
   cover-band:
-    backgroundColor: "{colors.cover-orange}"
-    textColor: "{colors.on-cover-ink}"
+    backgroundColor: "{colors.cover}"
+    textColor: "{colors.on-cover}"
     typography: "{typography.map-lettering}"
     padding: "0.5rem 1rem"
+  cover-control:
+    backgroundColor: "{colors.land-paper}"
+    textColor: "{colors.ink-foreground}"
+    rounded: "{rounded.small}"
+    height: "44px"
+  cover-control-hover:
+    backgroundColor: "{colors.cover-control-hover}"
+    textColor: "{colors.ink-foreground}"
+  cover-control-current:
+    backgroundColor: "{colors.ink-foreground}"
+    textColor: "{colors.land-paper}"
   sidebar-link:
     backgroundColor: "transparent"
     textColor: "{colors.ink-foreground}"
@@ -180,16 +205,16 @@ components:
 
 **Creative North Star: "The Island Explorer Map"**
 
-Every HTML screen is a sheet of the explorer's map: the home page, signing in, the Parent, Teacher and Admin pages, Settings, and the menus, panels and bars over the game. The page is the sea, ruled into 4rem grid squares. Panels are land, printed inside a 2px ink keyline with small square corners. The header is the sheet's orange cover band. Map lettering and headings are condensed; body text is set in a primer face for children still learning to read.
+Every HTML screen is a sheet of the explorer's map: the home page, signing in, the Parent, Teacher and Admin pages, Settings, and the menus, panels and bars over the game. The page is the sea, ruled into 4rem grid squares. Panels are land, printed inside a 2px ink keyline with small square corners. The header is the sheet's cover band, printed in the chosen theme's ink. Map lettering and headings are condensed; body text is set in a primer face for children still learning to read.
 
-The world refuses the ed-tech default of dark navy, gradient text and rows of rounded cards. Depth comes from the map's printed layers (sea, land, keyline), not from soft shadows, glass or gradients. Colour is functional, as on a real map: orange is the cover and the main way in, magenta marks routes, labels and focus, the user's theme colour inks links, buttons and chosen states.
+The world refuses the ed-tech default of dark navy, gradient text and rows of rounded cards. Depth comes from the map's printed layers (sea, land, keyline), not from soft shadows, glass or gradients. Colour is functional, as on a real map: the user's theme colour prints the cover and the main way in and inks links, buttons and chosen states; magenta marks routes, labels and focus.
 
 The system ships in light and dark ("sea-blue paper" by day, "night chart" in navy-teal by night) and in six theme printings. The product's default colour mode is Dark; that is a product setting and this system leaves it unchanged. The 3D world and the in-Game boards' own art are out of scope: they keep their own look, and Baloo 2 and Nunito remain bundled only for canvas lettering in the 3D world.
 
 **Key Characteristics:**
 
 - Sea ground ruled into map squares; land panels inside 2px keylines.
-- Orange cover band for the header, the closing call and the primary home action.
+- A cover band in the theme's ink for the header, the closing call and the primary home action.
 - Magenta for map labels, routes, lit grid references and every focus ring.
 - Barlow Condensed for map lettering and headings, Andika for reading.
 - Square corners (3px), never pills; true circles only where a symbol is round.
@@ -197,11 +222,11 @@ The system ships in light and dark ("sea-blue paper" by day, "night chart" in na
 
 ## Colors
 
-A printed map's inks: pale sea and land papers, one ink keyline, an orange cover, magenta overprint, and a theme ink that changes with the printing.
+A printed map's inks: pale sea and land papers, one ink keyline, magenta overprint, and a theme ink that changes with the printing and also prints the cover.
 
 ### Primary
 
-- **Cover Orange** (cover-orange; night cover-orange-night): the sheet's cover band. Fills the site header, the home closing call, the "every Island" map-key symbol, and the primary home action. Text on it is always On-Cover Ink, never white. Hover deepens to Cover Orange Strong; text selection is a 45% wash of it.
+- **Cover** (cover, cover-strong; night cover-night, cover-strong-night): the sheet's cover band, printed in the chosen theme's ink. Fills the site header, the parent sidebar crest, the home page's main action and closing call, the "every Island" map-key symbol, and the Mission celebration's "One more go" button. In the build it is `--colour-cover`: the theme ink by day, and by night `color-mix(in oklab, theme 45%, #08161d)`, a deep shade of the theme ink. Hover deepens to Cover Strong (the theme hover by day, a 58% mix by night). The frontmatter values are the default Sky printing. Text on it is On-Cover (`--colour-on-cover`): on-primary by day (white on Sky), near-white #f4f8fa by night. Text selection is a 45% wash of it.
 - **Theme Ink** (theme-sky by default, then theme-grape, theme-forest, theme-sunset, theme-berry, theme-lagoon): the user's chosen printing. Inks links, generic buttons, chosen and current states (active Region chip, current sidebar section, pressed Island chip), checkbox accents and chart bars. Each theme has a light and a night value and a deeper hover value.
 
 ### Secondary
@@ -226,11 +251,11 @@ A printed map's inks: pale sea and land papers, one ink keyline, an orange cover
 
 ### Named Rules
 
-**The Six Printings Rule.** The six themes are six printings of one map. A theme changes only the theme ink and a few percent of tint in sea, land, muted and border; cover orange, magenta and keyline ink never change with the theme.
+**The Six Printings Rule.** The six themes are six printings of one map. A theme changes only the theme ink and a few percent of tint in sea, land, muted and border; the cover follows the theme ink, while magenta and keyline ink never change with the theme.
 
 **The Chosen-Is-Theme, Focus-Is-Magenta Rule.** Chosen, current and pressed states take the user's theme colour. Focus is always a 3px magenta outline. Never swap them.
 
-**The Orange Cover Rule.** Orange is the cover: the header band, the main way in, and the closing call. Text on orange is On-Cover Ink (#1a1206), never white.
+**The Theme Cover Rule.** The cover is printed in the chosen theme's ink: the header band, the main way in, and the closing call. Text on it is always `--colour-on-cover`. Controls that sit on the band (Menu, Settings) stay light paper #fcfdf8 with ink #14212b, so they read on every printing.
 
 ## Typography
 
@@ -264,6 +289,8 @@ The home page sits inside a map sheet: a land frame whose margin carries grid re
 
 Adult pages add a 17rem sticky sidebar at 60rem and above. The site header is sticky at the top; the footer is sticky at the foot, and becomes static on phones on home and adult pages. Spacing steps are 0.25, 0.5, 0.75, 1, 1.5 and 2rem; fluid gaps use clamp between 1.5 and 3rem.
 
+The Picture Password screen (`.menu form:has(> fieldset .picture-grid)`) fits one screen. In landscape at 48rem and wider the greeting and buttons sit in a column (0.8fr) beside the picture grid (1.2fr), and the panel is centred vertically between the header and footer within 60rem. Picture tiles scale with viewport height: `min-height: clamp(52px, 9dvh, 88px)`, with their pictures at `clamp(2rem, 5dvh, 3rem)`.
+
 ## Elevation & Depth
 
 Flat print. Depth comes from the map's layers: land on sea, keylines around land, the cover band over the sheet. The card, hero, ground and button shadow tokens are all `none`. Only things that genuinely float over the sheet keep a short drop: an open menu, and the small play-bar controls over the 3D world. Pressing a button moves it down 1px rather than changing a shadow.
@@ -289,8 +316,10 @@ Square map symbols. Every panel, field, button and chip has the small corner (3p
 - **Shape:** small square corner (3px), 48px tall (52px for home actions), 1.5rem side padding.
 - **Primary (submit):** theme ink fill, on-primary text, Andika 700; form submits switch to condensed label lettering.
 - **Secondary (`type="button"`):** land paper with a 2px keyline and theme-ink text; hover shifts the border to theme ink and the fill to muted land.
-- **Cover action:** the main way in on the home page; cover orange with a keyline border and on-cover ink text, condensed 1.3125rem lettering; hover to cover orange strong.
+- **Cover action:** the main way in on the home page; cover fill with a keyline border and on-cover text, condensed 1.3125rem lettering; hover to cover strong.
 - **Sheet action:** land paper, keyline border, foreground ink; the companion to the cover action.
+- **Ink action:** the way in on the closing band; ink #14212b fill and border with paper #fcfdf8 text; hover to #24384a with white text. It holds on every printing because it never takes the theme.
+- **One more go:** the Mission celebration's replay button; cover fill, on-cover border and text, condensed 1.25rem.
 - **Hover / Focus / Press:** colour shifts over 150ms ease-out; press is a 1px drop over 200ms; focus is a 3px magenta outline offset 3px. Disabled is 50% opacity.
 
 ### Chips
@@ -314,7 +343,7 @@ Square map symbols. Every panel, field, button and chip has the small corner (3p
 
 ### Navigation
 
-- **Site header (cover band):** sticky, cover orange fill, 2px keyline rule beneath, the WIZZAROO title in uppercase map lettering, and Menu and Settings controls on light paper with on-cover ink borders. Focus rings inside the band are on-cover ink.
+- **Site header (cover band):** sticky, cover fill in the theme's ink, 2px keyline rule beneath, the WIZZAROO title in uppercase map lettering in on-cover, and Menu and Settings controls in light paper #fcfdf8 with ink #14212b text and on-cover borders. Their hover is a 16% theme tint on paper; pressed (open menu) or current (Settings page) is ink #14212b with paper text. Focus rings inside the band are on-cover.
 - **Play bar:** solid land with a keyline rule; tabs in condensed lettering inside a muted well; the current tab is land paper inked in the theme colour.
 - **Parent sidebar:** 17rem land column with a keyline on its right; 44px links in Andika 700; hover is muted land; the current section ("the square you are in") is filled with theme ink.
 - **Site footer:** sticky land strip with a keyline rule on top, condensed 0.9375rem links in muted ink; hover gives a 2px magenta underline.
@@ -336,13 +365,13 @@ Subjects as a legend: ruled rows (1px border wash) inside one keylined panel, ea
 - **Do** set headings in sentence case Barlow Condensed, and keep uppercase for map lettering.
 - **Do** keep reading text and generic button labels in Andika.
 - **Do** draw progress as squares (0.625rem squares, 0.125rem gaps) and routes as dashed magenta.
-- **Do** give every theme the same cover orange, magenta and keyline ink; only the theme ink and tints change.
+- **Do** print the cover in the chosen theme's ink and give every theme the same magenta and keyline ink; only the theme ink, the cover and tints change.
 
 ### Don't:
 
 - **Don't** use dark navy as a fixed brand ground, gradient text, or rows of rounded cards.
 - **Don't** give panels, cards or buttons soft ambient shadows; separation is land on sea inside a keyline.
-- **Don't** put white text on cover orange; use on-cover ink.
+- **Don't** hard-code a fixed cover colour or its text; use `--colour-cover` and `--colour-on-cover`, and keep band controls on light paper with ink text.
 - **Don't** use full pill radii on controls; the round token is 3px.
 - **Don't** use Baloo 2 or Nunito in HTML; they are for canvas lettering in the 3D world only.
 - **Don't** restyle the 3D world or the in-Game boards' own art with these tokens.

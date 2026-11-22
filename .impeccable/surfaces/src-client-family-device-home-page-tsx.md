@@ -30,3 +30,5 @@ Raises: controls keep honest physical states (leather shelf); sections as cleari
 Signature interaction: grid references light up along the frame edges as the pointer or focus moves over a panel; motion is a single unfold of the sheet on load (clip-path from the crease), reduced to none under prefers-reduced-motion.
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+
+Amended at the user's request after the first build: the cover band (header, the home page's main action and closing band, the README banner) is printed in the chosen theme's colour, a deeper shade of it in dark mode, instead of a fixed orange.
