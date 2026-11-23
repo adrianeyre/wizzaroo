@@ -2,85 +2,211 @@ import {
   piperModels,
   type PiperModel,
 } from "../../curriculum/piper-voice-models.js";
+import {
+  voiceCharacters,
+  type VoiceCharacter,
+  type VoiceCharacterId,
+} from "./voice-characters.js";
 
 /**
- * Every voice a Child can choose on the Settings page to read questions and
- * messages out loud (ADR 0062): every voice on Bryce Beattie's page, and
- * every reader in its two many-speaker voices, ManyVoice's 16 and Clean 100's
- * 245. Each is spoken on the device by Piper, from its model. Only the
- * one-speaker voices are called female or male, as the page says; the
- * readers of the many-speaker voices aren't labelled.
+ * The sixteen voices a Child can choose on the Settings page to read
+ * questions and messages out loud (ADR 0074): thirteen from around the UK,
+ * Jenny from Ireland, and one US English female and one US English male
+ * voice. Each is spoken on the device by Piper, from its model, and each has
+ * a 3D fantasy character of its own. Adrian, a UK English male voice, is the
+ * default.
  */
 
 export type SpeakerVoice = "female" | "male";
 
 export interface ReadAloudVoice {
   /** Never changes, as it is what a device keeps. */
-  id: string;
+  id: VoiceCharacterId;
   name: string;
   model: PiperModel;
   /** Which reader of a many-speaker model; 0 in a one-speaker model. */
   speakerId: number;
-  voice?: SpeakerVoice;
+  voice: SpeakerVoice;
+  /** Where the voice is from, such as "UK English (Wales)". */
+  accent: string;
   description: string;
+  character: VoiceCharacter;
 }
 
-/** ManyVoice's readers, named as LibriVox credits them. */
-const manyVoiceReaderNames: Readonly<Record<string, string>> = {
-  James_K_White: "James K. White",
-  Steve_C: "Steve C.",
-};
+interface VoiceChoice {
+  id: VoiceCharacterId;
+  name: string;
+  modelId: string;
+  speakerId?: number;
+  voice: SpeakerVoice;
+  accent: string;
+}
 
-const toReaderName = (reader: string): string =>
-  manyVoiceReaderNames[reader] ?? reader.replaceAll("_", " ");
+/**
+ * The voices, in the order Settings shows them: UK voices first, then
+ * Ireland's, then the two from the US. A many-speaker model's reader is
+ * named here, as its model knows them only by a code: SEMAINE's actors by
+ * the characters they played, and each VCTK reader by a name of our own.
+ */
+const voiceChoices: readonly VoiceChoice[] = [
+  {
+    id: "adrian",
+    name: "Adrian",
+    modelId: "northern-english-male",
+    voice: "male",
+    accent: "UK English (Northern England)",
+  },
+  {
+    id: "cori-med",
+    name: "Cori",
+    modelId: "cori-med",
+    voice: "female",
+    accent: "UK English (Southern England)",
+  },
+  {
+    id: "alba",
+    name: "Alba",
+    modelId: "alba",
+    voice: "female",
+    accent: "UK English (Scotland)",
+  },
+  {
+    id: "kofi",
+    name: "Kofi",
+    modelId: "vctk",
+    speakerId: 81,
+    voice: "male",
+    accent: "UK English (London)",
+  },
+  {
+    id: "seren",
+    name: "Seren",
+    modelId: "vctk",
+    speakerId: 88,
+    voice: "female",
+    accent: "UK English (Wales)",
+  },
+  {
+    id: "ravi",
+    name: "Ravi",
+    modelId: "vctk",
+    speakerId: 104,
+    voice: "male",
+    accent: "UK English (Birmingham)",
+  },
+  {
+    id: "niamh",
+    name: "Niamh",
+    modelId: "vctk",
+    speakerId: 17,
+    voice: "female",
+    accent: "UK English (Northern Ireland)",
+  },
+  {
+    id: "hamish",
+    name: "Hamish",
+    modelId: "vctk",
+    speakerId: 79,
+    voice: "male",
+    accent: "UK English (Edinburgh)",
+  },
+  {
+    id: "arlo",
+    name: "Arlo",
+    modelId: "vctk",
+    speakerId: 12,
+    voice: "male",
+    accent: "UK English (Yorkshire)",
+  },
+  {
+    id: "prudence",
+    name: "Prudence",
+    modelId: "semaine",
+    speakerId: 0,
+    voice: "female",
+    accent: "UK English",
+  },
+  {
+    id: "poppy",
+    name: "Poppy",
+    modelId: "semaine",
+    speakerId: 3,
+    voice: "female",
+    accent: "UK English",
+  },
+  {
+    id: "spike",
+    name: "Spike",
+    modelId: "semaine",
+    speakerId: 1,
+    voice: "male",
+    accent: "UK English",
+  },
+  {
+    id: "obadiah",
+    name: "Obadiah",
+    modelId: "semaine",
+    speakerId: 2,
+    voice: "male",
+    accent: "UK English",
+  },
+  {
+    id: "jenny",
+    name: "Jenny",
+    modelId: "jenny",
+    voice: "female",
+    accent: "Irish English",
+  },
+  {
+    id: "kristin",
+    name: "Kristin",
+    modelId: "kristin",
+    voice: "female",
+    accent: "US English",
+  },
+  {
+    id: "john",
+    name: "John",
+    modelId: "john",
+    voice: "male",
+    accent: "US English",
+  },
+];
 
 const voiceLabels: Record<SpeakerVoice, string> = {
   female: "Female voice",
   male: "Male voice",
 };
 
-const describe = (model: PiperModel, voice: SpeakerVoice | undefined) =>
-  [model.accent, voice === undefined ? undefined : voiceLabels[voice]]
-    .filter((part) => part !== undefined)
-    .join(" · ");
-
-const toSlug = (text: string): string =>
-  text
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-|-$/g, "");
-
-const listModelVoices = (model: PiperModel): ReadAloudVoice[] => {
-  if (model.speakers === undefined) {
-    return [
-      {
-        id: model.id,
-        name: model.label,
-        model,
-        speakerId: 0,
-        voice: model.voice,
-        description: describe(model, model.voice),
-      },
-    ];
+const findModel = (modelId: string): PiperModel => {
+  const model = piperModels.find(({ id }) => id === modelId);
+  if (model === undefined) {
+    throw new Error(`No Piper model is called ${modelId}`);
   }
-  return model.speakers.map(([reader, speakerId]) => ({
-    id: `${model.id}-${toSlug(reader)}`,
-    name: model.id === "clean100" ? `Reader ${reader}` : toReaderName(reader),
-    model,
-    speakerId,
-    description: model.accent,
-  }));
+  return model;
 };
 
-export const readAloudVoices: readonly ReadAloudVoice[] =
-  piperModels.flatMap(listModelVoices);
+export const readAloudVoices: readonly ReadAloudVoice[] = voiceChoices.map(
+  ({ id, name, modelId, speakerId = 0, voice, accent }) => ({
+    id,
+    name,
+    model: findModel(modelId),
+    speakerId,
+    voice,
+    accent,
+    description: `${accent} · ${voiceLabels[voice]}`,
+    character: voiceCharacters[id],
+  }),
+);
 
-const voicesById = new Map(readAloudVoices.map((voice) => [voice.id, voice]));
+const voicesById = new Map<string, ReadAloudVoice>(
+  readAloudVoices.map((voice) => [voice.id, voice]),
+);
 
 export type ReadAloudVoiceName = string;
 
-/** Cori, the voice of Wizzaroo's own recordings, in the smaller of her two models. */
-export const defaultReadAloudVoiceName: ReadAloudVoiceName = "cori-med";
+/** Adrian, a UK English male voice. */
+export const defaultReadAloudVoiceName: ReadAloudVoiceName = "adrian";
 
 export const readAloudVoiceStorageKey = "wizzaroo.read-aloud-voice";
 
@@ -89,20 +215,19 @@ export const isReadAloudVoiceName = (
 ): value is ReadAloudVoiceName =>
   typeof value === "string" && voicesById.has(value);
 
-const defaultVoice = readAloudVoices.find(
-  ({ id }) => id === defaultReadAloudVoiceName,
-);
+const defaultVoice = voicesById.get(defaultReadAloudVoiceName);
 if (defaultVoice === undefined) {
   throw new Error(`The default voice, ${defaultReadAloudVoiceName}, is gone`);
 }
 const fallbackVoice: ReadAloudVoice = defaultVoice;
 
+/** A voice by its id; a voice no longer offered reads as the default, Adrian. */
 export const findReadAloudVoice = (name: ReadAloudVoiceName): ReadAloudVoice =>
   voicesById.get(name) ?? fallbackVoice;
 
-/** The voices from one model, in the order the model lists them. */
-export const listModelReadAloudVoices = (modelId: string): ReadAloudVoice[] =>
-  readAloudVoices.filter(({ model }) => model.id === modelId);
+/** "Adrian the Star Wizard". */
+export const describeVoiceCharacter = (voice: ReadAloudVoice): string =>
+  `${voice.name} the ${voice.character.title}`;
 
 export const loadReadAloudVoiceName = (): ReadAloudVoiceName => {
   try {

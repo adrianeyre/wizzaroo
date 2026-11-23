@@ -278,72 +278,50 @@ describe("SiteHeader and SettingsPage", () => {
       ).not.toContain("Default");
     });
 
-    it("offers every voice from Bryce Beattie's page, grouped by model, with Cori chosen by default", () => {
+    it("offers sixteen voices in one section, each with their own fantasy character, with Adrian chosen by default", () => {
       const voiceRadios = [
         ...document.querySelectorAll<HTMLInputElement>(
           'input[type="radio"][name="readAloudVoice"]',
         ),
       ];
-      expect(voiceRadios).toHaveLength(9 + 16 + 245);
-      expect(voiceRadios.slice(0, 9).map((radio) => radio.value)).toEqual([
-        "lj-med",
-        "ljspeech",
-        "jenny",
-        "cori-high",
+      expect(voiceRadios.map((radio) => radio.value)).toEqual([
+        "adrian",
         "cori-med",
+        "alba",
+        "kofi",
+        "seren",
+        "ravi",
+        "niamh",
+        "hamish",
+        "arlo",
+        "prudence",
+        "poppy",
+        "spike",
+        "obadiah",
+        "jenny",
         "kristin",
         "john",
-        "bryce",
-        "norman",
       ]);
+      expect(document.querySelectorAll("fieldset.voice-choices")).toHaveLength(
+        1,
+      );
+      expect(document.querySelectorAll("details")).toHaveLength(0);
       expect(document.querySelector(".voice-choices legend")?.textContent).toBe(
         "Voices",
       );
-      expect(
-        [...document.querySelectorAll(".voice-group > summary")].map(
-          (summary) => summary.textContent,
-        ),
-      ).toEqual([
-        "Voices9 voicesChosen: Cori",
-        "ManyVoice readers16 voices",
-        "Clean 100 readers245 voices",
-      ]);
-      expect(findRadio("readAloudVoice", "cori-med").checked).toBe(true);
-      expect(document.querySelector("#voice-studio-heading")?.textContent).toBe(
-        "Cori",
+      expect(document.querySelectorAll(".voice-card-portrait")).toHaveLength(
+        16,
       );
-    });
-
-    it("folds the voices into an accordion, opening the fold with the chosen voice", () => {
-      piper.isOffered = true;
-      piper.download = { state: "downloaded" };
-      renderPage(<SettingsPage />);
-      const findGroups = () => [
-        ...document.querySelectorAll<HTMLDetailsElement>("details.voice-group"),
-      ];
-      expect(findGroups().map((group) => group.open)).toEqual([
-        true,
-        false,
-        false,
-      ]);
-
-      act(() => {
-        findGroups()[2].open = true;
-        findGroups()[2].dispatchEvent(new Event("toggle"));
-      });
-      act(() => {
-        findRadio("readAloudVoice", "clean100-40").click();
-      });
-
-      expect(findGroups().map((group) => group.open)).toEqual([
-        true,
-        false,
-        true,
-      ]);
       expect(
-        findGroups()[2].querySelector(".voice-group-chosen")?.textContent,
-      ).toBe("Chosen: Reader 40");
-      expect(findGroups()[0].querySelector(".voice-group-chosen")).toBeNull();
+        findRadio("readAloudVoice", "adrian").closest("label")?.textContent,
+      ).toContain("AdrianDefaultthe Star WizardUK English (Northern England)");
+      expect(findRadio("readAloudVoice", "adrian").checked).toBe(true);
+      expect(document.querySelector("#voice-studio-heading")?.textContent).toBe(
+        "Adrian",
+      );
+      expect(document.querySelector(".voice-studio-title")?.textContent).toBe(
+        "Adrian the Star Wizard",
+      );
     });
 
     it("waits for a chosen voice to download before saying hello, so it is never heard in the device's own voice", () => {
@@ -407,21 +385,24 @@ describe("SiteHeader and SettingsPage", () => {
       renderPage(<SettingsPage />);
 
       act(() => {
-        findRadio("readAloudVoice", "mv2-emily-cripps").click();
+        findRadio("readAloudVoice", "seren").click();
       });
 
       expect(spoken).toEqual([
-        "Hello! I'm Emily Cripps. I'll read your questions to you.",
+        "Hello! I'm Seren. I'll read your questions to you.",
       ]);
-      expect(localStorage.getItem("wizzaroo.read-aloud-voice")).toBe(
-        "mv2-emily-cripps",
-      );
+      expect(localStorage.getItem("wizzaroo.read-aloud-voice")).toBe("seren");
       expect(document.querySelector("#voice-studio-heading")?.textContent).toBe(
-        "Emily Cripps",
+        "Seren",
       );
       expect(
-        document.querySelector(".speaker-badge figcaption")?.textContent,
-      ).toBe("Emily Cripps");
+        document.querySelector(".voice-studio-speaker figcaption")?.textContent,
+      ).toBe("Seren");
+      expect(
+        document
+          .querySelector(".voice-studio-speaker [role=img]")
+          ?.getAttribute("aria-label"),
+      ).toContain("Seren the Archer");
       vi.unstubAllGlobals();
       Reflect.set(globalThis, "IS_REACT_ACT_ENVIRONMENT", true);
     });

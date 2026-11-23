@@ -8,13 +8,12 @@ import type { FastifyInstance, FastifyReply } from "fastify";
 import {
   findPiperFilePath,
   listPiperFiles,
-  piperVoiceSource,
   type PiperFile,
 } from "../../curriculum/piper-voice-models.js";
 
 /**
  * Read it to me's Piper voices (ADR 0062). The `download-voices` command
- * fetches every pinned file from Bryce Beattie's bucket into a folder and
+ * fetches every pinned file from its own address into a folder and
  * refuses any that doesn't match its size and SHA-256; the app only ever
  * reads that folder, so it needs no way out to the internet. In Compose a
  * one-shot `voices` service runs the command into a volume the app mounts
@@ -75,7 +74,7 @@ const fetchVoiceFile: FetchVoiceFile = async (url) => {
 };
 
 /**
- * Fetches one pinned file from Bryce Beattie's bucket, checks it and moves it
+ * Fetches one pinned file from its own address, checks it and moves it
  * into place, so a half-written or wrong file is never served.
  */
 const fetchAndKeepVoiceFile = async (
@@ -83,7 +82,7 @@ const fetchAndKeepVoiceFile = async (
   file: PiperFile,
   fetchFile: FetchVoiceFile,
 ): Promise<void> => {
-  const bytes = await fetchFile(`${piperVoiceSource}${file.name}`);
+  const bytes = await fetchFile(file.url);
   checkVoiceFile(file, bytes);
   await mkdir(directory, { recursive: true });
   const partial = join(directory, `${file.name}.partial`);
@@ -283,7 +282,7 @@ export const registerVoiceRoutes = (
       const keeping = (async () => {
         let chunks: AsyncIterable<Uint8Array>;
         try {
-          chunks = await streamMissingFile(`${piperVoiceSource}${file.name}`);
+          chunks = await streamMissingFile(file.url);
         } catch (error) {
           tellOpened(false);
           throw error;

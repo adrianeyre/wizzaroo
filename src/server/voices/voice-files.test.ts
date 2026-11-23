@@ -8,7 +8,6 @@ import { describe, expect, it } from "vitest";
 import {
   findPiperFilePath,
   listPiperFiles,
-  piperVoiceSource,
   type PiperFile,
 } from "../../curriculum/piper-voice-models.js";
 import {
@@ -24,6 +23,7 @@ const makeFile = (text: string): { file: PiperFile; bytes: Uint8Array } => {
     bytes,
     file: {
       name: "made.onnx.json",
+      url: "https://voices.example/made.onnx.json",
       bytes: bytes.byteLength,
       sha256: createHash("sha256").update(bytes).digest("hex"),
     },
@@ -59,9 +59,7 @@ describe("downloadVoices", () => {
         log: () => undefined,
       }),
     ).rejects.toThrow(VoiceFileMismatchError);
-    expect(asked).toStrictEqual([
-      `${piperVoiceSource}${listPiperFiles()[0].name}`,
-    ]);
+    expect(asked).toStrictEqual([listPiperFiles()[0].url]);
     expect(await readdir(directory)).toStrictEqual([]);
   });
 });
@@ -142,7 +140,7 @@ describe("the voice route", () => {
     ]);
     expect(answers[0].headers["content-length"]).toBe(String(file.bytes));
     expect(again.body).toBe('{"made": true}');
-    expect(asked).toEqual([`${piperVoiceSource}${file.name}`]);
+    expect(asked).toEqual([file.url]);
     expect(await readdir(directory)).toEqual([file.name]);
     await server.close();
   });

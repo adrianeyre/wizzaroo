@@ -134,7 +134,10 @@ describe("SiteFooter", () => {
       "Piper",
       "Bryce Beattie",
       "Jenny",
-      "LibriTTS-R",
+      "VCTK",
+      "SEMAINE",
+      "Alba",
+      "OpenSLR 83",
       "ONNX Runtime Web",
       "eSpeak NG",
     ]) {

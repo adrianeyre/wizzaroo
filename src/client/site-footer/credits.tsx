@@ -38,7 +38,7 @@ export const soundCredits: readonly Credit[] = [
   },
   {
     name: "Read it to me's voices, by Bryce Beattie",
-    what: "Every voice a Child can choose: LJ, LJ (high), Cori, Cori (high), Kristin, John, Bryce, Norman and ManyVoice's 16 LibriVox readers",
+    what: "Cori, Kristin and John, three of the voices a Child can choose",
     licence: "Public domain",
     href: "https://brycebeattie.com/files/tts/",
   },
@@ -50,10 +50,34 @@ export const soundCredits: readonly Credit[] = [
     href: "https://www.kaggle.com/datasets/noml4u/jenny-tts-dataset",
   },
   {
-    name: "Clean 100's 245 readers, trained by Bryce Beattie from LibriTTS-R's clean 100-hour set",
-    what: "The readers of Clean 100, which Read it to me can read in",
+    name: "Northern English Male, a Piper voice from OpenSLR 83's UK and Ireland English",
+    what: "Adrian, the voice Read it to me reads in unless another is chosen",
+    licence: "CC BY-SA 4.0",
+    href: "https://www.openslr.org/83/",
+  },
+  {
+    name: "Alba, a Piper voice from the University of Edinburgh's Alba Scottish English corpus",
+    what: "The Scottish English voice Alba",
     licence: "CC BY 4.0",
-    href: "https://www.openslr.org/141/",
+    href: "https://datashare.ed.ac.uk/handle/10283/3270",
+  },
+  {
+    name: "VCTK, a Piper voice from the CSTR VCTK corpus, University of Edinburgh",
+    what: "Kofi, Seren, Ravi, Niamh, Hamish and Arlo, six readers from around the UK",
+    licence: "CC BY 4.0",
+    href: "https://datashare.ed.ac.uk/handle/10283/3443",
+  },
+  {
+    name: "SEMAINE, a Piper voice from the SEMAINE database's actors",
+    what: "Prudence, Poppy, Spike and Obadiah",
+    licence: "CC BY-NC-SA 4.0",
+    href: "https://github.com/marytts/dfki-semaine-data",
+  },
+  {
+    name: "Piper's own voices, rhasspy/piper-voices",
+    what: "Where the Northern English Male, Alba, VCTK and SEMAINE voices are published",
+    licence: "Each its dataset's, as above",
+    href: "https://huggingface.co/rhasspy/piper-voices",
   },
   {
     name: "ONNX Runtime Web, by Microsoft",

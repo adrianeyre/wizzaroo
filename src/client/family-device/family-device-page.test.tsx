@@ -540,6 +540,34 @@ describe("FamilyDevicePage", () => {
     expect(getPageText()).not.toContain(theGame);
   });
 
+  it("fits the Picture Password on one screen: a slot fills for each picture, and Let's play sits beside That's not me", async () => {
+    startFakeServer(answerWithPlayableChildren([sparkle]));
+    openPage();
+    await waitForText("Who's playing?");
+    await openSparkle();
+
+    const actions = document.querySelector(".picture-password-actions");
+    expect(
+      [...(actions?.querySelectorAll("button") ?? [])].map(
+        (button) => button.textContent,
+      ),
+    ).toEqual(["Let's play", "That's not me"]);
+    const listSlots = () =>
+      [...document.querySelectorAll(".picture-password-slots li")].map(
+        (slot) =>
+          `${slot.textContent}${slot.hasAttribute("data-filled") ? "*" : ""}`,
+      );
+    expect(listSlots()).toEqual(["1", "2", "3"]);
+
+    await tapPictures(["moon", "cat"]);
+
+    expect(listSlots()).toEqual(["🌙*", "🐱*", "3"]);
+    findButton("Start the pictures again").click();
+    await vi.waitFor(() => {
+      expect(listSlots()).toEqual(["1", "2", "3"]);
+    });
+  });
+
   it("asks for 3 pictures before checking them", async () => {
     startFakeServer(answerWithPlayableChildren([sparkle]));
     openPage();

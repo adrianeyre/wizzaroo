@@ -484,6 +484,221 @@ li li {
   font-size: 3rem;
 }
 
+/* The pictures tapped so far, one slot each, filling as a Child taps. */
+.picture-password-progress {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2) var(--space-3);
+}
+
+.picture-password-slots {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.picture-password-slots li {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border: 2px dashed var(--colour-border);
+  border-radius: var(--radius-medium);
+  background: var(--colour-card);
+  color: var(--colour-muted-foreground);
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.picture-password-slots li[data-filled] {
+  border-style: solid;
+  border-color: var(--colour-primary);
+  font-size: 1.75rem;
+  animation: picture-slot-pop var(--duration-press, 150ms) ease-out;
+}
+
+@keyframes picture-slot-pop {
+  from {
+    scale: 0.6;
+  }
+}
+
+button.picture-password-restart {
+  min-height: 44px;
+  padding: 0 var(--space-4);
+  font-size: 0.9375rem;
+}
+
+/*
+ * A Child's Picture Password screen fits the space between the header and
+ * the footer without scrolling, on any screen: the greeting, the slots and
+ * the two buttons take what they need, and the pictures share what is
+ * left, staying square (ADR 0074).
+ */
+.who-is-playing.picture-password-screen {
+  --picture-password-height: calc(
+    100dvh - var(--site-header-height, 4rem) - var(--site-footer-height, 3rem)
+  );
+
+  flex: none;
+  height: var(--picture-password-height);
+  min-height: 26rem;
+  /* Only a screen too small for even the smallest pictures scrolls. */
+  overflow-y: auto;
+}
+
+.who-is-playing > main.picture-password-entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: safe center;
+  gap: 0;
+  min-height: 0;
+  max-width: 34rem;
+  padding: var(--space-3) var(--space-4);
+}
+
+.picture-password-entry > form {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+}
+
+.picture-password-greeting {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2) var(--space-3);
+}
+
+.menu .picture-password-greeting h1 {
+  font-size: clamp(1.5rem, 1rem + 2.5dvh, 2.5rem);
+}
+
+.picture-password-entry fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-3);
+}
+
+.picture-password-entry legend {
+  font-size: 0.9375rem;
+}
+
+.picture-password-entry .picture-password-slots li {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.picture-password-entry .picture-password-chosen {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/*
+ * The pictures are as big as the height left over allows: the screen's
+ * height less what the greeting, slots and buttons take (and the message,
+ * when there is one), from 8.5rem up to 24rem, and never wider than the
+ * screen. Only a screen too small even for 8.5rem scrolls.
+ */
+.picture-password-entry {
+  --picture-password-others: 20.5rem;
+  --picture-grid-size: clamp(
+    8.5rem,
+    var(--picture-password-height) - var(--picture-password-others),
+    min(24rem, 100vw - 4.5rem)
+  );
+}
+
+.picture-password-entry:has([role="alert"]) {
+  --picture-password-others: 25rem;
+}
+
+.picture-password-entry .picture-grid {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  gap: var(--space-2);
+  width: var(--picture-grid-size);
+  height: var(--picture-grid-size);
+  margin-inline: auto;
+}
+
+.menu.picture-password-entry .picture-grid button {
+  min-height: 0;
+  font-size: calc(var(--picture-grid-size) * 0.15);
+}
+
+/* A phone keeps the slots and Start again on one row, and its spacing tight. */
+@media (max-width: 30rem) {
+  .picture-password-entry .picture-password-progress {
+    flex-wrap: nowrap;
+  }
+
+  .picture-password-entry .picture-password-restart-more {
+    display: none;
+  }
+
+  .picture-password-entry legend {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 30rem), (max-height: 44rem) {
+  .who-is-playing > main.picture-password-entry {
+    padding: var(--space-2) var(--space-3);
+  }
+
+  .picture-password-entry > form {
+    gap: var(--space-2);
+    padding: var(--space-3);
+  }
+
+  .picture-password-entry fieldset {
+    padding: var(--space-2);
+  }
+
+  .menu .picture-password-greeting h1 {
+    font-size: 1.625rem;
+  }
+}
+
+.picture-password-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.picture-password-actions button {
+  min-width: 0;
+  padding: 0 var(--space-3);
+}
+
+button.picture-password-play {
+  min-height: 56px;
+  font-size: 1.125rem;
+}
+
+button.picture-password-back {
+  min-height: 56px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .picture-password-slots li[data-filled] {
+    animation: none;
+  }
+}
+
 .who-is-playing {
   --fairytale-sky-top: light-dark(#b9cdf2, #121838);
   --fairytale-sky-middle: light-dark(#dcd2f4, #272a5e);
@@ -622,6 +837,39 @@ li li {
   width: 100%;
   height: 100%;
   pointer-events: none;
+}
+
+/*
+ * On a screen wider than the picture, the whole picture shows, full height
+ * and centred, so its sky is never cropped off the top. Its sides fade into
+ * a fill of the same sky, mountains and hills, at the same heights.
+ */
+.who-is-playing:has(> .fairytale-backdrop[data-fit="whole"]) {
+  background: linear-gradient(
+    180deg,
+    var(--fairytale-sky-top) 0%,
+    var(--fairytale-sky-middle) 32%,
+    var(--fairytale-sky-horizon) 56%,
+    var(--fairytale-mountain-top) 60%,
+    var(--fairytale-hill-far-top) 72%,
+    var(--fairytale-hill-mid-base) 86%,
+    var(--fairytale-hill-near-base) 100%
+  );
+}
+
+.fairytale-backdrop[data-fit="whole"] {
+  right: auto;
+  left: 50%;
+  width: auto;
+  aspect-ratio: 16 / 9;
+  translate: -50% 0;
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0%,
+    #000 7%,
+    #000 93%,
+    transparent 100%
+  );
 }
 
 .portraits {
@@ -6094,39 +6342,19 @@ fieldset.choice-cards {
   font-weight: 800;
 }
 
-.speaker-badge {
-  display: grid;
-  justify-items: center;
+/* The chosen voice's character, live in 3D, sharp at twice the pixels (ADR 0074). */
+.voice-studio-speaker .character-stage {
+  width: clamp(11rem, 9rem + 8vw, 15rem);
+  height: clamp(15rem, 12rem + 10vw, 20rem);
+  box-shadow: 0 14px 36px rgb(15 23 42 / 0.22);
+}
+
+.voice-studio-title {
   margin: 0;
-}
-
-.speaker-badge > span,
-.voice-card-avatar {
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #f472b6, #a855f7);
-  color: #ffffff;
+  color: var(--colour-primary);
   font-family: var(--font-heading);
+  font-size: 1.25rem;
   font-weight: 800;
-}
-
-.speaker-badge > span {
-  width: 9rem;
-  height: 9rem;
-  font-size: 4rem;
-  box-shadow: 0 10px 30px rgb(15 23 42 / 0.25);
-}
-
-.speaker-badge[data-voice="male"] > span,
-.voice-card-avatar[data-voice="male"] {
-  background: linear-gradient(135deg, #38bdf8, #2563eb);
-}
-
-/* A reader of a many-speaker voice, who the page doesn't call female or male (ADR 0062). */
-.speaker-badge:not([data-voice]) > span,
-.voice-card-avatar:not([data-voice]) {
-  background: linear-gradient(135deg, #2dd4bf, #0f766e);
 }
 
 .voice-download {
@@ -6146,110 +6374,111 @@ button.voice-download-retry {
   font-weight: 800;
 }
 
-/* The voices sit in an accordion, a fold for each group (ADR 0067). */
+/* All sixteen voices in one grid, each with their character's portrait (ADR 0074). */
 fieldset.voice-choices {
-  display: grid;
-  gap: var(--space-3);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
   min-width: 0;
   margin: 0;
-  padding: 0;
-  border: 0;
 }
 
-fieldset.voice-choices legend {
-  margin-bottom: var(--space-3);
-  padding: 0;
-  font-family: var(--font-heading);
-  font-size: 1.375rem;
-  font-weight: 700;
-}
+/* Sixteen voices sit four to a row, or two on a phone, so none is left alone. */
+@media (max-width: 40rem) {
+  fieldset.voice-choices {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-2);
+  }
 
-details.voice-group {
-  border: 2px solid var(--colour-border);
-  border-radius: var(--radius-large);
-  background: var(--colour-card);
-}
+  fieldset.voice-choices label.voice-card {
+    padding: var(--space-3) var(--space-2);
+  }
 
-details.voice-group[open] {
-  border-color: color-mix(
-    in srgb,
-    var(--colour-primary) 45%,
-    var(--colour-border)
-  );
-}
-
-details.voice-group > summary {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--space-1) var(--space-3);
-  padding: var(--space-3) var(--space-4);
-  color: var(--colour-foreground);
-  list-style: none;
-}
-
-details.voice-group > summary::-webkit-details-marker {
-  display: none;
-}
-
-/* A chevron that turns when the fold opens. */
-details.voice-group > summary::before {
-  flex: none;
-  width: 0.625rem;
-  height: 0.625rem;
-  border-right: 3px solid var(--colour-primary);
-  border-bottom: 3px solid var(--colour-primary);
-  content: "";
-  rotate: -45deg;
-  transition: rotate 150ms ease;
-}
-
-details.voice-group[open] > summary::before {
-  rotate: 45deg;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  details.voice-group > summary::before {
-    transition: none;
+  .voice-card-portrait {
+    width: 5.5rem;
+    height: 5.5rem;
   }
 }
 
-.voice-group-title {
+fieldset.voice-choices label.voice-card {
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  gap: var(--space-1);
+  text-align: center;
+}
+
+.voice-card .choice-card-label {
+  justify-content: center;
+  margin-top: var(--space-2);
+  padding-inline: var(--space-5);
   font-family: var(--font-heading);
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
-.voice-group-count {
-  color: var(--colour-muted-foreground);
-  font-size: 0.875rem;
+.voice-card .choice-card-detail {
+  grid-column: 1;
 }
 
-.voice-group-chosen {
-  margin-left: auto;
-  padding: 2px var(--space-3);
-  border-radius: var(--radius-round);
-  background: var(--colour-primary);
-  color: var(--colour-on-primary);
-  font-size: 0.875rem;
-}
-
-.voice-group-about {
-  margin: 0;
-  padding: 0 var(--space-4) var(--space-3);
-  color: var(--colour-muted-foreground);
-}
-
-/* Clean 100's 245 readers and ManyVoice's 16 scroll in their fold. */
-.voice-group-list {
+.voice-card-portrait {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr));
-  grid-auto-rows: max-content;
-  align-content: start;
-  gap: var(--space-2);
-  max-height: 26rem;
-  padding: 0 var(--space-4) var(--space-4);
-  overflow-y: auto;
-  overscroll-behavior: contain;
+  place-items: center;
+  width: 6.5rem;
+  height: 6.5rem;
+  overflow: hidden;
+  border: 3px solid var(--colour-card);
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      light-dark(#ffffff, #3b4a70) 0%,
+      transparent 70%
+    ),
+    linear-gradient(135deg, #f9a8d4, #c084fc);
+  box-shadow: 0 6px 18px rgb(15 23 42 / 0.18);
+}
+
+.voice-card-portrait[data-voice="male"] {
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      light-dark(#ffffff, #3b4a70) 0%,
+      transparent 70%
+    ),
+    linear-gradient(135deg, #7dd3fc, #6366f1);
+}
+
+/* The studio's 192-pixel picture, shown at about half size so it stays crisp. */
+.voice-card-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: scale 200ms ease;
+}
+
+.voice-card:hover .voice-card-portrait img,
+.voice-card:has(input:checked) .voice-card-portrait img {
+  scale: 1.08;
+}
+
+.voice-card:has(input:checked) .voice-card-portrait {
+  border-color: var(--colour-primary);
+}
+
+.voice-card-initial {
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.voice-card-title {
+  color: var(--colour-primary);
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .voice-card-portrait img {
+    transition: none;
+  }
 }
 
 .voice-studio-card {
@@ -6301,12 +6530,6 @@ details.voice-group[open] > summary::before {
   border-color: transparent var(--colour-muted) transparent transparent;
   content: "";
   translate: 0 -50%;
-}
-
-.voice-card-avatar {
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 1.25rem;
 }
 
 @media (max-width: 36rem) {

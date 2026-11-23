@@ -1,4 +1,11 @@
-import type { CSSProperties, ReactNode } from "react";
+import {
+  useLayoutEffect,
+  useRef,
+  useState,
+  type CSSProperties,
+  type ReactNode,
+  type RefObject,
+} from "react";
 
 type Placement = readonly [x: number, y: number, scale: number];
 
@@ -937,9 +944,62 @@ const Gradients = () => (
   </defs>
 );
 
-export const FairytaleBackdrop = () => (
+/** The picture's own shape, 16 by 9. */
+const pictureAspect = 1600 / 900;
+
+/**
+ * Whether the space is wider than the picture. Filling it would then crop
+ * the picture's sky, moon and planet off the top, so the whole picture is
+ * shown instead, its sides fading into a sky-to-hills fill behind it.
+ */
+const useIsWiderThanPicture = () => {
+  const backdrop = useRef<SVGSVGElement>(null);
+  const [isWider, setIsWider] = useState(false);
+  useLayoutEffect(() => {
+    const space = backdrop.current?.parentElement;
+    if (space === null || space === undefined) {
+      return;
+    }
+    const measure = () => {
+      const { width, height } = space.getBoundingClientRect();
+      setIsWider(height > 0 && width / height > pictureAspect);
+    };
+    measure();
+    if (typeof ResizeObserver === "undefined") {
+      return;
+    }
+    const observer = new ResizeObserver(measure);
+    observer.observe(space);
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+  return { backdrop, isWider };
+};
+
+/**
+ * The fairytale world behind Who's playing and the Picture Password: on a
+ * screen taller than 16 by 9 it fills the space, keeping the whole sky and
+ * trimming the sides; on a wider one it shows the whole picture.
+ */
+export const FairytaleBackdrop = () => {
+  const { backdrop, isWider } = useIsWiderThanPicture();
+  return (
+    <FairytalePicture backdrop={backdrop} fit={isWider ? "whole" : "fill"} />
+  );
+};
+
+const FairytalePicture = ({
+  backdrop,
+  fit,
+}: {
+  backdrop: RefObject<SVGSVGElement | null>;
+  fit: "whole" | "fill";
+}) => (
   <svg
+    ref={backdrop}
     className="fairytale-backdrop"
+    data-fit={fit}
     viewBox="0 0 1600 900"
     preserveAspectRatio="xMidYMax slice"
     aria-hidden="true"

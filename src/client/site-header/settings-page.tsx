@@ -1,8 +1,11 @@
 import { useState, useSyncExternalStore, type ReactNode } from "react";
+import type { PiperModel } from "../../curriculum/piper-voice-models.js";
+import { CharacterPreview } from "../character/character-preview.js";
 import {
-  piperModels,
-  type PiperModel,
-} from "../../curriculum/piper-voice-models.js";
+  buildPortraitShot,
+  useItemPictureUrl,
+  type ItemShot,
+} from "../character/item-picture.js";
 import {
   applyAppearance,
   colourModes,
@@ -30,9 +33,10 @@ import {
 import { isReadAloudOffered, readAloud } from "../voice-over/read-aloud.js";
 import {
   defaultReadAloudVoiceName,
+  describeVoiceCharacter,
   findReadAloudVoice,
-  listModelReadAloudVoices,
   loadReadAloudVoiceName,
+  readAloudVoices,
   storeReadAloudVoiceName,
   type ReadAloudVoice,
   type ReadAloudVoiceName,
@@ -131,12 +135,35 @@ export const describeVoiceDownload = (
   }
 };
 
-const VoiceBadge = ({ voice }: { voice: ReadAloudVoice }) => (
-  <figure className="speaker-badge" data-voice={voice.voice}>
-    <span aria-hidden="true">{voice.name.slice(0, 1)}</span>
-    <figcaption>{voice.name}</figcaption>
-  </figure>
-);
+const portraitShots = new Map<ReadAloudVoiceName, ItemShot>();
+
+/** A voice's character, head and hat, photographed once in the shared studio. */
+const findPortraitShot = (voice: ReadAloudVoice): ItemShot => {
+  const known = portraitShots.get(voice.id);
+  if (known !== undefined) {
+    return known;
+  }
+  const shot = buildPortraitShot(voice.character.loadout);
+  portraitShots.set(voice.id, shot);
+  return shot;
+};
+
+const VoicePortrait = ({ voice }: { voice: ReadAloudVoice }) => {
+  const pictureUrl = useItemPictureUrl(findPortraitShot(voice));
+  return (
+    <span
+      className="voice-card-portrait"
+      data-voice={voice.voice}
+      aria-hidden="true"
+    >
+      {pictureUrl === undefined ? (
+        <span className="voice-card-initial">{voice.name.slice(0, 1)}</span>
+      ) : (
+        <img src={pictureUrl} alt="" draggable={false} />
+      )}
+    </span>
+  );
+};
 
 const VoiceChoice = ({
   voice,
@@ -161,19 +188,14 @@ const VoiceChoice = ({
         onChosen(voice.id);
       }}
     />
-    <span
-      className="voice-card-avatar"
-      data-voice={voice.voice}
-      aria-hidden="true"
-    >
-      {voice.name.slice(0, 1)}
-    </span>
+    <VoicePortrait voice={voice} />
     <span className="choice-card-label">
       {voice.name}
       {voice.id === defaultReadAloudVoiceName ? (
         <span className="choice-card-badge">Default</span>
       ) : null}
     </span>
+    <span className="voice-card-title">the {voice.character.title}</span>
     <span className="choice-card-detail">{voice.description}</span>
     <span className="choice-card-check">
       <CheckIcon />
@@ -181,62 +203,31 @@ const VoiceChoice = ({
   </label>
 );
 
-interface VoiceGroup {
-  id: string;
-  title: string;
-  about: string;
-  models: readonly PiperModel[];
-}
-
-/**
- * The voices in the folds of Settings' accordion: every one-speaker voice
- * together, then each many-speaker model's readers in a fold of their own.
- */
-const voiceGroups: readonly VoiceGroup[] = [
-  {
-    id: "one-speaker",
-    title: "Voices",
-    about:
-      "Each voice is a download of its own, kept on this device once it has read.",
-    models: piperModels.filter(({ speakers }) => speakers === undefined),
-  },
-  ...piperModels
-    .filter(({ speakers }) => speakers !== undefined)
-    .map((model) => ({
-      id: model.id,
-      title: `${model.label} readers`,
-      about: `${model.description}. One download (${toMegabytes(model.model.bytes)}) has every reader.`,
-      models: [model],
-    })),
-];
-
-const findVoiceGroupId = (name: ReadAloudVoiceName): string | undefined => {
-  const { model } = findReadAloudVoice(name);
-  return voiceGroups.find((group) => group.models.includes(model))?.id;
-};
-
 const VoiceStudio = ({
   voiceName,
+  showOffCount,
   onChosen,
+  onHeard,
 }: {
   voiceName: ReadAloudVoiceName;
+  showOffCount: number;
   onChosen: (name: ReadAloudVoiceName) => void;
+  onHeard: () => void;
 }) => {
   const isVoiceOffered = isReadAloudOffered();
   const voice = findReadAloudVoice(voiceName);
   const download = useVoiceDownload(voice.model);
   const isDisabled = !isVoiceOffered;
   const isDownloading = download.state === "downloading";
-  // The fold with the chosen voice starts open; the rest wait to be opened.
-  const [openGroups, setOpenGroups] = useState<ReadonlySet<string>>(() => {
-    const chosenGroup = findVoiceGroupId(voiceName);
-    return new Set(chosenGroup === undefined ? [] : [chosenGroup]);
-  });
   return (
     <section className="voice-studio" aria-labelledby="voice-studio-heading">
       <div className="voice-studio-stage">
         <div className="voice-studio-speaker">
-          <VoiceBadge voice={voice} />
+          <CharacterPreview
+            characterName={voice.name}
+            loadout={voice.character.loadout}
+            showOffCount={showOffCount}
+          />
         </div>
         <div
           className="voice-studio-card"
@@ -245,6 +236,7 @@ const VoiceStudio = ({
         >
           <p className="voice-studio-kicker">Reading voice</p>
           <h2 id="voice-studio-heading">{voice.name}</h2>
+          <p className="voice-studio-title">{describeVoiceCharacter(voice)}</p>
           <p className="voice-studio-detail">{voice.description}</p>
           <p className="voice-studio-bubble">
             “{describeVoiceSample(voiceName)}”
@@ -257,6 +249,7 @@ const VoiceStudio = ({
                 disabled={isDownloading}
                 onClick={() => {
                   sayVoiceSample(voiceName);
+                  onHeard();
                 }}
               >
                 <VoiceIcon />
@@ -296,66 +289,21 @@ const VoiceStudio = ({
       </div>
       <p className="voice-studio-intro">
         Choose who reads questions and messages out loud when you press Read it
-        to me. Every voice is one of Bryce Beattie&apos;s free Piper voices,
-        spoken on this device.
+        to me. Every voice has a character of their own, and all but two are
+        from the UK and Ireland. Each is a free Piper voice, spoken on this
+        device.
       </p>
-      <fieldset className="voice-choices">
+      <fieldset className="choice-cards voice-choices">
         <legend>Voices</legend>
-        {voiceGroups.map((group) => {
-          const voices = group.models.flatMap((model) =>
-            listModelReadAloudVoices(model.id),
-          );
-          const chosenHere = voices.find(({ id }) => id === voiceName);
-          return (
-            <details
-              key={group.id}
-              className="voice-group"
-              open={openGroups.has(group.id)}
-              onToggle={(event) => {
-                const { open } = event.currentTarget;
-                setOpenGroups((groups) => {
-                  if (groups.has(group.id) === open) {
-                    return groups;
-                  }
-                  const changed = new Set(groups);
-                  if (open) {
-                    changed.add(group.id);
-                  } else {
-                    changed.delete(group.id);
-                  }
-                  return changed;
-                });
-              }}
-            >
-              <summary>
-                <span className="voice-group-title">{group.title}</span>
-                <span className="voice-group-count">
-                  {voices.length} {voices.length === 1 ? "voice" : "voices"}
-                </span>
-                {chosenHere === undefined ? null : (
-                  <span className="voice-group-chosen">
-                    Chosen: {chosenHere.name}
-                  </span>
-                )}
-              </summary>
-              <p className="voice-group-about">{group.about}</p>
-              <div
-                className="choice-cards voice-group-list"
-                data-voice-count={voices.length}
-              >
-                {voices.map((choice) => (
-                  <VoiceChoice
-                    key={choice.id}
-                    voice={choice}
-                    isChosen={choice.id === voiceName}
-                    isDisabled={isDisabled}
-                    onChosen={onChosen}
-                  />
-                ))}
-              </div>
-            </details>
-          );
-        })}
+        {readAloudVoices.map((choice) => (
+          <VoiceChoice
+            key={choice.id}
+            voice={choice}
+            isChosen={choice.id === voiceName}
+            isDisabled={isDisabled}
+            onChosen={onChosen}
+          />
+        ))}
       </fieldset>
     </section>
   );
@@ -364,11 +312,17 @@ const VoiceStudio = ({
 export const SettingsPage = () => {
   const [appearance, setAppearance] = useState(loadAppearance);
   const [voiceName, setVoiceName] = useState(loadReadAloudVoiceName);
+  // Each new voice, and each hello, sets the voice's character showing off.
+  const [showOffCount, setShowOffCount] = useState(0);
+  const showOff = () => {
+    setShowOffCount((count) => count + 1);
+  };
 
   const changeVoice = (name: ReadAloudVoiceName) => {
     storeReadAloudVoiceName(name);
     setVoiceName(name);
     sayVoiceSample(name);
+    showOff();
   };
 
   const changeAppearance = (change: Partial<Appearance>) => {
@@ -456,7 +410,12 @@ export const SettingsPage = () => {
           );
         })}
       </fieldset>
-      <VoiceStudio voiceName={voiceName} onChosen={changeVoice} />
+      <VoiceStudio
+        voiceName={voiceName}
+        showOffCount={showOffCount}
+        onChosen={changeVoice}
+        onHeard={showOff}
+      />
     </section>
   );
 };
