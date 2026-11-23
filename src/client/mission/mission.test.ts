@@ -28,6 +28,7 @@ import {
   buildEnglishMission,
   buildLetterMatchMission,
   buildListenAndPickMission,
+  listListenAndPickSkills,
   buildGeographyGameMission,
   buildPhonicsGameMission,
   buildLabMission,
@@ -331,6 +332,45 @@ describe("buildListenAndPickMission", () => {
       expect(choices).toContain("s");
     }
   });
+
+  it.each(phonicsProgrammes.map(({ id }) => id))(
+    "never offers a wrong letter tile that %s also teaches for the sound played",
+    (phonicsProgrammeId) => {
+      const phonicsProgramme = findProgramme(phonicsProgrammeId);
+      const graphemes = phonicsProgramme.soundOrder.flatMap(
+        (stage) => stage.graphemes,
+      );
+      const playableSounds = listListenAndPickSkills({
+        phonicsProgramme,
+        skills,
+        recordedSounds: everySound,
+      }).map(({ sounds }) => sounds[0]);
+
+      for (const sound of playableSounds) {
+        const spellings = new Set(
+          graphemes
+            .filter(({ sounds }) => sounds.includes(sound))
+            .map(({ grapheme }) => grapheme),
+        );
+        const mission = buildPhonicsMission(
+          phonicsProgrammeId,
+          [],
+          new Set([sound]),
+        );
+        for (const { choices, answer } of mission?.activities[0]?.questions ??
+          []) {
+          const wrongSpellings = choices.filter(
+            (choice) => choice !== answer && spellings.has(choice),
+          );
+          expect({ sound, wrongSpellings }).toEqual({
+            sound,
+            wrongSpellings: [],
+          });
+          expect(choices).toHaveLength(choicesPerQuestion);
+        }
+      }
+    },
+  );
 });
 
 describe("describeNumberBond", () => {
