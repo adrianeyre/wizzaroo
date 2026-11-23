@@ -50,7 +50,7 @@
     "@ai-hero/sandcastle": "^0.14.0",
     "@eslint/js": "^10.0.1",
     "@react-three/test-renderer": "^9.1.1",
-    "@testcontainers/postgresql": "^12.2.1",
+    "@testcontainers/postgresql": "^12.2.2",
     "@types/node": "^26.6.6",
     "@types/pg": "^8.23.1",
     "@types/react": "^19.3.0",
