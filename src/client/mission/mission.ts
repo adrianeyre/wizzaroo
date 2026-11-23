@@ -63,7 +63,7 @@ import type { ClockQuestion } from "../../curriculum/telling-the-time.js";
 import { formatNumber } from "../../curriculum/number-format.js";
 import type {
   LabGame,
-  LabProp,
+  LabModel,
   LabQuestion,
   LabStation,
 } from "../../curriculum/lab-games.js";
@@ -118,7 +118,8 @@ export type QuestionPrompt =
   | {
       kind: "lab";
       station: LabStation;
-      prop: LabProp;
+      /** The question's own model, or the Game's prop when it names none. */
+      prop: LabModel;
       ask: string;
     }
   | { kind: "music"; music: MusicPrompt }
@@ -445,7 +446,7 @@ const buildLabActivity = (
       prompt: {
         kind: "lab",
         station: game.station,
-        prop: game.prop,
+        prop: question.model ?? game.prop,
         ask: question.ask,
       },
       choices: buildLabChoices({ ...question, station: game.station }, random),

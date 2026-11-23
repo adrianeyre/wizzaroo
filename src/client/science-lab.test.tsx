@@ -12,9 +12,11 @@ import {
   labProps,
   labStations,
   type LabGame,
+  type LabModel,
   type LabProp,
   type LabStation,
 } from "../curriculum/lab-games.js";
+import { isLabItem, labItems } from "../curriculum/lab-items.js";
 import { ScienceLabWorld } from "./science-lab.js";
 
 const triangleBudget = 10_000 - islandStagePropTriangleBudget;
@@ -47,7 +49,10 @@ const listGameChoices = ({ station, questions }: LabGame): string[] => {
 
 const renderScienceLab = async (
   game: LabGame | undefined,
-  { poppedChoiceIndex }: { poppedChoiceIndex?: number } = {},
+  {
+    poppedChoiceIndex,
+    shown,
+  }: { poppedChoiceIndex?: number; shown?: LabModel } = {},
 ) => {
   const renderer = await ReactThreeTestRenderer.create(
     <ScienceLabWorld
@@ -57,7 +62,7 @@ const renderScienceLab = async (
           : {
               kind: "lab",
               station: game.station,
-              prop: game.prop,
+              prop: shown ?? game.prop,
               ask: game.questions[0].ask,
             }
       }
@@ -100,6 +105,42 @@ describe("ScienceLabWorld", () => {
       await renderer.unmount();
     },
   );
+
+  const itemShowings = labGames.flatMap((game) =>
+    [
+      ...new Set(
+        game.questions.flatMap(({ model }) =>
+          model === undefined || !isLabItem(model) ? [] : [model],
+        ),
+      ),
+    ].map((item) => [game.title, item, game] as const),
+  );
+
+  it.each(itemShowings)(
+    `draws %s's %s at the game's station within ${String(triangleBudget)} triangles and ${String(meshBudget)} meshes`,
+    async (_title, item, game) => {
+      const renderer = await renderScienceLab(game, {
+        poppedChoiceIndex: 0,
+        shown: item,
+      });
+      const meshes = listMeshes(renderer);
+      const triangles = meshes.reduce(
+        (total, mesh) => total + countDrawnTriangles(mesh),
+        0,
+      );
+
+      expect(findNamed(renderer, `item-${item}`)).toHaveLength(1);
+      expect(triangles).toBeLessThanOrEqual(triangleBudget);
+      expect(meshes.length).toBeLessThanOrEqual(meshBudget);
+      await renderer.unmount();
+    },
+  );
+
+  it("shows every item some game asks about, so none is modelled for nothing", () => {
+    const shownItems = new Set(itemShowings.map(([, item]) => item));
+
+    expect(labItems.filter((item) => !shownItems.has(item))).toEqual([]);
+  });
 
   it("sets out the lab bench, its shelf of glassware and the Companion in every game", async () => {
     const renderer = await renderScienceLab(labGames[0]);

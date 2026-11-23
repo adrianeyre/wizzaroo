@@ -12,6 +12,7 @@ import scienceYearFourGames from "./science-games.year-4.json" with { type: "jso
 import scienceYearFiveGames from "./science-games.year-5.json" with { type: "json" };
 import scienceYearSixGames from "./science-games.year-6.json" with { type: "json" };
 import { subjectLabGameFiles } from "./lab-game-files.js";
+import { isLabItem, type LabItem } from "./lab-items.js";
 import { isSubject, subjectNames, subjects, type Subject } from "./subjects.js";
 import { isYearGroup, type YearGroup } from "./year-groups.js";
 
@@ -70,10 +71,15 @@ export const labProps = [
 
 export type LabProp = (typeof labProps)[number];
 
+/** What the turntable shows for a question: one of the props, or an item of its own. */
+export type LabModel = LabProp | LabItem;
+
 export interface LabQuestion {
   ask: string;
   answer: string;
   distractors: string[];
+  /** The thing the question is about, shown in place of the Game's prop. */
+  model?: LabModel;
 }
 
 export interface LabGame {
@@ -117,7 +123,7 @@ const gameFields = [
   "questions",
   "skillId",
 ];
-const questionFields = ["ask", "answer", "distractors"];
+const questionFields = ["ask", "answer", "distractors", "model"];
 
 export const longestChoiceCharacters = 20;
 export const longestAskCharacters = 100;
@@ -129,8 +135,26 @@ const distractorsPerQuestion = 3;
 const isLabStation = (value: unknown): value is LabStation =>
   labStations.some((station) => station === value);
 
-const isLabProp = (value: unknown): value is LabProp =>
+export const isLabProp = (value: unknown): value is LabProp =>
   labProps.some((prop) => prop === value);
+
+const isLabModel = (value: unknown): value is LabModel =>
+  isLabProp(value) || isLabItem(value);
+
+const readModel = (
+  value: unknown,
+  describedAs: string,
+): { model?: LabModel } => {
+  if (value === undefined) {
+    return {};
+  }
+  if (!isLabModel(value)) {
+    throw new InvalidCurriculumFileError(
+      `${describedAs} shows a model Wizzaroo hasn't got: ${JSON.stringify(value)}`,
+    );
+  }
+  return { model: value };
+};
 
 const readText = (
   value: unknown,
@@ -209,6 +233,7 @@ const parseQuestion = (
     ),
     answer: readChoice(fields.get("answer"), `The answer of ${describedAs}`),
     distractors: parseDistractors(fields.get("distractors"), describedAs),
+    ...readModel(fields.get("model"), describedAs),
   };
   if (station === "true-false") {
     assertTrueFalseQuestion(question, describedAs);

@@ -853,6 +853,35 @@ describe("buildLabMission", () => {
     expect(playWholeMission(mission).at(-1)?.progress.isFinished).toBe(true);
   });
 
+  it("shows each question's own model, or the game's prop when the question names none", () => {
+    const game = labGames.find(({ id }) => id === "second-habitat-homes");
+    if (game === undefined) {
+      throw new Error("Habitat Homes is missing");
+    }
+    const withoutModels = {
+      ...game,
+      questions: game.questions.map(({ ask, answer, distractors }) => ({
+        ask,
+        answer,
+        distractors,
+      })),
+    };
+
+    const shown = listQuestions(
+      buildLabMission(game, { random, buildId: buildCountingIds() }),
+    ).map(({ prompt }) => prompt);
+    const fallback = listQuestions(
+      buildLabMission(withoutModels, { random, buildId: buildCountingIds() }),
+    ).map(({ prompt }) => prompt);
+
+    expect(shown).toContainEqual(
+      expect.objectContaining({ ask: "A jellyfish", prop: "jellyfish" }),
+    );
+    for (const prompt of fallback) {
+      expect(prompt).toMatchObject({ kind: "lab", prop: game.prop });
+    }
+  });
+
   it("always offers True then False for a true-or-false game", () => {
     const mission = buildLabMission(findGame("true-false"), {
       random,

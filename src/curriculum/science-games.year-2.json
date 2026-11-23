@@ -15,42 +15,50 @@
         {
           "ask": "A snowy owl",
           "answer": "Polar",
-          "distractors": ["Desert", "Ocean", "Woodland"]
+          "distractors": ["Desert", "Ocean", "Woodland"],
+          "model": "snowy-owl"
         },
         {
           "ask": "A camel",
           "answer": "Desert",
-          "distractors": ["Polar", "Ocean", "Woodland"]
+          "distractors": ["Polar", "Ocean", "Woodland"],
+          "model": "camel"
         },
         {
           "ask": "A shark",
           "answer": "Ocean",
-          "distractors": ["Desert", "Polar", "Woodland"]
+          "distractors": ["Desert", "Polar", "Woodland"],
+          "model": "shark"
         },
         {
           "ask": "A squirrel",
           "answer": "Woodland",
-          "distractors": ["Desert", "Ocean", "Polar"]
+          "distractors": ["Desert", "Ocean", "Polar"],
+          "model": "squirrel"
         },
         {
           "ask": "An arctic fox",
           "answer": "Polar",
-          "distractors": ["Desert", "Woodland", "Ocean"]
+          "distractors": ["Desert", "Woodland", "Ocean"],
+          "model": "arctic-fox"
         },
         {
           "ask": "A fennec fox",
           "answer": "Desert",
-          "distractors": ["Ocean", "Polar", "Woodland"]
+          "distractors": ["Ocean", "Polar", "Woodland"],
+          "model": "fennec-fox"
         },
         {
           "ask": "A jellyfish",
           "answer": "Ocean",
-          "distractors": ["Woodland", "Desert", "Polar"]
+          "distractors": ["Woodland", "Desert", "Polar"],
+          "model": "jellyfish"
         },
         {
           "ask": "A badger",
           "answer": "Woodland",
-          "distractors": ["Ocean", "Polar", "Desert"]
+          "distractors": ["Ocean", "Polar", "Desert"],
+          "model": "badger"
         }
       ]
     },

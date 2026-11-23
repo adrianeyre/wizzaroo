@@ -110,6 +110,23 @@ describe("labGames", () => {
   });
 });
 
+describe("Habitat Homes", () => {
+  it("shows each animal as itself, not the game's tree", () => {
+    const game = findLabGame("second-habitat-homes");
+
+    expect(game?.questions.map(({ ask, model }) => [ask, model])).toEqual([
+      ["A snowy owl", "snowy-owl"],
+      ["A camel", "camel"],
+      ["A shark", "shark"],
+      ["A squirrel", "squirrel"],
+      ["An arctic fox", "arctic-fox"],
+      ["A fennec fox", "fennec-fox"],
+      ["A jellyfish", "jellyfish"],
+      ["A badger", "badger"],
+    ]);
+  });
+});
+
 describe("findLabGame", () => {
   it("finds a game by its ID, and nothing for an ID it doesn't know", () => {
     const [firstGame] = labGames;
@@ -190,6 +207,15 @@ describe("parseLabGames", () => {
       }),
     ],
     [
+      "a question showing a model it doesn't know",
+      replaceFirstQuestion({
+        ask: "A frog",
+        answer: "Amphibian",
+        distractors: ["Fish", "Reptile", "Mammal"],
+        model: "dragon",
+      }),
+    ],
+    [
       "a question with a field it doesn't know",
       replaceFirstQuestion({
         ask: "A frog",
@@ -200,6 +226,34 @@ describe("parseLabGames", () => {
     ],
   ])("refuses %s", (_, yearFile) => {
     expect(() => parseLabGames([yearFile])).toThrow(InvalidCurriculumFileError);
+  });
+
+  it("reads the model a question shows, an item or one of the props, and none when it names none", () => {
+    const yearFile = replaceFirstQuestion({
+      ask: "A jellyfish",
+      answer: "Ocean",
+      distractors: ["Desert", "Polar", "Woodland"],
+      model: "jellyfish",
+    });
+    const [firstGame, ...otherGames] = yearFile.games;
+    const games = [
+      {
+        ...firstGame,
+        questions: firstGame.questions.with(1, {
+          ask: "The Moon",
+          answer: "Space",
+          distractors: ["Desert", "Polar", "Woodland"],
+          model: "moon",
+        }),
+      },
+      ...otherGames,
+    ];
+
+    const [{ questions }] = parseLabGames([{ ...yearFile, games }]);
+
+    expect(questions[0].model).toBe("jellyfish");
+    expect(questions[1].model).toBe("moon");
+    expect(questions[2].model).toBeUndefined();
   });
 
   it("refuses a true-or-false question with any choice but True and False", () => {
