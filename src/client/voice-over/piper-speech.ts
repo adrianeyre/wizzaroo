@@ -9,6 +9,11 @@ import {
   type PiperResponse,
 } from "./piper-messages.js";
 import type { ReadAloudVoice } from "./read-aloud-voices.js";
+import {
+  buildLoudness,
+  startSpeaking,
+  type SpeakingCharacter,
+} from "./speaking-voice.js";
 
 /**
  * Speaks with a Piper voice on the device (ADR 0062). The model runs in a
@@ -183,6 +188,8 @@ let playing:
       sentenceCount: number;
       heard: number;
       onFinished: () => void;
+      /** The voice's character, whose mouth moves with each sentence. */
+      speaking: SpeakingCharacter;
     }
   | undefined;
 
@@ -199,8 +206,9 @@ const finishPlaying = (requestId: number): void => {
   if (playing?.requestId !== requestId) {
     return;
   }
-  const { onFinished } = playing;
+  const { onFinished, speaking } = playing;
   playing = undefined;
+  speaking.stop();
   onFinished();
 };
 
@@ -239,6 +247,10 @@ responseListeners.add((response) => {
   source.connect(context.destination);
   const startAt = Math.max(context.currentTime + 0.02, playing.nextStart);
   source.start(startAt);
+  playing.speaking.hear(
+    startAt,
+    buildLoudness(response.samples, response.sampleRate),
+  );
   playing.nextStart = startAt + buffer.duration;
   playing.sources.push(source);
   const { requestId } = response;
@@ -285,6 +297,7 @@ export const stopPiper = (): void => {
   }
   const stopped = playing;
   playing = undefined;
+  stopped.speaking.stop();
   send({ kind: "stop" });
   for (const source of stopped.sources) {
     try {
@@ -320,6 +333,7 @@ export const speakWithPiper = (
     sentenceCount: sentences.length,
     heard: 0,
     onFinished,
+    speaking: startSpeaking(voice.id, () => context.currentTime),
   };
   send({
     kind: "speak",

@@ -12,7 +12,9 @@ import {
   loadReadAloudVoiceName,
   type ReadAloudVoiceName,
 } from "./read-aloud-voices.js";
+import { startSpeaking, type SpeakingCharacter } from "./speaking-voice.js";
 import { toSpokenWords } from "./spoken-words.js";
+import type { VoiceCharacterId } from "./voice-characters.js";
 
 /**
  * Reads a question out loud, so a Child who can't read it yet can still
@@ -56,6 +58,8 @@ export const whenReadingAloudStarts = (listener: () => void): void => {
 };
 
 let currentUtterance: SpeechSynthesisUtterance | undefined;
+/** The chosen voice's character while the device's own voice reads for it. */
+let deviceSpeaking: SpeakingCharacter | undefined;
 let speakingReader: string | undefined;
 const speakingListeners = new Set<() => void>();
 
@@ -82,6 +86,8 @@ export const findSpeakingReader = (): string | undefined => speakingReader;
 
 export const stopReadingAloud = (): void => {
   currentUtterance = undefined;
+  deviceSpeaking?.stop();
+  deviceSpeaking = undefined;
   setSpeakingReader(undefined);
   waitingFor = undefined;
   stopPiper();
@@ -90,10 +96,13 @@ export const stopReadingAloud = (): void => {
 
 let waitingFor: { reader: string | undefined } | undefined;
 
+const readSeconds = (): number => performance.now() / 1000;
+
 const speakWithDevice = (
   speech: SpeechSynthesis,
   words: string,
   reader: string | undefined,
+  character: VoiceCharacterId,
 ): void => {
   const utterance = new SpeechSynthesisUtterance(words);
   const voice = pickReadAloudVoice(speech.getVoices());
@@ -101,15 +110,21 @@ const speakWithDevice = (
   if (voice !== undefined) {
     utterance.voice = voice;
   }
+  // The device's voice gives no sound to measure, so the mouth moves word by word.
+  const speaking = startSpeaking(character, readSeconds);
+  speaking.chatter();
   const finish = () => {
+    speaking.stop();
     if (currentUtterance === utterance) {
       currentUtterance = undefined;
+      deviceSpeaking = undefined;
       setSpeakingReader(undefined);
     }
   };
   utterance.onend = finish;
   utterance.onerror = finish;
   currentUtterance = utterance;
+  deviceSpeaking = speaking;
   setSpeakingReader(reader);
   speech.speak(utterance);
 };
@@ -148,7 +163,7 @@ export const readAloud = (
     if (speech === undefined) {
       return false;
     }
-    speakWithDevice(speech, words, reader);
+    speakWithDevice(speech, words, reader, findReadAloudVoice(voiceName).id);
     return true;
   }
   const voice = findReadAloudVoice(voiceName);
@@ -183,7 +198,12 @@ export const readAloud = (
       unsubscribe();
       waitingFor = undefined;
       if (speech !== undefined && isDeviceVoiceAllowed) {
-        speakWithDevice(speech, words, reader);
+        speakWithDevice(
+          speech,
+          words,
+          reader,
+          findReadAloudVoice(voiceName).id,
+        );
       } else {
         setSpeakingReader(undefined);
       }

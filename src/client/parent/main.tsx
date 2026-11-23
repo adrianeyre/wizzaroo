@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import { startFocusRecovery } from "../focus-recovery.js";
 import { startServiceWorker } from "../offline/offline-app.js";
 import { SiteFooter } from "../site-footer/site-footer.js";
+import { SpeakingFace } from "../voice-over/speaking-face.js";
 import { takeLinkToken } from "./link-token.js";
 import { ParentPage } from "./parent-page.js";
 import { applyAppearance, loadAppearance } from "../site-header/appearance.js";
@@ -33,5 +34,6 @@ createRoot(rootElement).render(
       signInCode={signInCode}
     />
     <SiteFooter />
+    <SpeakingFace />
   </StrictMode>,
 );

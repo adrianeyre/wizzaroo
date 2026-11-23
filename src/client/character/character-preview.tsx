@@ -4,7 +4,7 @@ import type { Group } from "three";
 import type { CharacterLoadout } from "../../curriculum/catalogue.js";
 import { getMotionScale } from "../reduced-motion.js";
 import { buildShowOffLook, describeCharacter } from "./character-look.js";
-import { headHeight } from "./character-model.js";
+import { SpeakingMouthContext, headHeight } from "./character-model.js";
 import {
   FidgetingFigure,
   findRiderLift,
@@ -147,6 +147,7 @@ const CharacterStage = ({
   showOffCount = 0,
   petPlace = "ground",
   isFidgeting = false,
+  readMouthOpenness,
 }: {
   loadout: CharacterLoadout;
   framing: Framing;
@@ -155,6 +156,8 @@ const CharacterStage = ({
   showOffCount?: number;
   petPlace?: PetPlace;
   isFidgeting?: boolean;
+  /** Set while the Character speaks, so its mouth moves with the words (ADR 0077). */
+  readMouthOpenness?: () => number;
 }) => {
   const shot = useMemo(() => findShot(framing, loadout), [framing, loadout]);
   const dragFromX = useRef<number>(undefined);
@@ -184,7 +187,9 @@ const CharacterStage = ({
       <Canvas
         flat
         dpr={sharpestPixelRatio}
-        frameloop={isTurnable ? "always" : "demand"}
+        frameloop={
+          isTurnable || readMouthOpenness !== undefined ? "always" : "demand"
+        }
         gl={{ antialias: true, alpha: true }}
         camera={{
           position: [0, shot.cameraHeight, shot.cameraDistance],
@@ -212,14 +217,16 @@ const CharacterStage = ({
             depthWrite={false}
           />
         </mesh>
-        <TurningCharacter
-          loadout={loadout}
-          dragTurnRef={dragTurnRef}
-          isSwaying={isTurnable}
-          showOffCount={showOffCount}
-          petPlace={petPlace}
-          isFidgeting={isFidgeting}
-        />
+        <SpeakingMouthContext value={readMouthOpenness}>
+          <TurningCharacter
+            loadout={loadout}
+            dragTurnRef={dragTurnRef}
+            isSwaying={isTurnable}
+            showOffCount={showOffCount}
+            petPlace={petPlace}
+            isFidgeting={isFidgeting}
+          />
+        </SpeakingMouthContext>
       </Canvas>
     </div>
   );
@@ -229,6 +236,7 @@ interface CharacterPreviewProps {
   characterName: string;
   loadout: CharacterLoadout;
   showOffCount?: number;
+  readMouthOpenness?: () => number;
 }
 
 const quarterTurn = Math.PI / 2;
@@ -242,6 +250,7 @@ export const CharacterPreview = ({
   characterName,
   loadout,
   showOffCount = 0,
+  readMouthOpenness,
 }: CharacterPreviewProps) => {
   const dragTurnRef = useRef(0);
   return (
@@ -255,6 +264,7 @@ export const CharacterPreview = ({
           isTurnable
           dragTurnRef={dragTurnRef}
           showOffCount={showOffCount}
+          readMouthOpenness={readMouthOpenness}
         />
       </div>
       <figcaption>{characterName}</figcaption>
@@ -281,11 +291,13 @@ export const CharacterPortrait = ({
   loadout,
   isPetShown = false,
   isFidgeting = false,
+  readMouthOpenness,
 }: {
   characterName?: string;
   loadout: CharacterLoadout;
   isPetShown?: boolean;
   isFidgeting?: boolean;
+  readMouthOpenness?: () => number;
 }) => {
   const dragTurnRef = useRef(0);
   const portraitLoadout = useMemo(
@@ -313,6 +325,7 @@ export const CharacterPortrait = ({
         dragTurnRef={dragTurnRef}
         petPlace="shoulder"
         isFidgeting={isFidgeting}
+        readMouthOpenness={readMouthOpenness}
       />
     </span>
   );

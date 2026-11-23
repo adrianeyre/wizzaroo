@@ -9,6 +9,7 @@ import {
   startServiceWorker,
 } from "./offline/offline-app.js";
 import { SiteFooter } from "./site-footer/site-footer.js";
+import { SpeakingFace } from "./voice-over/speaking-face.js";
 import {
   loadVoiceOver,
   recordedPhonemeSounds,
@@ -47,5 +48,6 @@ createRoot(rootElement).render(
       )}
     />
     <SiteFooter />
+    <SpeakingFace />
   </StrictMode>,
 );

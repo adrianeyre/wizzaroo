@@ -1,4 +1,6 @@
-import type { ReactNode } from "react";
+import { useFrame } from "@react-three/fiber";
+import { createContext, useContext, useRef, type ReactNode } from "react";
+import type { Group } from "three";
 import {
   AccessoryOnFace,
   AccessoryOnNeck,
@@ -1405,8 +1407,67 @@ const drawHair = (
   }
 };
 
+/**
+ * How far open a speaking Character's mouth is now, from 0 to 1. A Character
+ * drawn inside it talks (ADR 0077); outside it, the mouth is as chosen.
+ */
+export const SpeakingMouthContext = createContext<(() => number) | undefined>(
+  undefined,
+);
+
+/** How quickly the mouth follows the voice: quick enough for syllables, not jittery. */
+const mouthFollowRate = 22;
+const closedBelow = 0.06;
+
+const TalkingMouth = ({
+  model,
+  readOpenness,
+}: {
+  model: MouthModel;
+  readOpenness: () => number;
+}) => {
+  const resting = useRef<Group>(null);
+  const open = useRef<Group>(null);
+  const openness = useRef(0);
+  useFrame((_, seconds) => {
+    const target = readOpenness();
+    openness.current +=
+      (target - openness.current) * Math.min(1, seconds * mouthFollowRate);
+    const isOpen = openness.current > closedBelow;
+    if (resting.current !== null) {
+      resting.current.visible = !isOpen;
+    }
+    if (open.current !== null) {
+      open.current.visible = isOpen;
+      // The jaw drops as the mouth opens: taller, a little narrower and lower.
+      open.current.scale.set(
+        1 - openness.current * 0.2,
+        0.3 + openness.current * 1.5,
+        1,
+      );
+      open.current.position.y = -openness.current * 0.035;
+    }
+  });
+  return (
+    <>
+      <group ref={resting}>{drawMouth(model)}</group>
+      <group ref={open} visible={false}>
+        <OpenMouth scale={[1.25, 0.9, 0.35]} />
+        <Part
+          colour={partColours.tongue}
+          position={[0, -0.035, 0.012]}
+          scale={[1, 0.45, 0.3]}
+        >
+          {ball(0.05)}
+        </Part>
+      </group>
+    </>
+  );
+};
+
 export const Head = ({ look }: { look: CharacterLook }) => {
   const isUnderHat = isHairHiddenByHat(look.hat.model);
+  const readOpenness = useContext(SpeakingMouthContext);
   return (
     <group name="head" position={[0, headHeight, 0]}>
       <Part colour={look.skinColour}>{ball(headRadius)}</Part>
@@ -1431,7 +1492,11 @@ export const Head = ({ look }: { look: CharacterLook }) => {
       <Eyes eyes={look.eyes} />
       <Eyebrows model={look.eyebrows} colour={look.hairColour} />
       <group name="mouth" position={[0, mouthHeight, mouthDepth]}>
-        {drawMouth(look.mouth)}
+        {readOpenness === undefined ? (
+          drawMouth(look.mouth)
+        ) : (
+          <TalkingMouth model={look.mouth} readOpenness={readOpenness} />
+        )}
       </group>
       <group name="facial-hair">
         {drawFacialHair(look.facialHair, look.hairColour, look.skinColour)}

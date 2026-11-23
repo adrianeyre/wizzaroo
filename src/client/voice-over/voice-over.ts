@@ -5,6 +5,17 @@ import {
 } from "./voice-over-files.js";
 import voiceOverLines from "./voice-over-lines.json" with { type: "json" };
 import {
+  findReadAloudVoice,
+  loadReadAloudVoiceName,
+} from "./read-aloud-voices.js";
+import {
+  buildLoudness,
+  startSpeaking,
+  type Loudness,
+  type SpeakingCharacter,
+} from "./speaking-voice.js";
+import type { VoiceCharacterId } from "./voice-characters.js";
+import {
   findSpeakingReader,
   readLineInChosenVoice,
   stopReadingAloud,
@@ -128,12 +139,72 @@ whenReadingAloudStarts(() => {
   voiceOverSpeaker?.pause();
 });
 
-const playAudio = async (url: string): Promise<void> => {
+/** Whose voice the recorded lines are: Cori's, made before release (ADR 0007). */
+const recordedLinesVoice: VoiceCharacterId = "cori-med";
+
+const recordingLoudness = new Map<string, Promise<Loudness | undefined>>();
+
+/** Measures a recording's loudness once, so its speaker's mouth can follow it. */
+const measureRecording = (url: string): Promise<Loudness | undefined> => {
+  const measured =
+    recordingLoudness.get(url) ??
+    (async () => {
+      if (typeof OfflineAudioContext === "undefined") {
+        return undefined;
+      }
+      try {
+        const sound = await (await fetch(url)).arrayBuffer();
+        const decoded = await new OfflineAudioContext(
+          1,
+          1,
+          16_000,
+        ).decodeAudioData(sound);
+        return buildLoudness(decoded.getChannelData(0), decoded.sampleRate);
+      } catch {
+        return undefined;
+      }
+    })();
+  recordingLoudness.set(url, measured);
+  return measured;
+};
+
+let recordingSpeaking: SpeakingCharacter | undefined;
+
+const stopRecordingSpeaking = () => {
+  recordingSpeaking?.stop();
+  recordingSpeaking = undefined;
+};
+
+const findVoiceOverSpeaker = (): HTMLAudioElement => {
+  if (voiceOverSpeaker === undefined) {
+    const made = new Audio();
+    made.addEventListener("ended", stopRecordingSpeaking);
+    made.addEventListener("pause", stopRecordingSpeaking);
+    made.addEventListener("error", stopRecordingSpeaking);
+    voiceOverSpeaker = made;
+  }
+  return voiceOverSpeaker;
+};
+
+const playAudio = async (
+  url: string,
+  voice: VoiceCharacterId,
+): Promise<void> => {
   stopReadingAloud();
-  voiceOverSpeaker ??= new Audio();
-  voiceOverSpeaker.src = url;
+  stopRecordingSpeaking();
+  const speaker = findVoiceOverSpeaker();
+  speaker.src = url;
+  // Until the recording is measured, the mouth moves word by word.
+  const speaking = startSpeaking(voice, () => speaker.currentTime);
+  speaking.chatter();
+  recordingSpeaking = speaking;
+  void measureRecording(url).then((loudness) => {
+    if (loudness !== undefined) {
+      speaking.hear(0, loudness);
+    }
+  });
   try {
-    await voiceOverSpeaker.play();
+    await speaker.play();
   } catch (error) {
     if (!isCutOffByNextLine(error)) {
       throw error;
@@ -153,7 +224,10 @@ export const playVoiceOver = (key: VoiceOverKey): Promise<void> => {
   if (readLineInChosenVoice(voiceOverLines[key], voiceOverReader)) {
     return Promise.resolve();
   }
-  return playAudio(heldVoiceOverUrls.get(key) ?? getVoiceOverUrl(key));
+  return playAudio(
+    heldVoiceOverUrls.get(key) ?? getVoiceOverUrl(key),
+    recordedLinesVoice,
+  );
 };
 
 export const playPhoneme = (sound: PhonicsSound): Promise<void> => {
@@ -161,7 +235,8 @@ export const playPhoneme = (sound: PhonicsSound): Promise<void> => {
   if (url === undefined) {
     throw new Error(`The sound "${sound}" has no recording yet`);
   }
-  return playAudio(url);
+  // The sounds were recorded by a person, not a voice, so the chosen voice's character says them.
+  return playAudio(url, findReadAloudVoice(loadReadAloudVoiceName()).id);
 };
 
 const waitForChosenVoiceToEnd = (): Promise<void> =>
