@@ -23,7 +23,7 @@ nothing outside Docker can reach it. `tunnel` is internal too, and only
 `postgres`. Each goes out of Docker on a network of its own: `cloudflared` on
 `tunnel-egress`, to reach Cloudflare, and `app` on `mail`, to reach the email
 platform. A one-shot `voices` service downloads Read it to me's voices, about
-800 MB the first time, into the `voice-models` volume on a network of its own,
+510 MB the first time, into the `voice-models` volume on a network of its own,
 `voices-egress`, and exits; `app` mounts the volume read-only (ADR 0062). Their
 bridges are named `wizzaroo-tunnel`, `wizzaroo-mail` and `wizzaroo-voices`, so
 [the firewall](#keeping-the-tunnel-and-the-app-off-the-lan) can keep them off
@@ -238,7 +238,7 @@ and pin what it offers.
 Compose can't stop a container reaching the LAN, so the home server's firewall
 does ([pen test I4, #316](../pen-test/findings/I4.md)). `cloudflared` needs
 only Cloudflare, `app` only the email platform and `voices` only Bryce Beattie's
-bucket, so traffic from their bridges
+bucket and Hugging Face (ADR 0074), so traffic from their bridges
 to a private address, or to the server itself, is dropped. DNS to the router
 stays open, since Docker's resolver forwards from the container. With the
 router at `192.168.1.1`:

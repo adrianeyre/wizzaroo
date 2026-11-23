@@ -60,29 +60,57 @@ export const PicturePasswordPicker = ({
           .join(", ");
 
   return (
-    <fieldset>
+    <fieldset className="picture-password-picker">
       <legend>
         Picture Password: tap {String(picturePasswordLength)} pictures in order
       </legend>
-      <div className="picture-grid">
-        {picturePasswordPictures.map((picture) => (
-          <button
-            key={picture}
-            type="button"
-            aria-label={picture}
-            disabled={isComplete}
-            onClick={() => {
-              tapPicture(picture);
-            }}
-          >
-            {pictureSymbols[picture]}
-          </button>
-        ))}
+      <div className="picture-password-progress">
+        <ol className="picture-password-slots" aria-hidden="true">
+          {Array.from({ length: picturePasswordLength }, (_, index) => {
+            const picture = picturePassword.at(index);
+            return (
+              <li
+                key={index}
+                data-filled={picture === undefined ? undefined : true}
+              >
+                {picture === undefined ? index + 1 : pictureSymbols[picture]}
+              </li>
+            );
+          })}
+        </ol>
+        <button
+          type="button"
+          className="picture-password-restart"
+          onClick={clearPictures}
+        >
+          {/* One span, so the button's flex gap never splits the words. */}
+          <span>
+            Start{" "}
+            <span className="picture-password-restart-more">the pictures </span>
+            again
+          </span>
+        </button>
       </div>
-      <p aria-live="polite">Chosen: {chosenPictures}</p>
-      <button type="button" onClick={clearPictures}>
-        Start the pictures again
-      </button>
+      <div className="picture-grid-space">
+        <div className="picture-grid">
+          {picturePasswordPictures.map((picture) => (
+            <button
+              key={picture}
+              type="button"
+              aria-label={picture}
+              disabled={isComplete}
+              onClick={() => {
+                tapPicture(picture);
+              }}
+            >
+              {pictureSymbols[picture]}
+            </button>
+          ))}
+        </div>
+      </div>
+      <p className="picture-password-chosen" aria-live="polite">
+        Chosen: {chosenPictures}
+      </p>
     </fieldset>
   );
 };

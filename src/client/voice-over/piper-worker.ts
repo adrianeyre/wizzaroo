@@ -2,6 +2,7 @@
 import * as ort from "onnxruntime-web/wasm";
 import ortWasmUrl from "onnxruntime-web/ort-wasm-simd-threaded.wasm?url";
 import { phonemize } from "phonemizer";
+import { splitPhonemes } from "./piper-phonemes.js";
 import {
   piperVoiceCacheName,
   type PiperRequest,
@@ -27,6 +28,8 @@ interface PiperConfig {
   inference: { noise_scale: number; length_scale: number; noise_w: number };
   num_speakers: number;
   phoneme_id_map: Partial<Record<string, number[]>>;
+  /** Piper 1.5's voices speak some vowel pairs, such as "aɪ", as one phoneme. */
+  vowel_clusters?: string[][];
 }
 
 const isPiperConfig = (value: unknown): value is PiperConfig =>
@@ -156,7 +159,7 @@ const findPhonemeIds = async (
       ? text
       : (await phonemize(text, config.espeak.voice)).join(" ");
     for (const symbol of [
-      ...Array.from(phonemes),
+      ...splitPhonemes(phonemes, config.vowel_clusters),
       ...(clauseBreak.test(text) ? [] : [" "]),
     ]) {
       const symbolIds = map[symbol];

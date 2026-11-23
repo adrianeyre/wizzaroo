@@ -92,11 +92,11 @@ describe("reading aloud in a Piper voice", () => {
   it("downloads a voice the device hasn't got and waits to read in it, never in the device's own voice meanwhile", () => {
     const speech = offerSpeech();
 
-    expect(readAloud("How many fish?", "clean100-40", "question")).toBe(true);
+    expect(readAloud("How many fish?", "seren", "question")).toBe(true);
 
     expect(piper.downloadVoice).toHaveBeenCalledOnce();
     expect(piper.downloadVoice.mock.calls[0][0]).toMatchObject({
-      id: "clean100",
+      id: "vctk",
     });
     expect(findSpeakingReader()).toBe("question");
     setDownload({ state: "downloading", share: 0.5 });
@@ -106,7 +106,7 @@ describe("reading aloud in a Piper voice", () => {
     expect(speech.speak).not.toHaveBeenCalled();
     expect(piper.speakWithPiper).toHaveBeenCalledOnce();
     const [voice] = piper.speakWithPiper.mock.calls[0];
-    expect(voice).toMatchObject({ id: "clean100-40", speakerId: 6 });
+    expect(voice).toMatchObject({ id: "seren", speakerId: 88 });
   });
 
   it("reads in the device's own voice only when the chosen voice can't be downloaded", () => {

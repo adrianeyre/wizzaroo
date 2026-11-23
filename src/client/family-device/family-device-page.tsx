@@ -600,35 +600,51 @@ const PicturePasswordEntry = ({
   };
 
   return (
-    <main
-      className="menu"
-      data-read-aloud-section
-      aria-busy={isBusy ? true : undefined}
-    >
-      <form
-        onSubmit={(event) => {
-          openCharacter(event).catch(() => {
-            setProblem(
-              "Wizzaroo couldn't check those pictures. Ask a Parent for help.",
-            );
-          });
-        }}
+    <div className="who-is-playing picture-password-screen">
+      <FairytaleBackdrop />
+      <main
+        className="menu picture-password-entry"
+        data-read-aloud-section
+        aria-busy={isBusy ? true : undefined}
       >
-        <h1>Hello, {child.characterName}!</h1>
-        <ReadAloudButton className="read-aloud is-small" readsSection />
-        <PicturePasswordPicker {...picturePasswordChoice} />
-        {problem === undefined ? null : <p role="alert">{problem}</p>}
-        <button type="submit" disabled={isBusy}>
-          Let&apos;s play
-        </button>
-        {busyLabel === undefined ? null : (
-          <BusyProgress label={busyLabel} className="is-centred" />
-        )}
-        <button type="button" onClick={onBack}>
-          That&apos;s not me
-        </button>
-      </form>
-    </main>
+        <form
+          onSubmit={(event) => {
+            openCharacter(event).catch(() => {
+              setProblem(
+                "Wizzaroo couldn't check those pictures. Ask a Parent for help.",
+              );
+            });
+          }}
+        >
+          <div className="picture-password-greeting">
+            <h1>Hello, {child.characterName}!</h1>
+            <ReadAloudButton className="read-aloud is-small" readsSection />
+          </div>
+          <PicturePasswordPicker {...picturePasswordChoice} />
+          {problem === undefined ? null : <p role="alert">{problem}</p>}
+          {/* Both choices sit side by side, so the whole screen fits without scrolling. */}
+          <div className="picture-password-actions">
+            <button
+              type="submit"
+              className="picture-password-play"
+              disabled={isBusy}
+            >
+              Let&apos;s play
+            </button>
+            <button
+              type="button"
+              className="picture-password-back"
+              onClick={onBack}
+            >
+              That&apos;s not me
+            </button>
+          </div>
+          {busyLabel === undefined ? null : (
+            <BusyProgress label={busyLabel} className="is-centred" />
+          )}
+        </form>
+      </main>
+    </div>
   );
 };
 

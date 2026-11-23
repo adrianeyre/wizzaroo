@@ -59,8 +59,8 @@ services:
       postgres:
         condition: service_healthy
 
-  # Downloads Read it to me's pinned Piper voices, about 800 MB, into a volume and exits; a file already there and
-  # matching its SHA-256 isn't fetched again. Only it has a way out for them, so the app needs none (ADR 0062).
+  # Downloads Read it to me's pinned Piper voices, about 510 MB, into a volume and exits; a file already there and
+  # matching its SHA-256 isn't fetched again. Only it has a way out for them, so the app needs none (ADR 0062, ADR 0074).
   voices:
     <<: *hardening
     logging: *logging
@@ -309,7 +309,7 @@ networks:
   mail:
     driver_opts:
       com.docker.network.bridge.name: wizzaroo-mail
-  # The voices service's way out to Bryce Beattie's bucket, and nothing else's. Named so the firewall can keep it off
+  # The voices service's way out to Bryce Beattie's bucket and Hugging Face, and nothing else's. Named so the firewall can keep it off
   # the LAN too (ADR 0062).
   voices-egress:
     driver_opts:
