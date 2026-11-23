@@ -17,6 +17,20 @@ export const enterFullScreen = (): void => {
   document.documentElement.requestFullscreen().catch(() => undefined);
 };
 
+// A phone's or tablet's main pointer is a finger; a desktop's is a mouse or trackpad, even with a touch screen.
+const isTouchDevice = (): boolean =>
+  typeof matchMedia === "function" && matchMedia("(pointer: coarse)").matches;
+
+/**
+ * Fills the whole screen of a phone or tablet, leaving a desktop as it is.
+ * Call it from the tap itself: a browser grants full screen only then.
+ */
+export const enterFullScreenOnTouchDevice = (): void => {
+  if (isTouchDevice()) {
+    enterFullScreen();
+  }
+};
+
 export const leaveFullScreen = (): void => {
   if (!isFullScreenShown()) {
     return;
