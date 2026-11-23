@@ -309,7 +309,7 @@ const jellyfish = (): LabItemParts => {
   const pink = "#f08fb7";
   const tentacleCount = 8;
   return {
-    glass: [turned(jellyfishBell, "#f7b4d0", {}, 20)],
+    glass: [turned(jellyfishBell, "#ff8fc6", {}, 20)],
     body: [
       // The four pink rings seen through the bell.
       ...[0, 1, 2, 3].map((index) =>
