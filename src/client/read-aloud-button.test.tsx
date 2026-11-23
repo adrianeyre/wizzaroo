@@ -7,8 +7,13 @@ import { ReadAloudButton, ReadAloudMessage } from "./read-aloud-button.js";
 import {
   downloadVoice,
   speakWithPiper,
+  stopPiper,
   type VoiceDownload,
 } from "./voice-over/piper-speech.js";
+import {
+  findSpeakingReader,
+  readLineInChosenVoice,
+} from "./voice-over/read-aloud.js";
 import {
   findReadAloudVoice,
   loadReadAloudVoiceName,
@@ -254,6 +259,42 @@ describe("ReadAloudButton", () => {
     });
     expect(first.textContent).toBe("Read it to me");
     expect(first.hasAttribute("data-speaking")).toBe(false);
+  });
+});
+
+describe("ReadAloudButton leaving the page", () => {
+  beforeEach(() => {
+    piper.isOffered = true;
+    piper.download = { state: "downloaded" };
+  });
+
+  afterEach(() => {
+    piper.isOffered = false;
+    vi.clearAllMocks();
+  });
+
+  it("falls quiet when it leaves the page while reading its own words", () => {
+    show(<ReadAloudButton text="Which is bigger?" />);
+    pressReadAloud();
+    expect(vi.mocked(speakWithPiper)).toHaveBeenCalledTimes(1);
+
+    show(null);
+
+    expect(vi.mocked(stopPiper)).toHaveBeenCalled();
+    expect(findSpeakingReader()).toBeUndefined();
+  });
+
+  it("doesn't cut off a Game's opening line, said in the chosen voice as the Game opens", () => {
+    show(<ReadAloudButton text="Choose a Mission" />);
+    vi.mocked(stopPiper).mockClear();
+
+    // The Game says its line as it opens, and the screen before it, with its buttons, leaves.
+    expect(readLineInChosenVoice("Which is bigger?", "voice-over")).toBe(true);
+    vi.mocked(stopPiper).mockClear();
+    show(null);
+
+    expect(vi.mocked(stopPiper)).not.toHaveBeenCalled();
+    expect(findSpeakingReader()).toBe("voice-over");
   });
 });
 
