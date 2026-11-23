@@ -1,5 +1,15 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { enterFullScreen, leaveFullScreen } from "./full-screen.js";
+import {
+  enterFullScreen,
+  enterFullScreenOnTouchDevice,
+  leaveFullScreen,
+} from "./full-screen.js";
+
+const usePointer = (pointer: "coarse" | "fine") => {
+  vi.stubGlobal("matchMedia", (query: string) => ({
+    matches: query === `(pointer: ${pointer})`,
+  }));
+};
 
 const showFullScreen = (isShown: boolean) => {
   Object.defineProperty(document, "fullscreenElement", {
@@ -16,6 +26,7 @@ describe("full screen", () => {
       },
     );
     Reflect.deleteProperty(document.documentElement, "requestFullscreen");
+    vi.unstubAllGlobals();
   });
 
   it("asks the browser for full screen where it can, and copes when it says no", () => {
@@ -60,5 +71,24 @@ describe("full screen", () => {
     showFullScreen(true);
     leaveFullScreen();
     expect(exitFullscreen).toHaveBeenCalledOnce();
+  });
+
+  it("fills the screen of a phone or tablet, whose pointer is a finger, but not a desktop's", () => {
+    const requestFullscreen = vi.fn(() => Promise.resolve());
+    Reflect.set(document, "fullscreenEnabled", true);
+    Reflect.set(
+      document.documentElement,
+      "requestFullscreen",
+      requestFullscreen,
+    );
+    showFullScreen(false);
+
+    usePointer("fine");
+    enterFullScreenOnTouchDevice();
+    expect(requestFullscreen).not.toHaveBeenCalled();
+
+    usePointer("coarse");
+    enterFullScreenOnTouchDevice();
+    expect(requestFullscreen).toHaveBeenCalledOnce();
   });
 });

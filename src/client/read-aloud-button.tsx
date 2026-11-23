@@ -107,8 +107,9 @@ interface ReadAloudButtonProps {
 
 /**
  * The button that reads a question or a message out loud, so a Child who
- * can't read it yet can still play. It falls quiet when what it reads
- * changes or it leaves the page.
+ * can't read it yet can still play. When what it reads changes, or it
+ * leaves the page, its own reading falls quiet; anything else being said,
+ * such as a Game's line, carries on.
  */
 export const ReadAloudButton = ({
   text,
@@ -125,7 +126,15 @@ export const ReadAloudButton = ({
     () => findSpeakingReader() === reader,
     () => false,
   );
-  useEffect(() => stopReadingAloud, [text]);
+  // Only this button's own words: a Game's line in the chosen voice starts as the screen before it, with its buttons, leaves.
+  useEffect(
+    () => () => {
+      if (findSpeakingReader() === reader) {
+        stopReadingAloud();
+      }
+    },
+    [text, reader],
+  );
   // The voice this button asked for, while the device still had to download it.
   const [waitedForVoice, setWaitedForVoice] = useState<ReadAloudVoice>();
   const voiceDownload = useSyncExternalStore(

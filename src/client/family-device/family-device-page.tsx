@@ -70,6 +70,7 @@ import {
 } from "./unsynced-play.js";
 import { ReadAloudButton } from "../read-aloud-button.js";
 import { BusyProgress, useBusyAction } from "../busy/busy-progress.js";
+import { enterFullScreenOnTouchDevice } from "../full-screen.js";
 
 type PlayableFamilyView =
   | { kind: "loading" }
@@ -609,6 +610,10 @@ const PicturePasswordEntry = ({
       >
         <form
           onSubmit={(event) => {
+            // Asked for during the tap, as a browser requires, not once the slow check has finished.
+            if (isPicturePasswordComplete(picturePassword)) {
+              enterFullScreenOnTouchDevice();
+            }
             openCharacter(event).catch(() => {
               setProblem(
                 "Wizzaroo couldn't check those pictures. Ask a Parent for help.",

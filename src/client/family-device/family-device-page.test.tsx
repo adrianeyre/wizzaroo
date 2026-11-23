@@ -540,6 +540,61 @@ describe("FamilyDevicePage", () => {
     expect(getPageText()).not.toContain(theGame);
   });
 
+  describe("full screen when a Child signs in", () => {
+    const offerFullScreen = (pointer: "coarse" | "fine") => {
+      vi.stubGlobal("matchMedia", (query: string) => ({
+        matches: query === `(pointer: ${pointer})`,
+        addEventListener: () => undefined,
+        removeEventListener: () => undefined,
+      }));
+      Object.defineProperties(document, {
+        fullscreenEnabled: { configurable: true, get: () => true },
+        fullscreenElement: { configurable: true, get: () => null },
+      });
+      const requestFullscreen = vi.fn(() => Promise.resolve());
+      Object.defineProperty(document.documentElement, "requestFullscreen", {
+        configurable: true,
+        value: requestFullscreen,
+      });
+      return requestFullscreen;
+    };
+
+    afterEach(() => {
+      Reflect.deleteProperty(document, "fullscreenEnabled");
+      Reflect.deleteProperty(document, "fullscreenElement");
+      Reflect.deleteProperty(document.documentElement, "requestFullscreen");
+    });
+
+    it("fills the whole screen of a phone or tablet as the Child taps Let's play", async () => {
+      const requestFullscreen = offerFullScreen("coarse");
+      startFakeServer(answerWithPlayableChildren([sparkle]));
+      openPage();
+      await waitForText("Who's playing?");
+      await openSparkle();
+      await tapPictures(sparklePicturePassword);
+      expect(requestFullscreen).not.toHaveBeenCalled();
+
+      findButton("Let's play").click();
+
+      expect(requestFullscreen).toHaveBeenCalledOnce();
+      await waitForText(theGame);
+    });
+
+    it("leaves a desktop's screen as it is when a Child signs in", async () => {
+      const requestFullscreen = offerFullScreen("fine");
+      startFakeServer(answerWithPlayableChildren([sparkle]));
+      openPage();
+      await waitForText("Who's playing?");
+      await openSparkle();
+      await tapPictures(sparklePicturePassword);
+
+      findButton("Let's play").click();
+
+      await waitForText(theGame);
+      expect(requestFullscreen).not.toHaveBeenCalled();
+    });
+  });
+
   it("fits the Picture Password on one screen: a slot fills for each picture, and Let's play sits beside That's not me", async () => {
     startFakeServer(answerWithPlayableChildren([sparkle]));
     openPage();
