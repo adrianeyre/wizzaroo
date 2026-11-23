@@ -2449,9 +2449,11 @@ const buildWorkbenchGeometry = (shape: WorkbenchShape): BufferGeometry => {
     case "pyramid":
       return new ConeGeometry(0.7, 1, 4).rotateY(Math.PI / 4);
     case "prism":
+      // Ridge up and flat face down, standing on the turntable like a tent.
       return new CylinderGeometry(0.6, 0.6, 1.4, 3)
         .rotateZ(Math.PI / 2)
-        .rotateX(Math.PI / 2);
+        .rotateX(-Math.PI / 2)
+        .translate(0, -0.2, 0);
   }
 };
 

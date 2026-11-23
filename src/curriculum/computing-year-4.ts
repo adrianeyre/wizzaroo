@@ -194,17 +194,6 @@ const packetConcepts: readonly Omit<ComputingQuestion, "scene">[] = [
     hint: "Lots of smaller networks are joined together.",
   },
   {
-    ask: "One link breaks. What can the packets do?",
-    answer: "Take another route",
-    distractors: [
-      "Stop for ever",
-      "Turn into emails",
-      "Delete themselves",
-      "Wait for a new cable",
-    ],
-    hint: "Look for other paths through the routers.",
-  },
-  {
     ask: "What happens to the packets when they all arrive?",
     answer: "They are put back together",
     distractors: [
@@ -216,6 +205,19 @@ const packetConcepts: readonly Omit<ComputingQuestion, "scene">[] = [
     hint: "The message was split up to travel. What must happen at the end?",
   },
 ];
+
+// Asked only on a map with a second route, or the picture would show packets with nowhere else to go.
+const linkBreaksConcept: Omit<ComputingQuestion, "scene"> = {
+  ask: "One link breaks. What can the packets do?",
+  answer: "Take another route",
+  distractors: [
+    "Stop for ever",
+    "Turn into emails",
+    "Delete themselves",
+    "Wait for a new cable",
+  ],
+  hint: "Look for other paths through the routers.",
+};
 
 const buildPacketPathQuestion = (
   difficulty: ComputingDifficulty,
@@ -297,8 +299,11 @@ const buildPacketPathQuestion = (
       hint: "Find the route with the fewest hops, then count its routers.",
     };
   }
+  // Any other route misses at least one of the shortest route's links, so breaking that link leaves it open.
+  const concepts =
+    routes.length > 1 ? [...packetConcepts, linkBreaksConcept] : packetConcepts;
   return {
-    ...pickOne(packetConcepts, random),
+    ...pickOne(concepts, random),
     scene: { ...map, route: shortest },
   };
 };
@@ -1371,7 +1376,7 @@ const photoFixer = defineComputingGame({
         hint: "Think about how the people who see it would feel.",
       },
       {
-        ask: "An advert photo was edited to make a toy look bigger. Is that fair?",
+        ask: "An advert photo was edited to make a house look bigger. Is that fair?",
         scene: {
           kind: "photo-frame",
           subject: "house",

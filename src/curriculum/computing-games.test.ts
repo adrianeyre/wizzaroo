@@ -8,6 +8,7 @@ import {
 import {
   followPath,
   isInsideGrid,
+  photoSubjects,
   pixelCodes,
   type BranchNode,
   type ComputingDifficulty,
@@ -413,6 +414,81 @@ describe("computingGames", () => {
           JSON.stringify([ask, answer, scene]),
         );
         expect(new Set(asked).size, game.gameType).toBe(asked.length);
+      }
+    }
+  });
+});
+
+const isReachable = (
+  links: readonly (readonly [string, string])[],
+  from: string,
+  to: string,
+): boolean => {
+  const reached = new Set([from]);
+  let isGrowing = true;
+  while (isGrowing) {
+    isGrowing = false;
+    for (const [first, second] of links) {
+      if (reached.has(first) !== reached.has(second)) {
+        reached.add(reached.has(first) ? second : first);
+        isGrowing = true;
+      }
+    }
+  }
+  return reached.has(to);
+};
+
+describe("packet-path", () => {
+  it("asks what packets do when a link breaks only on a map with another route to take", () => {
+    const { questions } = findComputingGame("packet-path");
+    if (questions.kind !== "generated") {
+      throw new Error("packet-path should make its own questions");
+    }
+    const linkBreaks = difficulties
+      .flatMap((difficulty) =>
+        Array.from({ length: 60 }, (_, seed) =>
+          questions.generate(difficulty, buildSeededRandom(seed)),
+        ),
+      )
+      .flat()
+      .filter(({ ask }) => ask === "One link breaks. What can the packets do?");
+
+    expect(linkBreaks.length).toBeGreaterThan(0);
+    for (const { scene } of linkBreaks) {
+      if (scene.kind !== "network-map" || scene.route === undefined) {
+        throw new Error("a broken link is asked about on a network map");
+      }
+      const { links, route } = scene;
+      const routeLinks = route.slice(1).map((to, index) => [route[index], to]);
+      const isDetourLeft = routeLinks.some(([from, to]) =>
+        isReachable(
+          links.filter((link) => !(link.includes(from) && link.includes(to))),
+          "home",
+          "school",
+        ),
+      );
+      expect(isDetourLeft, JSON.stringify(links)).toBe(true);
+    }
+  });
+});
+
+describe("photo-fixer", () => {
+  it("shows the very thing a question says the photo is of", () => {
+    const { questions } = findComputingGame("photo-fixer");
+    if (questions.kind !== "bank") {
+      throw new Error("photo-fixer should ask from its bank");
+    }
+    const namedThings = [...photoSubjects, "toy"];
+    const findStem = (thing: string) => thing.replace(/s$/, "");
+    for (const { ask, scene } of questions.questions) {
+      if (scene.kind !== "photo-frame") {
+        throw new Error("a photo-fixer question shows a photo");
+      }
+      const named = namedThings.filter((thing) =>
+        new RegExp(`\\b${findStem(thing)}s?\\b`).test(ask),
+      );
+      if (named.length > 0) {
+        expect(named, ask).toEqual([scene.subject]);
       }
     }
   });
