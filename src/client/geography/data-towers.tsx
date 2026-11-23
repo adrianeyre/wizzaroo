@@ -52,7 +52,8 @@ const panelHeight = (panelWidth * panelPixelsHigh) / panelPixelsWide;
 const panelZ = -0.47;
 const panelBottom = baseTop;
 const panelTop = panelBottom + panelHeight;
-const chartHeight = 1.84;
+// Short enough to leave room above the tallest tower for its value, below the unit.
+const chartHeight = 1.7;
 const axisX = -1.3;
 const plotRight = 1.62;
 
@@ -90,10 +91,45 @@ const findTowerWidth = (towerCount: number): number =>
 
 const easeOutCubic = (progress: number): number => 1 - (1 - progress) ** 3;
 
+const unitFontPixels = 22;
+const unitCentrePixel = 18;
+export const unitLabelBottomPixel = unitCentrePixel + unitFontPixels / 2;
+export const towerValueFontPixels = 22;
+const towerValueGapPixels = 3;
+
+export interface TowerValueLabel {
+  text: string;
+  x: number;
+  y: number;
+  towerTop: number;
+  widest: number;
+}
+
+// Each tower's exact value, written just above it: many values fall between gridlines, and a Child reading one off
+// the scale could land on a wrong answer.
+export const listTowerValueLabels = (
+  bars: readonly DataBar[],
+  scale: ChartScale,
+): TowerValueLabel[] =>
+  bars.map((bar, index) => {
+    const towerTop = findPanelPixelY(
+      baseTop + findBarShare(scale, bar.value) * chartHeight,
+    );
+    return {
+      text: describeGridlineValue(bar.value),
+      x: findPanelPixelX(findTowerX(index, bars.length)),
+      y: towerTop - towerValueGapPixels - towerValueFontPixels / 2,
+      towerTop,
+      widest:
+        (findTowerSlotWidth(bars.length) / panelWidth) * panelPixelsWide - 6,
+    };
+  });
+
 const paintChartPanel = (
   context: CanvasRenderingContext2D,
   scale: ChartScale,
   unit: string | undefined,
+  bars: readonly DataBar[],
 ) => {
   context.fillStyle = "#fbf9ff";
   context.fillRect(0, 0, panelPixelsWide, panelPixelsHigh);
@@ -150,8 +186,16 @@ const paintChartPanel = (
     context.textAlign = "left";
     context.textBaseline = "middle";
     context.fillStyle = "#4a3f80";
-    fitLabelFont(context, unit, 22, 300);
-    context.fillText(unit, axisPixel + 12, 18);
+    fitLabelFont(context, unit, unitFontPixels, 300);
+    context.fillText(unit, axisPixel + 12, unitCentrePixel);
+  }
+
+  context.textAlign = "center";
+  context.textBaseline = "middle";
+  context.fillStyle = geographyPalette.ink;
+  for (const { text, x, y, widest } of listTowerValueLabels(bars, scale)) {
+    fitLabelFont(context, text, towerValueFontPixels, widest);
+    context.fillText(text, x, y);
   }
 };
 
@@ -341,9 +385,9 @@ export const DataTowersScene = ({
 
   const paintPanel = useCallback(
     (context: CanvasRenderingContext2D) => {
-      paintChartPanel(context, scale, unit);
+      paintChartPanel(context, scale, unit, bars);
     },
-    [scale, unit],
+    [scale, unit, bars],
   );
   const paintLabels = useCallback(
     (context: CanvasRenderingContext2D) => {

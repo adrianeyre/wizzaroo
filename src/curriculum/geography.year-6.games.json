@@ -1405,11 +1405,11 @@
           "wrongAnswers": ["Hot desert", "Tundra", "Rainforest"]
         },
         {
-          "ask": "How does a polar bear keep warm?",
+          "ask": "How does a penguin keep warm?",
           "show": {
             "biome": "polar"
           },
-          "answer": "Thick fur and blubber",
+          "answer": "Feathers and blubber",
           "wrongAnswers": [
             "Big ears to lose heat",
             "Sweating a lot",
