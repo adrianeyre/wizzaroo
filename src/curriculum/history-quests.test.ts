@@ -108,6 +108,16 @@ describe("historyQuests", () => {
     }
   });
 
+  it.each([
+    { questId: "jorvik-market", scene: "viking-fjord" },
+    { questId: "the-last-saxon-kings", scene: "saxon-village" },
+  ])(
+    "sets $questId among the buildings of its own people and period, in $scene",
+    ({ questId, scene }) => {
+      expect(historyQuests.find(({ id }) => id === questId)?.scene).toBe(scene);
+    },
+  );
+
   it("uses all three ways to play: quiz, sort and timeline", () => {
     expect(new Set(historyQuests.map(({ play }) => play))).toEqual(
       new Set(["quiz", "sort", "timeline"]),

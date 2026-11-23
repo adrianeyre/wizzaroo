@@ -277,7 +277,8 @@
         {
           "ask": "A jug holds 750 ml. You pour out 250 ml. How much is left?",
           "answer": "500 ml",
-          "distractors": ["1000 ml", "550 ml", "400 ml"]
+          "distractors": ["1000 ml", "550 ml", "400 ml"],
+          "model": "measuring-jug"
         },
         {
           "ask": "400 ml + 600 ml = ?",
@@ -287,7 +288,8 @@
         {
           "ask": "A ribbon is 45 cm. Another is 38 cm. What is their total length?",
           "answer": "83 cm",
-          "distractors": ["73 cm", "7 cm", "713 cm"]
+          "distractors": ["73 cm", "7 cm", "713 cm"],
+          "model": "ribbon"
         },
         {
           "ask": "Add 2 m 30 cm and 1 m 50 cm.",
@@ -330,7 +332,8 @@
         {
           "ask": "A book costs £3.45. You pay with £5. How much change?",
           "answer": "£1.55",
-          "distractors": ["£2.55", "£1.65", "£8.45"]
+          "distractors": ["£2.55", "£1.65", "£8.45"],
+          "model": "book"
         },
         {
           "ask": "A pen costs 85p and a ruler costs 60p. What is the total?",
@@ -340,7 +343,8 @@
         {
           "ask": "You pay £1 for a 37p lolly. How much change?",
           "answer": "63p",
-          "distractors": ["73p", "37p", "67p"]
+          "distractors": ["73p", "37p", "67p"],
+          "model": "ice-lolly"
         },
         {
           "ask": "£4.20 − £1.50 = ?",
@@ -365,12 +369,14 @@
         {
           "ask": "You have £2. A comic costs £1.25. How much is left?",
           "answer": "75p",
-          "distractors": ["85p", "£1.75", "£3.25"]
+          "distractors": ["85p", "£1.75", "£3.25"],
+          "model": "comic"
         },
         {
           "ask": "Two cakes cost 65p each. How much for both?",
           "answer": "£1.30",
-          "distractors": ["£1.20", "£1.10", "65p"]
+          "distractors": ["£1.20", "£1.10", "65p"],
+          "model": "cupcake"
         }
       ]
     },
@@ -451,17 +457,20 @@
         {
           "ask": "At 2 o'clock, how does the angle between the clock hands compare with a right angle?",
           "answer": "Smaller",
-          "distractors": ["Greater", "The same", "Two right angles"]
+          "distractors": ["Greater", "The same", "Two right angles"],
+          "model": "clock"
         },
         {
           "ask": "At 4 o'clock, how does the angle between the clock hands compare with a right angle?",
           "answer": "Greater",
-          "distractors": ["Smaller", "The same", "Two right angles"]
+          "distractors": ["Smaller", "The same", "Two right angles"],
+          "model": "clock"
         },
         {
           "ask": "At 3 o'clock, how does the angle between the clock hands compare with a right angle?",
           "answer": "The same",
-          "distractors": ["Smaller", "Greater", "Two right angles"]
+          "distractors": ["Smaller", "Greater", "Two right angles"],
+          "model": "clock"
         },
         {
           "ask": "At 6 o'clock, the hands make a straight line. How big is that angle?",
@@ -470,12 +479,14 @@
             "One right angle",
             "Three right angles",
             "Half a right angle"
-          ]
+          ],
+          "model": "clock"
         },
         {
           "ask": "At 5 o'clock, how does the angle between the clock hands compare with a right angle?",
           "answer": "Greater",
-          "distractors": ["Smaller", "The same", "Two right angles"]
+          "distractors": ["Smaller", "The same", "Two right angles"],
+          "model": "clock"
         },
         {
           "ask": "How does the corner of a square compare with a right angle?",

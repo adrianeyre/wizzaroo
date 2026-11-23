@@ -1,8 +1,10 @@
 import { describe, expect, it } from "vitest";
 import { ukNations, ukSeas } from "../../curriculum/geography.js";
+import { geographyGames } from "../../curriculum/geography-games.js";
 import {
   getUkMapPoint,
   irelandRepublicOutlines,
+  ukMapBounds,
   ukMapLongitudeScale,
   ukNationOutlines,
   ukSeaOutlines,
@@ -105,6 +107,33 @@ describe("the UK outlines", () => {
     expect(findNationsAt(point)).toEqual([]);
     expect(isInIrelandRepublic(point)).toBe(false);
   });
+
+  const ukMapPins = geographyGames.flatMap(({ questions }) =>
+    questions.flatMap(({ ask, show, answer }) =>
+      show.scene === "uk-explorer" && show.pin !== undefined
+        ? [{ ask, answer, pin: show.pin }]
+        : [],
+    ),
+  );
+
+  it.each(ukMapPins)(
+    "stands the pin for $answer on the map, in what it answers ($ask)",
+    ({ answer, pin: { longitude, latitude } }) => {
+      const answeredSea = ukSeas.find(
+        (sea) => sea === answer.toLowerCase().replaceAll(" ", "-"),
+      );
+
+      expect(longitude).toBeGreaterThan(ukMapBounds.west);
+      expect(longitude).toBeLessThan(ukMapBounds.east);
+      expect(latitude).toBeGreaterThan(ukMapBounds.south);
+      expect(latitude).toBeLessThan(ukMapBounds.north);
+      if (answeredSea !== undefined) {
+        expect(findSeasAt([longitude, latitude])).toEqual([answeredSea]);
+        expect(findNationsAt([longitude, latitude])).toEqual([]);
+        expect(isInIrelandRepublic([longitude, latitude])).toBe(false);
+      }
+    },
+  );
 
   it("squeezes longitude by the cosine of 54.5° so Britain keeps its shape", () => {
     const [londonX, londonY] = getUkMapPoint([-0.13, 51.51], 1);

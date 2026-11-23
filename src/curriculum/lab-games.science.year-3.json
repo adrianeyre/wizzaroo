@@ -36,7 +36,8 @@
         {
           "ask": "A cactus has a thick, fleshy stem. What is it for?",
           "answer": "To store water",
-          "distractors": ["To catch insects", "To keep cool", "To make seeds"]
+          "distractors": ["To catch insects", "To keep cool", "To make seeds"],
+          "model": "cactus"
         },
         {
           "ask": "Which plant can grow on a bare rock or wall with almost no soil?",
@@ -46,7 +47,8 @@
         {
           "ask": "A Venus flytrap grows in poor, boggy soil. Why does it catch insects?",
           "answer": "To get nutrients",
-          "distractors": ["To get water", "To get light", "To keep warm"]
+          "distractors": ["To get water", "To get light", "To keep warm"],
+          "model": "venus-flytrap"
         },
         {
           "ask": "Where would a fern grow best?",
@@ -55,7 +57,8 @@
             "A hot, dry desert",
             "A sunny sand dune",
             "A bright windowsill"
-          ]
+          ],
+          "model": "fern"
         },
         {
           "ask": "Which plant needs the most room to grow?",
@@ -88,12 +91,14 @@
         {
           "ask": "Looking at the Sun through binoculars is safe.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "binoculars"
         },
         {
           "ask": "Sunglasses help protect your eyes from bright sunlight.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "sunglasses"
         },
         {
           "ask": "Any dark sunglasses are safe for staring at the Sun.",
@@ -103,7 +108,8 @@
         {
           "ask": "A sun hat with a wide brim can help shade your eyes.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "sun-hat"
         },
         {
           "ask": "Sunlight can still harm your eyes on a cloudy day.",
@@ -128,7 +134,8 @@
         {
           "ask": "Looking at the Sun through a telescope is safe if you squint.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "telescope"
         }
       ]
     }

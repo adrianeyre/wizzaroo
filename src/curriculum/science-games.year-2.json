@@ -5,7 +5,7 @@
       "id": "second-habitat-homes",
       "title": "Habitat Homes",
       "station": "sort",
-      "prop": "tree",
+      "prop": "magnifier",
       "skillName": "Matching animals to the habitats that suit them",
       "strand": "living-things-and-their-habitats",
       "statutoryRequirement": "Identify that most living things live in habitats to which they are suited and describe how different habitats provide for the basic needs of different kinds of animals and plants, and how they depend on each other",
@@ -15,42 +15,50 @@
         {
           "ask": "A snowy owl",
           "answer": "Polar",
-          "distractors": ["Desert", "Ocean", "Woodland"]
+          "distractors": ["Desert", "Ocean", "Woodland"],
+          "model": "snowy-owl"
         },
         {
           "ask": "A camel",
           "answer": "Desert",
-          "distractors": ["Polar", "Ocean", "Woodland"]
+          "distractors": ["Polar", "Ocean", "Woodland"],
+          "model": "camel"
         },
         {
           "ask": "A shark",
           "answer": "Ocean",
-          "distractors": ["Desert", "Polar", "Woodland"]
+          "distractors": ["Desert", "Polar", "Woodland"],
+          "model": "shark"
         },
         {
           "ask": "A squirrel",
           "answer": "Woodland",
-          "distractors": ["Desert", "Ocean", "Polar"]
+          "distractors": ["Desert", "Ocean", "Polar"],
+          "model": "squirrel"
         },
         {
           "ask": "An arctic fox",
           "answer": "Polar",
-          "distractors": ["Desert", "Woodland", "Ocean"]
+          "distractors": ["Desert", "Woodland", "Ocean"],
+          "model": "arctic-fox"
         },
         {
           "ask": "A fennec fox",
           "answer": "Desert",
-          "distractors": ["Ocean", "Polar", "Woodland"]
+          "distractors": ["Ocean", "Polar", "Woodland"],
+          "model": "fennec-fox"
         },
         {
           "ask": "A jellyfish",
           "answer": "Ocean",
-          "distractors": ["Woodland", "Desert", "Polar"]
+          "distractors": ["Woodland", "Desert", "Polar"],
+          "model": "jellyfish"
         },
         {
           "ask": "A badger",
           "answer": "Woodland",
-          "distractors": ["Ocean", "Polar", "Desert"]
+          "distractors": ["Ocean", "Polar", "Desert"],
+          "model": "badger"
         }
       ]
     },
@@ -131,12 +139,14 @@
         {
           "ask": "A small seed can grow into a big plant.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "seed"
         },
         {
           "ask": "A daffodil can grow from a bulb.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "daffodil"
         },
         {
           "ask": "Most plants grow best when it is freezing cold.",
@@ -151,7 +161,8 @@
         {
           "ask": "A bulb is a kind of animal egg.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "flower-bulb"
         },
         {
           "ask": "Big plants never need water.",
@@ -209,7 +220,8 @@
         {
           "ask": "Fish need to live in ___.",
           "answer": "Water",
-          "distractors": ["Sand", "Soil", "Grass"]
+          "distractors": ["Sand", "Soil", "Grass"],
+          "model": "goldfish"
         }
       ]
     },
@@ -227,12 +239,14 @@
         {
           "ask": "Egg → Chick → ?",
           "answer": "Chicken",
-          "distractors": ["Duckling", "Tadpole", "Egg"]
+          "distractors": ["Duckling", "Tadpole", "Egg"],
+          "model": "chick"
         },
         {
           "ask": "Frogspawn → Tadpole → Froglet → ?",
           "answer": "Frog",
-          "distractors": ["Fish", "Lizard", "Caterpillar"]
+          "distractors": ["Fish", "Lizard", "Caterpillar"],
+          "model": "tadpole"
         },
         {
           "ask": "Baby → Toddler → Child → Teenager → ?",
@@ -242,7 +256,8 @@
         {
           "ask": "Egg → Caterpillar → Chrysalis → ?",
           "answer": "Butterfly",
-          "distractors": ["Bee", "Spider", "Worm"]
+          "distractors": ["Bee", "Spider", "Worm"],
+          "model": "caterpillar"
         },
         {
           "ask": "A kitten grows up. Kitten → ?",
@@ -323,7 +338,7 @@
       "id": "second-shape-changers",
       "title": "Shape Changers",
       "station": "predict",
-      "prop": "beaker",
+      "prop": "play-dough",
       "skillName": "Predicting how squashing and stretching change shapes",
       "strand": "uses-of-everyday-materials",
       "statutoryRequirement": "Find out how the shapes of solid objects made from some materials can be changed by squashing, bending, twisting and stretching",
@@ -337,12 +352,14 @@
             "It gets taller",
             "It turns to water",
             "It turns to glass"
-          ]
+          ],
+          "model": "play-dough"
         },
         {
           "ask": "What will happen if you stretch an elastic band?",
           "answer": "It gets longer",
-          "distractors": ["It gets shorter", "It turns to metal", "It melts"]
+          "distractors": ["It gets shorter", "It turns to metal", "It melts"],
+          "model": "rubber-band"
         },
         {
           "ask": "What will happen if you let go of a stretched elastic band?",
@@ -351,12 +368,14 @@
             "It stays stretched",
             "It turns to glass",
             "It gets longer"
-          ]
+          ],
+          "model": "rubber-band"
         },
         {
           "ask": "What happens when you bend a metal paperclip?",
           "answer": "It stays bent",
-          "distractors": ["It turns to plastic", "It melts", "It gets longer"]
+          "distractors": ["It turns to plastic", "It melts", "It gets longer"],
+          "model": "paper-clip"
         },
         {
           "ask": "What happens when you twist a wet cloth?",
@@ -365,12 +384,18 @@
             "It gets wetter",
             "It turns to rock",
             "It gets heavier"
-          ]
+          ],
+          "model": "wet-cloth"
         },
         {
           "ask": "What will happen if you try to bend a brick with your hands?",
           "answer": "It will not bend",
-          "distractors": ["It bends easily", "It stretches", "It squashes flat"]
+          "distractors": [
+            "It bends easily",
+            "It stretches",
+            "It squashes flat"
+          ],
+          "model": "brick"
         },
         {
           "ask": "What will happen if you squash a sponge and then let go?",
@@ -379,12 +404,14 @@
             "It stays flat",
             "It turns hard",
             "It breaks into bits"
-          ]
+          ],
+          "model": "sponge"
         },
         {
           "ask": "What will happen if you twist a pipe cleaner?",
           "answer": "It stays twisted",
-          "distractors": ["It turns to water", "It snaps in half", "It melts"]
+          "distractors": ["It turns to water", "It snaps in half", "It melts"],
+          "model": "pipe-cleaner"
         }
       ]
     },
@@ -445,7 +472,7 @@
       "id": "second-material-match",
       "title": "Material Match",
       "station": "compare",
-      "prop": "rock",
+      "prop": "magnifier",
       "skillName": "Choosing the best material for a job",
       "strand": "uses-of-everyday-materials",
       "statutoryRequirement": "Identify and compare the suitability of a variety of everyday materials, including wood, metal, plastic, glass, brick, rock, paper and cardboard for particular uses",
@@ -508,12 +535,14 @@
         {
           "ask": "Which would you use to measure how tall your bean plant grows?",
           "answer": "Ruler",
-          "distractors": ["Weighing scales", "Thermometer", "Clock"]
+          "distractors": ["Weighing scales", "Thermometer", "Clock"],
+          "model": "bean-plant"
         },
         {
           "ask": "Which would you use to look closely at a tiny seed?",
           "answer": "Magnifying glass",
-          "distractors": ["Ruler", "Measuring jug", "Clock"]
+          "distractors": ["Ruler", "Measuring jug", "Clock"],
+          "model": "seed"
         },
         {
           "ask": "Which would you use to find out how warm it is next to your plant?",

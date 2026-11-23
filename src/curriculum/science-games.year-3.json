@@ -135,7 +135,8 @@
         {
           "ask": "The Moon is a source of light.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "moon"
         },
         {
           "ask": "A shadow forms when an opaque object blocks light.",
@@ -145,7 +146,8 @@
         {
           "ask": "It is safe to look straight at the Sun if you squint.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "sun"
         },
         {
           "ask": "Light can pass straight through an opaque object.",
@@ -160,7 +162,8 @@
         {
           "ask": "A mirror reflects light.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "mirror"
         }
       ]
     },
@@ -183,12 +186,14 @@
         {
           "ask": "Your skull protects your ___.",
           "answer": "Brain",
-          "distractors": ["Heart", "Lungs", "Stomach"]
+          "distractors": ["Heart", "Lungs", "Stomach"],
+          "model": "skull"
         },
         {
           "ask": "Your ribs protect your heart and ___.",
           "answer": "Lungs",
-          "distractors": ["Brain", "Eyes", "Teeth"]
+          "distractors": ["Brain", "Eyes", "Teeth"],
+          "model": "ribcage"
         },
         {
           "ask": "Muscles ___ on bones to make them move.",
@@ -198,7 +203,8 @@
         {
           "ask": "Your skeleton holds your body up and gives it ___.",
           "answer": "Support",
-          "distractors": ["Food", "Light", "Water"]
+          "distractors": ["Food", "Light", "Water"],
+          "model": "skeleton"
         },
         {
           "ask": "Meat, fish and beans help our bodies grow and repair because they contain ___.",
@@ -208,7 +214,8 @@
         {
           "ask": "A worm has no skeleton, so it uses ___ to move.",
           "answer": "Muscles",
-          "distractors": ["Bones", "Shells", "Wings"]
+          "distractors": ["Bones", "Shells", "Wings"],
+          "model": "earthworm"
         },
         {
           "ask": "Eating the right ___ of each type of food helps keep us healthy.",
@@ -351,17 +358,24 @@
             "It is pushed away",
             "Nothing happens",
             "It gets heavier"
-          ]
+          ],
+          "model": "paper-clip"
         },
         {
           "ask": "What will happen if you hold a magnet next to a plastic cup?",
           "answer": "Nothing happens",
-          "distractors": ["It is pulled in", "It is pushed away", "It breaks"]
+          "distractors": ["It is pulled in", "It is pushed away", "It breaks"],
+          "model": "plastic-cup"
         },
         {
           "ask": "What will happen if you roll a toy car on carpet instead of a smooth floor?",
           "answer": "It goes less far",
-          "distractors": ["It goes further", "It goes the same", "It speeds up"]
+          "distractors": [
+            "It goes further",
+            "It goes the same",
+            "It speeds up"
+          ],
+          "model": "toy-car"
         },
         {
           "ask": "What will happen if you slide a shoe across ice instead of grass?",
@@ -370,7 +384,8 @@
             "It goes less far",
             "It stops at once",
             "It goes backwards"
-          ]
+          ],
+          "model": "shoe"
         },
         {
           "ask": "What will happen if you put a sheet of paper between a magnet and a steel paperclip?",
@@ -384,7 +399,8 @@
         {
           "ask": "What will happen if you stop pushing a heavy box across a rough floor?",
           "answer": "It stops",
-          "distractors": ["It speeds up", "It keeps going", "It floats up"]
+          "distractors": ["It speeds up", "It keeps going", "It floats up"],
+          "model": "cardboard-box"
         }
       ]
     },
@@ -392,7 +408,7 @@
       "id": "third-fossil-words",
       "title": "Fossil Words",
       "station": "vocabulary",
-      "prop": "fossil",
+      "prop": "magnifier",
       "skillName": "Using words about rocks, soils and fossils",
       "strand": "rocks",
       "statutoryRequirement": "Pupils should be taught to describe in simple terms how fossils are formed when things that have lived are trapped within rock; recognise that soils are made from rocks and organic matter",
@@ -512,7 +528,8 @@
         {
           "ask": "Which would you use to measure how tall a bean plant grows?",
           "answer": "Ruler",
-          "distractors": ["Thermometer", "Stopwatch", "Weighing scales"]
+          "distractors": ["Thermometer", "Stopwatch", "Weighing scales"],
+          "model": "bean-plant"
         },
         {
           "ask": "To test if plants need light, what should be different for the two plants?",
@@ -541,12 +558,14 @@
         {
           "ask": "How could you see water moving up a celery stalk?",
           "answer": "Coloured water",
-          "distractors": ["Hot water", "Ice", "Fizzy water"]
+          "distractors": ["Hot water", "Ice", "Fizzy water"],
+          "model": "celery"
         },
         {
           "ask": "Which would help you see the tiny root hairs on a seedling?",
           "answer": "Magnifying glass",
-          "distractors": ["Ruler", "Thermometer", "Stopwatch"]
+          "distractors": ["Ruler", "Thermometer", "Stopwatch"],
+          "model": "seedling"
         },
         {
           "ask": "Testing which surface lets a toy car go furthest, what must stay the same?",

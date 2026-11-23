@@ -373,6 +373,16 @@ const tempoPools: Record<MusicDifficulty, string[]> = {
 
 const tempoTuneSeconds = 5.5;
 
+// Each tempo word as the hint describes it: adagio strolls, andante walks, allegro runs and presto races.
+const tempoCreatures = new Map<string, MusicModel>(
+  Object.entries({
+    adagio: "tortoise",
+    andante: "bear",
+    allegro: "kangaroo",
+    presto: "hare",
+  }),
+);
+
 export const allegroOrAdagio = defineMusicGame({
   gameType: "allegro-or-adagio",
   title: "Allegro or adagio?",
@@ -408,7 +418,10 @@ export const allegroOrAdagio = defineMusicGame({
       answer,
     };
   },
-  findChoiceArt: () => ({ kind: "model", model: "metronome" }),
+  findChoiceArt: (choice) => ({
+    kind: "model",
+    model: tempoCreatures.get(choice) ?? "kangaroo",
+  }),
   describeChoice: (choice) => `${choice}: ${findTempoMarking(choice).meaning}`,
   findChoiceSound: (choice) =>
     buildClip({ tempo: findTempoMarking(choice).tempo }, [

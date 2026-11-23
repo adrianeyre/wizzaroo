@@ -369,7 +369,7 @@ const buildReflectQuestion = (
     at: mirror.at,
   };
   return buildPointQuestion(
-    `The pearl at ${formatPoint(point)} is reflected in ${describeMirror(mirror, low < 0)}. Where does it land?`,
+    `The treasure at ${formatPoint(point)} is reflected in ${describeMirror(mirror, low < 0)}. Where does it land?`,
     buildGrid(low, high, { treasure: point, mirror }),
     image,
     [

@@ -50,6 +50,22 @@ describe("geographyGames", () => {
     }
   });
 
+  it("asks about the penguins the polar dome draws, never a polar bear it doesn't", () => {
+    const polarQuestions = geographyGames.flatMap(({ questions }) =>
+      questions.filter(
+        ({ show }) => show.scene === "biome-dome" && show.biome === "polar",
+      ),
+    );
+
+    expect(polarQuestions.filter(({ ask }) => /polar bear/i.test(ask))).toEqual(
+      [],
+    );
+    expect(
+      polarQuestions.find(({ ask }) => ask === "How does a penguin keep warm?")
+        ?.answer,
+    ).toBe("Feathers and blubber");
+  });
+
   it("keeps every ask short enough to read in the Mission panel", () => {
     const longAsks = geographyGames.flatMap(({ questions }) =>
       questions.map(({ ask }) => ask).filter((ask) => ask.length > longestAsk),

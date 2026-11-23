@@ -15,7 +15,8 @@
         {
           "ask": "A bacterium",
           "answer": "Micro-organism",
-          "distractors": ["Fungus", "Invertebrate", "Non-flowering plant"]
+          "distractors": ["Fungus", "Invertebrate", "Non-flowering plant"],
+          "model": "bacterium"
         },
         {
           "ask": "A toadstool",
@@ -24,37 +25,44 @@
             "Flowering plant",
             "Micro-organism",
             "Non-flowering plant"
-          ]
+          ],
+          "model": "toadstool"
         },
         {
           "ask": "A fern",
           "answer": "Non-flowering plant",
-          "distractors": ["Flowering plant", "Fungus", "Invertebrate"]
+          "distractors": ["Flowering plant", "Fungus", "Invertebrate"],
+          "model": "fern"
         },
         {
           "ask": "A daisy",
           "answer": "Flowering plant",
-          "distractors": ["Non-flowering plant", "Fungus", "Micro-organism"]
+          "distractors": ["Non-flowering plant", "Fungus", "Micro-organism"],
+          "model": "daisy"
         },
         {
           "ask": "A snail",
           "answer": "Invertebrate",
-          "distractors": ["Vertebrate", "Fungus", "Micro-organism"]
+          "distractors": ["Vertebrate", "Fungus", "Micro-organism"],
+          "model": "snail"
         },
         {
           "ask": "A salmon",
           "answer": "Vertebrate",
-          "distractors": ["Invertebrate", "Micro-organism", "Fungus"]
+          "distractors": ["Invertebrate", "Micro-organism", "Fungus"],
+          "model": "salmon"
         },
         {
           "ask": "A clump of moss",
           "answer": "Non-flowering plant",
-          "distractors": ["Flowering plant", "Fungus", "Vertebrate"]
+          "distractors": ["Flowering plant", "Fungus", "Vertebrate"],
+          "model": "moss"
         },
         {
           "ask": "An earthworm",
           "answer": "Invertebrate",
-          "distractors": ["Vertebrate", "Fungus", "Non-flowering plant"]
+          "distractors": ["Vertebrate", "Fungus", "Non-flowering plant"],
+          "model": "earthworm"
         }
       ]
     },
@@ -62,7 +70,7 @@
       "id": "sixth-adaptation-odd-one-out",
       "title": "Adaptation Spotter",
       "station": "odd-one-out",
-      "prop": "leaf",
+      "prop": "magnifier",
       "skillName": "Spotting how living things are adapted to their habitat",
       "strand": "evolution-and-inheritance",
       "statutoryRequirement": "Pupils should be taught to identify how animals and plants are adapted to suit their environment in different ways and that adaptation may lead to evolution",
@@ -76,12 +84,18 @@
             "Wide flat feet",
             "Long eyelashes",
             "Fat stored in humps"
-          ]
+          ],
+          "model": "camel"
         },
         {
           "ask": "Which is NOT an adaptation that helps a polar bear survive in the Arctic?",
           "answer": "Very thin fur",
-          "distractors": ["Thick layer of fat", "Small ears", "Wide furry paws"]
+          "distractors": [
+            "Thick layer of fat",
+            "Small ears",
+            "Wide furry paws"
+          ],
+          "model": "polar-bear"
         },
         {
           "ask": "Which is NOT an adaptation that helps a cactus survive in a dry desert?",
@@ -90,12 +104,14 @@
             "Sharp spines",
             "Thick waxy stem",
             "Wide shallow roots"
-          ]
+          ],
+          "model": "cactus"
         },
         {
           "ask": "Which is NOT an adaptation that helps a fish live in water?",
           "answer": "Lungs for breathing",
-          "distractors": ["Gills", "Fins", "Streamlined body"]
+          "distractors": ["Gills", "Fins", "Streamlined body"],
+          "model": "fish"
         },
         {
           "ask": "Which is NOT an adaptation that helps an owl hunt at night?",
@@ -104,7 +120,8 @@
             "Large forward eyes",
             "Sharp talons",
             "Excellent hearing"
-          ]
+          ],
+          "model": "owl"
         },
         {
           "ask": "Which is NOT an adaptation that helps a woodpecker feed on insects inside trees?",
@@ -113,7 +130,8 @@
             "Strong pointed beak",
             "Long sticky tongue",
             "Stiff tail feathers"
-          ]
+          ],
+          "model": "woodpecker"
         },
         {
           "ask": "Which of these is NOT a characteristic inherited from your parents?",
@@ -131,7 +149,8 @@
             "Webbed feet",
             "Waterproof feathers",
             "Flat wide bill"
-          ]
+          ],
+          "model": "duck"
         }
       ]
     },
@@ -154,12 +173,14 @@
         {
           "ask": "We see objects because light travels out of our eyes and onto them.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "eye"
         },
         {
           "ask": "We can see a book because light from a source reflects off it into our eyes.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "book"
         },
         {
           "ask": "A shadow has the same shape as the object that casts it.",
@@ -169,22 +190,26 @@
         {
           "ask": "A mirror is a light source because it makes its own light.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "mirror"
         },
         {
           "ask": "In a room with no light at all, you could still see a red ball.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "ball"
         },
         {
           "ask": "The Moon is a light source.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "moon"
         },
         {
           "ask": "A periscope uses mirrors to reflect light into your eye.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "periscope"
         }
       ]
     },
@@ -192,7 +217,7 @@
       "id": "sixth-circulatory-system",
       "title": "Heart and Blood",
       "station": "fill-gap",
-      "prop": "heart",
+      "prop": "stethoscope",
       "skillName": "Naming parts of the circulatory system and their jobs",
       "strand": "animals-including-humans",
       "statutoryRequirement": "Pupils should be taught to identify and name the main parts of the human circulatory system, and describe the functions of the heart, blood vessels and blood; describe the ways in which nutrients and water are transported within animals, including humans",
@@ -237,7 +262,8 @@
         {
           "ask": "The heart is a strong organ made mostly of ___.",
           "answer": "Muscle",
-          "distractors": ["Bone", "Fat", "Cartilage"]
+          "distractors": ["Bone", "Fat", "Cartilage"],
+          "model": "heart"
         }
       ]
     },
@@ -278,7 +304,8 @@
             "Leaf grows again",
             "Mud turns to water",
             "Leaf turns green"
-          ]
+          ],
+          "model": "leaf"
         },
         {
           "ask": "Dinosaur walks in soft mud → Footprint dries hard → Sand fills the print → ?",
@@ -296,7 +323,8 @@
             "All giraffes die",
             "Necks get shorter",
             "Giraffes stop eating"
-          ]
+          ],
+          "model": "giraffe"
         },
         {
           "ask": "Soot darkens tree bark → Birds spot pale moths easily → More dark moths survive → ?",
@@ -314,7 +342,8 @@
             "Beaks get weaker",
             "Finches stop eating",
             "Seeds get softer"
-          ]
+          ],
+          "model": "finch"
         }
       ]
     },
@@ -322,7 +351,7 @@
       "id": "sixth-circuit-symbols",
       "title": "Symbol Sleuth",
       "station": "mystery",
-      "prop": "battery",
+      "prop": "magnifier",
       "skillName": "Recognising the symbols used in circuit diagrams",
       "strand": "electricity",
       "statutoryRequirement": "Pupils should be taught to use recognised symbols when representing a simple circuit in a diagram",
@@ -389,7 +418,8 @@
             "Bulb gets dimmer",
             "Bulb goes out",
             "Nothing changes"
-          ]
+          ],
+          "model": "bulb"
         },
         {
           "ask": "What will happen if you add a second bulb in the same loop as the first, with one cell?",
@@ -398,7 +428,8 @@
             "Bulbs glow brighter",
             "Only one bulb lights",
             "Nothing changes"
-          ]
+          ],
+          "model": "bulb"
         },
         {
           "ask": "What will happen if you open the switch in a working circuit with a buzzer?",
@@ -407,7 +438,8 @@
             "Buzzer gets louder",
             "Buzzer gets quieter",
             "Nothing changes"
-          ]
+          ],
+          "model": "buzzer"
         },
         {
           "ask": "What happens when you swap a 1.5 V cell for a 3 V battery in a buzzer circuit?",
@@ -416,7 +448,8 @@
             "Buzzer gets quieter",
             "Buzzer stops",
             "Nothing changes"
-          ]
+          ],
+          "model": "buzzer"
         },
         {
           "ask": "What happens when you use two cells instead of three in a bulb circuit?",
@@ -425,7 +458,8 @@
             "Bulb gets brighter",
             "Bulb goes out",
             "Nothing changes"
-          ]
+          ],
+          "model": "bulb"
         },
         {
           "ask": "What will happen if you turn the cell round in a circuit with one bulb?",
@@ -434,7 +468,8 @@
             "Bulb goes out",
             "Bulb gets brighter",
             "Bulb gets dimmer"
-          ]
+          ],
+          "model": "battery"
         },
         {
           "ask": "What will happen if one wire comes loose from the cell in a bulb circuit?",
@@ -443,7 +478,8 @@
             "Bulb gets brighter",
             "Bulb gets dimmer",
             "Bulb stays the same"
-          ]
+          ],
+          "model": "bulb"
         },
         {
           "ask": "What happens when you close the switch in a circuit with a cell and a motor?",
@@ -452,7 +488,8 @@
             "Motor stops",
             "Motor spins slower",
             "Nothing happens"
-          ]
+          ],
+          "model": "motor"
         }
       ]
     },

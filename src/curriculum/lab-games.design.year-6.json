@@ -31,12 +31,14 @@
         {
           "ask": "A 3D printer builds objects up layer by layer.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "3d-printer"
         },
         {
           "ask": "A laser cutter can cut out shapes drawn using CAD.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "laser-cutter"
         },
         {
           "ask": "Prototypes are never tested.",
@@ -136,12 +138,14 @@
             "Brittle and heavy",
             "Soft and absorbent",
             "Bendy and soggy"
-          ]
+          ],
+          "model": "bike-helmet"
         },
         {
           "ask": "Which material would insulate a lunch bag?",
           "answer": "Foam",
-          "distractors": ["Copper sheet", "Steel mesh", "Thin tissue"]
+          "distractors": ["Copper sheet", "Steel mesh", "Thin tissue"],
+          "model": "lunch-bag"
         },
         {
           "ask": "Which material suits a rigid, smooth phone stand?",
@@ -166,7 +170,8 @@
         {
           "ask": "Why is stainless steel used for cutlery?",
           "answer": "It does not rust",
-          "distractors": ["It is soft", "It is see-through", "It melts easily"]
+          "distractors": ["It is soft", "It is see-through", "It melts easily"],
+          "model": "cutlery"
         },
         {
           "ask": "Which board is cheap and smooth for flat model bases?",
@@ -176,7 +181,8 @@
         {
           "ask": "Recycled plastic bottles can be made into which fabric?",
           "answer": "Polyester fleece",
-          "distractors": ["Silk", "Wool", "Linen"]
+          "distractors": ["Silk", "Wool", "Linen"],
+          "model": "plastic-bottle"
         }
       ]
     },
@@ -194,7 +200,8 @@
         {
           "ask": "Criterion: 'carries 2 kg'. The bag tore at 1.5 kg. Verdict?",
           "answer": "Not met",
-          "distractors": ["Met", "Beaten", "Not tested"]
+          "distractors": ["Met", "Beaten", "Not tested"],
+          "model": "tote-bag"
         },
         {
           "ask": "Criterion: 'costs under £5'. The materials cost £4.20. Verdict?",
@@ -209,7 +216,8 @@
         {
           "ask": "What is the fairest way to test which phone stand is most stable?",
           "answer": "Same test for each",
-          "distractors": ["Guess", "Ask one friend", "Test only one"]
+          "distractors": ["Guess", "Ask one friend", "Test only one"],
+          "model": "phone-stand"
         },
         {
           "ask": "Why do designers ask other people for feedback?",
@@ -260,12 +268,14 @@
         {
           "ask": "Gutenberg's printing press, from about 1440, made it easier to...",
           "answer": "Copy books",
-          "distractors": ["Fly planes", "Cook food", "Light homes"]
+          "distractors": ["Fly planes", "Cook food", "Light homes"],
+          "model": "printing-press"
         },
         {
           "ask": "The Wright brothers made the first powered aeroplane flight in...",
           "answer": "1903",
-          "distractors": ["1803", "1953", "1703"]
+          "distractors": ["1803", "1953", "1703"],
+          "model": "wright-flyer"
         },
         {
           "ask": "Alexander Graham Bell patented the...",
@@ -295,7 +305,8 @@
         {
           "ask": "George de Mestral invented hook-and-loop tape after studying...",
           "answer": "Burrs on his dog",
-          "distractors": ["Spider webs", "Fish scales", "Bird feathers"]
+          "distractors": ["Spider webs", "Fish scales", "Bird feathers"],
+          "model": "hook-and-loop-tape"
         },
         {
           "ask": "Tim Berners-Lee's Web was not patented, so it...",
@@ -323,12 +334,14 @@
         {
           "ask": "In a steady-hand game, the wand and wire act as a...",
           "answer": "Switch",
-          "distractors": ["Bulb", "Motor", "Cell"]
+          "distractors": ["Bulb", "Motor", "Cell"],
+          "model": "steady-hand-game"
         },
         {
           "ask": "Which component could turn the propeller of a model boat?",
           "answer": "Motor",
-          "distractors": ["Buzzer", "Bulb", "Reed switch"]
+          "distractors": ["Buzzer", "Bulb", "Reed switch"],
+          "model": "model-boat"
         },
         {
           "ask": "Which component would make a flashing light for a bike?",
@@ -343,7 +356,8 @@
         {
           "ask": "Adding more cells to a buzzer circuit makes it...",
           "answer": "Louder",
-          "distractors": ["Quieter", "Silent", "Colder"]
+          "distractors": ["Quieter", "Silent", "Colder"],
+          "model": "buzzer"
         },
         {
           "ask": "Which material could make the contacts of a home-made switch?",
@@ -353,12 +367,14 @@
         {
           "ask": "A motor won't spin in a circuit. A likely cause is...",
           "answer": "A loose wire",
-          "distractors": ["The switch is on", "Copper wires", "A new cell"]
+          "distractors": ["The switch is on", "Copper wires", "A new cell"],
+          "model": "motor"
         },
         {
           "ask": "Which component would sound a warning in a smoke alarm?",
           "answer": "Buzzer",
-          "distractors": ["Motor", "Bulb", "Switch"]
+          "distractors": ["Motor", "Bulb", "Switch"],
+          "model": "smoke-alarm"
         }
       ]
     },
@@ -366,7 +382,7 @@
       "id": "dt-gear-train-challenge",
       "title": "Gear Train Challenge",
       "station": "compare",
-      "prop": "magnet",
+      "prop": "gear",
       "skillName": "Understanding gears and gear trains",
       "strand": "mechanical-systems",
       "statutoryRequirement": "Pupils should be taught to understand and use mechanical systems in their products [for example, gears, pulleys, cams, levers and linkages]",
@@ -449,7 +465,8 @@
         {
           "ask": "Oranges are a good source of which vitamin?",
           "answer": "Vitamin C",
-          "distractors": ["Vitamin D", "Iron", "Calcium"]
+          "distractors": ["Vitamin D", "Iron", "Calcium"],
+          "model": "orange"
         },
         {
           "ask": "Fibre in wholegrain foods helps our...",
@@ -501,12 +518,14 @@
         {
           "ask": "Most cocoa beans for chocolate come from...",
           "answer": "West Africa",
-          "distractors": ["Scotland", "Antarctica", "Iceland"]
+          "distractors": ["Scotland", "Antarctica", "Iceland"],
+          "model": "cocoa-pod"
         },
         {
           "ask": "Rice is mostly grown in flooded fields called...",
           "answer": "Paddy fields",
-          "distractors": ["Orchards", "Vineyards", "Allotments"]
+          "distractors": ["Orchards", "Vineyards", "Allotments"],
+          "model": "rice"
         },
         {
           "ask": "Fish raised in nets or tanks instead of caught wild are...",
@@ -516,7 +535,8 @@
         {
           "ask": "Milk is heated to kill harmful bacteria. This is called...",
           "answer": "Pasteurisation",
-          "distractors": ["Fermentation", "Germination", "Evaporation"]
+          "distractors": ["Fermentation", "Germination", "Evaporation"],
+          "model": "milk"
         },
         {
           "ask": "Food miles measure how far food...",
@@ -526,7 +546,8 @@
         {
           "ask": "Heated greenhouses help UK farmers to...",
           "answer": "Extend the season",
-          "distractors": ["Grow in snow", "Stop ripening", "Turn crops blue"]
+          "distractors": ["Grow in snow", "Stop ripening", "Turn crops blue"],
+          "model": "greenhouse"
         },
         {
           "ask": "Which British fruit grows wild in hedges in late summer?",
@@ -536,7 +557,8 @@
         {
           "ask": "Free-range hens are...",
           "answer": "Able to go outside",
-          "distractors": ["Kept in cages", "Never fed", "Kept indoors always"]
+          "distractors": ["Kept in cages", "Never fed", "Kept indoors always"],
+          "model": "hen"
         }
       ]
     },
@@ -544,7 +566,7 @@
       "id": "dt-code-and-control",
       "title": "Code And Control",
       "station": "sequence",
-      "prop": "microscope",
+      "prop": "circuit-board",
       "skillName": "Programming, monitoring and controlling products",
       "strand": "computing-control",
       "statutoryRequirement": "Pupils should be taught to apply their understanding of computing to program, monitor and control their products",
@@ -573,7 +595,8 @@
         {
           "ask": "Fan: if the temperature is above 25 °C, then...?",
           "answer": "Switch the motor on",
-          "distractors": ["Switch it off", "Turn heater on", "Flash the LED"]
+          "distractors": ["Switch it off", "Turn heater on", "Flash the LED"],
+          "model": "desk-fan"
         },
         {
           "ask": "Flashing LED: LED on, wait 1 second, LED off, then...?",
@@ -588,7 +611,8 @@
         {
           "ask": "Greenhouse monitor: read the temperature, record it, wait 1 hour, then...?",
           "answer": "Read it again",
-          "distractors": ["Delete the data", "Water the house", "Turn it off"]
+          "distractors": ["Delete the data", "Water the house", "Turn it off"],
+          "model": "greenhouse"
         },
         {
           "ask": "Plan the program, write the code, test it, then...?",

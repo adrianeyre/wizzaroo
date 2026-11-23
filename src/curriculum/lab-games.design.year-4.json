@@ -41,7 +41,8 @@
         {
           "ask": "Which tool smooths the cut end of a dowel?",
           "answer": "Sandpaper",
-          "distractors": ["Bench hook", "Hole punch", "Try square"]
+          "distractors": ["Bench hook", "Hole punch", "Try square"],
+          "model": "dowel"
         },
         {
           "ask": "Which glue joins wood strongly but dries slowly?",
@@ -51,7 +52,8 @@
         {
           "ask": "A craft knife should always be used with a...",
           "answer": "Cutting mat",
-          "distractors": ["Plate", "Pillow", "Thimble"]
+          "distractors": ["Plate", "Pillow", "Thimble"],
+          "model": "craft-knife"
         },
         {
           "ask": "Which tool drills a round hole for an axle in wood?",
@@ -64,7 +66,7 @@
       "id": "dt-textile-workshop",
       "title": "Textile Workshop",
       "station": "compare",
-      "prop": "flower",
+      "prop": "sewing-machine",
       "skillName": "Choosing textiles, stitches and fastenings",
       "strand": "materials-components",
       "statutoryRequirement": "Pupils should be taught to select from and use a wider range of materials and components, including construction materials, textiles and ingredients, according to their functional properties and aesthetic qualities",
@@ -122,7 +124,7 @@
       "id": "dt-design-for-a-user",
       "title": "Design For A User",
       "station": "compare",
-      "prop": "heart",
+      "prop": "bulb",
       "skillName": "Designing for particular users",
       "strand": "research-criteria",
       "statutoryRequirement": "Pupils should be taught to use research and develop design criteria to inform the design of innovative, functional, appealing products that are fit for purpose, aimed at particular individuals or groups",
@@ -137,12 +139,14 @@
         {
           "ask": "A torch for a toddler should be...",
           "answer": "Chunky and tough",
-          "distractors": ["Tiny and fragile", "Very heavy", "Sharp-edged"]
+          "distractors": ["Tiny and fragile", "Very heavy", "Sharp-edged"],
+          "model": "torch"
         },
         {
           "ask": "A key ring for a runner should be...",
           "answer": "Light",
-          "distractors": ["Heavy", "Huge", "Noisy"]
+          "distractors": ["Heavy", "Huge", "Noisy"],
+          "model": "key-ring"
         },
         {
           "ask": "A bag for cycling at night needs...",
@@ -188,7 +192,7 @@
       "id": "dt-pulley-power",
       "title": "Pulley Power",
       "station": "true-false",
-      "prop": "magnet",
+      "prop": "pulley",
       "skillName": "Understanding pulleys and belts",
       "strand": "mechanical-systems",
       "statutoryRequirement": "Pupils should be taught to understand and use mechanical systems in their products [for example, gears, pulleys, cams, levers and linkages]",
@@ -223,7 +227,8 @@
         {
           "ask": "Flags are often raised up flagpoles using a pulley.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "flagpole"
         },
         {
           "ask": "A belt that is too loose will grip the pulleys well.",
@@ -285,12 +290,14 @@
             "It is a magnet",
             "It makes light",
             "It is a conductor"
-          ]
+          ],
+          "model": "insulated-wire"
         },
         {
           "ask": "What gives the power in a torch circuit?",
           "answer": "Battery",
-          "distractors": ["Bulb", "Switch", "Buzzer"]
+          "distractors": ["Bulb", "Switch", "Buzzer"],
+          "model": "torch"
         },
         {
           "ask": "In a series circuit, adding another bulb makes them...",
@@ -308,7 +315,7 @@
       "id": "dt-bridge-engineers",
       "title": "Bridge Engineers",
       "station": "compare",
-      "prop": "prism",
+      "prop": "hard-hat",
       "skillName": "Understanding bridge structures",
       "strand": "complex-structures",
       "statutoryRequirement": "Pupils should be taught to apply their understanding of how to strengthen, stiffen and reinforce more complex structures",
@@ -343,12 +350,14 @@
         {
           "ask": "When a beam bridge bends under a load, its top is...",
           "answer": "Squashed",
-          "distractors": ["Stretched", "Twisted", "Melted"]
+          "distractors": ["Stretched", "Twisted", "Melted"],
+          "model": "beam-bridge"
         },
         {
           "ask": "When a beam bridge bends under a load, its bottom is...",
           "answer": "Stretched",
-          "distractors": ["Squashed", "Twisted", "Melted"]
+          "distractors": ["Squashed", "Twisted", "Melted"],
+          "model": "beam-bridge"
         },
         {
           "ask": "A pillar under the middle of a beam bridge makes it...",
@@ -366,7 +375,7 @@
       "id": "dt-inventor-gallery",
       "title": "Inventor Gallery",
       "station": "mystery",
-      "prop": "bulb",
+      "prop": "magnifier",
       "skillName": "Knowing inventors who shaped the world",
       "strand": "design-history",
       "statutoryRequirement": "Pupils should be taught to understand how key events and individuals in design and technology have helped shape the world",
@@ -376,27 +385,32 @@
         {
           "ask": "I invented a reading system of raised dots for blind people. Who am I?",
           "answer": "Louis Braille",
-          "distractors": ["Thomas Edison", "James Dyson", "Percy Shaw"]
+          "distractors": ["Thomas Edison", "James Dyson", "Percy Shaw"],
+          "model": "braille-page"
         },
         {
           "ask": "I invented a bagless vacuum cleaner that uses a cyclone. Who am I?",
           "answer": "James Dyson",
-          "distractors": ["Louis Braille", "Mary Anderson", "Thomas Edison"]
+          "distractors": ["Louis Braille", "Mary Anderson", "Thomas Edison"],
+          "model": "vacuum-cleaner"
         },
         {
           "ask": "I patented a windscreen wiper in 1903. Who am I?",
           "answer": "Mary Anderson",
-          "distractors": ["James Dyson", "Louis Braille", "Percy Shaw"]
+          "distractors": ["James Dyson", "Louis Braille", "Percy Shaw"],
+          "model": "windscreen-wiper"
         },
         {
           "ask": "I invented cat's eyes road studs in Halifax. Who am I?",
           "answer": "Percy Shaw",
-          "distractors": ["Thomas Edison", "James Dyson", "Louis Braille"]
+          "distractors": ["Thomas Edison", "James Dyson", "Louis Braille"],
+          "model": "cats-eye"
         },
         {
           "ask": "I made a long-lasting electric light bulb in 1879. Who am I?",
           "answer": "Thomas Edison",
-          "distractors": ["Percy Shaw", "Mary Anderson", "Tim Berners-Lee"]
+          "distractors": ["Percy Shaw", "Mary Anderson", "Tim Berners-Lee"],
+          "model": "bulb"
         },
         {
           "ask": "I invented the World Wide Web in 1989. Who am I?",
@@ -406,17 +420,20 @@
         {
           "ask": "I built the SS Great Britain and the Great Western Railway. Who am I?",
           "answer": "Isambard K. Brunel",
-          "distractors": ["James Dyson", "Tim Berners-Lee", "Thomas Edison"]
+          "distractors": ["James Dyson", "Tim Berners-Lee", "Thomas Edison"],
+          "model": "steamship"
         },
         {
           "ask": "I invented a dishwasher in the 1880s. Who am I?",
           "answer": "Josephine Cochrane",
-          "distractors": ["Mary Anderson", "Louis Braille", "Percy Shaw"]
+          "distractors": ["Mary Anderson", "Louis Braille", "Percy Shaw"],
+          "model": "dishwasher"
         },
         {
           "ask": "I showed the first working television in 1926. Who am I?",
           "answer": "John Logie Baird",
-          "distractors": ["Thomas Edison", "Percy Shaw", "James Dyson"]
+          "distractors": ["Thomas Edison", "Percy Shaw", "James Dyson"],
+          "model": "old-television"
         }
       ]
     },
@@ -438,12 +455,14 @@
             "It conducts heat",
             "It is magnetic",
             "It is see-through"
-          ]
+          ],
+          "model": "kettle"
         },
         {
           "ask": "Why is the base of a saucepan made of metal?",
           "answer": "Conducts heat well",
-          "distractors": ["Stops heat", "Is see-through", "Is bendy"]
+          "distractors": ["Stops heat", "Is see-through", "Is bendy"],
+          "model": "saucepan"
         },
         {
           "ask": "Why do many torches have rubber grips?",
@@ -452,22 +471,26 @@
             "Makes it brighter",
             "Makes it heavier",
             "Holds batteries"
-          ]
+          ],
+          "model": "torch"
         },
         {
           "ask": "Why do drinks bottles have screw tops?",
           "answer": "Stops leaks",
-          "distractors": ["Makes it heavier", "Keeps it warm", "Looks pretty"]
+          "distractors": ["Makes it heavier", "Keeps it warm", "Looks pretty"],
+          "model": "drink-bottle"
         },
         {
           "ask": "Who is a booster seat designed for?",
           "answer": "Young children",
-          "distractors": ["Adults", "Pets", "Pilots"]
+          "distractors": ["Adults", "Pets", "Pilots"],
+          "model": "booster-seat"
         },
         {
           "ask": "Why do trainers have patterned soles?",
           "answer": "Better grip",
-          "distractors": ["Make noise", "Keep feet wet", "Weigh more"]
+          "distractors": ["Make noise", "Keep feet wet", "Weigh more"],
+          "model": "trainer"
         },
         {
           "ask": "Which question asks about a product's user?",
@@ -481,12 +504,14 @@
         {
           "ask": "Why do umbrellas have a folding frame?",
           "answer": "To fit in a bag",
-          "distractors": ["To get wet", "To be heavier", "To catch wind"]
+          "distractors": ["To get wet", "To be heavier", "To catch wind"],
+          "model": "umbrella"
         },
         {
           "ask": "Why is a pencil sharpener blade made of hard steel?",
           "answer": "It stays sharp",
-          "distractors": ["It is soft", "It bends easily", "It is cheap paper"]
+          "distractors": ["It is soft", "It bends easily", "It is cheap paper"],
+          "model": "pencil-sharpener"
         }
       ]
     },
@@ -494,7 +519,7 @@
       "id": "dt-eatwell-explorer",
       "title": "Eatwell Explorer",
       "station": "sort",
-      "prop": "leaf",
+      "prop": "dinner-plate",
       "skillName": "Sorting foods with the Eatwell Guide",
       "strand": "healthy-diet",
       "statutoryRequirement": "Pupils should be taught to understand and apply the principles of a healthy and varied diet",
@@ -504,47 +529,56 @@
         {
           "ask": "Which Eatwell group does salmon belong in?",
           "answer": "Protein",
-          "distractors": ["Dairy", "Starchy carbs", "Oils and spreads"]
+          "distractors": ["Dairy", "Starchy carbs", "Oils and spreads"],
+          "model": "salmon"
         },
         {
           "ask": "Which Eatwell group does wholemeal pasta belong in?",
           "answer": "Starchy carbs",
-          "distractors": ["Protein", "Fruit and veg", "Dairy"]
+          "distractors": ["Protein", "Fruit and veg", "Dairy"],
+          "model": "pasta"
         },
         {
           "ask": "Which Eatwell group does spinach belong in?",
           "answer": "Fruit and veg",
-          "distractors": ["Protein", "Dairy", "Starchy carbs"]
+          "distractors": ["Protein", "Dairy", "Starchy carbs"],
+          "model": "spinach"
         },
         {
           "ask": "Which Eatwell group does cheddar belong in?",
           "answer": "Dairy",
-          "distractors": ["Protein", "Oils and spreads", "Fruit and veg"]
+          "distractors": ["Protein", "Oils and spreads", "Fruit and veg"],
+          "model": "cheese"
         },
         {
           "ask": "Which Eatwell group does olive oil belong in?",
           "answer": "Oils and spreads",
-          "distractors": ["Dairy", "Protein", "Starchy carbs"]
+          "distractors": ["Dairy", "Protein", "Starchy carbs"],
+          "model": "olive-oil"
         },
         {
           "ask": "Which Eatwell group does couscous belong in?",
           "answer": "Starchy carbs",
-          "distractors": ["Fruit and veg", "Dairy", "Protein"]
+          "distractors": ["Fruit and veg", "Dairy", "Protein"],
+          "model": "couscous"
         },
         {
           "ask": "Which Eatwell group does tofu belong in?",
           "answer": "Protein",
-          "distractors": ["Starchy carbs", "Dairy", "Oils and spreads"]
+          "distractors": ["Starchy carbs", "Dairy", "Oils and spreads"],
+          "model": "tofu"
         },
         {
           "ask": "Which Eatwell group do raisins belong in?",
           "answer": "Fruit and veg",
-          "distractors": ["Starchy carbs", "Oils and spreads", "Dairy"]
+          "distractors": ["Starchy carbs", "Oils and spreads", "Dairy"],
+          "model": "raisin"
         },
         {
           "ask": "Which Eatwell group does yoghurt belong in?",
           "answer": "Dairy",
-          "distractors": ["Fruit and veg", "Starchy carbs", "Oils and spreads"]
+          "distractors": ["Fruit and veg", "Starchy carbs", "Oils and spreads"],
+          "model": "yoghurt"
         }
       ]
     },
@@ -592,7 +626,8 @@
         {
           "ask": "What makes bread dough rise?",
           "answer": "Yeast",
-          "distractors": ["Salt", "Oil", "Pepper"]
+          "distractors": ["Salt", "Oil", "Pepper"],
+          "model": "bread-dough"
         },
         {
           "ask": "Which of these is a savoury dish?",
@@ -602,7 +637,8 @@
         {
           "ask": "What should you use to take a hot tray out of the oven?",
           "answer": "Oven gloves",
-          "distractors": ["Bare hands", "A tea bag", "A plastic bag"]
+          "distractors": ["Bare hands", "A tea bag", "A plastic bag"],
+          "model": "baking-tray"
         }
       ]
     }

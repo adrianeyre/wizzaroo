@@ -17289,3 +17289,48 @@ ul.play-side-panel-list {
 .busy.award-stage-busy {
   color: #f4f4f0;
 }
+
+/* The face of whichever voice is speaking, its mouth moving with the words (ADR 0077). */
+.speaking-face {
+  position: fixed;
+  left: max(0.75rem, env(safe-area-inset-left, 0px));
+  /* Above the bottom row of controls, such as Leave Mission and the World Map's dock, never over them. */
+  bottom: calc(
+    var(--site-footer-height, 0px) +
+      max(var(--space-3), env(safe-area-inset-bottom)) +
+      var(--play-control-size) + var(--space-3)
+  );
+  z-index: calc(var(--layer-open-menu) - 10);
+  width: 6.5rem;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(0.75rem) scale(0.6);
+  transform-origin: bottom left;
+  transition:
+    opacity var(--duration-press) ease-out,
+    transform var(--duration-press) ease-out;
+}
+
+.speaking-face[data-shown] {
+  opacity: 1;
+  transform: none;
+}
+
+.speaking-face .character-portrait {
+  box-shadow:
+    0 0 0 3px var(--colour-play),
+    0 6px 16px rgb(0 0 0 / 0.35);
+}
+
+@media (max-width: 600px) {
+  .speaking-face {
+    width: 5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .speaking-face {
+    transform: none;
+    transition: opacity var(--duration-quick) linear;
+  }
+}

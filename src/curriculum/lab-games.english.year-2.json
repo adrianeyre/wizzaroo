@@ -457,12 +457,14 @@
         {
           "ask": "'Mirror, mirror, on the wall.' Which story is this from?",
           "answer": "Snow White",
-          "distractors": ["Cinderella", "Rapunzel", "Goldilocks"]
+          "distractors": ["Cinderella", "Rapunzel", "Goldilocks"],
+          "model": "mirror"
         },
         {
           "ask": "'Rapunzel, Rapunzel, let down your ___!'",
           "answer": "hair",
-          "distractors": ["rope", "ladder", "basket"]
+          "distractors": ["rope", "ladder", "basket"],
+          "model": "tower"
         },
         {
           "ask": "In a poem, 'the moon was a silver coin'. What does 'silver' tell us?",
@@ -472,7 +474,8 @@
         {
           "ask": "What does 'enormous' mean in 'an enormous turnip'?",
           "answer": "very big",
-          "distractors": ["very small", "very old", "very soft"]
+          "distractors": ["very small", "very old", "very soft"],
+          "model": "turnip"
         },
         {
           "ask": "A 'feast' in a story is ___.",

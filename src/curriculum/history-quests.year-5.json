@@ -359,7 +359,7 @@
       "story": "Welcome to Jorvik, where the market is buzzing with traders from far and wide! Discover how the Vikings lived, worked and told their stories.",
       "instruction": "Read each question about Viking life, then tap the right coin.",
       "hint": "Picture a busy Viking town: what people traded, how they paid, and what they believed about their gods.",
-      "scene": "saxon-village",
+      "scene": "viking-fjord",
       "play": "quiz",
       "choiceProp": "gold-coin",
       "questions": [
@@ -451,7 +451,7 @@
       "story": "King Edward has died, and three powerful men all want his crown! Find out what happened in the most famous year in English history.",
       "instruction": "Read each question about 1066, then tap the right shield.",
       "hint": "Think about the order things happened in 1066, and which claimant came from Norway, Normandy or England.",
-      "scene": "castle-courtyard",
+      "scene": "saxon-village",
       "play": "quiz",
       "choiceProp": "shield",
       "questions": [

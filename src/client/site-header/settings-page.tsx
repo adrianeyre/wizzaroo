@@ -1,6 +1,17 @@
-import { useState, useSyncExternalStore, type ReactNode } from "react";
+import {
+  useEffect,
+  useState,
+  useSyncExternalStore,
+  type ReactNode,
+} from "react";
 import type { PiperModel } from "../../curriculum/piper-voice-models.js";
 import { CharacterPreview } from "../character/character-preview.js";
+import {
+  findMouthOpenness,
+  findSpeakingCharacter,
+  showVoiceOnStage,
+  subscribeToSpeaking,
+} from "../voice-over/speaking-voice.js";
 import {
   buildPortraitShot,
   useItemPictureUrl,
@@ -219,6 +230,13 @@ const VoiceStudio = ({
   const download = useVoiceDownload(voice.model);
   const isDisabled = !isVoiceOffered;
   const isDownloading = download.state === "downloading";
+  // The chosen voice talks here on the stage, rather than in a face of its own.
+  useEffect(() => showVoiceOnStage(voice.id), [voice.id]);
+  const speakingVoice = useSyncExternalStore(
+    subscribeToSpeaking,
+    () => findSpeakingCharacter()?.voice,
+    () => undefined,
+  );
   return (
     <section className="voice-studio" aria-labelledby="voice-studio-heading">
       <div className="voice-studio-stage">
@@ -227,6 +245,9 @@ const VoiceStudio = ({
             characterName={voice.name}
             loadout={voice.character.loadout}
             showOffCount={showOffCount}
+            readMouthOpenness={
+              speakingVoice === voice.id ? findMouthOpenness : undefined
+            }
           />
         </div>
         <div

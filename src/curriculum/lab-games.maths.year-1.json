@@ -104,7 +104,8 @@
         {
           "ask": "Sam has 6 sweets. Mia has 9 sweets. Who has fewer?",
           "answer": "Sam",
-          "distractors": ["Mia", "They are equal", "Nobody"]
+          "distractors": ["Mia", "They are equal", "Nobody"],
+          "model": "sweet"
         },
         {
           "ask": "Ali has 7 stickers. Jo has 7 stickers. What is true?",
@@ -245,7 +246,8 @@
         {
           "ask": "On a balance, the side with the books goes down. Which is heavier?",
           "answer": "The books",
-          "distractors": ["The feathers", "Both the same", "Neither"]
+          "distractors": ["The feathers", "Both the same", "Neither"],
+          "model": "balance-scale"
         },
         {
           "ask": "Which is later in the same afternoon?",
@@ -283,7 +285,8 @@
         {
           "ask": "How many pence is a £1 coin worth?",
           "answer": "100p",
-          "distractors": ["10p", "1p", "50p"]
+          "distractors": ["10p", "1p", "50p"],
+          "model": "pound-coin"
         },
         {
           "ask": "Which coin is worth more than 20p?",
@@ -293,7 +296,8 @@
         {
           "ask": "Which coin is worth the same as two 5p coins?",
           "answer": "10p",
-          "distractors": ["5p", "2p", "20p"]
+          "distractors": ["5p", "2p", "20p"],
+          "model": "five-pence-coin"
         },
         {
           "ask": "Which note is worth the most?",
@@ -303,7 +307,8 @@
         {
           "ask": "Which coin is worth the same as two £1 coins?",
           "answer": "£2",
-          "distractors": ["£1", "50p", "20p"]
+          "distractors": ["£1", "50p", "20p"],
+          "model": "pound-coin"
         },
         {
           "ask": "Which coin is worth less than 5p?",

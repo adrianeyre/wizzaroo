@@ -572,6 +572,30 @@ describe("the fair shares, treasure map and chart tower scenes", () => {
 });
 
 describe("the fair shares, treasure map and chart tower layouts", () => {
+  it("never writes or splits out the scale factor a Child is asked to find", () => {
+    const factorQuestions = buildFairShareQuestions(6, 2).filter(({ ask }) =>
+      ask.endsWith("What is the scale factor?"),
+    );
+
+    expect(factorQuestions.length).toBeGreaterThan(0);
+    for (const { picture, answer } of factorQuestions) {
+      const { label, ghostBlocks } = buildSharePlan(picture);
+      expect(label?.text).toBe("× ?");
+      expect(ghostBlocks).toHaveLength(1);
+      expect(label?.text).not.toContain(answer);
+    }
+  });
+
+  it("writes the scale factor a Child is given, one segment for each time bigger", () => {
+    const [scaleUp] = buildFairShareQuestions(6, 2).filter(({ ask }) =>
+      ask.includes("scaled by a factor of 4"),
+    );
+    const { label, ghostBlocks } = buildSharePlan(scaleUp.picture);
+
+    expect(label?.text).toBe("× 4");
+    expect(ghostBlocks).toHaveLength(4);
+  });
+
   it("lays pearls out two by two, so an odd number leaves one pearl without a partner", () => {
     const spots = listPairSpots(7, 0.5);
     const columns = spots.map(([x]) => x.toFixed(3));

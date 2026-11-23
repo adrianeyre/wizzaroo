@@ -28,6 +28,7 @@ import {
   buildEnglishMission,
   buildLetterMatchMission,
   buildListenAndPickMission,
+  listListenAndPickSkills,
   buildGeographyGameMission,
   buildPhonicsGameMission,
   buildLabMission,
@@ -331,6 +332,45 @@ describe("buildListenAndPickMission", () => {
       expect(choices).toContain("s");
     }
   });
+
+  it.each(phonicsProgrammes.map(({ id }) => id))(
+    "never offers a wrong letter tile that %s also teaches for the sound played",
+    (phonicsProgrammeId) => {
+      const phonicsProgramme = findProgramme(phonicsProgrammeId);
+      const graphemes = phonicsProgramme.soundOrder.flatMap(
+        (stage) => stage.graphemes,
+      );
+      const playableSounds = listListenAndPickSkills({
+        phonicsProgramme,
+        skills,
+        recordedSounds: everySound,
+      }).map(({ sounds }) => sounds[0]);
+
+      for (const sound of playableSounds) {
+        const spellings = new Set(
+          graphemes
+            .filter(({ sounds }) => sounds.includes(sound))
+            .map(({ grapheme }) => grapheme),
+        );
+        const mission = buildPhonicsMission(
+          phonicsProgrammeId,
+          [],
+          new Set([sound]),
+        );
+        for (const { choices, answer } of mission?.activities[0]?.questions ??
+          []) {
+          const wrongSpellings = choices.filter(
+            (choice) => choice !== answer && spellings.has(choice),
+          );
+          expect({ sound, wrongSpellings }).toEqual({
+            sound,
+            wrongSpellings: [],
+          });
+          expect(choices).toHaveLength(choicesPerQuestion);
+        }
+      }
+    },
+  );
 });
 
 describe("describeNumberBond", () => {
@@ -851,6 +891,35 @@ describe("buildLabMission", () => {
       }
     }
     expect(playWholeMission(mission).at(-1)?.progress.isFinished).toBe(true);
+  });
+
+  it("shows each question's own model, or the game's prop when the question names none", () => {
+    const game = labGames.find(({ id }) => id === "second-habitat-homes");
+    if (game === undefined) {
+      throw new Error("Habitat Homes is missing");
+    }
+    const withoutModels = {
+      ...game,
+      questions: game.questions.map(({ ask, answer, distractors }) => ({
+        ask,
+        answer,
+        distractors,
+      })),
+    };
+
+    const shown = listQuestions(
+      buildLabMission(game, { random, buildId: buildCountingIds() }),
+    ).map(({ prompt }) => prompt);
+    const fallback = listQuestions(
+      buildLabMission(withoutModels, { random, buildId: buildCountingIds() }),
+    ).map(({ prompt }) => prompt);
+
+    expect(shown).toContainEqual(
+      expect.objectContaining({ ask: "A jellyfish", prop: "jellyfish" }),
+    );
+    for (const prompt of fallback) {
+      expect(prompt).toMatchObject({ kind: "lab", prop: game.prop });
+    }
   });
 
   it("always offers True then False for a true-or-false game", () => {

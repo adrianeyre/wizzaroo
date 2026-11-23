@@ -63,7 +63,7 @@ import type { ClockQuestion } from "../../curriculum/telling-the-time.js";
 import { formatNumber } from "../../curriculum/number-format.js";
 import type {
   LabGame,
-  LabProp,
+  LabModel,
   LabQuestion,
   LabStation,
 } from "../../curriculum/lab-games.js";
@@ -118,7 +118,8 @@ export type QuestionPrompt =
   | {
       kind: "lab";
       station: LabStation;
-      prop: LabProp;
+      /** The question's own model, or the Game's prop when it names none. */
+      prop: LabModel;
       ask: string;
     }
   | { kind: "music"; music: MusicPrompt }
@@ -445,7 +446,7 @@ const buildLabActivity = (
       prompt: {
         kind: "lab",
         station: game.station,
-        prop: game.prop,
+        prop: question.model ?? game.prop,
         ask: question.ask,
       },
       choices: buildLabChoices({ ...question, station: game.station }, random),
@@ -523,8 +524,22 @@ const chooseListenAndPickSkills = (
     .slice(0, listenAndPickActivityCount);
 };
 
+// Every spelling the programme teaches for a sound, under any entry: a wrong letter tile must be none of them, or the
+// Child would have two right answers.
+const listSpellingsOf = (
+  sound: PhonicsSound,
+  { soundOrder }: PhonicsProgramme,
+): Set<string> =>
+  new Set(
+    soundOrder
+      .flatMap(({ graphemes }) => graphemes)
+      .filter(({ sounds }) => sounds.includes(sound))
+      .map(({ grapheme }) => grapheme),
+  );
+
 const buildListenAndPickActivity = (
   skill: PhonicsSkill,
+  phonicsProgramme: PhonicsProgramme,
   graphemesInOrder: readonly PhonicsGrapheme[],
   { random, buildId }: MissionParts,
 ): MissionActivity => {
@@ -533,13 +548,14 @@ const buildListenAndPickActivity = (
   const answerPosition = graphemesInOrder.findIndex(
     ({ grapheme }) => grapheme === answer,
   );
+  const spellings = listSpellingsOf(sound, phonicsProgramme);
   const otherGraphemes = graphemesInOrder
-    .filter(({ sounds }) => sounds[0] !== sound)
-    .map(({ grapheme }) => grapheme);
+    .map(({ grapheme }) => grapheme)
+    .filter((grapheme) => !spellings.has(grapheme));
   const taughtSoFar = graphemesInOrder
     .slice(0, answerPosition + choicesPerQuestion)
-    .filter(({ sounds }) => sounds[0] !== sound)
-    .map(({ grapheme }) => grapheme);
+    .map(({ grapheme }) => grapheme)
+    .filter((grapheme) => !spellings.has(grapheme));
   const distractorPool =
     taughtSoFar.length >= choicesPerQuestion - 1 ? taughtSoFar : otherGraphemes;
 
@@ -573,7 +589,12 @@ export const buildListenAndPickMission = (
     labGame: undefined,
     historyQuest: undefined,
     activities: chosenSkills.map((skill) =>
-      buildListenAndPickActivity(skill, graphemesInOrder, missionParts),
+      buildListenAndPickActivity(
+        skill,
+        missionParts.phonicsProgramme,
+        graphemesInOrder,
+        missionParts,
+      ),
     ),
   };
 };

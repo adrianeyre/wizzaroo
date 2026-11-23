@@ -69,7 +69,7 @@
       "id": "roman-year-reader",
       "title": "Roman Year Reader",
       "station": "compare",
-      "prop": "fossil",
+      "prop": "roman-coin",
       "skillName": "Reading Roman numerals to 1000 and years",
       "strand": "number-and-place-value",
       "statutoryRequirement": "Pupils should be taught to read Roman numerals to 1000 (M) and recognise years written in Roman numerals",
@@ -245,12 +245,14 @@
         {
           "ask": "50 children ride in minibuses with 8 seats each. How many minibuses are needed?",
           "answer": "7",
-          "distractors": ["6", "8", "5"]
+          "distractors": ["6", "8", "5"],
+          "model": "minibus"
         },
         {
           "ask": "47 eggs are packed in boxes of 6. How many boxes are full?",
           "answer": "7",
-          "distractors": ["8", "6", "5"]
+          "distractors": ["8", "6", "5"],
+          "model": "egg-box"
         }
       ]
     },
@@ -429,7 +431,8 @@
         {
           "ask": "1 kg is about how many pounds?",
           "answer": "2.2 pounds",
-          "distractors": ["1 pound", "22 pounds", "0.5 pounds"]
+          "distractors": ["1 pound", "22 pounds", "0.5 pounds"],
+          "model": "kilogram-weight"
         },
         {
           "ask": "About how many pounds is 10 kg?",
@@ -439,7 +442,8 @@
         {
           "ask": "About how many millilitres are in 1 pint?",
           "answer": "570 ml",
-          "distractors": ["100 ml", "1,000 ml", "57 ml"]
+          "distractors": ["100 ml", "1,000 ml", "57 ml"],
+          "model": "milk"
         },
         {
           "ask": "Which amount is closest to 2 pints?",

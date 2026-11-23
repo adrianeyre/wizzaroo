@@ -118,11 +118,11 @@ describe("buildTreasureMapQuestions", () => {
       for (const question of [
         ...buildTreasureMapQuestions(year, 2),
         ...buildTreasureMapQuestions(year, 3),
-      ].filter(({ ask }) => ask.startsWith("The pearl"))) {
+      ].filter(({ ask }) => /^The \w+ at .* is reflected in/.test(ask))) {
         const { treasure, mirror } = findGrid(question);
         const image = readPoint(question.answer);
         if (treasure === undefined || mirror === undefined) {
-          throw new Error("a reflection needs a pearl and a mirror line");
+          throw new Error("a reflection needs a treasure and a mirror line");
         }
         const [along, across] =
           mirror.axis === "x"
@@ -131,6 +131,23 @@ describe("buildTreasureMapQuestions", () => {
         expect(along).toBe(2 * mirror.at);
         expect(across).toBe(0);
       }
+    }
+  });
+
+  it("asks to reflect the treasure chest the map draws, not something it doesn't", () => {
+    const reflections = ([5, 6] as const).flatMap((year) =>
+      ([2, 3] as const).flatMap((difficulty) =>
+        buildTreasureMapQuestions(year, difficulty).filter(({ ask }) =>
+          /^The \w+ at .* is reflected in/.test(ask),
+        ),
+      ),
+    );
+
+    expect(reflections.length).toBeGreaterThan(0);
+    for (const question of reflections) {
+      const { treasure } = findGrid(question);
+      expect(treasure).toBeDefined();
+      expect(question.ask).toMatch(/^The treasure at /);
     }
   });
 

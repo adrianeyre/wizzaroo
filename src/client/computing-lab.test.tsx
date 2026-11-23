@@ -212,6 +212,33 @@ describe("ComputingLabWorld", () => {
     await renderer.unmount();
   });
 
+  it("stands a tent's triangular prism on its flat face, ridge up, on the turntable", async () => {
+    const renderer = await renderLab({
+      gameType: "model-maker",
+      scene: {
+        kind: "model-workbench",
+        parts: [{ shape: "prism", colour: "green", position: [0, 0, 0] }],
+      },
+    });
+    const [prism] = findNamed(renderer, "part-prism")
+      .map(({ instance }) => instance)
+      .filter(isMesh);
+    const position = prism.geometry.getAttribute("position");
+    const corners = Array.from({ length: position.count }, (_, index) => ({
+      y: Number(position.getY(index).toFixed(3)),
+      z: Number(position.getZ(index).toFixed(3)),
+    }));
+    const lowest = Math.min(...corners.map(({ y }) => y));
+    const highest = Math.max(...corners.map(({ y }) => y));
+    const countEdges = (height: number) =>
+      new Set(corners.filter(({ y }) => y === height).map(({ z }) => z)).size;
+
+    expect(countEdges(lowest)).toBe(2);
+    expect(countEdges(highest)).toBe(1);
+    expect(lowest).toBeCloseTo(-0.5);
+    await renderer.unmount();
+  });
+
   it("bursts where a right answer was tapped", async () => {
     const renderer = await renderLab({
       gameType: "tech-spotter",

@@ -6,7 +6,7 @@
       "id": "art-pattern-path",
       "title": "Pattern Path",
       "station": "sequence",
-      "prop": "leaf",
+      "prop": "paint-palette",
       "skillName": "Making repeating patterns",
       "strand": "techniques",
       "statutoryRequirement": "Pupils should be taught to develop a wide range of art and design techniques in using colour, pattern, texture, line, shape, form and space",
@@ -126,27 +126,32 @@
         {
           "ask": "A football has the form of a...?",
           "answer": "Sphere",
-          "distractors": ["Cube", "Cone", "Cylinder"]
+          "distractors": ["Cube", "Cone", "Cylinder"],
+          "model": "football"
         },
         {
           "ask": "A dice has the form of a...?",
           "answer": "Cube",
-          "distractors": ["Sphere", "Cone", "Pyramid"]
+          "distractors": ["Sphere", "Cone", "Pyramid"],
+          "model": "dice"
         },
         {
           "ask": "An ice cream cone has the form of a...?",
           "answer": "Cone",
-          "distractors": ["Cube", "Sphere", "Cuboid"]
+          "distractors": ["Cube", "Sphere", "Cuboid"],
+          "model": "ice-cream-cone"
         },
         {
           "ask": "A tin of beans has the form of a...?",
           "answer": "Cylinder",
-          "distractors": ["Cone", "Cube", "Sphere"]
+          "distractors": ["Cone", "Cube", "Sphere"],
+          "model": "tin-can"
         },
         {
           "ask": "A cereal box has the form of a...?",
           "answer": "Cuboid",
-          "distractors": ["Sphere", "Cone", "Cylinder"]
+          "distractors": ["Sphere", "Cone", "Cylinder"],
+          "model": "cereal-box"
         },
         {
           "ask": "In art, what word means a solid 3D shape?",
@@ -222,7 +227,7 @@
       "id": "art-clay-creations",
       "title": "Clay Creations",
       "station": "compare",
-      "prop": "rock",
+      "prop": "clay",
       "skillName": "Making simple clay sculptures",
       "strand": "drawing-painting-sculpture",
       "statutoryRequirement": "Pupils should be taught to use drawing, painting and sculpture to develop and share their ideas, experiences and imagination",
@@ -285,37 +290,44 @@
         {
           "ask": "You should wash your brush in water before using a new colour.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "paintbrush"
         },
         {
           "ask": "A big, thick brush is best for painting tiny details.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "paintbrush"
         },
         {
           "ask": "A palette is used for mixing paint.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "paint-palette"
         },
         {
           "ask": "Watercolour paint is mixed with water.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "watercolour-paint-box"
         },
         {
           "ask": "Brushes should be left standing on their bristles in water.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "paintbrush"
         },
         {
           "ask": "Thin brushes are good for painting fine lines.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "paintbrush"
         },
         {
           "ask": "Dabbing a sponge in paint can make a bumpy texture.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "sponge"
         },
         {
           "ask": "You can never plan a painting with a sketch first.",
@@ -328,7 +340,7 @@
       "id": "art-print-makers",
       "title": "Print Makers",
       "station": "compare",
-      "prop": "leaf",
+      "prop": "brayer",
       "skillName": "Printing with everyday materials",
       "strand": "materials",
       "statutoryRequirement": "Pupils should be taught to use a range of materials creatively to design and make products",
@@ -348,7 +360,8 @@
         {
           "ask": "What goes on a printing block before you press it down?",
           "answer": "Paint",
-          "distractors": ["Water", "Glue", "Clay"]
+          "distractors": ["Water", "Glue", "Clay"],
+          "model": "printing-block"
         },
         {
           "ask": "What do you make by printing the same shape again and again?",
@@ -373,7 +386,8 @@
         {
           "ask": "What do you press a print block onto?",
           "answer": "Paper",
-          "distractors": ["Water", "Sand", "Clay"]
+          "distractors": ["Water", "Sand", "Clay"],
+          "model": "printing-block"
         }
       ]
     },
@@ -381,7 +395,7 @@
       "id": "art-weaving-wonders",
       "title": "Weaving Wonders",
       "station": "compare",
-      "prop": "seedling",
+      "prop": "magnifier",
       "skillName": "Weaving with threads and strips",
       "strand": "materials",
       "statutoryRequirement": "Pupils should be taught to use a range of materials creatively to design and make products",
@@ -487,7 +501,7 @@
       "id": "art-who-made-it",
       "title": "Who Made It?",
       "station": "mystery",
-      "prop": "flower",
+      "prop": "easel",
       "skillName": "Artists, designers and their work",
       "strand": "artists-and-makers",
       "statutoryRequirement": "Pupils should be taught about the work of a range of artists, craft makers and designers, describing the differences and similarities between different practices and disciplines, and making links to their own work",

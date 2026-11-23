@@ -424,7 +424,7 @@
           "show": {
             "pin": {
               "latitude": 56,
-              "longitude": 3
+              "longitude": 2
             }
           },
           "answer": "North Sea",
@@ -456,8 +456,8 @@
           "ask": "Where is the red pin?",
           "show": {
             "pin": {
-              "latitude": 55,
-              "longitude": -12
+              "latitude": 55.5,
+              "longitude": -10
             }
           },
           "answer": "Atlantic Ocean",

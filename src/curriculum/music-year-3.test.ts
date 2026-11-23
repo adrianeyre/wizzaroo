@@ -132,6 +132,21 @@ describe("allegro or adagio", () => {
   });
 });
 
+describe("allegro or adagio's pictures", () => {
+  it("draws each tempo word as a creature moving at its speed, so no two choices look alike", () => {
+    const pictures = ["adagio", "andante", "allegro", "presto"].map((choice) =>
+      allegroOrAdagio.findChoiceArt(choice),
+    );
+
+    expect(pictures).toEqual([
+      { kind: "model", model: "tortoise" },
+      { kind: "model", model: "bear" },
+      { kind: "model", model: "kangaroo" },
+      { kind: "model", model: "hare" },
+    ]);
+  });
+});
+
 describe("loop counter", () => {
   it("plays the very same ostinato as many times as the answer", () => {
     for (const difficulty of musicDifficulties) {

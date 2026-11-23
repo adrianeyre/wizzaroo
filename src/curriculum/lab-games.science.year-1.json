@@ -6,7 +6,7 @@
       "id": "animal-body-builder",
       "title": "Body Builder Zoo",
       "station": "sort",
-      "prop": "egg",
+      "prop": "magnifier",
       "skillName": "Comparing the bodies of fish, amphibians, reptiles, birds and mammals",
       "strand": "animals-including-humans",
       "statutoryRequirement": "Pupils should be taught to identify and name a variety of common animals including fish, amphibians, reptiles, birds and mammals; describe and compare the structure of a variety of common animals (fish, amphibians, reptiles, birds and mammals, including pets)",
@@ -41,27 +41,32 @@
         {
           "ask": "A pet goldfish: fins, scales and gills",
           "answer": "Fish",
-          "distractors": ["Amphibians", "Mammals", "Reptiles"]
+          "distractors": ["Amphibians", "Mammals", "Reptiles"],
+          "model": "goldfish"
         },
         {
           "ask": "A pet rabbit: soft fur, four legs and long ears",
           "answer": "Mammals",
-          "distractors": ["Birds", "Reptiles", "Amphibians"]
+          "distractors": ["Birds", "Reptiles", "Amphibians"],
+          "model": "rabbit"
         },
         {
           "ask": "A pet budgie: feathers, a beak and two legs",
           "answer": "Birds",
-          "distractors": ["Mammals", "Reptiles", "Fish"]
+          "distractors": ["Mammals", "Reptiles", "Fish"],
+          "model": "budgie"
         },
         {
           "ask": "A pet tortoise: dry, scaly skin and a hard shell",
           "answer": "Reptiles",
-          "distractors": ["Amphibians", "Fish", "Mammals"]
+          "distractors": ["Amphibians", "Fish", "Mammals"],
+          "model": "tortoise"
         },
         {
           "ask": "A frog: smooth, damp skin and long back legs for jumping",
           "answer": "Amphibians",
-          "distractors": ["Reptiles", "Mammals", "Fish"]
+          "distractors": ["Reptiles", "Mammals", "Fish"],
+          "model": "frog"
         }
       ]
     }

@@ -6,7 +6,7 @@
       "id": "bossy-robot-orders",
       "title": "Bossy Robot",
       "station": "compare",
-      "prop": "bulb",
+      "prop": "robot",
       "skillName": "Giving precise and unambiguous instructions",
       "strand": "algorithms",
       "statutoryRequirement": "Pupils should be taught to understand what algorithms are; how they are implemented as programs on digital devices; and that programs execute by following precise and unambiguous instructions",
@@ -16,22 +16,26 @@
         {
           "ask": "Which instruction is clearest for a robot?",
           "answer": "Move forward 3 steps",
-          "distractors": ["Go over there", "Move a bit", "Walk somewhere"]
+          "distractors": ["Go over there", "Move a bit", "Walk somewhere"],
+          "model": "robot"
         },
         {
           "ask": "Which instruction tells a robot exactly how far to go?",
           "answer": "Forward 5 squares",
-          "distractors": ["Go forward", "Keep going", "Go far"]
+          "distractors": ["Go forward", "Keep going", "Go far"],
+          "model": "robot"
         },
         {
           "ask": "The robot must turn. Which instruction is clear?",
           "answer": "Turn right",
-          "distractors": ["Turn a bit", "Spin around", "Go that way"]
+          "distractors": ["Turn a bit", "Spin around", "Go that way"],
+          "model": "robot"
         },
         {
           "ask": "Which instruction tells the robot exactly what to pick up?",
           "answer": "Pick up the red cup",
-          "distractors": ["Pick that up", "Get the thing", "Grab it"]
+          "distractors": ["Pick that up", "Get the thing", "Grab it"],
+          "model": "robot"
         },
         {
           "ask": "Which drawing instruction is NOT clear enough for a robot?",
@@ -45,7 +49,8 @@
             "Put bread in toaster",
             "Press the lever down",
             "Wait for the pop"
-          ]
+          ],
+          "model": "toast"
         },
         {
           "ask": "Why do robots need precise instructions?",
@@ -54,7 +59,8 @@
             "They are lazy",
             "They like long words",
             "They are sleepy"
-          ]
+          ],
+          "model": "robot"
         },
         {
           "ask": "What is an algorithm?",
@@ -73,7 +79,8 @@
         {
           "ask": "Your robot ends up in the wrong place. What should you do?",
           "answer": "Check the steps",
-          "distractors": ["Shout at it", "Throw it away", "Give up"]
+          "distractors": ["Shout at it", "Throw it away", "Give up"],
+          "model": "robot"
         }
       ]
     }

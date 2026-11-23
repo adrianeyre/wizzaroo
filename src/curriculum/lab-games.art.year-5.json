@@ -6,7 +6,7 @@
       "id": "art-artists-notebook",
       "title": "Artist's Notebook",
       "station": "compare",
-      "prop": "leaf",
+      "prop": "sketchbook",
       "skillName": "Using sketchbooks like great artists",
       "strand": "sketchbooks",
       "statutoryRequirement": "Pupils should be taught to create sketch books to record their observations and use them to review and revisit ideas",
@@ -116,7 +116,7 @@
       "id": "art-perspective-point",
       "title": "Perspective Point",
       "station": "compare",
-      "prop": "planet",
+      "prop": "easel",
       "skillName": "One-point perspective",
       "strand": "mastery",
       "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
@@ -136,7 +136,8 @@
         {
           "ask": "In a drawing, railway lines going into the distance seem to...?",
           "answer": "Meet far away",
-          "distractors": ["Get wider", "Curve upwards", "Disappear sideways"]
+          "distractors": ["Get wider", "Curve upwards", "Disappear sideways"],
+          "model": "railway-track"
         },
         {
           "ask": "The horizon line is always at the viewer's...?",
@@ -156,7 +157,8 @@
         {
           "ask": "Looking up at a tower from the ground gives a...?",
           "answer": "Worm's-eye view",
-          "distractors": ["Bird's-eye view", "Side view", "Close-up"]
+          "distractors": ["Bird's-eye view", "Side view", "Close-up"],
+          "model": "tower"
         },
         {
           "ask": "Looking down from high above gives a...?",
@@ -328,7 +330,7 @@
       "id": "art-composition-craft",
       "title": "Composition Craft",
       "station": "compare",
-      "prop": "sun",
+      "prop": "easel",
       "skillName": "Composition in art",
       "strand": "mastery",
       "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
@@ -381,7 +383,7 @@
       "id": "art-renaissance-masters",
       "title": "Renaissance Masters",
       "station": "compare",
-      "prop": "sun",
+      "prop": "paint-palette",
       "skillName": "Renaissance artists",
       "strand": "great-artists",
       "statutoryRequirement": "Pupils should be taught about great artists, architects and designers in history",
@@ -411,7 +413,8 @@
         {
           "ask": "Which German artist made a famous woodcut of a rhinoceros?",
           "answer": "Albrecht Dürer",
-          "distractors": ["Raphael", "Michelangelo", "Botticelli"]
+          "distractors": ["Raphael", "Michelangelo", "Botticelli"],
+          "model": "rhinoceros"
         },
         {
           "ask": "In which country did the Renaissance begin?",
@@ -426,12 +429,14 @@
         {
           "ask": "In which city is Michelangelo's statue of David?",
           "answer": "Florence",
-          "distractors": ["Paris", "London", "Athens"]
+          "distractors": ["Paris", "London", "Athens"],
+          "model": "david-statue"
         },
         {
           "ask": "In which museum does the 'Mona Lisa' hang?",
           "answer": "The Louvre",
-          "distractors": ["Tate Modern", "The Uffizi", "The Prado"]
+          "distractors": ["Tate Modern", "The Uffizi", "The Prado"],
+          "model": "mona-lisa"
         }
       ]
     },
@@ -439,7 +444,7 @@
       "id": "art-amazing-architects",
       "title": "Amazing Architects",
       "station": "compare",
-      "prop": "planet",
+      "prop": "blueprint",
       "skillName": "Famous architects and buildings",
       "strand": "great-artists",
       "statutoryRequirement": "Pupils should be taught about great artists, architects and designers in history",
@@ -449,17 +454,20 @@
         {
           "ask": "Who designed St Paul's Cathedral in London?",
           "answer": "Christopher Wren",
-          "distractors": ["Zaha Hadid", "Renzo Piano", "Antoni Gaudí"]
+          "distractors": ["Zaha Hadid", "Renzo Piano", "Antoni Gaudí"],
+          "model": "st-pauls-cathedral"
         },
         {
           "ask": "St Paul's Cathedral was rebuilt after which event?",
           "answer": "Great Fire of London",
-          "distractors": ["The Plague", "World War Two", "The Gunpowder Plot"]
+          "distractors": ["The Plague", "World War Two", "The Gunpowder Plot"],
+          "model": "st-pauls-cathedral"
         },
         {
           "ask": "Who designed the London Aquatics Centre for the 2012 Olympics?",
           "answer": "Zaha Hadid",
-          "distractors": ["Christopher Wren", "Joseph Paxton", "Antoni Gaudí"]
+          "distractors": ["Christopher Wren", "Joseph Paxton", "Antoni Gaudí"],
+          "model": "london-aquatics-centre"
         },
         {
           "ask": "Zaha Hadid was the first woman to win which architecture prize?",
@@ -469,22 +477,26 @@
         {
           "ask": "Who designed the Sagrada Família in Barcelona?",
           "answer": "Antoni Gaudí",
-          "distractors": ["Renzo Piano", "Zaha Hadid", "Christopher Wren"]
+          "distractors": ["Renzo Piano", "Zaha Hadid", "Christopher Wren"],
+          "model": "sagrada-familia"
         },
         {
           "ask": "Who designed The Shard in London?",
           "answer": "Renzo Piano",
-          "distractors": ["Christopher Wren", "Antoni Gaudí", "Joseph Paxton"]
+          "distractors": ["Christopher Wren", "Antoni Gaudí", "Joseph Paxton"],
+          "model": "the-shard"
         },
         {
           "ask": "Who designed Fallingwater, a house built over a waterfall?",
           "answer": "Frank Lloyd Wright",
-          "distractors": ["Joseph Paxton", "Renzo Piano", "Christopher Wren"]
+          "distractors": ["Joseph Paxton", "Renzo Piano", "Christopher Wren"],
+          "model": "fallingwater"
         },
         {
           "ask": "Who designed the Crystal Palace for the Great Exhibition of 1851?",
           "answer": "Joseph Paxton",
-          "distractors": ["Zaha Hadid", "Frank Lloyd Wright", "Antoni Gaudí"]
+          "distractors": ["Zaha Hadid", "Frank Lloyd Wright", "Antoni Gaudí"],
+          "model": "crystal-palace"
         }
       ]
     },
@@ -507,12 +519,14 @@
         {
           "ask": "Warhol's soup can pictures: which movement?",
           "answer": "Pop Art",
-          "distractors": ["Cubism", "Impressionism", "Surrealism"]
+          "distractors": ["Cubism", "Impressionism", "Surrealism"],
+          "model": "soup-can"
         },
         {
           "ask": "Dalí's melting clocks: which movement?",
           "answer": "Surrealism",
-          "distractors": ["Pop Art", "Op Art", "Impressionism"]
+          "distractors": ["Pop Art", "Op Art", "Impressionism"],
+          "model": "melting-clock"
         },
         {
           "ask": "Lichtenstein's comic-strip paintings: which movement?",

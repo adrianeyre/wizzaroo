@@ -13,6 +13,7 @@ const domTests = [
   "src/client/site-header/**/*.test.tsx",
   "src/client/focus-recovery.test.ts",
   "src/client/read-aloud-button.test.tsx",
+  "src/client/voice-over/speaking-face.test.tsx",
   "src/client/full-screen.test.ts",
   "src/client/bay-games.test.tsx",
   "src/client/woods-games.test.tsx",

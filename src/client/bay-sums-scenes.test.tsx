@@ -10,7 +10,9 @@ import { beforeAll, describe, expect, it, vi } from "vitest";
 import { BayGameWorld, type BayGameType } from "./bay-games.js";
 import {
   buildChangingTenLayout,
+  buildSmallFishGeometry,
   listPlaceValueSpots,
+  unitsInATen,
 } from "./bay-place-value.js";
 import { buildTakeAwayPicture } from "./bay-sums-scenes.js";
 import type { QuestionPrompt } from "./mission/mission.js";
@@ -183,14 +185,22 @@ describe("the sums and place-value scenes", () => {
     await renderer.unmount();
   });
 
-  it("counts tens as rods and ones as fish past 20", async () => {
+  it("draws every one of the fish it asks about past 20, each ten as a shoal of ten fish", async () => {
     const renderer = await renderBayGame("fish-count", {
       kind: "count",
       count: 47,
     });
+    const [shoals] = renderer.scene
+      .findAll(({ instance }) => instance.name === "ten-shoals")
+      .map(({ instance }) => instance)
+      .filter(isMesh);
 
-    expect(countNamedInstances(renderer, "ten-rods")).toBe(4);
+    expect(countNamedInstances(renderer, "ten-rods")).toBe(0);
+    expect(countNamedInstances(renderer, "ten-shoals")).toBe(4);
     expect(countNamedInstances(renderer, "one-fish")).toBe(7);
+    expect(countTriangles(shoals.geometry)).toBe(
+      unitsInATen * countTriangles(buildSmallFishGeometry(1)),
+    );
     await renderer.unmount();
   });
 

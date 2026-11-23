@@ -6,7 +6,7 @@
       "id": "art-review-revisit",
       "title": "Review and Revisit",
       "station": "compare",
-      "prop": "leaf",
+      "prop": "sketchbook",
       "skillName": "Reviewing work in a sketchbook",
       "strand": "sketchbooks",
       "statutoryRequirement": "Pupils should be taught to create sketch books to record their observations and use them to review and revisit ideas",
@@ -63,7 +63,7 @@
       "id": "art-sketch-plan",
       "title": "Sketch to Final Piece",
       "station": "sequence",
-      "prop": "seedling",
+      "prop": "sketchbook",
       "skillName": "Planning a piece of art",
       "strand": "sketchbooks",
       "statutoryRequirement": "Pupils should be taught to create sketch books to record their observations and use them to review and revisit ideas",
@@ -116,7 +116,7 @@
       "id": "art-tints-tones",
       "title": "Tints and Tones",
       "station": "compare",
-      "prop": "water-drop",
+      "prop": "paint-palette",
       "skillName": "Tints, shades and tones of colour",
       "strand": "mastery",
       "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
@@ -173,7 +173,7 @@
       "id": "art-print-studio",
       "title": "Print Studio",
       "station": "true-false",
-      "prop": "leaf",
+      "prop": "printing-block",
       "skillName": "Printmaking techniques",
       "strand": "mastery",
       "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
@@ -279,7 +279,7 @@
       "id": "art-mosaic-makers",
       "title": "Mosaic Makers",
       "station": "compare",
-      "prop": "rock",
+      "prop": "mosaic",
       "skillName": "Mosaic and collage",
       "strand": "mastery",
       "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
@@ -289,7 +289,8 @@
         {
           "ask": "What fills the gaps between mosaic tiles?",
           "answer": "Grout",
-          "distractors": ["Slip", "Glaze", "Paint"]
+          "distractors": ["Slip", "Glaze", "Paint"],
+          "model": "mosaic"
         },
         {
           "ask": "'Collage' comes from a French word meaning...?",
@@ -304,7 +305,8 @@
         {
           "ask": "Roman mosaics were often used to decorate...?",
           "answer": "Floors",
-          "distractors": ["Clothes", "Books", "Food"]
+          "distractors": ["Clothes", "Books", "Food"],
+          "model": "mosaic"
         },
         {
           "ask": "Picasso and Braque made early collages with...?",
@@ -342,7 +344,8 @@
         {
           "ask": "A bowl of fruit and a jug on a table: which group?",
           "answer": "Still life",
-          "distractors": ["Portrait", "Landscape", "Seascape"]
+          "distractors": ["Portrait", "Landscape", "Seascape"],
+          "model": "fruit-bowl"
         },
         {
           "ask": "A painting of a person's face: which group?",
@@ -372,12 +375,14 @@
         {
           "ask": "Flowers in a vase: which group?",
           "answer": "Still life",
-          "distractors": ["Seascape", "Self-portrait", "Cityscape"]
+          "distractors": ["Seascape", "Self-portrait", "Cityscape"],
+          "model": "flower-vase"
         },
         {
           "ask": "A ship on a stormy ocean: which group?",
           "answer": "Seascape",
-          "distractors": ["Still life", "Cityscape", "Portrait"]
+          "distractors": ["Still life", "Cityscape", "Portrait"],
+          "model": "ship"
         }
       ]
     },
@@ -385,7 +390,7 @@
       "id": "art-impressionist-mystery",
       "title": "Impressionist Mystery",
       "station": "mystery",
-      "prop": "flower",
+      "prop": "easel",
       "skillName": "Impressionist painters",
       "strand": "great-artists",
       "statutoryRequirement": "Pupils should be taught about great artists, architects and designers in history",
@@ -448,12 +453,14 @@
         {
           "ask": "Who made the 'Angel of the North'?",
           "answer": "Antony Gormley",
-          "distractors": ["Henry Moore", "Auguste Rodin", "Michelangelo"]
+          "distractors": ["Henry Moore", "Auguste Rodin", "Michelangelo"],
+          "model": "angel-of-the-north"
         },
         {
           "ask": "The 'Angel of the North' stands beside which town?",
           "answer": "Gateshead",
-          "distractors": ["St Ives", "Wakefield", "Bristol"]
+          "distractors": ["St Ives", "Wakefield", "Bristol"],
+          "model": "angel-of-the-north"
         },
         {
           "ask": "What is Michelangelo's 'David' carved from?",
@@ -463,7 +470,8 @@
         {
           "ask": "Who sculpted 'The Thinker'?",
           "answer": "Auguste Rodin",
-          "distractors": ["Antony Gormley", "Henry Moore", "Barbara Hepworth"]
+          "distractors": ["Antony Gormley", "Henry Moore", "Barbara Hepworth"],
+          "model": "the-thinker"
         },
         {
           "ask": "Barbara Hepworth had her studio in which Cornish town?",

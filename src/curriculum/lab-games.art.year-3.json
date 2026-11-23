@@ -6,7 +6,7 @@
       "id": "art-sketchbook-secrets",
       "title": "Sketchbook Secrets",
       "station": "true-false",
-      "prop": "leaf",
+      "prop": "sketchbook",
       "skillName": "What a sketchbook is for",
       "strand": "sketchbooks",
       "statutoryRequirement": "Pupils should be taught to create sketch books to record their observations and use them to review and revisit ideas",
@@ -16,27 +16,32 @@
         {
           "ask": "A sketchbook is a place to try out ideas.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "sketchbook"
         },
         {
           "ask": "Every page of a sketchbook must be a perfect, finished picture.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "sketchbook"
         },
         {
           "ask": "You can stick photos and cuttings in a sketchbook.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "sketchbook"
         },
         {
           "ask": "Artists use sketchbooks to record what they see.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "sketchbook"
         },
         {
           "ask": "You should rip out any page with a mistake on it.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "sketchbook"
         },
         {
           "ask": "Notes and labels can go next to your drawings.",
@@ -46,12 +51,14 @@
         {
           "ask": "Looking back through a sketchbook can give you new ideas.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "sketchbook"
         },
         {
           "ask": "Only pencil is allowed in a sketchbook.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "sketchbook"
         }
       ]
     },
@@ -136,12 +143,14 @@
         {
           "ask": "What does the B on a pencil stand for?",
           "answer": "Black",
-          "distractors": ["Bold", "Bright", "Big"]
+          "distractors": ["Bold", "Bright", "Big"],
+          "model": "pencil"
         },
         {
           "ask": "What does the H on a pencil stand for?",
           "answer": "Hard",
-          "distractors": ["Heavy", "Happy", "Huge"]
+          "distractors": ["Heavy", "Happy", "Huge"],
+          "model": "pencil"
         },
         {
           "ask": "Which is the middle, everyday pencil?",
@@ -151,7 +160,8 @@
         {
           "ask": "What is the inside of a pencil really made of?",
           "answer": "Graphite",
-          "distractors": ["Lead metal", "Coal", "Chalk"]
+          "distractors": ["Lead metal", "Coal", "Chalk"],
+          "model": "pencil"
         },
         {
           "ask": "Which pencil is the softest and darkest?",
@@ -275,7 +285,7 @@
       "id": "art-charcoal-chalk",
       "title": "Charcoal and Chalk",
       "station": "compare",
-      "prop": "tree",
+      "prop": "sketchbook",
       "skillName": "Drawing with charcoal and chalk",
       "strand": "mastery",
       "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
@@ -285,7 +295,8 @@
         {
           "ask": "What is drawing charcoal made from?",
           "answer": "Burnt wood",
-          "distractors": ["Black clay", "Coal dust", "Pencil lead"]
+          "distractors": ["Black clay", "Coal dust", "Pencil lead"],
+          "model": "charcoal-stick"
         },
         {
           "ask": "Which drawing material smudges most easily?",
@@ -328,7 +339,7 @@
       "id": "art-clay-workshop",
       "title": "Clay Workshop",
       "station": "sequence",
-      "prop": "rock",
+      "prop": "clay",
       "skillName": "Making pots with clay",
       "strand": "mastery",
       "statutoryRequirement": "Pupils should be taught to improve their mastery of art and design techniques, including drawing, painting and sculpture with a range of materials [for example, pencil, charcoal, paint, clay]",
@@ -411,7 +422,8 @@
         {
           "ask": "What are the small tiles in a Roman mosaic called?",
           "answer": "Tesserae",
-          "distractors": ["Coils", "Slabs", "Pixels"]
+          "distractors": ["Coils", "Slabs", "Pixels"],
+          "model": "mosaic"
         },
         {
           "ask": "Ancient Egyptian art usually showed faces...?",
@@ -421,12 +433,14 @@
         {
           "ask": "The pyramids at Giza were built as tombs for...?",
           "answer": "Pharaohs",
-          "distractors": ["Romans", "Vikings", "Knights"]
+          "distractors": ["Romans", "Vikings", "Knights"],
+          "model": "pyramid"
         },
         {
           "ask": "The Parthenon is a temple in which city?",
           "answer": "Athens",
-          "distractors": ["Rome", "Cairo", "Paris"]
+          "distractors": ["Rome", "Cairo", "Paris"],
+          "model": "parthenon"
         }
       ]
     },

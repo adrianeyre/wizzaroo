@@ -488,17 +488,20 @@
         {
           "ask": "Which is right for \"a dog\"?",
           "answer": "un chien",
-          "distractors": ["une chien", "des chien", "un chiens"]
+          "distractors": ["une chien", "des chien", "un chiens"],
+          "model": "dog"
         },
         {
           "ask": "Which is right for \"a cat\"?",
           "answer": "un chat",
-          "distractors": ["une chat", "des chat", "un chats"]
+          "distractors": ["une chat", "des chat", "un chats"],
+          "model": "cat"
         },
         {
           "ask": "Which is right for \"an apple\"?",
           "answer": "une pomme",
-          "distractors": ["un pomme", "des pomme", "une pommes"]
+          "distractors": ["un pomme", "des pomme", "une pommes"],
+          "model": "apple"
         },
         {
           "ask": "Which is right for \"some books\"?",
@@ -508,7 +511,8 @@
         {
           "ask": "Which is right for \"a house\"?",
           "answer": "une maison",
-          "distractors": ["un maison", "une maisons", "des maison"]
+          "distractors": ["un maison", "une maisons", "des maison"],
+          "model": "house"
         },
         {
           "ask": "Which is right for \"some pencils\"?",
@@ -518,12 +522,14 @@
         {
           "ask": "Which is right for \"a table\"?",
           "answer": "une table",
-          "distractors": ["un table", "des table", "une tables"]
+          "distractors": ["un table", "des table", "une tables"],
+          "model": "table"
         },
         {
           "ask": "Which is right for \"a bike\"?",
           "answer": "un vélo",
-          "distractors": ["une vélo", "des vélo", "un vélos"]
+          "distractors": ["une vélo", "des vélo", "un vélos"],
+          "model": "bicycle"
         },
         {
           "ask": "Which is right for \"some cats\"?",
@@ -608,7 +614,8 @@
             "Je mange un pomme.",
             "Je mange une pain.",
             "Tu manges une pomme."
-          ]
+          ],
+          "model": "apple"
         },
         {
           "ask": "Which means \"I would like some bread\"?",
@@ -617,7 +624,8 @@
             "Je suis du pain.",
             "Je voudrais de pain",
             "Tu voudrais du pain"
-          ]
+          ],
+          "model": "bread"
         },
         {
           "ask": "Which means \"I drink milk\"?",
@@ -626,7 +634,8 @@
             "Je bois de la lait",
             "Je mange du lait.",
             "Il boit du lait."
-          ]
+          ],
+          "model": "milk"
         },
         {
           "ask": "Change \"Je mange une pomme.\" so it means \"I eat a banana\".",
@@ -635,7 +644,8 @@
             "Je mange un banane.",
             "Je mange une pomme.",
             "Je bois une banane."
-          ]
+          ],
+          "model": "banana"
         },
         {
           "ask": "Which means \"I eat a cake\"?",
@@ -644,7 +654,8 @@
             "Je mange une gâteau",
             "Je bois un gâteau.",
             "Je mange des gâteau"
-          ]
+          ],
+          "model": "cake"
         },
         {
           "ask": "Which means \"I'm hungry\"?",
@@ -663,7 +674,8 @@
             "J'aime fromage.",
             "J'aime la fromage.",
             "Je mange fromage."
-          ]
+          ],
+          "model": "cheese"
         },
         {
           "ask": "Which means \"I eat some soup\"?",
@@ -672,7 +684,8 @@
             "Je mange du soupe.",
             "Je mange la soupes",
             "Je bois du soupe."
-          ]
+          ],
+          "model": "soup"
         }
       ]
     }

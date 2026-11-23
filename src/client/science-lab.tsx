@@ -1,5 +1,11 @@
 import { useFrame } from "@react-three/fiber";
-import { useLayoutEffect, useMemo, useRef, type ReactNode } from "react";
+import {
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  type ReactNode,
+} from "react";
 import {
   CatmullRomCurve3,
   ExtrudeGeometry,
@@ -15,7 +21,14 @@ import {
   type InstancedMesh,
 } from "three";
 import { RoundedBoxGeometry } from "three/addons/geometries/RoundedBoxGeometry.js";
-import type { LabProp, LabStation } from "../curriculum/lab-games.js";
+import {
+  isLabProp,
+  type LabModel,
+  type LabProp,
+  type LabStation,
+} from "../curriculum/lab-games.js";
+import type { LabItem } from "../curriculum/lab-items.js";
+import { buildLabItemModel } from "./lab-items/lab-item-models.js";
 import type { QuestionPrompt } from "./mission/mission.js";
 import { buildPaletteUniform } from "./pixel-pipeline.js";
 import {
@@ -182,10 +195,11 @@ const useRoundedBox = (
   height: number,
   depth: number,
   radius: number,
+  segments = 2,
 ): BufferGeometry => {
   const geometry = useMemo(
-    () => new RoundedBoxGeometry(width, height, depth, 2, radius),
-    [width, height, depth, radius],
+    () => new RoundedBoxGeometry(width, height, depth, segments, radius),
+    [width, height, depth, radius, segments],
   );
   useDisposedOnUnmount(geometry);
   return geometry;
@@ -1051,12 +1065,49 @@ const propModels: Record<LabProp, () => ReactNode> = {
   snowflake: SnowflakeProp,
 };
 
-export const PropModel = ({ prop }: { prop: LabProp }) => {
+// Items are drawn facing the camera; this turns them to show a three-quarter view as they grow.
+const itemStartingTurn = -0.55;
+
+/** A question's own item (ADR 0076): one merged mesh, and its glass when it has some. */
+export const LabItemModel = ({ item }: { item: LabItem }) => {
+  const model = useMemo(() => buildLabItemModel(item), [item]);
+  useEffect(
+    () => () => {
+      model.body.dispose();
+      model.glass?.dispose();
+    },
+    [model],
+  );
+  return (
+    <group rotation={[0, itemStartingTurn, 0]} name={`item-${item}`}>
+      <mesh geometry={model.body}>
+        <meshStandardMaterial vertexColors roughness={0.55} />
+      </mesh>
+      {model.glass === undefined ? null : (
+        <mesh geometry={model.glass}>
+          <meshPhysicalMaterial
+            vertexColors
+            roughness={0.15}
+            clearcoat={1}
+            transparent
+            opacity={0.55}
+            depthWrite={false}
+          />
+        </mesh>
+      )}
+    </group>
+  );
+};
+
+export const PropModel = ({ prop }: { prop: LabModel }) => {
+  if (!isLabProp(prop)) {
+    return <LabItemModel item={prop} />;
+  }
   const Model = propModels[prop];
   return <Model />;
 };
 
-const PropTurntable = ({ prop }: { prop: LabProp }) => {
+const PropTurntable = ({ prop }: { prop: LabModel }) => {
   const position = usePromptPosition();
   const { age, motionScale } = usePromptGrowth();
   const turntable = useRef<Group>(null);
@@ -1111,17 +1162,20 @@ const pickColour = (colours: readonly string[], index: number) =>
 const SampleTray = (slot: StationChoiceProps) => {
   const { choice } = useGrowingChoice(slot);
   const { radius } = slot;
+  // One bevel segment: the trays are many and small, so the item above them gets the triangles.
   const tray = useRoundedBox(
     radius * 1.8,
     radius * 0.32,
     radius * 1.2,
     radius * 0.08,
+    1,
   );
   const insert = useRoundedBox(
     radius * 1.5,
     radius * 0.1,
     radius * 0.9,
     radius * 0.04,
+    1,
   );
   return (
     <group ref={choice} position={slot.position} name="sample-tray">

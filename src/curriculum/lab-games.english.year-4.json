@@ -142,22 +142,26 @@
         {
           "ask": "Text: 'Bees make honey from nectar.' What do bees use to make honey?",
           "answer": "nectar",
-          "distractors": ["pollen", "water", "leaves"]
+          "distractors": ["pollen", "water", "leaves"],
+          "model": "bee"
         },
         {
           "ask": "Text: 'Owls hunt at night and sleep by day.' When do owls hunt?",
           "answer": "at night",
-          "distractors": ["by day", "at noon", "in the morning"]
+          "distractors": ["by day", "at noon", "in the morning"],
+          "model": "owl"
         },
         {
           "ask": "Text: 'Mount Everest is about 8,849 m tall.' How tall is it?",
           "answer": "about 8,849 m",
-          "distractors": ["about 8,849 km", "about 849 m", "about 88,490 m"]
+          "distractors": ["about 8,849 km", "about 849 m", "about 88,490 m"],
+          "model": "mountain"
         },
         {
           "ask": "Text: 'Penguins live in the Southern Hemisphere.' Where do they live?",
           "answer": "Southern Hemisphere",
-          "distractors": ["Northern Hemisphere", "the Arctic", "the Sahara"]
+          "distractors": ["Northern Hemisphere", "the Arctic", "the Sahara"],
+          "model": "penguin"
         },
         {
           "ask": "Which feature of a report helps you find facts quickly?",
