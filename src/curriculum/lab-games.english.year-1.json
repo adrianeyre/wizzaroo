@@ -278,7 +278,8 @@
         {
           "ask": "'Who's been eating my porridge?' Which story is this from?",
           "answer": "Goldilocks",
-          "distractors": ["Cinderella", "Rapunzel", "Snow White"]
+          "distractors": ["Cinderella", "Rapunzel", "Snow White"],
+          "model": "porridge-bowl"
         },
         {
           "ask": "'I'll huff and I'll puff and I'll blow your house down!' Who says this?",
@@ -298,7 +299,8 @@
         {
           "ask": "Who lives under the bridge in 'The Three Billy Goats Gruff'?",
           "answer": "A troll",
-          "distractors": ["A giant", "A wolf", "A bear"]
+          "distractors": ["A giant", "A wolf", "A bear"],
+          "model": "bridge"
         },
         {
           "ask": "In a fairy tale, a 'cottage' is a ___.",
@@ -313,7 +315,8 @@
         {
           "ask": "In 'Jack and the Beanstalk', what does Jack swap his cow for?",
           "answer": "magic beans",
-          "distractors": ["a golden egg", "some gold", "a harp"]
+          "distractors": ["a golden egg", "some gold", "a harp"],
+          "model": "cow"
         }
       ]
     },

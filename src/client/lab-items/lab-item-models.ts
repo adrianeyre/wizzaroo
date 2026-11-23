@@ -2,11 +2,25 @@ import { Box3, Vector3, type BufferGeometry } from "three";
 import type { LabItem } from "../../curriculum/lab-items.js";
 import { buildModelGeometry } from "../world-map-models.js";
 import { habitatAnimalBuilders } from "./animals-habitats.js";
+import { animalsBuilders } from "./animals.js";
+import { plantsFoodBuilders } from "./plants-food.js";
+import { kitchenHomeBuilders } from "./kitchen-home.js";
+import { toolsTechBuilders } from "./tools-tech.js";
+import { artSchoolPlayBuilders } from "./art-school-play.js";
+import { placesTransportBuilders } from "./places-transport.js";
+import { peopleClothesBodyMiscBuilders } from "./people-clothes-body-misc.js";
 import type { LabItemParts } from "./lab-item-parts.js";
 
 /** Every lab item's model. The type makes a missing one fail to compile. */
 export const labItemBuilders: Record<LabItem, () => LabItemParts> = {
   ...habitatAnimalBuilders,
+  ...animalsBuilders,
+  ...plantsFoodBuilders,
+  ...kitchenHomeBuilders,
+  ...toolsTechBuilders,
+  ...artSchoolPlayBuilders,
+  ...placesTransportBuilders,
+  ...peopleClothesBodyMiscBuilders,
 };
 
 /**

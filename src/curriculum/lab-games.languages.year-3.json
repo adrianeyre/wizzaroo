@@ -64,7 +64,7 @@
       "id": "french-number-nest",
       "title": "Counting Croissants",
       "station": "sequence",
-      "prop": "egg",
+      "prop": "croissant",
       "skillName": "French numbers to 10",
       "strand": "vocabulary-and-dictionary",
       "statutoryRequirement": "Pupils should be taught to broaden their vocabulary and develop their ability to understand new words that are introduced into familiar written material, including through using a dictionary",
@@ -243,7 +243,7 @@
       "id": "french-animal-riddles",
       "title": "Animal Riddles",
       "station": "mystery",
-      "prop": "leaf",
+      "prop": "magnifier",
       "skillName": "French animal words",
       "strand": "vocabulary-and-dictionary",
       "statutoryRequirement": "Pupils should be taught to broaden their vocabulary and develop their ability to understand new words that are introduced into familiar written material, including through using a dictionary",
@@ -253,47 +253,56 @@
         {
           "ask": "I say \"woof\" and I am a pet. What am I in French?",
           "answer": "un chien",
-          "distractors": ["un chat", "un lapin", "un oiseau"]
+          "distractors": ["un chat", "un lapin", "un oiseau"],
+          "model": "dog"
         },
         {
           "ask": "I say \"miaow\" and I like to lap up milk. What am I in French?",
           "answer": "un chat",
-          "distractors": ["un chien", "une souris", "un cheval"]
+          "distractors": ["un chien", "une souris", "un cheval"],
+          "model": "cat"
         },
         {
           "ask": "I am small and grey, and I squeak. What am I in French?",
           "answer": "une souris",
-          "distractors": ["un lapin", "un poisson", "un chat"]
+          "distractors": ["un lapin", "un poisson", "un chat"],
+          "model": "mouse"
         },
         {
           "ask": "I have long ears and I hop. What am I in French?",
           "answer": "un lapin",
-          "distractors": ["un cheval", "une souris", "un oiseau"]
+          "distractors": ["un cheval", "une souris", "un oiseau"],
+          "model": "rabbit"
         },
         {
           "ask": "I live in water and I swim. What am I in French?",
           "answer": "un poisson",
-          "distractors": ["un oiseau", "un lapin", "un chien"]
+          "distractors": ["un oiseau", "un lapin", "un chien"],
+          "model": "fish"
         },
         {
           "ask": "I have feathers and I fly. What am I in French?",
           "answer": "un oiseau",
-          "distractors": ["un poisson", "un cheval", "une souris"]
+          "distractors": ["un poisson", "un cheval", "une souris"],
+          "model": "bird"
         },
         {
           "ask": "I am big and you can ride me. What am I in French?",
           "answer": "un cheval",
-          "distractors": ["un lapin", "un chat", "un poisson"]
+          "distractors": ["un lapin", "un chat", "un poisson"],
+          "model": "horse"
         },
         {
           "ask": "I live on a farm and say \"moo\". What am I in French?",
           "answer": "une vache",
-          "distractors": ["un cochon", "un mouton", "un cheval"]
+          "distractors": ["un cochon", "un mouton", "un cheval"],
+          "model": "cow"
         },
         {
           "ask": "I live on a farm, I am pink and I say \"oink\". What am I in French?",
           "answer": "un cochon",
-          "distractors": ["une vache", "un mouton", "un lapin"]
+          "distractors": ["une vache", "un mouton", "un lapin"],
+          "model": "pig"
         }
       ]
     },
@@ -301,7 +310,7 @@
       "id": "french-ca-va-cafe",
       "title": "Ça Va Café",
       "station": "compare",
-      "prop": "water-drop",
+      "prop": "coffee-cup",
       "skillName": "Answering simple French questions",
       "strand": "conversation",
       "statutoryRequirement": "Pupils should be taught to engage in conversations; ask and answer questions; express opinions and respond to those of others; seek clarification and help",
@@ -373,12 +382,14 @@
         {
           "ask": "Which word for \"the\" goes with \"chat\" (cat)?",
           "answer": "le (masculine)",
-          "distractors": ["la (feminine)", "les (plural)", "l' (vowel start)"]
+          "distractors": ["la (feminine)", "les (plural)", "l' (vowel start)"],
+          "model": "cat"
         },
         {
           "ask": "Which word for \"the\" goes with \"maison\" (house)?",
           "answer": "la (feminine)",
-          "distractors": ["le (masculine)", "les (plural)", "l' (vowel start)"]
+          "distractors": ["le (masculine)", "les (plural)", "l' (vowel start)"],
+          "model": "house"
         },
         {
           "ask": "Which word for \"the\" goes with \"chiens\" (dogs)?",
@@ -388,17 +399,20 @@
         {
           "ask": "Which word for \"the\" goes with \"école\" (school)?",
           "answer": "l' (vowel start)",
-          "distractors": ["le (masculine)", "la (feminine)", "les (plural)"]
+          "distractors": ["le (masculine)", "la (feminine)", "les (plural)"],
+          "model": "school"
         },
         {
           "ask": "Which word for \"the\" goes with \"pomme\" (apple)?",
           "answer": "la (feminine)",
-          "distractors": ["le (masculine)", "les (plural)", "l' (vowel start)"]
+          "distractors": ["le (masculine)", "les (plural)", "l' (vowel start)"],
+          "model": "apple"
         },
         {
           "ask": "Which word for \"the\" goes with \"livre\" (book)?",
           "answer": "le (masculine)",
-          "distractors": ["la (feminine)", "les (plural)", "l' (vowel start)"]
+          "distractors": ["la (feminine)", "les (plural)", "l' (vowel start)"],
+          "model": "book"
         },
         {
           "ask": "Which word for \"the\" goes with \"amis\" (friends)?",
@@ -408,17 +422,20 @@
         {
           "ask": "Which word for \"the\" goes with \"orange\" (orange)?",
           "answer": "l' (vowel start)",
-          "distractors": ["le (masculine)", "la (feminine)", "les (plural)"]
+          "distractors": ["le (masculine)", "la (feminine)", "les (plural)"],
+          "model": "orange"
         },
         {
           "ask": "Which word for \"the\" goes with \"table\" (table)?",
           "answer": "la (feminine)",
-          "distractors": ["le (masculine)", "les (plural)", "l' (vowel start)"]
+          "distractors": ["le (masculine)", "les (plural)", "l' (vowel start)"],
+          "model": "table"
         },
         {
           "ask": "Which word for \"the\" goes with \"garçon\" (boy)?",
           "answer": "le (masculine)",
-          "distractors": ["la (feminine)", "les (plural)", "l' (vowel start)"]
+          "distractors": ["la (feminine)", "les (plural)", "l' (vowel start)"],
+          "model": "boy"
         }
       ]
     },
@@ -589,7 +606,8 @@
             "Je suis un chien.",
             "J'ai une chien.",
             "Il a un chien."
-          ]
+          ],
+          "model": "dog"
         },
         {
           "ask": "Which means \"I have a sister\"?",
@@ -603,7 +621,12 @@
         {
           "ask": "Change \"J'ai un chat.\" so it means \"I have a dog\".",
           "answer": "J'ai un chien.",
-          "distractors": ["J'ai un lapin.", "J'ai un chat.", "J'ai deux chats."]
+          "distractors": [
+            "J'ai un lapin.",
+            "J'ai un chat.",
+            "J'ai deux chats."
+          ],
+          "model": "dog"
         },
         {
           "ask": "Which means \"I live in London\"?",

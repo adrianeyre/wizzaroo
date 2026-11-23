@@ -16,7 +16,8 @@
         {
           "ask": "A bench hook holds wood steady while you saw it.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "bench-hook"
         },
         {
           "ask": "You should saw towards your other hand.",
@@ -26,17 +27,20 @@
         {
           "ask": "A junior hacksaw can cut thin wood such as dowel.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "junior-hacksaw"
         },
         {
           "ask": "The nozzle of a glue gun gets hot.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "glue-gun"
         },
         {
           "ask": "Sandpaper makes rough edges smooth.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "sandpaper"
         },
         {
           "ask": "To be accurate, measure once and cut quickly.",
@@ -51,12 +55,14 @@
         {
           "ask": "You should carry scissors with the points facing up.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "scissors"
         },
         {
           "ask": "A G-clamp holds work tightly to the table.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "g-clamp"
         }
       ]
     },
@@ -74,12 +80,14 @@
         {
           "ask": "Which property does a raincoat need?",
           "answer": "Waterproof",
-          "distractors": ["Absorbent", "See-through", "Brittle"]
+          "distractors": ["Absorbent", "See-through", "Brittle"],
+          "model": "raincoat"
         },
         {
           "ask": "Which property does a tea towel need?",
           "answer": "Absorbent",
-          "distractors": ["Waterproof", "Magnetic", "Rigid"]
+          "distractors": ["Waterproof", "Magnetic", "Rigid"],
+          "model": "tea-towel"
         },
         {
           "ask": "Which property does a bridge beam need most?",
@@ -136,22 +144,26 @@
         {
           "ask": "Why does a pencil case have a zip?",
           "answer": "Keep pens inside",
-          "distractors": ["Make it heavy", "Make a noise", "Look old"]
+          "distractors": ["Make it heavy", "Make a noise", "Look old"],
+          "model": "pencil-case"
         },
         {
           "ask": "Why are many lunchboxes made of plastic?",
           "answer": "Easy to clean",
-          "distractors": ["It rusts", "It is fragile", "It is absorbent"]
+          "distractors": ["It rusts", "It is fragile", "It is absorbent"],
+          "model": "lunchbox"
         },
         {
           "ask": "Why do wellington boots have a thick, grooved sole?",
           "answer": "Grip on mud",
-          "distractors": ["Look taller", "Keep feet wet", "Make it squeak"]
+          "distractors": ["Look taller", "Keep feet wet", "Make it squeak"],
+          "model": "wellington-boot"
         },
         {
           "ask": "Why are cereal boxes made of card?",
           "answer": "Light and printable",
-          "distractors": ["Waterproof", "Unbreakable", "See-through"]
+          "distractors": ["Waterproof", "Unbreakable", "See-through"],
+          "model": "cereal-box"
         },
         {
           "ask": "Why are baby toys made big?",
@@ -170,17 +182,20 @@
         {
           "ask": "Why does a sports bottle have a narrow spout?",
           "answer": "Less spilling",
-          "distractors": ["Holds more", "Keeps it cold", "Makes it heavy"]
+          "distractors": ["Holds more", "Keeps it cold", "Makes it heavy"],
+          "model": "sports-bottle"
         },
         {
           "ask": "Why are oven gloves thick?",
           "answer": "Insulate from heat",
-          "distractors": ["Look stylish", "Be waterproof", "Be stretchy"]
+          "distractors": ["Look stylish", "Be waterproof", "Be stretchy"],
+          "model": "oven-glove"
         },
         {
           "ask": "Why do bike lights have a clip?",
           "answer": "Fix it to a bike",
-          "distractors": ["Make it louder", "Keep it dark", "Make it heavy"]
+          "distractors": ["Make it louder", "Keep it dark", "Make it heavy"],
+          "model": "bike-light"
         }
       ]
     },
@@ -208,7 +223,8 @@
         {
           "ask": "Which is a good design criterion for a pencil case?",
           "answer": "Holds 10 pencils",
-          "distractors": ["Was made today", "Has a name", "Is very old"]
+          "distractors": ["Was made today", "Has a name", "Is very old"],
+          "model": "pencil-case"
         },
         {
           "ask": "What is the best way to find out what a user likes?",
@@ -223,7 +239,8 @@
         {
           "ask": "A torch for camping: which criterion fits best?",
           "answer": "Waterproof",
-          "distractors": ["Made of paper", "Very heavy", "Melts in the sun"]
+          "distractors": ["Made of paper", "Very heavy", "Melts in the sun"],
+          "model": "torch"
         },
         {
           "ask": "A purse for a young child should have...",
@@ -232,7 +249,8 @@
             "Tiny fiddly clasp",
             "Sharp edges",
             "Heavy metal lock"
-          ]
+          ],
+          "model": "purse"
         },
         {
           "ask": "A questionnaire is used to...",
@@ -242,7 +260,8 @@
         {
           "ask": "Who is the target audience for a baby's rattle?",
           "answer": "Babies",
-          "distractors": ["Teenagers", "Builders", "Pilots"]
+          "distractors": ["Teenagers", "Builders", "Pilots"],
+          "model": "rattle"
         }
       ]
     },
@@ -312,7 +331,7 @@
       "id": "dt-structure-strength",
       "title": "Structure Strength",
       "station": "compare",
-      "prop": "prism",
+      "prop": "hard-hat",
       "skillName": "Strengthening shell and frame structures",
       "strand": "complex-structures",
       "statutoryRequirement": "Pupils should be taught to apply their understanding of how to strengthen, stiffen and reinforce more complex structures",
@@ -322,12 +341,14 @@
         {
           "ask": "An egg box is which kind of structure?",
           "answer": "Shell",
-          "distractors": ["Frame", "Mechanism", "Circuit"]
+          "distractors": ["Frame", "Mechanism", "Circuit"],
+          "model": "egg-box"
         },
         {
           "ask": "An electricity pylon is which kind of structure?",
           "answer": "Frame",
-          "distractors": ["Shell", "Mechanism", "Circuit"]
+          "distractors": ["Shell", "Mechanism", "Circuit"],
+          "model": "electricity-pylon"
         },
         {
           "ask": "Which shape makes frames rigid?",
@@ -370,7 +391,7 @@
       "id": "dt-lever-linkage-lab",
       "title": "Lever And Linkage Lab",
       "station": "compare",
-      "prop": "magnet",
+      "prop": "gear",
       "skillName": "Using levers and linkages",
       "strand": "mechanical-systems",
       "statutoryRequirement": "Pupils should be taught to understand and use mechanical systems in their products [for example, gears, pulleys, cams, levers and linkages]",
@@ -395,7 +416,8 @@
         {
           "ask": "Push one end of a seesaw lever down. The other end...",
           "answer": "Goes up",
-          "distractors": ["Goes down", "Stays still", "Falls off"]
+          "distractors": ["Goes down", "Stays still", "Falls off"],
+          "model": "seesaw"
         },
         {
           "ask": "Which linkage makes the output move the opposite way?",
@@ -447,12 +469,14 @@
         {
           "ask": "Swap white bread for...",
           "answer": "Wholemeal bread",
-          "distractors": ["Cake", "Doughnut", "Biscuits"]
+          "distractors": ["Cake", "Doughnut", "Biscuits"],
+          "model": "slice-of-bread"
         },
         {
           "ask": "Swap a bag of crisps for...",
           "answer": "Carrot sticks",
-          "distractors": ["Chocolate", "Sweets", "Cheese puffs"]
+          "distractors": ["Chocolate", "Sweets", "Cheese puffs"],
+          "model": "crisps"
         },
         {
           "ask": "Swap a sugary cereal for...",
@@ -490,7 +514,7 @@
       "id": "dt-season-picker",
       "title": "Season Picker",
       "station": "compare",
-      "prop": "sun",
+      "prop": "calendar",
       "skillName": "Knowing when foods are in season",
       "strand": "seasonality-origins",
       "statutoryRequirement": "Pupils should be taught to understand seasonality, and know where and how a variety of ingredients are grown, reared, caught and processed",
@@ -500,12 +524,14 @@
         {
           "ask": "When are British strawberries in season?",
           "answer": "Summer",
-          "distractors": ["Winter", "Autumn", "December"]
+          "distractors": ["Winter", "Autumn", "December"],
+          "model": "strawberry"
         },
         {
           "ask": "When are British apples picked?",
           "answer": "Autumn",
-          "distractors": ["Spring", "Midsummer", "March"]
+          "distractors": ["Spring", "Midsummer", "March"],
+          "model": "apple"
         },
         {
           "ask": "Which vegetable is in season at Halloween?",
@@ -515,7 +541,8 @@
         {
           "ask": "When are Brussels sprouts in season?",
           "answer": "Winter",
-          "distractors": ["Summer", "Spring", "June"]
+          "distractors": ["Summer", "Spring", "June"],
+          "model": "brussels-sprout"
         },
         {
           "ask": "Which fruit cannot be grown outdoors in the UK?",
@@ -535,12 +562,14 @@
         {
           "ask": "Where do bananas come from?",
           "answer": "Hot countries",
-          "distractors": ["The Arctic", "UK farms", "Cold mountains"]
+          "distractors": ["The Arctic", "UK farms", "Cold mountains"],
+          "model": "banana"
         },
         {
           "ask": "When is British asparagus in season?",
           "answer": "Late spring",
-          "distractors": ["Midwinter", "Autumn", "December"]
+          "distractors": ["Midwinter", "Autumn", "December"],
+          "model": "asparagus"
         }
       ]
     },

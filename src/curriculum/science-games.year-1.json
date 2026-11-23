@@ -15,42 +15,50 @@
         {
           "ask": "A frog",
           "answer": "Amphibian",
-          "distractors": ["Fish", "Reptile", "Mammal"]
+          "distractors": ["Fish", "Reptile", "Mammal"],
+          "model": "frog"
         },
         {
           "ask": "A goldfish",
           "answer": "Fish",
-          "distractors": ["Amphibian", "Reptile", "Bird"]
+          "distractors": ["Amphibian", "Reptile", "Bird"],
+          "model": "goldfish"
         },
         {
           "ask": "A snake",
           "answer": "Reptile",
-          "distractors": ["Amphibian", "Mammal", "Fish"]
+          "distractors": ["Amphibian", "Mammal", "Fish"],
+          "model": "snake"
         },
         {
           "ask": "A robin",
           "answer": "Bird",
-          "distractors": ["Mammal", "Reptile", "Amphibian"]
+          "distractors": ["Mammal", "Reptile", "Amphibian"],
+          "model": "robin"
         },
         {
           "ask": "A cow",
           "answer": "Mammal",
-          "distractors": ["Bird", "Reptile", "Fish"]
+          "distractors": ["Bird", "Reptile", "Fish"],
+          "model": "cow"
         },
         {
           "ask": "A newt",
           "answer": "Amphibian",
-          "distractors": ["Reptile", "Fish", "Mammal"]
+          "distractors": ["Reptile", "Fish", "Mammal"],
+          "model": "newt"
         },
         {
           "ask": "A crocodile",
           "answer": "Reptile",
-          "distractors": ["Amphibian", "Mammal", "Fish"]
+          "distractors": ["Amphibian", "Mammal", "Fish"],
+          "model": "crocodile"
         },
         {
           "ask": "A penguin",
           "answer": "Bird",
-          "distractors": ["Fish", "Mammal", "Reptile"]
+          "distractors": ["Fish", "Mammal", "Reptile"],
+          "model": "penguin"
         }
       ]
     },
@@ -58,7 +66,7 @@
       "id": "first-object-or-material",
       "title": "Material Match",
       "station": "odd-one-out",
-      "prop": "rock",
+      "prop": "magnifier",
       "skillName": "Telling objects from the materials they are made of",
       "strand": "everyday-materials",
       "statutoryRequirement": "Pupils should be taught to distinguish between an object and the material from which it is made, and identify and name a variety of everyday materials, including wood, plastic, glass, metal, water, and rock",
@@ -111,7 +119,7 @@
       "id": "first-sense-check",
       "title": "Sense Check",
       "station": "true-false",
-      "prop": "heart",
+      "prop": "eye",
       "skillName": "Naming body parts and the sense each one helps with",
       "strand": "animals-including-humans",
       "statutoryRequirement": "Pupils should be taught to identify, name, draw and label the basic parts of the human body and say which part of the body is associated with each sense",
@@ -121,22 +129,26 @@
         {
           "ask": "You use your eyes to see.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "eye"
         },
         {
           "ask": "You use your ears to taste.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "ear"
         },
         {
           "ask": "You use your nose to smell.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "nose"
         },
         {
           "ask": "Your tongue helps you hear.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "tongue"
         },
         {
           "ask": "You can feel things with your skin.",
@@ -174,22 +186,26 @@
         {
           "ask": "Cows eat grass. Cows are ___.",
           "answer": "Herbivores",
-          "distractors": ["Carnivores", "Omnivores", "Fish"]
+          "distractors": ["Carnivores", "Omnivores", "Fish"],
+          "model": "cow"
         },
         {
           "ask": "Lions eat meat. Lions are ___.",
           "answer": "Carnivores",
-          "distractors": ["Herbivores", "Omnivores", "Birds"]
+          "distractors": ["Herbivores", "Omnivores", "Birds"],
+          "model": "lion"
         },
         {
           "ask": "Foxes eat meat and berries. Foxes are ___.",
           "answer": "Omnivores",
-          "distractors": ["Herbivores", "Carnivores", "Reptiles"]
+          "distractors": ["Herbivores", "Carnivores", "Reptiles"],
+          "model": "fox"
         },
         {
           "ask": "Sharks eat fish and seals. Sharks are ___.",
           "answer": "Carnivores",
-          "distractors": ["Herbivores", "Omnivores", "Mammals"]
+          "distractors": ["Herbivores", "Omnivores", "Mammals"],
+          "model": "shark"
         },
         {
           "ask": "A herbivore eats only ___.",
@@ -270,7 +286,7 @@
       "id": "first-plant-spotter",
       "title": "Plant Spotter",
       "station": "mystery",
-      "prop": "tree",
+      "prop": "magnifier",
       "skillName": "Naming common wild and garden plants and trees",
       "strand": "plants",
       "statutoryRequirement": "Pupils should be taught to identify and name a variety of common wild and garden plants, including deciduous and evergreen trees",
@@ -333,42 +349,50 @@
         {
           "ask": "What will happen if you drop a glass jar on a stone floor?",
           "answer": "It will smash",
-          "distractors": ["It will bounce", "It will bend", "It will melt"]
+          "distractors": ["It will bounce", "It will bend", "It will melt"],
+          "model": "glass-jar"
         },
         {
           "ask": "What will happen if you pour water on a paper towel?",
           "answer": "It soaks it up",
-          "distractors": ["Water rolls off", "It stays dry", "It turns hard"]
+          "distractors": ["Water rolls off", "It stays dry", "It turns hard"],
+          "model": "paper-towel"
         },
         {
           "ask": "What will happen if you pour water on a plastic sheet?",
           "answer": "Water runs off",
-          "distractors": ["It soaks it up", "It melts", "It tears"]
+          "distractors": ["It soaks it up", "It melts", "It tears"],
+          "model": "plastic-sheet"
         },
         {
           "ask": "What will happen if you squeeze a sponge?",
           "answer": "It squashes",
-          "distractors": ["It snaps", "It smashes", "It stays the same"]
+          "distractors": ["It snaps", "It smashes", "It stays the same"],
+          "model": "sponge"
         },
         {
           "ask": "What will happen if you pull a rubber band?",
           "answer": "It stretches",
-          "distractors": ["It smashes", "It melts", "It goes see-through"]
+          "distractors": ["It smashes", "It melts", "It goes see-through"],
+          "model": "rubber-band"
         },
         {
           "ask": "What will happen if you put a wooden block in water?",
           "answer": "It floats",
-          "distractors": ["It sinks", "It melts", "It turns to metal"]
+          "distractors": ["It sinks", "It melts", "It turns to metal"],
+          "model": "wooden-block"
         },
         {
           "ask": "What will happen if you put a metal key in water?",
           "answer": "It sinks",
-          "distractors": ["It floats", "It melts", "It goes soft"]
+          "distractors": ["It floats", "It melts", "It goes soft"],
+          "model": "key"
         },
         {
           "ask": "What will happen if you try to bend a stone with your hands?",
           "answer": "It will not bend",
-          "distractors": ["It bends", "It stretches", "It squashes"]
+          "distractors": ["It bends", "It stretches", "It squashes"],
+          "model": "rock"
         }
       ]
     },
@@ -492,7 +516,8 @@
         {
           "ask": "What would you use to look closely at a tiny bug?",
           "answer": "Magnifying glass",
-          "distractors": ["Ruler", "Rain gauge", "Thermometer"]
+          "distractors": ["Ruler", "Rain gauge", "Thermometer"],
+          "model": "beetle"
         },
         {
           "ask": "What would you use to find out how much rain fell?",
@@ -507,7 +532,8 @@
         {
           "ask": "What would you use to measure how tall a sunflower is?",
           "answer": "Tape measure",
-          "distractors": ["Thermometer", "Rain gauge", "Magnifying glass"]
+          "distractors": ["Thermometer", "Rain gauge", "Magnifying glass"],
+          "model": "sunflower"
         },
         {
           "ask": "How can you find out if a material is waterproof?",

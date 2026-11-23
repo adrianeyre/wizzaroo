@@ -344,12 +344,14 @@
         {
           "ask": "'Ella packed her bucket, spade and swimsuit.' Where is she probably going?",
           "answer": "the beach",
-          "distractors": ["school", "the shops", "bed"]
+          "distractors": ["school", "the shops", "bed"],
+          "model": "bucket-and-spade"
         },
         {
           "ask": "'Leo's stomach rumbled as he smelt baking bread.' What might he do next?",
           "answer": "eat something",
-          "distractors": ["go to sleep", "go swimming", "sing a song"]
+          "distractors": ["go to sleep", "go swimming", "sing a song"],
+          "model": "bread"
         },
         {
           "ask": "'The ice on the pond creaked under Jack's boots.' What might happen?",
@@ -364,7 +366,8 @@
         {
           "ask": "'The dog stared at its lead and wagged its tail.' What does it want?",
           "answer": "a walk",
-          "distractors": ["a bath", "a nap", "a toy"]
+          "distractors": ["a bath", "a nap", "a toy"],
+          "model": "dog-lead"
         },
         {
           "ask": "'Sam hid the pieces of the vase under the rug.' What has probably happened?",
@@ -379,7 +382,8 @@
         {
           "ask": "'The crowd held their breath as the striker ran up to the ball.' What comes next?",
           "answer": "a kick at goal",
-          "distractors": ["a song", "a nap", "a dance"]
+          "distractors": ["a song", "a nap", "a dance"],
+          "model": "football"
         },
         {
           "ask": "'Grandad checked his watch again and tapped his foot.' How does he feel?",
@@ -407,17 +411,20 @@
         {
           "ask": "Which creature lived in the labyrinth in the Greek myth?",
           "answer": "the Minotaur",
-          "distractors": ["Medusa", "a dragon", "a cyclops"]
+          "distractors": ["Medusa", "a dragon", "a cyclops"],
+          "model": "labyrinth"
         },
         {
           "ask": "In the legend, who pulled the sword from the stone?",
           "answer": "Arthur",
-          "distractors": ["Merlin", "Robin Hood", "Lancelot"]
+          "distractors": ["Merlin", "Robin Hood", "Lancelot"],
+          "model": "sword-in-stone"
         },
         {
           "ask": "Stories about Anansi the spider come from which continent?",
           "answer": "Africa",
-          "distractors": ["Asia", "Europe", "Antarctica"]
+          "distractors": ["Asia", "Europe", "Antarctica"],
+          "model": "spider"
         },
         {
           "ask": "Thor, the god of thunder, belongs to which myths?",

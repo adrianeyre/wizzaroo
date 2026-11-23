@@ -16,7 +16,8 @@
         {
           "ask": "Why are saucepans made of metal?",
           "answer": "Conducts heat well",
-          "distractors": ["It floats", "It is see-through", "It is very light"]
+          "distractors": ["It floats", "It is see-through", "It is very light"],
+          "model": "saucepan"
         },
         {
           "ask": "Why are saucepan handles often made of plastic or wood?",
@@ -25,12 +26,18 @@
             "Strongly magnetic",
             "Shiny surface",
             "It is see-through"
-          ]
+          ],
+          "model": "saucepan"
         },
         {
           "ask": "Why are the wires inside a cable made of copper?",
           "answer": "Conducts electricity",
-          "distractors": ["It is magnetic", "It is transparent", "It dissolves"]
+          "distractors": [
+            "It is magnetic",
+            "It is transparent",
+            "It dissolves"
+          ],
+          "model": "electric-cable"
         },
         {
           "ask": "Why is a plastic coating put around electrical wires?",
@@ -39,7 +46,8 @@
             "Conducts heat",
             "It is magnetic",
             "It is transparent"
-          ]
+          ],
+          "model": "electric-cable"
         },
         {
           "ask": "Why are windows made of glass?",
@@ -53,7 +61,8 @@
         {
           "ask": "Why is wood a good material for a garden bench?",
           "answer": "Strong and rigid",
-          "distractors": ["Transparent", "Very stretchy", "Absorbent"]
+          "distractors": ["Transparent", "Very stretchy", "Absorbent"],
+          "model": "garden-bench"
         },
         {
           "ask": "Why are raincoats made of plastic-coated fabric?",
@@ -62,7 +71,8 @@
             "It is absorbent",
             "It is magnetic",
             "It conducts heat"
-          ]
+          ],
+          "model": "raincoat"
         },
         {
           "ask": "In a fair test, a plastic spoon stayed coolest in hot water. What does that show?",
@@ -71,12 +81,18 @@
             "Plastic conducts",
             "Plastic is magnetic",
             "Plastic melts fast"
-          ]
+          ],
+          "model": "plastic-spoon"
         },
         {
           "ask": "A fair test showed kitchen roll soaked up the most water. What is it best used for?",
           "answer": "Wiping up spills",
-          "distractors": ["Making a raincoat", "Building a roof", "An umbrella"]
+          "distractors": [
+            "Making a raincoat",
+            "Building a roof",
+            "An umbrella"
+          ],
+          "model": "paper-towel"
         },
         {
           "ask": "Why does a fridge magnet stick to a steel door but not a wooden one?",
@@ -85,7 +101,8 @@
             "Wood is magnetic",
             "Steel is softer",
             "Wood is heavier"
-          ]
+          ],
+          "model": "magnet"
         }
       ]
     }

@@ -15,37 +15,44 @@
         {
           "ask": "A caterpillar turning into a butterfly",
           "answer": "Insect",
-          "distractors": ["Amphibian", "Bird", "Mammal"]
+          "distractors": ["Amphibian", "Bird", "Mammal"],
+          "model": "caterpillar"
         },
         {
           "ask": "A tadpole growing back legs",
           "answer": "Amphibian",
-          "distractors": ["Insect", "Bird", "Mammal"]
+          "distractors": ["Insect", "Bird", "Mammal"],
+          "model": "tadpole"
         },
         {
           "ask": "A chick hatching from a hard-shelled egg in a nest",
           "answer": "Bird",
-          "distractors": ["Amphibian", "Insect", "Mammal"]
+          "distractors": ["Amphibian", "Insect", "Mammal"],
+          "model": "chick"
         },
         {
           "ask": "A calf drinking its mother's milk",
           "answer": "Mammal",
-          "distractors": ["Bird", "Amphibian", "Insect"]
+          "distractors": ["Bird", "Amphibian", "Insect"],
+          "model": "calf"
         },
         {
           "ask": "A larva becoming a pupa, then an adult beetle",
           "answer": "Insect",
-          "distractors": ["Mammal", "Amphibian", "Bird"]
+          "distractors": ["Mammal", "Amphibian", "Bird"],
+          "model": "beetle"
         },
         {
           "ask": "Frogspawn laid in a pond in spring",
           "answer": "Amphibian",
-          "distractors": ["Bird", "Insect", "Mammal"]
+          "distractors": ["Bird", "Insect", "Mammal"],
+          "model": "frogspawn"
         },
         {
           "ask": "Parents feeding nestlings until they can fly",
           "answer": "Bird",
-          "distractors": ["Insect", "Mammal", "Amphibian"]
+          "distractors": ["Insect", "Mammal", "Amphibian"],
+          "model": "bird-nest"
         },
         {
           "ask": "A furry baby fed on milk by its mother",
@@ -121,17 +128,20 @@
         {
           "ask": "The Earth orbits the Sun.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "earth"
         },
         {
           "ask": "The Sun orbits the Earth.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "sun"
         },
         {
           "ask": "The Moon orbits the Earth.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "moon"
         },
         {
           "ask": "The Sun, Earth and Moon are all roughly spherical.",
@@ -146,7 +156,8 @@
         {
           "ask": "The Earth spins on its axis about once every 24 hours.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "earth"
         },
         {
           "ask": "The Earth is flat, like a plate.",
@@ -156,7 +167,8 @@
         {
           "ask": "The Earth takes about one month to orbit the Sun.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "earth"
         }
       ]
     },
@@ -164,7 +176,7 @@
       "id": "fifth-force-finder",
       "title": "Force Finder",
       "station": "fill-gap",
-      "prop": "rock",
+      "prop": "newton-meter",
       "skillName": "Gravity, resistance forces, friction and mechanisms",
       "strand": "forces",
       "statutoryRequirement": "Pupils should be taught to explain that unsupported objects fall towards the Earth because of gravity, identify the effects of air resistance, water resistance and friction, and recognise that levers, pulleys and gears allow a smaller force to have a greater effect",
@@ -174,7 +186,8 @@
         {
           "ask": "An apple falls to the ground because of the force of ___.",
           "answer": "Gravity",
-          "distractors": ["Friction", "Magnetism", "Air resistance"]
+          "distractors": ["Friction", "Magnetism", "Air resistance"],
+          "model": "apple"
         },
         {
           "ask": "Gravity pulls unsupported objects down towards the ___.",
@@ -184,12 +197,14 @@
         {
           "ask": "A parachute falls slowly because of ___ resistance.",
           "answer": "Air",
-          "distractors": ["Water", "Ground", "Magnet"]
+          "distractors": ["Water", "Ground", "Magnet"],
+          "model": "parachute"
         },
         {
           "ask": "A fish's streamlined shape helps it reduce ___ resistance as it swims.",
           "answer": "Water",
-          "distractors": ["Air", "Ground", "Magnet"]
+          "distractors": ["Air", "Ground", "Magnet"],
+          "model": "fish"
         },
         {
           "ask": "The force between two surfaces rubbing together is called ___.",
@@ -199,7 +214,8 @@
         {
           "ask": "A lever lets a smaller force have a ___ effect.",
           "answer": "Greater",
-          "distractors": ["Smaller", "Weaker", "Slower"]
+          "distractors": ["Smaller", "Weaker", "Slower"],
+          "model": "lever"
         },
         {
           "ask": "A ___ uses a wheel and a rope to help lift heavy loads.",
@@ -247,12 +263,22 @@
         {
           "ask": "Cut a stem from a geranium → Place it in water → ?",
           "answer": "Roots grow",
-          "distractors": ["Pollination", "Fertilisation", "Seeds are dispersed"]
+          "distractors": [
+            "Pollination",
+            "Fertilisation",
+            "Seeds are dispersed"
+          ],
+          "model": "geranium-cutting"
         },
         {
           "ask": "Plant an old potato → Shoots grow from its eyes → ?",
           "answer": "New potatoes form",
-          "distractors": ["Pollination", "Fertilisation", "Seeds are dispersed"]
+          "distractors": [
+            "Pollination",
+            "Fertilisation",
+            "Seeds are dispersed"
+          ],
+          "model": "potato"
         },
         {
           "ask": "Mammal parents mate → Baby grows inside mother → ?",
@@ -333,7 +359,8 @@
         {
           "ask": "What will happen if you stir sugar into warm water?",
           "answer": "It dissolves",
-          "distractors": ["It melts", "It burns", "It floats on top"]
+          "distractors": ["It melts", "It burns", "It floats on top"],
+          "model": "sugar"
         },
         {
           "ask": "What happens when you add vinegar to bicarbonate of soda?",
@@ -356,7 +383,8 @@
             "The paper melts",
             "Nothing changes",
             "The paper dissolves"
-          ]
+          ],
+          "model": "paper"
         },
         {
           "ask": "What happens when melted chocolate cools down?",
@@ -379,12 +407,14 @@
             "Rice falls through",
             "Both dissolve",
             "Both stay in sieve"
-          ]
+          ],
+          "model": "sieve"
         },
         {
           "ask": "What will happen if you leave an iron nail in damp air for weeks?",
           "answer": "It rusts",
-          "distractors": ["It melts", "It dissolves", "It turns to glass"]
+          "distractors": ["It melts", "It dissolves", "It turns to glass"],
+          "model": "iron-nail"
         }
       ]
     },
@@ -445,7 +475,7 @@
       "id": "fifth-solar-system-ranks",
       "title": "Solar System Ranks",
       "station": "compare",
-      "prop": "sun",
+      "prop": "telescope",
       "skillName": "Comparing the Sun, Moon and planets",
       "strand": "earth-and-space",
       "statutoryRequirement": "Pupils should be taught to describe the movement of the Earth and other planets relative to the Sun in the solar system, and describe the Sun, Earth and Moon as approximately spherical bodies",
@@ -512,17 +542,20 @@
         {
           "ask": "Which would you use to measure the force needed to drag a shoe across a mat?",
           "answer": "Newton meter",
-          "distractors": ["Thermometer", "Ruler", "Measuring jug"]
+          "distractors": ["Thermometer", "Ruler", "Measuring jug"],
+          "model": "shoe"
         },
         {
           "ask": "Testing parachutes: which equipment times how long each one takes to fall?",
           "answer": "Stopwatch",
-          "distractors": ["Newton meter", "Thermometer", "Ruler"]
+          "distractors": ["Newton meter", "Thermometer", "Ruler"],
+          "model": "parachute"
         },
         {
           "ask": "In a fair test of parachute size, which one thing should you change?",
           "answer": "Canopy size",
-          "distractors": ["Drop height", "Weight of load", "Everything"]
+          "distractors": ["Drop height", "Weight of load", "Everything"],
+          "model": "parachute"
         },
         {
           "ask": "In a friction test on different surfaces, what must stay the same?",
@@ -550,12 +583,14 @@
             "Less air resistance",
             "More gravity",
             "Less friction"
-          ]
+          ],
+          "model": "parachute"
         },
         {
           "ask": "Testing clay boat shapes for water resistance: what must be the same for each?",
           "answer": "The amount of clay",
-          "distractors": ["The shape", "Nothing at all", "The results"]
+          "distractors": ["The shape", "Nothing at all", "The results"],
+          "model": "clay-boat"
         }
       ]
     }

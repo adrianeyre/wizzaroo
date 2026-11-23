@@ -256,6 +256,17 @@ describe("parseLabGames", () => {
     expect(questions[2].model).toBeUndefined();
   });
 
+  it("reads a game whose prop is a lab item, and refuses one it doesn't know", () => {
+    const yearFile = buildYearFile(1);
+    const withProp = (prop: string) => ({
+      ...yearFile,
+      games: yearFile.games.with(0, { ...yearFile.games[0], prop }),
+    });
+
+    expect(parseLabGames([withProp("camel")])[0].prop).toBe("camel");
+    expect(() => parseLabGames([withProp("dragon")])).toThrow("needs a prop");
+  });
+
   it("refuses a true-or-false question with any choice but True and False", () => {
     const yearFile = buildYearFile(1);
     const trueFalseGame = yearFile.games[2];

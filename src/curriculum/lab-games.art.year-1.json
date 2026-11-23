@@ -6,7 +6,7 @@
       "id": "art-tool-box",
       "title": "Artist's Tool Box",
       "station": "compare",
-      "prop": "magnifier",
+      "prop": "paint-palette",
       "skillName": "Naming art tools and what they do",
       "strand": "drawing-painting-sculpture",
       "statutoryRequirement": "Pupils should be taught to use drawing, painting and sculpture to develop and share their ideas, experiences and imagination",
@@ -112,7 +112,7 @@
       "id": "art-line-explorer",
       "title": "Line Explorer",
       "station": "compare",
-      "prop": "leaf",
+      "prop": "pencil",
       "skillName": "Drawing different kinds of line",
       "strand": "techniques",
       "statutoryRequirement": "Pupils should be taught to develop a wide range of art and design techniques in using colour, pattern, texture, line, shape, form and space",
@@ -165,7 +165,7 @@
       "id": "art-primary-pots",
       "title": "Primary Paint Pots",
       "station": "compare",
-      "prop": "water-drop",
+      "prop": "paint-palette",
       "skillName": "Primary colours and simple mixing",
       "strand": "techniques",
       "statutoryRequirement": "Pupils should be taught to develop a wide range of art and design techniques in using colour, pattern, texture, line, shape, form and space",
@@ -232,47 +232,56 @@
         {
           "ask": "Tree bark: which texture group?",
           "answer": "Rough",
-          "distractors": ["Smooth", "Soft", "Sticky"]
+          "distractors": ["Smooth", "Soft", "Sticky"],
+          "model": "log"
         },
         {
           "ask": "A glass marble: which texture group?",
           "answer": "Smooth",
-          "distractors": ["Rough", "Spiky", "Soft"]
+          "distractors": ["Rough", "Spiky", "Soft"],
+          "model": "marble"
         },
         {
           "ask": "A kitten's fur: which texture group?",
           "answer": "Soft",
-          "distractors": ["Spiky", "Rough", "Sticky"]
+          "distractors": ["Spiky", "Rough", "Sticky"],
+          "model": "kitten"
         },
         {
           "ask": "A cactus: which texture group?",
           "answer": "Spiky",
-          "distractors": ["Soft", "Smooth", "Sticky"]
+          "distractors": ["Soft", "Smooth", "Sticky"],
+          "model": "cactus"
         },
         {
           "ask": "Sandpaper: which texture group?",
           "answer": "Rough",
-          "distractors": ["Soft", "Smooth", "Spiky"]
+          "distractors": ["Soft", "Smooth", "Spiky"],
+          "model": "sandpaper"
         },
         {
           "ask": "A holly leaf's edge: which texture group?",
           "answer": "Spiky",
-          "distractors": ["Soft", "Sticky", "Smooth"]
+          "distractors": ["Soft", "Sticky", "Smooth"],
+          "model": "holly-leaf"
         },
         {
           "ask": "Wet glue: which texture group?",
           "answer": "Sticky",
-          "distractors": ["Spiky", "Rough", "Soft"]
+          "distractors": ["Spiky", "Rough", "Soft"],
+          "model": "glue-bottle"
         },
         {
           "ask": "A cotton wool ball: which texture group?",
           "answer": "Soft",
-          "distractors": ["Rough", "Spiky", "Sticky"]
+          "distractors": ["Rough", "Spiky", "Sticky"],
+          "model": "cotton-wool-ball"
         },
         {
           "ask": "A shiny mirror: which texture group?",
           "answer": "Smooth",
-          "distractors": ["Rough", "Sticky", "Spiky"]
+          "distractors": ["Rough", "Sticky", "Spiky"],
+          "model": "mirror"
         }
       ]
     },
@@ -280,7 +289,7 @@
       "id": "art-junk-model",
       "title": "Junk Model Maker",
       "station": "compare",
-      "prop": "beaker",
+      "prop": "cardboard-box",
       "skillName": "Choosing materials to make a model",
       "strand": "materials",
       "statutoryRequirement": "Pupils should be taught to use a range of materials creatively to design and make products",
@@ -290,27 +299,32 @@
         {
           "ask": "Which would make a good tower for a model castle?",
           "answer": "Cardboard tube",
-          "distractors": ["Tissue paper", "Cotton wool", "Ribbon"]
+          "distractors": ["Tissue paper", "Cotton wool", "Ribbon"],
+          "model": "castle"
         },
         {
           "ask": "Which is best for a fluffy sheep's coat?",
           "answer": "Cotton wool",
-          "distractors": ["Kitchen foil", "Card", "Sandpaper"]
+          "distractors": ["Kitchen foil", "Card", "Sandpaper"],
+          "model": "sheep"
         },
         {
           "ask": "Which is best for joining two cardboard boxes?",
           "answer": "Masking tape",
-          "distractors": ["Water", "Crayon", "Paintbrush"]
+          "distractors": ["Water", "Crayon", "Paintbrush"],
+          "model": "cardboard-box"
         },
         {
           "ask": "Which is best for making a shiny crown?",
           "answer": "Kitchen foil",
-          "distractors": ["Sandpaper", "Newspaper", "Cotton wool"]
+          "distractors": ["Sandpaper", "Newspaper", "Cotton wool"],
+          "model": "crown"
         },
         {
           "ask": "Which is best for long hair on a puppet?",
           "answer": "Wool",
-          "distractors": ["Kitchen foil", "Card", "Clay"]
+          "distractors": ["Kitchen foil", "Card", "Clay"],
+          "model": "puppet"
         },
         {
           "ask": "Which is best for sticking paper onto paper?",
@@ -333,7 +347,7 @@
       "id": "art-collage-creator",
       "title": "Collage Creator",
       "station": "true-false",
-      "prop": "leaf",
+      "prop": "scissors",
       "skillName": "Making collages and models",
       "strand": "materials",
       "statutoryRequirement": "Pupils should be taught to use a range of materials creatively to design and make products",
@@ -363,7 +377,8 @@
         {
           "ask": "Clay goes hard when it dries out.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "clay"
         },
         {
           "ask": "Thin paper is stronger than thick card.",
@@ -373,7 +388,8 @@
         {
           "ask": "You should wash your brush before using a new colour.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "paintbrush"
         },
         {
           "ask": "Wool and buttons can never be used in art.",
@@ -386,7 +402,7 @@
       "id": "art-feelings-pictures",
       "title": "Feelings in Pictures",
       "station": "compare",
-      "prop": "sun",
+      "prop": "paint-palette",
       "skillName": "Showing ideas and feelings in art",
       "strand": "drawing-painting-sculpture",
       "statutoryRequirement": "Pupils should be taught to use drawing, painting and sculpture to develop and share their ideas, experiences and imagination",
@@ -439,7 +455,7 @@
       "id": "art-maker-match",
       "title": "Maker Match",
       "station": "compare",
-      "prop": "tree",
+      "prop": "paint-palette",
       "skillName": "Different kinds of artists and makers",
       "strand": "artists-and-makers",
       "statutoryRequirement": "Pupils should be taught about the work of a range of artists, craft makers and designers, describing the differences and similarities between different practices and disciplines, and making links to their own work",
@@ -449,7 +465,8 @@
         {
           "ask": "Who makes pots and bowls from clay?",
           "answer": "Potter",
-          "distractors": ["Painter", "Weaver", "Architect"]
+          "distractors": ["Painter", "Weaver", "Architect"],
+          "model": "clay-pot"
         },
         {
           "ask": "Who designs buildings?",
@@ -474,7 +491,8 @@
         {
           "ask": "Who makes pictures with a camera?",
           "answer": "Photographer",
-          "distractors": ["Potter", "Sculptor", "Weaver"]
+          "distractors": ["Potter", "Sculptor", "Weaver"],
+          "model": "camera"
         },
         {
           "ask": "Who designs new clothes?",
@@ -492,7 +510,7 @@
       "id": "art-meet-artists",
       "title": "Meet the Artists",
       "station": "mystery",
-      "prop": "flower",
+      "prop": "easel",
       "skillName": "Famous artists and their work",
       "strand": "artists-and-makers",
       "statutoryRequirement": "Pupils should be taught about the work of a range of artists, craft makers and designers, describing the differences and similarities between different practices and disciplines, and making links to their own work",

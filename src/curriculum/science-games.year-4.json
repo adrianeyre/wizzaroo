@@ -15,42 +15,50 @@
         {
           "ask": "A ladybird: no backbone, 6 legs, 3 body parts",
           "answer": "Insect",
-          "distractors": ["Arachnid", "Mollusc", "Reptile"]
+          "distractors": ["Arachnid", "Mollusc", "Reptile"],
+          "model": "ladybird"
         },
         {
           "ask": "A garden spider: no backbone, 8 legs, 2 body parts",
           "answer": "Arachnid",
-          "distractors": ["Insect", "Mollusc", "Worm"]
+          "distractors": ["Insect", "Mollusc", "Worm"],
+          "model": "spider"
         },
         {
           "ask": "A snail: no backbone, no legs, soft body and a shell",
           "answer": "Mollusc",
-          "distractors": ["Insect", "Worm", "Arachnid"]
+          "distractors": ["Insect", "Worm", "Arachnid"],
+          "model": "snail"
         },
         {
           "ask": "An earthworm: no backbone, no legs, long body made of segments",
           "answer": "Worm",
-          "distractors": ["Mollusc", "Insect", "Arachnid"]
+          "distractors": ["Mollusc", "Insect", "Arachnid"],
+          "model": "earthworm"
         },
         {
           "ask": "A robin: has a backbone, feathers and lays eggs",
           "answer": "Bird",
-          "distractors": ["Mammal", "Reptile", "Amphibian"]
+          "distractors": ["Mammal", "Reptile", "Amphibian"],
+          "model": "robin"
         },
         {
           "ask": "A fox: has a backbone, fur and feeds its babies milk",
           "answer": "Mammal",
-          "distractors": ["Bird", "Reptile", "Fish"]
+          "distractors": ["Bird", "Reptile", "Fish"],
+          "model": "fox"
         },
         {
           "ask": "A newt: has a backbone, smooth damp skin and lays eggs in water",
           "answer": "Amphibian",
-          "distractors": ["Reptile", "Fish", "Mammal"]
+          "distractors": ["Reptile", "Fish", "Mammal"],
+          "model": "newt"
         },
         {
           "ask": "A daisy: makes its own food and grows flowers",
           "answer": "Flowering plant",
-          "distractors": ["Non-flowering plant", "Animal", "Fungus"]
+          "distractors": ["Non-flowering plant", "Animal", "Fungus"],
+          "model": "daisy"
         }
       ]
     },
@@ -131,17 +139,20 @@
         {
           "ask": "Plucking a guitar string gently makes a louder sound than plucking it hard.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "guitar"
         },
         {
           "ask": "A shorter guitar string makes a lower pitch than a longer one.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "guitar"
         },
         {
           "ask": "Hitting a drum harder makes bigger vibrations.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "drum"
         },
         {
           "ask": "Sound can travel through empty space where there is no air or anything else.",
@@ -164,7 +175,7 @@
       "id": "fourth-circuit-gaps",
       "title": "Circuit Builder",
       "station": "fill-gap",
-      "prop": "battery",
+      "prop": "magnifier",
       "skillName": "Naming the parts of a simple series circuit",
       "strand": "electricity",
       "statutoryRequirement": "Pupils should be taught to construct a simple series electrical circuit, identifying and naming its basic parts, including cells, wires, bulbs, switches and buzzers",
@@ -184,7 +195,8 @@
         {
           "ask": "When the switch in a complete circuit is closed, the bulb turns ___.",
           "answer": "On",
-          "distractors": ["Off", "Blue", "Cold"]
+          "distractors": ["Off", "Blue", "Cold"],
+          "model": "bulb"
         },
         {
           "ask": "A ___ pushes electricity around a circuit.",
@@ -217,7 +229,7 @@
       "id": "fourth-water-cycle",
       "title": "Water Cycle Trail",
       "station": "sequence",
-      "prop": "cloud",
+      "prop": "sun",
       "skillName": "Ordering changes of state in the water cycle",
       "strand": "states-of-matter",
       "statutoryRequirement": "Pupils should be taught to identify the part played by evaporation and condensation in the water cycle, and observe that some materials change state when they are heated or cooled",
@@ -266,7 +278,8 @@
             "Chocolate freezes",
             "Chocolate condenses",
             "Chocolate evaporates"
-          ]
+          ],
+          "model": "chocolate-bar"
         }
       ]
     },
@@ -350,7 +363,8 @@
             "Fish grow faster",
             "More fish hatch",
             "Fish are safer"
-          ]
+          ],
+          "model": "fish"
         },
         {
           "ask": "What will happen to frogs if their pond dries up?",
@@ -359,7 +373,8 @@
             "They lay more spawn",
             "They grow gills",
             "They become fish"
-          ]
+          ],
+          "model": "frog"
         },
         {
           "ask": "What will happen if people plant a wildflower meadow?",
@@ -386,7 +401,8 @@
             "It gets stronger",
             "It sleeps less",
             "Nothing happens"
-          ]
+          ],
+          "model": "hedgehog"
         },
         {
           "ask": "What happens to animals when litter is dropped in their habitat?",
@@ -404,7 +420,8 @@
             "Easier to hunt",
             "More ice to walk on",
             "They grow more fur"
-          ]
+          ],
+          "model": "polar-bear"
         }
       ]
     },

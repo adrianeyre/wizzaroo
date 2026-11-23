@@ -161,12 +161,14 @@
         {
           "ask": "The dictionary says \"chaise (f.) – chair\". How do you say \"the chair\"?",
           "answer": "la chaise",
-          "distractors": ["le chaise", "les chaise", "un chaise"]
+          "distractors": ["le chaise", "les chaise", "un chaise"],
+          "model": "chair"
         },
         {
           "ask": "The dictionary says \"livre (m.) – book\". How do you say \"a book\"?",
           "answer": "un livre",
-          "distractors": ["une livre", "des livre", "la livre"]
+          "distractors": ["une livre", "des livre", "la livre"],
+          "model": "book"
         },
         {
           "ask": "The dictionary says \"manger (v.) – to eat\". What is \"manger\"?",
@@ -208,7 +210,8 @@
             "I like chocolate.",
             "I hate chocolate.",
             "I eat chocolate."
-          ]
+          ],
+          "model": "chocolate-bar"
         },
         {
           "ask": "What does \"Je déteste les araignées.\" mean?",
@@ -217,12 +220,14 @@
             "I love spiders.",
             "I like spiders.",
             "I see spiders."
-          ]
+          ],
+          "model": "spider"
         },
         {
           "ask": "What does \"Je n'aime pas le thé.\" mean?",
           "answer": "I don't like tea.",
-          "distractors": ["I like tea.", "I love tea.", "I drink tea."]
+          "distractors": ["I like tea.", "I love tea.", "I drink tea."],
+          "model": "teacup"
         },
         {
           "ask": "Which opinion shows the strongest liking?",
@@ -237,7 +242,8 @@
         {
           "ask": "Your friend says \"J'aime le tennis.\" You agree. What do you say?",
           "answer": "Moi aussi !",
-          "distractors": ["Moi non plus.", "Au revoir !", "J'ai dix ans."]
+          "distractors": ["Moi non plus.", "Au revoir !", "J'ai dix ans."],
+          "model": "tennis-racket"
         },
         {
           "ask": "Your friend says \"Je n'aime pas les maths.\" You agree. What do you say?",
@@ -261,7 +267,8 @@
             "Do you have cats?",
             "Are you a cat?",
             "Where are the cats?"
-          ]
+          ],
+          "model": "cat"
         }
       ]
     },
@@ -279,12 +286,14 @@
         {
           "ask": "Which sound group does \"bateau\" (boat) belong in?",
           "answer": "eau",
-          "distractors": ["ou", "oi", "an/en"]
+          "distractors": ["ou", "oi", "an/en"],
+          "model": "boat"
         },
         {
           "ask": "Which sound group does \"poisson\" (fish) belong in?",
           "answer": "oi",
-          "distractors": ["ou", "eau", "an/en"]
+          "distractors": ["ou", "eau", "an/en"],
+          "model": "fish"
         },
         {
           "ask": "Which sound group does \"rouge\" (red) belong in?",
@@ -294,7 +303,8 @@
         {
           "ask": "Which sound group does \"enfant\" (child) belong in?",
           "answer": "an/en",
-          "distractors": ["ou", "oi", "eau"]
+          "distractors": ["ou", "oi", "eau"],
+          "model": "child"
         },
         {
           "ask": "Which sound group does \"noir\" (black) belong in?",
@@ -304,12 +314,14 @@
         {
           "ask": "Which sound group does \"soupe\" (soup) belong in?",
           "answer": "ou",
-          "distractors": ["oi", "eau", "an/en"]
+          "distractors": ["oi", "eau", "an/en"],
+          "model": "soup"
         },
         {
           "ask": "Which sound group does \"chapeau\" (hat) belong in?",
           "answer": "eau",
-          "distractors": ["ou", "oi", "an/en"]
+          "distractors": ["ou", "oi", "an/en"],
+          "model": "hat"
         },
         {
           "ask": "Which sound group does \"maman\" (mum) belong in?",
@@ -319,12 +331,14 @@
         {
           "ask": "Which sound group does \"étoile\" (star) belong in?",
           "answer": "oi",
-          "distractors": ["ou", "eau", "an/en"]
+          "distractors": ["ou", "eau", "an/en"],
+          "model": "star"
         },
         {
           "ask": "Which sound group does \"hibou\" (owl) belong in?",
           "answer": "ou",
-          "distractors": ["oi", "eau", "an/en"]
+          "distractors": ["oi", "eau", "an/en"],
+          "model": "owl"
         }
       ]
     },
@@ -332,7 +346,7 @@
       "id": "french-catwalk-colours",
       "title": "Catwalk Colours",
       "station": "compare",
-      "prop": "heart",
+      "prop": "hat",
       "skillName": "Describing clothes with adjectives",
       "strand": "describing",
       "statutoryRequirement": "Pupils should be taught to describe people, places, things and actions orally and in writing",
@@ -342,7 +356,8 @@
         {
           "ask": "Which is right for \"a black skirt\"?",
           "answer": "une jupe noire",
-          "distractors": ["une jupe noir", "une noire jupe", "un jupe noire"]
+          "distractors": ["une jupe noir", "une noire jupe", "un jupe noire"],
+          "model": "skirt"
         },
         {
           "ask": "Which is right for \"a green T-shirt\"?",
@@ -351,7 +366,8 @@
             "un tee-shirt verte",
             "un vert tee-shirt",
             "une tee-shirt vert"
-          ]
+          ],
+          "model": "t-shirt"
         },
         {
           "ask": "Which is right for \"a white shirt\"?",
@@ -360,7 +376,8 @@
             "une chemise blanc",
             "une blanche chemise",
             "un chemise blanche"
-          ]
+          ],
+          "model": "shirt"
         },
         {
           "ask": "Which is right for \"blue trousers\" (un pantalon)?",
@@ -369,7 +386,8 @@
             "une pantalon bleue",
             "un pantalon bleue",
             "un bleu pantalon"
-          ]
+          ],
+          "model": "trousers"
         },
         {
           "ask": "Which is right for \"a red hat\"?",
@@ -378,12 +396,14 @@
             "un rouge chapeau",
             "une chapeau rouge",
             "un chapeau rouges"
-          ]
+          ],
+          "model": "hat"
         },
         {
           "ask": "Which is right for \"a big dress\"? \"grand\" goes before the noun.",
           "answer": "une grande robe",
-          "distractors": ["une robe grande", "un grand robe", "une grand robe"]
+          "distractors": ["une robe grande", "un grand robe", "une grand robe"],
+          "model": "dress"
         },
         {
           "ask": "Which is right for \"a small hat\"? \"petit\" goes before the noun.",
@@ -392,12 +412,14 @@
             "un chapeau petit",
             "une petite chapeau",
             "un petite chapeau"
-          ]
+          ],
+          "model": "hat"
         },
         {
           "ask": "Which is right for \"a pretty dress\"? \"joli\" goes before the noun.",
           "answer": "une jolie robe",
-          "distractors": ["une robe jolie", "un joli robe", "une joli robe"]
+          "distractors": ["une robe jolie", "un joli robe", "une joli robe"],
+          "model": "dress"
         },
         {
           "ask": "In \"Il porte un pull jaune.\", what is yellow?",
@@ -598,7 +620,8 @@
             "Je joue le foot.",
             "Je fais au foot.",
             "Je joue du foot."
-          ]
+          ],
+          "model": "football"
         },
         {
           "ask": "Which means \"I play tennis\"?",
@@ -607,7 +630,8 @@
             "Je joue à tennis.",
             "Je fais au tennis.",
             "Je joue la tennis."
-          ]
+          ],
+          "model": "tennis-racket"
         },
         {
           "ask": "Which means \"I swim\"?",
@@ -621,7 +645,8 @@
             "Je joue au piano.",
             "Je fais le piano.",
             "Je joue piano."
-          ]
+          ],
+          "model": "piano"
         },
         {
           "ask": "Which means \"I dance\"?",
@@ -635,7 +660,8 @@
             "Je lis les livre.",
             "Je lire des livres.",
             "Je lit des livres."
-          ]
+          ],
+          "model": "book"
         },
         {
           "ask": "Which means \"I like singing\"?",
@@ -653,7 +679,8 @@
             "Nous jouez au foot.",
             "Nous joue au foot.",
             "Je joue au foot."
-          ]
+          ],
+          "model": "football"
         },
         {
           "ask": "Which means \"I go cycling\"?",
@@ -662,7 +689,8 @@
             "Je joue au vélo.",
             "Je fais le vélo.",
             "Je fais de vélo."
-          ]
+          ],
+          "model": "bicycle"
         }
       ]
     }

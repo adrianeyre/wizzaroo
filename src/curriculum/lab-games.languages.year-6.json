@@ -64,7 +64,7 @@
       "id": "french-town-trail",
       "title": "Town Trail",
       "station": "mystery",
-      "prop": "rock",
+      "prop": "house",
       "skillName": "Places in a French town",
       "strand": "vocabulary-and-dictionary",
       "statutoryRequirement": "Pupils should be taught to broaden their vocabulary and develop their ability to understand new words that are introduced into familiar written material, including through using a dictionary",
@@ -142,7 +142,8 @@
         {
           "ask": "La tour Eiffel est à Londres.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "eiffel-tower"
         },
         {
           "ask": "Le drapeau français est bleu, blanc et rouge.",
@@ -195,7 +196,8 @@
         {
           "ask": "I rhyme with \"gâteau\" and I float on water. What am I?",
           "answer": "un bateau",
-          "distractors": ["un avion", "un train", "une voiture"]
+          "distractors": ["un avion", "un train", "une voiture"],
+          "model": "boat"
         },
         {
           "ask": "I end in -tion, said like \"see-on\", and I mean swimming. What am I?",
@@ -205,7 +207,8 @@
         {
           "ask": "I have the \"oi\" sound and I shine in the night sky. What am I?",
           "answer": "une étoile",
-          "distractors": ["la lune", "le soleil", "un nuage"]
+          "distractors": ["la lune", "le soleil", "un nuage"],
+          "model": "star"
         },
         {
           "ask": "My c has a cedilla (ç), so it sounds like s. I mean lesson. What am I?",
@@ -225,12 +228,14 @@
         {
           "ask": "I have the \"an\" sound spelt \"en\", and I mean child. What am I?",
           "answer": "un enfant",
-          "distractors": ["un garçon", "une fille", "un bébé"]
+          "distractors": ["un garçon", "une fille", "un bébé"],
+          "model": "child"
         },
         {
           "ask": "My h is silent and I am a place to stay on holiday. What am I?",
           "answer": "un hôtel",
-          "distractors": ["une maison", "une gare", "un château"]
+          "distractors": ["une maison", "une gare", "un château"],
+          "model": "hotel"
         },
         {
           "ask": "My d at the end is silent and I mean big. What am I?",
@@ -376,7 +381,7 @@
       "id": "french-town-describer",
       "title": "Town Describer",
       "station": "compare",
-      "prop": "rock",
+      "prop": "house",
       "skillName": "Describing places",
       "strand": "describing",
       "statutoryRequirement": "Pupils should be taught to describe people, places, things and actions orally and in writing",
@@ -424,7 +429,8 @@
             "une maison grande",
             "un grand maison",
             "une grand maison"
-          ]
+          ],
+          "model": "house"
         },
         {
           "ask": "Which is right for \"an old church\"?",
@@ -433,7 +439,8 @@
             "un vieux église",
             "une église vieux",
             "une vieux église"
-          ]
+          ],
+          "model": "church"
         },
         {
           "ask": "Which word makes \"La ville est …\" mean \"The town is lively\"?",
@@ -451,7 +458,7 @@
       "id": "french-cafe-chat",
       "title": "Café Chat",
       "station": "compare",
-      "prop": "water-drop",
+      "prop": "coffee-cup",
       "skillName": "Conversations and asking for help",
       "strand": "conversation",
       "statutoryRequirement": "Pupils should be taught to engage in conversations; ask and answer questions; express opinions and respond to those of others; seek clarification and help",
@@ -474,7 +481,8 @@
             "Un chocolat froid.",
             "Une chocolat chaud.",
             "Un café chaud."
-          ]
+          ],
+          "model": "hot-chocolate"
         },
         {
           "ask": "\"Pouvez-vous répéter, s'il vous plaît ?\" asks the person to …",

@@ -322,7 +322,8 @@
         {
           "ask": "Dictionary: 'timid: shy and easily scared'. A timid mouse is ___.",
           "answer": "shy",
-          "distractors": ["brave", "loud", "bossy"]
+          "distractors": ["brave", "loud", "bossy"],
+          "model": "mouse"
         }
       ]
     },
@@ -340,7 +341,8 @@
         {
           "ask": "Fact: 'Hedgehogs eat beetles, worms and slugs.' What do hedgehogs eat?",
           "answer": "worms",
-          "distractors": ["carrots", "grass", "bread"]
+          "distractors": ["carrots", "grass", "bread"],
+          "model": "hedgehog"
         },
         {
           "ask": "Fact: 'The River Thames is about 346 km long.' How long is the Thames?",

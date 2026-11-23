@@ -36,17 +36,20 @@
         {
           "ask": "Music for twinkling stars suits which pitch?",
           "answer": "High",
-          "distractors": ["Low", "Very low", "Rumbling low"]
+          "distractors": ["Low", "Very low", "Rumbling low"],
+          "model": "star"
         },
         {
           "ask": "To show a monster creeping nearer, which would you use?",
           "answer": "Crescendo",
-          "distractors": ["Diminuendo", "A long rest", "Silence"]
+          "distractors": ["Diminuendo", "A long rest", "Silence"],
+          "model": "monster"
         },
         {
           "ask": "To show a train slowing down to stop, which would you use?",
           "answer": "Rallentando",
-          "distractors": ["Accelerando", "Crescendo", "Staccato"]
+          "distractors": ["Accelerando", "Crescendo", "Staccato"],
+          "model": "train"
         },
         {
           "ask": "Which choice sounds happiest for a party song?",
@@ -64,7 +67,8 @@
             "Bright, major key",
             "Loud and jolly",
             "Fast and bouncy"
-          ]
+          ],
+          "model": "cave"
         },
         {
           "ask": "What is a short pattern repeated under your piece called?",

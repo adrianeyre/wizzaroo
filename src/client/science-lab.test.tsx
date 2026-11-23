@@ -13,7 +13,6 @@ import {
   labStations,
   type LabGame,
   type LabModel,
-  type LabProp,
   type LabStation,
 } from "../curriculum/lab-games.js";
 import { isLabItem, labItems } from "../curriculum/lab-items.js";
@@ -80,7 +79,7 @@ const renderScienceLab = async (
 
 const buildGameWith = (
   station: LabStation,
-  prop: LabProp = labGames[0].prop,
+  prop: LabModel = labGames[0].prop,
 ): LabGame => ({ ...labGames[0], station, prop });
 
 beforeAll(() => {
@@ -136,8 +135,11 @@ describe("ScienceLabWorld", () => {
     },
   );
 
-  it("shows every item some game asks about, so none is modelled for nothing", () => {
-    const shownItems = new Set(itemShowings.map(([, item]) => item));
+  it("shows every item some game asks about or turns as its prop, so none is modelled for nothing", () => {
+    const shownItems = new Set([
+      ...itemShowings.map(([, item]) => item),
+      ...labGames.map(({ prop }) => prop),
+    ]);
 
     expect(labItems.filter((item) => !shownItems.has(item))).toEqual([]);
   });

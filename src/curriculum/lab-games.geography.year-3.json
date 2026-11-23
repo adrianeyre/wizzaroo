@@ -6,7 +6,7 @@
       "id": "land-use-time-machine",
       "title": "Then and Now Town",
       "station": "compare",
-      "prop": "rock",
+      "prop": "house",
       "skillName": "How land use and settlements change over time",
       "strand": "human-and-physical-geography",
       "statutoryRequirement": "Pupils should be taught to describe and understand key aspects of human geography, including: types of settlement and land use; name and locate counties and cities of the United Kingdom, geographical regions and their identifying human and physical characteristics, key topographical features (including hills, mountains, coasts and rivers), and land-use patterns; and understand how some of these aspects have changed over time",
@@ -55,7 +55,8 @@
         {
           "ask": "An old factory is turned into flats. What has changed?",
           "answer": "Land use",
-          "distractors": ["Climate", "Weather", "Rock type"]
+          "distractors": ["Climate", "Weather", "Rock type"],
+          "model": "factory"
         },
         {
           "ask": "What do we call land used for growing crops and keeping animals?",

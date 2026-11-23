@@ -156,7 +156,8 @@
         {
           "ask": "Which light metal is used to make kitchen foil?",
           "answer": "Aluminium",
-          "distractors": ["Lead", "Gold", "Iron"]
+          "distractors": ["Lead", "Gold", "Iron"],
+          "model": "kitchen-foil"
         },
         {
           "ask": "Which metal is best for electrical wiring in a model?",
@@ -166,7 +167,8 @@
         {
           "ask": "Corrugated plastic is good for outdoor signs because it is...",
           "answer": "Waterproof",
-          "distractors": ["Absorbent", "Magnetic", "Edible"]
+          "distractors": ["Absorbent", "Magnetic", "Edible"],
+          "model": "corrugated-plastic"
         },
         {
           "ask": "Clear acrylic sheet suits a display case because it is...",
@@ -184,7 +186,7 @@
       "id": "dt-cam-toy-workshop",
       "title": "Cam Toy Workshop",
       "station": "compare",
-      "prop": "magnet",
+      "prop": "gear",
       "skillName": "Using cams in moving toys",
       "strand": "mechanical-systems",
       "statutoryRequirement": "Pupils should be taught to understand and use mechanical systems in their products [for example, gears, pulleys, cams, levers and linkages]",
@@ -209,12 +211,14 @@
         {
           "ask": "An off-centre round cam makes the follower...",
           "answer": "Rise and fall evenly",
-          "distractors": ["Drop suddenly", "Never move", "Spin round"]
+          "distractors": ["Drop suddenly", "Never move", "Spin round"],
+          "model": "eccentric-cam"
         },
         {
           "ask": "In one turn, an oval cam lifts the follower...",
           "answer": "Twice",
-          "distractors": ["Once", "Never", "Ten times"]
+          "distractors": ["Once", "Never", "Ten times"],
+          "model": "oval-cam"
         },
         {
           "ask": "The rod that a cam is fixed to and turns with is the...",
@@ -234,7 +238,8 @@
         {
           "ask": "A pear-shaped cam makes the follower...",
           "answer": "Rise, fall and rest",
-          "distractors": ["Spin round", "Never move", "Drop suddenly"]
+          "distractors": ["Spin round", "Never move", "Drop suddenly"],
+          "model": "pear-cam"
         }
       ]
     },
@@ -267,7 +272,8 @@
         {
           "ask": "A doorbell rings only while pressed. Which switch?",
           "answer": "Push-to-make switch",
-          "distractors": ["Toggle switch", "Tilt switch", "Reed switch"]
+          "distractors": ["Toggle switch", "Tilt switch", "Reed switch"],
+          "model": "doorbell"
         },
         {
           "ask": "Which switch could tell when someone steps on a mat?",
@@ -277,12 +283,14 @@
         {
           "ask": "A fridge light goes off when the door presses on it. Which switch?",
           "answer": "Push-to-break",
-          "distractors": ["Push-to-make", "Tilt switch", "Reed switch"]
+          "distractors": ["Push-to-make", "Tilt switch", "Reed switch"],
+          "model": "fridge"
         },
         {
           "ask": "Swapping the battery round makes a motor...",
           "answer": "Spin the other way",
-          "distractors": ["Stop for ever", "Light up", "Make a beep"]
+          "distractors": ["Stop for ever", "Light up", "Make a beep"],
+          "model": "motor"
         },
         {
           "ask": "Which output suits a burglar alarm?",
@@ -292,7 +300,8 @@
         {
           "ask": "An LED only lights if it is connected...",
           "answer": "The right way round",
-          "distractors": ["Upside down", "In water", "With no cell"]
+          "distractors": ["Upside down", "In water", "With no cell"],
+          "model": "led"
         }
       ]
     },
@@ -300,7 +309,7 @@
       "id": "dt-input-or-output",
       "title": "Input Or Output?",
       "station": "sort",
-      "prop": "microscope",
+      "prop": "circuit-board",
       "skillName": "Knowing inputs, outputs and controllers",
       "strand": "computing-control",
       "statutoryRequirement": "Pupils should be taught to apply their understanding of computing to program, monitor and control their products",
@@ -310,47 +319,56 @@
         {
           "ask": "Which group does a light sensor belong in?",
           "answer": "Input",
-          "distractors": ["Output", "Power supply", "Controller"]
+          "distractors": ["Output", "Power supply", "Controller"],
+          "model": "light-sensor"
         },
         {
           "ask": "Which group does a motor belong in?",
           "answer": "Output",
-          "distractors": ["Input", "Power supply", "Controller"]
+          "distractors": ["Input", "Power supply", "Controller"],
+          "model": "motor"
         },
         {
           "ask": "Which group does a buzzer belong in?",
           "answer": "Output",
-          "distractors": ["Input", "Power supply", "Controller"]
+          "distractors": ["Input", "Power supply", "Controller"],
+          "model": "buzzer"
         },
         {
           "ask": "Which group does a push switch belong in?",
           "answer": "Input",
-          "distractors": ["Output", "Power supply", "Controller"]
+          "distractors": ["Output", "Power supply", "Controller"],
+          "model": "push-switch"
         },
         {
           "ask": "Which group does a temperature sensor belong in?",
           "answer": "Input",
-          "distractors": ["Output", "Power supply", "Controller"]
+          "distractors": ["Output", "Power supply", "Controller"],
+          "model": "temperature-sensor"
         },
         {
           "ask": "Which group does an LED belong in?",
           "answer": "Output",
-          "distractors": ["Input", "Power supply", "Controller"]
+          "distractors": ["Input", "Power supply", "Controller"],
+          "model": "led"
         },
         {
           "ask": "Which group does a battery pack belong in?",
           "answer": "Power supply",
-          "distractors": ["Input", "Output", "Controller"]
+          "distractors": ["Input", "Output", "Controller"],
+          "model": "battery-pack"
         },
         {
           "ask": "Which group does a programmable microcontroller belong in?",
           "answer": "Controller",
-          "distractors": ["Input", "Output", "Power supply"]
+          "distractors": ["Input", "Output", "Power supply"],
+          "model": "microcontroller"
         },
         {
           "ask": "Which group does a motion sensor belong in?",
           "answer": "Input",
-          "distractors": ["Output", "Power supply", "Controller"]
+          "distractors": ["Output", "Power supply", "Controller"],
+          "model": "motion-sensor"
         }
       ]
     },
@@ -358,7 +376,7 @@
       "id": "dt-reinforce-it",
       "title": "Reinforce It",
       "station": "compare",
-      "prop": "prism",
+      "prop": "hard-hat",
       "skillName": "Reinforcing complex structures",
       "strand": "complex-structures",
       "statutoryRequirement": "Pupils should be taught to apply their understanding of how to strengthen, stiffen and reinforce more complex structures",
@@ -383,7 +401,8 @@
         {
           "ask": "Why are bike frames made of tubes, not solid rods?",
           "answer": "Strong but light",
-          "distractors": ["Heavier", "Bendier", "Softer"]
+          "distractors": ["Heavier", "Bendier", "Softer"],
+          "model": "bike-frame"
         },
         {
           "ask": "Which beam shape makes steel girders stiff but light?",
@@ -403,7 +422,12 @@
         {
           "ask": "What does an arch do with the load on top?",
           "answer": "Sends it to the ends",
-          "distractors": ["Pulls it upwards", "Makes it vanish", "Lets it drop"]
+          "distractors": [
+            "Pulls it upwards",
+            "Makes it vanish",
+            "Lets it drop"
+          ],
+          "model": "arch-bridge"
         },
         {
           "ask": "A geodesic dome is built from many...",
@@ -431,7 +455,8 @@
         {
           "ask": "Which engineer designed the Clifton Suspension Bridge?",
           "answer": "Brunel",
-          "distractors": ["Dyson", "Edison", "Baird"]
+          "distractors": ["Dyson", "Edison", "Baird"],
+          "model": "clifton-suspension-bridge"
         },
         {
           "ask": "Alec Issigonis designed which small car, launched in 1959?",
@@ -451,7 +476,8 @@
         {
           "ask": "Percy Shaw's cat's eyes help drivers to...",
           "answer": "See lanes at night",
-          "distractors": ["Park cars", "Go faster", "Find petrol"]
+          "distractors": ["Park cars", "Go faster", "Find petrol"],
+          "model": "cats-eye"
         },
         {
           "ask": "Trevor Baylis invented a radio powered by...",
@@ -461,7 +487,8 @@
         {
           "ask": "Who invented the jet engine, patenting it in 1930?",
           "answer": "Frank Whittle",
-          "distractors": ["Percy Shaw", "Alec Issigonis", "John Logie Baird"]
+          "distractors": ["Percy Shaw", "Alec Issigonis", "John Logie Baird"],
+          "model": "jet-engine"
         },
         {
           "ask": "Christopher Cockerell invented a vehicle that rides on air. What is it?",
@@ -474,7 +501,7 @@
       "id": "dt-grown-reared-caught",
       "title": "Grown, Reared, Caught",
       "station": "sort",
-      "prop": "seedling",
+      "prop": "shopping-basket",
       "skillName": "Knowing how ingredients are produced",
       "strand": "seasonality-origins",
       "statutoryRequirement": "Pupils should be taught to understand seasonality, and know where and how a variety of ingredients are grown, reared, caught and processed",
@@ -484,47 +511,56 @@
         {
           "ask": "Which group does wheat in a field belong in?",
           "answer": "Grown",
-          "distractors": ["Reared", "Caught", "Processed"]
+          "distractors": ["Reared", "Caught", "Processed"],
+          "model": "wheat"
         },
         {
           "ask": "Which group does lamb from a sheep farm belong in?",
           "answer": "Reared",
-          "distractors": ["Grown", "Caught", "Processed"]
+          "distractors": ["Grown", "Caught", "Processed"],
+          "model": "sheep"
         },
         {
           "ask": "Which group does mackerel landed by a fishing boat belong in?",
           "answer": "Caught",
-          "distractors": ["Grown", "Reared", "Processed"]
+          "distractors": ["Grown", "Reared", "Processed"],
+          "model": "mackerel"
         },
         {
           "ask": "Which group does cheese made from milk belong in?",
           "answer": "Processed",
-          "distractors": ["Grown", "Reared", "Caught"]
+          "distractors": ["Grown", "Reared", "Caught"],
+          "model": "cheese"
         },
         {
           "ask": "Which group do potatoes dug from a field belong in?",
           "answer": "Grown",
-          "distractors": ["Reared", "Caught", "Processed"]
+          "distractors": ["Reared", "Caught", "Processed"],
+          "model": "potato"
         },
         {
           "ask": "Which group do chickens raised on a farm belong in?",
           "answer": "Reared",
-          "distractors": ["Grown", "Caught", "Processed"]
+          "distractors": ["Grown", "Caught", "Processed"],
+          "model": "hen"
         },
         {
           "ask": "Which group does a crab from a lobster pot at sea belong in?",
           "answer": "Caught",
-          "distractors": ["Grown", "Reared", "Processed"]
+          "distractors": ["Grown", "Reared", "Processed"],
+          "model": "crab"
         },
         {
           "ask": "Which group does bread baked from flour belong in?",
           "answer": "Processed",
-          "distractors": ["Grown", "Reared", "Caught"]
+          "distractors": ["Grown", "Reared", "Caught"],
+          "model": "bread"
         },
         {
           "ask": "Which group does strawberry jam belong in?",
           "answer": "Processed",
-          "distractors": ["Grown", "Reared", "Caught"]
+          "distractors": ["Grown", "Reared", "Caught"],
+          "model": "jam-jar"
         }
       ]
     },

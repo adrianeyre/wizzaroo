@@ -16,12 +16,14 @@
         {
           "ask": "Which part of an atlas lists places from A to Z with page numbers?",
           "answer": "The index",
-          "distractors": ["The contents", "The cover", "The key"]
+          "distractors": ["The contents", "The cover", "The key"],
+          "model": "atlas"
         },
         {
           "ask": "Where would you look to find which pages show each continent?",
           "answer": "The contents",
-          "distractors": ["The index", "The scale bar", "The key"]
+          "distractors": ["The index", "The scale bar", "The key"],
+          "model": "atlas"
         },
         {
           "ask": "Which kind of map best shows where the mountains and lowlands are?",
@@ -41,12 +43,14 @@
         {
           "ask": "The index says \"Lima 34 B3\". What does the 34 mean?",
           "answer": "The page number",
-          "distractors": ["The grid square", "The population", "The height"]
+          "distractors": ["The grid square", "The population", "The height"],
+          "model": "atlas"
         },
         {
           "ask": "The index says \"Lima 34 B3\". What does the B3 tell you?",
           "answer": "The grid square",
-          "distractors": ["The page number", "The country", "The distance"]
+          "distractors": ["The page number", "The country", "The distance"],
+          "model": "atlas"
         },
         {
           "ask": "When reading a grid reference, which do you read first?",
@@ -56,12 +60,14 @@
         {
           "ask": "What does the key on a map explain?",
           "answer": "What symbols mean",
-          "distractors": ["Who drew it", "The page numbers", "The date"]
+          "distractors": ["Who drew it", "The page numbers", "The date"],
+          "model": "map"
         },
         {
           "ask": "What does the scale bar on a map help you work out?",
           "answer": "Real distances",
-          "distractors": ["Country names", "The date", "Page numbers"]
+          "distractors": ["Country names", "The date", "Page numbers"],
+          "model": "map"
         }
       ]
     }

@@ -59,7 +59,8 @@
         {
           "ask": "Where does a photo usually go after you take it on a tablet?",
           "answer": "The photo gallery",
-          "distractors": ["The charger", "The case", "The camera lens"]
+          "distractors": ["The charger", "The case", "The camera lens"],
+          "model": "tablet"
         },
         {
           "ask": "What might happen if you close your work without saving it?",
@@ -73,7 +74,8 @@
         {
           "ask": "What do we keep inside a folder on a computer?",
           "answer": "Files",
-          "distractors": ["Wires", "Batteries", "Buttons"]
+          "distractors": ["Wires", "Batteries", "Buttons"],
+          "model": "folder"
         }
       ]
     }

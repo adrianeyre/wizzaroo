@@ -16,17 +16,20 @@
         {
           "ask": "Why is a whale classified as a mammal, not a fish?",
           "answer": "It feeds young milk",
-          "distractors": ["It has fins", "It lives in the sea", "It can swim"]
+          "distractors": ["It has fins", "It lives in the sea", "It can swim"],
+          "model": "whale"
         },
         {
           "ask": "Why is a bat classified as a mammal, not a bird?",
           "answer": "It has fur",
-          "distractors": ["It can fly", "It has wings", "It eats insects"]
+          "distractors": ["It can fly", "It has wings", "It eats insects"],
+          "model": "bat"
         },
         {
           "ask": "Why is a penguin classified as a bird?",
           "answer": "It has feathers",
-          "distractors": ["It can swim", "It cannot fly", "It lives in cold"]
+          "distractors": ["It can swim", "It cannot fly", "It lives in cold"],
+          "model": "penguin"
         },
         {
           "ask": "Why is a spider not classified as an insect?",
@@ -36,22 +39,26 @@
         {
           "ask": "Why is a snake classified as a reptile?",
           "answer": "Dry, scaly skin",
-          "distractors": ["It has no legs", "It is long", "It eats mice"]
+          "distractors": ["It has no legs", "It is long", "It eats mice"],
+          "model": "snake"
         },
         {
           "ask": "Why is a frog classified as an amphibian?",
           "answer": "Starts as a tadpole",
-          "distractors": ["It can jump", "It is green", "It eats flies"]
+          "distractors": ["It can jump", "It is green", "It eats flies"],
+          "model": "frog"
         },
         {
           "ask": "Why is a fern not classified as a flowering plant?",
           "answer": "It makes spores",
-          "distractors": ["It is green", "It has leaves", "It has roots"]
+          "distractors": ["It is green", "It has leaves", "It has roots"],
+          "model": "fern"
         },
         {
           "ask": "Why is a pine tree classified as a conifer?",
           "answer": "It makes cones",
-          "distractors": ["It is tall", "It has a trunk", "It has roots"]
+          "distractors": ["It is tall", "It has a trunk", "It has roots"],
+          "model": "pine-tree"
         },
         {
           "ask": "Why is a mushroom not classified as a plant?",
@@ -60,7 +67,8 @@
             "It has no colour",
             "It is small",
             "It grows in grass"
-          ]
+          ],
+          "model": "mushroom"
         },
         {
           "ask": "Why are insects, spiders and worms all classified as invertebrates?",
@@ -73,7 +81,7 @@
       "id": "evidence-detective",
       "title": "Evidence Detective",
       "station": "compare",
-      "prop": "fossil",
+      "prop": "magnifier",
       "skillName": "Using evidence to support or refute scientific ideas",
       "strand": "working-scientifically",
       "statutoryRequirement": "Pupils should be taught to identify scientific evidence that has been used to support or refute ideas or arguments; recognise that living things have changed over time and that fossils provide information about living things that inhabited the Earth millions of years ago",
@@ -92,7 +100,8 @@
             "Shells can climb",
             "Birds dropped them",
             "Snails live there"
-          ]
+          ],
+          "model": "fossil"
         },
         {
           "ask": "Dinosaur fossils are found in much older rock than human fossils. What does this show?",
@@ -106,7 +115,8 @@
         {
           "ask": "Darwin saw finches with different beaks on different islands. Which idea did this support?",
           "answer": "Evolution",
-          "distractors": ["Gravity", "Magnetism", "The water cycle"]
+          "distractors": ["Gravity", "Magnetism", "The water cycle"],
+          "model": "finch"
         },
         {
           "ask": "Some people once thought the Earth was flat. Which evidence refutes this?",
@@ -125,7 +135,8 @@
             "Horses never change",
             "Toes grow back",
             "It was a dog"
-          ]
+          ],
+          "model": "early-horse"
         },
         {
           "ask": "When is a scientific idea best supported?",
@@ -148,7 +159,12 @@
         {
           "ask": "Peppered moths became darker when soot covered tree bark. Which idea does this support?",
           "answer": "Natural selection",
-          "distractors": ["Moths paint wings", "Moths like the dark", "Gravity"]
+          "distractors": [
+            "Moths paint wings",
+            "Moths like the dark",
+            "Gravity"
+          ],
+          "model": "peppered-moth"
         }
       ]
     }

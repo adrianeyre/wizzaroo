@@ -21,7 +21,8 @@
         {
           "ask": "Which is the best way to join fabric for a hand puppet?",
           "answer": "Sewing",
-          "distractors": ["Glue stick", "Paper clip", "Split pin"]
+          "distractors": ["Glue stick", "Paper clip", "Split pin"],
+          "model": "hand-puppet"
         },
         {
           "ask": "Which holds sheets of paper for a short time?",
@@ -137,12 +138,14 @@
         {
           "ask": "If a bag must hold three books, test it with three books.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "school-bag"
         },
         {
           "ask": "A pencil pot for a desk does not need to stand up.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "pencil-pot"
         },
         {
           "ask": "Knowing who will use a product helps you design it.",
@@ -167,7 +170,8 @@
         {
           "ask": "A puppet for a small hand should be huge.",
           "answer": "False",
-          "distractors": ["True"]
+          "distractors": ["True"],
+          "model": "hand-puppet"
         },
         {
           "ask": "Asking the user what they like can help your design.",
@@ -241,7 +245,7 @@
       "id": "dt-moving-pictures",
       "title": "Moving Picture Maker",
       "station": "sort",
-      "prop": "magnet",
+      "prop": "gear",
       "skillName": "Choosing a mechanism for a movement",
       "strand": "mechanisms",
       "statutoryRequirement": "Pupils should be taught to explore and use mechanisms [for example, levers, sliders, wheels and axles], in their products",
@@ -281,7 +285,8 @@
         {
           "ask": "A door handle that you push down to open the door. Which group?",
           "answer": "Lever",
-          "distractors": ["Slider", "Wheel and axle", "Spring"]
+          "distractors": ["Slider", "Wheel and axle", "Spring"],
+          "model": "door-handle"
         },
         {
           "ask": "A picture of a fish swims along a straight slot. Which group?",
@@ -294,7 +299,7 @@
       "id": "dt-axle-workshop",
       "title": "Axle Workshop",
       "station": "true-false",
-      "prop": "planet",
+      "prop": "gear",
       "skillName": "Making wheels and axles work",
       "strand": "mechanisms",
       "statutoryRequirement": "Pupils should be taught to explore and use mechanisms [for example, levers, sliders, wheels and axles], in their products",
@@ -329,7 +334,8 @@
         {
           "ask": "A drinking straw can be used as an axle holder.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "drinking-straw"
         },
         {
           "ask": "Wheels on one axle should match in size for a car to roll straight.",
@@ -347,7 +353,7 @@
       "id": "dt-bridge-builders",
       "title": "Bridge Builders",
       "station": "compare",
-      "prop": "prism",
+      "prop": "hard-hat",
       "skillName": "Making structures stronger and stiffer",
       "strand": "structures",
       "statutoryRequirement": "Pupils should be taught to build structures, exploring how they can be made stronger, stiffer and more stable",
@@ -414,22 +420,26 @@
         {
           "ask": "A bag must hold 3 books. It tore with 2. What next?",
           "answer": "Make it stronger",
-          "distractors": ["Make it smaller", "Paint it", "Say it is fine"]
+          "distractors": ["Make it smaller", "Paint it", "Say it is fine"],
+          "model": "school-bag"
         },
         {
           "ask": "A puppet must fit a hand but it is too small. What next?",
           "answer": "Make it bigger",
-          "distractors": ["Make it smaller", "Add glitter", "Give up"]
+          "distractors": ["Make it smaller", "Add glitter", "Give up"],
+          "model": "hand-puppet"
         },
         {
           "ask": "A car must roll 1 metre. It rolled 2 metres. Did it pass?",
           "answer": "Yes",
-          "distractors": ["No", "Not tested", "Cannot tell"]
+          "distractors": ["No", "Not tested", "Cannot tell"],
+          "model": "toy-car"
         },
         {
           "ask": "A boat must float. It sank. Did it meet the criteria?",
           "answer": "No",
-          "distractors": ["Yes", "Nearly", "Not tested"]
+          "distractors": ["Yes", "Nearly", "Not tested"],
+          "model": "boat"
         },
         {
           "ask": "Which question checks a pencil pot works?",
@@ -510,7 +520,7 @@
       "id": "dt-where-food-grows",
       "title": "Where Food Grows",
       "station": "sort",
-      "prop": "tree",
+      "prop": "shopping-basket",
       "skillName": "Sorting foods by where they come from",
       "strand": "food-origins",
       "statutoryRequirement": "Pupils should be taught to understand where food comes from",
@@ -520,47 +530,64 @@
         {
           "ask": "Which group does a potato belong in?",
           "answer": "Grows underground",
-          "distractors": ["Grows on a tree", "Farm animal", "The sea"]
+          "distractors": ["Grows on a tree", "Farm animal", "The sea"],
+          "model": "potato"
         },
         {
           "ask": "Which group does an apple belong in?",
           "answer": "Grows on a tree",
-          "distractors": ["Grows underground", "Farm animal", "The sea"]
+          "distractors": ["Grows underground", "Farm animal", "The sea"],
+          "model": "apple"
         },
         {
           "ask": "Which group does bacon belong in?",
           "answer": "Farm animal",
-          "distractors": ["Grows on a tree", "Grows underground", "The sea"]
+          "distractors": ["Grows on a tree", "Grows underground", "The sea"],
+          "model": "bacon"
         },
         {
           "ask": "Which group does a cod belong in?",
           "answer": "The sea",
-          "distractors": ["Grows on a tree", "Grows underground", "Farm animal"]
+          "distractors": [
+            "Grows on a tree",
+            "Grows underground",
+            "Farm animal"
+          ],
+          "model": "fish"
         },
         {
           "ask": "Which group does a carrot belong in?",
           "answer": "Grows underground",
-          "distractors": ["Grows on a tree", "Farm animal", "The sea"]
+          "distractors": ["Grows on a tree", "Farm animal", "The sea"],
+          "model": "carrot"
         },
         {
           "ask": "Which group does a cherry belong in?",
           "answer": "Grows on a tree",
-          "distractors": ["Grows underground", "Farm animal", "The sea"]
+          "distractors": ["Grows underground", "Farm animal", "The sea"],
+          "model": "cherry"
         },
         {
           "ask": "Which group does milk belong in?",
           "answer": "Farm animal",
-          "distractors": ["Grows on a tree", "Grows underground", "The sea"]
+          "distractors": ["Grows on a tree", "Grows underground", "The sea"],
+          "model": "milk"
         },
         {
           "ask": "Which group do prawns belong in?",
           "answer": "The sea",
-          "distractors": ["Grows on a tree", "Grows underground", "Farm animal"]
+          "distractors": [
+            "Grows on a tree",
+            "Grows underground",
+            "Farm animal"
+          ],
+          "model": "prawn"
         },
         {
           "ask": "Which group does an onion belong in?",
           "answer": "Grows underground",
-          "distractors": ["Grows on a tree", "Farm animal", "The sea"]
+          "distractors": ["Grows on a tree", "Farm animal", "The sea"],
+          "model": "onion"
         }
       ]
     }

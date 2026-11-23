@@ -90,7 +90,8 @@ export interface LabGame {
   title: string;
   yearGroup: YearGroup;
   station: LabStation;
-  prop: LabProp;
+  /** What the turntable shows for a question that names no model of its own. */
+  prop: LabModel;
   skillName: string;
   strand: string;
   statutoryRequirement: string;
@@ -318,9 +319,9 @@ const parseGame = (
     );
   }
   const prop = fields.get("prop");
-  if (!isLabProp(prop)) {
+  if (!isLabModel(prop)) {
     throw new InvalidCurriculumFileError(
-      `Lab game "${id}" needs a prop, one of ${labProps.join(", ")}`,
+      `Lab game "${id}" needs a prop: one of ${labProps.join(", ")}, or a lab item`,
     );
   }
   const strand = fields.get("strand");

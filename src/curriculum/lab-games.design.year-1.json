@@ -36,7 +36,8 @@
         {
           "ask": "Which tool is best for stirring a cake mix?",
           "answer": "Wooden spoon",
-          "distractors": ["Scissors", "Hole punch", "Ruler"]
+          "distractors": ["Scissors", "Hole punch", "Ruler"],
+          "model": "mixing-bowl"
         },
         {
           "ask": "Which tool measures how long a strip of card is?",
@@ -55,12 +56,14 @@
             "Open and pointing up",
             "Waving them about",
             "Running with them"
-          ]
+          ],
+          "model": "scissors"
         },
         {
           "ask": "Which tool spreads butter on bread safely?",
           "answer": "Butter knife",
-          "distractors": ["Whisk", "Ruler", "Hole punch"]
+          "distractors": ["Whisk", "Ruler", "Hole punch"],
+          "model": "slice-of-bread"
         }
       ]
     },
@@ -78,47 +81,56 @@
         {
           "ask": "Which group does a T-shirt usually belong in?",
           "answer": "Fabric",
-          "distractors": ["Metal", "Wood", "Glass"]
+          "distractors": ["Metal", "Wood", "Glass"],
+          "model": "t-shirt"
         },
         {
           "ask": "Which group does a window pane usually belong in?",
           "answer": "Glass",
-          "distractors": ["Fabric", "Paper", "Wood"]
+          "distractors": ["Fabric", "Paper", "Wood"],
+          "model": "window-pane"
         },
         {
           "ask": "Which group does a saucepan usually belong in?",
           "answer": "Metal",
-          "distractors": ["Paper", "Fabric", "Card"]
+          "distractors": ["Paper", "Fabric", "Card"],
+          "model": "saucepan"
         },
         {
           "ask": "Which group does a cereal box belong in?",
           "answer": "Card",
-          "distractors": ["Metal", "Glass", "Fabric"]
+          "distractors": ["Metal", "Glass", "Fabric"],
+          "model": "cereal-box"
         },
         {
           "ask": "Which group does a seaside bucket usually belong in?",
           "answer": "Plastic",
-          "distractors": ["Paper", "Glass", "Fabric"]
+          "distractors": ["Paper", "Glass", "Fabric"],
+          "model": "bucket-and-spade"
         },
         {
           "ask": "Which group does a sock belong in?",
           "answer": "Fabric",
-          "distractors": ["Glass", "Metal", "Card"]
+          "distractors": ["Glass", "Metal", "Card"],
+          "model": "sock"
         },
         {
           "ask": "Which group does a paper clip belong in?",
           "answer": "Metal",
-          "distractors": ["Fabric", "Card", "Wood"]
+          "distractors": ["Fabric", "Card", "Wood"],
+          "model": "paper-clip"
         },
         {
           "ask": "Which group does a page in a book belong in?",
           "answer": "Paper",
-          "distractors": ["Metal", "Glass", "Plastic"]
+          "distractors": ["Metal", "Glass", "Plastic"],
+          "model": "book"
         },
         {
           "ask": "Which group does a garden fence usually belong in?",
           "answer": "Wood",
-          "distractors": ["Paper", "Glass", "Fabric"]
+          "distractors": ["Paper", "Glass", "Fabric"],
+          "model": "garden-fence"
         }
       ]
     },
@@ -136,47 +148,56 @@
         {
           "ask": "Which group does an apple belong in?",
           "answer": "Fruit and veg",
-          "distractors": ["Starchy food", "Dairy", "Eat less often"]
+          "distractors": ["Starchy food", "Dairy", "Eat less often"],
+          "model": "apple"
         },
         {
           "ask": "Which group does bread belong in?",
           "answer": "Starchy food",
-          "distractors": ["Fruit and veg", "Protein", "Dairy"]
+          "distractors": ["Fruit and veg", "Protein", "Dairy"],
+          "model": "bread"
         },
         {
           "ask": "Which group does cheese belong in?",
           "answer": "Dairy",
-          "distractors": ["Starchy food", "Fruit and veg", "Protein"]
+          "distractors": ["Starchy food", "Fruit and veg", "Protein"],
+          "model": "cheese"
         },
         {
           "ask": "Which group does fish belong in?",
           "answer": "Protein",
-          "distractors": ["Dairy", "Starchy food", "Fruit and veg"]
+          "distractors": ["Dairy", "Starchy food", "Fruit and veg"],
+          "model": "fish"
         },
         {
           "ask": "Which group do sweets belong in?",
           "answer": "Eat less often",
-          "distractors": ["Fruit and veg", "Protein", "Dairy"]
+          "distractors": ["Fruit and veg", "Protein", "Dairy"],
+          "model": "sweet"
         },
         {
           "ask": "Which group does pasta belong in?",
           "answer": "Starchy food",
-          "distractors": ["Protein", "Dairy", "Eat less often"]
+          "distractors": ["Protein", "Dairy", "Eat less often"],
+          "model": "pasta"
         },
         {
           "ask": "Which group does a carrot belong in?",
           "answer": "Fruit and veg",
-          "distractors": ["Dairy", "Protein", "Eat less often"]
+          "distractors": ["Dairy", "Protein", "Eat less often"],
+          "model": "carrot"
         },
         {
           "ask": "Which group do eggs belong in?",
           "answer": "Protein",
-          "distractors": ["Fruit and veg", "Starchy food", "Eat less often"]
+          "distractors": ["Fruit and veg", "Starchy food", "Eat less often"],
+          "model": "egg"
         },
         {
           "ask": "Which group does yoghurt belong in?",
           "answer": "Dairy",
-          "distractors": ["Starchy food", "Eat less often", "Fruit and veg"]
+          "distractors": ["Starchy food", "Eat less often", "Fruit and veg"],
+          "model": "yoghurt"
         }
       ]
     },
@@ -194,22 +215,26 @@
         {
           "ask": "I come from cows and I am white. What am I?",
           "answer": "Milk",
-          "distractors": ["Juice", "Flour", "Honey"]
+          "distractors": ["Juice", "Flour", "Honey"],
+          "model": "cow"
         },
         {
           "ask": "Bees make me from the nectar of flowers. What am I?",
           "answer": "Honey",
-          "distractors": ["Milk", "Jam", "Butter"]
+          "distractors": ["Milk", "Jam", "Butter"],
+          "model": "bee"
         },
         {
           "ask": "Hens lay me. What am I?",
           "answer": "Egg",
-          "distractors": ["Apple", "Potato", "Cheese"]
+          "distractors": ["Apple", "Potato", "Cheese"],
+          "model": "hen"
         },
         {
           "ask": "I am made by grinding wheat and I am used to make bread. What am I?",
           "answer": "Flour",
-          "distractors": ["Sugar", "Salt", "Rice"]
+          "distractors": ["Sugar", "Salt", "Rice"],
+          "model": "wheat"
         },
         {
           "ask": "I grow under the ground and can be mashed or made into chips. What am I?",
@@ -242,7 +267,7 @@
       "id": "dt-who-is-it-for",
       "title": "Who Is It For?",
       "station": "compare",
-      "prop": "heart",
+      "prop": "bulb",
       "skillName": "Designing for a user and purpose",
       "strand": "design-criteria",
       "statutoryRequirement": "Pupils should be taught to design purposeful, functional, appealing products for themselves and other users based on design criteria",
@@ -252,7 +277,8 @@
         {
           "ask": "Who is a rattle designed for?",
           "answer": "A baby",
-          "distractors": ["A pilot", "A chef", "A builder"]
+          "distractors": ["A pilot", "A chef", "A builder"],
+          "model": "rattle"
         },
         {
           "ask": "A cup for a toddler should be...",
@@ -262,12 +288,14 @@
         {
           "ask": "Why does a raincoat need to be waterproof?",
           "answer": "To keep you dry",
-          "distractors": ["To keep you wet", "To look shiny", "To be heavy"]
+          "distractors": ["To keep you wet", "To look shiny", "To be heavy"],
+          "model": "raincoat"
         },
         {
           "ask": "A bag for carrying books needs to be...",
           "answer": "Strong",
-          "distractors": ["See-through", "Tiny", "Made of tissue"]
+          "distractors": ["See-through", "Tiny", "Made of tissue"],
+          "model": "school-bag"
         },
         {
           "ask": "What is a sun hat with a wide brim for?",
@@ -276,12 +304,14 @@
             "Keeping ears wet",
             "Carrying shopping",
             "Holding pencils"
-          ]
+          ],
+          "model": "sun-hat"
         },
         {
           "ask": "A lunchbox needs a lid that...",
           "answer": "Closes tightly",
-          "distractors": ["Falls off", "Has big holes", "Is made of paper"]
+          "distractors": ["Falls off", "Has big holes", "Is made of paper"],
+          "model": "lunchbox"
         },
         {
           "ask": "Party hats for a birthday should look...",
@@ -314,7 +344,8 @@
         {
           "ask": "Why does a toothbrush have a long handle?",
           "answer": "To reach your teeth",
-          "distractors": ["To look tall", "To be heavy", "To float"]
+          "distractors": ["To look tall", "To be heavy", "To float"],
+          "model": "toothbrush"
         },
         {
           "ask": "Why are wellies made of rubber?",
@@ -323,22 +354,26 @@
             "It is see-through",
             "It is soft like wool",
             "It is crunchy"
-          ]
+          ],
+          "model": "wellington-boot"
         },
         {
           "ask": "Why do scissors for children have rounded tips?",
           "answer": "To be safer",
-          "distractors": ["To cut faster", "To look funny", "To be heavier"]
+          "distractors": ["To cut faster", "To look funny", "To be heavier"],
+          "model": "safety-scissors"
         },
         {
           "ask": "Why does a mug have a handle?",
           "answer": "Easy to hold",
-          "distractors": ["To look tall", "To make it heavy", "To pour faster"]
+          "distractors": ["To look tall", "To make it heavy", "To pour faster"],
+          "model": "mug"
         },
         {
           "ask": "Why is a bike helmet hard?",
           "answer": "To protect your head",
-          "distractors": ["To keep you cool", "To look shiny", "To be noisy"]
+          "distractors": ["To keep you cool", "To look shiny", "To be noisy"],
+          "model": "bike-helmet"
         },
         {
           "ask": "Why is a teddy bear made of soft fabric?",
@@ -347,7 +382,8 @@
             "To be waterproof",
             "To be hard as metal",
             "To be heavy"
-          ]
+          ],
+          "model": "teddy-bear"
         },
         {
           "ask": "When you test a product, what should you ask?",
@@ -361,12 +397,14 @@
         {
           "ask": "Why does a lunchbox have a clip on the lid?",
           "answer": "To keep it shut",
-          "distractors": ["To make it heavy", "To look old", "To let food out"]
+          "distractors": ["To make it heavy", "To look old", "To let food out"],
+          "model": "lunchbox"
         },
         {
           "ask": "Why do many drink bottles have a screw lid?",
           "answer": "To stop spills",
-          "distractors": ["To make noise", "To look tall", "To make it hot"]
+          "distractors": ["To make noise", "To look tall", "To make it hot"],
+          "model": "drink-bottle"
         }
       ]
     },
@@ -374,7 +412,7 @@
       "id": "dt-slide-and-lever",
       "title": "Slide And Lever Lab",
       "station": "sort",
-      "prop": "magnet",
+      "prop": "gear",
       "skillName": "Telling levers from sliders",
       "strand": "mechanisms",
       "statutoryRequirement": "Pupils should be taught to explore and use mechanisms [for example, levers, sliders, wheels and axles], in their products",
@@ -394,12 +432,14 @@
         {
           "ask": "A drawer moves in and out in a straight line. Which group?",
           "answer": "Slider",
-          "distractors": ["Lever", "Wheel", "Spring"]
+          "distractors": ["Lever", "Wheel", "Spring"],
+          "model": "chest-of-drawers"
         },
         {
           "ask": "A seesaw tips up and down around its middle. Which group?",
           "answer": "Lever",
-          "distractors": ["Slider", "Wheel", "Spring"]
+          "distractors": ["Slider", "Wheel", "Spring"],
+          "model": "seesaw"
         },
         {
           "ask": "A toy car rolls along on round parts. Which group?",
@@ -432,7 +472,7 @@
       "id": "dt-wheels-on-the-go",
       "title": "Wheels On The Go",
       "station": "compare",
-      "prop": "planet",
+      "prop": "gear",
       "skillName": "Using wheels and axles",
       "strand": "mechanisms",
       "statutoryRequirement": "Pupils should be taught to explore and use mechanisms [for example, levers, sliders, wheels and axles], in their products",
@@ -494,7 +534,7 @@
       "id": "dt-tower-test",
       "title": "Tower Test",
       "station": "true-false",
-      "prop": "prism",
+      "prop": "hard-hat",
       "skillName": "Making structures strong and stable",
       "strand": "structures",
       "statutoryRequirement": "Pupils should be taught to build structures, exploring how they can be made stronger, stiffer and more stable",
@@ -539,7 +579,8 @@
         {
           "ask": "A bridge is a kind of structure.",
           "answer": "True",
-          "distractors": ["False"]
+          "distractors": ["False"],
+          "model": "bridge"
         },
         {
           "ask": "Joining card with lots of tape can make a model stronger.",
