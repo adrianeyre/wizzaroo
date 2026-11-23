@@ -191,3 +191,48 @@ export const readAloud = (
   });
   return true;
 };
+
+/**
+ * Says one of a Game's recorded lines, such as its opening question, in the
+ * Child's chosen voice, when the device already has that voice (ADR 0075).
+ * False when it can't, so the line's recording plays instead: on a device
+ * that can't run Piper, or before the chosen voice has arrived. A voice the
+ * device hasn't got yet starts downloading then, so the lines after it are
+ * heard in it, and a Game never sits silent while one downloads.
+ */
+export const readLineInChosenVoice = (
+  text: string,
+  reader: string,
+  voiceName: ReadAloudVoiceName = loadReadAloudVoiceName(),
+): boolean => {
+  const words = toSpokenWords(text);
+  if (!isPiperOffered() || words === "") {
+    return false;
+  }
+  const voice = findReadAloudVoice(voiceName);
+  const { state } = findVoiceDownload(voice.model);
+  if (state !== "downloaded") {
+    if (state === "not-downloaded") {
+      downloadVoice(voice.model);
+    }
+    return false;
+  }
+  for (const listener of startListeners) {
+    listener();
+  }
+  stopReadingAloud();
+  const ask = { reader };
+  waitingFor = ask;
+  setSpeakingReader(reader);
+  const finish = () => {
+    if (waitingFor === ask) {
+      waitingFor = undefined;
+      setSpeakingReader(undefined);
+    }
+  };
+  if (speakWithPiper(voice, words, finish)) {
+    return true;
+  }
+  finish();
+  return false;
+};

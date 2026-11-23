@@ -4,7 +4,13 @@ import {
   findSoundOfPhonemeFile,
 } from "./voice-over-files.js";
 import voiceOverLines from "./voice-over-lines.json" with { type: "json" };
-import { stopReadingAloud, whenReadingAloudStarts } from "./read-aloud.js";
+import {
+  findSpeakingReader,
+  readLineInChosenVoice,
+  stopReadingAloud,
+  subscribeToReadingAloud,
+  whenReadingAloudStarts,
+} from "./read-aloud.js";
 
 export type VoiceOverKey = keyof typeof voiceOverLines;
 
@@ -135,8 +141,20 @@ const playAudio = async (url: string): Promise<void> => {
   }
 };
 
-export const playVoiceOver = (key: VoiceOverKey): Promise<void> =>
-  playAudio(heldVoiceOverUrls.get(key) ?? getVoiceOverUrl(key));
+/** Marks a Game's line while the chosen voice says it, rather than a Read it to me button's words. */
+const voiceOverReader = "voice-over";
+
+/**
+ * Says a Game's line, such as the question it opens with, in the voice the
+ * Child chose on Settings when the device has it, or else plays the line's
+ * recording (ADR 0075).
+ */
+export const playVoiceOver = (key: VoiceOverKey): Promise<void> => {
+  if (readLineInChosenVoice(voiceOverLines[key], voiceOverReader)) {
+    return Promise.resolve();
+  }
+  return playAudio(heldVoiceOverUrls.get(key) ?? getVoiceOverUrl(key));
+};
 
 export const playPhoneme = (sound: PhonicsSound): Promise<void> => {
   const url = phonemeUrls.get(sound);
@@ -146,7 +164,22 @@ export const playPhoneme = (sound: PhonicsSound): Promise<void> => {
   return playAudio(url);
 };
 
+const waitForChosenVoiceToEnd = (): Promise<void> =>
+  new Promise((resolve) => {
+    const unsubscribe = subscribeToReadingAloud(() => {
+      if (findSpeakingReader() !== voiceOverReader) {
+        unsubscribe();
+        resolve();
+      }
+    });
+  });
+
 export const waitForVoiceOverToEnd = (): Promise<void> =>
+  findSpeakingReader() === voiceOverReader
+    ? waitForChosenVoiceToEnd()
+    : waitForRecordingToEnd();
+
+const waitForRecordingToEnd = (): Promise<void> =>
   new Promise((resolve) => {
     const speaker = voiceOverSpeaker;
     if (speaker === undefined || speaker.paused || speaker.ended) {
