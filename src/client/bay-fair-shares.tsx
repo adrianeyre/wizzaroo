@@ -217,7 +217,13 @@ const buildPartsPlan = (
 
 const scaleWidth = 2.6;
 
-const buildScalePlan = (length: number, factor: number): SharePlan => {
+// When the scale factor is the question, the enlarged bar is drawn whole and labelled "× ?": splitting it into one
+// segment for each time bigger, or writing the factor, would give the answer away.
+const buildScalePlan = ({
+  length,
+  factor,
+  isFactorAsked,
+}: Extract<SharePicture, { kind: "scale" }>): SharePlan => {
   const unit = Math.min(0.28, scaleWidth / (length * factor));
   const segmentWidth = length * unit;
   return {
@@ -231,12 +237,23 @@ const buildScalePlan = (length: number, factor: number): SharePlan => {
       scale: [unit * 0.9, 0.24, 0.16],
       colour: picturePalette.gold,
     })),
-    ghostBlocks: Array.from({ length: factor }, (_, index): Piece => ({
-      position: [(index - (factor - 1) / 2) * segmentWidth, -0.15, 0.05],
-      scale: [segmentWidth * 0.94, 0.3, 0.16],
-      colour: index % 2 === 0 ? picturePalette.blue : picturePalette.ghost,
-    })),
-    label: { text: `× ${String(factor)}`, position: [0, -0.62, 0.2] },
+    ghostBlocks: isFactorAsked
+      ? [
+          {
+            position: [0, -0.15, 0.05],
+            scale: [segmentWidth * factor * 0.98, 0.3, 0.16],
+            colour: picturePalette.blue,
+          },
+        ]
+      : Array.from({ length: factor }, (_, index): Piece => ({
+          position: [(index - (factor - 1) / 2) * segmentWidth, -0.15, 0.05],
+          scale: [segmentWidth * 0.94, 0.3, 0.16],
+          colour: index % 2 === 0 ? picturePalette.blue : picturePalette.ghost,
+        })),
+    label: {
+      text: `× ${isFactorAsked ? "?" : String(factor)}`,
+      position: [0, -0.62, 0.2],
+    },
   };
 };
 
@@ -257,7 +274,7 @@ export const buildSharePlan = (picture: SharePicture): SharePlan => {
         picture.secondParts,
       );
     case "scale":
-      return buildScalePlan(picture.length, picture.factor);
+      return buildScalePlan(picture);
     case "pairs":
       return emptyPlan;
   }

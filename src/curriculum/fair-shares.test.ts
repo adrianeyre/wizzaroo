@@ -111,12 +111,19 @@ describe("buildFairShareQuestions", () => {
     }
   });
 
-  it("finds the blue shells from the red ones, for every group in the ratio", () => {
+  it("finds the blue pearls from the red ones, for every group in the ratio", () => {
     for (const { picture, answer } of buildFairShareQuestions(6, 1)) {
       if (picture.kind !== "ratio") {
         throw new Error("Year 6 ratio questions should show the ratio");
       }
       expect(Number(answer)).toBe(picture.second * picture.groupCount);
+    }
+  });
+
+  it("asks about the red and blue pearls the ratio picture draws, not shells", () => {
+    for (const { ask } of buildFairShareQuestions(6, 1)) {
+      expect(ask).toMatch(/How many blue pearls are there\?$/);
+      expect(ask).not.toContain("shell");
     }
   });
 });

@@ -12,7 +12,7 @@ export type SharePicture =
   | { kind: "array"; rows: number; columns: number }
   | { kind: "pairs" }
   | { kind: "ratio"; groupCount: number; first: number; second: number }
-  | { kind: "scale"; length: number; factor: number }
+  | { kind: "scale"; length: number; factor: number; isFactorAsked: boolean }
   | { kind: "parts"; total: number; firstParts: number; secondParts: number };
 
 export type FairShareQuestion = PictureQuestion<SharePicture>;
@@ -129,7 +129,7 @@ const buildRatio = (
   groupCount: number,
 ): FairShareQuestion =>
   buildNumberQuestion(
-    `For every ${formatNumber(first)} red ${first === 1 ? "shell" : "shells"} there ${second === 1 ? "is" : "are"} ${formatNumber(second)} blue. There are ${formatNumber(first * groupCount)} red shells. How many blue shells are there?`,
+    `For every ${formatNumber(first)} red ${first === 1 ? "pearl" : "pearls"} there ${second === 1 ? "is" : "are"} ${formatNumber(second)} blue. There are ${formatNumber(first * groupCount)} red pearls. How many blue pearls are there?`,
     { kind: "ratio", groupCount, first, second },
     second * groupCount,
     [
@@ -145,7 +145,7 @@ const buildRatio = (
 const buildScaleUp = (length: number, factor: number): FairShareQuestion =>
   buildNumberQuestion(
     `A model boat is ${formatNumber(length)} cm long. A bigger boat is the same shape, scaled by a factor of ${formatNumber(factor)}. How long is it?`,
-    { kind: "scale", length, factor },
+    { kind: "scale", length, factor, isFactorAsked: false },
     length * factor,
     [
       length + factor,
@@ -162,7 +162,12 @@ const buildMapScale = (
 ): FairShareQuestion =>
   buildNumberQuestion(
     `On a map, 1 cm stands for ${formatNumber(metresPerCentimetre)} m. Two rocks are ${formatNumber(length)} cm apart on the map. How far apart are they really?`,
-    { kind: "scale", length, factor: metresPerCentimetre },
+    {
+      kind: "scale",
+      length,
+      factor: metresPerCentimetre,
+      isFactorAsked: false,
+    },
     length * metresPerCentimetre,
     [
       length + metresPerCentimetre,
@@ -176,7 +181,7 @@ const buildMapScale = (
 const buildScaleFactor = (length: number, factor: number): FairShareQuestion =>
   buildNumberQuestion(
     `A ${formatNumber(length)} cm shell is enlarged to ${formatNumber(length * factor)} cm. What is the scale factor?`,
-    { kind: "scale", length, factor },
+    { kind: "scale", length, factor, isFactorAsked: true },
     factor,
     [length * factor - length, factor + 1, factor - 1, length, factor * 2],
   );
