@@ -143,10 +143,11 @@ export const mergePaintedGeometries = (
   return merged;
 };
 
+// Low-poly, since a count of 99 draws 99 of them: nine shoals of ten and nine more.
 export const buildSmallFishGeometry = (length: number): BufferGeometry =>
   mergePaintedGeometries([
     {
-      geometry: new SphereGeometry(1, 10, 6).scale(
+      geometry: new SphereGeometry(1, 6, 3).scale(
         length * 0.5,
         length * 0.32,
         length * 0.24,
@@ -154,13 +155,13 @@ export const buildSmallFishGeometry = (length: number): BufferGeometry =>
       colour: placeValuePalette.fishBody,
     },
     {
-      geometry: new ConeGeometry(length * 0.26, length * 0.3, 6)
+      geometry: new ConeGeometry(length * 0.26, length * 0.3, 3, 1, true)
         .rotateZ(Math.PI / 2)
         .translate(-length * 0.6, 0, 0),
       colour: placeValuePalette.fishBody,
     },
     {
-      geometry: new SphereGeometry(length * 0.07, 5, 4).translate(
+      geometry: new SphereGeometry(length * 0.07, 3, 2).translate(
         length * 0.27,
         length * 0.08,
         length * 0.17,
@@ -168,6 +169,26 @@ export const buildSmallFishGeometry = (length: number): BufferGeometry =>
       colour: placeValuePalette.fishEye,
     },
   ]);
+
+// A ten drawn as ten fish stacked nose over nose, the height of a ten-rod, so every fish a "How many fish?" asks about
+// is in the picture while the tens still stand apart from the ones.
+export const buildTenShoalGeometry = (
+  fishLength: number,
+  unit: number,
+): BufferGeometry => {
+  const fish = Array.from({ length: unitsInATen }, (_, index) =>
+    buildSmallFishGeometry(fishLength).translate(
+      0,
+      (index - (unitsInATen - 1) / 2) * unit,
+      0,
+    ),
+  );
+  const shoal = mergeGeometries(fish);
+  fish.forEach((one) => {
+    one.dispose();
+  });
+  return shoal;
+};
 
 export const placeSpots = (
   mesh: InstancedMesh | null,
@@ -251,16 +272,21 @@ export const Plinth = ({ width, y }: { width: number; y: number }) => {
 const schoolUnit = 0.155;
 const appearStaggerSeconds = 0.06;
 const fishLength = schoolUnit * 1.6;
+const shoalFishLength = schoolUnit * 1.2;
+const pickShade = (index: number) =>
+  placeValuePalette.fishShades[index % placeValuePalette.fishShades.length];
 const pickFishShade = (index: number) =>
-  placeValuePalette.fishShades[
-    Math.floor(index / onesPerColumn) % placeValuePalette.fishShades.length
-  ];
+  pickShade(Math.floor(index / onesPerColumn));
 
 export const PlaceValueSchool = ({ count }: { count: number }) => {
   const position = usePromptPosition();
   const { age, motionScale } = usePromptGrowth();
   const sizes = useMemo(
-    () => ({ ...findPlaceValueSizes(schoolUnit), oneGap: fishLength * 1.25 }),
+    () => ({
+      ...findPlaceValueSizes(schoolUnit),
+      rodGap: shoalFishLength * 1.3,
+      oneGap: fishLength * 1.25,
+    }),
     [],
   );
   const { tens, ones } = splitTensAndOnes(count);
@@ -268,20 +294,27 @@ export const PlaceValueSchool = ({ count }: { count: number }) => {
     () => listPlaceValueSpots(tens, ones, sizes),
     [tens, ones, sizes],
   );
-  const rodGeometry = useTenRodGeometry(schoolUnit);
+  const shoalGeometry = useMemo(
+    () => buildTenShoalGeometry(shoalFishLength, schoolUnit),
+    [],
+  );
+  useDisposedOnUnmount(shoalGeometry);
   const fishGeometry = useMemo(() => buildSmallFishGeometry(fishLength), []);
   useDisposedOnUnmount(fishGeometry);
   const placer = useMemo(() => new Object3D(), []);
-  const rods = useRef<InstancedMesh>(null);
+  const shoals = useRef<InstancedMesh>(null);
   const fish = useRef<InstancedMesh>(null);
   const fishCount = layout.oneSpots.length;
   useEffect(() => {
     paintInstances(fish.current, fishCount, pickFishShade);
   }, [fishCount]);
+  useEffect(() => {
+    paintInstances(shoals.current, tens, pickShade);
+  }, [tens]);
 
   useFrame(() => {
     const time = age.current * motionScale;
-    placeSpots(rods.current, layout.rodSpots, placer, ([x], index) => ({
+    placeSpots(shoals.current, layout.rodSpots, placer, ([x], index) => ({
       offset: [0, Math.sin(time * 1.1 + x * 2) * 0.025, 0],
       scale: findGrowth(
         age.current - index * appearStaggerSeconds,
@@ -307,12 +340,17 @@ export const PlaceValueSchool = ({ count }: { count: number }) => {
   return (
     <group position={position} name="place-value-school">
       <instancedMesh
-        ref={rods}
-        args={[rodGeometry, undefined, unitsInATen]}
+        ref={shoals}
+        args={[shoalGeometry, undefined, unitsInATen]}
         frustumCulled={false}
-        name="ten-rods"
+        name="ten-shoals"
       >
-        <TenRodMaterial />
+        <meshPhysicalMaterial
+          vertexColors
+          roughness={0.3}
+          clearcoat={0.9}
+          clearcoatRoughness={0.12}
+        />
       </instancedMesh>
       <instancedMesh
         ref={fish}
