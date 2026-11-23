@@ -45,6 +45,7 @@ Every Game has a **Read it to me** button that reads its question out loud, and 
   - the chosen voice's character, for a phoneme.
 
   Its mouth opens with the loudness of the words, which `speaking-voice.ts` reads from Piper's samples or a decoded recording, and moves word by word for the device's own voice, which can't be measured. On Settings, the character on the stage talks instead.
+
 - **The server serves the voices from its own origin**, at `/voices/<fingerprint>/<file>`, from `VOICE_MODELS_DIRECTORY` (`voice-models/` by default). Fill it once with `pnpm download:voices`, which fetches every pinned file (about 510 MB) from Bryce Beattie's bucket or Hugging Face and refuses any that doesn't match its SHA-256; in Compose the `voices` service does it. In development (`pnpm dev`) you needn't: the server fetches, checks and keeps a missing voice the first time a device asks for it ([ADR 0067](../architectural-decision-record/0067-every-voice-reads-only-in-its-own-voice.md)). Production never fetches one itself, so a voice the `voices` service hasn't fetched shows **This voice couldn't be downloaded** on Settings. Changing a voice means changing its pin in `piper-voice-models.ts` and [`voice-licence.md`](../../src/client/voice-over/voice-licence.md) in the same commit.
 
 ## Phoneme recordings
