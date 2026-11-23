@@ -1,6 +1,6 @@
 {
   "name": "wizzaroo",
-  "version": "0.0.0-development",
+  "version": "1.5.1",
   "description": "A 3D learning game for primary-school children that teaches the UK National Curriculum (Years 1-6), built as an offline-first PWA for one family.",
   "license": "ISC",
   "private": true,
@@ -50,6 +50,8 @@
     "@ai-hero/sandcastle": "^0.14.0",
     "@eslint/js": "^10.0.1",
     "@react-three/test-renderer": "^9.1.1",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^11.0.1",
     "@testcontainers/postgresql": "^12.2.2",
     "@types/node": "^26.6.6",
     "@types/pg": "^8.23.1",

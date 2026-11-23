@@ -1,8 +1,10 @@
 name: Release
 
-# Runs only when a pull request is merged into main, which the ruleset on main
-# lets nothing else into. semantic-release tags the merge and makes a GitHub
-# Release; it commits nothing, so the token needs no way past the ruleset.
+# Runs when a pull request is merged into main. semantic-release sets
+# package.json's version, commits it to main as `chore(release): X.Y.Z [skip ci]`,
+# tags that commit and makes a GitHub Release. The ruleset on main blocks only
+# deletion and force pushes, so the GITHUB_TOKEN can push the release commit, and
+# a push by the GITHUB_TOKEN starts no workflow, so the commit doesn't release again.
 on:
   push:
     branches: [main]
