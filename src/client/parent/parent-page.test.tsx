@@ -2854,6 +2854,99 @@ describe("ParentPage", () => {
       });
     });
 
+    it("sets Games first from 2, 5, 10, 15 or 20 minutes, not set until a Parent chooses", async () => {
+      const { requests } = startFakeApi({
+        isSignedIn: true,
+        familyChildren: [bea],
+      });
+      await showDashboard();
+      expect(getPageText()).not.toContain("of Games first each day");
+      findButton("Set Bea's limits").click();
+      await vi.waitFor(() => {
+        expect(getPageText()).toContain(
+          "Games before the Wardrobe, Room and Explore",
+        );
+      });
+      const gamesFirstChoices = Array.from(
+        document.querySelectorAll<HTMLInputElement>('input[name="gamesFirst"]'),
+      );
+      expect(
+        gamesFirstChoices.map(({ value, checked }) => [value, checked]),
+      ).toEqual([
+        ["none", true],
+        ["2", false],
+        ["5", false],
+        ["10", false],
+        ["15", false],
+        ["20", false],
+        ["own", false],
+      ]);
+      expect(
+        document.querySelector('input[name="gamesFirstOwnMinutes"]'),
+      ).toBeNull();
+
+      findElement('input[name="gamesFirst"][value="10"]', isInput).click();
+      findButton("Save the limits").click();
+
+      await vi.waitFor(() => {
+        expect(requests).toContainEqual({
+          method: "PUT",
+          path: `/api/children/${bea.id}/limits`,
+          body: getParentChoices({ ...noLimits, gamesFirstMinutes: 10 }),
+        });
+      });
+      await vi.waitFor(() => {
+        expect(getPageText()).toContain(
+          "10 minutes of Games first each day before the Wardrobe, Room and Explore open.",
+        );
+      });
+    });
+
+    it("sets Games first to a Parent's own minutes, and turns it off again with Not set", async () => {
+      const ownMinutesLimits = { ...noLimits, gamesFirstMinutes: 7 };
+      const { requests } = startFakeApi({
+        isSignedIn: true,
+        familyChildren: [{ ...bea, limits: ownMinutesLimits }],
+      });
+      await showDashboard();
+      findButton("Set Bea's limits").click();
+      await vi.waitFor(() => {
+        expect(
+          findElement('input[name="gamesFirst"][value="own"]', isInput).checked,
+        ).toBe(true);
+      });
+      expect(
+        findElement('input[name="gamesFirstOwnMinutes"]', isInput).value,
+      ).toBe("7");
+
+      findElement('input[name="gamesFirstOwnMinutes"]', isInput).value = "25";
+      findButton("Save the limits").click();
+      await vi.waitFor(() => {
+        expect(requests).toContainEqual({
+          method: "PUT",
+          path: `/api/children/${bea.id}/limits`,
+          body: getParentChoices({ ...noLimits, gamesFirstMinutes: 25 }),
+        });
+      });
+
+      await vi.waitFor(() => {
+        expect(findButton("Set Bea's limits")).toBeDefined();
+      });
+      findButton("Set Bea's limits").click();
+      await vi.waitFor(() => {
+        findElement('input[name="gamesFirst"][value="none"]', isInput);
+      });
+      findElement('input[name="gamesFirst"][value="none"]', isInput).click();
+      findButton("Save the limits").click();
+      await vi.waitFor(() => {
+        expect(requests).toContainEqual({
+          method: "PUT",
+          path: `/api/children/${bea.id}/limits`,
+          body: getParentChoices({ ...noLimits, gamesFirstMinutes: null }),
+        });
+      });
+    });
+
     it("lifts the daily limit when the minutes are left empty, keeping the Island and Region switches", async () => {
       const switchedLimits = {
         ...noLimits,

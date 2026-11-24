@@ -3,7 +3,10 @@ interface PlayTimeToday {
   seconds: number;
 }
 
+// Every second the game is showing, for the daily limit.
 const playTimeStorageKey = "wizzaroo.family-device.play-time";
+// Only the seconds spent in a Game, for a Parent's Games first.
+const gameTimeStorageKey = "wizzaroo.family-device.game-time";
 
 const isPlayTimeToday = (value: unknown): value is PlayTimeToday =>
   typeof value === "object" &&
@@ -13,38 +16,61 @@ const isPlayTimeToday = (value: unknown): value is PlayTimeToday =>
   "seconds" in value &&
   typeof value.seconds === "number";
 
-const loadPlayTimeByChild = (): Map<string, PlayTimeToday> => {
-  const stored = localStorage.getItem(playTimeStorageKey);
-  const playTimeByChild: unknown = stored === null ? {} : JSON.parse(stored);
-  if (typeof playTimeByChild !== "object" || playTimeByChild === null) {
+const loadTimeByChild = (storageKey: string): Map<string, PlayTimeToday> => {
+  const stored = localStorage.getItem(storageKey);
+  const timeByChild: unknown = stored === null ? {} : JSON.parse(stored);
+  if (typeof timeByChild !== "object" || timeByChild === null) {
     return new Map();
   }
   return new Map(
-    Object.entries(playTimeByChild).filter(
+    Object.entries(timeByChild).filter(
       (entry): entry is [string, PlayTimeToday] => isPlayTimeToday(entry[1]),
     ),
   );
 };
 
-export const findSecondsPlayedToday = (
+const findSecondsToday = (
+  storageKey: string,
   childId: string,
   today: string,
 ): number => {
-  const playTime = loadPlayTimeByChild().get(childId);
-  return playTime?.localDate === today ? playTime.seconds : 0;
+  const time = loadTimeByChild(storageKey).get(childId);
+  return time?.localDate === today ? time.seconds : 0;
 };
+
+const addSecondsToday = (
+  storageKey: string,
+  childId: string,
+  today: string,
+  seconds: number,
+): number => {
+  const timeByChild = loadTimeByChild(storageKey);
+  const secondsToday = findSecondsToday(storageKey, childId, today) + seconds;
+  timeByChild.set(childId, { localDate: today, seconds: secondsToday });
+  localStorage.setItem(
+    storageKey,
+    JSON.stringify(Object.fromEntries(timeByChild)),
+  );
+  return secondsToday;
+};
+
+export const findSecondsPlayedToday = (
+  childId: string,
+  today: string,
+): number => findSecondsToday(playTimeStorageKey, childId, today);
 
 export const addSecondsPlayedToday = (
   childId: string,
   today: string,
   seconds: number,
-): number => {
-  const playTimeByChild = loadPlayTimeByChild();
-  const secondsPlayed = findSecondsPlayedToday(childId, today) + seconds;
-  playTimeByChild.set(childId, { localDate: today, seconds: secondsPlayed });
-  localStorage.setItem(
-    playTimeStorageKey,
-    JSON.stringify(Object.fromEntries(playTimeByChild)),
-  );
-  return secondsPlayed;
-};
+): number => addSecondsToday(playTimeStorageKey, childId, today, seconds);
+
+/** The seconds a Child has spent in Games today on this device. */
+export const findGameSecondsToday = (childId: string, today: string): number =>
+  findSecondsToday(gameTimeStorageKey, childId, today);
+
+export const addGameSecondsToday = (
+  childId: string,
+  today: string,
+  seconds: number,
+): number => addSecondsToday(gameTimeStorageKey, childId, today, seconds);

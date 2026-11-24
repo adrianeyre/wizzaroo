@@ -182,7 +182,7 @@ export interface SkillGame {
   islandName: string;
 }
 
-const listCardSkillIds = (
+export const listCardSkillIds = (
   game: RegionGame,
   yearGroup: YearGroup,
   cardContent: GameCardContent | undefined,

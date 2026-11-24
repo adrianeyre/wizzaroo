@@ -8,8 +8,11 @@ import {
 import type { CharacterLoadout } from "../../curriculum/catalogue.js";
 import { phonicsProgrammes } from "../../curriculum/phonics-programmes.js";
 import {
+  gamesFirstMinuteChoices,
   getParentChoices,
   isChildLimits,
+  longestGamesFirstMinutes,
+  shortestGamesFirstMinutes,
   type ChildLimits,
 } from "../../curriculum/island-access.js";
 import type { CheckAttempt } from "../../curriculum/checks.js";
@@ -258,6 +261,9 @@ const describePhonicsProgramme = (phonicsProgrammeId: string | null) => {
     : `Learns phonics with ${phonicsProgramme.name}.`;
 };
 
+const describeGamesFirst = (minutes: number) =>
+  `${String(minutes)} ${minutes === 1 ? "minute" : "minutes"}`;
+
 const shortestDailyMinutes = 5;
 const longestDailyMinutes = 600;
 const percentWhole = 100;
@@ -300,6 +306,7 @@ export const describeLimits = ({
   isCheckClockOff,
   isExploringLocked,
   exploreLockedIslandIds,
+  gamesFirstMinutes,
 }: ChildLimits) => {
   const dailyLimit =
     dailyMinutes === null
@@ -307,6 +314,9 @@ export const describeLimits = ({
       : `Up to ${String(dailyMinutes)} minutes a day on each Family Device`;
   return [
     `${dailyLimit}.`,
+    gamesFirstMinutes === null
+      ? ""
+      : ` ${describeGamesFirst(gamesFirstMinutes)} of Games first each day before the Wardrobe, Room and Explore open.`,
     describeNamed(
       "Islands you've opened early",
       listIslandNames(
@@ -590,6 +600,83 @@ const ChildForm = ({
   );
 };
 
+const noGamesFirst = "none";
+const ownGamesFirst = "own";
+
+const findGamesFirstChoice = (minutes: number | null): string => {
+  if (minutes === null) {
+    return noGamesFirst;
+  }
+  return gamesFirstMinuteChoices.some((choice) => choice === minutes)
+    ? String(minutes)
+    : ownGamesFirst;
+};
+
+const readGamesFirstMinutes = (answers: FormData): number | null => {
+  const choice = answers.get("gamesFirst");
+  if (choice === null || choice === noGamesFirst) {
+    return null;
+  }
+  return Number(
+    choice === ownGamesFirst ? answers.get("gamesFirstOwnMinutes") : choice,
+  );
+};
+
+const GamesFirstFieldset = ({ child }: { child: Child }) => {
+  const [choice, setChoice] = useState(() =>
+    findGamesFirstChoice(child.limits.gamesFirstMinutes),
+  );
+  const isOwnChosen = choice === ownGamesFirst;
+  const radio = (value: string, label: string) => (
+    <label key={value}>
+      <input
+        name="gamesFirst"
+        type="radio"
+        value={value}
+        checked={choice === value}
+        onChange={() => {
+          setChoice(value);
+        }}
+      />
+      {label}
+    </label>
+  );
+  return (
+    <fieldset className="games-first">
+      <legend>Games before the Wardrobe, Room and Explore</legend>
+      {radio(noGamesFirst, "Not set")}
+      {gamesFirstMinuteChoices.map((minutes) =>
+        radio(String(minutes), describeGamesFirst(minutes)),
+      )}
+      {radio(ownGamesFirst, "Set your own minutes")}
+      {isOwnChosen ? (
+        <label>
+          Your own minutes of Games first
+          <input
+            name="gamesFirstOwnMinutes"
+            type="number"
+            required
+            min={shortestGamesFirstMinutes}
+            max={longestGamesFirstMinutes}
+            defaultValue={
+              findGamesFirstChoice(child.limits.gamesFirstMinutes) ===
+              ownGamesFirst
+                ? (child.limits.gamesFirstMinutes ?? "")
+                : ""
+            }
+          />
+        </label>
+      ) : null}
+      <p className="form-hint">
+        Once set, {child.nickname} plays this many minutes of Games each day
+        before the Wardrobe, the Room and Explore open. Only time in a Game
+        counts, not time on the World Map, and it is counted on each Family
+        Device separately.
+      </p>
+    </fieldset>
+  );
+};
+
 interface LimitsFormProps {
   child: Child;
   onSaved: () => void;
@@ -614,6 +701,7 @@ const LimitsForm = ({ child, onSaved, onCancelled }: LimitsFormProps) => {
       exploreLockedIslandIds: worldMap.islands
         .map(({ id }) => id)
         .filter((islandId) => answers.get(`explore-${islandId}`) === null),
+      gamesFirstMinutes: readGamesFirstMinutes(answers),
     });
     // Until the School approves Classmate visits the switch is disabled, so it sends nothing and the Parent's stored choice is kept.
     if (
@@ -662,6 +750,7 @@ const LimitsForm = ({ child, onSaved, onCancelled }: LimitsFormProps) => {
           defaultValue={child.limits.dailyMinutes ?? ""}
         />
       </label>
+      <GamesFirstFieldset child={child} />
       <fieldset>
         <legend>Sound on Family Devices</legend>
         <label>

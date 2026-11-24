@@ -249,6 +249,12 @@ const waitForChosenVoiceToEnd = (): Promise<void> =>
     });
   });
 
+/** Stops a Game's line, recorded or in the chosen voice, as when the Game is paused. */
+export const stopVoiceOver = (): void => {
+  voiceOverSpeaker?.pause();
+  stopReadingAloud();
+};
+
 export const waitForVoiceOverToEnd = (): Promise<void> =>
   findSpeakingReader() === voiceOverReader
     ? waitForChosenVoiceToEnd()

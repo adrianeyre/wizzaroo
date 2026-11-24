@@ -194,6 +194,10 @@ _Avoid_: Phonics scheme, phonics course
 A key point of the National Curriculum for one Subject in one Year Group, such as Year 2 Statistics, taught by one or more Skills. A Parent sees how far a Child is through each one. Each Subject's points link to its programme of study on GOV.UK.
 _Avoid_: Objective, bullet point, standard, outcome
 
+**For parents**:
+What a Game practises in the National Curriculum in England, told for a grown-up: the programme of study, Key Stage, Year and statutory heading of each Curriculum Point its Skills teach. Opened from the small button on a Game's card, or from the button while playing, which pauses the Game.
+_Avoid_: Info, help, about this game
+
 **Gap**:
 A Curriculum Point a Child hasn't started, or one whose Skills they are getting wrong more often than a good day allows.
 _Avoid_: Weakness, problem area
@@ -238,6 +242,10 @@ How a lab game asks its Questions, such as sorting into groups, finding the odd 
 **Lab game**:
 A multiple-choice Game written as data and played in the lab, in any Subject. Each teaches named statutory requirements of the National Curriculum and is its own Skill unless it plays one that already exists. Lab games fill the gaps other Games leave, as extra Games, and are every Game in the Art and design, Design and technology and Languages Regions.
 _Avoid_: Mechanic, mode, round
+
+**Games first**:
+A Parent's limit of minutes of Games a Child plays each day, on each Family Device, before the Wardrobe, the Room and Explore open. Only time in a Game counts. Not set by default.
+_Avoid_: Screen time, homework time, learning time
 
 **Question**:
 One prompt and the answer a Child gives to it, inside an Activity.

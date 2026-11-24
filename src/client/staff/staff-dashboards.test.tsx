@@ -49,6 +49,7 @@ const twoey = {
     isCheckClockOff: false,
     isExploringLocked: false,
     exploreLockedIslandIds: [],
+    gamesFirstMinutes: null,
     teacherLocks: {
       lockedIslandIds: [],
       turnedOffRegionKeys: [],

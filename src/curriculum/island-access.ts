@@ -40,7 +40,17 @@ export interface ParentChoices {
   isCheckClockOff: boolean;
   isExploringLocked: boolean;
   exploreLockedIslandIds: string[];
+  /**
+   * Minutes of Games a Child plays each day, on each Family Device, before
+   * the Wardrobe, the Room and Explore open, or null for none (the default).
+   */
+  gamesFirstMinutes: number | null;
 }
+
+export const shortestGamesFirstMinutes = 1;
+export const longestGamesFirstMinutes = 240;
+/** The choices a Parent picks from, besides setting their own minutes. */
+export const gamesFirstMinuteChoices = [2, 5, 10, 15, 20] as const;
 
 export interface ChildLimits extends ParentChoices {
   teacherLocks: TeacherLocks;
@@ -58,6 +68,7 @@ export const buildParentChoices = ({
   isCheckClockOff,
   isExploringLocked,
   exploreLockedIslandIds,
+  gamesFirstMinutes,
 }: Partial<ParentChoices>): ParentChoices => ({
   dailyMinutes: dailyMinutes ?? null,
   unlockedIslandIds: unlockedIslandIds ?? [],
@@ -70,6 +81,7 @@ export const buildParentChoices = ({
   isCheckClockOff: isCheckClockOff ?? false,
   isExploringLocked: isExploringLocked ?? false,
   exploreLockedIslandIds: exploreLockedIslandIds ?? [],
+  gamesFirstMinutes: gamesFirstMinutes ?? null,
 });
 
 /**
@@ -319,7 +331,13 @@ export const isParentChoices = (value: unknown): value is ParentChoices =>
   "isExploringLocked" in value &&
   typeof value.isExploringLocked === "boolean" &&
   "exploreLockedIslandIds" in value &&
-  isIdList(value.exploreLockedIslandIds);
+  isIdList(value.exploreLockedIslandIds) &&
+  "gamesFirstMinutes" in value &&
+  (value.gamesFirstMinutes === null ||
+    (typeof value.gamesFirstMinutes === "number" &&
+      Number.isInteger(value.gamesFirstMinutes) &&
+      value.gamesFirstMinutes >= shortestGamesFirstMinutes &&
+      value.gamesFirstMinutes <= longestGamesFirstMinutes));
 
 export const isChildLimits = (value: unknown): value is ChildLimits =>
   isParentChoices(value) &&

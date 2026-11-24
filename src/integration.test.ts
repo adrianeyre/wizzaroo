@@ -10723,6 +10723,7 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
         isCheckClockOff: true,
         isExploringLocked: true,
         exploreLockedIslandIds: ["ember-isle"],
+        gamesFirstMinutes: 10,
       };
       const limitsWithNoTeacherLocks = {
         ...limits,
@@ -10817,6 +10818,59 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
         exploreLockedIslandIds: ["frost-isle", "ember-isle"],
       });
       expect(exploreLockedIslandIds).toEqual([]);
+    });
+
+    it("keeps a Child's Games first when a Parent's limits don't mention it, as from a dashboard that predates it", async () => {
+      const token = await signInMary();
+      const childId = readChildResponse(
+        (
+          await injectAs(token, {
+            method: "POST",
+            url: "/api/children",
+            payload: { ...otherFamilyChild, nickname: "Gamer" },
+          })
+        ).json(),
+      ).id;
+      await setLimitsAs(token, childId, {
+        ...noParentChoices,
+        gamesFirstMinutes: 15,
+      });
+      const { gamesFirstMinutes, ...limitsBeforeGamesFirst } = noParentChoices;
+
+      const response = await setLimitsAs(
+        token,
+        childId,
+        limitsBeforeGamesFirst,
+      );
+
+      expect(response.statusCode).toBe(200);
+      expect(response.json()).toMatchObject({ gamesFirstMinutes: 15 });
+      expect((await loadChildRow(childId)).syncedLimits).toMatchObject({
+        gamesFirstMinutes: 15,
+      });
+      expect(gamesFirstMinutes).toBeNull();
+    });
+
+    it("refuses Games first of no minutes, more than four hours or part of a minute", async () => {
+      const token = await signInMary();
+      const childId = readChildResponse(
+        (
+          await injectAs(token, {
+            method: "POST",
+            url: "/api/children",
+            payload: { ...otherFamilyChild, nickname: "Counter" },
+          })
+        ).json(),
+      ).id;
+
+      for (const gamesFirstMinutes of [0, 241, 2.5]) {
+        const response = await setLimitsAs(token, childId, {
+          ...noParentChoices,
+          gamesFirstMinutes,
+        });
+
+        expect(response.statusCode).toBe(400);
+      }
     });
 
     it("refuses an Island that isn't on the World Map in a Child's Islands locked for exploring", async () => {
