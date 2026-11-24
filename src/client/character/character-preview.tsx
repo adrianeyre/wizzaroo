@@ -3,8 +3,12 @@ import { useMemo, useRef, useState, type RefObject } from "react";
 import type { Group } from "three";
 import type { CharacterLoadout } from "../../curriculum/catalogue.js";
 import { getMotionScale } from "../reduced-motion.js";
-import { buildShowOffLook, describeCharacter } from "./character-look.js";
-import { SpeakingMouthContext, headHeight } from "./character-model.js";
+import {
+  buildCharacterLook,
+  buildShowOffLook,
+  describeCharacter,
+} from "./character-look.js";
+import { Head, SpeakingMouthContext, headHeight } from "./character-model.js";
 import {
   FidgetingFigure,
   findRiderLift,
@@ -327,6 +331,53 @@ export const CharacterPortrait = ({
         isFidgeting={isFidgeting}
         readMouthOpenness={readMouthOpenness}
       />
+    </span>
+  );
+};
+
+/** Close on the head, hat and all, with room above for the tallest hats. */
+const headShot: Shot = {
+  cameraHeight: headHeight + 0.12,
+  cameraDistance: 2.8,
+  lookAtHeight: headHeight + 0.12,
+  fieldOfView: 32,
+};
+
+/**
+ * Just a Character's head, with its hat, hair and face, and nothing below:
+ * no body, outfit, wings, held Item, pet or mount. Its mouth moves with the
+ * words while `readMouthOpenness` is set (ADR 0077).
+ */
+export const CharacterHead = ({
+  loadout,
+  readMouthOpenness,
+}: {
+  loadout: CharacterLoadout;
+  readMouthOpenness?: () => number;
+}) => {
+  const look = useMemo(() => buildCharacterLook(loadout), [loadout]);
+  return (
+    <span className="character-portrait" aria-hidden>
+      <div className="character-stage">
+        <Canvas
+          flat
+          dpr={sharpestPixelRatio}
+          frameloop={readMouthOpenness === undefined ? "demand" : "always"}
+          gl={{ antialias: true, alpha: true }}
+          camera={{
+            position: [0, headShot.cameraHeight, headShot.cameraDistance],
+            fov: headShot.fieldOfView,
+          }}
+          onCreated={({ camera }) => {
+            camera.lookAt(0, headShot.lookAtHeight, 0);
+          }}
+        >
+          <StudioLights />
+          <SpeakingMouthContext value={readMouthOpenness}>
+            <Head look={look} />
+          </SpeakingMouthContext>
+        </Canvas>
+      </div>
     </span>
   );
 };

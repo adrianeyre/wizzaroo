@@ -6,7 +6,7 @@ Each reading voice has a 3D fantasy character ([ADR 0074](./0074-sixteen-voices-
 
 ## What changes
 
-- **One face for the whole app.** `SpeakingFace` (`src/client/voice-over/speaking-face.tsx`) is mounted once on the game page and once on the Parent page. When a voice speaks, it shows that voice's character as a portrait in the bottom-left corner, above the bottom row of controls such as Leave Mission and the World Map's dock. It lets taps through and hides a moment after the voice stops, so it doesn't flicker between sentences. Screen readers ignore it: the voice itself is what it adds.
+- **One face for the whole app.** `SpeakingFace` (`src/client/voice-over/speaking-face.tsx`) is mounted once on the game page and once on the Parent page. When a voice speaks, it shows that voice's character's head (its hat, hair and face, with no body, outfit, wings, held Item, pet or mount) as a portrait in the bottom-left corner, above the bottom row of controls such as Leave Mission and the World Map's dock. It lets taps through and hides a moment after the voice stops, so it doesn't flicker between sentences. Screen readers ignore it: the voice itself is what it adds.
 - **The face is whoever is speaking.**
   - **Piper**, for a Game's line, Read it to me and a voice's hello: the chosen voice.
   - **A recorded line**, when the chosen voice isn't on the device yet: Cori, whose voice the recordings are ([ADR 0007](./0007-audio-is-made-before-release.md)).
@@ -21,6 +21,6 @@ Each reading voice has a 3D fantasy character ([ADR 0074](./0074-sixteen-voices-
 
 ## Consequences
 
-- The face is drawn in a small canvas of its own, made the first time a voice speaks and kept after, so the next line's face appears at once. While no one speaks it draws nothing. While someone does, it draws a head and shoulders at up to twice the screen's pixels, beside the Game's own canvas.
+- The face is drawn in a small canvas of its own, made the first time a voice speaks and kept after, so the next line's face appears at once. While no one speaks it draws nothing. While someone does, it draws just the head at up to twice the screen's pixels, beside the Game's own canvas.
 - Nothing about the sound changes. No audio is routed through an analyser: loudness is read from the samples Piper already returns, and a recording is decoded separately to measure it.
 - With reduced motion asked for, the face fades in and out rather than popping up. Its mouth still moves, as speaking is the point.
