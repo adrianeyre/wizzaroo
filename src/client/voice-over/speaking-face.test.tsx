@@ -10,7 +10,7 @@ import {
 } from "./speaking-voice.js";
 
 vi.mock("../character/character-preview.js", () => ({
-  CharacterPortrait: ({
+  CharacterHead: ({
     readMouthOpenness,
   }: {
     readMouthOpenness?: () => number;

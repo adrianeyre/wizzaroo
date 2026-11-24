@@ -1,5 +1,5 @@
 import { useEffect, useState, useSyncExternalStore } from "react";
-import { CharacterPortrait } from "../character/character-preview.js";
+import { CharacterHead } from "../character/character-preview.js";
 import {
   findMouthOpenness,
   findSpeakingCharacter,
@@ -55,8 +55,8 @@ export const useShownVoice = (): {
 
 /**
  * The face of whichever voice is speaking, wherever it speaks: a Game's
- * line, Read it to me, a sound, a voice's hello (ADR 0077). Its mouth moves
- * with the words. It is drawn only once a voice has spoken, and stays ready
+ * line, Read it to me, a sound, a voice's hello (ADR 0077). Only its head
+ * shows, and its mouth moves with the words. It is drawn only once a voice has spoken, and stays ready
  * after, so the next line's face appears at once.
  */
 export const SpeakingFace = () => {
@@ -75,7 +75,7 @@ export const SpeakingFace = () => {
       data-voice={drawnVoice}
       aria-hidden
     >
-      <CharacterPortrait
+      <CharacterHead
         loadout={voiceCharacters[drawnVoice].loadout}
         readMouthOpenness={isSpeaking ? findMouthOpenness : undefined}
       />
