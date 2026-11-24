@@ -17,4 +17,15 @@ Once a Child has opened their Character, they choose what to play from their [Wo
 - **Landscape, phone first.** Every choice is at least 64 pixels across, and 150 at most, sized from the screen's height, and works with a tap or a mouse click. The choices are buttons laid over the 3D scene at the same places the scene draws its bubbles. A phone held upright is asked to turn sideways.
 - **Events.** Each Question answered records its Skill, the Activity, the device's own date, whether it was right first time and how many wrong answers came first. Each Activity finished records how long it took. Both go into the outbox like every other event, so a Mission played with no network syncs afterwards.
 
+## For parents
+
+Every Game in every Region on every Island tells a grown-up what it practises in the National Curriculum in England ([ADR 0078](../architectural-decision-record/0078-for-parents-and-games-first.md)), from two places:
+
+- **The small button on a Game's card** in a Region's panel, labelled "For parents: what (Game) practises", which opens before the Game is played, locked or not.
+- **For parents**, in the bottom-right corner while a Game is played (a Mission, a puzzle or a Check). It **pauses the Game**: its voice-over and music stop, and the Game's clock (`src/client/mission/game-clock.ts`) stands still, so an answer's time, a Check's countdown and a puzzle's seconds leave out the time spent reading, and no Games first time is counted. Closing it carries on where the Game was.
+
+![For parents, opened while playing Pop the bubbles: the Game is paused, with the programme of study, Key Stage, Year and statutory heading it practises](../images/screenshots/for-parents.png)
+
+The dialog (`for-parents-dialog.tsx`) lists each Curriculum Point the Game's Skills teach, found by `findGameCurriculum` (`game-curriculum.ts`) through the same Skills its card and the Parent page's progress use. For each it names the Subject, the programme of study by its GOV.UK title (such as "Mathematics programmes of study: key stages 1 and 2"), the Key Stage, the part of the programme (such as "Year 2 programme of study", or English's "Lower key stage 2: Years 3 and 4 programme of study"), the statutory heading the point falls under (such as "Number: addition and subtraction", or "Reading: word reading" for phonics), what pupils should be taught, and the Skills this Game practises, with a link to that programme of study. `src/curriculum/curriculum-point-location.ts` works out where each point sits. **View National Curriculum** opens the National Curriculum collection on GOV.UK in a new tab. A test checks that every Game on the World Map names at least one point.
+
 The scene is placeholder low-poly shapes (a Region of grass and trees, and a Companion) until the CC0 models arrive. It keeps to the [performance budget](../performance-budget.md), and lowers its resolution, then drops its effects, when the frame rate falls below 30 fps. Add `?performance` to the game page's address to see the frame rate, resolution and draw calls.

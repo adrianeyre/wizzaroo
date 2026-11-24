@@ -74,6 +74,7 @@ vi.mock("../voice-over/voice-over.js", () => ({
   isVoiceOverKey: (key: string) => key.startsWith("phonics-games."),
   playVoiceOver: vi.fn(() => Promise.resolve()),
   playPhoneme: vi.fn(() => Promise.resolve()),
+  stopVoiceOver: vi.fn(),
   waitForVoiceOverToEnd: vi.fn(() => Promise.resolve()),
 }));
 
@@ -2781,6 +2782,184 @@ describe("FamilyDevicePage", () => {
           (tab) => tab.getAttribute("aria-label"),
         ),
       ).toEqual(["World Map", "Wardrobe", "Room"]);
+    });
+
+    describe("For parents", () => {
+      const findDialogText = () =>
+        document.querySelector("dialog[open]")?.textContent ?? "";
+
+      it("opens what a Game practises in the National Curriculum from the small button on its card", async () => {
+        startFakeServer(answerWithPlayableChildren([sparkle]));
+        openPage(renderMission());
+        await playAsSparkleOnTheWorldMap();
+
+        findButton("For parents: what Pop the bubbles practises").click();
+
+        await vi.waitFor(() => {
+          expect(findDialogText()).toContain("For parents: Pop the bubbles");
+        });
+        expect(findDialogText()).toContain(
+          "Mathematics programmes of study: key stages 1 and 2",
+        );
+        expect(findDialogText()).toContain("Key Stage 1");
+        expect(findDialogText()).toContain("Year 1 programme of study");
+        expect(findDialogText()).toContain("Number: addition and subtraction");
+        expect(findDialogText()).toContain("Number bonds to 10");
+        expect(findDialogText()).not.toContain("The Game is paused");
+        const nationalCurriculum = Array.from(
+          document.querySelectorAll<HTMLAnchorElement>("dialog[open] a"),
+        ).find(({ textContent }) => textContent === "View National Curriculum");
+        expect(nationalCurriculum?.href).toBe(
+          "https://www.gov.uk/government/collections/national-curriculum",
+        );
+        expect(nationalCurriculum?.target).toBe("_blank");
+        expect(getPageText()).not.toContain("Activity 1 of 3");
+      });
+
+      it("pauses a Game for a Parent and carries on where it was once closed", async () => {
+        startFakeServer(answerWithPlayableChildren([sparkle]));
+        openPage(renderMission());
+        await playAsSparkleOnTheWorldMap();
+        findButtonTitled("Pop the bubbles").click();
+        await waitForText("Activity 1 of 3, question 1 of 5");
+        const numberSentence = readText(".number-sentence");
+
+        findButton("For parents").click();
+
+        await vi.waitFor(() => {
+          expect(findDialogText()).toContain(
+            "The Game is paused. Close this to carry on playing.",
+          );
+        });
+        expect(findDialogText()).toContain("Number: addition and subtraction");
+        findButton("Close and carry on playing").click();
+        await vi.waitFor(() => {
+          expect(document.querySelector("dialog[open]")).toBeNull();
+        });
+        expect(getPageText()).toContain("Activity 1 of 3, question 1 of 5");
+        expect(readText(".number-sentence")).toBe(numberSentence);
+      });
+
+      it("shows For parents only while a Game is being played", async () => {
+        startFakeServer(answerWithPlayableChildren([sparkle]));
+        openPage(renderMission());
+        await playAsSparkleOnTheWorldMap();
+
+        expect(document.querySelector("button.for-parents-button")).toBeNull();
+        findButtonTitled("Pop the bubbles").click();
+        await waitForText("Activity 1 of 3");
+        expect(
+          document.querySelector("button.for-parents-button"),
+        ).toBeInstanceOf(HTMLButtonElement);
+      });
+    });
+
+    describe("Games first", () => {
+      const oneMinuteOfGamesFirst = buildChildLimits({ gamesFirstMinutes: 1 });
+
+      const findTabLabels = () =>
+        Array.from(document.querySelectorAll(".play-nav-tabs button")).map(
+          (tab) => tab.getAttribute("aria-label"),
+        );
+
+      it("locks the Wardrobe, Room and Explore until a Child has played a Parent's minutes of Games, counting only time in a Game", async () => {
+        startFakeServer(
+          answerWithPlayableChildren([
+            { ...sparkle, limits: oneMinuteOfGamesFirst },
+          ]),
+        );
+        vi.useFakeTimers({ toFake: ["setInterval", "clearInterval", "Date"] });
+        openPage(renderMission());
+        await playAsSparkle(everyRegionsName);
+
+        expect(findTabLabels()).toEqual([
+          "World Map",
+          "Explore, locked: play 1 more minute of Games to open it",
+          "Wardrobe, locked: play 1 more minute of Games to open it",
+          "Room, locked: play 1 more minute of Games to open it",
+        ]);
+        findButton(
+          "Wardrobe, locked: play 1 more minute of Games to open it",
+        ).click();
+        await waitForText("Games first!");
+        expect(getPageText()).toContain(
+          "Play 1 more minute of Games to open the Wardrobe, the Room and Explore.",
+        );
+        expect(getPageText()).not.toContain("Sparkle's wardrobe");
+        findButton("Close").click();
+        await vi.advanceTimersByTimeAsync(90_000);
+        expect(findTabLabels()).toContain(
+          "Room, locked: play 1 more minute of Games to open it",
+        );
+
+        await openRegion();
+        findButtonTitled("Pop the bubbles").click();
+        await waitForText("Activity 1 of 3");
+        await vi.advanceTimersByTimeAsync(61_000);
+        findButton("Back to the map").click();
+
+        await vi.waitFor(() => {
+          expect(findTabLabels()).toEqual([
+            "World Map",
+            "Explore",
+            "Wardrobe",
+            "Room",
+          ]);
+        });
+        findButton("Wardrobe").click();
+        await waitForText("Sparkle's wardrobe");
+      });
+
+      it("counts no Game time while For parents has the Game paused", async () => {
+        startFakeServer(
+          answerWithPlayableChildren([
+            { ...sparkle, limits: oneMinuteOfGamesFirst },
+          ]),
+        );
+        vi.useFakeTimers({ toFake: ["setInterval", "clearInterval", "Date"] });
+        openPage(renderMission());
+        await playAsSparkleOnTheWorldMap();
+        findButtonTitled("Pop the bubbles").click();
+        await waitForText("Activity 1 of 3");
+
+        findButton("For parents").click();
+        await waitForText("The Game is paused");
+        await vi.advanceTimersByTimeAsync(120_000);
+        findButton("Close and carry on playing").click();
+        findButton("Back to the map").click();
+
+        await vi.waitFor(() => {
+          expect(findTabLabels()).toContain(
+            "Room, locked: play 1 more minute of Games to open it",
+          );
+        });
+      });
+
+      it("opens everything from the start with no Games first set, or once today's minutes were played earlier on the device", async () => {
+        localStorage.setItem(
+          "wizzaroo.family-device.game-time",
+          JSON.stringify({
+            [sparkle.id]: {
+              localDate: getLocalDate(new Date()),
+              seconds: 60,
+            },
+          }),
+        );
+        startFakeServer(
+          answerWithPlayableChildren([
+            { ...sparkle, limits: oneMinuteOfGamesFirst },
+          ]),
+        );
+        openPage(renderMission());
+        await playAsSparkle(everyRegionsName);
+
+        expect(findTabLabels()).toEqual([
+          "World Map",
+          "Explore",
+          "Wardrobe",
+          "Room",
+        ]);
+      });
     });
 
     it("says what explore mode is getting ready, in its help and over the Island once Let's go! is pressed early", async () => {

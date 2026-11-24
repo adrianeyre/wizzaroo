@@ -8,7 +8,7 @@ Each Island one by one is in [the Islands](islands.md), every Attraction in [Att
 
 ![Meadow Isle, Island 1, on the World Map](../images/screenshots/world-map-meadow-isle.jpg)
 
-![A Region's panel, with its story and Games](../images/screenshots/region-panel.jpg)
+![A Region's panel, with its story and Games, each with a For parents button](../images/screenshots/region-panel.jpg)
 
 ![Exploring Frost Isle on foot](../images/screenshots/explore-on-foot.jpg)
 

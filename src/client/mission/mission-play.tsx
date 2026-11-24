@@ -108,6 +108,18 @@ import {
   FinishPlayingButton,
   type PlayingChild,
 } from "../family-device/family-device-page.js";
+import {
+  addGameSecondsToday,
+  findGameSecondsToday,
+} from "../family-device/play-time.js";
+import { ModalDialog } from "../modal-dialog.js";
+import { stopMusic } from "../music-player.js";
+import {
+  ForParentsDialog,
+  ForParentsIcon,
+  forParentsLabel,
+} from "./for-parents-dialog.js";
+import { buildGameClock, type GameClock } from "./game-clock.js";
 import { SettingsPage } from "../site-header/settings-page.js";
 import {
   CogIcon,
@@ -121,6 +133,7 @@ import {
   isVoiceOverKey,
   playPhoneme,
   playVoiceOver,
+  stopVoiceOver,
   type VoiceOverKey,
 } from "../voice-over/voice-over.js";
 import { usePageTitle } from "../page-title.js";
@@ -317,8 +330,6 @@ const playQuestionPrompt = (question: MissionQuestion): boolean => {
   void playVoiceOver(spokenPrompt);
   return true;
 };
-
-const readTapTime = () => Date.now();
 
 const missionParts = {
   random: Math.random,
@@ -988,7 +999,31 @@ interface PlayNavProps {
   onFurnishing: () => void;
   soundSettings: SoundSettings;
   menu?: ReactNode;
+  /** Minutes of Games still to play before the Wardrobe, Room and Explore open, while a Parent's Games first holds them shut. */
+  gamesFirstMinutesLeft: number | undefined;
 }
+
+const describeMoreMinutes = (minutes: number) =>
+  `${String(minutes)} more ${minutes === 1 ? "minute" : "minutes"}`;
+
+const describeGamesFirstTab = (
+  tab: string,
+  minutesLeft: number | undefined,
+): string =>
+  minutesLeft === undefined
+    ? tab
+    : `${tab}, locked: play ${describeMoreMinutes(minutesLeft)} of Games to open it`;
+
+const GamesFirstLock = ({
+  minutesLeft,
+}: {
+  minutesLeft: number | undefined;
+}) =>
+  minutesLeft === undefined ? null : (
+    <span className="games-first-lock">
+      <LockIcon />
+    </span>
+  );
 
 const PlayNav = ({
   characterName,
@@ -1002,6 +1037,7 @@ const PlayNav = ({
   onFurnishing,
   soundSettings,
   menu,
+  gamesFirstMinutesLeft,
 }: PlayNavProps) => {
   const [starFireworksShowId, setStarFireworksShowId] = useState<number>();
 
@@ -1040,28 +1076,44 @@ const PlayNav = ({
           <span className="play-nav-tab-label">Map</span>
         </button>
         {onExplore === undefined ? null : (
-          <button type="button" aria-label="Explore" onClick={onExplore}>
+          <button
+            type="button"
+            aria-label={describeGamesFirstTab("Explore", gamesFirstMinutesLeft)}
+            className={
+              gamesFirstMinutesLeft === undefined ? undefined : "is-games-first"
+            }
+            onClick={onExplore}
+          >
             <WalkIcon />
             <span className="play-nav-tab-label">Explore</span>
+            <GamesFirstLock minutesLeft={gamesFirstMinutesLeft} />
           </button>
         )}
         <button
           type="button"
-          aria-label="Wardrobe"
+          aria-label={describeGamesFirstTab("Wardrobe", gamesFirstMinutesLeft)}
           aria-current={shownScreen === "wardrobe" ? "page" : undefined}
+          className={
+            gamesFirstMinutesLeft === undefined ? undefined : "is-games-first"
+          }
           onClick={onDressing}
         >
           <ShirtIcon />
           <span className="play-nav-tab-label">Wardrobe</span>
+          <GamesFirstLock minutesLeft={gamesFirstMinutesLeft} />
         </button>
         <button
           type="button"
-          aria-label="Room"
+          aria-label={describeGamesFirstTab("Room", gamesFirstMinutesLeft)}
           aria-current={shownScreen === "room" ? "page" : undefined}
+          className={
+            gamesFirstMinutesLeft === undefined ? undefined : "is-games-first"
+          }
           onClick={onFurnishing}
         >
           <BedIcon />
           <span className="play-nav-tab-label">Room</span>
+          <GamesFirstLock minutesLeft={gamesFirstMinutesLeft} />
         </button>
       </div>
       <div className="play-nav-stats">
@@ -1128,6 +1180,7 @@ interface WorldMapScreenProps extends Omit<
   onQuestFindPickedUp: (islandId: string, findId: string) => void;
   onQuestPuzzleSolved: (islandId: string, puzzleId: string) => void;
   onStarted: (missionGame: MissionGame) => void;
+  onForParents: (place: GamePlace) => void;
 }
 
 const WalkIcon = () => (
@@ -1223,40 +1276,57 @@ const ReviewIcon = () => (
 const MissionCard = ({
   missionCard,
   onStarted,
+  onForParents,
 }: {
   missionCard: MissionCardDetails;
   onStarted: (missionGame: MissionGame) => void;
+  onForParents: (place: GamePlace) => void;
 }) => (
-  <button
-    type="button"
-    className={missionCard.isUnlocked ? "mission-card" : "mission-card locked"}
-    disabled={!missionCard.isUnlocked}
-    onClick={() => {
-      onStarted(missionCard);
-    }}
-  >
-    <span className="mission-card-title">{missionCard.title}</span>
-    <span className="mission-card-skill">{missionCard.skillName}</span>
-    {missionCard.isUnlocked ? null : (
-      <span className="mission-card-lock">
-        <LockIcon />
-        {missionCard.isTurnedOff
-          ? "Turned off by a grown-up"
-          : describeStarsToUnlock(missionCard.starsToUnlock)}
-      </span>
-    )}
-    {missionCard.isUnlocked && missionCard.mastery !== undefined ? (
-      <span className="mastery-badge">
-        {describeMasteryForChild(missionCard.mastery)}
-      </span>
-    ) : null}
-    {missionCard.isUnlocked && missionCard.isReviewDue ? (
-      <span className="review-marker">
-        <ReviewIcon />
-        Review waiting
-      </span>
-    ) : null}
-  </button>
+  <div className="mission-card-holder">
+    <button
+      type="button"
+      className={
+        missionCard.isUnlocked ? "mission-card" : "mission-card locked"
+      }
+      disabled={!missionCard.isUnlocked}
+      onClick={() => {
+        onStarted(missionCard);
+      }}
+    >
+      <span className="mission-card-title">{missionCard.title}</span>
+      <span className="mission-card-skill">{missionCard.skillName}</span>
+      {missionCard.isUnlocked ? null : (
+        <span className="mission-card-lock">
+          <LockIcon />
+          {missionCard.isTurnedOff
+            ? "Turned off by a grown-up"
+            : describeStarsToUnlock(missionCard.starsToUnlock)}
+        </span>
+      )}
+      {missionCard.isUnlocked && missionCard.mastery !== undefined ? (
+        <span className="mastery-badge">
+          {describeMasteryForChild(missionCard.mastery)}
+        </span>
+      ) : null}
+      {missionCard.isUnlocked && missionCard.isReviewDue ? (
+        <span className="review-marker">
+          <ReviewIcon />
+          Review waiting
+        </span>
+      ) : null}
+    </button>
+    <button
+      type="button"
+      className="mission-card-for-parents"
+      aria-label={`${forParentsLabel}: what ${missionCard.title} practises`}
+      title={forParentsLabel}
+      onClick={() => {
+        onForParents(missionCard.place);
+      }}
+    >
+      <ForParentsIcon />
+    </button>
+  </div>
 );
 
 const describeClosedRegion = ({ access }: RegionOnMap): string =>
@@ -1410,6 +1480,7 @@ const WorldMapScreen = ({
   onQuestFindPickedUp,
   onQuestPuzzleSolved,
   onStarted,
+  onForParents,
   onSettings,
   onFinishPlaying,
   ...navProps
@@ -1680,6 +1751,7 @@ const WorldMapScreen = ({
                   key={missionCard.place.gameId}
                   missionCard={missionCard}
                   onStarted={onStarted}
+                  onForParents={onForParents}
                 />
               ))}
             </div>
@@ -2815,6 +2887,11 @@ const findMissionPageTitle = (
 interface MissionScreenProps extends MissionPlayProps {
   view: MissionView;
   setView: Dispatch<SetStateAction<MissionView>>;
+  /** The Game's clock, which stands still while For parents has paused it. */
+  readTime: () => number;
+  gamesFirstMinutesLeft: number | undefined;
+  onGamesFirstLocked: () => void;
+  onForParents: (place: GamePlace) => void;
 }
 
 // Finish playing has its own button everywhere but the World Map,
@@ -2824,14 +2901,145 @@ const isFinishPlayingInMenu = (view: MissionView): boolean =>
   view.kind === "dressing" ||
   view.kind === "furnishing";
 
+const isGameView = (
+  view: MissionView,
+): view is PlayingView | PuzzlingView | CheckingView =>
+  view.kind === "playing" ||
+  view.kind === "puzzling" ||
+  view.kind === "checking";
+
+const gameTimeTickMs = 1000;
+const longestCountedGameTickMs = 5000;
+const millisecondsPerSecond = 1000;
+const secondsPerMinute = 60;
+
+/**
+ * Counts the seconds a Child spends in Games, while one is showing and not
+ * paused, and works out how many minutes of a Parent's Games first are
+ * still to play today: undefined once they are played, or with none set.
+ */
+const useGamesFirstMinutesLeft = (
+  childId: string,
+  gamesFirstMinutes: number | null,
+  isCounting: boolean,
+): number | undefined => {
+  const [gameSeconds, setGameSeconds] = useState(() =>
+    findGameSecondsToday(childId, getLocalDate(new Date())),
+  );
+  useEffect(() => {
+    if (!isCounting) {
+      return undefined;
+    }
+    let lastTickAt = Date.now();
+    const countGameTime = () => {
+      const now = Date.now();
+      const countedMs = Math.min(now - lastTickAt, longestCountedGameTickMs);
+      lastTickAt = now;
+      if (document.visibilityState === "hidden") {
+        return;
+      }
+      setGameSeconds(
+        addGameSecondsToday(
+          childId,
+          getLocalDate(new Date(now)),
+          countedMs / millisecondsPerSecond,
+        ),
+      );
+    };
+    const gameTimeTick = setInterval(countGameTime, gameTimeTickMs);
+    return () => {
+      clearInterval(gameTimeTick);
+    };
+  }, [childId, isCounting]);
+  if (gamesFirstMinutes === null) {
+    return undefined;
+  }
+  const secondsLeft = gamesFirstMinutes * secondsPerMinute - gameSeconds;
+  return secondsLeft > 0
+    ? Math.ceil(secondsLeft / secondsPerMinute)
+    : undefined;
+};
+
+interface ForParentsShown {
+  place: GamePlace;
+  isGamePaused: boolean;
+}
+
 export const MissionPlay = (missionPlayProps: MissionPlayProps) => {
   const [view, setView] = useState<MissionView>({ kind: "choosing" });
+  const [gameClock] = useState<GameClock>(() => buildGameClock());
+  const [forParents, setForParents] = useState<ForParentsShown>();
+  const [isGamesFirstShown, setIsGamesFirstShown] = useState(false);
+  const isPaused = forParents?.isGamePaused === true;
+  const { child } = missionPlayProps;
+  const gamesFirstMinutesLeft = useGamesFirstMinutesLeft(
+    child.id,
+    child.limits.gamesFirstMinutes,
+    isGameView(view) && !isPaused,
+  );
+
+  const pauseForParents = (place: GamePlace) => {
+    gameClock.pause();
+    stopVoiceOver();
+    stopMusic();
+    setForParents({ place, isGamePaused: true });
+  };
+  const closeForParents = () => {
+    gameClock.resume();
+    setForParents(undefined);
+  };
+
   return (
     <>
-      <MissionScreen {...missionPlayProps} view={view} setView={setView} />
+      <MissionScreen
+        {...missionPlayProps}
+        view={view}
+        setView={setView}
+        readTime={gameClock.read}
+        gamesFirstMinutesLeft={gamesFirstMinutesLeft}
+        onGamesFirstLocked={() => {
+          setIsGamesFirstShown(true);
+        }}
+        onForParents={(place) => {
+          setForParents({ place, isGamePaused: false });
+        }}
+      />
+      {isGameView(view) ? (
+        <button
+          type="button"
+          className="for-parents-button"
+          onClick={() => {
+            pauseForParents(view.missionGame.place);
+          }}
+        >
+          <ForParentsIcon />
+          <span className="for-parents-button-label">{forParentsLabel}</span>
+        </button>
+      ) : null}
       {isFinishPlayingInMenu(view) ? null : (
         <FinishPlayingButton onFinish={missionPlayProps.finishPlaying} />
       )}
+      <ForParentsDialog
+        place={forParents?.place}
+        isGamePaused={isPaused}
+        onClose={closeForParents}
+      />
+      <ModalDialog
+        isOpen={isGamesFirstShown && gamesFirstMinutesLeft !== undefined}
+        onClose={() => {
+          setIsGamesFirstShown(false);
+        }}
+        title="Games first!"
+        closeLabel="Close"
+      >
+        <div data-read-aloud-section>
+          <p>
+            Play {describeMoreMinutes(gamesFirstMinutesLeft ?? 0)} of Games to
+            open the Wardrobe, the Room and Explore.
+          </p>
+          <p>Choose a Game on the World Map to start.</p>
+        </div>
+      </ModalDialog>
     </>
   );
 };
@@ -2839,6 +3047,10 @@ export const MissionPlay = (missionPlayProps: MissionPlayProps) => {
 const MissionScreen = ({
   view,
   setView,
+  readTime,
+  gamesFirstMinutesLeft,
+  onGamesFirstLocked,
+  onForParents,
   child,
   rewards,
   familyChestActivityCount,
@@ -2988,7 +3200,7 @@ const MissionScreen = ({
       mission,
       missionGame,
       rewardsAtStart: rewards,
-      progress: startMission(readTapTime()),
+      progress: startMission(readTime()),
       feedback: { kind: "none" },
       companionMood: "waiting",
       poppedChoiceIndex: undefined,
@@ -3000,16 +3212,22 @@ const MissionScreen = ({
     child.yearGroup,
     child.limits,
   );
+  const isGamesFirst = gamesFirstMinutesLeft !== undefined;
   const navProps = {
     characterName: child.characterName,
     yearGroup: child.yearGroup,
     rewards,
     familyChestActivityCount,
     soundSettings: child.limits,
+    gamesFirstMinutesLeft,
     onExplore:
       childStartIsland === undefined
         ? undefined
         : () => {
+            if (isGamesFirst) {
+              onGamesFirstLocked();
+              return;
+            }
             cueMusic([]);
             setExploring({
               islandId: childStartIsland.id,
@@ -3018,11 +3236,32 @@ const MissionScreen = ({
             setView({ kind: "choosing" });
           },
     onDressing: () => {
+      if (isGamesFirst) {
+        onGamesFirstLocked();
+        return;
+      }
       setView({ kind: "dressing" });
     },
     onFurnishing: () => {
+      if (isGamesFirst) {
+        onGamesFirstLocked();
+        return;
+      }
       setView({ kind: "furnishing" });
     },
+  };
+  // Setting off to explore, from anywhere on the World Map, waits for a
+  // Parent's Games first; moving about while already exploring doesn't.
+  const changeExploring = (nextExploring: Exploring | undefined) => {
+    if (
+      nextExploring !== undefined &&
+      exploring === undefined &&
+      isGamesFirst
+    ) {
+      onGamesFirstLocked();
+      return;
+    }
+    setExploring(nextExploring);
   };
   const showWorldMap = () => {
     cueMusic([]);
@@ -3160,7 +3399,7 @@ const MissionScreen = ({
         leftPlace={view.leftPlace}
         onIslandInViewChanged={setLastIslandInViewId}
         foundTreasureIds={foundTreasureIds}
-        onExploringChanged={setExploring}
+        onExploringChanged={changeExploring}
         onTreasureFound={(treasureId) => {
           setFoundTreasureIds((found) =>
             found.includes(treasureId) ? found : [...found, treasureId],
@@ -3180,6 +3419,7 @@ const MissionScreen = ({
           })
         }
         onStarted={startPlaying}
+        onForParents={onForParents}
       />
     );
   }
@@ -3193,7 +3433,7 @@ const MissionScreen = ({
           yearGroup={level}
           random={missionParts.random}
           buildId={missionParts.buildId}
-          readTime={readTapTime}
+          readTime={readTime}
           recordPractice={(practiceRecord) => {
             recordPractice(practiceRecord, view.missionGame.place);
           }}
@@ -3224,7 +3464,7 @@ const MissionScreen = ({
           isClockOff={child.limits.isCheckClockOff}
           random={missionParts.random}
           buildId={missionParts.buildId}
-          readTime={readTapTime}
+          readTime={readTime}
           spokenWord={checkSpokenWord}
           recordPractice={(practiceRecord) => {
             recordPractice(practiceRecord, place);
@@ -3306,7 +3546,7 @@ const MissionScreen = ({
   };
 
   const chooseAnswer = (choice: string, index: number) => {
-    const outcome = answerQuestion(mission, progress, choice, readTapTime());
+    const outcome = answerQuestion(mission, progress, choice, readTime());
     const choiceSound = musicGame?.findChoiceSound(choice);
     playSoundEffect(outcome.kind === "wrong" ? "wrong" : "right", child.limits);
     if (outcome.kind === "wrong") {

@@ -180,6 +180,7 @@ const addMissingLimits = (limits: Record<string, unknown>): unknown => {
     isCheckClockOff: false,
     isExploringLocked: false,
     exploreLockedIslandIds: [],
+    gamesFirstMinutes: null,
     lockedGameKeys: [],
     teacherLocks: buildTeacherLocks({}),
     ...limits,

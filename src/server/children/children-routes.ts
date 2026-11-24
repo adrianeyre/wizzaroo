@@ -7,6 +7,8 @@ import {
   buildChildLimits,
   buildParentChoices,
   buildTeacherLocks,
+  longestGamesFirstMinutes,
+  shortestGamesFirstMinutes,
   type ParentChoices,
   type TeacherLocks,
 } from "../../curriculum/island-access.js";
@@ -271,6 +273,7 @@ type OptionalLimit =
   | "isCheckClockOff"
   | "isExploringLocked"
   | "exploreLockedIslandIds"
+  | "gamesFirstMinutes"
   | "lockedGameKeys";
 
 type ChildLimitsBody = Omit<ParentChoices, OptionalLimit> &
@@ -328,6 +331,11 @@ const childLimitsBodySchema = {
     isCheckClockOff: { type: "boolean" },
     isExploringLocked: { type: "boolean" },
     exploreLockedIslandIds: islandIdListSchema,
+    gamesFirstMinutes: {
+      type: ["integer", "null"],
+      minimum: shortestGamesFirstMinutes,
+      maximum: longestGamesFirstMinutes,
+    },
   },
 } as const;
 
@@ -652,6 +660,7 @@ export const registerChildrenRoutes = (
           lockedGameKeys: storedLimits.lockedGameKeys,
           isExploringLocked: storedLimits.isExploringLocked,
           exploreLockedIslandIds: storedLimits.exploreLockedIslandIds,
+          gamesFirstMinutes: storedLimits.gamesFirstMinutes,
           ...request.body,
         });
         await reachDatabase

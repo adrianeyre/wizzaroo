@@ -38,6 +38,13 @@ const browserStorage = [
     lasts: "Until you clear this site's data",
   },
   {
+    name: "wizzaroo.family-device.game-time",
+    kind: "Local storage",
+    purpose:
+      "How long each Child has spent in Games today, to open the Wardrobe, Room and Explore once they have played the Games first a Parent set.",
+    lasts: "Until you clear this site's data",
+  },
+  {
     name: "wizzaroo.family-device.unsynced-play",
     kind: "Local storage",
     purpose:
