@@ -30,6 +30,14 @@ import { skills } from "../../curriculum/skills.js";
 import type { Sibling } from "../family-device/family-device-page.js";
 import { CharacterPreview } from "./character-preview.js";
 import { buildItemShot, ItemPicture } from "./item-picture.js";
+import {
+  isWardrobeTalkOffered,
+  loadTalkVoiceName,
+  storeTalkVoiceName,
+  TalkButton,
+  TalkDialog,
+  useWardrobeTalk,
+} from "./wardrobe-talk.js";
 
 interface WardrobeProps {
   characterName: string;
@@ -273,6 +281,12 @@ export const Wardrobe = ({
   const [announcement, setAnnouncement] = useState<string>();
   const [shownSlot, setShownSlot] = useState<WardrobeSlot>("characterType");
   const [showOffCount, setShowOffCount] = useState(0);
+  const [isTalkOpen, setIsTalkOpen] = useState(false);
+  const [isTalkOffered] = useState(isWardrobeTalkOffered);
+  const [talkVoiceName, setTalkVoiceName] = useState(() =>
+    loadTalkVoiceName(rewards.childId),
+  );
+  const talk = useWardrobeTalk();
   const characterTypeName = findChosenFeature(loadout, "characterType").name;
 
   const findProblem = (item: Item, sibling?: Sibling) =>
@@ -448,7 +462,41 @@ export const Wardrobe = ({
             characterName={characterName}
             loadout={loadout}
             showOffCount={showOffCount}
+            readMouthOpenness={talk.readMouthOpenness}
+            stageAction={
+              isTalkOffered ? (
+                <TalkButton
+                  isTalking={talk.isTalking}
+                  onPress={() => {
+                    setIsTalkOpen(true);
+                  }}
+                />
+              ) : undefined
+            }
           />
+          {isTalkOffered ? (
+            <TalkDialog
+              characterName={characterName}
+              voiceName={talkVoiceName}
+              onVoiceChosen={(name) => {
+                storeTalkVoiceName(rewards.childId, name);
+                setTalkVoiceName(name);
+              }}
+              isOpen={isTalkOpen}
+              onClose={() => {
+                setIsTalkOpen(false);
+              }}
+              onSay={(words) => {
+                setIsTalkOpen(false);
+                // Straight from the tap, as iPhones and iPads only let sound start in answer to one.
+                if (!talk.say(words, talkVoiceName)) {
+                  setAnnouncement(
+                    `${characterName} can't talk on this device.`,
+                  );
+                }
+              }}
+            />
+          ) : null}
           <div className="wardrobe-stage-actions">
             <p className="wardrobe-hint">Drag to spin me round</p>
             <button

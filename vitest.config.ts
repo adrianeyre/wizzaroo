@@ -32,6 +32,7 @@ const domTests = [
   "src/client/islands/island-stage-props.test.tsx",
   "src/client/geography/**/*.test.tsx",
   "src/client/character/room-play*.test.tsx",
+  "src/client/character/wardrobe-talk.test.tsx",
   "src/client/awards/awards-list-style.test.ts",
   "src/client/busy/**/*.test.tsx",
 ];

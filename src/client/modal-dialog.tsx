@@ -1,4 +1,10 @@
-import { useEffect, useId, useRef, type ReactNode } from "react";
+import {
+  useEffect,
+  useId,
+  useRef,
+  type ReactNode,
+  type RefObject,
+} from "react";
 import { ReadAloudButton } from "./read-aloud-button.js";
 
 interface ModalDialogProps {
@@ -7,6 +13,8 @@ interface ModalDialogProps {
   title: string;
   closeLabel: string;
   children: ReactNode;
+  /** What to focus when it opens, such as a form's first field; the close button otherwise. */
+  initialFocusRef?: RefObject<HTMLElement | null>;
 }
 
 const CloseMark = () => (
@@ -31,6 +39,7 @@ export const ModalDialog = ({
   title,
   closeLabel,
   children,
+  initialFocusRef,
 }: ModalDialogProps) => {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
@@ -48,7 +57,7 @@ export const ModalDialog = ({
           ? document.activeElement
           : null;
       dialog.showModal();
-      closeButtonRef.current?.focus();
+      (initialFocusRef?.current ?? closeButtonRef.current)?.focus();
       return;
     }
     if (!isOpen && dialog.open) {
@@ -56,7 +65,7 @@ export const ModalDialog = ({
       openerRef.current?.focus();
       openerRef.current = null;
     }
-  }, [isOpen]);
+  }, [isOpen, initialFocusRef]);
 
   return (
     <dialog
