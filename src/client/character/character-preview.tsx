@@ -335,11 +335,11 @@ export const CharacterPortrait = ({
   );
 };
 
-/** Close on the head, hat and all, with room above for the tallest hats. */
+/** Close on the face, so the head fills its circle; a tall hat's crown runs off the top. */
 const headShot: Shot = {
-  cameraHeight: headHeight + 0.12,
-  cameraDistance: 2.8,
-  lookAtHeight: headHeight + 0.12,
+  cameraHeight: headHeight + 0.04,
+  cameraDistance: 2.25,
+  lookAtHeight: headHeight + 0.04,
   fieldOfView: 32,
 };
 

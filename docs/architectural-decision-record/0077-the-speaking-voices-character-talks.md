@@ -6,7 +6,7 @@ Each reading voice has a 3D fantasy character ([ADR 0074](./0074-sixteen-voices-
 
 ## What changes
 
-- **One face for the whole app.** `SpeakingFace` (`src/client/voice-over/speaking-face.tsx`) is mounted once on the game page and once on the Parent page. When a voice speaks, it shows that voice's character's head (its hat, hair and face, with no body, outfit, wings, held Item, pet or mount) as a portrait in the bottom-left corner, above the bottom row of controls such as Leave Mission and the World Map's dock. It lets taps through and hides a moment after the voice stops, so it doesn't flicker between sentences. Screen readers ignore it: the voice itself is what it adds.
+- **One face for the whole app.** `SpeakingFace` (`src/client/voice-over/speaking-face.tsx`) is mounted once on the game page and once on the Parent page. When a voice speaks, it shows that voice's character's head (its hat, hair and face, with no body, outfit, wings, held Item, pet or mount) as a portrait in the bottom-left corner, framed close so the head fills its circle (a tall hat's crown runs off the top), above the bottom row of controls such as Leave Mission and the World Map's dock. It lets taps through and hides a moment after the voice stops, so it doesn't flicker between sentences. Screen readers ignore it: the voice itself is what it adds.
 - **The face is whoever is speaking.**
   - **Piper**, for a Game's line, Read it to me and a voice's hello: the chosen voice.
   - **A recorded line**, when the chosen voice isn't on the device yet: Cori, whose voice the recordings are ([ADR 0007](./0007-audio-is-made-before-release.md)).
@@ -17,7 +17,7 @@ Each reading voice has a 3D fantasy character ([ADR 0074](./0074-sixteen-voices-
   - **A recording:** it is decoded once, off to the side, and timed by the audio element.
   - **The device's own voice:** it gives no sound to measure, so the mouth moves word by word at about three syllables a second.
   - The Character's mouth (`TalkingMouth` in `character-model.tsx`) opens as wide as the loudness, its jaw dropping, and closes to the Character's own mouth between words.
-- **A page that already shows the voice's character lets it talk there.** Settings' stage shows the chosen voice, so its character talks on the stage and no second face appears (`showVoiceOnStage`).
+- **A page that already shows the voice's character lets it talk there.** Settings' stage shows the chosen voice, so its character talks on the stage and no second face appears (`showVoiceOnStage`). A newly chosen voice is put on the stage before its hello starts, so its own face never flashes up.
 
 ## Consequences
 

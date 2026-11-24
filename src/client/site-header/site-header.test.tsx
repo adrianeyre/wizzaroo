@@ -14,6 +14,7 @@ import {
   defaultReadAloudVoiceName,
   findReadAloudVoice,
 } from "../voice-over/read-aloud-voices.js";
+import { isVoiceOnStage } from "../voice-over/speaking-voice.js";
 
 const piper = vi.hoisted(() => {
   const shown: {
@@ -403,6 +404,31 @@ describe("SiteHeader and SettingsPage", () => {
           .querySelector(".voice-studio-speaker [role=img]")
           ?.getAttribute("aria-label"),
       ).toContain("Seren the Archer");
+      vi.unstubAllGlobals();
+      Reflect.set(globalThis, "IS_REACT_ACT_ENVIRONMENT", true);
+    });
+
+    it("puts a newly chosen voice on the stage before its hello starts, so no face of its own flashes up", () => {
+      const onStageWhenSpoken: boolean[] = [];
+      vi.stubGlobal("speechSynthesis", {
+        speak: () => onStageWhenSpoken.push(isVoiceOnStage("seren")),
+        cancel: () => undefined,
+        getVoices: () => [],
+      });
+      vi.stubGlobal(
+        "SpeechSynthesisUtterance",
+        class {
+          constructor(readonly text: string) {}
+        },
+      );
+      renderPage(<SettingsPage />);
+
+      act(() => {
+        findRadio("readAloudVoice", "seren").click();
+      });
+
+      expect(onStageWhenSpoken).toEqual([true]);
+      expect(isVoiceOnStage("adrian")).toBe(false);
       vi.unstubAllGlobals();
       Reflect.set(globalThis, "IS_REACT_ACT_ENVIRONMENT", true);
     });
