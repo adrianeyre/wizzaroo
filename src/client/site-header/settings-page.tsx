@@ -1,9 +1,10 @@
 import {
-  useEffect,
+  useLayoutEffect,
   useState,
   useSyncExternalStore,
   type ReactNode,
 } from "react";
+import { flushSync } from "react-dom";
 import type { PiperModel } from "../../curriculum/piper-voice-models.js";
 import { CharacterPreview } from "../character/character-preview.js";
 import {
@@ -231,7 +232,8 @@ const VoiceStudio = ({
   const isDisabled = !isVoiceOffered;
   const isDownloading = download.state === "downloading";
   // The chosen voice talks here on the stage, rather than in a face of its own.
-  useEffect(() => showVoiceOnStage(voice.id), [voice.id]);
+  // A layout effect, so a newly chosen voice is on the stage before its hello starts.
+  useLayoutEffect(() => showVoiceOnStage(voice.id), [voice.id]);
   const speakingVoice = useSyncExternalStore(
     subscribeToSpeaking,
     () => findSpeakingCharacter()?.voice,
@@ -341,7 +343,10 @@ export const SettingsPage = () => {
 
   const changeVoice = (name: ReadAloudVoiceName) => {
     storeReadAloudVoiceName(name);
-    setVoiceName(name);
+    // Shown on the stage first, or its hello would flash up a face of its own.
+    flushSync(() => {
+      setVoiceName(name);
+    });
     sayVoiceSample(name);
     showOff();
   };
