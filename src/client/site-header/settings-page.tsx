@@ -14,11 +14,6 @@ import {
   subscribeToSpeaking,
 } from "../voice-over/speaking-voice.js";
 import {
-  buildPortraitShot,
-  useItemPictureUrl,
-  type ItemShot,
-} from "../character/item-picture.js";
-import {
   applyAppearance,
   colourModes,
   defaultAppearance,
@@ -44,7 +39,6 @@ import {
 } from "../voice-over/piper-speech.js";
 import { isReadAloudOffered, readAloud } from "../voice-over/read-aloud.js";
 import {
-  defaultReadAloudVoiceName,
   describeVoiceCharacter,
   findReadAloudVoice,
   loadReadAloudVoiceName,
@@ -53,6 +47,7 @@ import {
   type ReadAloudVoice,
   type ReadAloudVoiceName,
 } from "../voice-over/read-aloud-voices.js";
+import { VoiceChoice } from "../voice-over/voice-choice.js";
 import {
   CheckIcon,
   DarkModeIcon,
@@ -146,74 +141,6 @@ export const describeVoiceDownload = (
       return `Downloads once (${size}) the first time it reads, then works offline.`;
   }
 };
-
-const portraitShots = new Map<ReadAloudVoiceName, ItemShot>();
-
-/** A voice's character, head and hat, photographed once in the shared studio. */
-const findPortraitShot = (voice: ReadAloudVoice): ItemShot => {
-  const known = portraitShots.get(voice.id);
-  if (known !== undefined) {
-    return known;
-  }
-  const shot = buildPortraitShot(voice.character.loadout);
-  portraitShots.set(voice.id, shot);
-  return shot;
-};
-
-const VoicePortrait = ({ voice }: { voice: ReadAloudVoice }) => {
-  const pictureUrl = useItemPictureUrl(findPortraitShot(voice));
-  return (
-    <span
-      className="voice-card-portrait"
-      data-voice={voice.voice}
-      aria-hidden="true"
-    >
-      {pictureUrl === undefined ? (
-        <span className="voice-card-initial">{voice.name.slice(0, 1)}</span>
-      ) : (
-        <img src={pictureUrl} alt="" draggable={false} />
-      )}
-    </span>
-  );
-};
-
-const VoiceChoice = ({
-  voice,
-  isChosen,
-  isDisabled,
-  onChosen,
-}: {
-  voice: ReadAloudVoice;
-  isChosen: boolean;
-  isDisabled: boolean;
-  onChosen: (name: ReadAloudVoiceName) => void;
-}) => (
-  <label className="choice-card voice-card">
-    <input
-      type="radio"
-      name="readAloudVoice"
-      value={voice.id}
-      className="visually-hidden"
-      checked={isChosen}
-      disabled={isDisabled}
-      onChange={() => {
-        onChosen(voice.id);
-      }}
-    />
-    <VoicePortrait voice={voice} />
-    <span className="choice-card-label">
-      {voice.name}
-      {voice.id === defaultReadAloudVoiceName ? (
-        <span className="choice-card-badge">Default</span>
-      ) : null}
-    </span>
-    <span className="voice-card-title">the {voice.character.title}</span>
-    <span className="choice-card-detail">{voice.description}</span>
-    <span className="choice-card-check">
-      <CheckIcon />
-    </span>
-  </label>
-);
 
 const VoiceStudio = ({
   voiceName,
@@ -321,6 +248,7 @@ const VoiceStudio = ({
         {readAloudVoices.map((choice) => (
           <VoiceChoice
             key={choice.id}
+            groupName="readAloudVoice"
             voice={choice}
             isChosen={choice.id === voiceName}
             isDisabled={isDisabled}

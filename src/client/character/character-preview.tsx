@@ -1,5 +1,11 @@
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useMemo, useRef, useState, type RefObject } from "react";
+import {
+  useMemo,
+  useRef,
+  useState,
+  type ReactNode,
+  type RefObject,
+} from "react";
 import type { Group } from "three";
 import type { CharacterLoadout } from "../../curriculum/catalogue.js";
 import { getMotionScale } from "../reduced-motion.js";
@@ -241,6 +247,8 @@ interface CharacterPreviewProps {
   loadout: CharacterLoadout;
   showOffCount?: number;
   readMouthOpenness?: () => number;
+  /** A control pinned to the stage's top-right corner, such as the Wardrobe's Talk button. */
+  stageAction?: ReactNode;
 }
 
 const quarterTurn = Math.PI / 2;
@@ -255,22 +263,33 @@ export const CharacterPreview = ({
   loadout,
   showOffCount = 0,
   readMouthOpenness,
+  stageAction,
 }: CharacterPreviewProps) => {
   const dragTurnRef = useRef(0);
+  const stage = (
+    <div role="img" aria-label={describeCharacter(characterName, loadout)}>
+      <CharacterStage
+        loadout={loadout}
+        framing={
+          hasCompany(loadout) ? "full-length-with-company" : "full-length"
+        }
+        isTurnable
+        dragTurnRef={dragTurnRef}
+        showOffCount={showOffCount}
+        readMouthOpenness={readMouthOpenness}
+      />
+    </div>
+  );
   return (
     <figure className="character-preview">
-      <div role="img" aria-label={describeCharacter(characterName, loadout)}>
-        <CharacterStage
-          loadout={loadout}
-          framing={
-            hasCompany(loadout) ? "full-length-with-company" : "full-length"
-          }
-          isTurnable
-          dragTurnRef={dragTurnRef}
-          showOffCount={showOffCount}
-          readMouthOpenness={readMouthOpenness}
-        />
-      </div>
+      {stageAction === undefined ? (
+        stage
+      ) : (
+        <div className="character-preview-frame">
+          {stage}
+          {stageAction}
+        </div>
+      )}
       <figcaption>{characterName}</figcaption>
       <button
         type="button"

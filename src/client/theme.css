@@ -17498,3 +17498,210 @@ button.for-parents-button:active {
   width: 0.75rem;
   height: 0.75rem;
 }
+
+/* The Talk speech bubble hangs off the stage's top-right corner (ADR 0079). */
+.character-preview-frame {
+  position: relative;
+}
+
+button.wardrobe-talk {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  gap: var(--space-1);
+  min-height: 44px;
+  padding: 0 var(--space-4) 0 var(--space-3);
+  border: 2px solid
+    color-mix(in srgb, var(--colour-on-primary) 85%, transparent);
+  border-radius: var(--radius-round);
+  background: var(--colour-primary);
+  color: var(--colour-on-primary);
+  font-family: var(--font-heading);
+  font-size: 1.0625rem;
+  letter-spacing: 0.01em;
+  box-shadow: none;
+  filter: drop-shadow(
+    0 6px 10px light-dark(rgb(15 23 42 / 0.22), rgb(0 0 0 / 0.55))
+  );
+  translate: 40% -45%;
+  transition:
+    background-color var(--duration-quick) ease-out,
+    scale var(--duration-press) ease-out;
+}
+
+/* The bubble's tail points down to the Character. */
+button.wardrobe-talk::after {
+  position: absolute;
+  bottom: -10px;
+  left: 14px;
+  width: 16px;
+  height: 13px;
+  background: inherit;
+  clip-path: polygon(0 0, 100% 0, 8% 100%);
+  content: "";
+}
+
+button.wardrobe-talk:hover {
+  border-color: color-mix(in srgb, var(--colour-on-primary) 85%, transparent);
+  background: var(--colour-primary-hover);
+  scale: 1.04;
+}
+
+button.wardrobe-talk:active {
+  transform: none;
+  scale: 0.96;
+}
+
+.wardrobe-talk-waves {
+  width: 1.125rem;
+  height: 1.125rem;
+  flex: none;
+}
+
+.wardrobe-talk-waves path {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+button.wardrobe-talk[data-talking] .wardrobe-talk-waves path {
+  animation: read-aloud-bar 0.8s ease-in-out infinite;
+}
+
+button.wardrobe-talk[data-talking] .wardrobe-talk-waves path:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+button.wardrobe-talk[data-talking] .wardrobe-talk-waves path:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+button.wardrobe-talk[data-talking] .wardrobe-talk-waves path:nth-child(4) {
+  animation-delay: -0.6s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button.wardrobe-talk {
+    transition: background-color var(--duration-quick) ease-out;
+  }
+
+  button.wardrobe-talk:hover,
+  button.wardrobe-talk:active {
+    scale: none;
+  }
+
+  button.wardrobe-talk[data-talking] .wardrobe-talk-waves path {
+    animation: none;
+  }
+}
+
+.wardrobe-talk-form {
+  gap: var(--space-3);
+}
+
+/* Every voice's character in one row that scrolls sideways, so Say stays in reach. */
+fieldset.wardrobe-talk-voices {
+  display: block;
+  min-width: 0;
+  margin: 0;
+}
+
+fieldset.wardrobe-talk-voices legend {
+  margin-bottom: var(--space-2);
+  font-size: 1.125rem;
+}
+
+.wardrobe-talk-voice-strip {
+  display: flex;
+  gap: var(--space-2);
+  margin-inline: calc(var(--space-5) * -1);
+  padding: var(--space-1) var(--space-5) var(--space-3);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-padding-inline: var(--space-5);
+  scroll-snap-type: x mandatory;
+}
+
+fieldset.wardrobe-talk-voices label.voice-card {
+  flex: none;
+  width: 7.5rem;
+  padding: var(--space-3) var(--space-2);
+  scroll-snap-align: start;
+}
+
+fieldset.wardrobe-talk-voices .voice-card-portrait {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+fieldset.wardrobe-talk-voices .choice-card-label {
+  margin-top: var(--space-1);
+  padding-inline: 0;
+  font-size: 1.0625rem;
+}
+
+fieldset.wardrobe-talk-voices .voice-card-title {
+  font-size: 0.75rem;
+  line-height: 1.25;
+}
+
+fieldset.wardrobe-talk-voices .choice-card-check {
+  top: var(--space-2);
+  right: var(--space-2);
+}
+
+.wardrobe-talk-form textarea {
+  width: 100%;
+  min-height: 6.5rem;
+  padding: var(--space-3);
+  border: 2px solid var(--colour-input-border);
+  border-radius: var(--radius-medium);
+  background: var(--colour-card);
+  color: var(--colour-foreground);
+  font: inherit;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.45;
+  resize: vertical;
+  transition:
+    border-color var(--duration-quick) ease-out,
+    box-shadow var(--duration-quick) ease-out;
+}
+
+.wardrobe-talk-form textarea:hover {
+  border-color: var(--colour-muted-foreground);
+}
+
+.wardrobe-talk-form textarea:focus-visible {
+  border-color: var(--colour-primary);
+  outline: 3px solid var(--colour-ring);
+  outline-offset: 1px;
+}
+
+.wardrobe-talk-count {
+  justify-self: end;
+  margin: calc(var(--space-2) * -1) 0 0;
+  color: var(--colour-muted-foreground);
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.wardrobe-talk-ideas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.wardrobe-talk-ideas button {
+  min-height: 40px;
+  padding: 0 var(--space-3);
+  font-size: 0.9375rem;
+  font-weight: 700;
+  box-shadow: none;
+}
+
+button.wardrobe-talk-say {
+  justify-self: end;
+  min-width: 8rem;
+  font-size: 1.125rem;
+}
