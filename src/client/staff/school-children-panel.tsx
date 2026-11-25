@@ -27,6 +27,7 @@ import {
   CloseIcon,
   CoinsIcon,
   EyeIcon,
+  ResetIcon,
   StarIcon,
 } from "../site-header/icons.js";
 import { listFamilyChoices, type FamilyChoice } from "./families.js";
@@ -43,6 +44,7 @@ import {
   giveBirthMonthAndYear,
   moveChild,
   readProblemMessage,
+  resetChildProgress,
   type School,
   type StaffChild,
 } from "./staff-api.js";
@@ -410,6 +412,81 @@ const StarAwardForm = ({ child, onAwarded }: StarAwardFormProps) => {
   );
 };
 
+interface ProgressResetButtonProps {
+  child: StaffChild;
+  onReset: (news: ActionNews) => void;
+}
+
+/** Starts a Child's play again from nothing, once the Admin has said yes, as it can't be undone. */
+const ProgressResetButton = ({ child, onReset }: ProgressResetButtonProps) => {
+  const [isConfirming, setIsConfirming] = useState(false);
+  const { busyLabel, isBusy, runBusy } = useBusyAction();
+  const reset = () => {
+    runBusy(`Resetting ${child.nickname}'s progress…`, async () => {
+      await resetChildProgress(child.id);
+      return true;
+    }).then(
+      (isReset) => {
+        if (isReset !== true) {
+          return;
+        }
+        setIsConfirming(false);
+        onReset({
+          kind: "done",
+          message: `Reset ${child.nickname}'s progress. They start again with no Stars, Items or Mastery.`,
+        });
+      },
+      (error: unknown) => {
+        onReset({ kind: "failed", message: readProblemMessage(error) });
+      },
+    );
+  };
+  return (
+    <>
+      {isConfirming ? (
+        <span className="confirm-actions" aria-busy={isBusy}>
+          <button
+            type="button"
+            className="row-action danger solid"
+            disabled={isBusy}
+            onClick={reset}
+          >
+            <ResetIcon />
+            Yes, reset {child.nickname}&apos;s progress
+          </button>
+          <button
+            type="button"
+            className="row-action"
+            disabled={isBusy}
+            onClick={() => {
+              setIsConfirming(false);
+            }}
+          >
+            <CloseIcon />
+            Keep it
+          </button>
+        </span>
+      ) : (
+        <button
+          type="button"
+          className="row-action danger"
+          onClick={() => {
+            setIsConfirming(true);
+          }}
+        >
+          <ResetIcon />
+          <span>
+            Reset
+            <span className="visually-hidden">{` ${child.nickname}'s`}</span>{" "}
+            progress
+          </span>
+        </button>
+      )}
+      {busyLabel === undefined ? null : <BusyProgress label={busyLabel} />}
+    </>
+  );
+};
+
 interface FamilyChestCoinFormProps {
   families: readonly FamilyChoice[];
   onAwarded: (news: ActionNews) => void;
@@ -515,7 +592,7 @@ export const AdminChildrenPanel = () => {
       <StaffPageHeader
         area="admin"
         title="Children"
-        intro="Every Child at every School. Each time you open a Child's progress, Wizzaroo logs it."
+        intro="Every Child at every School. Each time you open a Child's progress, Wizzaroo logs it. Resetting a Child's progress deletes their play, Stars and Items for good, but keeps the Child and their Character."
       />
       {view.kind === "loading" ? (
         <BusyProgress label="Loading every Child, their Families and Schools…" />
@@ -634,6 +711,13 @@ export const AdminChildrenPanel = () => {
                                 }}
                               />
                             )}
+                            <ProgressResetButton
+                              child={child}
+                              onReset={(resetNews) => {
+                                setNews(resetNews);
+                                showChildren();
+                              }}
+                            />
                             <MoveChildForm
                               child={child}
                               schools={view.schools}

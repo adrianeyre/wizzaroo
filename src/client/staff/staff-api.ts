@@ -468,6 +468,10 @@ export const awardStars = async (childId: string, stars: number) => {
   await send("POST", `/api/admin/children/${childId}/star-awards`, { stars });
 };
 
+export const resetChildProgress = async (childId: string) => {
+  await send("POST", `/api/admin/children/${childId}/progress-reset`);
+};
+
 export const awardFamilyChestCoins = async (familyId: string, coins: number) =>
   (
     await readAnswer(

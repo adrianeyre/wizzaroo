@@ -70,7 +70,10 @@ import {
 } from "./unsynced-play.js";
 import { ReadAloudButton } from "../read-aloud-button.js";
 import { BusyProgress, useBusyAction } from "../busy/busy-progress.js";
-import { enterFullScreenOnTouchDevice } from "../full-screen.js";
+import {
+  enterFullScreenOnTouchDevice,
+  leaveFullScreen,
+} from "../full-screen.js";
 
 type PlayableFamilyView =
   | { kind: "loading" }
@@ -928,6 +931,13 @@ export const FamilyDevicePage = ({ renderGame }: FamilyDevicePageProps) => {
       ? "Settings"
       : findFamilyDevicePageTitle(view, turn),
   );
+
+  // A phone or tablet fills its screen while a Child plays; back on Who's playing? it shows the browser again.
+  useEffect(() => {
+    if (!isPlaying) {
+      leaveFullScreen();
+    }
+  }, [isPlaying]);
 
   if (view.kind === "listed" && turn.kind === "playing") {
     return (

@@ -146,7 +146,7 @@ export const SiteHeader = ({
       className={hasSidebar ? "site-header has-sidebar" : "site-header"}
     >
       <a className="site-header-brand" href={brandHref}>
-        <img src="/favicon.svg" alt="" width="36" height="36" />
+        <img src="/favicon.svg" alt="" width="44" height="44" />
         <span className="site-header-titles">
           <span className="site-header-title">Wizzaroo</span>
           {subtitle === undefined ? null : (

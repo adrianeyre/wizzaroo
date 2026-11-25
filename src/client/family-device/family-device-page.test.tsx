@@ -581,6 +581,40 @@ describe("FamilyDevicePage", () => {
       await waitForText(theGame);
     });
 
+    it("leaves full screen when the Child finishes playing and Who's playing? shows again", async () => {
+      offerFullScreen("coarse");
+      let fullScreenElement: Element | null = null;
+      const exitFullscreen = vi.fn(() => {
+        fullScreenElement = null;
+        return Promise.resolve();
+      });
+      Object.defineProperties(document, {
+        fullscreenElement: { configurable: true, get: () => fullScreenElement },
+        exitFullscreen: { configurable: true, value: exitFullscreen },
+      });
+      Object.defineProperty(document.documentElement, "requestFullscreen", {
+        configurable: true,
+        value: vi.fn(() => {
+          fullScreenElement = document.documentElement;
+          return Promise.resolve();
+        }),
+      });
+      startFakeServer(answerWithPlayableChildren([sparkle]));
+      openPage();
+      await waitForText("Who's playing?");
+      await openSparkle();
+      await tapPictures(sparklePicturePassword);
+      findButton("Let's play").click();
+      await waitForText(theGame);
+      expect(exitFullscreen).not.toHaveBeenCalled();
+
+      findButton("Finish playing").click();
+
+      await waitForText("Who's playing?");
+      expect(exitFullscreen).toHaveBeenCalledOnce();
+      Reflect.deleteProperty(document, "exitFullscreen");
+    });
+
     it("leaves a desktop's screen as it is when a Child signs in", async () => {
       const requestFullscreen = offerFullScreen("fine");
       startFakeServer(answerWithPlayableChildren([sparkle]));

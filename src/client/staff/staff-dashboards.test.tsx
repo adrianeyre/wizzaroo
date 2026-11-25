@@ -633,6 +633,53 @@ describe("the staff dashboards", () => {
       });
     });
 
+    it("resets a Child's progress only once the Admin says yes, then shows their new balance", async () => {
+      let stars = twoey.stars;
+      const requests = startFakeApi({
+        "GET /api/school-children": () => json([{ ...twoey, stars }]),
+        "GET /api/parents": () => json([jo]),
+        "GET /api/schools": () => json([hillside]),
+        [`POST /api/admin/children/${twoey.id}/progress-reset`]: () => {
+          stars = 0;
+          return noContent();
+        },
+      });
+      root.render(<AdminSection section="admin-children" />);
+      await vi.waitFor(() => {
+        expect(getPageText()).toContain("Twoey");
+      });
+      const starsCell = () =>
+        document.querySelector('td[data-label="Stars"]')?.textContent;
+      const isResetSent = () =>
+        requests.some(({ path }) => path.endsWith("/progress-reset"));
+
+      findButton("Reset Twoey's progress").click();
+      await vi.waitFor(() => {
+        expect(getPageText()).toContain("Yes, reset Twoey's progress");
+      });
+      findButton("Keep it").click();
+      await vi.waitFor(() => {
+        expect(getPageText()).not.toContain("Yes, reset Twoey's progress");
+      });
+      expect(isResetSent()).toBe(false);
+
+      findButton("Reset Twoey's progress").click();
+      await vi.waitFor(() => {
+        expect(getPageText()).toContain("Yes, reset Twoey's progress");
+      });
+      findButton("Yes, reset Twoey's progress").click();
+
+      await vi.waitFor(() => {
+        expect(getPageText()).toContain("Reset Twoey's progress.");
+        expect(starsCell()).toBe("0");
+      });
+      expect(requests).toContainEqual({
+        method: "POST",
+        path: `/api/admin/children/${twoey.id}/progress-reset`,
+        body: undefined,
+      });
+    });
+
     it("waits to give Stars to a Child until they have set up their Character, since only then can they spend them", async () => {
       startFakeApi({
         "GET /api/school-children": () =>
