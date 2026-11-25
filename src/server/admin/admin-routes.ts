@@ -14,6 +14,7 @@ import {
   mostStarsInOneAward,
 } from "../../curriculum/rewards.js";
 import { logAdminAccess } from "../children/admin-access-log.js";
+import { resetChildProgress } from "../children/child-progress-reset.js";
 import { loadFamilyRewards } from "../children/family-rewards.js";
 import { deleteChild, deleteFamily } from "../family-data/family-deletion.js";
 import {
@@ -277,6 +278,46 @@ export const registerAdminRoutes = (
           request.log.info(
             { adminUserId, childId, stars },
             "admin.stars.awarded",
+          );
+        },
+      );
+
+      return reply.code(204).send();
+    },
+  );
+
+  // Starts a Child's play again from nothing: their progress, Stars, Items, Room, Checks and Quests, but not the Child.
+  server.post<{ Params: { childId: string } }>(
+    "/api/admin/children/:childId/progress-reset",
+    {
+      config: { reach: "admin" },
+      schema: { params: buildIdParamsSchema("childId") },
+    },
+    async (request, reply) => {
+      const { childId } = request.params;
+      await runAsSignedInAdmin(
+        database,
+        request,
+        async (adminUserId, reachDatabase, signedInAdmin) => {
+          const child = (
+            await reachDatabase
+              .select({ id: children.id, familyId: children.familyId })
+              .from(children)
+              .where(eq(children.id, childId))
+          ).at(0);
+          if (child === undefined) {
+            throw new ChildNotFoundError();
+          }
+          await database.transaction((serverDatabase) =>
+            resetChildProgress(
+              serverDatabase,
+              { childId, familyId: child.familyId },
+              buildUserActor(signedInAdmin),
+            ),
+          );
+          request.log.info(
+            { adminUserId, childId },
+            "admin.child.progress-reset",
           );
         },
       );

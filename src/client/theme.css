@@ -6080,6 +6080,8 @@ a.site-header-brand:hover {
 
 .site-header-brand img {
   flex: none;
+  width: 44px;
+  height: 44px;
   border-radius: var(--radius-small);
   image-rendering: pixelated;
 }
@@ -6092,8 +6094,24 @@ a.site-header-brand:hover {
 
 .site-header-title {
   font-family: var(--font-heading);
-  font-size: 1.375rem;
+  font-size: 1.875rem;
   font-weight: 800;
+  letter-spacing: 0.01em;
+  /* The name in brand colours, so it stands out from everything else in the bar. */
+  background: linear-gradient(
+    100deg,
+    var(--colour-primary) 10%,
+    var(--colour-play-strong) 90%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+@media (forced-colors: active) {
+  .site-header-title {
+    background: none;
+    color: CanvasText;
+  }
 }
 
 .site-header-subtitle {
@@ -6276,7 +6294,7 @@ ul.site-menu-list {
   }
 
   .site-header-title {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
   }
 }
 

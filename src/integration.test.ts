@@ -6925,6 +6925,139 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
       });
     });
 
+    describe("the Admin resetting a Child's progress", () => {
+      it("deletes the Child's play and Star awards, keeping the Child, their Character, a sibling's play and a Gift they gave, refusing anyone but the Admin", async () => {
+        const adminToken = await signInAdmin();
+        const { familyId } = await insertSchoolParent(
+          "reset@hillside.example",
+          hillsideId,
+        );
+        const childId = await addSchoolChild(
+          familyId,
+          hillsideId,
+          "Resetty",
+          bornInYear(3),
+        );
+        const siblingId = await addSchoolChild(
+          familyId,
+          hillsideId,
+          "Keepy",
+          bornInYear(4),
+        );
+        await database.insert(characters).values([
+          { childId, name: "Resetty's Character" },
+          { childId: siblingId, name: "Keepy's Character" },
+        ]);
+        const [{ familyDeviceId }] = await database
+          .insert(familyDevices)
+          .values({
+            tokenHash: `reset-device-${randomUUID()}`,
+            familyId,
+            name: "Reset tablet",
+          })
+          .returning({ familyDeviceId: familyDevices.id });
+        const sessionId = randomUUID();
+        const giftToSiblingId = randomUUID();
+        const siblingPlayId = randomUUID();
+        const playedBy = (id: string, playerId: string) => ({
+          id,
+          familyId,
+          familyDeviceId,
+          childId: playerId,
+          type: "session-started" as const,
+          payload: { sessionId },
+          happenedAt: new Date(),
+        });
+        await database.insert(playEvents).values([
+          playedBy(randomUUID(), childId),
+          {
+            ...playedBy(randomUUID(), childId),
+            type: "item-bought",
+            payload: {
+              sessionId,
+              itemId: "rainbow-scarf",
+              localDate: "2026-11-16",
+            },
+          },
+          {
+            ...playedBy(giftToSiblingId, childId),
+            type: "item-bought",
+            payload: {
+              sessionId,
+              itemId: "rainbow-scarf",
+              localDate: "2026-11-16",
+              giftForChildId: siblingId,
+            },
+          },
+          playedBy(siblingPlayId, siblingId),
+        ]);
+        await database.insert(starAwards).values([
+          { childId, stars: 40 },
+          { childId: siblingId, stars: 7 },
+        ]);
+        await insertTeacher("year3reset@hillside.example", hillsideId, [3]);
+
+        const byTeacher = await injectAs(
+          await signInTeacher("year3reset@hillside.example"),
+          {
+            method: "POST",
+            url: `/api/admin/children/${childId}/progress-reset`,
+          },
+        );
+        const noSuchChild = await injectAs(adminToken, {
+          method: "POST",
+          url: `/api/admin/children/${randomUUID()}/progress-reset`,
+        });
+        const reset = await injectAs(adminToken, {
+          method: "POST",
+          url: `/api/admin/children/${childId}/progress-reset`,
+        });
+
+        expect(byTeacher.statusCode).toBe(403);
+        expect(noSuchChild.statusCode).toBe(404);
+        expect(reset.statusCode).toBe(204);
+        expect(
+          (
+            await database
+              .select({ id: playEvents.id })
+              .from(playEvents)
+              .where(eq(playEvents.familyId, familyId))
+          )
+            .map(({ id }) => id)
+            .sort(),
+        ).toEqual([giftToSiblingId, siblingPlayId].sort());
+        expect(
+          await database
+            .select({ childId: starAwards.childId, stars: starAwards.stars })
+            .from(starAwards)
+            .where(inArray(starAwards.childId, [childId, siblingId])),
+        ).toEqual([{ childId: siblingId, stars: 7 }]);
+        expect(
+          await database
+            .select({ id: children.id })
+            .from(children)
+            .where(eq(children.id, childId)),
+        ).toEqual([{ id: childId }]);
+        expect(
+          await database
+            .select({ name: characters.name })
+            .from(characters)
+            .where(eq(characters.childId, childId)),
+        ).toEqual([{ name: "Resetty's Character" }]);
+        const rewards = await loadFamilyRewards(database, familyId);
+        const resetRewards = rewards.children.find(
+          (child) => child.childId === childId,
+        );
+        expect(resetRewards?.stars).toBe(0);
+        expect(
+          await database
+            .select({ action: auditLogEntries.action })
+            .from(auditLogEntries)
+            .where(eq(auditLogEntries.targetId, childId)),
+        ).toContainEqual({ action: "child.changed" });
+      });
+    });
+
     describe("a Parent giving Stars from the Awards page", () => {
       const setUpRewardedChild = async (email: string, nickname: string) => {
         const { userId, familyId } = await insertSchoolParent(
@@ -18585,6 +18718,11 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
       },
       {
         method: "POST",
+        path: "/api/admin/children/:childId/progress-reset",
+        wrapper: "admin",
+      },
+      {
+        method: "POST",
         path: "/api/admin/families/:familyId/family-chest-coin-awards",
         wrapper: "admin",
         payload: { coins: 1 },
@@ -23203,6 +23341,7 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
       "GET /api/admin/families",
       "GET /api/bulk/teachers/template",
       "GET /api/teachers",
+      "POST /api/admin/children/:childId/progress-reset",
       "POST /api/admin/children/:childId/star-awards",
       "POST /api/admin/deletion-requests/:deletionRequestId/confirmation",
       "POST /api/admin/families/:familyId/family-chest-coin-awards",
@@ -27948,6 +28087,12 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
         target: { kind: "child", listReachedIds: listEveryId("child") },
         buildPayload: () => ({ stars: 1 }),
       },
+      {
+        method: "POST",
+        path: "/api/admin/children/:childId/progress-reset",
+        gate: "admin",
+        target: { kind: "child", listReachedIds: listEveryId("child") },
+      },
       { method: "GET", path: "/api/admin/audit-log-entries", gate: "admin" },
     ];
 
@@ -30463,6 +30608,7 @@ describe.skipIf(!hasContainerRuntime)("against a real Postgres", () => {
         path: "/api/admin/children/:childId/star-awards",
         payload: { stars: 1 },
       },
+      { method: "POST", path: "/api/admin/children/:childId/progress-reset" },
       { method: "GET", path: "/api/admin/audit-log-entries" },
       { method: "GET", path: "/api/play/family" },
       {

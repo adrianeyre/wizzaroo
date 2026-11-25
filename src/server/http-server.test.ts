@@ -631,6 +631,7 @@ const wrapperTable: Record<string, RouteReach> = {
   "GET /api/admin/deletion-requests": "admin",
   "POST /api/admin/deletion-requests/:deletionRequestId/confirmation": "admin",
   "POST /api/admin/children/:childId/star-awards": "admin",
+  "POST /api/admin/children/:childId/progress-reset": "admin",
   "POST /api/admin/families/:familyId/family-chest-coin-awards": "admin",
   "DELETE /api/admin/children/:childId": "admin",
   "DELETE /api/admin/families/:familyId": "admin",
