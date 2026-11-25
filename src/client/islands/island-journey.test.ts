@@ -51,6 +51,8 @@ const aircraft: readonly Aircraft[] = [
   "helicopter",
   "balloon",
   "rocket",
+  "dragon",
+  "blimp",
 ];
 
 const ports = worldMap.islands.map(({ id, seaPosition }) => ({
@@ -77,6 +79,8 @@ const findLandingLevel = (islandId: string, transport: Aircraft): number => {
     helicopter: airfield.helipad.level,
     balloon: airfield.balloonField.level,
     rocket: airfield.helipad.level,
+    dragon: airfield.balloonField.level,
+    blimp: airfield.runway.level,
   }[transport];
 };
 
@@ -95,7 +99,7 @@ const findGroundUnder = (point: { x: number; z: number }): number =>
   );
 
 describe("choosing how to travel", () => {
-  it("chooses any of the ten ways to travel, each a tenth of the time", () => {
+  it("chooses any of the fifteen ways to travel, each a fifteenth of the time", () => {
     expect(transports).toStrictEqual([
       "ship",
       "aeroplane",
@@ -107,6 +111,11 @@ describe("choosing how to travel", () => {
       "jetski",
       "rocket",
       "portal",
+      "dragon",
+      "blimp",
+      "scuba",
+      "surfboard",
+      "windsurfer",
     ]);
     transports.forEach((transport, index) => {
       expect(chooseTransport(() => (index + 0.5) / transports.length)).toBe(
@@ -114,7 +123,7 @@ describe("choosing how to travel", () => {
       );
     });
     expect(chooseTransport(() => 0)).toBe("ship");
-    expect(chooseTransport(() => 0.999_999)).toBe("portal");
+    expect(chooseTransport(() => 0.999_999)).toBe("windsurfer");
   });
 
   it("still sails the ship exactly as before", () => {
@@ -209,7 +218,7 @@ describe.each(everyLanding)("the %s on %s", (transport, islandId) => {
     expect(calling.z).toBeCloseTo(waiting.z);
     expect(calling.isInside).toBe(false);
     expect(isWalkingAboard(transport, "boarding", 0.5)).toBe(true);
-    const isHiddenAboard = transport !== "balloon";
+    const isHiddenAboard = transport !== "balloon" && transport !== "dragon";
     expect(
       findJourneyCarriedSpot(adventure, transport, "boarding", 1).isInside,
     ).toBe(isHiddenAboard);

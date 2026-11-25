@@ -1,12 +1,15 @@
+import { Euler, Matrix4, Vector3 } from "three";
 import {
   runwayHalfLength,
   smoothStep,
   type MapPoint,
 } from "../world-map-terrain.js";
+import { seatedHipDrop, type Stance } from "../character/character-stance.js";
 import { exploreScale, type IslandAdventure } from "./island-adventures.js";
 import type { CarriedSpot, VoyagePhase } from "./island-voyage.js";
 
-export type Aircraft = "aeroplane" | "helicopter" | "balloon" | "rocket";
+export type Aircraft =
+  "aeroplane" | "helicopter" | "balloon" | "rocket" | "dragon" | "blimp";
 
 export type LandPhase = Exclude<VoyagePhase, "crossing">;
 
@@ -27,6 +30,13 @@ export interface Spot3 {
 
 export interface BoardingSpot extends CarriedSpot {
   isInside: boolean;
+  /** How the Character holds themselves; standing when not given. */
+  stance?: Stance;
+  /** What the Character has put on for the ride, such as scuba gear. */
+  gear?: "scuba";
+  /** The craft's tilt, which a Character riding in view tilts with. */
+  pitch?: number;
+  roll?: number;
 }
 
 export const aeroplaneDoor: Spot3 = { x: 1.2, y: 1.6, z: 6.6 };
@@ -48,6 +58,51 @@ export const rocketBodyRadius = 1.25;
 export const rocketHatch: Spot3 = { x: rocketBodyRadius, y: 2.3, z: 0 };
 export const rocketStairRun = 2.9;
 export const rocketLegReach = 3.4;
+
+// The dragon stands on the Balloon Field, its body's local frame with +z
+// forward (towards its head), +y up and its origin on the ground under the
+// middle of its body. To let the Character climb on, it lies down: its body
+// drops and tips its nose down about its hips (`placeDragonBody`), its legs
+// fold and its neck bows its head to the grass.
+export const dragonSaddle: Spot3 = { x: 0, y: 2.08, z: 0.85 };
+export const dragonShoulder: Spot3 = { x: 0, y: 1.7, z: 1.5 };
+export const dragonHip: Spot3 = { x: 0, y: 1.55, z: -1.7 };
+export const dragonBellyHeight = 1.05;
+export const dragonBowDrop = 0.92;
+export const dragonBowPitch = 0.1;
+export const dragonLength = 10.5;
+export const dragonWingspan = 13;
+export const dragonHalfWidth = 0.78;
+
+export const placeDragonBody = (bow: number): Matrix4 =>
+  new Matrix4()
+    .makeTranslation(0, -dragonBowDrop * bow, 0)
+    .multiply(new Matrix4().makeTranslation(0, dragonHip.y, dragonHip.z))
+    .multiply(new Matrix4().makeRotationX(dragonBowPitch * bow))
+    .multiply(new Matrix4().makeTranslation(0, -dragonHip.y, -dragonHip.z));
+
+export const placeOnDragonBody = (bow: number, local: Spot3): Spot3 => {
+  const { x, y, z } = new Vector3(local.x, local.y, local.z).applyMatrix4(
+    placeDragonBody(bow),
+  );
+  return { x, y, z };
+};
+
+// The blimp moors on the Runway, nose along it. Its gondola hangs under the
+// envelope with a door on its +x side, reached by a short step.
+export const blimpLength = 26;
+export const blimpRadius = 3.7;
+export const blimpEnvelopeCentre = 6.55;
+export const blimpGondolaLength = 6;
+export const blimpGondolaHalfWidth = 1.05;
+export const blimpGondolaFloor = 0.5;
+export const blimpGondolaTop = 2.55;
+export const blimpDoor: Spot3 = {
+  x: blimpGondolaHalfWidth,
+  y: blimpGondolaFloor,
+  z: 0.6,
+};
+export const blimpStepRun = 1;
 
 export const aircraftPhaseSeconds: Record<
   Aircraft,
@@ -78,6 +133,22 @@ export const aircraftPhaseSeconds: Record<
     leaving: 10,
   },
   rocket: {
+    calling: 11,
+    boarding: 5,
+    departing: 10,
+    docking: 11,
+    landing: 5,
+    leaving: 10,
+  },
+  dragon: {
+    calling: 11,
+    boarding: 6,
+    departing: 9,
+    docking: 11,
+    landing: 6,
+    leaving: 9,
+  },
+  blimp: {
     calling: 11,
     boarding: 5,
     departing: 10,
@@ -150,6 +221,8 @@ const aircraftFrames: Record<Aircraft, (adventure: IslandAdventure) => Frame> =
     helicopter: findHelipadFrame,
     balloon: findBalloonFieldFrame,
     rocket: findHelipadFrame,
+    dragon: findBalloonFieldFrame,
+    blimp: findRunwayFrame,
   };
 
 const findAircraftFrame = (
@@ -400,6 +473,149 @@ export const findRocketBurn = (phase: VoyagePhase, share: number): number =>
     ),
   );
 
+const dragonApproachReach = 150;
+export const dragonCruiseHeight = 38;
+const dragonFlareShare = 0.62;
+const dragonTouchdownShare = 0.86;
+const dragonFlarePitch = 0.38;
+const dragonGlidePitch = -0.08;
+const dragonFlareHeight = 14;
+const dragonFlareReach = 9;
+
+const findDragonLanding = (frame: Frame, share: number): CraftPlacement => {
+  if (share < dragonFlareShare) {
+    const flown = share / dragonFlareShare;
+    const eased = 1 - (1 - flown) ** 1.6;
+    const spot = placeInFrame(frame, {
+      x: 6 * Math.sin(flown * Math.PI) * (1 - flown),
+      y:
+        dragonFlareHeight +
+        (dragonCruiseHeight - dragonFlareHeight) * (1 - eased),
+      z: -dragonApproachReach * (1 - eased) - dragonFlareReach,
+    });
+    return {
+      ...spot,
+      heading: frame.heading,
+      pitch: dragonGlidePitch * (1 - flown),
+      roll: -0.25 * Math.sin(flown * Math.PI) * (1 - flown),
+    };
+  }
+  const settling = Math.min(
+    1,
+    (share - dragonFlareShare) / (dragonTouchdownShare - dragonFlareShare),
+  );
+  const eased = smoothStep(0, 1, settling);
+  const spot = placeInFrame(frame, {
+    x: 0,
+    y: dragonFlareHeight * (1 - eased) ** 1.4,
+    z: -dragonFlareReach * (1 - eased),
+  });
+  return {
+    ...spot,
+    heading: frame.heading,
+    pitch:
+      dragonFlarePitch *
+      Math.sin(Math.PI * Math.min(1, settling * 1.15)) *
+      (1 - smoothStep(0.85, 1, settling)),
+    roll: 0,
+  };
+};
+
+const dragonStandShare = 0.14;
+const dragonLeapShare = 0.32;
+const dragonDepartureReach = 150;
+
+const findDragonTakeOff = (frame: Frame, share: number): CraftPlacement => {
+  if (share < dragonLeapShare) {
+    const crouch = smoothStep(dragonStandShare, dragonLeapShare, share);
+    const spot = placeInFrame(frame, { x: 0, y: 0, z: 0 });
+    return {
+      ...spot,
+      heading: frame.heading,
+      pitch: 0.12 * Math.sin(Math.PI * crouch),
+      roll: 0,
+    };
+  }
+  const flown = (share - dragonLeapShare) / (1 - dragonLeapShare);
+  const spot = placeInFrame(frame, {
+    x: 0,
+    y:
+      dragonCruiseHeight * (1 - (1 - flown) ** 1.5) +
+      4 * Math.sin(flown * Math.PI),
+    z: dragonDepartureReach * flown ** 1.8,
+  });
+  return {
+    ...spot,
+    heading: frame.heading,
+    pitch: (0.42 * (1 - flown) ** 2 + 0.06) * smoothStep(0, 0.12, flown),
+    roll: 0,
+  };
+};
+
+/** How far the dragon's wings are spread: folded on the ground, open in flight. */
+export const findDragonWingSpread = (
+  phase: VoyagePhase,
+  share: number,
+): number => {
+  if (phase === "crossing") {
+    return 1;
+  }
+  if (phase === "calling" || phase === "docking") {
+    return 1 - smoothStep(dragonTouchdownShare, 0.97, share);
+  }
+  if (phase === "departing" || phase === "leaving") {
+    return smoothStep(dragonStandShare, dragonLeapShare - 0.04, share);
+  }
+  return 0;
+};
+
+const blimpApproachReach = 170;
+export const blimpCruiseHeight = 32;
+const blimpSettlingShare = 0.9;
+const blimpDepartureReach = 160;
+const blimpLiftShare = 0.45;
+const blimpLiftHeight = 7;
+const blimpSway = 0.018;
+
+const findBlimpLanding = (frame: Frame, share: number): CraftPlacement => {
+  const left = 1 - Math.min(1, share / blimpSettlingShare);
+  const spot = placeInFrame(frame, {
+    x: 0,
+    y: blimpCruiseHeight * left ** 1.25,
+    z: -blimpApproachReach * left ** 1.6,
+  });
+  return {
+    ...spot,
+    heading: frame.heading,
+    pitch: -0.05 * left + blimpSway * Math.sin(share * Math.PI * 4) * left,
+    roll: blimpSway * Math.sin(share * Math.PI * 3 + 1) * left,
+  };
+};
+
+const findBlimpTakeOff = (frame: Frame, share: number): CraftPlacement => {
+  if (share < blimpLiftShare) {
+    const lifted = smoothStep(doorClosingShare, blimpLiftShare, share);
+    const spot = placeInFrame(frame, {
+      x: 0,
+      y: blimpLiftHeight * lifted ** 1.5,
+      z: 0,
+    });
+    return { ...spot, heading: frame.heading, pitch: 0, roll: 0 };
+  }
+  const flown = (share - blimpLiftShare) / (1 - blimpLiftShare);
+  const spot = placeInFrame(frame, {
+    x: 0,
+    y: blimpLiftHeight + (blimpCruiseHeight - blimpLiftHeight) * flown ** 1.2,
+    z: blimpDepartureReach * flown ** 1.8,
+  });
+  return {
+    ...spot,
+    heading: frame.heading,
+    pitch: 0.08 * Math.sin(Math.PI * Math.min(1, flown * 1.6)),
+    roll: 0,
+  };
+};
+
 const burnerBlasts: Partial<Record<VoyagePhase, [number, number][]>> = {
   calling: [
     [0.3, 0.42],
@@ -445,6 +661,34 @@ export const findAircraftPlacement = (
       return findAeroplaneTakeOff(frame, share);
     }
     return placeAlongRunway(frame, 0, 0, 0);
+  }
+  if (aircraft === "dragon") {
+    if (isArriving(phase)) {
+      return findDragonLanding(frame, share);
+    }
+    if (isGoing(phase)) {
+      return findDragonTakeOff(frame, share);
+    }
+    return {
+      ...placeInFrame(frame, { x: 0, y: 0, z: 0 }),
+      heading: frame.heading,
+      pitch: 0,
+      roll: 0,
+    };
+  }
+  if (aircraft === "blimp") {
+    if (isArriving(phase)) {
+      return findBlimpLanding(frame, share);
+    }
+    if (isGoing(phase)) {
+      return findBlimpTakeOff(frame, share);
+    }
+    return {
+      ...placeInFrame(frame, { x: 0, y: 0, z: 0 }),
+      heading: frame.heading,
+      pitch: 0,
+      roll: 0,
+    };
   }
   if (aircraft === "rocket") {
     if (isArriving(phase)) {
@@ -552,11 +796,39 @@ const rocketBoardingWay: BoardingWay = {
   ],
 };
 
+const blimpBoardingWay: BoardingWay = {
+  waiting: { x: blimpDoor.x + blimpStepRun + 2.4, y: 0, z: blimpDoor.z },
+  path: [
+    { x: blimpDoor.x + blimpStepRun + 2.4, y: 0, z: blimpDoor.z },
+    { x: blimpDoor.x + blimpStepRun + 0.15, y: 0, z: blimpDoor.z },
+    { x: blimpDoor.x + 0.05, y: blimpDoor.y, z: blimpDoor.z },
+    { x: blimpDoor.x - 0.55, y: blimpDoor.y, z: blimpDoor.z },
+  ],
+};
+
+const bowedSaddle = placeOnDragonBody(1, dragonSaddle);
+
+// The Character walks up to the dragon's side while it lies down, steps up
+// onto its folded foreleg and climbs onto the saddle, where they sit.
+const dragonBoardingWay: BoardingWay = {
+  waiting: { x: 3.6, y: 0, z: bowedSaddle.z },
+  path: [
+    { x: 3.6, y: 0, z: bowedSaddle.z },
+    { x: 1.55, y: 0, z: bowedSaddle.z + 0.15 },
+    { x: 1.05, y: 0.42, z: bowedSaddle.z + 0.2 },
+    { x: 0.55, y: bowedSaddle.y - 0.05, z: bowedSaddle.z + 0.1 },
+    { x: 0, y: bowedSaddle.y, z: bowedSaddle.z },
+  ],
+  isRidingInView: true,
+};
+
 const boardingWays: Record<Aircraft, BoardingWay> = {
   aeroplane: aeroplaneBoardingWay,
   helicopter: helicopterBoardingWay,
   balloon: balloonBoardingWay,
   rocket: rocketBoardingWay,
+  dragon: dragonBoardingWay,
+  blimp: blimpBoardingWay,
 };
 
 const findAlongWay = (path: readonly Spot3[], share: number): Spot3 => {
@@ -615,12 +887,66 @@ export const isWalkingToAircraft = (
   share > doorOpeningShare &&
   share < boardedShare;
 
+const tilt = new Euler();
+const along = new Vector3();
+
+/** A point on a craft, carried round with its heading, pitch and roll. */
+export const placeOnTiltedCraft = (
+  craft: CraftPlacement,
+  local: Spot3,
+): Spot3 => {
+  tilt.set(-craft.pitch, craft.heading, craft.roll, "YXZ");
+  along.set(local.x, local.y, local.z).applyEuler(tilt);
+  return { x: craft.x + along.x, y: craft.y + along.y, z: craft.z + along.z };
+};
+
+/** Where a seated Character's feet start on the dragon, as it bows by `bow`. */
+export const findDragonSeat = (bow: number): Spot3 => {
+  const saddle = placeOnDragonBody(bow, dragonSaddle);
+  return { ...saddle, y: saddle.y - seatedHipDrop };
+};
+
+const sitOnDragon = (craft: CraftPlacement, bow: number): BoardingSpot => ({
+  ...placeOnTiltedCraft(craft, findDragonSeat(bow)),
+  heading: craft.heading,
+  isInside: false,
+  stance: "sitting",
+  pitch: craft.pitch,
+  roll: craft.roll,
+});
+
+const findDragonCarriedSpot = (
+  adventure: IslandAdventure,
+  phase: LandPhase,
+  share: number,
+): BoardingSpot | undefined => {
+  const craft = findAircraftPlacement(adventure, "dragon", phase, share);
+  const bow = findDoorOpening(phase, share);
+  if (phase === "boarding" && share >= boardedShare) {
+    return sitOnDragon(craft, bow);
+  }
+  if (phase === "landing" && share < doorOpeningShare) {
+    return sitOnDragon(craft, bow);
+  }
+  if (phase === "departing" || phase === "docking") {
+    return sitOnDragon(craft, bow);
+  }
+  return undefined;
+};
+
 export const findAircraftCarriedSpot = (
   adventure: IslandAdventure,
   aircraft: Aircraft,
   phase: LandPhase,
   share: number,
 ): BoardingSpot => {
+  const riding =
+    aircraft === "dragon"
+      ? findDragonCarriedSpot(adventure, phase, share)
+      : undefined;
+  if (riding !== undefined) {
+    return riding;
+  }
   const craft = findAircraftPlacement(adventure, aircraft, phase, share);
   const way = boardingWays[aircraft];
   const towardsCraft = craft.heading - Math.PI / 2;
@@ -658,6 +984,8 @@ const aircraftCameraOffsets: Record<Aircraft, Spot3> = {
   helicopter: { x: 5, y: 6, z: 10 },
   balloon: { x: 8, y: 7, z: 13 },
   rocket: { x: 9, y: 6, z: 16 },
+  dragon: { x: 7, y: 5, z: 11 },
+  blimp: { x: 12, y: 8, z: 20 },
 };
 
 export const findAircraftCameraSpot = (
@@ -694,6 +1022,18 @@ export const listAircraftBlockers = (
     return [
       { centre: { x: craft.x, z: craft.z }, radius: rocketBodyRadius + 0.9 },
     ];
+  }
+  if (aircraft === "dragon") {
+    return [-2.6, -0.4, 1.8].map((along) => {
+      const { x, z } = placeOnCraft(craft, { x: 0, y: 0, z: along });
+      return { centre: { x, z }, radius: dragonHalfWidth + 0.15 };
+    });
+  }
+  if (aircraft === "blimp") {
+    return [-1.6, 1.6].map((along) => {
+      const { x, z } = placeOnCraft(craft, { x: 0, y: 0, z: along });
+      return { centre: { x, z }, radius: blimpGondolaHalfWidth + 0.35 };
+    });
   }
   if (aircraft === "balloon") {
     return [

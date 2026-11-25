@@ -4,15 +4,17 @@
 
 > **Personal use only.** Wizzaroo is intended for your own personal use only. It is not intended for use with or by a school, teacher, parent or student. Only use it for yourself.
 
-Everything a Child can ride in Wizzaroo: the nine craft and the magic portal that carry them between Islands, each Island's own Train, and the 30 Vehicles they can buy and drive while exploring. Where each Island keeps them is in [the Islands](islands.md), and every detail of the journeys is in [the World Map](world-map.md).
+Everything a Child can ride in Wizzaroo: the thirteen craft, scuba diving and the magic portal that carry them between Islands, each Island's own Train, and the 30 Vehicles they can buy and drive while exploring. Where each Island keeps them is in [the Islands](islands.md), and every detail of the journeys is in [the World Map](world-map.md).
 
 ## Travelling between Islands
 
-Choosing another Island's Year, locked or not, on the World Map (**Islands** in the Menu) or with the **Y1** to **Y6** buttons in the explore bar, sends a craft to fetch the Character, or opens a portal for them. It is picked at random from ten (`chooseTransport` in `src/client/islands/island-journey.ts`), and a pop-up says which is coming, such as "All aboard! The hot-air balloon is floating to Meadow Isle." The camera follows the craft across the World Map, and **Fast forward** skips the rest of the journey at any point. Every craft, and the portal, carries the Wizzaroo flag and name.
+Choosing another Island's Year, locked or not, on the World Map (**Islands** in the Menu) or with the **Y1** to **Y6** buttons in the explore bar, sends a craft to fetch the Character, or opens a portal for them. It is picked at random from fifteen (`chooseTransport` in `src/client/islands/island-journey.ts`), and a pop-up says which is coming, such as "All aboard! The hot-air balloon is floating to Meadow Isle." The camera follows the craft across the World Map, and **Fast forward** skips the rest of the journey at any point. Every craft, the portal and the scuba gear carry the Wizzaroo crest and name.
 
-Every Island has a place for each craft to come in: a **Dock** for the ship, the pirate ship, the submarine and the jetski, a **Runway**, a **Helipad** for the helicopter and the rocket, a **Balloon Field** for the balloon and the portal, and a **hover slipway** ([ADR 0043](../architectural-decision-record/0043-aeroplanes-and-helicopters-fly-between-runways-and-helipads.md), [ADR 0045](../architectural-decision-record/0045-a-hovercraft-a-submarine-and-the-wizzaroo-flag-on-every-island-and-aircraft.md), [ADR 0050](../architectural-decision-record/0050-a-hot-air-balloon-floats-between-balloon-fields.md), [ADR 0070](../architectural-decision-record/0070-a-pirate-ship-a-jetski-a-rocket-and-a-magic-portal.md)).
+Every Island has a place for each craft to come in: a **Dock** for the ship, the pirate ship, the submarine, the jetski, the surfboard, the windsurfer and scuba diving, a **Runway** for the aeroplane and the blimp, a **Helipad** for the helicopter and the rocket, a **Balloon Field** for the balloon, the portal and the dragon, and a **hover slipway** ([ADR 0043](../architectural-decision-record/0043-aeroplanes-and-helicopters-fly-between-runways-and-helipads.md), [ADR 0045](../architectural-decision-record/0045-a-hovercraft-a-submarine-and-the-wizzaroo-flag-on-every-island-and-aircraft.md), [ADR 0050](../architectural-decision-record/0050-a-hot-air-balloon-floats-between-balloon-fields.md), [ADR 0070](../architectural-decision-record/0070-a-pirate-ship-a-jetski-a-rocket-and-a-magic-portal.md), [ADR 0080](../architectural-decision-record/0080-a-dragon-a-blimp-scuba-diving-surfing-and-windsurfing.md)).
 
-The screenshots below were taken during real journeys, with the pop-up moved out of the way; the close-ups of the four newest were rendered from the same models.
+The screenshots below were taken during real journeys, with the pop-up moved out of the way; the close-ups of the nine newest were rendered from the same models, and the underwater pictures from the scuba crossing itself.
+
+The Character rides the dragon, the surfboard, the windsurfer and the balloon in view, and on the dragon, the surfboard and the windsurfer they are drawn on the World Map too, sitting, surfing or holding the boom, in their own look (`island-craft-rider.tsx`). To ride, their legs bend at the hips and their arms at the shoulders: they sit astride the dragon's saddle, lie down to paddle a surfboard, crouch to ride a wave, lean back on a windsurfer's boom and swim in scuba gear (`src/client/character/character-stance.ts`).
 
 ### The ship
 
@@ -83,6 +85,50 @@ It comes down engine first onto the Helipad on a landing burn and stands on the 
 ![The portal growing up around its light as it opens](../images/transport/portal-opening.jpg)
 
 A standing ring of carved stone on a round dais opens on the Balloon Field while the Character waits, growing up around a swirling disc of violet and cyan light with rune stones orbiting it. The Character walks up onto the dais and through the light, and the portal closes behind them to a wisp of light that shoots up and streaks across the World Map. It falls onto the other Island's Balloon Field, opens there, and the Character walks out of it (`island-portal.ts`, `island-portal-design.ts`). The crest is on its gold keystone and the Wizzaroo name on a plaque at its foot.
+
+### The dragon
+
+![The dragon standing on the Balloon Field, its saddle on its back](../images/transport/dragon.jpg)
+
+|                                                                                                                          |                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
+| ![The dragon lying down with its head bowed, the Character sitting in its saddle](../images/transport/dragon-bowing.jpg) | ![The dragon flying with its wings spread, the Character in the saddle](../images/transport/dragon-flying.jpg) |
+
+A friendly purple dragon glides in over the sea, flares with its wings spread and lands on the Balloon Field. It folds its wings, lies down with its legs tucked under it and bows its head to the grass, and the Character steps up onto its folded foreleg, climbs onto the saddle on its back and sits down. It stands up with them in the saddle, spreads its wings, leaps into the air and flies off, its wings beating slowly, banking into its turns over the World Map. At the other Island it lands and bows again so they can climb down (`island-flight.ts`, modelled in `island-dragon-design.ts`). It has a cream and gold ridged belly, purple-to-gold spines, gold horns and claws, big amber eyes, violet cheek frills, a spade-tipped tail and bat-like wings of violet membrane on gold finger bones. Its night-blue saddle has gold piping and stirrups, on a purple blanket with gold tassels carrying the Wizzaroo crest and name on both sides.
+
+### The blimp
+
+![The Wizzaroo blimp on the Runway, its gondola door open and its step down](../images/transport/blimp.jpg)
+
+![The blimp floating overhead](../images/transport/blimp-flying.jpg)
+
+It drifts down the Runway's approach and settles onto the Runway on its landing wheel. Its gondola door slides back and a step folds down; the Character walks up the step and in, the door shuts, and it lifts straight up, noses forward and floats slowly away over the World Map, settling onto the other Island's Runway the same way (`island-flight.ts`, modelled in `island-blimp-design.ts`). It has a pearl envelope with a purple underbelly and gold pinstripes, violet nose battens and a gold mooring cone, four purple tail fins with rudders and elevators, a gondola with a wraparound windscreen and a band of windows, two ducted propellers that turn, and navigation lights. The Wizzaroo name is large along both sides of the envelope with the crest in front of it, the crest is on the top fin, and the name is on the gondola.
+
+### Scuba diving
+
+![The Character in scuba gear beside the Wizzaroo dive locker on the pier](../images/transport/scuba-locker.jpg)
+
+![Swimming under the sea past coral, kelp, fish, a turtle and a sunken Wizzaroo treasure chest](../images/transport/scuba-underwater.jpg)
+
+![Arriving under the next Island's pier, by its ladder](../images/transport/scuba-arriving.jpg)
+
+A Wizzaroo dive locker grows up on the Dock's pier. Its doors open, and the Character walks up to it and puts on its scuba gear: a black wetsuit with Wizzaroo purple panels and gold piping, a mask, fins, and an air tank carrying the Wizzaroo name and crest, their hat, glasses and wand put away (`character-scuba-gear.tsx`). They walk to the end of the pier, jump in and swim away under the sea (`island-scuba.ts`). The crossing is seen under the water instead of on the World Map: the camera follows them through blue haze under the rippling surface and light shafts, over sand, rocks, coral, kelp and sea grass, through shoals of fish and past a turtle, a manta ray, a dolphin, jellyfish and a sunken Wizzaroo treasure chest, with bubbles rising from their regulator (`island-underwater-crossing.tsx`). At the other Island they swim in under its pier, surface by the end of it, climb out and hang the gear up in a locker that has grown there, which then shrinks away. The locker is purple with a teak frame, gold trim and brass fittings, a peaked roof, a dive flag and a life ring, with the Wizzaroo name on a sign board above its doors and the crest and name on both sides (`island-scuba-design.ts`).
+
+### The surfboard
+
+![A massive wave curling over behind the Character, riding the surfboard](../images/transport/surfing.jpg)
+
+![The Character lying on the surfboard to paddle](../images/transport/surf-paddling.jpg)
+
+The surfboard glides in on a small swell beside the end of the pier. The Character steps down onto it and lies on it; it turns away from the pier and they paddle out to sea. A massive breaking wave rises up behind them, they stand up, and the wave carries them off across the World Map, dying away as it brings them in beside the other Island's pier (`island-sea-craft.ts`, modelled in `island-surfboard-design.ts`). The board is white with purple rails, a gold stringer, a traction pad, three fins and a leash, with the Wizzaroo crest and name on its deck and underneath. The wave's face is deep blue rising to turquoise, its lip curls over high above the Character, with a white foam crest, spray and whitewater at its foot.
+
+### The windsurfer
+
+![The windsurfer's sail, with the Wizzaroo name and crest](../images/transport/windsurfer.jpg)
+
+![The Character holding the windsurfer's boom](../images/transport/windsurfing.jpg)
+
+It sails in beside the end of the pier. The Character steps onto the board, takes the wishbone boom and leans back, and it sails off, heeling with the wind, across the World Map (`island-sea-craft.ts`, modelled in `island-windsurfer-design.ts`). It has a freeride board with footstraps, a mast and a cambered sail with battens and a clear window, in white with purple and gold bands. The Wizzaroo name is large on both sides of the sail with the crest above it, and the name is on the board.
 
 ## Trains
 

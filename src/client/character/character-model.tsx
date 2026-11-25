@@ -9,6 +9,14 @@ import {
   HeldGear,
   isHairHiddenByHat,
 } from "./character-gear.js";
+import { hipHeight } from "./character-stance.js";
+import {
+  ScubaFin,
+  ScubaMask,
+  ScubaTank,
+  WetsuitPanels,
+  wetsuit,
+} from "./character-scuba-gear.js";
 import type {
   CharacterLook,
   EyebrowsModel,
@@ -478,24 +486,48 @@ const buildOutfitStyle = ({
   }
 };
 
+export type CharacterGearSet = "scuba";
+
+const buildWetsuitStyle = (): OutfitStyle => ({
+  legColour: wetsuit.body,
+  shoeColour: wetsuit.rubber,
+  sleeveColour: wetsuit.body,
+  skirtLength: 0,
+  details: <WetsuitPanels />,
+});
+
 export const Body = ({
   outfit,
   skinColour,
+  gear,
 }: {
   outfit: PartLook<OutfitModel>;
   skinColour: string;
+  gear?: CharacterGearSet;
 }) => {
-  const style = buildOutfitStyle(outfit);
+  const isScuba = gear === "scuba";
+  const style = isScuba ? buildWetsuitStyle() : buildOutfitStyle(outfit);
+  const legGear = isScuba ? <ScubaFin /> : null;
+  const torsoColour = isScuba ? wetsuit.body : outfit.colour;
   return (
     <group name="body">
       {([-1, 1] as const).map((side) => (
         <group key={side}>
-          <Part colour={style.legColour} position={[side * 0.13, 0.32, 0]}>
-            {cylinder(0.11, 0.1, 0.5, 20)}
-          </Part>
-          <Part colour={style.shoeColour} position={[side * 0.13, 0.06, 0.04]}>
-            {box(0.2, 0.12, 0.3)}
-          </Part>
+          <group
+            name={side === 1 ? "wand-leg" : "free-leg"}
+            position={[side * 0.13, hipHeight, 0]}
+          >
+            <Part colour={style.legColour} position={[0, 0.32 - hipHeight, 0]}>
+              {cylinder(0.11, 0.1, 0.5, 20)}
+            </Part>
+            <Part
+              colour={style.shoeColour}
+              position={[0, 0.06 - hipHeight, 0.04]}
+            >
+              {box(0.2, 0.12, 0.3)}
+            </Part>
+            {legGear}
+          </group>
           <group
             name={side === 1 ? "wand-arm" : "free-arm"}
             position={[side * 0.37, shoulderHeight, 0]}
@@ -516,12 +548,12 @@ export const Body = ({
           </group>
         </group>
       ))}
-      <Part colour={outfit.colour} position={[0, 0.86, 0]}>
+      <Part colour={torsoColour} position={[0, 0.86, 0]}>
         {cylinder(torsoTopRadius, torsoBottomRadius, torsoHeight)}
       </Part>
       {style.skirtLength > 0 ? (
         <Part
-          colour={outfit.colour}
+          colour={torsoColour}
           position={[0, waistHeight - style.skirtLength / 2, 0]}
         >
           {cylinder(
@@ -1465,7 +1497,13 @@ const TalkingMouth = ({
   );
 };
 
-export const Head = ({ look }: { look: CharacterLook }) => {
+export const Head = ({
+  look,
+  gear,
+}: {
+  look: CharacterLook;
+  gear?: CharacterGearSet;
+}) => {
   const isUnderHat = isHairHiddenByHat(look.hat.model);
   const readOpenness = useContext(SpeakingMouthContext);
   return (
@@ -1503,16 +1541,46 @@ export const Head = ({ look }: { look: CharacterLook }) => {
       </group>
       <AccessoryOnFace accessory={look.accessory} />
       <Hat hat={look.hat} />
+      {gear === "scuba" ? <ScubaMask /> : null}
     </group>
   );
 };
 
-export const CharacterModel = ({ look }: { look: CharacterLook }) => (
-  <group name="character">
-    <Body outfit={look.outfit} skinColour={look.skinColour} />
-    <AccessoryOnNeck accessory={look.accessory} />
-    <BackGear back={look.back} />
-    <HeldGear wand={look.wand} />
-    <Head look={look} />
-  </group>
-);
+const takeOffForDiving = (look: CharacterLook): CharacterLook => ({
+  ...look,
+  hat: { ...look.hat, model: "none" },
+  accessory: { ...look.accessory, model: "none" },
+});
+
+/**
+ * The Character as they look, or, with `gear`, kitted out for a ride: in
+ * scuba gear their hat, glasses and wand are put away and they wear a
+ * wetsuit, mask, fins and an air tank.
+ */
+export const CharacterModel = ({
+  look,
+  gear,
+}: {
+  look: CharacterLook;
+  gear?: CharacterGearSet;
+}) => {
+  if (gear === "scuba") {
+    const diver = takeOffForDiving(look);
+    return (
+      <group name="character">
+        <Body outfit={diver.outfit} skinColour={diver.skinColour} gear={gear} />
+        <ScubaTank />
+        <Head look={diver} gear={gear} />
+      </group>
+    );
+  }
+  return (
+    <group name="character">
+      <Body outfit={look.outfit} skinColour={look.skinColour} />
+      <AccessoryOnNeck accessory={look.accessory} />
+      <BackGear back={look.back} />
+      <HeldGear wand={look.wand} />
+      <Head look={look} />
+    </group>
+  );
+};

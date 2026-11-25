@@ -113,12 +113,16 @@ Something a Child buys with Stars in the Vehicles part of the wardrobe and rides
 _Avoid_: Car (for all of them), kart, ride
 
 **Balloon Field**:
-The round, level landing place on every Island where the hot-air balloon comes down to pick the Character up and to set them down, marked with a landing cross. The Portal opens on it too.
+The round, level landing place on every Island where the hot-air balloon comes down to pick the Character up and to set them down, marked with a landing cross. The Portal opens on it too, and the dragon lands on it.
 _Avoid_: Landing pad, launch site
 
 **Portal**:
-The magic ring of stone that opens on an Island's Balloon Field for the Character to walk through, one of the ten ways of travelling between Islands. It closes to a wisp of light that crosses the World Map and opens again on the other Island's Balloon Field. It is not a craft and nothing is ridden.
+The magic ring of stone that opens on an Island's Balloon Field for the Character to walk through, one of the fifteen ways of travelling between Islands. It closes to a wisp of light that crosses the World Map and opens again on the other Island's Balloon Field. It is not a craft and nothing is ridden.
 _Avoid_: Teleporter, gate. A tunnel's opening is a tunnel portal, never the Portal.
+
+**Dive Locker**:
+The Wizzaroo cabinet that grows up on the Dock's pier when the Character goes scuba diving to another Island. The Character takes the scuba gear from it before jumping in, and hangs the gear up in the one that grows on the other Island's pier. It is not a craft and nothing is ridden.
+_Avoid_: Kit box, scuba station
 
 **Railway**:
 The loop of track that runs round every land mass of an Island, crossing the sea and the rivers on bridges of several styles and going through hills in tunnels. Each Island has its own Train on it.

@@ -3738,7 +3738,7 @@ describe("FamilyDevicePage", () => {
 
       await waitForText("The Dock on Meadow Isle");
       expect(getPageText()).toContain(
-        "a ship, an aeroplane, a helicopter, a hovercraft, a submarine, a hot-air balloon, a pirate ship, a jetski or a rocket will come to take you there, or a magic portal will open",
+        "a ship, an aeroplane, a helicopter, a hovercraft, a submarine, a hot-air balloon, a pirate ship, a jetski, a rocket, a dragon, a blimp, a surfboard or a windsurfer will come to take you there, you'll go scuba diving, or a magic portal will open",
       );
     });
 

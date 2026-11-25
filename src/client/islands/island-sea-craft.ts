@@ -1,3 +1,5 @@
+import type { Stance } from "../character/character-stance.js";
+import { proneBackHeight } from "../character/character-stance.js";
 import { smoothStep, type MapPoint } from "../world-map-terrain.js";
 import {
   buildDockPier,
@@ -9,6 +11,7 @@ import {
 } from "./island-adventures.js";
 import {
   findDoorOpening,
+  placeOnTiltedCraft,
   type BoardingSpot,
   type CraftPlacement,
   type LandPhase,
@@ -16,7 +19,8 @@ import {
 } from "./island-flight.js";
 import type { VoyagePhase } from "./island-voyage.js";
 
-export type SeaCraft = "hovercraft" | "submarine" | "jetski";
+export type SeaCraft =
+  "hovercraft" | "submarine" | "jetski" | "surfboard" | "windsurfer";
 
 export const seaCraftPhaseSeconds: Record<
   SeaCraft,
@@ -45,6 +49,22 @@ export const seaCraftPhaseSeconds: Record<
     docking: 8,
     landing: 4.5,
     leaving: 8,
+  },
+  surfboard: {
+    calling: 8,
+    boarding: 5,
+    departing: 11,
+    docking: 10,
+    landing: 4.5,
+    leaving: 8,
+  },
+  windsurfer: {
+    calling: 9,
+    boarding: 5,
+    departing: 9,
+    docking: 9,
+    landing: 4.5,
+    leaving: 9,
   },
 };
 
@@ -294,6 +314,39 @@ const findSubDeparture = (dock: Dock, share: number): CraftPlacement => {
   };
 };
 
+// The surfboard floats beside the end of the pier with its deck just above
+// the water. Out at sea a massive wave rises behind it, its crest curling
+// over, and carries it to the next Island (+z is the board's nose).
+export const surfboardLength = 2.5;
+export const surfboardHalfWidth = 0.33;
+export const surfboardDeck = 0.1;
+export const surfRiderZ = -0.15;
+export const surfWaveHeight = 6.5;
+export const surfWaveBehind = 2.2;
+export const surfWaveHalfWidth = 16;
+
+// The windsurfer floats beside the end of the pier with its rig up. Its mast
+// stands ahead of the rider, the boom at their chest, and the sail fills and
+// heels with the wind (+z is the board's nose). The rider stands on the
+// centreline facing +x, leaning back, with the sail on their +x side.
+export const windsurferLength = 2.7;
+export const windsurferHalfWidth = 0.38;
+export const windsurferDeck = 0.1;
+export const windsurferRiderZ = -0.3;
+export const windsurferMastFoot: { x: number; y: number; z: number } = {
+  x: 0,
+  y: 0.12,
+  z: 0.35,
+};
+export const windsurferMastHeight = 2.7;
+export const windsurferBoomHeight = 0.45;
+// Where the rider's hands hold the boom, on the board's +x side of them.
+export const windsurferHands: { x: number; y: number; z: number } = {
+  x: 0.3,
+  y: windsurferMastFoot.y + windsurferBoomHeight,
+  z: windsurferRiderZ,
+};
+
 export const jetskiLength = 3.6;
 export const jetskiBeam = 1.3;
 export const jetskiFootwell = 0.5;
@@ -378,6 +431,199 @@ export const findJetskiSpray = (phase: VoyagePhase, share: number): number => {
   return 0;
 };
 
+const boardBerthGap = 0.35;
+const boardBerthSetBack = 1.4;
+const boardApproach = 95;
+
+interface BoardShape {
+  length: number;
+  halfWidth: number;
+}
+
+const boardShapes: Record<"surfboard" | "windsurfer", BoardShape> = {
+  surfboard: { length: surfboardLength, halfWidth: surfboardHalfWidth },
+  windsurfer: { length: windsurferLength, halfWidth: windsurferHalfWidth },
+};
+
+export const findBoardBerth = (
+  dock: Dock,
+  board: "surfboard" | "windsurfer",
+): CraftPlacement => {
+  const { seaward, across, landwardHeading } = findDockFrame(dock);
+  const { length, halfWidth } = boardShapes[board];
+  const along = length / 2 + boardBerthSetBack;
+  const out = pierHalfWidth + halfWidth + boardBerthGap;
+  return {
+    x: dock.to.x - seaward.x * along + across.x * out,
+    y: 0,
+    z: dock.to.z - seaward.z * along + across.z * out,
+    heading: landwardHeading,
+    pitch: 0,
+    roll: 0,
+  };
+};
+
+const findGlideInSpot = (
+  dock: Dock,
+  berth: CraftPlacement,
+  share: number,
+  carve: number,
+): MapPoint => {
+  const { seaward, across } = findDockFrame(dock);
+  const left = 1 - easeOut(Math.min(1, share));
+  const still = boardApproach * left;
+  const swerve = carve * Math.sin(Math.PI * left) * left;
+  return {
+    x: berth.x + seaward.x * still + across.x * swerve,
+    z: berth.z + seaward.z * still + across.z * swerve,
+  };
+};
+
+const findGlideIn = (
+  dock: Dock,
+  berth: CraftPlacement,
+  share: number,
+  carve: number,
+): { spot: MapPoint; turned: number } => {
+  const here = findGlideInSpot(dock, berth, share, carve);
+  const ahead = findGlideInSpot(dock, berth, share + 0.01, carve);
+  const moved = Math.hypot(ahead.x - here.x, ahead.z - here.z);
+  const steer = Math.atan2(ahead.x - here.x, ahead.z - here.z) - berth.heading;
+  return {
+    spot: here,
+    turned:
+      Math.atan2(Math.sin(steer), Math.cos(steer)) *
+      smoothStep(0.02, 0.2, moved),
+  };
+};
+
+const surfCarve = 5;
+const surfPaddleOut = 18;
+const surfPaddleEnds = 0.5;
+const surfStandsUp = 0.55;
+const surfFacePitch = -0.12;
+
+/** How big the wave behind the surfboard is, from flat (0) to massive (1). */
+export const findSurfWaveSize = (phase: VoyagePhase, share: number): number => {
+  if (phase === "crossing") {
+    return 1;
+  }
+  if (phase === "calling") {
+    return 0.18 * (1 - smoothStep(0.5, 0.85, share));
+  }
+  if (phase === "docking") {
+    return 1 - smoothStep(0.45, 0.85, share);
+  }
+  if (phase === "departing" || phase === "leaving") {
+    return smoothStep(0.36, 0.58, share);
+  }
+  return 0;
+};
+
+const findSurfArrival = (dock: Dock, share: number): CraftPlacement => {
+  const berth = findBoardBerth(dock, "surfboard");
+  const { spot, turned } = findGlideIn(dock, berth, share, surfCarve);
+  const left = 1 - easeOut(share);
+  return {
+    ...berth,
+    ...spot,
+    heading: berth.heading + turned,
+    pitch: surfFacePitch * (1 - smoothStep(0.45, 0.85, share)),
+    roll: -0.5 * turned * Math.min(1, left * 3),
+  };
+};
+
+const findSurfDeparture = (dock: Dock, share: number): CraftPlacement => {
+  const berth = findBoardBerth(dock, "surfboard");
+  const { seaward, across } = findDockFrame(dock);
+  const swing = smoothStep(0.06, 0.25, share);
+  const turn = smoothStep(0.1, 0.35, share);
+  const paddled = surfPaddleOut * smoothStep(0.2, surfPaddleEnds, share);
+  const riding = Math.max(0, (share - surfPaddleEnds) / (1 - surfPaddleEnds));
+  const out = paddled + (boardApproach - surfPaddleOut) * riding ** 2;
+  return {
+    x: berth.x + across.x * 2.5 * swing + seaward.x * out,
+    y: 0,
+    z: berth.z + across.z * 2.5 * swing + seaward.z * out,
+    heading: berth.heading + Math.PI * turn,
+    pitch: surfFacePitch * smoothStep(0.5, 0.65, share),
+    roll: 0.12 * Math.sin(Math.PI * riding * 2) * riding,
+  };
+};
+
+const windsurfCarve = 9;
+const windsurfHeel = 0.1;
+
+const findWindsurfArrival = (dock: Dock, share: number): CraftPlacement => {
+  const berth = findBoardBerth(dock, "windsurfer");
+  const { spot, turned } = findGlideIn(dock, berth, share, windsurfCarve);
+  const sailing = 1 - smoothStep(0.7, 1, share);
+  return {
+    ...berth,
+    ...spot,
+    heading: berth.heading + turned,
+    pitch: 0.04 * sailing,
+    roll: (windsurfHeel - 0.3 * turned) * sailing,
+  };
+};
+
+const findWindsurfDeparture = (dock: Dock, share: number): CraftPlacement => {
+  const berth = findBoardBerth(dock, "windsurfer");
+  const { seaward, across } = findDockFrame(dock);
+  const underway = Math.max(0, (share - 0.1) / 0.9);
+  const swing = smoothStep(0, 0.3, underway);
+  const turn = smoothStep(0.12, 0.5, underway);
+  const out = boardApproach * Math.max(0, underway - 0.2) ** 2 * 1.56;
+  const sailing = smoothStep(0.05, 0.4, underway);
+  return {
+    x: berth.x + across.x * 3 * swing + seaward.x * out,
+    y: 0,
+    z: berth.z + across.z * 3 * swing + seaward.z * out,
+    heading: berth.heading + Math.PI * turn,
+    pitch: 0.04 * sailing,
+    roll: windsurfHeel * sailing + 0.25 * Math.sin(Math.PI * turn),
+  };
+};
+
+/** How the Character holds themselves on a surfboard or windsurfer. */
+export const findBoardStance = (
+  craft: "surfboard" | "windsurfer",
+  phase: VoyagePhase,
+  share: number,
+): Stance => {
+  if (craft === "windsurfer") {
+    return phase === "landing" ? "standing" : "windsurfing";
+  }
+  if (phase === "boarding") {
+    return "paddling";
+  }
+  if (phase === "departing") {
+    return share < surfStandsUp ? "paddling" : "surfing";
+  }
+  if (phase === "docking") {
+    return share < 0.9 ? "surfing" : "standing";
+  }
+  return phase === "crossing" ? "surfing" : "standing";
+};
+
+/** Where on the board the Character's feet are for a stance. */
+export const findBoardRiderSpot = (
+  craft: "surfboard" | "windsurfer",
+  stance: Stance,
+): Spot3 => {
+  if (craft === "windsurfer") {
+    return { x: 0, y: windsurferDeck, z: windsurferRiderZ };
+  }
+  if (stance === "paddling") {
+    return {
+      x: 0,
+      y: surfboardDeck - proneBackHeight * 0.15,
+      z: surfRiderZ - 0.45,
+    };
+  }
+  return { x: 0, y: surfboardDeck, z: surfRiderZ };
+};
+
 export const findSeaCraftPlacement = (
   adventure: IslandAdventure,
   craft: SeaCraft,
@@ -392,6 +638,24 @@ export const findSeaCraftPlacement = (
       return findHovercraftTakeOff(adventure, share);
     }
     return findHovercraftLanding(adventure, 1);
+  }
+  if (craft === "surfboard") {
+    if (isArriving(phase)) {
+      return findSurfArrival(adventure.dock, share);
+    }
+    if (isGoing(phase)) {
+      return findSurfDeparture(adventure.dock, share);
+    }
+    return findBoardBerth(adventure.dock, craft);
+  }
+  if (craft === "windsurfer") {
+    if (isArriving(phase)) {
+      return findWindsurfArrival(adventure.dock, share);
+    }
+    if (isGoing(phase)) {
+      return findWindsurfDeparture(adventure.dock, share);
+    }
+    return findBoardBerth(adventure.dock, craft);
   }
   if (craft === "jetski") {
     if (isArriving(phase)) {
@@ -467,9 +731,32 @@ const findJetskiWay = (dock: Dock): Spot3[] => {
   ];
 };
 
+const findBoardWay = (dock: Dock, craft: "surfboard" | "windsurfer") => {
+  const side = findSubPierSide(dock);
+  const { halfWidth } = boardShapes[craft];
+  const pierEdge = halfWidth + boardBerthGap;
+  const rider = findBoardRiderSpot(craft, "standing");
+  return [
+    {
+      x: side * (pierEdge + pierHalfWidth * 0.7),
+      y: pierDeckHeight,
+      z: rider.z,
+    },
+    { x: side * (pierEdge + 0.05), y: pierDeckHeight, z: rider.z },
+    { x: side * 0.2, y: rider.y, z: rider.z },
+    rider,
+  ];
+};
+
+const isBoard = (craft: SeaCraft): craft is "surfboard" | "windsurfer" =>
+  craft === "surfboard" || craft === "windsurfer";
+
 const findSeaCraftWay = (adventure: IslandAdventure, craft: SeaCraft) => {
   if (craft === "hovercraft") {
     return findHovercraftWay();
+  }
+  if (isBoard(craft)) {
+    return findBoardWay(adventure.dock, craft);
   }
   return craft === "jetski"
     ? findJetskiWay(adventure.dock)
@@ -502,10 +789,10 @@ export const findSeaCraftWaitingSpot = (
   if (craft === "submarine") {
     return findSubWaitingSpot(adventure.dock);
   }
-  if (craft === "jetski") {
+  if (craft === "jetski" || isBoard(craft)) {
     const { x, z } = placeOnCraft(
       findParked(adventure, craft),
-      findJetskiWay(adventure.dock)[0],
+      findSeaCraftWay(adventure, craft)[0],
     );
     return { x, z };
   }
@@ -548,7 +835,46 @@ export const findSkirtLift = (phase: VoyagePhase, share: number): number => {
   return 0;
 };
 
+const findBoardCarriedSpot = (
+  adventure: IslandAdventure,
+  craft: "surfboard" | "windsurfer",
+  phase: LandPhase,
+  share: number,
+  walking: BoardingSpot,
+): BoardingSpot => {
+  const placement = findSeaCraftPlacement(adventure, craft, phase, share);
+  const isAboard =
+    phase === "departing" ||
+    phase === "docking" ||
+    (phase === "boarding" && share >= boardedShare) ||
+    (phase === "landing" && share < doorOpeningShare);
+  if (!isAboard) {
+    return walking;
+  }
+  const stance = findBoardStance(craft, phase, share);
+  return {
+    ...placeOnTiltedCraft(placement, findBoardRiderSpot(craft, stance)),
+    heading: placement.heading,
+    isInside: false,
+    stance,
+    pitch: placement.pitch,
+    roll: placement.roll,
+  };
+};
+
 export const findSeaCraftCarriedSpot = (
+  adventure: IslandAdventure,
+  craft: SeaCraft,
+  phase: LandPhase,
+  share: number,
+): BoardingSpot => {
+  const spot = findWalkedSeaCraftSpot(adventure, craft, phase, share);
+  return isBoard(craft)
+    ? findBoardCarriedSpot(adventure, craft, phase, share, spot)
+    : spot;
+};
+
+const findWalkedSeaCraftSpot = (
   adventure: IslandAdventure,
   craft: SeaCraft,
   phase: LandPhase,
@@ -556,7 +882,7 @@ export const findSeaCraftCarriedSpot = (
 ): BoardingSpot => {
   const placement = findSeaCraftPlacement(adventure, craft, phase, share);
   const way = findSeaCraftWay(adventure, craft);
-  const isRidingInView = craft === "jetski";
+  const isRidingInView = craft === "jetski" || isBoard(craft);
   const arrivalHeading = findSeaCraftArrivalHeading(adventure, craft);
   const towardsCraft = arrivalHeading + Math.PI;
   if (phase === "calling") {
@@ -596,6 +922,8 @@ const seaCraftCameraOffsets: Record<SeaCraft, Spot3> = {
   hovercraft: { x: 9, y: 6, z: 9 },
   submarine: { x: -6, y: 6, z: 12 },
   jetski: { x: -5, y: 4, z: 8 },
+  surfboard: { x: -5, y: 4, z: 8 },
+  windsurfer: { x: -6, y: 4.5, z: 9 },
 };
 
 export const findSeaCraftCameraSpot = (
@@ -634,6 +962,12 @@ const seaCraftBlockerShapes: Record<
   },
   submarine: { length: subLength, radius: subBlockerRadius, count: 5 },
   jetski: { length: jetskiLength, radius: jetskiBeam / 2, count: 2 },
+  surfboard: { length: surfboardLength, radius: surfboardHalfWidth, count: 2 },
+  windsurfer: {
+    length: windsurferLength,
+    radius: windsurferHalfWidth,
+    count: 2,
+  },
 };
 
 export const listSeaCraftBlockers = (
