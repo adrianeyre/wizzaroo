@@ -1,6 +1,6 @@
 {
   "name": "wizzaroo",
-  "version": "1.11.0",
+  "version": "1.12.0",
   "description": "A 3D learning game for primary-school children that teaches the UK National Curriculum (Years 1-6), built as an offline-first PWA for one family.",
   "license": "ISC",
   "private": true,
