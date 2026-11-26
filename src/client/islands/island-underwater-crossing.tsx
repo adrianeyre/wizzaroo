@@ -43,6 +43,13 @@ import { isMotionReduced } from "../reduced-motion.js";
 import type { Triple } from "../world-map-models.js";
 import { findSmoothNoise, smoothStep } from "../world-map-terrain.js";
 import { buildLoftGeometry } from "./island-lofts.js";
+import {
+  buildDolphinGeometry,
+  buildSeaLionBodyGeometry,
+  buildSeaLionFlipperGeometry,
+  buildSharkGeometry,
+  findSeaLionShoulder,
+} from "./island-sea-life-design.js";
 import { buildLiveryGeometry } from "./island-livery.js";
 import { LiveryDecals } from "./island-livery-models.js";
 
@@ -221,7 +228,8 @@ float seaCaustic(vec2 at, float time) {
 }
 `;
 
-type Deform = "none" | "sway" | "wiggle" | "flap" | "pulse" | "undulate";
+type Deform =
+  "none" | "sway" | "wiggle" | "flap" | "pulse" | "undulate" | "swish" | "kick";
 
 const deformGlsl: Record<Deform, string> = {
   none: "",
@@ -253,6 +261,18 @@ const deformGlsl: Record<Deform, string> = {
   undulate: /* glsl */ `
     float flukeward = clamp(0.2 - position.z, 0.0, 1.2);
     transformed.y += sin(uSeaTime * uDeform.y - position.z * 2.5) * uDeform.x * flukeward * flukeward;
+  `,
+  // A shark's tail sweeping side to side behind uDeform.z, the head
+  // countering a little; uDeform.w is how far back the sweep grows.
+  swish: /* glsl */ `
+    float swishTail = clamp((uDeform.z - position.z) / uDeform.w, 0.0, 1.0);
+    float swishHead = clamp((position.z - uDeform.z) / uDeform.w, 0.0, 1.0);
+    transformed.x += sin(uSeaTime * uDeform.y + seaPhase - position.z * 3.2) * uDeform.x * (swishTail * swishTail - 0.12 * swishHead);
+  `,
+  // A dolphin's or sea lion's flukes beating up and down behind uDeform.z.
+  kick: /* glsl */ `
+    float kickTail = clamp((uDeform.z - position.z) / uDeform.w, 0.0, 1.0);
+    transformed.y += sin(uSeaTime * uDeform.y + seaPhase - position.z * 2.6) * uDeform.x * kickTail * kickTail;
   `,
 };
 
@@ -373,6 +393,8 @@ ${causticGlsl}`,
 
 // ---------------------------------------------------------------------------
 // Geometry helpers.
+
+const clampShare = (share: number): number => Math.min(1, Math.max(0, share));
 
 const makeRandom = (seed: number) => {
   let state = seed >>> 0;
@@ -928,7 +950,8 @@ const buildSeaGrassShape = (seed: number): BufferGeometry => {
 };
 
 // ---------------------------------------------------------------------------
-// Fish, a turtle, a manta ray, a dolphin and jellyfish.
+// Fish, a turtle, a manta ray and jellyfish. The shark, the sea lion and
+// the dolphins are modelled in island-sea-life-design.ts.
 
 interface FishLook {
   body: (point: Vector3) => Color;
@@ -1266,69 +1289,6 @@ const buildMantaShape = (): BufferGeometry => {
         4,
       ),
       "#1f2937",
-    ),
-  ]);
-};
-
-const buildDolphinShape = (): BufferGeometry => {
-  const stations = 22;
-  const around = 14;
-  const findRadius = (z: number) => {
-    if (z > 0.62) {
-      return 0.05 + 0.08 * (1 - (z - 0.62) / 0.16);
-    }
-    if (z > 0.45) {
-      return 0.13 + 0.06 * Math.sin(((z - 0.45) / 0.17) * Math.PI);
-    }
-    return 0.05 + 0.18 * Math.sin(((z + 0.8) / 1.25) * Math.PI * 0.5) ** 1.2;
-  };
-  const rings = Array.from({ length: stations }, (_, station) => {
-    const z = -0.8 + (station / (stations - 1)) * 1.58;
-    const radius = findRadius(z);
-    return Array.from({ length: around }, (_unused, point): Triple => {
-      const angle = (point / around) * Math.PI * 2;
-      return [Math.sin(angle) * radius * 0.85, Math.cos(angle) * radius, z];
-    });
-  });
-  const skin = (point: Vector3) => {
-    const radius = findRadius(point.z);
-    const height = point.y / Math.max(radius, 0.01);
-    return new Color("#e9eef5")
-      .lerp(new Color("#8b9db3"), smoothStep(-0.45, 0.1, height))
-      .lerp(new Color("#4b5b70"), smoothStep(0.3, 0.8, height));
-  };
-  return joinShapes([
-    paintShape(buildLoftGeometry(rings), skin),
-    paintShape(
-      new ConeGeometry(0.16, 0.28, 4)
-        .scale(1, 1, 0.12)
-        .rotateY(Math.PI / 2)
-        .rotateX(-0.55)
-        .translate(0, 0.27, -0.05),
-      "#4b5b70",
-      true,
-    ),
-    ...[-1, 1].map((side) =>
-      placeShape(
-        paintShape(new SphereGeometry(0.5, 10, 5), "#64748b"),
-        [side * 0.2, -0.08, 0.25],
-        [0.3, side * 0.6, side * 0.6],
-        [0.2, 0.025, 0.08],
-      ),
-    ),
-    ...[-1, 1].map((side) =>
-      placeShape(
-        paintShape(new SphereGeometry(0.5, 10, 5), "#5b6b80"),
-        [side * 0.17, 0, -0.86],
-        [0, side * 0.5, 0],
-        [0.32, 0.025, 0.12],
-      ),
-    ),
-    ...[-1, 1].map((side) =>
-      paintShape(
-        new SphereGeometry(0.02, 6, 4).translate(side * 0.11, 0.04, 0.52),
-        "#0b0f19",
-      ),
     ),
   ]);
 };
@@ -2230,7 +2190,7 @@ interface Bubble {
 }
 
 interface Creature {
-  mesh: Mesh;
+  mesh: Object3D;
   place: (seconds: number, share: number, into: Object3D) => void;
 }
 
@@ -2705,43 +2665,176 @@ class UnderwaterWorld {
         into.scale.setScalar(1.15);
       },
     });
-    const dolphin = new Mesh(
-      this.keep(buildDolphinShape()),
+    this.addDolphins();
+    this.addSeaLion();
+    this.addShark();
+    this.creatures.forEach(({ mesh }) => {
+      mesh.traverse((part) => {
+        part.frustumCulled = false;
+      });
+      this.root.add(mesh);
+    });
+  }
+
+  // A pair of bottlenose dolphins catch the diver up side by side, beating
+  // their flukes in time, and race on ahead, the far one rolling over as it
+  // goes, both rising towards the light.
+  private addDolphins(): void {
+    const length = this.length;
+    const geometry = this.keep(buildDolphinGeometry());
+    const material = this.keep(
+      buildSeaMaterial({
+        clock: this.clock,
+        deform: "kick",
+        deformShape: [0.09, 6, 0.1, 0.9],
+        roughness: 0.32,
+        caustics: 0.6,
+        selfLight: 0.1,
+      }),
+    );
+    const pod = [
+      { lane: 2.2, depth: 0, lag: 0, roll: 0 },
+      { lane: 3.15, depth: 0.35, lag: 0.9, roll: 1 },
+    ];
+    pod.forEach(({ lane, depth, lag, roll }) => {
+      const dolphin = new Mesh(geometry, material);
+      dolphin.name = "underwater-dolphin";
+      this.creatures.push({
+        mesh: dolphin,
+        place: (seconds, share, into) => {
+          const pass = clampShare((share - 0.08) / 0.38);
+          const diver = findDiverPlacement(share, length);
+          const x = diver.x - 8 - lag + pass * 24;
+          const rise = pass ** 3;
+          const bob = Math.sin(seconds * 2 + lag);
+          into.position.set(
+            x,
+            diver.y - 0.5 + depth + rise * 1.9 + 0.12 * bob,
+            lane - Math.sin(pass * Math.PI) * 0.5,
+          );
+          into.rotation.set(
+            -0.08 - rise * 0.5 + 0.06 * Math.cos(seconds * 2 + lag),
+            Math.PI / 2 - 0.06,
+            roll * Math.PI * 2 * smoothStep(0.42, 0.68, pass),
+            "YXZ",
+          );
+          into.scale.setScalar(pass <= 0 || pass >= 1 ? 0.0001 : 1);
+        },
+      });
+    });
+  }
+
+  // A curious sea lion swims in from the blue and corkscrews round the
+  // diver, flying on its long front flippers, then darts away.
+  private addSeaLion(): void {
+    const length = this.length;
+    const seaLion = new Group();
+    seaLion.name = "underwater-sea-lion";
+    seaLion.add(
+      new Mesh(
+        this.keep(buildSeaLionBodyGeometry()),
+        this.keep(
+          buildSeaMaterial({
+            clock: this.clock,
+            deform: "kick",
+            deformShape: [0.05, 5, -0.1, 0.5],
+            roughness: 0.3,
+            caustics: 0.6,
+            selfLight: 0.1,
+          }),
+        ),
+      ),
+    );
+    const flipperGeometry = this.keep(buildSeaLionFlipperGeometry());
+    const flipperMaterial = this.keep(
+      buildSeaMaterial({
+        clock: this.clock,
+        roughness: 0.35,
+        caustics: 0.5,
+        selfLight: 0.08,
+        isDoubleSided: true,
+      }),
+    );
+    const flippers = ([-1, 1] as const).map((side) => {
+      const flipper = new Mesh(flipperGeometry, flipperMaterial);
+      flipper.position.set(...findSeaLionShoulder(side));
+      flipper.scale.set(side, 1, 1);
+      seaLion.add(flipper);
+      return { flipper, side };
+    });
+    this.creatures.push({
+      mesh: seaLion,
+      place: (seconds, share, into) => {
+        const isHere = share > 0.3 && share < 0.74;
+        const arriving = 1 - smoothStep(0.3, 0.4, share);
+        const leaving = smoothStep(0.64, 0.74, share);
+        const diver = findDiverPlacement(share, length);
+        const turn = seconds * 1.25;
+        const radius = 1.35;
+        const away = (arriving + leaving) * 14;
+        into.position.set(
+          diver.x + 1.6 + Math.sin(turn) * radius + leaving * 6,
+          diver.y + 0.25 + 0.4 * Math.sin(turn * 2),
+          1.9 + Math.cos(turn) * radius + away,
+        );
+        into.rotation.set(
+          -0.4 * Math.cos(turn * 2),
+          Math.atan2(Math.cos(turn), -Math.sin(turn)),
+          -0.75 + 0.15 * Math.sin(turn * 3),
+          "YXZ",
+        );
+        into.scale.setScalar(isHere ? 1 : 0.0001);
+        const stroke = Math.sin(seconds * 3.6);
+        flippers.forEach(({ flipper, side }) => {
+          flipper.rotation.set(
+            0,
+            side * 0.25 * Math.cos(seconds * 3.6),
+            side * (-0.35 + 0.55 * stroke),
+          );
+        });
+      },
+    });
+  }
+
+  // A grey reef shark cruises slowly by further out, deep down, the other
+  // way from the diver, its tail sweeping side to side.
+  private addShark(): void {
+    const length = this.length;
+    const shark = new Mesh(
+      this.keep(buildSharkGeometry()),
       this.keep(
         buildSeaMaterial({
           clock: this.clock,
-          deform: "undulate",
-          deformShape: [0.14, 5.5, 0, 0],
-          roughness: 0.35,
-          caustics: 0.6,
-          selfLight: 0.1,
+          deform: "swish",
+          deformShape: [0.11, 2.6, 0.45, 1.5],
+          roughness: 0.45,
+          caustics: 0.7,
+          selfLight: 0.08,
         }),
       ),
     );
+    shark.name = "underwater-shark";
     this.creatures.push({
-      mesh: dolphin,
+      mesh: shark,
       place: (seconds, share, into) => {
-        const pass = Math.min(1, Math.max(0, (share - 0.12) / 0.38));
+        const pass = clampShare((share - 0.5) / 0.48);
         const diver = findDiverPlacement(share, length);
-        const x = diver.x - 7 + pass * 22;
-        const rise = pass ** 3;
+        const x = diver.x + 15 - pass * 26;
+        const z = 6.4 + 0.7 * Math.sin(pass * Math.PI * 1.5);
+        const bed = findSeabedHeight(x, z, length);
         into.position.set(
           x,
-          -2.6 + rise * 2.3 + 0.15 * Math.sin(seconds * 2.4),
-          2.4 - Math.sin(pass * Math.PI) * 0.6,
+          Math.max(bed + 1.3, -3.4) + 0.1 * Math.sin(seconds * 0.7),
+          z,
         );
         into.rotation.set(
-          -0.15 - rise * 0.6 + 0.08 * Math.cos(seconds * 2.4),
-          Math.PI / 2 - 0.08,
-          0,
+          0.03 * Math.sin(seconds * 0.5),
+          -Math.PI / 2 + 0.35 * Math.cos(pass * Math.PI * 1.5),
+          0.05 * Math.sin(seconds * 0.6),
           "YXZ",
         );
-        into.scale.setScalar(pass <= 0 || pass >= 1 ? 0.0001 : 1.05);
+        into.scale.setScalar(pass <= 0 || pass >= 1 ? 0.0001 : 0.95);
       },
-    });
-    this.creatures.forEach(({ mesh }) => {
-      mesh.frustumCulled = false;
-      this.root.add(mesh);
     });
   }
 

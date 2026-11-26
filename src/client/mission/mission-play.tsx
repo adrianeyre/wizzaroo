@@ -147,10 +147,16 @@ import type {
 import { chooseWeather, weatherKinds, type Weather } from "../world-map-sky.js";
 import type { MapPoint } from "../world-map-terrain.js";
 import type { CompanionMood } from "../studio-stage.js";
+import type { JourneyArrival } from "../islands/island-journey.js";
 import {
-  chooseTransport,
-  type JourneyArrival,
-} from "../islands/island-journey.js";
+  loadTransportChoice,
+  pickTransport,
+  storeTransportChoice,
+  transportChoiceNames,
+  transportChoices,
+  type TransportChoice,
+} from "../islands/transport-choice.js";
+import { transportIcons } from "../islands/transport-icons.js";
 import {
   canSailTo,
   describeMapJourney,
@@ -1149,11 +1155,12 @@ const PlayNav = ({
   );
 };
 
-type SidePanelKind = "subject" | "islands" | "weather" | "view";
+type SidePanelKind = "subject" | "islands" | "transport" | "weather" | "view";
 
 const sidePanelTitles: Record<SidePanelKind, string> = {
   subject: "Subject",
   islands: "Islands",
+  transport: "Transport",
   weather: "Weather",
   view: "View",
 };
@@ -1519,6 +1526,11 @@ const WorldMapScreen = ({
   });
   const [weather, setWeather] = useState(() => chooseWeather(Math.random));
   const [isWeatherChosen, setIsWeatherChosen] = useState(false);
+  const [transportChoice, setTransportChoice] = useState(loadTransportChoice);
+  const chooseTransportFromMenu = (choice: TransportChoice) => {
+    setTransportChoice(choice);
+    storeTransportChoice(choice);
+  };
   const { worldMapRef, mapDockRef } = useMapDockHeight();
   const [sidePanel, setSidePanel] = useState<SidePanelKind>();
   const menuToggleRef = useRef<HTMLButtonElement>(null);
@@ -1667,7 +1679,7 @@ const WorldMapScreen = ({
     setMapVoyage({
       fromIslandId: islandInView.id,
       toIslandId: islandId,
-      transport: chooseTransport(),
+      transport: pickTransport(transportChoice),
     });
   };
   const endMapVoyage = () => {
@@ -1794,6 +1806,11 @@ const WorldMapScreen = ({
   const menuOptions: PlayMenuOption[] = [
     panelOption("subject", "Regions and their Subjects", <PinIcon />),
     panelOption("islands", "Every Island and its Year", <GlobeIcon />),
+    panelOption(
+      "transport",
+      "How you travel between Islands",
+      transportIcons[transportChoice],
+    ),
     panelOption("weather", "Change the sky", weatherButtons[weather].icon),
     panelOption("view", "Map, Explore, Wardrobe or Room", <EyeIcon />),
     {
@@ -1867,6 +1884,23 @@ const WorldMapScreen = ({
                   <span className="play-side-panel-tag">Your Island</span>
                 ) : null}
                 Year {island.yearGroup}
+              </span>
+            </button>
+          </li>
+        ));
+      case "transport":
+        return transportChoices.map((choice) => (
+          <li key={choice}>
+            <button
+              type="button"
+              aria-pressed={choice === transportChoice}
+              onClick={() => {
+                chooseTransportFromMenu(choice);
+              }}
+            >
+              {transportIcons[choice]}
+              <span className="play-side-panel-name">
+                {transportChoiceNames[choice]}
               </span>
             </button>
           </li>

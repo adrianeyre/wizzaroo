@@ -65,13 +65,13 @@ import {
 } from "./island-adventures.js";
 import {
   buildJourneyRoute,
-  chooseTransport,
   findJourneyArrivalHeading,
   findJourneyPhaseSeconds,
   findJourneyWaitingSpot,
   type JourneyArrival,
   type Transport,
 } from "./island-journey.js";
+import { pickTransport } from "./transport-choice.js";
 import {
   findNextVoyagePhase,
   isCarriedByVoyage,
@@ -1145,7 +1145,7 @@ export const IslandExplore = ({
     setVoyage({
       phase: "calling",
       toIslandId: islandId,
-      transport: chooseTransport(),
+      transport: pickTransport(),
     });
   };
 

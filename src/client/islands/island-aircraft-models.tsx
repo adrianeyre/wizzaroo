@@ -305,7 +305,8 @@ const craftDesigns: Record<Craft, CraftDesign> = {
     placeMovingParts: (_pose, turn) => placeSurfboardMovingParts(turn),
     glow: {
       build: buildSurfWaveGeometry,
-      place: ({ burn = 0 }, turn) => placeSurfWave(burn, turn),
+      place: ({ burn = 0, placement }, turn) =>
+        placeSurfWave(burn, turn, placement),
       opacity: 0.94,
       isLit: true,
     },

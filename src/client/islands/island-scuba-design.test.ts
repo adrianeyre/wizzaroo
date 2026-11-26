@@ -214,8 +214,43 @@ describe("UnderwaterCrossingScene", () => {
       ownMeshes.reduce((total, mesh) => total + countTriangles(mesh), 0),
     ).toBeLessThanOrEqual(510_000);
     expect(diver?.position.y).toBeLessThan(-1.4);
+    const listNamed = (name: string) => {
+      const found: Object3D[] = [];
+      scene.traverse((thing) => {
+        if (thing.name === name) {
+          found.push(thing);
+        }
+      });
+      return found;
+    };
+    expect(listNamed("underwater-shark")).toHaveLength(1);
+    expect(listNamed("underwater-sea-lion")).toHaveLength(1);
+    expect(listNamed("underwater-dolphin")).toHaveLength(2);
 
-    await renderer.advanceFrames(seconds * 10 + 5, 0.1);
+    // A third of the way across, the two dolphins race by side by side and
+    // the sea lion is circling the diver.
+    await renderer.advanceFrames(seconds * 3, 0.1);
+    const [first, second] = listNamed("underwater-dolphin");
+    const [seaLion] = listNamed("underwater-sea-lion");
+    const [shark] = listNamed("underwater-shark");
+    expect(first.scale.x).toBe(1);
+    expect(second.scale.x).toBe(1);
+    expect(Math.abs(first.position.z - second.position.z)).toBeGreaterThan(0.6);
+    expect(seaLion.scale.x).toBe(1);
+    expect(shark.scale.x).toBeLessThan(0.001);
+    expect(
+      Math.hypot(
+        seaLion.position.x - (diver?.position.x ?? 0),
+        seaLion.position.z - (diver?.position.z ?? 0),
+      ),
+    ).toBeLessThan(18);
+
+    // Later on, the shark cruises by further out than the diver swims.
+    await renderer.advanceFrames(seconds * 4, 0.1);
+    expect(shark.scale.x).toBeGreaterThan(0.5);
+    expect(shark.position.z - (diver?.position.z ?? 0)).toBeGreaterThan(4);
+
+    await renderer.advanceFrames(seconds * 3 + 5, 0.1);
     const length = findUnderwaterCrossingLength(seconds);
     expect(diver?.position.x).toBeCloseTo(length, 0);
     await renderer.unmount();

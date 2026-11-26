@@ -51,6 +51,7 @@ import {
   transports,
   type Transport,
 } from "../islands/island-journey.js";
+import { transportChoiceNames } from "../islands/transport-choice.js";
 import { aircraftPhaseSeconds } from "../islands/island-flight.js";
 import { playPhoneme, playVoiceOver } from "../voice-over/voice-over.js";
 import {
@@ -2436,6 +2437,7 @@ describe("FamilyDevicePage", () => {
         expect(listMenuItemNames()).toStrictEqual([
           "Subject",
           "Islands",
+          "Transport",
           "Weather",
           "View",
           "Settings",
@@ -2492,6 +2494,43 @@ describe("FamilyDevicePage", () => {
         });
       });
       expect(document.querySelector(".play-side-panel")).toBeNull();
+    });
+
+    it("lists Random and then every craft in the Menu's Transport panel, Random chosen until the Child picks a craft, which then fetches them every time", async () => {
+      startFakeServer(answerWithPlayableChildren([sparkle]));
+      openPage(renderMission());
+      await playAsSparkle(everyRegionsName);
+
+      await openMenuPanel("Transport");
+      const names = [
+        ...document.querySelectorAll(
+          ".play-side-panel-list .play-side-panel-name",
+        ),
+      ].map(({ textContent }) => textContent);
+      expect(names).toStrictEqual([
+        "Random",
+        ...transports.map((transport) => transportChoiceNames[transport]),
+      ]);
+      expect(
+        document.querySelectorAll(".play-side-panel-list button svg"),
+      ).toHaveLength(transports.length + 1);
+      expect(findButton("Random").getAttribute("aria-pressed")).toBe("true");
+      expect(findButton("Dragon").getAttribute("aria-pressed")).toBe("false");
+
+      findButton("Dragon").click();
+      await vi.waitFor(() => {
+        expect(findButton("Dragon").getAttribute("aria-pressed")).toBe("true");
+      });
+      expect(findButton("Random").getAttribute("aria-pressed")).toBe("false");
+      expect(localStorage.getItem("wizzaroo.transport")).toBe("dragon");
+      findButton("Close Transport").click();
+
+      const random = vi.spyOn(Math, "random").mockReturnValue(0);
+      await chooseFromMenu("Islands", "Frost Isle, Year 2, locked");
+      await vi.waitFor(() => {
+        expect(readShownWorldMap().voyage?.transport).toBe("dragon");
+      });
+      random.mockRestore();
     });
 
     it("changes the Island's weather from the Menu's Weather panel, showing each icon and name and which is chosen", async () => {

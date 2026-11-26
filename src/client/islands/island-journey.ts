@@ -34,6 +34,9 @@ import {
   findJetskiSpray,
   findSurfWaveSize,
   findSkirtLift,
+  surfFaceRoll,
+  surfRideLift,
+  surfRidePitch,
   findSubPierSide,
   hovercraftCushion,
   isWalkingToSeaCraft,
@@ -333,7 +336,7 @@ const seaCruiseHeights: Record<SeaCraft, number> = {
   hovercraft: hovercraftCushion / exploreScale,
   submarine: -Math.min(subDivingDepth, periscopeDepth) / exploreScale,
   jetski: 0,
-  surfboard: 0,
+  surfboard: surfRideLift / exploreScale,
   windsurfer: 0,
 };
 
@@ -516,7 +519,6 @@ const findRocketCrossing = (
 };
 
 const jetskiCrossingPitch = 0.1;
-const surfCrossingPitch = -0.11;
 const windsurfCrossingHeel = 0.12;
 
 export const findCrossingCraftPlacement = (
@@ -536,8 +538,8 @@ export const findCrossingCraftPlacement = (
         y: point.y,
         z: point.z,
         heading,
-        pitch: surfCrossingPitch + 0.02 * Math.sin(share * Math.PI * 9),
-        roll: -turn * 3 + 0.08 * Math.sin(share * Math.PI * 6),
+        pitch: surfRidePitch + 0.02 * Math.sin(share * Math.PI * 9),
+        roll: surfFaceRoll - turn * 3 + 0.08 * Math.sin(share * Math.PI * 6),
       };
     }
     if (transport === "windsurfer") {
