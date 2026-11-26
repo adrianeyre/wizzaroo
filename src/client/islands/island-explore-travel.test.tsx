@@ -1,6 +1,6 @@
 // Getting about in explore mode: walking, the voyages and flights across the World Map, hideaways, trains and Vehicles.
 import ReactThreeTestRenderer from "@react-three/test-renderer";
-import { InstancedMesh, PointLight } from "three";
+import { InstancedMesh, PointLight, Scene, type Mesh } from "three";
 import { beforeAll, describe, expect, it, vi } from "vitest";
 import { buildRegionsOnMap } from "../../curriculum/island-access.js";
 import {
@@ -35,6 +35,7 @@ import {
   findNamed,
   frameSeconds,
   islandsOnMap,
+  isMesh,
   listMeshes,
   renderExplore,
 } from "./island-explore-scene.test-support.js";
@@ -283,6 +284,8 @@ describe.each([
   "aeroplane",
   "helicopter",
   "balloon",
+  "dragon",
+  "blimp",
 ] as const satisfies Transport[])("VoyageCrossingScene by %s", (transport) => {
   it("flies across the World Map within its budget and arrives where it comes in to land", async () => {
     const renderer = await ReactThreeTestRenderer.create(
@@ -320,6 +323,74 @@ describe.each([
         craft.instance.position.z - destination.z,
       ),
     ).toBeLessThan(0.5);
+  });
+});
+
+const listDrawnMeshes = (
+  renderer: Awaited<ReturnType<typeof ReactThreeTestRenderer.create>>,
+): Mesh[] => {
+  const drawn: Mesh[] = [];
+  renderer.scene.instance.traverseVisible((part) => {
+    if (isMesh(part)) {
+      drawn.push(part);
+    }
+  });
+  return drawn;
+};
+
+describe("riding in view across the World Map", () => {
+  it.each(["dragon", "surfboard", "windsurfer"] as const)(
+    "draws the Character riding the %s, merged into a few meshes",
+    async (transport) => {
+      const renderer = await ReactThreeTestRenderer.create(
+        <VoyageCrossingScene
+          fromIsland={findIslandOnMap("meadow-isle")}
+          toIsland={findIslandOnMap("frost-isle")}
+          transport={transport}
+          islands={islandsOnMap}
+          regions={buildRegionsOnMap(islandsOnMap, everyIslandOpen)}
+          isEffectsOn
+          timeOfDay="day"
+          weather="clear"
+        />,
+      );
+      // The rider's stance is set from inside a frame, so the frames are
+      // advanced inside act for React to draw the posed rider.
+      await ReactThreeTestRenderer.act(async () => {
+        await renderer.advanceFrames(6, frameSeconds);
+      });
+
+      const [rider] = findNamed(renderer, "craft-rider");
+      expect(rider.instance.visible).toBe(true);
+      const drawn = listDrawnMeshes(renderer);
+      const figure = drawn.filter(({ name }) => name === "craft-rider-figure");
+      expect(figure.length).toBeGreaterThan(0);
+      expect(figure.length).toBeLessThanOrEqual(16);
+      expect(drawn.length).toBeLessThanOrEqual(88);
+    },
+  );
+});
+
+describe("scuba diving between Islands", () => {
+  it("swaps the World Map for the sea bed, the Character swimming under the water", async () => {
+    const renderer = await ReactThreeTestRenderer.create(
+      <VoyageCrossingScene
+        fromIsland={findIslandOnMap("meadow-isle")}
+        toIsland={findIslandOnMap("frost-isle")}
+        transport="scuba"
+        islands={islandsOnMap}
+        regions={buildRegionsOnMap(islandsOnMap, everyIslandOpen)}
+        isEffectsOn
+        timeOfDay="day"
+        weather="clear"
+      />,
+    );
+    await renderer.advanceFrames(3, frameSeconds);
+
+    expect(findNamed(renderer, "underwater-diver")).toHaveLength(1);
+    expect(findNamed(renderer, "map-scuba")).toHaveLength(0);
+    const scene = renderer.scene.instance;
+    expect(scene instanceof Scene && scene.fog !== null).toBe(true);
   });
 });
 

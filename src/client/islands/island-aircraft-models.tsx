@@ -1,5 +1,11 @@
 import { useFrame } from "@react-three/fiber";
-import { useEffect, useMemo, useRef, type RefObject } from "react";
+import {
+  useEffect,
+  useMemo,
+  useRef,
+  type ReactNode,
+  type RefObject,
+} from "react";
 import {
   DoubleSide,
   type BufferGeometry,
@@ -81,6 +87,40 @@ import {
   placeRocketStair,
 } from "./island-rocket-design.js";
 import {
+  buildBlimpGeometry,
+  buildBlimpLiveryGeometry,
+  buildBlimpMovingPartsGeometry,
+  placeBlimpMovingParts,
+} from "./island-blimp-design.js";
+import {
+  buildDragonGeometry,
+  buildDragonLiveryGeometry,
+  buildDragonMovingPartsGeometry,
+  placeDragonMovingParts,
+} from "./island-dragon-design.js";
+import { placeDragonBody } from "./island-flight.js";
+import {
+  buildScubaLockerGeometry,
+  buildScubaLockerLiveryGeometry,
+  buildScubaLockerMovingPartsGeometry,
+  placeScubaLockerMovingParts,
+  scubaLockerGrowthCentre,
+} from "./island-scuba-design.js";
+import {
+  buildSurfboardGeometry,
+  buildSurfboardLiveryGeometry,
+  buildSurfboardMovingPartsGeometry,
+  buildSurfWaveGeometry,
+  placeSurfboardMovingParts,
+  placeSurfWave,
+} from "./island-surfboard-design.js";
+import {
+  buildWindsurferGeometry,
+  buildWindsurferLiveryGeometry,
+  buildWindsurferMovingPartsGeometry,
+  placeWindsurferMovingParts,
+} from "./island-windsurfer-design.js";
+import {
   buildMovingPartsModel,
   moveParts,
   type MovingPartsModel,
@@ -104,7 +144,12 @@ export type Craft =
   | "balloon"
   | "jetski"
   | "rocket"
-  | "portal";
+  | "portal"
+  | "dragon"
+  | "blimp"
+  | "surfboard"
+  | "windsurfer"
+  | "scuba";
 
 export interface CraftPose {
   placement: CraftPlacement;
@@ -121,10 +166,14 @@ interface CraftGlow {
   build: () => BufferGeometry;
   place: (pose: CraftPose, turn: number) => Matrix4;
   opacity?: number;
+  /** Shaded by the sun, like water, rather than glowing like a flame. */
+  isLit?: boolean;
 }
 
 interface CraftDesign {
   scaleBody?: { centre: Triple; find: (pose: CraftPose) => number };
+  /** Moves the body and its livery, as the dragon lies down to be boarded. */
+  placeBody?: (pose: CraftPose) => Matrix4;
   buildBody: () => BufferGeometry;
   buildLivery: () => BufferGeometry;
   buildMovingParts: () => BufferGeometry[];
@@ -232,6 +281,53 @@ const craftDesigns: Record<Craft, CraftDesign> = {
       place: ({ burn = 0 }, turn) => placeRocketFlame(burn, turn),
     },
   },
+  dragon: {
+    placeBody: ({ opening }) => placeDragonBody(opening),
+    buildBody: buildDragonGeometry,
+    buildLivery: buildDragonLiveryGeometry,
+    buildMovingParts: buildDragonMovingPartsGeometry,
+    placeMovingParts: ({ opening, burn = 0 }, turn) =>
+      placeDragonMovingParts(opening, burn, turn),
+    grain: surfaceGrains.stone,
+  },
+  blimp: {
+    buildBody: buildBlimpGeometry,
+    buildLivery: buildBlimpLiveryGeometry,
+    buildMovingParts: buildBlimpMovingPartsGeometry,
+    placeMovingParts: ({ opening }, turn) =>
+      placeBlimpMovingParts(opening, turn),
+    grain: surfaceGrains.fabric,
+  },
+  surfboard: {
+    buildBody: buildSurfboardGeometry,
+    buildLivery: buildSurfboardLiveryGeometry,
+    buildMovingParts: buildSurfboardMovingPartsGeometry,
+    placeMovingParts: (_pose, turn) => placeSurfboardMovingParts(turn),
+    glow: {
+      build: buildSurfWaveGeometry,
+      place: ({ burn = 0 }, turn) => placeSurfWave(burn, turn),
+      opacity: 0.94,
+      isLit: true,
+    },
+  },
+  windsurfer: {
+    buildBody: buildWindsurferGeometry,
+    buildLivery: buildWindsurferLiveryGeometry,
+    buildMovingParts: buildWindsurferMovingPartsGeometry,
+    placeMovingParts: (_pose, turn) => placeWindsurferMovingParts(turn),
+  },
+  scuba: {
+    scaleBody: {
+      centre: scubaLockerGrowthCentre,
+      find: ({ burn = 0 }) => Math.max(0.001, burn),
+    },
+    buildBody: buildScubaLockerGeometry,
+    buildLivery: buildScubaLockerLiveryGeometry,
+    buildMovingParts: buildScubaLockerMovingPartsGeometry,
+    placeMovingParts: ({ opening, lift = 0, burn = 0 }) =>
+      placeScubaLockerMovingParts(opening, lift, burn),
+    grain: surfaceGrains.stone,
+  },
   portal: {
     scaleBody: {
       centre: portalGrowthCentre,
@@ -268,14 +364,26 @@ const CraftGlowMesh = ({
       frustumCulled={false}
       matrixAutoUpdate={false}
     >
-      <meshBasicMaterial
-        vertexColors
-        transparent
-        side={DoubleSide}
-        opacity={glow.opacity ?? 0.9}
-        depthWrite={false}
-        toneMapped={false}
-      />
+      {glow.isLit === true ? (
+        <meshStandardMaterial
+          vertexColors
+          transparent
+          side={DoubleSide}
+          opacity={glow.opacity ?? 0.9}
+          roughness={0.18}
+          metalness={0.05}
+          depthWrite={false}
+        />
+      ) : (
+        <meshBasicMaterial
+          vertexColors
+          transparent
+          side={DoubleSide}
+          opacity={glow.opacity ?? 0.9}
+          depthWrite={false}
+          toneMapped={false}
+        />
+      )}
     </mesh>
   );
 };
@@ -285,11 +393,14 @@ export const VoyageCraft = ({
   findPose,
   scale = 1,
   name,
+  children,
 }: {
   craft: Craft;
   findPose: (deltaSeconds: number) => CraftPose | undefined;
   scale?: number;
   name: string;
+  /** Anything carried in view with the craft, such as its rider. */
+  children?: ReactNode;
 }) => {
   const design = craftDesigns[craft];
   const body = useBuiltGeometry(design.buildBody);
@@ -328,6 +439,11 @@ export const VoyageCraft = ({
       "YXZ",
     );
     moveParts(movingParts, design.placeMovingParts(pose, rotorTurn.current));
+    if (design.placeBody !== undefined && scaled.current !== null) {
+      scaled.current.matrixAutoUpdate = false;
+      scaled.current.matrix.copy(design.placeBody(pose));
+      scaled.current.matrixWorldNeedsUpdate = true;
+    }
     if (design.scaleBody !== undefined && scaled.current !== null) {
       const size = design.scaleBody.find(pose);
       const [x, y, z] = design.scaleBody.centre;
@@ -369,6 +485,7 @@ export const VoyageCraft = ({
           name={`${name}-glow`}
         />
       )}
+      {children}
     </group>
   );
 };

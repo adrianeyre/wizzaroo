@@ -8,7 +8,14 @@ import {
   type PointLight,
 } from "three";
 import { buildCharacterLook } from "../character/character-look.js";
-import { CharacterModel } from "../character/character-model.js";
+import {
+  CharacterModel,
+  type CharacterGearSet,
+} from "../character/character-model.js";
+import {
+  applyStance,
+  exploreCharacterScale,
+} from "../character/character-stance.js";
 import { isMotionReduced } from "../reduced-motion.js";
 import { clickSlopPixels, SkyLight } from "../world-map-scene.js";
 import {
@@ -179,7 +186,7 @@ interface ExploreTransport {
   startSeconds: number;
 }
 
-const characterScale = 0.42;
+const characterScale = exploreCharacterScale;
 /** Signs, dens and lamps are bumped into whatever colour they are painted. */
 const propColour = "#808080";
 const fieldOfView = 55;
@@ -527,6 +534,10 @@ const Explorer = ({
   });
   const body = useRef<Group>(null);
   const pose = useRef<Group>(null);
+  const wornGear = useRef<CharacterGearSet | undefined>(undefined);
+  const [shownGear, setWornGear] = useState<CharacterGearSet | undefined>(
+    undefined,
+  );
   const ripple = useRef<Mesh>(null);
   const shadow = useRef<Mesh>(null);
   const lantern = useRef<Group>(null);
@@ -822,21 +833,35 @@ const Explorer = ({
       walkTargetRef.current = undefined;
       if (body.current !== null) {
         body.current.position.set(spot.x, spot.y, spot.z);
-        body.current.rotation.y = spot.heading;
+        body.current.rotation.set(
+          -(spot.pitch ?? 0),
+          spot.heading,
+          spot.roll ?? 0,
+          "YXZ",
+        );
         body.current.visible = !spot.isInside;
+      }
+      const gear = spot.gear;
+      if (gear !== wornGear.current) {
+        wornGear.current = gear;
+        setWornGear(gear);
       }
       if (pose.current !== null) {
         const isWalking = isWalkingAboard(transport, carriedPhase, share);
         stride.current += isWalking ? deltaSeconds * walkSpeed * 3 : 0;
         const motion = isMotionReduced() ? 0 : 1;
-        pose.current.position.y = isWalking
-          ? Math.abs(Math.sin(stride.current)) * 0.06 * motion
-          : 0;
-        pose.current.rotation.set(
-          isWalking ? 0.08 : 0,
-          0,
-          isWalking ? Math.sin(stride.current) * 0.05 * motion : 0,
-        );
+        const stance = spot.stance ?? "standing";
+        applyStance(pose.current, stance, clockSeconds, motion);
+        if (stance === "standing") {
+          pose.current.position.y = isWalking
+            ? Math.abs(Math.sin(stride.current)) * 0.06 * motion
+            : 0;
+          pose.current.rotation.set(
+            isWalking ? 0.08 : 0,
+            0,
+            isWalking ? Math.sin(stride.current) * 0.05 * motion : 0,
+          );
+        }
       }
       if (ripple.current !== null) {
         ripple.current.visible = false;
@@ -857,6 +882,16 @@ const Explorer = ({
     }
     if (wasCarried.current) {
       wasCarried.current = false;
+      if (pose.current !== null) {
+        applyStance(pose.current, "standing", clockSeconds);
+      }
+      if (body.current !== null) {
+        body.current.rotation.set(0, body.current.rotation.y, 0);
+      }
+      if (wornGear.current !== undefined) {
+        wornGear.current = undefined;
+        setWornGear(undefined);
+      }
       const heading = findJourneyArrivalHeading(adventure, transport);
       walker.current = buildStartingWalker(
         world,
@@ -1145,7 +1180,7 @@ const Explorer = ({
   return (
     <group ref={body} name="explorer">
       <group ref={pose} scale={characterScale}>
-        <CharacterModel look={look} />
+        <CharacterModel look={look} gear={shownGear} />
       </group>
       <Lantern lanternRef={lantern} lightRef={lanternLight} />
       <mesh
@@ -1508,6 +1543,10 @@ export const IslandExploreCanvas = (sceneProps: IslandExploreSceneProps) => {
   }, []);
   const timeOfDay = useTimeOfDay();
   const [weather] = useState(() => chooseWeather(Math.random));
+  const riderLook = useMemo(
+    () => buildCharacterLook(sceneProps.loadout),
+    [sceneProps.loadout],
+  );
   const look = buildIslandLook(
     placeIslandAtOrigin(sceneProps.island),
     timeOfDay,
@@ -1536,6 +1575,7 @@ export const IslandExploreCanvas = (sceneProps: IslandExploreSceneProps) => {
                 isEffectsOn={isEffectsOn}
                 timeOfDay={timeOfDay}
                 weather={weather}
+                look={riderLook}
               />
             ) : (
               <IslandExploreScene

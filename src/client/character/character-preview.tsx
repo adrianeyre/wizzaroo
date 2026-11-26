@@ -22,6 +22,14 @@ import {
   type PetPlace,
 } from "./character-show-off.js";
 
+/**
+ * Canvases here are sized by their layout box, not their drawn box: a
+ * portrait that mounts while an animation still scales it down (the
+ * speaking face pops in from 60%) would otherwise draw at that size and stay
+ * there, its Character small in the corner of its circle.
+ */
+const canvasResize = { offsetSize: true };
+
 type Framing =
   | "full-length"
   | "full-length-with-company"
@@ -197,6 +205,7 @@ const CharacterStage = ({
       <Canvas
         flat
         dpr={sharpestPixelRatio}
+        resize={canvasResize}
         frameloop={
           isTurnable || readMouthOpenness !== undefined ? "always" : "demand"
         }
@@ -381,6 +390,7 @@ export const CharacterHead = ({
         <Canvas
           flat
           dpr={sharpestPixelRatio}
+          resize={canvasResize}
           frameloop={readMouthOpenness === undefined ? "demand" : "always"}
           gl={{ antialias: true, alpha: true }}
           camera={{

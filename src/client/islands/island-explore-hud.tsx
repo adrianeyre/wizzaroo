@@ -335,6 +335,56 @@ export const describeVoyagePhase = (
       landing: `Welcome to ${toIslandName}!`,
       leaving: undefined,
     },
+    dragon: {
+      calling:
+        "Look up! A dragon is flying in to land on the Balloon Field and pick you up.",
+      boarding: "The dragon bows down. Climb up onto the saddle and sit tight!",
+      departing: `Hold on! The dragon spreads its wings and flies off to ${toIslandName}.`,
+      crossing: `Soaring on the dragon's back to ${toIslandName}...`,
+      docking: `The dragon is gliding down onto the Balloon Field on ${toIslandName}.`,
+      landing: `The dragon bows down so you can climb off. Welcome to ${toIslandName}!`,
+      leaving: undefined,
+    },
+    blimp: {
+      calling:
+        "Here comes the Wizzaroo blimp! It's floating down onto the Runway to pick you up.",
+      boarding: "Up the step and in through the gondola door!",
+      departing: `Engines on! The blimp is rising up and floating off to ${toIslandName}.`,
+      crossing: `Floating gently above the sea to ${toIslandName}...`,
+      docking: `The blimp is settling down onto the Runway on ${toIslandName}.`,
+      landing: `Welcome to ${toIslandName}!`,
+      leaving: undefined,
+    },
+    scuba: {
+      calling:
+        "Time to dive! A Wizzaroo dive locker is popping up at the end of the Dock.",
+      boarding: "Put on your wetsuit, fins, mask and air tank, then jump in!",
+      departing: `Splash! Swimming down under the sea to ${toIslandName}.`,
+      crossing: `Swimming under the sea to ${toIslandName}...`,
+      docking: `Swimming up to the Dock on ${toIslandName}.`,
+      landing: `Climb out and hang up your gear. Welcome to ${toIslandName}!`,
+      leaving: undefined,
+    },
+    surfboard: {
+      calling:
+        "Surf's up! A surfboard is gliding in beside the Dock to pick you up.",
+      boarding: "Step down onto the surfboard and lie down to paddle!",
+      departing: `Paddle, paddle... here comes a massive wave! Stand up and ride it to ${toIslandName}!`,
+      crossing: `Riding a massive wave all the way to ${toIslandName}...`,
+      docking: `The wave is carrying you in to the Dock on ${toIslandName}.`,
+      landing: `What a ride! Welcome to ${toIslandName}!`,
+      leaving: undefined,
+    },
+    windsurfer: {
+      calling:
+        "Here comes a windsurfer! It's sailing in beside the Dock to pick you up.",
+      boarding: "Step onto the board and grab the boom!",
+      departing: `The wind fills the sail! Windsurfing off to ${toIslandName}.`,
+      crossing: `Windsurfing over the waves to ${toIslandName}...`,
+      docking: `Sailing in beside the Dock on ${toIslandName}.`,
+      landing: `Welcome to ${toIslandName}!`,
+      leaving: undefined,
+    },
     portal: {
       calling:
         "Look! A magic portal is opening on the Balloon Field to take you.",
@@ -364,10 +414,15 @@ export const describeMapJourney = (
     jetski: `Hold on tight! The jetski is zooming to ${toIslandName}.`,
     rocket: `All aboard! The rocket is blasting off to ${toIslandName}.`,
     portal: `Step through! The magic portal is taking you to ${toIslandName}.`,
+    dragon: `Hold on tight! The dragon is flying you to ${toIslandName}.`,
+    blimp: `All aboard! The Wizzaroo blimp is floating to ${toIslandName}.`,
+    scuba: `Deep breath! You're scuba diving to ${toIslandName}.`,
+    surfboard: `Surf's up! A massive wave is carrying you to ${toIslandName}.`,
+    windsurfer: `Hold on to the boom! You're windsurfing to ${toIslandName}.`,
   })[transport];
 
 const dockStory =
-  "Big ships sail from this Dock to every Island. Press an Island's Year at the top and a ship, an aeroplane, a helicopter, a hovercraft, a submarine, a hot-air balloon, a pirate ship, a jetski or a rocket will come to take you there, or a magic portal will open!";
+  "Big ships sail from this Dock to every Island. Press an Island's Year at the top and a ship, an aeroplane, a helicopter, a hovercraft, a submarine, a hot-air balloon, a pirate ship, a jetski, a rocket, a dragon, a blimp, a surfboard or a windsurfer will come to take you there, you'll go scuba diving, or a magic portal will open!";
 
 const statusMessages: Record<WalkerStatus, string | undefined> = {
   walking: undefined,

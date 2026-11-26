@@ -65,9 +65,19 @@ describe.each(islandsOnMap.map(({ id }) => [id] as const))(
 
 describe.each(
   islandsOnMap.flatMap(({ id }) =>
-    (["aeroplane", "helicopter", "hovercraft", "submarine"] as const).map(
-      (transport) => [transport, id] as const,
-    ),
+    (
+      [
+        "aeroplane",
+        "helicopter",
+        "hovercraft",
+        "submarine",
+        "dragon",
+        "blimp",
+        "scuba",
+        "surfboard",
+        "windsurfer",
+      ] as const
+    ).map((transport) => [transport, id] as const),
   ),
 )("the %s at its landing place on %s", (transport, islandId) => {
   const journeyTo = (phase: VoyagePhase): VoyageView => {

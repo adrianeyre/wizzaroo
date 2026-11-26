@@ -1,9 +1,20 @@
 import { useFrame, useThree } from "@react-three/fiber";
-import { Vector3 } from "three";
+import { Vector3, type Group } from "three";
 import { MapControls } from "three/examples/jsm/controls/MapControls.js";
-import { useCallback, useEffect, useMemo, useRef } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import type { Stance } from "../character/character-stance.js";
 import { VoyageCraft, type CraftPose } from "./island-aircraft-models.js";
+import {
+  buildCharacterLook,
+  type CharacterLook,
+} from "../character/character-look.js";
 import { findExploreAdventure } from "./island-adventures.js";
+import {
+  CraftRider,
+  findRiderPose,
+  isRiderInView,
+  placeRider,
+} from "./island-craft-rider.js";
 import type { CraftPlacement } from "./island-flight.js";
 import {
   buildJourneyCourse,
@@ -91,6 +102,7 @@ export const MapVoyage = ({
   phases,
   onCraftMoved,
   onFinished,
+  look,
 }: {
   from: VoyagePort;
   to: VoyagePort;
@@ -98,7 +110,13 @@ export const MapVoyage = ({
   phases: readonly VoyagePhase[];
   onCraftMoved: (placement: CraftPlacement) => void;
   onFinished: () => void;
+  /** The Character's look, for a rider in view; a plain Character without it. */
+  look?: CharacterLook;
 }) => {
+  const riderLook = useMemo(() => look ?? buildCharacterLook({}), [look]);
+  const riderRef = useRef<Group>(null);
+  const riderStanceRef = useRef<Stance | undefined>(undefined);
+  const [riderStance, setRiderStance] = useState<Stance>();
   const route = useMemo(
     () => buildJourneyRoute(from, to, transport),
     [from, to, transport],
@@ -137,6 +155,14 @@ export const MapVoyage = ({
             placement,
           );
       placementRef.current = placement;
+      const stance = placeRider(
+        riderRef.current,
+        findRiderPose(transport, phase, share),
+      );
+      if (stance !== undefined && stance !== riderStanceRef.current) {
+        riderStanceRef.current = stance;
+        setRiderStance(stance);
+      }
       if (clock.seconds >= phaseSeconds) {
         clock.seconds = 0;
         clock.phaseIndex += 1;
@@ -166,6 +192,15 @@ export const MapVoyage = ({
       findPose={moveCraft}
       scale={shipMapScale}
       name={`map-${transport}`}
-    />
+    >
+      {isRiderInView(transport) ? (
+        <CraftRider
+          look={riderLook}
+          stance={riderStance}
+          riderRef={riderRef}
+          gear={transport === "scuba" ? "scuba" : undefined}
+        />
+      ) : null}
+    </VoyageCraft>
   );
 };
