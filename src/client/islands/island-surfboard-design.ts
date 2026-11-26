@@ -26,6 +26,7 @@ import {
   surfWaveBehind,
   surfWaveHalfWidth,
   surfWaveHeight,
+  surfRideLift,
   surfboardDeck,
   surfboardHalfWidth,
   surfboardLength,
@@ -794,17 +795,55 @@ export const buildSurfWaveGeometry = (): BufferGeometry =>
 
 const waveFoot: Triple = [0, 0, -surfWaveBehind];
 
-export const placeSurfWave = (size: number, turn: number): Matrix4 => {
+// Where, in the wave's own build, the board rides: on the open shoulder
+// just ahead of the curling section, so the barrel breaks behind the rider
+// and the lip never hides them, partway up the concave face.
+const waveRideX = 8;
+const waveRideFaceZ = (() => {
+  const column = buildWaveColumn(waveRideX);
+  const above = column.findIndex(({ point }) => point.y >= surfRideLift);
+  const upper = column[Math.max(1, above)].point;
+  const lower = column[Math.max(0, above - 1)].point;
+  const share = (surfRideLift - lower.y) / Math.max(upper.y - lower.y, 1e-6);
+  return lower.z + (upper.z - lower.z) * share;
+})();
+
+// The wave is built with its crest along x and its face towards +z; it
+// stands on the board's +x side with its crest running the way the board
+// rides, so the Character carves along its face.
+const waveTurn = -0.8;
+
+/**
+ * Where the massive wave is, relative to the surfboard: grown to `size` (0
+ * to 1), with the board up on its face. The board leans into the face and
+ * dips its nose; `tilt` undoes that, so the wave stands level on the sea.
+ */
+export const placeSurfWave = (
+  size: number,
+  turn: number,
+  tilt: { pitch: number; roll: number } = { pitch: 0, roll: 0 },
+): Matrix4 => {
   const grown = clamp(size);
   const breathe = 1 + 0.018 * Math.sin(turn * 0.21) * grown;
   const surge = 1 + 0.025 * Math.sin(turn * 0.13 + 1.1) * grown;
   const tall = Math.max(0.001, grown * breathe);
   const deep = Math.max(0.05, (0.3 + 0.7 * grown) * surge);
-  return new Matrix4()
+  const grow = new Matrix4()
     .makeTranslation(waveFoot[0], waveFoot[1] - 0.12 * (1 - grown), waveFoot[2])
     .multiply(new Matrix4().makeRotationZ(0.012 * Math.sin(turn * 0.09)))
     .multiply(new Matrix4().makeScale(1, tall, deep))
     .multiply(
       new Matrix4().makeTranslation(-waveFoot[0], -waveFoot[1], -waveFoot[2]),
     );
+  const face = new Vector3(waveRideX, surfRideLift, waveRideFaceZ).applyMatrix4(
+    grow,
+  );
+  return new Matrix4()
+    .makeRotationZ(-tilt.roll)
+    .multiply(new Matrix4().makeRotationX(tilt.pitch))
+    .multiply(new Matrix4().makeRotationY(waveTurn))
+    .multiply(
+      new Matrix4().makeTranslation(-face.x, -surfRideLift * grown, -face.z),
+    )
+    .multiply(grow);
 };

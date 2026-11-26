@@ -1,8 +1,10 @@
-import { Vector3, type BufferGeometry } from "three";
+import { Euler, Matrix4, Vector3, type BufferGeometry } from "three";
 import { describe, expect, it } from "vitest";
 import {
+  surfFaceRoll,
+  surfRideLift,
+  surfRidePitch,
   surfRiderZ,
-  surfWaveBehind,
   surfWaveHalfWidth,
   surfWaveHeight,
   surfboardDeck,
@@ -97,37 +99,82 @@ describe("the surfboard", () => {
 
 describe("the surf wave", () => {
   const wave = buildSurfWaveGeometry();
+  const riding = { pitch: surfRidePitch, roll: surfFaceRoll };
 
-  const placeCorners = (size: number) => {
-    const placement = placeSurfWave(size, 0);
-    return listCorners(wave).map(({ x, y, z }) =>
-      new Vector3(x, y, z).applyMatrix4(placement),
+  // The wave's corners as seen level on the sea, with the board at the
+  // origin `lift` above the water and tilted as it rides.
+  const placeCorners = (
+    size: number,
+    tilt = riding,
+    lift = surfRideLift * size,
+  ) => {
+    const board = new Matrix4().makeRotationFromEuler(
+      new Euler(-tilt.pitch, 0, tilt.roll, "YXZ"),
     );
+    const placement = board.multiply(placeSurfWave(size, 0, tilt));
+    return listCorners(wave).map(({ x, y, z }) => {
+      const corner = new Vector3(x, y, z).applyMatrix4(placement);
+      return { x: corner.x, y: corner.y + lift, z: corner.z };
+    });
   };
 
   it("is flat and hidden at size nought", () => {
     expect(findMost(placeCorners(0).map(({ y }) => y))).toBeLessThan(0.01);
   });
 
-  it("rises massive behind the board and spans the sea", () => {
+  it("rises massive out of a level sea and spans it, whichever way the board leans", () => {
+    [riding, { pitch: 0.2, roll: -0.3 }].forEach((tilt) => {
+      const corners = placeCorners(1, tilt);
+      const highest = findMost(corners.map(({ y }) => y));
+      expect(highest).toBeGreaterThan(surfWaveHeight * 0.95);
+      expect(highest).toBeLessThan(surfWaveHeight * 1.25);
+      expect(findLeast(corners.map(({ y }) => y))).toBeGreaterThan(-0.4);
+      const spread = Math.hypot(
+        findMost(corners.map(({ x }) => x)) -
+          findLeast(corners.map(({ x }) => x)),
+        findMost(corners.map(({ z }) => z)) -
+          findLeast(corners.map(({ z }) => z)),
+      );
+      expect(spread).toBeGreaterThan(surfWaveHalfWidth * 1.6);
+    });
+  });
+
+  it("carries the board up its face, the board lying along it, the wave on the board's +x side", () => {
+    const tilt = new Matrix4().makeRotationFromEuler(
+      new Euler(-surfRidePitch, 0, surfFaceRoll, "YXZ"),
+    );
+    // Along the board, from tail to nose, the face is never more than a
+    // little above or below the deck.
     const corners = placeCorners(1);
-    const highest = findMost(corners.map(({ y }) => y));
-    expect(highest).toBeGreaterThan(surfWaveHeight * 0.95);
-    expect(highest).toBeLessThan(surfWaveHeight * 1.25);
-    const xs = corners.map(({ x }) => x);
-    expect(findLeast(xs)).toBeLessThan(-surfWaveHalfWidth * 0.95);
-    expect(findMost(xs)).toBeGreaterThan(surfWaveHalfWidth * 0.95);
-    const foot = corners
-      .filter(({ x, y }) => Math.abs(x) < 0.3 && y < 0.05)
-      .map(({ z }) => z);
-    expect(findMost(foot)).toBeGreaterThan(-surfWaveBehind - 0.3);
+    [-1.1, -0.6, 0, 0.6, 1.1].forEach((along) => {
+      const spot = new Vector3(0, 0, along).applyMatrix4(tilt);
+      const deck = surfRideLift + spot.y;
+      const near = corners.filter(
+        ({ x, z }) => Math.hypot(x - spot.x, z - spot.z) < 0.35,
+      );
+      expect(near.length).toBeGreaterThan(0);
+      expect(findLeast(near.map(({ y }) => Math.abs(y - deck)))).toBeLessThan(
+        0.15,
+      );
+    });
+    const findFaceAt = (x: number) =>
+      findLeast(
+        corners
+          .filter((corner) => Math.hypot(corner.x - x, corner.z) < 0.4)
+          .map(({ y }) => y),
+      );
+    expect(findFaceAt(1.2)).toBeGreaterThan(surfRideLift + 0.15);
+    expect(findFaceAt(-1.2)).toBeLessThan(surfRideLift - 0.15);
   });
 
   it("curls its lip high over, not through, the rider", () => {
-    const nearRider = placeCorners(1).filter(
-      ({ x, z }) => Math.abs(x) < 0.8 && z > surfRiderZ - 0.75,
+    const aroundRider = placeCorners(1).filter(
+      ({ x, z }) => Math.hypot(x, z - surfRiderZ) < 0.3,
     );
-    expect(findLeast(nearRider.map(({ y }) => y))).toBeGreaterThan(2.4);
+    expect(aroundRider.length).toBeGreaterThan(0);
+    aroundRider.forEach(({ y }) => {
+      expect(y < surfRideLift + 0.3 || y > surfRideLift + 2).toBe(true);
+    });
     expect(isEveryFacePainted(wave)).toBe(true);
   });
 });

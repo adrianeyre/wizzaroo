@@ -5,6 +5,7 @@ import type { MapPoint } from "../world-map-terrain.js";
 import {
   buildAdventureWorld,
   buildDockPier,
+  exploreScale,
   findExploreAdventure,
   findWalkSurface,
   islandAdventures,
@@ -13,6 +14,7 @@ import {
 import { findRiderPose, isRiderInView } from "./island-craft-rider.js";
 import {
   dragonSaddle,
+  placeOnTiltedCraft,
   findAircraftPlacement,
   findDragonWingSpread,
   placeOnDragonBody,
@@ -43,10 +45,12 @@ import {
   surfboardDeck,
   surfboardHalfWidth,
   surfboardLength,
+  surfRideLift,
   windsurferDeck,
   windsurferHalfWidth,
   windsurferLength,
 } from "./island-sea-craft.js";
+import { findWindsurferSailPoint } from "./island-windsurfer-design.js";
 
 const islandIds = islandAdventures.map(({ islandId }) => [islandId] as const);
 
@@ -252,6 +256,46 @@ describe.each(
   });
 });
 
+describe.each(islandIds)("the windsurfer's sail at %s", (islandId) => {
+  const adventure = findExploreAdventure(islandId);
+  const pier = buildDockPier(adventure);
+  const pierLength = Math.hypot(
+    pier.to.x - pier.from.x,
+    pier.to.z - pier.from.z,
+  );
+  const findAcross = ({ x, z }: MapPoint) =>
+    ((x - pier.from.x) * (pier.to.z - pier.from.z) -
+      (z - pier.from.z) * (pier.to.x - pier.from.x)) /
+    pierLength;
+  const listSailPoints = () =>
+    listShares(10).flatMap((share) =>
+      listShares(10).map((height) => findWindsurferSailPoint(share, height)),
+    );
+
+  it("stands out over the water on the far side from the pier, never under the jetty", () => {
+    const moments = [
+      ...listShares(10).map((share) => ["docking", 0.6 + share * 0.4] as const),
+      ...listShares(10).map((share) => ["boarding", share] as const),
+      ...listShares(10).map((share) => ["landing", share] as const),
+      ...listShares(4).map((share) => ["leaving", share * 0.2] as const),
+    ];
+    moments.forEach(([phase, share]) => {
+      const craft = findCraftPlacement(adventure, "windsurfer", phase, share);
+      const boardAcross = Math.abs(findAcross(craft));
+      const sailAcross = listSailPoints().map((local) => {
+        const point = placeOnTiltedCraft(craft, local);
+        const across = Math.abs(findAcross(point));
+        expect(across > pierHalfWidth || point.y > pier.endHeight).toBe(true);
+        return across;
+      });
+      const middle =
+        sailAcross.reduce((total, across) => total + across, 0) /
+        sailAcross.length;
+      expect(middle).toBeGreaterThan(boardAcross + 0.2);
+    });
+  });
+});
+
 describe("surfing", () => {
   const adventure = findExploreAdventure("meadow-isle");
 
@@ -267,6 +311,37 @@ describe("surfing", () => {
     expect(
       findJourneyCarriedSpot(adventure, "surfboard", "departing", 0.7).stance,
     ).toBe("surfing");
+  });
+
+  it("is lifted up onto the wave's face as it rises, and set back down on the sea at the Dock", () => {
+    const paddling = findSeaCraftPlacement(
+      adventure,
+      "surfboard",
+      "departing",
+      0.3,
+    );
+    expect(paddling.y).toBe(0);
+    const riding = findSeaCraftPlacement(
+      adventure,
+      "surfboard",
+      "departing",
+      0.8,
+    );
+    expect(riding.y).toBeCloseTo(surfRideLift);
+    expect(riding.pitch).toBeLessThan(-0.3);
+    expect(riding.roll).toBeGreaterThan(0.2);
+    const surfer = findJourneyCarriedSpot(
+      adventure,
+      "surfboard",
+      "departing",
+      0.8,
+    );
+    expect(surfer.y).toBeGreaterThan(surfRideLift);
+    expect(Math.abs(surfer.pitch ?? 0)).toBeLessThan(Math.abs(riding.pitch));
+    const berthed = findSeaCraftPlacement(adventure, "surfboard", "docking", 1);
+    expect(berthed.y).toBe(0);
+    expect(berthed.pitch).toBeCloseTo(0);
+    expect(berthed.roll).toBeCloseTo(0);
   });
 
   it("rides the massive wave all the way, and lets it die away at the other Dock", () => {
@@ -348,14 +423,14 @@ describe.each(islandIds)("scuba diving from %s", (islandId) => {
 describe("crossing between Islands on the new rides", () => {
   const [meadow, frost] = ports;
 
-  it("keeps the diver just under the waves, and the boards on top of them", () => {
+  it("keeps the diver just under the waves, and the surfboard up on the face of its massive wave", () => {
     const dive = buildJourneyCourse(buildJourneyRoute(meadow, frost, "scuba"));
     const surf = buildJourneyCourse(
       buildJourneyRoute(meadow, frost, "surfboard"),
     );
     listShares(100).forEach((share) => {
       expect(dive.getPointAt(share).y).toBeLessThan(0);
-      expect(surf.getPointAt(share).y).toBeCloseTo(0);
+      expect(surf.getPointAt(share).y).toBeCloseTo(surfRideLift / exploreScale);
     });
     const route = buildJourneyRoute(meadow, frost, "scuba");
     expect(route[0].x).toBeCloseTo(
